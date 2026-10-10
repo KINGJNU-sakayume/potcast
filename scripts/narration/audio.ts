@@ -27,8 +27,11 @@ const FADE_OUT_MS = 25;
 const HIGH_PASS_HZ = 60;
 /** The loudness clips are brought to: RMS of the voiced parts, about -17 dBFS. */
 const TARGET_RMS = 0.14;
-/** No sample goes above this (-1 dBFS): MP3 encoding overshoots a little, and the room is for that. */
-const PEAK_CEILING = 0.89;
+/**
+ * No sample goes above this (-2 dBFS). The room is for MP3 encoding, which overshoots: with the ceiling at 0.89,
+ * four clips of 145 came back from the decoder a sample or two above full scale (the highest at 1.08).
+ */
+export const PEAK_CEILING = 0.8;
 /** How far around a peak the limiter eases the level down and back up. */
 const LIMITER_REACH_MS = 5;
 const MAX_GAIN = 4;

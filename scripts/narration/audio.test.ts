@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CLAUSE_PAUSE_MS, encodeMp3, finishClip, limit, measure, MP3_BITRATE, pauseAfter, SENTENCE_PAUSE_MS } from './audio';
+import { CLAUSE_PAUSE_MS, encodeMp3, finishClip, limit, measure, MP3_BITRATE, pauseAfter, PEAK_CEILING, SENTENCE_PAUSE_MS } from './audio';
 
 const RATE = 44_100;
 const frames = (ms: number) => Math.round((ms / 1000) * RATE);
@@ -32,8 +32,8 @@ describe('finishing a clip', () => {
     expect(quiet.rms).toBeGreaterThan(0.12);
     expect(quiet.rms).toBeLessThan(0.15);
     expect(Math.abs(quiet.rms - loud.rms)).toBeLessThan(0.01);
-    expect(quiet.peak).toBeLessThanOrEqual(0.89);
-    expect(loud.peak).toBeLessThanOrEqual(0.89);
+    expect(quiet.peak).toBeLessThanOrEqual(PEAK_CEILING + 1e-6);
+    expect(loud.peak).toBeLessThanOrEqual(PEAK_CEILING + 1e-6);
   });
 
   it('reaches that loudness even for a take with sharp peaks, by easing the peaks down', () => {
@@ -43,7 +43,7 @@ describe('finishing a clip', () => {
     const clip = finishClip(peaky, RATE);
     // Scaled down as a whole until its clicks fit, it would be at about 0.035.
     expect(clip.rms).toBeGreaterThan(0.11);
-    expect(clip.peak).toBeLessThanOrEqual(0.89 + 1e-6);
+    expect(clip.peak).toBeLessThanOrEqual(PEAK_CEILING + 1e-6);
   });
 
   it('starts and ends without a click', () => {
