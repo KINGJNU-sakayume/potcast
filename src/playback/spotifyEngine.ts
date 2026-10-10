@@ -6,7 +6,7 @@ import type { SpotifyClient } from '../spotify/client';
 import * as api from '../spotify/endpoints';
 import { isSpotifyApiError } from '../spotify/errors';
 import { mapDevice, mapTrackIdentity } from '../spotify/mappers';
-import type { PlaybackEngine } from './engine';
+import type { Ducking, PlaybackEngine } from './engine';
 import { describeSkipLoop } from './playbackHelp';
 import { monotonicNow, positionAt, remainingAt } from './playbackClock';
 import type { PlayerAction } from './playerReducer';
@@ -139,6 +139,10 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
   private device: WebPlaybackDevice | null = null;
   private deviceId: string | null = null;
   private volume: number;
+  /** A factor on top of `volume` for fades and talk-over (see setGain); 1 leaves the volume alone. */
+  private gain = 1;
+  /** Another device's volume (0–1) before setGain turned it down, to put back afterwards. */
+  private remoteBaseVolume: number | null = null;
   private running = false;
   private generation = 0;
   private pollTimer: unknown = null;
@@ -199,6 +203,8 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
     this.device?.disconnect();
     this.device = null;
     this.deviceId = null;
+    this.gain = 1;
+    this.remoteBaseVolume = null;
   }
 
   /* ── Web Playback SDK ────────────────────────────────────────────────── */
@@ -215,7 +221,7 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
     this.dispatch({ type: 'sdk/status', status: { kind: 'loading' } });
     const device = this.createDevice({
       name: BROWSER_DEVICE_NAME,
-      initialVolume: this.volume,
+      initialVolume: this.volume * this.gain,
       getOAuthToken: () => this.options.getAccessToken(),
       callbacks: this.sdkCallbacks(generation),
     });
@@ -611,13 +617,48 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
     if (this.sdkIsActive()) {
       this.volume = value;
       writeJson(VOLUME_KEY, value);
-      return this.command({ volume: value }, () => this.device!.setVolume(value), false);
+      return this.command({ volume: value }, () => this.device!.setVolume(value * this.gain), false);
     }
     if (snapshot.device && !snapshot.device.supportsVolume) {
       this.setIssue('restricted', `${snapshot.device.name} does not allow remote volume control.`);
       return;
     }
+    // The listener set the other device's volume: that is the level to return to.
+    this.remoteBaseVolume = null;
     return this.command({ volume: value }, () => api.setVolume(this.client, value * 100), true);
+  }
+
+  /** Playback started from here plays in this browser (see play()), so its player is the one to turn down. */
+  private browserIsTarget(): boolean {
+    if (this.sdkIsActive()) return true;
+    return this.store.getState().sdk.kind === 'ready' && this.device !== null && !this.remoteChosen();
+  }
+
+  ducking(): Ducking {
+    if (this.browserIsTarget()) return 'smooth';
+    const { snapshot } = this.store.getState();
+    const remote = snapshot.source === 'remote' && snapshot.device?.isActive && snapshot.device.supportsVolume;
+    return remote && (snapshot.volume !== null || this.remoteBaseVolume !== null) ? 'coarse' : 'none';
+  }
+
+  async setGain(gain: number): Promise<void> {
+    const value = clamp01(gain);
+    this.gain = value;
+    if (this.browserIsTarget()) {
+      // Not a listener command: the stored volume, the slider and the command clock stay as they are.
+      await this.device!.setVolume(this.volume * value).catch(() => undefined);
+      return;
+    }
+    if (this.ducking() !== 'coarse') return;
+    const { snapshot } = this.store.getState();
+    if (this.remoteBaseVolume === null) {
+      if (value >= 1 || snapshot.volume === null) return;
+      this.remoteBaseVolume = snapshot.volume;
+    }
+    const base = this.remoteBaseVolume;
+    if (value >= 1) this.remoteBaseVolume = null;
+    // A failure is not worth an alert: the next state read shows the device's real volume.
+    await api.setVolume(this.client, Math.round(base * value * 100)).catch(() => undefined);
   }
 
   async setShuffle(shuffle: boolean): Promise<void> {

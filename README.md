@@ -1,4 +1,9 @@
-# ARC Music v7 — Spotify web player
+# ARC Music v7 — Spotify web player, with album episodes
+
+> **potcast** is the personal copy of [player2](https://github.com/KINGJNU-sakayume/player2) in which **album episodes**
+> are built: two hosts talk through an album while the app plays the album itself in between and underneath
+> ([Episodes](#episodes)). It is published for personal use at `https://kingjnu-sakayume.github.io/potcast/` — see
+> [Running potcast](#running-potcast).
 
 ARC Music is a restrained personal music archive: the v7 Now Playing, Artist and Album compositions, each page in the
 colour of its own image (or the warm paper), and short hand-written **notes** — the Editorial Note for artists and
@@ -23,14 +28,15 @@ still no global playback footer, no Catalogue or Specimen mode, and transport co
 | **Focus Mode** | `F` or the transport button: full screen, cover, lyrics and progress. `Esc` leaves. |
 | **Artist** | In the colour of the artist's photograph. Portrait, name, origin line and Editorial Note; below it, the **Discography** as a chronology in two or three columns. Albums, Singles & EPs, Compilations and Appears on each load in full, oldest first (or newest first). Releases are grouped by year, with deluxe / remaster / regional editions folded under the original (*+2 editions*), the note's career eras marked in the timeline, and noted releases marked. *Play artist*, *Open in Spotify*. |
 | **Album** | In the cover's colour. Cover, title, artist, release / format / tracks / duration and Editorial Note left; the complete Track Sequence right, with the playing track, guests, explicit marks, discs and a *Note* mark on songs with a song note. *Play album*, *Save album*. Under the sequence, the release's place in the discography (`03 / 12 · Albums`) with the previous and next release — `[` / `]` step through. An artist note's `discography:` list sets that album order (e.g. to skip a live album). |
+| **Episode** | An album's episode, opened with *Listen with the hosts* on its Album page (`#/episode/<album ID>`). In the cover's colour: the line a host is saying — or the track being played, with what to listen for and its progress — in large type; play / pause and back / skip; and the whole script, where any line or stretch of music starts the episode from there. The episode keeps running on other pages: the rail's cover leads back to it, and `Space` and Now Playing's play button pause it. |
 | **Archive** | The index of the archive's own writing: every artist with a note on the left; the chosen artist's note and portrait, album notes with covers, and one Listening note per song (with the song's translation note inside it) under its album in tracklist order on the right, each opening its note or playing the track. Artwork is the note's `image` / `cover` URL (`npm run notes:art` fills them), else Spotify's when connected, else the archive plates. |
 | **Library** | One screen: liked songs (*Shuffle* draws from the whole library, *Play all*) and recently played as lists; liked albums, playlists and followed artists as big covers. |
 | **Search** | The overlay (`/`): tracks, artists, albums and playlists side by side, type filters with paging, `↓` / `↑` through results. |
 | **Queue · Settings** | The real Spotify queue, and the account, device, lyrics and keyboard, in the same right-hand column as the notes. |
 
 **Contents** — [Setup](#setup) · [Environment variables](#environment-variables) · [Notes](#notes-editorial-and-listening) ·
-[Lyrics and translation](#lyrics-and-translation) · [Preview mode](#preview-mode) · [Phone](#phone-and-home-screen-app) · [Commands](#commands) ·
-[Deployment](#github-pages-deployment) · [Architecture](#architecture) · [Limitations](#known-limitations) ·
+[Lyrics and translation](#lyrics-and-translation) · [Episodes](#episodes) · [Preview mode](#preview-mode) · [Phone](#phone-and-home-screen-app) · [Commands](#commands) ·
+[Running potcast](#running-potcast) · [Architecture](#architecture) · [Limitations](#known-limitations) ·
 [Troubleshooting](#troubleshooting)
 
 ## Setup
@@ -43,7 +49,7 @@ Spotify Developer application, and a desktop browser with Web Crypto and protect
 2. Register the exact redirect URI for every environment. Matching is exact (protocol, host, port, path, trailing
    slash). The redirect URI is the app **root**; routes live in the URL hash.
    - Development: `http://127.0.0.1:5173/`
-   - Production: `https://kingjnu-sakayume.github.io/player2/`
+   - Production: `https://kingjnu-sakayume.github.io/potcast/` (player2's is `https://kingjnu-sakayume.github.io/player2/`)
 
    Spotify does not accept `localhost` in place of `127.0.0.1`.
 3. Copy the public Client ID. A client secret is neither needed nor safe in this SPA.
@@ -207,10 +213,110 @@ To add a provider, implement `LyricsProvider` ([`src/lyrics/types.ts`](src/lyric
 register it in `createLyricsProvider.ts` / `createTranslationProvider.ts` and `src/app/config.ts`. A provider that
 needs a secret must sit behind your own backend. No copyrighted lyrics are stored in this repository.
 
+## Episodes
+
+An episode is a script performed live. The app speaks the hosts' lines with the browser's speech synthesis, starts and
+stops Spotify playback at the positions the script names, and turns the music down while a host talks over it. Nothing
+is mixed into a file: Spotify's audio stays in Spotify's player and cannot be exported, so an episode exists only while
+the app is performing it.
+
+| Where | What |
+| --- | --- |
+| [`src/editorial/notes/episodes/<album>.md`](src/editorial/notes/episodes/) | The script, named after its album note (`igor.md` for `notes/albums/igor.md`) |
+| [`src/episode/script.ts`](src/episode/script.ts) · [`resolve.ts`](src/episode/resolve.ts) | The format, and matching it to the album's tracks and times |
+| [`src/episode/runner.ts`](src/episode/runner.ts) | The performance: talk, music, talk-over, fades, pause / resume / jump |
+| [`src/episode/narrator.ts`](src/episode/narrator.ts) · [`voices.ts`](src/episode/voices.ts) | The voices |
+
+### The script
+
+```markdown
+---
+album: igor
+title: 『IGOR』 같이 듣기
+hosts:
+  a: 진행
+  b: 해설
+written: 2026-10-10
+short: >
+  One or two lines shown before the episode starts.
+---
+
+## EARFQUAKE                             a chapter
+
+A: 두 번째 곡은…                          talk — the music is stopped (faded out first if it was playing)
+B: 반주와 목소리를 따로 들어 보세요.
+
+> play earfquake                         the whole track
+> play earfquake 0:47–1:11               part of it
+> play earfquake L14–L17                 lyric lines 14 to 17 of the song's curated translation
+> play earfquake from 2:25               from a position to the end
+> play earfquake to L13 | 첫 후렴까지      `|` adds what to listen for, shown while it plays
+> play interlude + the-next-song         tracks back to back, in one request, without a gap
+
+A~ 지금 들리는 이 피아노가…               talk over the music, which keeps playing turned down
+> play to 1:05                           the current track carries on (here until 1:05; `to end` for the rest)
+<!-- a note to yourself -->
+```
+
+- **Tracks** are song note keys from the album note's `tracks:`. The page matches them to the Spotify album with the
+  usual note lookup, so an episode works on any edition whose tracks have their notes.
+- **Positions** are `m:ss` (or `m:ss.d`), `start`, `end`, or `L<n>`: the n-th segment of the song's
+  `<key>.translation.json` (`npm run episode:lines -- <key>`, or `-- --album <album>`, prints them numbered). A range `L14–L17` runs from the start
+  of line 14 to the end of line 17, starting 0.6 s early so the first syllable is not clipped; `L14.start` / `L14.end`
+  name one edge. Lyric positions need a curated translation; when the Spotify track's length is more than 3 s off the
+  record the lines were timed on, the page says the positions may be off.
+- **Talk after music** fades the music out and pauses it. A following `> play to …` goes back to where the fade began,
+  so nothing is lost under it.
+- **A line right under a host's line continues it**; a blank line ends the turn. Anything else is an error with its
+  line number.
+
+`npm run test:run` parses every script, resolves it against its album note, and checks that each track is heard whole
+once, that a talk-over fits in what is left of its track, and that the lines are written to be spoken (short turns, no
+written "-다" endings). To have Claude write one, ask for it (*"STRAY SHEEP 에피소드 써줘"*); the procedure is in
+[`.claude/skills/write-episode/SKILL.md`](.claude/skills/write-episode/SKILL.md).
+
+### Voices
+
+The hosts speak with the browser's own Korean voices (Web Speech API): nothing to set up and no key, but the voices
+depend on the browser. **Microsoft Edge** comes with natural-sounding Korean voices; Chrome has one network voice plus
+whatever Windows or macOS has installed. **Settings → Episodes** chooses each host's voice (with *Hear it*), the pace,
+and what the music does under a talk-over (*Music turned down* with its level, or *Music stops*). With a single voice
+the second host uses it at a lower pitch. With no Korean voice — or one that never starts — the lines are shown for
+as long as they would take to say, so an episode always runs. `Narrator` ([`narrator.ts`](src/episode/narrator.ts)) is
+the seam for another source of speech, such as pre-rendered audio files.
+
+### How it behaves
+
+- **The player is the listener's.** When playback is changed from outside the episode (another track, pause or play in
+  the Spotify app), the episode pauses itself instead of fighting for the player; *Continue* picks it up where it
+  stopped.
+- **Pause** stops the utterance in progress; continuing says it again from its start. Music resumes at its position.
+- **Fades and talk-over** use a gain on top of the listener's volume (`PlaybackEngine.setGain`): it never changes the
+  volume the listener set and is not stored. Only this browser's player takes smooth ramps. Another Spotify device gets
+  the talk-over level in one Web API request and no fades; a device whose volume cannot be set (most phones) has the
+  music stop for the talk instead.
+- **A whole track** is stopped a quarter of a second before its end, so Spotify never runs on into something else.
+  A stretch of several tracks (`a + b`) turns Spotify's shuffle off, because they have to come in the order written,
+  and leaves it off.
+- **Timing** is as good as the player's: a few tenths of a second for starts and stops in this browser, more on
+  another device. Positions inside instrumental passages have to be found by ear and written as `m:ss`.
+
+### What it is not
+
+- Not a podcast file: it cannot be exported, and it needs Spotify Premium like everything else that plays here.
+- Not for an audience. Spotify's [Developer Policy](https://developer.spotify.com/policy) says not to "segue, mix,
+  re-mix, or overlap any Spotify Content with any other audio content", which talking over (and arguably between)
+  tracks does. That is why this is a personal build — a site only allow-listed Spotify accounts can sign in to — and
+  not something to share. *Music stops* avoids the overlap.
+- Tested on the preview archive and in unit tests with a simulated player; real Spotify playback and real voices
+  were not available where it was written.
+
 ## Preview mode
 
 **Preview without Spotify** (`/?preview`) runs every surface on a sample archive with a simulated clock and no audio:
-Kenshi Yonezu, tripleS, Coldplay, Vaundy and Tyler, The Creator with their noted albums. Artist, album and noted-track
+Kenshi Yonezu, tripleS, Coldplay, Vaundy and Tyler, The Creator with their noted albums. `IGOR` has its
+[episode](#episodes): `/?preview#/episode/5zi7WsKlIiUXv09tbGLKsE` rehearses it on the simulated clock (silently, and with
+captions when the browser has no Korean voice). Artist, album and noted-track
 IDs are real Spotify IDs, so the preview shows the real notes; track lists and timings are sample data and every lyric
 line is an original test line. It never calls Spotify, LRCLIB or a translation service.
 
@@ -255,19 +361,35 @@ npm run build
 npm run check      # all of the above — run before pushing
 npm run lyrics:lines -- …   # curated-translation tool (see Curated translations)
 npm run notes:audit -- …    # notes against the quality floor (all, an artist key, or songs/<key>)
+npm run episode:lines -- …  # the numbered lyric lines an episode script can point at (a song key, or --album <key>)
 npm run notes:migrate -- --dry-run   # one-time: hash-keyed translations → song notes (already run)
 npm run preview    # serve dist/ on http://127.0.0.1:4173/
 ```
 
-## GitHub Pages deployment
+## Running potcast
 
-`.github/workflows/deploy-pages.yml` runs `npm run check`, builds with the repository base path and deploys `dist/`
-on every push to `main`. Set **Settings → Pages → Source: GitHub Actions** and these repository **Actions variables**:
+`.github/workflows/deploy-pages.yml` runs `npm run check`, builds with the repository base path and publishes `dist/`
+to GitHub Pages on every push to `main`: **`https://kingjnu-sakayume.github.io/potcast/`**. Pull requests are only
+checked (`check.yml`).
 
-- `VITE_SPOTIFY_CLIENT_ID`
-- `VITE_SPOTIFY_REDIRECT_URI=https://kingjnu-sakayume.github.io/player2/`
-- optionally `VITE_LYRICS_PROVIDER`, `VITE_TRANSLATION_PROVIDER`, `VITE_TRANSLATION_ENDPOINT`,
-  `VITE_TRANSLATION_TARGET`, `VITE_ENABLE_PREVIEW`
+It uses the same Spotify Developer app as player2. Three settings, once:
+
+1. **GitHub** — potcast → Settings → Pages → *Build and deployment* → Source: **GitHub Actions**. On GitHub Free,
+   Pages needs the repository to be public; a private repository needs GitHub Pro (free for students through GitHub
+   Education).
+2. **GitHub** — potcast → Settings → Secrets and variables → Actions → *Variables* → `VITE_SPOTIFY_CLIENT_ID`: the
+   same Client ID player2 uses (it is a public value, not a secret). Optionally `VITE_LYRICS_PROVIDER`,
+   `VITE_TRANSLATION_PROVIDER`, `VITE_TRANSLATION_ENDPOINT`, `VITE_TRANSLATION_TARGET`, `VITE_ENABLE_PREVIEW`.
+3. **Spotify** — [Developer Dashboard](https://developer.spotify.com/dashboard) → the app → Settings → Redirect URIs:
+   add `https://kingjnu-sakayume.github.io/potcast/` (with the trailing slash).
+
+**Who can use it.** The address is public whether the repository is public or private, so the built notes and episode
+scripts can be read by anyone who has the address. Signing in and playing is another matter: the Spotify app is in
+Development Mode, so only the accounts in its *User Management* can connect. The page carries `noindex`, so search
+engines leave it out.
+
+To run it on your own computer instead: copy player2's `.env.local`, then `npm ci && npm run dev`
+(`http://127.0.0.1:5173/` is already a registered redirect URI).
 
 ## Architecture
 
@@ -281,14 +403,16 @@ src/
   spotify/      typed Web API client (401 refresh, 429 backoff), endpoints, mappers, error taxonomy, scopes
   playback/     the single PlayerStore, Web Playback SDK adapter, Spotify engine, playback clock
   catalogue/    CatalogueSource (Spotify or preview) and query hooks
-  editorial/    Editorial and song notes (Markdown in notes/, + songs/*.translation.json), frontmatter loader and lookup
+  editorial/    Editorial and song notes (Markdown in notes/, + songs/*.translation.json), frontmatter loader and lookup;
+                notes/episodes/ holds the episode scripts
+  episode/      episode script parser and resolver, the runner that performs one, voices, the session provider
   lyrics/       LyricsProvider, LRC parser, lyric sync, cache, LRCLIB and mock providers
   translation/  TranslationProvider, language detection, browser / http / mock providers, curated translations
                 (brief + segment parsing, matching, time alignment)
   palette/      cover colour extraction and the contrast-safe accent
   preview/      sample archive, preview source and simulated engine
   components/   covers, notes + the right-hand column (desktop/) and sheets, search, queue, settings, transport
-  pages/        Now Playing, Artist, Album, Library
+  pages/        Now Playing, Artist, Album, Episode, Library
 ```
 
 **One source of truth for playback.** Web Playback SDK events (this browser) or `GET /me/player` polling (another
@@ -314,6 +438,9 @@ paper and the playing album's accent.
   releases 10 at a time, so the discography walks every page of the open group (one request per 10 releases, cached
   for 30 minutes, capped at 300). An artist with many singles takes a moment the first time. Followers and genres may
   be missing and are never required.
+- **Episodes** are performed live and only here (see [What it is not](#what-it-is-not)). An episode names tracks by
+  their song notes, so an album needs its notes first; lyric positions need the song's curated translation. On a phone
+  the voices come from the phone's browser while the music plays in the Spotify app, which has not been tried.
 - **Queue** is read-only (the Web API cannot reorder it). Episodes, ads and local files show the idle state.
 - **Playlists** play as a context; there is no playlist page.
 - **Autoplay.** The first play in a session may need one click or key press.

@@ -1,7 +1,7 @@
 import type { DeviceInfo, TrackIdentity } from '../domain/types';
 import { shuffled } from '../lib/shuffle';
 import { parseSpotifyUri } from '../lib/spotifyUri';
-import type { PlaybackEngine } from '../playback/engine';
+import type { Ducking, PlaybackEngine } from '../playback/engine';
 import { monotonicNow, positionAt } from '../playback/playbackClock';
 import type { PlayerStore } from '../playback/playerStore';
 import { NO_DISALLOWS, type PlayRequest, type PlayerSnapshot, type QueueSnapshot } from '../playback/types';
@@ -33,6 +33,7 @@ export class PreviewPlaybackEngine implements PlaybackEngine {
   private shuffle = false;
   private contextUri: string | null = null;
   private volume = 0.6;
+  private gain = 1;
   private endTimer: ReturnType<typeof setTimeout> | null = null;
   private running = false;
 
@@ -58,6 +59,7 @@ export class PreviewPlaybackEngine implements PlaybackEngine {
 
   stop(): void {
     this.running = false;
+    this.gain = 1;
     this.clearEnd();
   }
 
@@ -106,6 +108,20 @@ export class PreviewPlaybackEngine implements PlaybackEngine {
       volume: this.volume,
       device: { ...PREVIEW_DEVICE, volumePercent: Math.round(this.volume * 100) },
     });
+  }
+
+  ducking(): Ducking {
+    return 'smooth';
+  }
+
+  async setGain(gain: number): Promise<void> {
+    // No audio to turn down; kept so an episode can be rehearsed in the preview.
+    this.gain = Math.min(1, Math.max(0, gain));
+  }
+
+  /** The current fade / talk-over factor (preview and tests). */
+  currentGain(): number {
+    return this.gain;
   }
 
   async setShuffle(shuffle: boolean): Promise<void> {

@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
-import { useEngine } from '../playback/hooks';
+import { usePlaybackToggle } from '../episode/EpisodeProvider';
 import { shortcutBlocked } from './shortcuts';
 import { useShell } from './shellContext';
 
 /**
- * "/" opens search; Space toggles playback when focus is not on a control
- * (so it never hijacks buttons, links or sliders); F toggles the desktop's
- * Focus Mode.
+ * "/" opens search; Space toggles playback (or a running episode) when focus
+ * is not on a control, so it never hijacks buttons, links or sliders; F
+ * toggles the desktop's Focus Mode.
  */
 export function GlobalShortcuts() {
-  const engine = useEngine();
+  const { toggle } = usePlaybackToggle();
   const shell = useShell();
 
   useEffect(() => {
@@ -30,13 +30,12 @@ export function GlobalShortcuts() {
       const onPage = !target || target === document.body || target.id === 'main';
       if (event.key === ' ' && onPage) {
         event.preventDefault();
-        engine.activateAudio();
-        void engine.togglePlay();
+        toggle();
       }
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [engine, shell]);
+  }, [toggle, shell]);
 
   return null;
 }

@@ -3,6 +3,7 @@ import { useAppServices, useAuthState } from '../app/appContext';
 import { useSessionControls } from '../app/sessionControls';
 import { useSession } from '../app/sessionContext';
 import { useIsMobile } from '../app/useIsMobile';
+import { EpisodeSettings } from '../episode/EpisodeSettings';
 import { useEngine, usePlayerSelector } from '../playback/hooks';
 import { usePreferences } from '../preferences/preferences';
 import { BottomSheet } from './BottomSheet';
@@ -33,7 +34,7 @@ export function SettingsPanel({ open, onClose }: { open: boolean; onClose: () =>
   );
 }
 
-/** Account, device, translation and (phone) install or (desktop) the keyboard. */
+/** Account, device, translation, episodes and (phone) install or (desktop) the keyboard. */
 export function SettingsBody() {
   const { config, auth } = useAppServices();
   const authState = useAuthState();
@@ -110,6 +111,7 @@ export function SettingsBody() {
           </button>
         </div>
       )}
+      <EpisodeSettings />
       {mobile ? (
         <InstallHint />
       ) : (

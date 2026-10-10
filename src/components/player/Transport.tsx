@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { usePlaybackToggle } from '../../episode/EpisodeProvider';
 import { formatDuration, formatDurationForSpeech } from '../../lib/format';
 import { useEngine, usePlaybackPosition, usePlayerSnapshot, useProgressProperty } from '../../playback/hooks';
 import { NextIcon, PlayIcon, PreviousIcon, ShuffleIcon } from '../icons';
@@ -45,9 +46,10 @@ export function Progress() {
 export function Transport() {
   const snapshot = usePlayerSnapshot();
   const engine = useEngine();
+  // While an episode is running, play / pause is the episode's (see usePlaybackToggle).
+  const { paused, episode, toggle } = usePlaybackToggle();
   const hasTrack = Boolean(snapshot.track);
-  const paused = snapshot.paused;
-  const playDisabled = !hasTrack || (paused ? snapshot.disallows.resuming : snapshot.disallows.pausing);
+  const playDisabled = !episode && (!hasTrack || (paused ? snapshot.disallows.resuming : snapshot.disallows.pausing));
 
   return (
     <div className="transport">
@@ -76,13 +78,10 @@ export function Transport() {
         type="button"
         className="play"
         title={paused ? 'Play (Space)' : 'Pause (Space)'}
-        aria-label={paused ? 'Play' : 'Pause'}
+        aria-label={episode ? (paused ? 'Continue episode' : 'Pause episode') : paused ? 'Play' : 'Pause'}
         aria-keyshortcuts="Space"
         disabled={playDisabled}
-        onClick={() => {
-          engine.activateAudio();
-          void engine.togglePlay();
-        }}
+        onClick={toggle}
       >
         <PlayIcon paused={paused} />
       </button>
