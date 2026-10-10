@@ -75,6 +75,11 @@ export class RecordedNarrator implements Narrator {
     return !this.gaveUp && this.library.getManifest() ? 'recorded' : this.fallback.mode();
   }
 
+  fallbackMode(): Exclude<NarrationMode, 'recorded'> {
+    const mode = this.fallback.mode();
+    return mode === 'recorded' ? (this.fallback.fallbackMode?.() ?? 'captions') : mode;
+  }
+
   subscribe(listener: () => void): () => void {
     this.listeners.add(listener);
     const unsubscribeLibrary = this.library.subscribe(listener);

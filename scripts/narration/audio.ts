@@ -3,8 +3,9 @@ import { createMp3Encoder } from 'wasm-media-encoders';
 /**
  * From the model's raw audio to the clip that is published: the rumble below
  * the voice filtered out, silence trimmed off both ends, a pause left after
- * the last word, every clip brought to the same loudness, the edges faded so
- * that nothing clicks, and MP3 (which every browser and phone plays).
+ * the last word, every clip brought to the same loudness with its peaks kept
+ * under full scale, the edges faded so that nothing clicks, and MP3 (which
+ * every browser and phone plays).
  *
  * Changing anything here changes how clips sound: bump the `finish` number in
  * NARRATION_ENGINE.id (src/episode/narration/clip.ts) so they are rendered again.
@@ -26,7 +27,10 @@ const FADE_OUT_MS = 25;
 const HIGH_PASS_HZ = 60;
 /** The loudness clips are brought to: RMS of the voiced parts, about -17 dBFS. */
 const TARGET_RMS = 0.14;
-const PEAK_CEILING = 0.97;
+/** No sample goes above this (-1 dBFS): MP3 encoding overshoots a little, and the room is for that. */
+const PEAK_CEILING = 0.89;
+/** How far around a peak the limiter eases the level down and back up. */
+const LIMITER_REACH_MS = 5;
 const MAX_GAIN = 4;
 /** MP3 bitrate in kbit/s: mono speech at 44.1 kHz is clean at this rate. */
 export const MP3_BITRATE = 64;
@@ -81,6 +85,51 @@ function highPass(samples: Float32Array, sampleRate: number, cutoffHz: number): 
   }
 }
 
+/**
+ * Brings every sample to `ceiling` or under without clipping: around a peak
+ * the level is eased down and back up over a few milliseconds, which is not
+ * heard, where cutting the peak off would be. Done in place.
+ */
+export function limit(samples: Float32Array, sampleRate: number, ceiling: number): void {
+  const n = samples.length;
+  const reach = Math.max(1, Math.round((LIMITER_REACH_MS / 1000) * sampleRate));
+  // The gain each sample would need by itself.
+  const wanted = new Float32Array(n);
+  let over = false;
+  for (let i = 0; i < n; i += 1) {
+    const level = Math.abs(samples[i]!);
+    wanted[i] = level > ceiling ? ceiling / level : 1;
+    if (level > ceiling) over = true;
+  }
+  if (!over) return;
+
+  // The lowest of those within reach on either side (a sliding minimum), so the gain is already down when a peak arrives…
+  const lowest = new Float32Array(n);
+  const queue = new Int32Array(n);
+  let head = 0;
+  let tail = 0;
+  for (let i = 0; i < n + reach; i += 1) {
+    if (i < n) {
+      while (tail > head && wanted[queue[tail - 1]!]! >= wanted[i]!) tail -= 1;
+      queue[tail] = i;
+      tail += 1;
+    }
+    const centre = i - reach;
+    if (centre < 0) continue;
+    while (queue[head]! < centre - reach) head += 1;
+    lowest[centre] = wanted[queue[head]!]!;
+  }
+  // …averaged over the same span, so it moves smoothly. Every value averaged for a sample is at most what that
+  // sample needs, so the average is too.
+  const running = new Float64Array(n + 1);
+  for (let i = 0; i < n; i += 1) running[i + 1] = running[i]! + lowest[i]!;
+  for (let i = 0; i < n; i += 1) {
+    const from = Math.max(0, i - reach);
+    const to = Math.min(n, i + reach + 1);
+    samples[i] = samples[i]! * ((running[to]! - running[from]!) / (to - from));
+  }
+}
+
 /** The pause a clip of `text` ends with. */
 export function pauseAfter(text: string): number {
   return /[.!?…]$/.test(text.replace(/\s*<[a-z]+>\s*$/, '')) ? SENTENCE_PAUSE_MS : CLAUSE_PAUSE_MS;
@@ -103,12 +152,15 @@ export function finishClip(raw: Float32Array, sampleRate: number, tailMs = SENTE
   const samples = new Float32Array(last + 1 - start + Math.max(frames(tailMs), voiced.length - (last + 1 - start)));
   samples.set(voiced);
 
-  const before = measure(samples);
-  const gain = Math.min(TARGET_RMS / before.rms, PEAK_CEILING / before.peak, MAX_GAIN);
+  // Every clip to the same loudness; the few peaks that would then go over the ceiling are eased under it.
+  const gain = Math.min(TARGET_RMS / measure(samples).rms, MAX_GAIN);
+  for (let i = 0; i < voiced.length; i += 1) samples[i] = samples[i]! * gain;
+  limit(samples, sampleRate, PEAK_CEILING);
+
   const fadeIn = Math.min(frames(FADE_IN_MS), voiced.length >> 1);
   const fadeOut = Math.min(frames(FADE_OUT_MS), voiced.length >> 1);
   for (let i = 0; i < voiced.length; i += 1) {
-    let level = gain;
+    let level = 1;
     if (i < fadeIn) level *= i / fadeIn;
     const fromEnd = voiced.length - 1 - i;
     if (fromEnd < fadeOut) level *= fromEnd / fadeOut;

@@ -19,7 +19,7 @@ import { withoutUnspokenMarks } from '../speechText';
  * (scripts/narration/audio.ts) renders everything again.
  */
 export const NARRATION_ENGINE = {
-  id: 'supertonic-3/steps-10/speed-1.05/finish-2',
+  id: 'supertonic-3/steps-10/speed-1.05/finish-3',
   name: 'Supertonic 3',
   steps: 10,
   speed: 1.05,

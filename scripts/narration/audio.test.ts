@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CLAUSE_PAUSE_MS, encodeMp3, finishClip, measure, MP3_BITRATE, pauseAfter, SENTENCE_PAUSE_MS } from './audio';
+import { CLAUSE_PAUSE_MS, encodeMp3, finishClip, limit, measure, MP3_BITRATE, pauseAfter, SENTENCE_PAUSE_MS } from './audio';
 
 const RATE = 44_100;
 const frames = (ms: number) => Math.round((ms / 1000) * RATE);
@@ -32,8 +32,18 @@ describe('finishing a clip', () => {
     expect(quiet.rms).toBeGreaterThan(0.12);
     expect(quiet.rms).toBeLessThan(0.15);
     expect(Math.abs(quiet.rms - loud.rms)).toBeLessThan(0.01);
-    expect(quiet.peak).toBeLessThanOrEqual(0.975);
-    expect(loud.peak).toBeLessThanOrEqual(0.975);
+    expect(quiet.peak).toBeLessThanOrEqual(0.89);
+    expect(loud.peak).toBeLessThanOrEqual(0.89);
+  });
+
+  it('reaches that loudness even for a take with sharp peaks, by easing the peaks down', () => {
+    // A steady tone with a much louder click every 100 ms: levelled by its peaks alone it would end up far too quiet.
+    const peaky = recording({ level: 0.05 });
+    for (let i = frames(250); i < frames(1150); i += frames(100)) peaky[i] = 0.9;
+    const clip = finishClip(peaky, RATE);
+    // Scaled down as a whole until its clicks fit, it would be at about 0.035.
+    expect(clip.rms).toBeGreaterThan(0.11);
+    expect(clip.peak).toBeLessThanOrEqual(0.89 + 1e-6);
   });
 
   it('starts and ends without a click', () => {
@@ -60,6 +70,33 @@ describe('finishing a clip', () => {
     half.fill(0.5, 0, 500);
     expect(measure(half)).toEqual({ rms: 0.5, peak: 0.5 });
     expect(measure(new Float32Array(10))).toEqual({ rms: 0, peak: 0 });
+  });
+});
+
+describe('the limiter', () => {
+  it('leaves a signal under the ceiling exactly as it was', () => {
+    const quiet = Float32Array.from({ length: 2000 }, (_, i) => 0.5 * Math.sin(i / 7));
+    const copy = Float32Array.from(quiet);
+    limit(quiet, RATE, 0.89);
+    expect(quiet).toEqual(copy);
+  });
+
+  it('brings every sample under the ceiling and moves the level smoothly around a peak', () => {
+    const samples = new Float32Array(4000).fill(0.5);
+    samples[2000] = 1.5;
+    samples[0] = 1.2;
+    samples[3999] = -1.4;
+    limit(samples, RATE, 0.89);
+    expect(Math.max(...samples.map(Math.abs))).toBeLessThanOrEqual(0.89 + 1e-6);
+    // Far from any peak nothing has changed; next to one the level has already come down part of the way.
+    expect(samples[1000]).toBeCloseTo(0.5, 6);
+    expect(samples[2000 - 150]!).toBeLessThan(0.5);
+    expect(samples[2000 - 150]!).toBeGreaterThan(0.3);
+    // No jumps: from one sample to the next the level never moves by more than a few percent.
+    for (let i = 1500; i < 2500; i += 1) {
+      if (i === 2000 || i === 2001) continue;
+      expect(Math.abs(samples[i]! - samples[i - 1]!)).toBeLessThan(0.02);
+    }
   });
 });
 

@@ -31,6 +31,8 @@ export interface EpisodeState {
   trackIndex: number;
   notice: EpisodeNotice | null;
   narration: NarrationMode;
+  /** What says a line that has no recording: the same as `narration` unless that is `recorded`. */
+  spareNarration: Exclude<NarrationMode, 'recorded'>;
 }
 
 export interface RunnerOptions {
@@ -101,6 +103,7 @@ const IDLE: EpisodeState = {
   trackIndex: 0,
   notice: null,
   narration: 'captions',
+  spareNarration: 'captions',
 };
 
 /**
@@ -143,7 +146,7 @@ export class EpisodeRunner {
     this.narrator = dependencies.narrator;
     this.options = dependencies.options;
     this.now = dependencies.now ?? monotonicNow;
-    this.state = { ...IDLE, narration: this.narrator.mode() };
+    this.state = { ...IDLE, ...this.narration() };
   }
 
   /* ── Store ───────────────────────────────────────────────────────────── */
@@ -162,7 +165,7 @@ export class EpisodeRunner {
    * mounted; the returned function stops the episode and disconnects.
    */
   attach(): () => void {
-    const unsubscribeNarrator = this.narrator.subscribe(() => this.update({ narration: this.narrator.mode() }));
+    const unsubscribeNarrator = this.narrator.subscribe(() => this.update(this.narration()));
     // A tab closed in the middle of a fade must not leave the device turned down.
     const restore = () => void this.engine.setGain(1);
     if (typeof window !== 'undefined') window.addEventListener('pagehide', restore);
@@ -175,7 +178,12 @@ export class EpisodeRunner {
 
   /** Re-reads whether lines are spoken or only shown (the voices loaded, or the listener chose another). */
   refresh(): void {
-    this.update({ narration: this.narrator.mode() });
+    this.update(this.narration());
+  }
+
+  private narration(): Pick<EpisodeState, 'narration' | 'spareNarration'> {
+    const narration = this.narrator.mode();
+    return { narration, spareNarration: narration === 'recorded' ? (this.narrator.fallbackMode?.() ?? 'captions') : narration };
   }
 
   private update(patch: Partial<EpisodeState>): void {
@@ -193,7 +201,7 @@ export class EpisodeRunner {
     this.abort();
     this.positions.clear();
     this.unlock();
-    this.update({ ...IDLE, narration: this.narrator.mode(), episode });
+    this.update({ ...IDLE, ...this.narration(), episode });
     this.enter(cueIndex, lineIndex, 'jump');
   }
 
@@ -249,7 +257,7 @@ export class EpisodeRunner {
     if (!this.state.episode) return;
     const wasPlaying = this.state.status === 'playing';
     this.abort();
-    this.update({ ...IDLE, narration: this.narrator.mode() });
+    this.update({ ...IDLE, ...this.narration() });
     if (wasPlaying) void this.settleMusic();
     else void this.applyGain(1);
   }

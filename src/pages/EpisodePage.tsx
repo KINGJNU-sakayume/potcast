@@ -14,6 +14,7 @@ import { PlayingMark } from '../components/PlayingMark';
 import { StateView } from '../components/StateView';
 import { getAlbumNote } from '../editorial/lookup';
 import { songNotes } from '../editorial/songs';
+import { readBookmark } from '../episode/bookmark';
 import { useEpisodeRunner } from '../episode/episodeContext';
 import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
@@ -22,6 +23,7 @@ import { useNarrationManifest } from '../episode/narration/useNarration';
 import { albumEpisodeTracks, episodeMusicMs, episodeRelease, episodeTalkMs, resolveEpisode } from '../episode/resolve';
 import type { EpisodeState } from '../episode/runner';
 import { captionText, splitUtterances } from '../episode/speechText';
+import { hasSungLines, sungLine } from '../episode/sungLine';
 import { EpisodeError, type Cue, type Episode, type MusicCue, type SpokenLine } from '../episode/types';
 import { formatDuration, formatRuntime, joinArtistNames } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
@@ -63,7 +65,7 @@ function chapterOf(episode: Episode, cueIndex: number): { title: string; number:
 
 /* ── Now: the line being said, or the music being played ───────────────── */
 
-function NowMusic({ cue, trackIndex, playing }: { cue: MusicCue; trackIndex: number; playing: boolean }) {
+function NowMusic({ cue, trackIndex, playing, translate }: { cue: MusicCue; trackIndex: number; playing: boolean; translate: boolean }) {
   const position = usePlaybackPosition();
   const index = Math.min(trackIndex, cue.tracks.length - 1);
   const track = cue.tracks[index]!;
@@ -72,6 +74,8 @@ function NowMusic({ cue, trackIndex, playing }: { cue: MusicCue; trackIndex: num
   const until = isLast ? (cue.untilMs ?? track.durationMs) : track.durationMs;
   const fraction = until > from ? Math.min(1, Math.max(0, (position - from) / (until - from))) : 0;
   const cueText = listeningCue(cue, index);
+  // The line being sung, in the song note's translation: the episode's own subtitles for the music.
+  const lyric = translate ? sungLine(track, position) : null;
   return (
     <>
       <div className="ep-now-kicker">
@@ -87,6 +91,12 @@ function NowMusic({ cue, trackIndex, playing }: { cue: MusicCue; trackIndex: num
       {cueText && (
         <p className="ep-now-next" lang="ko">
           {cueText}
+        </p>
+      )}
+      {/* Always there while a translated song plays, so the panel does not jump between lines. */}
+      {translate && hasSungLines(track) && (
+        <p className="ep-now-lyric" lang="ko" aria-live="off" data-empty={lyric ? undefined : ''}>
+          {lyric ?? '\u00a0'}
         </p>
       )}
       <div className="ep-now-progress" aria-hidden="true">
@@ -127,7 +137,7 @@ function NowSpoken({ episode, cue, state }: { episode: Episode; cue: Exclude<Cue
   );
 }
 
-function NowPanel({ episode, state, active }: { episode: Episode; state: EpisodeState; active: boolean }) {
+function NowPanel({ episode, state, active, translate }: { episode: Episode; state: EpisodeState; active: boolean; translate: boolean }) {
   let content: ReactNode;
   const cue = active ? episode.cues[state.cueIndex] : undefined;
   if (!active) {
@@ -152,7 +162,7 @@ function NowPanel({ episode, state, active }: { episode: Episode; state: Episode
       </>
     );
   } else if (cue.type === 'music') {
-    content = <NowMusic cue={cue} trackIndex={state.trackIndex} playing={state.status === 'playing'} />;
+    content = <NowMusic cue={cue} trackIndex={state.trackIndex} playing={state.status === 'playing'} translate={translate} />;
   } else {
     content = <NowSpoken episode={episode} cue={cue} state={state} />;
   }
@@ -345,7 +355,7 @@ export function EpisodePage() {
   // How many of the hosts' lines the site has recordings of; the rest fall to the browser's voice.
   const recorded = coverage(episode, (key) => recordedMs(key) !== undefined);
   const engineName = narration?.engine.name ?? 'Recorded';
-  const browserVoice = state.narration === 'captions' ? 'Captions only' : 'This browser’s Korean voice';
+  const browserVoice = state.spareNarration === 'captions' ? 'Captions only' : 'This browser’s Korean voice';
   const voiceLabel =
     recorded.recorded === 0
       ? browserVoice
@@ -354,15 +364,19 @@ export function EpisodePage() {
         : `Recorded in part · ${recorded.recorded} of ${recorded.total} lines`;
   const titleLang = detectLineLanguage(data.name);
 
+  // Where an earlier visit left this episode: Play carries on from there, and the top is one more button away.
+  const bookmark = active ? null : readBookmark(episode);
+  const leftAt = bookmark ? chapterOf(episode, bookmark.cueIndex) : null;
+
   const playOrPause = () => {
-    if (!active) runner.start(episode);
+    if (!active) runner.start(episode, bookmark?.cueIndex ?? 0, bookmark?.lineIndex ?? 0);
     else runner.toggle();
   };
   const jump = (cueIndex: number, lineIndex: number) => {
     if (active) runner.jump(cueIndex, lineIndex);
     else runner.start(episode, cueIndex, lineIndex);
   };
-  const mainLabel = !active ? 'Play episode' : playing ? 'Pause' : ended ? 'Play again' : 'Continue';
+  const mainLabel = !active ? (bookmark ? 'Continue' : 'Play episode') : playing ? 'Pause' : ended ? 'Play again' : 'Continue';
 
   return (
     <div className="view active">
@@ -401,7 +415,7 @@ export function EpisodePage() {
                   <span>{voiceLabel}</span>
                 </div>
               </div>
-              {recorded.recorded < recorded.total && state.narration === 'captions' && (
+              {recorded.recorded < recorded.total && state.spareNarration === 'captions' && (
                 <p className="ep-hint">
                   {recorded.recorded > 0 ? 'Some lines have no recording yet, and this' : 'This'} browser has no Korean voice to speak with, so{' '}
                   {recorded.recorded > 0 ? 'those lines' : 'the hosts’ lines'} are shown for as long as they would take to say. Microsoft Edge comes with
@@ -415,6 +429,11 @@ export function EpisodePage() {
                 {active && (
                   <button type="button" className="plain-action" onClick={() => runner.stop()}>
                     End episode
+                  </button>
+                )}
+                {bookmark && (
+                  <button type="button" className="plain-action" onClick={() => runner.start(episode)}>
+                    From the top
                   </button>
                 )}
                 <Link className="plain-action" to={`/album/${data.id}`}>
@@ -435,10 +454,16 @@ export function EpisodePage() {
               <h2 id="episode-title" lang="ko">
                 {episode.title}
               </h2>
-              <span lang="ko">{chapter ? `${chapter.number} / ${episode.chapters.length} · ${chapter.title}` : `${episode.chapters.length} chapters · about ${minutes}`}</span>
+              <span lang="ko">
+                {chapter
+                  ? `${chapter.number} / ${episode.chapters.length} · ${chapter.title}`
+                  : leftAt
+                    ? `Left at ${leftAt.number} / ${episode.chapters.length} · ${leftAt.title}`
+                    : `${episode.chapters.length} chapters · about ${minutes}`}
+              </span>
             </div>
 
-            <NowPanel episode={episode} state={state} active={active} />
+            <NowPanel episode={episode} state={state} active={active} translate={preferences.translationEnabled} />
 
             {active && state.notice && (
               <p className="playback-state alert ep-notice" role="alert">

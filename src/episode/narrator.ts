@@ -34,6 +34,8 @@ export interface SpeakOptions extends Omit<Utterance, 'text'> {
 
 export interface Narrator {
   mode(): NarrationMode;
+  /** What says a line that has no recording, for a narrator whose mode is `recorded`. */
+  fallbackMode?(): Exclude<NarrationMode, 'recorded'>;
   /** Called when `mode()` may have changed. */
   subscribe(listener: () => void): () => void;
   /** Call inside a click or key handler: some browsers only let speech start from one. */
