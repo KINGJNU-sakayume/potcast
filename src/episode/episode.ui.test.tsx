@@ -67,25 +67,26 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     expect(screen.getByRole('link', { name: 'Open the album' })).toHaveAttribute('href', '#/album/052EiTRYh35MuDVJN9Emdh');
   });
 
-  it('plays from the top with the host\'s line in front of the cover, and pauses and continues', async () => {
+  it('plays from the top with the host\'s line in the lyrics\' place, and pauses and continues', async () => {
     const user = userEvent.setup();
     renderApp(`#/episode/${IGOR}`);
     await playEpisode(user);
 
     expect(within(hosts()).getByText('진행')).toBeInTheDocument();
     expect(within(hosts()).getByText(FIRST_LINE)).toBeInTheDocument();
-    // The cover, the title and the lyrics' place already stand for the track the hosts are leading up to.
-    expect(screen.getByRole('heading', { level: 1, name: "IGOR'S THEME" })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: 'Lyrics' })).toBeInTheDocument();
+    // Nothing is sounding yet: the cover and the title stay with the album, and the track the hosts are
+    // leading up to is named as what is next, under their line.
+    expect(screen.getByRole('heading', { level: 1, name: 'IGOR' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'The hosts' })).toBeInTheDocument();
     expect(within(now()).getByText('Up next')).toBeInTheDocument();
     expect(within(now()).getByText('From the start to 0:25')).toBeInTheDocument();
     expect(screen.getByText('Episode · 1 / 13')).toBeInTheDocument();
 
     const script = await openScript(user);
     expect(within(script).getByRole('button', { current: true })).toHaveTextContent(FIRST_LINE);
-    // The script takes the lyrics' place; the host's line stays where it was.
+    // The script takes the lyrics' place, and with it the host's line: the line being said is its current row.
     expect(screen.getByRole('heading', { level: 2, name: 'Script' })).toBeInTheDocument();
-    expect(within(hosts()).getByText(FIRST_LINE)).toBeInTheDocument();
+    expect(within(now()).queryByRole('group', { name: 'The hosts' })).not.toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: 'Close the script' }));
     expect(screen.queryByRole('group', { name: 'Script' })).not.toBeInTheDocument();
 
@@ -100,8 +101,8 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     const script = await openScript(user);
 
     await user.click(within(script).getByRole('button', { name: /그 인물의 이름이 이고르예요/ }));
-    expect(within(hosts()).getByText('해설')).toBeInTheDocument();
-    expect(within(hosts()).getByText('그 인물의 이름이 이고르예요.')).toBeInTheDocument();
+    expect(within(script).getByRole('button', { current: true })).toHaveTextContent('해설');
+    expect(within(script).getByRole('button', { current: true })).toHaveTextContent('그 인물의 이름이 이고르예요.');
 
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
     expect(screen.getByRole('heading', { level: 1, name: 'EARFQUAKE' })).toBeInTheDocument();
@@ -113,7 +114,7 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     expect(within(script).getByRole('button', { current: true })).toHaveTextContent('0:46–1:11');
 
     await user.click(screen.getByRole('button', { name: 'Next part' }));
-    expect(within(hosts()).getByText('화성은 똑같이 돌아오는데 안정감이 생기지 않아요.')).toBeInTheDocument();
+    expect(within(script).getByRole('button', { current: true })).toHaveTextContent('화성은 똑같이 돌아오는데 안정감이 생기지 않아요.');
     await user.click(screen.getByRole('button', { name: 'Previous part' }));
     expect(within(now()).queryByRole('group', { name: 'The hosts' })).not.toBeInTheDocument();
   });
@@ -160,7 +161,8 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     const user = userEvent.setup();
     renderApp(`#/episode/${IGOR}`);
     await playEpisode(user);
-    await user.click(within(now()).getByRole('link', { name: 'IGOR' }));
+    // The hosts are still talking: the album stands under the cover, linked as on the intro.
+    await user.click(within(now()).getByRole('link', { name: 'Album' }));
     expect(await screen.findByRole('link', { name: 'Back to the episode' })).toHaveAttribute('href', `#/episode/${IGOR}`);
   });
 
@@ -268,17 +270,18 @@ describe('a track from outside the album', () => {
     expect(within(now()).queryByRole('img', { name: /21st Century Schizoid Man cover/ })).not.toBeInTheDocument();
   });
 
-  it('is announced on the cover while the hosts are still leading up to it', async () => {
+  it('is announced as what is next while the hosts are still leading up to it', async () => {
     const user = userEvent.setup();
     renderApp(`#/episode/${MBDTF}`);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /그 목소리는 킹 크림슨의 것이에요/ }));
     await user.click(screen.getByRole('button', { name: 'Close the script' }));
     expect(within(hosts()).getByText('그 목소리는 킹 크림슨의 것이에요.')).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 1, name: '21st Century Schizoid Man' })).toBeInTheDocument();
+    // Not on yet: the album keeps the cover and the title; the track is named under the hosts' line.
+    expect(screen.queryByRole('heading', { level: 1, name: '21st Century Schizoid Man' })).not.toBeInTheDocument();
+    expect(within(now()).queryByRole('img', { name: /21st Century Schizoid Man cover/ })).not.toBeInTheDocument();
     expect(within(now()).getByText('Up next')).toBeInTheDocument();
-    const pair = within(now()).getByRole('list', { name: 'What is played, and what it is heard against' });
-    for (const item of within(pair).getAllByRole('listitem')) expect(item).not.toHaveAttribute('aria-current');
+    expect(within(now()).getByText(/King Crimson · 1969/)).toBeInTheDocument();
   });
 });
 

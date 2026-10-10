@@ -7,25 +7,49 @@
  * that marks the stretch being played, and the script.
  */
 
-/* The cover, and a second one in front of it for a track from outside the album */
+/* The cover of what is sounding (a track from outside the album takes the whole square) */
 .ep-cover { position: relative; container-type: inline-size; }
-.ep-cover-front, .ep-cover-behind { position: absolute; inset: 0; transition: inset .45s var(--ease); }
-.ep-cover[data-outside] .ep-cover-front { inset: 5.2% 0 0 5.2%; }
-.ep-cover[data-outside] .ep-cover-behind { inset: 0 5.2% 5.2% 0; }
+.ep-cover-front { position: absolute; inset: 0; }
+/* Under its title: the album it is played for, and where the episode goes back to */
+.ep-return { display: flex; align-items: center; gap: 10px; margin: 12px 0 0; font-size: 13px; line-height: 1.4; color: var(--muted); }
+.ep-return b { font-weight: 500; color: var(--ink); }
+.ep-return-cover { flex: none; width: 28px; height: 28px; box-shadow: 0 0 0 1px var(--line-soft); }
+.ep-return-cover .cover-frame, .ep-return-cover .cover { width: 100%; height: 100%; }
+.ep-return-cover .cover-plate > span { display: none; }
 
-/* The hosts' line: one layer in front of the cover, reaching a little past its right edge */
-.ep-caption { position: absolute; z-index: 2; left: 5.3cqw; right: calc(-1 * clamp(14px, 2.9vw, 56px)); bottom: 6.5cqw; display: grid; gap: 1.7cqw; padding: 3.8cqw 5.3cqw 4.4cqw; background: var(--ink); color: var(--bg); box-shadow: 0 34px 60px -30px rgba(0, 0, 0, .5); animation: lyric-in .32s var(--ease); }
-.ep-cover[data-outside] .ep-caption { left: 10.5cqw; }
+/* The hosts' line over the music: a band across the foot of the cover, inside its edges, so it reads as part
+   of the cover and never reaches into the lyrics' column. */
+.ep-caption { position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; display: grid; gap: 1.2cqw; padding: 3.4cqw 5.3cqw 3.8cqw; background: color-mix(in srgb, var(--ink) 94%, transparent); color: var(--bg); animation: lyric-in .32s var(--ease); }
 .ep-caption-who { display: flex; align-items: baseline; gap: 14px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: color-mix(in srgb, var(--bg) 66%, var(--ink)); }
-.ep-caption-who .ep-speaker { color: var(--bg); }
-.ep-caption-line { margin: 0; font-size: clamp(17px, 5cqw, 46px); line-height: 1.36; letter-spacing: -.03em; font-weight: 500; word-break: keep-all; overflow-wrap: anywhere; text-wrap: pretty; animation: lyric-in .36s var(--ease); }
-/* Over the music the slab is smaller: the lyrics go on beside it. */
-.ep-caption[data-over] { gap: 1.3cqw; padding: 3cqw 4.4cqw 3.4cqw; }
-.ep-caption[data-over] .ep-caption-line { font-size: clamp(15px, 3.85cqw, 36px); line-height: 1.42; letter-spacing: -.025em; }
+.ep-caption-who .ep-speaker { color: var(--bg); font-weight: 500; }
+.ep-caption-line { margin: 0; font-size: clamp(15px, 3.85cqw, 36px); line-height: 1.42; letter-spacing: -.025em; font-weight: 500; word-break: keep-all; overflow-wrap: anywhere; text-wrap: pretty; animation: lyric-in .36s var(--ease); }
+
+/* The hosts' line while the music is stopped: the lyrics' place, read as lyrics are */
+.ep-talk .ep-speaker { display: block; font-size: 13px; font-weight: 500; letter-spacing: 0; color: var(--main-text); }
+.ep-talk-now { display: grid; gap: 12px; max-width: var(--lyric-width); }
+.ep-talk-line { margin: 0; max-width: 22em; font-size: clamp(24px, min(2.3vw, 3.9vh), 50px); line-height: 1.36; letter-spacing: -.03em; font-weight: 500; word-break: keep-all; overflow-wrap: anywhere; text-wrap: pretty; animation: lyric-in .36s var(--ease); }
+.ep-talk-line [data-at] { transition: color .3s ease; }
+.ep-talk-line [data-at='said'] { color: var(--muted); }
+.ep-talk-line [data-at='now'] { color: var(--ink); }
+.ep-talk-line [data-at='ahead'] { color: color-mix(in srgb, var(--ink) 38%, transparent); }
+.ep-talk-around { margin: 0; max-width: min(var(--lyric-width), 46em); font-size: clamp(15px, min(1.2vw, 2vh), 24px); line-height: 1.55; color: var(--dim); word-break: keep-all; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.ep-talk-around .ep-speaker { display: inline; margin-right: .8em; font-size: .78em; color: var(--dim); }
+.ep-talk-before { margin-bottom: 28px; }
+.ep-talk-after { margin-top: 28px; }
+/* What the hosts are leading up to: small, under what they say */
+.ep-upnext { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 18px; align-items: baseline; margin-top: 46px; padding-top: 16px; max-width: var(--lyric-width); border-top: 1px solid var(--line); }
+.ep-upnext-kicker { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--main-text); white-space: nowrap; }
+.ep-upnext-kicker em { display: block; margin-top: 4px; font-style: normal; color: var(--dim); }
+.ep-upnext-text { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.ep-upnext-text b { font-size: 17px; line-height: 1.3; letter-spacing: -.015em; font-weight: 500; color: var(--ink); }
+.ep-upnext-text b i { font-style: normal; font-weight: 400; color: var(--muted); }
+.ep-upnext-text span { font-size: 13.5px; line-height: 1.5; color: var(--muted); word-break: keep-all; }
+.ep-upnext-range { font-size: 12.5px; color: var(--dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 /* The lyrics' place while there are no lyrics to show */
 .ep-speaker { color: var(--main-text); }
 .ep-kicker { margin: 0 0 20px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
+.ep-panel .ep-title[data-hang] { text-indent: -.5em; }
 .ep-panel .ep-title { font-size: clamp(26px, 2.9vw, 46px); line-height: 1.16; letter-spacing: -.04em; word-break: keep-all; animation: none; }
 .ep-panel .ep-short { max-width: 44em; font-size: clamp(15px, 1.25vw, 20px); line-height: 1.6; letter-spacing: 0; word-break: keep-all; }
 .ep-facts { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 20px 0 0; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
@@ -36,36 +60,50 @@
 .ep-panel .fineprint + .fineprint { margin-top: 4px; }
 .ep-panel .ep-rest-title { word-break: keep-all; }
 .ep-panel .ep-stretch { font-variant-numeric: tabular-nums; }
+/* How much of a track is played is a fact about it, not a line to read: it sits under the title, small. */
+.ep-panel .current-trans.ep-stretch { margin-top: 12px; font-size: clamp(15px, min(1.1vw, 1.9vh), 21px); color: var(--dim); }
 .ep-panel .ep-rest-cue { margin: 22px 0 0; max-width: 34em; word-break: keep-all; }
 /* A stretch the listener plays themselves: its lines, to read along with */
 .ep-lines { margin: 18px 0 0; padding: 0 0 0 12px; border-left: 2px solid var(--line); list-style: none; max-width: 40em; font-size: clamp(14px, 1.1vw, 18px); line-height: 1.6; color: var(--ink-2); word-break: keep-all; }
-/* A track from outside the album: the stretch of it, and what it is heard against */
-.ep-pair { list-style: none; margin: 30px 0 0; padding: 0; max-width: var(--lyric-width); border-bottom: 1px solid var(--line); }
-.ep-pair li { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 14px 0; border-top: 1px solid var(--line); color: var(--dim); }
+/* A track from outside the album: why it is here, then the original and the place in the album, in order */
+.ep-panel .ep-why { max-width: 22em; color: var(--ink); word-break: keep-all; text-wrap: pretty; }
+.ep-pair { list-style: none; margin: 34px 0 0; padding: 0; max-width: var(--lyric-width); }
+.ep-pair li { position: relative; display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 14px; align-items: start; padding: 12px 0; color: var(--dim); }
+.ep-pair li:not(:last-child)::after { content: ''; position: absolute; left: 5px; top: 33px; bottom: -14px; border-left: 1.5px dashed currentColor; opacity: .55; }
 .ep-pair li[aria-current] { color: var(--ink); }
-.ep-pair-mark { width: 30px; height: 30px; box-sizing: border-box; border: 1px solid currentColor; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 500; }
-.ep-pair li[aria-current] .ep-pair-mark { border-color: var(--ink); background: var(--ink); color: var(--bg); }
-.ep-pair-text { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.ep-pair-mark { width: 12px; height: 12px; margin-top: 4px; box-sizing: border-box; border: 1.5px solid currentColor; border-radius: 50%; }
+.ep-pair li[aria-current] .ep-pair-mark { background: currentColor; }
+.ep-pair-text { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.ep-pair-role { font-size: 11px; line-height: 1.6; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
+.ep-pair li[aria-current] .ep-pair-role { color: var(--main-text); }
 .ep-pair-text b { font-size: clamp(17px, 1.45vw, 24px); line-height: 1.3; letter-spacing: -.02em; font-weight: 500; }
-.ep-pair-text span { font-size: 13.5px; line-height: 1.5; color: var(--muted); word-break: keep-all; }
-.ep-pair li:not([aria-current]) .ep-pair-text span { color: var(--dim); }
-.ep-pair-range { font-size: 12.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ep-pair-text b i { font-style: normal; font-weight: 400; color: var(--muted); }
+.ep-pair-text > span[lang] { font-size: 13.5px; line-height: 1.5; color: var(--muted); word-break: keep-all; }
+.ep-pair li:not([aria-current]) .ep-pair-text > span[lang] { color: var(--dim); }
+.ep-pair-range { padding-top: 22px; font-size: 12.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 /* The line for the episode, where Now Playing has the Listening note's */
+.ep-stage .ep-line { position: relative; border-top-color: transparent; }
+.ep-chapters { position: absolute; left: 0; right: 0; top: -1px; display: flex; gap: 3px; height: 3px; }
+.ep-chapters span { flex: 1; background: var(--line); }
+.ep-chapters [data-at='past'] { background: color-mix(in srgb, var(--ink) 42%, transparent); }
+.ep-chapters [data-at='now'] { background: var(--ink); }
 .ep-line p { margin: 0; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .ep-line .note-more { margin-top: 0; white-space: nowrap; }
 
 /* The seek bar: the track, where it is, and the stretch the episode plays */
 .ep-progress > span { min-height: 1.4em; }
-.ep-bar { position: relative; height: 4px; background: var(--surface-strong); }
+.ep-bar { position: relative; height: 4px; background: color-mix(in srgb, var(--ink) 13%, transparent); }
 .ep-bar-fill { height: 100%; background: var(--main); }
-.ep-bar-stretch { position: absolute; top: -4px; bottom: -4px; box-sizing: border-box; min-width: 5px; border-left: 2px solid var(--ink); border-right: 2px solid var(--ink); }
+/* The stretch the episode plays: a band on the bar, bracketed, so "to 0:25" can be seen at a glance. */
+.ep-bar-stretch { position: absolute; top: -5px; bottom: -5px; box-sizing: border-box; min-width: 5px; border-left: 2px solid var(--ink); border-right: 2px solid var(--ink); background: linear-gradient(transparent 5px, color-mix(in srgb, var(--ink) 30%, transparent) 5px, color-mix(in srgb, var(--ink) 30%, transparent) calc(100% - 5px), transparent calc(100% - 5px)); }
 .ep-extras { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 2px 18px; }
 .ep-notice .note-more { margin: 0 0 0 14px; white-space: nowrap; }
 
 /* The script */
 .ep-script { padding: 4px 0 8px; }
-.ep-chapter { margin: 26px 0 4px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; font-weight: 500; line-height: 1.4; letter-spacing: -.005em; color: var(--ink); }
+.ep-chapter { display: flex; align-items: baseline; gap: 12px; margin: 30px 0 6px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 17px; font-weight: 500; line-height: 1.35; letter-spacing: -.015em; color: var(--ink); }
+.ep-chapter-no { min-width: 56px; font-size: 12px; font-weight: 400; letter-spacing: 0; color: var(--dim); font-variant-numeric: tabular-nums; }
 .ep-cue:first-child > .ep-chapter { margin-top: 12px; padding-top: 0; border-top: 0; }
 .ep-row { appearance: none; width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 8px 8px 8px 0; border: 0; background: transparent; color: var(--ink-2); text-align: left; transition: padding .2s var(--ease), background .2s ease; }
 .ep-row:hover, .ep-row[aria-current='true'] { padding-left: 8px; background: color-mix(in srgb, var(--main) 7%, transparent); }
@@ -82,6 +120,8 @@
 .ep-row-music .ep-row-text { display: flex; flex-direction: column; gap: 3px; line-height: 1.45; }
 .ep-row-music b { font-size: 14.5px; font-weight: 500; color: var(--ink); }
 .ep-row-music b i { font-style: normal; font-weight: 400; color: var(--muted); }
+/* A stretch from another record sits indented under the script's text, on a rule of its own */
+.ep-row-music[data-outside], .ep-row-music[data-outside]:hover, .ep-row-music[data-outside][aria-current='true'] { width: calc(100% - 70px); margin-left: 70px; padding-left: 12px; grid-template-columns: 22px minmax(0, 1fr) auto; border-left: 2px solid var(--main-text); }
 .ep-row-music[data-missing] b, .ep-row-music[data-missing] b i { color: var(--dim); }
 .ep-row-music .ep-row-text span { font-size: 12.5px; color: var(--dim); }
 .ep-row-music .ep-row-aside { font-size: 12.5px; letter-spacing: 0; text-transform: none; }
@@ -104,11 +144,19 @@
 .desktop .ep-hint { font-size: calc(12.5px * var(--t)); }
 .desktop .ep-lines { font-size: clamp(14px, min(1.1vw, 1.85vh), 21px); }
 .desktop .ep-pair-text b { font-size: clamp(17px, min(1.45vw, 2.2vh), 29px); }
-.desktop .ep-pair-text span { font-size: calc(13.5px * var(--t)); }
+.desktop .ep-pair-text > span[lang] { font-size: calc(13.5px * var(--t)); }
+.desktop .ep-pair-role { font-size: calc(11px * var(--t)); }
+.desktop .ep-return { font-size: calc(13px * var(--t)); }
 .desktop .ep-pair-range, .desktop .ep-progress { font-size: calc(12px * var(--t)); }
 .desktop .ep-extras { gap: 2px 18px; }
 .desktop .ep-script-panel { grid-area: lyrics; min-width: 0; min-height: 0; overflow: auto; padding: 14px 8px 28px 0; scrollbar-width: thin; scrollbar-color: var(--line) transparent; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); }
-.desktop .ep-chapter { font-size: calc(13px * var(--t)); }
+.desktop .ep-chapter { font-size: calc(17px * var(--t)); }
+.desktop .ep-chapter-no { font-size: calc(12px * var(--t)); }
+.desktop .ep-talk .ep-speaker { font-size: calc(13px * var(--t)); }
+.desktop .ep-upnext-kicker { font-size: calc(11px * var(--t)); }
+.desktop .ep-upnext-text b { font-size: calc(17px * var(--t)); }
+.desktop .ep-upnext-text span { font-size: calc(13.5px * var(--t)); }
+.desktop .ep-upnext-range { font-size: calc(12.5px * var(--t)); }
 .desktop .ep-row-text { font-size: calc(15px * var(--t)); }
 .desktop .ep-row-music b { font-size: calc(14.5px * var(--t)); }
 .desktop .ep-row-music .ep-row-text span, .desktop .ep-row-music .ep-row-aside { font-size: calc(12.5px * var(--t)); }
@@ -133,10 +181,21 @@
 .m-shell .ep-stage .lyrics-panel, .m-shell .ep-script-panel { grid-area: lyrics; min-width: 0; }
 .m-shell .ep-line { grid-area: note; }
 .m-shell .ep-stage .np-art { margin: 0; }
-/* The cover leaves room on its right for the hosts' line to reach the edge of the column. */
 .m-shell .ep-stage .np-cover { width: min(82%, 340px); aspect-ratio: 1; }
 .m-shell .ep-stage .np-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 30px 60px -24px var(--s-shadow); }
-.m-shell .ep-caption { right: -21.9%; }
+.m-shell .ep-caption { right: 0; }
+.m-shell .ep-talk-line { font-size: 21px; line-height: 1.42; }
+.m-shell .ep-talk-around { font-size: 14.5px; }
+.m-shell .ep-talk-before { margin-bottom: 18px; }
+.m-shell .ep-talk-after { margin-top: 18px; }
+.m-shell .ep-upnext { grid-template-columns: minmax(0, 1fr) auto; gap: 6px 14px; margin-top: 26px; }
+.m-shell .ep-upnext-kicker { grid-row: 1; grid-column: 1; }
+.m-shell .ep-upnext-range { grid-row: 1; grid-column: 2; }
+.m-shell .ep-upnext-text { grid-row: 2; grid-column: 1 / -1; }
+.m-shell .ep-chapter-no { min-width: 44px; }
+.m-shell .ep-row-music[data-outside], .m-shell .ep-row-music[data-outside]:hover, .m-shell .ep-row-music[data-outside][aria-current='true'] { width: calc(100% - 54px); margin-left: 54px; grid-template-columns: 22px minmax(0, 1fr) auto; }
+.m-shell .ep-return { font-size: 13px; }
+.m-shell .ep-pair-range { padding-top: 20px; }
 .m-shell .ep-stage .np-caption { margin-top: 18px; }
 .m-shell .ep-stage .np-caption h1 { margin: 0; padding-bottom: .05em; font-size: clamp(26px, 7.6vw, 32px); line-height: 1; letter-spacing: -.045em; font-weight: 500; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .m-shell .ep-stage .artist-line { margin-top: 7px; font-size: 14.5px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
@@ -158,7 +217,7 @@
 .m-shell .ep-pair { margin-top: 20px; }
 .m-shell .ep-pair-text b { font-size: 16px; }
 .m-shell .ep-actions .plain-action { min-height: 44px; }
-.m-shell .ep-line { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; min-height: 46px; border-top: 1px solid var(--line); }
+.m-shell .ep-line { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; min-height: 46px; }
 .m-shell .ep-line .note-line-kicker { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--main-text); white-space: nowrap; }
 .m-shell .ep-line p { font-size: 13.5px; color: var(--muted); }
 .m-shell .ep-line .note-more { min-height: 44px; }
