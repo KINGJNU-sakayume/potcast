@@ -20,7 +20,7 @@ function sdkLabel(kind: string): string {
     case 'error':
       return 'Browser device unavailable';
     default:
-      return 'Browser device off';
+      return 'This browser is a remote: a Spotify app plays the audio';
   }
 }
 
@@ -70,6 +70,13 @@ export function SettingsBody() {
           </button>
         </p>
       )}
+      {mode === 'spotify' && !mobile && (
+        <p className="fineprint">
+          {sdk.kind === 'disabled'
+            ? 'Play and pause here; the Spotify app on this computer (or the device you choose in the device menu) makes the sound. Open the Spotify app first.'
+            : 'If this browser cannot play Spotify’s protected (DRM) audio — some shared computers cannot — let the Spotify app installed on the computer play, with this page as its remote.'}
+        </p>
+      )}
       <div className="settings-actions">
         {mode === 'spotify' && sdk.kind === 'ready' && (
           <button
@@ -81,6 +88,11 @@ export function SettingsBody() {
             }}
           >
             Use browser device
+          </button>
+        )}
+        {mode === 'spotify' && !mobile && (
+          <button type="button" className="plain-action" aria-pressed={sdk.kind === 'disabled'} onClick={() => void engine.setBrowserPlayback(sdk.kind === 'disabled')}>
+            {sdk.kind === 'disabled' ? 'Play in this browser again' : 'Play through the Spotify app'}
           </button>
         )}
         {mode === 'preview' ? (

@@ -28,7 +28,7 @@ import { EpisodeError, type Cue, type Episode, type MusicCue, type SpokenLine } 
 import { formatDuration, formatRuntime, joinArtistNames } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
 import { isSpotifyId } from '../lib/spotifyUri';
-import { usePlaybackPosition } from '../playback/hooks';
+import { useEngine, usePlaybackPosition, usePlayerSelector } from '../playback/hooks';
 import { usePreferences } from '../preferences/preferences';
 import { describeSpotifyError } from '../spotify/errors';
 import { detectLineLanguage } from '../translation/languageDetect';
@@ -353,6 +353,9 @@ export function EpisodePage() {
   const mobile = useIsMobile();
   const [preferences, setPreferences] = usePreferences();
   const narration = useNarrationManifest();
+  const engine = useEngine();
+  // Whether this browser is (or is trying to be) the player: when the music will not start, the app on the computer can be.
+  const browserPlays = usePlayerSelector((s) => s.sdk.kind !== 'disabled') && engine.kind === 'spotify' && !mobile;
   const data = album.data;
   usePageTitle('Episode', data?.name ?? null);
   usePageSurface(isSpotifyId(albumId) ? { key: albumId, imageUrl: data ? pickImageUrl(data.images, 64) : null } : null);
@@ -461,6 +464,7 @@ export function EpisodePage() {
     setPreferences({ episodeMusic: 'manual' });
     runner.resume();
   };
+  const playThroughApp = () => void engine.setBrowserPlayback(false).then(() => runner.resume());
 
   return (
     <div className="view active">
@@ -552,6 +556,16 @@ export function EpisodePage() {
             {active && state.notice && (
               <p className="playback-state alert ep-notice" role="alert">
                 {NOTICE_TEXT[state.notice]}
+                {state.notice === 'no-playback' && !ownMusic && browserPlays && (
+                  <button
+                    type="button"
+                    className="note-more"
+                    title="Stop playing in this browser: the Spotify app on this computer plays, and this page starts and stops it"
+                    onClick={playThroughApp}
+                  >
+                    Play through the Spotify app
+                  </button>
+                )}
                 {state.notice === 'no-playback' && !ownMusic && (
                   <button type="button" className="note-more" onClick={playItMyself}>
                     Play the music myself

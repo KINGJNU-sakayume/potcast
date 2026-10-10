@@ -4,6 +4,7 @@ import { readJson, writeJson } from '../lib/storage';
 import { parseSpotifyUri } from '../lib/spotifyUri';
 import type { SpotifyClient } from '../spotify/client';
 import * as api from '../spotify/endpoints';
+import type { SpotifyDevice } from '../spotify/types';
 import { isSpotifyApiError } from '../spotify/errors';
 import { mapDevice, mapTrackIdentity } from '../spotify/mappers';
 import type { Ducking, PlaybackEngine } from './engine';
@@ -99,6 +100,17 @@ const MAX_RECONNECT_ATTEMPTS = 5;
 /** How long a play request waits for this browser's player to finish connecting. */
 const SDK_READY_WAIT_MS = 10_000;
 const VOLUME_KEY = 'arc.player.volume.v1';
+/**
+ * `false` once the listener (or a browser that could not play) has turned
+ * playback in this browser off: the Spotify app plays, and this page is its
+ * remote. Kept per browser, so a shared computer whose browser cannot play
+ * protected audio stays that way without touching the listener's own machines.
+ */
+const BROWSER_PLAYBACK_KEY = 'arc.player.browser-playback.v1';
+/** The ID of the Spotify Connect device the listener last chose here: the one to play on when this browser does not. */
+const REMOTE_DEVICE_KEY = 'arc.player.remote-device.v1';
+
+type RemoteTarget = SpotifyDevice & { id: string };
 
 export interface SpotifyEngineOptions {
   store: PlayerStore;
@@ -163,6 +175,12 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
   /** A Spotify Connect device the listener chose in this app (see transferTo). */
   private chosenDeviceId: string | null = null;
   private playRequests = 0;
+  /** Whether this browser may play at all (see BROWSER_PLAYBACK_KEY). */
+  private browserPlayback: boolean;
+  /** The device to play on when this browser does not (see REMOTE_DEVICE_KEY). */
+  private preferredRemoteId: string | null;
+  /** The latest play request made here, to make it again elsewhere when this browser turns out unable to play it. */
+  private lastPlay: { request: PlayRequest; at: number } | null = null;
 
   constructor(private readonly options: SpotifyEngineOptions) {
     this.store = options.store;
@@ -175,6 +193,9 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
     this.visibility = options.visibility ?? documentVisibility;
     const storedVolume = readJson<number>(VOLUME_KEY);
     this.volume = typeof storedVolume === 'number' ? clamp01(storedVolume) : 0.6;
+    this.browserPlayback = readJson<boolean>(BROWSER_PLAYBACK_KEY) !== false;
+    const storedRemote = readJson<string>(REMOTE_DEVICE_KEY);
+    this.preferredRemoteId = typeof storedRemote === 'string' && storedRemote ? storedRemote : null;
   }
 
   /* ── Lifecycle ───────────────────────────────────────────────────────── */
@@ -211,6 +232,11 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
 
   private async connectDevice(): Promise<void> {
     const generation = this.generation;
+    if (!this.browserPlayback) {
+      // Not a device at all: nothing can be sent here, by this page or from another Spotify app.
+      this.dispatch({ type: 'sdk/status', status: { kind: 'disabled' } });
+      return;
+    }
     if (!this.supported()) {
       this.setSdkError(
         'unsupported',
@@ -381,8 +407,92 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
     if (this.sdkIsActive()) await this.pause();
     const protectedAudio = await this.probeProtectedAudio().catch(() => true);
     if (!this.running) return;
+    // A Spotify app can play what this browser cannot: hand the music over and stop using the browser,
+    // so the next play request does not come back here and fail the same way.
+    const target = await this.remoteTarget();
+    if (!this.running) return;
+    if (target) {
+      const recent = this.lastPlay && this.now() - this.lastPlay.at <= SKIP_LOOP.windowMs ? this.lastPlay.request : null;
+      this.browserPlayback = false;
+      writeJson(BROWSER_PLAYBACK_KEY, false);
+      await this.leaveBrowser(target, recent ?? 'resume');
+      this.setIssue(
+        'moved-to-app',
+        `This browser could not play Spotify’s protected (DRM) audio, so ${target.name} plays it from now on and this page is its remote.`,
+        { detail: sdkMessage ? `Spotify reported: ${sdkMessage}` : undefined },
+      );
+      return;
+    }
     const { message, ...extra } = describeSkipLoop(protectedAudio, sdkMessage);
     this.setIssue('playback-failed', message, extra);
+  }
+
+  /* ── Playing through a Spotify app instead of this browser ───────────── */
+
+  /**
+   * Turns playback in this browser on or off. Off, the page is only a remote:
+   * its player is disconnected (so nothing can be sent to it), whatever was
+   * playing here moves to a Spotify app, and play requests go to that app.
+   * The choice is remembered in this browser.
+   */
+  async setBrowserPlayback(enabled: boolean): Promise<void> {
+    if (enabled === this.browserPlayback) return;
+    this.browserPlayback = enabled;
+    writeJson(BROWSER_PLAYBACK_KEY, enabled);
+    this.dispatch({ type: 'issue/clear', kinds: ['moved-to-app', 'playback-failed', 'no-active-device'] });
+    if (!this.running) return;
+    if (enabled) {
+      // Only connects: the music stays where it is until the listener plays something or moves it here.
+      void this.connectDevice();
+      return;
+    }
+    await this.leaveBrowser(await this.remoteTarget(), 'keep');
+  }
+
+  /**
+   * The device that plays when this browser does not: the one the listener
+   * chose here before, else the one that is active, else a Spotify app on a
+   * computer (when this is a computer's browser), else any that can be
+   * controlled. Other ARC tabs and Spotify's own web player are browsers too
+   * and are left out. Null when no such device is online.
+   */
+  private async remoteTarget(): Promise<RemoteTarget | null> {
+    const devices = await api.getDevices(this.client).catch(() => [] as SpotifyDevice[]);
+    const usable = devices.filter(
+      (device): device is RemoteTarget =>
+        Boolean(device.id) && !device.is_restricted && device.id !== this.deviceId && device.name !== BROWSER_DEVICE_NAME && !/^web player\b/i.test(device.name),
+    );
+    return (
+      usable.find((device) => device.id === this.preferredRemoteId) ??
+      usable.find((device) => device.is_active) ??
+      (this.supported() ? usable.find((device) => device.type === 'Computer') : undefined) ??
+      usable[0] ??
+      null
+    );
+  }
+
+  /**
+   * Disconnects this browser's player. Whatever is on it goes to `target`
+   * first, while the browser is still a device and a transfer keeps the
+   * track, the queue and the position: `keep` leaves it playing or paused as
+   * it was, `resume` starts it, and a play request is made again there.
+   */
+  private async leaveBrowser(target: RemoteTarget | null, then: 'keep' | 'resume' | PlayRequest): Promise<void> {
+    const { snapshot } = this.store.getState();
+    if (target && typeof then === 'object') await this.startOn(target.id, then).catch(() => undefined);
+    else if (target && this.sdkIsActive()) await api.transferPlayback(this.client, target.id, then === 'resume' || !snapshot.paused).catch(() => undefined);
+    this.resetSkipWatch();
+    this.clearTimer('reanchorTimer');
+    this.clearTimer('reconnectTimer');
+    this.device?.disconnect();
+    this.device = null;
+    this.deviceId = null;
+    this.generation += 1;
+    this.chosenDeviceId = null;
+    this.dispatch({ type: 'sdk/status', status: { kind: 'disabled' } });
+    this.dispatch({ type: 'sdk/inactive', now: this.now() });
+    this.scheduleFollowUps();
+    await this.resync();
   }
 
   private resetSkipWatch(): void {
@@ -533,44 +643,51 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
 
   async play(request: PlayRequest): Promise<void> {
     const requestId = ++this.playRequests;
+    this.lastPlay = { request, at: this.now() };
     // Playback started here goes to this browser by its SDK device ID, not to whichever device
     // Spotify reports as active (possibly a phone whose app was closed), unless the listener
-    // chose that device.
-    const browserId = this.remoteChosen() ? null : await this.browserDeviceId();
+    // chose that device or turned playback in this browser off.
+    const browserId = !this.browserPlayback || this.remoteChosen() ? null : await this.browserDeviceId();
     // A newer request replaced this one while it waited for the browser player.
     if (!this.running || requestId !== this.playRequests) return;
     const { snapshot } = this.store.getState();
-    const remoteActive = snapshot.source === 'remote' && snapshot.device?.isActive && !snapshot.device.isRestricted;
+    const active = snapshot.source === 'remote' && snapshot.device?.isActive && !snapshot.device.isRestricted ? snapshot.device : null;
     let deviceId = browserId ?? undefined;
 
-    if (!deviceId && !remoteActive) {
-      // Spotify needs a target when no device is active: use any controllable device.
-      const devices = await api.getDevices(this.client).catch(() => []);
-      const candidate = devices.find((d) => d.id && !d.is_restricted);
-      if (!candidate?.id) {
+    // Without this browser the music goes to the active device — unless the listener chose another one for
+    // this (the app on this computer, say, while a phone happens to be the active one) — and Spotify needs
+    // a target when no device is active at all.
+    const elsewhere = !this.browserPlayback && this.preferredRemoteId !== null && active?.id !== this.preferredRemoteId;
+    if (!deviceId && (!active || elsewhere)) {
+      const target = await this.remoteTarget();
+      if (!this.running || requestId !== this.playRequests) return;
+      if (target) {
+        deviceId = target.id;
+      } else if (!active) {
         this.setIssue(
           'no-active-device',
-          'No Spotify device is available. Open Spotify on a phone or computer, or enable browser playback.',
+          this.browserPlayback
+            ? 'No Spotify device is available. Open Spotify on a phone or computer, or enable browser playback.'
+            : 'No Spotify app is running to play this. Open Spotify on this computer or a phone, then press play again.',
         );
         return;
       }
-      deviceId = candidate.id;
     }
 
+    await this.command(undefined, () => this.startOn(deviceId, request), true);
+  }
+
+  /** The Web API request that starts `request` on a device (the active one when `deviceId` is undefined). */
+  private startOn(deviceId: string | undefined, request: PlayRequest): Promise<void> {
     const contextType = parseSpotifyUri(request.contextUri)?.type;
     const offsetAllowed = contextType === 'album' || contextType === 'playlist';
-    await this.command(
-      undefined,
-      () =>
-        api.startPlayback(this.client, {
-          deviceId,
-          contextUri: request.contextUri,
-          uris: request.contextUri ? undefined : request.uris,
-          offset: offsetAllowed && request.offsetUri ? { uri: request.offsetUri } : undefined,
-          positionMs: request.positionMs,
-        }),
-      true,
-    );
+    return api.startPlayback(this.client, {
+      deviceId,
+      contextUri: request.contextUri,
+      uris: request.contextUri ? undefined : request.uris,
+      offset: offsetAllowed && request.offsetUri ? { uri: request.offsetUri } : undefined,
+      positionMs: request.positionMs,
+    });
   }
 
   togglePlay(): Promise<void> {
@@ -586,9 +703,16 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
     const { snapshot, sdk } = this.store.getState();
     if (this.sdkIsActive()) return this.command(this.positionPatch(false), () => this.device!.resume(), false);
     // As in play(): resume in this browser unless the listener chose the active device.
-    if (sdk.kind === 'ready' && !this.remoteChosen()) return this.transferToBrowser(true);
+    if (this.browserPlayback && sdk.kind === 'ready' && !this.remoteChosen()) return this.transferToBrowser(true);
     if (snapshot.source === 'remote' && snapshot.device?.isActive) {
       return this.command(this.positionPatch(false), () => api.startPlayback(this.client, {}), true);
+    }
+    if (!this.browserPlayback) {
+      // The app went idle (a long pause does that): waking it with a transfer carries on where it stopped.
+      const target = await this.remoteTarget();
+      if (target) return this.command(this.positionPatch(false), () => api.transferPlayback(this.client, target.id, true), true);
+      this.setIssue('no-active-device', 'No Spotify app is running to resume in. Open Spotify on this computer or a phone, then try again.');
+      return;
     }
     this.setIssue('no-active-device', 'No Spotify device is active. Choose a device to resume playback.');
   }
@@ -669,7 +793,7 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
   async transferToBrowser(play = true): Promise<void> {
     const { sdk } = this.store.getState();
     if (sdk.kind !== 'ready') {
-      this.setIssue('no-active-device', 'Browser playback is not ready yet.');
+      this.setIssue('no-active-device', this.browserPlayback ? 'Browser playback is not ready yet.' : 'Playback in this browser is turned off (Settings).');
       return;
     }
     this.chosenDeviceId = null;
@@ -679,6 +803,9 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
   async transferTo(deviceId: string, play = true): Promise<void> {
     if (deviceId === this.deviceId) return this.transferToBrowser(play);
     this.chosenDeviceId = deviceId;
+    // Remembered beyond this visit: it is the device to play on whenever this browser does not.
+    this.preferredRemoteId = deviceId;
+    writeJson(REMOTE_DEVICE_KEY, deviceId);
     await this.command(undefined, () => api.transferPlayback(this.client, deviceId, play), true);
   }
 

@@ -172,6 +172,7 @@ export class StageEngine implements PlaybackEngine {
     this.shuffle = shuffle;
     this.patch({ shuffle });
   }
+  async setBrowserPlayback(): Promise<void> {}
   async transferToBrowser(): Promise<void> {}
   async transferTo(): Promise<void> {}
   async resync(): Promise<void> {}

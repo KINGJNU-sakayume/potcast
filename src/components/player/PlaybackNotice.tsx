@@ -13,7 +13,7 @@ export function PlaybackNotice() {
   const issue = usePlayerSelector((s) => s.issue);
   if (!issue) return null;
 
-  const alert = issue.kind !== 'autoplay-blocked';
+  const alert = issue.kind !== 'autoplay-blocked' && issue.kind !== 'moved-to-app';
   return (
     <div className={alert ? 'playback-state alert' : 'playback-state'} role={alert ? 'alert' : 'status'}>
       <span>{issue.message}</span>
@@ -27,6 +27,21 @@ export function PlaybackNotice() {
           }}
         >
           {issue.kind === 'autoplay-blocked' ? 'Start audio' : 'Try again'}
+        </button>
+      )}
+      {issue.kind === 'playback-failed' && (
+        <button
+          type="button"
+          className="notice-action"
+          title="Stop playing in this browser: the Spotify app on this computer plays, and this page is its remote"
+          onClick={() => void engine.setBrowserPlayback(false).then(() => engine.resume())}
+        >
+          Use the Spotify app instead
+        </button>
+      )}
+      {issue.kind === 'moved-to-app' && (
+        <button type="button" className="notice-action" onClick={() => void engine.setBrowserPlayback(true)}>
+          Play in this browser again
         </button>
       )}
       {issue.kind === 'no-active-device' && (

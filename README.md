@@ -496,8 +496,18 @@ paper and the playing album's accent.
 ## Known limitations
 
 - **Premium and browsers.** Browser playback and all playback control need Premium and a desktop browser with DRM
-  (Widevine). When the browser cannot decrypt the audio, the engine stops the silent skipping and Now Playing explains
-  the fix; otherwise ARC controls another Spotify device as a remote.
+  (Widevine). When the browser cannot decrypt the audio, the engine stops the silent skipping and — if a Spotify app
+  is running on the account — hands the music to that app and stops using the browser; with no app online, Now
+  Playing explains the fix.
+- **A browser that cannot play** (a shared computer without a working DRM module, say) can be a remote for the
+  Spotify app installed on that computer: **Settings → Play through the Spotify app**. This page then starts, stops
+  and seeks; the app makes the sound. The browser's own player is not connected at all in this state, so nothing can
+  pull the music back into it. A play request goes to the device chosen in the device menu before (remembered), else
+  the active one, else a Spotify app on a computer, else any controllable device; other browser players are passed
+  over. The choice is kept per browser (`localStorage`), so it does not follow the account to a computer whose
+  browser plays fine — and a shared computer that clears its browser data has to be told again, or finds out by
+  itself the first time a track fails. Which computer is "this" one cannot be read from Spotify: with two desktop
+  apps online, pick the right one in the device menu once. An episode's fades become single steps on another device.
 - **Development Mode.** Allow-listed users only. Search returns 10 results per type per page. Spotify serves an artist's
   releases 10 at a time, so the discography walks every page of the open group (one request per 10 releases, cached
   for 30 minutes, capped at 300). An artist with many singles takes a moment the first time. Followers and genres may
@@ -526,5 +536,9 @@ paper and the playing album's accent.
 - **Device not ready:** keep the tab open, allow protected content, then **Settings → Use browser device** or pick a
   device from the device menu on Now Playing.
 - **Tracks skip without playing:** update Widevine (`chrome://components`), allow protected content, disable blocking
-  extensions for the site — or open the Spotify app, choose it in the device menu and use ARC as a remote.
+  extensions for the site — or open the Spotify app on the computer and choose **Settings → Play through the Spotify
+  app** (the notice offers the same as *Use the Spotify app instead*): the app plays and ARC is its remote. With the
+  app already open, ARC makes this switch by itself when it catches the skipping.
+- **The music keeps jumping back into the browser:** that is the default — what is started here plays here. *Play
+  through the Spotify app* turns it off for this browser.
 - **429:** wait for the displayed interval; the client already backs off.

@@ -107,6 +107,9 @@ export function DeviceChoices({ onChosen, browserNote = true }: { onChosen: () =
         </ul>
       )}
       {browserNote && sdk.kind === 'error' && <p className="device-note">Browser playback: {sdk.message}</p>}
+      {browserNote && mode === 'spotify' && sdk.kind === 'disabled' && (
+        <p className="device-note">This browser is a remote and does not play itself. The device chosen here is remembered. Settings turns browser playback back on.</p>
+      )}
       <button type="button" className="note-more" onClick={() => void devices.refetch()}>
         Check again
       </button>
