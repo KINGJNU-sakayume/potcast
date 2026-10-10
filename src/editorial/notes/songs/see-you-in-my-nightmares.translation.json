@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1625635,
+    "durationMs": 258000
+  },
+  "segments": [
+    {
+      "startMs": 3360,
+      "endMs": 6850,
+      "translation": "난 차가워 (그래)"
+    },
+    {
+      "startMs": 6850,
+      "endMs": 10530,
+      "translation": "난 차가워 (그래)"
+    },
+    {
+      "startMs": 10530,
+      "endMs": 15040,
+      "translation": "난 차가워 (그래, 그래)"
+    },
+    {
+      "startMs": 15040,
+      "endMs": 18600,
+      "translation": "난 맞서 싸울 권리가 있어"
+    },
+    {
+      "startMs": 18600,
+      "endMs": 22680,
+      "translation": "하지만 그럴 수 없지, 네가 내 빛을 꺼 버렸으니까"
+    },
+    {
+      "startMs": 22680,
+      "endMs": 26240,
+      "translation": "그래도 오늘 밤은 더 잘 보여"
+    },
+    {
+      "startMs": 26240,
+      "endMs": 33290,
+      "translation": "어쩌면 악몽 속에서 널 보겠지"
+    },
+    {
+      "startMs": 33290,
+      "endMs": 36330,
+      "translation": "우, 넌 어떻게 거기까지 들어왔어?"
+    },
+    {
+      "startMs": 36330,
+      "endMs": 40380,
+      "translation": "우린 한때 동화 같았으니까"
+    },
+    {
+      "startMs": 40380,
+      "endMs": 45810,
+      "translation": "하지만 이제 작별이야, 그래"
+    },
+    {
+      "startMs": 45810,
+      "endMs": 49860,
+      "translation": "내 삶은 내 거고, 하나뿐이야"
+    },
+    {
+      "startMs": 49860,
+      "endMs": 53750,
+      "translation": "밤은 내 거야, 난 해를 피해 달아나"
+    },
+    {
+      "startMs": 53750,
+      "endMs": 57660,
+      "translation": "그러니 잘 자, 난 문을 나섰어"
+    },
+    {
+      "startMs": 57660,
+      "endMs": 61420,
+      "translation": "문, 문, 문, 문"
+    },
+    {
+      "startMs": 61420,
+      "endMs": 65050,
+      "translation": "오늘 밤이 지나면 돌아오지 않아"
+    },
+    {
+      "startMs": 65050,
+      "endMs": 70730,
+      "translation": "오늘 밤이 지나면 난 길을 떠나"
+    },
+    {
+      "startMs": 70730,
+      "endMs": 74820,
+      "translation": "난 길을 떠나"
+    },
+    {
+      "startMs": 74820,
+      "endMs": 77040,
+      "translation": "그리고 넌 알지"
+    },
+    {
+      "startMs": 77040,
+      "endMs": 79800,
+      "translation": "넌 알지"
+    },
+    {
+      "startMs": 79800,
+      "endMs": 83700,
+      "translation": "네가 아는 모두에게 말해"
+    },
+    {
+      "startMs": 83700,
+      "endMs": 87710,
+      "translation": "내가 더는 널 사랑하지 않는다고"
+    },
+    {
+      "startMs": 87710,
+      "endMs": 93720,
+      "translation": "그게 네가 아는 한 가지야, 네가 아는"
+    },
+    {
+      "startMs": 93720,
+      "endMs": 96830,
+      "translation": "좋아, 난 다시 일에 매달려"
+    },
+    {
+      "startMs": 96830,
+      "endMs": 101190,
+      "translation": "너는 너대로 살아, 나는 나대로 살 테니"
+    },
+    {
+      "startMs": 101190,
+      "endMs": 104980,
+      "translation": "너는 너대로 살아, 난 괜찮을 테니까"
+    },
+    {
+      "startMs": 104980,
+      "endMs": 107970,
+      "translation": "좋아, 널 머릿속에서 지웠어"
+    },
+    {
+      "startMs": 107970,
+      "endMs": 111750,
+      "translation": "밤은 아직 이르고, 술은 차갑고"
+    },
+    {
+      "startMs": 111750,
+      "endMs": 115600,
+      "translation": "별이 떴어, 난 떠날 준비가 됐어"
+    },
+    {
+      "startMs": 115600,
+      "endMs": 119330,
+      "translation": "넌 늘 내가 틀렸다고 생각했지"
+    },
+    {
+      "startMs": 119330,
+      "endMs": 121340,
+      "translation": "글쎄, 이제 알겠지"
+    },
+    {
+      "startMs": 121340,
+      "endMs": 126160,
+      "translation": "누구에게든, 네가 아는 모두에게 말해"
+    },
+    {
+      "startMs": 126160,
+      "endMs": 129990,
+      "translation": "네가 아는 모두에게 말해"
+    },
+    {
+      "startMs": 129990,
+      "endMs": 133990,
+      "translation": "내가 더는 널 사랑하지 않는다고"
+    },
+    {
+      "startMs": 133990,
+      "endMs": 138500,
+      "translation": "그게 네가 아는 한 가지야, 네가 아는"
+    },
+    {
+      "startMs": 138500,
+      "endMs": 142590,
+      "translation": "난 맞서 싸울 권리가 있어"
+    },
+    {
+      "startMs": 142590,
+      "endMs": 145970,
+      "translation": "하지만 그럴 수 없지, 네가 내 빛을 꺼 버렸으니까"
+    },
+    {
+      "startMs": 145970,
+      "endMs": 149840,
+      "translation": "그래도 오늘 밤은 더 잘 보여"
+    },
+    {
+      "startMs": 149840,
+      "endMs": 156200,
+      "translation": "어쩌면 악몽 속에서 널 보겠지"
+    },
+    {
+      "startMs": 156200,
+      "endMs": 159990,
+      "translation": "우, 넌 어떻게 거기까지 들어왔어?"
+    },
+    {
+      "startMs": 159990,
+      "endMs": 164030,
+      "translation": "우린 한때 동화 같았으니까"
+    },
+    {
+      "startMs": 164030,
+      "endMs": 168400,
+      "translation": "하지만 이제 작별이야, 그래"
+    },
+    {
+      "startMs": 168400,
+      "endMs": 170360,
+      "translation": "자기야, 난 끝났어"
+    },
+    {
+      "startMs": 170360,
+      "endMs": 172690,
+      "translation": "우린 서로에게 충실한 줄 알았어"
+    },
+    {
+      "startMs": 172690,
+      "endMs": 174670,
+      "translation": "우린 굳게 붙어 있는 줄 알았어"
+    },
+    {
+      "startMs": 174670,
+      "endMs": 176290,
+      "translation": "정말 진심인 줄 알았어"
+    },
+    {
+      "startMs": 176290,
+      "endMs": 178240,
+      "translation": "그런데 이제 우린 뉘우치기만 하고"
+    },
+    {
+      "startMs": 178240,
+      "endMs": 180100,
+      "translation": "이제 우린 원망하기만 해"
+    },
+    {
+      "startMs": 180100,
+      "endMs": 181810,
+      "translation": "구름이 내 시야를 가려"
+    },
+    {
+      "startMs": 181810,
+      "endMs": 184090,
+      "translation": "내가 얼마나 높이 떠 있는지 봐"
+    },
+    {
+      "startMs": 184090,
+      "endMs": 187910,
+      "translation": "이게 다 너 때문이야, 자기, 우린 끝났어"
+    },
+    {
+      "startMs": 187910,
+      "endMs": 191520,
+      "translation": "넌 네가 흠 하나 없는 줄 알지만, 넌 냄새나는 아가씨야"
+    },
+    {
+      "startMs": 191520,
+      "endMs": 196400,
+      "translation": "이제 내 곁에서 널 볼 일은 없어"
+    },
+    {
+      "startMs": 196400,
+      "endMs": 201130,
+      "translation": "이제 네가 아는 모두에게 말해, 네가 아는"
+    },
+    {
+      "startMs": 201130,
+      "endMs": 203350,
+      "translation": "네가 아는"
+    },
+    {
+      "startMs": 203350,
+      "endMs": 207000,
+      "translation": "네가 아는 모두에게 말해"
+    },
+    {
+      "startMs": 207000,
+      "endMs": 211220,
+      "translation": "내가 더는 널 사랑하지 않는다고"
+    },
+    {
+      "startMs": 211220,
+      "endMs": 215520,
+      "translation": "그게 네가 아는 한 가지야, 네가 아는"
+    },
+    {
+      "startMs": 215520,
+      "endMs": 218850,
+      "translation": "네가 아는"
+    },
+    {
+      "startMs": 218850,
+      "endMs": 222420,
+      "translation": "네가 아는 모두에게 말해"
+    },
+    {
+      "startMs": 222420,
+      "endMs": 226060,
+      "translation": "내가 더는 널 사랑하지 않는다고"
+    },
+    {
+      "startMs": 226060,
+      "endMs": 229100,
+      "translation": "그게 네가 아는 한 가지야"
+    },
+    {
+      "startMs": 229100,
+      "endMs": 258000,
+      "translation": "네가 아는"
+    }
+  ]
+}

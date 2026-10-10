@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1609765,
+    "durationMs": 103000
+  },
+  "segments": [
+    {
+      "startMs": 4500,
+      "endMs": 10890,
+      "translation": "그래 (나는 집으로 가는 길이다)"
+    },
+    {
+      "startMs": 10890,
+      "endMs": 12490,
+      "translation": "집은 증오가 있는 곳이라 한다"
+    },
+    {
+      "startMs": 12490,
+      "endMs": 14010,
+      "translation": "내 머릿속엔 운명이 있다"
+    },
+    {
+      "startMs": 14010,
+      "endMs": 16930,
+      "translation": "라스베이거스처럼 영혼들이 길을 잃는 곳을 거닌다 (나는 집으로 가는 길이다)"
+    },
+    {
+      "startMs": 16930,
+      "endMs": 19060,
+      "translation": "반항아의 안경 너머로 본다"
+    },
+    {
+      "startMs": 19060,
+      "endMs": 21760,
+      "translation": "내 팔이 대중에게 닿기를 신께 빈다"
+    },
+    {
+      "startMs": 21760,
+      "endMs": 24100,
+      "translation": "풀 한 포기 없는 정글에서 아이들이 담배를 피운다"
+    },
+    {
+      "startMs": 24100,
+      "endMs": 27020,
+      "translation": "돈 없는 다발을 고무줄로 묶어 둔다 (나는 집으로 가는 길이다)"
+    },
+    {
+      "startMs": 27020,
+      "endMs": 28680,
+      "translation": "우리는 고난의 사슬을 걸친다"
+    },
+    {
+      "startMs": 28680,
+      "endMs": 30480,
+      "translation": "흩어지고 나면 남는 건 장사뿐이다"
+    },
+    {
+      "startMs": 30480,
+      "endMs": 32670,
+      "translation": "어떻게든 이해해 보려 잔돈을 벌러 나선다"
+    },
+    {
+      "startMs": 32670,
+      "endMs": 34140,
+      "translation": "혁명은 장난이 아니다"
+    },
+    {
+      "startMs": 34140,
+      "endMs": 35530,
+      "translation": "그건 다른 이름일 뿐이다"
+    },
+    {
+      "startMs": 35530,
+      "endMs": 36340,
+      "translation": "살기 위한 싸움의"
+    },
+    {
+      "startMs": 36340,
+      "endMs": 39270,
+      "translation": "마이크 타이슨처럼 누군가 곁을 지켜 주기를 (나는 집으로 가는 길이다)"
+    },
+    {
+      "startMs": 39270,
+      "endMs": 41860,
+      "translation": "중독자들은 지옥을 더 높이려고 한 방을 찾아 싸운다"
+    },
+    {
+      "startMs": 41860,
+      "endMs": 44500,
+      "translation": "떨어진 만큼만 높이 오른다는 걸 그는 모를까"
+    },
+    {
+      "startMs": 44500,
+      "endMs": 46580,
+      "translation": "보여 주던 돈은 보석금이 되고"
+    },
+    {
+      "startMs": 46580,
+      "endMs": 48440,
+      "translation": "관계는 감옥이 되고"
+    },
+    {
+      "startMs": 48440,
+      "endMs": 49760,
+      "translation": "아이들은 안기지 못한다 (나는 집으로 가는 길이다)"
+    },
+    {
+      "startMs": 49760,
+      "endMs": 52110,
+      "translation": "사랑을 살 수 있다면 좋겠다"
+    },
+    {
+      "startMs": 52110,
+      "endMs": 53480,
+      "translation": "보라, 창백한"
+    },
+    {
+      "startMs": 53480,
+      "endMs": 56080,
+      "translation": "말이 나를 R. 켈리처럼 가두었다, 나는 달아나고, 그건"
+    },
+    {
+      "startMs": 56080,
+      "endMs": 66110,
+      "translation": "다시는, 다시는 집에 가지 않는 것도 그리 나쁜 생각이 아닐지 모른다"
+    },
+    {
+      "startMs": 66110,
+      "endMs": 73170,
+      "translation": "나는 집으로 가는 길이다"
+    },
+    {
+      "startMs": 73170,
+      "endMs": 76300,
+      "translation": "사흘 전에 집을 나왔다"
+    },
+    {
+      "startMs": 76300,
+      "endMs": 85060,
+      "translation": "그런데 아무도 내가 떠난 걸 모르는 것 같다"
+    },
+    {
+      "startMs": 85060,
+      "endMs": 90550,
+      "translation": "집은 증오가 있는 곳이다"
+    },
+    {
+      "startMs": 90550,
+      "endMs": 94860,
+      "translation": "집은 고통으로 가득하고, 그건"
+    },
+    {
+      "startMs": 94860,
+      "endMs": 103000,
+      "translation": "그리 나쁜 생각이 아닐지 모른다, 내가 다시는"
+    }
+  ]
+}

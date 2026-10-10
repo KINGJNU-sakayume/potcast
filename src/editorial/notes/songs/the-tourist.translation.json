@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16067,
+    "durationMs": 327000
+  },
+  "segments": [
+    {
+      "startMs": 31260,
+      "endMs": 62050,
+      "translation": "그건 나 말고는 아무한테도 짖지 않아, 마치 유령이라도 본 것처럼"
+    },
+    {
+      "startMs": 62050,
+      "endMs": 77460,
+      "translation": "아마 불꽃이 튀는 걸 봤겠지"
+    },
+    {
+      "startMs": 77460,
+      "endMs": 94000,
+      "translation": "다른 누구도 모를 거야"
+    },
+    {
+      "startMs": 94000,
+      "endMs": 108470,
+      "translation": "이봐, 천천히, 천천히 가"
+    },
+    {
+      "startMs": 108470,
+      "endMs": 137030,
+      "translation": "바보야, 천천히, 천천히 가"
+    },
+    {
+      "startMs": 137030,
+      "endMs": 152100,
+      "translation": "가끔 나는 과열돼"
+    },
+    {
+      "startMs": 152100,
+      "endMs": 168470,
+      "translation": "그럴 때 불꽃이 보이는 거야"
+    },
+    {
+      "startMs": 168470,
+      "endMs": 200920,
+      "translation": "다들 내가 초속 천 피트로 대체 어디를 가는 거냐고 물어"
+    },
+    {
+      "startMs": 200920,
+      "endMs": 214800,
+      "translation": "이봐, 천천히, 천천히 가"
+    },
+    {
+      "startMs": 214800,
+      "endMs": 272350,
+      "translation": "바보야, 천천히, 천천히 가"
+    },
+    {
+      "startMs": 272350,
+      "endMs": 286710,
+      "translation": "이봐, 천천히, 천천히 가"
+    },
+    {
+      "startMs": 286710,
+      "endMs": 327000,
+      "translation": "바보야, 천천히, 천천히 가"
+    }
+  ]
+}

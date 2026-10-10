@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1090814,
+    "durationMs": 214000
+  },
+  "segments": [
+    {
+      "startMs": 14620,
+      "endMs": 19610,
+      "translation": "돌에 새긴 사랑, 그녀는 무덤 앞에 무릎 꿇는다"
+    },
+    {
+      "startMs": 19610,
+      "endMs": 28320,
+      "translation": "어떤 구호를 지키려 목숨 바친 용감한 아들"
+    },
+    {
+      "startMs": 28320,
+      "endMs": 33890,
+      "translation": "그 구호는 묘비와 그녀의 눈 사이에 떠 있고"
+    },
+    {
+      "startMs": 33890,
+      "endMs": 38570,
+      "translation": "그 말들은 그녀의 슬픔을 꿰뚫는다"
+    },
+    {
+      "startMs": 38570,
+      "endMs": 44450,
+      "translation": "새로운 사랑, 소년과 소녀가 이야기를 나누고"
+    },
+    {
+      "startMs": 44450,
+      "endMs": 49940,
+      "translation": "둘만 나눌 수 있는 새로운 말들"
+    },
+    {
+      "startMs": 49940,
+      "endMs": 56710,
+      "translation": "너무 강해 두 사람의 가슴을 찢는 새로운 말, 사랑"
+    },
+    {
+      "startMs": 56710,
+      "endMs": 63250,
+      "translation": "덧없는 아침 시간을 잠으로 보내게 한다"
+    },
+    {
+      "startMs": 63250,
+      "endMs": 65810,
+      "translation": "사랑은 상대를 가리지 않는다"
+    },
+    {
+      "startMs": 65810,
+      "endMs": 68980,
+      "translation": "아기 위로도 휩쓸고 지나가며"
+    },
+    {
+      "startMs": 68980,
+      "endMs": 72470,
+      "translation": "사랑은 무방비한 이들에게 내려앉고"
+    },
+    {
+      "startMs": 72470,
+      "endMs": 75690,
+      "translation": "어리석은 사랑이 융합의 불꽃을 튀긴다"
+    },
+    {
+      "startMs": 75690,
+      "endMs": 78740,
+      "translation": "내게는 영감 같은 건 없다"
+    },
+    {
+      "startMs": 78740,
+      "endMs": 81380,
+      "translation": "불타는 비둘기에 손을 대 보기 위해"
+    },
+    {
+      "startMs": 81380,
+      "endMs": 85130,
+      "translation": "내게 있는 건 사랑을 사랑하는 마음뿐"
+    },
+    {
+      "startMs": 85130,
+      "endMs": 113560,
+      "translation": "그리고 사랑은 사랑하는 일이 아니다"
+    },
+    {
+      "startMs": 113560,
+      "endMs": 119760,
+      "translation": "영혼의 사랑, 그 사제는 그 말씀을 맛보고"
+    },
+    {
+      "startMs": 119760,
+      "endMs": 125110,
+      "translation": "사랑을 말한다, 저 높은 곳의 나의 신은"
+    },
+    {
+      "startMs": 125110,
+      "endMs": 133950,
+      "translation": "모든 사랑이라고, 하지만 손을 뻗을수록 내 외로움은 커진다"
+    },
+    {
+      "startMs": 133950,
+      "endMs": 138350,
+      "translation": "그를 둘러싼 맹목 때문에"
+    },
+    {
+      "startMs": 138350,
+      "endMs": 141330,
+      "translation": "사랑은 상대를 가리지 않는다"
+    },
+    {
+      "startMs": 141330,
+      "endMs": 144680,
+      "translation": "아기 위로도 휩쓸고 지나가며"
+    },
+    {
+      "startMs": 144680,
+      "endMs": 147840,
+      "translation": "사랑은 무방비한 이들에게 내려앉고"
+    },
+    {
+      "startMs": 147840,
+      "endMs": 151400,
+      "translation": "어리석은 사랑이 융합의 불꽃을 튀긴다"
+    },
+    {
+      "startMs": 151400,
+      "endMs": 153930,
+      "translation": "내게는 영감 같은 건 없다"
+    },
+    {
+      "startMs": 153930,
+      "endMs": 157250,
+      "translation": "불타는 비둘기에 손을 대 보기 위해"
+    },
+    {
+      "startMs": 157250,
+      "endMs": 160680,
+      "translation": "내게 있는 건 사랑을 사랑하는 마음뿐"
+    },
+    {
+      "startMs": 160680,
+      "endMs": 167460,
+      "translation": "그리고 사랑은 사랑하는 일이 아니다"
+    },
+    {
+      "startMs": 167460,
+      "endMs": 178940,
+      "translation": "(사랑, 사랑)"
+    },
+    {
+      "startMs": 178940,
+      "endMs": 188930,
+      "translation": "(사랑, 영혼의 사랑, 영혼의 사랑)"
+    },
+    {
+      "startMs": 188930,
+      "endMs": 197790,
+      "translation": "라이, 라이, 라라 라라 라라, 라 라이"
+    },
+    {
+      "startMs": 197790,
+      "endMs": 201550,
+      "translation": "라라이 라라이 라라이, 라이, 라이, 라이"
+    },
+    {
+      "startMs": 201550,
+      "endMs": 209560,
+      "translation": "라라 라라 라라 라라라"
+    },
+    {
+      "startMs": 209560,
+      "endMs": 214000,
+      "translation": "라, 라, 라라, 라, 라라, 라"
+    }
+  ]
+}

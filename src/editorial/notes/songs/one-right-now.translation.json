@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1049110,
+    "durationMs": 194000
+  },
+  "segments": [
+    {
+      "startMs": 1660,
+      "endMs": 3410,
+      "translation": "나-나-나-나, 나-나"
+    },
+    {
+      "startMs": 3410,
+      "endMs": 5850,
+      "translation": "나-나-나-나, 오 안 돼"
+    },
+    {
+      "startMs": 5850,
+      "endMs": 8060,
+      "translation": "그래, 그래"
+    },
+    {
+      "startMs": 8060,
+      "endMs": 11830,
+      "translation": "날 사랑한다고 했지만 난 신경 안 써"
+    },
+    {
+      "startMs": 11830,
+      "endMs": 14580,
+      "translation": "내가 같은 벽을 치다 손이 부러졌다는 거"
+    },
+    {
+      "startMs": 14580,
+      "endMs": 18540,
+      "translation": "네가 그 남자랑 잤다고 말했던 바로 그 벽을 (오!)"
+    },
+    {
+      "startMs": 18540,
+      "endMs": 24290,
+      "translation": "넌 내 감정을 갖고 노는 게 그렇게 쉬운 줄 알지"
+    },
+    {
+      "startMs": 24290,
+      "endMs": 28220,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어 (어)"
+    },
+    {
+      "startMs": 28220,
+      "endMs": 32550,
+      "translation": "지금 바로 한 명"
+    },
+    {
+      "startMs": 32550,
+      "endMs": 36880,
+      "translation": "(지금 바로 한 명, 지금 바로 한 명, 오-오-오)"
+    },
+    {
+      "startMs": 36880,
+      "endMs": 39660,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어"
+    },
+    {
+      "startMs": 39660,
+      "endMs": 41830,
+      "translation": "내 아이를 갖고 싶다고 했지"
+    },
+    {
+      "startMs": 41830,
+      "endMs": 44530,
+      "translation": "너무 잘해 줬으니 돈이라도 내야 할걸"
+    },
+    {
+      "startMs": 44530,
+      "endMs": 48480,
+      "translation": "날 그렇게 아프게 해 놓고 '자기'라고 부르지 마"
+    },
+    {
+      "startMs": 48480,
+      "endMs": 49450,
+      "translation": "(날 그렇게 아프게 해 놓고)"
+    },
+    {
+      "startMs": 49450,
+      "endMs": 52450,
+      "translation": "그래도 네가 한 짓은 이미 털어 냈어"
+    },
+    {
+      "startMs": 52450,
+      "endMs": 54770,
+      "translation": "눈에는 눈, 정말 유치하지"
+    },
+    {
+      "startMs": 54770,
+      "endMs": 59320,
+      "translation": "네 친구들 몇 명이나 내 롤스에 탈 수 있어? (내 롤스에 탈 수 있어?)"
+    },
+    {
+      "startMs": 59320,
+      "endMs": 62810,
+      "translation": "새 얼굴까지 사 줬으니 날 '아빠'라고 불러야지"
+    },
+    {
+      "startMs": 62810,
+      "endMs": 64920,
+      "translation": "자기야, 에르메스였는데 넌 가방을 떨어뜨렸어"
+    },
+    {
+      "startMs": 64920,
+      "endMs": 67840,
+      "translation": "자기야, 사실은 한 명으론 부족한가 봐"
+    },
+    {
+      "startMs": 67840,
+      "endMs": 71460,
+      "translation": "날 사랑한다고 하지만 난 신경 안 써"
+    },
+    {
+      "startMs": 71460,
+      "endMs": 73520,
+      "translation": "내가 같은 벽을 치다 손이 부러졌다는 거"
+    },
+    {
+      "startMs": 73520,
+      "endMs": 78120,
+      "translation": "네가 그 남자랑 잤다고 말했던 바로 그 벽을 (그 남자랑 잤다고)"
+    },
+    {
+      "startMs": 78120,
+      "endMs": 83630,
+      "translation": "넌 내 감정을 갖고 노는 게 그렇게 쉬운 줄 알지 (감정을)"
+    },
+    {
+      "startMs": 83630,
+      "endMs": 87410,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어 (어)"
+    },
+    {
+      "startMs": 87410,
+      "endMs": 91070,
+      "translation": "지금 바로 한 명 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 91070,
+      "endMs": 95820,
+      "translation": "(지금 바로 한 명, 지금 바로 한 명, 오 그래)"
+    },
+    {
+      "startMs": 95820,
+      "endMs": 101530,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 101530,
+      "endMs": 105930,
+      "translation": "(지금 바로 한 명, 지금 바로 한 명, 오-오-오)"
+    },
+    {
+      "startMs": 105930,
+      "endMs": 109780,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어"
+    },
+    {
+      "startMs": 109780,
+      "endMs": 111550,
+      "translation": "넌 내 이력의 얼룩이야"
+    },
+    {
+      "startMs": 111550,
+      "endMs": 114090,
+      "translation": "우린 친구도, 가족도 될 수 없어 (오)"
+    },
+    {
+      "startMs": 114090,
+      "endMs": 116540,
+      "translation": "넌 아마 내 적들이랑 다 잤겠지 (우)"
+    },
+    {
+      "startMs": 116540,
+      "endMs": 118990,
+      "translation": "널 내 곁에 둘 수는 없어"
+    },
+    {
+      "startMs": 118990,
+      "endMs": 121570,
+      "translation": "오, 이제 넌 세상의 것이야"
+    },
+    {
+      "startMs": 121570,
+      "endMs": 124280,
+      "translation": "그러니 이제 날 그냥 내버려 둬"
+    },
+    {
+      "startMs": 124280,
+      "endMs": 126380,
+      "translation": "우린 더는 연락 안 해"
+    },
+    {
+      "startMs": 126380,
+      "endMs": 130700,
+      "translation": "날 사랑한다고 하지만 난 신경 안 써 (아니, 신경 안 써)"
+    },
+    {
+      "startMs": 130700,
+      "endMs": 133030,
+      "translation": "내가 같은 벽을 치다 손이 부러졌다는 거"
+    },
+    {
+      "startMs": 133030,
+      "endMs": 137270,
+      "translation": "네가 그 남자랑 잤다고 말했던 바로 그 벽을 (오)"
+    },
+    {
+      "startMs": 137270,
+      "endMs": 142660,
+      "translation": "넌 내 감정을 갖고 노는 게 그렇게 쉬운 줄 알지 (감정을)"
+    },
+    {
+      "startMs": 142660,
+      "endMs": 146760,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어"
+    },
+    {
+      "startMs": 146760,
+      "endMs": 152710,
+      "translation": "지금 바로 한 명 (오 그래, 오 그래, 오 그래)"
+    },
+    {
+      "startMs": 152710,
+      "endMs": 155540,
+      "translation": "(내 감정을, 내 감정을 갖고 놀아)"
+    },
+    {
+      "startMs": 155540,
+      "endMs": 158930,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어"
+    },
+    {
+      "startMs": 158930,
+      "endMs": 162570,
+      "translation": "(우-예, 오-예, 오-예)"
+    },
+    {
+      "startMs": 162570,
+      "endMs": 163910,
+      "translation": "(지금 바로 한 명)"
+    },
+    {
+      "startMs": 163910,
+      "endMs": 178450,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어"
+    },
+    {
+      "startMs": 178450,
+      "endMs": 180180,
+      "translation": "(헤이!)"
+    },
+    {
+      "startMs": 180180,
+      "endMs": 185130,
+      "translation": "(지금 바로 한 명, 지금 바로 한 명)"
+    },
+    {
+      "startMs": 185130,
+      "endMs": 186290,
+      "translation": "(우-예)"
+    },
+    {
+      "startMs": 186290,
+      "endMs": 194000,
+      "translation": "한 명은 오는 중이고, 한 명은 지금 바로 있어"
+    }
+  ]
+}

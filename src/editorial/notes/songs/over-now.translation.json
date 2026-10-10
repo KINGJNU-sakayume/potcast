@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 503474,
+    "durationMs": 247000
+  },
+  "segments": [
+    {
+      "startMs": 17630,
+      "endMs": 18850,
+      "translation": "아-하-하"
+    },
+    {
+      "startMs": 18850,
+      "endMs": 20360,
+      "translation": "그래"
+    },
+    {
+      "startMs": 20360,
+      "endMs": 23690,
+      "translation": "(그래, 그래, 그래)"
+    },
+    {
+      "startMs": 23690,
+      "endMs": 26580,
+      "translation": "네가 날 떠나면 지붕에서 뛰어내리게 만들어"
+    },
+    {
+      "startMs": 26580,
+      "endMs": 29500,
+      "translation": "넌 꿈쩍도 안 했지, 난 너한테 달이라도 따다 줬을 텐데"
+    },
+    {
+      "startMs": 29500,
+      "endMs": 32490,
+      "translation": "우리가 그 모든 일을 겪고 나서도"
+    },
+    {
+      "startMs": 32490,
+      "endMs": 35460,
+      "translation": "너 같은 사람은 한 번도 만난 적이 없어"
+    },
+    {
+      "startMs": 35460,
+      "endMs": 38340,
+      "translation": "왜 넌 맨날 괜찮다고만 해?"
+    },
+    {
+      "startMs": 38340,
+      "endMs": 41190,
+      "translation": "입 좀 다물어, 넌 진실을 말한 적이 없으니까"
+    },
+    {
+      "startMs": 41190,
+      "endMs": 44090,
+      "translation": "돈을 펑펑 쓰는 것밖에 할 게 없는 것 같았어"
+    },
+    {
+      "startMs": 44090,
+      "endMs": 46930,
+      "translation": "여자들을 다이아몬드랑 쿠페로 바꿔 버려"
+    },
+    {
+      "startMs": 46930,
+      "endMs": 49900,
+      "translation": "그 여자가 내 마음을 노리고 올 때면 세상의 종말 같아"
+    },
+    {
+      "startMs": 49900,
+      "endMs": 52860,
+      "translation": "판을 뒤집어 줄게, 절대 못 잊게 해 줄게"
+    },
+    {
+      "startMs": 52860,
+      "endMs": 55790,
+      "translation": "사과 안 해, 네가 기분 나쁘든 말든 상관없어"
+    },
+    {
+      "startMs": 55790,
+      "endMs": 60070,
+      "translation": "더 얘기할 것도 없어, 그래, 우린 각자의 길을 가야 해"
+    },
+    {
+      "startMs": 60070,
+      "endMs": 62890,
+      "translation": "날 불길 속으로 끌고 내려가진 못해"
+    },
+    {
+      "startMs": 62890,
+      "endMs": 65740,
+      "translation": "네 이름조차 알고 싶지 않아"
+    },
+    {
+      "startMs": 65740,
+      "endMs": 69700,
+      "translation": "모든 게 어떻게 바뀌는지 지켜봐, 그래, 에이"
+    },
+    {
+      "startMs": 69700,
+      "endMs": 71320,
+      "translation": "벤틀리를 타고 나타날 거야"
+    },
+    {
+      "startMs": 71320,
+      "endMs": 75590,
+      "translation": "주머니엔 빌어먹을 10만 달러를 넣고, 그래, 그래"
+    },
+    {
+      "startMs": 75590,
+      "endMs": 77510,
+      "translation": "차를 대고 문을 활짝 열어젖혀"
+    },
+    {
+      "startMs": 77510,
+      "endMs": 81420,
+      "translation": "다들 보고 있는 거 알면서 폼을 잡아, 그래, 그래"
+    },
+    {
+      "startMs": 81420,
+      "endMs": 83400,
+      "translation": "그리고 다른 여자가 차에서 내리게 손을 잡아 줘"
+    },
+    {
+      "startMs": 83400,
+      "endMs": 87430,
+      "translation": "네가 싫어하든 말든 신경 안 써, 그래, 그래"
+    },
+    {
+      "startMs": 87430,
+      "endMs": 89150,
+      "translation": "그냥 끝났다는 걸 보여 주려고"
+    },
+    {
+      "startMs": 89150,
+      "endMs": 92400,
+      "translation": "네가 뭐라고 하든 상관없어, 그래"
+    },
+    {
+      "startMs": 92400,
+      "endMs": 95920,
+      "translation": "그 여자를 빌어먹을 시체 가방에 넣어 버릴 거야"
+    },
+    {
+      "startMs": 95920,
+      "endMs": 99020,
+      "translation": "내가 절대, 절대 돌아가지 않는다는 걸 알게"
+    },
+    {
+      "startMs": 99020,
+      "endMs": 101950,
+      "translation": "넌 프라다 가방에 담긴 네 마음을 계산대에 올려 뒀지"
+    },
+    {
+      "startMs": 101950,
+      "endMs": 106820,
+      "translation": "예전엔 햇빛도 보고 싶지 않았어, 그래"
+    },
+    {
+      "startMs": 106820,
+      "endMs": 109760,
+      "translation": "난 바보였어!"
+    },
+    {
+      "startMs": 109760,
+      "endMs": 112500,
+      "translation": "무릎 꿇고 바닥에 엎드려 빌었지"
+    },
+    {
+      "startMs": 112500,
+      "endMs": 116390,
+      "translation": "이젠 너 같은 거 더는 원하지도 않아, 더는"
+    },
+    {
+      "startMs": 116390,
+      "endMs": 122150,
+      "translation": "이제 끝났어"
+    },
+    {
+      "startMs": 122150,
+      "endMs": 126580,
+      "translation": "이제 끝났어"
+    },
+    {
+      "startMs": 126580,
+      "endMs": 129000,
+      "translation": "그래, 그래, 그래, 에이"
+    },
+    {
+      "startMs": 129000,
+      "endMs": 131850,
+      "translation": "목에 칼이 꽂힌 것 같아, 넌 이걸 농담처럼 대해"
+    },
+    {
+      "startMs": 131850,
+      "endMs": 134640,
+      "translation": "전에도 이런 짓 해 봤겠지, 놀랍지도 않아, 그래"
+    },
+    {
+      "startMs": 134640,
+      "endMs": 137840,
+      "translation": "난 놓아줄 생각이 없었는데, 내가 유령이 되면 왜인지 알 거야"
+    },
+    {
+      "startMs": 137840,
+      "endMs": 140640,
+      "translation": "네가 결국 혼자 되길 바라, 내 눈엔 넌 죽은 거야, 그래"
+    },
+    {
+      "startMs": 140640,
+      "endMs": 143640,
+      "translation": "난 신앙 같은 건 없어, 디올일 때만 크리스천이지"
+    },
+    {
+      "startMs": 143640,
+      "endMs": 146790,
+      "translation": "아멕스 카드랑 금을 위해서만 기도해"
+    },
+    {
+      "startMs": 146790,
+      "endMs": 149450,
+      "translation": "넌 날 멈추지 못했어, 그냥 돌아가는 길이었을 뿐"
+    },
+    {
+      "startMs": 149450,
+      "endMs": 152310,
+      "translation": "날 미치게 몰아붙이려다 네가 갈 길이 끊겼지"
+    },
+    {
+      "startMs": 152310,
+      "endMs": 155180,
+      "translation": "그 여자가 내 마음을 노리고 올 때면 세상의 종말 같아"
+    },
+    {
+      "startMs": 155180,
+      "endMs": 158220,
+      "translation": "판을 뒤집어 줄게, 절대 못 잊게 해 줄게"
+    },
+    {
+      "startMs": 158220,
+      "endMs": 161120,
+      "translation": "사과 안 해, 네가 기분 나쁘든 말든 상관없어"
+    },
+    {
+      "startMs": 161120,
+      "endMs": 165440,
+      "translation": "더 얘기할 것도 없어, 그래, 우린 각자의 길을 가야 해"
+    },
+    {
+      "startMs": 165440,
+      "endMs": 168360,
+      "translation": "날 불길 속으로 끌고 내려가진 못해"
+    },
+    {
+      "startMs": 168360,
+      "endMs": 171170,
+      "translation": "네 이름조차 알고 싶지 않아"
+    },
+    {
+      "startMs": 171170,
+      "endMs": 175290,
+      "translation": "모든 게 어떻게 바뀌는지 지켜봐, 그래, 에이"
+    },
+    {
+      "startMs": 175290,
+      "endMs": 176780,
+      "translation": "벤틀리를 타고 나타날 거야"
+    },
+    {
+      "startMs": 176780,
+      "endMs": 180920,
+      "translation": "주머니엔 빌어먹을 10만 달러를 넣고, 그래, 그래"
+    },
+    {
+      "startMs": 180920,
+      "endMs": 182920,
+      "translation": "차를 대고 문을 활짝 열어젖혀"
+    },
+    {
+      "startMs": 182920,
+      "endMs": 186780,
+      "translation": "다들 보고 있는 거 알면서 폼을 잡아, 그래, 그래"
+    },
+    {
+      "startMs": 186780,
+      "endMs": 188780,
+      "translation": "그리고 다른 여자가 차에서 내리게 손을 잡아 줘"
+    },
+    {
+      "startMs": 188780,
+      "endMs": 192700,
+      "translation": "네가 싫어하든 말든 신경 안 써, 그래, 그래"
+    },
+    {
+      "startMs": 192700,
+      "endMs": 194300,
+      "translation": "그냥 끝났다는 걸 보여 주려고"
+    },
+    {
+      "startMs": 194300,
+      "endMs": 197960,
+      "translation": "네가 뭐라고 하든 상관없어, 그래"
+    },
+    {
+      "startMs": 197960,
+      "endMs": 201330,
+      "translation": "그 여자를 빌어먹을 시체 가방에 넣어 버릴 거야"
+    },
+    {
+      "startMs": 201330,
+      "endMs": 204360,
+      "translation": "내가 절대, 절대 돌아가지 않는다는 걸 알게"
+    },
+    {
+      "startMs": 204360,
+      "endMs": 207220,
+      "translation": "넌 프라다 가방에 담긴 네 마음을 계산대에 올려 뒀지"
+    },
+    {
+      "startMs": 207220,
+      "endMs": 212150,
+      "translation": "예전엔 햇빛도 보고 싶지 않았어, 그래"
+    },
+    {
+      "startMs": 212150,
+      "endMs": 215150,
+      "translation": "난 바보였어!"
+    },
+    {
+      "startMs": 215150,
+      "endMs": 217980,
+      "translation": "무릎 꿇고 바닥에 엎드려 빌었지"
+    },
+    {
+      "startMs": 217980,
+      "endMs": 221570,
+      "translation": "이젠 너 같은 거 더는 원하지도 않아, 더는"
+    },
+    {
+      "startMs": 221570,
+      "endMs": 227460,
+      "translation": "이제 끝났어"
+    },
+    {
+      "startMs": 227460,
+      "endMs": 233370,
+      "translation": "이제 끝났어"
+    },
+    {
+      "startMs": 233370,
+      "endMs": 247000,
+      "translation": "(이제 끝났어)"
+    }
+  ]
+}

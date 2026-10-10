@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974099,
+    "durationMs": 224000
+  },
+  "segments": [
+    {
+      "startMs": 7860,
+      "endMs": 11980,
+      "translation": "우, 예"
+    },
+    {
+      "startMs": 11980,
+      "endMs": 15490,
+      "translation": "우, 예"
+    },
+    {
+      "startMs": 15490,
+      "endMs": 17880,
+      "translation": "느껴져"
+    },
+    {
+      "startMs": 17880,
+      "endMs": 21600,
+      "translation": "걸, 전화 좀 받아, 믿을 수가 없어"
+    },
+    {
+      "startMs": 21600,
+      "endMs": 25530,
+      "translation": "내 영혼이 천천히 빠져나가는 게 느껴져"
+    },
+    {
+      "startMs": 25530,
+      "endMs": 29110,
+      "translation": "내 모습이 보여, 숨을 쉬지 않고 있어, 아"
+    },
+    {
+      "startMs": 29110,
+      "endMs": 33610,
+      "translation": "숨을 쉬지 않아 (숨을 쉬지 않아), 천천히 피를 흘리고 있어 (피를)"
+    },
+    {
+      "startMs": 33610,
+      "endMs": 37780,
+      "translation": "내 마음을 다 말했더라면 좋았을 텐데 (마음을)"
+    },
+    {
+      "startMs": 37780,
+      "endMs": 41700,
+      "translation": "내가 이유 있는 삶을 살았길 바라 (이유)"
+    },
+    {
+      "startMs": 41700,
+      "endMs": 46550,
+      "translation": "그래도 적어도 내가 떠난 뒤 네가 이 노래를 틀어 준다면"
+    },
+    {
+      "startMs": 46550,
+      "endMs": 51150,
+      "translation": "네가 날 위해 울어 주면 좋겠어, 내가 널 위해 울듯이"
+    },
+    {
+      "startMs": 51150,
+      "endMs": 53450,
+      "translation": "매일 밤 널 위해"
+    },
+    {
+      "startMs": 53450,
+      "endMs": 55450,
+      "translation": "나한테 너무 모질게 굴지 마, 베이비"
+    },
+    {
+      "startMs": 55450,
+      "endMs": 59280,
+      "translation": "너랑 노력했고, 너와의 삶을 그렸으니까"
+    },
+    {
+      "startMs": 59280,
+      "endMs": 61620,
+      "translation": "너와 함께하는 시간의 끝까지"
+    },
+    {
+      "startMs": 61620,
+      "endMs": 62520,
+      "translation": "이젠 남이 됐지"
+    },
+    {
+      "startMs": 62520,
+      "endMs": 67230,
+      "translation": "네가 아직도 날 위해 울어 주면 좋겠어, 내가 널 위해 울었듯이"
+    },
+    {
+      "startMs": 67230,
+      "endMs": 69480,
+      "translation": "매일 밤 널 위해"
+    },
+    {
+      "startMs": 69480,
+      "endMs": 73230,
+      "translation": "이 거짓말을 안고 살아왔는데, 이젠 진실을 숨길 수 없어"
+    },
+    {
+      "startMs": 73230,
+      "endMs": 75210,
+      "translation": "진실을 숨길 수 없어"
+    },
+    {
+      "startMs": 75210,
+      "endMs": 77220,
+      "translation": "걸, 널 위해 울게"
+    },
+    {
+      "startMs": 77220,
+      "endMs": 80430,
+      "translation": "걸, 널 위해 울게, 우, 예"
+    },
+    {
+      "startMs": 80430,
+      "endMs": 84280,
+      "translation": "앞이 잘 안 보여, 내 두려움을 씻어 내"
+    },
+    {
+      "startMs": 84280,
+      "endMs": 88270,
+      "translation": "위스키 눈물로"
+    },
+    {
+      "startMs": 88270,
+      "endMs": 92250,
+      "translation": "난 사라져, 끼어들지 마"
+    },
+    {
+      "startMs": 92250,
+      "endMs": 96390,
+      "translation": "끝이 가까워"
+    },
+    {
+      "startMs": 96390,
+      "endMs": 100130,
+      "translation": "군중이 소리치면 난 귀를 막아"
+    },
+    {
+      "startMs": 100130,
+      "endMs": 103470,
+      "translation": "환호를 막으려고"
+    },
+    {
+      "startMs": 103470,
+      "endMs": 107360,
+      "translation": "이 무대가 날 갉아먹었으니까, 바닥에 쓰러져 정신을 잃었어"
+    },
+    {
+      "startMs": 107360,
+      "endMs": 110750,
+      "translation": "이 펜트하우스 감옥에 나 혼자야"
+    },
+    {
+      "startMs": 110750,
+      "endMs": 115330,
+      "translation": "네가 날 위해 울어 주면 좋겠어, 내가 널 위해 울듯이"
+    },
+    {
+      "startMs": 115330,
+      "endMs": 117450,
+      "translation": "매일 밤 널 위해"
+    },
+    {
+      "startMs": 117450,
+      "endMs": 119340,
+      "translation": "나한테 너무 모질게 굴지 마, 베이비"
+    },
+    {
+      "startMs": 119340,
+      "endMs": 123200,
+      "translation": "너랑 노력했고, 너와의 삶을 그렸으니까"
+    },
+    {
+      "startMs": 123200,
+      "endMs": 125260,
+      "translation": "너와 함께하는 시간의 끝까지"
+    },
+    {
+      "startMs": 125260,
+      "endMs": 126670,
+      "translation": "이젠 남이 됐지"
+    },
+    {
+      "startMs": 126670,
+      "endMs": 131310,
+      "translation": "네가 아직도 날 위해 울어 주면 좋겠어, 내가 널 위해 울었듯이"
+    },
+    {
+      "startMs": 131310,
+      "endMs": 133380,
+      "translation": "매일 밤 널 위해"
+    },
+    {
+      "startMs": 133380,
+      "endMs": 137150,
+      "translation": "이 거짓말을 안고 살아왔는데, 이젠 진실을 숨길 수 없어"
+    },
+    {
+      "startMs": 137150,
+      "endMs": 139310,
+      "translation": "진실을 숨길 수 없어"
+    },
+    {
+      "startMs": 139310,
+      "endMs": 141230,
+      "translation": "걸, 널 위해 울게"
+    },
+    {
+      "startMs": 141230,
+      "endMs": 144310,
+      "translation": "걸, 널 위해 울게, 우, 예"
+    },
+    {
+      "startMs": 144310,
+      "endMs": 149470,
+      "translation": "길을 나설 때마다 내 일부가 조금씩 떨어져 나가"
+    },
+    {
+      "startMs": 149470,
+      "endMs": 152490,
+      "translation": "천천히 날 죽여 (천천히)"
+    },
+    {
+      "startMs": 152490,
+      "endMs": 157290,
+      "translation": "내가 가장 필요할 때 넌 늘 날 위로해 줬지"
+    },
+    {
+      "startMs": 157290,
+      "endMs": 160390,
+      "translation": "이젠 넌 날 잊었어 (날 잊었어)"
+    },
+    {
+      "startMs": 160390,
+      "endMs": 165220,
+      "translation": "이젠 혼자가 더 낫겠지, 뭐가 수수께끼겠어"
+    },
+    {
+      "startMs": 165220,
+      "endMs": 168130,
+      "translation": "넌 계속 보여 주고 있잖아"
+    },
+    {
+      "startMs": 168130,
+      "endMs": 172380,
+      "translation": "이제 난 내 집을 불태우고 있어, 베이비"
+    },
+    {
+      "startMs": 172380,
+      "endMs": 174650,
+      "translation": "내 집을 불태우고 있어"
+    },
+    {
+      "startMs": 174650,
+      "endMs": 179340,
+      "translation": "네가 날 위해 울어 주면 좋겠어, 내가 널 위해 울듯이"
+    },
+    {
+      "startMs": 179340,
+      "endMs": 181200,
+      "translation": "매일 밤 널 위해"
+    },
+    {
+      "startMs": 181200,
+      "endMs": 183390,
+      "translation": "나한테 너무 모질게 굴지 마, 베이비"
+    },
+    {
+      "startMs": 183390,
+      "endMs": 187120,
+      "translation": "너랑 노력했고, 너와의 삶을 그렸으니까"
+    },
+    {
+      "startMs": 187120,
+      "endMs": 189280,
+      "translation": "너와 함께하는 시간의 끝까지"
+    },
+    {
+      "startMs": 189280,
+      "endMs": 190550,
+      "translation": "이젠 남이 됐지"
+    },
+    {
+      "startMs": 190550,
+      "endMs": 195120,
+      "translation": "네가 아직도 날 위해 울어 주면 좋겠어, 내가 널 위해 울었듯이"
+    },
+    {
+      "startMs": 195120,
+      "endMs": 197010,
+      "translation": "매일 밤 널 위해"
+    },
+    {
+      "startMs": 197010,
+      "endMs": 201220,
+      "translation": "이 거짓말을 안고 살아왔는데, 이젠 진실을 숨길 수 없어"
+    },
+    {
+      "startMs": 201220,
+      "endMs": 203290,
+      "translation": "진실을 숨길 수 없어"
+    },
+    {
+      "startMs": 203290,
+      "endMs": 205270,
+      "translation": "걸, 널 위해 울게"
+    },
+    {
+      "startMs": 205270,
+      "endMs": 211450,
+      "translation": "걸, 널 위해 울게, 우, 예"
+    },
+    {
+      "startMs": 211450,
+      "endMs": 224000,
+      "translation": "(우, 예)"
+    }
+  ]
+}

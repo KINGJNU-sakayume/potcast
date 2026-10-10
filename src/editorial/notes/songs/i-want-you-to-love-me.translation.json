@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 354176,
+    "durationMs": 238000
+  },
+  "segments": [
+    {
+      "startMs": 40160,
+      "endMs": 49900,
+      "translation": "난 오랜 세월을 기다렸어, 길 위에 남긴 발자국 하나하나가 나를 여기로 데려왔지"
+    },
+    {
+      "startMs": 49900,
+      "endMs": 56500,
+      "translation": "그리고 내년이면 분명해질 거야, 이 모든 게 그곳으로 가는 길이었다는 게"
+    },
+    {
+      "startMs": 56500,
+      "endMs": 69460,
+      "translation": "그리고 그때쯤이면 바라건대 네가 나를 사랑해 줬으면"
+    },
+    {
+      "startMs": 69460,
+      "endMs": 78780,
+      "translation": "네가 나를 사랑해 줬으면"
+    },
+    {
+      "startMs": 78780,
+      "endMs": 82270,
+      "translation": "나는 바람 속 나무들과 함께 흔들려"
+    },
+    {
+      "startMs": 82270,
+      "endMs": 88420,
+      "translation": "시간이 늘어난다는 걸 알아"
+    },
+    {
+      "startMs": 88420,
+      "endMs": 98360,
+      "translation": "그리고 내가 떠나면 내 입자들은 흩어지고 퍼져서 다시 그 맥박 속으로 돌아가겠지"
+    },
+    {
+      "startMs": 98360,
+      "endMs": 103660,
+      "translation": "이 모든 게 결국엔 아무 의미 없을 거라는 것도 알아"
+    },
+    {
+      "startMs": 103660,
+      "endMs": 108860,
+      "translation": "하지만 아무도 없는 곳에서 난 소리도 여전히 소리라는 걸 알아"
+    },
+    {
+      "startMs": 108860,
+      "endMs": 115860,
+      "translation": "그리고 이 몸에 있는 동안엔 원할 누군가가 필요해"
+    },
+    {
+      "startMs": 115860,
+      "endMs": 128140,
+      "translation": "그리고 난 원하는 걸 원해, 그리고 원해, 네가 나를 사랑해 주길"
+    },
+    {
+      "startMs": 128140,
+      "endMs": 141340,
+      "translation": "너를"
+    },
+    {
+      "startMs": 141340,
+      "endMs": 150400,
+      "translation": "그리고 네가 그렇다는 걸 알아"
+    },
+    {
+      "startMs": 150400,
+      "endMs": 158480,
+      "translation": "어둠 속에서, 네가 그렇다는 걸 알아"
+    },
+    {
+      "startMs": 158480,
+      "endMs": 164430,
+      "translation": "그리고 알아, 네게 날 일으켜 세울 힘이 있다는 걸 너도 안다는 걸, 그러니 그 힘을 써 줬으면"
+    },
+    {
+      "startMs": 164430,
+      "endMs": 165780,
+      "translation": "음악을 크게 틀어"
+    },
+    {
+      "startMs": 165780,
+      "endMs": 168010,
+      "translation": "두드리고, 물고, 멍들게 해"
+    },
+    {
+      "startMs": 168010,
+      "endMs": 170460,
+      "translation": "시작하고 싶을 때 언제든 시작해"
+    },
+    {
+      "startMs": 170460,
+      "endMs": 173350,
+      "translation": "우리가 있던 곳으로 돌아갈 필요는 없어"
+    },
+    {
+      "startMs": 173350,
+      "endMs": 175660,
+      "translation": "난 네가 이기길 바라는 여자야"
+    },
+    {
+      "startMs": 175660,
+      "endMs": 186830,
+      "translation": "그리고 난 기다려 왔어, 네가 나를 사랑해 주길"
+    },
+    {
+      "startMs": 186830,
+      "endMs": 195820,
+      "translation": "너를"
+    },
+    {
+      "startMs": 195820,
+      "endMs": 238000,
+      "translation": "너를"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 36891294,
+    "durationMs": 233000
+  },
+  "segments": [
+    {
+      "startMs": 830,
+      "endMs": 9020,
+      "translation": "음, 더는 못 기다려"
+    },
+    {
+      "startMs": 9020,
+      "endMs": 14240,
+      "translation": "그래"
+    },
+    {
+      "startMs": 14240,
+      "endMs": 16410,
+      "translation": "어"
+    },
+    {
+      "startMs": 16410,
+      "endMs": 20250,
+      "translation": "사람들은 늘 놓친 사람 얘기만 해"
+    },
+    {
+      "startMs": 20250,
+      "endMs": 24650,
+      "translation": "난 늘 떠나지 않겠다는 사람만 만나는 것 같아"
+    },
+    {
+      "startMs": 24650,
+      "endMs": 28660,
+      "translation": "난 내가 그리려는 삶에 정신이 팔려 있어"
+    },
+    {
+      "startMs": 28660,
+      "endMs": 33390,
+      "translation": "그래, 그래, 어, 오, 그래, 그래"
+    },
+    {
+      "startMs": 33390,
+      "endMs": 37800,
+      "translation": "이 모든 여자들이 명성에 너무 끌려 있어"
+    },
+    {
+      "startMs": 37800,
+      "endMs": 42040,
+      "translation": "결국 길을 막아서는 놈들이 너무 많아"
+    },
+    {
+      "startMs": 42040,
+      "endMs": 46000,
+      "translation": "아무것도 날 막지 못해, 어떻게든 얻어 낼 거야"
+    },
+    {
+      "startMs": 46000,
+      "endMs": 50580,
+      "translation": "그래, 그래, 어, 오, 그래, 그래 (우)"
+    },
+    {
+      "startMs": 50580,
+      "endMs": 58850,
+      "translation": "왜 이 순간을 앗아 가려는 거야? 우린 이걸 가질 수 있어"
+    },
+    {
+      "startMs": 58850,
+      "endMs": 66470,
+      "translation": "왜 이 순간을 앗아 가려는 거야? 우후"
+    },
+    {
+      "startMs": 66470,
+      "endMs": 70440,
+      "translation": "넌 나랑 평생을 보낼 필요 없어"
+    },
+    {
+      "startMs": 70440,
+      "endMs": 74680,
+      "translation": "에너지를 낭비할 필요도 없어"
+    },
+    {
+      "startMs": 74680,
+      "endMs": 78940,
+      "translation": "우린 그냥 흔들리면 돼, 그래"
+    },
+    {
+      "startMs": 78940,
+      "endMs": 83240,
+      "translation": "우린 그냥 흔들리면 돼, 그래"
+    },
+    {
+      "startMs": 83240,
+      "endMs": 87350,
+      "translation": "네 몸이 내 옆에 있기만 하면 돼"
+    },
+    {
+      "startMs": 87350,
+      "endMs": 91650,
+      "translation": "그게 나한테 엄청난 황홀감을 주거든"
+    },
+    {
+      "startMs": 91650,
+      "endMs": 95590,
+      "translation": "우린 그냥 흔들리면 돼, 그래"
+    },
+    {
+      "startMs": 95590,
+      "endMs": 101390,
+      "translation": "우린 그냥 흔들리면 돼, 그래, 그래, 그래"
+    },
+    {
+      "startMs": 101390,
+      "endMs": 105640,
+      "translation": "내가 문자 보내는 거 봤지, 부재중 전화도 봤지"
+    },
+    {
+      "startMs": 105640,
+      "endMs": 109900,
+      "translation": "난 막 나가고 있어, 베이비, 다 잃기 직전이야"
+    },
+    {
+      "startMs": 109900,
+      "endMs": 114470,
+      "translation": "이 술이 날 미치게 해, 애더럴이랑 섞였거든"
+    },
+    {
+      "startMs": 114470,
+      "endMs": 118260,
+      "translation": "난 비트에만 집중해, 아, 그래"
+    },
+    {
+      "startMs": 118260,
+      "endMs": 122040,
+      "translation": "왜 앗아 가려는 거야 (앗아 가려는 거야)"
+    },
+    {
+      "startMs": 122040,
+      "endMs": 126540,
+      "translation": "이 순간을 (이 순간을)? 우린 이걸 가질 수 있어 (가질 수 있어)"
+    },
+    {
+      "startMs": 126540,
+      "endMs": 130210,
+      "translation": "왜 앗아 가려는 거야 (앗아 가려는 거야)"
+    },
+    {
+      "startMs": 130210,
+      "endMs": 134040,
+      "translation": "이 순간을? 우후 (오)"
+    },
+    {
+      "startMs": 134040,
+      "endMs": 138440,
+      "translation": "넌 나랑 평생을 보낼 필요 없어 (보낼 필요 없어)"
+    },
+    {
+      "startMs": 138440,
+      "endMs": 142150,
+      "translation": "에너지를 낭비할 필요도 없어"
+    },
+    {
+      "startMs": 142150,
+      "endMs": 146620,
+      "translation": "우린 그냥 흔들리면 돼, 그래"
+    },
+    {
+      "startMs": 146620,
+      "endMs": 151050,
+      "translation": "우린 그냥 흔들리면 돼, 그래 (그냥 흔들리면 돼)"
+    },
+    {
+      "startMs": 151050,
+      "endMs": 155230,
+      "translation": "네 몸이 내 옆에 있기만 하면 돼 (오, 헤이)"
+    },
+    {
+      "startMs": 155230,
+      "endMs": 159240,
+      "translation": "그게 나한테 엄청난 황홀감을 주거든"
+    },
+    {
+      "startMs": 159240,
+      "endMs": 163400,
+      "translation": "우린 그냥 흔들리면 돼, 그래"
+    },
+    {
+      "startMs": 163400,
+      "endMs": 172250,
+      "translation": "우린 그냥 흔들리면 돼, 그래, 그래 (우린 그냥 흔들리면 돼, 베이비)"
+    },
+    {
+      "startMs": 172250,
+      "endMs": 178020,
+      "translation": "그래, 그래"
+    },
+    {
+      "startMs": 178020,
+      "endMs": 185680,
+      "translation": "(왜 이 순간을 앗아 가려는 거야? 우린 이걸 가질 수 있어) 헤이"
+    },
+    {
+      "startMs": 185680,
+      "endMs": 194350,
+      "translation": "(왜 이 순간을 앗아 가려는 거야? 우후!)"
+    },
+    {
+      "startMs": 194350,
+      "endMs": 195890,
+      "translation": "(가자)"
+    },
+    {
+      "startMs": 195890,
+      "endMs": 199830,
+      "translation": "넌 나랑 평생을 보낼 필요 없어 (나랑 평생을 보낼 필요 없어)"
+    },
+    {
+      "startMs": 199830,
+      "endMs": 203960,
+      "translation": "에너지를 낭비할 필요도 없어 (낭비할 필요 없어)"
+    },
+    {
+      "startMs": 203960,
+      "endMs": 207930,
+      "translation": "우린 그냥 흔들리면 돼, 그래 (오, 베이비)"
+    },
+    {
+      "startMs": 207930,
+      "endMs": 212490,
+      "translation": "우린 그냥 흔들리면 돼, 그래 (네가 알아야 할 건 이게 다야)"
+    },
+    {
+      "startMs": 212490,
+      "endMs": 216330,
+      "translation": "네 몸이 내 옆에 있기만 하면 돼 (워-우, 헤이)"
+    },
+    {
+      "startMs": 216330,
+      "endMs": 220850,
+      "translation": "그게 나한테 엄청난 황홀감을 주거든"
+    },
+    {
+      "startMs": 220850,
+      "endMs": 225090,
+      "translation": "우린 그냥 흔들리면 돼, 그래 (오)"
+    },
+    {
+      "startMs": 225090,
+      "endMs": 229450,
+      "translation": "우린 그냥 흔들리면 돼, 그래"
+    },
+    {
+      "startMs": 229450,
+      "endMs": 233000,
+      "translation": "(그래, 그래, 그래)"
+    }
+  ]
+}

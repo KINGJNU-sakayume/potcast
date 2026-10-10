@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 766231,
+    "durationMs": 147000
+  },
+  "segments": [
+    {
+      "startMs": 11310,
+      "endMs": 13870,
+      "translation": "에이, 다들 좋은 소식 들었어?"
+    },
+    {
+      "startMs": 13870,
+      "endMs": 16920,
+      "translation": "날 과소평가하며 잤구나, 푹 잤어?"
+    },
+    {
+      "startMs": 16920,
+      "endMs": 19290,
+      "translation": "야, 일어나, 일어나"
+    },
+    {
+      "startMs": 19290,
+      "endMs": 21830,
+      "translation": "이제 돈 벌러 갈 거야"
+    },
+    {
+      "startMs": 21830,
+      "endMs": 23620,
+      "translation": "돈이 날 만든 게 아니야"
+    },
+    {
+      "startMs": 23620,
+      "endMs": 25770,
+      "translation": "나한테 뭘 시킨다고? 아니, 날 움직일 순 없어"
+    },
+    {
+      "startMs": 25770,
+      "endMs": 28290,
+      "translation": "돈이 부족해도 날 매수할 수 없어"
+    },
+    {
+      "startMs": 28290,
+      "endMs": 30600,
+      "translation": "돈이 부족해도 날 갖고 놀 순 없어"
+    },
+    {
+      "startMs": 30600,
+      "endMs": 33010,
+      "translation": "에이, 다들 좋은 소식 들었어?"
+    },
+    {
+      "startMs": 33010,
+      "endMs": 36120,
+      "translation": "날 과소평가하며 잤구나, 푹 잤어?"
+    },
+    {
+      "startMs": 36120,
+      "endMs": 38320,
+      "translation": "야, 일어나, 일어나"
+    },
+    {
+      "startMs": 38320,
+      "endMs": 40400,
+      "translation": "이제 돈 벌러 갈 거야"
+    },
+    {
+      "startMs": 40400,
+      "endMs": 42590,
+      "translation": "파블로는 롤렉스랑 로트바일러를 샀어"
+    },
+    {
+      "startMs": 42590,
+      "endMs": 45060,
+      "translation": "유명해질수록 더 거칠어지기만 한 것 같아"
+    },
+    {
+      "startMs": 45060,
+      "endMs": 47460,
+      "translation": "손 들어, 우린 경찰이 가르친 대로 할 뿐이야"
+    },
+    {
+      "startMs": 47460,
+      "endMs": 50040,
+      "translation": "손 들어, 우린 경찰이 가르친 대로 할 뿐이야"
+    },
+    {
+      "startMs": 50040,
+      "endMs": 52110,
+      "translation": "난 오래전부터 제정신이 아니었어"
+    },
+    {
+      "startMs": 52110,
+      "endMs": 54470,
+      "translation": "난 오래전부터 제정신이 아니었어"
+    },
+    {
+      "startMs": 54470,
+      "endMs": 56810,
+      "translation": "잘못된 때에 내 기분을 털어놓곤 했어"
+    },
+    {
+      "startMs": 56810,
+      "endMs": 59620,
+      "translation": "네가 원하는 때에 안 올 수도 있지만 난 때를 맞춰 와"
+    },
+    {
+      "startMs": 59620,
+      "endMs": 61640,
+      "translation": "에이, 다들 좋은 소식 들었어?"
+    },
+    {
+      "startMs": 61640,
+      "endMs": 64850,
+      "translation": "날 과소평가하며 잤구나, 푹 잤어?"
+    },
+    {
+      "startMs": 64850,
+      "endMs": 67010,
+      "translation": "야, 일어나, 일어나"
+    },
+    {
+      "startMs": 67010,
+      "endMs": 69260,
+      "translation": "이제 돈 벌러 갈 거야"
+    },
+    {
+      "startMs": 69260,
+      "endMs": 71580,
+      "translation": "이 사람들이 날 갖고 놀게 둘 수 없어"
+    },
+    {
+      "startMs": 71580,
+      "endMs": 73830,
+      "translation": "안 미친 천재 하나만 대 봐"
+    },
+    {
+      "startMs": 73830,
+      "endMs": 75560,
+      "translation": "우리 아버지를 따라"
+    },
+    {
+      "startMs": 75560,
+      "endMs": 78050,
+      "translation": "넌 우리 표어를 빌려 쓰지"
+    },
+    {
+      "startMs": 78050,
+      "endMs": 80390,
+      "translation": "난 시카고 사우스사이드 사람이야"
+    },
+    {
+      "startMs": 80390,
+      "endMs": 82820,
+      "translation": "난 시카고 사우스사이드 사람이야"
+    },
+    {
+      "startMs": 82820,
+      "endMs": 85460,
+      "translation": "에이, 다들 좋은 소식 들었어?"
+    },
+    {
+      "startMs": 85460,
+      "endMs": 88570,
+      "translation": "날 과소평가하며 잤구나, 푹 잤어?"
+    },
+    {
+      "startMs": 88570,
+      "endMs": 90950,
+      "translation": "야, 일어나, 일어나"
+    },
+    {
+      "startMs": 90950,
+      "endMs": 92860,
+      "translation": "돈 벌 시간이야"
+    },
+    {
+      "startMs": 92860,
+      "endMs": 95000,
+      "translation": "난 오래전부터 제정신이 아니었어"
+    },
+    {
+      "startMs": 95000,
+      "endMs": 97470,
+      "translation": "난 오래전부터 제정신이 아니었어"
+    },
+    {
+      "startMs": 97470,
+      "endMs": 102400,
+      "translation": "알아, 알아, 여자랑 자지도 못하면서 험담만 하는 블로거들한테 신경 쓸 필요 없지"
+    },
+    {
+      "startMs": 102400,
+      "endMs": 104470,
+      "translation": "고담에서 패션쇼를 해, 새 의상이 필요해"
+    },
+    {
+      "startMs": 104470,
+      "endMs": 107050,
+      "translation": "주머니쥐로 재킷을 만들었다고 동물보호단체가 화났어"
+    },
+    {
+      "startMs": 107050,
+      "endMs": 109320,
+      "translation": "끝내줘, 스티브 잡스에 스티브 오스틴을 섞었지"
+    },
+    {
+      "startMs": 109320,
+      "endMs": 111800,
+      "translation": "원단 가게에서 목화를 고르는 부유한 노예"
+    },
+    {
+      "startMs": 111800,
+      "endMs": 114050,
+      "translation": "호브가 조던이라면 조던마다 로드먼이 필요해"
+    },
+    {
+      "startMs": 114050,
+      "endMs": 116510,
+      "translation": "제이, 걔들은 정말 문제를 일으키고 싶진 않아"
+    },
+    {
+      "startMs": 116510,
+      "endMs": 118870,
+      "translation": "투팍이 죽임당했던 것과 같은 차를 몰아"
+    },
+    {
+      "startMs": 118870,
+      "endMs": 121410,
+      "translation": "투팍이 죽임당했던 것과 같은, 어, 차를 몰아"
+    },
+    {
+      "startMs": 121410,
+      "endMs": 123860,
+      "translation": "손 들어, 우린 경찰이 가르친 대로 할 뿐이야"
+    },
+    {
+      "startMs": 123860,
+      "endMs": 126280,
+      "translation": "손 들어, 손 들어, 그랬더니 경찰이 우릴 쐈어"
+    },
+    {
+      "startMs": 126280,
+      "endMs": 127390,
+      "translation": "잠깐, 잠깐, 잠깐"
+    },
+    {
+      "startMs": 127390,
+      "endMs": 129980,
+      "translation": "잠깐만, 여기 있는 모두, 난 빈민가의 오프라야"
+    },
+    {
+      "startMs": 129980,
+      "endMs": 132600,
+      "translation": "무슨 뜻인지 알아? 너도 모피! 너도 모피!"
+    },
+    {
+      "startMs": 132600,
+      "endMs": 135780,
+      "translation": "너도 전용기! 너도 전용기! 너한텐 엉덩이 큰 여자! 우!"
+    }
+  ]
+}

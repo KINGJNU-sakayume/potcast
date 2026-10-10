@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 569908,
+    "durationMs": 279000
+  },
+  "segments": [
+    {
+      "startMs": 4000,
+      "endMs": 6570,
+      "translation": "아들은 잘 지내? (모든, 모든, 그것, 그것)"
+    },
+    {
+      "startMs": 6570,
+      "endMs": 8130,
+      "translation": "올해 팀에 들어갔어? (모든, 모든, 그것, 그것)"
+    },
+    {
+      "startMs": 8130,
+      "endMs": 12580,
+      "translation": "그래, 키가 작다고 했다고 (반짝이는 게 다 금은 아니야)"
+    },
+    {
+      "startMs": 12580,
+      "endMs": 15980,
+      "translation": "엄마, 우리 왔어, 이번 일요일에 요리할 거야, 알았지? (금이라고 다 진짜는 아니야)"
+    },
+    {
+      "startMs": 15980,
+      "endMs": 18280,
+      "translation": "그러니 들러 (진짜는 네가 내게 주는 것)"
+    },
+    {
+      "startMs": 18280,
+      "endMs": 19360,
+      "translation": "그게 새 여자 친구야?"
+    },
+    {
+      "startMs": 19360,
+      "endMs": 20800,
+      "translation": "이건 집안일이야"
+    },
+    {
+      "startMs": 20800,
+      "endMs": 23200,
+      "translation": "그리고 이건 우리와 함께하지 못하는 가족을 위한 거야"
+    },
+    {
+      "startMs": 23200,
+      "endMs": 26180,
+      "translation": "그리고 이건 갇혀 있는 내 사촌을 위한 거야, 답은 우리 안에 있다는 걸 알아"
+    },
+    {
+      "startMs": 26180,
+      "endMs": 28160,
+      "translation": "그래서 노래에 이렇게 달콤하게 담는 거야"
+    },
+    {
+      "startMs": 28160,
+      "endMs": 30020,
+      "translation": "할머니 사진을 찍은 사진처럼"
+    },
+    {
+      "startMs": 30020,
+      "endMs": 32140,
+      "translation": "네가 떠나고 나니 실감이 나"
+    },
+    {
+      "startMs": 32140,
+      "endMs": 35160,
+      "translation": "추수감사절이랑 크리스마스엔 너무 힘들어, 이건 아니잖아"
+    },
+    {
+      "startMs": 35160,
+      "endMs": 37760,
+      "translation": "그래, 내가 만든 그 노래 들었지, 'This Can't Be Life'"
+    },
+    {
+      "startMs": 37760,
+      "endMs": 40340,
+      "translation": "누가 식사 기도 좀 해 줘, 체면 좀 차리게"
+    },
+    {
+      "startMs": 40340,
+      "endMs": 42220,
+      "translation": "얼굴을 가릴 핑계라도 생기게"
+    },
+    {
+      "startMs": 42220,
+      "endMs": 45510,
+      "translation": "네 몫도 한 접시 담았어, 소울 푸드, 할머니가 하던 식으로"
+    },
+    {
+      "startMs": 45510,
+      "endMs": 47980,
+      "translation": "옆에는 몽키 브레드, 우리 집안 식으로"
+    },
+    {
+      "startMs": 47980,
+      "endMs": 50700,
+      "translation": "그걸 가져갔는데 교도관은 왜 그렇게 다 뒤져 봐야 해?"
+    },
+    {
+      "startMs": 50700,
+      "endMs": 51980,
+      "translation": "어릴 땐 우리 같이 웃곤 했는데"
+    },
+    {
+      "startMs": 51980,
+      "endMs": 53680,
+      "translation": "인생이 이렇게 빨리 흘러갈 줄 누가 알았겠어?"
+    },
+    {
+      "startMs": 53680,
+      "endMs": 55740,
+      "translation": "유리창 너머로 널 보게 될 줄 누가 알았겠어?"
+    },
+    {
+      "startMs": 55740,
+      "endMs": 58490,
+      "translation": "봐, 네가 안 했다고 하면 안 한 거야"
+    },
+    {
+      "startMs": 58490,
+      "endMs": 60300,
+      "translation": "만약 했다면, 그건 집안일이고"
+    },
+    {
+      "startMs": 60300,
+      "endMs": 63800,
+      "translation": "그리고 난 상관없어 (모든, 모든, 다이아몬드 반지, 다이아몬드 반지)"
+    },
+    {
+      "startMs": 63800,
+      "endMs": 67890,
+      "translation": "그런 건 아무 의미 없어 (모든, 모든, 그것, 그것)"
+    },
+    {
+      "startMs": 67890,
+      "endMs": 70170,
+      "translation": "이 모든 화려한 것들 (모든, 모든, 그것, 그것)"
+    },
+    {
+      "startMs": 70170,
+      "endMs": 76070,
+      "translation": "말해 두는데, 내 몸무게만큼의 금도 (반짝이는 게 다 금은 아니야, 좋은 게 다 진짜는 아니야)"
+    },
+    {
+      "startMs": 76070,
+      "endMs": 79510,
+      "translation": "이제 내가 아는 건, 이 모든 걸 알아 (진짜는 네가 내게 주는 것)"
+    },
+    {
+      "startMs": 79510,
+      "endMs": 82090,
+      "translation": "그래, 그래, 이건 집안일이야"
+    },
+    {
+      "startMs": 82090,
+      "endMs": 84370,
+      "translation": "그리고 이건 우리 곁에 서 있는 모두를 위한 거야"
+    },
+    {
+      "startMs": 84370,
+      "endMs": 86520,
+      "translation": "자, 가족 그래미 사진 한 장 찍자"
+    },
+    {
+      "startMs": 86520,
+      "endMs": 88980,
+      "translation": "애비, 다들 날 안 믿던 때 기억나?"
+    },
+    {
+      "startMs": 88980,
+      "endMs": 91720,
+      "translation": "이젠 걔가 \"봐, TV에 나온 저 사람 내 사촌이야\" 하더라"
+    },
+    {
+      "startMs": 91720,
+      "endMs": 94390,
+      "translation": "이제 우린 해내고 있고 성공할 거야"
+    },
+    {
+      "startMs": 94390,
+      "endMs": 96860,
+      "translation": "그럼 저들은 싫어하겠지, 그리고 난 그가 제일 아끼는 사람이야"
+    },
+    {
+      "startMs": 96860,
+      "endMs": 99510,
+      "translation": "부정 못 해, 난 끝까지 함께하는 놈이야"
+    },
+    {
+      "startMs": 99510,
+      "endMs": 102020,
+      "translation": "그래도 우리가 모이면 일렉트릭 슬라이드를 추지"
+    },
+    {
+      "startMs": 102020,
+      "endMs": 104410,
+      "translation": "할머니, 다들 들썩이게 해 줘요"
+    },
+    {
+      "startMs": 104410,
+      "endMs": 106780,
+      "translation": "아, 안 돼, 사진첩은 펴지 마"
+    },
+    {
+      "startMs": 106780,
+      "endMs": 109290,
+      "translation": "네 이름도 기억 못 하는 루스 고모가 있는데"
+    },
+    {
+      "startMs": 109290,
+      "endMs": 111880,
+      "translation": "그 폴라로이드를 보면 분명 추억에 잠길 거야"
+    },
+    {
+      "startMs": 111880,
+      "endMs": 114490,
+      "translation": "그런 고모 하나 있잖아, 무례하게 굴 생각은 없지만"
+    },
+    {
+      "startMs": 114490,
+      "endMs": 117100,
+      "translation": "명절마다 아무도 그 고모 음식은 안 먹어"
+    },
+    {
+      "startMs": 117100,
+      "endMs": 119830,
+      "translation": "그 집엔 묵고 싶지 않아, 최악의 사촌들이 있으니까"
+    },
+    {
+      "startMs": 119830,
+      "endMs": 122490,
+      "translation": "그 집 바퀴벌레는 친사촌만큼이나 붙어 살아"
+    },
+    {
+      "startMs": 122490,
+      "endMs": 124970,
+      "translation": "사촌들이랑 같이 목욕한 적 없는 척하지 마"
+    },
+    {
+      "startMs": 124970,
+      "endMs": 127170,
+      "translation": "여섯 명이면 침대 하나에 셋씩 들어갔잖아"
+    },
+    {
+      "startMs": 127170,
+      "endMs": 130190,
+      "translation": "셋은 머리 쪽, 셋은 다리 쪽으로 말이야"
+    },
+    {
+      "startMs": 130190,
+      "endMs": 132320,
+      "translation": "그래도 내 여자한테 내가 오줌 쌌던 얘기까지 할 필요는 없었잖아"
+    },
+    {
+      "startMs": 132320,
+      "endMs": 136130,
+      "translation": "비야, 비야, 비야, 가거라 (어)"
+    },
+    {
+      "startMs": 136130,
+      "endMs": 142380,
+      "translation": "해님이 나오면 아이들 모두 이렇게 말하지 (어)"
+    },
+    {
+      "startMs": 142380,
+      "endMs": 146570,
+      "translation": "비야, 비야, 비야, 가거라 (그래, 그래, 어)"
+    },
+    {
+      "startMs": 146570,
+      "endMs": 152960,
+      "translation": "해님이 나오면 아이들 모두 이렇게 말하지 (그래)"
+    },
+    {
+      "startMs": 152960,
+      "endMs": 155770,
+      "translation": "오늘 아침 일찍 새로운 마음으로 일어났어"
+    },
+    {
+      "startMs": 155770,
+      "endMs": 159010,
+      "translation": "총 없이 랩을 하는 창의적인 방법을 찾아서"
+    },
+    {
+      "startMs": 159010,
+      "endMs": 161080,
+      "translation": "콧대는 낮추고, 마음은 하나님께 두고"
+    },
+    {
+      "startMs": 161080,
+      "endMs": 163340,
+      "translation": "얼굴은 떠오르는 해를 향해"
+    },
+    {
+      "startMs": 163340,
+      "endMs": 165770,
+      "translation": "시카고의 내 사람들은 다 내 가족이야"
+    },
+    {
+      "startMs": 165770,
+      "endMs": 168310,
+      "translation": "내 사람들은 그냥 친구가 아니라 가족이야"
+    },
+    {
+      "startMs": 168310,
+      "endMs": 170880,
+      "translation": "언젠가 너도 날 이해할 날이 올 거야"
+    },
+    {
+      "startMs": 170880,
+      "endMs": 173590,
+      "translation": "남자다우면서도 네 친구를 사랑할 수 있어"
+    },
+    {
+      "startMs": 173590,
+      "endMs": 176320,
+      "translation": "집들이 때마다 열 낼 필요 없어"
+    },
+    {
+      "startMs": 176320,
+      "endMs": 178860,
+      "translation": "조지 포먼처럼 여기 앉아 사람들을 들들 볶으면서"
+    },
+    {
+      "startMs": 178860,
+      "endMs": 181270,
+      "translation": "레이 삼촌이랑 실라 고모는 왜 늘 한바탕 공연을 하는 거야?"
+    },
+    {
+      "startMs": 181270,
+      "endMs": 183890,
+      "translation": "고모가 뛰쳐나가자마자 삼촌이 뛰어 들어오고"
+    },
+    {
+      "startMs": 183890,
+      "endMs": 187250,
+      "translation": "다들 앉아, 이번 모임에선 좋은 시간 보내자"
+    },
+    {
+      "startMs": 187250,
+      "endMs": 189180,
+      "translation": "성찬식처럼 와인도 좀 마시고"
+    },
+    {
+      "startMs": 189180,
+      "endMs": 191490,
+      "translation": "다 괜찮은 척하자, 괜찮지 않더라도"
+    },
+    {
+      "startMs": 191490,
+      "endMs": 194260,
+      "translation": "우리 집안일을 아무한테나 보여 줄 순 없으니까, 어"
+    },
+    {
+      "startMs": 194260,
+      "endMs": 197590,
+      "translation": "(모든, 모든, 다이아몬드 반지, 다이아몬드 반지)"
+    },
+    {
+      "startMs": 197590,
+      "endMs": 201460,
+      "translation": "그런 건 아무 의미 없어 (모든, 모든, 그것, 그것)"
+    },
+    {
+      "startMs": 201460,
+      "endMs": 204580,
+      "translation": "그런 건 아무 의미 없어 (모든, 모든, 그것, 그것, 그것)"
+    },
+    {
+      "startMs": 204580,
+      "endMs": 207780,
+      "translation": "(반짝이는 게 다 금은 아니야, 금이라고 다 진짜는 아니야)"
+    },
+    {
+      "startMs": 207780,
+      "endMs": 213940,
+      "translation": "그런 건 아무 의미 없어, 아무것도 (진짜는 네가 내게 주는 것)"
+    },
+    {
+      "startMs": 213940,
+      "endMs": 217490,
+      "translation": "그리고 난 상관없어 (모든, 모든, 다이아몬드 반지, 다이아몬드 반지)"
+    },
+    {
+      "startMs": 217490,
+      "endMs": 221700,
+      "translation": "그런 건 아무 의미 없어 (모든, 모든, 그것, 그것)"
+    },
+    {
+      "startMs": 221700,
+      "endMs": 223700,
+      "translation": "이 모든 화려한 것들 (모든, 모든, 그것, 그것, 그것)"
+    },
+    {
+      "startMs": 223700,
+      "endMs": 229810,
+      "translation": "말해 두는데, 내 몸무게만큼의 금도 (반짝이는 게 다 금은 아니야, 좋은 게 다 진짜는 아니야)"
+    },
+    {
+      "startMs": 229810,
+      "endMs": 236730,
+      "translation": "이제 내가 아는 건, 이 모든 걸 알아 (진짜는 네가 내게 주는 것)"
+    },
+    {
+      "startMs": 236730,
+      "endMs": 239990,
+      "translation": "이 모든 것들 (이 모든 것들)"
+    },
+    {
+      "startMs": 239990,
+      "endMs": 243850,
+      "translation": "CLK 메르세데스 벤츠"
+    },
+    {
+      "startMs": 243850,
+      "endMs": 247110,
+      "translation": "이런 것들 (이 모든 것들)"
+    },
+    {
+      "startMs": 247110,
+      "endMs": 251970,
+      "translation": "이 모든 것들 (이 모든 것들)"
+    },
+    {
+      "startMs": 251970,
+      "endMs": 254860,
+      "translation": "이 모든 것들 (이런 것들)"
+    },
+    {
+      "startMs": 254860,
+      "endMs": 257280,
+      "translation": "엄청난 돈"
+    },
+    {
+      "startMs": 257280,
+      "endMs": 260590,
+      "translation": "이 모든 것들 (이 모든 것들)"
+    },
+    {
+      "startMs": 260590,
+      "endMs": 264260,
+      "translation": "엄마, 아빠, 제발 그만 싸우면 안 돼요?"
+    },
+    {
+      "startMs": 264260,
+      "endMs": 267550,
+      "translation": "이런 것들 (그리고 난 상관없어)"
+    },
+    {
+      "startMs": 267550,
+      "endMs": 269860,
+      "translation": "이 모든 것들 (이런 것들)"
+    },
+    {
+      "startMs": 269860,
+      "endMs": 274340,
+      "translation": "이 모든 것들 (이 모든 것들)"
+    },
+    {
+      "startMs": 274340,
+      "endMs": 276250,
+      "translation": "이런 것들"
+    },
+    {
+      "startMs": 276250,
+      "endMs": 279000,
+      "translation": "스티비를 감옥에서 꺼내 주자"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 580657,
+    "durationMs": 24000
+  },
+  "segments": [
+    {
+      "startMs": 70,
+      "endMs": 3670,
+      "translation": "이건 오래전에 세워졌어"
+    },
+    {
+      "startMs": 3670,
+      "endMs": 6280,
+      "translation": "가난한 노예들이, 오래전에"
+    },
+    {
+      "startMs": 6280,
+      "endMs": 7930,
+      "translation": "가진 게 없던 사람들이, 오래전에"
+    },
+    {
+      "startMs": 7930,
+      "endMs": 10040,
+      "translation": "1920년대의 가난한 형제들이, 오래전에"
+    },
+    {
+      "startMs": 10040,
+      "endMs": 12180,
+      "translation": "가진 게 없던 사람들, 우리가 먹을 수 없었던 것들"
+    },
+    {
+      "startMs": 12180,
+      "endMs": 13460,
+      "translation": "음, 기억나?"
+    },
+    {
+      "startMs": 13460,
+      "endMs": 15220,
+      "translation": "시리얼을 먹던 우리 식구들"
+    },
+    {
+      "startMs": 15220,
+      "endMs": 18270,
+      "translation": "우유는 따로 부어 먹고 싶어 했잖아, 그거 기억나? 응?"
+    },
+    {
+      "startMs": 18270,
+      "endMs": 21020,
+      "translation": "크리스마스마다 엄마가 방에 들어와서"
+    },
+    {
+      "startMs": 21020,
+      "endMs": 22360,
+      "translation": "트리인 척하던 거 기억나?"
+    },
+    {
+      "startMs": 22360,
+      "endMs": 24000,
+      "translation": "하, 기억나?"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11565198,
+    "durationMs": 205000
+  },
+  "segments": [
+    {
+      "startMs": 13340,
+      "endMs": 18200,
+      "translation": "1번 국도 위에서 캘리포니아식 금주 중"
+    },
+    {
+      "startMs": 18200,
+      "endMs": 22400,
+      "translation": "갓길 너머로 재미있는 게 보인 것 같았어"
+    },
+    {
+      "startMs": 22400,
+      "endMs": 33820,
+      "translation": "태워 줄 차를 찾고 있었지"
+    },
+    {
+      "startMs": 33820,
+      "endMs": 39020,
+      "translation": "데이지 반바지 차림의 말썽꾼이 엄지를 들고 있었어"
+    },
+    {
+      "startMs": 39020,
+      "endMs": 43430,
+      "translation": "얼간이 돈을 훔쳐서 도망치는 중이래"
+    },
+    {
+      "startMs": 43430,
+      "endMs": 53790,
+      "translation": "그리고 취하고 싶대"
+    },
+    {
+      "startMs": 53790,
+      "endMs": 57680,
+      "translation": "그 여자가 말했어, '짧은 여행에 데려가 줄게"
+    },
+    {
+      "startMs": 57680,
+      "endMs": 64670,
+      "translation": "이리 와, 이 입술 한번 맛봐'"
+    },
+    {
+      "startMs": 64670,
+      "endMs": 70050,
+      "translation": "내 위스키를 다 마시고, 내 연기를 다 들이마셨어"
+    },
+    {
+      "startMs": 70050,
+      "endMs": 74410,
+      "translation": "난 우주적인 농담의 웃음거리가 됐지"
+    },
+    {
+      "startMs": 74410,
+      "endMs": 82030,
+      "translation": "빌어먹을 병은 바닥났고"
+    },
+    {
+      "startMs": 82030,
+      "endMs": 85440,
+      "translation": "좀 울고 싶었어"
+    },
+    {
+      "startMs": 85440,
+      "endMs": 90960,
+      "translation": "그 여자가 '차 세워' 하고 속삭였고, 난 '네가 대장이야' 했지"
+    },
+    {
+      "startMs": 90960,
+      "endMs": 95190,
+      "translation": "남부 사투리로 말했어, '난 여기서 내릴게"
+    },
+    {
+      "startMs": 95190,
+      "endMs": 105790,
+      "translation": "즐거웠어'"
+    },
+    {
+      "startMs": 105790,
+      "endMs": 109510,
+      "translation": "그 여자가 말했어, '자기야, 한 번만 더 키스해 줘"
+    },
+    {
+      "startMs": 109510,
+      "endMs": 142790,
+      "translation": "너한테 영영 작별 인사 하기 전에'"
+    },
+    {
+      "startMs": 142790,
+      "endMs": 147970,
+      "translation": "집에 돌아가려면 경유가 좀 필요했어"
+    },
+    {
+      "startMs": 147970,
+      "endMs": 152150,
+      "translation": "돈을 내려고 보니 돈이 사라졌더라"
+    },
+    {
+      "startMs": 152150,
+      "endMs": 162890,
+      "translation": "얻어 타고 가야 했지"
+    },
+    {
+      "startMs": 162890,
+      "endMs": 166790,
+      "translation": "그러니 데이지 반바지가 돌아다니는 걸 보면"
+    },
+    {
+      "startMs": 166790,
+      "endMs": 173030,
+      "translation": "젊은이, 그냥 지나치는 게 좋을 거야"
+    },
+    {
+      "startMs": 173030,
+      "endMs": 177200,
+      "translation": "그리고 바닥에 떨어진 지갑을 보면"
+    },
+    {
+      "startMs": 177200,
+      "endMs": 205000,
+      "translation": "틀림없어, 그건 내 거야"
+    }
+  ]
+}

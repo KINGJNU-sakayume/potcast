@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 572067,
+    "durationMs": 305000
+  },
+  "segments": [
+    {
+      "startMs": 12000,
+      "endMs": 15740,
+      "translation": "(헤이, 마마, 아, 아우)"
+    },
+    {
+      "startMs": 15740,
+      "endMs": 18210,
+      "translation": "엄마를 위해 크게 소리치고 싶어"
+    },
+    {
+      "startMs": 18210,
+      "endMs": 20720,
+      "translation": "엄마가 정말 자랑스러우니까"
+    },
+    {
+      "startMs": 20720,
+      "endMs": 22790,
+      "translation": "내가 뭘 할 건지 말해 줄게"
+    },
+    {
+      "startMs": 22790,
+      "endMs": 23700,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 23700,
+      "endMs": 25650,
+      "translation": "내가 철없이 구는 거 알아, 그래도"
+    },
+    {
+      "startMs": 25650,
+      "endMs": 27660,
+      "translation": "약속할게, 학교로 돌아갈게"
+    },
+    {
+      "startMs": 27660,
+      "endMs": 30560,
+      "translation": "엄마가 허락해 준 것들, 고마워"
+    },
+    {
+      "startMs": 30560,
+      "endMs": 32550,
+      "translation": "그냥 엄마가 날 자랑스러워했으면 좋겠어 (헤이, 마마)"
+    },
+    {
+      "startMs": 32550,
+      "endMs": 34690,
+      "translation": "온 세상에 내 친구 얘기를 하고 싶어"
+    },
+    {
+      "startMs": 34690,
+      "endMs": 36630,
+      "translation": "내 작은 이 빛, 이제 빛나게 할 거야"
+    },
+    {
+      "startMs": 36630,
+      "endMs": 39330,
+      "translation": "너희를 그 좋았던 시절로 데려갈게"
+    },
+    {
+      "startMs": 39330,
+      "endMs": 41940,
+      "translation": "괜찮다면 우리 엄마 얘기를 할게"
+    },
+    {
+      "startMs": 41940,
+      "endMs": 45480,
+      "translation": "세 살 때 엄마랑 나는 시카고로 이사했어"
+    },
+    {
+      "startMs": 45480,
+      "endMs": 48130,
+      "translation": "12월 말, 혹독한 겨울에 감기에 걸렸지"
+    },
+    {
+      "startMs": 48130,
+      "endMs": 50100,
+      "translation": "엄마는 내 영혼에 좋은 걸 만들어 줬어"
+    },
+    {
+      "startMs": 50100,
+      "endMs": 52230,
+      "translation": "유명한 수제 닭고기 수프, 한 그릇 더 먹어도 돼?"
+    },
+    {
+      "startMs": 52230,
+      "endMs": 54630,
+      "translation": "엄마는 불을 켜 두려고 밤늦게까지 일했어"
+    },
+    {
+      "startMs": 54630,
+      "endMs": 57490,
+      "translation": "내가 자전거를 계속 탈 수 있게 보조 바퀴를 달아 줬지"
+    },
+    {
+      "startMs": 57490,
+      "endMs": 59580,
+      "translation": "이 세상 무엇이든 다 줬어"
+    },
+    {
+      "startMs": 59580,
+      "endMs": 62550,
+      "translation": "마이클 잭슨 가죽 재킷이랑 장갑은 줬지만 곱슬 파마는 안 해 줬지"
+    },
+    {
+      "startMs": 62550,
+      "endMs": 64100,
+      "translation": "그리고 어떤 남자도 나보다 앞에 두지 않았어"
+    },
+    {
+      "startMs": 64100,
+      "endMs": 67330,
+      "translation": "그래서 사랑해, 엄마, 알지?"
+    },
+    {
+      "startMs": 67330,
+      "endMs": 69770,
+      "translation": "일곱 살 때 엄마 눈에 눈물이 고인 걸 봤어"
+    },
+    {
+      "startMs": 69770,
+      "endMs": 73270,
+      "translation": "그 남자가 바람피우고 거짓말을 해서, 그때 나도 울기 시작했어"
+    },
+    {
+      "startMs": 73270,
+      "endMs": 75450,
+      "translation": "우리가 부엌 바닥에 무릎을 꿇었을 때"
+    },
+    {
+      "startMs": 75450,
+      "endMs": 77840,
+      "translation": "내가 그랬지, 엄마, 엄마가 더는 아프지 않을 때까지 사랑할게"
+    },
+    {
+      "startMs": 77840,
+      "endMs": 80150,
+      "translation": "그리고 내가 크면 엄마는 더 일하지 않아도 돼"
+    },
+    {
+      "startMs": 80150,
+      "endMs": 82540,
+      "translation": "우리가 감당 못 하던 대저택도 사 줄게"
+    },
+    {
+      "startMs": 82540,
+      "endMs": 85200,
+      "translation": "봐, 엄마는 부서지지 않고, 누구와도 헷갈릴 수 없고"
+    },
+    {
+      "startMs": 85200,
+      "endMs": 87960,
+      "translation": "무엇이든 해내고, 돈도 버는 사람"
+    },
+    {
+      "startMs": 87960,
+      "endMs": 90580,
+      "translation": "살아 있는 전설이기도 해, 하늘이 한 일을 봐"
+    },
+    {
+      "startMs": 90580,
+      "endMs": 92510,
+      "translation": "우리에게 천사를 보내 줬어, 고마워"
+    },
+    {
+      "startMs": 92510,
+      "endMs": 95890,
+      "translation": "(헤이, 마마, 아, 아우)"
+    },
+    {
+      "startMs": 95890,
+      "endMs": 98450,
+      "translation": "엄마를 위해 크게 소리치고 싶어"
+    },
+    {
+      "startMs": 98450,
+      "endMs": 100510,
+      "translation": "엄마가 정말 자랑스러우니까"
+    },
+    {
+      "startMs": 100510,
+      "endMs": 102630,
+      "translation": "내가 뭘 할 건지 말해 줄게"
+    },
+    {
+      "startMs": 102630,
+      "endMs": 103310,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 103310,
+      "endMs": 105370,
+      "translation": "내가 철없이 구는 거 알아, 그래도"
+    },
+    {
+      "startMs": 105370,
+      "endMs": 107790,
+      "translation": "약속할게, 학교로 돌아갈게"
+    },
+    {
+      "startMs": 107790,
+      "endMs": 110090,
+      "translation": "엄마가 허락해 준 것들, 고마워"
+    },
+    {
+      "startMs": 110090,
+      "endMs": 112090,
+      "translation": "그냥 엄마가 날 자랑스러워했으면 좋겠어 (헤이, 마마)"
+    },
+    {
+      "startMs": 112090,
+      "endMs": 115220,
+      "translation": "포레스트 검프의 엄마는 \"인생은 초콜릿 상자 같은 거야\"라고 했지"
+    },
+    {
+      "startMs": 115220,
+      "endMs": 117530,
+      "translation": "우리 엄마는 학교에 가서 박사 학위를 따라고 했어"
+    },
+    {
+      "startMs": 117530,
+      "endMs": 119990,
+      "translation": "기댈 데가 있어야 한다고, 그걸로 먹고살 수 있다고"
+    },
+    {
+      "startMs": 119990,
+      "endMs": 122950,
+      "translation": "그래도 내가 정반대로 했을 때도 날 지지해 줬어"
+    },
+    {
+      "startMs": 122950,
+      "endMs": 125340,
+      "translation": "이제는 얻어야 할 것들이 있는 것 같아"
+    },
+    {
+      "startMs": 125340,
+      "endMs": 127600,
+      "translation": "해야 할 일들이 있어, 엄마한테 증명하려고"
+    },
+    {
+      "startMs": 127600,
+      "endMs": 130100,
+      "translation": "엄마 말이 내게 닿았다는 걸, 성가대님, 제발"
+    },
+    {
+      "startMs": 130100,
+      "endMs": 133820,
+      "translation": "'You Are So Beautiful To Me' 한 소절 불러 줄래요?"
+    },
+    {
+      "startMs": 133820,
+      "endMs": 137980,
+      "translation": "모르겠어? 엄마는 한 권의 시집 같아"
+    },
+    {
+      "startMs": 137980,
+      "endMs": 140250,
+      "translation": "마야 안젤루, 니키 조반니"
+    },
+    {
+      "startMs": 140250,
+      "endMs": 142930,
+      "translation": "한 장 넘기면 거기 우리 엄마가 있어"
+    },
+    {
+      "startMs": 142930,
+      "endMs": 145610,
+      "translation": "어서, 엄마, 나랑 춤춰"
+    },
+    {
+      "startMs": 145610,
+      "endMs": 147930,
+      "translation": "엄마가 춤추는 발을 온 세상이 보게"
+    },
+    {
+      "startMs": 147930,
+      "endMs": 150290,
+      "translation": "이제 내가 \"헤이\" 하면 다들 \"마마\" 해"
+    },
+    {
+      "startMs": 150290,
+      "endMs": 152070,
+      "translation": "이제 다들 대답해"
+    },
+    {
+      "startMs": 152070,
+      "endMs": 155750,
+      "translation": "(헤이, 마마, 아, 아우)"
+    },
+    {
+      "startMs": 155750,
+      "endMs": 158540,
+      "translation": "엄마를 위해 크게 소리치고 싶어"
+    },
+    {
+      "startMs": 158540,
+      "endMs": 160820,
+      "translation": "엄마가 정말 자랑스러우니까"
+    },
+    {
+      "startMs": 160820,
+      "endMs": 162550,
+      "translation": "내가 뭘 할 건지 말해 줄게"
+    },
+    {
+      "startMs": 162550,
+      "endMs": 163810,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 163810,
+      "endMs": 165990,
+      "translation": "내가 철없이 구는 거 알아, 그래도"
+    },
+    {
+      "startMs": 165990,
+      "endMs": 167960,
+      "translation": "약속할게, 학교로 돌아갈게"
+    },
+    {
+      "startMs": 167960,
+      "endMs": 170480,
+      "translation": "엄마가 허락해 준 것들, 고마워"
+    },
+    {
+      "startMs": 170480,
+      "endMs": 173440,
+      "translation": "그냥 엄마가 날 자랑스러워했으면 좋겠어 (헤이, 마마)"
+    },
+    {
+      "startMs": 173440,
+      "endMs": 176890,
+      "translation": "다 내 주머니 사정에 달렸겠지만"
+    },
+    {
+      "startMs": 176890,
+      "endMs": 179120,
+      "translation": "돈이 다시 들어오는 순간 엄마는 벤츠를 갖게 될 거야"
+    },
+    {
+      "startMs": 179120,
+      "endMs": 180550,
+      "translation": "창문은 선팅하고"
+    },
+    {
+      "startMs": 180550,
+      "endMs": 183560,
+      "translation": "도시를 돌면서 친구들한테 자랑해 (헤이, 마마)"
+    },
+    {
+      "startMs": 183560,
+      "endMs": 185210,
+      "translation": "직장엔 둘러대고 나와"
+    },
+    {
+      "startMs": 185210,
+      "endMs": 187850,
+      "translation": "엄마가 날 이 세상에 데려왔으니 이번엔 내가 모시고 나갈게"
+    },
+    {
+      "startMs": 187850,
+      "endMs": 190560,
+      "translation": "최고급 레스토랑으로"
+    },
+    {
+      "startMs": 190560,
+      "endMs": 193130,
+      "translation": "재규어든 뭐든 원하는 걸 사 줄게"
+    },
+    {
+      "startMs": 193130,
+      "endMs": 195580,
+      "translation": "돈다 웨스트는 어떤 S타입을 좋아하는지 말해 줘"
+    },
+    {
+      "startMs": 195580,
+      "endMs": 198150,
+      "translation": "딱 맞게 고를 수 있게 제일 좋아하는 색을 말해 줘"
+    },
+    {
+      "startMs": 198150,
+      "endMs": 201200,
+      "translation": "어머니날이나 엄마 생일이 아니어도"
+    },
+    {
+      "startMs": 201200,
+      "endMs": 202720,
+      "translation": "그냥 전화해서 이렇게 말할 수 있어"
+    },
+    {
+      "startMs": 202720,
+      "endMs": 205640,
+      "translation": "(헤이, 마마, 아, 아우)"
+    },
+    {
+      "startMs": 205640,
+      "endMs": 208290,
+      "translation": "엄마를 위해 크게 소리치고 싶어"
+    },
+    {
+      "startMs": 208290,
+      "endMs": 210650,
+      "translation": "엄마가 정말 자랑스러우니까"
+    },
+    {
+      "startMs": 210650,
+      "endMs": 212640,
+      "translation": "내가 뭘 할 건지 말해 줄게"
+    },
+    {
+      "startMs": 212640,
+      "endMs": 214240,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 214240,
+      "endMs": 216590,
+      "translation": "정말 사랑하는 거 알지"
+    },
+    {
+      "startMs": 216590,
+      "endMs": 218260,
+      "translation": "절대 놓지 않을 거야"
+    },
+    {
+      "startMs": 218260,
+      "endMs": 220350,
+      "translation": "엄마가 알았으면 해서 이 노래를 썼어"
+    },
+    {
+      "startMs": 220350,
+      "endMs": 223070,
+      "translation": "엄마가 어디에 있든 우리 사랑은 진짜야"
+    },
+    {
+      "startMs": 223070,
+      "endMs": 232020,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 232020,
+      "endMs": 242220,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 242220,
+      "endMs": 252420,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 252420,
+      "endMs": 262050,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 262050,
+      "endMs": 263960,
+      "translation": "(헤이, 마마)"
+    },
+    {
+      "startMs": 263960,
+      "endMs": 266320,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 266320,
+      "endMs": 268820,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 268820,
+      "endMs": 271630,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 271630,
+      "endMs": 273810,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 273810,
+      "endMs": 276770,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 276770,
+      "endMs": 279030,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 279030,
+      "endMs": 281230,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 281230,
+      "endMs": 284040,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 284040,
+      "endMs": 286380,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 286380,
+      "endMs": 288960,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 288960,
+      "endMs": 291600,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 291600,
+      "endMs": 293840,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 293840,
+      "endMs": 296500,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 296500,
+      "endMs": 298880,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 298880,
+      "endMs": 301680,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    },
+    {
+      "startMs": 301680,
+      "endMs": 305000,
+      "translation": "마마, 마마, 마마, 마마, 마마"
+    }
+  ]
+}

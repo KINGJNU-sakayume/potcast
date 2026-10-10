@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 579879,
+    "durationMs": 378000
+  },
+  "segments": [
+    {
+      "startMs": 7360,
+      "endMs": 18010,
+      "translation": "왜 그녀는 느닷없이 전화를 걸어올까?"
+    },
+    {
+      "startMs": 18010,
+      "endMs": 26690,
+      "translation": "이제 난 깨어 있어, 너 때문에 잠 못 들어"
+    },
+    {
+      "startMs": 26690,
+      "endMs": 30350,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 30350,
+      "endMs": 35980,
+      "translation": "그러겠다고 말하지 마"
+    },
+    {
+      "startMs": 35980,
+      "endMs": 37990,
+      "translation": "정말 그럴 게 아니라면"
+    },
+    {
+      "startMs": 37990,
+      "endMs": 41550,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 41550,
+      "endMs": 44440,
+      "translation": "그러겠다고 말하지 마"
+    },
+    {
+      "startMs": 44440,
+      "endMs": 47340,
+      "translation": "그럼 그렇게 해 줘"
+    },
+    {
+      "startMs": 47340,
+      "endMs": 51740,
+      "translation": "네가 그러길 기도해"
+    },
+    {
+      "startMs": 51740,
+      "endMs": 62740,
+      "translation": "'끝내주는' 그녀가 내 방에 불시착해"
+    },
+    {
+      "startMs": 62740,
+      "endMs": 71090,
+      "translation": "꾸물댈 시간 없어, 곧 떠나 버릴지도 몰라"
+    },
+    {
+      "startMs": 71090,
+      "endMs": 74940,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 74940,
+      "endMs": 82510,
+      "translation": "그러겠다고 말하지 마"
+    },
+    {
+      "startMs": 82510,
+      "endMs": 86070,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 86070,
+      "endMs": 88820,
+      "translation": "그러겠다고 말하지 마"
+    },
+    {
+      "startMs": 88820,
+      "endMs": 91620,
+      "translation": "언젠가 넌 그러겠지"
+    },
+    {
+      "startMs": 91620,
+      "endMs": 95940,
+      "translation": "네가 그러길 기도해"
+    },
+    {
+      "startMs": 95940,
+      "endMs": 107360,
+      "translation": "네 목을 감싸 쥘 때 난 네 영혼에 닿아"
+    },
+    {
+      "startMs": 107360,
+      "endMs": 115770,
+      "translation": "그 쿨한 척을 벗어 던지고 정신을 놓아 봐"
+    },
+    {
+      "startMs": 115770,
+      "endMs": 119590,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 119590,
+      "endMs": 122480,
+      "translation": "그러겠다고 말하지 마"
+    },
+    {
+      "startMs": 122480,
+      "endMs": 126820,
+      "translation": "넌 그럴 거야… 그럴 거야"
+    },
+    {
+      "startMs": 126820,
+      "endMs": 130620,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 130620,
+      "endMs": 133580,
+      "translation": "그러겠다고 말하지 마"
+    },
+    {
+      "startMs": 133580,
+      "endMs": 136280,
+      "translation": "정말 그럴 거라면"
+    },
+    {
+      "startMs": 136280,
+      "endMs": 140700,
+      "translation": "네가 그러길 기도해"
+    },
+    {
+      "startMs": 140700,
+      "endMs": 151800,
+      "translation": "이 노래가 정말 이루어지면 좋겠어"
+    },
+    {
+      "startMs": 151800,
+      "endMs": 160160,
+      "translation": "인정할게, 아직도 너를 꿈꿔 (너를)"
+    },
+    {
+      "startMs": 160160,
+      "endMs": 163830,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 163830,
+      "endMs": 166660,
+      "translation": "그러겠다고 말하지 마"
+    },
+    {
+      "startMs": 166660,
+      "endMs": 171420,
+      "translation": "넌 그럴 거야… 그럴 거야"
+    },
+    {
+      "startMs": 171420,
+      "endMs": 175150,
+      "translation": "헤이, 헤이, 헤이, 헤이"
+    },
+    {
+      "startMs": 175150,
+      "endMs": 177950,
+      "translation": "제발 그러겠다고 말해 줘"
+    },
+    {
+      "startMs": 177950,
+      "endMs": 180880,
+      "translation": "진심으로"
+    },
+    {
+      "startMs": 180880,
+      "endMs": 378000,
+      "translation": "네가 그러길 기도해"
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 3619570,
+    "durationMs": 548000
+  },
+  "segments": [
+    {
+      "startMs": 65170,
+      "endMs": 66410,
+      "translation": "그리고 난 늘 찾아내, 그래"
+    },
+    {
+      "startMs": 66410,
+      "endMs": 68980,
+      "translation": "늘 뭔가 잘못된 걸 찾아내"
+    },
+    {
+      "startMs": 68980,
+      "endMs": 70630,
+      "translation": "넌 너무 오래 참아 줬어"
+    },
+    {
+      "startMs": 70630,
+      "endMs": 74470,
+      "translation": "내 이 엉망인 꼴을"
+    },
+    {
+      "startMs": 74470,
+      "endMs": 75970,
+      "translation": "난 정말 재능이 있어"
+    },
+    {
+      "startMs": 75970,
+      "endMs": 77920,
+      "translation": "내가 가장 싫어하는 걸 찾아내는 데"
+    },
+    {
+      "startMs": 77920,
+      "endMs": 81290,
+      "translation": "그러니 이제 우리"
+    },
+    {
+      "startMs": 81290,
+      "endMs": 84840,
+      "translation": "건배할 때가 된 것 같아"
+    },
+    {
+      "startMs": 84840,
+      "endMs": 86430,
+      "translation": "재수 없는 놈들을 위해 건배하자"
+    },
+    {
+      "startMs": 86430,
+      "endMs": 89180,
+      "translation": "개자식들을 위해 건배하자"
+    },
+    {
+      "startMs": 89180,
+      "endMs": 91430,
+      "translation": "쓰레기 같은 놈들을 위해 건배하자"
+    },
+    {
+      "startMs": 91430,
+      "endMs": 94330,
+      "translation": "내가 아는 그런 놈들 하나하나를 위해"
+    },
+    {
+      "startMs": 94330,
+      "endMs": 96950,
+      "translation": "머저리들을 위해 건배하자"
+    },
+    {
+      "startMs": 96950,
+      "endMs": 99340,
+      "translation": "절대 쉬는 법이 없는 놈들을 위해"
+    },
+    {
+      "startMs": 99340,
+      "endMs": 102990,
+      "translation": "자기, 나한테 계획이 있어"
+    },
+    {
+      "startMs": 102990,
+      "endMs": 104500,
+      "translation": "최대한 빨리 도망쳐"
+    },
+    {
+      "startMs": 104500,
+      "endMs": 108100,
+      "translation": "그녀는 내 이메일에서 사진들을 찾아내"
+    },
+    {
+      "startMs": 108100,
+      "endMs": 110860,
+      "translation": "내가 다른 여자한테 은밀한 사진을 보냈거든"
+    },
+    {
+      "startMs": 110860,
+      "endMs": 113360,
+      "translation": "여자들이랑은 뭐가 문제인지 모르겠어"
+    },
+    {
+      "startMs": 113360,
+      "endMs": 116440,
+      "translation": "난 그런 건 영 서툴러"
+    },
+    {
+      "startMs": 116440,
+      "endMs": 118740,
+      "translation": "봐, 난 좋은 여자를 곁에 두고도"
+    },
+    {
+      "startMs": 118740,
+      "endMs": 122150,
+      "translation": "여전히 동네 여자들에게 빠져 있을 수 있어"
+    },
+    {
+      "startMs": 122150,
+      "endMs": 126020,
+      "translation": "그리고 난 모든 걸 네 탓으로 돌려"
+    },
+    {
+      "startMs": 126020,
+      "endMs": 128170,
+      "translation": "적어도 그게 내 특기라는 건 알잖아"
+    },
+    {
+      "startMs": 128170,
+      "endMs": 130480,
+      "translation": "그리고 난 늘 찾아내"
+    },
+    {
+      "startMs": 130480,
+      "endMs": 131900,
+      "translation": "그래, 난 늘 찾아내"
+    },
+    {
+      "startMs": 131900,
+      "endMs": 134550,
+      "translation": "그래, 늘 뭔가 잘못된 걸 찾아내"
+    },
+    {
+      "startMs": 134550,
+      "endMs": 137600,
+      "translation": "넌 너무 오래 참아 줬어"
+    },
+    {
+      "startMs": 137600,
+      "endMs": 141280,
+      "translation": "내 이 엉망인 꼴을"
+    },
+    {
+      "startMs": 141280,
+      "endMs": 143270,
+      "translation": "난 정말 재능이 있어"
+    },
+    {
+      "startMs": 143270,
+      "endMs": 145970,
+      "translation": "내가 가장 싫어하는 걸 찾아내는 데"
+    },
+    {
+      "startMs": 145970,
+      "endMs": 148070,
+      "translation": "그러니 이제 우리"
+    },
+    {
+      "startMs": 148070,
+      "endMs": 151530,
+      "translation": "건배할 때가 된 것 같아"
+    },
+    {
+      "startMs": 151530,
+      "endMs": 152900,
+      "translation": "재수 없는 놈들을 위해 건배하자"
+    },
+    {
+      "startMs": 152900,
+      "endMs": 155230,
+      "translation": "개자식들을 위해 건배하자"
+    },
+    {
+      "startMs": 155230,
+      "endMs": 156610,
+      "translation": "쓰레기 같은 놈들을 위해 건배하자"
+    },
+    {
+      "startMs": 156610,
+      "endMs": 159820,
+      "translation": "내가 아는 그런 놈들 하나하나를 위해"
+    },
+    {
+      "startMs": 159820,
+      "endMs": 162140,
+      "translation": "머저리들을 위해 건배하자"
+    },
+    {
+      "startMs": 162140,
+      "endMs": 165040,
+      "translation": "절대 쉬는 법이 없는 놈들을 위해"
+    },
+    {
+      "startMs": 165040,
+      "endMs": 167140,
+      "translation": "자기, 나한테 계획이 있어"
+    },
+    {
+      "startMs": 167140,
+      "endMs": 169020,
+      "translation": "최대한 빨리 도망쳐"
+    },
+    {
+      "startMs": 169020,
+      "endMs": 174060,
+      "translation": "나에게서 도망쳐, 자기야, 도망쳐"
+    },
+    {
+      "startMs": 174060,
+      "endMs": 181290,
+      "translation": "나에게서 도망쳐, 자기야, 도망쳐"
+    },
+    {
+      "startMs": 181290,
+      "endMs": 186670,
+      "translation": "이제 곧 미쳐 돌아갈 거야, 그냥 도망쳐"
+    },
+    {
+      "startMs": 186670,
+      "endMs": 190190,
+      "translation": "자기, 나한테 계획이 있어"
+    },
+    {
+      "startMs": 190190,
+      "endMs": 191880,
+      "translation": "최대한 빨리 도망쳐"
+    },
+    {
+      "startMs": 191880,
+      "endMs": 197960,
+      "translation": "나에게서 도망쳐, 자기야, 도망쳐"
+    },
+    {
+      "startMs": 197960,
+      "endMs": 200780,
+      "translation": "나에게서 도망쳐, 자기야, 도망쳐"
+    },
+    {
+      "startMs": 200780,
+      "endMs": 207540,
+      "translation": "이제 곧 미쳐 돌아갈 거야"
+    },
+    {
+      "startMs": 207540,
+      "endMs": 209020,
+      "translation": "그녀는 왜 그냥 도망치지 못할까?"
+    },
+    {
+      "startMs": 209020,
+      "endMs": 211630,
+      "translation": "자기, 나한테 계획이 있어"
+    },
+    {
+      "startMs": 211630,
+      "endMs": 213780,
+      "translation": "최대한 빨리 도망쳐"
+    },
+    {
+      "startMs": 213780,
+      "endMs": 215880,
+      "translation": "24시간 내내, 365일, 머릿속엔 여자 생각뿐"
+    },
+    {
+      "startMs": 215880,
+      "endMs": 219540,
+      "translation": "그-그-그래 내가 그랬어, 알았어, 알았어, 인정해"
+    },
+    {
+      "startMs": 219540,
+      "endMs": 224360,
+      "translation": "이제 다음 수를 골라, 떠나든가 그냥 참고 살든가"
+    },
+    {
+      "startMs": 224360,
+      "endMs": 227360,
+      "translation": "지붕을 열어젖힌 차 안의 이카보드 크레인"
+    },
+    {
+      "startMs": 227360,
+      "endMs": 229940,
+      "translation": "헤어져서 어디로 가게? 다시 짝퉁 입으러? 하하"
+    },
+    {
+      "startMs": 229940,
+      "endMs": 232900,
+      "translation": "그만해, 니먼 마커스에서 실컷 쇼핑해"
+    },
+    {
+      "startMs": 232900,
+      "endMs": 235070,
+      "translation": "마이타이 마시며 얘기하자, 웨이트리스, 가득 채워 줘"
+    },
+    {
+      "startMs": 235070,
+      "endMs": 238120,
+      "translation": "여자들은 독수리처럼 네 로퍼에 날아들고 싶어 해"
+    },
+    {
+      "startMs": 238120,
+      "endMs": 241570,
+      "translation": "탓할 수도 없지, 베르사체 소파는 본 적도 없을 테니"
+    },
+    {
+      "startMs": 241570,
+      "endMs": 245530,
+      "translation": "가방 하나, 블라우스 하나, 팔찌 하나마다"
+    },
+    {
+      "startMs": 245530,
+      "endMs": 246490,
+      "translation": "다 가격표가 붙어 있어, 자기, 받아들여"
+    },
+    {
+      "startMs": 246490,
+      "endMs": 249620,
+      "translation": "이런 기본도 못 받아들이겠으면 떠나"
+    },
+    {
+      "startMs": 249620,
+      "endMs": 253340,
+      "translation": "잘나가는 놈들 세계엔 여자가 널렸으니까"
+    },
+    {
+      "startMs": 253340,
+      "endMs": 255220,
+      "translation": "보이지 않게 박힌 보석, 롤렉스는 얼굴이 없지"
+    },
+    {
+      "startMs": 255220,
+      "endMs": 257920,
+      "translation": "난 그냥 젊고, 돈 많고, 천박해, 피"
+    },
+    {
+      "startMs": 257920,
+      "endMs": 261260,
+      "translation": "난 원래 로맨틱한 사람이 아니었어"
+    },
+    {
+      "startMs": 261260,
+      "endMs": 264460,
+      "translation": "친밀함을 견뎌 낸 적이 없어"
+    },
+    {
+      "startMs": 264460,
+      "endMs": 266950,
+      "translation": "그게 상처를 줬다는 거 알아"
+    },
+    {
+      "startMs": 266950,
+      "endMs": 268910,
+      "translation": "네 눈빛이 날 죽이고 있으니까"
+    },
+    {
+      "startMs": 268910,
+      "endMs": 271670,
+      "translation": "넌 그게 유리하다는 걸 알았나 봐"
+    },
+    {
+      "startMs": 271670,
+      "endMs": 274420,
+      "translation": "모든 걸 내 탓으로 돌릴 수 있으니까"
+    },
+    {
+      "startMs": 274420,
+      "endMs": 278490,
+      "translation": "그리고 어떻게 버텨야 할지 모르겠어"
+    },
+    {
+      "startMs": 278490,
+      "endMs": 281040,
+      "translation": "어느 날 네가 그냥 떠나 버리면"
+    },
+    {
+      "startMs": 281040,
+      "endMs": 284620,
+      "translation": "그리고 난 늘 찾아내, 그래"
+    },
+    {
+      "startMs": 284620,
+      "endMs": 286980,
+      "translation": "늘 뭔가 잘못된 걸 찾아내"
+    },
+    {
+      "startMs": 286980,
+      "endMs": 289600,
+      "translation": "넌 너무 오래 참아 줬어"
+    },
+    {
+      "startMs": 289600,
+      "endMs": 292600,
+      "translation": "내 이 엉망인 꼴을"
+    },
+    {
+      "startMs": 292600,
+      "endMs": 296510,
+      "translation": "난 정말 재능이 있어"
+    },
+    {
+      "startMs": 296510,
+      "endMs": 298030,
+      "translation": "내가 가장 싫어하는 걸 찾아내는 데"
+    },
+    {
+      "startMs": 298030,
+      "endMs": 301820,
+      "translation": "그러니 이제 우리"
+    },
+    {
+      "startMs": 301820,
+      "endMs": 304300,
+      "translation": "건배할 때가 된 것 같아"
+    },
+    {
+      "startMs": 304300,
+      "endMs": 306890,
+      "translation": "재수 없는 놈들을 위해 건배하자"
+    },
+    {
+      "startMs": 306890,
+      "endMs": 309270,
+      "translation": "개자식들을 위해 건배하자"
+    },
+    {
+      "startMs": 309270,
+      "endMs": 310860,
+      "translation": "쓰레기 같은 놈들을 위해 건배하자"
+    },
+    {
+      "startMs": 310860,
+      "endMs": 313650,
+      "translation": "내가 아는 그런 놈들 하나하나를 위해"
+    },
+    {
+      "startMs": 313650,
+      "endMs": 316010,
+      "translation": "머저리들을 위해 건배하자"
+    },
+    {
+      "startMs": 316010,
+      "endMs": 318970,
+      "translation": "절대 쉬는 법이 없는 놈들을 위해"
+    },
+    {
+      "startMs": 318970,
+      "endMs": 322020,
+      "translation": "자기, 나한테 계획이 있어"
+    },
+    {
+      "startMs": 322020,
+      "endMs": 548000,
+      "translation": "최대한 빨리 도망쳐"
+    }
+  ]
+}

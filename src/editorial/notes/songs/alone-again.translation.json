@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 960415,
+    "durationMs": 250000
+  },
+  "segments": [
+    {
+      "startMs": 11550,
+      "endMs": 17460,
+      "translation": "변장을 벗어"
+    },
+    {
+      "startMs": 17460,
+      "endMs": 23290,
+      "translation": "난 다른 누군가의 삶을 살고 있어"
+    },
+    {
+      "startMs": 23290,
+      "endMs": 28540,
+      "translation": "안에 있던 원래의 나를 억누르면서"
+    },
+    {
+      "startMs": 28540,
+      "endMs": 35160,
+      "translation": "그래서 1달러짜리 2천 장을 하늘에 뿌려"
+    },
+    {
+      "startMs": 35160,
+      "endMs": 41590,
+      "translation": "우린 함께인데도 혼자야 (함께인데도 혼자야)"
+    },
+    {
+      "startMs": 41590,
+      "endMs": 47440,
+      "translation": "베이거스에선 집에 온 것처럼 편해 (베이거스에선 집 같아)"
+    },
+    {
+      "startMs": 47440,
+      "endMs": 52120,
+      "translation": "오늘 밤만 빠져드는 거야"
+    },
+    {
+      "startMs": 52120,
+      "endMs": 57740,
+      "translation": "그래서 1달러짜리 2천 장을 하늘에 뿌려 (하늘에)"
+    },
+    {
+      "startMs": 57740,
+      "endMs": 71080,
+      "translation": "얼마면, 얼마면 내 별에 다시 불을 켜고 생각을 전부 새로 이어 붙일 수 있을까?"
+    },
+    {
+      "startMs": 71080,
+      "endMs": 76000,
+      "translation": "오 베이비, 내가 뭔지 다시 일깨워 주지 않을래?"
+    },
+    {
+      "startMs": 76000,
+      "endMs": 82620,
+      "translation": "그리고 부숴 줘, 차갑게 식은 내 작은 심장을"
+    },
+    {
+      "startMs": 82620,
+      "endMs": 93910,
+      "translation": "(오, 오-오, 우)"
+    },
+    {
+      "startMs": 93910,
+      "endMs": 100370,
+      "translation": "(우-오, 우-우)"
+    },
+    {
+      "startMs": 100370,
+      "endMs": 131000,
+      "translation": "(오, 오-오, 오, 오-오)"
+    },
+    {
+      "startMs": 131000,
+      "endMs": 136990,
+      "translation": "전화만 해, 사람을 보내 널 데려올게"
+    },
+    {
+      "startMs": 136990,
+      "endMs": 143780,
+      "translation": "네가 있는 높이까지 날 데려가 줘"
+    },
+    {
+      "startMs": 143780,
+      "endMs": 150870,
+      "translation": "다시 혼자일 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 150870,
+      "endMs": 159240,
+      "translation": "다시 혼자 잠들 수 있을지 모르겠어 (다시 혼자)"
+    },
+    {
+      "startMs": 159240,
+      "endMs": 166280,
+      "translation": "내 맥박을 한 번 더 재 봐 (한 번 더)"
+    },
+    {
+      "startMs": 166280,
+      "endMs": 172600,
+      "translation": "너무 많이 했어, 죽고 싶진 않아"
+    },
+    {
+      "startMs": 172600,
+      "endMs": 179620,
+      "translation": "다시 혼자일 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 179620,
+      "endMs": 186640,
+      "translation": "다시 혼자 잠들 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 186640,
+      "endMs": 193600,
+      "translation": "(오-오-오, 오, 오)"
+    },
+    {
+      "startMs": 193600,
+      "endMs": 200680,
+      "translation": "(오-오-오, 오, 오)"
+    },
+    {
+      "startMs": 200680,
+      "endMs": 207790,
+      "translation": "(오, 오, 오, 오-오, 오, 오, 오-오)"
+    },
+    {
+      "startMs": 207790,
+      "endMs": 215910,
+      "translation": "(오, 오, 오, 오-오, 오, 오, 오-오)"
+    },
+    {
+      "startMs": 215910,
+      "endMs": 222670,
+      "translation": "세어 봐, 다 널 위한 거야, 세어 봐"
+    },
+    {
+      "startMs": 222670,
+      "endMs": 228820,
+      "translation": "세어 봐, 다 널 위한 거야, 세어 봐"
+    },
+    {
+      "startMs": 228820,
+      "endMs": 235910,
+      "translation": "다시 혼자일 수 있을지 모르겠으니까"
+    },
+    {
+      "startMs": 235910,
+      "endMs": 250000,
+      "translation": "다시 혼자일 수 있을지 모르겠어 (다시 혼자)"
+    }
+  ]
+}

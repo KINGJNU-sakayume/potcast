@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 155184,
+    "durationMs": 93000
+  },
+  "segments": [
+    {
+      "startMs": 33000,
+      "endMs": 40300,
+      "translation": "재떨이에서 또 한 모금 마셨어"
+    },
+    {
+      "startMs": 40300,
+      "endMs": 46720,
+      "translation": "그렇게 신경 쓰이지도 않았어"
+    },
+    {
+      "startMs": 46720,
+      "endMs": 53190,
+      "translation": "쓰레기통에 이를 잔뜩 뱉어"
+    },
+    {
+      "startMs": 53190,
+      "endMs": 58510,
+      "translation": "연락하고 지낼 생각도 없어"
+    },
+    {
+      "startMs": 58510,
+      "endMs": 73780,
+      "translation": "내가 떠날 때는 하나도 아프지 않을 거야"
+    },
+    {
+      "startMs": 73780,
+      "endMs": 93000,
+      "translation": "천사들의 합창, 안락사"
+    }
+  ]
+}

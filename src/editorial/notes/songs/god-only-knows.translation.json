@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 3941675,
+    "durationMs": 176000
+  },
+  "segments": [
+    {
+      "startMs": 16920,
+      "endMs": 25310,
+      "translation": "내가 언제나 너를 사랑하지는 않을지도 몰라, 하지만 네 위에 별들이 떠 있는 한"
+    },
+    {
+      "startMs": 25310,
+      "endMs": 33550,
+      "translation": "넌 절대 의심할 필요 없어, 내가 그렇게 믿게 해 줄 테니까"
+    },
+    {
+      "startMs": 33550,
+      "endMs": 41740,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아"
+    },
+    {
+      "startMs": 41740,
+      "endMs": 50550,
+      "translation": "혹시 네가 나를 떠난다 해도, 정말이지 삶은 계속되겠지만"
+    },
+    {
+      "startMs": 50550,
+      "endMs": 58830,
+      "translation": "세상은 내게 아무것도 보여 줄 수 없을 거야, 그러니 산다는 게 내게 무슨 소용이겠어?"
+    },
+    {
+      "startMs": 58830,
+      "endMs": 73260,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아"
+    },
+    {
+      "startMs": 73260,
+      "endMs": 89550,
+      "translation": "(아… 두두두…)"
+    },
+    {
+      "startMs": 89550,
+      "endMs": 95860,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아"
+    },
+    {
+      "startMs": 95860,
+      "endMs": 103480,
+      "translation": "혹시 네가 나를 떠난다 해도, 정말이지 삶은 계속되겠지만"
+    },
+    {
+      "startMs": 103480,
+      "endMs": 111610,
+      "translation": "세상은 내게 아무것도 보여 줄 수 없을 거야, 그러니 산다는 게 내게 무슨 소용이겠어?"
+    },
+    {
+      "startMs": 111610,
+      "endMs": 120280,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아"
+    },
+    {
+      "startMs": 120280,
+      "endMs": 129050,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아"
+    },
+    {
+      "startMs": 129050,
+      "endMs": 136630,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (내가 어떻게 될지)"
+    },
+    {
+      "startMs": 136630,
+      "endMs": 141700,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (신만이 알아)"
+    },
+    {
+      "startMs": 141700,
+      "endMs": 144760,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (내가 어떻게 될지)"
+    },
+    {
+      "startMs": 144760,
+      "endMs": 147410,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (신만이 알아)"
+    },
+    {
+      "startMs": 147410,
+      "endMs": 151280,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (내가 어떻게 될지)"
+    },
+    {
+      "startMs": 151280,
+      "endMs": 153510,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (신만이 알아)"
+    },
+    {
+      "startMs": 153510,
+      "endMs": 156170,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (내가 어떻게 될지)"
+    },
+    {
+      "startMs": 156170,
+      "endMs": 159480,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (신만이 알아)"
+    },
+    {
+      "startMs": 159480,
+      "endMs": 161600,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (내가 어떻게 될지)"
+    },
+    {
+      "startMs": 161600,
+      "endMs": 176000,
+      "translation": "너 없이 내가 어떻게 될지는 신만이 알아 (신만이 알아)…"
+    }
+  ]
+}

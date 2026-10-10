@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 21421686,
+    "durationMs": 231393
+  },
+  "segments": [
+    {
+      "startMs": 21390,
+      "endMs": 26060,
+      "translation": "어, 어, 어, 어어, 어, 그래, 있잖아"
+    },
+    {
+      "startMs": 26060,
+      "endMs": 29350,
+      "translation": "열여덟 살에 눈물이 말라 버렸어"
+    },
+    {
+      "startMs": 29350,
+      "endMs": 32590,
+      "translation": "그러니 날 만든 건 큰길 말고는 아무것도 없어"
+    },
+    {
+      "startMs": 32590,
+      "endMs": 35640,
+      "translation": "너무 많은 사람이 자기가 날 만들었다고 생각하니까"
+    },
+    {
+      "startMs": 35640,
+      "endMs": 39010,
+      "translation": "정말 그들이 날 만들었다면, 날 대신해 봐"
+    },
+    {
+      "startMs": 39010,
+      "endMs": 41100,
+      "translation": "노숙자에서 포브스 리스트까지, 이 녀석들은 스트레스를 안 줘"
+    },
+    {
+      "startMs": 41100,
+      "endMs": 44850,
+      "translation": "난 모세가 된 기분이고, 선택받은 기분이야"
+    },
+    {
+      "startMs": 44850,
+      "endMs": 48130,
+      "translation": "네가 내 편이 아니라면 네 여자는 내겐 싱글일 뿐이야"
+    },
+    {
+      "startMs": 48130,
+      "endMs": 51420,
+      "translation": "누가 날 안다고 말해도 난 개의치 않아"
+    },
+    {
+      "startMs": 51420,
+      "endMs": 54440,
+      "translation": "아버지 없이 자라서 아무도 날 \"아들\"이라 부른 적 없어"
+    },
+    {
+      "startMs": 54440,
+      "endMs": 57790,
+      "translation": "내 플로우는 너무 독해서 케빈 코스트너도 못 건드려"
+    },
+    {
+      "startMs": 57790,
+      "endMs": 60650,
+      "translation": "아무도 날 사랑하지 않았으면 하는 거, 알아"
+    },
+    {
+      "startMs": 60650,
+      "endMs": 64090,
+      "translation": "돈을 못 벌 땐 쓸모없는 기분이야"
+    },
+    {
+      "startMs": 64090,
+      "endMs": 67640,
+      "translation": "그래, 이게 우리가 늘 꿈꾸던 삶이야"
+    },
+    {
+      "startMs": 67640,
+      "endMs": 71040,
+      "translation": "퀸 스트리트 출신의 눈으로 본 부자들의 고민"
+    },
+    {
+      "startMs": 71040,
+      "endMs": 73900,
+      "translation": "네가 날 볼 때마다 아벤타도르를 몰고 나타나지만"
+    },
+    {
+      "startMs": 73900,
+      "endMs": 77300,
+      "translation": "우린 저 보도 위에서 계속 버텨 왔다는 걸 알아 둬"
+    },
+    {
+      "startMs": 77300,
+      "endMs": 81950,
+      "translation": "보도가 내 목숨을 구했어"
+    },
+    {
+      "startMs": 81950,
+      "endMs": 89540,
+      "translation": "보도는 거짓말을 안 해"
+    },
+    {
+      "startMs": 89540,
+      "endMs": 94210,
+      "translation": "보도가 내 목숨을 구했어"
+    },
+    {
+      "startMs": 94210,
+      "endMs": 100140,
+      "translation": "보도가 모든 신호를 보여 줬어"
+    },
+    {
+      "startMs": 100140,
+      "endMs": 106660,
+      "translation": "보도는 날 실망시키지 않아"
+    },
+    {
+      "startMs": 106660,
+      "endMs": 112860,
+      "translation": "하지만 날 계속 홀려 끌고 가"
+    },
+    {
+      "startMs": 112860,
+      "endMs": 119550,
+      "translation": "보도는 날 실망시키지 않아"
+    },
+    {
+      "startMs": 119550,
+      "endMs": 125710,
+      "translation": "하지만 날 계속 홀려 끌고 가"
+    },
+    {
+      "startMs": 125710,
+      "endMs": 128360,
+      "translation": "그리고 날 계속 홀려 끌고 가"
+    },
+    {
+      "startMs": 128360,
+      "endMs": 129410,
+      "translation": "말해, 말해, 말해"
+    },
+    {
+      "startMs": 129410,
+      "endMs": 131290,
+      "translation": "난 살인이 벌어지는 동네에서 왔고, 한밤의 난투를 겪었어"
+    },
+    {
+      "startMs": 131290,
+      "endMs": 132360,
+      "translation": "말해, 말해, 말해"
+    },
+    {
+      "startMs": 132360,
+      "endMs": 134490,
+      "translation": "여름 내내 어울렸고, 꺼진 매트리스에서 여자친구와 뒹굴었어"
+    },
+    {
+      "startMs": 134490,
+      "endMs": 135570,
+      "translation": "말해, 말해, 말해"
+    },
+    {
+      "startMs": 135570,
+      "endMs": 137430,
+      "translation": "다이크에 취해 헤매는 동안 내 이름이 월급날과 함께 터졌어"
+    },
+    {
+      "startMs": 137430,
+      "endMs": 138620,
+      "translation": "말해, 말해, 말해"
+    },
+    {
+      "startMs": 138620,
+      "endMs": 140480,
+      "translation": "파란 번개를 번쩍이며, 몸을 조이고, AK로 무장했어"
+    },
+    {
+      "startMs": 140480,
+      "endMs": 141860,
+      "translation": "말해, 말해, 말해"
+    },
+    {
+      "startMs": 141860,
+      "endMs": 144040,
+      "translation": "선배가 하나 알려 줬지, 하나를 보여 줘, 여덟 가지 방법으로"
+    },
+    {
+      "startMs": 144040,
+      "endMs": 145470,
+      "translation": "이어 가는 법을"
+    },
+    {
+      "startMs": 145470,
+      "endMs": 147210,
+      "translation": "여자, 권력, 이윤, 그리고 두통"
+    },
+    {
+      "startMs": 147210,
+      "endMs": 148360,
+      "translation": "순수했던 삶을 떠올려, 아니면 무고한 삶을"
+    },
+    {
+      "startMs": 148360,
+      "endMs": 150490,
+      "translation": "아니면 명성과 함께하는 친밀한 삶을"
+    },
+    {
+      "startMs": 150490,
+      "endMs": 153370,
+      "translation": "연한 선팅의 리무진에 밝은 피부의 여자, 어두운 피부의 여자들이 타 있어"
+    },
+    {
+      "startMs": 153370,
+      "endMs": 154450,
+      "translation": "오, 케니, 좋은 게임이야"
+    },
+    {
+      "startMs": 154450,
+      "endMs": 155530,
+      "translation": "그녀는 스타보이와 어울리고 싶어 해"
+    },
+    {
+      "startMs": 155530,
+      "endMs": 157050,
+      "translation": "해와 달과 별, 소년아"
+    },
+    {
+      "startMs": 157050,
+      "endMs": 158100,
+      "translation": "천문학자, 이름 없는 사람"
+    },
+    {
+      "startMs": 158100,
+      "endMs": 160290,
+      "translation": "줄 세우고 갈아 버려, 우린 아홉 명이야"
+    },
+    {
+      "startMs": 160290,
+      "endMs": 161840,
+      "translation": "그중 다섯은 아마 잤을 거야"
+    },
+    {
+      "startMs": 161840,
+      "endMs": 162890,
+      "translation": "그녀는 몰리를 먹었고, 난 모든 부위를 세어 봤어, 소년"
+    },
+    {
+      "startMs": 162890,
+      "endMs": 164640,
+      "translation": "스무 개의 다리, 팔, 머리"
+    },
+    {
+      "startMs": 164640,
+      "endMs": 166680,
+      "translation": "머리, 머리, 또 머리"
+    },
+    {
+      "startMs": 166680,
+      "endMs": 168010,
+      "translation": "오 신이시여, 죽은 이들에게 축복을"
+    },
+    {
+      "startMs": 168010,
+      "endMs": 169770,
+      "translation": "난 삶을 살아, 삶에 취해"
+    },
+    {
+      "startMs": 169770,
+      "endMs": 171360,
+      "translation": "목걸이를 풀지도 않고 잠자리에 들어"
+    },
+    {
+      "startMs": 171360,
+      "endMs": 172760,
+      "translation": "난 최고인데, 왜 그 말을 하기 겁내?"
+    },
+    {
+      "startMs": 172760,
+      "endMs": 174420,
+      "translation": "흔들고 싶어, 흔들고 싶어"
+    },
+    {
+      "startMs": 174420,
+      "endMs": 176160,
+      "translation": "땅을 더 사고 싶어, 난 멈추지 않아"
+    },
+    {
+      "startMs": 176160,
+      "endMs": 178040,
+      "translation": "청구서가 하나도 없어도 먼저 선금을 받고 싶어"
+    },
+    {
+      "startMs": 178040,
+      "endMs": 179530,
+      "translation": "전부 부숴, 난 허슬러야, 거기서 왔어"
+    },
+    {
+      "startMs": 179530,
+      "endMs": 184350,
+      "translation": "보도가 내 목숨을 구했어"
+    },
+    {
+      "startMs": 184350,
+      "endMs": 192410,
+      "translation": "보도는 거짓말을 안 해"
+    },
+    {
+      "startMs": 192410,
+      "endMs": 197010,
+      "translation": "보도가 내 목숨을 구했어"
+    },
+    {
+      "startMs": 197010,
+      "endMs": 202820,
+      "translation": "보도가 모든 신호를 보여 줬어"
+    },
+    {
+      "startMs": 202820,
+      "endMs": 209620,
+      "translation": "보도는 날 실망시키지 않아"
+    },
+    {
+      "startMs": 209620,
+      "endMs": 215730,
+      "translation": "하지만 날 계속 홀려 끌고 가"
+    },
+    {
+      "startMs": 215730,
+      "endMs": 222390,
+      "translation": "보도는 날 실망시키지 않아"
+    },
+    {
+      "startMs": 222390,
+      "endMs": 228880,
+      "translation": "하지만 날 계속 홀려 끌고 가"
+    },
+    {
+      "startMs": 228880,
+      "endMs": 231393,
+      "translation": "그리고 날 계속 홀려 끌고 가"
+    }
+  ]
+}

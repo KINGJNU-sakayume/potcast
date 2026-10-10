@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1584990,
+    "durationMs": 353000
+  },
+  "segments": [
+    {
+      "startMs": 2870,
+      "endMs": 7890,
+      "translation": "어, 어"
+    },
+    {
+      "startMs": 7890,
+      "endMs": 9440,
+      "translation": "그래도 정말 좋아"
+    },
+    {
+      "startMs": 9440,
+      "endMs": 12400,
+      "translation": "그래도 정말 좋아, 하, 알지? 어"
+    },
+    {
+      "startMs": 12400,
+      "endMs": 14710,
+      "translation": "별자리를 향해 손을 뻗어"
+    },
+    {
+      "startMs": 14710,
+      "endMs": 18600,
+      "translation": "네 모습은 죄악이어야 마땅해, 넌 나의 감동이야"
+    },
+    {
+      "startMs": 18600,
+      "endMs": 20710,
+      "translation": "이미 믿는 신도들에게 설교하는 거 알아"
+    },
+    {
+      "startMs": 20710,
+      "endMs": 30620,
+      "translation": "우린 예수를 사랑하지만 넌 사탄에게서 많이 배웠지, 하하"
+    },
+    {
+      "startMs": 30620,
+      "endMs": 33000,
+      "translation": "내 말은, 난 정말 오래 기다렸다고"
+    },
+    {
+      "startMs": 33000,
+      "endMs": 36530,
+      "translation": "우린 결혼하진 않았지만, 오늘 밤은 하나가 되고 싶어"
+    },
+    {
+      "startMs": 36530,
+      "endMs": 39650,
+      "translation": "주께서 우릴 용서하시길, 신들이 우리와 함께하시길"
+    },
+    {
+      "startMs": 39650,
+      "endMs": 42700,
+      "translation": "그 매직 아워에 독실한 신자들이"
+    },
+    {
+      "startMs": 42700,
+      "endMs": 45620,
+      "translation": "성급한 결정을 내리는 걸 봤어, 오, 그녀도 그래"
+    },
+    {
+      "startMs": 45620,
+      "endMs": 48620,
+      "translation": "신앙은 어떻게 된 거야? 오, 그녀는 잃어버렸어"
+    },
+    {
+      "startMs": 48620,
+      "endMs": 51850,
+      "translation": "그녀는 화장을 하며 무심하게 유혹해"
+    },
+    {
+      "startMs": 51850,
+      "endMs": 54820,
+      "translation": "문자로 하는 이별, 투어의 희생양이지"
+    },
+    {
+      "startMs": 54820,
+      "endMs": 57860,
+      "translation": "어떻게 아침에 일어나서 더는 날 사랑하지 않을 수 있어?"
+    },
+    {
+      "startMs": 57860,
+      "endMs": 60700,
+      "translation": "나쁜 놈은 나라고 생각했는데, 그게 옮았나 봐"
+    },
+    {
+      "startMs": 60700,
+      "endMs": 63790,
+      "translation": "동네의 경이, 랩계의 르브론"
+    },
+    {
+      "startMs": 63790,
+      "endMs": 66850,
+      "translation": "전광판에서 뽐낼 땐 겸손하기 어렵지"
+    },
+    {
+      "startMs": 66850,
+      "endMs": 69780,
+      "translation": "그녀를 보며 생각해, 이게 정말 네가 원한 거야?"
+    },
+    {
+      "startMs": 69780,
+      "endMs": 73090,
+      "translation": "우린 왜 싸우는 걸까? 아, 깜빡했네, 여름이잖아"
+    },
+    {
+      "startMs": 73090,
+      "endMs": 75150,
+      "translation": "별자리를 향해 손을 뻗어"
+    },
+    {
+      "startMs": 75150,
+      "endMs": 78940,
+      "translation": "네 모습은 죄악이어야 마땅해, 넌 나의 감동이야"
+    },
+    {
+      "startMs": 78940,
+      "endMs": 81140,
+      "translation": "이미 믿는 신도들에게 설교하는 거 알아"
+    },
+    {
+      "startMs": 81140,
+      "endMs": 85240,
+      "translation": "우린 예수를 사랑하지만 그녀는 사탄에게서 많이 배웠지"
+    },
+    {
+      "startMs": 85240,
+      "endMs": 90940,
+      "translation": "사탄, 사탄, 사탄"
+    },
+    {
+      "startMs": 90940,
+      "endMs": 93380,
+      "translation": "내 말은, 난 정말 오래 기다렸다고"
+    },
+    {
+      "startMs": 93380,
+      "endMs": 96040,
+      "translation": "우린 결혼하진 않았지만, 오늘 밤은 하나가 되고 싶어"
+    },
+    {
+      "startMs": 96040,
+      "endMs": 101910,
+      "translation": "해가 지면 매직 아워야, 매직 아워"
+    },
+    {
+      "startMs": 101910,
+      "endMs": 104770,
+      "translation": "하늘을 채우는 그 모든 색 중에서"
+    },
+    {
+      "startMs": 104770,
+      "endMs": 108820,
+      "translation": "네 머릿속엔 초록색뿐이지, 네 눈에 보여"
+    },
+    {
+      "startMs": 108820,
+      "endMs": 111620,
+      "translation": "왜 그렇게 얼굴을 찌푸리고 서 있어?"
+    },
+    {
+      "startMs": 111620,
+      "endMs": 114840,
+      "translation": "잘나갈 때 떠나지 마, 메이스가 그래서 망했잖아"
+    },
+    {
+      "startMs": 114840,
+      "endMs": 117560,
+      "translation": "물건을 던져 대니, 집 안이 엉망이야"
+    },
+    {
+      "startMs": 117560,
+      "endMs": 120570,
+      "translation": "메이스한테 전화해서 우릴 위해 기도해 달라고 할까"
+    },
+    {
+      "startMs": 120570,
+      "endMs": 123890,
+      "translation": "자메이카 식당에 가서 바에 앉았어"
+    },
+    {
+      "startMs": 123890,
+      "endMs": 127180,
+      "translation": "저크 요리를 시켰더니, 그녀가 '먹는 게 곧 너'라더군"
+    },
+    {
+      "startMs": 127180,
+      "endMs": 129420,
+      "translation": "난 늘 그 유머 감각이 좋았지"
+    },
+    {
+      "startMs": 129420,
+      "endMs": 132620,
+      "translation": "그런데 오늘 밤은 방이 얼마나 조용했는지 봤어야 해"
+    },
+    {
+      "startMs": 132620,
+      "endMs": 135690,
+      "translation": "디올 옴므계의 라이어 코언"
+    },
+    {
+      "startMs": 135690,
+      "endMs": 138980,
+      "translation": "'디올 옴므'야, '디올, 친구'가 아니라"
+    },
+    {
+      "startMs": 138980,
+      "endMs": 141900,
+      "translation": "집은 『스카페이스』 같아, 이보다 더 토니일 수 있을까?"
+    },
+    {
+      "startMs": 141900,
+      "endMs": 145400,
+      "translation": "날 나 자체로 사랑한다고? 이보다 더 가짜일 수 있을까?"
+    },
+    {
+      "startMs": 145400,
+      "endMs": 147660,
+      "translation": "별자리를 향해 손을 뻗어"
+    },
+    {
+      "startMs": 147660,
+      "endMs": 151830,
+      "translation": "네 모습은 죄악이어야 마땅해, 넌 나의 감동이야"
+    },
+    {
+      "startMs": 151830,
+      "endMs": 157560,
+      "translation": "한마디도 안 했어, 오늘 저녁 내내 나한테 한마디도"
+    },
+    {
+      "startMs": 157560,
+      "endMs": 242120,
+      "translation": "고양이가 혀라도 물어 갔어?"
+    },
+    {
+      "startMs": 242120,
+      "endMs": 245150,
+      "translation": "내 여자를 봐, 너도 흥분할걸"
+    },
+    {
+      "startMs": 245150,
+      "endMs": 248150,
+      "translation": "내 손목을 봐, 넌 돌처럼 굳어 버릴걸"
+    },
+    {
+      "startMs": 248150,
+      "endMs": 251180,
+      "translation": "길게 뻗은 리무진, 혼자서 로제를 홀짝여"
+    },
+    {
+      "startMs": 251180,
+      "endMs": 253670,
+      "translation": "제멋대로 구는 머리 둘 달린 괴물"
+    },
+    {
+      "startMs": 253670,
+      "endMs": 256860,
+      "translation": "체리색 전차, 과잉은 그냥 내 성격이야"
+    },
+    {
+      "startMs": 256860,
+      "endMs": 260170,
+      "translation": "올 블랙 턱시도, 구두는 라벤더색"
+    },
+    {
+      "startMs": 260170,
+      "endMs": 263260,
+      "translation": "난 너희 바깥사람들의 인정이 필요했던 적 없어"
+    },
+    {
+      "startMs": 263260,
+      "endMs": 266120,
+      "translation": "이지랑 사이퍼를 했지, 그 턱에 철사를 감기 전에 (뭐?)"
+    },
+    {
+      "startMs": 266120,
+      "endMs": 269110,
+      "translation": "주님의 사다리를 오르다 턱이 부서지기 전에"
+    },
+    {
+      "startMs": 269110,
+      "endMs": 272350,
+      "translation": "우린 여전히 과속해, 신호 따윈 상관없다는 듯"
+    },
+    {
+      "startMs": 272350,
+      "endMs": 275240,
+      "translation": "어, 혐오자들 말은 날 화나게 한 적 없어"
+    },
+    {
+      "startMs": 275240,
+      "endMs": 278480,
+      "translation": "절대 그럴 리 없지, 내가 좋아하는 차를 탈 땐"
+    },
+    {
+      "startMs": 278480,
+      "endMs": 281350,
+      "translation": "그래서 클리어포트엔 G4 전용기"
+    },
+    {
+      "startMs": 281350,
+      "endMs": 284390,
+      "translation": "연장으로 치면, 난 펩 보이즈야"
+    },
+    {
+      "startMs": 284390,
+      "endMs": 286820,
+      "translation": "마약이라면 난 재빨리 수출했지"
+    },
+    {
+      "startMs": 286820,
+      "endMs": 290280,
+      "translation": "노는 건 질리지 않으니, 다음 종목으로"
+    },
+    {
+      "startMs": 290280,
+      "endMs": 293130,
+      "translation": "새 메르세데스 세단, 렉서스 스포츠"
+    },
+    {
+      "startMs": 293130,
+      "endMs": 296680,
+      "translation": "차가 너무 많아서 차량국은 우편 사기인 줄 알았지"
+    },
+    {
+      "startMs": 296680,
+      "endMs": 299350,
+      "translation": "여기저기 판에서 우편을 받았어"
+    },
+    {
+      "startMs": 299350,
+      "endMs": 302530,
+      "translation": "포크 카운티, 잭슨빌, 멜버른을 대표해"
+    },
+    {
+      "startMs": 302530,
+      "endMs": 304970,
+      "translation": "우리 패거리 전부 촌충이라도 든 것처럼 먹어 댔지"
+    },
+    {
+      "startMs": 304970,
+      "endMs": 309170,
+      "translation": "테디 펜더그래스 레코드를 돌리며 대마가 타들어 가"
+    },
+    {
+      "startMs": 309170,
+      "endMs": 311750,
+      "translation": "밤이 끝나기 전에 눈물 한 방울 흘려"
+    },
+    {
+      "startMs": 311750,
+      "endMs": 314860,
+      "translation": "이 보석을 걸어 준 그 사람에게 신의 축복을"
+    },
+    {
+      "startMs": 314860,
+      "endMs": 317060,
+      "translation": "투팍이 번 돈의 두 배를 벌어"
+    },
+    {
+      "startMs": 317060,
+      "endMs": 321150,
+      "translation": "그래도 여전히 진짜야, 빨간 쿠지 스웨터, 주사위를 굴리지"
+    },
+    {
+      "startMs": 321150,
+      "endMs": 323560,
+      "translation": "난 죽음의 천사와 사랑을 나눠"
+    },
+    {
+      "startMs": 323560,
+      "endMs": 353000,
+      "translation": "감정이 생겨도 비틀거리지 않아, 내 발자국을 되짚어"
+    }
+  ]
+}

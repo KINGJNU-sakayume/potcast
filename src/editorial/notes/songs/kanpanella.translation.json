@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 26340984,
+    "durationMs": 235720
+  },
+  "segments": [
+    {
+      "startMs": 18100,
+      "endMs": 20080,
+      "translation": "캄파넬라"
+    },
+    {
+      "startMs": 20080,
+      "endMs": 21980,
+      "translation": "꿈을 꾸고 있었어"
+    },
+    {
+      "startMs": 21980,
+      "endMs": 23750,
+      "translation": "네가 간 뒤에"
+    },
+    {
+      "startMs": 23750,
+      "endMs": 25740,
+      "translation": "피어난 용담꽃"
+    },
+    {
+      "startMs": 25740,
+      "endMs": 27590,
+      "translation": "이 거리는"
+    },
+    {
+      "startMs": 27590,
+      "endMs": 29340,
+      "translation": "계속 변해 가"
+    },
+    {
+      "startMs": 29340,
+      "endMs": 31110,
+      "translation": "뜻하지 않게"
+    },
+    {
+      "startMs": 31110,
+      "endMs": 33290,
+      "translation": "너를 남겨 두고"
+    },
+    {
+      "startMs": 33290,
+      "endMs": 36960,
+      "translation": "한낮의 바다에서 잠든 달빛벌레"
+    },
+    {
+      "startMs": 36960,
+      "endMs": 40620,
+      "translation": "돌아오지 않을 그날을 곱씹어"
+    },
+    {
+      "startMs": 40620,
+      "endMs": 44020,
+      "translation": "오르간 소리에 맞춰 춤추는 석상"
+    },
+    {
+      "startMs": 44020,
+      "endMs": 47840,
+      "translation": "시간만 스쳐 지나가"
+    },
+    {
+      "startMs": 47840,
+      "endMs": 50980,
+      "translation": "그 사람 말대로"
+    },
+    {
+      "startMs": 50980,
+      "endMs": 52740,
+      "translation": "내 손은"
+    },
+    {
+      "startMs": 52740,
+      "endMs": 55380,
+      "translation": "더럽혀져 가겠지"
+    },
+    {
+      "startMs": 55380,
+      "endMs": 58440,
+      "translation": "뒷바람에 나부끼며"
+    },
+    {
+      "startMs": 58440,
+      "endMs": 60040,
+      "translation": "나는 아직"
+    },
+    {
+      "startMs": 60040,
+      "endMs": 62800,
+      "translation": "살아가겠지"
+    },
+    {
+      "startMs": 62800,
+      "endMs": 64800,
+      "translation": "끝나는 날까지"
+    },
+    {
+      "startMs": 64800,
+      "endMs": 66560,
+      "translation": "곁에 기대듯이"
+    },
+    {
+      "startMs": 66560,
+      "endMs": 77640,
+      "translation": "너를 기억하고 싶어"
+    },
+    {
+      "startMs": 77640,
+      "endMs": 79410,
+      "translation": "캄파넬라"
+    },
+    {
+      "startMs": 79410,
+      "endMs": 81530,
+      "translation": "그곳은 넉넉해?"
+    },
+    {
+      "startMs": 81530,
+      "endMs": 83360,
+      "translation": "네 눈이"
+    },
+    {
+      "startMs": 83360,
+      "endMs": 85150,
+      "translation": "아찔할 만큼"
+    },
+    {
+      "startMs": 85150,
+      "endMs": 87150,
+      "translation": "타르 위에서"
+    },
+    {
+      "startMs": 87150,
+      "endMs": 88900,
+      "translation": "아지랑이가 일렁여"
+    },
+    {
+      "startMs": 88900,
+      "endMs": 90760,
+      "translation": "터질 듯한"
+    },
+    {
+      "startMs": 90760,
+      "endMs": 92800,
+      "translation": "여름의 등불"
+    },
+    {
+      "startMs": 92800,
+      "endMs": 96390,
+      "translation": "새하얀 새와 노래하는 침엽수"
+    },
+    {
+      "startMs": 96390,
+      "endMs": 100260,
+      "translation": "바라보는 모든 것이 잔상이 돼"
+    },
+    {
+      "startMs": 100260,
+      "endMs": 103880,
+      "translation": "물가에 단추 하나"
+    },
+    {
+      "startMs": 103880,
+      "endMs": 107470,
+      "translation": "네가 남긴 쓸쓸함이여"
+    },
+    {
+      "startMs": 107470,
+      "endMs": 110520,
+      "translation": "그 사람 말대로"
+    },
+    {
+      "startMs": 110520,
+      "endMs": 112420,
+      "translation": "언제가 되어도"
+    },
+    {
+      "startMs": 112420,
+      "endMs": 114870,
+      "translation": "아물지 않는 상처가 있겠지"
+    },
+    {
+      "startMs": 114870,
+      "endMs": 117860,
+      "translation": "황혼을 돌아보며"
+    },
+    {
+      "startMs": 117860,
+      "endMs": 122340,
+      "translation": "그때마다 잘못을 깨닫겠지"
+    },
+    {
+      "startMs": 122340,
+      "endMs": 124170,
+      "translation": "네가 없는"
+    },
+    {
+      "startMs": 124170,
+      "endMs": 125910,
+      "translation": "나날은 계속돼"
+    },
+    {
+      "startMs": 125910,
+      "endMs": 144070,
+      "translation": "고요 속에 홀로"
+    },
+    {
+      "startMs": 144070,
+      "endMs": 147790,
+      "translation": "빛을 받아 내며"
+    },
+    {
+      "startMs": 147790,
+      "endMs": 151560,
+      "translation": "튕겨 내며 반짝이는 크리스털"
+    },
+    {
+      "startMs": 151560,
+      "endMs": 154950,
+      "translation": "네가 남긴 상처도"
+    },
+    {
+      "startMs": 154950,
+      "endMs": 159040,
+      "translation": "그 반짝임 가운데 하나"
+    },
+    {
+      "startMs": 159040,
+      "endMs": 162650,
+      "translation": "빛을 받아 내며"
+    },
+    {
+      "startMs": 162650,
+      "endMs": 166610,
+      "translation": "튕겨 내며 반짝이는 크리스털"
+    },
+    {
+      "startMs": 166610,
+      "endMs": 170180,
+      "translation": "네가 남긴 상처도"
+    },
+    {
+      "startMs": 170180,
+      "endMs": 181540,
+      "translation": "그 반짝임 가운데 하나"
+    },
+    {
+      "startMs": 181540,
+      "endMs": 184790,
+      "translation": "그 사람 말대로"
+    },
+    {
+      "startMs": 184790,
+      "endMs": 186430,
+      "translation": "내 손은"
+    },
+    {
+      "startMs": 186430,
+      "endMs": 189180,
+      "translation": "더럽혀져 가겠지"
+    },
+    {
+      "startMs": 189180,
+      "endMs": 192210,
+      "translation": "뒷바람에 나부끼며"
+    },
+    {
+      "startMs": 192210,
+      "endMs": 194160,
+      "translation": "나는 아직"
+    },
+    {
+      "startMs": 194160,
+      "endMs": 196450,
+      "translation": "살아갈 수 있어"
+    },
+    {
+      "startMs": 196450,
+      "endMs": 199560,
+      "translation": "그 사람 말대로"
+    },
+    {
+      "startMs": 199560,
+      "endMs": 201320,
+      "translation": "언제가 되어도"
+    },
+    {
+      "startMs": 201320,
+      "endMs": 203950,
+      "translation": "아물지 않는 상처가 있겠지"
+    },
+    {
+      "startMs": 203950,
+      "endMs": 207130,
+      "translation": "황혼을 돌아보며"
+    },
+    {
+      "startMs": 207130,
+      "endMs": 211630,
+      "translation": "그때마다 잘못을 깨닫겠지"
+    },
+    {
+      "startMs": 211630,
+      "endMs": 213540,
+      "translation": "끝나는 날까지"
+    },
+    {
+      "startMs": 213540,
+      "endMs": 215310,
+      "translation": "곁에 기대듯이"
+    },
+    {
+      "startMs": 215310,
+      "endMs": 219000,
+      "translation": "너를 기억하고 싶어"
+    },
+    {
+      "startMs": 219000,
+      "endMs": 235720,
+      "translation": "캄파넬라"
+    }
+  ]
+}

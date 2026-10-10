@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 566798,
+    "durationMs": 198000
+  },
+  "segments": [
+    {
+      "startMs": 14630,
+      "endMs": 17590,
+      "translation": "그래, 이게 뭔지 알지"
+    },
+    {
+      "startMs": 17590,
+      "endMs": 20550,
+      "translation": "축하 파티야, 얘들아!"
+    },
+    {
+      "startMs": 20550,
+      "endMs": 23250,
+      "translation": "술 들고, 잔 들고"
+    },
+    {
+      "startMs": 23250,
+      "endMs": 25670,
+      "translation": "그다음엔 네 엉덩이를 잡을 거야"
+    },
+    {
+      "startMs": 25670,
+      "endMs": 27120,
+      "translation": "왜 그렇게"
+    },
+    {
+      "startMs": 27120,
+      "endMs": 28310,
+      "translation": "수줍은 척해"
+    },
+    {
+      "startMs": 28310,
+      "endMs": 29810,
+      "translation": "너희는 왜"
+    },
+    {
+      "startMs": 29810,
+      "endMs": 30840,
+      "translation": "거짓말을 해?"
+    },
+    {
+      "startMs": 30840,
+      "endMs": 32960,
+      "translation": "\"이런 거 처음이야…\""
+    },
+    {
+      "startMs": 32960,
+      "endMs": 34020,
+      "translation": "그만해"
+    },
+    {
+      "startMs": 34020,
+      "endMs": 35930,
+      "translation": "파트론 좀 줄까?"
+    },
+    {
+      "startMs": 35930,
+      "endMs": 37030,
+      "translation": "있어"
+    },
+    {
+      "startMs": 37030,
+      "endMs": 38510,
+      "translation": "약속하는데"
+    },
+    {
+      "startMs": 38510,
+      "endMs": 39870,
+      "translation": "너 정말 예뻐"
+    },
+    {
+      "startMs": 39870,
+      "endMs": 41720,
+      "translation": "네 친구도 꽤 끝내주지만"
+    },
+    {
+      "startMs": 41720,
+      "endMs": 44630,
+      "translation": "너 같진 않아"
+    },
+    {
+      "startMs": 44630,
+      "endMs": 48030,
+      "translation": "아니, 너 같진 않아"
+    },
+    {
+      "startMs": 48030,
+      "endMs": 51980,
+      "translation": "지금은 그 독백 좀 꺼 줘"
+    },
+    {
+      "startMs": 51980,
+      "endMs": 54950,
+      "translation": "그렇게 떠들면 두통약이 필요해질 거야"
+    },
+    {
+      "startMs": 54950,
+      "endMs": 57690,
+      "translation": "사람 졸리게 하네, 너희한테 질렸어"
+    },
+    {
+      "startMs": 57690,
+      "endMs": 60840,
+      "translation": "이제 루이 비통 돈은 여기서 마칠게"
+    },
+    {
+      "startMs": 60840,
+      "endMs": 63190,
+      "translation": "그래도 알려 줘야 할 것 같았어"
+    },
+    {
+      "startMs": 63190,
+      "endMs": 64580,
+      "translation": "우리가 술 가게에 들러서"
+    },
+    {
+      "startMs": 64580,
+      "endMs": 65090,
+      "translation": "크리스털이랑 모엣을 샀어"
+    },
+    {
+      "startMs": 65090,
+      "endMs": 73180,
+      "translation": "이제 흘러가게 둘 거야"
+    },
+    {
+      "startMs": 73180,
+      "endMs": 76310,
+      "translation": "전에 문제가 좀 있었지만, 봐, 다 흘려보냈어"
+    },
+    {
+      "startMs": 76310,
+      "endMs": 78230,
+      "translation": "대마도 한 온스 있어"
+    },
+    {
+      "startMs": 78230,
+      "endMs": 86370,
+      "translation": "이제 피워 버릴 거야"
+    },
+    {
+      "startMs": 86370,
+      "endMs": 89060,
+      "translation": "그래, 이게 뭔지 알지"
+    },
+    {
+      "startMs": 89060,
+      "endMs": 91860,
+      "translation": "축하 파티야, 얘들아!"
+    },
+    {
+      "startMs": 91860,
+      "endMs": 94210,
+      "translation": "술 들고, 잔 들고"
+    },
+    {
+      "startMs": 94210,
+      "endMs": 97040,
+      "translation": "그다음엔 네 엉덩이를 잡을 거야"
+    },
+    {
+      "startMs": 97040,
+      "endMs": 98120,
+      "translation": "내 스타일 알잖아"
+    },
+    {
+      "startMs": 98120,
+      "endMs": 99570,
+      "translation": "난 아주 거칠어"
+    },
+    {
+      "startMs": 99570,
+      "endMs": 102610,
+      "translation": "그리고 맹세하는데 내 아이도 아빠처럼"
+    },
+    {
+      "startMs": 102610,
+      "endMs": 103650,
+      "translation": "잘 타고날 거야"
+    },
+    {
+      "startMs": 103650,
+      "endMs": 105880,
+      "translation": "그리고 엄마가 엉덩이가 끝내줬다고 말해 주면"
+    },
+    {
+      "startMs": 105880,
+      "endMs": 109030,
+      "translation": "아들이 날 올려다보며 \"아빠, 그래서 날 낳은 거야?\" 하겠지"
+    },
+    {
+      "startMs": 109030,
+      "endMs": 110790,
+      "translation": "그래, 연습하고 있었지"
+    },
+    {
+      "startMs": 110790,
+      "endMs": 113550,
+      "translation": "그러다 어느 날 네가 포장을 뚫고 나왔어"
+    },
+    {
+      "startMs": 113550,
+      "endMs": 116860,
+      "translation": "근데 그거 알아? 넌 내가 제일 좋아하는 사고야"
+    },
+    {
+      "startMs": 116860,
+      "endMs": 119010,
+      "translation": "그러니 크리스털을 따"
+    },
+    {
+      "startMs": 119010,
+      "endMs": 122580,
+      "translation": "내 갓난아기를 위해, 이제 너희도"
+    },
+    {
+      "startMs": 122580,
+      "endMs": 125170,
+      "translation": "이게 뭔지 알지"
+    },
+    {
+      "startMs": 125170,
+      "endMs": 127590,
+      "translation": "축하 파티야, 얘들아!"
+    },
+    {
+      "startMs": 127590,
+      "endMs": 130210,
+      "translation": "술 들고, 잔 들고"
+    },
+    {
+      "startMs": 130210,
+      "endMs": 132900,
+      "translation": "그다음엔 네 엉덩이를 잡을 거야"
+    },
+    {
+      "startMs": 132900,
+      "endMs": 134620,
+      "translation": "그래도 알려 줘야 할 것 같았어"
+    },
+    {
+      "startMs": 134620,
+      "endMs": 136090,
+      "translation": "우리가 술 가게에 들러서"
+    },
+    {
+      "startMs": 136090,
+      "endMs": 137660,
+      "translation": "크리스털이랑 모엣을 샀어"
+    },
+    {
+      "startMs": 137660,
+      "endMs": 144620,
+      "translation": "이제 흘러가게 둘 거야"
+    },
+    {
+      "startMs": 144620,
+      "endMs": 147640,
+      "translation": "전에 문제가 좀 있었지만, 봐, 다 흘려보냈어"
+    },
+    {
+      "startMs": 147640,
+      "endMs": 149360,
+      "translation": "대마도 한 온스 있어"
+    },
+    {
+      "startMs": 149360,
+      "endMs": 157400,
+      "translation": "이제 피워 버릴 거야"
+    },
+    {
+      "startMs": 157400,
+      "endMs": 159810,
+      "translation": "여자들! 여자들!"
+    },
+    {
+      "startMs": 159810,
+      "endMs": 161340,
+      "translation": "우린 찾고 있어"
+    },
+    {
+      "startMs": 161340,
+      "endMs": 198000,
+      "translation": "여자들! 여자들! 여자들!"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1055329,
+    "durationMs": 302000
+  },
+  "segments": [
+    {
+      "startMs": 12910,
+      "endMs": 16370,
+      "translation": "길을 잃고 두들겨 맞았어"
+    },
+    {
+      "startMs": 16370,
+      "endMs": 19280,
+      "translation": "저 아래서 춤추고 있었지"
+    },
+    {
+      "startMs": 19280,
+      "endMs": 25190,
+      "translation": "저 밖 어딘가에서 널 찾았어, 그쯤, 그쯤, 바로, 바로 거기서"
+    },
+    {
+      "startMs": 25190,
+      "endMs": 28470,
+      "translation": "길을 잃고 두들겨 맞았어"
+    },
+    {
+      "startMs": 28470,
+      "endMs": 31450,
+      "translation": "저 아래서 춤추고 있었지"
+    },
+    {
+      "startMs": 31450,
+      "endMs": 38050,
+      "translation": "저 밖 어딘가에서 널 찾았어, 바로 저 아래, 바로 그쯤에서"
+    },
+    {
+      "startMs": 38050,
+      "endMs": 40820,
+      "translation": "길을 잃고 들켜 버렸어"
+    },
+    {
+      "startMs": 40820,
+      "endMs": 44120,
+      "translation": "네가 생각한 대로 되어 버렸어"
+    },
+    {
+      "startMs": 44120,
+      "endMs": 49770,
+      "translation": "아빠가 알아 버렸어, 네가 어떻게 되어 버렸는지"
+    },
+    {
+      "startMs": 49770,
+      "endMs": 54340,
+      "translation": "엄마가 지금 네가 어떻게 되었는지 안다면"
+    },
+    {
+      "startMs": 54340,
+      "endMs": 57060,
+      "translation": "넌 너무 거칠어, 넌 너무 거칠어"
+    },
+    {
+      "startMs": 57060,
+      "endMs": 60250,
+      "translation": "넌 너무 거칠어, 넌 너무 거칠어"
+    },
+    {
+      "startMs": 60250,
+      "endMs": 62240,
+      "translation": "지금 네가 필요해"
+    },
+    {
+      "startMs": 62240,
+      "endMs": 63300,
+      "translation": "널 사랑해, 사랑해야 해"
+    },
+    {
+      "startMs": 63300,
+      "endMs": 65560,
+      "translation": "널 사랑해, 사랑해"
+    },
+    {
+      "startMs": 65560,
+      "endMs": 68410,
+      "translation": "널 찾았어, 널 찾았어"
+    },
+    {
+      "startMs": 68410,
+      "endMs": 74770,
+      "translation": "지금, 지금, 지금, 지금"
+    },
+    {
+      "startMs": 74770,
+      "endMs": 78730,
+      "translation": "네 엄마가 네가 어떻게 되었는지 안다면"
+    },
+    {
+      "startMs": 78730,
+      "endMs": 81580,
+      "translation": "넌 너무 거칠어, 넌 너무 거칠어"
+    },
+    {
+      "startMs": 81580,
+      "endMs": 84810,
+      "translation": "넌 너무 거칠어, 넌 너무 거칠어"
+    },
+    {
+      "startMs": 84810,
+      "endMs": 86740,
+      "translation": "그리고 지금 네가 필요해"
+    },
+    {
+      "startMs": 86740,
+      "endMs": 89320,
+      "translation": "길을 잃고 들켜 버렸어"
+    },
+    {
+      "startMs": 89320,
+      "endMs": 92810,
+      "translation": "울어, 난 미안하지 않아"
+    },
+    {
+      "startMs": 92810,
+      "endMs": 98960,
+      "translation": "울어, 헤네시가 있는데 사과가 왜 필요해?"
+    },
+    {
+      "startMs": 98960,
+      "endMs": 102160,
+      "translation": "스스로 속이지 마, 네 눈은 거짓말 안 해"
+    },
+    {
+      "startMs": 102160,
+      "endMs": 104750,
+      "translation": "넌 사실이라고 믿기엔 너무 좋아"
+    },
+    {
+      "startMs": 104750,
+      "endMs": 110410,
+      "translation": "불을 끄려 하지 마, 그래, 네가 타는 게 느껴져, 모든 게 타고 있어"
+    },
+    {
+      "startMs": 110410,
+      "endMs": 114370,
+      "translation": "너무 높이 날지 마, 네 날개가 녹을 수도 있어"
+    },
+    {
+      "startMs": 114370,
+      "endMs": 121620,
+      "translation": "넌 사실이라고 믿기엔 너무 좋아, 난 네게 해로울 뿐이야"
+    },
+    {
+      "startMs": 121620,
+      "endMs": 124590,
+      "translation": "난 네게 해로워, 해로워, 해로워"
+    },
+    {
+      "startMs": 124590,
+      "endMs": 126930,
+      "translation": "길을 잃고 두들겨 맞았어"
+    },
+    {
+      "startMs": 126930,
+      "endMs": 130020,
+      "translation": "변해 버리고 타 버렸어"
+    },
+    {
+      "startMs": 130020,
+      "endMs": 132980,
+      "translation": "넌 상심을 뚫고 날 찾았어"
+    },
+    {
+      "startMs": 132980,
+      "endMs": 136390,
+      "translation": "날 모르면서도 이끌렸지"
+    },
+    {
+      "startMs": 136390,
+      "endMs": 138900,
+      "translation": "길을 잃고 두들겨 맞았어"
+    },
+    {
+      "startMs": 138900,
+      "endMs": 142010,
+      "translation": "난 카이사르 위의 따뜻한 살이었어"
+    },
+    {
+      "startMs": 142010,
+      "endMs": 144820,
+      "translation": "네 시선 속에서 넌 날 찾았어"
+    },
+    {
+      "startMs": 144820,
+      "endMs": 148320,
+      "translation": "그래, 나도 나를 찾았어, 오, 예수님"
+    },
+    {
+      "startMs": 148320,
+      "endMs": 151400,
+      "translation": "난 너무 거칠었어, 난 너무 거칠었어"
+    },
+    {
+      "startMs": 151400,
+      "endMs": 154590,
+      "translation": "난 너무 거칠었어, 난 너무 거칠었어"
+    },
+    {
+      "startMs": 154590,
+      "endMs": 158460,
+      "translation": "난 너무 거칠었어, 난 너무 거칠었어"
+    },
+    {
+      "startMs": 158460,
+      "endMs": 160460,
+      "translation": "그리고 지금 네가 필요해"
+    },
+    {
+      "startMs": 160460,
+      "endMs": 163240,
+      "translation": "길을 잃고 들켜 버렸어"
+    },
+    {
+      "startMs": 169150,
+      "endMs": 171710,
+      "translation": "그래"
+    },
+    {
+      "startMs": 171710,
+      "endMs": 175170,
+      "translation": "내가 네 요셉이 될 수 있을지 알려 줘야 해"
+    },
+    {
+      "startMs": 175170,
+      "endMs": 178310,
+      "translation": "진짜 얘기만 해, 그게 진실이야, 차 한 모금도 없이"
+    },
+    {
+      "startMs": 178310,
+      "endMs": 181620,
+      "translation": "동요하지 마, 동요하지 마, 그 보지는 미끄러워, 차도 없이"
+    },
+    {
+      "startMs": 181620,
+      "endMs": 184240,
+      "translation": "우린 아무 일에도 동요하지 않아, 그냥 이걸 마실 뿐이야"
+    },
+    {
+      "startMs": 184240,
+      "endMs": 187640,
+      "translation": "그 일 전부 잊어, 아무것도 아닌 걸로 웃으면 돼"
+    },
+    {
+      "startMs": 187640,
+      "endMs": 191010,
+      "translation": "네 마음을 임신시켜, 섹스 없이 아이를 갖자, 요"
+    },
+    {
+      "startMs": 191010,
+      "endMs": 193950,
+      "translation": "팔로우를 취소하고 싶은 시시한 여자들이 있겠지"
+    },
+    {
+      "startMs": 193950,
+      "endMs": 196980,
+      "translation": "삼킨 걸 되돌리고 싶은 시시한 남자들이 있겠지"
+    },
+    {
+      "startMs": 196980,
+      "endMs": 200230,
+      "translation": "팔로우를 취소하고 싶은 시시한 여자들이 있겠지"
+    },
+    {
+      "startMs": 200230,
+      "endMs": 203060,
+      "translation": "삼킨 걸 되돌리고 싶은 시시한 남자들이 있겠지"
+    },
+    {
+      "startMs": 203060,
+      "endMs": 206150,
+      "translation": "팔로우를 취소하고 싶은 시시한 여자들이 있겠지"
+    },
+    {
+      "startMs": 206150,
+      "endMs": 209290,
+      "translation": "삼킨 걸 되돌리고 싶은 시시한 남자들이 있겠지"
+    },
+    {
+      "startMs": 209290,
+      "endMs": 212020,
+      "translation": "친절하게 굴려고 했더니 모두가 이용해 먹었어"
+    },
+    {
+      "startMs": 212020,
+      "endMs": 215360,
+      "translation": "냉장고를 열어 뒀더니 누군가 샌드위치를 가져갔어"
+    },
+    {
+      "startMs": 215360,
+      "endMs": 221150,
+      "translation": "난 말했어, '자기야, 남편을 만나기 전에 클럽을 다니며 거칠게 살고 돈을 벌었다면 어땠을까?'"
+    },
+    {
+      "startMs": 221150,
+      "endMs": 228700,
+      "translation": "그러곤 말했어, '마리아가 요셉을 만나기 전에 온갖 불량배들 사이에서 클럽을 다녔다면 어땠을까?"
+    },
+    {
+      "startMs": 228700,
+      "endMs": 231370,
+      "translation": "노리를 어린양의 털로 감싸"
+    },
+    {
+      "startMs": 231370,
+      "endMs": 234430,
+      "translation": "빌어먹을 늑대들이 우릴 둘러쌌어'"
+    },
+    {
+      "startMs": 234430,
+      "endMs": 240170,
+      "translation": "'마리아가, 마리아가 클럽에 있었다면, 클럽에서 요셉을 만나기 전에 사랑 없이 살았다면 어땠을까?"
+    },
+    {
+      "startMs": 240170,
+      "endMs": 243250,
+      "translation": "세인트를 어린양의 털로 감싸, 그리고 그녀는"
+    },
+    {
+      "startMs": 243250,
+      "endMs": 246720,
+      "translation": "빌어먹을 늑대들이, 둘러싼 늑대들이 우릴 둘러쌌어'"
+    }
+  ]
+}

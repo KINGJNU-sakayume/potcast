@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 36376374,
+    "durationMs": 246000
+  },
+  "segments": [
+    {
+      "startMs": 14090,
+      "endMs": 16320,
+      "translation": "우리가 바닥에 누워 있을 때"
+    },
+    {
+      "startMs": 16320,
+      "endMs": 20260,
+      "translation": "넌 내가 더 웃어야 한다고 했지"
+    },
+    {
+      "startMs": 20260,
+      "endMs": 26770,
+      "translation": "내가 네 기분을 망치고 있었어"
+    },
+    {
+      "startMs": 26770,
+      "endMs": 28850,
+      "translation": "네 목소리를 못 들은 척했지만"
+    },
+    {
+      "startMs": 28850,
+      "endMs": 33060,
+      "translation": "자기야, 난 다 적어 두고 있었어"
+    },
+    {
+      "startMs": 33060,
+      "endMs": 37810,
+      "translation": "그걸 기억해 둬"
+    },
+    {
+      "startMs": 37810,
+      "endMs": 43070,
+      "translation": "헤이, 넌 내가 싫다고 하지"
+    },
+    {
+      "startMs": 43070,
+      "endMs": 49130,
+      "translation": "하하, 난 웃어넘겨"
+    },
+    {
+      "startMs": 49130,
+      "endMs": 55500,
+      "translation": "넌 마음을 정했고, 난 그걸 바꿀 수 없어"
+    },
+    {
+      "startMs": 55500,
+      "endMs": 77370,
+      "translation": "어쩐지"
+    },
+    {
+      "startMs": 77370,
+      "endMs": 80160,
+      "translation": "한 달째 해를 못 봤어"
+    },
+    {
+      "startMs": 80160,
+      "endMs": 83420,
+      "translation": "그래도 온통 햇살이야"
+    },
+    {
+      "startMs": 83420,
+      "endMs": 87100,
+      "translation": "우는 법을 잊어버렸어"
+    },
+    {
+      "startMs": 87100,
+      "endMs": 91650,
+      "translation": "고통이, 고통이 저 멀리 있는 것 같아"
+    },
+    {
+      "startMs": 91650,
+      "endMs": 96010,
+      "translation": "이제 담배를 다 변기에 내려 버렸어"
+    },
+    {
+      "startMs": 96010,
+      "endMs": 100370,
+      "translation": "알았어, 알았어, 거짓말이야"
+    },
+    {
+      "startMs": 100370,
+      "endMs": 106310,
+      "translation": "음, 헤이, 넌 내가 싫다고 하지"
+    },
+    {
+      "startMs": 106310,
+      "endMs": 112460,
+      "translation": "하하, 난 웃어넘겨"
+    },
+    {
+      "startMs": 112460,
+      "endMs": 118690,
+      "translation": "넌 마음을 정했고, 난 그걸 바꿀 수 없어"
+    },
+    {
+      "startMs": 118690,
+      "endMs": 125390,
+      "translation": "어쩐지, 난 웃어넘겨"
+    },
+    {
+      "startMs": 125390,
+      "endMs": 131480,
+      "translation": "그리고 내가 뭐라도 배운 게 있다면"
+    },
+    {
+      "startMs": 131480,
+      "endMs": 138800,
+      "translation": "웃어"
+    },
+    {
+      "startMs": 138800,
+      "endMs": 144830,
+      "translation": "나랑 얘기해, 끝났다는 거 알아"
+    },
+    {
+      "startMs": 144830,
+      "endMs": 151410,
+      "translation": "예전처럼 귀 기울여 들을게"
+    },
+    {
+      "startMs": 151410,
+      "endMs": 156710,
+      "translation": "헤이, 넌 내가 싫다고 하지"
+    },
+    {
+      "startMs": 156710,
+      "endMs": 162990,
+      "translation": "하하, 난 웃어넘겼어"
+    },
+    {
+      "startMs": 162990,
+      "endMs": 169300,
+      "translation": "요즘처럼 내가 일을 망쳐도"
+    },
+    {
+      "startMs": 169300,
+      "endMs": 175950,
+      "translation": "어쩐지, 난 웃어넘겨"
+    },
+    {
+      "startMs": 175950,
+      "endMs": 181850,
+      "translation": "그리고 내가 뭐라도 배운 게 있다면"
+    },
+    {
+      "startMs": 181850,
+      "endMs": 188450,
+      "translation": "웃어, 웃어"
+    },
+    {
+      "startMs": 188450,
+      "endMs": 194450,
+      "translation": "그리고 내가 뭐라도 배운 게 있다면"
+    },
+    {
+      "startMs": 194450,
+      "endMs": 246000,
+      "translation": "웃어, 웃어"
+    }
+  ]
+}

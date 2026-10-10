@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 37433527,
+    "durationMs": 206000
+  },
+  "segments": [
+    {
+      "startMs": 25860,
+      "endMs": 28100,
+      "translation": "진실을 말해 줘"
+    },
+    {
+      "startMs": 28100,
+      "endMs": 30870,
+      "translation": "베이비 걸, 너랑 또 누가 있었어?"
+    },
+    {
+      "startMs": 30870,
+      "endMs": 38030,
+      "translation": "어떻게든 내 귀에 들어오게 될 거야, 그래"
+    },
+    {
+      "startMs": 38030,
+      "endMs": 40110,
+      "translation": "이해해"
+    },
+    {
+      "startMs": 40110,
+      "endMs": 43570,
+      "translation": "베이비 걸, 우리 모두 과거가 있잖아"
+    },
+    {
+      "startMs": 43570,
+      "endMs": 49150,
+      "translation": "진실은 너한테서 직접 듣는 게 훨씬 좋아"
+    },
+    {
+      "startMs": 49150,
+      "endMs": 52820,
+      "translation": "그러니까 내가 널 사랑한다면 (널 사랑한다면)"
+    },
+    {
+      "startMs": 52820,
+      "endMs": 55400,
+      "translation": "오직 너만을 위한 사랑일 거야 (오직 너만을 위한)"
+    },
+    {
+      "startMs": 55400,
+      "endMs": 57950,
+      "translation": "그러니까 내가 널 만질 때 (널 만질 때)"
+    },
+    {
+      "startMs": 57950,
+      "endMs": 59310,
+      "translation": "널 믿어도 될까? (널 믿어도 될까?)"
+    },
+    {
+      "startMs": 59310,
+      "endMs": 63070,
+      "translation": "널 믿어도 될까? (널 믿어도 될까?) 오, 베이비"
+    },
+    {
+      "startMs": 63070,
+      "endMs": 65910,
+      "translation": "걸, 와서 네 진짜 모습을 보여 줘"
+    },
+    {
+      "startMs": 65910,
+      "endMs": 69260,
+      "translation": "네 진짜 모습으로 내게 그림을 그려 줘"
+    },
+    {
+      "startMs": 69260,
+      "endMs": 72290,
+      "translation": "이건 새로 사랑에 빠진 사람의 질문이야"
+    },
+    {
+      "startMs": 72290,
+      "endMs": 75690,
+      "translation": "진짜 모습, 진짜 모습"
+    },
+    {
+      "startMs": 75690,
+      "endMs": 78470,
+      "translation": "걸, 와서 네 진짜 모습을 보여 줘"
+    },
+    {
+      "startMs": 78470,
+      "endMs": 81500,
+      "translation": "네 진짜 모습으로 내게 그림을 그려 줘"
+    },
+    {
+      "startMs": 81500,
+      "endMs": 84430,
+      "translation": "이건 새로 사랑에 빠진 사람의 고백이야"
+    },
+    {
+      "startMs": 84430,
+      "endMs": 87610,
+      "translation": "진짜 모습, 진짜 모습"
+    },
+    {
+      "startMs": 87610,
+      "endMs": 89910,
+      "translation": "이미 지난 일은 지난 일이야"
+    },
+    {
+      "startMs": 89910,
+      "endMs": 93180,
+      "translation": "이제 내가 유일한 사람이니까"
+    },
+    {
+      "startMs": 93180,
+      "endMs": 99900,
+      "translation": "말해 주면 네가 겪은 일을 받아들일게, 오, 그래"
+    },
+    {
+      "startMs": 99900,
+      "endMs": 105750,
+      "translation": "그리고 이런 앞뒤 안 맞는 얘기는 믿기지 않아"
+    },
+    {
+      "startMs": 105750,
+      "endMs": 111550,
+      "translation": "네 얘기를 여러 가지로 들었거든"
+    },
+    {
+      "startMs": 111550,
+      "endMs": 115250,
+      "translation": "그러니까 내가 널 사랑한다면 (널 사랑한다면)"
+    },
+    {
+      "startMs": 115250,
+      "endMs": 117850,
+      "translation": "오직 너만을 위한 사랑일 거야 (오직 너만을 위한)"
+    },
+    {
+      "startMs": 117850,
+      "endMs": 119980,
+      "translation": "그러니까 내가 널 만질 때 (널 만질 때)"
+    },
+    {
+      "startMs": 119980,
+      "endMs": 121320,
+      "translation": "널 믿어도 될까? (널 믿어도 될까?)"
+    },
+    {
+      "startMs": 121320,
+      "endMs": 125420,
+      "translation": "널 믿어도 될까? (널 믿어도 될까?) 오, 베이비"
+    },
+    {
+      "startMs": 125420,
+      "endMs": 128230,
+      "translation": "걸, 와서 네 진짜 모습을 보여 줘"
+    },
+    {
+      "startMs": 128230,
+      "endMs": 131690,
+      "translation": "네 진짜 모습으로 내게 그림을 그려 줘"
+    },
+    {
+      "startMs": 131690,
+      "endMs": 134730,
+      "translation": "이건 새로 사랑에 빠진 사람의 질문이야"
+    },
+    {
+      "startMs": 134730,
+      "endMs": 138200,
+      "translation": "진짜 모습, 진짜 모습"
+    },
+    {
+      "startMs": 138200,
+      "endMs": 141220,
+      "translation": "걸, 와서 네 진짜 모습을 보여 줘"
+    },
+    {
+      "startMs": 141220,
+      "endMs": 144230,
+      "translation": "네 진짜 모습으로 내게 그림을 그려 줘"
+    },
+    {
+      "startMs": 144230,
+      "endMs": 146990,
+      "translation": "이건 새로 사랑에 빠진 사람의 고백이야"
+    },
+    {
+      "startMs": 146990,
+      "endMs": 148770,
+      "translation": "진짜 모습"
+    },
+    {
+      "startMs": 148770,
+      "endMs": 151750,
+      "translation": "베이비, 곁에 둘 만한 사람이라는 걸 보여 줘"
+    },
+    {
+      "startMs": 151750,
+      "endMs": 154790,
+      "translation": "따라가기가 힘들었어"
+    },
+    {
+      "startMs": 154790,
+      "endMs": 158440,
+      "translation": "넌 날 계속 모르게 하려 했어"
+    },
+    {
+      "startMs": 158440,
+      "endMs": 161270,
+      "translation": "하지만 베이비 걸, 난 널 알아봐"
+    },
+    {
+      "startMs": 161270,
+      "endMs": 164560,
+      "translation": "베이비, 곁에 둘 만한 사람이라는 걸 보여 줘 (곁에 둘 만한 사람이라는 걸 보여 줘)"
+    },
+    {
+      "startMs": 164560,
+      "endMs": 167650,
+      "translation": "따라가기가 힘들었어 (따라가기 힘들었어)"
+    },
+    {
+      "startMs": 167650,
+      "endMs": 170830,
+      "translation": "넌 날 계속 모르게 하려 했어"
+    },
+    {
+      "startMs": 170830,
+      "endMs": 175250,
+      "translation": "하지만 베이비 걸, 난 널 알아봐"
+    },
+    {
+      "startMs": 175250,
+      "endMs": 178240,
+      "translation": "걸, 와서 네 진짜 모습을 보여 줘"
+    },
+    {
+      "startMs": 178240,
+      "endMs": 181400,
+      "translation": "네 진짜 모습으로 내게 그림을 그려 줘"
+    },
+    {
+      "startMs": 181400,
+      "endMs": 184360,
+      "translation": "이건 새로 사랑에 빠진 사람의 질문이야"
+    },
+    {
+      "startMs": 184360,
+      "endMs": 187870,
+      "translation": "진짜 모습, 진짜 모습"
+    },
+    {
+      "startMs": 187870,
+      "endMs": 190910,
+      "translation": "걸, 와서 네 진짜 모습을 보여 줘"
+    },
+    {
+      "startMs": 190910,
+      "endMs": 194080,
+      "translation": "네 진짜 모습으로 내게 그림을 그려 줘"
+    },
+    {
+      "startMs": 194080,
+      "endMs": 197050,
+      "translation": "이건 새로 사랑에 빠진 사람의 고백이야"
+    },
+    {
+      "startMs": 197050,
+      "endMs": 206000,
+      "translation": "진짜 모습, 진짜 모습"
+    }
+  ]
+}

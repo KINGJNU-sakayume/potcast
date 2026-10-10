@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 449,
+    "durationMs": 215000
+  },
+  "segments": [
+    {
+      "startMs": 34770,
+      "endMs": 38890,
+      "translation": "우린 되돌아갈 수 없었어"
+    },
+    {
+      "startMs": 38890,
+      "endMs": 42900,
+      "translation": "완전히 뒤집힐 때까지"
+    },
+    {
+      "startMs": 42900,
+      "endMs": 46960,
+      "translation": "이제 내가 나쁜 사람이 될게"
+    },
+    {
+      "startMs": 46960,
+      "endMs": 50960,
+      "translation": "하지만, 아니, 그게 자랑스럽진 않아"
+    },
+    {
+      "startMs": 50960,
+      "endMs": 55050,
+      "translation": "난 곁에 있어 줄 수 없었어"
+    },
+    {
+      "startMs": 55050,
+      "endMs": 58970,
+      "translation": "애썼을 때조차"
+    },
+    {
+      "startMs": 58970,
+      "endMs": 62970,
+      "translation": "넌 믿지 않겠지"
+    },
+    {
+      "startMs": 62970,
+      "endMs": 65130,
+      "translation": "우린 매번 이래"
+    },
+    {
+      "startMs": 65130,
+      "endMs": 69050,
+      "translation": "계절이 바뀌고 우리 사랑은 식어 버렸어"
+    },
+    {
+      "startMs": 69050,
+      "endMs": 73050,
+      "translation": "불길에 장작을 넣어, 우린 놓을 수가 없으니까"
+    },
+    {
+      "startMs": 73050,
+      "endMs": 77050,
+      "translation": "도망치지만 우린 제자리를 맴돌 뿐"
+    },
+    {
+      "startMs": 77050,
+      "endMs": 79380,
+      "translation": "도망쳐, 도망쳐"
+    },
+    {
+      "startMs": 79380,
+      "endMs": 83370,
+      "translation": "어디 한번 뭐라도 해 봐"
+    },
+    {
+      "startMs": 83370,
+      "endMs": 86840,
+      "translation": "난 또 네가 움직이길 기다려"
+    },
+    {
+      "startMs": 86840,
+      "endMs": 89080,
+      "translation": "그래야 내가 탓을 뒤집어쓰지 않으니까"
+    },
+    {
+      "startMs": 89080,
+      "endMs": 93050,
+      "translation": "도망치지만 우린 제자리를 맴돌 뿐"
+    },
+    {
+      "startMs": 93050,
+      "endMs": 96600,
+      "translation": "도망쳐, 도망쳐, 도망쳐"
+    },
+    {
+      "startMs": 96600,
+      "endMs": 98970,
+      "translation": "놓아줘"
+    },
+    {
+      "startMs": 98970,
+      "endMs": 104370,
+      "translation": "이제 놓아줄 때가 된 것 같아"
+    },
+    {
+      "startMs": 104370,
+      "endMs": 106810,
+      "translation": "내 말이 맞아"
+    },
+    {
+      "startMs": 106810,
+      "endMs": 111400,
+      "translation": "처음부터 끝날 운명이었다는 걸 알았어"
+    },
+    {
+      "startMs": 111400,
+      "endMs": 115290,
+      "translation": "넌 이게 특별하다고 생각했지, 특별하다고"
+    },
+    {
+      "startMs": 115290,
+      "endMs": 119330,
+      "translation": "그런데 그냥 몸만 원했던 거야, 몸만"
+    },
+    {
+      "startMs": 119330,
+      "endMs": 122850,
+      "translation": "그런데도 아직 메아리가 들려 (메아리가)"
+    },
+    {
+      "startMs": 122850,
+      "endMs": 128890,
+      "translation": "이제 놓아줄 때가 된 것 같아, 놓아줄 때가"
+    },
+    {
+      "startMs": 128890,
+      "endMs": 133050,
+      "translation": "계절이 바뀌고 우리 사랑은 식어 버렸어"
+    },
+    {
+      "startMs": 133050,
+      "endMs": 137080,
+      "translation": "불길에 장작을 넣어, 우린 놓을 수가 없으니까"
+    },
+    {
+      "startMs": 137080,
+      "endMs": 141080,
+      "translation": "도망치지만 우린 제자리를 맴돌 뿐"
+    },
+    {
+      "startMs": 141080,
+      "endMs": 143400,
+      "translation": "도망쳐, 도망쳐"
+    },
+    {
+      "startMs": 143400,
+      "endMs": 147370,
+      "translation": "어디 한번 뭐라도 해 봐"
+    },
+    {
+      "startMs": 147370,
+      "endMs": 150850,
+      "translation": "난 또 네가 움직이길 기다려"
+    },
+    {
+      "startMs": 150850,
+      "endMs": 153050,
+      "translation": "그래야 내가 탓을 뒤집어쓰지 않으니까"
+    },
+    {
+      "startMs": 153050,
+      "endMs": 157050,
+      "translation": "도망치지만 우린 제자리를 맴돌 뿐"
+    },
+    {
+      "startMs": 157050,
+      "endMs": 161170,
+      "translation": "도망쳐, 도망쳐, 도망쳐"
+    },
+    {
+      "startMs": 161170,
+      "endMs": 164970,
+      "translation": "어쩌면 넌 내가 겪는 걸 이해 못 하겠지"
+    },
+    {
+      "startMs": 164970,
+      "endMs": 166970,
+      "translation": "나뿐이야"
+    },
+    {
+      "startMs": 166970,
+      "endMs": 168930,
+      "translation": "잃을 게 뭐가 있어?"
+    },
+    {
+      "startMs": 168930,
+      "endMs": 170410,
+      "translation": "마음을 정하고 말해 줘"
+    },
+    {
+      "startMs": 170410,
+      "endMs": 172930,
+      "translation": "어떻게 할 거야?"
+    },
+    {
+      "startMs": 172930,
+      "endMs": 174960,
+      "translation": "나뿐이야"
+    },
+    {
+      "startMs": 174960,
+      "endMs": 177090,
+      "translation": "놓아줘"
+    },
+    {
+      "startMs": 177090,
+      "endMs": 181080,
+      "translation": "계절이 바뀌고 우리 사랑은 식어 버렸어"
+    },
+    {
+      "startMs": 181080,
+      "endMs": 185010,
+      "translation": "불길에 장작을 넣어, 우린 놓을 수가 없으니까"
+    },
+    {
+      "startMs": 185010,
+      "endMs": 188840,
+      "translation": "도망치지만 우린 제자리를 맴돌 뿐"
+    },
+    {
+      "startMs": 188840,
+      "endMs": 191320,
+      "translation": "도망쳐, 도망쳐"
+    },
+    {
+      "startMs": 191320,
+      "endMs": 195370,
+      "translation": "어디 한번 뭐라도 해 봐"
+    },
+    {
+      "startMs": 195370,
+      "endMs": 198770,
+      "translation": "난 또 네가 움직이길 기다려"
+    },
+    {
+      "startMs": 198770,
+      "endMs": 201160,
+      "translation": "그래야 내가 탓을 뒤집어쓰지 않으니까"
+    },
+    {
+      "startMs": 201160,
+      "endMs": 205080,
+      "translation": "도망치지만 우린 제자리를 맴돌 뿐"
+    },
+    {
+      "startMs": 205080,
+      "endMs": 215000,
+      "translation": "도망쳐, 도망쳐, 도망쳐"
+    }
+  ]
+}

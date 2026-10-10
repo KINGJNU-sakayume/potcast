@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 3764911,
+    "durationMs": 168000
+  },
+  "segments": [
+    {
+      "startMs": 14190,
+      "endMs": 17640,
+      "translation": "토니는 벨파스트로 싸우러 갔고"
+    },
+    {
+      "startMs": 17640,
+      "endMs": 21330,
+      "translation": "루디는 집에 남아 굶었다"
+    },
+    {
+      "startMs": 21330,
+      "endMs": 27450,
+      "translation": "나는 로큰롤 스타가 되어 이 모든 걸 가치 있게 만들 수 있다"
+    },
+    {
+      "startMs": 27450,
+      "endMs": 30500,
+      "translation": "베번은 나라를 바꾸려 했고"
+    },
+    {
+      "startMs": 30500,
+      "endMs": 34690,
+      "translation": "소니는 세상을 바꾸고 싶어 한다, 그래, 자기는 노력했다고 말할 수 있겠지"
+    },
+    {
+      "startMs": 34690,
+      "endMs": 40180,
+      "translation": "나는 로큰롤 스타가 되어 변신할 수 있다"
+    },
+    {
+      "startMs": 40180,
+      "endMs": 47520,
+      "translation": "그 역할을 맡는 건 너무나 매혹적이고 유혹적이다"
+    },
+    {
+      "startMs": 47520,
+      "endMs": 54430,
+      "translation": "나는 로큰롤 스타가 되어 거친 돌연변이를 연기할 수 있다"
+    },
+    {
+      "startMs": 54430,
+      "endMs": 61720,
+      "translation": "가자, 예"
+    },
+    {
+      "startMs": 61720,
+      "endMs": 64820,
+      "translation": "돈이 좀 있으면 좋겠다 (그럴 수 있다는 거 알잖아)"
+    },
+    {
+      "startMs": 64820,
+      "endMs": 67090,
+      "translation": "지금 이 꼴인 모든 것에 완전히 지쳤다"
+    },
+    {
+      "startMs": 67090,
+      "endMs": 68020,
+      "translation": "(그럴 수 있다는 거 알잖아)"
+    },
+    {
+      "startMs": 68020,
+      "endMs": 71130,
+      "translation": "내 연인에게 내 사진을 보내고"
+    },
+    {
+      "startMs": 71130,
+      "endMs": 83080,
+      "translation": "평범한 슈퍼스타처럼 등장할 거다"
+    },
+    {
+      "startMs": 83080,
+      "endMs": 88560,
+      "translation": "나는 로큰롤 스타가 되어 변신할 수 있다"
+    },
+    {
+      "startMs": 88560,
+      "endMs": 95930,
+      "translation": "그 역할을 맡는 건 너무나 매혹적이고 유혹적이다"
+    },
+    {
+      "startMs": 95930,
+      "endMs": 103220,
+      "translation": "나는 로큰롤 스타가 되어 거친 돌연변이를 연기할 수 있다"
+    },
+    {
+      "startMs": 103220,
+      "endMs": 110590,
+      "translation": "가자, 예"
+    },
+    {
+      "startMs": 110590,
+      "endMs": 113400,
+      "translation": "돈이 좀 있으면 좋겠다 (그럴 수 있다는 거 알잖아)"
+    },
+    {
+      "startMs": 113400,
+      "endMs": 115710,
+      "translation": "지금 이 꼴인 모든 것에 완전히 지쳤다"
+    },
+    {
+      "startMs": 115710,
+      "endMs": 116840,
+      "translation": "(그럴 수 있다는 거 알잖아)"
+    },
+    {
+      "startMs": 116840,
+      "endMs": 119570,
+      "translation": "내 연인에게 내 사진을 보내고"
+    },
+    {
+      "startMs": 119570,
+      "endMs": 126470,
+      "translation": "평범한 슈퍼스타처럼 등장할 거다"
+    },
+    {
+      "startMs": 126470,
+      "endMs": 135200,
+      "translation": "로큰롤 스타라면 밤에도 잠들 수 있을 거다"
+    },
+    {
+      "startMs": 135200,
+      "endMs": 146230,
+      "translation": "로큰롤 스타라면 사랑에도 빠질 수 있을 거다"
+    },
+    {
+      "startMs": 146230,
+      "endMs": 153780,
+      "translation": "로큰롤 스타"
+    },
+    {
+      "startMs": 153780,
+      "endMs": 160590,
+      "translation": "로큰롤 스타"
+    },
+    {
+      "startMs": 160590,
+      "endMs": 168000,
+      "translation": "(이제 나를 봐)"
+    }
+  ]
+}

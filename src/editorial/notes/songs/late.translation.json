@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 574111,
+    "durationMs": 230000
+  },
+  "segments": [
+    {
+      "startMs": 9970,
+      "endMs": 12270,
+      "translation": "어린 아가씨 (아하하하하)"
+    },
+    {
+      "startMs": 12270,
+      "endMs": 17960,
+      "translation": "이제 그만 울어"
+    },
+    {
+      "startMs": 17960,
+      "endMs": 21600,
+      "translation": "그 일엔 늦겠지만, 자기, 기다릴게"
+    },
+    {
+      "startMs": 21600,
+      "endMs": 24630,
+      "translation": "맛을 한번 보면 아마 돈이라도 내겠지"
+    },
+    {
+      "startMs": 24630,
+      "endMs": 26720,
+      "translation": "난 내키면 들어갈 거야"
+    },
+    {
+      "startMs": 26720,
+      "endMs": 29910,
+      "translation": "그러니 기분이 맞을 때만 이거 볼륨을 키워"
+    },
+    {
+      "startMs": 29910,
+      "endMs": 33590,
+      "translation": "그 일엔 늦겠지만, 기다릴 수가 없어"
+    },
+    {
+      "startMs": 33590,
+      "endMs": 36780,
+      "translation": "난 그러려고 태어난 것 같아"
+    },
+    {
+      "startMs": 36780,
+      "endMs": 38850,
+      "translation": "그러니 난 내키면 들어갈 거야"
+    },
+    {
+      "startMs": 38850,
+      "endMs": 48830,
+      "translation": "그러니 기분이 맞을 때만 이거 볼륨을 키워"
+    },
+    {
+      "startMs": 48830,
+      "endMs": 52570,
+      "translation": "그만 좀 울어, 난 날아왔어"
+    },
+    {
+      "startMs": 52570,
+      "endMs": 55450,
+      "translation": "겨우 등록할 시간에 맞춰 학교에 도착했지"
+    },
+    {
+      "startMs": 55450,
+      "endMs": 58350,
+      "translation": "그래, 알람 소리 들려, 그래, 엄마 말도 들려"
+    },
+    {
+      "startMs": 58350,
+      "endMs": 61670,
+      "translation": "그래, 그래, 서른한 살에 빈털터리는 싫어"
+    },
+    {
+      "startMs": 61670,
+      "endMs": 64890,
+      "translation": "좋은 수업은 빨리 온 사람한테 간대, 미안해요, 웨스트 군"
+    },
+    {
+      "startMs": 64890,
+      "endMs": 67870,
+      "translation": "좋은 수업은 하나도 없어, 그게 네 꼴이야"
+    },
+    {
+      "startMs": 67870,
+      "endMs": 70640,
+      "translation": "교양 과목도 없어요? 선수 과목도요?"
+    },
+    {
+      "startMs": 70640,
+      "endMs": 73770,
+      "translation": "그러니까 몇 초 차이로 전공을 놓쳤다는 거예요?"
+    },
+    {
+      "startMs": 73770,
+      "endMs": 76640,
+      "translation": "이제 난 목공 수업이나 바구니 짜기 수업에"
+    },
+    {
+      "startMs": 76640,
+      "endMs": 79690,
+      "translation": "공부 못하는 나머지 녀석들이랑 같이 있어"
+    },
+    {
+      "startMs": 79690,
+      "endMs": 81980,
+      "translation": "이거 완전 모욕이야"
+    },
+    {
+      "startMs": 81980,
+      "endMs": 84990,
+      "translation": "중학교 때부터 다 같이 다녔는데 다들 느렸다고"
+    },
+    {
+      "startMs": 84990,
+      "endMs": 87920,
+      "translation": "비트를 잡을 수 있으면 템포를 늦춰"
+    },
+    {
+      "startMs": 87920,
+      "endMs": 91000,
+      "translation": "인트로에 너무 늦으면 그냥 끝에 넣어 버려"
+    },
+    {
+      "startMs": 91000,
+      "endMs": 94020,
+      "translation": "학자금 대출에서 벤츠까지 갈 수 있을까?"
+    },
+    {
+      "startMs": 94020,
+      "endMs": 102990,
+      "translation": "노인네 오줌 누듯 결국 다 기저귀 하기 나름이지, 오, 오"
+    },
+    {
+      "startMs": 102990,
+      "endMs": 105950,
+      "translation": "그만 울어, 자기"
+    },
+    {
+      "startMs": 105950,
+      "endMs": 109470,
+      "translation": "그 일엔 늦겠지만, 자기, 기다릴게"
+    },
+    {
+      "startMs": 109470,
+      "endMs": 112580,
+      "translation": "맛을 한번 보면 아마 돈이라도 내겠지"
+    },
+    {
+      "startMs": 112580,
+      "endMs": 114670,
+      "translation": "난 내키면 들어갈 거야"
+    },
+    {
+      "startMs": 114670,
+      "endMs": 118340,
+      "translation": "그러니 기분이 맞을 때만 이거 볼륨을 키워"
+    },
+    {
+      "startMs": 118340,
+      "endMs": 121420,
+      "translation": "그 일엔 늦겠지만, 기다릴 수가 없어"
+    },
+    {
+      "startMs": 121420,
+      "endMs": 124630,
+      "translation": "난 그러려고 태어난 것 같아"
+    },
+    {
+      "startMs": 124630,
+      "endMs": 126680,
+      "translation": "그러니 난 내키면 들어갈 거야"
+    },
+    {
+      "startMs": 126680,
+      "endMs": 137750,
+      "translation": "그러니 기분이 맞을 때만 이거 볼륨을 키워"
+    },
+    {
+      "startMs": 137750,
+      "endMs": 140290,
+      "translation": "늦으면 신호등에 다 걸린다는 거 알지"
+    },
+    {
+      "startMs": 140290,
+      "endMs": 143560,
+      "translation": "맞아 (맞아), 맞아 (맞아)"
+    },
+    {
+      "startMs": 143560,
+      "endMs": 146640,
+      "translation": "그리고 돌아가면 그녀가 싸움을 걸 거야"
+    },
+    {
+      "startMs": 146640,
+      "endMs": 149030,
+      "translation": "그날 밤 (그날 밤), 그날 밤"
+    },
+    {
+      "startMs": 149030,
+      "endMs": 152340,
+      "translation": "자기, 이젠 너무 늦었어, 요즘 난 천천히 가"
+    },
+    {
+      "startMs": 152340,
+      "endMs": 155510,
+      "translation": "게스트 명단이 닫히기 전에 파티에 가 보려고"
+    },
+    {
+      "startMs": 155510,
+      "endMs": 158310,
+      "translation": "제일 잘나가는 여자들이랑, 교수들도 알지"
+    },
+    {
+      "startMs": 158310,
+      "endMs": 161680,
+      "translation": "우리가 곧 아주 비전문적으로 놀 거라는 걸"
+    },
+    {
+      "startMs": 161680,
+      "endMs": 164610,
+      "translation": "에스키모처럼, 클론다이크 아이스크림을 위해 뭘 할 수 있어?"
+    },
+    {
+      "startMs": 164610,
+      "endMs": 167700,
+      "translation": "아니면 크리스티나 밀리언 닮은 두 여자를 위해서라면?"
+    },
+    {
+      "startMs": 167700,
+      "endMs": 170140,
+      "translation": "흠, 그건 제시간에 갈게"
+    },
+    {
+      "startMs": 170140,
+      "endMs": 173510,
+      "translation": "거기에 맞는 운율이 하나도 안 떠오르네"
+    },
+    {
+      "startMs": 173510,
+      "endMs": 176730,
+      "translation": "야, 5분 안에 갈게, 다섯 시간 뒤에?"
+    },
+    {
+      "startMs": 176730,
+      "endMs": 179910,
+      "translation": "\"5분 안에 갈게\", 그래, 그냥 받아들여"
+    },
+    {
+      "startMs": 179910,
+      "endMs": 182840,
+      "translation": "난 이렇게 살아, 내가 해낸 걸 봐"
+    },
+    {
+      "startMs": 182840,
+      "endMs": 186330,
+      "translation": "딴짓만 하다가 결국 해내고 도착했어"
+    },
+    {
+      "startMs": 186330,
+      "endMs": 189190,
+      "translation": "늦은 거 알아, 일 년 내내 걸렸지만"
+    },
+    {
+      "startMs": 189190,
+      "endMs": 193730,
+      "translation": "불평은 그만해도 돼, 드디어 내가 왔으니까, 그래"
+    },
+    {
+      "startMs": 193730,
+      "endMs": 199790,
+      "translation": "내가 지워 줄게"
+    },
+    {
+      "startMs": 199790,
+      "endMs": 205840,
+      "translation": "내가 지워 줄게"
+    },
+    {
+      "startMs": 205840,
+      "endMs": 211730,
+      "translation": "내가 지워 줄게"
+    },
+    {
+      "startMs": 211730,
+      "endMs": 217360,
+      "translation": "내가 지워 줄게"
+    },
+    {
+      "startMs": 217360,
+      "endMs": 230000,
+      "translation": "영… (아하하하하)"
+    }
+  ]
+}

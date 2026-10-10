@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11564516,
+    "durationMs": 209000
+  },
+  "segments": [
+    {
+      "startMs": 11950,
+      "endMs": 14260,
+      "translation": "마지막 주문을 하는 사람들, 마지막 기회를 붙잡은 사람들"
+    },
+    {
+      "startMs": 14260,
+      "endMs": 16630,
+      "translation": "9시 출근 6시 퇴근하는 사람들, 트럭 기사들, 댄서들"
+    },
+    {
+      "startMs": 16630,
+      "endMs": 19300,
+      "translation": "엉망인 사람들, 상처투성이들, 촛불 켜는 사람들"
+    },
+    {
+      "startMs": 19300,
+      "endMs": 21640,
+      "translation": "응답받지 못한 기도를 잔뜩 안고서"
+    },
+    {
+      "startMs": 21640,
+      "endMs": 23960,
+      "translation": "정오엔 위스키, 그 전엔 맥주"
+    },
+    {
+      "startMs": 23960,
+      "endMs": 26840,
+      "translation": "지옥행 선로 위를 달리는 남쪽행 기차"
+    },
+    {
+      "startMs": 26840,
+      "endMs": 29790,
+      "translation": "가운뎃손가락 두 개를 들어 올리고"
+    },
+    {
+      "startMs": 29790,
+      "endMs": 36730,
+      "translation": "한 잔 들이켤지도 몰라, 한 번도 편히 쉴 곳을 느껴 본 적 없는 모든 사람을 위해"
+    },
+    {
+      "startMs": 36730,
+      "endMs": 40620,
+      "translation": "그냥 돌덩이 위에서 빙빙 돌며 취해 가는 사람들"
+    },
+    {
+      "startMs": 40620,
+      "endMs": 45950,
+      "translation": "그래, 이건 패배자들을 위한 노래야"
+    },
+    {
+      "startMs": 45950,
+      "endMs": 48200,
+      "translation": "버림받은 사람들, 그리고 죄인들"
+    },
+    {
+      "startMs": 48200,
+      "endMs": 50990,
+      "translation": "한 번도 이겨 본 적 없는 사람들"
+    },
+    {
+      "startMs": 50990,
+      "endMs": 55970,
+      "translation": "패배자들을 위해 박수를"
+    },
+    {
+      "startMs": 55970,
+      "endMs": 58530,
+      "translation": "어디에도 낄 데가 없지만"
+    },
+    {
+      "startMs": 58530,
+      "endMs": 62930,
+      "translation": "언제든 들어갈 수 있는 곳이 있어, 오"
+    },
+    {
+      "startMs": 62930,
+      "endMs": 66930,
+      "translation": "외로울지는 몰라도 넌 절대 혼자가 아니야"
+    },
+    {
+      "startMs": 66930,
+      "endMs": 71020,
+      "translation": "넌 지금 있어야 할 바로 그곳에 있어"
+    },
+    {
+      "startMs": 71020,
+      "endMs": 76700,
+      "translation": "여기 모든 패배자들과 함께"
+    },
+    {
+      "startMs": 76700,
+      "endMs": 83220,
+      "translation": "너 같은 사람들과 나 같은 사람들"
+    },
+    {
+      "startMs": 83220,
+      "endMs": 85630,
+      "translation": "내 상담사는 좋은 바텐더야"
+    },
+    {
+      "startMs": 85630,
+      "endMs": 88270,
+      "translation": "마음을 아프게 하는 사람들과 두 달짜리 술판"
+    },
+    {
+      "startMs": 88270,
+      "endMs": 90950,
+      "translation": "잊을 수 없는 나쁜 시간들"
+    },
+    {
+      "startMs": 90950,
+      "endMs": 93530,
+      "translation": "기억도 못 할 좋은 시간들"
+    },
+    {
+      "startMs": 93530,
+      "endMs": 95820,
+      "translation": "슬픈 노래가 나오면 우린 잔을 들어"
+    },
+    {
+      "startMs": 95820,
+      "endMs": 98590,
+      "translation": "스틸 기타의 울음이 좋아"
+    },
+    {
+      "startMs": 98590,
+      "endMs": 102200,
+      "translation": "우리가 사는 방식을 바꿀 방법은 없어"
+    },
+    {
+      "startMs": 102200,
+      "endMs": 107200,
+      "translation": "이건 패배자들을 위한 노래야"
+    },
+    {
+      "startMs": 107200,
+      "endMs": 109330,
+      "translation": "버림받은 사람들, 그리고 죄인들"
+    },
+    {
+      "startMs": 109330,
+      "endMs": 111970,
+      "translation": "한 번도 이겨 본 적 없는 사람들"
+    },
+    {
+      "startMs": 111970,
+      "endMs": 116970,
+      "translation": "패배자들을 위해 박수를"
+    },
+    {
+      "startMs": 116970,
+      "endMs": 119700,
+      "translation": "어디에도 낄 데가 없지만"
+    },
+    {
+      "startMs": 119700,
+      "endMs": 124030,
+      "translation": "언제든 들어갈 수 있는 곳이 있어 (오, 오)"
+    },
+    {
+      "startMs": 124030,
+      "endMs": 128090,
+      "translation": "외로울지는 몰라도 넌 절대 혼자가 아니야"
+    },
+    {
+      "startMs": 128090,
+      "endMs": 132480,
+      "translation": "넌 지금 있어야 할 바로 그곳에 있어"
+    },
+    {
+      "startMs": 132480,
+      "endMs": 137660,
+      "translation": "여기 모든 패배자들과 함께"
+    },
+    {
+      "startMs": 137660,
+      "endMs": 143640,
+      "translation": "너 같은 사람들과 나 같은 사람들"
+    },
+    {
+      "startMs": 143640,
+      "endMs": 148830,
+      "translation": "잃을 게 없는 것처럼 살고 있다면"
+    },
+    {
+      "startMs": 148830,
+      "endMs": 155550,
+      "translation": "이 의자에 내 옆자리가 있어"
+    },
+    {
+      "startMs": 155550,
+      "endMs": 160580,
+      "translation": "패배자들이랑 같이 어울리자 (오)"
+    },
+    {
+      "startMs": 160580,
+      "endMs": 162960,
+      "translation": "버림받은 사람들, 그리고 죄인들"
+    },
+    {
+      "startMs": 162960,
+      "endMs": 165890,
+      "translation": "한 번도 이겨 본 적 없는 사람들 (한 번도 이겨 본 적 없는)"
+    },
+    {
+      "startMs": 165890,
+      "endMs": 170880,
+      "translation": "패배자들을 위해 박수를 (패배자들을 위해)"
+    },
+    {
+      "startMs": 170880,
+      "endMs": 173130,
+      "translation": "어디에도 낄 데가 없지만"
+    },
+    {
+      "startMs": 173130,
+      "endMs": 177170,
+      "translation": "언제든 들어갈 수 있는 곳이 있어 (그래, 오)"
+    },
+    {
+      "startMs": 177170,
+      "endMs": 181810,
+      "translation": "외로울지는 몰라도 넌 절대 혼자가 아니야"
+    },
+    {
+      "startMs": 181810,
+      "endMs": 185980,
+      "translation": "넌 지금 있어야 할 바로 그곳에 있어"
+    },
+    {
+      "startMs": 185980,
+      "endMs": 191280,
+      "translation": "여기 모든 패배자들과 함께"
+    },
+    {
+      "startMs": 191280,
+      "endMs": 209000,
+      "translation": "너 같은 사람들과 나 같은 사람들 (우, 우)"
+    }
+  ]
+}

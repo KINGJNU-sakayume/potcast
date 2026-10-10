@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 28148167,
+    "durationMs": 227000
+  },
+  "segments": [
+    {
+      "startMs": 23660,
+      "endMs": 29320,
+      "translation": "있잖아, 태어난 날을 떠올릴 수 있어?"
+    },
+    {
+      "startMs": 29320,
+      "endMs": 34070,
+      "translation": "시나리오의 첫 대사를"
+    },
+    {
+      "startMs": 34070,
+      "endMs": 38720,
+      "translation": "무대는 돌고 연극은 계속돼"
+    },
+    {
+      "startMs": 38720,
+      "endMs": 51860,
+      "translation": "분장실에는 산타 마리아가 없어"
+    },
+    {
+      "startMs": 51860,
+      "endMs": 57400,
+      "translation": "처음이자 마지막 노래를 제대로 부르지도 못하는데"
+    },
+    {
+      "startMs": 57400,
+      "endMs": 62370,
+      "translation": "감독들은 침묵을 지켜"
+    },
+    {
+      "startMs": 62370,
+      "endMs": 67030,
+      "translation": "각본의 결말은 아직 쓰이지 않았어"
+    },
+    {
+      "startMs": 67030,
+      "endMs": 73060,
+      "translation": "기도하듯이 나는 입을 열었어"
+    },
+    {
+      "startMs": 73060,
+      "endMs": 82460,
+      "translation": "\"천 년 뒤의 미래에 우리는 살아 있지 않아"
+    },
+    {
+      "startMs": 82460,
+      "endMs": 91210,
+      "translation": "친구여, 어느 날이든 사랑해, 분명\""
+    },
+    {
+      "startMs": 91210,
+      "endMs": 110790,
+      "translation": "누군가가 기다리고 있어, 우리의 이야기를"
+    },
+    {
+      "startMs": 110790,
+      "endMs": 116230,
+      "translation": "등뼈를 잃은 커다란 기계가"
+    },
+    {
+      "startMs": 116230,
+      "endMs": 120920,
+      "translation": "아름답게 도시를 넘어가"
+    },
+    {
+      "startMs": 120920,
+      "endMs": 125870,
+      "translation": "무대 세트는 무너지고 조명이 떨어져"
+    },
+    {
+      "startMs": 125870,
+      "endMs": 129420,
+      "translation": "관객은 차가운 눈길"
+    },
+    {
+      "startMs": 129420,
+      "endMs": 134140,
+      "translation": "줄지어 늘어서듯 연극은 계속돼"
+    },
+    {
+      "startMs": 134140,
+      "endMs": 139040,
+      "translation": "지금도 새로이 양은 길을 잃어"
+    },
+    {
+      "startMs": 139040,
+      "endMs": 144030,
+      "translation": "견딜 수 있는 데까지 노래를 부르자"
+    },
+    {
+      "startMs": 144030,
+      "endMs": 152990,
+      "translation": "필름은 계속 돌아가고 있어"
+    },
+    {
+      "startMs": 152990,
+      "endMs": 162490,
+      "translation": "\"천 년 뒤의 미래에 우리는 살아 있지 않아"
+    },
+    {
+      "startMs": 162490,
+      "endMs": 171990,
+      "translation": "친구여, 어느 날이든 사랑해, 분명\""
+    },
+    {
+      "startMs": 171990,
+      "endMs": 181260,
+      "translation": "\"네가 지닌 쓸쓸함이 아득한 시간을 넘어"
+    },
+    {
+      "startMs": 181260,
+      "endMs": 190570,
+      "translation": "누군가를 구하는 그날을 기다리고 있어, 언제까지나\""
+    },
+    {
+      "startMs": 190570,
+      "endMs": 227000,
+      "translation": "누군가가 기다리고 있어, 우리의 이야기를"
+    }
+  ]
+}

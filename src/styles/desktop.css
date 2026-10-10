@@ -1,0 +1,391 @@
+/*
+ * ARC Music v7.5 — the desktop (DESIGN_REVISION_V7_5.md).
+ *
+ * One rail, no top bar. Each page takes its own image's colour: AppShell sets
+ * player1's stage tokens on `.app.desktop` (surface.tsx), or leaves the paper.
+ * Notes, the queue and settings open in a right-hand column that pushes the
+ * page aside. Big things — covers, titles, lyrics — follow the smaller of the
+ * window's width and height, so a 21:9 window is sized by its height; small
+ * type grows by 10% from 1200px tall (a 1440p monitor at 100%). From 2400px
+ * wide the 21:9 layouts switch on. Every rule is scoped to `.desktop`: the
+ * phone shell (mobile.css) and the signed-out screens are untouched.
+ */
+
+@property --bg { syntax: '<color>'; inherits: true; initial-value: #f1eee6; }
+@property --paper { syntax: '<color>'; inherits: true; initial-value: #f8f5ee; }
+@property --surface { syntax: '<color>'; inherits: true; initial-value: #e7e2d8; }
+@property --surface-strong { syntax: '<color>'; inherits: true; initial-value: #dcd6ca; }
+@property --ink { syntax: '<color>'; inherits: true; initial-value: #171917; }
+@property --ink-2 { syntax: '<color>'; inherits: true; initial-value: #444844; }
+@property --muted { syntax: '<color>'; inherits: true; initial-value: #686b66; }
+@property --dim { syntax: '<color>'; inherits: true; initial-value: #747771; }
+@property --line { syntax: '<color>'; inherits: true; initial-value: rgba(23, 25, 23, .15); }
+@property --line-soft { syntax: '<color>'; inherits: true; initial-value: rgba(23, 25, 23, .075); }
+@property --main { syntax: '<color>'; inherits: true; initial-value: #b91f2e; }
+@property --main-text { syntax: '<color>'; inherits: true; initial-value: #b91f2e; }
+@property --stage-glow { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --cover-shadow { syntax: '<color>'; inherits: true; initial-value: rgba(23, 25, 23, .2); }
+
+/* ── Shell ─────────────────────────────────────────────────────────── */
+.desktop {
+  --t: 1;
+  --rail: 88px;
+  --panel-w: 530px;
+  --gutter: clamp(28px, 3.75vw, 72px);
+  --pad-y: clamp(24px, 4.2vh, 56px);
+  --stage-fade: 700ms;
+  height: 100dvh;
+  min-height: 0;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  color: var(--ink);
+  transition:
+    --bg var(--stage-fade) var(--ease), --paper var(--stage-fade) var(--ease),
+    --surface var(--stage-fade) var(--ease), --surface-strong var(--stage-fade) var(--ease),
+    --ink var(--stage-fade) var(--ease), --ink-2 var(--stage-fade) var(--ease),
+    --muted var(--stage-fade) var(--ease), --dim var(--stage-fade) var(--ease),
+    --line var(--stage-fade) var(--ease), --line-soft var(--stage-fade) var(--ease),
+    --main var(--stage-fade) var(--ease), --main-text var(--stage-fade) var(--ease),
+    --stage-glow var(--stage-fade) var(--ease), --cover-shadow var(--stage-fade) var(--ease);
+}
+.desktop[data-surface='paper'] {
+  background:
+    radial-gradient(980px 760px at 84% 5%, color-mix(in srgb, var(--main) 5%, transparent), transparent 70%),
+    linear-gradient(90deg, rgba(20, 20, 20, .014) 1px, transparent 1px),
+    var(--bg);
+  background-size: auto, 44px 44px, auto;
+}
+.desktop[data-surface='stage'] {
+  background:
+    radial-gradient(90% 70% at 12% 8%, var(--stage-glow), transparent 70%),
+    radial-gradient(70% 60% at 100% 100%, color-mix(in srgb, var(--stage-glow) 55%, transparent), transparent 70%),
+    var(--bg);
+}
+@media (min-height: 1200px) { .desktop { --t: 1.1; --rail: 96px; --panel-w: 580px; } }
+@media (min-width: 2400px) { .desktop { --panel-w: 680px; --gutter: 96px; } }
+@media (max-width: 1180px) { .desktop { --panel-w: 400px; } }
+
+.desktop .label, .desktop .artist-number, .desktop .note-kicker, .desktop .note-more, .desktop .text-toggle,
+.desktop .notice-action, .desktop .row-play, .desktop .plain-action, .desktop .track-note, .desktop .section-count,
+.desktop .sequence-head span, .desktop .listening-head span { font-size: calc(11px * var(--t)); }
+.desktop .note-preview p { font-size: calc(14px * var(--t)); }
+.desktop .note-drawer-copy { font-size: calc(16px * var(--t)); }
+.desktop .note-drawer-subtitle { font-size: calc(13px * var(--t)); }
+.desktop .scope-notice { padding-inline: var(--gutter); }
+
+/* Rail: player1's icon-over-label column */
+.desktop .rail { height: 100dvh; align-items: stretch; padding: 16px 0; background: transparent; backdrop-filter: none; border-right-color: var(--line-soft); overflow-y: auto; scrollbar-width: none; }
+.desktop .logo { align-self: center; margin-bottom: 0; }
+.desktop .rail-nav { display: grid; gap: 2px; margin-top: 20px; }
+.desktop .rail-item { position: relative; width: 100%; height: auto; display: grid; justify-items: center; gap: 6px; padding: 11px 4px 10px; border: 0; background: transparent; color: var(--dim); font-size: calc(13px * var(--t)); line-height: 1.15; text-align: center; transition: color .18s var(--ease); }
+.desktop .rail-item .icon { width: 21px; height: 21px; }
+.desktop .rail-item:hover, .desktop .rail-item[aria-current='page'], .desktop .rail-item[aria-expanded='true'] { color: var(--ink); }
+.desktop .rail-item[aria-current='page'] { font-weight: 500; }
+.desktop .rail-item[aria-current='page']::after { content: ''; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; background: var(--main); }
+.desktop .rail-foot { display: grid; gap: 2px; justify-items: stretch; margin-top: auto; padding-top: 12px; }
+.desktop .user { justify-self: center; margin-top: 8px; background: var(--ink); color: var(--bg); }
+.desktop .rail-now { display: grid; justify-items: center; gap: 7px; padding: 10px 0 14px; margin-bottom: 4px; border-bottom: 1px solid var(--line-soft); color: var(--dim); font-size: calc(10.5px * var(--t)); letter-spacing: .09em; text-transform: uppercase; }
+.desktop .rail-now:hover { color: var(--ink); }
+.desktop .rail-now-cover { position: relative; width: 50px; height: 50px; }
+.desktop .rail-now-cover .cover-frame { width: 100%; height: 100%; }
+.desktop .rail-now-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 12px 24px -14px var(--cover-shadow); }
+.desktop .rail-now-cover .cover-plate { padding: 5px; }
+.desktop .rail-now-cover .cover-plate-mark, .desktop .rail-now-cover .cover-plate-subtitle { display: none; }
+.desktop .rail-now-cover .cover-plate-title { font-size: 8px; -webkit-line-clamp: 3; }
+.desktop .rail-now .playing-mark { position: absolute; right: 4px; bottom: 4px; height: auto; padding: 3px; background: color-mix(in srgb, var(--bg) 82%, transparent); }
+.desktop .rail-now .playing-mark span { height: 10px; }
+.desktop .rail-now-bar { position: relative; width: 50px; height: 2px; background: var(--surface-strong); }
+.desktop .rail-now-bar::after { content: ''; position: absolute; inset: 0 auto 0 0; width: calc(var(--progress, 0) * 100%); background: var(--main); }
+
+/* Workspace: the page, and the right-hand column that pushes it aside */
+.desktop .workspace { height: 100dvh; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) 0; grid-template-rows: minmax(0, 1fr); transition: grid-template-columns .34s var(--ease); }
+.desktop[data-panel] .workspace { grid-template-columns: minmax(0, 1fr) var(--panel-w); }
+.desktop .workspace-main { min-width: 0; min-height: 0; display: flex; flex-direction: column; }
+.desktop .side-panel { min-width: 0; min-height: 0; display: flex; flex-direction: column; background: var(--paper); border-left: 1px solid var(--line); overflow: hidden; animation: side-panel-in .34s var(--ease); }
+@keyframes side-panel-in { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
+.desktop .side-panel-head { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 26px 14px; border-bottom: 1px solid var(--line-soft); }
+.desktop .side-panel-head button { width: 36px; height: 36px; border: 0; background: transparent; font-size: 20px; line-height: 1; color: var(--muted); }
+.desktop .side-panel-head button:hover { color: var(--ink); }
+.desktop .side-panel-body { flex: 1; min-height: 0; overflow: auto; padding: 30px 34px 48px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.desktop .side-panel .note-drawer-title { font-size: clamp(34px, min(2.8vw, 5vh), 60px); }
+.desktop .side-panel .note-drawer-copy, .desktop .side-panel .note-drawer-foot { max-width: 640px; }
+.desktop .settings-body { padding: 0; }
+.desktop .settings-body p { font-size: calc(14px * var(--t)); color: var(--ink-2); }
+.desktop .settings-body .label { margin-top: 22px; }
+.desktop .settings-body .label:first-child { margin-top: 0; }
+.desktop .settings-keys { margin: 10px 0 0; display: grid; gap: 7px; font-size: calc(13.5px * var(--t)); }
+.desktop .settings-keys div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; align-items: baseline; }
+.desktop .settings-keys dd { margin: 0; color: var(--ink-2); }
+
+/* Shared page frame */
+.desktop .album-page, .desktop .artist-page, .desktop .library-page { padding: var(--pad-y) var(--gutter) calc(var(--pad-y) * 1.6); scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.desktop .back-link { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 16px; padding: 4px 0; border: 0; background: transparent; color: var(--dim); font-size: calc(11px * var(--t)); letter-spacing: .09em; text-transform: uppercase; }
+.desktop .back-link:hover { color: var(--ink); }
+.desktop .cover-shadow { display: none; }
+.desktop .plain-action.primary { color: var(--bg); }
+.desktop .track-item:hover:not(:disabled), .desktop .track-item.active, .desktop .index-row:hover, .desktop .index-row.active { background: color-mix(in srgb, var(--main) 7%, transparent); }
+
+/* ── Now Playing ───────────────────────────────────────────────────── */
+.desktop .np {
+  --share: .4;
+  --art-max: 720px;
+  --meta-reserve: 200px;
+  --lyric-width: 1100px;
+  --read-max: 1640px;
+  --corner-cover: 120px;
+  height: 100%;
+  padding: clamp(18px, 3.4vh, 48px) var(--gutter) clamp(16px, 3vh, 40px);
+}
+.desktop .np-main { container: npmain / size; height: 100%; min-width: 0; }
+.desktop .np-grid {
+  --art: min(calc(100cqw * var(--share)), calc(100cqh - var(--meta-reserve)), var(--art-max));
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, calc(var(--share) * 100%)) minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  grid-template-areas: "object head" "object lyrics" "object note" "object controls";
+  column-gap: clamp(32px, 4.4vw, 96px);
+}
+@media (min-height: 1200px) { .desktop .np { --share: .44; --art-max: 820px; --meta-reserve: 230px; --corner-cover: 140px; } }
+@media (min-width: 2400px) {
+  .desktop .np { --share: .4; --art-max: 1000px; --meta-reserve: 250px; --lyric-width: 1500px; }
+  .desktop .np-grid { grid-template-columns: var(--art) minmax(0, var(--read-max)); justify-content: center; }
+  .desktop .np.note-open { --share: .38; }
+}
+.desktop .np-object { grid-area: object; min-width: 0; min-height: 0; display: grid; place-items: center; }
+.desktop .np-art { width: var(--art); min-width: 0; margin: 0; }
+.desktop .np-cover { width: 100%; aspect-ratio: 1; }
+.desktop .np-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 42px 90px -34px var(--cover-shadow); }
+.desktop .np-caption { margin-top: 22px; min-width: 0; }
+.desktop .np-caption h1 { margin: 0; padding-bottom: .06em; font-size: clamp(42px, min(5.2vw, 7.2vh), 96px); line-height: .93; letter-spacing: -.055em; font-weight: 500; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-wrap: balance; }
+.desktop .np .artist-line { margin-top: 11px; font-size: calc(15px * var(--t)); line-height: 1.4; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.desktop .np .artist-line .sep { color: var(--dim); }
+
+.desktop .np .listening-head { grid-area: head; min-width: 0; }
+.desktop .listening-head h2, .desktop .sequence-head h2 { font-size: clamp(28px, min(2.8vw, 3.9vh), 52px); }
+.desktop .np .lyrics-panel { grid-area: lyrics; min-width: 0; min-height: 0; display: flex; flex-direction: column; justify-content: safe center; padding: 42px 0 30px; overflow: hidden; }
+.desktop .current-lyric { font-size: clamp(36px, min(4vw, 6vh), 92px); }
+.desktop .current-lyric.is-state { font-size: clamp(30px, min(3.2vw, 4.4vh), 60px); }
+.desktop .current-lyric.is-gap { font-size: clamp(22px, 2.8vh, 34px); }
+.desktop .current-trans { font-size: clamp(22px, min(2.15vw, 3.8vh), 50px); }
+.desktop .next-line, .desktop .previous-lyric { font-size: clamp(18px, min(1.55vw, 2.32vh), 31px); }
+.desktop .previous-lyric { margin: 0 0 22px; line-height: 1.4; color: var(--dim); opacity: .78; white-space: pre-line; max-width: var(--lyric-width); overflow-wrap: anywhere; }
+.desktop .lyrics-panel .current-lyric, .desktop .lyrics-panel .current-trans { max-width: var(--lyric-width); }
+
+.desktop .note-line { grid-area: note; min-width: 0; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: baseline; column-gap: 20px; row-gap: 4px; margin: 0; padding: 13px 0 15px; border-top: 1px solid var(--line); max-width: none; }
+.desktop .note-line-kicker { font-size: calc(11px * var(--t)); letter-spacing: .09em; text-transform: uppercase; color: var(--main-text); white-space: nowrap; }
+.desktop .note-line p { margin: 0; min-width: 0; font-size: calc(14px * var(--t)); line-height: 1.5; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.desktop .note-line .note-more { margin-top: 0; }
+
+.desktop .np .player-controls { grid-area: controls; align-self: auto; display: grid; gap: 12px; padding-top: 14px; container-type: inline-size; }
+.desktop .progress-wrap { grid-template-columns: 46px minmax(0, 1fr) 46px; font-size: calc(12px * var(--t)); }
+.desktop .seek-slider .slider-track { background: var(--surface-strong); }
+.desktop .seek-slider .slider-fill, .desktop .seek-slider .slider-thumb { background: var(--main); }
+.desktop .transport-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; }
+.desktop .transport, .desktop .transport-extras { display: flex; align-items: center; gap: 6px; min-width: 0; margin: 0; }
+.desktop .transport { gap: 8px; }
+.desktop .transport-extras { flex-wrap: nowrap; justify-content: flex-end; }
+.desktop .ctl { position: relative; width: 40px; height: 40px; border: 0; padding: 0; background: transparent; color: var(--muted); display: grid; place-items: center; transition: color .18s var(--ease); }
+.desktop .ctl:hover:not(:disabled) { color: var(--ink); }
+.desktop .ctl[aria-pressed='true'] { color: var(--main-text); }
+.desktop .ctl.toggle[aria-pressed='true']::after { content: ''; position: absolute; bottom: 4px; left: calc(50% - 2px); width: 4px; height: 4px; border-radius: 50%; background: currentColor; }
+.desktop .transport .play { width: 52px; height: 52px; border: 0; padding: 0; border-radius: 50%; background: var(--ink); color: var(--bg); display: grid; place-items: center; transition: background-color .18s var(--ease); }
+.desktop .transport .play:hover:not(:disabled) { background: color-mix(in srgb, var(--ink) 84%, var(--main)); }
+.desktop .transport .play .icon, .desktop .cover-tile-play .icon { width: 22px; height: 22px; fill: currentColor; }
+@media (min-height: 1200px) {
+  .desktop .transport .play { width: 58px; height: 58px; }
+  .desktop .ctl { width: 44px; height: 44px; }
+  .desktop .ctl .icon { width: 20px; height: 20px; }
+}
+.desktop .transport-extras .device-button { height: 40px; padding: 0 8px; }
+.desktop .transport-extras .device-name { max-width: 150px; white-space: nowrap; }
+.desktop .np .playback-state { margin: 0; justify-content: flex-start; text-align: left; font-size: calc(12.5px * var(--t)); }
+@container (max-width: 560px) {
+  .desktop .transport-extras .device-name { display: none; }
+  .desktop .volume-slider { width: 64px; }
+}
+
+/* Full note open on 16:9 and the half window: the lyrics run across, the album drops to the corner.
+   On 21:9 the note is a third column and nothing else moves. Focus Mode has its own layout. */
+@media (max-width: 2399.98px) {
+  .desktop:not([data-focus]) .np.note-open .np-grid { grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto; grid-template-areas: "head head" "lyrics lyrics" "object controls"; column-gap: 40px; }
+  .desktop:not([data-focus]) .np.note-open .note-line { display: none; }
+  .desktop:not([data-focus]) .np.note-open .np-object { place-items: end start; align-self: end; }
+  .desktop:not([data-focus]) .np.note-open .np-art { width: auto; max-width: 400px; display: grid; grid-template-columns: var(--corner-cover) minmax(0, 1fr); align-items: end; gap: 18px; }
+  .desktop:not([data-focus]) .np.note-open .np-cover { width: var(--corner-cover); }
+  .desktop:not([data-focus]) .np.note-open .np-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 18px 40px -18px var(--cover-shadow); }
+  .desktop:not([data-focus]) .np.note-open .np-caption { margin-top: 0; padding-bottom: 2px; }
+  .desktop:not([data-focus]) .np.note-open .np-caption h1 { font-size: clamp(26px, 3.3vh, 40px); line-height: 1; letter-spacing: -.045em; }
+  .desktop:not([data-focus]) .np.note-open .artist-line { margin-top: 8px; font-size: calc(14px * var(--t)); white-space: normal; }
+}
+@container npmain (max-width: 820px) {
+  .desktop:not([data-focus]) .np.note-open .np-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto auto; grid-template-areas: "head" "lyrics" "object" "controls"; }
+  .desktop:not([data-focus]) .np.note-open .np-object { margin-bottom: 18px; }
+}
+@container npmain (max-width: 560px) {
+  .desktop .note-line { grid-template-columns: minmax(0, 1fr) auto; }
+  .desktop .note-line-kicker { grid-column: 1 / -1; }
+}
+
+/* Focus Mode (player1): cover, lyrics and progress, full screen */
+.desktop[data-focus] { grid-template-columns: minmax(0, 1fr); }
+.desktop[data-focus] .rail, .desktop[data-focus] .side-panel, .desktop[data-focus] .scope-notice { display: none; }
+.desktop[data-focus] .workspace { grid-template-columns: minmax(0, 1fr) 0; }
+.desktop[data-focus] .np { --share: .4; --art-max: 680px; --meta-reserve: 190px; padding: clamp(36px, 6vh, 96px) clamp(48px, 7vw, 150px); }
+.desktop[data-focus] .np-grid { grid-template-columns: minmax(0, calc(var(--share) * 100%)) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; grid-template-areas: "object lyrics" "object controls"; column-gap: clamp(56px, 7vw, 150px); }
+.desktop[data-focus] .listening-head, .desktop[data-focus] .note-line, .desktop[data-focus] .transport-row, .desktop[data-focus] .playback-state { display: none; }
+.desktop[data-focus] .np .player-controls { padding-top: clamp(18px, 3vh, 32px); }
+@media (min-height: 1200px) { .desktop[data-focus] .np { --art-max: 820px; --meta-reserve: 220px; } }
+@media (min-width: 2400px) {
+  .desktop[data-focus] .np { --art-max: 1020px; --meta-reserve: 250px; }
+  .desktop[data-focus] .np-grid { grid-template-columns: var(--art) minmax(0, 1500px); justify-content: center; column-gap: 150px; }
+}
+
+/* ── Album ─────────────────────────────────────────────────────────── */
+.desktop .album-shell { max-width: 1760px; grid-template-columns: minmax(0, 42fr) minmax(0, 58fr); gap: clamp(40px, 3.3vw, 96px); padding: 0 0 48px; }
+.desktop .album-hero-cover { width: min(100%, 52vh); }
+.desktop .album-hero-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 42px 90px -34px var(--cover-shadow); }
+.desktop .album-object-copy h1 { font-size: clamp(42px, min(5.2vw, 7.2vh), 96px); }
+.desktop .album-object-copy .artist { font-size: calc(15px * var(--t)); }
+.desktop .album-hero-meta div span, .desktop .track-item b, .desktop .track-guests, .desktop .track-aside { font-size: calc(12.5px * var(--t)); }
+.desktop .track-item b { font-size: calc(14.5px * var(--t)); }
+.desktop .explicit { border-color: var(--line); color: var(--muted); }
+@media (min-width: 2400px) {
+  .desktop .album-shell { max-width: 2300px; grid-template-columns: minmax(0, 40fr) minmax(0, 60fr); }
+  .desktop .album-hero-cover { width: min(100%, 56vh); }
+}
+
+/* ── Artist ────────────────────────────────────────────────────────── */
+.desktop .artist-shell { max-width: 1760px; }
+.desktop .artist-hero { grid-template-columns: min(36%, 42vh) minmax(0, 1fr); gap: clamp(32px, 3vw, 64px); align-items: end; padding: 0 0 38px; }
+.desktop .artist-portrait { aspect-ratio: 1; max-height: none; box-shadow: 0 0 0 1px var(--line-soft), 0 42px 90px -34px var(--cover-shadow); }
+.desktop .artist-copy h1 { font-size: clamp(62px, min(7vw, 10vh), 132px); }
+.desktop .artist-copy .origin { font-size: calc(14px * var(--t)); }
+.desktop .discography { container: disco / inline-size; }
+.desktop .timeline { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 48px; align-items: start; }
+.desktop .timeline > .era-marker, .desktop .timeline > .empty-row { grid-column: 1 / -1; }
+.desktop .release-card h4 { font-size: clamp(19px, 2vh, 26px); }
+@container disco (min-width: 1100px) {
+  .desktop .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .desktop .timeline .release-card { grid-template-columns: 150px minmax(0, 1fr); }
+  .desktop .timeline .release-cover { width: 150px; height: 150px; }
+  .desktop .timeline .release-actions { grid-column: 2; justify-self: start; }
+}
+@container disco (min-width: 1900px) {
+  .desktop .timeline { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 2400px) {
+  .desktop .artist-shell { max-width: none; display: grid; grid-template-columns: minmax(0, .44fr) minmax(0, 1fr); column-gap: 96px; align-items: start; }
+  .desktop .artist-shell > .back-link { grid-column: 1 / -1; justify-self: start; }
+  .desktop .artist-hero { position: sticky; top: 0; grid-template-columns: minmax(0, 1fr); align-items: start; gap: 30px; padding: 0; border-bottom: 0; }
+  .desktop .artist-portrait { width: min(100%, 42vh); }
+  .desktop .artist-copy h1 { font-size: clamp(62px, 8.5vh, 120px); }
+  .desktop .artist-grid.discography { padding-top: 0; }
+}
+
+/* ── Library: one screen ───────────────────────────────────────────── */
+.desktop .library-shell { max-width: none; }
+.desktop .library-head { padding: 0 0 22px; margin-bottom: 34px; border-bottom: 1px solid var(--ink); }
+.desktop .library-head h1 { font-size: clamp(56px, min(5vw, 8.9vh), 112px); }
+.desktop .library-head p { font-size: calc(14px * var(--t)); }
+.desktop .library-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); grid-template-rows: auto 1fr; gap: 0 clamp(40px, 3.3vw, 88px); align-items: start; }
+.desktop .library-col-lists { grid-column: 1; grid-row: 1 / span 2; }
+.desktop .library-col-covers { grid-column: 2; grid-row: 1; }
+.desktop .library-col-artists { grid-column: 2; grid-row: 2; }
+.desktop .library-section-head h2 { font-size: clamp(22px, min(1.56vw, 2.8vh), 38px); }
+.desktop .index-title { font-size: calc(14.5px * var(--t)); }
+.desktop .index-meta, .desktop .index-aside { font-size: calc(12.5px * var(--t)); }
+@media (min-width: 2400px) {
+  .desktop .library-columns { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) minmax(0, .8fr); grid-template-rows: auto; }
+  .desktop .library-col-lists, .desktop .library-col-covers, .desktop .library-col-artists { grid-row: 1; }
+  .desktop .library-col-artists { grid-column: 3; }
+}
+.desktop .cover-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(clamp(150px, 15vh, 210px), 1fr)); gap: 28px 22px; padding-top: 16px; }
+.desktop .cover-tile { min-width: 0; display: grid; align-content: start; gap: 8px; }
+.desktop .cover-tile-art { position: relative; aspect-ratio: 1; }
+.desktop .cover-tile-art > a, .desktop .cover-tile-art .cover-frame, .desktop .cover-tile-art .artist-portrait { display: block; width: 100%; height: 100%; }
+.desktop .cover-tile-art .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 20px 40px -28px var(--cover-shadow); transition: transform .25s var(--ease); }
+.desktop .cover-tile:hover .cover-tile-art .cover { transform: translateY(-3px); }
+.desktop .cover-tile .artist-portrait { aspect-ratio: 1; max-height: none; box-shadow: none; }
+.desktop .cover-tile .artist-portrait::before { inset: 14% 16%; }
+.desktop .cover-tile .artist-portrait::after { font-size: clamp(40px, 5vh, 64px); }
+.desktop .cover-tile.round .cover-tile-art > a, .desktop .cover-tile.round .artist-portrait { border-radius: 50%; overflow: hidden; }
+.desktop .cover-tile.round .artist-portrait::before { display: none; }
+.desktop .cover-tile.round .artist-portrait::after { left: 50%; bottom: 50%; transform: translate(-50%, 50%); line-height: 1; letter-spacing: 0; }
+.desktop .cover-tile-play { position: absolute; right: 8px; bottom: 8px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--ink); color: var(--bg); display: grid; place-items: center; opacity: 0; transform: translateY(4px); transition: opacity .2s ease, transform .2s var(--ease); }
+.desktop .cover-tile-play .icon { width: 17px; height: 17px; }
+.desktop .cover-tile:hover .cover-tile-play, .desktop .cover-tile-play:focus-visible { opacity: 1; transform: none; }
+.desktop .cover-tile-title { font-size: calc(14.5px * var(--t)); font-weight: 500; line-height: 1.3; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.desktop .cover-tile-meta { display: flex; justify-content: space-between; gap: 8px; font-size: calc(12.5px * var(--t)); color: var(--muted); }
+.desktop .cover-tile-meta span:first-child { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+/* ── Archive: artists | the chosen artist's notes ──────────────────── */
+.desktop .archive-layout { display: grid; grid-template-columns: clamp(270px, 17vw, 400px) minmax(0, 1fr); column-gap: clamp(32px, 3vw, 72px); align-items: start; }
+.desktop .archive-index { position: sticky; top: 0; max-height: calc(100dvh - var(--pad-y) * 2); overflow: auto; padding-right: 20px; border-right: 1px solid var(--line-soft); scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.desktop .archive-index-item { position: relative; width: 100%; display: grid; gap: 4px; padding: 14px 0 14px 14px; border: 0; border-bottom: 1px solid var(--line-soft); background: transparent; text-align: left; }
+.desktop .archive-index-item b { font-size: clamp(19px, 2vh, 26px); font-weight: 500; letter-spacing: -.03em; line-height: 1.15; }
+.desktop .archive-index-item span { font-size: calc(12.5px * var(--t)); color: var(--muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.desktop .archive-index-item small { font-size: calc(11px * var(--t)); letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
+.desktop .archive-index-item:hover b { color: var(--main-text); }
+.desktop .archive-index-item[aria-current='true']::before { content: ''; position: absolute; left: 0; top: 14px; bottom: 14px; width: 3px; background: var(--main); }
+.desktop .archive-artist { display: block; padding: 0; border-top: 0; }
+.desktop .archive-artist-head { display: grid; grid-template-columns: minmax(0, 1fr) clamp(140px, 19vh, 240px); gap: clamp(24px, 3vw, 64px); align-items: start; }
+.desktop .archive-artist-copy { min-width: 0; }
+.desktop .archive-artist-portrait { max-width: none; margin-top: 0; }
+.desktop .archive-artist-portrait .artist-portrait { width: 100%; box-shadow: 0 0 0 1px var(--line-soft); }
+.desktop .archive-artist-portrait .artist-portrait::after { font-size: clamp(56px, 7vh, 104px); }
+.desktop .archive-artist-head h2 { margin: 8px 0 0; font-size: clamp(36px, min(3.2vw, 5.5vh), 72px); line-height: .95; letter-spacing: -.05em; }
+.desktop .archive-origin { font-size: calc(12.5px * var(--t)); }
+.desktop .archive-short { margin: 14px 0 0; font-size: calc(15px * var(--t)); line-height: 1.75; color: var(--ink-2); max-width: 68ch; }
+.desktop .archive-head-actions { margin-top: 12px; display: flex; gap: 22px; }
+.desktop .archive-group { margin-top: 36px; }
+.desktop .archive-group-head { display: flex; align-items: baseline; gap: 12px; margin: 0; padding-bottom: 10px; border-bottom: 1px solid var(--line); font-size: clamp(22px, min(1.56vw, 2.8vh), 38px); font-weight: 500; letter-spacing: -.035em; }
+.desktop .archive-group-head span { font-size: calc(11px * var(--t)); letter-spacing: .09em; color: var(--dim); font-weight: 400; }
+.desktop .archive-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 0 32px; }
+.desktop .archive-card { min-width: 0; display: grid; grid-template-columns: clamp(96px, 10vh, 136px) minmax(0, 1fr); gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--line-soft); }
+.desktop .archive-card-cover { width: 100%; height: auto; aspect-ratio: 1; align-self: start; }
+.desktop .archive-card-text { min-width: 0; display: grid; align-content: start; gap: 6px; }
+.desktop .archive-card-text b { font-size: clamp(19px, 2vh, 26px); font-weight: 500; letter-spacing: -.02em; line-height: 1.15; }
+.desktop .archive-card-preview { font-size: calc(13.5px * var(--t)); line-height: 1.6; color: var(--muted); display: -webkit-box; overflow: hidden; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.desktop .archive-song-group { margin-top: 22px; }
+.desktop .archive-song-group-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 4px; padding-bottom: 8px; border-bottom: 1px solid var(--line-soft); font-weight: 400; }
+.desktop .archive-song-group-head b { font-size: calc(16px * var(--t)); font-weight: 500; letter-spacing: -.02em; }
+.desktop .archive-rows .archive-row { grid-template-columns: 110px minmax(0, 1fr) auto; }
+.desktop .archive-text b { font-size: calc(15px * var(--t)); }
+.desktop .archive-preview { font-size: calc(13.5px * var(--t)); }
+
+/* ── Search (/) ────────────────────────────────────────────────────── */
+.desktop .search-backdrop { background: color-mix(in srgb, var(--bg) 72%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); padding: clamp(24px, 6vh, 90px) var(--gutter); }
+.desktop .search-dialog { width: min(1280px, 100%); max-height: calc(100dvh - 2 * clamp(24px, 6vh, 90px)); padding: 26px 32px 32px; box-shadow: 0 40px 120px -40px rgba(0, 0, 0, .45); }
+.desktop .search-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 0 40px; align-items: start; }
+.desktop .search-results > .more-row { grid-column: 1 / -1; }
+.desktop .search-results b { font-size: calc(14.5px * var(--t)); }
+.desktop .search-results span { font-size: calc(12.5px * var(--t)); }
+@media (min-width: 2400px) { .desktop .search-dialog { width: min(2900px, 100%); } }
+
+/* ── Narrow windows (760–1100px): one column, the column overlays ──── */
+@media (max-width: 1100px) {
+  html:has(.desktop) body { overflow: hidden; }
+  .desktop { --rail: 64px; --gutter: 24px; height: 100dvh; min-height: 0; grid-template-columns: var(--rail) minmax(0, 1fr); }
+  .desktop .rail { position: relative; height: 100dvh; }
+  .desktop .rail-item span, .desktop .rail-now-label { display: none; }
+  .desktop .rail-item { padding: 12px 4px; }
+  .desktop .rail-now-cover, .desktop .rail-now-bar { width: 40px; }
+  .desktop .rail-now-cover { height: 40px; }
+  .desktop .workspace, .desktop[data-panel] .workspace { height: 100dvh; grid-template-columns: minmax(0, 1fr) 0; }
+  .desktop .side-panel { position: absolute; z-index: 70; top: 0; right: 0; bottom: 0; width: min(440px, calc(100% - var(--rail))); box-shadow: -28px 0 80px rgba(0, 0, 0, .18); }
+  .desktop .stage { flex: 1; min-height: 0; }
+  .desktop .view { position: absolute; inset: 0; }
+  .desktop .album-page, .desktop .artist-page, .desktop .library-page, .desktop .state-page { height: 100%; overflow: auto; }
+  .desktop .np { overflow: auto; padding: 22px 24px 40px; }
+  .desktop .np-main { container-type: inline-size; height: auto; }
+  .desktop .np-grid, .desktop:not([data-focus]) .np.note-open .np-grid, .desktop[data-focus] .np-grid { --art: min(100%, 420px); height: auto; grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-template-areas: "object" "head" "lyrics" "note" "controls"; }
+  .desktop .np-object, .desktop:not([data-focus]) .np.note-open .np-object { place-items: start; margin-bottom: 30px; }
+  .desktop .np-art, .desktop:not([data-focus]) .np.note-open .np-art { width: min(100%, 420px); display: block; }
+  .desktop:not([data-focus]) .np.note-open .np-cover { width: 100%; }
+  .desktop:not([data-focus]) .np.note-open .note-line { display: grid; }
+  .desktop .np .lyrics-panel { min-height: 300px; justify-content: flex-start; }
+  .desktop .album-shell, .desktop .artist-hero, .desktop .library-columns, .desktop .archive-layout { grid-template-columns: minmax(0, 1fr); }
+  .desktop .album-object { position: static; margin-bottom: 34px; }
+  .desktop .library-col-lists, .desktop .library-col-covers, .desktop .library-col-artists { grid-column: 1; grid-row: auto; }
+  .desktop .archive-index { position: static; max-height: none; border: 0; padding: 0; margin-bottom: 28px; }
+}

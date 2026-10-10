@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 34556679,
+    "durationMs": 180000
+  },
+  "segments": [
+    {
+      "startMs": 460,
+      "endMs": 2130,
+      "translation": "어이"
+    },
+    {
+      "startMs": 2130,
+      "endMs": 4430,
+      "translation": "얘기하고 싶어, 전화해서 얘기하고 싶어"
+    },
+    {
+      "startMs": 4430,
+      "endMs": 6140,
+      "translation": "네 집 현관까지 걸어가서 노크하고 싶어"
+    },
+    {
+      "startMs": 6140,
+      "endMs": 8920,
+      "translation": "시동을 걸고 네 도시로 달려가고 싶어, 우린 한 시간 거리니까"
+    },
+    {
+      "startMs": 8920,
+      "endMs": 10480,
+      "translation": "네 진입로에 도착해서 주차하고"
+    },
+    {
+      "startMs": 10480,
+      "endMs": 11820,
+      "translation": "그다음엔 이 벌스의 세 번째 줄을 해"
+    },
+    {
+      "startMs": 11820,
+      "endMs": 13530,
+      "translation": "그리고 우리 집으로 돌아와 자전거를 챙겨"
+    },
+    {
+      "startMs": 13530,
+      "endMs": 15240,
+      "translation": "공원을 지나 달려, 해를 쫓아"
+    },
+    {
+      "startMs": 15240,
+      "endMs": 16690,
+      "translation": "맙소사, 내가 원하는 건 그게 다야, 공기 말고는"
+    },
+    {
+      "startMs": 16690,
+      "endMs": 18250,
+      "translation": "산소와 경제적 자유, 그래"
+    },
+    {
+      "startMs": 18250,
+      "endMs": 20300,
+      "translation": "네 곁에 있는 게 좋아, 네가 필요해"
+    },
+    {
+      "startMs": 20300,
+      "endMs": 21550,
+      "translation": "네가 날 원해 줬으면 좋겠어"
+    },
+    {
+      "startMs": 21550,
+      "endMs": 23590,
+      "translation": "네가 내 옆에 없으면 움직일 수가 없어"
+    },
+    {
+      "startMs": 23590,
+      "endMs": 27370,
+      "translation": "나한테는 정말 복잡해"
+    },
+    {
+      "startMs": 27370,
+      "endMs": 28290,
+      "translation": "넌 뭐가 필요해?"
+    },
+    {
+      "startMs": 28290,
+      "endMs": 29880,
+      "translation": "돈이 필요해? 이게 필요해?"
+    },
+    {
+      "startMs": 29880,
+      "endMs": 31600,
+      "translation": "안아 주는 게 필요해? 혼자 있고 싶어?"
+    },
+    {
+      "startMs": 31600,
+      "endMs": 33440,
+      "translation": "이걸 마무리하고 대신 도망칠 수도 있어"
+    },
+    {
+      "startMs": 33440,
+      "endMs": 36180,
+      "translation": "네 소원이 뭐야? 들어줄 수 있어"
+    },
+    {
+      "startMs": 36180,
+      "endMs": 37860,
+      "translation": "넌 내 목록의 일 순위야"
+    },
+    {
+      "startMs": 37860,
+      "endMs": 39270,
+      "translation": "봐, 난 산타야"
+    },
+    {
+      "startMs": 39270,
+      "endMs": 40410,
+      "translation": "루돌프는 어디 있어? 넌 기생충 같아"
+    },
+    {
+      "startMs": 40410,
+      "endMs": 43140,
+      "translation": "난 자제력이 없어"
+    },
+    {
+      "startMs": 43140,
+      "endMs": 44720,
+      "translation": "궁금해지기 시작했어"
+    },
+    {
+      "startMs": 44720,
+      "endMs": 51880,
+      "translation": "이건 내 자유 의지일까, 네 것일까? (네 것, 네 것, 네 것)"
+    },
+    {
+      "startMs": 51880,
+      "endMs": 57920,
+      "translation": "난 네 꼭두각시야, 넌 날 조종해"
+    },
+    {
+      "startMs": 57920,
+      "endMs": 64250,
+      "translation": "난 네 꼭두각시야, 난 나를 모르겠어"
+    },
+    {
+      "startMs": 64250,
+      "endMs": 66780,
+      "translation": "(내가 너무 오래 기다렸나?) 난 네 꼭두각시야"
+    },
+    {
+      "startMs": 66780,
+      "endMs": 69440,
+      "translation": "(내가 너무 오래 기다렸나?) 넌 날 조종해"
+    },
+    {
+      "startMs": 69440,
+      "endMs": 73190,
+      "translation": "(내가 너무 오래 기다렸나?) 난 네 꼭두각시야"
+    },
+    {
+      "startMs": 73190,
+      "endMs": 76450,
+      "translation": "(내가 너무 오래 기다렸나?) 난 나를 모르겠어"
+    },
+    {
+      "startMs": 76450,
+      "endMs": 79460,
+      "translation": "난 네 꼭두각시니까 (꼭두각시, 오)"
+    },
+    {
+      "startMs": 79460,
+      "endMs": 82710,
+      "translation": "넌 날 조종해 (꼭두각시, 날 조종해)"
+    },
+    {
+      "startMs": 82710,
+      "endMs": 86180,
+      "translation": "난 네 꼭두각시야 (꼭두각시)"
+    },
+    {
+      "startMs": 86180,
+      "endMs": 89280,
+      "translation": "나를 모르겠어"
+    },
+    {
+      "startMs": 89280,
+      "endMs": 91890,
+      "translation": "난 네 꼭두각시야 (내가 너무 오래 기다렸나?)"
+    },
+    {
+      "startMs": 91890,
+      "endMs": 95110,
+      "translation": "넌 날 조종해"
+    },
+    {
+      "startMs": 95110,
+      "endMs": 101800,
+      "translation": "(꼭두각시, 오)"
+    },
+    {
+      "startMs": 101800,
+      "endMs": 105020,
+      "translation": "넌 길을 잃었어, 아들, 그리고 내게 오는 길을 찾으려 했지 (오)"
+    },
+    {
+      "startMs": 105020,
+      "endMs": 107490,
+      "translation": "내 눈엔 그가 내가 보기 싫은 걸 하고 있어 (오)"
+    },
+    {
+      "startMs": 107490,
+      "endMs": 111160,
+      "translation": "A부터 Z까지, 이리 와, 아들, 숨 좀 돌릴게"
+    },
+    {
+      "startMs": 111160,
+      "endMs": 120130,
+      "translation": "마라톤을 뛰고 방금 멈췄어, 숨 좀 돌릴게"
+    },
+    {
+      "startMs": 120130,
+      "endMs": 121730,
+      "translation": "(넌 실로 날 쥐고 있어)"
+    },
+    {
+      "startMs": 121730,
+      "endMs": 123450,
+      "translation": "(넌 실로 날 쥐고 있어)"
+    },
+    {
+      "startMs": 123450,
+      "endMs": 126410,
+      "translation": "넌 실로 날 쥐고 있어, 오 하느님"
+    },
+    {
+      "startMs": 126410,
+      "endMs": 129610,
+      "translation": "(라, 라, 라, 라)"
+    },
+    {
+      "startMs": 129610,
+      "endMs": 137040,
+      "translation": "(라, 라, 라-라) 노래 위에 숨을 쉬어"
+    },
+    {
+      "startMs": 137040,
+      "endMs": 140800,
+      "translation": "(라, 라, 라) 노래 위에 숨을 쉬어"
+    },
+    {
+      "startMs": 140800,
+      "endMs": 143840,
+      "translation": "(라, 라, 라, 라)"
+    },
+    {
+      "startMs": 143840,
+      "endMs": 146630,
+      "translation": "(라, 라, 라-라) 노래 위에 숨을 쉬어"
+    },
+    {
+      "startMs": 146630,
+      "endMs": 162370,
+      "translation": "(날 풀어 줘)"
+    },
+    {
+      "startMs": 162370,
+      "endMs": 165310,
+      "translation": "(라, 라, 라, 라)"
+    },
+    {
+      "startMs": 165310,
+      "endMs": 168640,
+      "translation": "(라-라, 라-라)"
+    },
+    {
+      "startMs": 168640,
+      "endMs": 172020,
+      "translation": "(라, 라, 라, 라)"
+    },
+    {
+      "startMs": 172020,
+      "endMs": 175330,
+      "translation": "(날 풀어 줘, 예-아, 예-아, 예-아, 예)"
+    },
+    {
+      "startMs": 175330,
+      "endMs": 180000,
+      "translation": "하지만 어느 순간 넌 정신을 차리게 돼"
+    }
+  ]
+}

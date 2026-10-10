@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1171665,
+    "durationMs": 168000
+  },
+  "segments": [
+    {
+      "startMs": 8970,
+      "endMs": 14550,
+      "translation": "오"
+    },
+    {
+      "startMs": 14550,
+      "endMs": 17700,
+      "translation": "기다려 (기다려)"
+    },
+    {
+      "startMs": 17700,
+      "endMs": 22270,
+      "translation": "너도 하고 싶은 말이 많겠지 (말이, 말이)"
+    },
+    {
+      "startMs": 22270,
+      "endMs": 25620,
+      "translation": "천천히 해, 좀 들뜬 것 같아"
+    },
+    {
+      "startMs": 25620,
+      "endMs": 28090,
+      "translation": "넌 불길에 너무 가까이 있어"
+    },
+    {
+      "startMs": 28090,
+      "endMs": 31700,
+      "translation": "그런데도 돌아서고 싶어 하지 않지"
+    },
+    {
+      "startMs": 31700,
+      "endMs": 33850,
+      "translation": "날 다 파악한 것처럼"
+    },
+    {
+      "startMs": 33850,
+      "endMs": 39070,
+      "translation": "하지만, 자기야, 내가 약속할 수 있는 건 널 실망시킬 거라는 것뿐이야"
+    },
+    {
+      "startMs": 39070,
+      "endMs": 41360,
+      "translation": "그러니 저항하지 마"
+    },
+    {
+      "startMs": 41360,
+      "endMs": 43970,
+      "translation": "넌 빛 속에서 길을 잃을 거야"
+    },
+    {
+      "startMs": 43970,
+      "endMs": 47600,
+      "translation": "계속 태양을 쳐다보면 넌 보지 못할 거야"
+    },
+    {
+      "startMs": 47600,
+      "endMs": 50160,
+      "translation": "네가 뭐가 됐는지, 이럴 리 없어"
+    },
+    {
+      "startMs": 50160,
+      "endMs": 52400,
+      "translation": "네가 생각했던 모든 것"
+    },
+    {
+      "startMs": 52400,
+      "endMs": 55210,
+      "translation": "우리라는 생각에 눈이 멀었지, 그러니"
+    },
+    {
+      "startMs": 55210,
+      "endMs": 57700,
+      "translation": "기회를 주면 난 또"
+    },
+    {
+      "startMs": 57700,
+      "endMs": 60200,
+      "translation": "망쳐 버릴 거야, 미리"
+    },
+    {
+      "startMs": 60200,
+      "endMs": 62400,
+      "translation": "경고했잖아 (오)"
+    },
+    {
+      "startMs": 62400,
+      "endMs": 70090,
+      "translation": "그런데도 넌 계속 태양만 쳐다보지"
+    },
+    {
+      "startMs": 70090,
+      "endMs": 72990,
+      "translation": "기다려 (그래, 그래, 기다려)"
+    },
+    {
+      "startMs": 72990,
+      "endMs": 76100,
+      "translation": "나한테 복잡한 일이 많다는 거 알아"
+    },
+    {
+      "startMs": 76100,
+      "endMs": 78250,
+      "translation": "(오 그래, 오 그래, 오 그래)"
+    },
+    {
+      "startMs": 78250,
+      "endMs": 82060,
+      "translation": "이제 우린 나 말고 누구든 사랑해도 돼"
+    },
+    {
+      "startMs": 82060,
+      "endMs": 86900,
+      "translation": "되감아 보려 해도, 시간은 누구도 기다려 주지 않는다는 걸 깨닫게 돼"
+    },
+    {
+      "startMs": 86900,
+      "endMs": 90350,
+      "translation": "너무 가까이 갈 순 없고, 놓아줄 수도 없어"
+    },
+    {
+      "startMs": 90350,
+      "endMs": 94930,
+      "translation": "넌 날 실망시킬 거라고 믿어도 되니까"
+    },
+    {
+      "startMs": 94930,
+      "endMs": 97110,
+      "translation": "난 저항하지 않을 거야"
+    },
+    {
+      "startMs": 97110,
+      "endMs": 99900,
+      "translation": "난 빛 속에서 길을 잃었어 (오)"
+    },
+    {
+      "startMs": 99900,
+      "endMs": 103260,
+      "translation": "계속 태양을 쳐다보면 넌 보지 못할 거야"
+    },
+    {
+      "startMs": 103260,
+      "endMs": 105760,
+      "translation": "네가 뭐가 됐는지, 이럴 리 없어"
+    },
+    {
+      "startMs": 105760,
+      "endMs": 107850,
+      "translation": "네가 생각했던 모든 것"
+    },
+    {
+      "startMs": 107850,
+      "endMs": 110770,
+      "translation": "우리라는 생각에 눈이 멀었지, 그러니"
+    },
+    {
+      "startMs": 110770,
+      "endMs": 113220,
+      "translation": "기회를 주면 난 또"
+    },
+    {
+      "startMs": 113220,
+      "endMs": 115740,
+      "translation": "망쳐 버릴 거야, 미리"
+    },
+    {
+      "startMs": 115740,
+      "endMs": 117870,
+      "translation": "경고했잖아"
+    },
+    {
+      "startMs": 117870,
+      "endMs": 121700,
+      "translation": "그런데도 넌 계속 태양만 쳐다보지"
+    },
+    {
+      "startMs": 121700,
+      "endMs": 123490,
+      "translation": "기다려"
+    },
+    {
+      "startMs": 123490,
+      "endMs": 128450,
+      "translation": "하고 싶은 말이 몇 가지 있어 (오 그래)"
+    },
+    {
+      "startMs": 128450,
+      "endMs": 133290,
+      "translation": "오늘은 네 날이 아니야"
+    },
+    {
+      "startMs": 133290,
+      "endMs": 138000,
+      "translation": "넌 떠나야 해 (오 그래)"
+    },
+    {
+      "startMs": 138000,
+      "endMs": 141180,
+      "translation": "그런데 넌 듣지 않고 계속 (오 그래)"
+    },
+    {
+      "startMs": 141180,
+      "endMs": 143680,
+      "translation": "태양을 쳐다보지, 넌 보지 못할 거야"
+    },
+    {
+      "startMs": 143680,
+      "endMs": 146140,
+      "translation": "네가 뭐가 됐는지, 이럴 리 없어"
+    },
+    {
+      "startMs": 146140,
+      "endMs": 148300,
+      "translation": "네가 생각했던 모든 것"
+    },
+    {
+      "startMs": 148300,
+      "endMs": 151170,
+      "translation": "우리라는 생각에 눈이 멀었지, 그러니"
+    },
+    {
+      "startMs": 151170,
+      "endMs": 153600,
+      "translation": "기회를 주면 난 또"
+    },
+    {
+      "startMs": 153600,
+      "endMs": 156170,
+      "translation": "망쳐 버릴 거야, 미리"
+    },
+    {
+      "startMs": 156170,
+      "endMs": 158400,
+      "translation": "경고했잖아"
+    },
+    {
+      "startMs": 158400,
+      "endMs": 168000,
+      "translation": "그런데도 넌 계속 태양만 쳐다보지"
+    }
+  ]
+}

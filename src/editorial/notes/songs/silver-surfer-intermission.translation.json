@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 580474,
+    "durationMs": 57000
+  },
+  "segments": [
+    {
+      "startMs": 280,
+      "endMs": 1540,
+      "translation": "이지, 이지, 잘 지내?"
+    },
+    {
+      "startMs": 1540,
+      "endMs": 4290,
+      "translation": "네 친구 맥스 비야, 어떻게 지내?"
+    },
+    {
+      "startMs": 4290,
+      "endMs": 5630,
+      "translation": "그냥 네 안부 좀 보려고"
+    },
+    {
+      "startMs": 5630,
+      "endMs": 7580,
+      "translation": "사랑과 응원 고마워"
+    },
+    {
+      "startMs": 7580,
+      "endMs": 9510,
+      "translation": "파도가 왔어"
+    },
+    {
+      "startMs": 9510,
+      "endMs": 12360,
+      "translation": "넌 원래 웨이비한 사람이잖아, 그러니까 이미 알지"
+    },
+    {
+      "startMs": 12360,
+      "endMs": 13950,
+      "translation": "문제없어, 친구, 이 판은…"
+    },
+    {
+      "startMs": 13950,
+      "endMs": 16560,
+      "translation": "이 판이 어떻게 돌아가는지 이미 알잖아"
+    },
+    {
+      "startMs": 16560,
+      "endMs": 17820,
+      "translation": "네 파도를 타, 친구야"
+    },
+    {
+      "startMs": 17820,
+      "endMs": 20160,
+      "translation": "공식 파도의 주인이 인정했어"
+    },
+    {
+      "startMs": 20160,
+      "endMs": 21930,
+      "translation": "그냥, 그냥 너답게 해…"
+    },
+    {
+      "startMs": 21930,
+      "endMs": 23020,
+      "translation": "네 파도를 타"
+    },
+    {
+      "startMs": 23020,
+      "endMs": 26140,
+      "translation": "계속 멋지게 해, 계속 그렇게 할 줄 알아, 친구"
+    },
+    {
+      "startMs": 26140,
+      "endMs": 27500,
+      "translation": "인사할게, 네게 인사하는 거야"
+    },
+    {
+      "startMs": 27500,
+      "endMs": 29200,
+      "translation": "너한테 외치는 거야, 친구, 전부 사랑이지"
+    },
+    {
+      "startMs": 29200,
+      "endMs": 31410,
+      "translation": "그, 그 에너지가 고마워"
+    },
+    {
+      "startMs": 31410,
+      "endMs": 34220,
+      "translation": "우린 여기 있어, 동네로 나가 크게 한 건 하자"
+    },
+    {
+      "startMs": 34220,
+      "endMs": 36740,
+      "translation": "여기서 거대한 쓰나미를 일으킬 거야"
+    },
+    {
+      "startMs": 36740,
+      "endMs": 38190,
+      "translation": "이미 뭔지 알잖아, 아"
+    },
+    {
+      "startMs": 38190,
+      "endMs": 41380,
+      "translation": "실버 서퍼"
+    },
+    {
+      "startMs": 41380,
+      "endMs": 44170,
+      "translation": "실버 서퍼가 직접 왔어"
+    },
+    {
+      "startMs": 44170,
+      "endMs": 45750,
+      "translation": "실버 서퍼가 직접 왔어"
+    },
+    {
+      "startMs": 45750,
+      "endMs": 47600,
+      "translation": "맥스 비가 이지에게 인사해"
+    },
+    {
+      "startMs": 47600,
+      "endMs": 48830,
+      "translation": "잘 지내? 널 보고 있어"
+    },
+    {
+      "startMs": 48830,
+      "endMs": 50640,
+      "translation": "사랑이야, 고마워"
+    },
+    {
+      "startMs": 50640,
+      "endMs": 52860,
+      "translation": "영광이야, 고마워"
+    },
+    {
+      "startMs": 52860,
+      "endMs": 55260,
+      "translation": "어, 웨이비하게, 자기야, 그래"
+    }
+  ]
+}

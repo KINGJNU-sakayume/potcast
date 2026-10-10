@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 36608817,
+    "durationMs": 209000
+  },
+  "segments": [
+    {
+      "startMs": 5900,
+      "endMs": 14330,
+      "translation": "말이 너무 많아"
+    },
+    {
+      "startMs": 14330,
+      "endMs": 22380,
+      "translation": "꿈이 너무 많아"
+    },
+    {
+      "startMs": 22380,
+      "endMs": 25570,
+      "translation": "제발 떠나지 마"
+    },
+    {
+      "startMs": 25570,
+      "endMs": 35160,
+      "translation": "네가 나한테 특별한 걸 붙잡고 있으니까"
+    },
+    {
+      "startMs": 35160,
+      "endMs": 46930,
+      "translation": "나한텐 꼭 필요한 거야"
+    },
+    {
+      "startMs": 46930,
+      "endMs": 54950,
+      "translation": "숨을 참을게"
+    },
+    {
+      "startMs": 54950,
+      "endMs": 63240,
+      "translation": "얼굴이 파래질 때까지"
+    },
+    {
+      "startMs": 63240,
+      "endMs": 66410,
+      "translation": "제발 떠나지 마"
+    },
+    {
+      "startMs": 66410,
+      "endMs": 76360,
+      "translation": "네가 나한테 특별한 걸 붙잡고 있으니까"
+    },
+    {
+      "startMs": 76360,
+      "endMs": 83480,
+      "translation": "나한텐 꼭 필요한 거야"
+    },
+    {
+      "startMs": 83480,
+      "endMs": 89020,
+      "translation": "내 사랑"
+    },
+    {
+      "startMs": 89020,
+      "endMs": 94880,
+      "translation": "말해 줘, 날 사랑한다고 말해 줘"
+    },
+    {
+      "startMs": 94880,
+      "endMs": 112160,
+      "translation": "내 시간을 낭비하지 마"
+    },
+    {
+      "startMs": 112160,
+      "endMs": 117710,
+      "translation": "날 입 다물게 해"
+    },
+    {
+      "startMs": 117710,
+      "endMs": 124140,
+      "translation": "날 꺼 버려"
+    },
+    {
+      "startMs": 124140,
+      "endMs": 127610,
+      "translation": "제발 떠나지 마"
+    },
+    {
+      "startMs": 127610,
+      "endMs": 138180,
+      "translation": "네가 나한테 특별한 걸 붙잡고 있으니까"
+    },
+    {
+      "startMs": 138180,
+      "endMs": 145990,
+      "translation": "나한텐 꼭 필요한 거야"
+    },
+    {
+      "startMs": 145990,
+      "endMs": 151790,
+      "translation": "내 사랑"
+    },
+    {
+      "startMs": 151790,
+      "endMs": 158190,
+      "translation": "말해 줘, 날 사랑한다고 말해 줘"
+    },
+    {
+      "startMs": 158190,
+      "endMs": 170220,
+      "translation": "내 시간을 낭비하지 마"
+    },
+    {
+      "startMs": 170220,
+      "endMs": 209000,
+      "translation": "내 시간을 낭비하지 마"
+    }
+  ]
+}

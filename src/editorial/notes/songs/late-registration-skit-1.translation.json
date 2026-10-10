@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 580652,
+    "durationMs": 34000
+  },
+  "segments": [
+    {
+      "startMs": 60,
+      "endMs": 3350,
+      "translation": "형제들, 우리만의 사교 클럽을 만들려고 여기 모았어"
+    },
+    {
+      "startMs": 3350,
+      "endMs": 6250,
+      "translation": "브로크 파이 브로크, 우린 가진 게 없어"
+    },
+    {
+      "startMs": 6250,
+      "endMs": 8700,
+      "translation": "브로크 파이 브로크 (우린 가진 게 없어)"
+    },
+    {
+      "startMs": 8700,
+      "endMs": 10860,
+      "translation": "그래, 우린 돈이 없어, 청바지도 나눠 입지"
+    },
+    {
+      "startMs": 10860,
+      "endMs": 14400,
+      "translation": "내가 밖에 나가면 옷 입은 건 나 하나뿐이야"
+    },
+    {
+      "startMs": 14400,
+      "endMs": 16790,
+      "translation": "우리가 가진 차는 몇 대지? (없습니다!)"
+    },
+    {
+      "startMs": 16790,
+      "endMs": 19660,
+      "translation": "우리가 가진 차는 몇 대지? (없습니다, 선배님!)"
+    },
+    {
+      "startMs": 19660,
+      "endMs": 22780,
+      "translation": "우리 여자가 차 있는 녀석한테 가도 보내 줘야 할까?"
+    },
+    {
+      "startMs": 22780,
+      "endMs": 23570,
+      "translation": "그래, 보내 줄 거야"
+    },
+    {
+      "startMs": 23570,
+      "endMs": 25520,
+      "translation": "왜? 기름값을 낼 수 없으니까"
+    },
+    {
+      "startMs": 25520,
+      "endMs": 28920,
+      "translation": "다 같이 말해! (기름값을 낼 수 없습니다!)"
+    },
+    {
+      "startMs": 28920,
+      "endMs": 32270,
+      "translation": "말해! (기름값을 낼 수 없습니다!)"
+    },
+    {
+      "startMs": 32270,
+      "endMs": 34000,
+      "translation": "그러니 우린 운전 안 해!"
+    }
+  ]
+}

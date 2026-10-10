@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 494651,
+    "durationMs": 201000
+  },
+  "segments": [
+    {
+      "startMs": 1410,
+      "endMs": 5490,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 5490,
+      "endMs": 9540,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 9540,
+      "endMs": 13560,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 13560,
+      "endMs": 15830,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 15830,
+      "endMs": 19630,
+      "translation": "뚜껑 따, 내 잔을 채워, 그래"
+    },
+    {
+      "startMs": 19630,
+      "endMs": 23710,
+      "translation": "내가 완전히 취할 때까지 계속 따라, 오 그래"
+    },
+    {
+      "startMs": 23710,
+      "endMs": 27880,
+      "translation": "다이아몬드 박힌 사이먼 밀러, 셔츠는 바지에 넣고, 그래"
+    },
+    {
+      "startMs": 27880,
+      "endMs": 31920,
+      "translation": "밍크는 8만 달러, 미친 거지, 오 그래 (와)"
+    },
+    {
+      "startMs": 31920,
+      "endMs": 37700,
+      "translation": "헤이, 이걸 걸치겠지만 오래는 아니야 (오래는, 오래는 아니야)"
+    },
+    {
+      "startMs": 37700,
+      "endMs": 41550,
+      "translation": "그러고 또 하나 사러 갈 거야 (또 하나)"
+    },
+    {
+      "startMs": 41550,
+      "endMs": 45820,
+      "translation": "어떤 사람들은 내가 잘못 산다고 생각해 (잘못 산다고, 헤이, 헤이)"
+    },
+    {
+      "startMs": 45820,
+      "endMs": 47880,
+      "translation": "우린 이렇게 살지만 오래 살진 못해, 그러니"
+    },
+    {
+      "startMs": 47880,
+      "endMs": 52010,
+      "translation": "난 내가 원하는 대로 될 거야, 원하는 대로, 원하는 대로, 그래 (그래)"
+    },
+    {
+      "startMs": 52010,
+      "endMs": 55760,
+      "translation": "난 내가 원할 때 원하는 걸 할 거야, 원할 때, 그래 (그래)"
+    },
+    {
+      "startMs": 55760,
+      "endMs": 57940,
+      "translation": "떠날 때까지 세게 달릴 거야, 떠날 때까지"
+    },
+    {
+      "startMs": 57940,
+      "endMs": 60290,
+      "translation": "떠날 때까지, 그래 (떠날 때까지, 그래)"
+    },
+    {
+      "startMs": 60290,
+      "endMs": 62430,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 62430,
+      "endMs": 64160,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 64160,
+      "endMs": 66150,
+      "translation": "난 내가 원하는 대로 될 거야, 원하는 대로"
+    },
+    {
+      "startMs": 66150,
+      "endMs": 68000,
+      "translation": "원하는 대로, 그래 (되고 싶어)"
+    },
+    {
+      "startMs": 68000,
+      "endMs": 70130,
+      "translation": "난 내가 원할 때 원하는 걸 할 거야, 원할 때"
+    },
+    {
+      "startMs": 70130,
+      "endMs": 72510,
+      "translation": "원할 때, 그래 (되고 싶어)"
+    },
+    {
+      "startMs": 72510,
+      "endMs": 74260,
+      "translation": "떠날 때까지 세게 달릴 거야, 떠날 때까지"
+    },
+    {
+      "startMs": 74260,
+      "endMs": 76660,
+      "translation": "떠날 때까지, 그래 (떠날 때까지, 떠날 때까지)"
+    },
+    {
+      "startMs": 76660,
+      "endMs": 78680,
+      "translation": "느껴져? (어 허)"
+    },
+    {
+      "startMs": 78680,
+      "endMs": 80780,
+      "translation": "느껴져? (어 허)"
+    },
+    {
+      "startMs": 80780,
+      "endMs": 83450,
+      "translation": "헤이, 왜 그렇게 화났어? (왜 그렇게 화났어?)"
+    },
+    {
+      "startMs": 83450,
+      "endMs": 85300,
+      "translation": "절대 뒤돌아보지 마 (절대 뒤돌아보지 마)"
+    },
+    {
+      "startMs": 85300,
+      "endMs": 88930,
+      "translation": "액셀에서 발을 뗄 수 없어, 우린 너무 빨라, 그래, 오래가게 하자"
+    },
+    {
+      "startMs": 88930,
+      "endMs": 90830,
+      "translation": "그래, 네 속셈 다 알아, 음-음 (젠장)"
+    },
+    {
+      "startMs": 90830,
+      "endMs": 92690,
+      "translation": "넌 너무 편하게 구네, 에이 에이"
+    },
+    {
+      "startMs": 92690,
+      "endMs": 94630,
+      "translation": "누구한테 말하는 거야, 음-음"
+    },
+    {
+      "startMs": 94630,
+      "endMs": 96610,
+      "translation": "너한테 쓸 시간 없어, 에이 (우)"
+    },
+    {
+      "startMs": 96610,
+      "endMs": 100950,
+      "translation": "난 하고 싶은 대로 해, 요트 위에선 톰 포드, 우 (와)"
+    },
+    {
+      "startMs": 100950,
+      "endMs": 104940,
+      "translation": "시계는 리처드 밀, 천 달러짜리 크록스, 우 (우)"
+    },
+    {
+      "startMs": 104940,
+      "endMs": 107050,
+      "translation": "다들 그게 운이라고 하려 해"
+    },
+    {
+      "startMs": 107050,
+      "endMs": 109140,
+      "translation": "넌 아마 내가 지어낸 줄 알겠지"
+    },
+    {
+      "startMs": 109140,
+      "endMs": 110920,
+      "translation": "다 가졌는데도 충분하지 않아"
+    },
+    {
+      "startMs": 110920,
+      "endMs": 112720,
+      "translation": "그래도 계속 불려 나갈 거야, 그러니 (우)"
+    },
+    {
+      "startMs": 112720,
+      "endMs": 114830,
+      "translation": "난 내가 원하는 대로 될 거야, 원하는 대로"
+    },
+    {
+      "startMs": 114830,
+      "endMs": 116560,
+      "translation": "원하는 대로, 그래 (원하는 대로)"
+    },
+    {
+      "startMs": 116560,
+      "endMs": 118800,
+      "translation": "난 내가 원할 때 원하는 걸 할 거야, 원할 때"
+    },
+    {
+      "startMs": 118800,
+      "endMs": 120620,
+      "translation": "원할 때, 그래 (원하는 대로, 원하는 대로, 그래)"
+    },
+    {
+      "startMs": 120620,
+      "endMs": 122960,
+      "translation": "떠날 때까지 세게 달릴 거야, 떠날 때까지"
+    },
+    {
+      "startMs": 122960,
+      "endMs": 125130,
+      "translation": "떠날 때까지, 그래 (떠날 때까지, 떠날 때까지, 떠날 때까지)"
+    },
+    {
+      "startMs": 125130,
+      "endMs": 127390,
+      "translation": "느껴져? (우)"
+    },
+    {
+      "startMs": 127390,
+      "endMs": 129240,
+      "translation": "느껴져? (헤이)"
+    },
+    {
+      "startMs": 129240,
+      "endMs": 131030,
+      "translation": "난 내가 원하는 대로 될 거야, 원하는 대로"
+    },
+    {
+      "startMs": 131030,
+      "endMs": 132910,
+      "translation": "원하는 대로, 그래 (원하는 대로, 원하는 대로)"
+    },
+    {
+      "startMs": 132910,
+      "endMs": 135070,
+      "translation": "난 내가 원할 때 원하는 걸 할 거야, 원할 때"
+    },
+    {
+      "startMs": 135070,
+      "endMs": 136520,
+      "translation": "원할 때, 그래 (원하는 대로, 원하는 대로)"
+    },
+    {
+      "startMs": 136520,
+      "endMs": 139080,
+      "translation": "떠날 때까지 세게 달릴 거야, 떠날 때까지"
+    },
+    {
+      "startMs": 139080,
+      "endMs": 141570,
+      "translation": "떠날 때까지, 그래 (떠날 때까지, 떠날 때까지, 떠날 때까지)"
+    },
+    {
+      "startMs": 141570,
+      "endMs": 143640,
+      "translation": "느껴져? (우)"
+    },
+    {
+      "startMs": 143640,
+      "endMs": 145520,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 145520,
+      "endMs": 149410,
+      "translation": "한번 맛본 뒤로 난 계속 달려 왔어 (달려)"
+    },
+    {
+      "startMs": 149410,
+      "endMs": 153590,
+      "translation": "테이블 위의 칩을 전부 걸었어, 난 올인이야 (에이)"
+    },
+    {
+      "startMs": 153590,
+      "endMs": 157760,
+      "translation": "난 될 거야 (에이)"
+    },
+    {
+      "startMs": 157760,
+      "endMs": 161500,
+      "translation": "난 될 거야 (그래, 난 될 거야)"
+    },
+    {
+      "startMs": 161500,
+      "endMs": 163430,
+      "translation": "난 내가 원하는 대로 될 거야, 원하는 대로"
+    },
+    {
+      "startMs": 163430,
+      "endMs": 164930,
+      "translation": "원하는 대로, 그래 (젠장, 젠장)"
+    },
+    {
+      "startMs": 164930,
+      "endMs": 167450,
+      "translation": "난 내가 원할 때 원하는 걸 할 거야, 원할 때"
+    },
+    {
+      "startMs": 167450,
+      "endMs": 168960,
+      "translation": "원할 때, 그래 (원하는 대로, 원하는 대로)"
+    },
+    {
+      "startMs": 168960,
+      "endMs": 171470,
+      "translation": "떠날 때까지 세게 달릴 거야, 떠날 때까지"
+    },
+    {
+      "startMs": 171470,
+      "endMs": 173880,
+      "translation": "떠날 때까지, 그래 (떠날 때까지, 떠날 때까지, 떠날 때까지)"
+    },
+    {
+      "startMs": 173880,
+      "endMs": 176100,
+      "translation": "느껴져? (느껴져?)"
+    },
+    {
+      "startMs": 176100,
+      "endMs": 179960,
+      "translation": "느껴져? (느껴)"
+    },
+    {
+      "startMs": 179960,
+      "endMs": 183930,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 183930,
+      "endMs": 187540,
+      "translation": "느껴져?"
+    },
+    {
+      "startMs": 187540,
+      "endMs": 191680,
+      "translation": "느껴져? (되고 싶어)"
+    },
+    {
+      "startMs": 191680,
+      "endMs": 201000,
+      "translation": "느껴져?"
+    }
+  ]
+}

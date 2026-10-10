@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 960688,
+    "durationMs": 196000
+  },
+  "segments": [
+    {
+      "startMs": 52010,
+      "endMs": 57080,
+      "translation": "넌 그를 사랑하지 않아, 사랑하지 않아"
+    },
+    {
+      "startMs": 57080,
+      "endMs": 61900,
+      "translation": "날 생각하고 있다면 넌 그를 사랑하는 게 아니야"
+    },
+    {
+      "startMs": 61900,
+      "endMs": 67150,
+      "translation": "넌 그를 사랑하지 않아, 그냥 몸만 섞는 거야"
+    },
+    {
+      "startMs": 67150,
+      "endMs": 72050,
+      "translation": "그냥 몸만 섞는 거야, 나한텐 아무 의미도 없어"
+    },
+    {
+      "startMs": 72050,
+      "endMs": 77150,
+      "translation": "넌 그를 사랑하지 않아, 사랑하지 않아"
+    },
+    {
+      "startMs": 77150,
+      "endMs": 82150,
+      "translation": "날 생각하고 있다면 넌 그를 사랑하는 게 아니야"
+    },
+    {
+      "startMs": 82150,
+      "endMs": 87380,
+      "translation": "넌 그를 사랑하지 않아, 그냥 몸만 섞는 거야"
+    },
+    {
+      "startMs": 87380,
+      "endMs": 93120,
+      "translation": "그냥 몸만 섞는 거야, 나한텐 아무 의미도 없어, 예"
+    },
+    {
+      "startMs": 93120,
+      "endMs": 98220,
+      "translation": "너무 오래됐어, 넌 시간이 흐르며 변했지"
+    },
+    {
+      "startMs": 98220,
+      "endMs": 103130,
+      "translation": "왜, 대체 왜 숨기려고까지 해?"
+    },
+    {
+      "startMs": 103130,
+      "endMs": 107580,
+      "translation": "널 잘 대해 줄 사람을 찾는 건 당연한 일이야"
+    },
+    {
+      "startMs": 107580,
+      "endMs": 113430,
+      "translation": "하지만 홧김에 그와 자는 거라면 그건 옳지 않아"
+    },
+    {
+      "startMs": 113430,
+      "endMs": 118000,
+      "translation": "울 필요 없어, 걸, 내가 눈물 닦아 줄게"
+    },
+    {
+      "startMs": 118000,
+      "endMs": 123320,
+      "translation": "네 눈, 네 눈, 네 눈"
+    },
+    {
+      "startMs": 123320,
+      "endMs": 128230,
+      "translation": "약속해, 넌 언제까지나 내 거야"
+    },
+    {
+      "startMs": 128230,
+      "endMs": 132790,
+      "translation": "오-오, 그냥 나를 따라 말해"
+    },
+    {
+      "startMs": 132790,
+      "endMs": 137870,
+      "translation": "넌 그를 사랑하지 않아, 사랑하지 않아"
+    },
+    {
+      "startMs": 137870,
+      "endMs": 143150,
+      "translation": "날 생각하고 있다면 넌 그를 사랑하는 게 아니야 (괜찮아)"
+    },
+    {
+      "startMs": 143150,
+      "endMs": 147790,
+      "translation": "넌 그를 사랑하지 않아, 그냥 몸만 섞는 거야"
+    },
+    {
+      "startMs": 147790,
+      "endMs": 153030,
+      "translation": "그냥 몸만 섞는 거야, 넌 날 생각하고 있어"
+    },
+    {
+      "startMs": 153030,
+      "endMs": 158070,
+      "translation": "넌 그를 사랑하지 않아, 사랑하지 않아"
+    },
+    {
+      "startMs": 158070,
+      "endMs": 162970,
+      "translation": "날 생각하고 있다면 넌 그를 사랑하는 게 아니야"
+    },
+    {
+      "startMs": 162970,
+      "endMs": 168350,
+      "translation": "넌 그를 사랑하지 않아, 그냥 몸만 섞는 거야"
+    },
+    {
+      "startMs": 168350,
+      "endMs": 196000,
+      "translation": "그냥 몸만 섞는 거야, 나한텐 아무 의미도 없어"
+    }
+  ]
+}

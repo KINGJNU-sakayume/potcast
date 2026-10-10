@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 501115,
+    "durationMs": 158000
+  },
+  "segments": [
+    {
+      "startMs": 5650,
+      "endMs": 10380,
+      "translation": "나도 직접 거기 있었으면 좋았을 텐데"
+    },
+    {
+      "startMs": 10380,
+      "endMs": 13470,
+      "translation": "원래 그런 거지, 이게 내가 사는 방식이야"
+    },
+    {
+      "startMs": 13470,
+      "endMs": 17160,
+      "translation": "내가 가 본 그 모든 곳"
+    },
+    {
+      "startMs": 17160,
+      "endMs": 22470,
+      "translation": "나도 직접 거기 있었으면 좋았을 텐데"
+    },
+    {
+      "startMs": 22470,
+      "endMs": 25360,
+      "translation": "그렇게 많이 벌고, 그렇게 많이 썼는데"
+    },
+    {
+      "startMs": 25360,
+      "endMs": 28720,
+      "translation": "그래도 성에 안 차"
+    },
+    {
+      "startMs": 28720,
+      "endMs": 32410,
+      "translation": "나도 직접 거기 있었으면 좋았을 텐데"
+    },
+    {
+      "startMs": 32410,
+      "endMs": 34550,
+      "translation": "(나도 직접 거기 있었으면 좋았을 텐데)"
+    },
+    {
+      "startMs": 34550,
+      "endMs": 40340,
+      "translation": "네 육촌은 올랜도에 살아 (올랜도)"
+    },
+    {
+      "startMs": 40340,
+      "endMs": 46780,
+      "translation": "그리고, 그래, 난 방금 공연을 끝냈어 (방금 공연을 끝냈어)"
+    },
+    {
+      "startMs": 46780,
+      "endMs": 51350,
+      "translation": "사람들은 목구멍에 술잔을 들이부어"
+    },
+    {
+      "startMs": 51350,
+      "endMs": 57390,
+      "translation": "누구는 '좋아'를 팔지만 난 '싫어'라고 할 거야 (싫어라고)"
+    },
+    {
+      "startMs": 57390,
+      "endMs": 60220,
+      "translation": "원래 그런 거지, 이게 내가 사는 방식이야"
+    },
+    {
+      "startMs": 60220,
+      "endMs": 63780,
+      "translation": "내가 가 본 그 모든 곳 (가 본)"
+    },
+    {
+      "startMs": 63780,
+      "endMs": 67630,
+      "translation": "나도 직접 거기 있었으면 좋았을 텐데"
+    },
+    {
+      "startMs": 67630,
+      "endMs": 69480,
+      "translation": "(나도 직접 거기 있었으면 좋았을 텐데)"
+    },
+    {
+      "startMs": 69480,
+      "endMs": 72050,
+      "translation": "그렇게 많이 벌고, 그렇게 많이 썼는데"
+    },
+    {
+      "startMs": 72050,
+      "endMs": 75730,
+      "translation": "그래도 성에 안 차 (성에 안 차)"
+    },
+    {
+      "startMs": 75730,
+      "endMs": 81070,
+      "translation": "나도 직접 거기 있었으면 좋았을 텐데"
+    },
+    {
+      "startMs": 81070,
+      "endMs": 83970,
+      "translation": "이 모든 아메리칸 드림"
+    },
+    {
+      "startMs": 83970,
+      "endMs": 86950,
+      "translation": "다들 믿는 데 지쳤어"
+    },
+    {
+      "startMs": 86950,
+      "endMs": 89760,
+      "translation": "오, 신경 쓰는 게"
+    },
+    {
+      "startMs": 89760,
+      "endMs": 92760,
+      "translation": "아무 의미 없어질 때까지 신경 끄자"
+    },
+    {
+      "startMs": 92760,
+      "endMs": 95650,
+      "translation": "오, 믿는 데 지쳤어"
+    },
+    {
+      "startMs": 95650,
+      "endMs": 98360,
+      "translation": "이 모든 아메리칸 드림"
+    },
+    {
+      "startMs": 98360,
+      "endMs": 101320,
+      "translation": "오, 신경 쓰는 게"
+    },
+    {
+      "startMs": 101320,
+      "endMs": 104690,
+      "translation": "아무 의미 없어질 때까지 신경 끄자, 오"
+    },
+    {
+      "startMs": 104690,
+      "endMs": 107230,
+      "translation": "원래 그런 거지, 이게 내가 사는 방식이야"
+    },
+    {
+      "startMs": 107230,
+      "endMs": 110550,
+      "translation": "내가 가 본 그 모든 곳"
+    },
+    {
+      "startMs": 110550,
+      "endMs": 114040,
+      "translation": "나도 직접 거기 있었으면 좋았을 텐데"
+    },
+    {
+      "startMs": 114040,
+      "endMs": 116180,
+      "translation": "(나도 직접 거기 있었으면 좋았을 텐데)"
+    },
+    {
+      "startMs": 116180,
+      "endMs": 118830,
+      "translation": "그렇게 많이 벌고, 그렇게 많이 썼는데"
+    },
+    {
+      "startMs": 118830,
+      "endMs": 123120,
+      "translation": "그래도 성에 안 차 (아니, 성에 안 차)"
+    },
+    {
+      "startMs": 123120,
+      "endMs": 126340,
+      "translation": "나도 직접 거기 있었으면 좋았을 텐데"
+    },
+    {
+      "startMs": 126340,
+      "endMs": 132310,
+      "translation": "(나도 직접 거기 있었으면 좋았을 텐데)"
+    },
+    {
+      "startMs": 132310,
+      "endMs": 139780,
+      "translation": "아니, 성에 안 차!"
+    },
+    {
+      "startMs": 139780,
+      "endMs": 158000,
+      "translation": "오, 오, 오, 오"
+    }
+  ]
+}

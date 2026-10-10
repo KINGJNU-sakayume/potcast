@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974120,
+    "durationMs": 188000
+  },
+  "segments": [
+    {
+      "startMs": 220,
+      "endMs": 4020,
+      "translation": "예"
+    },
+    {
+      "startMs": 4020,
+      "endMs": 8130,
+      "translation": "어둠이 널 계속 빛나게 해"
+    },
+    {
+      "startMs": 8130,
+      "endMs": 11110,
+      "translation": "빛나, 빛나, 빛나"
+    },
+    {
+      "startMs": 11110,
+      "endMs": 15500,
+      "translation": "빛나, 빛나, 빛나"
+    },
+    {
+      "startMs": 15500,
+      "endMs": 21160,
+      "translation": "우, 점선 위에 서명만 해"
+    },
+    {
+      "startMs": 21160,
+      "endMs": 24460,
+      "translation": "선, 선, 선"
+    },
+    {
+      "startMs": 24460,
+      "endMs": 29350,
+      "translation": "선, 선, 선 (우)"
+    },
+    {
+      "startMs": 29350,
+      "endMs": 36110,
+      "translation": "거기 닿을 날이 기다려져, 알아 (오, 알아, 알아, 오, 사랑, 사랑)"
+    },
+    {
+      "startMs": 36110,
+      "endMs": 42580,
+      "translation": "거기 닿을 날이 기다려져, 깨어 있어, 내 마음이 (오, 사랑, 사랑)"
+    },
+    {
+      "startMs": 42580,
+      "endMs": 50820,
+      "translation": "거기 닿아서 알 수 있다면 좋겠어 (오, 사랑, 사랑, 오, 사랑, 사랑)"
+    },
+    {
+      "startMs": 50820,
+      "endMs": 55130,
+      "translation": "내 사랑이 자랄 수 있는 곳을, 오, 오 (우)"
+    },
+    {
+      "startMs": 55130,
+      "endMs": 58650,
+      "translation": "친애하는 여름, 우린 숫자를 굴려 왔지"
+    },
+    {
+      "startMs": 58650,
+      "endMs": 61840,
+      "translation": "억만장자까지 조금 모자라, 내 집은 마돈나한테 팔았어"
+    },
+    {
+      "startMs": 61840,
+      "endMs": 65120,
+      "translation": "아버지와 연락이 닿을지도 몰라, 난 그 사람을 잘 몰라"
+    },
+    {
+      "startMs": 65120,
+      "endMs": 68450,
+      "translation": "내 모든 드라마를 끝내려 해, 옷장을 비우려 해"
+    },
+    {
+      "startMs": 68450,
+      "endMs": 71780,
+      "translation": "언론은 우릴 통제할 수 없으니 그걸 싫어하거든"
+    },
+    {
+      "startMs": 71780,
+      "endMs": 75030,
+      "translation": "그리고 내 적들은 내가 내 영혼을 가졌으니 그걸 싫어해"
+    },
+    {
+      "startMs": 75030,
+      "endMs": 76860,
+      "translation": "알아 (알아)"
+    },
+    {
+      "startMs": 76860,
+      "endMs": 79850,
+      "translation": "내가 모른다고 생각할 때도, 알아 (알아)"
+    },
+    {
+      "startMs": 79850,
+      "endMs": 81790,
+      "translation": "알아 (알아)"
+    },
+    {
+      "startMs": 81790,
+      "endMs": 84820,
+      "translation": "그리고 그들은 잘못된 정보를 퍼뜨리며 날 죽이려 해"
+    },
+    {
+      "startMs": 84820,
+      "endMs": 86570,
+      "translation": "날 악당으로 그리려 해"
+    },
+    {
+      "startMs": 86570,
+      "endMs": 89770,
+      "translation": "내가 자초한 거겠지, 이 바닥에서 사는 삶이란"
+    },
+    {
+      "startMs": 89770,
+      "endMs": 91460,
+      "translation": "누가 그 차이를 말해 줄 수 있어?"
+    },
+    {
+      "startMs": 91460,
+      "endMs": 94760,
+      "translation": "살 곳조차 없던 시절엔 더 무서운 일도 겪었어"
+    },
+    {
+      "startMs": 94760,
+      "endMs": 98000,
+      "translation": "고등학교 중퇴생이 학자들과 어울려"
+    },
+    {
+      "startMs": 98000,
+      "endMs": 101180,
+      "translation": "그리고 난 문장을 끝맺을 줄 알아, 말도 조리 있게 하지, 베이비"
+    },
+    {
+      "startMs": 101180,
+      "endMs": 102830,
+      "translation": "발음도 또박또박하지, 베이비"
+    },
+    {
+      "startMs": 102830,
+      "endMs": 106310,
+      "translation": "그리고 내 적들은 갈기갈기 찢어 놓고 그 무덤에 침을 뱉지, 예 (에)"
+    },
+    {
+      "startMs": 106310,
+      "endMs": 108480,
+      "translation": "정말 그렇게 할 거라고 맹세해, 알아"
+    },
+    {
+      "startMs": 108480,
+      "endMs": 110950,
+      "translation": "거기 닿을 날이 기다려져, 알아"
+    },
+    {
+      "startMs": 110950,
+      "endMs": 114230,
+      "translation": "그 눈을 들여다볼 때마다 (알아, 알아, 알아, 알아, 알아)"
+    },
+    {
+      "startMs": 114230,
+      "endMs": 119300,
+      "translation": "눈물이 네 얼굴을 타고 흘러내려 (알아, 알아, 알아)"
+    },
+    {
+      "startMs": 119300,
+      "endMs": 121560,
+      "translation": "거기 닿을 날이 기다려져, 깨어 있어, 내 마음이 (이 게임을 알아, 알아)"
+    },
+    {
+      "startMs": 121560,
+      "endMs": 130320,
+      "translation": "거기 닿아서 알 수 있다면 좋겠어 (제대로 된 보호를 위해선 제대로 된 피부색이, 제대로 된 의도를 위해선…)"
+    },
+    {
+      "startMs": 130320,
+      "endMs": 135370,
+      "translation": "내 사랑이 자랄 수 있는 곳을 (제대로 된, 제대로 된, 우)"
+    },
+    {
+      "startMs": 135370,
+      "endMs": 138610,
+      "translation": "그 눈을 들여다볼 때마다"
+    },
+    {
+      "startMs": 138610,
+      "endMs": 143660,
+      "translation": "그 눈을 들여다보면 눈물이 네 얼굴을 타고 흘러내려 (거기 닿을 날이 기다려져, 워, 오)"
+    },
+    {
+      "startMs": 143660,
+      "endMs": 147580,
+      "translation": "깨어 있어, 내 마음이"
+    },
+    {
+      "startMs": 147580,
+      "endMs": 155490,
+      "translation": "거기 닿아서 알 수 있다면 좋겠어"
+    },
+    {
+      "startMs": 155490,
+      "endMs": 160780,
+      "translation": "내 사랑이 자랄 수 있는 곳을, 오, 오"
+    },
+    {
+      "startMs": 160780,
+      "endMs": 167600,
+      "translation": "거기 닿을 날이 기다려져, 알아"
+    },
+    {
+      "startMs": 167600,
+      "endMs": 188000,
+      "translation": "거기 닿을 날이 기다려져"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 572300,
+    "durationMs": 204000
+  },
+  "segments": [
+    {
+      "startMs": 2610,
+      "endMs": 6490,
+      "translation": "그래"
+    },
+    {
+      "startMs": 6490,
+      "endMs": 12440,
+      "translation": "그리고 넌 외치지, 시카고 시티, 시카고 시티, 시카고 시티"
+    },
+    {
+      "startMs": 12440,
+      "endMs": 14480,
+      "translation": "나 다시 집으로 돌아가"
+    },
+    {
+      "startMs": 14480,
+      "endMs": 17000,
+      "translation": "가끔 내 생각 해? (그래)"
+    },
+    {
+      "startMs": 17000,
+      "endMs": 20780,
+      "translation": "가끔 내 생각 해?"
+    },
+    {
+      "startMs": 20780,
+      "endMs": 24520,
+      "translation": "난 다시 집으로 돌아가니까, 다시 (아우) 집으로"
+    },
+    {
+      "startMs": 24520,
+      "endMs": 27470,
+      "translation": "세 살 때 이 소녀를 만났어"
+    },
+    {
+      "startMs": 27470,
+      "endMs": 29860,
+      "translation": "내가 제일 좋아한 건 그녀의 풍부한 영혼이었지"
+    },
+    {
+      "startMs": 29860,
+      "endMs": 33460,
+      "translation": "그녀가 그랬어, \"실례해, 꼬마야, 넌 날 모르겠지만"
+    },
+    {
+      "startMs": 33460,
+      "endMs": 36320,
+      "translation": "내 이름은 윈디고, 나무 사이로 부는 걸 좋아해\" 그리고"
+    },
+    {
+      "startMs": 36320,
+      "endMs": 38540,
+      "translation": "그때부터 난 그녀를 한 번도 무시하지 않았어"
+    },
+    {
+      "startMs": 38540,
+      "endMs": 41100,
+      "translation": "외지에서 녀석들이 오면 그녀를 자랑하고 싶었지"
+    },
+    {
+      "startMs": 41100,
+      "endMs": 43930,
+      "translation": "그 녀석들이 센 척하면 그녀는 기를 꺾어 놨어"
+    },
+    {
+      "startMs": 43930,
+      "endMs": 46480,
+      "translation": "모자를 똑바로 쓰게 만들었지, 다 겁쟁이인 걸 아니까"
+    },
+    {
+      "startMs": 46480,
+      "endMs": 49450,
+      "translation": "내가 크자 그녀는 시내로 가는 법을 보여 줬어"
+    },
+    {
+      "startMs": 49450,
+      "endMs": 52450,
+      "translation": "밤이면 그녀의 얼굴이 놀랍도록 환하게 빛났지"
+    },
+    {
+      "startMs": 52450,
+      "endMs": 54850,
+      "translation": "내 마음속에 그녀가 늘 있을 거라고 말했어"
+    },
+    {
+      "startMs": 54850,
+      "endMs": 57260,
+      "translation": "그녀는 연예인이랑은 엮이지 않았어, 늘 떠나 버리니까"
+    },
+    {
+      "startMs": 57260,
+      "endMs": 59850,
+      "translation": "그녀가 그랬지, \"다들 날 밟고 지나가고 차로 짓밟은 것 같았어"
+    },
+    {
+      "startMs": 59850,
+      "endMs": 63300,
+      "translation": "내가 갱이랑 엮인 걸 알고 TV에 나가서 다 일러바쳤지\""
+    },
+    {
+      "startMs": 63300,
+      "endMs": 66020,
+      "translation": "아마 그래서 지난겨울 그녀가 그렇게 차가웠나 봐"
+    },
+    {
+      "startMs": 66020,
+      "endMs": 67010,
+      "translation": "그녀가 그랬어, \"예, 날 위해 계속 플래티넘이랑 골드를 만들어 줘\""
+    },
+    {
+      "startMs": 67010,
+      "endMs": 69830,
+      "translation": "나 다시 집으로 돌아가"
+    },
+    {
+      "startMs": 69830,
+      "endMs": 72460,
+      "translation": "가끔 내 생각 해?"
+    },
+    {
+      "startMs": 72460,
+      "endMs": 76180,
+      "translation": "가끔 내 생각 해?"
+    },
+    {
+      "startMs": 76180,
+      "endMs": 80580,
+      "translation": "난 다시 집으로 돌아가니까"
+    },
+    {
+      "startMs": 80580,
+      "endMs": 83380,
+      "translation": "가끔 내 생각 해?"
+    },
+    {
+      "startMs": 83380,
+      "endMs": 87060,
+      "translation": "가끔 내 생각 해?"
+    },
+    {
+      "startMs": 87060,
+      "endMs": 89170,
+      "translation": "난 다시 집으로 돌아가니까"
+    },
+    {
+      "startMs": 89170,
+      "endMs": 91550,
+      "translation": "어쩌면 우리 다시 시작할 수 있을지도"
+    },
+    {
+      "startMs": 91550,
+      "endMs": 92870,
+      "translation": "하지만 네가 정말 그녀를 아꼈다면"
+    },
+    {
+      "startMs": 92870,
+      "endMs": 96630,
+      "translation": "꿈을 좇아 공항으로 가지는 않았겠지"
+    },
+    {
+      "startMs": 96630,
+      "endMs": 99690,
+      "translation": "아직도 가끔 그녀와 얘기해, 그런데 얘기할 때면"
+    },
+    {
+      "startMs": 99690,
+      "endMs": 102190,
+      "translation": "늘 그녀가 내 얘기를 하는 것 같아"
+    },
+    {
+      "startMs": 102190,
+      "endMs": 104690,
+      "translation": "그녀가 그랬어, \"넌 네 아이들을 두고 갔고, 걔들은 꼭 너 같아"
+    },
+    {
+      "startMs": 104690,
+      "endMs": 107380,
+      "translation": "너처럼 랩을 하고 소울 비트를 만들고 싶어 해"
+    },
+    {
+      "startMs": 107380,
+      "endMs": 110260,
+      "translation": "하지만 걔들은 네가 아니야\" 그리고 난 방금"
+    },
+    {
+      "startMs": 110260,
+      "endMs": 113000,
+      "translation": "녀석들이 하려는 것들 얘기를 끝냈어, 새로울 게 없더라"
+    },
+    {
+      "startMs": 113000,
+      "endMs": 115830,
+      "translation": "이제 다들 이 판을 완전히 잘못 알고 있어"
+    },
+    {
+      "startMs": 115830,
+      "endMs": 118770,
+      "translation": "잃고 나서야 가진 걸 안다더니"
+    },
+    {
+      "startMs": 118770,
+      "endMs": 121550,
+      "translation": "그래서 내가 여기 있고 집에 돌아갈 수 없나 봐"
+    },
+    {
+      "startMs": 121550,
+      "endMs": 124350,
+      "translation": "그 말을 언제 들었는지 알아? 집에 돌아갔을 때야"
+    },
+    {
+      "startMs": 124350,
+      "endMs": 127380,
+      "translation": "인터뷰할 때마다 널 대표하고 자랑스럽게 할게"
+    },
+    {
+      "startMs": 127380,
+      "endMs": 130250,
+      "translation": "별을 향해 손을 뻗어, 떨어져도 구름 위에 내려앉게"
+    },
+    {
+      "startMs": 130250,
+      "endMs": 132930,
+      "translation": "관중 속으로 뛰어들어, 라이터를 켜고 흔들어"
+    },
+    {
+      "startMs": 132930,
+      "endMs": 133860,
+      "translation": "아직도 모르겠다면, 난 시카고 얘기를 하는 거야!"
+    },
+    {
+      "startMs": 133860,
+      "endMs": 135750,
+      "translation": "나 다시 집으로 돌아가"
+    },
+    {
+      "startMs": 135750,
+      "endMs": 138660,
+      "translation": "가끔 내 생각 해?"
+    },
+    {
+      "startMs": 138660,
+      "endMs": 142100,
+      "translation": "가끔 내 생각 해?"
+    },
+    {
+      "startMs": 142100,
+      "endMs": 147010,
+      "translation": "난 다시 집으로 돌아가니까"
+    },
+    {
+      "startMs": 147010,
+      "endMs": 149530,
+      "translation": "어쩌면 너, 기억나?"
+    },
+    {
+      "startMs": 149530,
+      "endMs": 152380,
+      "translation": "미시간 호수의 불꽃놀이"
+    },
+    {
+      "startMs": 152380,
+      "endMs": 157480,
+      "translation": "오, 이제 나 다시 집으로 돌아가"
+    },
+    {
+      "startMs": 157480,
+      "endMs": 160180,
+      "translation": "어쩌면 너, 기억나?"
+    },
+    {
+      "startMs": 160180,
+      "endMs": 163340,
+      "translation": "미시간 호수의 불꽃놀이"
+    },
+    {
+      "startMs": 163340,
+      "endMs": 166210,
+      "translation": "오, 이제 나 다시 집으로 돌아가"
+    },
+    {
+      "startMs": 166210,
+      "endMs": 204000,
+      "translation": "어쩌면 우리 다시 시작할 수 있을지도"
+    }
+  ]
+}

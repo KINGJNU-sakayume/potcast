@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 481656,
+    "durationMs": 157000
+  },
+  "segments": [
+    {
+      "startMs": 6860,
+      "endMs": 9560,
+      "translation": "일요일엔 취해 있었어"
+    },
+    {
+      "startMs": 9560,
+      "endMs": 12350,
+      "translation": "월요일엔 널 지워 버려"
+    },
+    {
+      "startMs": 12350,
+      "endMs": 19760,
+      "translation": "알레르기, 알레르기"
+    },
+    {
+      "startMs": 19760,
+      "endMs": 23020,
+      "translation": "금요일엔 굴복했어"
+    },
+    {
+      "startMs": 23020,
+      "endMs": 26090,
+      "translation": "곧장 다시 엉망이 됐지"
+    },
+    {
+      "startMs": 26090,
+      "endMs": 31830,
+      "translation": "알레르기, 알레르기"
+    },
+    {
+      "startMs": 31830,
+      "endMs": 38750,
+      "translation": "다른 걸 느끼려고 네 알약이랑 약을 먹었어"
+    },
+    {
+      "startMs": 38750,
+      "endMs": 44540,
+      "translation": "더는 널 느낄 수 없으니까"
+    },
+    {
+      "startMs": 44540,
+      "endMs": 48080,
+      "translation": "정말 슬프지만 사실이야"
+    },
+    {
+      "startMs": 48080,
+      "endMs": 51530,
+      "translation": "넌 내 모든 악마들과 친구야"
+    },
+    {
+      "startMs": 51530,
+      "endMs": 55120,
+      "translation": "그것들을 보는 유일한 사람"
+    },
+    {
+      "startMs": 55120,
+      "endMs": 58340,
+      "translation": "너한텐 안됐지만"
+    },
+    {
+      "startMs": 58340,
+      "endMs": 61400,
+      "translation": "정말 슬프지만 사실이야"
+    },
+    {
+      "startMs": 61400,
+      "endMs": 64880,
+      "translation": "백만 가지 이유를 대 줬는데"
+    },
+    {
+      "startMs": 64880,
+      "endMs": 68270,
+      "translation": "왜 넌 그걸 믿지 못해?"
+    },
+    {
+      "startMs": 68270,
+      "endMs": 72020,
+      "translation": "너한텐 안됐지만"
+    },
+    {
+      "startMs": 72020,
+      "endMs": 75530,
+      "translation": "그래, 우린 싸우고 사랑하다 상처를 다시 벌려"
+    },
+    {
+      "startMs": 75530,
+      "endMs": 78620,
+      "translation": "이제 술이 깨 가지만 충분히 깨지는 않아"
+    },
+    {
+      "startMs": 78620,
+      "endMs": 84910,
+      "translation": "알레르기, 알레르기"
+    },
+    {
+      "startMs": 84910,
+      "endMs": 88590,
+      "translation": "넌 날 붙잡아 주는 대신 날 붙들고만 있어"
+    },
+    {
+      "startMs": 88590,
+      "endMs": 91910,
+      "translation": "이렇게 힘들면 안 되는데, 이건 불가능한 사랑이야"
+    },
+    {
+      "startMs": 91910,
+      "endMs": 98030,
+      "translation": "알레르기, 알레르기"
+    },
+    {
+      "startMs": 98030,
+      "endMs": 104970,
+      "translation": "다른 걸 느끼려고 네 알약이랑 약을 먹었어"
+    },
+    {
+      "startMs": 104970,
+      "endMs": 110750,
+      "translation": "더는 널 느낄 수 없으니까"
+    },
+    {
+      "startMs": 110750,
+      "endMs": 114420,
+      "translation": "정말 슬프지만 사실이야"
+    },
+    {
+      "startMs": 114420,
+      "endMs": 117520,
+      "translation": "넌 내 모든 악마들과 친구야"
+    },
+    {
+      "startMs": 117520,
+      "endMs": 121180,
+      "translation": "그것들을 보는 유일한 사람"
+    },
+    {
+      "startMs": 121180,
+      "endMs": 124290,
+      "translation": "너한텐 안됐지만"
+    },
+    {
+      "startMs": 124290,
+      "endMs": 127400,
+      "translation": "정말 슬프지만 사실이야"
+    },
+    {
+      "startMs": 127400,
+      "endMs": 131030,
+      "translation": "백만 가지 이유를 대 줬는데"
+    },
+    {
+      "startMs": 131030,
+      "endMs": 134260,
+      "translation": "왜 넌 그걸 믿지 못해?"
+    },
+    {
+      "startMs": 134260,
+      "endMs": 137670,
+      "translation": "너한텐 안됐지만"
+    },
+    {
+      "startMs": 137670,
+      "endMs": 140690,
+      "translation": "정말 슬프지만 사실이야"
+    },
+    {
+      "startMs": 140690,
+      "endMs": 144220,
+      "translation": "백만 가지 이유를 대 줬는데"
+    },
+    {
+      "startMs": 144220,
+      "endMs": 147490,
+      "translation": "왜 넌 그걸 믿지 못해?"
+    },
+    {
+      "startMs": 147490,
+      "endMs": 157000,
+      "translation": "너한텐 안됐지만"
+    }
+  ]
+}

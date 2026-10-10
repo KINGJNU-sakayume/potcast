@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 565034,
+    "durationMs": 239000
+  },
+  "segments": [
+    {
+      "startMs": 1390,
+      "endMs": 5870,
+      "translation": "내가 너를 기다리고 있었던 거 몰랐어?"
+    },
+    {
+      "startMs": 5870,
+      "endMs": 10270,
+      "translation": "이뤄지지 않을 꿈을 기다리면서"
+    },
+    {
+      "startMs": 10270,
+      "endMs": 14570,
+      "translation": "내가 너를 기다리고 있었던 거 몰랐어?"
+    },
+    {
+      "startMs": 14570,
+      "endMs": 19370,
+      "translation": "그 소식을 들었을 때 내 얼굴은 돌처럼 굳었어"
+    },
+    {
+      "startMs": 19370,
+      "endMs": 23420,
+      "translation": "네가 규칙을 깨기로 했을 때"
+    },
+    {
+      "startMs": 23420,
+      "endMs": 28220,
+      "translation": "방금 정말 나쁜 소식을 들었거든"
+    },
+    {
+      "startMs": 28220,
+      "endMs": 32750,
+      "translation": "사람들은 다 아는 얘기처럼 떠들겠지"
+    },
+    {
+      "startMs": 32750,
+      "endMs": 37250,
+      "translation": "난 대수롭지 않은 척, 이미 알았던 척했어"
+    },
+    {
+      "startMs": 37250,
+      "endMs": 41480,
+      "translation": "하나만 묻자, 친구, 언제부터 알았어?"
+    },
+    {
+      "startMs": 41480,
+      "endMs": 46260,
+      "translation": "넌 아무렇지 않은 척, 그 남자를 처음 보는 사람처럼 굴었지"
+    },
+    {
+      "startMs": 46260,
+      "endMs": 50790,
+      "translation": "네가 규칙을 깨기로 했을 때"
+    },
+    {
+      "startMs": 50790,
+      "endMs": 56620,
+      "translation": "방금 정말 나쁜 소식을 들었거든"
+    },
+    {
+      "startMs": 56620,
+      "endMs": 61180,
+      "translation": "정말 나쁜 소식"
+    },
+    {
+      "startMs": 61180,
+      "endMs": 65630,
+      "translation": "정말 나쁜 소식"
+    },
+    {
+      "startMs": 65630,
+      "endMs": 68890,
+      "translation": "정말 나쁜 소식"
+    },
+    {
+      "startMs": 68890,
+      "endMs": 73160,
+      "translation": "오, 다른 사람을 계속 만날 거야? 아니, 그러지 못할걸"
+    },
+    {
+      "startMs": 73160,
+      "endMs": 77530,
+      "translation": "오, 아무것도 몰랐던 것처럼 계속 그럴 거야?"
+    },
+    {
+      "startMs": 77530,
+      "endMs": 82670,
+      "translation": "오, 다른 사랑을 계속 품고 있을 거야?"
+    },
+    {
+      "startMs": 82670,
+      "endMs": 86880,
+      "translation": "오, 아무것도 몰랐던 것처럼 계속 그럴 거야?"
+    },
+    {
+      "startMs": 86880,
+      "endMs": 91560,
+      "translation": "난 이뤄지지 않을 꿈을 기다리고 있는데"
+    },
+    {
+      "startMs": 91560,
+      "endMs": 95870,
+      "translation": "오, 아무것도 몰랐던 것처럼 계속 그럴 거야?"
+    },
+    {
+      "startMs": 95870,
+      "endMs": 103060,
+      "translation": "그 소식을 들었을 때 내 얼굴은 돌처럼 굳었어"
+    },
+    {
+      "startMs": 103060,
+      "endMs": 107650,
+      "translation": "뉴스에 뭐가 나와?"
+    },
+    {
+      "startMs": 107650,
+      "endMs": 239000,
+      "translation": "채널을 돌려"
+    }
+  ]
+}

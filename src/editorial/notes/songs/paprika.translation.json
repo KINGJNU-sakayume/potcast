@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 27525699,
+    "durationMs": 202667
+  },
+  "segments": [
+    {
+      "startMs": 18120,
+      "endMs": 23250,
+      "translation": "구불구불 신나게 뛰놀던 길"
+    },
+    {
+      "startMs": 23250,
+      "endMs": 27620,
+      "translation": "푸른 잎 숲속을 뛰어다녀"
+    },
+    {
+      "startMs": 27620,
+      "endMs": 32570,
+      "translation": "실컷 뛰노는 햇살의 거리"
+    },
+    {
+      "startMs": 32570,
+      "endMs": 36410,
+      "translation": "누군가가 부르고 있어"
+    },
+    {
+      "startMs": 36410,
+      "endMs": 45990,
+      "translation": "여름이 와, 그림자가 서, 너를 만나고 싶어"
+    },
+    {
+      "startMs": 45990,
+      "endMs": 50650,
+      "translation": "찾아낸 건 첫 번째 별"
+    },
+    {
+      "startMs": 50650,
+      "endMs": 55180,
+      "translation": "내일도 맑을까"
+    },
+    {
+      "startMs": 55180,
+      "endMs": 60490,
+      "translation": "파프리카 꽃이 피면"
+    },
+    {
+      "startMs": 60490,
+      "endMs": 64650,
+      "translation": "맑은 하늘에 씨앗을 뿌리자"
+    },
+    {
+      "startMs": 64650,
+      "endMs": 70040,
+      "translation": "할렐루야, 꿈을 그렸다면"
+    },
+    {
+      "startMs": 70040,
+      "endMs": 76540,
+      "translation": "마음껏 노닐며 너에게 닿아라"
+    },
+    {
+      "startMs": 76540,
+      "endMs": 81350,
+      "translation": "비에 그을고 달은 가려지고"
+    },
+    {
+      "startMs": 81350,
+      "endMs": 85740,
+      "translation": "나무 그늘에서 울던 건 누구였을까"
+    },
+    {
+      "startMs": 85740,
+      "endMs": 90780,
+      "translation": "한 사람 한 사람 달래 주듯이"
+    },
+    {
+      "startMs": 90780,
+      "endMs": 94940,
+      "translation": "누군가가 부르고 있어"
+    },
+    {
+      "startMs": 94940,
+      "endMs": 104310,
+      "translation": "기쁨을 세어 보면 온통 너야"
+    },
+    {
+      "startMs": 104310,
+      "endMs": 108870,
+      "translation": "돌아가는 길을 비춰 준 건"
+    },
+    {
+      "startMs": 108870,
+      "endMs": 113520,
+      "translation": "추억 속 그림자"
+    },
+    {
+      "startMs": 113520,
+      "endMs": 118920,
+      "translation": "파프리카 꽃이 피면"
+    },
+    {
+      "startMs": 118920,
+      "endMs": 122940,
+      "translation": "맑은 하늘에 씨앗을 뿌리자"
+    },
+    {
+      "startMs": 122940,
+      "endMs": 128160,
+      "translation": "할렐루야, 꿈을 그렸다면"
+    },
+    {
+      "startMs": 128160,
+      "endMs": 136480,
+      "translation": "마음껏 노닐며 너에게 닿아라"
+    },
+    {
+      "startMs": 136480,
+      "endMs": 142190,
+      "translation": "만나러 갈게, 가로수 길을 지나"
+    },
+    {
+      "startMs": 142190,
+      "endMs": 145980,
+      "translation": "노래를 부르며"
+    },
+    {
+      "startMs": 145980,
+      "endMs": 151420,
+      "translation": "두 손 가득 꽃을 안고"
+    },
+    {
+      "startMs": 151420,
+      "endMs": 155230,
+      "translation": "라루라리라"
+    },
+    {
+      "startMs": 155230,
+      "endMs": 160780,
+      "translation": "만나러 갈게, 가로수 길을 지나"
+    },
+    {
+      "startMs": 160780,
+      "endMs": 164490,
+      "translation": "노래를 부르며"
+    },
+    {
+      "startMs": 164490,
+      "endMs": 170110,
+      "translation": "두 손 가득 꽃을 안고"
+    },
+    {
+      "startMs": 170110,
+      "endMs": 174000,
+      "translation": "라루라리라"
+    },
+    {
+      "startMs": 174000,
+      "endMs": 179360,
+      "translation": "파프리카 꽃이 피면"
+    },
+    {
+      "startMs": 179360,
+      "endMs": 183430,
+      "translation": "맑은 하늘에 씨앗을 뿌리자"
+    },
+    {
+      "startMs": 183430,
+      "endMs": 188660,
+      "translation": "할렐루야, 꿈을 그렸다면"
+    },
+    {
+      "startMs": 188660,
+      "endMs": 193220,
+      "translation": "마음껏 노닐며 너에게 닿아라"
+    },
+    {
+      "startMs": 193220,
+      "endMs": 202667,
+      "translation": "발뒤꿈치 튕기며, 여기 여기 붙어라"
+    }
+  ]
+}

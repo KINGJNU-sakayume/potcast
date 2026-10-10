@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 21528724,
+    "durationMs": 186861
+  },
+  "segments": [
+    {
+      "startMs": 8220,
+      "endMs": 15050,
+      "translation": "도시 위에 불길한 달이 걸려 있어"
+    },
+    {
+      "startMs": 15050,
+      "endMs": 21700,
+      "translation": "바람에 실린 찬송가 하나 들리지 않아"
+    },
+    {
+      "startMs": 21700,
+      "endMs": 28080,
+      "translation": "날 잊게 해 줄 잔을 따르며"
+    },
+    {
+      "startMs": 28080,
+      "endMs": 34860,
+      "translation": "그럴 수도 있었던 일들에 숙취를 앓아"
+    },
+    {
+      "startMs": 34860,
+      "endMs": 41580,
+      "translation": "길고 잃어버린 고속도로야"
+    },
+    {
+      "startMs": 41580,
+      "endMs": 47940,
+      "translation": "이 길은 내 친구가 아니야"
+    },
+    {
+      "startMs": 47940,
+      "endMs": 54780,
+      "translation": "내일까지는 널 사랑할게"
+    },
+    {
+      "startMs": 54780,
+      "endMs": 61420,
+      "translation": "그다음엔 다시는 널 사랑하지 않을 거야"
+    },
+    {
+      "startMs": 61420,
+      "endMs": 68350,
+      "translation": "네 서랍장 위에 성경이 있더라"
+    },
+    {
+      "startMs": 68350,
+      "endMs": 74160,
+      "translation": "나를 위한 용서도 좀 남겨 둬"
+    },
+    {
+      "startMs": 74160,
+      "endMs": 81210,
+      "translation": "자기야, 이건 낡은 카우보이 서부극이 아니야"
+    },
+    {
+      "startMs": 81210,
+      "endMs": 88250,
+      "translation": "떠날 때 난 뒤돌아보지 않을 거니까, 오"
+    },
+    {
+      "startMs": 88250,
+      "endMs": 94650,
+      "translation": "길고 잃어버린 고속도로야"
+    },
+    {
+      "startMs": 94650,
+      "endMs": 101330,
+      "translation": "이 길은 내 친구가 아니야"
+    },
+    {
+      "startMs": 101330,
+      "endMs": 107980,
+      "translation": "내일까지는 널 사랑할게"
+    },
+    {
+      "startMs": 107980,
+      "endMs": 141440,
+      "translation": "그다음엔 다시는 널 사랑하지 않을 거야"
+    },
+    {
+      "startMs": 141440,
+      "endMs": 148090,
+      "translation": "길고 잃어버린 고속도로야"
+    },
+    {
+      "startMs": 148090,
+      "endMs": 154820,
+      "translation": "이 길은 내 친구가 아니야"
+    },
+    {
+      "startMs": 154820,
+      "endMs": 161440,
+      "translation": "내일까지는 널 사랑할게"
+    },
+    {
+      "startMs": 161440,
+      "endMs": 167480,
+      "translation": "그다음엔 다시는 널 사랑하지 않을 거야"
+    },
+    {
+      "startMs": 167480,
+      "endMs": 174860,
+      "translation": "자기야, 다시는 널 사랑하지"
+    },
+    {
+      "startMs": 174860,
+      "endMs": 186861,
+      "translation": "않을 거야"
+    }
+  ]
+}

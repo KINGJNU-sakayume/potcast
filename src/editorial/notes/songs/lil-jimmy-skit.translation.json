@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 574430,
+    "durationMs": 53000
+  },
+  "segments": [
+    {
+      "startMs": 80,
+      "endMs": 2370,
+      "translation": "어이, 지미, 어디 가니?"
+    },
+    {
+      "startMs": 2370,
+      "endMs": 4120,
+      "translation": "어디 가는지 나도 몰라"
+    },
+    {
+      "startMs": 4120,
+      "endMs": 8720,
+      "translation": "아빠가 돌아가셨는데, 아빠가 학위를 남겨 주셨어"
+    },
+    {
+      "startMs": 8720,
+      "endMs": 13070,
+      "translation": "엄마는 맨날 \"여보, 왜 일을 안 해?\" 했는데"
+    },
+    {
+      "startMs": 13070,
+      "endMs": 15460,
+      "translation": "아빠는 그냥 계속 배우기만 했어"
+    },
+    {
+      "startMs": 15460,
+      "endMs": 19940,
+      "translation": "다른 애들 부모님은 다 일하면서 학비를 모았는데"
+    },
+    {
+      "startMs": 19940,
+      "endMs": 25360,
+      "translation": "난 아빠랑 같이 학교에 다녔다니까!"
+    },
+    {
+      "startMs": 25360,
+      "endMs": 29110,
+      "translation": "아빠는 학위 욕심이 너무 많아서 내 학위까지 가져갔어"
+    },
+    {
+      "startMs": 29110,
+      "endMs": 33960,
+      "translation": "그래도 이걸 남겨 주셔서 이제 그냥 다행이야"
+    },
+    {
+      "startMs": 33960,
+      "endMs": 37580,
+      "translation": "보통 노숙자들은 신문지를 덮는데, 내가 뭘 가졌는지 봐"
+    },
+    {
+      "startMs": 37580,
+      "endMs": 41360,
+      "translation": "이건 정식 기록이 남은 거야, 아빠가 나한테 남겨 준 거라고"
+    },
+    {
+      "startMs": 41360,
+      "endMs": 42950,
+      "translation": "그리고 난 이걸 내 아이들한테 물려줄 거야"
+    },
+    {
+      "startMs": 42950,
+      "endMs": 44930,
+      "translation": "나도 배울 거야"
+    },
+    {
+      "startMs": 44930,
+      "endMs": 50140,
+      "translation": "엄청 똑똑해져서 나도 돈 한 푼 없이 죽을 수 있게"
+    },
+    {
+      "startMs": 50140,
+      "endMs": 52400,
+      "translation": "그래도 난 제일 똑똑한 죽은 사람이 될 거야!"
+    },
+    {
+      "startMs": 52400,
+      "endMs": 53000,
+      "translation": "누가 그런 걸 가졌겠어?"
+    }
+  ]
+}

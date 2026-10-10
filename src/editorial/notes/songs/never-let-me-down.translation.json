@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1610120,
+    "durationMs": 324000
+  },
+  "segments": [
+    {
+      "startMs": 3870,
+      "endMs": 9620,
+      "translation": "오, 베이비 (하하하)"
+    },
+    {
+      "startMs": 9620,
+      "endMs": 10820,
+      "translation": "음악 좀 크게 틀어 봐"
+    },
+    {
+      "startMs": 10820,
+      "endMs": 13240,
+      "translation": "진실함에 관해서라면"
+    },
+    {
+      "startMs": 13240,
+      "endMs": 16470,
+      "translation": "적어도 나 자신에게 진실하다면 (맞아, 그게 내가 하는 일이지, 가자)"
+    },
+    {
+      "startMs": 16470,
+      "endMs": 17880,
+      "translation": "내가 찾은 한 가지 (그래)"
+    },
+    {
+      "startMs": 17880,
+      "endMs": 18900,
+      "translation": "내가 찾은 한 가지"
+    },
+    {
+      "startMs": 18900,
+      "endMs": 20490,
+      "translation": "오, 넌 절대 날 실망시키지 않아 (그래, 난 한 번도 널 실망시킨 적 없어)"
+    },
+    {
+      "startMs": 20490,
+      "endMs": 21730,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 21730,
+      "endMs": 23320,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 23320,
+      "endMs": 24680,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 24680,
+      "endMs": 25980,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 25980,
+      "endMs": 27610,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 27610,
+      "endMs": 28500,
+      "translation": "일어나, 난 내려가"
+    },
+    {
+      "startMs": 28500,
+      "endMs": 29960,
+      "translation": "먼저 거리를 낚아챘고"
+    },
+    {
+      "startMs": 29960,
+      "endMs": 31630,
+      "translation": "다음엔 차트를 낚아챘지"
+    },
+    {
+      "startMs": 31630,
+      "endMs": 33260,
+      "translation": "처음엔 사람들의 귀를 얻었고"
+    },
+    {
+      "startMs": 33260,
+      "endMs": 34420,
+      "translation": "이젠 그 귀가 내 거야"
+    },
+    {
+      "startMs": 34420,
+      "endMs": 35750,
+      "translation": "래퍼들은 왔다가 사라졌어"
+    },
+    {
+      "startMs": 35750,
+      "endMs": 37050,
+      "translation": "난 처음부터 여기 있었고"
+    },
+    {
+      "startMs": 37050,
+      "endMs": 38890,
+      "translation": "그들이 뭔가를 쌓아 올리는 것도 봤고"
+    },
+    {
+      "startMs": 38890,
+      "endMs": 40270,
+      "translation": "그게 무너지는 것도 지켜봤어"
+    },
+    {
+      "startMs": 40270,
+      "endMs": 42060,
+      "translation": "리본 단 레인지로버가 굴러 들어오는 것도 봤고"
+    },
+    {
+      "startMs": 42060,
+      "endMs": 44770,
+      "translation": "그 차가 압류되고, 되팔리고, 다른 사람이 모는 것도 봤지"
+    },
+    {
+      "startMs": 44770,
+      "endMs": 47760,
+      "translation": "그러니 내가 재장전하면 그는 1위 자리를 지켜"
+    },
+    {
+      "startMs": 47760,
+      "endMs": 49220,
+      "translation": "네가 뜨거울 때 나도 뜨겁고"
+    },
+    {
+      "startMs": 49220,
+      "endMs": 51510,
+      "translation": "네 발이 식을 때 내 발은 지글거려"
+    },
+    {
+      "startMs": 51510,
+      "endMs": 54650,
+      "translation": "뻔하잖아, 아무도 날 못 건드려"
+    },
+    {
+      "startMs": 54650,
+      "endMs": 57840,
+      "translation": "난 평생 이런 놈일 거니까, 이건 만든 이미지가 아니야"
+    },
+    {
+      "startMs": 57840,
+      "endMs": 59180,
+      "translation": "이건 신이 준 거야"
+    },
+    {
+      "startMs": 59180,
+      "endMs": 61950,
+      "translation": "고된 삶에 크리스털 한 모금을 섞은 거지"
+    },
+    {
+      "startMs": 61950,
+      "endMs": 63290,
+      "translation": "가장 꾸준한 놈, 호브"
+    },
+    {
+      "startMs": 63290,
+      "endMs": 64220,
+      "translation": "디스크 한 장에 다 들어갈 만큼"
+    },
+    {
+      "startMs": 64220,
+      "endMs": 66380,
+      "translation": "가장 많은 히트곡을 주는"
+    },
+    {
+      "startMs": 66380,
+      "endMs": 69030,
+      "translation": "난 이 차트에 사는 사람이고, 너흰 다 손님이야"
+    },
+    {
+      "startMs": 69030,
+      "endMs": 71680,
+      "translation": "이게 호브의 전통이지, 랩계의 제프 고든"
+    },
+    {
+      "startMs": 71680,
+      "endMs": 73460,
+      "translation": "폴 포지션을 되찾으러 돌아왔어"
+    },
+    {
+      "startMs": 73460,
+      "endMs": 75500,
+      "translation": "이 몸한테 인사해 (내려가)"
+    },
+    {
+      "startMs": 75500,
+      "endMs": 76670,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 76670,
+      "endMs": 77650,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 77650,
+      "endMs": 79360,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 79360,
+      "endMs": 79960,
+      "translation": "일어나, 난"
+    },
+    {
+      "startMs": 79960,
+      "endMs": 81860,
+      "translation": "난 할아버지를 위해 함께해"
+    },
+    {
+      "startMs": 81860,
+      "endMs": 84360,
+      "translation": "엄마를 데려가 그 자리에 앉혔던 분"
+    },
+    {
+      "startMs": 84360,
+      "endMs": 86120,
+      "translation": "백인들이 우리가 밥 먹는 걸 원치 않던 그 자리에"
+    },
+    {
+      "startMs": 86120,
+      "endMs": 88990,
+      "translation": "여섯 살 어린 나이에 엄마는 연좌 농성으로 체포됐어"
+    },
+    {
+      "startMs": 88990,
+      "endMs": 91830,
+      "translation": "그 피가 흐르니 난 다르게 태어날 수밖에"
+    },
+    {
+      "startMs": 91830,
+      "endMs": 94750,
+      "translation": "이제 우린 지도자를 뽑으러 투표소엔 못 가도"
+    },
+    {
+      "startMs": 94750,
+      "endMs": 97740,
+      "translation": "보석상이나 자동차 대리점엔 갈 수 있지"
+    },
+    {
+      "startMs": 97740,
+      "endMs": 100680,
+      "translation": "맹세컨대, 새 음악을 들어도 와닿질 않아"
+    },
+    {
+      "startMs": 100680,
+      "endMs": 103530,
+      "translation": "인종주의는 아직 살아 있어, 숨기고 있을 뿐"
+    },
+    {
+      "startMs": 103530,
+      "endMs": 106220,
+      "translation": "그래도 저들이 날 클럽에 들이기 싫어하는 건 알아"
+    },
+    {
+      "startMs": 106220,
+      "endMs": 109440,
+      "translation": "샘스 클럽에 들어갈 때조차 신분증을 보여 줘야 했다니까"
+    },
+    {
+      "startMs": 109440,
+      "endMs": 112400,
+      "translation": "더러운 짓도 했고, 손을 씻으려 교회에도 갔어"
+    },
+    {
+      "startMs": 112400,
+      "endMs": 114580,
+      "translation": "맹세컨대 세례를 적어도 서너 번은 받았어"
+    },
+    {
+      "startMs": 114580,
+      "endMs": 117770,
+      "translation": "하지만 우릴 떠받드는 이 땅에서 돈 버는 건 사기꾼들이야"
+    },
+    {
+      "startMs": 117770,
+      "endMs": 120420,
+      "translation": "우리가 구원받으려면 할인 쿠폰 따위론 어림없어"
+    },
+    {
+      "startMs": 120420,
+      "endMs": 123330,
+      "translation": "두건 하나로 머리에 물결이 생기지 않듯이"
+    },
+    {
+      "startMs": 123330,
+      "endMs": 125920,
+      "translation": "내 여자의 아버지가 세상을 떠난 날만큼 슬픈 날은 없었어"
+    },
+    {
+      "startMs": 125920,
+      "endMs": 129110,
+      "translation": "그래서 레이니 아저씨께 약속했지, 따님과 결혼하겠다고"
+    },
+    {
+      "startMs": 129110,
+      "endMs": 131990,
+      "translation": "따님을 그렇게 키워 주셔서 고맙다고 해야겠어요"
+    },
+    {
+      "startMs": 131990,
+      "endMs": 135010,
+      "translation": "내가 그녀에게 사 준 차를 보고 웃으셨을 거란 것도 알아요"
+    },
+    {
+      "startMs": 135010,
+      "endMs": 137830,
+      "translation": "내 차가 박살 났을 땐 하늘에서 눈물을 보내셨겠죠"
+    },
+    {
+      "startMs": 137830,
+      "endMs": 141280,
+      "translation": "그래도 사고가 내 왼쪽 눈에 한 짓을 불평할 순 없어"
+    },
+    {
+      "startMs": 141280,
+      "endMs": 143960,
+      "translation": "사고가 레프트 아이에게 한 짓을 봐"
+    },
+    {
+      "startMs": 143960,
+      "endMs": 146320,
+      "translation": "먼저 알리야, 이제 로미오도 죽어야 하나"
+    },
+    {
+      "startMs": 146320,
+      "endMs": 149220,
+      "translation": "저편에서 천사들이 날 지켜보고 있다는 걸 알아"
+    },
+    {
+      "startMs": 149220,
+      "endMs": 153780,
+      "translation": "진실함에 관해서라면, 적어도 나 자신에게 진실하다면"
+    },
+    {
+      "startMs": 153780,
+      "endMs": 156690,
+      "translation": "내가 찾은 한 가지, 내가 찾은 한 가지"
+    },
+    {
+      "startMs": 156690,
+      "endMs": 158500,
+      "translation": "오, 넌 절대 날 실망시키지 않아"
+    },
+    {
+      "startMs": 158500,
+      "endMs": 159830,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 159830,
+      "endMs": 161460,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 161460,
+      "endMs": 163060,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 163060,
+      "endMs": 164290,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 164290,
+      "endMs": 165720,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 165720,
+      "endMs": 167180,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 167180,
+      "endMs": 169980,
+      "translation": "우리는 모두 저마다의 길 위에 이유가 있어 여기 있다"
+    },
+    {
+      "startMs": 169980,
+      "endMs": 173260,
+      "translation": "자신이 이 셈의 일부라는 걸 아는 데 교과 과정은 필요 없다"
+    },
+    {
+      "startMs": 173260,
+      "endMs": 176330,
+      "translation": "사람들은 내가 헛소리한다고 생각하지만 나는 진지하다"
+    },
+    {
+      "startMs": 176330,
+      "endMs": 179730,
+      "translation": "그래서 나는 내 영혼을 지구에, 온 세상에 드러낸다"
+    },
+    {
+      "startMs": 179730,
+      "endMs": 182540,
+      "translation": "이 어린 소년 소녀들에게 더 나은 세상을 주려고"
+    },
+    {
+      "startMs": 182540,
+      "endMs": 184570,
+      "translation": "나는 그저 또 하나의 개인이 아니다"
+    },
+    {
+      "startMs": 184570,
+      "endMs": 187450,
+      "translation": "내 영혼이 이 일의 일부라서 나는 영적이 된다"
+    },
+    {
+      "startMs": 187450,
+      "endMs": 189390,
+      "translation": "하지만 나의 찬송은 그분에게서 온다"
+    },
+    {
+      "startMs": 189390,
+      "endMs": 191780,
+      "translation": "그러니 가사를 쓰는 건 내가 아니라 그분이다"
+    },
+    {
+      "startMs": 191780,
+      "endMs": 192630,
+      "translation": "나는 기적이 아니다"
+    },
+    {
+      "startMs": 192630,
+      "endMs": 194360,
+      "translation": "나는 하늘이 보낸 악기다"
+    },
+    {
+      "startMs": 194360,
+      "endMs": 198500,
+      "translation": "나의 리듬의 대열은 선율의 음표를 몰아 너의 영혼과 정신으로 향한다"
+    },
+    {
+      "startMs": 198500,
+      "endMs": 200470,
+      "translation": "그래서 나는 악기이자 도구다"
+    },
+    {
+      "startMs": 200470,
+      "endMs": 202280,
+      "translation": "내가 빠져 있는 건 진동이다"
+    },
+    {
+      "startMs": 202280,
+      "endMs": 204110,
+      "translation": "그래, 월세 날까진 돈이 필요하다"
+    },
+    {
+      "startMs": 204110,
+      "endMs": 206470,
+      "translation": "하지만 그게 내게 쿤타 킨테의 심장을 주는 건 아니다"
+    },
+    {
+      "startMs": 206470,
+      "endMs": 209100,
+      "translation": "나는 싱케처럼 우리에게 '자유'를 주려 한다"
+    },
+    {
+      "startMs": 209100,
+      "endMs": 210250,
+      "translation": "나는 멈출 수 없다"
+    },
+    {
+      "startMs": 210250,
+      "endMs": 211140,
+      "translation": "그래서 뜨겁다"
+    },
+    {
+      "startMs": 211140,
+      "endMs": 213950,
+      "translation": "결의, 헌신, 동기"
+    },
+    {
+      "startMs": 213950,
+      "endMs": 216470,
+      "translation": "나는 나의 수많은 영감에 대해 너에게 말하고 있다"
+    },
+    {
+      "startMs": 216470,
+      "endMs": 218670,
+      "translation": "너도 나 자신도 실망시킬 수 없다고 말할 때"
+    },
+    {
+      "startMs": 218670,
+      "endMs": 221440,
+      "translation": "내가 가장 높은 절벽, 가장 높은 바위 끝에 서 있는데"
+    },
+    {
+      "startMs": 221440,
+      "endMs": 224870,
+      "translation": "네가 미끄러져 떨어지다 내 손을 붙잡고 매달린다면"
+    },
+    {
+      "startMs": 224870,
+      "endMs": 227770,
+      "translation": "나는 절대, 절대 너를 놓지 않는다"
+    },
+    {
+      "startMs": 227770,
+      "endMs": 229580,
+      "translation": "그리고 이 말들이 발견될 때"
+    },
+    {
+      "startMs": 229580,
+      "endMs": 231140,
+      "translation": "알려지게 하라, 신의 필적이"
+    },
+    {
+      "startMs": 231140,
+      "endMs": 233430,
+      "translation": "사랑이라는 언어로 서명되었음을"
+    },
+    {
+      "startMs": 233430,
+      "endMs": 235880,
+      "translation": "그래서 내 숨결은 듣지 못하는 이에게도 느껴지고"
+    },
+    {
+      "startMs": 235880,
+      "endMs": 239060,
+      "translation": "내 말은 보지 못하는 이의 귀에 들리고 머문다"
+    },
+    {
+      "startMs": 239060,
+      "endMs": 241520,
+      "translation": "나 역시 색으로, 그리고 운율로 꿈꾼다"
+    },
+    {
+      "startMs": 241520,
+      "endMs": 244270,
+      "translation": "그러니 꽉 찬 집에서도 나는 하나뿐인 존재인가 보다"
+    },
+    {
+      "startMs": 244270,
+      "endMs": 247520,
+      "translation": "내가 마음을, 영혼을, 입을 열 때마다"
+    },
+    {
+      "startMs": 247520,
+      "endMs": 251060,
+      "translation": "신의 손길이 비처럼 쏟아지니까"
+    },
+    {
+      "startMs": 251060,
+      "endMs": 252900,
+      "translation": "저들을 교회로 데려가라"
+    },
+    {
+      "startMs": 252900,
+      "endMs": 257770,
+      "translation": "진실함에 관해서라면, 적어도 나 자신에게 진실하다면"
+    },
+    {
+      "startMs": 257770,
+      "endMs": 260330,
+      "translation": "내가 찾은 한 가지, 내가 찾은 한 가지"
+    },
+    {
+      "startMs": 260330,
+      "endMs": 261960,
+      "translation": "오, 넌 절대 날 실망시키지 않아"
+    },
+    {
+      "startMs": 261960,
+      "endMs": 263360,
+      "translation": "일어나, 난 (내려가)"
+    },
+    {
+      "startMs": 263360,
+      "endMs": 264610,
+      "translation": "일어나, 난"
+    },
+    {
+      "startMs": 264610,
+      "endMs": 266200,
+      "translation": "일어나, 난"
+    },
+    {
+      "startMs": 266200,
+      "endMs": 267630,
+      "translation": "일어나, 난"
+    },
+    {
+      "startMs": 267630,
+      "endMs": 269120,
+      "translation": "일어나, 난"
+    },
+    {
+      "startMs": 269120,
+      "endMs": 270070,
+      "translation": "일어나, 난 내려가"
+    },
+    {
+      "startMs": 270070,
+      "endMs": 271720,
+      "translation": "이렇게 오래 뜨거운 놈 또 누가 있어?"
+    },
+    {
+      "startMs": 271720,
+      "endMs": 273440,
+      "translation": "(오, 그래, 우린 아직 안 끝났어)"
+    },
+    {
+      "startMs": 273440,
+      "endMs": 276040,
+      "translation": "맨바닥에서 시작했는데 이렇게 강해졌지 (로커펠라가 왔다)"
+    },
+    {
+      "startMs": 276040,
+      "endMs": 278530,
+      "translation": "조약돌 하나로 로커펠라를 세웠고, 널 만나기 전엔 돌을 팔았어"
+    },
+    {
+      "startMs": 278530,
+      "endMs": 281490,
+      "translation": "자전거를 굴렸고, 조카들한테도 자전거를 사 줬지, 특별한 애들이니까"
+    },
+    {
+      "startMs": 281490,
+      "endMs": 282800,
+      "translation": "그 사람한테 내가 무너진다고 전해 보든가"
+    },
+    {
+      "startMs": 282800,
+      "endMs": 284590,
+      "translation": "그런데 누가 그를 받아 줬나 봐, 왜냐면"
+    },
+    {
+      "startMs": 284590,
+      "endMs": 287360,
+      "translation": "4쿼터만 되면 난 마이클 조던처럼 해치우거든"
+    },
+    {
+      "startMs": 287360,
+      "endMs": 290370,
+      "translation": "1위 앨범? 내가 몇 장 있지? 네 장쯤"
+    },
+    {
+      "startMs": 290370,
+      "endMs": 293130,
+      "translation": "더 나올 거야, 여덟 번째 불가사의가 오고 있어"
+    },
+    {
+      "startMs": 293130,
+      "endMs": 294440,
+      "translation": "길을 비켜, 난 계속 여기 있을 거야"
+    },
+    {
+      "startMs": 294440,
+      "endMs": 297140,
+      "translation": "수다는 집어치워, 이러쿵저러쿵 제이를 디스하는 거"
+    },
+    {
+      "startMs": 297140,
+      "endMs": 299230,
+      "translation": "제이를 디스하면 최루액 맛을 볼 거야"
+    },
+    {
+      "startMs": 299230,
+      "endMs": 302470,
+      "translation": "내가 가사를 뱉기 시작하면 다들 아주 경건해지지"
+    },
+    {
+      "startMs": 302470,
+      "endMs": 304380,
+      "translation": "성모송 여섯 번, \"아버지, 우리를 용서하소서\""
+    },
+    {
+      "startMs": 304380,
+      "endMs": 308200,
+      "translation": "젊은 대주교, 너희들의 교황 요한 바오로"
+    },
+    {
+      "startMs": 308200,
+      "endMs": 310440,
+      "translation": "너희가 다 지가를 따르는 걸 보면"
+    },
+    {
+      "startMs": 310440,
+      "endMs": 312710,
+      "translation": "호브는 살아 있는 전설이야, 이유를 말해 줄게"
+    },
+    {
+      "startMs": 312710,
+      "endMs": 316270,
+      "translation": "모두 호브가 되고 싶어 하는데 호브는 아직 살아 있거든"
+    },
+    {
+      "startMs": 316270,
+      "endMs": 324000,
+      "translation": "내려가, 내려가, 내려가, 내려가, 내려가"
+    }
+  ]
+}

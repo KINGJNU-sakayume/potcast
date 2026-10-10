@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 8947903,
+    "durationMs": 199000
+  },
+  "segments": [
+    {
+      "startMs": 80,
+      "endMs": 9830,
+      "translation": "(아, 아, 아, 아)"
+    },
+    {
+      "startMs": 9830,
+      "endMs": 16470,
+      "translation": "라-라, 라-라-라, 라-라"
+    },
+    {
+      "startMs": 16470,
+      "endMs": 19310,
+      "translation": "라-라, 라-라-라, 라-라"
+    },
+    {
+      "startMs": 19310,
+      "endMs": 21370,
+      "translation": "그래"
+    },
+    {
+      "startMs": 21370,
+      "endMs": 24280,
+      "translation": "파티에서 그 여자를 만났어"
+    },
+    {
+      "startMs": 24280,
+      "endMs": 27510,
+      "translation": "빨간 페라리를 몰더라"
+    },
+    {
+      "startMs": 27510,
+      "endMs": 30070,
+      "translation": "우리가 짓궂은 짓을 하러 갈 때"
+    },
+    {
+      "startMs": 30070,
+      "endMs": 33600,
+      "translation": "쓰러진 사람들을 넘어가는 것도 신경 안 썼지"
+    },
+    {
+      "startMs": 33600,
+      "endMs": 36750,
+      "translation": "누구는 말하겠지, 누구는 말하겠지"
+    },
+    {
+      "startMs": 36750,
+      "endMs": 40240,
+      "translation": "내가 새 종교를 찾았다고"
+    },
+    {
+      "startMs": 40240,
+      "endMs": 43250,
+      "translation": "누구는 말하겠지, 누구는 말하겠지"
+    },
+    {
+      "startMs": 43250,
+      "endMs": 46170,
+      "translation": "내가 나쁜 결정을 내렸다고"
+    },
+    {
+      "startMs": 46170,
+      "endMs": 49670,
+      "translation": "내 마음을 가져도 된다고 했어"
+    },
+    {
+      "startMs": 49670,
+      "endMs": 52050,
+      "translation": "휴거가 시작될 때 내가 착하게 굴고 있다면"
+    },
+    {
+      "startMs": 52050,
+      "endMs": 53970,
+      "translation": "네가 날 넘어오게 했어"
+    },
+    {
+      "startMs": 53970,
+      "endMs": 58770,
+      "translation": "도저히 거부할 수가 없어 (라-라-라, 라-라)"
+    },
+    {
+      "startMs": 58770,
+      "endMs": 60480,
+      "translation": "날 조종해"
+    },
+    {
+      "startMs": 60480,
+      "endMs": 65030,
+      "translation": "점점 그럴듯하게 들려 (라-라-라, 라-라)"
+    },
+    {
+      "startMs": 65030,
+      "endMs": 67430,
+      "translation": "내게 구원받을 영혼이 있다고 생각한다면"
+    },
+    {
+      "startMs": 67430,
+      "endMs": 69080,
+      "translation": "나도 믿음이 조금 생길지 몰라"
+    },
+    {
+      "startMs": 69080,
+      "endMs": 71870,
+      "translation": "한번 타 보자"
+    },
+    {
+      "startMs": 71870,
+      "endMs": 73520,
+      "translation": "네가 날 넘어오게 했어"
+    },
+    {
+      "startMs": 73520,
+      "endMs": 76280,
+      "translation": "네 사랑이 사이비 종교라면, 난 거기 들어갈래"
+    },
+    {
+      "startMs": 76280,
+      "endMs": 79020,
+      "translation": "날 가입시켜 줘"
+    },
+    {
+      "startMs": 79020,
+      "endMs": 80760,
+      "translation": "미처 못 봤어"
+    },
+    {
+      "startMs": 80760,
+      "endMs": 82300,
+      "translation": "도망쳐 봐야 소용없어"
+    },
+    {
+      "startMs": 82300,
+      "endMs": 85770,
+      "translation": "머리를 다 자르고 옷도 바꿀 거야"
+    },
+    {
+      "startMs": 85770,
+      "endMs": 87230,
+      "translation": "엄마한테 전화도 안 했어"
+    },
+    {
+      "startMs": 87230,
+      "endMs": 88860,
+      "translation": "사랑을 위해선 고통받아야 해"
+    },
+    {
+      "startMs": 88860,
+      "endMs": 92660,
+      "translation": "시키는 대로 하는 데 꽤 익숙해지고 있어"
+    },
+    {
+      "startMs": 92660,
+      "endMs": 95910,
+      "translation": "누구는 말하겠지, 누구는 말하겠지"
+    },
+    {
+      "startMs": 95910,
+      "endMs": 99490,
+      "translation": "내가 새 종교를 찾았다고"
+    },
+    {
+      "startMs": 99490,
+      "endMs": 102430,
+      "translation": "누구는 말하겠지, 누구는 말하겠지"
+    },
+    {
+      "startMs": 102430,
+      "endMs": 105520,
+      "translation": "내가 나쁜 결정을 내렸다고"
+    },
+    {
+      "startMs": 105520,
+      "endMs": 108770,
+      "translation": "내 마음을 가져도 된다고 했어 (내 마음)"
+    },
+    {
+      "startMs": 108770,
+      "endMs": 111420,
+      "translation": "휴거가 시작될 때 내가 착하게 굴고 있다면"
+    },
+    {
+      "startMs": 111420,
+      "endMs": 113230,
+      "translation": "네가 날 넘어오게 했어"
+    },
+    {
+      "startMs": 113230,
+      "endMs": 117840,
+      "translation": "도저히 거부할 수가 없어 (라-라-라, 라-라)"
+    },
+    {
+      "startMs": 117840,
+      "endMs": 119730,
+      "translation": "날 조종해"
+    },
+    {
+      "startMs": 119730,
+      "endMs": 124290,
+      "translation": "점점 그럴듯하게 들려 (라-라-라, 라-라)"
+    },
+    {
+      "startMs": 124290,
+      "endMs": 126690,
+      "translation": "내게 구원받을 영혼이 있다고 생각한다면"
+    },
+    {
+      "startMs": 126690,
+      "endMs": 128190,
+      "translation": "나도 믿음이 조금 생길지 몰라"
+    },
+    {
+      "startMs": 128190,
+      "endMs": 131060,
+      "translation": "한번 타 보자"
+    },
+    {
+      "startMs": 131060,
+      "endMs": 132760,
+      "translation": "네가 날 넘어오게 했어"
+    },
+    {
+      "startMs": 132760,
+      "endMs": 135440,
+      "translation": "네 사랑이 사이비 종교라면, 난 거기 들어갈래"
+    },
+    {
+      "startMs": 135440,
+      "endMs": 137250,
+      "translation": "날 가입시켜 줘"
+    },
+    {
+      "startMs": 137250,
+      "endMs": 143650,
+      "translation": "그런데 파티가 끝났다는 걸 알았지"
+    },
+    {
+      "startMs": 143650,
+      "endMs": 150720,
+      "translation": "그 여자가 내 술을 빼앗으려 했을 때"
+    },
+    {
+      "startMs": 150720,
+      "endMs": 152770,
+      "translation": "네가 날 넘어오게 했어"
+    },
+    {
+      "startMs": 152770,
+      "endMs": 157380,
+      "translation": "도저히 거부할 수가 없어 (라-라-라, 라-라)"
+    },
+    {
+      "startMs": 157380,
+      "endMs": 159200,
+      "translation": "날 조종해"
+    },
+    {
+      "startMs": 159200,
+      "endMs": 163740,
+      "translation": "점점 그럴듯하게 들려 (라-라-라, 라-라, 날 가입시켜 줘)"
+    },
+    {
+      "startMs": 163740,
+      "endMs": 166000,
+      "translation": "내게 구원받을 영혼이 있다고 생각한다면"
+    },
+    {
+      "startMs": 166000,
+      "endMs": 167770,
+      "translation": "나도 믿음이 조금 생길지 몰라"
+    },
+    {
+      "startMs": 167770,
+      "endMs": 170460,
+      "translation": "한번 타 보자 (타 보자)"
+    },
+    {
+      "startMs": 170460,
+      "endMs": 172170,
+      "translation": "네가 날 넘어오게 했어"
+    },
+    {
+      "startMs": 172170,
+      "endMs": 174870,
+      "translation": "네 사랑이 사이비 종교라면, 난 거기 들어갈래"
+    },
+    {
+      "startMs": 174870,
+      "endMs": 180630,
+      "translation": "날 가입시켜 줘"
+    },
+    {
+      "startMs": 180630,
+      "endMs": 187300,
+      "translation": "라-라, 라-라-라, 라-라"
+    },
+    {
+      "startMs": 187300,
+      "endMs": 199000,
+      "translation": "라-라, 라-라-라, 라"
+    }
+  ]
+}

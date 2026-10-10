@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 585143,
+    "durationMs": 41000
+  },
+  "segments": [
+    {
+      "startMs": 340,
+      "endMs": 940,
+      "translation": "오, 호호호!"
+    },
+    {
+      "startMs": 940,
+      "endMs": 2290,
+      "translation": "내가 볼 줄 알았"
+    },
+    {
+      "startMs": 2290,
+      "endMs": 4100,
+      "translation": "너를 다시 볼 줄 알았다니까!"
+    },
+    {
+      "startMs": 4100,
+      "endMs": 5550,
+      "translation": "너를 다시 볼 줄 알았어"
+    },
+    {
+      "startMs": 5550,
+      "endMs": 7740,
+      "translation": "그 망할 책가방은 어디 있어?"
+    },
+    {
+      "startMs": 7740,
+      "endMs": 9010,
+      "translation": "맨날 그 조그만 책가방을 메고 다니지"
+    },
+    {
+      "startMs": 9010,
+      "endMs": 10230,
+      "translation": "아무도 그딴 거 보고 싶어 하지 않아"
+    },
+    {
+      "startMs": 10230,
+      "endMs": 13160,
+      "translation": "이 4학년짜리야, 엉덩이 붙이고 앉아!"
+    },
+    {
+      "startMs": 13160,
+      "endMs": 15950,
+      "translation": "뭐 다른 할 일이라도 있는 것처럼 또 해 보겠다고"
+    },
+    {
+      "startMs": 15950,
+      "endMs": 17550,
+      "translation": "넌 다른 할 일 같은 거 없잖아!"
+    },
+    {
+      "startMs": 17550,
+      "endMs": 18710,
+      "translation": "넌 인생에서 아무것도 안 하고 있어"
+    },
+    {
+      "startMs": 18710,
+      "endMs": 21560,
+      "translation": "인생에서 아무것도!"
+    },
+    {
+      "startMs": 21560,
+      "endMs": 22800,
+      "translation": "넌 이게 뭐라고 생각해?"
+    },
+    {
+      "startMs": 22800,
+      "endMs": 24790,
+      "translation": "내가 말할 땐 날 똑바로 봐!"
+    },
+    {
+      "startMs": 24790,
+      "endMs": 26960,
+      "translation": "이게 쉬운 줄 알지, 안 그래?"
+    },
+    {
+      "startMs": 26960,
+      "endMs": 28480,
+      "translation": "이게 약속된 거라고 생각하지!"
+    },
+    {
+      "startMs": 28480,
+      "endMs": 30270,
+      "translation": "천만에, 너한테 약속된 건 아무것도 없어!"
+    },
+    {
+      "startMs": 30270,
+      "endMs": 31820,
+      "translation": "내 얼굴을 봐, 이게 약속하는 얼굴로 보여?"
+    },
+    {
+      "startMs": 31820,
+      "endMs": 34130,
+      "translation": "내가 너한테 뭘 약속한 것처럼 보이냐고?"
+    },
+    {
+      "startMs": 34130,
+      "endMs": 37170,
+      "translation": "카녜! 너 내 수업 시간에 코 골아?"
+    },
+    {
+      "startMs": 37170,
+      "endMs": 41000,
+      "translation": "일어나요, 웨스트 군! 일어나요, 웨스트 군! 웨스트 ㄱ…"
+    }
+  ]
+}

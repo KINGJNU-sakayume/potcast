@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 788449,
+    "durationMs": 361000
+  },
+  "segments": [
+    {
+      "startMs": 10700,
+      "endMs": 18390,
+      "translation": "꿈속에서 또 거의 죽을 뻔했던 것 같아 (베이비, 거의 죽을 뻔했어)"
+    },
+    {
+      "startMs": 18390,
+      "endMs": 25660,
+      "translation": "살려고 발버둥 쳤어, 또 숨을 쉴 수가 없었어"
+    },
+    {
+      "startMs": 25660,
+      "endMs": 31180,
+      "translation": "빠져들고 있어 (오)"
+    },
+    {
+      "startMs": 31180,
+      "endMs": 34380,
+      "translation": "♪"
+    },
+    {
+      "startMs": 34380,
+      "endMs": 42970,
+      "translation": "너 없인 아무것도 순탄치 않아 (빠져들어)"
+    },
+    {
+      "startMs": 42970,
+      "endMs": 47720,
+      "translation": "내 마음은 네 것이니까"
+    },
+    {
+      "startMs": 47720,
+      "endMs": 52220,
+      "translation": "널 위해 모든 걸 걸게"
+    },
+    {
+      "startMs": 52220,
+      "endMs": 56470,
+      "translation": "그냥 떠나지 않을 거야"
+    },
+    {
+      "startMs": 56470,
+      "endMs": 60960,
+      "translation": "이번엔 절대 떠나지 않을 거야"
+    },
+    {
+      "startMs": 60960,
+      "endMs": 65340,
+      "translation": "너와 아이들을 함께 갖고 싶어"
+    },
+    {
+      "startMs": 65340,
+      "endMs": 69560,
+      "translation": "피임 같은 건 필요 없을 거야"
+    },
+    {
+      "startMs": 69560,
+      "endMs": 74010,
+      "translation": "내 곁에 있던 네 몸은"
+    },
+    {
+      "startMs": 74010,
+      "endMs": 78660,
+      "translation": "이제 기억일 뿐이야"
+    },
+    {
+      "startMs": 78660,
+      "endMs": 87380,
+      "translation": "너무 깊이 빠져들고 있어, 오"
+    },
+    {
+      "startMs": 87380,
+      "endMs": 96060,
+      "translation": "너 없인 도저히 잠들 수가 없어"
+    },
+    {
+      "startMs": 96060,
+      "endMs": 103050,
+      "translation": "불면을 덜어 줘, 오"
+    },
+    {
+      "startMs": 103050,
+      "endMs": 110510,
+      "translation": "내게 말해 줘, 너 없인 숨을 쉴 수가 없어"
+    },
+    {
+      "startMs": 110510,
+      "endMs": 149330,
+      "translation": "♪"
+    },
+    {
+      "startMs": 149330,
+      "endMs": 151640,
+      "translation": "내 가장 어두운 시간들"
+    },
+    {
+      "startMs": 151640,
+      "endMs": 155910,
+      "translation": "걸, 이 붐비는 방 안에서 너무 외로웠어"
+    },
+    {
+      "startMs": 155910,
+      "endMs": 160680,
+      "translation": "플로어의 다른 여자들이 네 생각을 흐트러뜨렸어"
+    },
+    {
+      "startMs": 160680,
+      "endMs": 166640,
+      "translation": "예전의 나로, 나로 돌아가 버렸어"
+    },
+    {
+      "startMs": 166640,
+      "endMs": 169390,
+      "translation": "스스로 잠을 청했어"
+    },
+    {
+      "startMs": 169390,
+      "endMs": 173930,
+      "translation": "꿈속에서라도 너에게 더 가까이 가려고"
+    },
+    {
+      "startMs": 173930,
+      "endMs": 178280,
+      "translation": "네가 곁에 없으면 깨어나고 싶지 않았어"
+    },
+    {
+      "startMs": 178280,
+      "endMs": 184210,
+      "translation": "그저 너에게 전화해서 말하고 싶었어, 말하고 싶었어"
+    },
+    {
+      "startMs": 184210,
+      "endMs": 186860,
+      "translation": "오, 베이비"
+    },
+    {
+      "startMs": 186860,
+      "endMs": 191250,
+      "translation": "가장 필요할 때 넌 어디 있어?"
+    },
+    {
+      "startMs": 191250,
+      "endMs": 195760,
+      "translation": "널 꼭 안을 수만 있다면 전부 줄 텐데"
+    },
+    {
+      "startMs": 195760,
+      "endMs": 202020,
+      "translation": "네 마음을, 네 마음을 부숴서 미안해"
+    },
+    {
+      "startMs": 202020,
+      "endMs": 204550,
+      "translation": "한 번도 약속을 지킨 적이 없었지"
+    },
+    {
+      "startMs": 204550,
+      "endMs": 209030,
+      "translation": "현실을 마주하지 않으려고 도망치고 있었어"
+    },
+    {
+      "startMs": 209030,
+      "endMs": 213320,
+      "translation": "환상 속에 살면서 시간을 전부 낭비했어"
+    },
+    {
+      "startMs": 213320,
+      "endMs": 219740,
+      "translation": "돈을 써서 메우려 했어, 메우려 했어"
+    },
+    {
+      "startMs": 219740,
+      "endMs": 221900,
+      "translation": "널 원하니까, 베이비"
+    },
+    {
+      "startMs": 221900,
+      "endMs": 226600,
+      "translation": "네 안에 있을 때면 천국에 사는 것 같을 거야"
+    },
+    {
+      "startMs": 226600,
+      "endMs": 231110,
+      "translation": "네 곁에서 눈뜨는 건 분명 축복이었어"
+    },
+    {
+      "startMs": 231110,
+      "endMs": 237220,
+      "translation": "다시는, 다시는 널 실망시키지 않을게"
+    },
+    {
+      "startMs": 237220,
+      "endMs": 239630,
+      "translation": "오, 베이비"
+    },
+    {
+      "startMs": 239630,
+      "endMs": 244290,
+      "translation": "가장 필요할 때 넌 어디 있어?"
+    },
+    {
+      "startMs": 244290,
+      "endMs": 248580,
+      "translation": "널 꼭 안을 수만 있다면 전부 줄 텐데"
+    },
+    {
+      "startMs": 248580,
+      "endMs": 254570,
+      "translation": "네 마음을, 네 마음을 부숴서 미안해"
+    },
+    {
+      "startMs": 254570,
+      "endMs": 257350,
+      "translation": "말했잖아, 베이비"
+    },
+    {
+      "startMs": 257350,
+      "endMs": 261800,
+      "translation": "전보다 더 잘해 줄게"
+    },
+    {
+      "startMs": 261800,
+      "endMs": 266240,
+      "translation": "널 보내 줄 때도 네 곁을 지킬게"
+    },
+    {
+      "startMs": 266240,
+      "endMs": 274220,
+      "translation": "이번엔 네 마음을, 네 마음을 부수지 않을게, 예"
+    },
+    {
+      "startMs": 274220,
+      "endMs": 283340,
+      "translation": "♪"
+    },
+    {
+      "startMs": 283340,
+      "endMs": 287660,
+      "translation": "다 내 잘못이란 거 알아"
+    },
+    {
+      "startMs": 287660,
+      "endMs": 292190,
+      "translation": "네가 경계를 풀게 만들었지"
+    },
+    {
+      "startMs": 292190,
+      "endMs": 296380,
+      "translation": "널 빠져들게 해 놓고"
+    },
+    {
+      "startMs": 296380,
+      "endMs": 299110,
+      "translation": "넌 나와 맞지 않는다고 말했어"
+    },
+    {
+      "startMs": 299110,
+      "endMs": 303390,
+      "translation": "너한테 거짓말했어, 거짓말했어, 거짓말했어 (너한테)"
+    },
+    {
+      "startMs": 303390,
+      "endMs": 307860,
+      "translation": "진실은 숨길 수 없어, 널 두고 그 여자 곁에 있었어"
+    },
+    {
+      "startMs": 307860,
+      "endMs": 311940,
+      "translation": "너도 후회할 일을 했지만, 그래도 난 네 편이야"
+    },
+    {
+      "startMs": 311940,
+      "endMs": 315890,
+      "translation": "이 집은 집이 아니니까"
+    },
+    {
+      "startMs": 315890,
+      "endMs": 319100,
+      "translation": "내 사랑이 없으면"
+    },
+    {
+      "startMs": 319100,
+      "endMs": 323630,
+      "translation": "가장 필요할 때 넌 어디 있어?"
+    },
+    {
+      "startMs": 323630,
+      "endMs": 327900,
+      "translation": "널 꼭 안으려고 전부 줬어"
+    },
+    {
+      "startMs": 327900,
+      "endMs": 333760,
+      "translation": "네 마음을, 네 마음을 부숴서 미안해"
+    },
+    {
+      "startMs": 333760,
+      "endMs": 336790,
+      "translation": "그리고 말했잖아, 베이비"
+    },
+    {
+      "startMs": 336790,
+      "endMs": 341270,
+      "translation": "전보다 더 잘해 줄게"
+    },
+    {
+      "startMs": 341270,
+      "endMs": 345490,
+      "translation": "네 곁을 지키고 놓지 않을게"
+    },
+    {
+      "startMs": 345490,
+      "endMs": 361000,
+      "translation": "이번엔 네 마음을, 네 마음을 부수지 않을게, 절대"
+    }
+  ]
+}

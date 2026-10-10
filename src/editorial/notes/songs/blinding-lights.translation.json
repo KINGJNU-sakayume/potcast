@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 390,
+    "durationMs": 200000
+  },
+  "segments": [
+    {
+      "startMs": 13130,
+      "endMs": 16560,
+      "translation": "예"
+    },
+    {
+      "startMs": 16560,
+      "endMs": 27160,
+      "translation": "♪"
+    },
+    {
+      "startMs": 27160,
+      "endMs": 29960,
+      "translation": "계속 전화하려고 했어"
+    },
+    {
+      "startMs": 29960,
+      "endMs": 32710,
+      "translation": "혼자 지낸 지 너무 오래됐어"
+    },
+    {
+      "startMs": 32710,
+      "endMs": 38290,
+      "translation": "어쩌면 네가 사랑하는 법을 알려 줄지도 몰라, 어쩌면"
+    },
+    {
+      "startMs": 38290,
+      "endMs": 41230,
+      "translation": "금단 증상을 겪고 있어"
+    },
+    {
+      "startMs": 41230,
+      "endMs": 44120,
+      "translation": "넌 많은 걸 할 필요도 없어"
+    },
+    {
+      "startMs": 44120,
+      "endMs": 49570,
+      "translation": "손길 한 번이면 날 달아오르게 할 수 있어, 베이비"
+    },
+    {
+      "startMs": 49570,
+      "endMs": 50620,
+      "translation": "주위를 둘러보면"
+    },
+    {
+      "startMs": 50620,
+      "endMs": 53530,
+      "translation": "신 시티는 차갑고 텅 비어 있어 (오)"
+    },
+    {
+      "startMs": 53530,
+      "endMs": 56240,
+      "translation": "날 판단할 사람 하나 없어 (오)"
+    },
+    {
+      "startMs": 56240,
+      "endMs": 60730,
+      "translation": "네가 없으면 앞이 잘 안 보여"
+    },
+    {
+      "startMs": 60730,
+      "endMs": 66690,
+      "translation": "말했지, \"우, 불빛에 눈이 멀었어"
+    },
+    {
+      "startMs": 66690,
+      "endMs": 71790,
+      "translation": "아니, 네 손길을 느끼기 전엔 잠들 수 없어\""
+    },
+    {
+      "startMs": 71790,
+      "endMs": 77890,
+      "translation": "말했지, \"우, 밤 속에 빠져 허우적대고 있어"
+    },
+    {
+      "startMs": 77890,
+      "endMs": 82160,
+      "translation": "오, 이럴 땐 믿을 사람은 너뿐이야\""
+    },
+    {
+      "startMs": 82160,
+      "endMs": 85440,
+      "translation": "(헤이, 헤이, 헤이)"
+    },
+    {
+      "startMs": 85440,
+      "endMs": 94360,
+      "translation": "♪"
+    },
+    {
+      "startMs": 94360,
+      "endMs": 97030,
+      "translation": "시간이 얼마 없어"
+    },
+    {
+      "startMs": 97030,
+      "endMs": 100040,
+      "translation": "해가 하늘을 밝히는 게 보이거든"
+    },
+    {
+      "startMs": 100040,
+      "endMs": 106640,
+      "translation": "그래서 전속력으로 길에 나섰어, 베이비, 오"
+    },
+    {
+      "startMs": 106640,
+      "endMs": 109520,
+      "translation": "도시는 차갑고 텅 비어 있어 (오)"
+    },
+    {
+      "startMs": 109520,
+      "endMs": 112470,
+      "translation": "날 판단할 사람 하나 없어 (오)"
+    },
+    {
+      "startMs": 112470,
+      "endMs": 116980,
+      "translation": "네가 없으면 앞이 잘 안 보여"
+    },
+    {
+      "startMs": 116980,
+      "endMs": 122700,
+      "translation": "말했지, \"우, 불빛에 눈이 멀었어"
+    },
+    {
+      "startMs": 122700,
+      "endMs": 127940,
+      "translation": "아니, 네 손길을 느끼기 전엔 잠들 수 없어\""
+    },
+    {
+      "startMs": 127940,
+      "endMs": 134000,
+      "translation": "말했지, \"우, 밤 속에 빠져 허우적대고 있어"
+    },
+    {
+      "startMs": 134000,
+      "endMs": 139170,
+      "translation": "오, 이럴 땐 믿을 사람은 너뿐이야\""
+    },
+    {
+      "startMs": 139170,
+      "endMs": 142160,
+      "translation": "그냥 지나가다 알려 주려고 들른 거야 (알려 주려고)"
+    },
+    {
+      "startMs": 142160,
+      "endMs": 145370,
+      "translation": "전화로는 도저히 말할 수 없었어 (전화로는)"
+    },
+    {
+      "startMs": 145370,
+      "endMs": 150270,
+      "translation": "이번엔 절대 널 놓지 않을 거야 (우)"
+    },
+    {
+      "startMs": 150270,
+      "endMs": 156330,
+      "translation": "말했지, \"우, 불빛에 눈이 멀었어"
+    },
+    {
+      "startMs": 156330,
+      "endMs": 160500,
+      "translation": "아니, 네 손길을 느끼기 전엔 잠들 수 없어\""
+    },
+    {
+      "startMs": 160500,
+      "endMs": 163980,
+      "translation": "(헤이, 헤이, 헤이)"
+    },
+    {
+      "startMs": 163980,
+      "endMs": 171730,
+      "translation": "♪"
+    },
+    {
+      "startMs": 171730,
+      "endMs": 175200,
+      "translation": "(헤이, 헤이, 헤이)"
+    },
+    {
+      "startMs": 175200,
+      "endMs": 183900,
+      "translation": "♪"
+    },
+    {
+      "startMs": 183900,
+      "endMs": 190120,
+      "translation": "말했지, \"우, 불빛에 눈이 멀었어"
+    },
+    {
+      "startMs": 190120,
+      "endMs": 200000,
+      "translation": "아니, 네 손길을 느끼기 전엔 잠들 수 없어\""
+    }
+  ]
+}

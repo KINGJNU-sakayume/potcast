@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 26489398,
+    "durationMs": 208853
+  },
+  "segments": [
+    {
+      "startMs": 820,
+      "endMs": 4320,
+      "translation": "딱하게 태어나"
+    },
+    {
+      "startMs": 4320,
+      "endMs": 7270,
+      "translation": "더럽혀지는 그 아이를"
+    },
+    {
+      "startMs": 7270,
+      "endMs": 12460,
+      "translation": "당신은 아름답다고 했지"
+    },
+    {
+      "startMs": 12460,
+      "endMs": 16040,
+      "translation": "곁에서 바라보는"
+    },
+    {
+      "startMs": 16040,
+      "endMs": 18760,
+      "translation": "내 눈에는"
+    },
+    {
+      "startMs": 18760,
+      "endMs": 24210,
+      "translation": "너무나 추하게 비쳤어"
+    },
+    {
+      "startMs": 24210,
+      "endMs": 27860,
+      "translation": "숨 막히는 온실의"
+    },
+    {
+      "startMs": 27860,
+      "endMs": 30480,
+      "translation": "천진한 심심풀이에"
+    },
+    {
+      "startMs": 30480,
+      "endMs": 35960,
+      "translation": "휘둘리는 연약한 아이"
+    },
+    {
+      "startMs": 35960,
+      "endMs": 39660,
+      "translation": "주체 못 할 만큼의 행복"
+    },
+    {
+      "startMs": 39660,
+      "endMs": 42330,
+      "translation": "그때그때 골라 쓰는 도덕"
+    },
+    {
+      "startMs": 42330,
+      "endMs": 48040,
+      "translation": "동정을 살며시 감췄어"
+    },
+    {
+      "startMs": 48040,
+      "endMs": 50600,
+      "translation": "머리를 쓰다듬어 줘"
+    },
+    {
+      "startMs": 50600,
+      "endMs": 54080,
+      "translation": "그저 착한 아이라고 말해 줘"
+    },
+    {
+      "startMs": 54080,
+      "endMs": 56940,
+      "translation": "그 아이에게 보내던"
+    },
+    {
+      "startMs": 56940,
+      "endMs": 66100,
+      "translation": "그 눈으로 바라봐 줘"
+    },
+    {
+      "startMs": 66100,
+      "endMs": 71940,
+      "translation": "당신처럼"
+    },
+    {
+      "startMs": 71940,
+      "endMs": 77880,
+      "translation": "다정하게"
+    },
+    {
+      "startMs": 77880,
+      "endMs": 81810,
+      "translation": "살 수 있었다면"
+    },
+    {
+      "startMs": 81810,
+      "endMs": 88760,
+      "translation": "좋았을 텐데"
+    },
+    {
+      "startMs": 88760,
+      "endMs": 92150,
+      "translation": "주변에선 사랑받지 못하고"
+    },
+    {
+      "startMs": 92150,
+      "endMs": 95060,
+      "translation": "비웃음당하는 모습을"
+    },
+    {
+      "startMs": 95060,
+      "endMs": 100320,
+      "translation": "창 너머로 안도하며 보고 있었어"
+    },
+    {
+      "startMs": 100320,
+      "endMs": 103850,
+      "translation": "도둑잡기에서 밀려나"
+    },
+    {
+      "startMs": 103850,
+      "endMs": 106730,
+      "translation": "혼자 남겨지는 게"
+    },
+    {
+      "startMs": 106730,
+      "endMs": 112620,
+      "translation": "내가 아니라서 다행이었어"
+    },
+    {
+      "startMs": 112620,
+      "endMs": 115040,
+      "translation": "세게 때려 줘"
+    },
+    {
+      "startMs": 115040,
+      "endMs": 118400,
+      "translation": "나쁜 아이라고 꾸짖어 줘"
+    },
+    {
+      "startMs": 118400,
+      "endMs": 121100,
+      "translation": "그 아이와 다른"
+    },
+    {
+      "startMs": 121100,
+      "endMs": 130120,
+      "translation": "나를 고쳐 줘"
+    },
+    {
+      "startMs": 130120,
+      "endMs": 136130,
+      "translation": "당신처럼"
+    },
+    {
+      "startMs": 136130,
+      "endMs": 142140,
+      "translation": "다정하게"
+    },
+    {
+      "startMs": 142140,
+      "endMs": 146290,
+      "translation": "살 수 있었다면"
+    },
+    {
+      "startMs": 146290,
+      "endMs": 153380,
+      "translation": "좋았을 텐데"
+    },
+    {
+      "startMs": 153380,
+      "endMs": 156070,
+      "translation": "다정해지고 싶어"
+    },
+    {
+      "startMs": 156070,
+      "endMs": 159160,
+      "translation": "올바르고 싶어"
+    },
+    {
+      "startMs": 159160,
+      "endMs": 165000,
+      "translation": "아름다워지고 싶어, 당신처럼"
+    },
+    {
+      "startMs": 165000,
+      "endMs": 167930,
+      "translation": "다정해지고 싶어"
+    },
+    {
+      "startMs": 167930,
+      "endMs": 170840,
+      "translation": "올바르고 싶어"
+    },
+    {
+      "startMs": 170840,
+      "endMs": 208853,
+      "translation": "아름다워지고 싶어, 당신처럼"
+    }
+  ]
+}

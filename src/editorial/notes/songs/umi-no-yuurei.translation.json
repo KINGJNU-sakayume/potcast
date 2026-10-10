@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 30802805,
+    "durationMs": 234000
+  },
+  "segments": [
+    {
+      "startMs": 1160,
+      "endMs": 11650,
+      "translation": "활짝 열어 둔 이 방에는 아무도 없어"
+    },
+    {
+      "startMs": 11650,
+      "endMs": 21260,
+      "translation": "바닷바람 냄새가 배어든 의자가 하나"
+    },
+    {
+      "startMs": 21260,
+      "endMs": 27480,
+      "translation": "네가 헤매지 않도록 비워 둘게"
+    },
+    {
+      "startMs": 27480,
+      "endMs": 31780,
+      "translation": "삐걱이는 문을 두드리고"
+    },
+    {
+      "startMs": 31780,
+      "endMs": 44640,
+      "translation": "무슨 말부터 해야 할지 모르게 될까"
+    },
+    {
+      "startMs": 44640,
+      "endMs": 50480,
+      "translation": "별이 쏟아지던 밤에 너를 만났어"
+    },
+    {
+      "startMs": 50480,
+      "endMs": 55180,
+      "translation": "그 밤을 잊지는 않아"
+    },
+    {
+      "startMs": 55180,
+      "endMs": 61180,
+      "translation": "소중한 건 말이 되지 않아"
+    },
+    {
+      "startMs": 61180,
+      "endMs": 66530,
+      "translation": "여름날에 일어난 모든 것"
+    },
+    {
+      "startMs": 66530,
+      "endMs": 89330,
+      "translation": "뜻밖에 빛나는 건 바다의 유령"
+    },
+    {
+      "startMs": 89330,
+      "endMs": 99890,
+      "translation": "푹푹 찌는 여름 저녁, 우듬지가 배를 배웅해"
+    },
+    {
+      "startMs": 99890,
+      "endMs": 109260,
+      "translation": "몇 개의 노래를 속삭여, 꽃을 흩뿌리며"
+    },
+    {
+      "startMs": 109260,
+      "endMs": 113630,
+      "translation": "네가 어딘가에서 웃는 소리가 들려"
+    },
+    {
+      "startMs": 113630,
+      "endMs": 119880,
+      "translation": "뜨거운 뺨의 감촉"
+    },
+    {
+      "startMs": 119880,
+      "endMs": 153620,
+      "translation": "뒤틀린 길을 나아가면 그 눈꺼풀이 열려"
+    },
+    {
+      "startMs": 153620,
+      "endMs": 159870,
+      "translation": "멀리 떨어져 있어도 설레는 것"
+    },
+    {
+      "startMs": 159870,
+      "endMs": 164600,
+      "translation": "외치자, 지금은 행복하다고"
+    },
+    {
+      "startMs": 164600,
+      "endMs": 170480,
+      "translation": "소중한 건 말이 되지 않아"
+    },
+    {
+      "startMs": 170480,
+      "endMs": 175140,
+      "translation": "튀어 오르는 빛에 녹여서"
+    },
+    {
+      "startMs": 175140,
+      "endMs": 181170,
+      "translation": "별이 쏟아지던 밤에 너를 만났어"
+    },
+    {
+      "startMs": 181170,
+      "endMs": 185960,
+      "translation": "그때를 잊지는 않아"
+    },
+    {
+      "startMs": 185960,
+      "endMs": 191820,
+      "translation": "소중한 건 말이 되지 않아"
+    },
+    {
+      "startMs": 191820,
+      "endMs": 197200,
+      "translation": "여름날에 일어난 모든 것"
+    },
+    {
+      "startMs": 197200,
+      "endMs": 207640,
+      "translation": "뜻밖에 빛나는 건 바다의 유령"
+    },
+    {
+      "startMs": 207640,
+      "endMs": 234000,
+      "translation": "바람 향기로운 모래밭에서 또 만나자"
+    }
+  ]
+}

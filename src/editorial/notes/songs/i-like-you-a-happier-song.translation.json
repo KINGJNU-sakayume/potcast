@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1048887,
+    "durationMs": 193000
+  },
+  "segments": [
+    {
+      "startMs": 8590,
+      "endMs": 11630,
+      "translation": "오 자기야, 네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 11630,
+      "endMs": 14080,
+      "translation": "네 친구가 되고 싶어, 벤츠 타고 쇼핑하러 가자"
+    },
+    {
+      "startMs": 14080,
+      "endMs": 16410,
+      "translation": "네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 16410,
+      "endMs": 18770,
+      "translation": "착륙하면 연락할게, 네 계획에 나도 끼워 줄래?"
+    },
+    {
+      "startMs": 18770,
+      "endMs": 21150,
+      "translation": "네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 21150,
+      "endMs": 23460,
+      "translation": "우린 프랑스로 갔다가 일본에서 눈을 떴지"
+    },
+    {
+      "startMs": 23460,
+      "endMs": 28220,
+      "translation": "네가 좋아, 정말이야 (정말이야)"
+    },
+    {
+      "startMs": 28220,
+      "endMs": 30450,
+      "translation": "오 자기야, 넌 화려한 것만 좋아하는 거 알아"
+    },
+    {
+      "startMs": 30450,
+      "endMs": 32740,
+      "translation": "그래서 캔디 색 마이바흐를 몰고 나타나"
+    },
+    {
+      "startMs": 32740,
+      "endMs": 35320,
+      "translation": "그래, 네 남자 친구는 절대 날 이해 못 할 거야"
+    },
+    {
+      "startMs": 35320,
+      "endMs": 38040,
+      "translation": "내가 곧 그 여자를 쭉 당겨 올 거니까"
+    },
+    {
+      "startMs": 38040,
+      "endMs": 40500,
+      "translation": "잠깐 드라이브하자, 아가씨"
+    },
+    {
+      "startMs": 40500,
+      "endMs": 42800,
+      "translation": "퍼시픽 코스트 하이웨이를 시속 180으로"
+    },
+    {
+      "startMs": 42800,
+      "endMs": 45310,
+      "translation": "그래, 요즘 생각해 봤는데"
+    },
+    {
+      "startMs": 45310,
+      "endMs": 47720,
+      "translation": "날 구해 줄 누군가가 필요해"
+    },
+    {
+      "startMs": 47720,
+      "endMs": 52530,
+      "translation": "이제 유명해져서 주위엔 여자들이 넘치지만"
+    },
+    {
+      "startMs": 52530,
+      "endMs": 57090,
+      "translation": "좋은 여자가 필요해, 날 붙잡아 줄 사람이, 그러니"
+    },
+    {
+      "startMs": 57090,
+      "endMs": 59180,
+      "translation": "제발 진심이어 줘, 날 갖고 놀지 마"
+    },
+    {
+      "startMs": 59180,
+      "endMs": 61770,
+      "translation": "이 마음을 함께 나눌 사람이 필요해"
+    },
+    {
+      "startMs": 61770,
+      "endMs": 65650,
+      "translation": "널 가득 채우고, 다시 처음부터"
+    },
+    {
+      "startMs": 65650,
+      "endMs": 68700,
+      "translation": "오 자기야, 네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 68700,
+      "endMs": 70930,
+      "translation": "네 친구가 되고 싶어, 벤츠 타고 쇼핑하러 가자"
+    },
+    {
+      "startMs": 70930,
+      "endMs": 73440,
+      "translation": "네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 73440,
+      "endMs": 76060,
+      "translation": "착륙하면 연락할게, 네 계획에 나도 끼워 줄래?"
+    },
+    {
+      "startMs": 76060,
+      "endMs": 78290,
+      "translation": "네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 78290,
+      "endMs": 80580,
+      "translation": "우린 프랑스에서 잠들었다가 일본에서 눈을 떴지"
+    },
+    {
+      "startMs": 80580,
+      "endMs": 85500,
+      "translation": "네가 좋아, 정말이야, 정말이야"
+    },
+    {
+      "startMs": 85500,
+      "endMs": 87690,
+      "translation": "언제 시간 되는지 알려 줘"
+    },
+    {
+      "startMs": 87690,
+      "endMs": 90560,
+      "translation": "일주일 내내 만나려고 했거든, 자기야"
+    },
+    {
+      "startMs": 90560,
+      "endMs": 92140,
+      "translation": "왜 그렇게 달콤하게 굴어?"
+    },
+    {
+      "startMs": 92140,
+      "endMs": 94990,
+      "translation": "날 원하는 거 알아"
+    },
+    {
+      "startMs": 94990,
+      "endMs": 97190,
+      "translation": "나 좀 과하긴 해"
+    },
+    {
+      "startMs": 97190,
+      "endMs": 99230,
+      "translation": "그래도 화끈한 사람한텐 새로울 것도 없지"
+    },
+    {
+      "startMs": 99230,
+      "endMs": 101200,
+      "translation": "돈 좀 뿌리게 해 줘, 네 이에 보석을 박아 줄게"
+    },
+    {
+      "startMs": 101200,
+      "endMs": 103660,
+      "translation": "그는 내 스타일을 좋아해, 수영장을 해변으로 바꿔"
+    },
+    {
+      "startMs": 103660,
+      "endMs": 105890,
+      "translation": "버킨을 살 수도 있었지만 셀린을 샀어"
+    },
+    {
+      "startMs": 105890,
+      "endMs": 108670,
+      "translation": "왜 우린 좋은 것에 대한 취향이 똑같을까?"
+    },
+    {
+      "startMs": 108670,
+      "endMs": 110690,
+      "translation": "새 남자에 늘 같은 우리 팀"
+    },
+    {
+      "startMs": 110690,
+      "endMs": 113340,
+      "translation": "줄은 없다더니 이제 날 목줄에 묶어 뒀어"
+    },
+    {
+      "startMs": 113340,
+      "endMs": 114800,
+      "translation": "알지, 난 그것도 괜찮아"
+    },
+    {
+      "startMs": 114800,
+      "endMs": 117210,
+      "translation": "마음을 훔쳤지만 고소당하진 않았어"
+    },
+    {
+      "startMs": 117210,
+      "endMs": 119890,
+      "translation": "그걸 위해 남자가 뭘 할지 궁금해 (뭘 할지)"
+    },
+    {
+      "startMs": 119890,
+      "endMs": 122110,
+      "translation": "내가 네 샤카 칸이 될게, 루퍼스는 어딨어? (어딨어?)"
+    },
+    {
+      "startMs": 122110,
+      "endMs": 124820,
+      "translation": "지붕을 열면 벤츠로 시속 80마일"
+    },
+    {
+      "startMs": 124820,
+      "endMs": 126800,
+      "translation": "다들 우리가 너무 가까워지는 걸 보고 싶어 하지 않아"
+    },
+    {
+      "startMs": 126800,
+      "endMs": 130340,
+      "translation": "우리가 오래, 오래 친구로 지낼 것 같은 느낌이 들어"
+    },
+    {
+      "startMs": 130340,
+      "endMs": 132660,
+      "translation": "넌 개의치 않지, 그래서 네가 좋아"
+    },
+    {
+      "startMs": 132660,
+      "endMs": 135100,
+      "translation": "오 자기야, 네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 135100,
+      "endMs": 137520,
+      "translation": "네 친구가 되고 싶어, 벤츠 타고 쇼핑하러 가자"
+    },
+    {
+      "startMs": 137520,
+      "endMs": 140130,
+      "translation": "네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 140130,
+      "endMs": 142550,
+      "translation": "착륙하면 연락할게, 네 계획에 나도 끼워 줄래?"
+    },
+    {
+      "startMs": 142550,
+      "endMs": 144820,
+      "translation": "네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 144820,
+      "endMs": 147060,
+      "translation": "우린 프랑스에서 잠들었다가 일본에서 눈을 떴지"
+    },
+    {
+      "startMs": 147060,
+      "endMs": 151200,
+      "translation": "네가 좋아, 정말이야, 정말이야"
+    },
+    {
+      "startMs": 151200,
+      "endMs": 153700,
+      "translation": "그냥 네가 좋아, 그냥 네가 좋아"
+    },
+    {
+      "startMs": 153700,
+      "endMs": 155950,
+      "translation": "네 마음은 너무 크고, 엉덩이는 더 커"
+    },
+    {
+      "startMs": 155950,
+      "endMs": 158380,
+      "translation": "그냥 네가 좋아, 오 자기야, 정말"
+    },
+    {
+      "startMs": 158380,
+      "endMs": 160890,
+      "translation": "너도 내가 좋잖아, 우, 우"
+    },
+    {
+      "startMs": 160890,
+      "endMs": 163950,
+      "translation": "자기야, 네가 좋아, 정말이야"
+    },
+    {
+      "startMs": 163950,
+      "endMs": 165740,
+      "translation": "네 친구가 되고 싶어, 벤츠 타고 쇼핑하러 가자"
+    },
+    {
+      "startMs": 165740,
+      "endMs": 193000,
+      "translation": "네가 좋아, 정말이야, 정말이야"
+    }
+  ]
+}

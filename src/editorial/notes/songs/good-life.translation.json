@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 34632334,
+    "durationMs": 207000
+  },
+  "segments": [
+    {
+      "startMs": 80,
+      "endMs": 1950,
+      "translation": "언제나처럼 이 시간에"
+    },
+    {
+      "startMs": 1950,
+      "endMs": 4830,
+      "translation": "난 내 몫을 챙겨, 빛나야 하니까"
+    },
+    {
+      "startMs": 4830,
+      "endMs": 7210,
+      "translation": "자, 두 손을 하늘로 들어"
+    },
+    {
+      "startMs": 7210,
+      "endMs": 10320,
+      "translation": "난 내, 내 몫을 챙겨, 빛나야 하니까"
+    },
+    {
+      "startMs": 10320,
+      "endMs": 13190,
+      "translation": "자, 두 손을 하늘로 들어"
+    },
+    {
+      "startMs": 13190,
+      "endMs": 15270,
+      "translation": "엄마, 나 TV에 나갈 거야"
+    },
+    {
+      "startMs": 15270,
+      "endMs": 18150,
+      "translation": "내가, 내가 다 보여 줄 거야"
+    },
+    {
+      "startMs": 18150,
+      "endMs": 22240,
+      "translation": "에이, 에이, 에이, 에이, 에이, 에이"
+    },
+    {
+      "startMs": 22240,
+      "endMs": 23310,
+      "translation": "에이, 난 좋아"
+    },
+    {
+      "startMs": 23310,
+      "endMs": 25050,
+      "translation": "좋은 삶에 온 걸 환영해"
+    },
+    {
+      "startMs": 25050,
+      "endMs": 26800,
+      "translation": "마약 파는 녀석들도"
+    },
+    {
+      "startMs": 26800,
+      "endMs": 29680,
+      "translation": "새 차를 타면 경찰에 안 걸리는 곳"
+    },
+    {
+      "startMs": 29680,
+      "endMs": 32460,
+      "translation": "좋은 삶, 신나게 써 보자"
+    },
+    {
+      "startMs": 32460,
+      "endMs": 35280,
+      "translation": "젠장, 인생에서 최고의 건 공짜라잖아"
+    },
+    {
+      "startMs": 35280,
+      "endMs": 37840,
+      "translation": "좋은 삶, 애틀랜타 같은 기분이야"
+    },
+    {
+      "startMs": 37840,
+      "endMs": 40680,
+      "translation": "LA 같고, 마이애미 같아"
+    },
+    {
+      "startMs": 40680,
+      "endMs": 44220,
+      "translation": "뉴욕 같고, 여름의 시카고 같아, 아"
+    },
+    {
+      "startMs": 44220,
+      "endMs": 47350,
+      "translation": "자, 두 손을 하늘로 들어"
+    },
+    {
+      "startMs": 47350,
+      "endMs": 49160,
+      "translation": "그래서 난 멋지게 지나가"
+    },
+    {
+      "startMs": 49160,
+      "endMs": 53210,
+      "translation": "너흰 트렁크를 열지만 난 보닛을 열지, 페라리"
+    },
+    {
+      "startMs": 53210,
+      "endMs": 54650,
+      "translation": "그리고 그녀는 가진 게 있어"
+    },
+    {
+      "startMs": 54650,
+      "endMs": 58750,
+      "translation": "그 엉덩이를 보니 안 볼 수가 없네, 미안"
+    },
+    {
+      "startMs": 58750,
+      "endMs": 61030,
+      "translation": "그래, 내가 노련해서 그런가 봐"
+    },
+    {
+      "startMs": 61030,
+      "endMs": 63980,
+      "translation": "미워하는 놈들이 짠 표정을 짓네, 로리스 소금처럼"
+    },
+    {
+      "startMs": 63980,
+      "endMs": 66240,
+      "translation": "50센트가 그러더라, \"스타일을 바꿔 봐"
+    },
+    {
+      "startMs": 66240,
+      "endMs": 67700,
+      "translation": "싫어하려면 싫어하라 그래"
+    },
+    {
+      "startMs": 67700,
+      "endMs": 68820,
+      "translation": "그리고 돈이 쌓이는 걸 봐\", 좋은 삶"
+    },
+    {
+      "startMs": 68820,
+      "endMs": 72440,
+      "translation": "이제 난, 난 내 몫을 챙겨, 빛나야 하니까"
+    },
+    {
+      "startMs": 72440,
+      "endMs": 74590,
+      "translation": "자, 두 손을 하늘로 들어"
+    },
+    {
+      "startMs": 74590,
+      "endMs": 78060,
+      "translation": "이제 난, 난 내 몫을 챙겨, 빛나야 하니까"
+    },
+    {
+      "startMs": 78060,
+      "endMs": 80840,
+      "translation": "자, 두 손을 하늘로 들어, 에이"
+    },
+    {
+      "startMs": 80840,
+      "endMs": 82830,
+      "translation": "엄마, 나 TV에 나갈 거야"
+    },
+    {
+      "startMs": 82830,
+      "endMs": 85780,
+      "translation": "내가, 내가 다 보여 줄 거야"
+    },
+    {
+      "startMs": 85780,
+      "endMs": 89950,
+      "translation": "에이, 에이, 에이, 에이, 에이, 에이"
+    },
+    {
+      "startMs": 89950,
+      "endMs": 91250,
+      "translation": "에이, 난 좋아"
+    },
+    {
+      "startMs": 91250,
+      "endMs": 92870,
+      "translation": "좋은 삶에 온 걸 환영해"
+    },
+    {
+      "startMs": 92870,
+      "endMs": 95120,
+      "translation": "TV에 안 나오는 여자들이 좋은 곳"
+    },
+    {
+      "startMs": 95120,
+      "endMs": 97210,
+      "translation": "모델들보다 엉덩이가 더 크거든"
+    },
+    {
+      "startMs": 97210,
+      "endMs": 100110,
+      "translation": "좋은 삶, 그러니 병을 계속 가져와"
+    },
+    {
+      "startMs": 100110,
+      "endMs": 102940,
+      "translation": "그녀가 아폴로 무대에서 망한 것처럼 취할 때까지"
+    },
+    {
+      "startMs": 102940,
+      "endMs": 105560,
+      "translation": "좋은 삶, 휴스턴 같은 기분이야"
+    },
+    {
+      "startMs": 105560,
+      "endMs": 108520,
+      "translation": "필라델피아 같고, 워싱턴 같아"
+    },
+    {
+      "startMs": 108520,
+      "endMs": 111520,
+      "translation": "버지니아 같고, 베이 에어리어 같고, 예 같아"
+    },
+    {
+      "startMs": 111520,
+      "endMs": 113730,
+      "translation": "에이, 이게 좋은 삶이야"
+    },
+    {
+      "startMs": 113730,
+      "endMs": 114810,
+      "translation": "좋은 삶에 온 걸 환영해"
+    },
+    {
+      "startMs": 114810,
+      "endMs": 116870,
+      "translation": "어, 친구, 무슨 일인지 말해 봐"
+    },
+    {
+      "startMs": 116870,
+      "endMs": 119420,
+      "translation": "왜 네가 동네에 있을 때만 나한테 문제가 생기지?"
+    },
+    {
+      "startMs": 119420,
+      "endMs": 121130,
+      "translation": "좋은 삶에 온 걸 환영해"
+    },
+    {
+      "startMs": 121130,
+      "endMs": 123630,
+      "translation": "내가 동네에 처음 온 것처럼, 내가 바라는 건 하나?"
+    },
+    {
+      "startMs": 123630,
+      "endMs": 124880,
+      "translation": "누가 감히 덤비나 보자"
+    },
+    {
+      "startMs": 124880,
+      "endMs": 126850,
+      "translation": "좋은 삶에 온 걸 환영해"
+    },
+    {
+      "startMs": 126850,
+      "endMs": 129490,
+      "translation": "그 녀석은 할 수 있다고 생각하겠지만, 하지만"
+    },
+    {
+      "startMs": 129490,
+      "endMs": 130840,
+      "translation": "난 안 하는 게 좋을 것 같아"
+    },
+    {
+      "startMs": 130840,
+      "endMs": 131890,
+      "translation": "좋은 삶에 온 걸 환영해"
+    },
+    {
+      "startMs": 131890,
+      "endMs": 134170,
+      "translation": "50센트가 그러더라, \"스타일을 바꿔 봐"
+    },
+    {
+      "startMs": 134170,
+      "endMs": 135480,
+      "translation": "싫어하려면 싫어하라 그래"
+    },
+    {
+      "startMs": 135480,
+      "endMs": 136680,
+      "translation": "그리고 돈이 쌓이는 걸 봐\", 좋은 삶"
+    },
+    {
+      "startMs": 136680,
+      "endMs": 140410,
+      "translation": "이제 난, 난 내 몫을 챙겨 (그래), 빛나야 하니까"
+    },
+    {
+      "startMs": 140410,
+      "endMs": 142330,
+      "translation": "자, 두 손을 하늘로 들어"
+    },
+    {
+      "startMs": 142330,
+      "endMs": 146070,
+      "translation": "이제 난, 난 내 몫을 챙겨, 빛나야 하니까"
+    },
+    {
+      "startMs": 146070,
+      "endMs": 148060,
+      "translation": "자, 두 손을 하늘로 들어"
+    },
+    {
+      "startMs": 148060,
+      "endMs": 150660,
+      "translation": "에이, 엄마, 나 TV에 나갈 거야"
+    },
+    {
+      "startMs": 150660,
+      "endMs": 153510,
+      "translation": "내가, 내가 다 보여 줄 거야"
+    },
+    {
+      "startMs": 153510,
+      "endMs": 158300,
+      "translation": "에이, 에이, 에이, 에이, 에이, 에이, 에이, 난 좋아"
+    },
+    {
+      "startMs": 158300,
+      "endMs": 160870,
+      "translation": "비행기에서 샴페인을 터뜨려 본 적 있어?"
+    },
+    {
+      "startMs": 160870,
+      "endMs": 162010,
+      "translation": "그것도 진한 서비스를 받으면서?"
+    },
+    {
+      "startMs": 162010,
+      "endMs": 165350,
+      "translation": "꺼냈더니 그녀가 \"비행기 위의 뱀은 처음 봐\" 하더라"
+    },
+    {
+      "startMs": 165350,
+      "endMs": 167880,
+      "translation": "가난하든 부자든 일은 해야 해"
+    },
+    {
+      "startMs": 167880,
+      "endMs": 170630,
+      "translation": "돈이 전부는 아니지만, 돈이 없는 건 전부야"
+    },
+    {
+      "startMs": 170630,
+      "endMs": 173790,
+      "translation": "난 펑펑 썼지, 그래도 차를 되찾아서"
+    },
+    {
+      "startMs": 173790,
+      "endMs": 177150,
+      "translation": "시동이 걸리면 다시 베이거스로 갈 거야, 왜냐면 (좋은 삶에 온 걸 환영해)"
+    },
+    {
+      "startMs": 177150,
+      "endMs": 180160,
+      "translation": "가지기 전부터 늘 번쩍이는 걸 좋아했어"
+    },
+    {
+      "startMs": 180160,
+      "endMs": 182010,
+      "translation": "눈을 감고 상상해, 좋은 삶을"
+    },
+    {
+      "startMs": 182010,
+      "endMs": 184680,
+      "translation": "좋은 삶이 내가 사는 삶보다 나을까"
+    },
+    {
+      "startMs": 184680,
+      "endMs": 188870,
+      "translation": "내가 미쳐 버릴 것 같던 그때보다?"
+    },
+    {
+      "startMs": 188870,
+      "endMs": 194490,
+      "translation": "이젠 할머니 말고도 나를 '자기'라고 부르는 여자가 있어"
+    },
+    {
+      "startMs": 194490,
+      "endMs": 198210,
+      "translation": "이제 내 마음을 알겠다면 두 손을 하늘로 들어"
+    },
+    {
+      "startMs": 198210,
+      "endMs": 203100,
+      "translation": "그리고 헤이, 헤이 하고 외쳐 줘"
+    },
+    {
+      "startMs": 203100,
+      "endMs": 207000,
+      "translation": "우, 난 좋아"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 35235997,
+    "durationMs": 162000
+  },
+  "segments": [
+    {
+      "startMs": 18210,
+      "endMs": 22450,
+      "translation": "방금 람보르기니를 새로 샀어"
+    },
+    {
+      "startMs": 22450,
+      "endMs": 26600,
+      "translation": "그 녀석은 시속 225마일까지 나가"
+    },
+    {
+      "startMs": 26600,
+      "endMs": 30680,
+      "translation": "네가 전화해서 날 보고 싶다고 했지"
+    },
+    {
+      "startMs": 30680,
+      "endMs": 34560,
+      "translation": "운전할 이유로 이보다 좋은 건 없어"
+    },
+    {
+      "startMs": 34560,
+      "endMs": 38080,
+      "translation": "액셀을 끝까지 밟아"
+    },
+    {
+      "startMs": 38080,
+      "endMs": 43040,
+      "translation": "네 사랑을 위해서라면 신호등을 다 무시할 거야"
+    },
+    {
+      "startMs": 43040,
+      "endMs": 47280,
+      "translation": "놓지 않을 거야"
+    },
+    {
+      "startMs": 47280,
+      "endMs": 52020,
+      "translation": "빨리 속도계를 끝까지 올리고 싶어"
+    },
+    {
+      "startMs": 52020,
+      "endMs": 58250,
+      "translation": "밟아, 밟아, 밟아, 밟아"
+    },
+    {
+      "startMs": 58250,
+      "endMs": 60460,
+      "translation": "속도계"
+    },
+    {
+      "startMs": 60460,
+      "endMs": 66410,
+      "translation": "밟아, 밟아, 밟아, 밟아"
+    },
+    {
+      "startMs": 66410,
+      "endMs": 70750,
+      "translation": "속도계"
+    },
+    {
+      "startMs": 70750,
+      "endMs": 75050,
+      "translation": "불을 꺼"
+    },
+    {
+      "startMs": 75050,
+      "endMs": 76940,
+      "translation": "그리고 그 음반을 틀어"
+    },
+    {
+      "startMs": 76940,
+      "endMs": 80480,
+      "translation": "네가 들려줬던, 널 달아오르게 하는 그 음반"
+    },
+    {
+      "startMs": 80480,
+      "endMs": 84740,
+      "translation": "오늘 밤 아기를 만들자"
+    },
+    {
+      "startMs": 84740,
+      "endMs": 88090,
+      "translation": "액셀을 끝까지 밟아"
+    },
+    {
+      "startMs": 88090,
+      "endMs": 93620,
+      "translation": "네 사랑을 위해서라면 신호등을 다 무시할 거야"
+    },
+    {
+      "startMs": 93620,
+      "endMs": 96840,
+      "translation": "젠장, 어어"
+    },
+    {
+      "startMs": 96840,
+      "endMs": 102280,
+      "translation": "네, 제가 얼마나 빨리 달렸는지 알아요, 경찰관님, 제발"
+    },
+    {
+      "startMs": 102280,
+      "endMs": 107650,
+      "translation": "밟아, 밟아, 밟아, 밟아"
+    },
+    {
+      "startMs": 107650,
+      "endMs": 110930,
+      "translation": "속도계"
+    },
+    {
+      "startMs": 110930,
+      "endMs": 116730,
+      "translation": "밟아, 밟아, 밟아, 밟아"
+    },
+    {
+      "startMs": 116730,
+      "endMs": 125380,
+      "translation": "속도계"
+    },
+    {
+      "startMs": 125380,
+      "endMs": 134160,
+      "translation": "속도계"
+    },
+    {
+      "startMs": 134160,
+      "endMs": 142350,
+      "translation": "속도계"
+    },
+    {
+      "startMs": 142350,
+      "endMs": 144670,
+      "translation": "속도계"
+    },
+    {
+      "startMs": 144670,
+      "endMs": 148930,
+      "translation": "밟아, 밟아, 밟아"
+    },
+    {
+      "startMs": 148930,
+      "endMs": 162000,
+      "translation": "밟아, 밟아, 밟아, 밟아"
+    }
+  ]
+}

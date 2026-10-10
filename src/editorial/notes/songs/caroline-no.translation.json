@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 231340,
+    "durationMs": 174000
+  },
+  "segments": [
+    {
+      "startMs": 6780,
+      "endMs": 13110,
+      "translation": "네 긴 머리는 어디로 갔어?"
+    },
+    {
+      "startMs": 13110,
+      "endMs": 19070,
+      "translation": "내가 알던 그 소녀는 어디 있어?"
+    },
+    {
+      "startMs": 19070,
+      "endMs": 26400,
+      "translation": "그 행복한 빛을 어떻게 잃어버릴 수 있었어?"
+    },
+    {
+      "startMs": 26400,
+      "endMs": 31350,
+      "translation": "아, 캐롤라인, 안 돼"
+    },
+    {
+      "startMs": 31350,
+      "endMs": 37540,
+      "translation": "누가 그 표정을 앗아 갔어?"
+    },
+    {
+      "startMs": 37540,
+      "endMs": 50970,
+      "translation": "넌 절대 변하지 않을 거라고 말하곤 했지, 하지만 그건 사실이 아니야"
+    },
+    {
+      "startMs": 50970,
+      "endMs": 56870,
+      "translation": "아, 캐롤라인, 넌 내 마음을 아프게 해"
+    },
+    {
+      "startMs": 56870,
+      "endMs": 60840,
+      "translation": "가서 울고 싶어"
+    },
+    {
+      "startMs": 60840,
+      "endMs": 66970,
+      "translation": "사랑스러운 것이 죽어 가는 걸 지켜보는 건 너무 슬퍼"
+    },
+    {
+      "startMs": 66970,
+      "endMs": 71970,
+      "translation": "아, 캐롤라인, 왜?"
+    },
+    {
+      "startMs": 71970,
+      "endMs": 83930,
+      "translation": "그때 너를 그렇게 사랑하게 만든 것들을 네게서 다시 찾을 수 있을까?"
+    },
+    {
+      "startMs": 83930,
+      "endMs": 94830,
+      "translation": "한번 사라진 것들을 우리가 되돌릴 수 있을까?"
+    },
+    {
+      "startMs": 94830,
+      "endMs": 174000,
+      "translation": "아, 캐롤라인, 안 돼"
+    }
+  ]
+}

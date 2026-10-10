@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 67499,
+    "durationMs": 328000
+  },
+  "segments": [
+    {
+      "startMs": 41290,
+      "endMs": 51550,
+      "translation": "로켓, 달 탐사선, 그 돈을 가진 것 없는 이들에게 써라"
+    },
+    {
+      "startMs": 51550,
+      "endMs": 61020,
+      "translation": "돈은 우리가 버는데, 보기도 전에 너희가 가져간다"
+    },
+    {
+      "startMs": 61020,
+      "endMs": 67060,
+      "translation": "아, 소리 지르고 싶게 만든다, 그들이 내 삶을 다루는 꼴이"
+    },
+    {
+      "startMs": 67060,
+      "endMs": 70810,
+      "translation": "소리 지르고 싶게 만든다, 그들이 내 삶을 다루는 꼴이"
+    },
+    {
+      "startMs": 70810,
+      "endMs": 74580,
+      "translation": "이건 사는 게 아니다, 이건 사는 게 아니다"
+    },
+    {
+      "startMs": 74580,
+      "endMs": 78620,
+      "translation": "아니, 이건 사는 게 아니다"
+    },
+    {
+      "startMs": 78620,
+      "endMs": 82090,
+      "translation": "아니, 아니, 아니"
+    },
+    {
+      "startMs": 82090,
+      "endMs": 92630,
+      "translation": "인플레이션, 형편이 나아질 가망은 없다"
+    },
+    {
+      "startMs": 92630,
+      "endMs": 101790,
+      "translation": "청구서는 하늘 높이 쌓이고, 그 아이는 죽으러 보내진다"
+    },
+    {
+      "startMs": 101790,
+      "endMs": 107520,
+      "translation": "아, 소리 지르고 싶게 만든다, 그들이 내 삶을 다루는 꼴이"
+    },
+    {
+      "startMs": 107520,
+      "endMs": 112130,
+      "translation": "그래, 소리 지르고 싶게 만든다, 그들이 내 삶을 다루는 꼴이"
+    },
+    {
+      "startMs": 112130,
+      "endMs": 149210,
+      "translation": "오…"
+    },
+    {
+      "startMs": 149210,
+      "endMs": 158960,
+      "translation": "꼬이는 일, 실망, 불운, 좌절"
+    },
+    {
+      "startMs": 158960,
+      "endMs": 168440,
+      "translation": "분명한 사실은, 나는 세금을 낼 수가 없다는 것"
+    },
+    {
+      "startMs": 168440,
+      "endMs": 173570,
+      "translation": "아, 소리 지르고 두 손을 들어 버리고 싶다"
+    },
+    {
+      "startMs": 173570,
+      "endMs": 179530,
+      "translation": "그래, 소리 지르고 두 손을 들어 버리고 싶다"
+    },
+    {
+      "startMs": 179530,
+      "endMs": 189850,
+      "translation": "범죄는 늘어나고, 경찰은 툭하면 방아쇠를 당긴다"
+    },
+    {
+      "startMs": 189850,
+      "endMs": 198450,
+      "translation": "공포는 번지고, 우리가 어디로 가는지는 신만이 안다"
+    },
+    {
+      "startMs": 198450,
+      "endMs": 204840,
+      "translation": "아, 소리 지르고 싶게 만든다, 그들은 이해하지 못한다"
+    },
+    {
+      "startMs": 204840,
+      "endMs": 269860,
+      "translation": "소리 지르고 싶게 만든다, 그들은 이해하지 못한다"
+    },
+    {
+      "startMs": 269860,
+      "endMs": 277490,
+      "translation": "어머니, 어머니 (어머니, 어머니)"
+    },
+    {
+      "startMs": 277490,
+      "endMs": 282120,
+      "translation": "다들 우리가 틀렸다고 생각해요 (어머니, 어머니)"
+    },
+    {
+      "startMs": 282120,
+      "endMs": 287660,
+      "translation": "그들이 뭔데 우리를 판단하나요? (어머니, 어머니)"
+    },
+    {
+      "startMs": 287660,
+      "endMs": 328000,
+      "translation": "그저 우리가 머리를 길렀다는 이유로 (어머니, 어머니)"
+    }
+  ]
+}

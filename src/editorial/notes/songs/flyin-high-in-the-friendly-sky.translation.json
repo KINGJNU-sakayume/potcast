@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 63841,
+    "durationMs": 229000
+  },
+  "segments": [
+    {
+      "startMs": 17310,
+      "endMs": 21010,
+      "translation": "친절한 하늘을 높이 날아"
+    },
+    {
+      "startMs": 21010,
+      "endMs": 30450,
+      "translation": "땅을 한 번도 떠나지 않은 채 높이 날아"
+    },
+    {
+      "startMs": 30450,
+      "endMs": 39840,
+      "translation": "다른 사람들은 지치고 피곤해서, 오 주여, 몸을 뉘었는데"
+    },
+    {
+      "startMs": 39840,
+      "endMs": 42130,
+      "translation": "그래, 오 그래"
+    },
+    {
+      "startMs": 42130,
+      "endMs": 49900,
+      "translation": "난 위험이 기다리는 곳으로 가, 오 주여"
+    },
+    {
+      "startMs": 49900,
+      "endMs": 57150,
+      "translation": "그곳은 결국 날 버리고 말 텐데 (오 주여)"
+    },
+    {
+      "startMs": 57150,
+      "endMs": 70000,
+      "translation": "정말 어리석지, 어쩔 수가 없어, 오, 정말 어리석지"
+    },
+    {
+      "startMs": 70000,
+      "endMs": 82800,
+      "translation": "그런데 그걸 못 찾으면 미쳐 버려"
+    },
+    {
+      "startMs": 82800,
+      "endMs": 89140,
+      "translation": "아침이면 괜찮아질 거야, 친구 (오 주여)"
+    },
+    {
+      "startMs": 89140,
+      "endMs": 97730,
+      "translation": "하지만 곧 밤이 고통을 데려오겠지"
+    },
+    {
+      "startMs": 97730,
+      "endMs": 103050,
+      "translation": "고통을, 오 그 고통을"
+    },
+    {
+      "startMs": 103050,
+      "endMs": 112570,
+      "translation": "친절한 하늘을 높이 날아, 오 주여, 땅을 한 번도 떠나지 않은 채"
+    },
+    {
+      "startMs": 112570,
+      "endMs": 115480,
+      "translation": "그래"
+    },
+    {
+      "startMs": 115480,
+      "endMs": 122010,
+      "translation": "난 골칫거리밖에 본 게 없어"
+    },
+    {
+      "startMs": 122010,
+      "endMs": 128400,
+      "translation": "아무도 정말로 이해하지 못해, 아니야 (누가 좀 도와줘)"
+    },
+    {
+      "startMs": 128400,
+      "endMs": 135800,
+      "translation": "그리고 난 좋은 기분이 기다리는 곳으로 가"
+    },
+    {
+      "startMs": 135800,
+      "endMs": 139000,
+      "translation": "자기 파멸이 내 손안에 있어"
+    },
+    {
+      "startMs": 139000,
+      "endMs": 152110,
+      "translation": "오 주여, 정말 어리석지 (날 도와줄 수 있어? 도와줄 수 있어?)"
+    },
+    {
+      "startMs": 152110,
+      "endMs": 166330,
+      "translation": "오 주여, 그걸 못 찾으면 미쳐 버려 (도와줘)"
+    },
+    {
+      "startMs": 166330,
+      "endMs": 184080,
+      "translation": "그래, 나도 알아, 친구, 사람을 노예로 만드는 그 '보이'에게 걸려들었어 (날 도와줘야 해)"
+    },
+    {
+      "startMs": 184080,
+      "endMs": 191250,
+      "translation": "오, 믿어 줘"
+    },
+    {
+      "startMs": 191250,
+      "endMs": 195610,
+      "translation": "친절한 하늘을 높이 날아"
+    },
+    {
+      "startMs": 195610,
+      "endMs": 205100,
+      "translation": "오, 높이 날아"
+    },
+    {
+      "startMs": 205100,
+      "endMs": 215880,
+      "translation": "(우…)"
+    },
+    {
+      "startMs": 215880,
+      "endMs": 229000,
+      "translation": "높이 날아, 친절한 하늘을"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2906860,
+    "durationMs": 159000
+  },
+  "segments": [
+    {
+      "startMs": 4300,
+      "endMs": 8030,
+      "translation": "다-다, 다-덤"
+    },
+    {
+      "startMs": 8030,
+      "endMs": 15670,
+      "translation": "네 집 앞을 지나가다 풀이 무성하게 자란 걸 봤어"
+    },
+    {
+      "startMs": 15670,
+      "endMs": 23270,
+      "translation": "네 꽃들은 다 죽었어, 네가 알아야 할 것 같아서"
+    },
+    {
+      "startMs": 23270,
+      "endMs": 30950,
+      "translation": "그렇게 자랑하던 네 초록 손은 어떻게 된 거야?"
+    },
+    {
+      "startMs": 30950,
+      "endMs": 38230,
+      "translation": "시체들이 흩어져서 사랑에 굶주려 있었어"
+    },
+    {
+      "startMs": 38230,
+      "endMs": 42260,
+      "translation": "사랑에 굶주려"
+    },
+    {
+      "startMs": 42260,
+      "endMs": 52750,
+      "translation": "그런데 하나, 하나, 하나가 임종을 앞두고 있었어"
+    },
+    {
+      "startMs": 52750,
+      "endMs": 62510,
+      "translation": "넌 오래전에 떠났다고 나한테 말했지, 오, 안 돼"
+    },
+    {
+      "startMs": 62510,
+      "endMs": 68570,
+      "translation": "마지막 숨을 쉬며 그가 말했어"
+    },
+    {
+      "startMs": 68570,
+      "endMs": 83780,
+      "translation": "'일어나, 그 여자는 집에 안 와'"
+    },
+    {
+      "startMs": 83780,
+      "endMs": 87320,
+      "translation": "다-다, 다-덤"
+    },
+    {
+      "startMs": 87320,
+      "endMs": 95290,
+      "translation": "그 사람은 분명 엄청 멋지고 오토바이를 타겠지"
+    },
+    {
+      "startMs": 95290,
+      "endMs": 102460,
+      "translation": "네가 두고 간 걸 대신할 새 꽃을 사 주겠지"
+    },
+    {
+      "startMs": 102460,
+      "endMs": 110010,
+      "translation": "내 새 연인은 내가 원하는 것보다 더 자신을 쏟아부어"
+    },
+    {
+      "startMs": 110010,
+      "endMs": 117930,
+      "translation": "그녀 이름은 브랜디, 우린 오늘 밤 결혼할 거야"
+    },
+    {
+      "startMs": 117930,
+      "endMs": 121620,
+      "translation": "오늘 밤 결혼할 거야"
+    },
+    {
+      "startMs": 121620,
+      "endMs": 132770,
+      "translation": "내가, 내가, 내가, 내가 임종을 앞두면"
+    },
+    {
+      "startMs": 132770,
+      "endMs": 142600,
+      "translation": "네가 오래전에 떠났다는 걸 기억할 거야, 오, 안 돼"
+    },
+    {
+      "startMs": 142600,
+      "endMs": 148090,
+      "translation": "간호사가 말하는 게 들려"
+    },
+    {
+      "startMs": 148090,
+      "endMs": 159000,
+      "translation": "'잘 자요, 그 여자는 절대 집에 안 와요'"
+    }
+  ]
+}

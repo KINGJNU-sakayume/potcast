@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974360,
+    "durationMs": 96000
+  },
+  "segments": [
+    {
+      "startMs": 22430,
+      "endMs": 27530,
+      "translation": "우리 사랑이 어떻게 자라는지 말해 봐"
+    },
+    {
+      "startMs": 27530,
+      "endMs": 32980,
+      "translation": "네가 거짓말을 캐내려 할 때"
+    },
+    {
+      "startMs": 32980,
+      "endMs": 38550,
+      "translation": "넌 그냥 감정적인 거야, 음"
+    },
+    {
+      "startMs": 38550,
+      "endMs": 43550,
+      "translation": "내가 가끔 논리적으로 굴 때면"
+    },
+    {
+      "startMs": 43550,
+      "endMs": 49170,
+      "translation": "네가 비이성적으로 굴 때가 싫어"
+    },
+    {
+      "startMs": 49170,
+      "endMs": 54420,
+      "translation": "네가 온종일 온라인에 매달려 있는 걸 볼 때"
+    },
+    {
+      "startMs": 54420,
+      "endMs": 59710,
+      "translation": "왜 하필 지금 이 얘기를 꺼내?"
+    },
+    {
+      "startMs": 59710,
+      "endMs": 63110,
+      "translation": "오늘이 내 첫 공연 날 밤인 거 알잖아"
+    },
+    {
+      "startMs": 63110,
+      "endMs": 68950,
+      "translation": "피가 안 통해, 바닥에서 떨고 있어"
+    },
+    {
+      "startMs": 68950,
+      "endMs": 74260,
+      "translation": "폐에 스테로이드를 넣고, 진흙 같은 가래와 싸우고 있어"
+    },
+    {
+      "startMs": 74260,
+      "endMs": 79120,
+      "translation": "내가 원하는 걸 줘, 그럼 쇼를 시작할게"
+    },
+    {
+      "startMs": 79120,
+      "endMs": 96000,
+      "translation": "고치는 중이야, 고치는 중이야, 오"
+    }
+  ]
+}

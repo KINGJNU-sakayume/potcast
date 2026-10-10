@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 349816,
+    "durationMs": 206000
+  },
+  "segments": [
+    {
+      "startMs": 12830,
+      "endMs": 23890,
+      "translation": "우리 같은 사람들은 무거운 풍선을 갖고 놀아, 악마를 막으려고 계속 띄워 두지만 풍선은 늘 너무 빨리 떨어져"
+    },
+    {
+      "startMs": 23890,
+      "endMs": 34980,
+      "translation": "우리 같은 사람들은 무거운 풍선을 갖고 놀아, 악마를 막으려고 계속 띄워 두지만 풍선은 늘 너무 빨리 떨어져"
+    },
+    {
+      "startMs": 34980,
+      "endMs": 46530,
+      "translation": "우리 같은 사람들은 무거운 풍선을 갖고 놀아, 악마를 막으려고 계속 띄워 두지만 풍선은 늘 너무 빨리 떨어져"
+    },
+    {
+      "startMs": 46530,
+      "endMs": 49280,
+      "translation": "난 딸기처럼 퍼져 나가"
+    },
+    {
+      "startMs": 49280,
+      "endMs": 51950,
+      "translation": "난 완두콩과 강낭콩처럼 타고 올라"
+    },
+    {
+      "startMs": 51950,
+      "endMs": 54850,
+      "translation": "너무 오래 숨을 참아 와서"
+    },
+    {
+      "startMs": 54850,
+      "endMs": 57670,
+      "translation": "이제 터질 것 같아"
+    },
+    {
+      "startMs": 57670,
+      "endMs": 60620,
+      "translation": "난 딸기처럼 퍼져 나가"
+    },
+    {
+      "startMs": 60620,
+      "endMs": 63310,
+      "translation": "난 완두콩과 강낭콩처럼 타고 올라"
+    },
+    {
+      "startMs": 63310,
+      "endMs": 66010,
+      "translation": "너무 오래 숨을 참아 와서"
+    },
+    {
+      "startMs": 66010,
+      "endMs": 68540,
+      "translation": "이제 터질 것 같아"
+    },
+    {
+      "startMs": 68540,
+      "endMs": 73920,
+      "translation": "한낮이면 그건 해 같아, 그것도 사하라의 해처럼 날 노려보며"
+    },
+    {
+      "startMs": 73920,
+      "endMs": 79530,
+      "translation": "내 안의 모든 생명을 땅속으로 물러나게 만들어"
+    },
+    {
+      "startMs": 79530,
+      "endMs": 85170,
+      "translation": "쥐의 이빨처럼 쉬지 않고 자라서, 계속 날 갉아 대야 직성이 풀려"
+    },
+    {
+      "startMs": 85170,
+      "endMs": 91530,
+      "translation": "그리고 호스를 감은 보아뱀처럼 조여서 아무것도 흐르지 않아, 그래서 바다 대신 압력만 커져"
+    },
+    {
+      "startMs": 91530,
+      "endMs": 102350,
+      "translation": "우리 같은 사람들은 가끔 너무 무거워지고 너무 길을 잃어서, 찾을 수 있는 곳이 바닥뿐이야"
+    },
+    {
+      "startMs": 102350,
+      "endMs": 113570,
+      "translation": "같은 자리로 연달아 끌려 내려가다 보면 바닥이 아는 곳 중 유일하게 안전한 곳처럼 느껴지기 시작해"
+    },
+    {
+      "startMs": 113570,
+      "endMs": 114780,
+      "translation": "그런데 그거 알아?"
+    },
+    {
+      "startMs": 114780,
+      "endMs": 117280,
+      "translation": "난 딸기처럼 퍼져 나가"
+    },
+    {
+      "startMs": 117280,
+      "endMs": 120100,
+      "translation": "난 완두콩과 강낭콩처럼 타고 올라"
+    },
+    {
+      "startMs": 120100,
+      "endMs": 122830,
+      "translation": "너무 오래 숨을 참아 와서"
+    },
+    {
+      "startMs": 122830,
+      "endMs": 125970,
+      "translation": "이제 터질 것 같아"
+    },
+    {
+      "startMs": 125970,
+      "endMs": 128660,
+      "translation": "난 딸기처럼 퍼져 나가"
+    },
+    {
+      "startMs": 128660,
+      "endMs": 131560,
+      "translation": "난 완두콩과 강낭콩처럼 타고 올라"
+    },
+    {
+      "startMs": 131560,
+      "endMs": 134410,
+      "translation": "너무 오래 숨을 참아 와서"
+    },
+    {
+      "startMs": 134410,
+      "endMs": 137540,
+      "translation": "이제 터질 것 같아"
+    },
+    {
+      "startMs": 137540,
+      "endMs": 140430,
+      "translation": "(난 딸기처럼 퍼져 나가)"
+    },
+    {
+      "startMs": 140430,
+      "endMs": 173780,
+      "translation": "(난 완두콩과 강낭콩처럼 타고 올라)"
+    },
+    {
+      "startMs": 173780,
+      "endMs": 176410,
+      "translation": "(난 딸기처럼 퍼져 나가)"
+    },
+    {
+      "startMs": 176410,
+      "endMs": 184950,
+      "translation": "(난 완두콩과 강낭콩처럼 타고 올라)"
+    },
+    {
+      "startMs": 184950,
+      "endMs": 187790,
+      "translation": "(난 딸기처럼 퍼져 나가)"
+    },
+    {
+      "startMs": 187790,
+      "endMs": 192030,
+      "translation": "(난 완두콩과 강낭콩처럼 타고 올라)"
+    },
+    {
+      "startMs": 192030,
+      "endMs": 196490,
+      "translation": "(그리고 이제 터질 것 같아)"
+    },
+    {
+      "startMs": 196490,
+      "endMs": 199560,
+      "translation": "(난 딸기처럼 퍼져 나가)"
+    },
+    {
+      "startMs": 199560,
+      "endMs": 206000,
+      "translation": "(난 완두콩과 강낭콩처럼 타고 올라)"
+    }
+  ]
+}

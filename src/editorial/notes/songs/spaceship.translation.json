@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 19060792,
+    "durationMs": 324227
+  },
+  "segments": [
+    {
+      "startMs": 490,
+      "endMs": 5480,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어 (그래, 그래)"
+    },
+    {
+      "startMs": 5480,
+      "endMs": 11420,
+      "translation": "할 수만 있다면 (나도) 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 11420,
+      "endMs": 16820,
+      "translation": "하늘 너머로 (진심이야, GLC도 알아, 예, 나도 알아, 어)"
+    },
+    {
+      "startMs": 16820,
+      "endMs": 21580,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어"
+    },
+    {
+      "startMs": 21580,
+      "endMs": 28380,
+      "translation": "할 수만 있다면 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 28380,
+      "endMs": 32700,
+      "translation": "하늘 너머로, 오, 오, 오, 이런, 이런"
+    },
+    {
+      "startMs": 32700,
+      "endMs": 35310,
+      "translation": "매니저가 한 번만 더 날 모욕하면"
+    },
+    {
+      "startMs": 35310,
+      "endMs": 37360,
+      "translation": "그놈을 패 줄 거야"
+    },
+    {
+      "startMs": 37360,
+      "endMs": 39330,
+      "translation": "매니저를 박살 낸 다음엔"
+    },
+    {
+      "startMs": 39330,
+      "endMs": 41360,
+      "translation": "금고 돈을 좀 빼 갈 거고"
+    },
+    {
+      "startMs": 41360,
+      "endMs": 43620,
+      "translation": "돌아가 보자, 갭 시절로"
+    },
+    {
+      "startMs": 43620,
+      "endMs": 45650,
+      "translation": "월급 명세서를 봐도 돈이 없었어"
+    },
+    {
+      "startMs": 45650,
+      "endMs": 47650,
+      "translation": "그러니 내가 훔쳤대도 내 탓이 아니야"
+    },
+    {
+      "startMs": 47650,
+      "endMs": 49480,
+      "translation": "그래, 훔쳤어, 한 번도 안 걸렸지"
+    },
+    {
+      "startMs": 49480,
+      "endMs": 51870,
+      "translation": "날 뒤로 데려가서 몸수색을 하고"
+    },
+    {
+      "startMs": 51870,
+      "endMs": 53660,
+      "translation": "카키바지 얘기를 캐물어"
+    },
+    {
+      "startMs": 53660,
+      "endMs": 55570,
+      "translation": "그런데 흑인 손님들이 들어오면"
+    },
+    {
+      "startMs": 55570,
+      "endMs": 57560,
+      "translation": "분명히 구색 맞추기용 흑인을 자랑하듯 내세우지"
+    },
+    {
+      "startMs": 57560,
+      "endMs": 59520,
+      "translation": "오, 이제 와서 카녜가 좋다고?"
+    },
+    {
+      "startMs": 59520,
+      "endMs": 61610,
+      "translation": "저 녀석을 매장 맨 앞에 세우자고?"
+    },
+    {
+      "startMs": 61610,
+      "endMs": 64150,
+      "translation": "그래서 난 휴식 시간에 '금연' 표지판 옆에서"
+    },
+    {
+      "startMs": 64150,
+      "endMs": 65840,
+      "translation": "쇼핑몰 안에서 대마를 말아"
+    },
+    {
+      "startMs": 65840,
+      "endMs": 67980,
+      "translation": "한 모금씩 빨면서 히트곡을 쓰지"
+    },
+    {
+      "startMs": 67980,
+      "endMs": 69750,
+      "translation": "가사를 쓰고, 머릿속으로 굴려 보고"
+    },
+    {
+      "startMs": 69750,
+      "endMs": 71890,
+      "translation": "\"이 망할 일은 저 녀석한테 도움이 안 돼\""
+    },
+    {
+      "startMs": 71890,
+      "endMs": 73730,
+      "translation": "그래서 그만뒀어, 천만에"
+    },
+    {
+      "startMs": 73730,
+      "endMs": 76180,
+      "translation": "너흰 내 고생을 몰라"
+    },
+    {
+      "startMs": 76180,
+      "endMs": 78030,
+      "translation": "너흰 내 악착을 못 따라와"
+    },
+    {
+      "startMs": 78030,
+      "endMs": 80080,
+      "translation": "내 악착을 따라잡을 수 없어"
+    },
+    {
+      "startMs": 80080,
+      "endMs": 82450,
+      "translation": "내 사랑을 헤아릴 수도 없어"
+    },
+    {
+      "startMs": 82450,
+      "endMs": 83730,
+      "translation": "방에 틀어박혀서"
+    },
+    {
+      "startMs": 83730,
+      "endMs": 85670,
+      "translation": "세 번의 여름 동안 하루에 비트 다섯 개씩 만들어 봐"
+    },
+    {
+      "startMs": 85670,
+      "endMs": 87670,
+      "translation": "크리 서머스가 나온 '디퍼런트 월드'처럼 완전 다른 세상이지"
+    },
+    {
+      "startMs": 87670,
+      "endMs": 89950,
+      "translation": "난 이 정도 숫자를 낼 자격이 있어"
+    },
+    {
+      "startMs": 89950,
+      "endMs": 91760,
+      "translation": "그걸 만든 녀석이라면"
+    },
+    {
+      "startMs": 91760,
+      "endMs": 93460,
+      "translation": "마이바흐를 탈 자격이 있지"
+    },
+    {
+      "startMs": 93460,
+      "endMs": 95350,
+      "translation": "지하실에 쌓인 음반이 그렇게 많은데"
+    },
+    {
+      "startMs": 95350,
+      "endMs": 97560,
+      "translation": "난 그냥 내 우주선을 기다리는 중이야, 빵"
+    },
+    {
+      "startMs": 97560,
+      "endMs": 102320,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어"
+    },
+    {
+      "startMs": 102320,
+      "endMs": 108590,
+      "translation": "할 수만 있다면 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 108590,
+      "endMs": 113130,
+      "translation": "하늘 너머로, 오"
+    },
+    {
+      "startMs": 113130,
+      "endMs": 118650,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어"
+    },
+    {
+      "startMs": 118650,
+      "endMs": 124740,
+      "translation": "할 수만 있다면 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 124740,
+      "endMs": 130480,
+      "translation": "하늘 너머로, 오, 오 (진짜 하늘 훨씬 너머 말이야, 가자, 그래)"
+    },
+    {
+      "startMs": 130480,
+      "endMs": 132430,
+      "translation": "난 일자리를 구하려고 애쓴 적도 없어"
+    },
+    {
+      "startMs": 132430,
+      "endMs": 134430,
+      "translation": "동시에 우리 패거리를 대표하면서 (우)"
+    },
+    {
+      "startMs": 134430,
+      "endMs": 136340,
+      "translation": "악착같이 목마르게, 시카고의 마음가짐으로"
+    },
+    {
+      "startMs": 136340,
+      "endMs": 138200,
+      "translation": "엄마를 잃고, 정신도 잃었어"
+    },
+    {
+      "startMs": 138200,
+      "endMs": 140580,
+      "translation": "인생도, 사랑도, 그건 내 것이 아니야"
+    },
+    {
+      "startMs": 140580,
+      "endMs": 142470,
+      "translation": "\"왜 계약 못 했어?\" 아직 때가 아니었지"
+    },
+    {
+      "startMs": 142470,
+      "endMs": 144320,
+      "translation": "날 내버려 둬, 너희를 위해 일하잖아"
+    },
+    {
+      "startMs": 144320,
+      "endMs": 146530,
+      "translation": "반은 너희 거, 반은 내 거"
+    },
+    {
+      "startMs": 146530,
+      "endMs": 148520,
+      "translation": "잘나가고만 싶지, 넘어지긴 싫어 (으)"
+    },
+    {
+      "startMs": 148520,
+      "endMs": 150410,
+      "translation": "내 몫을 챙겨야 해, 내 걸 가져가야 해 (으)"
+    },
+    {
+      "startMs": 150410,
+      "endMs": 152700,
+      "translation": "총을 쥐고서 전성기를 맞을 거야 (으)"
+    },
+    {
+      "startMs": 152700,
+      "endMs": 154810,
+      "translation": "이 미워하는 놈들이 내 걸 인정하게 만들어야 해 (그래)"
+    },
+    {
+      "startMs": 154810,
+      "endMs": 156830,
+      "translation": "쇼핑몰에서 자정까지 있었어"
+    },
+    {
+      "startMs": 156830,
+      "endMs": 158970,
+      "translation": "근무표엔 아홉 시까지라고 적혀 있었는데"
+    },
+    {
+      "startMs": 158970,
+      "endMs": 161050,
+      "translation": "선반에 바지를 진열하면서"
+    },
+    {
+      "startMs": 161050,
+      "endMs": 162520,
+      "translation": "참을성 있게 기다리다가 나한테 물어"
+    },
+    {
+      "startMs": 162520,
+      "endMs": 164420,
+      "translation": "어디로 가고 싶지? 어디에 있고 싶지?"
+    },
+    {
+      "startMs": 164420,
+      "endMs": 166780,
+      "translation": "인생은 거리를 뛰어다니는 것보다 훨씬 큰 거야"
+    },
+    {
+      "startMs": 166780,
+      "endMs": 168790,
+      "translation": "예한테 연락해서 비트를 받아"
+    },
+    {
+      "startMs": 168790,
+      "endMs": 170800,
+      "translation": "날 일으켜 세워 줘, 소리가 참 달콤해"
+    },
+    {
+      "startMs": 170800,
+      "endMs": 175330,
+      "translation": "그래, 난 똑같은 G야, 똑같은 염소수염, 조용히 지내지, 아니"
+    },
+    {
+      "startMs": 175330,
+      "endMs": 179560,
+      "translation": "하나님께 소리쳐, \"왜 내 사람들을 데려가야 했나요?\""
+    },
+    {
+      "startMs": 179560,
+      "endMs": 184860,
+      "translation": "프레디 G, 유세프 G를 다시 보고 싶어, 내 G를 사랑해, 롤리 G, 경찰이 날 지켜봐"
+    },
+    {
+      "startMs": 184860,
+      "endMs": 187390,
+      "translation": "대마를 피우고 돈을 세지"
+    },
+    {
+      "startMs": 187390,
+      "endMs": 189120,
+      "translation": "날 믿고 기대는 사람이 많아 (맞아)"
+    },
+    {
+      "startMs": 189120,
+      "endMs": 191380,
+      "translation": "난 그냥 내 평화를 찾으려는 것뿐인데 (맞아)"
+    },
+    {
+      "startMs": 191380,
+      "endMs": 193280,
+      "translation": "조카처럼 학교를 마쳤어야 했어"
+    },
+    {
+      "startMs": 193280,
+      "endMs": 194960,
+      "translation": "그랬다면 결국 총을 쓰지 않아도 됐을 텐데, 빵"
+    },
+    {
+      "startMs": 194960,
+      "endMs": 199430,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어 (아, 이 압박감)"
+    },
+    {
+      "startMs": 199430,
+      "endMs": 205530,
+      "translation": "할 수만 있다면 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 205530,
+      "endMs": 210140,
+      "translation": "하늘 너머로, 오"
+    },
+    {
+      "startMs": 210140,
+      "endMs": 215370,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어"
+    },
+    {
+      "startMs": 215370,
+      "endMs": 221750,
+      "translation": "할 수만 있다면 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 221750,
+      "endMs": 226790,
+      "translation": "하늘 너머로, 오 (오, 이런, 우린 이걸 견뎌 낼 거야)"
+    },
+    {
+      "startMs": 226790,
+      "endMs": 231480,
+      "translation": "기억나, 1달러 합승 택시를 타고 밤늦게 집에 오던 거"
+    },
+    {
+      "startMs": 231480,
+      "endMs": 235530,
+      "translation": "하루 종일 서서 이 일을 제대로 해 보려고 애쓰던 거"
+    },
+    {
+      "startMs": 235530,
+      "endMs": 239560,
+      "translation": "그리고 동료 하나가 말했지, \"야, 너 진짜 닮았다"
+    },
+    {
+      "startMs": 239560,
+      "endMs": 243400,
+      "translation": "요전에 본 옛날 버스타 라임스 뮤직비디오에 나온 그 애랑\""
+    },
+    {
+      "startMs": 243400,
+      "endMs": 247870,
+      "translation": "쉽게 오면 쉽게 간다, 그런 말 있잖아?"
+    },
+    {
+      "startMs": 247870,
+      "endMs": 251680,
+      "translation": "이제 방송 출연도, 차도, TV 쇼도 없어"
+    },
+    {
+      "startMs": 251680,
+      "endMs": 255210,
+      "translation": "전부 빼앗겼어, A&R들과 그 사람들 전부"
+    },
+    {
+      "startMs": 255210,
+      "endMs": 259470,
+      "translation": "다들 나한테 등을 돌리고 내 랩은 듣고 싶어 하지 않았어"
+    },
+    {
+      "startMs": 259470,
+      "endMs": 263400,
+      "translation": "그러니 당연히, 사실, 현실을 똑바로 봐야 했지 (우)"
+    },
+    {
+      "startMs": 263400,
+      "endMs": 267350,
+      "translation": "재앙이 올 수밖에, 텅 빈 냉장고가 날 노려봐"
+    },
+    {
+      "startMs": 267350,
+      "endMs": 271550,
+      "translation": "거긴 아무것도 없으니까, 공평한 것도 없고, 다시는 거기로 돌아가고 싶지 않아"
+    },
+    {
+      "startMs": 271550,
+      "endMs": 275750,
+      "translation": "그러니 내 우주선이 뜰 때까지 하루도 쉬지 않을 거야, 빵"
+    },
+    {
+      "startMs": 275750,
+      "endMs": 279970,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어"
+    },
+    {
+      "startMs": 279970,
+      "endMs": 286870,
+      "translation": "할 수만 있다면 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 286870,
+      "endMs": 291440,
+      "translation": "하늘 너머로, 오"
+    },
+    {
+      "startMs": 291440,
+      "endMs": 296270,
+      "translation": "야간 근무를 해 왔는데 번 게 하나도 없어"
+    },
+    {
+      "startMs": 296270,
+      "endMs": 302870,
+      "translation": "할 수만 있다면 우주선을 사서 날아가고 싶어"
+    },
+    {
+      "startMs": 302870,
+      "endMs": 307880,
+      "translation": "하늘 너머로, 오, 오"
+    },
+    {
+      "startMs": 307880,
+      "endMs": 311830,
+      "translation": "날아가고 싶어, 날아가고 싶어"
+    },
+    {
+      "startMs": 311830,
+      "endMs": 314030,
+      "translation": "내 마차가 와서 날 태워 주면 좋겠어"
+    },
+    {
+      "startMs": 314030,
+      "endMs": 317890,
+      "translation": "이 형제를 데리고 한 바퀴 돌아 주면"
+    },
+    {
+      "startMs": 317890,
+      "endMs": 324227,
+      "translation": "(하늘은 알아, 하늘은 알아)"
+    }
+  ]
+}

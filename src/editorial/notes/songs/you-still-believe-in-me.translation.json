@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 273346,
+    "durationMs": 156000
+  },
+  "segments": [
+    {
+      "startMs": 12340,
+      "endMs": 21050,
+      "translation": "나도 잘 알아, 내가 있어야 할 자리에 있지 않다는 거"
+    },
+    {
+      "startMs": 21050,
+      "endMs": 29020,
+      "translation": "네가 나를 참아 줬다는 것도 잘 알고 있어"
+    },
+    {
+      "startMs": 29020,
+      "endMs": 38240,
+      "translation": "우리가 헤어질 때마다 넌 다시 사랑을 가지고 돌아와"
+    },
+    {
+      "startMs": 38240,
+      "endMs": 53330,
+      "translation": "내가 너한테 그렇게 해 놓고도, 어떻게 넌 아직 나를 믿을 수 있어"
+    },
+    {
+      "startMs": 53330,
+      "endMs": 61270,
+      "translation": "네가 바라는 사람이 되려고 애써 보지만"
+    },
+    {
+      "startMs": 61270,
+      "endMs": 69560,
+      "translation": "네가 곁에 없을 때 내가 어떻게 구는지는 나도 어쩔 수가 없어"
+    },
+    {
+      "startMs": 69560,
+      "endMs": 78650,
+      "translation": "강해지려고 애써 보지만 가끔은 나 자신을 저버려"
+    },
+    {
+      "startMs": 78650,
+      "endMs": 94990,
+      "translation": "너한테 그렇게 굳게 약속해 놓고도, 넌 아직 나를 믿어"
+    },
+    {
+      "startMs": 94990,
+      "endMs": 156000,
+      "translation": "울고 싶어…"
+    }
+  ]
+}

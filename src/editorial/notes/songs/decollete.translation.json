@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 28148181,
+    "durationMs": 210000
+  },
+  "segments": [
+    {
+      "startMs": 14960,
+      "endMs": 17680,
+      "translation": "당신은 잘못 골랐어"
+    },
+    {
+      "startMs": 17680,
+      "endMs": 22190,
+      "translation": "고른 건 보기 좋게 시들어 빠진 꽝 제비"
+    },
+    {
+      "startMs": 22190,
+      "endMs": 29370,
+      "translation": "축제는 끝났어, 이제 와서 찬물 끼얹지 마"
+    },
+    {
+      "startMs": 29370,
+      "endMs": 32210,
+      "translation": "황폐해져 가는 유머"
+    },
+    {
+      "startMs": 32210,
+      "endMs": 36730,
+      "translation": "당신의 아빠랑 엄마는 뭘 하고 있었어"
+    },
+    {
+      "startMs": 36730,
+      "endMs": 44510,
+      "translation": "아무튼 지쳤습니다, 셀 테니까 당장 사라져"
+    },
+    {
+      "startMs": 44510,
+      "endMs": 48220,
+      "translation": "지금은 란란 라라라 란란란"
+    },
+    {
+      "startMs": 48220,
+      "endMs": 51680,
+      "translation": "깊은 잠에 들고 싶어"
+    },
+    {
+      "startMs": 51680,
+      "endMs": 55410,
+      "translation": "달이 란란 라라라 란란란"
+    },
+    {
+      "startMs": 55410,
+      "endMs": 67260,
+      "translation": "데콜테를 쓸어내려 가"
+    },
+    {
+      "startMs": 67260,
+      "endMs": 74450,
+      "translation": "이름 붙은 어제는 넘겨줄 테니 조용한 내일을 내놔"
+    },
+    {
+      "startMs": 74450,
+      "endMs": 81550,
+      "translation": "비열한 이웃을 용서하소서, 아멘"
+    },
+    {
+      "startMs": 81550,
+      "endMs": 84550,
+      "translation": "울음을 터뜨리는 건 이제 그만"
+    },
+    {
+      "startMs": 84550,
+      "endMs": 88980,
+      "translation": "당신의 아빠랑 엄마는 어디로 사라졌어"
+    },
+    {
+      "startMs": 88980,
+      "endMs": 94820,
+      "translation": "쉽게 지껄이지 마, 딴 데 가서 알아봐 줘 달링"
+    },
+    {
+      "startMs": 94820,
+      "endMs": 98630,
+      "translation": "다-다-다-달링 다-다-달링"
+    },
+    {
+      "startMs": 98630,
+      "endMs": 102430,
+      "translation": "다-다-다-달링 다-다-달링"
+    },
+    {
+      "startMs": 102430,
+      "endMs": 109680,
+      "translation": "다-다-다-달링 달링 달링 ah"
+    },
+    {
+      "startMs": 109680,
+      "endMs": 113240,
+      "translation": "지금은 란란 라라라 란란란"
+    },
+    {
+      "startMs": 113240,
+      "endMs": 116800,
+      "translation": "아무것도 섞이지 않은 걸 원해"
+    },
+    {
+      "startMs": 116800,
+      "endMs": 120330,
+      "translation": "바람이 란란 라라라 란란란"
+    },
+    {
+      "startMs": 120330,
+      "endMs": 139330,
+      "translation": "데콜테에 녹아들어 가"
+    },
+    {
+      "startMs": 139330,
+      "endMs": 146380,
+      "translation": "문득 식어 버린 얼그레이, 마이 퍼니 밸런타인"
+    },
+    {
+      "startMs": 146380,
+      "endMs": 153570,
+      "translation": "건강한 인생의 금 간 틈을 사뿐사뿐 걸어"
+    },
+    {
+      "startMs": 153570,
+      "endMs": 161750,
+      "translation": "흩뿌려진 애정을 씹는 벌거벗은 토르소"
+    },
+    {
+      "startMs": 161750,
+      "endMs": 169090,
+      "translation": "향기로울 만큼 뿌옇게 흐린 봄을 찾고 있어"
+    },
+    {
+      "startMs": 169090,
+      "endMs": 172740,
+      "translation": "지금은 란란 라라라 란란란"
+    },
+    {
+      "startMs": 172740,
+      "endMs": 176470,
+      "translation": "깊은 잠에 들고 싶어"
+    },
+    {
+      "startMs": 176470,
+      "endMs": 179970,
+      "translation": "달이 란란 라라라 란란란"
+    },
+    {
+      "startMs": 179970,
+      "endMs": 183450,
+      "translation": "데콜테를 쓸어내려 가"
+    },
+    {
+      "startMs": 183450,
+      "endMs": 187230,
+      "translation": "지금은 란란 라라라 란란란"
+    },
+    {
+      "startMs": 187230,
+      "endMs": 190850,
+      "translation": "아무것도 섞이지 않은 걸 원해"
+    },
+    {
+      "startMs": 190850,
+      "endMs": 194350,
+      "translation": "바람이 란란 라라라 란란란"
+    },
+    {
+      "startMs": 194350,
+      "endMs": 210000,
+      "translation": "데콜테에 녹아들어 가"
+    }
+  ]
+}

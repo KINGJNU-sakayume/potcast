@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 960578,
+    "durationMs": 238000
+  },
+  "segments": [
+    {
+      "startMs": 14460,
+      "endMs": 23870,
+      "translation": "그냥 아무것도 모르는 척해"
+    },
+    {
+      "startMs": 23870,
+      "endMs": 32910,
+      "translation": "후회하지 않아, 내 마음은 상실을 견디지 못하니까"
+    },
+    {
+      "startMs": 32910,
+      "endMs": 37970,
+      "translation": "차라리 아무것도 모르고 싶어"
+    },
+    {
+      "startMs": 37970,
+      "endMs": 43250,
+      "translation": "차라리 너와 함께 있고 싶어"
+    },
+    {
+      "startMs": 43250,
+      "endMs": 45820,
+      "translation": "말이 끝나고, 모든 게 끝나도, 예"
+    },
+    {
+      "startMs": 45820,
+      "endMs": 48100,
+      "translation": "절대 알고 싶지 않아"
+    },
+    {
+      "startMs": 48100,
+      "endMs": 50650,
+      "translation": "네가 뭘 했는지 알 수 있어, 예"
+    },
+    {
+      "startMs": 50650,
+      "endMs": 52010,
+      "translation": "널 바라보면"
+    },
+    {
+      "startMs": 52010,
+      "endMs": 54870,
+      "translation": "네 눈 속에서"
+    },
+    {
+      "startMs": 54870,
+      "endMs": 59010,
+      "translation": "네 안에서 뭔가 타오르는 게 보여"
+    },
+    {
+      "startMs": 59010,
+      "endMs": 61460,
+      "translation": "오, 네 안에서"
+    },
+    {
+      "startMs": 61460,
+      "endMs": 64480,
+      "translation": "네 눈 속에서"
+    },
+    {
+      "startMs": 64480,
+      "endMs": 68690,
+      "translation": "웃는 게 아프다는 걸 알아, 그래도 넌 웃으려 해"
+    },
+    {
+      "startMs": 68690,
+      "endMs": 71170,
+      "translation": "오, 웃으려 해"
+    },
+    {
+      "startMs": 71170,
+      "endMs": 73500,
+      "translation": "넌 늘 아픔을 숨기려 하고"
+    },
+    {
+      "startMs": 73500,
+      "endMs": 75940,
+      "translation": "넌 늘 해야 할 말을 정확히 알아"
+    },
+    {
+      "startMs": 75940,
+      "endMs": 78510,
+      "translation": "난 늘 다른 곳을 봐"
+    },
+    {
+      "startMs": 78510,
+      "endMs": 80810,
+      "translation": "난 눈이 멀었어, 눈이 멀었어"
+    },
+    {
+      "startMs": 80810,
+      "endMs": 83880,
+      "translation": "네 눈 속에서"
+    },
+    {
+      "startMs": 83880,
+      "endMs": 87700,
+      "translation": "넌 거짓말을 하지만, 그게 너의 전부라고 여기지 않아"
+    },
+    {
+      "startMs": 87700,
+      "endMs": 91250,
+      "translation": "오, 너의 전부라고"
+    },
+    {
+      "startMs": 91250,
+      "endMs": 100350,
+      "translation": "다른 사람에게서 사랑을 찾으려 한 적이 너무 많았어"
+    },
+    {
+      "startMs": 100350,
+      "endMs": 105050,
+      "translation": "그래도 진심이라는 걸 알아 줬으면 해 (진심이야)"
+    },
+    {
+      "startMs": 105050,
+      "endMs": 110580,
+      "translation": "내 마음속엔 너뿐이었다고 말할 때, 오"
+    },
+    {
+      "startMs": 110580,
+      "endMs": 113020,
+      "translation": "말이 끝나고, 모든 게 끝나도, 예"
+    },
+    {
+      "startMs": 113020,
+      "endMs": 115620,
+      "translation": "절대 네가 알게 하지 않을 거야 (알게 하지 않을 거야)"
+    },
+    {
+      "startMs": 115620,
+      "endMs": 118030,
+      "translation": "내가 한 일이 부끄러워, 예"
+    },
+    {
+      "startMs": 118030,
+      "endMs": 119280,
+      "translation": "널 바라보면"
+    },
+    {
+      "startMs": 119280,
+      "endMs": 122130,
+      "translation": "네 눈 속에서 (네 눈)"
+    },
+    {
+      "startMs": 122130,
+      "endMs": 126400,
+      "translation": "네 안에서 뭔가 타오르는 게 보여 (네 안에서)"
+    },
+    {
+      "startMs": 126400,
+      "endMs": 128930,
+      "translation": "오, 네 안에서 (오, 네 안에서)"
+    },
+    {
+      "startMs": 128930,
+      "endMs": 131730,
+      "translation": "네 눈 속에서"
+    },
+    {
+      "startMs": 131730,
+      "endMs": 136180,
+      "translation": "웃는 게 아프다는 걸 알아, 그래도 넌 웃으려 해 (그래도 웃으려 해)"
+    },
+    {
+      "startMs": 136180,
+      "endMs": 138670,
+      "translation": "오, 웃으려 해 (웃으려 해)"
+    },
+    {
+      "startMs": 138670,
+      "endMs": 141050,
+      "translation": "넌 늘 아픔을 숨기려 하고 (오, 오)"
+    },
+    {
+      "startMs": 141050,
+      "endMs": 143390,
+      "translation": "넌 늘 해야 할 말을 정확히 알아 (오, 이런)"
+    },
+    {
+      "startMs": 143390,
+      "endMs": 145730,
+      "translation": "난 늘 다른 곳을 봐"
+    },
+    {
+      "startMs": 145730,
+      "endMs": 148180,
+      "translation": "난 눈이 멀었어, 눈이 멀었어"
+    },
+    {
+      "startMs": 148180,
+      "endMs": 151060,
+      "translation": "네 눈 속에서"
+    },
+    {
+      "startMs": 151060,
+      "endMs": 155260,
+      "translation": "넌 거짓말을 하지만, 그게 너의 전부라고 여기지 않아 (헤이)"
+    },
+    {
+      "startMs": 155260,
+      "endMs": 167630,
+      "translation": "오, 너의 전부라고"
+    },
+    {
+      "startMs": 167630,
+      "endMs": 170250,
+      "translation": "네 눈 속에서"
+    },
+    {
+      "startMs": 170250,
+      "endMs": 174340,
+      "translation": "네 안에서 뭔가 타오르는 게 보여"
+    },
+    {
+      "startMs": 174340,
+      "endMs": 176800,
+      "translation": "오, 네 안에서"
+    },
+    {
+      "startMs": 176800,
+      "endMs": 179460,
+      "translation": "넌 늘 아픔을 숨기려 하고"
+    },
+    {
+      "startMs": 179460,
+      "endMs": 181570,
+      "translation": "넌 늘 해야 할 말을 정확히 알아"
+    },
+    {
+      "startMs": 181570,
+      "endMs": 184210,
+      "translation": "난 늘 다른 곳을 봐"
+    },
+    {
+      "startMs": 184210,
+      "endMs": 186580,
+      "translation": "난 눈이 멀었어, 눈이 멀었어"
+    },
+    {
+      "startMs": 186580,
+      "endMs": 189450,
+      "translation": "네 눈 속에서"
+    },
+    {
+      "startMs": 189450,
+      "endMs": 193610,
+      "translation": "넌 거짓말을 하지만, 그게 너의 전부라고 여기지 않아"
+    },
+    {
+      "startMs": 193610,
+      "endMs": 238000,
+      "translation": "오, 너의 전부라고"
+    }
+  ]
+}

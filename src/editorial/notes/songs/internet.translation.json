@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 495547,
+    "durationMs": 123000
+  },
+  "segments": [
+    {
+      "startMs": 1850,
+      "endMs": 4970,
+      "translation": "이, 그래, 그래, 그래 (오)"
+    },
+    {
+      "startMs": 4970,
+      "endMs": 7840,
+      "translation": "워"
+    },
+    {
+      "startMs": 7840,
+      "endMs": 12390,
+      "translation": "이, 그래, 그래, 그래"
+    },
+    {
+      "startMs": 12390,
+      "endMs": 15660,
+      "translation": "방금 그 아가씨 인스타그램을 봤어, 뽐내고 있더라"
+    },
+    {
+      "startMs": 15660,
+      "endMs": 18970,
+      "translation": "강아지 사진엔 관심 없어, 몸매만 보이지"
+    },
+    {
+      "startMs": 18970,
+      "endMs": 22260,
+      "translation": "오, 자기, 모델이야? 젠장, 전혀 몰랐어"
+    },
+    {
+      "startMs": 22260,
+      "endMs": 25460,
+      "translation": "그 분위기를 던지면 내가 다 받아 줄게"
+    },
+    {
+      "startMs": 25460,
+      "endMs": 27230,
+      "translation": "우리가 사는 방식은 너무 위험해"
+    },
+    {
+      "startMs": 27230,
+      "endMs": 29000,
+      "translation": "내 곡들이 유출된 뒤로 편집증이 생겼어"
+    },
+    {
+      "startMs": 29000,
+      "endMs": 30470,
+      "translation": "그게 인터넷에 올라올까 궁금해"
+    },
+    {
+      "startMs": 30470,
+      "endMs": 32110,
+      "translation": "내게 달라붙는 여자들은 나도 어쩔 수가 없어"
+    },
+    {
+      "startMs": 32110,
+      "endMs": 33770,
+      "translation": "사진을 찍어서 올려 버려"
+    },
+    {
+      "startMs": 33770,
+      "endMs": 35310,
+      "translation": "늦게 집에 와서 침대로 기어 들어가"
+    },
+    {
+      "startMs": 35310,
+      "endMs": 37010,
+      "translation": "그 여자는 늘 '어디 갔었어?' 하고 물어"
+    },
+    {
+      "startMs": 37010,
+      "endMs": 38260,
+      "translation": "워"
+    },
+    {
+      "startMs": 38260,
+      "endMs": 41420,
+      "translation": "세상은 엉망이 됐고 우린 다 그걸 알아"
+    },
+    {
+      "startMs": 41420,
+      "endMs": 44740,
+      "translation": "사람들은 난리야, 프로작이나 먹어"
+    },
+    {
+      "startMs": 44740,
+      "endMs": 47850,
+      "translation": "레온 디치노 반바지 하나로 블로그들이 다 열 받았지"
+    },
+    {
+      "startMs": 47850,
+      "endMs": 51880,
+      "translation": "인터넷 따위 엿이나 먹어, 그대로 인용해도 돼, 워"
+    },
+    {
+      "startMs": 51880,
+      "endMs": 54100,
+      "translation": "인스타그램 사랑"
+    },
+    {
+      "startMs": 54100,
+      "endMs": 57570,
+      "translation": "모르는 게 약이라면 날 깨우지 마"
+    },
+    {
+      "startMs": 57570,
+      "endMs": 60650,
+      "translation": "아마 내가 제일 늦게 알게 되겠지 (워)"
+    },
+    {
+      "startMs": 60650,
+      "endMs": 65170,
+      "translation": "난 더는 인터넷을 안 하니까"
+    },
+    {
+      "startMs": 65170,
+      "endMs": 67120,
+      "translation": "인스타그램 사랑"
+    },
+    {
+      "startMs": 67120,
+      "endMs": 70860,
+      "translation": "모르는 게 약이라면 날 깨우지 마"
+    },
+    {
+      "startMs": 70860,
+      "endMs": 73630,
+      "translation": "아마 내가 제일 늦게 알게 되겠지 (워)"
+    },
+    {
+      "startMs": 73630,
+      "endMs": 79110,
+      "translation": "난 더는 인터넷을 안 하니까"
+    },
+    {
+      "startMs": 79110,
+      "endMs": 84610,
+      "translation": "우"
+    },
+    {
+      "startMs": 84610,
+      "endMs": 91340,
+      "translation": "우"
+    },
+    {
+      "startMs": 91340,
+      "endMs": 97620,
+      "translation": "우"
+    },
+    {
+      "startMs": 97620,
+      "endMs": 103630,
+      "translation": "우"
+    },
+    {
+      "startMs": 103630,
+      "endMs": 110390,
+      "translation": "우"
+    },
+    {
+      "startMs": 110390,
+      "endMs": 123000,
+      "translation": "우"
+    }
+  ]
+}

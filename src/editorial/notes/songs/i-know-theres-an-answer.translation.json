@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 238865,
+    "durationMs": 199000
+  },
+  "segments": [
+    {
+      "startMs": 15890,
+      "endMs": 24830,
+      "translation": "혼자서도 해낼 수 있다고 믿는 사람들을 많이 안다"
+    },
+    {
+      "startMs": 24830,
+      "endMs": 34090,
+      "translation": "그들은 머리를 닫아걸고 자기 안전지대에 머문다"
+    },
+    {
+      "startMs": 34090,
+      "endMs": 46290,
+      "translation": "그들에게 무슨 말을 할 수 있을까, 그들을 방어하게 만들지 않을 무슨 말을?"
+    },
+    {
+      "startMs": 46290,
+      "endMs": 50560,
+      "translation": "답이 있다는 건 안다"
+    },
+    {
+      "startMs": 50560,
+      "endMs": 57530,
+      "translation": "이제는 안다, 하지만 그 답은 나 혼자 찾아야 한다"
+    },
+    {
+      "startMs": 57530,
+      "endMs": 66270,
+      "translation": "겉으로는 평온한 척하지만 속은 잔뜩 굳어 있다"
+    },
+    {
+      "startMs": 66270,
+      "endMs": 75770,
+      "translation": "낮에는 비틀대며 지나가고 밤에는 생각을 다 허비한다"
+    },
+    {
+      "startMs": 75770,
+      "endMs": 87870,
+      "translation": "그런데 내가 어떻게 나서서 그들에게 더 나은 삶이 있다고 말할 수 있을까?"
+    },
+    {
+      "startMs": 87870,
+      "endMs": 91870,
+      "translation": "답이 있다는 건 안다"
+    },
+    {
+      "startMs": 91870,
+      "endMs": 123850,
+      "translation": "이제는 안다, 하지만 그 답은 나 혼자 찾아야 한다"
+    },
+    {
+      "startMs": 123850,
+      "endMs": 136230,
+      "translation": "그런데 내가 어떻게 나서서 그들에게 더 나은 삶이 있다고 말할 수 있을까?"
+    },
+    {
+      "startMs": 136230,
+      "endMs": 140190,
+      "translation": "답이 있다는 건 안다"
+    },
+    {
+      "startMs": 140190,
+      "endMs": 199000,
+      "translation": "이제는 안다, 하지만 그 답은 나 혼자 찾아야 한다"
+    }
+  ]
+}

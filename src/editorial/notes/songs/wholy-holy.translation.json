@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 81436,
+    "durationMs": 188000
+  },
+  "segments": [
+    {
+      "startMs": 3590,
+      "endMs": 13400,
+      "translation": "온전히 거룩하게"
+    },
+    {
+      "startMs": 13400,
+      "endMs": 16940,
+      "translation": "하나가 되어요"
+    },
+    {
+      "startMs": 16940,
+      "endMs": 22500,
+      "translation": "온전히 거룩하게"
+    },
+    {
+      "startMs": 22500,
+      "endMs": 29360,
+      "translation": "여러분, 우리 모두 하나가 되어야 해요"
+    },
+    {
+      "startMs": 29360,
+      "endMs": 43700,
+      "translation": "우리에겐 힘이, 능력이, 그 모든 마음이 필요하니까요"
+    },
+    {
+      "startMs": 43700,
+      "endMs": 50570,
+      "translation": "온전히 거룩하게"
+    },
+    {
+      "startMs": 50570,
+      "endMs": 63700,
+      "translation": "오 주여, 서로서로 함께 모여요"
+    },
+    {
+      "startMs": 63700,
+      "endMs": 74440,
+      "translation": "온전히 거룩하게 (온전히 거룩하게, 거룩하게)"
+    },
+    {
+      "startMs": 74440,
+      "endMs": 82910,
+      "translation": "우리는 서로를 믿어야 해요 (예수님을 믿어요)"
+    },
+    {
+      "startMs": 82910,
+      "endMs": 91810,
+      "translation": "예수님은 오래전에 떠나시며 다시 오겠다고 하셨어요 (믿으세요)"
+    },
+    {
+      "startMs": 91810,
+      "endMs": 99620,
+      "translation": "믿을 책 한 권을 남기셨고, 거기서 우리는 배울 게 많아요"
+    },
+    {
+      "startMs": 99620,
+      "endMs": 110520,
+      "translation": "오, 온전히 거룩하게 (오 주여)"
+    },
+    {
+      "startMs": 110520,
+      "endMs": 123100,
+      "translation": "우리는 미움을 영원히 이길 수 있어요 (그래요, 할 수 있어요), 우리에겐 그분이 필요해요 (거룩하게)"
+    },
+    {
+      "startMs": 123100,
+      "endMs": 133430,
+      "translation": "온전히 (온전히 거룩하게)"
+    },
+    {
+      "startMs": 133430,
+      "endMs": 138750,
+      "translation": "우리는 세상의 토대를 뒤흔들 수 있어요 (그래요, 할 수 있어요)"
+    },
+    {
+      "startMs": 138750,
+      "endMs": 150600,
+      "translation": "모두 함께, 함께 거룩하게 (온전히 거룩하게)"
+    },
+    {
+      "startMs": 150600,
+      "endMs": 158320,
+      "translation": "온 나라에 사랑, 사랑, 사랑을 외칠 거예요"
+    },
+    {
+      "startMs": 158320,
+      "endMs": 161220,
+      "translation": "(우…)"
+    },
+    {
+      "startMs": 161220,
+      "endMs": 169250,
+      "translation": "온전히 거룩하게, 함께 거룩하게 (거룩하게)"
+    },
+    {
+      "startMs": 169250,
+      "endMs": 176530,
+      "translation": "우리는 사랑을, 우리의 구원을 선포해요"
+    },
+    {
+      "startMs": 176530,
+      "endMs": 188000,
+      "translation": "(후…)"
+    }
+  ]
+}

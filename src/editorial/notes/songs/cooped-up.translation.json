@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1048677,
+    "durationMs": 186000
+  },
+  "segments": [
+    {
+      "startMs": 9420,
+      "endMs": 11530,
+      "translation": "이제 곧 차를 대"
+    },
+    {
+      "startMs": 11530,
+      "endMs": 14370,
+      "translation": "스위치를 누르고, 커튼을 걷어"
+    },
+    {
+      "startMs": 14370,
+      "endMs": 16850,
+      "translation": "너무 오래 기다렸어"
+    },
+    {
+      "startMs": 16850,
+      "endMs": 19320,
+      "translation": "이제 다시 떠올라야 해"
+    },
+    {
+      "startMs": 19320,
+      "endMs": 22020,
+      "translation": "그래, 이제 곧 건배할 거야"
+    },
+    {
+      "startMs": 22020,
+      "endMs": 24480,
+      "translation": "우리가 태우는 그 모든 돈으로"
+    },
+    {
+      "startMs": 24480,
+      "endMs": 27090,
+      "translation": "그동안 갇혀 지낸 기분이었으니까"
+    },
+    {
+      "startMs": 27090,
+      "endMs": 30500,
+      "translation": "빌어먹게 갇혀 지냈어"
+    },
+    {
+      "startMs": 30500,
+      "endMs": 33430,
+      "translation": "그래, 버번 말고 버드 라이트를 끊었어"
+    },
+    {
+      "startMs": 33430,
+      "endMs": 35960,
+      "translation": "서버번 지붕을 잘라 버릴지도 몰라"
+    },
+    {
+      "startMs": 35960,
+      "endMs": 38470,
+      "translation": "나이스 가이 클럽의 존 터지언처럼 굴어 보려 했지"
+    },
+    {
+      "startMs": 38470,
+      "endMs": 41290,
+      "translation": "네 버킨 백에 토하기 전까진"
+    },
+    {
+      "startMs": 41290,
+      "endMs": 43120,
+      "translation": "그러다 아침에 깨어났더니"
+    },
+    {
+      "startMs": 43120,
+      "endMs": 45480,
+      "translation": "경찰이 영장을 들고 문 앞에 왔어"
+    },
+    {
+      "startMs": 45480,
+      "endMs": 47980,
+      "translation": "뭔가를 변기에 내려 버린 게 기억나"
+    },
+    {
+      "startMs": 47980,
+      "endMs": 52360,
+      "translation": "경고로 봐줘야 할걸, 리턴 오브 더 맥"
+    },
+    {
+      "startMs": 52360,
+      "endMs": 53730,
+      "translation": "아웃캐스트가 된 기분이야"
+    },
+    {
+      "startMs": 53730,
+      "endMs": 57530,
+      "translation": "정장 바지 입은 건 나뿐, 3천 달러는 들 거야"
+    },
+    {
+      "startMs": 57530,
+      "endMs": 58840,
+      "translation": "이제 넌 그 수표를 아껴 두지"
+    },
+    {
+      "startMs": 58840,
+      "endMs": 61770,
+      "translation": "왜 내 스타일을 가져가? 돌려줄래?"
+    },
+    {
+      "startMs": 61770,
+      "endMs": 64350,
+      "translation": "구찌, 내 프라다, 미야케"
+    },
+    {
+      "startMs": 64350,
+      "endMs": 66790,
+      "translation": "루이, 보테가, 그리고 토미"
+    },
+    {
+      "startMs": 66790,
+      "endMs": 69080,
+      "translation": "이 모든 걸 몸에 걸쳤어"
+    },
+    {
+      "startMs": 69080,
+      "endMs": 70330,
+      "translation": "파티하자"
+    },
+    {
+      "startMs": 70330,
+      "endMs": 72770,
+      "translation": "이제 곧 차를 대"
+    },
+    {
+      "startMs": 72770,
+      "endMs": 75300,
+      "translation": "스위치를 누르고, 커튼을 걷어 (스위치를 누르고, 커튼을 걷어)"
+    },
+    {
+      "startMs": 75300,
+      "endMs": 77770,
+      "translation": "너무 오래 기다렸어"
+    },
+    {
+      "startMs": 77770,
+      "endMs": 80280,
+      "translation": "이제 다시 떠올라야 해"
+    },
+    {
+      "startMs": 80280,
+      "endMs": 83410,
+      "translation": "그래, 이제 곧 건배할 거야"
+    },
+    {
+      "startMs": 83410,
+      "endMs": 85670,
+      "translation": "우리가 태우는 그 모든 돈으로"
+    },
+    {
+      "startMs": 85670,
+      "endMs": 88200,
+      "translation": "그동안 갇혀 지낸 기분이었으니까"
+    },
+    {
+      "startMs": 88200,
+      "endMs": 91550,
+      "translation": "빌어먹게 갇혀 지냈어"
+    },
+    {
+      "startMs": 91550,
+      "endMs": 98640,
+      "translation": "젠장, 가야 해, 가야 해, 나 갈 거야, 나 가"
+    },
+    {
+      "startMs": 98640,
+      "endMs": 101150,
+      "translation": "바닥엔 검은 밍크가 깔려 있어"
+    },
+    {
+      "startMs": 101150,
+      "endMs": 103570,
+      "translation": "약에 취한 여자들이 잔뜩"
+    },
+    {
+      "startMs": 103570,
+      "endMs": 106470,
+      "translation": "어느 동네에 가든 다들 우릴 반겨"
+    },
+    {
+      "startMs": 106470,
+      "endMs": 109040,
+      "translation": "우주선 같은 차를 몰며 나랑 함께하는 공범"
+    },
+    {
+      "startMs": 109040,
+      "endMs": 111970,
+      "translation": "거리에서 일궈 냈고, 이제 돈을 받아"
+    },
+    {
+      "startMs": 111970,
+      "endMs": 114270,
+      "translation": "내 주위 모두가 돈을 벌어, 너무 잘 옮아"
+    },
+    {
+      "startMs": 114270,
+      "endMs": 116780,
+      "translation": "의리를 지켰더니 이젠 다들 놀랄 만큼 부자야"
+    },
+    {
+      "startMs": 116780,
+      "endMs": 118930,
+      "translation": "더 깔끔해서 검은 블랙 배지를 끌고 왔어"
+    },
+    {
+      "startMs": 118930,
+      "endMs": 121430,
+      "translation": "악마들이랑 어울려 지내던 때가 기억나"
+    },
+    {
+      "startMs": 121430,
+      "endMs": 124180,
+      "translation": "포스티가 날 처음으로 투어에 데려갔지"
+    },
+    {
+      "startMs": 124180,
+      "endMs": 126660,
+      "translation": "매일 밤 매진된 경기장에서 공연하게 해 줬어"
+    },
+    {
+      "startMs": 126660,
+      "endMs": 129020,
+      "translation": "임대 단지 출신인 난 이런 걸 보게 될 줄 몰랐어"
+    },
+    {
+      "startMs": 129020,
+      "endMs": 131680,
+      "translation": "말해 줘도 너희는 아마 안 믿겠지"
+    },
+    {
+      "startMs": 131680,
+      "endMs": 133920,
+      "translation": "이제 곧 차를 대"
+    },
+    {
+      "startMs": 133920,
+      "endMs": 136960,
+      "translation": "스위치를 누르고, 커튼을 걷어"
+    },
+    {
+      "startMs": 136960,
+      "endMs": 139300,
+      "translation": "너무 오래 기다렸어"
+    },
+    {
+      "startMs": 139300,
+      "endMs": 141470,
+      "translation": "이제 다시 떠올라야 해"
+    },
+    {
+      "startMs": 141470,
+      "endMs": 144630,
+      "translation": "그래, 이제 곧 건배할 거야"
+    },
+    {
+      "startMs": 144630,
+      "endMs": 147170,
+      "translation": "우리가 태우는 그 모든 돈으로"
+    },
+    {
+      "startMs": 147170,
+      "endMs": 149560,
+      "translation": "그동안 갇혀 지낸 기분이었으니까"
+    },
+    {
+      "startMs": 149560,
+      "endMs": 152910,
+      "translation": "빌어먹게 갇혀 지냈어"
+    },
+    {
+      "startMs": 152910,
+      "endMs": 155090,
+      "translation": "날이 밝을 때까지, 날이 밝을 때까지"
+    },
+    {
+      "startMs": 155090,
+      "endMs": 157930,
+      "translation": "배 속엔 사케, 폐엔 담배"
+    },
+    {
+      "startMs": 157930,
+      "endMs": 160520,
+      "translation": "아침 11시인데 우린 아직 안 끝났어"
+    },
+    {
+      "startMs": 160520,
+      "endMs": 162270,
+      "translation": "난 여전히 끝내주지, 그래서 뭐?"
+    },
+    {
+      "startMs": 162270,
+      "endMs": 164520,
+      "translation": "그래, 이제 곧 건배할 거야"
+    },
+    {
+      "startMs": 164520,
+      "endMs": 167330,
+      "translation": "우리가 태우는 그 모든 돈으로"
+    },
+    {
+      "startMs": 167330,
+      "endMs": 170240,
+      "translation": "그동안 갇혀 지낸 기분이었으니까"
+    },
+    {
+      "startMs": 170240,
+      "endMs": 186000,
+      "translation": "빌어먹게 갇혀 지냈어"
+    }
+  ]
+}

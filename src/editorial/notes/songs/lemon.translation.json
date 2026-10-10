@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 25154335,
+    "durationMs": 255827
+  },
+  "segments": [
+    {
+      "startMs": 700,
+      "endMs": 6540,
+      "translation": "꿈이었다면 얼마나 좋았을까요"
+    },
+    {
+      "startMs": 6540,
+      "endMs": 11820,
+      "translation": "아직도 당신 꿈을 꿔요"
+    },
+    {
+      "startMs": 11820,
+      "endMs": 17370,
+      "translation": "두고 온 물건을 가지러 돌아가듯"
+    },
+    {
+      "startMs": 17370,
+      "endMs": 25610,
+      "translation": "낡은 추억의 먼지를 털어요"
+    },
+    {
+      "startMs": 25610,
+      "endMs": 31030,
+      "translation": "돌아오지 않는 행복도 있다는 걸"
+    },
+    {
+      "startMs": 31030,
+      "endMs": 36720,
+      "translation": "마지막에 당신이 가르쳐 주었죠"
+    },
+    {
+      "startMs": 36720,
+      "endMs": 42330,
+      "translation": "말하지 못하고 숨겨 온 어두운 과거도"
+    },
+    {
+      "startMs": 42330,
+      "endMs": 47910,
+      "translation": "당신이 없으면 영원히 어두운 채예요"
+    },
+    {
+      "startMs": 47910,
+      "endMs": 53640,
+      "translation": "분명 이제 이보다 더 아플 일 따위"
+    },
+    {
+      "startMs": 53640,
+      "endMs": 58580,
+      "translation": "없다는 걸 알고 있어요"
+    },
+    {
+      "startMs": 58580,
+      "endMs": 63900,
+      "translation": "그날의 슬픔마저, 그날의 괴로움마저"
+    },
+    {
+      "startMs": 63900,
+      "endMs": 69580,
+      "translation": "그 모든 걸 사랑했어요, 당신과 함께"
+    },
+    {
+      "startMs": 69580,
+      "endMs": 75180,
+      "translation": "가슴에 남아 떠나지 않는 쓴 레몬 향기"
+    },
+    {
+      "startMs": 75180,
+      "endMs": 80850,
+      "translation": "비가 그칠 때까지는 돌아갈 수 없어요"
+    },
+    {
+      "startMs": 80850,
+      "endMs": 97440,
+      "translation": "지금도 당신은 나의 빛이에요"
+    },
+    {
+      "startMs": 97440,
+      "endMs": 102890,
+      "translation": "어둠 속에서 당신의 등을 더듬었죠"
+    },
+    {
+      "startMs": 102890,
+      "endMs": 108440,
+      "translation": "그 윤곽을 선명히 기억하고 있어요"
+    },
+    {
+      "startMs": 108440,
+      "endMs": 113910,
+      "translation": "감당할 수 없는 것과 마주칠 때마다"
+    },
+    {
+      "startMs": 113910,
+      "endMs": 119790,
+      "translation": "멈추지 않고 넘쳐흐르는 건 눈물뿐이에요"
+    },
+    {
+      "startMs": 119790,
+      "endMs": 125450,
+      "translation": "무얼 하고 있었나요, 무얼 보고 있었나요"
+    },
+    {
+      "startMs": 125450,
+      "endMs": 130020,
+      "translation": "내가 모르는 옆얼굴로"
+    },
+    {
+      "startMs": 130020,
+      "endMs": 132820,
+      "translation": "어딘가에서 당신이 지금"
+    },
+    {
+      "startMs": 132820,
+      "endMs": 135540,
+      "translation": "나와 같은"
+    },
+    {
+      "startMs": 135540,
+      "endMs": 141080,
+      "translation": "눈물에 젖어 쓸쓸함 속에 있다면"
+    },
+    {
+      "startMs": 141080,
+      "endMs": 146940,
+      "translation": "나 같은 건 부디 잊어 주세요"
+    },
+    {
+      "startMs": 146940,
+      "endMs": 152680,
+      "translation": "그런 걸 진심으로 바랄 만큼"
+    },
+    {
+      "startMs": 152680,
+      "endMs": 161040,
+      "translation": "지금도 당신은 나의 빛이에요"
+    },
+    {
+      "startMs": 161040,
+      "endMs": 172140,
+      "translation": "스스로 생각한 것보다 더 당신을 사랑하고 있었어요"
+    },
+    {
+      "startMs": 172140,
+      "endMs": 182890,
+      "translation": "그날 이후로 마음처럼 숨을 쉴 수가 없어요"
+    },
+    {
+      "startMs": 182890,
+      "endMs": 193790,
+      "translation": "그렇게 곁에 있었는데 마치 거짓말 같아요"
+    },
+    {
+      "startMs": 193790,
+      "endMs": 210150,
+      "translation": "도저히 잊을 수 없어요, 그것만은 확실해요"
+    },
+    {
+      "startMs": 210150,
+      "endMs": 215540,
+      "translation": "그날의 슬픔마저, 그날의 괴로움마저"
+    },
+    {
+      "startMs": 215540,
+      "endMs": 221310,
+      "translation": "그 모든 걸 사랑했어요, 당신과 함께"
+    },
+    {
+      "startMs": 221310,
+      "endMs": 226930,
+      "translation": "가슴에 남아 떠나지 않는 쓴 레몬 향기"
+    },
+    {
+      "startMs": 226930,
+      "endMs": 232460,
+      "translation": "비가 그칠 때까지는 돌아갈 수 없어요"
+    },
+    {
+      "startMs": 232460,
+      "endMs": 238050,
+      "translation": "갈라놓은 과일의 한쪽처럼"
+    },
+    {
+      "startMs": 238050,
+      "endMs": 255827,
+      "translation": "지금도 당신은 나의 빛이에요"
+    }
+  ]
+}

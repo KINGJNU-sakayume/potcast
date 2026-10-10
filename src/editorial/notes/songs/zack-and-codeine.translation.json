@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 511035,
+    "durationMs": 204000
+  },
+  "segments": [
+    {
+      "startMs": 14460,
+      "endMs": 18550,
+      "translation": "인생이 너무 달콤해, 코디가 된 기분이야 (코디)"
+    },
+    {
+      "startMs": 18550,
+      "endMs": 22060,
+      "translation": "일어나면 빌어먹을 코데인으로 입을 헹궈 (코데인)"
+    },
+    {
+      "startMs": 22060,
+      "endMs": 25320,
+      "translation": "서른 병, 그래, 계산은 내가 해 (내가)"
+    },
+    {
+      "startMs": 25320,
+      "endMs": 28950,
+      "translation": "빠르게 살아왔어, 아니, 천천히는 못 해 (천천히)"
+    },
+    {
+      "startMs": 28950,
+      "endMs": 32230,
+      "translation": "인생이 너무 달콤해, 코디가 된 기분이야 (코디)"
+    },
+    {
+      "startMs": 32230,
+      "endMs": 35720,
+      "translation": "일어나면 빌어먹을 코데인으로 입을 헹궈 (코데인)"
+    },
+    {
+      "startMs": 35720,
+      "endMs": 39440,
+      "translation": "우린 며칠째 퍼마시는 중, 잠은 한숨도 안 자 (안 자)"
+    },
+    {
+      "startMs": 39440,
+      "endMs": 43200,
+      "translation": "호텔 로비를 파티장으로 만들었어"
+    },
+    {
+      "startMs": 43200,
+      "endMs": 46700,
+      "translation": "외제차를 몰아, 비틀 같은 건 못 몰아"
+    },
+    {
+      "startMs": 46700,
+      "endMs": 50010,
+      "translation": "민소매 위에 생로랑을 걸쳐"
+    },
+    {
+      "startMs": 50010,
+      "endMs": 53620,
+      "translation": "이블 크니블처럼 아슬아슬하게 폼 잡는 게 좋아"
+    },
+    {
+      "startMs": 53620,
+      "endMs": 56030,
+      "translation": "그래도 내 사람들 없이는 아무 의미 없어"
+    },
+    {
+      "startMs": 56030,
+      "endMs": 59390,
+      "translation": "무대에 오르면 손을 하늘로"
+    },
+    {
+      "startMs": 59390,
+      "endMs": 62780,
+      "translation": "내가 하는 사소한 것 하나하나 다들 분석해"
+    },
+    {
+      "startMs": 62780,
+      "endMs": 66270,
+      "translation": "그 여자한테 코카인을 조금 줬더니 살아났어"
+    },
+    {
+      "startMs": 66270,
+      "endMs": 69850,
+      "translation": "내 테이블 위에서 춤추기 시작했지"
+    },
+    {
+      "startMs": 69850,
+      "endMs": 73300,
+      "translation": "난 누구랑도 안 엮여, 그래, 넌 날 거의 몰라"
+    },
+    {
+      "startMs": 73300,
+      "endMs": 74740,
+      "translation": "날 뭐로 보는 거야?"
+    },
+    {
+      "startMs": 74740,
+      "endMs": 76740,
+      "translation": "아니, 난 네 영혼을 구해 줄 수 없어"
+    },
+    {
+      "startMs": 76740,
+      "endMs": 81060,
+      "translation": "난 누구랑도 안 엮여, 그래, 넌 날 거의 몰라"
+    },
+    {
+      "startMs": 81060,
+      "endMs": 84390,
+      "translation": "제발, 그냥 날 내버려 둬"
+    },
+    {
+      "startMs": 84390,
+      "endMs": 87980,
+      "translation": "인생이 너무 달콤해, 코디가 된 기분이야 (코디)"
+    },
+    {
+      "startMs": 87980,
+      "endMs": 91500,
+      "translation": "일어나면 빌어먹을 코데인으로 입을 헹궈 (코데인)"
+    },
+    {
+      "startMs": 91500,
+      "endMs": 94790,
+      "translation": "서른 병, 그래, 계산은 내가 해 (내가)"
+    },
+    {
+      "startMs": 94790,
+      "endMs": 98460,
+      "translation": "빠르게 살아왔어, 아니, 천천히는 못 해 (천천히)"
+    },
+    {
+      "startMs": 98460,
+      "endMs": 101840,
+      "translation": "인생이 너무 달콤해, 코디가 된 기분이야 (코디)"
+    },
+    {
+      "startMs": 101840,
+      "endMs": 105390,
+      "translation": "일어나면 빌어먹을 코데인으로 입을 헹궈 (코데인)"
+    },
+    {
+      "startMs": 105390,
+      "endMs": 108890,
+      "translation": "우린 며칠째 퍼마시는 중, 잠은 한숨도 안 자 (안 자)"
+    },
+    {
+      "startMs": 108890,
+      "endMs": 112830,
+      "translation": "호텔 로비를 파티장으로 만들었어"
+    },
+    {
+      "startMs": 112830,
+      "endMs": 116300,
+      "translation": "돈뭉치를 백 개 벌었더니 다들 손을 내밀어 (다들 손을 내밀어)"
+    },
+    {
+      "startMs": 116300,
+      "endMs": 119760,
+      "translation": "아니, 친구, 공짜로 나눠 줄 순 없어 (공짜로 나눠 줄 순)"
+    },
+    {
+      "startMs": 119760,
+      "endMs": 123190,
+      "translation": "요즘 래퍼들은 다 똑같이 들려 (다 똑같이 들려)"
+    },
+    {
+      "startMs": 123190,
+      "endMs": 124670,
+      "translation": "그게 내 탓이래"
+    },
+    {
+      "startMs": 124670,
+      "endMs": 127700,
+      "translation": "이제 너희 다 텔레비전에서 날 보지"
+    },
+    {
+      "startMs": 127700,
+      "endMs": 131150,
+      "translation": "스물셋에 백만장자가 됐어"
+    },
+    {
+      "startMs": 131150,
+      "endMs": 134500,
+      "translation": "잠도 안 자고 일주일 내내 날뛰어"
+    },
+    {
+      "startMs": 134500,
+      "endMs": 137810,
+      "translation": "1위를 찍었는데 아직 정점에 오르지도 않았어"
+    },
+    {
+      "startMs": 137810,
+      "endMs": 139490,
+      "translation": "그냥 말해 줘야 했어"
+    },
+    {
+      "startMs": 139490,
+      "endMs": 142810,
+      "translation": "난 누구랑도 안 엮여, 그래, 넌 날 거의 몰라"
+    },
+    {
+      "startMs": 142810,
+      "endMs": 144630,
+      "translation": "날 뭐로 보는 거야?"
+    },
+    {
+      "startMs": 144630,
+      "endMs": 146300,
+      "translation": "아니, 난 네 영혼을 구해 줄 수 없어"
+    },
+    {
+      "startMs": 146300,
+      "endMs": 150530,
+      "translation": "난 누구랑도 안 엮여, 그래, 넌 날 거의 몰라"
+    },
+    {
+      "startMs": 150530,
+      "endMs": 154150,
+      "translation": "제발, 그냥 날 내버려 둬"
+    },
+    {
+      "startMs": 154150,
+      "endMs": 157500,
+      "translation": "인생이 너무 달콤해, 코디가 된 기분이야 (코디)"
+    },
+    {
+      "startMs": 157500,
+      "endMs": 161120,
+      "translation": "일어나면 빌어먹을 코데인으로 입을 헹궈 (코데인)"
+    },
+    {
+      "startMs": 161120,
+      "endMs": 164420,
+      "translation": "서른 병, 그래, 계산은 내가 해 (내가)"
+    },
+    {
+      "startMs": 164420,
+      "endMs": 167950,
+      "translation": "빠르게 살아왔어, 아니, 천천히는 못 해 (천천히)"
+    },
+    {
+      "startMs": 167950,
+      "endMs": 171320,
+      "translation": "인생이 너무 달콤해, 코디가 된 기분이야 (코디)"
+    },
+    {
+      "startMs": 171320,
+      "endMs": 174860,
+      "translation": "일어나면 빌어먹을 코데인으로 입을 헹궈 (코데인)"
+    },
+    {
+      "startMs": 174860,
+      "endMs": 178100,
+      "translation": "우린 며칠째 퍼마시는 중, 잠은 한숨도 안 자 (안 자)"
+    },
+    {
+      "startMs": 178100,
+      "endMs": 182590,
+      "translation": "호텔 로비를 파티장으로 만들었어"
+    },
+    {
+      "startMs": 182590,
+      "endMs": 185550,
+      "translation": "우린 안 자, 우린 안 자, 우린"
+    },
+    {
+      "startMs": 185550,
+      "endMs": 188980,
+      "translation": "우린 안 자, 오늘 밤엔 안 자"
+    },
+    {
+      "startMs": 188980,
+      "endMs": 192490,
+      "translation": "우린 안 자, 우린 안 자, 절대로"
+    },
+    {
+      "startMs": 192490,
+      "endMs": 204000,
+      "translation": "술 따라, 오늘 밤엔 안 잘 거니까"
+    }
+  ]
+}

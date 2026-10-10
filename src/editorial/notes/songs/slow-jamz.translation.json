@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 3620073,
+    "durationMs": 316000
+  },
+  "segments": [
+    {
+      "startMs": 21530,
+      "endMs": 26810,
+      "translation": "그럴 거야? 그럴 거라고 말해 줘"
+    },
+    {
+      "startMs": 26810,
+      "endMs": 27840,
+      "translation": "우, 우, 우, 우, 우"
+    },
+    {
+      "startMs": 27840,
+      "endMs": 30980,
+      "translation": "그녀는 마빈 게이를, 루서 밴드로스를 원한대"
+    },
+    {
+      "startMs": 30980,
+      "endMs": 34700,
+      "translation": "애니타 베이커 조금이면 이 파티가 확실히 제대로 시작될 거야"
+    },
+    {
+      "startMs": 34700,
+      "endMs": 39190,
+      "translation": "(그럴 거야, 그럴 거야, 그럴 거야"
+    },
+    {
+      "startMs": 39190,
+      "endMs": 41080,
+      "translation": "그럴 거야, 그럴 거야, 자, 자, 자, 자)"
+    },
+    {
+      "startMs": 41080,
+      "endMs": 44650,
+      "translation": "그녀는 레디 포 더 월드를, 뉴 에디션을 원한대"
+    },
+    {
+      "startMs": 44650,
+      "endMs": 47940,
+      "translation": "미니 리퍼튼 조금이면 이 파티가 확실히 제대로 시작될 거야"
+    },
+    {
+      "startMs": 47940,
+      "endMs": 50090,
+      "translation": "(그럴 거야, 그럴 거야, 그럴 거야"
+    },
+    {
+      "startMs": 50090,
+      "endMs": 52140,
+      "translation": "그럴 거야, 그럴 거야, 자, 자, 자, 자)"
+    },
+    {
+      "startMs": 52140,
+      "endMs": 52910,
+      "translation": "확실히 그럴 거야"
+    },
+    {
+      "startMs": 52910,
+      "endMs": 53790,
+      "translation": "내가 뭐라고 했는지 알아?"
+    },
+    {
+      "startMs": 53790,
+      "endMs": 56350,
+      "translation": "네 새 차를 몰고 오라고 했어"
+    },
+    {
+      "startMs": 56350,
+      "endMs": 57920,
+      "translation": "편한 친구들도 데려오고"
+    },
+    {
+      "startMs": 57920,
+      "endMs": 61220,
+      "translation": "난 휘핑크림을 가져갈 테니 넌 옷을 벗어"
+    },
+    {
+      "startMs": 61220,
+      "endMs": 64340,
+      "translation": "넌 내 새 여자니까 우리 몸을 맞대고 흔들자"
+    },
+    {
+      "startMs": 64340,
+      "endMs": 67980,
+      "translation": "그녀는 날 붙잡고 날 비기라고 불러, 샤인이 집에 있을 때처럼"
+    },
+    {
+      "startMs": 67980,
+      "endMs": 70940,
+      "translation": "진짜 끝내주게 예쁜데 왜 맨날 거짓말이야?"
+    },
+    {
+      "startMs": 70940,
+      "endMs": 74180,
+      "translation": "라인스톤인 걸 알면서 다이아몬드라고 하잖아"
+    },
+    {
+      "startMs": 74180,
+      "endMs": 77340,
+      "translation": "피부 밝은 친구는 마이클 잭슨을 닮았고"
+    },
+    {
+      "startMs": 77340,
+      "endMs": 80540,
+      "translation": "피부 어두운 친구도 마이클 잭슨을 닮았어"
+    },
+    {
+      "startMs": 80540,
+      "endMs": 83990,
+      "translation": "레디 포 더 월드를 틀었더니 그녀는 바로 준비가 됐어"
+    },
+    {
+      "startMs": 83990,
+      "endMs": 87290,
+      "translation": "내 친구가 넌 화끈하지 않다던데, 그 말이 틀렸다는 걸 증명해 봐"
+    },
+    {
+      "startMs": 87290,
+      "endMs": 90350,
+      "translation": "이 밴드로스를 틀면 넌 바지를 벗을 거야"
+    },
+    {
+      "startMs": 90350,
+      "endMs": 93840,
+      "translation": "이 글래디스 나이트를 틀면 우린 제대로 즐길 거야"
+    },
+    {
+      "startMs": 93840,
+      "endMs": 97010,
+      "translation": "그녀는 마빈 게이를, 루서 밴드로스를 원한대"
+    },
+    {
+      "startMs": 97010,
+      "endMs": 100930,
+      "translation": "애니타 베이커 조금이면 이 파티가 확실히 제대로 시작될 거야"
+    },
+    {
+      "startMs": 100930,
+      "endMs": 102860,
+      "translation": "(그럴 거야, 그럴 거야, 그럴 거야"
+    },
+    {
+      "startMs": 102860,
+      "endMs": 106050,
+      "translation": "그럴 거야, 그럴 거야, 자, 자, 자, 자)"
+    },
+    {
+      "startMs": 106050,
+      "endMs": 110650,
+      "translation": "그녀는 레디 포 더 월드를, 뉴 에디션을 원한대"
+    },
+    {
+      "startMs": 110650,
+      "endMs": 114200,
+      "translation": "미니 리퍼튼 조금이면 이 파티가 확실히 제대로 시작될 거야"
+    },
+    {
+      "startMs": 114200,
+      "endMs": 116060,
+      "translation": "(그럴 거야, 그럴 거야, 그럴 거야"
+    },
+    {
+      "startMs": 116060,
+      "endMs": 157110,
+      "translation": "그럴 거야, 그럴 거야, 자, 자, 자, 자)"
+    },
+    {
+      "startMs": 157110,
+      "endMs": 159590,
+      "translation": "자, 카녜, 천천히 하라고 했던 거 알아"
+    },
+    {
+      "startMs": 159590,
+      "endMs": 162160,
+      "translation": "좋아, 다 좋아, 아름다워"
+    },
+    {
+      "startMs": 162160,
+      "endMs": 165480,
+      "translation": "그런데 이젠 더 빨리 해 줘"
+    },
+    {
+      "startMs": 165480,
+      "endMs": 169070,
+      "translation": "자기야, 제발, 더 빨리, 해 줘"
+    },
+    {
+      "startMs": 169070,
+      "endMs": 170120,
+      "translation": "더 빨리"
+    },
+    {
+      "startMs": 170120,
+      "endMs": 171420,
+      "translation": "이런, 자기야"
+    },
+    {
+      "startMs": 171420,
+      "endMs": 173970,
+      "translation": "난 그렇게 빨리는 못 하지만 할 수 있는 사람을 알지, 트위스타!"
+    },
+    {
+      "startMs": 173970,
+      "endMs": 175860,
+      "translation": "내 손과 손목에서 반짝이는 걸 네가 쳐다볼 때"
+    },
+    {
+      "startMs": 175860,
+      "endMs": 177440,
+      "translation": "난 누워서 대마를 피우고 있지"
+    },
+    {
+      "startMs": 177440,
+      "endMs": 179060,
+      "translation": "마빈과 루서처럼 리듬을 탈 줄 아냐고 묻는다면"
+    },
+    {
+      "startMs": 179060,
+      "endMs": 180710,
+      "translation": "시카고에서 카녜랑 트위스타랑 어울릴 땐 그렇다고 말해 줄게"
+    },
+    {
+      "startMs": 180710,
+      "endMs": 182560,
+      "translation": "헤네시를 홀짝이며 R&B를 틀어"
+    },
+    {
+      "startMs": 182560,
+      "endMs": 185160,
+      "translation": "대마를 피우는 동안, 내가 진짜배기라는 걸 알게 될 거야"
+    },
+    {
+      "startMs": 185160,
+      "endMs": 187160,
+      "translation": "이 모든 걸 (자, 자, 자, 자)"
+    },
+    {
+      "startMs": 187160,
+      "endMs": 189350,
+      "translation": "나랑 가서 에벌린 샴페인 킹 한 잔 하자"
+    },
+    {
+      "startMs": 189350,
+      "endMs": 191330,
+      "translation": "트위스타가 휘스퍼스처럼 속삭이며 해낼 줄 몰랐지?"
+    },
+    {
+      "startMs": 191330,
+      "endMs": 192940,
+      "translation": "신호등에 걸리면 아이작 헤이스로 바꿔"
+    },
+    {
+      "startMs": 192940,
+      "endMs": 194400,
+      "translation": "휠이 계속 돌아가니 스피너스도 좀 틀고"
+    },
+    {
+      "startMs": 194400,
+      "endMs": 196080,
+      "translation": "대마를 피우면서 거리를 미끄러져"
+    },
+    {
+      "startMs": 196080,
+      "endMs": 198440,
+      "translation": "R&B를 쿵쿵 울리며, 23인치 휠 위에서 잎을 말아"
+    },
+    {
+      "startMs": 198440,
+      "endMs": 199690,
+      "translation": "그리고 난 해내"
+    },
+    {
+      "startMs": 199690,
+      "endMs": 200630,
+      "translation": "(자, 자, 자, 자)"
+    },
+    {
+      "startMs": 200630,
+      "endMs": 202680,
+      "translation": "어스 인 더 윈드, 파이어를 피우면서"
+    },
+    {
+      "startMs": 202680,
+      "endMs": 204410,
+      "translation": "키스 스웨트를 들으며 네 시트를 적셔 줄게"
+    },
+    {
+      "startMs": 204410,
+      "endMs": 205760,
+      "translation": "메이즈로 널 몽롱하게 만들고"
+    },
+    {
+      "startMs": 205760,
+      "endMs": 207850,
+      "translation": "온갖 유혹으로, 슬로 잼으로, 깊은 사랑으로 그녀를 채워"
+    },
+    {
+      "startMs": 207850,
+      "endMs": 209560,
+      "translation": "세상에 나설 준비 됐지, 자기, 나랑 가자"
+    },
+    {
+      "startMs": 209560,
+      "endMs": 211120,
+      "translation": "네 온몸을 만질게, 자기, 싫다고 하지 마"
+    },
+    {
+      "startMs": 211120,
+      "endMs": 212350,
+      "translation": "매 순간이 날 사로잡아"
+    },
+    {
+      "startMs": 212350,
+      "endMs": 214330,
+      "translation": "조데시를 들을 때 네가 날 안아 주는 방식이 좋아"
+    },
+    {
+      "startMs": 214330,
+      "endMs": 216720,
+      "translation": "내가 가서 널 숙이게 하면 넌 테디 펜더그래스를 틀지"
+    },
+    {
+      "startMs": 216720,
+      "endMs": 218740,
+      "translation": "뒤에서, 멜로디에 맞춰 천천히 탔어"
+    },
+    {
+      "startMs": 218740,
+      "endMs": 220400,
+      "translation": "이제 빠르게 가야 하지만 끝은 제일 늦게 낼 거야"
+    },
+    {
+      "startMs": 220400,
+      "endMs": 222200,
+      "translation": "내가 아무리 거칠어 보여도"
+    },
+    {
+      "startMs": 222200,
+      "endMs": 224410,
+      "translation": "난 여전히 R&B처럼 랩을 해, 나랑 클럽에 가자"
+    },
+    {
+      "startMs": 224410,
+      "endMs": 226120,
+      "translation": "루서 노래가 나오면 내 마음이 느껴지길 바라"
+    },
+    {
+      "startMs": 226120,
+      "endMs": 227230,
+      "translation": "그리고 여전히 나를 사랑해 주길"
+    },
+    {
+      "startMs": 227230,
+      "endMs": 230590,
+      "translation": "그녀는 마빈 게이를, 루서 밴드로스를 원한대"
+    },
+    {
+      "startMs": 230590,
+      "endMs": 234080,
+      "translation": "애니타 베이커 조금이면 이 파티가 확실히 제대로 시작될 거야"
+    },
+    {
+      "startMs": 234080,
+      "endMs": 235570,
+      "translation": "(그럴 거야, 그럴 거야, 그럴 거야"
+    },
+    {
+      "startMs": 235570,
+      "endMs": 239950,
+      "translation": "그럴 거야, 그럴 거야, 자, 자, 자, 자)"
+    },
+    {
+      "startMs": 239950,
+      "endMs": 243700,
+      "translation": "그녀는 레디 포 더 월드를, 뉴 에디션을 원한대"
+    },
+    {
+      "startMs": 243700,
+      "endMs": 246830,
+      "translation": "미니 리퍼튼 조금이면 이 파티가 확실히 제대로 시작될 거야"
+    },
+    {
+      "startMs": 246830,
+      "endMs": 249440,
+      "translation": "(그럴 거야, 그럴 거야, 그럴 거야"
+    },
+    {
+      "startMs": 249440,
+      "endMs": 311000,
+      "translation": "그럴 거야, 그럴 거야, 자, 자, 자, 자)"
+    },
+    {
+      "startMs": 311000,
+      "endMs": 316000,
+      "translation": "자기야, 슬로 잼 하나 더 틀어, 연인들은 모두 손을 잡고, 남자가 없다면 내 브로엄에 올라타, 난 옛날 방식대로 멋을 부려"
+    }
+  ]
+}

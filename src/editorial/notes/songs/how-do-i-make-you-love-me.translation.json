@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 147912,
+    "durationMs": 214000
+  },
+  "segments": [
+    {
+      "startMs": 7340,
+      "endMs": 9490,
+      "translation": "우린 시간을 거슬러 올라가"
+    },
+    {
+      "startMs": 9490,
+      "endMs": 11550,
+      "translation": "네가 해 보는 걸 보고 싶어"
+    },
+    {
+      "startMs": 11550,
+      "endMs": 15390,
+      "translation": "네 마음속 터널을 따라 생각을 풀어 보면서"
+    },
+    {
+      "startMs": 15390,
+      "endMs": 17330,
+      "translation": "버섯차를 끓여 줄게"
+    },
+    {
+      "startMs": 17330,
+      "endMs": 19480,
+      "translation": "그리고 들끓는 바다를 건너"
+    },
+    {
+      "startMs": 19480,
+      "endMs": 23330,
+      "translation": "현실에서 벗어나도록 너를 풀어 놔"
+    },
+    {
+      "startMs": 23330,
+      "endMs": 25480,
+      "translation": "넌 흔들리지도 않네"
+    },
+    {
+      "startMs": 25480,
+      "endMs": 27350,
+      "translation": "돌파구가 필요해"
+    },
+    {
+      "startMs": 27350,
+      "endMs": 31330,
+      "translation": "난 바로 눈앞에 있는 것만 원해"
+    },
+    {
+      "startMs": 31330,
+      "endMs": 33170,
+      "translation": "참 흔치 않은 일이지"
+    },
+    {
+      "startMs": 33170,
+      "endMs": 35270,
+      "translation": "인정을 구하는 거"
+    },
+    {
+      "startMs": 35270,
+      "endMs": 38150,
+      "translation": "필사적으로 애원하는 거"
+    },
+    {
+      "startMs": 38150,
+      "endMs": 55360,
+      "translation": "내가 말했지"
+    },
+    {
+      "startMs": 55360,
+      "endMs": 59660,
+      "translation": "어떻게 하면 날 사랑하게 만들 수 있을까"
+    },
+    {
+      "startMs": 59660,
+      "endMs": 63250,
+      "translation": "어떻게 하면 내게 빠지게 할 수 있을까"
+    },
+    {
+      "startMs": 63250,
+      "endMs": 67370,
+      "translation": "어떻게 하면 날 원하게 할 수 있을까"
+    },
+    {
+      "startMs": 67370,
+      "endMs": 71320,
+      "translation": "그리고 그걸 영원히 이어지게 할 수 있을까?"
+    },
+    {
+      "startMs": 71320,
+      "endMs": 75390,
+      "translation": "어떻게 하면 날 사랑하게 만들 수 있을까 (오, 아)"
+    },
+    {
+      "startMs": 75390,
+      "endMs": 79030,
+      "translation": "어떻게 하면 내게 빠지게 할 수 있을까"
+    },
+    {
+      "startMs": 79030,
+      "endMs": 83450,
+      "translation": "어떻게 하면 날 원하게 할 수 있을까 (오, 아)"
+    },
+    {
+      "startMs": 83450,
+      "endMs": 86940,
+      "translation": "그리고 그걸 영원히 이어지게 할 수 있을까"
+    },
+    {
+      "startMs": 86940,
+      "endMs": 89290,
+      "translation": "진짜 네가 보여, 걸"
+    },
+    {
+      "startMs": 89290,
+      "endMs": 90730,
+      "translation": "숨길 필요 없어"
+    },
+    {
+      "startMs": 90730,
+      "endMs": 92830,
+      "translation": "네 아빠가 한 말은 잊어"
+    },
+    {
+      "startMs": 92830,
+      "endMs": 94740,
+      "translation": "빛나는 법을 내가 가르쳐 줄게"
+    },
+    {
+      "startMs": 94740,
+      "endMs": 98600,
+      "translation": "네가 참아 온 모든 일들이 네 속을 차갑게 만들었지"
+    },
+    {
+      "startMs": 98600,
+      "endMs": 102880,
+      "translation": "하지만 꺼져 가는 불씨처럼 널 다시 불붙일 수 있어"
+    },
+    {
+      "startMs": 102880,
+      "endMs": 104670,
+      "translation": "넌 흔들리지도 않네"
+    },
+    {
+      "startMs": 104670,
+      "endMs": 106620,
+      "translation": "돌파구가 필요해"
+    },
+    {
+      "startMs": 106620,
+      "endMs": 110630,
+      "translation": "난 바로 눈앞에 있는 것만 원해"
+    },
+    {
+      "startMs": 110630,
+      "endMs": 112630,
+      "translation": "참 흔치 않은 일이지"
+    },
+    {
+      "startMs": 112630,
+      "endMs": 114720,
+      "translation": "인정을 구하는 거"
+    },
+    {
+      "startMs": 114720,
+      "endMs": 117700,
+      "translation": "필사적으로 애원하는 거"
+    },
+    {
+      "startMs": 117700,
+      "endMs": 118810,
+      "translation": "내가 말했지"
+    },
+    {
+      "startMs": 118810,
+      "endMs": 122930,
+      "translation": "어떻게 하면 날 사랑하게 만들 수 있을까"
+    },
+    {
+      "startMs": 122930,
+      "endMs": 126870,
+      "translation": "어떻게 하면 내게 빠지게 할 수 있을까"
+    },
+    {
+      "startMs": 126870,
+      "endMs": 130860,
+      "translation": "어떻게 하면 날 원하게 할 수 있을까"
+    },
+    {
+      "startMs": 130860,
+      "endMs": 134630,
+      "translation": "그리고 그걸 영원히 이어지게 할 수 있을까"
+    },
+    {
+      "startMs": 134630,
+      "endMs": 138820,
+      "translation": "어떻게 하면 날 사랑하게 만들 수 있을까 (오, 아)"
+    },
+    {
+      "startMs": 138820,
+      "endMs": 142580,
+      "translation": "어떻게 하면 내게 빠지게 할 수 있을까"
+    },
+    {
+      "startMs": 142580,
+      "endMs": 146790,
+      "translation": "어떻게 하면 날 원하게 할 수 있을까 (오, 아)"
+    },
+    {
+      "startMs": 146790,
+      "endMs": 214000,
+      "translation": "그리고 그걸 영원히 이어지게 할 수 있을까"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1048596,
+    "durationMs": 206000
+  },
+  "segments": [
+    {
+      "startMs": 8000,
+      "endMs": 13000,
+      "translation": "어, 워"
+    },
+    {
+      "startMs": 13000,
+      "endMs": 17510,
+      "translation": "자기야, 해 줄래? 지금 머릿속이 너무 복잡해"
+    },
+    {
+      "startMs": 17510,
+      "endMs": 21120,
+      "translation": "생로랑 사 줄 시간이 없어"
+    },
+    {
+      "startMs": 21120,
+      "endMs": 24970,
+      "translation": "해 줄래? 지금 머릿속이 너무 복잡해"
+    },
+    {
+      "startMs": 24970,
+      "endMs": 28260,
+      "translation": "로데오 거리에 갈 시간이야, 내 여자한테 3만 달러를 줘"
+    },
+    {
+      "startMs": 28260,
+      "endMs": 32280,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘"
+    },
+    {
+      "startMs": 32280,
+      "endMs": 35530,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    },
+    {
+      "startMs": 35530,
+      "endMs": 39370,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘"
+    },
+    {
+      "startMs": 39370,
+      "endMs": 43170,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    },
+    {
+      "startMs": 43170,
+      "endMs": 45110,
+      "translation": "난 투어 중이고, 돈을 벌고 있어"
+    },
+    {
+      "startMs": 45110,
+      "endMs": 47240,
+      "translation": "뭘 원해, 자기야? (뭘 원해, 자기야?)"
+    },
+    {
+      "startMs": 47240,
+      "endMs": 48800,
+      "translation": "넌 사치스럽지만 사랑해, 자기야"
+    },
+    {
+      "startMs": 48800,
+      "endMs": 50700,
+      "translation": "세상을 줄게, 자기야 (세상을 줄게, 자기야)"
+    },
+    {
+      "startMs": 50700,
+      "endMs": 52340,
+      "translation": "핸드백 하나에 5천 달러를 냈어"
+    },
+    {
+      "startMs": 52340,
+      "endMs": 54320,
+      "translation": "그건 생로랑이야 (생로랑이야, 자기야)"
+    },
+    {
+      "startMs": 54320,
+      "endMs": 57080,
+      "translation": "젠장, 넌 돈을 정말 좋아해, 자기야 (오 오 오)"
+    },
+    {
+      "startMs": 57080,
+      "endMs": 60270,
+      "translation": "10만 달러 더하기 10만 달러, 내 차 (내 차, 내 차)"
+    },
+    {
+      "startMs": 60270,
+      "endMs": 63870,
+      "translation": "3만 달러 더하기 3만 달러, 내 손목 (내 손목, 내 손목)"
+    },
+    {
+      "startMs": 63870,
+      "endMs": 67410,
+      "translation": "술에 끝내주는 여자들까지, 불타오르지 (불타오르지, 불타오르지)"
+    },
+    {
+      "startMs": 67410,
+      "endMs": 70960,
+      "translation": "맹세해, 자기야, 우린 키스만 했어, 그게 다야 (그게 다야, 그게 다야)"
+    },
+    {
+      "startMs": 70960,
+      "endMs": 75000,
+      "translation": "네가 날 위해 해 준 걸 내가 어떻게 잊겠어? (날 위해)"
+    },
+    {
+      "startMs": 75000,
+      "endMs": 78470,
+      "translation": "내 여자는 날 위해 죄를 뒤집어쓰고 대신 무너져 줄 거야 (날 위해)"
+    },
+    {
+      "startMs": 78470,
+      "endMs": 81860,
+      "translation": "쇼핑 데려가고 싶지만, 자기야, 난 투어 중일 거야"
+    },
+    {
+      "startMs": 81860,
+      "endMs": 85040,
+      "translation": "미안해, 아가씨, 더는 줄 수가 없어"
+    },
+    {
+      "startMs": 85040,
+      "endMs": 88890,
+      "translation": "자기야, 해 줄래? 지금 머릿속이 너무 복잡해"
+    },
+    {
+      "startMs": 88890,
+      "endMs": 92580,
+      "translation": "생로랑 사 줄 시간이 없어"
+    },
+    {
+      "startMs": 92580,
+      "endMs": 96030,
+      "translation": "해 줄래? 지금 머릿속이 너무 복잡해"
+    },
+    {
+      "startMs": 96030,
+      "endMs": 99930,
+      "translation": "로데오 거리에 갈 시간이야, 내 여자한테 3만 달러를 줘"
+    },
+    {
+      "startMs": 99930,
+      "endMs": 103200,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘"
+    },
+    {
+      "startMs": 103200,
+      "endMs": 106920,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    },
+    {
+      "startMs": 106920,
+      "endMs": 110810,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘"
+    },
+    {
+      "startMs": 110810,
+      "endMs": 114080,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    },
+    {
+      "startMs": 114080,
+      "endMs": 116290,
+      "translation": "요, 그 사람한테 전화 한 통 넣어야겠어"
+    },
+    {
+      "startMs": 116290,
+      "endMs": 117940,
+      "translation": "언제 돌아와? 지도에서 지금 어디야?"
+    },
+    {
+      "startMs": 117940,
+      "endMs": 119640,
+      "translation": "모든 건 그대로야"
+    },
+    {
+      "startMs": 119640,
+      "endMs": 121590,
+      "translation": "내가 재봉사였어도 그 사람 봐주진 않았을 거야"
+    },
+    {
+      "startMs": 121590,
+      "endMs": 123300,
+      "translation": "뭐, 다들 감도 못 잡지"
+    },
+    {
+      "startMs": 123300,
+      "endMs": 125080,
+      "translation": "쪼끄만 애들이 내가 하는 건 다 업혀서 따라 해"
+    },
+    {
+      "startMs": 125080,
+      "endMs": 126840,
+      "translation": "그래도 난 여전히 입을 떡 벌어지게 해"
+    },
+    {
+      "startMs": 126840,
+      "endMs": 128910,
+      "translation": "시상식의 제임스 하든처럼 다들 넋을 놓게 만들어"
+    },
+    {
+      "startMs": 128910,
+      "endMs": 130470,
+      "translation": "다시 너 얘기로, 난 너한테 푹 빠졌어"
+    },
+    {
+      "startMs": 130470,
+      "endMs": 132240,
+      "translation": "진짜야, 우리가 친척이라도 되는 것처럼"
+    },
+    {
+      "startMs": 132240,
+      "endMs": 133980,
+      "translation": "네가 10점이면 난 10점을 더 얹어 줘"
+    },
+    {
+      "startMs": 133980,
+      "endMs": 135760,
+      "translation": "내가 널 챙기면 다들 열 받아해"
+    },
+    {
+      "startMs": 135760,
+      "endMs": 137110,
+      "translation": "그게 내 자기가 좋아하는 거야"
+    },
+    {
+      "startMs": 137110,
+      "endMs": 138670,
+      "translation": "날 버피라고 불러, 난 그렇게 끝장내니까"
+    },
+    {
+      "startMs": 138670,
+      "endMs": 140580,
+      "translation": "이 여자들은 대낮처럼 내가 다 이겨 먹어"
+    },
+    {
+      "startMs": 140580,
+      "endMs": 142350,
+      "translation": "이 남자들은 내가 어떤 맛인지 알고 싶어 해"
+    },
+    {
+      "startMs": 142350,
+      "endMs": 144380,
+      "translation": "어떤 맛인지, 요, 어떤 맛인지, 요"
+    },
+    {
+      "startMs": 144380,
+      "endMs": 146060,
+      "translation": "다들 어떤 맛인지 알고 싶어 해, 요"
+    },
+    {
+      "startMs": 146060,
+      "endMs": 147840,
+      "translation": "이 다이아몬드들은 눈 맛이 날 거야"
+    },
+    {
+      "startMs": 147840,
+      "endMs": 150820,
+      "translation": "기모노를 챙겨서 도쿄로 날아가자"
+    },
+    {
+      "startMs": 150820,
+      "endMs": 156470,
+      "translation": "제발, 제발, 자기야, 이거 나한테 사 줄래?"
+    },
+    {
+      "startMs": 156470,
+      "endMs": 160440,
+      "translation": "자기야, 해 줄래? 지금 머릿속이 너무 복잡해"
+    },
+    {
+      "startMs": 160440,
+      "endMs": 164150,
+      "translation": "생로랑 사 줄 시간이 없어"
+    },
+    {
+      "startMs": 164150,
+      "endMs": 167710,
+      "translation": "해 줄래? 지금 머릿속이 너무 복잡해"
+    },
+    {
+      "startMs": 167710,
+      "endMs": 171600,
+      "translation": "로데오 거리에 갈 시간이야, 내 여자한테 3만 달러를 줘"
+    },
+    {
+      "startMs": 171600,
+      "endMs": 175160,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘"
+    },
+    {
+      "startMs": 175160,
+      "endMs": 178750,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    },
+    {
+      "startMs": 178750,
+      "endMs": 182190,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘"
+    },
+    {
+      "startMs": 182190,
+      "endMs": 185590,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    },
+    {
+      "startMs": 185590,
+      "endMs": 189130,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘 (어떤 맛인지)"
+    },
+    {
+      "startMs": 189130,
+      "endMs": 192630,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    },
+    {
+      "startMs": 192630,
+      "endMs": 196270,
+      "translation": "오 오 오 오 오 우, 날 위해 돈을 써 줘 (어떤 맛인지)"
+    },
+    {
+      "startMs": 196270,
+      "endMs": 206000,
+      "translation": "오 오 오 오 오 우, 날 위해 써 줘, 그래"
+    }
+  ]
+}

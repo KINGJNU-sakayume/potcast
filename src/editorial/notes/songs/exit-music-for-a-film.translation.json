@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13602,
+    "durationMs": 267000
+  },
+  "segments": [
+    {
+      "startMs": 23800,
+      "endMs": 39350,
+      "translation": "잠에서 깨, 눈물은 말려 둬"
+    },
+    {
+      "startMs": 39350,
+      "endMs": 46650,
+      "translation": "오늘 우리는 도망쳐"
+    },
+    {
+      "startMs": 46650,
+      "endMs": 55550,
+      "translation": "도망치는 거야"
+    },
+    {
+      "startMs": 55550,
+      "endMs": 70730,
+      "translation": "짐 싸고 옷 입어, 네 아버지가 우리 소리를 듣기 전에"
+    },
+    {
+      "startMs": 70730,
+      "endMs": 86520,
+      "translation": "모든 게 지옥으로 무너지기 전에"
+    },
+    {
+      "startMs": 86520,
+      "endMs": 96530,
+      "translation": "숨 쉬어, 계속 숨 쉬어"
+    },
+    {
+      "startMs": 96530,
+      "endMs": 110380,
+      "translation": "겁먹지 마"
+    },
+    {
+      "startMs": 110380,
+      "endMs": 120130,
+      "translation": "숨 쉬어, 계속 숨 쉬어"
+    },
+    {
+      "startMs": 120130,
+      "endMs": 137970,
+      "translation": "나 혼자서는 못 해"
+    },
+    {
+      "startMs": 137970,
+      "endMs": 145720,
+      "translation": "우리에게 노래를 불러 줘"
+    },
+    {
+      "startMs": 145720,
+      "endMs": 154130,
+      "translation": "우리를 따뜻하게 해 줄 노래를"
+    },
+    {
+      "startMs": 154130,
+      "endMs": 160980,
+      "translation": "너무 춥다"
+    },
+    {
+      "startMs": 160980,
+      "endMs": 170100,
+      "translation": "너무 추워"
+    },
+    {
+      "startMs": 170100,
+      "endMs": 177670,
+      "translation": "웃어도 좋아"
+    },
+    {
+      "startMs": 177670,
+      "endMs": 185570,
+      "translation": "비겁한 웃음을"
+    },
+    {
+      "startMs": 185570,
+      "endMs": 201440,
+      "translation": "너희 규칙과 지혜에 너희가 숨이 막혀 버리길"
+    },
+    {
+      "startMs": 201440,
+      "endMs": 216940,
+      "translation": "이제 우리는 영원한 평화 속에 하나야"
+    },
+    {
+      "startMs": 216940,
+      "endMs": 232460,
+      "translation": "숨이 막혀 버리길, 숨이 막혀 버리길"
+    },
+    {
+      "startMs": 232460,
+      "endMs": 247750,
+      "translation": "숨이 막혀 버리길, 숨이 막혀 버리길"
+    },
+    {
+      "startMs": 247750,
+      "endMs": 267000,
+      "translation": "숨이 막혀 버리길, 숨이 막혀 버리길"
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 566850,
+    "durationMs": 168000
+  },
+  "segments": [
+    {
+      "startMs": 980,
+      "endMs": 3370,
+      "translation": "알았니"
+    },
+    {
+      "startMs": 3370,
+      "endMs": 6650,
+      "translation": "네가 저들 눈에 챔피언이었다는 걸?"
+    },
+    {
+      "startMs": 6650,
+      "endMs": 7710,
+      "translation": "그래, 알았어"
+    },
+    {
+      "startMs": 7710,
+      "endMs": 10190,
+      "translation": "그래서 다 챙겨서 집으로 가져왔지"
+    },
+    {
+      "startMs": 10190,
+      "endMs": 12580,
+      "translation": "그냥 작은 거야, 우리가 어떻게 사는지 보여 주려고"
+    },
+    {
+      "startMs": 12580,
+      "endMs": 15190,
+      "translation": "다들 원하지만 그렇게 대단한 건 아니야"
+    },
+    {
+      "startMs": 15190,
+      "endMs": 17120,
+      "translation": "음, 바로 그거야"
+    },
+    {
+      "startMs": 17120,
+      "endMs": 19790,
+      "translation": "그러니 할 거면 이렇게 해"
+    },
+    {
+      "startMs": 19790,
+      "endMs": 22140,
+      "translation": "알았니"
+    },
+    {
+      "startMs": 22140,
+      "endMs": 24620,
+      "translation": "네가 저들 눈에 챔피언이었다는 걸?"
+    },
+    {
+      "startMs": 24620,
+      "endMs": 26990,
+      "translation": "관중이 얼마나 열광하는지 안 보여?"
+    },
+    {
+      "startMs": 26990,
+      "endMs": 29370,
+      "translation": "내 스타일이 얼마나 멋진지 안 보여?"
+    },
+    {
+      "startMs": 29370,
+      "endMs": 31320,
+      "translation": "스타일리스트가 왜 필요한지 모르겠어"
+    },
+    {
+      "startMs": 31320,
+      "endMs": 34070,
+      "translation": "하도 쇼핑을 해서 이탈리아어도 할 줄 아는데"
+    },
+    {
+      "startMs": 34070,
+      "endMs": 36550,
+      "translation": "모르겠어, 그냥 내 아이들은 더 잘살았으면 좋겠어"
+    },
+    {
+      "startMs": 36550,
+      "endMs": 38330,
+      "translation": "우리가 빈민가 출신이라는 건 아니야"
+    },
+    {
+      "startMs": 38330,
+      "endMs": 40620,
+      "translation": "그런데 내가 할부나 예약금을 원할 때마다"
+    },
+    {
+      "startMs": 40620,
+      "endMs": 43480,
+      "translation": "아빠는 \"옷을 보면 눈을 감아\"라고 했어"
+    },
+    {
+      "startMs": 43480,
+      "endMs": 45820,
+      "translation": "우린 그 영화 속 윌 스미스와 아들 같았지"
+    },
+    {
+      "startMs": 45820,
+      "endMs": 48290,
+      "translation": "부자로 나오는 영화 말고"
+    },
+    {
+      "startMs": 48290,
+      "endMs": 50210,
+      "translation": "아빠는 여름마다"
+    },
+    {
+      "startMs": 50210,
+      "endMs": 52760,
+      "translation": "부자가 될 새 엉터리 계획을 세웠거든"
+    },
+    {
+      "startMs": 52760,
+      "endMs": 54590,
+      "translation": "아빠가 돈을 어떻게 벌었는지는 몰라"
+    },
+    {
+      "startMs": 54590,
+      "endMs": 57420,
+      "translation": "그래도 개학 때마다 새 옷을 사서 날 학교에 보내 줬어, 그런데, 에이"
+    },
+    {
+      "startMs": 57420,
+      "endMs": 58150,
+      "translation": "알았니"
+    },
+    {
+      "startMs": 58150,
+      "endMs": 59800,
+      "translation": "에이, 에이, 에이"
+    },
+    {
+      "startMs": 59800,
+      "endMs": 63020,
+      "translation": "네가 저들 눈에 챔피언이었다는 걸?"
+    },
+    {
+      "startMs": 63020,
+      "endMs": 64220,
+      "translation": "아빠는 알았던 것 같아"
+    },
+    {
+      "startMs": 64220,
+      "endMs": 66690,
+      "translation": "다 챙겨서 집으로 가져왔을 때"
+    },
+    {
+      "startMs": 66690,
+      "endMs": 69080,
+      "translation": "그냥 작은 거야, 우리가 어떻게 사는지 보여 주려고"
+    },
+    {
+      "startMs": 69080,
+      "endMs": 71700,
+      "translation": "내가 원했던 모든 게, 그땐 너무 대단해 보였어"
+    },
+    {
+      "startMs": 71700,
+      "endMs": 73620,
+      "translation": "음, 바로 그거야"
+    },
+    {
+      "startMs": 73620,
+      "endMs": 76240,
+      "translation": "그러니 할 거면 이렇게 해"
+    },
+    {
+      "startMs": 76240,
+      "endMs": 78620,
+      "translation": "알았니"
+    },
+    {
+      "startMs": 78620,
+      "endMs": 81070,
+      "translation": "네가 저들 눈에 챔피언이었다는 걸?"
+    },
+    {
+      "startMs": 81070,
+      "endMs": 83320,
+      "translation": "사는 게 죽는 것보다 힘들게 느껴질 때"
+    },
+    {
+      "startMs": 83320,
+      "endMs": 85810,
+      "translation": "나한텐 포기하는 게 노력하는 것보다 훨씬 힘들어"
+    },
+    {
+      "startMs": 85810,
+      "endMs": 88050,
+      "translation": "로린 힐은 자기 마음이 시온에 있다고 했지"
+    },
+    {
+      "startMs": 88050,
+      "endMs": 90950,
+      "translation": "그 마음이 아직 랩에 있으면 좋겠는데"
+    },
+    {
+      "startMs": 90950,
+      "endMs": 93340,
+      "translation": "그럼 아이들은 누구 말을 듣겠어? 응?"
+    },
+    {
+      "startMs": 93340,
+      "endMs": 95200,
+      "translation": "네가 아니라면 나겠지"
+    },
+    {
+      "startMs": 95200,
+      "endMs": 97450,
+      "translation": "지난주에 학교에 다녀왔어"
+    },
+    {
+      "startMs": 97450,
+      "endMs": 99850,
+      "translation": "중퇴생이 아이들을 학교에 붙잡아 두고 있더라"
+    },
+    {
+      "startMs": 99850,
+      "endMs": 102160,
+      "translation": "프린스처럼 나도 행실을 고쳐야겠어"
+    },
+    {
+      "startMs": 102160,
+      "endMs": 104520,
+      "translation": "즐거움 때문이 아니라면 적어도 원칙을 위해서라도"
+    },
+    {
+      "startMs": 104520,
+      "endMs": 106390,
+      "translation": "아이들은 CD를 가졌고, 날 봐야 해"
+    },
+    {
+      "startMs": 106390,
+      "endMs": 109790,
+      "translation": "체육 수업을 빼먹듯 보석 같은 말을 툭툭 떨어뜨려"
+    },
+    {
+      "startMs": 109790,
+      "endMs": 112220,
+      "translation": "그 애들은 투명 인간처럼 느꼈었지"
+    },
+    {
+      "startMs": 112220,
+      "endMs": 113920,
+      "translation": "이젠 자기들이 무적이라는 걸 알아"
+    },
+    {
+      "startMs": 113920,
+      "endMs": 114610,
+      "translation": "알았니"
+    },
+    {
+      "startMs": 114610,
+      "endMs": 116310,
+      "translation": "에이, 에이, 에이"
+    },
+    {
+      "startMs": 116310,
+      "endMs": 118280,
+      "translation": "네가 저들 눈에 챔피언이었다는 걸?"
+    },
+    {
+      "startMs": 118280,
+      "endMs": 120660,
+      "translation": "이건 챔피언의 이야기야"
+    },
+    {
+      "startMs": 120660,
+      "endMs": 122790,
+      "translation": "주자들이 출발선에 서고 총성이 울려"
+    },
+    {
+      "startMs": 122790,
+      "endMs": 125350,
+      "translation": "일어서, 일어서, 그가 온다"
+    },
+    {
+      "startMs": 125350,
+      "endMs": 127720,
+      "translation": "1등이 되려면 뭐가 필요한지 말해 줘"
+    },
+    {
+      "startMs": 127720,
+      "endMs": 130030,
+      "translation": "1등이 되려면 뭐가 필요한지 말해 줘"
+    },
+    {
+      "startMs": 130030,
+      "endMs": 132410,
+      "translation": "이건 챔피언의 이야기야"
+    },
+    {
+      "startMs": 132410,
+      "endMs": 134540,
+      "translation": "주자들이 출발선에 서고 총성이 울려"
+    },
+    {
+      "startMs": 134540,
+      "endMs": 137090,
+      "translation": "일어서, 일어서, 그가 온다"
+    },
+    {
+      "startMs": 137090,
+      "endMs": 139460,
+      "translation": "1등이 되려면 뭐가 필요한지 말해 줘"
+    },
+    {
+      "startMs": 139460,
+      "endMs": 142160,
+      "translation": "1등이 되려면 뭐가 필요한지 말해 줘"
+    },
+    {
+      "startMs": 142160,
+      "endMs": 144510,
+      "translation": "알았니"
+    },
+    {
+      "startMs": 144510,
+      "endMs": 147830,
+      "translation": "네가 저들 눈에 챔피언이었다는 걸?"
+    },
+    {
+      "startMs": 147830,
+      "endMs": 148900,
+      "translation": "그래, 알았어"
+    },
+    {
+      "startMs": 148900,
+      "endMs": 151380,
+      "translation": "그래서 다 챙겨서 집으로 가져왔지"
+    },
+    {
+      "startMs": 151380,
+      "endMs": 153760,
+      "translation": "그냥 작은 거야, 우리가 어떻게 사는지 보여 주려고"
+    },
+    {
+      "startMs": 153760,
+      "endMs": 156380,
+      "translation": "다들 원하지만 그렇게 대단한 건 아니야"
+    },
+    {
+      "startMs": 156380,
+      "endMs": 158310,
+      "translation": "음, 바로 그거야"
+    },
+    {
+      "startMs": 158310,
+      "endMs": 161375,
+      "translation": "그러니 할 거면 이렇게 해, 이렇게"
+    },
+    {
+      "startMs": 161375,
+      "endMs": 163330,
+      "translation": "알았니"
+    },
+    {
+      "startMs": 163330,
+      "endMs": 168000,
+      "translation": "네가 저들 눈에 챔피언이었다는 걸?"
+    }
+  ]
+}

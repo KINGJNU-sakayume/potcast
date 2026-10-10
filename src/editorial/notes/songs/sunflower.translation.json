@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1133155,
+    "durationMs": 158000
+  },
+  "segments": [
+    {
+      "startMs": 3810,
+      "endMs": 8780,
+      "translation": "에이, 에이, 에이, 에이 (우)"
+    },
+    {
+      "startMs": 8780,
+      "endMs": 14320,
+      "translation": "우, 우, 우, 우 (우)"
+    },
+    {
+      "startMs": 14320,
+      "endMs": 19400,
+      "translation": "에이, 에이"
+    },
+    {
+      "startMs": 19400,
+      "endMs": 26930,
+      "translation": "우, 우, 우, 우"
+    },
+    {
+      "startMs": 26930,
+      "endMs": 29420,
+      "translation": "말할 것도 없이, 난 그 여자를 붙잡아 둬"
+    },
+    {
+      "startMs": 29420,
+      "endMs": 32470,
+      "translation": "그래도 그 여자는 완전히 못됐었지 (그래)"
+    },
+    {
+      "startMs": 32470,
+      "endMs": 35290,
+      "translation": "이제 끝내자, 자기야, 난 엉망이야 (엉망)"
+    },
+    {
+      "startMs": 35290,
+      "endMs": 37400,
+      "translation": "우리 집에서 자고 가, 자기야, 넌 엉망이야 (엉망)"
+    },
+    {
+      "startMs": 37400,
+      "endMs": 40010,
+      "translation": "말할 것도 없이, 난 그 여자를 붙잡아 둬"
+    },
+    {
+      "startMs": 40010,
+      "endMs": 43020,
+      "translation": "그래도 그 여자는 완전히 못됐었지"
+    },
+    {
+      "startMs": 43020,
+      "endMs": 45630,
+      "translation": "이제 끝내자, 자기야, 난 엉망이야"
+    },
+    {
+      "startMs": 45630,
+      "endMs": 48210,
+      "translation": "우리 집에서 자고 가, 자기야, 넌 엉망이야"
+    },
+    {
+      "startMs": 48210,
+      "endMs": 50890,
+      "translation": "나쁜 쪽으로 생각하며 정신을 놓아 가"
+    },
+    {
+      "startMs": 50890,
+      "endMs": 53570,
+      "translation": "내 얼굴에 소리 질러, 자기야, 진정해"
+    },
+    {
+      "startMs": 53570,
+      "endMs": 56260,
+      "translation": "누군가 크게 졌어, 그게 어떤 기분인지 몰라"
+    },
+    {
+      "startMs": 56260,
+      "endMs": 59050,
+      "translation": "널 곁눈질로 봐, 파티는 엉망이 됐어"
+    },
+    {
+      "startMs": 59050,
+      "endMs": 64110,
+      "translation": "우-우, 어떤 건 그냥 거절할 수가 없어"
+    },
+    {
+      "startMs": 64110,
+      "endMs": 66570,
+      "translation": "그 여자는 크루즈 타듯 날 타고 싶어 해"
+    },
+    {
+      "startMs": 66570,
+      "endMs": 70410,
+      "translation": "그리고 난 지고 싶지 않아"
+    },
+    {
+      "startMs": 70410,
+      "endMs": 73230,
+      "translation": "그러면 넌 먼지 속에 남겨질 거야"
+    },
+    {
+      "startMs": 73230,
+      "endMs": 75840,
+      "translation": "내가 네 곁을 지키지 않는다면"
+    },
+    {
+      "startMs": 75840,
+      "endMs": 78850,
+      "translation": "넌 해바라기야"
+    },
+    {
+      "startMs": 78850,
+      "endMs": 81110,
+      "translation": "네 사랑은 너무 버거울 것 같아"
+    },
+    {
+      "startMs": 81110,
+      "endMs": 84050,
+      "translation": "아니면 넌 먼지 속에 남겨질 거야"
+    },
+    {
+      "startMs": 84050,
+      "endMs": 86490,
+      "translation": "내가 네 곁을 지키지 않는다면"
+    },
+    {
+      "startMs": 86490,
+      "endMs": 89140,
+      "translation": "넌 해바라기야"
+    },
+    {
+      "startMs": 89140,
+      "endMs": 91270,
+      "translation": "넌 해바라기야"
+    },
+    {
+      "startMs": 91270,
+      "endMs": 93760,
+      "translation": "매번 내가 너를 두고 떠날 때마다"
+    },
+    {
+      "startMs": 93760,
+      "endMs": 96690,
+      "translation": "넌 쉽게 보내 주지 않아, 아니, 아니"
+    },
+    {
+      "startMs": 96690,
+      "endMs": 99330,
+      "translation": "네 곁에 있어 줄 수 있으면 좋겠어"
+    },
+    {
+      "startMs": 99330,
+      "endMs": 102470,
+      "translation": "떠날 이유를 줘"
+    },
+    {
+      "startMs": 102470,
+      "endMs": 104280,
+      "translation": "매번 내가 걸어 나갈 때마다"
+    },
+    {
+      "startMs": 104280,
+      "endMs": 107160,
+      "translation": "돌아서라고 말하는 네 목소리가 들려"
+    },
+    {
+      "startMs": 107160,
+      "endMs": 109770,
+      "translation": "내 믿음을 얻으려고 싸우고, 넌 물러서지 않아"
+    },
+    {
+      "startMs": 109770,
+      "endMs": 112800,
+      "translation": "지금 모든 걸 걸어야 한다 해도, 오"
+    },
+    {
+      "startMs": 112800,
+      "endMs": 115270,
+      "translation": "네가 모르는 걸 두려워하는 거 알아 (알아)"
+    },
+    {
+      "startMs": 115270,
+      "endMs": 117930,
+      "translation": "혼자 있고 싶지 않지 (혼자)"
+    },
+    {
+      "startMs": 117930,
+      "endMs": 120400,
+      "translation": "내가 늘 왔다 갔다 하는 거 알아 (갔다 하는 거)"
+    },
+    {
+      "startMs": 120400,
+      "endMs": 123570,
+      "translation": "하지만 그건 내 마음대로 되는 게 아니야"
+    },
+    {
+      "startMs": 123570,
+      "endMs": 126760,
+      "translation": "그리고 넌 먼지 속에 남겨질 거야"
+    },
+    {
+      "startMs": 126760,
+      "endMs": 129430,
+      "translation": "내가 네 곁을 지키지 않는다면"
+    },
+    {
+      "startMs": 129430,
+      "endMs": 132100,
+      "translation": "넌 해바라기야"
+    },
+    {
+      "startMs": 132100,
+      "endMs": 134450,
+      "translation": "네 사랑은 너무 버거울 것 같아"
+    },
+    {
+      "startMs": 134450,
+      "endMs": 137320,
+      "translation": "아니면 넌 먼지 속에 남겨질 거야"
+    },
+    {
+      "startMs": 137320,
+      "endMs": 139470,
+      "translation": "내가 네 곁을 지키지 않는다면"
+    },
+    {
+      "startMs": 139470,
+      "endMs": 142410,
+      "translation": "넌 해바라기야"
+    },
+    {
+      "startMs": 142410,
+      "endMs": 144770,
+      "translation": "넌 해바라기야"
+    },
+    {
+      "startMs": 144770,
+      "endMs": 158000,
+      "translation": "그래"
+    }
+  ]
+}

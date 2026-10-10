@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11564684,
+    "durationMs": 199000
+  },
+  "segments": [
+    {
+      "startMs": 14270,
+      "endMs": 20330,
+      "translation": "네가 누군지 모르지만 언젠가는 알게 되겠지"
+    },
+    {
+      "startMs": 20330,
+      "endMs": 27170,
+      "translation": "그 애가 너한테 마음을 줄 때 내 마음은 무너질 거야"
+    },
+    {
+      "startMs": 27170,
+      "endMs": 32960,
+      "translation": "내일은 아니겠지만 너무 빨리 올 거야"
+    },
+    {
+      "startMs": 32960,
+      "endMs": 39520,
+      "translation": "내가 그 애 손을 잡고 식장을 걸으며 아빠가 해야 할 일을 할 때"
+    },
+    {
+      "startMs": 39520,
+      "endMs": 45900,
+      "translation": "그 애가 흰 드레스를 입겠지만, 그 애의 첫 드레스는 분홍색이었어"
+    },
+    {
+      "startMs": 45900,
+      "endMs": 52630,
+      "translation": "그 애는 너의 반쪽일지 몰라도, 나한텐 전부야"
+    },
+    {
+      "startMs": 52630,
+      "endMs": 58420,
+      "translation": "우리 둘 다 그 애를 영원히 사랑하겠지만, 내가 훨씬 먼저 사랑했어"
+    },
+    {
+      "startMs": 58420,
+      "endMs": 63970,
+      "translation": "그리고 언젠가 그 애를 보내 주게 되겠지"
+    },
+    {
+      "startMs": 63970,
+      "endMs": 72230,
+      "translation": "이봐, 그렇다고 그 애가 네 거라는 뜻은 아니야, 음"
+    },
+    {
+      "startMs": 72230,
+      "endMs": 78440,
+      "translation": "어제 그 애가 첫 말을 뗐는데, '네, 맹세합니다'까진 아직 한참 멀었어"
+    },
+    {
+      "startMs": 78440,
+      "endMs": 84940,
+      "translation": "지금은 나한테 달려오지만, 언젠가는 너한테 달려가겠지"
+    },
+    {
+      "startMs": 84940,
+      "endMs": 91530,
+      "translation": "그날은 네 인생 최고의 날이겠지만, 나한텐 최악의 날일 거야"
+    },
+    {
+      "startMs": 91530,
+      "endMs": 97900,
+      "translation": "너는 그 애가 너를 향해 걸어오는 걸 보겠지만, 그 애가 처음 걷는 걸 본 건 나야"
+    },
+    {
+      "startMs": 97900,
+      "endMs": 104290,
+      "translation": "그 애가 흰 드레스를 입겠지만, 그 애의 첫 드레스는 분홍색이었어"
+    },
+    {
+      "startMs": 104290,
+      "endMs": 110590,
+      "translation": "그 애는 너의 반쪽일지 몰라도, 이 친구야, 나한텐 전부야"
+    },
+    {
+      "startMs": 110590,
+      "endMs": 117460,
+      "translation": "우리 둘 다 그 애를 영원히 사랑하겠지만, 내가 훨씬 먼저 사랑했어"
+    },
+    {
+      "startMs": 117460,
+      "endMs": 122170,
+      "translation": "그리고 언젠가 그 애를 보내 주게 되겠지"
+    },
+    {
+      "startMs": 122170,
+      "endMs": 125130,
+      "translation": "이봐, 그렇다고 그 애가 네 거라는 뜻은 아니야"
+    },
+    {
+      "startMs": 125130,
+      "endMs": 128650,
+      "translation": "아직 내 어린 딸이니까"
+    },
+    {
+      "startMs": 128650,
+      "endMs": 136840,
+      "translation": "언젠가 그 애가 다른 사람의 세상이 된다니 정신이 아득해"
+    },
+    {
+      "startMs": 136840,
+      "endMs": 143220,
+      "translation": "그 애가 흰 드레스를 입겠지만, 그 애의 첫 드레스는 분홍색이었어"
+    },
+    {
+      "startMs": 143220,
+      "endMs": 149680,
+      "translation": "그 애는 너의 반쪽일지 몰라도, 나에겐 그 애가 전부야"
+    },
+    {
+      "startMs": 149680,
+      "endMs": 155980,
+      "translation": "우리 둘 다 그 애를 영원히 사랑하겠지만, 내가 훨씬 먼저 사랑했어"
+    },
+    {
+      "startMs": 155980,
+      "endMs": 161110,
+      "translation": "그리고 언젠가 그 애를 보내 주게 되겠지"
+    },
+    {
+      "startMs": 161110,
+      "endMs": 166040,
+      "translation": "이봐, 그렇다고 그 애가 네 거라는 뜻은 아니야"
+    },
+    {
+      "startMs": 166040,
+      "endMs": 170710,
+      "translation": "그 애가 네 성을 따른다 해도"
+    },
+    {
+      "startMs": 170710,
+      "endMs": 199000,
+      "translation": "이봐, 그렇다고 그 애가 네 거라는 뜻은 아니야"
+    }
+  ]
+}

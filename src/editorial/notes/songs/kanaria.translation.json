@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 25618087,
+    "durationMs": 298373
+  },
+  "segments": [
+    {
+      "startMs": 770,
+      "endMs": 11180,
+      "translation": "평범한 매일이 그리워질 만큼"
+    },
+    {
+      "startMs": 11180,
+      "endMs": 17310,
+      "translation": "그을리며 가라앉는 밤에 흔들리는"
+    },
+    {
+      "startMs": 17310,
+      "endMs": 23140,
+      "translation": "꽃을 바라보고 있었어"
+    },
+    {
+      "startMs": 23140,
+      "endMs": 33400,
+      "translation": "사람들 틈바구니를 당신과 걸었던 일"
+    },
+    {
+      "startMs": 33400,
+      "endMs": 39570,
+      "translation": "돌아보며 웃던 얼굴을"
+    },
+    {
+      "startMs": 39570,
+      "endMs": 45660,
+      "translation": "왠지 떠올렸어"
+    },
+    {
+      "startMs": 45660,
+      "endMs": 51370,
+      "translation": "카나리아가 울기 시작하는 4월 끝자락의"
+    },
+    {
+      "startMs": 51370,
+      "endMs": 56970,
+      "translation": "누구나 잊어 가는 하얀 산책길"
+    },
+    {
+      "startMs": 56970,
+      "endMs": 62630,
+      "translation": "당신의 손끝이 떨리고 있다는 걸"
+    },
+    {
+      "startMs": 62630,
+      "endMs": 70600,
+      "translation": "기억하고 싶어"
+    },
+    {
+      "startMs": 70600,
+      "endMs": 76130,
+      "translation": "좋아, 당신과라면 좋아"
+    },
+    {
+      "startMs": 76130,
+      "endMs": 83200,
+      "translation": "다시는 이곳에 돌아올 수 없다 해도"
+    },
+    {
+      "startMs": 83200,
+      "endMs": 87620,
+      "translation": "당신과라면 좋아"
+    },
+    {
+      "startMs": 87620,
+      "endMs": 104130,
+      "translation": "걸어가자, 마지막까지"
+    },
+    {
+      "startMs": 104130,
+      "endMs": 114540,
+      "translation": "굴러떨어져 깨진 유리잔을 줍는 당신"
+    },
+    {
+      "startMs": 114540,
+      "endMs": 120540,
+      "translation": "그 눈에는 눈물이 맺혀"
+    },
+    {
+      "startMs": 120540,
+      "endMs": 126710,
+      "translation": "아무 말도 하지 않은 채"
+    },
+    {
+      "startMs": 126710,
+      "endMs": 132370,
+      "translation": "카나리아가 사라져 가는 5월 끝자락의"
+    },
+    {
+      "startMs": 132370,
+      "endMs": 137880,
+      "translation": "나뭇잎이 서로 울리는 호숫가 한구석"
+    },
+    {
+      "startMs": 137880,
+      "endMs": 156960,
+      "translation": "당신을 무엇보다 지탱해 주고 싶다고, 강하게 강하게 생각해"
+    },
+    {
+      "startMs": 156960,
+      "endMs": 162790,
+      "translation": "좋아, 당신이니까 좋아"
+    },
+    {
+      "startMs": 162790,
+      "endMs": 169670,
+      "translation": "아무도 우리 둘을 찾아내지 못한다 해도"
+    },
+    {
+      "startMs": 169670,
+      "endMs": 174250,
+      "translation": "당신이니까 좋아"
+    },
+    {
+      "startMs": 174250,
+      "endMs": 190880,
+      "translation": "펄럭이는 바람이 부르는 쪽으로"
+    },
+    {
+      "startMs": 190880,
+      "endMs": 196640,
+      "translation": "당신도 나도 변해 버리겠지"
+    },
+    {
+      "startMs": 196640,
+      "endMs": 202120,
+      "translation": "때로는 다투고 서로 상처 입히겠지"
+    },
+    {
+      "startMs": 202120,
+      "endMs": 207620,
+      "translation": "서로를 놓칠 때마다 다시 사랑에 빠지고"
+    },
+    {
+      "startMs": 207620,
+      "endMs": 218480,
+      "translation": "서로 확인하고 싶어"
+    },
+    {
+      "startMs": 218480,
+      "endMs": 223870,
+      "translation": "좋아, 당신과라면 좋아"
+    },
+    {
+      "startMs": 223870,
+      "endMs": 229440,
+      "translation": "만약 마지막에 아무것도 없다 해도"
+    },
+    {
+      "startMs": 229440,
+      "endMs": 240760,
+      "translation": "좋아, 좋아, 좋아"
+    },
+    {
+      "startMs": 240760,
+      "endMs": 246250,
+      "translation": "좋아, 당신이니까 좋아"
+    },
+    {
+      "startMs": 246250,
+      "endMs": 253240,
+      "translation": "아무도 우리 둘을 찾아내지 못한다 해도"
+    },
+    {
+      "startMs": 253240,
+      "endMs": 257800,
+      "translation": "당신이니까 좋아"
+    },
+    {
+      "startMs": 257800,
+      "endMs": 263460,
+      "translation": "걸어가자, 마지막까지"
+    },
+    {
+      "startMs": 263460,
+      "endMs": 298373,
+      "translation": "펄럭이는 바람이 부르는 쪽으로"
+    }
+  ]
+}

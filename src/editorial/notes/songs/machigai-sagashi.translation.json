@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 26221125,
+    "durationMs": 267453
+  },
+  "segments": [
+    {
+      "startMs": 25020,
+      "endMs": 30930,
+      "translation": "틀린 그림 찾기의 틀린 쪽으로"
+    },
+    {
+      "startMs": 30930,
+      "endMs": 36640,
+      "translation": "태어난 것만 같았는데"
+    },
+    {
+      "startMs": 36640,
+      "endMs": 42630,
+      "translation": "틀린 그림 찾기의 정답 쪽이었다면"
+    },
+    {
+      "startMs": 42630,
+      "endMs": 48390,
+      "translation": "분명 만나지 못했을 거야"
+    },
+    {
+      "startMs": 48390,
+      "endMs": 53990,
+      "translation": "서로에게 어울리게 웃을 수 있다는 것"
+    },
+    {
+      "startMs": 53990,
+      "endMs": 59890,
+      "translation": "왠지 모르게 눈물이 난다는 것"
+    },
+    {
+      "startMs": 59890,
+      "endMs": 65560,
+      "translation": "네 눈이 꿰뚫었어, 내 가슴을 곧장"
+    },
+    {
+      "startMs": 65560,
+      "endMs": 71360,
+      "translation": "그날부터 모든 게 완전히 달라진 것 같았어"
+    },
+    {
+      "startMs": 71360,
+      "endMs": 77730,
+      "translation": "바람에 날려 갈 듯한 깊은 봄의 구석에서"
+    },
+    {
+      "startMs": 77730,
+      "endMs": 91440,
+      "translation": "지루할 만큼 아무렇지 않게 곁에 있어 줘"
+    },
+    {
+      "startMs": 91440,
+      "endMs": 97340,
+      "translation": "틀린 것투성이의 사소한 틈에서"
+    },
+    {
+      "startMs": 97340,
+      "endMs": 103220,
+      "translation": "시시한 이야기를, 뻗을 때까지"
+    },
+    {
+      "startMs": 103220,
+      "endMs": 110470,
+      "translation": "바르게 있고 싶은데 그럴 수 없는 쓸쓸함이"
+    },
+    {
+      "startMs": 110470,
+      "endMs": 114880,
+      "translation": "무엇을 키워 냈을까"
+    },
+    {
+      "startMs": 114880,
+      "endMs": 120500,
+      "translation": "하나씩 찾아 나가자"
+    },
+    {
+      "startMs": 120500,
+      "endMs": 126440,
+      "translation": "막 잠에서 깬 아이처럼"
+    },
+    {
+      "startMs": 126440,
+      "endMs": 132100,
+      "translation": "네 손이 닿았던 손가락을 포개어"
+    },
+    {
+      "startMs": 132100,
+      "endMs": 137980,
+      "translation": "틀린 건지 정답인지 같은 건 아무래도 좋았어"
+    },
+    {
+      "startMs": 137980,
+      "endMs": 144260,
+      "translation": "눈 깜짝할 새 떨어져 버린 옅은 안개 속에서"
+    },
+    {
+      "startMs": 144260,
+      "endMs": 186270,
+      "translation": "너여야만 한다고, 그저 강하게 생각할 뿐이야"
+    },
+    {
+      "startMs": 186270,
+      "endMs": 192170,
+      "translation": "네 눈이 꿰뚫었어, 내 가슴을 곧장"
+    },
+    {
+      "startMs": 192170,
+      "endMs": 197930,
+      "translation": "그날부터 모든 게 완전히 달라진 것 같았어"
+    },
+    {
+      "startMs": 197930,
+      "endMs": 204300,
+      "translation": "바람에 날려 갈 듯한 깊은 봄의 구석에서"
+    },
+    {
+      "startMs": 204300,
+      "endMs": 209530,
+      "translation": "아무에게도 보여 주지 않는 얼굴을 보여 줘"
+    },
+    {
+      "startMs": 209530,
+      "endMs": 215300,
+      "translation": "네 손이 닿았던 손가락을 포개어"
+    },
+    {
+      "startMs": 215300,
+      "endMs": 221120,
+      "translation": "틀린 건지 정답인지 같은 건 아무래도 좋았던 거야"
+    },
+    {
+      "startMs": 221120,
+      "endMs": 227330,
+      "translation": "눈 깜짝할 새 떨어져 버린 옅은 안개 속에서"
+    },
+    {
+      "startMs": 227330,
+      "endMs": 267453,
+      "translation": "너여야만 한다고, 그저 강하게 생각할 뿐이야"
+    }
+  ]
+}

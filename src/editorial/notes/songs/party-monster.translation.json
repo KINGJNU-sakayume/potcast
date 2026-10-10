@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 37244674,
+    "durationMs": 249000
+  },
+  "segments": [
+    {
+      "startMs": 6010,
+      "endMs": 8870,
+      "translation": "난 좋아, 좋아, 아주 좋아"
+    },
+    {
+      "startMs": 8870,
+      "endMs": 12120,
+      "translation": "오랜만인 거 알아, 지금은 술을 섞고 있어"
+    },
+    {
+      "startMs": 12120,
+      "endMs": 15120,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 15120,
+      "endMs": 18380,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 18380,
+      "endMs": 21470,
+      "translation": "난 좋아, 좋아, 아주 좋아"
+    },
+    {
+      "startMs": 21470,
+      "endMs": 24650,
+      "translation": "오랜만인 거 알아, 지금은 술을 섞고 있어"
+    },
+    {
+      "startMs": 24650,
+      "endMs": 27540,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 27540,
+      "endMs": 30630,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 30630,
+      "endMs": 33490,
+      "translation": "폴 위에서 점점 부자가 되는 그녀를 봤어"
+    },
+    {
+      "startMs": 33490,
+      "endMs": 36840,
+      "translation": "그녀를 봤고, 그녀도 알고 있다는 걸 알았어"
+    },
+    {
+      "startMs": 36840,
+      "endMs": 39760,
+      "translation": "테킬라를 털어 넣는 그녀를 봤어"
+    },
+    {
+      "startMs": 39760,
+      "endMs": 42880,
+      "translation": "리터째 들이켜는 걸 보고, 꼭 만나야겠다고 생각했어"
+    },
+    {
+      "startMs": 42880,
+      "endMs": 45990,
+      "translation": "오, 그녀는 내 거야, 걸, 몸을 비벼"
+    },
+    {
+      "startMs": 45990,
+      "endMs": 49110,
+      "translation": "오, 그녀는 내 거야, 걸, 한 줄 해"
+    },
+    {
+      "startMs": 49110,
+      "endMs": 51920,
+      "translation": "안젤리나, 안젤리나 같은 입술"
+    },
+    {
+      "startMs": 51920,
+      "endMs": 55180,
+      "translation": "셀레나 같은, 셀레나를 닮은 몸매"
+    },
+    {
+      "startMs": 55180,
+      "endMs": 58470,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 58470,
+      "endMs": 61350,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 61350,
+      "endMs": 64590,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 64590,
+      "endMs": 67600,
+      "translation": "(눈을 떴어, 눈을 떴어, 이름도 모르는 여자 옆에서)"
+    },
+    {
+      "startMs": 67600,
+      "endMs": 70840,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 70840,
+      "endMs": 73690,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 73690,
+      "endMs": 76850,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 76850,
+      "endMs": 79940,
+      "translation": "(눈을 떴어, 눈을 떴어, 이름도 모르는 여자 옆에서)"
+    },
+    {
+      "startMs": 79940,
+      "endMs": 83090,
+      "translation": "난 좋아, 좋아, 아주 좋아"
+    },
+    {
+      "startMs": 83090,
+      "endMs": 86160,
+      "translation": "오랜만인 거 알아, 지금은 술을 섞고 있어"
+    },
+    {
+      "startMs": 86160,
+      "endMs": 89200,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 89200,
+      "endMs": 92670,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 92670,
+      "endMs": 95250,
+      "translation": "난 좋아, 좋아, 아주 좋아"
+    },
+    {
+      "startMs": 95250,
+      "endMs": 98560,
+      "translation": "오랜만인 거 알아, 지금은 술을 섞고 있어"
+    },
+    {
+      "startMs": 98560,
+      "endMs": 101460,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 101460,
+      "endMs": 104360,
+      "translation": "난 정말로 이해해 줄 여자만 있으면 돼"
+    },
+    {
+      "startMs": 104360,
+      "endMs": 107390,
+      "translation": "신나게 놀았어, 연달아 세 알을 삼켰지"
+    },
+    {
+      "startMs": 107390,
+      "endMs": 110650,
+      "translation": "또 할 준비가 됐어, 난 흐름을 탔어"
+    },
+    {
+      "startMs": 110650,
+      "endMs": 113880,
+      "translation": "그가 밖에서 그녀한테 닿으려는 걸 봤어"
+    },
+    {
+      "startMs": 113880,
+      "endMs": 116900,
+      "translation": "넌 그를 떠나려 하잖아, 내가 이유라고 했지"
+    },
+    {
+      "startMs": 116900,
+      "endMs": 119950,
+      "translation": "거짓말해 줘, 걸, 거짓말해 줘"
+    },
+    {
+      "startMs": 119950,
+      "endMs": 122770,
+      "translation": "내 거라고 말해 줘, 오늘 밤은 내가 네 거야"
+    },
+    {
+      "startMs": 122770,
+      "endMs": 126130,
+      "translation": "난 가장 진짜야, 그녀가 내가 제일 진짜라고 했어"
+    },
+    {
+      "startMs": 126130,
+      "endMs": 129230,
+      "translation": "입술 기술은 천재적이고, 침대 위에선 가장 독해"
+    },
+    {
+      "startMs": 129230,
+      "endMs": 132310,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 132310,
+      "endMs": 135600,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 135600,
+      "endMs": 138620,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 138620,
+      "endMs": 141480,
+      "translation": "(눈을 떴어, 눈을 떴어, 이름도 모르는 여자 옆에서)"
+    },
+    {
+      "startMs": 141480,
+      "endMs": 144740,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 144740,
+      "endMs": 147920,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 147920,
+      "endMs": 150790,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 150790,
+      "endMs": 165820,
+      "translation": "(눈을 떴어, 눈을 떴어, 이름도 모르는 여자 옆에서)"
+    },
+    {
+      "startMs": 165820,
+      "endMs": 169230,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 169230,
+      "endMs": 172420,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 172420,
+      "endMs": 175450,
+      "translation": "새 집에 여자들이 득시글거려, 내 공간을 꽉 채워"
+    },
+    {
+      "startMs": 175450,
+      "endMs": 178620,
+      "translation": "금고를 확인해야 했어, 서랍장 속 내 체인들도"
+    },
+    {
+      "startMs": 178620,
+      "endMs": 181670,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 181670,
+      "endMs": 184630,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 184630,
+      "endMs": 187900,
+      "translation": "새 집에 여자들이 득시글거려, 내 공간을 꽉 채워"
+    },
+    {
+      "startMs": 187900,
+      "endMs": 191980,
+      "translation": "금고를 확인해야 했어, 서랍장 속 내 체인들도"
+    },
+    {
+      "startMs": 191980,
+      "endMs": 195620,
+      "translation": "편집증이야 (편집증이야)"
+    },
+    {
+      "startMs": 195620,
+      "endMs": 198680,
+      "translation": "편집증이야 (편-편집증이야)"
+    },
+    {
+      "startMs": 198680,
+      "endMs": 201300,
+      "translation": "편집증이야 (편-편집증이야)"
+    },
+    {
+      "startMs": 201300,
+      "endMs": 204610,
+      "translation": "하지만 네 안에 뭔가 보여 (넌 편집증이야)"
+    },
+    {
+      "startMs": 204610,
+      "endMs": 207960,
+      "translation": "편집증이야 (편집증이야)"
+    },
+    {
+      "startMs": 207960,
+      "endMs": 210650,
+      "translation": "편집증이야 (편-편집증이야)"
+    },
+    {
+      "startMs": 210650,
+      "endMs": 213480,
+      "translation": "편집증이야 (편-편집증이야)"
+    },
+    {
+      "startMs": 213480,
+      "endMs": 216070,
+      "translation": "하지만 네 안에 뭔가 보여"
+    },
+    {
+      "startMs": 216070,
+      "endMs": 219190,
+      "translation": "(네 안에 뭔가 보여)"
+    },
+    {
+      "startMs": 219190,
+      "endMs": 221660,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 221660,
+      "endMs": 224640,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 224640,
+      "endMs": 227800,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 227800,
+      "endMs": 231450,
+      "translation": "(눈을 떴어, 눈을 떴어, 이름도 모르는 여자 옆에서)"
+    },
+    {
+      "startMs": 231450,
+      "endMs": 233970,
+      "translation": "일어나서 하루를 주신 하느님께 감사해"
+    },
+    {
+      "startMs": 233970,
+      "endMs": 237400,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 237400,
+      "endMs": 240050,
+      "translation": "이름도 모르는 여자 옆에서 눈을 떴어"
+    },
+    {
+      "startMs": 240050,
+      "endMs": 243620,
+      "translation": "(눈을 떴어, 눈을 떴어, 이름도 모르는 여자 옆에서)"
+    },
+    {
+      "startMs": 243620,
+      "endMs": 249000,
+      "translation": "넌 편집증이야"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 578848,
+    "durationMs": 252000
+  },
+  "segments": [
+    {
+      "startMs": 21420,
+      "endMs": 24120,
+      "translation": "진짜 친구, 우리 중 몇이나 될까?"
+    },
+    {
+      "startMs": 24120,
+      "endMs": 28100,
+      "translation": "우리 중 몇이나, 시기하는 사람은 몇이나? 진짜 친구"
+    },
+    {
+      "startMs": 28100,
+      "endMs": 31090,
+      "translation": "많지는 않아, 서로 웃어 보이지만"
+    },
+    {
+      "startMs": 31090,
+      "endMs": 33860,
+      "translation": "솔직한 사람은 몇이나? 믿음의 문제"
+    },
+    {
+      "startMs": 33860,
+      "endMs": 36460,
+      "translation": "번호를 바꿨어, 귀찮게 굴지 못하게"
+    },
+    {
+      "startMs": 36460,
+      "endMs": 39150,
+      "translation": "네가 속셈을 가졌다고 탓할 순 없어"
+    },
+    {
+      "startMs": 39150,
+      "endMs": 41910,
+      "translation": "난 아무 문제 없어, 그냥 내 일을 해"
+    },
+    {
+      "startMs": 41910,
+      "endMs": 43670,
+      "translation": "너도 네 일을 하고 있길 바라"
+    },
+    {
+      "startMs": 43670,
+      "endMs": 46510,
+      "translation": "난 무책임한 사촌이야, 가족 모임이 싫어"
+    },
+    {
+      "startMs": 46510,
+      "endMs": 49420,
+      "translation": "성찬 뒤에도 술을 마셔 교회를 엉망으로 만들어"
+    },
+    {
+      "startMs": 49420,
+      "endMs": 52140,
+      "translation": "공짜 와인을 쏟아 이젠 턱시도도 망쳤어"
+    },
+    {
+      "startMs": 52140,
+      "endMs": 55040,
+      "translation": "하루만 와 있는데 우린 대체 뭘 하는 거야?"
+    },
+    {
+      "startMs": 55040,
+      "endMs": 57710,
+      "translation": "네 진짜 친구는 누구야? 우린 모두 밑바닥에서 왔지"
+    },
+    {
+      "startMs": 57710,
+      "endMs": 60350,
+      "translation": "늘 널 탓하지만 슬픈 건 네가 문제가 아니라는 거야"
+    },
+    {
+      "startMs": 60350,
+      "endMs": 63280,
+      "translation": "젠장, 걔한테 전화하는 걸 잊었어, 목요일인 줄 알았지"
+    },
+    {
+      "startMs": 63280,
+      "endMs": 66130,
+      "translation": "넌 애초에 왜 일주일이나 지나서 전화했어?"
+    },
+    {
+      "startMs": 66130,
+      "endMs": 68960,
+      "translation": "생일을 기억했던 게 마지막으로 언제였지?"
+    },
+    {
+      "startMs": 68960,
+      "endMs": 72950,
+      "translation": "서두르지 않았던 게 마지막으로 언제였지?"
+    },
+    {
+      "startMs": 72950,
+      "endMs": 76090,
+      "translation": "경기 때가 되면 표를 원한다고 말하지"
+    },
+    {
+      "startMs": 76090,
+      "endMs": 78620,
+      "translation": "네 딸에게 페이스타임으로 전화하는 것조차"
+    },
+    {
+      "startMs": 78620,
+      "endMs": 81360,
+      "translation": "어릴 때도 시간을 내곤 했는데"
+    },
+    {
+      "startMs": 81360,
+      "endMs": 85170,
+      "translation": "이젠 시간을 낼 수 없을 만큼 너무 바빠"
+    },
+    {
+      "startMs": 85170,
+      "endMs": 88160,
+      "translation": "내… 진짜 친구를 위해서조차"
+    },
+    {
+      "startMs": 88160,
+      "endMs": 90400,
+      "translation": "내가 받을 대접을 받는 거겠지, 그렇지?"
+    },
+    {
+      "startMs": 90400,
+      "endMs": 93470,
+      "translation": "동네에선 그 사람 소식을 못 들었다고 해"
+    },
+    {
+      "startMs": 93470,
+      "endMs": 96030,
+      "translation": "내가 받을 대접을 받는 거겠지, 그렇지?"
+    },
+    {
+      "startMs": 96030,
+      "endMs": 99900,
+      "translation": "내 이름을 깎아내리고 그 사람에게 흙을 뿌렸지"
+    },
+    {
+      "startMs": 99900,
+      "endMs": 102770,
+      "translation": "네 딸이 몇 살인지도 말 못 해"
+    },
+    {
+      "startMs": 102770,
+      "endMs": 105250,
+      "translation": "네 아들이 몇 살인지도 말 못 해"
+    },
+    {
+      "startMs": 105250,
+      "endMs": 107820,
+      "translation": "친구야, 내 아들도 곧 태어나"
+    },
+    {
+      "startMs": 107820,
+      "endMs": 111000,
+      "translation": "게다가 이미 아이가 하나 있어"
+    },
+    {
+      "startMs": 111000,
+      "endMs": 113550,
+      "translation": "가족에 대해선 많이 말 못 하겠지만"
+    },
+    {
+      "startMs": 113550,
+      "endMs": 116510,
+      "translation": "고구마 먹으러는 나타났지"
+    },
+    {
+      "startMs": 116510,
+      "endMs": 119070,
+      "translation": "십오 분쯤, 네 자매랑 사진 몇 장 찍고"
+    },
+    {
+      "startMs": 119070,
+      "endMs": 121810,
+      "translation": "메리 크리스마스, 그러곤 끝, 다시 일하러 가"
+    },
+    {
+      "startMs": 121810,
+      "endMs": 124660,
+      "translation": "진짜 문제에 대해 질문하고 싶어?"
+    },
+    {
+      "startMs": 124660,
+      "endMs": 127580,
+      "translation": "내가 감당할 압박이 모자라기라도 한 것처럼"
+    },
+    {
+      "startMs": 127580,
+      "endMs": 130190,
+      "translation": "제발 청구서 얘기로 날 압박하지 마"
+    },
+    {
+      "startMs": 130190,
+      "endMs": 133270,
+      "translation": "그런 건 누구에게나 있어, 그게 아이들은 아니잖아"
+    },
+    {
+      "startMs": 133270,
+      "endMs": 135910,
+      "translation": "오, 넌 내게 친구이기만 했어"
+    },
+    {
+      "startMs": 135910,
+      "endMs": 138430,
+      "translation": "사람들이 내가 미쳤다고 할 때 넌 날 옹호했지"
+    },
+    {
+      "startMs": 138430,
+      "endMs": 141120,
+      "translation": "웃기지, 사람들과 몇 세기나 말을 안 한 것 같아"
+    },
+    {
+      "startMs": 141120,
+      "endMs": 144210,
+      "translation": "솔직히, 친구야, 네 기운이 와닿지 않아"
+    },
+    {
+      "startMs": 144210,
+      "endMs": 147180,
+      "translation": "돈은 친척을 적으로 바꿔"
+    },
+    {
+      "startMs": 147180,
+      "endMs": 149700,
+      "translation": "사람들은 자기가 꾸미는 만큼 진실하지 않아"
+    },
+    {
+      "startMs": 149700,
+      "endMs": 152350,
+      "translation": "내 진짜 친구들을 모두 찾아"
+    },
+    {
+      "startMs": 152350,
+      "endMs": 156750,
+      "translation": "우리 중 몇이나? 우리 중 진짜 친구는 몇이나?"
+    },
+    {
+      "startMs": 156750,
+      "endMs": 159250,
+      "translation": "진짜 친구에게, 정말 끝까지"
+    },
+    {
+      "startMs": 159250,
+      "endMs": 164050,
+      "translation": "바퀴가 떨어질 때까지, 바퀴가 돌지 않을 때까지"
+    },
+    {
+      "startMs": 164050,
+      "endMs": 169680,
+      "translation": "새벽 세 시에 전화해"
+    },
+    {
+      "startMs": 169680,
+      "endMs": 171320,
+      "translation": "진짜 친구는 몇이나?"
+    },
+    {
+      "startMs": 171320,
+      "endMs": 172920,
+      "translation": "그냥 질문 하나 하려고"
+    },
+    {
+      "startMs": 172920,
+      "endMs": 175130,
+      "translation": "그냥 네 기분이 어떤지 보려고"
+    },
+    {
+      "startMs": 175130,
+      "endMs": 177180,
+      "translation": "몇이나?"
+    },
+    {
+      "startMs": 177180,
+      "endMs": 178330,
+      "translation": "지난번엔 넌 허세를 부렸지"
+    },
+    {
+      "startMs": 178330,
+      "endMs": 181100,
+      "translation": "누가 '잘 지내, 형제? 괜찮길 바라'라고 문자 보내면 싫어"
+    },
+    {
+      "startMs": 181100,
+      "endMs": 186020,
+      "translation": "'괜찮아'라고 답하면, 좋아, 다음 문자에선 뭔가 부탁하거든"
+    },
+    {
+      "startMs": 186020,
+      "endMs": 189030,
+      "translation": "몇이나?"
+    },
+    {
+      "startMs": 189030,
+      "endMs": 192280,
+      "translation": "네 가족에겐 뭐가 최선일까, 직계든 친척이든"
+    },
+    {
+      "startMs": 192280,
+      "endMs": 194770,
+      "translation": "무슨 다툼이든 언론이 더 키워"
+    },
+    {
+      "startMs": 194770,
+      "endMs": 198150,
+      "translation": "내가 여자들과 섹스하던 영상이 담긴 노트북을 훔친 사촌이 있었어"
+    },
+    {
+      "startMs": 198150,
+      "endMs": 201490,
+      "translation": "그걸 돌려받으려고 그 놈한테 이십오만 달러를 줬어"
+    },
+    {
+      "startMs": 201490,
+      "endMs": 205330,
+      "translation": "진짜 친구"
+    },
+    {
+      "startMs": 205330,
+      "endMs": 206970,
+      "translation": "응?"
+    },
+    {
+      "startMs": 206970,
+      "endMs": 210660,
+      "translation": "진짜 친구"
+    },
+    {
+      "startMs": 210660,
+      "endMs": 213250,
+      "translation": "내가 받을 대접을 받는 거겠지, 그렇지?"
+    },
+    {
+      "startMs": 213250,
+      "endMs": 216130,
+      "translation": "동네에선 그 사람 소식을 못 들었다고 해"
+    },
+    {
+      "startMs": 216130,
+      "endMs": 218850,
+      "translation": "내가 받을 대접을 받는 거겠지, 그렇지?"
+    },
+    {
+      "startMs": 218850,
+      "endMs": 221000,
+      "translation": "내 이름을 깎아내리고 그 사람에게 흙을 뿌렸지"
+    }
+  ]
+}

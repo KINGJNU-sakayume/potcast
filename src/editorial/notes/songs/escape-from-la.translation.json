@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 960501,
+    "durationMs": 356000
+  },
+  "segments": [
+    {
+      "startMs": 32660,
+      "endMs": 37040,
+      "translation": "넌 베갯머리에서 우리 사이에 끼어들려는 남자들 얘기를 해"
+    },
+    {
+      "startMs": 37040,
+      "endMs": 38360,
+      "translation": "그들은 네게 가방이랑 보석을 사 주지, 예"
+    },
+    {
+      "startMs": 38360,
+      "endMs": 41410,
+      "translation": "네 다정함을 만만하게 보고"
+    },
+    {
+      "startMs": 41410,
+      "endMs": 46660,
+      "translation": "아니, 넌 그렇게 쉽게 넘어가지 않지, 베이비"
+    },
+    {
+      "startMs": 46660,
+      "endMs": 48780,
+      "translation": "넌 그저 내 관심을 원했을 뿐이야"
+    },
+    {
+      "startMs": 48780,
+      "endMs": 51460,
+      "translation": "그저 내 애정을 원했을 뿐이야"
+    },
+    {
+      "startMs": 51460,
+      "endMs": 54650,
+      "translation": "네 머릿속엔 내가 문신처럼 새겨져 있어"
+    },
+    {
+      "startMs": 54650,
+      "endMs": 57730,
+      "translation": "넌 언제나 나만 원해"
+    },
+    {
+      "startMs": 57730,
+      "endMs": 62540,
+      "translation": "우리 문제는 우리가 풀고 길을 찾을 거야 (오, 예)"
+    },
+    {
+      "startMs": 62540,
+      "endMs": 66300,
+      "translation": "네가 공간이 필요하다면 난 공간을 줘 (공간을)"
+    },
+    {
+      "startMs": 66300,
+      "endMs": 68180,
+      "translation": "걸, 준비되면 내가 어디 있는지 알잖아"
+    },
+    {
+      "startMs": 68180,
+      "endMs": 70940,
+      "translation": "이 여자들 뒤꽁무니는 절대 쫓지 않아"
+    },
+    {
+      "startMs": 70940,
+      "endMs": 74290,
+      "translation": "하지만 이 세상은 너무, 너무 악한 곳이야"
+    },
+    {
+      "startMs": 74290,
+      "endMs": 78030,
+      "translation": "이 여자들은 언제나 방법을 찾아내"
+    },
+    {
+      "startMs": 78030,
+      "endMs": 81180,
+      "translation": "술만 들어가면 난 미쳐 버리니까"
+    },
+    {
+      "startMs": 81180,
+      "endMs": 85110,
+      "translation": "그 몸 앞에선 알다시피 난 노예야, 예"
+    },
+    {
+      "startMs": 85110,
+      "endMs": 91860,
+      "translation": "그래, 이곳은 절대 보이는 그대로가 아니야"
+    },
+    {
+      "startMs": 91860,
+      "endMs": 94150,
+      "translation": "날 LA에서 꺼내 줘"
+    },
+    {
+      "startMs": 94150,
+      "endMs": 97860,
+      "translation": "날 LA 밖으로 데려가 줘"
+    },
+    {
+      "startMs": 97860,
+      "endMs": 104920,
+      "translation": "이곳이 내 끝이 될 거야"
+    },
+    {
+      "startMs": 104920,
+      "endMs": 107950,
+      "translation": "날 LA에서 꺼내 줘"
+    },
+    {
+      "startMs": 107950,
+      "endMs": 113130,
+      "translation": "날 LA 밖으로 데려가 줘, 예"
+    },
+    {
+      "startMs": 113130,
+      "endMs": 114320,
+      "translation": "예"
+    },
+    {
+      "startMs": 114320,
+      "endMs": 117740,
+      "translation": "스파이더 포르셰를 타고 거리를 달려"
+    },
+    {
+      "startMs": 117740,
+      "endMs": 120400,
+      "translation": "블랙 온 블랙, 베놈 색 시트"
+    },
+    {
+      "startMs": 120400,
+      "endMs": 123500,
+      "translation": "키아누 리브스처럼 밟아 대"
+    },
+    {
+      "startMs": 123500,
+      "endMs": 126510,
+      "translation": "다이아몬드 십자가가 목에 걸려 있어"
+    },
+    {
+      "startMs": 126510,
+      "endMs": 130020,
+      "translation": "난 내 영혼을 걸고 싸우는 중이야, 콘스탄틴처럼"
+    },
+    {
+      "startMs": 130020,
+      "endMs": 133430,
+      "translation": "그건 천천히 타들어 가, 싸게 얻은 적은 없어"
+    },
+    {
+      "startMs": 133430,
+      "endMs": 136590,
+      "translation": "내가 본 걸 너도 봤다면 잠들지 못할 거야"
+    },
+    {
+      "startMs": 136590,
+      "endMs": 138180,
+      "translation": "난 잠들 수가 없어"
+    },
+    {
+      "startMs": 138180,
+      "endMs": 140770,
+      "translation": "원하던 건 다 가졌거든"
+    },
+    {
+      "startMs": 140770,
+      "endMs": 145350,
+      "translation": "돈도, 차도, 별이 박힌 천장도 가졌어"
+    },
+    {
+      "startMs": 145350,
+      "endMs": 147600,
+      "translation": "원하던 건 다 가졌어"
+    },
+    {
+      "startMs": 147600,
+      "endMs": 150940,
+      "translation": "하지만 너 없인 난 아무것도 아니야"
+    },
+    {
+      "startMs": 150940,
+      "endMs": 154950,
+      "translation": "네가 원하던 건 다 줬어"
+    },
+    {
+      "startMs": 154950,
+      "endMs": 158860,
+      "translation": "힘도 줬고, 삶도 줬고, 네가 빛날 공간도 줬어"
+    },
+    {
+      "startMs": 158860,
+      "endMs": 160990,
+      "translation": "네가 원하던 건 다 줬어"
+    },
+    {
+      "startMs": 160990,
+      "endMs": 165180,
+      "translation": "그런데 넌 그 어떤 것도 상관없지, 오-오"
+    },
+    {
+      "startMs": 165180,
+      "endMs": 170100,
+      "translation": "이곳은 (이곳은) 절대 보이는 그대로가 아니야"
+    },
+    {
+      "startMs": 170100,
+      "endMs": 173090,
+      "translation": "날 LA에서 꺼내 줘"
+    },
+    {
+      "startMs": 173090,
+      "endMs": 176860,
+      "translation": "날 LA 밖으로 데려가 줘"
+    },
+    {
+      "startMs": 176860,
+      "endMs": 183340,
+      "translation": "(오, LA 밖으로, 워-오) 이곳이 내 끝이 될 거야"
+    },
+    {
+      "startMs": 183340,
+      "endMs": 186090,
+      "translation": "날 LA에서 꺼내 줘"
+    },
+    {
+      "startMs": 186090,
+      "endMs": 191090,
+      "translation": "날 LA 밖으로 데려가 줘, 예"
+    },
+    {
+      "startMs": 191090,
+      "endMs": 197330,
+      "translation": "워, 아니, 오, 아니, 아니"
+    },
+    {
+      "startMs": 197330,
+      "endMs": 203600,
+      "translation": "아니, 아니, 아니, 아니, 아니, 우-워"
+    },
+    {
+      "startMs": 203600,
+      "endMs": 213860,
+      "translation": "오-아, 아니, 아니, 아니, 아니, 워-워"
+    },
+    {
+      "startMs": 213860,
+      "endMs": 217390,
+      "translation": "오, 아니, 오"
+    },
+    {
+      "startMs": 217390,
+      "endMs": 232370,
+      "translation": "헤이"
+    },
+    {
+      "startMs": 232370,
+      "endMs": 236590,
+      "translation": "그녀가 스튜디오로 찾아왔어"
+    },
+    {
+      "startMs": 236590,
+      "endMs": 239040,
+      "translation": "아무도 보고 있지 않았어"
+    },
+    {
+      "startMs": 239040,
+      "endMs": 241900,
+      "translation": "그녀는 문을 닫고 잠갔어"
+    },
+    {
+      "startMs": 241900,
+      "endMs": 245110,
+      "translation": "날 위해, 날 위해"
+    },
+    {
+      "startMs": 245110,
+      "endMs": 249590,
+      "translation": "우린 스튜디오에서 섹스했어"
+    },
+    {
+      "startMs": 249590,
+      "endMs": 252210,
+      "translation": "아무도 들어오지 않았어"
+    },
+    {
+      "startMs": 252210,
+      "endMs": 254920,
+      "translation": "내가 벌스를 녹음하자 그녀가 몸을 흔들었어"
+    },
+    {
+      "startMs": 254920,
+      "endMs": 258700,
+      "translation": "날 위해, 날 위해"
+    },
+    {
+      "startMs": 258700,
+      "endMs": 261430,
+      "translation": "LA 여자들은 다 똑같이 생겼어"
+    },
+    {
+      "startMs": 261430,
+      "endMs": 264550,
+      "translation": "알아볼 수가 없어"
+    },
+    {
+      "startMs": 264550,
+      "endMs": 267900,
+      "translation": "얼굴에 똑같은 시술을 했거든"
+    },
+    {
+      "startMs": 267900,
+      "endMs": 271020,
+      "translation": "흠잡으려는 건 아니야"
+    },
+    {
+      "startMs": 271020,
+      "endMs": 274320,
+      "translation": "그녀는 수치심도 없는 냉혈한 여자야"
+    },
+    {
+      "startMs": 274320,
+      "endMs": 277750,
+      "translation": "그래도 입으로는 끝내줘"
+    },
+    {
+      "startMs": 277750,
+      "endMs": 281020,
+      "translation": "목엔 크롬하츠를 걸었어"
+    },
+    {
+      "startMs": 281020,
+      "endMs": 284860,
+      "translation": "그게 정신없이 흔들려"
+    },
+    {
+      "startMs": 284860,
+      "endMs": 291300,
+      "translation": "올라탈 때면 꽉 붙잡아"
+    },
+    {
+      "startMs": 291300,
+      "endMs": 298690,
+      "translation": "등줄기로 땀이 흐를 때까지 탈 거야"
+    },
+    {
+      "startMs": 298690,
+      "endMs": 304750,
+      "translation": "오늘 밤 그녀는 내 거야"
+    },
+    {
+      "startMs": 304750,
+      "endMs": 311180,
+      "translation": "그 남자가 전화하기 전까지는 내 거야"
+    },
+    {
+      "startMs": 311180,
+      "endMs": 315200,
+      "translation": "그녀가 스튜디오로 찾아왔어"
+    },
+    {
+      "startMs": 315200,
+      "endMs": 317850,
+      "translation": "아무도 보고 있지 않았어"
+    },
+    {
+      "startMs": 317850,
+      "endMs": 320540,
+      "translation": "그녀는 문을 닫고 잠갔어"
+    },
+    {
+      "startMs": 320540,
+      "endMs": 323850,
+      "translation": "날 위해, 날 위해"
+    },
+    {
+      "startMs": 323850,
+      "endMs": 328140,
+      "translation": "우린 스튜디오에서 섹스했어"
+    },
+    {
+      "startMs": 328140,
+      "endMs": 331240,
+      "translation": "아무도 들어오지 않았어"
+    },
+    {
+      "startMs": 331240,
+      "endMs": 333780,
+      "translation": "내가 벌스를 녹음하자 그녀가 몸을 흔들었어"
+    },
+    {
+      "startMs": 333780,
+      "endMs": 342340,
+      "translation": "날 위해, 날 위해"
+    },
+    {
+      "startMs": 342340,
+      "endMs": 356000,
+      "translation": "오-오, 오-오"
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 36294582,
+    "durationMs": 208000
+  },
+  "segments": [
+    {
+      "startMs": 8350,
+      "endMs": 9420,
+      "translation": "불을 켜"
+    },
+    {
+      "startMs": 9420,
+      "endMs": 11870,
+      "translation": "마이크를 잡고 있는데 어떻게 그렇게 조용할 수 있어?"
+    },
+    {
+      "startMs": 11870,
+      "endMs": 14510,
+      "translation": "난 불안 같은 건 없어, 샘 보위 같은 놈들아"
+    },
+    {
+      "startMs": 14510,
+      "endMs": 15860,
+      "translation": "난 그냥 마이크(조던)가 돼"
+    },
+    {
+      "startMs": 15860,
+      "endMs": 18390,
+      "translation": "너희는 내가 어디도 못 갈 거라 했지만, 난 우회로를 탔어"
+    },
+    {
+      "startMs": 18390,
+      "endMs": 19890,
+      "translation": "해변 바로 옆 틈새에 누가 있는 게 보여?"
+    },
+    {
+      "startMs": 19890,
+      "endMs": 22470,
+      "translation": "바닥에 새 르 플레르가 놓인 걸 보면?"
+    },
+    {
+      "startMs": 22470,
+      "endMs": 25800,
+      "translation": "경찰이 내 이름을 부르면, 난 이고르야"
+    },
+    {
+      "startMs": 25800,
+      "endMs": 30130,
+      "translation": "어, 어이"
+    },
+    {
+      "startMs": 30130,
+      "endMs": 32110,
+      "translation": "그래, 그래"
+    },
+    {
+      "startMs": 32110,
+      "endMs": 34010,
+      "translation": "가자, 가자, 나 장난 아냐"
+    },
+    {
+      "startMs": 34010,
+      "endMs": 36190,
+      "translation": "빨간 코, 빨간 코, 너희는 다 광대야"
+    },
+    {
+      "startMs": 36190,
+      "endMs": 37800,
+      "translation": "놈들이 볼륨을 높이면, 젠장, 난 부숴 버려"
+    },
+    {
+      "startMs": 37800,
+      "endMs": 40150,
+      "translation": "거울이 하나도 없는 곳에선 신을 믿기 어려워"
+    },
+    {
+      "startMs": 40150,
+      "endMs": 42050,
+      "translation": "어때?"
+    },
+    {
+      "startMs": 42050,
+      "endMs": 45760,
+      "translation": "어-허, 어이"
+    },
+    {
+      "startMs": 45760,
+      "endMs": 48150,
+      "translation": "어-허"
+    },
+    {
+      "startMs": 48150,
+      "endMs": 52090,
+      "translation": "그래, 요"
+    },
+    {
+      "startMs": 52090,
+      "endMs": 53130,
+      "translation": "야"
+    },
+    {
+      "startMs": 53130,
+      "endMs": 54630,
+      "translation": "휠이 떨어질 때까지 달려"
+    },
+    {
+      "startMs": 54630,
+      "endMs": 56040,
+      "translation": "놈들과 경찰이 직소 퍼즐처럼 조각조각 헤매게 했어"
+    },
+    {
+      "startMs": 56040,
+      "endMs": 58180,
+      "translation": "어쩌다 보니 대장이 되어 버렸어"
+    },
+    {
+      "startMs": 58180,
+      "endMs": 60440,
+      "translation": "신을 찾는 게 좋을걸, 잡힌다고? 난 아닌 것 같은데"
+    },
+    {
+      "startMs": 60440,
+      "endMs": 62810,
+      "translation": "새 정장, 새 부츠, 같은 놈인데 뭐 어때?"
+    },
+    {
+      "startMs": 62810,
+      "endMs": 65220,
+      "translation": "미지근한 놈들은 늘 말만 많아"
+    },
+    {
+      "startMs": 65220,
+      "endMs": 67030,
+      "translation": "난 뜨거워, 지구처럼 속까지 뜨거워"
+    },
+    {
+      "startMs": 67030,
+      "endMs": 70890,
+      "translation": "건드리지 마, 가지 마, 놈들이 날뛸지 몰라"
+    },
+    {
+      "startMs": 70890,
+      "endMs": 76780,
+      "translation": "요, 어이, 어, 그래"
+    },
+    {
+      "startMs": 76780,
+      "endMs": 78860,
+      "translation": "가자, 가자, 나 장난 아냐"
+    },
+    {
+      "startMs": 78860,
+      "endMs": 80700,
+      "translation": "빨간 코, 빨간 코, 너희는 다 광대야"
+    },
+    {
+      "startMs": 80700,
+      "endMs": 82840,
+      "translation": "놈들이 볼륨을 높이면, 젠장, 난 부숴 버려"
+    },
+    {
+      "startMs": 82840,
+      "endMs": 84770,
+      "translation": "거울이 하나도 없는 곳에선 신을 믿기 어려워"
+    },
+    {
+      "startMs": 84770,
+      "endMs": 86660,
+      "translation": "어때?"
+    },
+    {
+      "startMs": 86660,
+      "endMs": 90550,
+      "translation": "우프, 어-허"
+    },
+    {
+      "startMs": 90550,
+      "endMs": 95340,
+      "translation": "그래, 야"
+    },
+    {
+      "startMs": 95340,
+      "endMs": 100860,
+      "translation": "그래"
+    },
+    {
+      "startMs": 100860,
+      "endMs": 103750,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 103750,
+      "endMs": 108710,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 108710,
+      "endMs": 112760,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 112760,
+      "endMs": 114270,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 114270,
+      "endMs": 116220,
+      "translation": "드라큘라, 드라큘라, 드라큘라"
+    },
+    {
+      "startMs": 116220,
+      "endMs": 117880,
+      "translation": "날 먼저 빨아, 나도 되갚을지 몰라 (빛이 보여)"
+    },
+    {
+      "startMs": 117880,
+      "endMs": 119860,
+      "translation": "그게 분명해? 조리개를 바꿔"
+    },
+    {
+      "startMs": 119860,
+      "endMs": 122210,
+      "translation": "하하하하하하하, 널 비웃을 수도 없어 (빛이 보여)"
+    },
+    {
+      "startMs": 122210,
+      "endMs": 123530,
+      "translation": "이게 널 불안하게 만드는 거야"
+    },
+    {
+      "startMs": 123530,
+      "endMs": 126020,
+      "translation": "스티브 어윈처럼 날뛰려는 참이야 (빛이 보여)"
+    },
+    {
+      "startMs": 126020,
+      "endMs": 127580,
+      "translation": "맥라렌 얘기는 질렸어, 난 세 번째 차를 몰고 있어"
+    },
+    {
+      "startMs": 127580,
+      "endMs": 133090,
+      "translation": "놈들이 막말을 하는데, 난 들은 적도 없어 (빛이 보여)"
+    },
+    {
+      "startMs": 133090,
+      "endMs": 137590,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 137590,
+      "endMs": 141400,
+      "translation": "빛이 보여 (건드리지 마, 가지 마, 놈들이 날뛸지 몰라, 건드리지 마, 건드리지-)"
+    },
+    {
+      "startMs": 141400,
+      "endMs": 145030,
+      "translation": "빛이 보여 (건드리지 마, 가지 마, 놈들이 날뛸지 몰라, 건드리지 마, 건드리지-)"
+    },
+    {
+      "startMs": 145030,
+      "endMs": 146840,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 146840,
+      "endMs": 148680,
+      "translation": "그 자동차 사고도 날 데려가지 못했어"
+    },
+    {
+      "startMs": 148680,
+      "endMs": 150750,
+      "translation": "초록 머리 천사들이 내 주위에 있어, 어"
+    },
+    {
+      "startMs": 150750,
+      "endMs": 154350,
+      "translation": "이유도 없고 흘릴 눈물도 없어, 난 살아 있어, 아 (음, 난 빛을-)"
+    },
+    {
+      "startMs": 154350,
+      "endMs": 156310,
+      "translation": "그건 내 종착점이 아니었어, 브이넥처럼"
+    },
+    {
+      "startMs": 156310,
+      "endMs": 158890,
+      "translation": "바람피울 상대가 없어서 죽음을 속였어 (요, 난 빛을-)"
+    },
+    {
+      "startMs": 158890,
+      "endMs": 160820,
+      "translation": "새 앨범, 반복은 없어, 난 리셋해 (응? 응?)"
+    },
+    {
+      "startMs": 160820,
+      "endMs": 162980,
+      "translation": "내가 내놓는 건 다 G. 뎁처럼 특별해"
+    },
+    {
+      "startMs": 162980,
+      "endMs": 164750,
+      "translation": "둘 다 내가 완전히 해치워, 키마, 팸"
+    },
+    {
+      "startMs": 164750,
+      "endMs": 166720,
+      "translation": "나와 죽음 사이에서 우주가 중개를 섰어"
+    },
+    {
+      "startMs": 166720,
+      "endMs": 168720,
+      "translation": "잠깐 눈을 붙이고 말처럼 뒤로 차, 눈을 감고"
+    },
+    {
+      "startMs": 168720,
+      "endMs": 169820,
+      "translation": "큰 소리, 흠집은 없어"
+    },
+    {
+      "startMs": 169820,
+      "endMs": 171790,
+      "translation": "개자식들은 내가 죽은 줄 알았나 봐"
+    },
+    {
+      "startMs": 171790,
+      "endMs": 173070,
+      "translation": "내 자리를 차지하길 바라면서"
+    },
+    {
+      "startMs": 173070,
+      "endMs": 174650,
+      "translation": "내가 유일무이하다는 걸 모르는 놈들"
+    },
+    {
+      "startMs": 174650,
+      "endMs": 176740,
+      "translation": "헬렌 켈러 같은 놈들이야"
+    },
+    {
+      "startMs": 176740,
+      "endMs": 179620,
+      "translation": "이제 난 눈을 뜨고 빛을 봐"
+    },
+    {
+      "startMs": 179620,
+      "endMs": 182160,
+      "translation": "빛 (이-이)"
+    },
+    {
+      "startMs": 182160,
+      "endMs": 186200,
+      "translation": "빛이 보여 (우)"
+    },
+    {
+      "startMs": 186200,
+      "endMs": 190290,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 190290,
+      "endMs": 194470,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 194470,
+      "endMs": 201990,
+      "translation": "빛이 보여"
+    },
+    {
+      "startMs": 201990,
+      "endMs": 208000,
+      "translation": "놓아주는 게 더 어려운지, 그냥 괜찮다고 받아들이는 게 더 어려운지 모르겠어"
+    }
+  ]
+}

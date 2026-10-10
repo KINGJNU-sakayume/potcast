@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 14306,
+    "durationMs": 229000
+  },
+  "segments": [
+    {
+      "startMs": 25650,
+      "endMs": 35220,
+      "translation": "쓰레기 매립지처럼 꽉 찬 마음"
+    },
+    {
+      "startMs": 35220,
+      "endMs": 41510,
+      "translation": "천천히 사람을 죽이는 일"
+    },
+    {
+      "startMs": 41510,
+      "endMs": 51620,
+      "translation": "낫지 않는 멍"
+    },
+    {
+      "startMs": 51620,
+      "endMs": 57690,
+      "translation": "너 정말 지치고 불행해 보여"
+    },
+    {
+      "startMs": 57690,
+      "endMs": 64170,
+      "translation": "정부를 끌어내려"
+    },
+    {
+      "startMs": 64170,
+      "endMs": 76750,
+      "translation": "그들은 우리를 대변하지 않아"
+    },
+    {
+      "startMs": 76750,
+      "endMs": 82340,
+      "translation": "난 조용한 삶을 택할래"
+    },
+    {
+      "startMs": 82340,
+      "endMs": 88910,
+      "translation": "일산화탄소의 악수"
+    },
+    {
+      "startMs": 88910,
+      "endMs": 95250,
+      "translation": "경보도 없고 놀랄 일도 없이"
+    },
+    {
+      "startMs": 95250,
+      "endMs": 101300,
+      "translation": "경보도 없고 놀랄 일도 없이"
+    },
+    {
+      "startMs": 101300,
+      "endMs": 107680,
+      "translation": "경보도 없고 놀랄 일도 없이"
+    },
+    {
+      "startMs": 107680,
+      "endMs": 114060,
+      "translation": "고요하게"
+    },
+    {
+      "startMs": 114060,
+      "endMs": 120880,
+      "translation": "고요하게"
+    },
+    {
+      "startMs": 120880,
+      "endMs": 133480,
+      "translation": "이게 내 마지막 발작, 마지막 배앓이야"
+    },
+    {
+      "startMs": 133480,
+      "endMs": 139520,
+      "translation": "경보도 없고 놀랄 일도 없이"
+    },
+    {
+      "startMs": 139520,
+      "endMs": 145550,
+      "translation": "경보도 없고 놀랄 일도 없이"
+    },
+    {
+      "startMs": 145550,
+      "endMs": 176060,
+      "translation": "경보도 없고 놀랄 일도 없이, 제발"
+    },
+    {
+      "startMs": 176060,
+      "endMs": 181710,
+      "translation": "정말 예쁜 집"
+    },
+    {
+      "startMs": 181710,
+      "endMs": 188450,
+      "translation": "그리고 정말 예쁜 정원"
+    },
+    {
+      "startMs": 188450,
+      "endMs": 194050,
+      "translation": "경보도 없고 놀랄 일도 없이"
+    },
+    {
+      "startMs": 194050,
+      "endMs": 200230,
+      "translation": "경보도 없고 놀랄 일도 없이"
+    },
+    {
+      "startMs": 200230,
+      "endMs": 229000,
+      "translation": "경보도 없고 놀랄 일도 없이, 제발"
+    }
+  ]
+}

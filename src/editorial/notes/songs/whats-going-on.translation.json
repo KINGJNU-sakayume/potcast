@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 3748473,
+    "durationMs": 234000
+  },
+  "segments": [
+    {
+      "startMs": 17010,
+      "endMs": 26410,
+      "translation": "어머니, 어머니, 울고 계신 분들이 너무 많아요"
+    },
+    {
+      "startMs": 26410,
+      "endMs": 34840,
+      "translation": "형제여, 형제여, 형제여, 죽어 가는 이들이 너무나 많아요"
+    },
+    {
+      "startMs": 34840,
+      "endMs": 45290,
+      "translation": "우리는 오늘 이곳에 사랑을 가져올 길을 찾아야 해요"
+    },
+    {
+      "startMs": 45290,
+      "endMs": 53960,
+      "translation": "아버지, 아버지, 일을 더 키울 필요는 없어요"
+    },
+    {
+      "startMs": 53960,
+      "endMs": 63090,
+      "translation": "보세요, 전쟁은 답이 아니에요, 오직 사랑만이 미움을 이길 수 있으니까요"
+    },
+    {
+      "startMs": 63090,
+      "endMs": 73480,
+      "translation": "우리는 오늘 이곳에 사랑을 가져올 길을 찾아야 해요"
+    },
+    {
+      "startMs": 73480,
+      "endMs": 82960,
+      "translation": "시위대의 줄과 팻말들, 폭력으로 나를 벌하지 마세요"
+    },
+    {
+      "startMs": 82960,
+      "endMs": 87320,
+      "translation": "내게 말해 보세요, 그러면 알게 될 거예요"
+    },
+    {
+      "startMs": 87320,
+      "endMs": 89600,
+      "translation": "아, 지금 무슨 일이 일어나고 있는지"
+    },
+    {
+      "startMs": 89600,
+      "endMs": 92120,
+      "translation": "무슨 일이"
+    },
+    {
+      "startMs": 92120,
+      "endMs": 94480,
+      "translation": "무슨 일이 일어나고 있는지"
+    },
+    {
+      "startMs": 94480,
+      "endMs": 98240,
+      "translation": "무슨 일이 일어나고 있는지"
+    },
+    {
+      "startMs": 98240,
+      "endMs": 99990,
+      "translation": "맞아요, 그래요"
+    },
+    {
+      "startMs": 99990,
+      "endMs": 107850,
+      "translation": "맞아요, 그래요"
+    },
+    {
+      "startMs": 107850,
+      "endMs": 125220,
+      "translation": "맞아요, 그래요"
+    },
+    {
+      "startMs": 125220,
+      "endMs": 133740,
+      "translation": "어머니, 어머니, 다들 우리가 틀렸다고 생각해요"
+    },
+    {
+      "startMs": 133740,
+      "endMs": 142450,
+      "translation": "하지만 머리가 길다는 이유만으로 그들이 뭔데 우리를 판단하나요"
+    },
+    {
+      "startMs": 142450,
+      "endMs": 153490,
+      "translation": "우리는 오늘 이곳에 이해를 가져올 길을 찾아야 해요"
+    },
+    {
+      "startMs": 153490,
+      "endMs": 162240,
+      "translation": "시위대의 줄과 팻말들, 폭력으로 나를 벌하지 마세요"
+    },
+    {
+      "startMs": 162240,
+      "endMs": 166050,
+      "translation": "이리 와서 내게 말해 보세요, 그러면 알게 될 거예요"
+    },
+    {
+      "startMs": 166050,
+      "endMs": 169240,
+      "translation": "무슨 일이 일어나고 있는지"
+    },
+    {
+      "startMs": 169240,
+      "endMs": 171140,
+      "translation": "무슨 일이 일어나고 있는지"
+    },
+    {
+      "startMs": 171140,
+      "endMs": 173130,
+      "translation": "무슨 일이 일어나고 있는지 말해 주세요"
+    },
+    {
+      "startMs": 173130,
+      "endMs": 178490,
+      "translation": "내가 말해 줄게요, 무슨 일이 일어나고 있는지"
+    },
+    {
+      "startMs": 178490,
+      "endMs": 180440,
+      "translation": "맞아요, 그래요"
+    },
+    {
+      "startMs": 180440,
+      "endMs": 181980,
+      "translation": "맞아요, 그래요"
+    },
+    {
+      "startMs": 181980,
+      "endMs": 234000,
+      "translation": "맞아요, 그래요"
+    }
+  ]
+}

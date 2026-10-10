@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13976,
+    "durationMs": 264000
+  },
+  "segments": [
+    {
+      "startMs": 26780,
+      "endMs": 33390,
+      "translation": "카르마 경찰, 이 남자를 체포해"
+    },
+    {
+      "startMs": 33390,
+      "endMs": 37460,
+      "translation": "숫자로만 말하고"
+    },
+    {
+      "startMs": 37460,
+      "endMs": 39770,
+      "translation": "냉장고처럼 웅웅거려"
+    },
+    {
+      "startMs": 39770,
+      "endMs": 52660,
+      "translation": "주파수 나간 라디오 같아"
+    },
+    {
+      "startMs": 52660,
+      "endMs": 59120,
+      "translation": "카르마 경찰, 이 여자를 체포해"
+    },
+    {
+      "startMs": 59120,
+      "endMs": 65450,
+      "translation": "저 히틀러 머리 모양이 속을 메스껍게 해"
+    },
+    {
+      "startMs": 65450,
+      "endMs": 78450,
+      "translation": "그리고 우린 저 여자의 파티를 망쳐 놨지"
+    },
+    {
+      "startMs": 78450,
+      "endMs": 84660,
+      "translation": "이게 네가 받을 대가야"
+    },
+    {
+      "startMs": 84660,
+      "endMs": 91000,
+      "translation": "이게 네가 받을 대가야"
+    },
+    {
+      "startMs": 91000,
+      "endMs": 103580,
+      "translation": "우리를 건드리면 이게 네가 받을 대가야"
+    },
+    {
+      "startMs": 103580,
+      "endMs": 107770,
+      "translation": "카르마 경찰"
+    },
+    {
+      "startMs": 107770,
+      "endMs": 114230,
+      "translation": "난 줄 수 있는 건 다 줬어, 그래도 모자라"
+    },
+    {
+      "startMs": 114230,
+      "endMs": 129100,
+      "translation": "줄 수 있는 건 다 줬는데, 우린 아직도 월급 명단에 올라 있어"
+    },
+    {
+      "startMs": 129100,
+      "endMs": 135380,
+      "translation": "이게 네가 받을 대가야"
+    },
+    {
+      "startMs": 135380,
+      "endMs": 141970,
+      "translation": "이게 네가 받을 대가야"
+    },
+    {
+      "startMs": 141970,
+      "endMs": 154670,
+      "translation": "우리를 건드리면 이게 네가 받을 대가야"
+    },
+    {
+      "startMs": 154670,
+      "endMs": 161150,
+      "translation": "잠깐 동안 나를 잃어버렸어"
+    },
+    {
+      "startMs": 161150,
+      "endMs": 167100,
+      "translation": "나를 잃어버렸어"
+    },
+    {
+      "startMs": 167100,
+      "endMs": 173920,
+      "translation": "휴, 잠깐 동안 나를 잃어버렸어"
+    },
+    {
+      "startMs": 173920,
+      "endMs": 179500,
+      "translation": "나를 잃어버렸어"
+    },
+    {
+      "startMs": 179500,
+      "endMs": 191980,
+      "translation": "(오…)"
+    },
+    {
+      "startMs": 191980,
+      "endMs": 199390,
+      "translation": "잠깐 동안 나를 잃어버렸어"
+    },
+    {
+      "startMs": 199390,
+      "endMs": 205320,
+      "translation": "나를 잃어버렸어"
+    },
+    {
+      "startMs": 205320,
+      "endMs": 212140,
+      "translation": "휴, 잠깐 동안 나를 잃어버렸어"
+    },
+    {
+      "startMs": 212140,
+      "endMs": 213720,
+      "translation": "나를 잃어버렸어"
+    },
+    {
+      "startMs": 213720,
+      "endMs": 264000,
+      "translation": "(그래…)"
+    }
+  ]
+}

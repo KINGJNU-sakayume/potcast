@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11565737,
+    "durationMs": 207000
+  },
+  "segments": [
+    {
+      "startMs": 12680,
+      "endMs": 15590,
+      "translation": "달에 밧줄을 감아서"
+    },
+    {
+      "startMs": 15590,
+      "endMs": 18420,
+      "translation": "묶은 다음 너한테 끌어내릴 수 있어"
+    },
+    {
+      "startMs": 18420,
+      "endMs": 21000,
+      "translation": "자기야, 네가 부탁한다면"
+    },
+    {
+      "startMs": 21000,
+      "endMs": 23930,
+      "translation": "해 볼 거라는 거 알잖아"
+    },
+    {
+      "startMs": 23930,
+      "endMs": 26900,
+      "translation": "네 목에 다이아몬드를 걸어 줄 수 있어"
+    },
+    {
+      "startMs": 26900,
+      "endMs": 29760,
+      "translation": "루비처럼 붉은 노을 속에서 춤추며"
+    },
+    {
+      "startMs": 29760,
+      "endMs": 32130,
+      "translation": "자기야, 이 비행기를 착륙시키기 싫다면"
+    },
+    {
+      "startMs": 32130,
+      "endMs": 34030,
+      "translation": "계속 날아가자"
+    },
+    {
+      "startMs": 34030,
+      "endMs": 38550,
+      "translation": "모든 줄, 모든 코드, 내 기타"
+    },
+    {
+      "startMs": 38550,
+      "endMs": 45110,
+      "translation": "세상 전부를 줄게, 내 마음만 빼고"
+    },
+    {
+      "startMs": 45110,
+      "endMs": 47710,
+      "translation": "왜냐면 반쯤만 사랑한 사람들한테 반을 줘 버렸고"
+    },
+    {
+      "startMs": 47710,
+      "endMs": 50940,
+      "translation": "술에 취한 두 번의 여름에 조금 두고 왔어"
+    },
+    {
+      "startMs": 50940,
+      "endMs": 53810,
+      "translation": "차 열쇠랑 같이 술집에 한 조각을 두고 왔지"
+    },
+    {
+      "startMs": 53810,
+      "endMs": 56450,
+      "translation": "다시는 되찾지 못할 거란 걸 알아"
+    },
+    {
+      "startMs": 56450,
+      "endMs": 59130,
+      "translation": "위스키를 홀짝이느라 많이 잃었고"
+    },
+    {
+      "startMs": 59130,
+      "endMs": 62070,
+      "translation": "나머진 록스타처럼 사느라 줘 버렸어"
+    },
+    {
+      "startMs": 62070,
+      "endMs": 65220,
+      "translation": "나를 다 가져가, 그런데 한 가지가 빠져 있어"
+    },
+    {
+      "startMs": 65220,
+      "endMs": 68830,
+      "translation": "자기야, 내 것이 아닌 건 줄 수가 없어"
+    },
+    {
+      "startMs": 68830,
+      "endMs": 72720,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 72720,
+      "endMs": 74340,
+      "translation": "내 것이 아닌 걸"
+    },
+    {
+      "startMs": 74340,
+      "endMs": 76720,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 76720,
+      "endMs": 79040,
+      "translation": "음"
+    },
+    {
+      "startMs": 79040,
+      "endMs": 81780,
+      "translation": "널 눕힐 수 있어, 네 인생을 바꿀 수 있어"
+    },
+    {
+      "startMs": 81780,
+      "endMs": 84500,
+      "translation": "영원히는 아니겠지만, 자기야, 오늘 밤만큼은"
+    },
+    {
+      "startMs": 84500,
+      "endMs": 87480,
+      "translation": "언젠가 널 만날 줄 알았다면"
+    },
+    {
+      "startMs": 87480,
+      "endMs": 90580,
+      "translation": "다 줘 버리지 않았을 텐데"
+    },
+    {
+      "startMs": 90580,
+      "endMs": 94860,
+      "translation": "최고의 걸 너한테 줄 수 있으면 좋겠어"
+    },
+    {
+      "startMs": 94860,
+      "endMs": 101650,
+      "translation": "넌 내 가슴에 난 이 구멍보다 훨씬 더 좋은 걸 받아야 하니까"
+    },
+    {
+      "startMs": 101650,
+      "endMs": 104590,
+      "translation": "왜냐면 반쯤만 사랑한 사람들한테 반을 줘 버렸고"
+    },
+    {
+      "startMs": 104590,
+      "endMs": 107440,
+      "translation": "술에 취한 두 번의 여름에 조금 두고 왔어"
+    },
+    {
+      "startMs": 107440,
+      "endMs": 110310,
+      "translation": "차 열쇠랑 같이 술집에 한 조각을 두고 왔지"
+    },
+    {
+      "startMs": 110310,
+      "endMs": 113090,
+      "translation": "다시는 되찾지 못할 거란 걸 알아"
+    },
+    {
+      "startMs": 113090,
+      "endMs": 115960,
+      "translation": "위스키를 홀짝이느라 많이 잃었고"
+    },
+    {
+      "startMs": 115960,
+      "endMs": 118520,
+      "translation": "나머진 록스타처럼 사느라 줘 버렸어"
+    },
+    {
+      "startMs": 118520,
+      "endMs": 121630,
+      "translation": "나를 다 가져가, 그런데 한 가지가 빠져 있어"
+    },
+    {
+      "startMs": 121630,
+      "endMs": 125350,
+      "translation": "자기야, 내 것이 아닌 건 줄 수가 없어"
+    },
+    {
+      "startMs": 125350,
+      "endMs": 127480,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 127480,
+      "endMs": 130640,
+      "translation": "내 것이 아닌 걸"
+    },
+    {
+      "startMs": 130640,
+      "endMs": 132480,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 132480,
+      "endMs": 135850,
+      "translation": "오, 그래"
+    },
+    {
+      "startMs": 135850,
+      "endMs": 138550,
+      "translation": "그래, 넌 계속 붙잡고 있지만 사라진 건 사라진 거야"
+    },
+    {
+      "startMs": 138550,
+      "endMs": 141500,
+      "translation": "대신할 수도 없어"
+    },
+    {
+      "startMs": 141500,
+      "endMs": 144300,
+      "translation": "자기야, 그냥 받아들이자"
+    },
+    {
+      "startMs": 144300,
+      "endMs": 146850,
+      "translation": "자기야, 그냥 받아들이자"
+    },
+    {
+      "startMs": 146850,
+      "endMs": 149750,
+      "translation": "왜냐면 반쯤만 사랑한 사람들한테 반을 줘 버렸고"
+    },
+    {
+      "startMs": 149750,
+      "endMs": 152620,
+      "translation": "술에 취한 두 번의 여름에 조금 두고 왔어"
+    },
+    {
+      "startMs": 152620,
+      "endMs": 155840,
+      "translation": "차 열쇠랑 같이 술집에 한 조각을 두고 왔지"
+    },
+    {
+      "startMs": 155840,
+      "endMs": 158170,
+      "translation": "다시는 되찾지 못할 거란 걸 알아"
+    },
+    {
+      "startMs": 158170,
+      "endMs": 161060,
+      "translation": "위스키를 홀짝이느라 많이 줘 버렸고"
+    },
+    {
+      "startMs": 161060,
+      "endMs": 163950,
+      "translation": "나머진 록스타처럼 사느라 줘 버렸어"
+    },
+    {
+      "startMs": 163950,
+      "endMs": 166800,
+      "translation": "나를 다 가져가, 그런데 한 가지가 빠져 있어"
+    },
+    {
+      "startMs": 166800,
+      "endMs": 170270,
+      "translation": "자기야, 내 것이 아닌 건 줄 수가 없어"
+    },
+    {
+      "startMs": 170270,
+      "endMs": 173900,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 173900,
+      "endMs": 176090,
+      "translation": "오, 내 것이 아닌 걸"
+    },
+    {
+      "startMs": 176090,
+      "endMs": 179670,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 179670,
+      "endMs": 181690,
+      "translation": "그래, 내 것이 아닌 걸"
+    },
+    {
+      "startMs": 181690,
+      "endMs": 185270,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 185270,
+      "endMs": 187320,
+      "translation": "내 것이 아닌 걸"
+    },
+    {
+      "startMs": 187320,
+      "endMs": 190930,
+      "translation": "(내 것이 아닌 걸, 내 것이 아닌 걸)"
+    },
+    {
+      "startMs": 190930,
+      "endMs": 207000,
+      "translation": "오, 내 것이 아닌 걸"
+    }
+  ]
+}

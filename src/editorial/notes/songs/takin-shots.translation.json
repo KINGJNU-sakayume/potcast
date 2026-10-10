@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 507710,
+    "durationMs": 217000
+  },
+  "segments": [
+    {
+      "startMs": 16230,
+      "endMs": 18400,
+      "translation": "밤새 마셨는데 아직 안 끝났어 (아직)"
+    },
+    {
+      "startMs": 18400,
+      "endMs": 20320,
+      "translation": "약 파는 놈을 기다리는데 아직 안 왔어 (아직)"
+    },
+    {
+      "startMs": 20320,
+      "endMs": 22530,
+      "translation": "아직 뭐가 필요해? 돈 걸어 (돈 걸어)"
+    },
+    {
+      "startMs": 22530,
+      "endMs": 24580,
+      "translation": "베이프 로고 박힌 큰 가방을 들었어 (큰 가방)"
+    },
+    {
+      "startMs": 24580,
+      "endMs": 26470,
+      "translation": "누가 뭐라 해도 파티는 안 끝나 (뭐라 해도)"
+    },
+    {
+      "startMs": 26470,
+      "endMs": 28350,
+      "translation": "해가 세 번 뜰 때까지 안 자 (해가 세 번)"
+    },
+    {
+      "startMs": 28350,
+      "endMs": 30490,
+      "translation": "파티는 셋이서 끝날 거야 (셋이서)"
+    },
+    {
+      "startMs": 30490,
+      "endMs": 32740,
+      "translation": "피임도 안 하고, 아마 아들 셋은 생기겠지"
+    },
+    {
+      "startMs": 32740,
+      "endMs": 36770,
+      "translation": "누구랑 퍼코셋을 들이켜, 그건 날 실망시킨 적이 없어 (음)"
+    },
+    {
+      "startMs": 36770,
+      "endMs": 41260,
+      "translation": "다들 돈 벌러 일하러 가지만 우린 날뛰면서 벌어 (음)"
+    },
+    {
+      "startMs": 41260,
+      "endMs": 42550,
+      "translation": "그르르르아!"
+    },
+    {
+      "startMs": 42550,
+      "endMs": 44930,
+      "translation": "우린 지금 잔을 들이켜 (지금 잔을)"
+    },
+    {
+      "startMs": 44930,
+      "endMs": 46350,
+      "translation": "그르르르아!"
+    },
+    {
+      "startMs": 46350,
+      "endMs": 48440,
+      "translation": "그래, 우린 지금 잔을 들이켜 (잔을)"
+    },
+    {
+      "startMs": 48440,
+      "endMs": 50300,
+      "translation": "페라리 타고 부릉부릉 가는 날 봐 (끽끽)"
+    },
+    {
+      "startMs": 50300,
+      "endMs": 52360,
+      "translation": "차 안에도 섹시한 놈이 있지"
+    },
+    {
+      "startMs": 52360,
+      "endMs": 54370,
+      "translation": "생로랑, 새 정장에 4만 달러"
+    },
+    {
+      "startMs": 54370,
+      "endMs": 56410,
+      "translation": "버드 라이트를 홀짝여, 그게 새로운 그레이 구스야"
+    },
+    {
+      "startMs": 56410,
+      "endMs": 58480,
+      "translation": "자기야, 우후 하고 흔들어 봐"
+    },
+    {
+      "startMs": 58480,
+      "endMs": 60350,
+      "translation": "다이아몬드는 생채기처럼 깎였어"
+    },
+    {
+      "startMs": 60350,
+      "endMs": 62210,
+      "translation": "주머니가 너무 두둑해서 헐렁한 드레스를 입어"
+    },
+    {
+      "startMs": 62210,
+      "endMs": 64530,
+      "translation": "나랑 드레는 여자들 보러 왔어"
+    },
+    {
+      "startMs": 64530,
+      "endMs": 68910,
+      "translation": "번쩍번쩍, 여자들이 내 수백만 달러를 노려"
+    },
+    {
+      "startMs": 68910,
+      "endMs": 72870,
+      "translation": "형제를 어시스트로 도와, 난 제이슨 윌리엄스야"
+    },
+    {
+      "startMs": 72870,
+      "endMs": 76890,
+      "translation": "파티가 있다길래 들러 볼까 해"
+    },
+    {
+      "startMs": 76890,
+      "endMs": 80390,
+      "translation": "그 순간 개구리처럼 개굴개굴 뛰어내렸지 (끽!)"
+    },
+    {
+      "startMs": 80390,
+      "endMs": 82490,
+      "translation": "문으로 들어설 때 이미 취해 있었어"
+    },
+    {
+      "startMs": 82490,
+      "endMs": 84520,
+      "translation": "너무 취해서, 그래, 안녕"
+    },
+    {
+      "startMs": 84520,
+      "endMs": 86430,
+      "translation": "그 여자한테 더 따르라고 했지"
+    },
+    {
+      "startMs": 86430,
+      "endMs": 88580,
+      "translation": "그랬더니 곧장 코카인으로 갔어 (코카인)"
+    },
+    {
+      "startMs": 88580,
+      "endMs": 90450,
+      "translation": "여자 서른 명이 더 따라오고 싶대"
+    },
+    {
+      "startMs": 90450,
+      "endMs": 92440,
+      "translation": "이 차 출발시키자 (출발)"
+    },
+    {
+      "startMs": 92440,
+      "endMs": 94400,
+      "translation": "이미 통제가 안 돼"
+    },
+    {
+      "startMs": 94400,
+      "endMs": 96490,
+      "translation": "이게 우리가 고른 삶이야"
+    },
+    {
+      "startMs": 96490,
+      "endMs": 98320,
+      "translation": "밤새 마셨는데 아직 안 끝났어 (아직)"
+    },
+    {
+      "startMs": 98320,
+      "endMs": 100480,
+      "translation": "약 파는 놈을 기다리는데 아직 안 왔어 (아직)"
+    },
+    {
+      "startMs": 100480,
+      "endMs": 102550,
+      "translation": "아직 뭐가 필요해? 돈 걸어 (돈 걸어)"
+    },
+    {
+      "startMs": 102550,
+      "endMs": 104520,
+      "translation": "베이프 로고 박힌 큰 가방을 들었어 (큰 가방)"
+    },
+    {
+      "startMs": 104520,
+      "endMs": 106410,
+      "translation": "누가 뭐라 해도 파티는 안 끝나 (뭐라 해도)"
+    },
+    {
+      "startMs": 106410,
+      "endMs": 108320,
+      "translation": "해가 세 번 뜰 때까지 안 자 (해가 세 번)"
+    },
+    {
+      "startMs": 108320,
+      "endMs": 110390,
+      "translation": "파티는 셋이서 끝날 거야 (셋이서)"
+    },
+    {
+      "startMs": 110390,
+      "endMs": 112470,
+      "translation": "피임도 안 하고, 아마 아들 셋은 생기겠지"
+    },
+    {
+      "startMs": 112470,
+      "endMs": 116850,
+      "translation": "누구랑 퍼코셋을 들이켜, 그건 날 실망시킨 적이 없어 (음)"
+    },
+    {
+      "startMs": 116850,
+      "endMs": 120940,
+      "translation": "다들 돈 벌러 일하러 가지만 우린 날뛰면서 벌어 (음)"
+    },
+    {
+      "startMs": 120940,
+      "endMs": 122410,
+      "translation": "그르르르아!"
+    },
+    {
+      "startMs": 122410,
+      "endMs": 124850,
+      "translation": "우린 지금 잔을 들이켜 (지금 잔을)"
+    },
+    {
+      "startMs": 124850,
+      "endMs": 126500,
+      "translation": "그르르르아!"
+    },
+    {
+      "startMs": 126500,
+      "endMs": 128490,
+      "translation": "그래, 우린 지금 잔을 들이켜 (잔을)"
+    },
+    {
+      "startMs": 128490,
+      "endMs": 130370,
+      "translation": "나한테 센 척하지만 넌 좋아하잖아 (좋아하잖아)"
+    },
+    {
+      "startMs": 130370,
+      "endMs": 132480,
+      "translation": "관심 없는 척하려고 하지 (없는 척)"
+    },
+    {
+      "startMs": 132480,
+      "endMs": 134650,
+      "translation": "다들 알아, 너도 만지고 싶어 하는 거 (만지고)"
+    },
+    {
+      "startMs": 134650,
+      "endMs": 136380,
+      "translation": "사람들 앞에서 해 본 적 있어?"
+    },
+    {
+      "startMs": 136380,
+      "endMs": 137930,
+      "translation": "밤새 홀짝여, 돌려 마셔"
+    },
+    {
+      "startMs": 137930,
+      "endMs": 140160,
+      "translation": "자기야, 오늘 밤만은 네가 내 영혼의 짝이야"
+    },
+    {
+      "startMs": 140160,
+      "endMs": 142060,
+      "translation": "보드카에 샴페인을 섞어"
+    },
+    {
+      "startMs": 142060,
+      "endMs": 144220,
+      "translation": "말해 봐, 남자가 술을 얼마나 마실 수 있는지"
+    },
+    {
+      "startMs": 144220,
+      "endMs": 146350,
+      "translation": "내가 음반을 몇 장이나 팔았냐고?"
+    },
+    {
+      "startMs": 146350,
+      "endMs": 148350,
+      "translation": "나도 몰라, 셀 수가 없어 (몰라)"
+    },
+    {
+      "startMs": 148350,
+      "endMs": 150430,
+      "translation": "요즘 내가 잘나가는 거 알잖아"
+    },
+    {
+      "startMs": 150430,
+      "endMs": 152180,
+      "translation": "내가 나타나면 인생을 축하하지 (나타나면)"
+    },
+    {
+      "startMs": 152180,
+      "endMs": 153940,
+      "translation": "밤새 홀짝여, 종일 홀짝여"
+    },
+    {
+      "startMs": 153940,
+      "endMs": 156000,
+      "translation": "경기장 앞 주차장처럼 맥주 깔때기를 꺼냈어"
+    },
+    {
+      "startMs": 156000,
+      "endMs": 158020,
+      "translation": "말할 수도 없는 어려운 단어를 붙잡고 있어"
+    },
+    {
+      "startMs": 158020,
+      "endMs": 160040,
+      "translation": "날 취한 말로 떠들게 만들어, 통역 좀 해 줄래?"
+    },
+    {
+      "startMs": 160040,
+      "endMs": 162380,
+      "translation": "문으로 들어설 때 이미 취해 있었어"
+    },
+    {
+      "startMs": 162380,
+      "endMs": 164450,
+      "translation": "너무 취해서, 그래, 안녕"
+    },
+    {
+      "startMs": 164450,
+      "endMs": 166430,
+      "translation": "그 여자한테 더 따르라고 했지"
+    },
+    {
+      "startMs": 166430,
+      "endMs": 168430,
+      "translation": "그랬더니 곧장 코카인으로 갔어 (코카인)"
+    },
+    {
+      "startMs": 168430,
+      "endMs": 170380,
+      "translation": "여자 서른 명이 더 따라오고 싶대"
+    },
+    {
+      "startMs": 170380,
+      "endMs": 172350,
+      "translation": "이 차 출발시키자 (출발)"
+    },
+    {
+      "startMs": 172350,
+      "endMs": 174350,
+      "translation": "이미 통제가 안 돼"
+    },
+    {
+      "startMs": 174350,
+      "endMs": 176470,
+      "translation": "이게 우리가 고른 삶이야"
+    },
+    {
+      "startMs": 176470,
+      "endMs": 178420,
+      "translation": "밤새 마셨는데 아직 안 끝났어 (아직)"
+    },
+    {
+      "startMs": 178420,
+      "endMs": 180310,
+      "translation": "약 파는 놈을 기다리는데 아직 안 왔어 (아직)"
+    },
+    {
+      "startMs": 180310,
+      "endMs": 182410,
+      "translation": "아직 뭐가 필요해? 돈 걸어 (돈 걸어)"
+    },
+    {
+      "startMs": 182410,
+      "endMs": 184540,
+      "translation": "베이프 로고 박힌 큰 가방을 들었어 (큰 가방)"
+    },
+    {
+      "startMs": 184540,
+      "endMs": 186460,
+      "translation": "누가 뭐라 해도 파티는 안 끝나 (뭐라 해도)"
+    },
+    {
+      "startMs": 186460,
+      "endMs": 188420,
+      "translation": "해가 세 번 뜰 때까지 안 자 (해가 세 번)"
+    },
+    {
+      "startMs": 188420,
+      "endMs": 190320,
+      "translation": "파티는 셋이서 끝날 거야 (셋이서)"
+    },
+    {
+      "startMs": 190320,
+      "endMs": 192630,
+      "translation": "피임도 안 하고, 아마 아들 셋은 생기겠지"
+    },
+    {
+      "startMs": 192630,
+      "endMs": 196810,
+      "translation": "누구랑 퍼코셋을 들이켜, 그건 날 실망시킨 적이 없어 (음)"
+    },
+    {
+      "startMs": 196810,
+      "endMs": 201070,
+      "translation": "다들 돈 벌러 일하러 가지만 우린 날뛰면서 벌어 (음)"
+    },
+    {
+      "startMs": 201070,
+      "endMs": 202520,
+      "translation": "그르르르아!"
+    },
+    {
+      "startMs": 202520,
+      "endMs": 204630,
+      "translation": "우린 지금 잔을 들이켜 (지금 잔을)"
+    },
+    {
+      "startMs": 204630,
+      "endMs": 206430,
+      "translation": "그르르르아!"
+    },
+    {
+      "startMs": 206430,
+      "endMs": 217000,
+      "translation": "그래, 우린 지금 잔을 들이켜 (잔을)"
+    }
+  ]
+}

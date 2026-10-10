@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 193498,
+    "durationMs": 178000
+  },
+  "segments": [
+    {
+      "startMs": 1860,
+      "endMs": 8790,
+      "translation": "네 한숨에서 많은 게 들려"
+    },
+    {
+      "startMs": 8790,
+      "endMs": 16340,
+      "translation": "네 눈에서도 많은 게 보여"
+    },
+    {
+      "startMs": 16340,
+      "endMs": 23980,
+      "translation": "우리 둘 다 할 수 있는 말들이 있지"
+    },
+    {
+      "startMs": 23980,
+      "endMs": 31520,
+      "translation": "하지만 말하지 마, 내 어깨에 머리를 기대"
+    },
+    {
+      "startMs": 31520,
+      "endMs": 39160,
+      "translation": "가까이 와, 눈을 감고 가만히 있어"
+    },
+    {
+      "startMs": 39160,
+      "endMs": 54660,
+      "translation": "말하지 마, 내 손을 잡고 네 심장 소리를 들려줘"
+    },
+    {
+      "startMs": 54660,
+      "endMs": 61810,
+      "translation": "너와 여기 있는 게 이렇게나 옳게 느껴져"
+    },
+    {
+      "startMs": 61810,
+      "endMs": 69150,
+      "translation": "오늘 밤 우린 영원히 살 수 있을 것 같아"
+    },
+    {
+      "startMs": 69150,
+      "endMs": 76650,
+      "translation": "내일은 생각하지 말자"
+    },
+    {
+      "startMs": 76650,
+      "endMs": 84030,
+      "translation": "그리고 말하지 마, 내 어깨에 머리를 기대"
+    },
+    {
+      "startMs": 84030,
+      "endMs": 91880,
+      "translation": "가까이 와, 눈을 감고 가만히 있어"
+    },
+    {
+      "startMs": 91880,
+      "endMs": 105940,
+      "translation": "말하지 마, 내 손을 잡고 내 심장 소리를 들어 봐"
+    },
+    {
+      "startMs": 105940,
+      "endMs": 130590,
+      "translation": "들어 봐, 들어 봐, 들어 봐"
+    },
+    {
+      "startMs": 130590,
+      "endMs": 138220,
+      "translation": "말하지 마, 내 어깨에 머리를 기대"
+    },
+    {
+      "startMs": 138220,
+      "endMs": 145640,
+      "translation": "말하지 마, 눈을 감고 가만히 있어"
+    },
+    {
+      "startMs": 145640,
+      "endMs": 153680,
+      "translation": "말하지 마, 내 어깨에 머리를 기대"
+    },
+    {
+      "startMs": 153680,
+      "endMs": 161750,
+      "translation": "말하지 마, 눈을 감고 가만히 있어"
+    },
+    {
+      "startMs": 161750,
+      "endMs": 178000,
+      "translation": "말하지 마, 내 어깨에 머리를 기대"
+    }
+  ]
+}

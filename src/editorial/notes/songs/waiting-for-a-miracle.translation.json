@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 157326,
+    "durationMs": 142000
+  },
+  "segments": [
+    {
+      "startMs": 4520,
+      "endMs": 11680,
+      "translation": "맙소사"
+    },
+    {
+      "startMs": 11680,
+      "endMs": 19650,
+      "translation": "그냥 나한테서 총을 뺏어 줘"
+    },
+    {
+      "startMs": 19650,
+      "endMs": 26510,
+      "translation": "젠장"
+    },
+    {
+      "startMs": 26510,
+      "endMs": 34940,
+      "translation": "내가 너무 약하다는 거 알아"
+    },
+    {
+      "startMs": 34940,
+      "endMs": 37720,
+      "translation": "맙소사"
+    },
+    {
+      "startMs": 37720,
+      "endMs": 41880,
+      "translation": "제발 날 좀 입 다물게 해 줘"
+    },
+    {
+      "startMs": 41880,
+      "endMs": 45700,
+      "translation": "그래서 총알을 한 발 장전해"
+    },
+    {
+      "startMs": 45700,
+      "endMs": 49590,
+      "translation": "깨어 있는 채로 죽는 건 무서워"
+    },
+    {
+      "startMs": 49590,
+      "endMs": 53190,
+      "translation": "그래서 눈을 감고"
+    },
+    {
+      "startMs": 53190,
+      "endMs": 63930,
+      "translation": "기적을 기다려"
+    },
+    {
+      "startMs": 63930,
+      "endMs": 71640,
+      "translation": "죽은 이를 위해 죽은 뒤에 하는 모든 건 산 사람들을 위한 거야"
+    },
+    {
+      "startMs": 71640,
+      "endMs": 79190,
+      "translation": "그들이 죽어 있는 동안 하는 모든 건, 젠장, 그건 우리가 정하는 거야"
+    },
+    {
+      "startMs": 79190,
+      "endMs": 86660,
+      "translation": "눈을 감고 있었지, 쉬웠어, 이제는 너무도 또렷이 보여"
+    },
+    {
+      "startMs": 86660,
+      "endMs": 95250,
+      "translation": "죽은 이를 위해 죽은 뒤에 하는 모든 건 산 사람들을 위한 거야"
+    },
+    {
+      "startMs": 95250,
+      "endMs": 98500,
+      "translation": "날 망가뜨려"
+    },
+    {
+      "startMs": 98500,
+      "endMs": 102800,
+      "translation": "젠장, 취해 버려, 헤이"
+    },
+    {
+      "startMs": 102800,
+      "endMs": 106330,
+      "translation": "날 망가뜨려, 헤이"
+    },
+    {
+      "startMs": 106330,
+      "endMs": 142000,
+      "translation": "그리고 계속 취해 있어"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 960751,
+    "durationMs": 190000
+  },
+  "segments": [
+    {
+      "startMs": 30850,
+      "endMs": 41620,
+      "translation": "움직일 수 없어, 완전히 마비됐어"
+    },
+    {
+      "startMs": 41620,
+      "endMs": 46090,
+      "translation": "완전히 마비됐어"
+    },
+    {
+      "startMs": 46090,
+      "endMs": 56990,
+      "translation": "왜 이렇게 겁에 질렸는지 설명할 수가 없어"
+    },
+    {
+      "startMs": 56990,
+      "endMs": 61080,
+      "translation": "너무 무서워"
+    },
+    {
+      "startMs": 61080,
+      "endMs": 71130,
+      "translation": "그래, 이젠 하늘에 닿고 싶지 않아"
+    },
+    {
+      "startMs": 71130,
+      "endMs": 75500,
+      "translation": "약에서 깰 때 땅을 느끼고 싶을 뿐이야"
+    },
+    {
+      "startMs": 75500,
+      "endMs": 78570,
+      "translation": "너무 오래됐어"
+    },
+    {
+      "startMs": 78570,
+      "endMs": 83210,
+      "translation": "그리고 이젠 취하고 싶지도 않아"
+    },
+    {
+      "startMs": 83210,
+      "endMs": 86230,
+      "translation": "그냥 내 삶에서 내보내고 싶어"
+    },
+    {
+      "startMs": 86230,
+      "endMs": 89620,
+      "translation": "내 삶에서, 밖으로"
+    },
+    {
+      "startMs": 89620,
+      "endMs": 98380,
+      "translation": "꿈에서 널 잘라 내고 싶어"
+    },
+    {
+      "startMs": 98380,
+      "endMs": 102240,
+      "translation": "피를 다 쏟을 때까지"
+    },
+    {
+      "startMs": 102240,
+      "endMs": 105120,
+      "translation": "피를 흘릴 때까지"
+    },
+    {
+      "startMs": 105120,
+      "endMs": 113720,
+      "translation": "머릿속에서 널 잘라 내고 싶어"
+    },
+    {
+      "startMs": 113720,
+      "endMs": 117560,
+      "translation": "피를 다 쏟을 때까지"
+    },
+    {
+      "startMs": 117560,
+      "endMs": 120350,
+      "translation": "피를 흘릴 때까지"
+    },
+    {
+      "startMs": 120350,
+      "endMs": 129200,
+      "translation": "꿈에서 널 잘라 내고 싶어"
+    },
+    {
+      "startMs": 129200,
+      "endMs": 133060,
+      "translation": "워, 피를 다 쏟고 있어"
+    },
+    {
+      "startMs": 133060,
+      "endMs": 135680,
+      "translation": "걸, 피를 흘리고 있어"
+    },
+    {
+      "startMs": 135680,
+      "endMs": 145280,
+      "translation": "머릿속에서 널 잘라 내고 싶어"
+    },
+    {
+      "startMs": 145280,
+      "endMs": 148390,
+      "translation": "피를 다 쏟고 있으니까"
+    },
+    {
+      "startMs": 148390,
+      "endMs": 152260,
+      "translation": "오, 피를 흘리고 있어"
+    },
+    {
+      "startMs": 152260,
+      "endMs": 159260,
+      "translation": "걸, 피를 흘리고 있어"
+    },
+    {
+      "startMs": 159260,
+      "endMs": 166980,
+      "translation": "그거 필요 없다고 계속 스스로에게 말해"
+    },
+    {
+      "startMs": 166980,
+      "endMs": 174770,
+      "translation": "이제 그거 필요 없다고 계속 스스로에게 말해"
+    },
+    {
+      "startMs": 174770,
+      "endMs": 182210,
+      "translation": "이제 그거 필요 없다고 계속 스스로에게 말해"
+    },
+    {
+      "startMs": 182210,
+      "endMs": 190000,
+      "translation": "더는 필요 없어"
+    }
+  ]
+}

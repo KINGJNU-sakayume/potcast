@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 494286,
+    "durationMs": 141000
+  },
+  "segments": [
+    {
+      "startMs": 8610,
+      "endMs": 10830,
+      "translation": "우리 사랑은 절대 다른 사랑이 될 수 없어"
+    },
+    {
+      "startMs": 10830,
+      "endMs": 13090,
+      "translation": "넌 그냥 정체를 숨긴 악마야"
+    },
+    {
+      "startMs": 13090,
+      "endMs": 15460,
+      "translation": "네가 바닥에 있을 때 널 찾아냈지"
+    },
+    {
+      "startMs": 15460,
+      "endMs": 18330,
+      "translation": "내가 호구가 되기 전까진 달콤했어, 조나스 브라더스에게 인사를"
+    },
+    {
+      "startMs": 18330,
+      "endMs": 20840,
+      "translation": "알고 싶었던 것보다 더 많은 걸 알게 됐어"
+    },
+    {
+      "startMs": 20840,
+      "endMs": 23050,
+      "translation": "내가 그냥 출세용 발판이 아니라는 거 몰라?"
+    },
+    {
+      "startMs": 23050,
+      "endMs": 25500,
+      "translation": "넌 사고를 치고 아무 일 없던 척하지"
+    },
+    {
+      "startMs": 25500,
+      "endMs": 27910,
+      "translation": "영혼을 팔았지, 넌 얼음장 같아, 넌 끝내줘"
+    },
+    {
+      "startMs": 27910,
+      "endMs": 30140,
+      "translation": "네가 떠날 때마다 옳았던 적이 없어"
+    },
+    {
+      "startMs": 30140,
+      "endMs": 32500,
+      "translation": "매일 밤 다른 침대에서"
+    },
+    {
+      "startMs": 32500,
+      "endMs": 34740,
+      "translation": "과학처럼 정확했지, 넌 정말 빈틈없었어"
+    },
+    {
+      "startMs": 34740,
+      "endMs": 37020,
+      "translation": "네 눈에서 보여, 빛 속에서 널 봤어"
+    },
+    {
+      "startMs": 37020,
+      "endMs": 39470,
+      "translation": "그런데 어쩐지, 자기야, 아직도 네가 좋아"
+    },
+    {
+      "startMs": 39470,
+      "endMs": 41810,
+      "translation": "내 말 들어, 차 몰고 떠나지 마"
+    },
+    {
+      "startMs": 41810,
+      "endMs": 44240,
+      "translation": "날 부드럽게 죽여 줘, 날 붙잡는 네 손아귀는"
+    },
+    {
+      "startMs": 44240,
+      "endMs": 45920,
+      "translation": "나도 설명할 수 없는 거야"
+    },
+    {
+      "startMs": 45920,
+      "endMs": 48930,
+      "translation": "넌 절대 내 - 가 될 수 없다는 거 알아"
+    },
+    {
+      "startMs": 48930,
+      "endMs": 50720,
+      "translation": "절대 이럴 수는 없어"
+    },
+    {
+      "startMs": 50720,
+      "endMs": 53350,
+      "translation": "알아, 내 계획에 네가 있다고 생각하지 마"
+    },
+    {
+      "startMs": 53350,
+      "endMs": 55480,
+      "translation": "넌 백 번이나 또 기회를 날렸어"
+    },
+    {
+      "startMs": 55480,
+      "endMs": 57900,
+      "translation": "네가 몰래 딴짓하고 있었다는 거 알아"
+    },
+    {
+      "startMs": 57900,
+      "endMs": 60290,
+      "translation": "그러고 아침이면 나한테 달려왔지"
+    },
+    {
+      "startMs": 60290,
+      "endMs": 62880,
+      "translation": "절대 이럴 수는 없다는 거 알아"
+    },
+    {
+      "startMs": 62880,
+      "endMs": 64750,
+      "translation": "넌 절대 내 - 가 될 수 없어"
+    },
+    {
+      "startMs": 64750,
+      "endMs": 69050,
+      "translation": "아니, 아니"
+    },
+    {
+      "startMs": 69050,
+      "endMs": 71500,
+      "translation": "우리 사랑은 절대 다른 사랑이 될 수 없어"
+    },
+    {
+      "startMs": 71500,
+      "endMs": 73650,
+      "translation": "넌 그냥 정체를 숨긴 악마야"
+    },
+    {
+      "startMs": 73650,
+      "endMs": 75920,
+      "translation": "네가 바닥에 있을 때 널 찾아냈지"
+    },
+    {
+      "startMs": 75920,
+      "endMs": 78590,
+      "translation": "내가 호구가 되기 전까진 달콤했어"
+    },
+    {
+      "startMs": 78590,
+      "endMs": 82560,
+      "translation": "평생 혼자 사는 게 낫겠어"
+    },
+    {
+      "startMs": 82560,
+      "endMs": 83320,
+      "translation": "너랑 - 하느니"
+    },
+    {
+      "startMs": 83320,
+      "endMs": 86930,
+      "translation": "주사위는 굴리지 않을 거야, 아니"
+    },
+    {
+      "startMs": 86930,
+      "endMs": 88350,
+      "translation": "지려고 게임하진 않아 (아니)"
+    },
+    {
+      "startMs": 88350,
+      "endMs": 90880,
+      "translation": "네가 떠날 때마다 옳았던 적이 없어"
+    },
+    {
+      "startMs": 90880,
+      "endMs": 92940,
+      "translation": "매일 밤 다른 침대에서"
+    },
+    {
+      "startMs": 92940,
+      "endMs": 95280,
+      "translation": "과학처럼 정확했지, 넌 정말 빈틈없었어"
+    },
+    {
+      "startMs": 95280,
+      "endMs": 97650,
+      "translation": "네 눈에서 보여, 빛 속에서 널 봤어"
+    },
+    {
+      "startMs": 97650,
+      "endMs": 100050,
+      "translation": "그런데 어쩐지, 자기야, 아직도 네가 좋아"
+    },
+    {
+      "startMs": 100050,
+      "endMs": 102490,
+      "translation": "내 말 들어, 차 몰고 떠나지 마"
+    },
+    {
+      "startMs": 102490,
+      "endMs": 104900,
+      "translation": "날 부드럽게 죽여 줘, 날 붙잡는 네 손아귀는"
+    },
+    {
+      "startMs": 104900,
+      "endMs": 106760,
+      "translation": "나도 설명할 수 없는 거야"
+    },
+    {
+      "startMs": 106760,
+      "endMs": 109340,
+      "translation": "넌 절대 내 - 가 될 수 없다는 거 알아"
+    },
+    {
+      "startMs": 109340,
+      "endMs": 111220,
+      "translation": "절대 이럴 수는 없어"
+    },
+    {
+      "startMs": 111220,
+      "endMs": 113840,
+      "translation": "알아, 내 계획에 네가 있다고 생각하지 마"
+    },
+    {
+      "startMs": 113840,
+      "endMs": 115960,
+      "translation": "넌 백 번이나 또 기회를 날렸어"
+    },
+    {
+      "startMs": 115960,
+      "endMs": 118460,
+      "translation": "네가 몰래 딴짓하고 있었다는 거 알아"
+    },
+    {
+      "startMs": 118460,
+      "endMs": 120750,
+      "translation": "그러고 아침이면 나한테 달려왔지"
+    },
+    {
+      "startMs": 120750,
+      "endMs": 123110,
+      "translation": "절대 이럴 수는 없다는 거 알아"
+    },
+    {
+      "startMs": 123110,
+      "endMs": 125170,
+      "translation": "넌 절대 내 - 가 될 수 없어"
+    },
+    {
+      "startMs": 125170,
+      "endMs": 126400,
+      "translation": "아니, 아니"
+    },
+    {
+      "startMs": 126400,
+      "endMs": 127800,
+      "translation": "내 - 가"
+    },
+    {
+      "startMs": 127800,
+      "endMs": 130360,
+      "translation": "절대 이럴 수는 없어"
+    },
+    {
+      "startMs": 130360,
+      "endMs": 132680,
+      "translation": "절대 이럴 수는 없어"
+    },
+    {
+      "startMs": 132680,
+      "endMs": 141000,
+      "translation": "절대 이럴 수는 없어"
+    }
+  ]
+}

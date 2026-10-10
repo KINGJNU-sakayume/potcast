@@ -1,0 +1,54 @@
+@media (max-width: 1180px) {
+  .artist-page, .album-page, .library-page { padding-left: 28px; padding-right: 28px; }
+  .album-shell { gap: 42px; }
+  .artist-hero { grid-template-columns: 310px 1fr; gap: 38px; }
+  .library-band { gap: 42px; }
+  .object-rows { column-gap: 42px; }
+  .transport-extras .device-name { max-width: 120px; }
+}
+
+@media (max-width: 900px) {
+  .note-preview { max-width: none; }
+  .side-drawer-body { padding: 28px 24px 44px; }
+  body { overflow: auto; }
+  .app { min-height: 100dvh; height: auto; grid-template-columns: 56px minmax(0,1fr); }
+  .rail { height: 100dvh; position: sticky; top: 0; }
+  .workspace { height: auto; min-height: 100dvh; }
+  .stage { flex: none; min-height: 760px; }
+  .view { position: relative; inset: auto; }
+  .artist-page, .album-page, .library-page, .state-page { height: auto; overflow: visible; }
+  .artist-hero, .album-shell, .library-band, .library-band.quiet { grid-template-columns: 1fr; }
+  .album-object { position: static; }
+  .album-hero-cover { width: min(100%,430px); }
+  .artist-portrait { max-width: 360px; }
+  .release-card { grid-template-columns: 130px minmax(0,1fr); }
+  .release-cover { width: 130px; height: 130px; }
+  .release-actions { grid-column: 2; justify-self: start; }
+  .object-rows { grid-template-columns: 1fr; }
+  .scope-notice { padding: 9px 18px; }
+  .year-section, .archive-artist { grid-template-columns: 1fr; }
+  .archive-artist-head { margin-bottom: 14px; }
+  .year-label { padding: 14px 0 0; }
+  .edition-item { padding-left: 0; }
+}
+
+@media (max-width: 620px) {
+  .artist-page, .album-page, .library-page { padding: 20px 18px 46px; }
+  .progress-wrap { grid-template-columns: 38px 1fr 38px; }
+  .transport-extras { justify-content: flex-start; }
+  .artist-copy h1 { font-size: clamp(48px,15vw,72px); }
+  .release-card { grid-template-columns: 92px minmax(0,1fr); gap: 14px; }
+  .release-cover { width: 92px; height: 92px; }
+  .release-card h4 { font-size: 21px; }
+  .object-row { grid-template-columns: 72px minmax(0,1fr) auto; }
+  .object-row-cover { width: 72px; height: 72px; }
+  .index-row { grid-template-columns: 28px 40px minmax(0,1fr); }
+  .index-aside { display: none; }
+  .settings-panel { left: 66px; bottom: 10px; width: calc(100vw - 76px); }
+  .connect-facts details li { grid-template-columns: 1fr; gap: 2px; }
+  .device-panel { right: auto; left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

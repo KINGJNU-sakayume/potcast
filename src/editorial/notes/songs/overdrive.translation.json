@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2906902,
+    "durationMs": 148000
+  },
+  "segments": [
+    {
+      "startMs": 14340,
+      "endMs": 21220,
+      "translation": "난 밤마다 과속으로 달려"
+    },
+    {
+      "startMs": 21220,
+      "endMs": 27010,
+      "translation": "너무 지친 채로 살아"
+    },
+    {
+      "startMs": 27010,
+      "endMs": 33760,
+      "translation": "숨을 곳은 어디에도 없어"
+    },
+    {
+      "startMs": 33760,
+      "endMs": 40760,
+      "translation": "이제 난 과속으로 살아"
+    },
+    {
+      "startMs": 40760,
+      "endMs": 44250,
+      "translation": "그 사람처럼 될 수도 있어"
+    },
+    {
+      "startMs": 44250,
+      "endMs": 49210,
+      "translation": "네가 괜찮다면"
+    },
+    {
+      "startMs": 49210,
+      "endMs": 55670,
+      "translation": "네 마음에 들 수만 있다면 뭐든 할게"
+    },
+    {
+      "startMs": 55670,
+      "endMs": 60620,
+      "translation": "네 마음에 들 수만 있다면"
+    },
+    {
+      "startMs": 60620,
+      "endMs": 67590,
+      "translation": "난 밤마다 과속으로 달려"
+    },
+    {
+      "startMs": 67590,
+      "endMs": 74430,
+      "translation": "아무 영감도 없이 살아"
+    },
+    {
+      "startMs": 74430,
+      "endMs": 80120,
+      "translation": "이 세상엔 천사가 없어"
+    },
+    {
+      "startMs": 80120,
+      "endMs": 86970,
+      "translation": "그래서 난 과속으로 살아"
+    },
+    {
+      "startMs": 86970,
+      "endMs": 90590,
+      "translation": "문신도 지울게"
+    },
+    {
+      "startMs": 90590,
+      "endMs": 95500,
+      "translation": "네가 괜찮다면"
+    },
+    {
+      "startMs": 95500,
+      "endMs": 102010,
+      "translation": "네 마음에 들 수만 있다면 뭐든 할게"
+    },
+    {
+      "startMs": 102010,
+      "endMs": 133320,
+      "translation": "네 마음에 들 수만 있다면, 어"
+    },
+    {
+      "startMs": 133320,
+      "endMs": 136820,
+      "translation": "그 여자랑 끝낼 수도 있어"
+    },
+    {
+      "startMs": 136820,
+      "endMs": 141910,
+      "translation": "네가 괜찮다면"
+    },
+    {
+      "startMs": 141910,
+      "endMs": 148000,
+      "translation": "네 마음에 들 수만 있다면 뭐든 할게"
+    }
+  ]
+}

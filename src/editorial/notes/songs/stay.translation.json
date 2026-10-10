@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 507125,
+    "durationMs": 204000
+  },
+  "segments": [
+    {
+      "startMs": 30,
+      "endMs": 4650,
+      "translation": "맞아"
+    },
+    {
+      "startMs": 4650,
+      "endMs": 10150,
+      "translation": "네가 아는 게 곧 너의 전부라는 거"
+    },
+    {
+      "startMs": 10150,
+      "endMs": 16500,
+      "translation": "넌 그게 네가 원하는 전부고 그 이상이라고 했지"
+    },
+    {
+      "startMs": 16500,
+      "endMs": 21560,
+      "translation": "꺼져, 그리고 한 잔 더 따라"
+    },
+    {
+      "startMs": 21560,
+      "endMs": 24270,
+      "translation": "네 생각을 말해 봐"
+    },
+    {
+      "startMs": 24270,
+      "endMs": 30410,
+      "translation": "지금 난 너무 취해서 말도 못 하는 거 알잖아"
+    },
+    {
+      "startMs": 30410,
+      "endMs": 35490,
+      "translation": "넌 내 얼굴에 담배를 비벼 껐지"
+    },
+    {
+      "startMs": 35490,
+      "endMs": 38360,
+      "translation": "정말 아름다워"
+    },
+    {
+      "startMs": 38360,
+      "endMs": 44310,
+      "translation": "제발, 여자여, 나 때문에 애쓰지 마"
+    },
+    {
+      "startMs": 44310,
+      "endMs": 48230,
+      "translation": "네 고통을 끝내 줄게"
+    },
+    {
+      "startMs": 48230,
+      "endMs": 53110,
+      "translation": "다 괜찮다고 말해 줘 (다 괜찮다고 말해 줘)"
+    },
+    {
+      "startMs": 53110,
+      "endMs": 58970,
+      "translation": "하루 종일 이것만 기다렸어 (하루 종일 이것만 기다렸어)"
+    },
+    {
+      "startMs": 58970,
+      "endMs": 63890,
+      "translation": "아침에 전화해서 어젯밤 어땠는지 말해 줘"
+    },
+    {
+      "startMs": 63890,
+      "endMs": 67090,
+      "translation": "난 여기 있어"
+    },
+    {
+      "startMs": 67090,
+      "endMs": 70290,
+      "translation": "하지만 내가"
+    },
+    {
+      "startMs": 70290,
+      "endMs": 73030,
+      "translation": "좀 더 머물 거라고 기대하지는 마, 네가 날 설득한다면 모를까"
+    },
+    {
+      "startMs": 73030,
+      "endMs": 75940,
+      "translation": "그리고 나한테 서운한 걸 다 말해 봐"
+    },
+    {
+      "startMs": 75940,
+      "endMs": 78780,
+      "translation": "화해할 때마다 진실은 흐려져"
+    },
+    {
+      "startMs": 78780,
+      "endMs": 81550,
+      "translation": "경치가 근사하면 다들 눈이 멀지"
+    },
+    {
+      "startMs": 81550,
+      "endMs": 84840,
+      "translation": "젠장, 지금 우린 뭐지?"
+    },
+    {
+      "startMs": 84840,
+      "endMs": 87400,
+      "translation": "우리 잠깐 얘기 좀 할 수 있을까?"
+    },
+    {
+      "startMs": 87400,
+      "endMs": 90190,
+      "translation": "취하지 않은 채로 답을 찾아보자"
+    },
+    {
+      "startMs": 90190,
+      "endMs": 92920,
+      "translation": "우린 계속 가, 우리를 움직이는 게 뭐야?"
+    },
+    {
+      "startMs": 92920,
+      "endMs": 95680,
+      "translation": "우린 절대 틀리지 않는데, 대체 어떻게 버텨 내겠어?"
+    },
+    {
+      "startMs": 95680,
+      "endMs": 98750,
+      "translation": "어쩌면 우린 이게 익숙한지도 몰라"
+    },
+    {
+      "startMs": 98750,
+      "endMs": 101320,
+      "translation": "말해 봐, 우린 어떡해야 해?"
+    },
+    {
+      "startMs": 101320,
+      "endMs": 104110,
+      "translation": "우린 지려고만 게임을 하는 것 같아"
+    },
+    {
+      "startMs": 104110,
+      "endMs": 106920,
+      "translation": "핑계를 대며 고통을 쫓아"
+    },
+    {
+      "startMs": 106920,
+      "endMs": 109190,
+      "translation": "난 그게 좋아, 너도 그렇잖아"
+    },
+    {
+      "startMs": 109190,
+      "endMs": 114070,
+      "translation": "하지만 나 때문에 애쓰지 마"
+    },
+    {
+      "startMs": 114070,
+      "endMs": 117950,
+      "translation": "네 고통을 끝내 줄게"
+    },
+    {
+      "startMs": 117950,
+      "endMs": 122940,
+      "translation": "다 괜찮다고 말해 줘 (다 괜찮다고 말해 줘)"
+    },
+    {
+      "startMs": 122940,
+      "endMs": 128810,
+      "translation": "하루 종일 이것만 기다렸어 (하루 종일 이것만 기다렸어)"
+    },
+    {
+      "startMs": 128810,
+      "endMs": 133650,
+      "translation": "아침에 전화해서 어젯밤 어땠는지 말해 줘"
+    },
+    {
+      "startMs": 133650,
+      "endMs": 136710,
+      "translation": "난 여기 있어"
+    },
+    {
+      "startMs": 136710,
+      "endMs": 173780,
+      "translation": "하지만 내가 머물 거라고 기대하지는 마"
+    },
+    {
+      "startMs": 173780,
+      "endMs": 178960,
+      "translation": "다 괜찮다고 말해 줘 (다 괜찮다고 말해 줘)"
+    },
+    {
+      "startMs": 178960,
+      "endMs": 184880,
+      "translation": "하루 종일 이것만 기다렸어 (하루 종일 이것만 기다렸어)"
+    },
+    {
+      "startMs": 184880,
+      "endMs": 189440,
+      "translation": "아침에 전화해서 어젯밤 어땠는지 말해 줘"
+    },
+    {
+      "startMs": 189440,
+      "endMs": 192680,
+      "translation": "난 여기 있어"
+    },
+    {
+      "startMs": 192680,
+      "endMs": 204000,
+      "translation": "하지만 내가 머물 거라고 기대하지는 마"
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 34968067,
+    "durationMs": 374000
+  },
+  "segments": [
+    {
+      "startMs": 6870,
+      "endMs": 9350,
+      "translation": "저녁 먹기 전에 흉터를 비교해"
+    },
+    {
+      "startMs": 9350,
+      "endMs": 11740,
+      "translation": "지붕에서 거울 속으로 뛰어내려"
+    },
+    {
+      "startMs": 11740,
+      "endMs": 17520,
+      "translation": "내 십이월에 넌 여름 같았어"
+    },
+    {
+      "startMs": 17520,
+      "endMs": 22550,
+      "translation": "내 팔월이었을까? 젠장, 기억이 안 나"
+    },
+    {
+      "startMs": 22550,
+      "endMs": 24200,
+      "translation": "(둘, 셋, 가)"
+    },
+    {
+      "startMs": 24200,
+      "endMs": 27080,
+      "translation": "내 온도가 정해져 있었다는 걸 알아"
+    },
+    {
+      "startMs": 27080,
+      "endMs": 28060,
+      "translation": "넌 마침내 남쪽으로 날아갔어"
+    },
+    {
+      "startMs": 28060,
+      "endMs": 32780,
+      "translation": "새는 둥지를 떠나지, 넌 정말 반음계 같아"
+    },
+    {
+      "startMs": 32780,
+      "endMs": 38240,
+      "translation": "적어도 난 가졌어 (어), 아예 없는 것보단"
+    },
+    {
+      "startMs": 38240,
+      "endMs": 41380,
+      "translation": "아니면 내가 너무 극적인 걸지도 몰라"
+    },
+    {
+      "startMs": 41380,
+      "endMs": 42620,
+      "translation": "(둘, 셋, 가)"
+    },
+    {
+      "startMs": 42620,
+      "endMs": 49450,
+      "translation": "비가 오든 해가 뜨든, 지금은 괜찮다는 걸 알아"
+    },
+    {
+      "startMs": 49450,
+      "endMs": 55560,
+      "translation": "내 사랑은 갔어, 내 사랑은 갔어"
+    },
+    {
+      "startMs": 55560,
+      "endMs": 59210,
+      "translation": "내 사랑은 갔어, 오, 갔어"
+    },
+    {
+      "startMs": 59210,
+      "endMs": 61350,
+      "translation": "(둘, 셋, 가)"
+    },
+    {
+      "startMs": 61350,
+      "endMs": 67850,
+      "translation": "아니면 깨어나지 못하는 꿈일지도 몰라"
+    },
+    {
+      "startMs": 67850,
+      "endMs": 73730,
+      "translation": "내 사랑은 갔어, 내 사랑은 갔어"
+    },
+    {
+      "startMs": 73730,
+      "endMs": 80380,
+      "translation": "내 사랑은 갔어, 갔어"
+    },
+    {
+      "startMs": 80380,
+      "endMs": 97940,
+      "translation": "갔어, 갔어, 갔어, 갔어, 갔어"
+    },
+    {
+      "startMs": 97940,
+      "endMs": 103390,
+      "translation": "사랑이 내가 가진 전부라는 걸 알아"
+    },
+    {
+      "startMs": 103390,
+      "endMs": 105920,
+      "translation": "그녀가 그 맛을 알길 신께 바랄 뿐이야"
+    },
+    {
+      "startMs": 105920,
+      "endMs": 108940,
+      "translation": "네가 본 적 없는 걸 알려 줄 수 있고"
+    },
+    {
+      "startMs": 108940,
+      "endMs": 111980,
+      "translation": "네가 춤출 만한 노래를 몇 곡 틀어 줄 수 있어"
+    },
+    {
+      "startMs": 111980,
+      "endMs": 115850,
+      "translation": "그녀가 나랑은 겨룰 수 없다는 걸 알았으면 해"
+    },
+    {
+      "startMs": 115850,
+      "endMs": 122430,
+      "translation": "비가 오든 해가 뜨든, 지금은 괜찮다는 걸 알아"
+    },
+    {
+      "startMs": 122430,
+      "endMs": 128130,
+      "translation": "내 사랑은 갔어, 내 사랑은 갔어"
+    },
+    {
+      "startMs": 128130,
+      "endMs": 134180,
+      "translation": "내 사랑은 갔어, 오, 갔어"
+    },
+    {
+      "startMs": 134180,
+      "endMs": 140550,
+      "translation": "아니면 깨어나지 못하는 꿈일지도 몰라"
+    },
+    {
+      "startMs": 140550,
+      "endMs": 146550,
+      "translation": "내 사랑은 갔어, 내 사랑은 갔어"
+    },
+    {
+      "startMs": 146550,
+      "endMs": 151970,
+      "translation": "내 사랑은 갔어, 갔어"
+    },
+    {
+      "startMs": 151970,
+      "endMs": 158120,
+      "translation": "네가 날 계속 가게 해 줬어, 밴드에이드가 이제 떨어져 나가 (계속)"
+    },
+    {
+      "startMs": 158120,
+      "endMs": 164010,
+      "translation": "네가 날 계속 가게 해 줬어, 밴드에이드가 이제 떨어져 나가 (계속)"
+    },
+    {
+      "startMs": 164010,
+      "endMs": 170510,
+      "translation": "네가 날 계속 가게 해 줬어 (갔어, 갔어, 갔어), 밴드에이드가 이제 떨어져 나가"
+    },
+    {
+      "startMs": 170510,
+      "endMs": 181840,
+      "translation": "가게 해 줬고, 이제 난 평생 흉터가 남았어"
+    },
+    {
+      "startMs": 181840,
+      "endMs": 194160,
+      "translation": "내 사랑은 갔어 (갔어), 내 사랑은 갔어 (갔어)"
+    },
+    {
+      "startMs": 194160,
+      "endMs": 205220,
+      "translation": "내 사랑은 갔어 (갔어), 내 사랑은 갔어"
+    },
+    {
+      "startMs": 205220,
+      "endMs": 208120,
+      "translation": "어이, 검보에 독이 들었어"
+    },
+    {
+      "startMs": 208120,
+      "endMs": 209630,
+      "translation": "감정, 덤보가 된 기분이야"
+    },
+    {
+      "startMs": 209630,
+      "endMs": 210810,
+      "translation": "내 사랑이 어디로 갔는지 물어봐"
+    },
+    {
+      "startMs": 210810,
+      "endMs": 212570,
+      "translation": "그 여자는 현관문 밖으로 나가 버렸어"
+    },
+    {
+      "startMs": 212570,
+      "endMs": 213820,
+      "translation": "똑, 똑, 똑, 똑"
+    },
+    {
+      "startMs": 213820,
+      "endMs": 215730,
+      "translation": "놀랍지도 않아, 내가 자초한 거니까"
+    },
+    {
+      "startMs": 215730,
+      "endMs": 218030,
+      "translation": "내 잘못이야, 넌 떠나고 난 교훈을 얻었지"
+    },
+    {
+      "startMs": 218030,
+      "endMs": 220480,
+      "translation": "기상 캐스터가 비가 올 거라고 했어"
+    },
+    {
+      "startMs": 220480,
+      "endMs": 222050,
+      "translation": "멍청한 나는 우산을 챙겼어"
+    },
+    {
+      "startMs": 222050,
+      "endMs": 224490,
+      "translation": "네 구름이 언뜻 보여서 기분이 나아졌어"
+    },
+    {
+      "startMs": 224490,
+      "endMs": 227440,
+      "translation": "이제 32도가 됐고, 내 소매 속 모든 수단은"
+    },
+    {
+      "startMs": 227440,
+      "endMs": 230590,
+      "translation": "땀과 망상에 젖어 있어, 난 결론으로 비약하니까"
+    },
+    {
+      "startMs": 230590,
+      "endMs": 234970,
+      "translation": "넌 네 일이 있고, 난 추억밖에 없어"
+    },
+    {
+      "startMs": 234970,
+      "endMs": 236780,
+      "translation": "네 비밀을 알아"
+    },
+    {
+      "startMs": 236780,
+      "endMs": 239080,
+      "translation": "난 비꼬는 게 아니야, 이해해"
+    },
+    {
+      "startMs": 239080,
+      "endMs": 242100,
+      "translation": "다들 계획에 따라 선택을 하니까"
+    },
+    {
+      "startMs": 242100,
+      "endMs": 245330,
+      "translation": "우린 청사진이 달랐지만 영향력은 이해했어"
+    },
+    {
+      "startMs": 245330,
+      "endMs": 248670,
+      "translation": "넌 일찍 마음을 열었고, 난 허가를 받은 줄 알았어"
+    },
+    {
+      "startMs": 248670,
+      "endMs": 251560,
+      "translation": "넌 다리를 놓기 시작했고 그걸 울타리로 바꿔 버렸어"
+    },
+    {
+      "startMs": 251560,
+      "endMs": 254660,
+      "translation": "그러다 내 건물이 허물어졌어, 네 새 세입자 때문에"
+    },
+    {
+      "startMs": 254660,
+      "endMs": 257710,
+      "translation": "새 걸 사면 돼, 임대에는 절대 얽매이지 않아"
+    },
+    {
+      "startMs": 257710,
+      "endMs": 260540,
+      "translation": "넌 한 번도 네 진실 속에서 살지 않았어, 난 거기서 살았다는 게 기쁠 뿐이야"
+    },
+    {
+      "startMs": 260540,
+      "endMs": 265820,
+      "translation": "하지만 마침내 평화를 찾았어, 그러니 안녕"
+    },
+    {
+      "startMs": 265820,
+      "endMs": 269870,
+      "translation": "(다시 해 줄까? 전부)"
+    },
+    {
+      "startMs": 269870,
+      "endMs": 274710,
+      "translation": "낭비된 잠재력은 싫어, 정신을 으스러뜨리거든"
+    },
+    {
+      "startMs": 274710,
+      "endMs": 287650,
+      "translation": "정말 그래, 영혼을 으스러뜨려"
+    },
+    {
+      "startMs": 287650,
+      "endMs": 293880,
+      "translation": "사랑해 줘서 고마워, 기쁨을 줘서 고마워"
+    },
+    {
+      "startMs": 293880,
+      "endMs": 300130,
+      "translation": "하지만 난 다시는 사랑에 빠지고 싶지 않아"
+    },
+    {
+      "startMs": 300130,
+      "endMs": 306890,
+      "translation": "시간을 줘서 고마워, 네 마음을 줘서 고마워, 오"
+    },
+    {
+      "startMs": 306890,
+      "endMs": 327850,
+      "translation": "하지만 난 다시는 사랑에 빠지고 싶지 않아"
+    },
+    {
+      "startMs": 327850,
+      "endMs": 331560,
+      "translation": "(눈을 뜨고 있어)"
+    },
+    {
+      "startMs": 331560,
+      "endMs": 338110,
+      "translation": "가라고 했어, 가"
+    },
+    {
+      "startMs": 338110,
+      "endMs": 344280,
+      "translation": "사랑해 줘서 고마워, 기쁨을 줘서 고마워"
+    },
+    {
+      "startMs": 344280,
+      "endMs": 350570,
+      "translation": "하지만 난 다시는 사랑에 빠지고 싶지 않아 (다시는)"
+    },
+    {
+      "startMs": 350570,
+      "endMs": 357090,
+      "translation": "시간을 줘서 고마워, 네 마음을 줘서 고마워, 마음"
+    },
+    {
+      "startMs": 357090,
+      "endMs": 363110,
+      "translation": "하지만 난 다시는 사랑에 빠지고 싶지 않아"
+    },
+    {
+      "startMs": 363110,
+      "endMs": 366500,
+      "translation": "다시, 다시"
+    },
+    {
+      "startMs": 366500,
+      "endMs": 373620,
+      "translation": "다시, 다시, 다시, 다시"
+    },
+    {
+      "startMs": 373620,
+      "endMs": 374000,
+      "translation": "(눈을 뜨고 있어)"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 501969,
+    "durationMs": 180000
+  },
+  "segments": [
+    {
+      "startMs": 14880,
+      "endMs": 17010,
+      "translation": "이봐, 난 이렇게 깔끔한데 녀석들은 떠들기만 해"
+    },
+    {
+      "startMs": 17010,
+      "endMs": 19210,
+      "translation": "내가 그 자리에 나타나면 이제 모두가"
+    },
+    {
+      "startMs": 19210,
+      "endMs": 20160,
+      "translation": "다들 쳐다보지"
+    },
+    {
+      "startMs": 20160,
+      "endMs": 21730,
+      "translation": "네가 틀렸다고 증명하고 싶진 않은데, 젠장"
+    },
+    {
+      "startMs": 21730,
+      "endMs": 25660,
+      "translation": "선택의 여지를 안 주네, 그래, 그래"
+    },
+    {
+      "startMs": 25660,
+      "endMs": 28330,
+      "translation": "다들 묻지, '포스트, 앨범 언제 나와?'"
+    },
+    {
+      "startMs": 28330,
+      "endMs": 31460,
+      "translation": "첫날부터 난 잘나갔어"
+    },
+    {
+      "startMs": 31460,
+      "endMs": 33060,
+      "translation": "네가 틀렸다고 증명하고 싶진 않은데, 젠장"
+    },
+    {
+      "startMs": 33060,
+      "endMs": 36490,
+      "translation": "선택의 여지를 안 주네, 그래, 그래"
+    },
+    {
+      "startMs": 36490,
+      "endMs": 38580,
+      "translation": "우, 문 네 개짜리 차를 몰고 달려"
+    },
+    {
+      "startMs": 38580,
+      "endMs": 40070,
+      "translation": "이제 다들 사진을 찍어"
+    },
+    {
+      "startMs": 40070,
+      "endMs": 43080,
+      "translation": "술병, 더 필요해, 우"
+    },
+    {
+      "startMs": 43080,
+      "endMs": 44070,
+      "translation": "그 여자는 내 공연마다 왔대"
+    },
+    {
+      "startMs": 44070,
+      "endMs": 45520,
+      "translation": "시상식에도 왔고"
+    },
+    {
+      "startMs": 45520,
+      "endMs": 48410,
+      "translation": "늘 맨 앞줄에 있대, 오 그래"
+    },
+    {
+      "startMs": 48410,
+      "endMs": 51760,
+      "translation": "내가 일해서 얻은 모든 것"
+    },
+    {
+      "startMs": 51760,
+      "endMs": 54440,
+      "translation": "뜨기까지 너무 오래 기다렸지"
+    },
+    {
+      "startMs": 54440,
+      "endMs": 57290,
+      "translation": "캐딜락은 크롬 휠 위에 앉아 있어"
+    },
+    {
+      "startMs": 57290,
+      "endMs": 60260,
+      "translation": "20인치 휠로 미끄러지듯 지나가"
+    },
+    {
+      "startMs": 60260,
+      "endMs": 62700,
+      "translation": "이 S클래스에 타고 싶어 하는 자기"
+    },
+    {
+      "startMs": 62700,
+      "endMs": 65420,
+      "translation": "우리 꼬마 아가씨는 그냥 빨리 달리고 싶어 해"
+    },
+    {
+      "startMs": 65420,
+      "endMs": 68380,
+      "translation": "있잖아 자기야, 공짜로 태워 주진 않아"
+    },
+    {
+      "startMs": 68380,
+      "endMs": 71930,
+      "translation": "그래서 말했지, '몸이든 기름값이든 대마든'"
+    },
+    {
+      "startMs": 71930,
+      "endMs": 74790,
+      "translation": "다이아 박힌 롤렉스가 날 빛나게 해"
+    },
+    {
+      "startMs": 74790,
+      "endMs": 77160,
+      "translation": "달릴 땐 타이밍이 완벽해야 해"
+    },
+    {
+      "startMs": 77160,
+      "endMs": 79930,
+      "translation": "주행 기록 하나 없는 새 애스턴 마틴"
+    },
+    {
+      "startMs": 79930,
+      "endMs": 83070,
+      "translation": "(우, 우, 우 그래)"
+    },
+    {
+      "startMs": 83070,
+      "endMs": 85670,
+      "translation": "이봐, 난 이렇게 깔끔한데 녀석들은 떠들기만 해"
+    },
+    {
+      "startMs": 85670,
+      "endMs": 88560,
+      "translation": "내가 그 자리에 나타나면 이제 모두가 쳐다보지"
+    },
+    {
+      "startMs": 88560,
+      "endMs": 90360,
+      "translation": "네가 틀렸다고 증명하고 싶진 않은데, 젠장"
+    },
+    {
+      "startMs": 90360,
+      "endMs": 94170,
+      "translation": "선택의 여지를 안 주네, 그래, 그래"
+    },
+    {
+      "startMs": 94170,
+      "endMs": 96050,
+      "translation": "이제 그 여자는 올드스쿨 차에 올라타"
+    },
+    {
+      "startMs": 96050,
+      "endMs": 97160,
+      "translation": "카풀 차선을 헤엄치듯 달려"
+    },
+    {
+      "startMs": 97160,
+      "endMs": 99920,
+      "translation": "다 괜찮아, 우"
+    },
+    {
+      "startMs": 99920,
+      "endMs": 101390,
+      "translation": "그 여자는 내가 들은 소문을"
+    },
+    {
+      "startMs": 101390,
+      "endMs": 102630,
+      "translation": "말하지 말라고 했어"
+    },
+    {
+      "startMs": 102630,
+      "endMs": 105650,
+      "translation": "'다 사실이었어'라고 했지"
+    },
+    {
+      "startMs": 105650,
+      "endMs": 108350,
+      "translation": "이 S클래스에 타고 싶어 하는 자기"
+    },
+    {
+      "startMs": 108350,
+      "endMs": 111390,
+      "translation": "우리 꼬마 아가씨는 그냥 빨리 달리고 싶어 해"
+    },
+    {
+      "startMs": 111390,
+      "endMs": 113930,
+      "translation": "있잖아 자기야, 공짜로 태워 주진 않아"
+    },
+    {
+      "startMs": 113930,
+      "endMs": 117020,
+      "translation": "그래서 말했지, '몸이든 기름값이든 대마든'"
+    },
+    {
+      "startMs": 117020,
+      "endMs": 119940,
+      "translation": "다이아 박힌 롤렉스가 날 빛나게 해"
+    },
+    {
+      "startMs": 119940,
+      "endMs": 122610,
+      "translation": "달릴 땐 타이밍이 완벽해야 해"
+    },
+    {
+      "startMs": 122610,
+      "endMs": 125980,
+      "translation": "주행 기록 하나 없는 새 애스턴 마틴"
+    },
+    {
+      "startMs": 125980,
+      "endMs": 128470,
+      "translation": "(우, 우, 우 그래)"
+    },
+    {
+      "startMs": 128470,
+      "endMs": 131420,
+      "translation": "나랑 꼬마 아가씨 둘이서, 그래"
+    },
+    {
+      "startMs": 131420,
+      "endMs": 134440,
+      "translation": "LA를 누비지"
+    },
+    {
+      "startMs": 134440,
+      "endMs": 137230,
+      "translation": "나랑 꼬마 아가씨 둘이서, 그래"
+    },
+    {
+      "startMs": 137230,
+      "endMs": 139910,
+      "translation": "우리가 이 도시를 굴려, 그래"
+    },
+    {
+      "startMs": 139910,
+      "endMs": 142690,
+      "translation": "이 S클래스에 타고 싶어 하는 자기"
+    },
+    {
+      "startMs": 142690,
+      "endMs": 145520,
+      "translation": "우리 꼬마 아가씨는 그냥 빨리 달리고 싶어 해"
+    },
+    {
+      "startMs": 145520,
+      "endMs": 148330,
+      "translation": "있잖아 자기야, 공짜로 태워 주진 않아"
+    },
+    {
+      "startMs": 148330,
+      "endMs": 151770,
+      "translation": "그래서 말했지, '몸이든 기름값이든 대마든'"
+    },
+    {
+      "startMs": 151770,
+      "endMs": 154250,
+      "translation": "다이아 박힌 롤렉스가 날 빛나게 해"
+    },
+    {
+      "startMs": 154250,
+      "endMs": 157420,
+      "translation": "달릴 땐 타이밍이 완벽해야 해"
+    },
+    {
+      "startMs": 157420,
+      "endMs": 160720,
+      "translation": "주행 기록 하나 없는 새 애스턴 마틴"
+    },
+    {
+      "startMs": 160720,
+      "endMs": 162980,
+      "translation": "(오, 오)"
+    },
+    {
+      "startMs": 162980,
+      "endMs": 164100,
+      "translation": "그러니 쿠페에 올라타"
+    },
+    {
+      "startMs": 164100,
+      "endMs": 167500,
+      "translation": "뭐 하고 싶어?"
+    },
+    {
+      "startMs": 167500,
+      "endMs": 170540,
+      "translation": "그 예쁜 애를 내 쿠페에 태워"
+    },
+    {
+      "startMs": 170540,
+      "endMs": 180000,
+      "translation": "금니를 반짝이며, 오 그래"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 148765,
+    "durationMs": 212000
+  },
+  "segments": [
+    {
+      "startMs": 8580,
+      "endMs": 15100,
+      "translation": "내가 너의 영웅이었던 거 기억해, 예"
+    },
+    {
+      "startMs": 15100,
+      "endMs": 19060,
+      "translation": "네 마음을 상징처럼 걸고 다녔지"
+    },
+    {
+      "startMs": 19060,
+      "endMs": 32760,
+      "translation": "그런데 내 가장 어두운 진실로부터 널 지키지 못했어"
+    },
+    {
+      "startMs": 32760,
+      "endMs": 35250,
+      "translation": "알아"
+    },
+    {
+      "startMs": 35250,
+      "endMs": 39450,
+      "translation": "난 언제나 영보다 못한 존재일 거야"
+    },
+    {
+      "startMs": 39450,
+      "endMs": 42180,
+      "translation": "오, 예"
+    },
+    {
+      "startMs": 42180,
+      "endMs": 45720,
+      "translation": "넌 나한테 최선을 다했어, 알아"
+    },
+    {
+      "startMs": 45720,
+      "endMs": 56020,
+      "translation": "내 가장 어두운 진실을 안고 널 마주할 수 없었어"
+    },
+    {
+      "startMs": 56020,
+      "endMs": 59830,
+      "translation": "오, 오-오"
+    },
+    {
+      "startMs": 59830,
+      "endMs": 66580,
+      "translation": "머릿속에서 떨쳐 낼 수가 없으니까"
+    },
+    {
+      "startMs": 66580,
+      "endMs": 73830,
+      "translation": "아니, 내 침대로 기어드는 이 느낌을 떨칠 수가 없어"
+    },
+    {
+      "startMs": 73830,
+      "endMs": 77300,
+      "translation": "숨기려 해도 넌 날 알잖아"
+    },
+    {
+      "startMs": 77300,
+      "endMs": 83120,
+      "translation": "맞서 싸우려 해도 차라리 자유롭고 싶어"
+    },
+    {
+      "startMs": 83120,
+      "endMs": 86630,
+      "translation": "오, 오"
+    },
+    {
+      "startMs": 86630,
+      "endMs": 89280,
+      "translation": "오, 예"
+    },
+    {
+      "startMs": 89280,
+      "endMs": 93370,
+      "translation": "우리 중간에서 만날 수 있을까?"
+    },
+    {
+      "startMs": 93370,
+      "endMs": 95650,
+      "translation": "오, 예"
+    },
+    {
+      "startMs": 95650,
+      "endMs": 99290,
+      "translation": "너도 예전엔 나 같았으니까"
+    },
+    {
+      "startMs": 99290,
+      "endMs": 109730,
+      "translation": "이제 넌 네 품에서 죽어 가는 날 지켜보느니 떠나는 쪽을 택하겠지"
+    },
+    {
+      "startMs": 109730,
+      "endMs": 113670,
+      "translation": "오, 오"
+    },
+    {
+      "startMs": 113670,
+      "endMs": 120260,
+      "translation": "하지만 머릿속에서 떨쳐 낼 수가 없어"
+    },
+    {
+      "startMs": 120260,
+      "endMs": 127550,
+      "translation": "아니, 내 침대로 기어드는 이 느낌을 떨칠 수가 없어"
+    },
+    {
+      "startMs": 127550,
+      "endMs": 131030,
+      "translation": "숨기려 해도 넌 날 알잖아"
+    },
+    {
+      "startMs": 131030,
+      "endMs": 136650,
+      "translation": "맞서 싸우려 해도 차라리 자유롭고 싶어"
+    },
+    {
+      "startMs": 136650,
+      "endMs": 167740,
+      "translation": "오, 오, 허!"
+    },
+    {
+      "startMs": 167740,
+      "endMs": 173900,
+      "translation": "머릿속에서 떨쳐 낼 수가 없어"
+    },
+    {
+      "startMs": 173900,
+      "endMs": 181160,
+      "translation": "아니, 내 침대로 기어드는 이 느낌을 떨칠 수가 없어"
+    },
+    {
+      "startMs": 181160,
+      "endMs": 184770,
+      "translation": "숨기려 해도 넌 날 알잖아"
+    },
+    {
+      "startMs": 184770,
+      "endMs": 194110,
+      "translation": "맞서 싸우려 해도 차라리 자유롭고 싶어"
+    },
+    {
+      "startMs": 194110,
+      "endMs": 196480,
+      "translation": "예"
+    },
+    {
+      "startMs": 196480,
+      "endMs": 203250,
+      "translation": "난 언제나 영보다 못한 존재일 거야"
+    },
+    {
+      "startMs": 203250,
+      "endMs": 212000,
+      "translation": "넌 나한테 최선을 다했어, 알아"
+    }
+  ]
+}

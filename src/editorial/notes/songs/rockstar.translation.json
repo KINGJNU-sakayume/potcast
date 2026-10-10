@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 987852,
+    "durationMs": 218000
+  },
+  "segments": [
+    {
+      "startMs": 7500,
+      "endMs": 10190,
+      "translation": "하하하하하"
+    },
+    {
+      "startMs": 10190,
+      "endMs": 11970,
+      "translation": "탱크 갓"
+    },
+    {
+      "startMs": 11970,
+      "endMs": 13920,
+      "translation": "에이, 에이"
+    },
+    {
+      "startMs": 13920,
+      "endMs": 15930,
+      "translation": "여자들이랑 놀고 알약을 털어 넣어 왔어"
+    },
+    {
+      "startMs": 15930,
+      "endMs": 20020,
+      "translation": "진짜 록스타가 된 기분이야 (에이, 에이)"
+    },
+    {
+      "startMs": 20020,
+      "endMs": 21310,
+      "translation": "내 형제들은 다 좋은 대마를 갖고 있어"
+    },
+    {
+      "startMs": 21310,
+      "endMs": 26090,
+      "translation": "늘 라스타처럼 피워 대지"
+    },
+    {
+      "startMs": 26090,
+      "endMs": 28510,
+      "translation": "나랑 붙으면 우지 기관단총을 부를 거야"
+    },
+    {
+      "startMs": 28510,
+      "endMs": 32030,
+      "translation": "그리고 나타나, 이봐, 그놈들은 총잡이야"
+    },
+    {
+      "startMs": 32030,
+      "endMs": 33670,
+      "translation": "내 친구들이 너희 동네에 차를 대면"
+    },
+    {
+      "startMs": 33670,
+      "endMs": 37750,
+      "translation": "그거 드르르르륵 하고 울려 (탕, 탕, 탕, 탕, 에이, 에이)"
+    },
+    {
+      "startMs": 37750,
+      "endMs": 39520,
+      "translation": "차를 바꿨어, 검은색으로 돌아왔지"
+    },
+    {
+      "startMs": 39520,
+      "endMs": 44020,
+      "translation": "'본 스콧, 편히 잠들길'이라고 말하기 시작해 (스콧, 에이)"
+    },
+    {
+      "startMs": 44020,
+      "endMs": 45480,
+      "translation": "문 닫아, 우린 연기를 뿜어"
+    },
+    {
+      "startMs": 45480,
+      "endMs": 49990,
+      "translation": "그 여자는 짐 모리슨처럼 불을 붙여 달래 (모리슨, 에이)"
+    },
+    {
+      "startMs": 49990,
+      "endMs": 51100,
+      "translation": "무대에서 미친 짓을 해"
+    },
+    {
+      "startMs": 51100,
+      "endMs": 55730,
+      "translation": "아마 내 공연이 끝나면 경찰차 타고 나가겠지 (경찰차, 에이)"
+    },
+    {
+      "startMs": 55730,
+      "endMs": 57060,
+      "translation": "그건 전설로 남았어"
+    },
+    {
+      "startMs": 57060,
+      "endMs": 60160,
+      "translation": "몽타주 호텔 창밖으로 텔레비전을 던졌어"
+    },
+    {
+      "startMs": 60160,
+      "endMs": 62990,
+      "translation": "테이블엔 코카인, 술은 쏟아지고, 신경 안 써"
+    },
+    {
+      "startMs": 62990,
+      "endMs": 67530,
+      "translation": "이봐, 네 여자 친구는 그루피야, 그냥 들어오고 싶은 거야"
+    },
+    {
+      "startMs": 67530,
+      "endMs": 72180,
+      "translation": "'밴드랑 같이 왔어요' 하면서 (에이, 에이)"
+    },
+    {
+      "startMs": 72180,
+      "endMs": 75480,
+      "translation": "이젠 선을 넘어서 내 바지를 붙잡으려 해"
+    },
+    {
+      "startMs": 75480,
+      "endMs": 79870,
+      "translation": "내 트레일러에 여자 백 명, 다들 남자 친구 없대"
+    },
+    {
+      "startMs": 79870,
+      "endMs": 86030,
+      "translation": "그리고 다들 친구를 하나씩 데려왔어 (그래, 에이, 에이, 에이)"
+    },
+    {
+      "startMs": 86030,
+      "endMs": 87930,
+      "translation": "여자들이랑 놀고 알약을 털어 넣어 왔어"
+    },
+    {
+      "startMs": 87930,
+      "endMs": 92340,
+      "translation": "진짜 록스타가 된 기분이야 (에이, 에이)"
+    },
+    {
+      "startMs": 92340,
+      "endMs": 93670,
+      "translation": "내 형제들은 다 좋은 대마를 갖고 있어"
+    },
+    {
+      "startMs": 93670,
+      "endMs": 97950,
+      "translation": "늘 라스타처럼 피워 대지"
+    },
+    {
+      "startMs": 97950,
+      "endMs": 100290,
+      "translation": "나랑 붙으면 우지 기관단총을 부를 거야"
+    },
+    {
+      "startMs": 100290,
+      "endMs": 104180,
+      "translation": "그리고 나타나, 이봐, 그놈들은 총잡이야"
+    },
+    {
+      "startMs": 104180,
+      "endMs": 105830,
+      "translation": "내 친구들이 너희 동네에 차를 대면"
+    },
+    {
+      "startMs": 105830,
+      "endMs": 109960,
+      "translation": "그거 드르르르륵 하고 울려 (탕, 탕, 탕, 탕)"
+    },
+    {
+      "startMs": 109960,
+      "endMs": 112500,
+      "translation": "할리우드 힐스에서 슈퍼스타들이랑 놀아"
+    },
+    {
+      "startMs": 112500,
+      "endMs": 115670,
+      "translation": "팝스타가 된 기분이야 (21, 21, 21)"
+    },
+    {
+      "startMs": 115670,
+      "endMs": 118280,
+      "translation": "헤네시를 마시고, 끝내주는 여자들이 수영장에 뛰어들어"
+    },
+    {
+      "startMs": 118280,
+      "endMs": 121610,
+      "translation": "그런데 브라도 안 했어 (브라)"
+    },
+    {
+      "startMs": 121610,
+      "endMs": 123770,
+      "translation": "뒤에서 붙잡고 붙임머리를 당기니까"
+    },
+    {
+      "startMs": 123770,
+      "endMs": 127700,
+      "translation": "이제 '그만!' 하고 소리쳐 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 127700,
+      "endMs": 130360,
+      "translation": "다들 '새비지, 차고는 차 열두 대짜리인데"
+    },
+    {
+      "startMs": 130360,
+      "endMs": 132540,
+      "translation": "왜 차는 여섯 대뿐이야?' 하지 (21)"
+    },
+    {
+      "startMs": 132540,
+      "endMs": 135150,
+      "translation": "난 애정 행각엔 관심 없어, 그 입에 어떻게 키스해? (키스해?)"
+    },
+    {
+      "startMs": 135150,
+      "endMs": 138170,
+      "translation": "네 아내는 내가 맛있어 보인대 (맛있어 보인대)"
+    },
+    {
+      "startMs": 138170,
+      "endMs": 141470,
+      "translation": "금고엔 초록 지폐, 묵은 돈다발이 있어 (묵은 돈다발)"
+    },
+    {
+      "startMs": 141470,
+      "endMs": 143640,
+      "translation": "LA 여자들은 맨날 '코카인 어딨어?' 하고 물어 (21, 21)"
+    },
+    {
+      "startMs": 143640,
+      "endMs": 146870,
+      "translation": "록스타처럼 살아, 경찰차 위에서 박살 내"
+    },
+    {
+      "startMs": 146870,
+      "endMs": 150170,
+      "translation": "팝타르트보다 달콤해, 넌 센 놈이 아니야"
+    },
+    {
+      "startMs": 150170,
+      "endMs": 153180,
+      "translation": "핫 차트에 올랐어, 내가 예전엔 거리에서 약을 팔았던 거 기억해"
+    },
+    {
+      "startMs": 153180,
+      "endMs": 158030,
+      "translation": "록스타처럼 살아, 난 록스타처럼 살아 (에이)"
+    },
+    {
+      "startMs": 158030,
+      "endMs": 159830,
+      "translation": "여자들이랑 놀고 알약을 털어 넣어 왔어"
+    },
+    {
+      "startMs": 159830,
+      "endMs": 164180,
+      "translation": "진짜 록스타가 된 기분이야 (에이, 에이)"
+    },
+    {
+      "startMs": 164180,
+      "endMs": 165460,
+      "translation": "내 형제들은 다 좋은 대마를 갖고 있어"
+    },
+    {
+      "startMs": 165460,
+      "endMs": 170120,
+      "translation": "늘 라스타처럼 피워 대지"
+    },
+    {
+      "startMs": 170120,
+      "endMs": 171970,
+      "translation": "나랑 붙으면 우지 기관단총을 부를 거야"
+    },
+    {
+      "startMs": 171970,
+      "endMs": 176020,
+      "translation": "그리고 나타나, 이봐, 그놈들은 총잡이야"
+    },
+    {
+      "startMs": 176020,
+      "endMs": 177860,
+      "translation": "내 친구들이 너희 동네에 차를 대면"
+    },
+    {
+      "startMs": 177860,
+      "endMs": 182000,
+      "translation": "그거 드르르르륵 하고 울려 (탕, 탕, 탕, 탕, 드르르르르륵)"
+    },
+    {
+      "startMs": 182000,
+      "endMs": 188370,
+      "translation": "스타, 스타, 록스타, 록스타, 스타"
+    },
+    {
+      "startMs": 188370,
+      "endMs": 189630,
+      "translation": "록스타"
+    },
+    {
+      "startMs": 189630,
+      "endMs": 194360,
+      "translation": "록스타, 진짜 이런 기분이야"
+    },
+    {
+      "startMs": 194360,
+      "endMs": 196160,
+      "translation": "록스타"
+    },
+    {
+      "startMs": 196160,
+      "endMs": 200110,
+      "translation": "록스타"
+    },
+    {
+      "startMs": 200110,
+      "endMs": 202390,
+      "translation": "록스타"
+    },
+    {
+      "startMs": 202390,
+      "endMs": 218000,
+      "translation": "진짜 이런 기분"
+    }
+  ]
+}

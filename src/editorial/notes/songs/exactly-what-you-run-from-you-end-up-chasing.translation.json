@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 34750168,
+    "durationMs": 15000
+  },
+  "segments": [
+    {
+      "startMs": 730,
+      "endMs": 5360,
+      "translation": "네가 도망치는 바로 그것을 결국 쫓게 돼"
+    },
+    {
+      "startMs": 5360,
+      "endMs": 7620,
+      "translation": "그러니까, 피할 수 없지만"
+    },
+    {
+      "startMs": 7620,
+      "endMs": 11150,
+      "translation": "그냥 그걸 쫓고, 해 보려는 거야"
+    },
+    {
+      "startMs": 11150,
+      "endMs": 13450,
+      "translation": "할 수 있는 모든 걸 쏟아부으면서"
+    },
+    {
+      "startMs": 13450,
+      "endMs": 15000,
+      "translation": "장애물은 늘 있어"
+    }
+  ]
+}

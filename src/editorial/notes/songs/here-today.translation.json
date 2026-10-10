@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 237886,
+    "durationMs": 189000
+  },
+  "segments": [
+    {
+      "startMs": 1270,
+      "endMs": 8540,
+      "translation": "처음엔 그냥 살짝 눈길이 가는 걸로 시작하지, 그러다 곧 연애 생각을 하게 되고"
+    },
+    {
+      "startMs": 8540,
+      "endMs": 15510,
+      "translation": "천천히 가야 한다는 거 알면서도 그녀를 알아 가고 싶어서 못 기다리지"
+    },
+    {
+      "startMs": 15510,
+      "endMs": 23160,
+      "translation": "새로운 연애는 정말 아름다운 일이야"
+    },
+    {
+      "startMs": 23160,
+      "endMs": 29280,
+      "translation": "하지만 조심하지 않으면, 그게 가져올 아픔도 생각해 봐"
+    },
+    {
+      "startMs": 29280,
+      "endMs": 31160,
+      "translation": "그건 널 정말 괴롭게 하고"
+    },
+    {
+      "startMs": 31160,
+      "endMs": 32950,
+      "translation": "네 마음을 슬프게 하고"
+    },
+    {
+      "startMs": 32950,
+      "endMs": 34830,
+      "translation": "네 하루를 엉망으로 만들고"
+    },
+    {
+      "startMs": 34830,
+      "endMs": 36940,
+      "translation": "네 밤을 길게 만들어"
+    },
+    {
+      "startMs": 36940,
+      "endMs": 54440,
+      "translation": "명심해, 사랑은 오늘 여기 있다가 내일 사라져, 그렇게 빨리 왔다가 가 버려"
+    },
+    {
+      "startMs": 54440,
+      "endMs": 61830,
+      "translation": "지금은 그녀가 완벽해 보이겠지, 이번만은 정말 예외라고"
+    },
+    {
+      "startMs": 61830,
+      "endMs": 69210,
+      "translation": "흥 깨는 말 하긴 싫지만, 네가 그녀를 만나기 전에 그녀가 떠난 남자가 바로 나야"
+    },
+    {
+      "startMs": 69210,
+      "endMs": 82750,
+      "translation": "그녀와 좋은 사랑을 못 할 거라는 말은 아니야, 그냥 자꾸 그때 일이 떠올라"
+    },
+    {
+      "startMs": 82750,
+      "endMs": 85060,
+      "translation": "그녀는 날 정말 괴롭게 했고"
+    },
+    {
+      "startMs": 85060,
+      "endMs": 87020,
+      "translation": "내 마음을 슬프게 했고"
+    },
+    {
+      "startMs": 87020,
+      "endMs": 89150,
+      "translation": "내 하루를 엉망으로 만들었고"
+    },
+    {
+      "startMs": 89150,
+      "endMs": 90930,
+      "translation": "내 밤을 길게 만들었어"
+    },
+    {
+      "startMs": 90930,
+      "endMs": 144400,
+      "translation": "명심해, 사랑은 오늘 여기 있다가 내일 사라져, 그렇게 빨리 왔다가 가 버려"
+    },
+    {
+      "startMs": 144400,
+      "endMs": 159520,
+      "translation": "명심해, 사랑은 오늘 여기 있다가 내일 사라져, 그렇게 빨리 왔다가 가 버려"
+    },
+    {
+      "startMs": 159520,
+      "endMs": 189000,
+      "translation": "사랑은 오늘 여기 있다가 내일 사라져, 그렇게 빨리 왔다가 가 버려"
+    }
+  ]
+}

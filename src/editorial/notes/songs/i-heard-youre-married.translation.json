@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1599198,
+    "durationMs": 264000
+  },
+  "segments": [
+    {
+      "startMs": 3020,
+      "endMs": 7690,
+      "translation": "예"
+    },
+    {
+      "startMs": 7690,
+      "endMs": 11930,
+      "translation": "예, 예 (아)"
+    },
+    {
+      "startMs": 11930,
+      "endMs": 17230,
+      "translation": "오, 오 예"
+    },
+    {
+      "startMs": 17230,
+      "endMs": 20570,
+      "translation": "음-음"
+    },
+    {
+      "startMs": 20570,
+      "endMs": 25390,
+      "translation": "네가 날 홀린 그 방식, 알 수 있었어 (어)"
+    },
+    {
+      "startMs": 25390,
+      "endMs": 29400,
+      "translation": "넌 처음부터 날 쥐고 있었지"
+    },
+    {
+      "startMs": 29400,
+      "endMs": 34110,
+      "translation": "이건 네가 만든 일이지만, 걸, 난 나를 탓해"
+    },
+    {
+      "startMs": 34110,
+      "endMs": 38220,
+      "translation": "진작 알았어야 했던 것들을"
+    },
+    {
+      "startMs": 38220,
+      "endMs": 40420,
+      "translation": "내게 들려오는 속삭임들이"
+    },
+    {
+      "startMs": 40420,
+      "endMs": 42610,
+      "translation": "귓가를 스쳐 지나가"
+    },
+    {
+      "startMs": 42610,
+      "endMs": 46990,
+      "translation": "네 입으로 들어야 할 말들이야"
+    },
+    {
+      "startMs": 46990,
+      "endMs": 49070,
+      "translation": "그리고 이게 잠깐의 불장난이란 건 알아"
+    },
+    {
+      "startMs": 49070,
+      "endMs": 51270,
+      "translation": "하지만 넌 누군가의 반지를 숨기고 있잖아"
+    },
+    {
+      "startMs": 51270,
+      "endMs": 55640,
+      "translation": "너를 나눠 가진다고 생각하니 아파"
+    },
+    {
+      "startMs": 55640,
+      "endMs": 60010,
+      "translation": "우, 결혼했다고 들었어, 걸"
+    },
+    {
+      "startMs": 60010,
+      "endMs": 64380,
+      "translation": "이건 너무 좋아서 믿기지 않을 거란 걸 알았어"
+    },
+    {
+      "startMs": 64380,
+      "endMs": 70520,
+      "translation": "우, 결혼했다고 들었어, 걸, 오, 오, 오"
+    },
+    {
+      "startMs": 70520,
+      "endMs": 73130,
+      "translation": "그를 사랑하지 않는다면 (오 안 돼)"
+    },
+    {
+      "startMs": 73130,
+      "endMs": 77440,
+      "translation": "너 자신을 위해서라도 그냥 떠나"
+    },
+    {
+      "startMs": 77440,
+      "endMs": 81850,
+      "translation": "내 폰에 있는 네 번호, 지울 거야"
+    },
+    {
+      "startMs": 81850,
+      "endMs": 86720,
+      "translation": "걸, 그런 기만에 휘둘리기엔 난 너무 컸어"
+    },
+    {
+      "startMs": 86720,
+      "endMs": 90560,
+      "translation": "난 장난 안 치니까, 장난 안 쳐"
+    },
+    {
+      "startMs": 90560,
+      "endMs": 94890,
+      "translation": "너한테도 문제와 이유가 있겠지 (이유)"
+    },
+    {
+      "startMs": 94890,
+      "endMs": 99330,
+      "translation": "하지만 바람을 피울 거면 왜 그와 함께 있는 거야? (바람)"
+    },
+    {
+      "startMs": 99330,
+      "endMs": 104160,
+      "translation": "그리고 함께할 수 있는 사람이라고 생각했는데 (예)"
+    },
+    {
+      "startMs": 104160,
+      "endMs": 108260,
+      "translation": "너를 나눠 가진다는 게 날 죽여"
+    },
+    {
+      "startMs": 108260,
+      "endMs": 112500,
+      "translation": "오, 결혼했다고 들었어, 걸"
+    },
+    {
+      "startMs": 112500,
+      "endMs": 116720,
+      "translation": "이건 너무 좋아서 믿기지 않을 거란 걸 알았어"
+    },
+    {
+      "startMs": 116720,
+      "endMs": 123160,
+      "translation": "우, 결혼했다고 들었어, 걸, 오, 오, 오"
+    },
+    {
+      "startMs": 123160,
+      "endMs": 125570,
+      "translation": "그리고 그게 싫어"
+    },
+    {
+      "startMs": 125570,
+      "endMs": 129850,
+      "translation": "우, 결혼했다고 들었어, 걸 (결혼했다고, 걸)"
+    },
+    {
+      "startMs": 129850,
+      "endMs": 134260,
+      "translation": "넌 날 손가락에 감고 휘둘렀지"
+    },
+    {
+      "startMs": 134260,
+      "endMs": 141000,
+      "translation": "우, 결혼했다고 들었어, 걸, 오, 오, 오"
+    },
+    {
+      "startMs": 141000,
+      "endMs": 143080,
+      "translation": "너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 143080,
+      "endMs": 144530,
+      "translation": "아니, 너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 144530,
+      "endMs": 149800,
+      "translation": "넌 너무 기만적이야, 걸, 오 (우)"
+    },
+    {
+      "startMs": 149800,
+      "endMs": 151780,
+      "translation": "너랑은 함께할 수 없어 (예)"
+    },
+    {
+      "startMs": 151780,
+      "endMs": 153450,
+      "translation": "아니, 너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 153450,
+      "endMs": 156220,
+      "translation": "넌 너무 기만적이야, 걸"
+    },
+    {
+      "startMs": 156220,
+      "endMs": 158700,
+      "translation": "오, 예"
+    },
+    {
+      "startMs": 158700,
+      "endMs": 160160,
+      "translation": "네 내연남은 못 해"
+    },
+    {
+      "startMs": 160160,
+      "endMs": 161410,
+      "translation": "그건 멋없잖아"
+    },
+    {
+      "startMs": 161410,
+      "endMs": 162370,
+      "translation": "네 파일럿은 못 해"
+    },
+    {
+      "startMs": 162370,
+      "endMs": 163520,
+      "translation": "네 전용기도 못 해"
+    },
+    {
+      "startMs": 163520,
+      "endMs": 164570,
+      "translation": "날 대놓고 만나"
+    },
+    {
+      "startMs": 164570,
+      "endMs": 166890,
+      "translation": "네 남편이 아니라면, 네 하이브리드도 못 해"
+    },
+    {
+      "startMs": 166890,
+      "endMs": 168400,
+      "translation": "결혼했다고 들었어"
+    },
+    {
+      "startMs": 168400,
+      "endMs": 170280,
+      "translation": "분명 그는 널 성모 마리아처럼 대하겠지"
+    },
+    {
+      "startMs": 170280,
+      "endMs": 172310,
+      "translation": "넌 거친 걸 좋아하고 난 더티 해리야"
+    },
+    {
+      "startMs": 172310,
+      "endMs": 175630,
+      "translation": "우린 사랑새, 카나리아인 줄 알았는데, 래리한테 맹세해"
+    },
+    {
+      "startMs": 175630,
+      "endMs": 177010,
+      "translation": "하지만 너랑은 못 엮여"
+    },
+    {
+      "startMs": 177010,
+      "endMs": 179020,
+      "translation": "넌 내 사랑을 걸어 놓고 전화를 끊어 버렸지"
+    },
+    {
+      "startMs": 179020,
+      "endMs": 181290,
+      "translation": "그건 긴 작별 키스야, 혀까지 섞어야겠어"
+    },
+    {
+      "startMs": 181290,
+      "endMs": 183310,
+      "translation": "그리고 비둘기가 울 때, 우린 휴지가 모자라"
+    },
+    {
+      "startMs": 183310,
+      "endMs": 184550,
+      "translation": "난 아직 널 사랑해"
+    },
+    {
+      "startMs": 184550,
+      "endMs": 185660,
+      "translation": "사랑은 어디 있어?"
+    },
+    {
+      "startMs": 185660,
+      "endMs": 187760,
+      "translation": "네가 버진 로드를 걸어도, 난 널 다시 뛰어 돌아오게 할 수 있어"
+    },
+    {
+      "startMs": 187760,
+      "endMs": 189950,
+      "translation": "이런 젠장, 사랑은 어디 있어?"
+    },
+    {
+      "startMs": 189950,
+      "endMs": 192290,
+      "translation": "그리고 남편한테 전해, 죽여 버릴 거라고, 휠캡 하나 안 남기고"
+    },
+    {
+      "startMs": 192290,
+      "endMs": 195330,
+      "translation": "워, 워 (워, 워)"
+    },
+    {
+      "startMs": 195330,
+      "endMs": 199520,
+      "translation": "오, 결혼했다고 들었어, 걸 (결혼했다고, 걸)"
+    },
+    {
+      "startMs": 199520,
+      "endMs": 204030,
+      "translation": "이건 너무 좋아서 믿기지 않을 거란 걸 알았어"
+    },
+    {
+      "startMs": 204030,
+      "endMs": 210490,
+      "translation": "오, 결혼했다고 들었어, 걸, 오, 오, 오 (워, 워)"
+    },
+    {
+      "startMs": 210490,
+      "endMs": 212730,
+      "translation": "그리고 그게 싫어 (오, 그게 싫어)"
+    },
+    {
+      "startMs": 212730,
+      "endMs": 217000,
+      "translation": "우, 결혼했다고 들었어, 걸 (결혼했다고, 걸)"
+    },
+    {
+      "startMs": 217000,
+      "endMs": 221430,
+      "translation": "넌 날 손가락에 감고 휘둘렀지 (손가락에)"
+    },
+    {
+      "startMs": 221430,
+      "endMs": 228340,
+      "translation": "오, 결혼했다고 들었어, 걸, 오, 오, 오 (결혼했다고 들었어, 베이비, 그게 싫어)"
+    },
+    {
+      "startMs": 228340,
+      "endMs": 230490,
+      "translation": "너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 230490,
+      "endMs": 232080,
+      "translation": "아니, 너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 232080,
+      "endMs": 236750,
+      "translation": "넌 너무 기만적이야, 걸, 오 (우)"
+    },
+    {
+      "startMs": 236750,
+      "endMs": 239100,
+      "translation": "너랑은 함께할 수 없어 (예)"
+    },
+    {
+      "startMs": 239100,
+      "endMs": 240640,
+      "translation": "아니, 너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 240640,
+      "endMs": 245780,
+      "translation": "넌 너무 기만적이야, 걸 (우, 우)"
+    },
+    {
+      "startMs": 245780,
+      "endMs": 247760,
+      "translation": "너랑은 함께할 수 없어 (오 예)"
+    },
+    {
+      "startMs": 247760,
+      "endMs": 249450,
+      "translation": "아니, 너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 249450,
+      "endMs": 254540,
+      "translation": "넌 너무 기만적이야, 걸, 오 (말해 봐, 말해)"
+    },
+    {
+      "startMs": 254540,
+      "endMs": 256450,
+      "translation": "너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 256450,
+      "endMs": 258040,
+      "translation": "아니, 너랑은 함께할 수 없어"
+    },
+    {
+      "startMs": 258040,
+      "endMs": 264000,
+      "translation": "넌 너무 기만적이야, 걸 (우)"
+    }
+  ]
+}

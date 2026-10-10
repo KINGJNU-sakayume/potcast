@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 493482,
+    "durationMs": 156000
+  },
+  "segments": [
+    {
+      "startMs": 14600,
+      "endMs": 18210,
+      "translation": "할리우드는 피 흘리고, 흡혈귀들은 배를 채워"
+    },
+    {
+      "startMs": 18210,
+      "endMs": 21990,
+      "translation": "어둠은 먼지로 변해"
+    },
+    {
+      "startMs": 21990,
+      "endMs": 25410,
+      "translation": "다들 사라졌는데 아무도 떠나지 않아"
+    },
+    {
+      "startMs": 25410,
+      "endMs": 29120,
+      "translation": "남은 건 우리뿐"
+    },
+    {
+      "startMs": 29120,
+      "endMs": 32600,
+      "translation": "어떤 기분을 쫓지만 우린 절대 그걸 느끼지 못할 거야"
+    },
+    {
+      "startMs": 32600,
+      "endMs": 36130,
+      "translation": "집으로 가는 마지막 기차를 타고"
+    },
+    {
+      "startMs": 36130,
+      "endMs": 39350,
+      "translation": "자다가 죽어 가며 꿈을 살고 있어"
+    },
+    {
+      "startMs": 39350,
+      "endMs": 43200,
+      "translation": "빠져나갈 땐 결국 혼자야"
+    },
+    {
+      "startMs": 43200,
+      "endMs": 46820,
+      "translation": "네가 전화해 주기를 계속 바랄 뿐이야"
+    },
+    {
+      "startMs": 46820,
+      "endMs": 49920,
+      "translation": "날 보고 싶다면서 지금은 안 된대"
+    },
+    {
+      "startMs": 49920,
+      "endMs": 53850,
+      "translation": "넌 날 알려고 시간을 낸 적이 없었어"
+    },
+    {
+      "startMs": 53850,
+      "endMs": 57020,
+      "translation": "우리가 찾은 적도 없는 무언가를 잃을까 봐 겁냈지"
+    },
+    {
+      "startMs": 57020,
+      "endMs": 64460,
+      "translation": "우린 이유가 다 떨어져 가는데도 놓을 수가 없어"
+    },
+    {
+      "startMs": 64460,
+      "endMs": 72700,
+      "translation": "그래, 할리우드는 피 흘리고 있지만 우린 여길 집이라 불러"
+    },
+    {
+      "startMs": 72700,
+      "endMs": 75690,
+      "translation": "밖에선 겨울 하늘이 잿빛으로 변해"
+    },
+    {
+      "startMs": 75690,
+      "endMs": 78950,
+      "translation": "연기에 휩싸인 도시, 비가 오면 재만 남아"
+    },
+    {
+      "startMs": 78950,
+      "endMs": 81780,
+      "translation": "달을 보고 울부짖다가 낮에 잠들어"
+    },
+    {
+      "startMs": 81780,
+      "endMs": 84890,
+      "translation": "약 기운이 가실 때까진 모두를 사랑하지"
+    },
+    {
+      "startMs": 84890,
+      "endMs": 87550,
+      "translation": "아침이면 선글라스로 햇빛을 가려"
+    },
+    {
+      "startMs": 87550,
+      "endMs": 90840,
+      "translation": "그 여자는 맥박을 확인하고 괜찮다고 스스로를 달래야 해"
+    },
+    {
+      "startMs": 90840,
+      "endMs": 93440,
+      "translation": "젊어서 죽는 게 영광인 것만 같아"
+    },
+    {
+      "startMs": 93440,
+      "endMs": 96240,
+      "translation": "그런데 내 장례식엔 누가 올까? 궁금해"
+    },
+    {
+      "startMs": 96240,
+      "endMs": 99140,
+      "translation": "밖에 나가면 모든 눈이 날 향해"
+    },
+    {
+      "startMs": 99140,
+      "endMs": 102480,
+      "translation": "난 소리쳐, '보이는 게 마음에 들어?'"
+    },
+    {
+      "startMs": 102480,
+      "endMs": 105340,
+      "translation": "이제 그들이 날 에워싸"
+    },
+    {
+      "startMs": 105340,
+      "endMs": 106910,
+      "translation": "이빨이나 실컷 갈라고 해"
+    },
+    {
+      "startMs": 106910,
+      "endMs": 109070,
+      "translation": "이건 내가 감당할 수 있는 것보다 커"
+    },
+    {
+      "startMs": 109070,
+      "endMs": 110520,
+      "translation": "내 람보르기니에 피가"
+    },
+    {
+      "startMs": 110520,
+      "endMs": 113520,
+      "translation": "떠날 수만 있다면, 오, 희망을 잃어 가"
+    },
+    {
+      "startMs": 113520,
+      "endMs": 116540,
+      "translation": "초를 켜, 팔로 산토를 피워"
+    },
+    {
+      "startMs": 116540,
+      "endMs": 123460,
+      "translation": "이 모든 악마들을 위해, 그냥 계속 갈 수 있다면"
+    },
+    {
+      "startMs": 123460,
+      "endMs": 126970,
+      "translation": "네가 전화해 주기를 계속 바랄 뿐이야"
+    },
+    {
+      "startMs": 126970,
+      "endMs": 130290,
+      "translation": "날 보고 싶다면서 지금은 안 된대"
+    },
+    {
+      "startMs": 130290,
+      "endMs": 134180,
+      "translation": "넌 날 알려고 시간을 낸 적이 없었어"
+    },
+    {
+      "startMs": 134180,
+      "endMs": 137520,
+      "translation": "우리가 찾은 적도 없는 무언가를 잃을까 봐 겁냈지"
+    },
+    {
+      "startMs": 137520,
+      "endMs": 144620,
+      "translation": "우린 이유가 다 떨어져 가는데도 놓을 수가 없어"
+    },
+    {
+      "startMs": 144620,
+      "endMs": 156000,
+      "translation": "그래, 할리우드는 피 흘리고 있지만 우린 여길 집이라 불러"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 579925,
+    "durationMs": 182000
+  },
+  "segments": [
+    {
+      "startMs": 830,
+      "endMs": 4780,
+      "translation": "학교 정신이다, 이 녀석들아 (정신이 들어온다)"
+    },
+    {
+      "startMs": 4780,
+      "endMs": 7570,
+      "translation": "알파, 스텝, 오메가, 스텝"
+    },
+    {
+      "startMs": 7570,
+      "endMs": 10250,
+      "translation": "카파, 스텝, 시그마, 스텝"
+    },
+    {
+      "startMs": 10250,
+      "endMs": 12990,
+      "translation": "갱스터는 걷고, 포주는 떠들어"
+    },
+    {
+      "startMs": 12990,
+      "endMs": 15530,
+      "translation": "우, 말도 안 돼, 저 녀석 장난 아니야"
+    },
+    {
+      "startMs": 15530,
+      "endMs": 18370,
+      "translation": "AKA, 스텝, 델타, 스텝"
+    },
+    {
+      "startMs": 18370,
+      "endMs": 21060,
+      "translation": "SG 로, 스텝, 제타, 스텝"
+    },
+    {
+      "startMs": 21060,
+      "endMs": 23850,
+      "translation": "갱스터는 걷고, 포주는 떠들어"
+    },
+    {
+      "startMs": 23850,
+      "endMs": 27030,
+      "translation": "우, 말도 안 돼, 저 녀석 장난 아니야"
+    },
+    {
+      "startMs": 27030,
+      "endMs": 29050,
+      "translation": "엄마, 나 TV에 나갈 거야"
+    },
+    {
+      "startMs": 29050,
+      "endMs": 31740,
+      "translation": "내가, 내가 다 쓸어버릴 거야"
+    },
+    {
+      "startMs": 31740,
+      "endMs": 34400,
+      "translation": "피부 밝은 놈들이"
+    },
+    {
+      "startMs": 34400,
+      "endMs": 36960,
+      "translation": "다시는, 절대, 절대 유행으로 돌아오지 못하게 할 거야"
+    },
+    {
+      "startMs": 36960,
+      "endMs": 39870,
+      "translation": "학교를 마치고 내 사업을 시작했다고 했더니"
+    },
+    {
+      "startMs": 39870,
+      "endMs": 41310,
+      "translation": "다들 \"오, 졸업했어?\" 하더라"
+    },
+    {
+      "startMs": 41310,
+      "endMs": 43080,
+      "translation": "아니, 이만하면 끝내기로 내가 정했지"
+    },
+    {
+      "startMs": 43080,
+      "endMs": 45950,
+      "translation": "너희의 꿈과 너희가 세운 계획을 쫓다가"
+    },
+    {
+      "startMs": 45950,
+      "endMs": 48710,
+      "translation": "이제는 내 랩이 너무 뜨거워서 네가 탈 정도야"
+    },
+    {
+      "startMs": 48710,
+      "endMs": 51430,
+      "translation": "다시 학교로, 거기가 싫어, 거기가 싫어"
+    },
+    {
+      "startMs": 51430,
+      "endMs": 53810,
+      "translation": "원하는 건 다 1년씩 기다려야 해, 1년을 기다려"
+    },
+    {
+      "startMs": 53810,
+      "endMs": 56370,
+      "translation": "이 녀석은 우리 과 수석으로 졸업했는데"
+    },
+    {
+      "startMs": 56370,
+      "endMs": 59490,
+      "translation": "치즈케이크 팩토리에 갔더니 거기서 웨이터를 하고 있더라"
+    },
+    {
+      "startMs": 59490,
+      "endMs": 62290,
+      "translation": "알파, 스텝, 오메가, 스텝"
+    },
+    {
+      "startMs": 62290,
+      "endMs": 64890,
+      "translation": "카파, 스텝, 시그마, 스텝"
+    },
+    {
+      "startMs": 64890,
+      "endMs": 67420,
+      "translation": "갱스터는 걷고, 포주는 떠들어"
+    },
+    {
+      "startMs": 67420,
+      "endMs": 70330,
+      "translation": "우, 말도 안 돼, 저 녀석 장난 아니야"
+    },
+    {
+      "startMs": 70330,
+      "endMs": 73080,
+      "translation": "AKA, 스텝, 델타, 스텝"
+    },
+    {
+      "startMs": 73080,
+      "endMs": 75750,
+      "translation": "SG 로, 스텝, 제타, 스텝"
+    },
+    {
+      "startMs": 75750,
+      "endMs": 78450,
+      "translation": "갱스터는 걷고, 포주는 떠들어"
+    },
+    {
+      "startMs": 78450,
+      "endMs": 80700,
+      "translation": "우, 말도 안 돼, 저 녀석 장난 아니야"
+    },
+    {
+      "startMs": 80700,
+      "endMs": 83890,
+      "translation": "네 클럽 자매한테 노라 존스처럼 끌려"
+    },
+    {
+      "startMs": 83890,
+      "endMs": 86420,
+      "translation": "오로라에서 봤던 그런 여자애들을 더 데려와"
+    },
+    {
+      "startMs": 86420,
+      "endMs": 89080,
+      "translation": "태미, 베키, 로라, 아니면 셜리"
+    },
+    {
+      "startMs": 89080,
+      "endMs": 91950,
+      "translation": "서두르는 사람처럼 일찍부터 덤비려고"
+    },
+    {
+      "startMs": 91950,
+      "endMs": 95720,
+      "translation": "봐, 그래서 그 녀석이 까치발 든 젊은 푸티 탱이 된 거야"
+    },
+    {
+      "startMs": 95720,
+      "endMs": 98310,
+      "translation": "로커펠라 체인, 그래, 그게 내 래퍼 스타일"
+    },
+    {
+      "startMs": 98310,
+      "endMs": 101320,
+      "translation": "묵주 펜던트, 그래, 그게 내 가톨릭 스타일"
+    },
+    {
+      "startMs": 101320,
+      "endMs": 103890,
+      "translation": "빨강 하양 에어 포스 원, 그래, 그게 내 카파 스타일"
+    },
+    {
+      "startMs": 103890,
+      "endMs": 105270,
+      "translation": "가입도 안 했는데 말이야"
+    },
+    {
+      "startMs": 105270,
+      "endMs": 108650,
+      "translation": "운전대에 머리를 박고도 죽지 않았어"
+    },
+    {
+      "startMs": 108650,
+      "endMs": 111540,
+      "translation": "그걸 다 겪고도 아직 숨 쉬고 있다면"
+    },
+    {
+      "startMs": 111540,
+      "endMs": 114110,
+      "translation": "엎드려 봐, 난 이유가 있어 여기 있는 거니까"
+    },
+    {
+      "startMs": 114110,
+      "endMs": 116950,
+      "translation": "알파, 스텝, 오메가, 스텝"
+    },
+    {
+      "startMs": 116950,
+      "endMs": 119400,
+      "translation": "카파, 스텝, 시그마, 스텝"
+    },
+    {
+      "startMs": 119400,
+      "endMs": 122380,
+      "translation": "갱스터는 걷고, 포주는 떠들어"
+    },
+    {
+      "startMs": 122380,
+      "endMs": 124960,
+      "translation": "우, 말도 안 돼, 저 녀석 장난 아니야"
+    },
+    {
+      "startMs": 124960,
+      "endMs": 127780,
+      "translation": "AKA, 스텝, 델타, 스텝"
+    },
+    {
+      "startMs": 127780,
+      "endMs": 130540,
+      "translation": "SG 로, 스텝, 제타, 스텝"
+    },
+    {
+      "startMs": 130540,
+      "endMs": 133180,
+      "translation": "갱스터는 걷고, 포주는 떠들어"
+    },
+    {
+      "startMs": 133180,
+      "endMs": 135620,
+      "translation": "우, 말도 안 돼, 저 녀석 장난 아니야"
+    },
+    {
+      "startMs": 135620,
+      "endMs": 141000,
+      "translation": "'우'가 나올 것 같아, 친구, '우'가 나올 것 같아, 친구… 우, 바로 그거야"
+    },
+    {
+      "startMs": 141000,
+      "endMs": 144960,
+      "translation": "'우'가 몇 번 나올 것 같아, 친구, '우'가 몇 번 나올 것 같아, 친구"
+    },
+    {
+      "startMs": 144960,
+      "endMs": 146400,
+      "translation": "우, 우, 바로 그거야"
+    },
+    {
+      "startMs": 146400,
+      "endMs": 151300,
+      "translation": "'우'가 나올 것 같아, 친구, '우'가 나올 것 같아, 친구… 우"
+    },
+    {
+      "startMs": 151300,
+      "endMs": 151890,
+      "translation": "바로 그거야"
+    },
+    {
+      "startMs": 151890,
+      "endMs": 155820,
+      "translation": "'우'가 몇 번 나올 것 같아, 친구, '우'가 몇 번 나올 것 같아, 친구"
+    },
+    {
+      "startMs": 155820,
+      "endMs": 157400,
+      "translation": "우, 우, 바로 그거야"
+    },
+    {
+      "startMs": 157400,
+      "endMs": 161250,
+      "translation": "어둠 속에서 (사람들이 움직여)"
+    },
+    {
+      "startMs": 161250,
+      "endMs": 168130,
+      "translation": "음, 흠, 음"
+    },
+    {
+      "startMs": 168130,
+      "endMs": 172130,
+      "translation": "어둠 속에서 (사람들이 움직여)"
+    },
+    {
+      "startMs": 172130,
+      "endMs": 179180,
+      "translation": "음, 흠, 음"
+    },
+    {
+      "startMs": 179180,
+      "endMs": 182000,
+      "translation": "어둠 속에서"
+    }
+  ]
+}

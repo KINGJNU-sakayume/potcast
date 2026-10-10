@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2497205,
+    "durationMs": 179000
+  },
+  "segments": [
+    {
+      "startMs": 3780,
+      "endMs": 11560,
+      "translation": "할아버지와 나는 슬루프선 존 B호를 타고 왔다"
+    },
+    {
+      "startMs": 11560,
+      "endMs": 18360,
+      "translation": "나소 시내를 쏘다녔다"
+    },
+    {
+      "startMs": 18360,
+      "endMs": 26090,
+      "translation": "밤새 술을 마시다 싸움이 붙었다"
+    },
+    {
+      "startMs": 26090,
+      "endMs": 34430,
+      "translation": "마음이 다 부서진 것 같다, 집에 가고 싶다"
+    },
+    {
+      "startMs": 34430,
+      "endMs": 42080,
+      "translation": "그러니 존 B호의 돛을 올려라, 큰 돛이 펴지는 걸 봐라"
+    },
+    {
+      "startMs": 42080,
+      "endMs": 48630,
+      "translation": "선장을 뭍으로 불러라, 나를 집에 보내 다오"
+    },
+    {
+      "startMs": 48630,
+      "endMs": 52230,
+      "translation": "집에 보내 다오"
+    },
+    {
+      "startMs": 52230,
+      "endMs": 56740,
+      "translation": "집에 가고 싶다"
+    },
+    {
+      "startMs": 56740,
+      "endMs": 64730,
+      "translation": "마음이 다 부서진 것 같다, 집에 가고 싶다"
+    },
+    {
+      "startMs": 64730,
+      "endMs": 72390,
+      "translation": "일등 항해사가 술에 취해 선장의 궤짝을 부수고 열었다"
+    },
+    {
+      "startMs": 72390,
+      "endMs": 79390,
+      "translation": "순경이 와서 그를 끌고 가야 했다"
+    },
+    {
+      "startMs": 79390,
+      "endMs": 87370,
+      "translation": "보안관 존 스톤, 왜 나를 가만두지 않는가?"
+    },
+    {
+      "startMs": 87370,
+      "endMs": 94940,
+      "translation": "마음이 다 부서진 것 같다, 집에 가고 싶다"
+    },
+    {
+      "startMs": 94940,
+      "endMs": 103350,
+      "translation": "그러니 존 B호의 돛을 올려라, 큰 돛이 펴지는 걸 봐라"
+    },
+    {
+      "startMs": 103350,
+      "endMs": 108120,
+      "translation": "선장을 뭍으로 불러라, 나를 집에 보내 다오"
+    },
+    {
+      "startMs": 108120,
+      "endMs": 111880,
+      "translation": "집에 보내 다오, 집에 가고 싶다"
+    },
+    {
+      "startMs": 111880,
+      "endMs": 113190,
+      "translation": "집에 보내 다오"
+    },
+    {
+      "startMs": 113190,
+      "endMs": 114810,
+      "translation": "(왜 나를 보내 주지 않는가?)"
+    },
+    {
+      "startMs": 114810,
+      "endMs": 118540,
+      "translation": "존 B호의 돛을 올려라"
+    },
+    {
+      "startMs": 118540,
+      "endMs": 123110,
+      "translation": "마음이 다 부서진 것 같다, 집에 가고 싶다"
+    },
+    {
+      "startMs": 123110,
+      "endMs": 126370,
+      "translation": "집에 보내 다오"
+    },
+    {
+      "startMs": 126370,
+      "endMs": 133980,
+      "translation": "불쌍한 요리사는 발작을 일으켜 내 죽을 다 내던졌다"
+    },
+    {
+      "startMs": 133980,
+      "endMs": 140870,
+      "translation": "그러고는 내 옥수수까지 다 먹어 치웠다"
+    },
+    {
+      "startMs": 140870,
+      "endMs": 143840,
+      "translation": "집에 보내 다오"
+    },
+    {
+      "startMs": 143840,
+      "endMs": 148800,
+      "translation": "왜 다들 나를 집에 보내 주지 않는가?"
+    },
+    {
+      "startMs": 148800,
+      "endMs": 156030,
+      "translation": "내 생애 최악의 여행이다"
+    },
+    {
+      "startMs": 156030,
+      "endMs": 164220,
+      "translation": "그러니 존 B호의 돛을 올려라, 큰 돛이 펴지는 걸 봐라"
+    },
+    {
+      "startMs": 164220,
+      "endMs": 168440,
+      "translation": "선장을 뭍으로 불러라, 나를 집에 보내 다오"
+    },
+    {
+      "startMs": 168440,
+      "endMs": 172140,
+      "translation": "집에 보내 다오, 집에 가고 싶다"
+    },
+    {
+      "startMs": 172140,
+      "endMs": 179000,
+      "translation": "집에 보내 다오"
+    }
+  ]
+}

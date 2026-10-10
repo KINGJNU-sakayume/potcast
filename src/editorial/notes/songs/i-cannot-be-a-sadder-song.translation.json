@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1048877,
+    "durationMs": 170000
+  },
+  "segments": [
+    {
+      "startMs": 6330,
+      "endMs": 11000,
+      "translation": "오-오, 오, 음"
+    },
+    {
+      "startMs": 11000,
+      "endMs": 14120,
+      "translation": "네가 날 이렇게 꽉 붙잡고 있는데 내가 어떻게 자유로워?"
+    },
+    {
+      "startMs": 14120,
+      "endMs": 17330,
+      "translation": "네가 내 빛을 가리는데 내가 어떻게 빛나?"
+    },
+    {
+      "startMs": 17330,
+      "endMs": 19180,
+      "translation": "난 될 수 없어, 네가 원하는"
+    },
+    {
+      "startMs": 19180,
+      "endMs": 23070,
+      "translation": "네가 원하는, 네가 원하는 내가"
+    },
+    {
+      "startMs": 23070,
+      "endMs": 26150,
+      "translation": "네가 내 눈을 가리는데 내가 어떻게 봐?"
+    },
+    {
+      "startMs": 26150,
+      "endMs": 29090,
+      "translation": "이렇게 빌어먹게 지쳤는데 그냥 잠들 수는 있을까?"
+    },
+    {
+      "startMs": 29090,
+      "endMs": 31130,
+      "translation": "그러니 지금 말해 봐, 네가 원하는"
+    },
+    {
+      "startMs": 31130,
+      "endMs": 34970,
+      "translation": "네가 원하는, 네가 원하는 내가 뭔지"
+    },
+    {
+      "startMs": 34970,
+      "endMs": 39460,
+      "translation": "그래, 우, 넌 날 혼내고 싶을 뿐이야, 아니"
+    },
+    {
+      "startMs": 39460,
+      "endMs": 42350,
+      "translation": "넌 날 망가뜨리고 싶을 뿐이야, 우"
+    },
+    {
+      "startMs": 42350,
+      "endMs": 44530,
+      "translation": "넌 날 채워 주지는 않을 거야"
+    },
+    {
+      "startMs": 44530,
+      "endMs": 47650,
+      "translation": "그러니 실례지만 한 시간만 나를 사랑할게"
+    },
+    {
+      "startMs": 47650,
+      "endMs": 52440,
+      "translation": "내 마음을 지켜 주겠다고 했지, 골키퍼가 되겠다고"
+    },
+    {
+      "startMs": 52440,
+      "endMs": 55000,
+      "translation": "네가 내게 팔았던 헛소리를 생각해"
+    },
+    {
+      "startMs": 55000,
+      "endMs": 58260,
+      "translation": "나도 완벽하지 않다는 거 알지만, 넌 너무 못됐어"
+    },
+    {
+      "startMs": 58260,
+      "endMs": 59570,
+      "translation": "우린 친구였잖아"
+    },
+    {
+      "startMs": 59570,
+      "endMs": 62510,
+      "translation": "넌 내가 넘어지는 걸 보려고 발을 걸어"
+    },
+    {
+      "startMs": 62510,
+      "endMs": 65680,
+      "translation": "담배를 또 피우고, 아까 것을 술로 씻어 내려"
+    },
+    {
+      "startMs": 65680,
+      "endMs": 68650,
+      "translation": "아래로, 아래로, 얼굴을 바닥에 처박을 때까지"
+    },
+    {
+      "startMs": 68650,
+      "endMs": 71220,
+      "translation": "내가 이렇게 취하는 건 너 때문이야"
+    },
+    {
+      "startMs": 71220,
+      "endMs": 74230,
+      "translation": "네가 날 이렇게 꽉 붙잡고 있는데 내가 어떻게 자유로워?"
+    },
+    {
+      "startMs": 74230,
+      "endMs": 77110,
+      "translation": "네가 내 빛을 가리는데 내가 어떻게 빛나?"
+    },
+    {
+      "startMs": 77110,
+      "endMs": 78970,
+      "translation": "난 될 수 없어, 네가 원하는"
+    },
+    {
+      "startMs": 78970,
+      "endMs": 83190,
+      "translation": "네가 원하는, 네가 원하는 내가"
+    },
+    {
+      "startMs": 83190,
+      "endMs": 85990,
+      "translation": "네가 내 눈을 가리는데 내가 어떻게 봐?"
+    },
+    {
+      "startMs": 85990,
+      "endMs": 89090,
+      "translation": "이렇게 빌어먹게 지쳤는데 그냥 잠들 수는 있을까?"
+    },
+    {
+      "startMs": 89090,
+      "endMs": 91120,
+      "translation": "그러니 지금 말해 봐, 네가 원하는"
+    },
+    {
+      "startMs": 91120,
+      "endMs": 95630,
+      "translation": "네가 원하는, 네가 원하는 내가 뭔지"
+    },
+    {
+      "startMs": 95630,
+      "endMs": 98580,
+      "translation": "맞춤 다이아몬드 반지가 있지만, 아니, 그는 아내가 없어"
+    },
+    {
+      "startMs": 98580,
+      "endMs": 101750,
+      "translation": "가진 게 너무 많아서 값을 다 더할 수도 없어"
+    },
+    {
+      "startMs": 101750,
+      "endMs": 104740,
+      "translation": "그 여자한테 필요 없다고, 내 인생에서 나가도 된다고 했어 (인생에서 나가도)"
+    },
+    {
+      "startMs": 104740,
+      "endMs": 107600,
+      "translation": "기회는 한 번뿐이지만, 끝내주면 두 번 가 (두 번 가)"
+    },
+    {
+      "startMs": 107600,
+      "endMs": 111590,
+      "translation": "어, 하드톱을 몰고 나타나, 오픈카야 (오픈카)"
+    },
+    {
+      "startMs": 111590,
+      "endMs": 114520,
+      "translation": "우리가 백만장자가 될 거라 했잖아, 왜 거짓말해? (왜 거짓말해?)"
+    },
+    {
+      "startMs": 114520,
+      "endMs": 117380,
+      "translation": "그 여자는 내가 머리 아픈 건 신경 안 쓰는 거 알아"
+    },
+    {
+      "startMs": 117380,
+      "endMs": 120550,
+      "translation": "손목의 스켈레톤 시계는 지금이 전성기래 (전성기)"
+    },
+    {
+      "startMs": 120550,
+      "endMs": 122420,
+      "translation": "왜 그냥 날 나답게 두지 못했어?"
+    },
+    {
+      "startMs": 122420,
+      "endMs": 123810,
+      "translation": "넌 점점 쩨쩨해져 (쩨쩨해져)"
+    },
+    {
+      "startMs": 123810,
+      "endMs": 126120,
+      "translation": "네가 떠나니까 알아낼 수도 없었어 (떠나니까)"
+    },
+    {
+      "startMs": 126120,
+      "endMs": 128390,
+      "translation": "내가 순수하다는 거 알잖아, 내 기운이 느껴지지 (기운이)"
+    },
+    {
+      "startMs": 128390,
+      "endMs": 129880,
+      "translation": "진짜 부자지만 우린 자유롭게 살지 못해"
+    },
+    {
+      "startMs": 129880,
+      "endMs": 131160,
+      "translation": "의리를 지켜야 해, 우린 모두 동의해"
+    },
+    {
+      "startMs": 131160,
+      "endMs": 134040,
+      "translation": "네가 날 이렇게 꽉 붙잡고 있는데 내가 어떻게 자유로워?"
+    },
+    {
+      "startMs": 134040,
+      "endMs": 137120,
+      "translation": "네가 내 빛을 가리는데 내가 어떻게 빛나?"
+    },
+    {
+      "startMs": 137120,
+      "endMs": 139050,
+      "translation": "난 될 수 없어, 네가 원하는"
+    },
+    {
+      "startMs": 139050,
+      "endMs": 143000,
+      "translation": "네가 원하는, 네가 원하는 내가"
+    },
+    {
+      "startMs": 143000,
+      "endMs": 145980,
+      "translation": "네가 내 눈을 가리는데 내가 어떻게 봐?"
+    },
+    {
+      "startMs": 145980,
+      "endMs": 149060,
+      "translation": "이렇게 빌어먹게 지쳤는데 그냥 잠들 수는 있을까?"
+    },
+    {
+      "startMs": 149060,
+      "endMs": 151180,
+      "translation": "그러니 지금 말해 봐, 네가 원하는"
+    },
+    {
+      "startMs": 151180,
+      "endMs": 156240,
+      "translation": "네가 원하는, 네가 원하는 내가 뭔지 (그러니 네가 원하는 내가 뭔지 말해 봐)"
+    },
+    {
+      "startMs": 156240,
+      "endMs": 170000,
+      "translation": "우, 아, 아, 아, 아"
+    }
+  ]
+}

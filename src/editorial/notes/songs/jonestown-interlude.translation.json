@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 496465,
+    "durationMs": 112000
+  },
+  "segments": [
+    {
+      "startMs": 38880,
+      "endMs": 41730,
+      "translation": "매번 이렇게 돼"
+    },
+    {
+      "startMs": 41730,
+      "endMs": 44100,
+      "translation": "자살처럼 들려"
+    },
+    {
+      "startMs": 44100,
+      "endMs": 49420,
+      "translation": "망설여지지만, 아마 또 한 번 그 독이 든 음료를 마시겠지"
+    },
+    {
+      "startMs": 49420,
+      "endMs": 53230,
+      "translation": "매번 이렇게 돼"
+    },
+    {
+      "startMs": 53230,
+      "endMs": 56380,
+      "translation": "자살처럼 들려"
+    },
+    {
+      "startMs": 56380,
+      "endMs": 62470,
+      "translation": "망설여지지만, 아마 또 한 번 그 독이 든 음료를 마시겠지"
+    },
+    {
+      "startMs": 62470,
+      "endMs": 65950,
+      "translation": "매번 이렇게 돼"
+    },
+    {
+      "startMs": 65950,
+      "endMs": 68590,
+      "translation": "자살처럼 들려"
+    },
+    {
+      "startMs": 68590,
+      "endMs": 75830,
+      "translation": "망설여지지만, 아마 또 한 번 그 독이 든 음료를 마시겠지"
+    },
+    {
+      "startMs": 75830,
+      "endMs": 78970,
+      "translation": "(매번 이렇게 돼)"
+    },
+    {
+      "startMs": 78970,
+      "endMs": 81960,
+      "translation": "(자살처럼 들려)"
+    },
+    {
+      "startMs": 81960,
+      "endMs": 87350,
+      "translation": "(망설여지지만, 아마 또 한 번 그 독이 든 음료를 마시겠지)"
+    },
+    {
+      "startMs": 87350,
+      "endMs": 90630,
+      "translation": "(매번 이렇게 돼)"
+    },
+    {
+      "startMs": 90630,
+      "endMs": 93350,
+      "translation": "(자살처럼 들려)"
+    },
+    {
+      "startMs": 93350,
+      "endMs": 112000,
+      "translation": "(망설여지지만, 아마 또 한 번 그 독이 든 음료를 마시겠지)"
+    }
+  ]
+}

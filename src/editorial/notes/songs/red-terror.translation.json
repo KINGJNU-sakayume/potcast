@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974713,
+    "durationMs": 232000
+  },
+  "segments": [
+    {
+      "startMs": 11780,
+      "endMs": 13860,
+      "translation": "오, 워"
+    },
+    {
+      "startMs": 13860,
+      "endMs": 16800,
+      "translation": "오, 워"
+    },
+    {
+      "startMs": 16800,
+      "endMs": 21540,
+      "translation": "오, 워, 워"
+    },
+    {
+      "startMs": 21540,
+      "endMs": 23950,
+      "translation": "오, 워"
+    },
+    {
+      "startMs": 23950,
+      "endMs": 26560,
+      "translation": "오, 워"
+    },
+    {
+      "startMs": 26560,
+      "endMs": 30100,
+      "translation": "오, 워, 워"
+    },
+    {
+      "startMs": 30100,
+      "endMs": 39990,
+      "translation": "넌 무겁지 않아, 널 흔들어 재워 줄게, 몇 시간이고 널 안고 있을게"
+    },
+    {
+      "startMs": 39990,
+      "endMs": 45510,
+      "translation": "전혀 무겁지 않아, 널 울게 두지 않을게"
+    },
+    {
+      "startMs": 45510,
+      "endMs": 54490,
+      "translation": "쉿, 내 아가, 넌 내 아이야"
+    },
+    {
+      "startMs": 54490,
+      "endMs": 65560,
+      "translation": "평생 동안, 난 애써 왔어"
+    },
+    {
+      "startMs": 65560,
+      "endMs": 71640,
+      "translation": "오-오, 넌 한 번도 무겁지 않았어, 깃털처럼 가벼웠지"
+    },
+    {
+      "startMs": 71640,
+      "endMs": 76700,
+      "translation": "난 그 공포로부터 달아났어, 군중은 왼쪽에서 이끌려 왔지"
+    },
+    {
+      "startMs": 76700,
+      "endMs": 81590,
+      "translation": "넌 한 번도 무섭지 않았어, 네가 특별하다는 걸 알았어"
+    },
+    {
+      "startMs": 81590,
+      "endMs": 86240,
+      "translation": "내 유일한 관심, 혼자서 서쪽으로 떠났어"
+    },
+    {
+      "startMs": 86240,
+      "endMs": 90800,
+      "translation": "그러고는 도시로 옮겼지, 임신 여덟 달이었어"
+    },
+    {
+      "startMs": 90800,
+      "endMs": 95870,
+      "translation": "넌 정말 귀하게 태어났어, 눈 속에서 자라났지"
+    },
+    {
+      "startMs": 95870,
+      "endMs": 103500,
+      "translation": "엄마는 널 사랑해, 넌 절대 혼자가 아닐 거야"
+    },
+    {
+      "startMs": 103500,
+      "endMs": 113470,
+      "translation": "쉿, 내 아가, 넌 내 아이야 (알아, 알아, 알아, 헤이)"
+    },
+    {
+      "startMs": 113470,
+      "endMs": 122490,
+      "translation": "평생 동안, 난 애써 왔어 (미안해요, 엄마, 미안해요, 엄마, 워-워)"
+    },
+    {
+      "startMs": 122490,
+      "endMs": 131750,
+      "translation": "널 따뜻하게 지키려고, 내가 떠나더라도 (내가 떠나면, 엄마 없인 너무 추워요, 엄마 없인 너무 추워요, 워-워)"
+    },
+    {
+      "startMs": 131750,
+      "endMs": 175600,
+      "translation": "넌 여전히 내 아이야, 울지 마"
+    },
+    {
+      "startMs": 175600,
+      "endMs": 183410,
+      "translation": "죽음은 아무것도 아니야, 아무것도 아니야"
+    },
+    {
+      "startMs": 183410,
+      "endMs": 188790,
+      "translation": "나는 그저 옆방으로 살며시 건너갔을 뿐이야"
+    },
+    {
+      "startMs": 188790,
+      "endMs": 191810,
+      "translation": "아무 일도 일어나지 않았어"
+    },
+    {
+      "startMs": 191810,
+      "endMs": 198130,
+      "translation": "모든 게 예전 그대로야"
+    },
+    {
+      "startMs": 198130,
+      "endMs": 208000,
+      "translation": "나는 나고, 너는 너야"
+    },
+    {
+      "startMs": 208000,
+      "endMs": 219130,
+      "translation": "우리가 그토록 다정하게 함께 살았던 옛 삶은 손대지 않은 채, 변하지 않은 채 남아 있어"
+    },
+    {
+      "startMs": 219130,
+      "endMs": 228250,
+      "translation": "우리가 서로에게 무엇이었든, 지금도 그대로야"
+    },
+    {
+      "startMs": 228250,
+      "endMs": 232000,
+      "translation": "예전의 그 익숙한 이름으로 날 불러 줘"
+    }
+  ]
+}

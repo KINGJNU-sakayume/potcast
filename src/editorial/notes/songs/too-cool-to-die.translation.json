@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2906885,
+    "durationMs": 205000
+  },
+  "segments": [
+    {
+      "startMs": 16610,
+      "endMs": 25840,
+      "translation": "선글라스를 써, 그래야 인사를 안 해도 되니까"
+    },
+    {
+      "startMs": 25840,
+      "endMs": 34770,
+      "translation": "떠난 뒤에 문자를 보내, 작별 인사는 안 해"
+    },
+    {
+      "startMs": 34770,
+      "endMs": 44060,
+      "translation": "그리고 내 미스 USA는 드라이브하러 와도 돼"
+    },
+    {
+      "startMs": 44060,
+      "endMs": 53370,
+      "translation": "그 여자가 내 기름을 채웠어, 난 한 푼도 안 썼지"
+    },
+    {
+      "startMs": 53370,
+      "endMs": 62520,
+      "translation": "그리고 난 전혀 개의치 않아, 울지도 않아"
+    },
+    {
+      "startMs": 62520,
+      "endMs": 69640,
+      "translation": "기분이 어떠냐고? 난 다이너마이트야"
+    },
+    {
+      "startMs": 69640,
+      "endMs": 71620,
+      "translation": "그리고 이렇게 흘러가"
+    },
+    {
+      "startMs": 71620,
+      "endMs": 75980,
+      "translation": "난 오래 머물지 않아, 자기야"
+    },
+    {
+      "startMs": 75980,
+      "endMs": 80120,
+      "translation": "그냥 지나가는 중이야"
+    },
+    {
+      "startMs": 80120,
+      "endMs": 84650,
+      "translation": "세상은 점점 더 뜨거워지지, 자기야"
+    },
+    {
+      "startMs": 84650,
+      "endMs": 89190,
+      "translation": "그런데 난 죽기엔 너무 쿨해"
+    },
+    {
+      "startMs": 89190,
+      "endMs": 97540,
+      "translation": "그 여자는 전용기에서 하고 싶어 하지만 난 비행이 무서워"
+    },
+    {
+      "startMs": 97540,
+      "endMs": 106600,
+      "translation": "그 여자는 화려한 술을 먹이며 밤새 날 깨워 두고 싶어 해"
+    },
+    {
+      "startMs": 106600,
+      "endMs": 111460,
+      "translation": "이 결혼반지 마음에 드냐고 물어보더라"
+    },
+    {
+      "startMs": 111460,
+      "endMs": 116070,
+      "translation": "세상에, 첫 데이트인데"
+    },
+    {
+      "startMs": 116070,
+      "endMs": 125310,
+      "translation": "마음에 들었어, 그래서 다음 데이트에 사 버렸지, 나한테 딱 맞아"
+    },
+    {
+      "startMs": 125310,
+      "endMs": 132380,
+      "translation": "그리고 난 전혀 개의치 않아, 울지도 않아"
+    },
+    {
+      "startMs": 132380,
+      "endMs": 134580,
+      "translation": "안 울어, 안 울어"
+    },
+    {
+      "startMs": 134580,
+      "endMs": 141500,
+      "translation": "기분이 어떠냐고? 난 다이너마이트야"
+    },
+    {
+      "startMs": 141500,
+      "endMs": 142910,
+      "translation": "그리고 이렇게 흘러가"
+    },
+    {
+      "startMs": 142910,
+      "endMs": 147700,
+      "translation": "난 오래 머물지 않아, 자기야"
+    },
+    {
+      "startMs": 147700,
+      "endMs": 150420,
+      "translation": "그냥 지나가는 중이야"
+    },
+    {
+      "startMs": 150420,
+      "endMs": 152100,
+      "translation": "지나가는 중"
+    },
+    {
+      "startMs": 152100,
+      "endMs": 156470,
+      "translation": "세상은 점점 더 뜨거워지지, 자기야"
+    },
+    {
+      "startMs": 156470,
+      "endMs": 159730,
+      "translation": "그런데 난 죽기엔 너무 쿨해"
+    },
+    {
+      "startMs": 159730,
+      "endMs": 161630,
+      "translation": "난 너무 쿨해, 난 너무 쿨해"
+    },
+    {
+      "startMs": 161630,
+      "endMs": 165450,
+      "translation": "난 오래 머물지 않아, 자기야"
+    },
+    {
+      "startMs": 165450,
+      "endMs": 168410,
+      "translation": "그냥 지나가는 중이야"
+    },
+    {
+      "startMs": 168410,
+      "endMs": 170210,
+      "translation": "그냥 지나가는 중이야"
+    },
+    {
+      "startMs": 170210,
+      "endMs": 174350,
+      "translation": "세상은 점점 더 뜨거워지지, 자기야"
+    },
+    {
+      "startMs": 174350,
+      "endMs": 177300,
+      "translation": "그런데 난 죽기엔 너무 쿨해"
+    },
+    {
+      "startMs": 177300,
+      "endMs": 186340,
+      "translation": "난 죽기엔 너무 쿨해"
+    },
+    {
+      "startMs": 186340,
+      "endMs": 193030,
+      "translation": "난 죽기엔 너무 쿨해"
+    },
+    {
+      "startMs": 193030,
+      "endMs": 205000,
+      "translation": "난 죽기엔 너무 쿨해"
+    }
+  ]
+}

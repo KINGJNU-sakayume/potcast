@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 14070,
+    "durationMs": 300000
+  },
+  "segments": [
+    {
+      "startMs": 22070,
+      "endMs": 24340,
+      "translation": "운송"
+    },
+    {
+      "startMs": 24340,
+      "endMs": 28950,
+      "translation": "고속도로와 트램 선로"
+    },
+    {
+      "startMs": 28950,
+      "endMs": 33700,
+      "translation": "출발했다가 멈추고"
+    },
+    {
+      "startMs": 33700,
+      "endMs": 38260,
+      "translation": "이륙하고 착륙한다"
+    },
+    {
+      "startMs": 38260,
+      "endMs": 43120,
+      "translation": "가장 텅 빈 기분"
+    },
+    {
+      "startMs": 43120,
+      "endMs": 47840,
+      "translation": "실망한 사람들이"
+    },
+    {
+      "startMs": 47840,
+      "endMs": 52240,
+      "translation": "술병에 매달려 있다"
+    },
+    {
+      "startMs": 52240,
+      "endMs": 59640,
+      "translation": "그리고 막상 오면, 너무나 실망스럽다"
+    },
+    {
+      "startMs": 59640,
+      "endMs": 66590,
+      "translation": "맥이 풀린 채 서성인다"
+    },
+    {
+      "startMs": 66590,
+      "endMs": 73730,
+      "translation": "땅바닥의 벌레처럼 짓눌린 채"
+    },
+    {
+      "startMs": 73730,
+      "endMs": 90290,
+      "translation": "맥이 풀린 채 서성인다"
+    },
+    {
+      "startMs": 90290,
+      "endMs": 94680,
+      "translation": "껍데기는 박살 나고 즙이 흘러나온다"
+    },
+    {
+      "startMs": 94680,
+      "endMs": 99230,
+      "translation": "날개가 떨리고 다리가 풀린다"
+    },
+    {
+      "startMs": 99230,
+      "endMs": 108580,
+      "translation": "감상에 빠지지 마라, 언제나 헛소리로 끝나니까"
+    },
+    {
+      "startMs": 108580,
+      "endMs": 115810,
+      "translation": "언젠가 나는 날개를 달 것이다"
+    },
+    {
+      "startMs": 115810,
+      "endMs": 120440,
+      "translation": "화학 반응"
+    },
+    {
+      "startMs": 120440,
+      "endMs": 125040,
+      "translation": "발작적이고 쓸모없는"
+    },
+    {
+      "startMs": 125040,
+      "endMs": 127680,
+      "translation": "발작적이고"
+    },
+    {
+      "startMs": 127680,
+      "endMs": 134610,
+      "translation": "맥이 풀린 채 서성인다"
+    },
+    {
+      "startMs": 134610,
+      "endMs": 141700,
+      "translation": "땅바닥의 벌레처럼 짓눌린 채"
+    },
+    {
+      "startMs": 141700,
+      "endMs": 186450,
+      "translation": "맥이 풀린 채 서성인다"
+    },
+    {
+      "startMs": 186450,
+      "endMs": 195880,
+      "translation": "맥이 풀린 채 서성…"
+    },
+    {
+      "startMs": 195880,
+      "endMs": 205310,
+      "translation": "맥이 풀린 채 서성…"
+    },
+    {
+      "startMs": 205310,
+      "endMs": 221350,
+      "translation": "맥이 풀린 채 서성…"
+    },
+    {
+      "startMs": 221350,
+      "endMs": 228110,
+      "translation": "알다시피, 어디에 서 있는지는 알 수 있다"
+    },
+    {
+      "startMs": 228110,
+      "endMs": 232740,
+      "translation": "어디에 서 있는지는 알 수 있다"
+    },
+    {
+      "startMs": 232740,
+      "endMs": 237420,
+      "translation": "바닥이 꺼지고, 떠오르고"
+    },
+    {
+      "startMs": 237420,
+      "endMs": 239420,
+      "translation": "다시 튀어 오르고"
+    },
+    {
+      "startMs": 239420,
+      "endMs": 246210,
+      "translation": "(언젠가…) 나는 날개를 달 것이다"
+    },
+    {
+      "startMs": 246210,
+      "endMs": 247440,
+      "translation": "화학 반응"
+    },
+    {
+      "startMs": 247440,
+      "endMs": 251060,
+      "translation": "(어디에 서 있는지는 알 수 있다)"
+    },
+    {
+      "startMs": 251060,
+      "endMs": 252140,
+      "translation": "발작적이고 쓸모없는"
+    },
+    {
+      "startMs": 252140,
+      "endMs": 255580,
+      "translation": "(어디에 서 있는지는 알 수 있다)"
+    },
+    {
+      "startMs": 255580,
+      "endMs": 256700,
+      "translation": "발작적이고"
+    },
+    {
+      "startMs": 256700,
+      "endMs": 258180,
+      "translation": "(어디에 서 있는지는 알 수 있다)"
+    },
+    {
+      "startMs": 258180,
+      "endMs": 265060,
+      "translation": "맥이 풀린 채 서성인다"
+    },
+    {
+      "startMs": 265060,
+      "endMs": 272030,
+      "translation": "땅바닥의 벌레처럼 짓눌린 채"
+    },
+    {
+      "startMs": 272030,
+      "endMs": 300000,
+      "translation": "맥이 풀린 채 서성인다"
+    }
+  ]
+}

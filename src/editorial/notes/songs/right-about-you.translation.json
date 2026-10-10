@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 37276881,
+    "durationMs": 183000
+  },
+  "segments": [
+    {
+      "startMs": 11990,
+      "endMs": 17160,
+      "translation": "우리가 집도 없이 바닥을 친다 해도 날 사랑할 거야?"
+    },
+    {
+      "startMs": 17160,
+      "endMs": 23160,
+      "translation": "난 슬프고 외로운 노래를 불러서 돈을 다 벌었어"
+    },
+    {
+      "startMs": 23160,
+      "endMs": 28730,
+      "translation": "그런데 내 다이아몬드는 다 흙에서 나왔어, 널 사랑할수록 덜 아파"
+    },
+    {
+      "startMs": 28730,
+      "endMs": 33040,
+      "translation": "이제 내 펜은 단어를 찾지 못해"
+    },
+    {
+      "startMs": 33040,
+      "endMs": 38650,
+      "translation": "난 죄와 나쁜 여자들, 알약과 차에 대한 노래를 썼어"
+    },
+    {
+      "startMs": 38650,
+      "endMs": 44120,
+      "translation": "네가 걸어 들어와 기준을 높이기 전까진 술에 대한 노래를 썼지"
+    },
+    {
+      "startMs": 44120,
+      "endMs": 51370,
+      "translation": "그런데 네가 날 이렇게 높이 데려다 놨는데 내가 어떻게 밑바닥을 노래하겠어?"
+    },
+    {
+      "startMs": 51370,
+      "endMs": 66280,
+      "translation": "너에 대해선 내가 옳았어서 다행이야"
+    },
+    {
+      "startMs": 66280,
+      "endMs": 71710,
+      "translation": "진심만 아니라면 날 싫다고 해도 돼"
+    },
+    {
+      "startMs": 71710,
+      "endMs": 77340,
+      "translation": "반쯤 미쳐도 괜찮아, 운도 이유도 필요 없어"
+    },
+    {
+      "startMs": 77340,
+      "endMs": 82400,
+      "translation": "자기야, 싸움을 걸고, 문을 쾅 닫고 날 밖에 가둬도 돼"
+    },
+    {
+      "startMs": 82400,
+      "endMs": 88970,
+      "translation": "딱 하룻밤만, 내가 새 멜로디를 찾을 수 있게"
+    },
+    {
+      "startMs": 88970,
+      "endMs": 94460,
+      "translation": "난 죄와 나쁜 여자들, 알약과 차에 대한 노래를 썼어"
+    },
+    {
+      "startMs": 94460,
+      "endMs": 99870,
+      "translation": "네가 걸어 들어와 기준을 높이기 전까진 술에 대한 노래를 썼지"
+    },
+    {
+      "startMs": 99870,
+      "endMs": 107270,
+      "translation": "그런데 네가 날 이렇게 높이 데려다 놨는데 내가 어떻게 밑바닥을 노래하겠어?"
+    },
+    {
+      "startMs": 107270,
+      "endMs": 121030,
+      "translation": "너에 대해선 내가 옳았어서 다행이야"
+    },
+    {
+      "startMs": 121030,
+      "endMs": 126500,
+      "translation": "코드를 다 바꾸고, 손가락이 자유롭게 흐르게 할 수도 있어"
+    },
+    {
+      "startMs": 126500,
+      "endMs": 134930,
+      "translation": "그래도 네가 곁에 있는 한, 난 화음을 가질 수 있어"
+    },
+    {
+      "startMs": 134930,
+      "endMs": 140400,
+      "translation": "난 죄와 나쁜 여자들, 알약과 차에 대한 노래를 썼어"
+    },
+    {
+      "startMs": 140400,
+      "endMs": 145920,
+      "translation": "네가 걸어 들어와 기준을 높이기 전까진 술에 대한 노래를 썼지"
+    },
+    {
+      "startMs": 145920,
+      "endMs": 154630,
+      "translation": "그런데 네가 날 이렇게 높이 데려다 놨는데 내가 어떻게 밑바닥을 노래하겠어?"
+    },
+    {
+      "startMs": 154630,
+      "endMs": 160240,
+      "translation": "너에 대해선 내가 옳았어서 다행이야"
+    },
+    {
+      "startMs": 160240,
+      "endMs": 183000,
+      "translation": "너에 대해선 내가 옳았어서 다행이야"
+    }
+  ]
+}

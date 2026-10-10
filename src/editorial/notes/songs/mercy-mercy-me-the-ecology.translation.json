@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 70523,
+    "durationMs": 195000
+  },
+  "segments": [
+    {
+      "startMs": 10000,
+      "endMs": 15640,
+      "translation": "아, 이럴 수가, 이럴 수가"
+    },
+    {
+      "startMs": 15640,
+      "endMs": 22000,
+      "translation": "아, 세상이 예전 같지 않다, 아니다"
+    },
+    {
+      "startMs": 22000,
+      "endMs": 25870,
+      "translation": "그 많던 파란 하늘은 다 어디로 갔나?"
+    },
+    {
+      "startMs": 25870,
+      "endMs": 32060,
+      "translation": "북쪽에서도 남쪽에서도 동쪽에서도 불어오는 바람은 독이다"
+    },
+    {
+      "startMs": 32060,
+      "endMs": 37170,
+      "translation": "아, 이럴 수가, 이럴 수가"
+    },
+    {
+      "startMs": 37170,
+      "endMs": 42770,
+      "translation": "아, 세상이 예전 같지 않다, 아니다"
+    },
+    {
+      "startMs": 42770,
+      "endMs": 50530,
+      "translation": "대양과 바다 위로 버려진 기름, 수은으로 가득한 물고기"
+    },
+    {
+      "startMs": 50530,
+      "endMs": 57400,
+      "translation": "아, 아, 이럴 수가, 이럴 수가"
+    },
+    {
+      "startMs": 57400,
+      "endMs": 62930,
+      "translation": "아, 세상이 예전 같지 않다, 아니다"
+    },
+    {
+      "startMs": 62930,
+      "endMs": 68000,
+      "translation": "땅속에도 하늘에도 방사능"
+    },
+    {
+      "startMs": 68000,
+      "endMs": 72730,
+      "translation": "가까이 사는 짐승과 새들이 죽어 간다"
+    },
+    {
+      "startMs": 72730,
+      "endMs": 78330,
+      "translation": "아, 이럴 수가, 이럴 수가"
+    },
+    {
+      "startMs": 78330,
+      "endMs": 84440,
+      "translation": "아, 세상이 예전 같지 않다"
+    },
+    {
+      "startMs": 84440,
+      "endMs": 92810,
+      "translation": "이 넘쳐 나는 땅은 어떡하나, 인간의 학대를 그녀가 얼마나 더 견딜 수 있을까?"
+    },
+    {
+      "startMs": 92810,
+      "endMs": 99660,
+      "translation": "(오, 오, 아니, 아니다)"
+    },
+    {
+      "startMs": 99660,
+      "endMs": 105680,
+      "translation": "나의 다정한 주여"
+    },
+    {
+      "startMs": 105680,
+      "endMs": 112870,
+      "translation": "나의 주여, 나의 다정한 주여"
+    },
+    {
+      "startMs": 112870,
+      "endMs": 195000,
+      "translation": "숨을 쉬어라"
+    }
+  ]
+}

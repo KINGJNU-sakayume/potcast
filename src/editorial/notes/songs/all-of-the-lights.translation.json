@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 564153,
+    "durationMs": 300000
+  },
+  "segments": [
+    {
+      "startMs": 10,
+      "endMs": 10470,
+      "translation": "모든 불빛"
+    },
+    {
+      "startMs": 10470,
+      "endMs": 12630,
+      "translation": "불빛, 불빛"
+    },
+    {
+      "startMs": 12630,
+      "endMs": 13440,
+      "translation": "모든 불빛"
+    },
+    {
+      "startMs": 13440,
+      "endMs": 16860,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 16860,
+      "endMs": 20190,
+      "translation": "아주 환하게, 다들 이걸 봤으면 해"
+    },
+    {
+      "startMs": 20190,
+      "endMs": 23420,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 23420,
+      "endMs": 24640,
+      "translation": "내가 뭘 원하는지 알잖아"
+    },
+    {
+      "startMs": 24640,
+      "endMs": 26310,
+      "translation": "네가 전부 봤으면 해"
+    },
+    {
+      "startMs": 26310,
+      "endMs": 30660,
+      "translation": "네가 모든 불빛을 봤으면 해"
+    },
+    {
+      "startMs": 30660,
+      "endMs": 32970,
+      "translation": "빠른 차, 별똥별"
+    },
+    {
+      "startMs": 32970,
+      "endMs": 37310,
+      "translation": "모든 불빛, 모든 불빛"
+    },
+    {
+      "startMs": 37310,
+      "endMs": 39640,
+      "translation": "우리가 가는 곳마다 라스베이거스가 될 때까지"
+    },
+    {
+      "startMs": 39640,
+      "endMs": 45130,
+      "translation": "모든 불빛"
+    },
+    {
+      "startMs": 45130,
+      "endMs": 51880,
+      "translation": "원한다면 평생 가질 수 있어"
+    },
+    {
+      "startMs": 51880,
+      "endMs": 55560,
+      "translation": "원한다면 평생 가질 수 있어"
+    },
+    {
+      "startMs": 55560,
+      "endMs": 59070,
+      "translation": "뭔가 잘못됐어, 머리를 감싸 쥐어"
+    },
+    {
+      "startMs": 59070,
+      "endMs": 62330,
+      "translation": "MJ가 떠났어, 우리 사람이 죽었어"
+    },
+    {
+      "startMs": 62330,
+      "endMs": 65650,
+      "translation": "여자 친구를 때렸고, 그녀는 경찰을 불렀지"
+    },
+    {
+      "startMs": 65650,
+      "endMs": 69030,
+      "translation": "난 형을 살았고 돈도 다 썼어"
+    },
+    {
+      "startMs": 69030,
+      "endMs": 72370,
+      "translation": "집으로 가는 길, 거의 다 왔어"
+    },
+    {
+      "startMs": 72370,
+      "endMs": 75780,
+      "translation": "가는 중이야, 계단을 올라"
+    },
+    {
+      "startMs": 75780,
+      "endMs": 78820,
+      "translation": "그런데 웬걸, 어떤 놈이 내 자리를 차지했어"
+    },
+    {
+      "startMs": 78820,
+      "endMs": 82760,
+      "translation": "그놈을 게토 대학으로 데려가 혼쭐을 내야 했지, 불빛들"
+    },
+    {
+      "startMs": 82760,
+      "endMs": 85300,
+      "translation": "경찰차 불빛, 손전등, 스포트라이트"
+    },
+    {
+      "startMs": 85300,
+      "endMs": 86950,
+      "translation": "스트로보, 가로등"
+    },
+    {
+      "startMs": 86950,
+      "endMs": 89530,
+      "translation": "모든 불빛, 모든 불빛"
+    },
+    {
+      "startMs": 89530,
+      "endMs": 92080,
+      "translation": "빠른 삶, 마약의 삶, 깡패의 삶"
+    },
+    {
+      "startMs": 92080,
+      "endMs": 93720,
+      "translation": "매일 밤 록스타의 삶"
+    },
+    {
+      "startMs": 93720,
+      "endMs": 94610,
+      "translation": "모든 불빛"
+    },
+    {
+      "startMs": 94610,
+      "endMs": 97960,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 97960,
+      "endMs": 101310,
+      "translation": "아주 환하게, 다들 이걸 봤으면 해"
+    },
+    {
+      "startMs": 101310,
+      "endMs": 104480,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 104480,
+      "endMs": 105770,
+      "translation": "내가 뭘 원하는지 알잖아"
+    },
+    {
+      "startMs": 105770,
+      "endMs": 107420,
+      "translation": "네가 전부 봤으면 해"
+    },
+    {
+      "startMs": 107420,
+      "endMs": 109500,
+      "translation": "네가 모든 불빛을 봤으면 해"
+    },
+    {
+      "startMs": 109500,
+      "endMs": 112610,
+      "translation": "접근 금지 명령, 딸을 볼 수 없어"
+    },
+    {
+      "startMs": 112610,
+      "endMs": 116170,
+      "translation": "그 애 엄마, 오빠, 할머니가 그 순서대로 날 미워해"
+    },
+    {
+      "startMs": 116170,
+      "endMs": 119380,
+      "translation": "공개 면회, 우린 보더스 서점에서 만났지"
+    },
+    {
+      "startMs": 119380,
+      "endMs": 123120,
+      "translation": "날 다시 받아 주면 더 잘 챙기겠다고 했어"
+    },
+    {
+      "startMs": 123120,
+      "endMs": 126050,
+      "translation": "실수했어, 머리를 부딪쳤지"
+    },
+    {
+      "startMs": 126050,
+      "endMs": 129850,
+      "translation": "법원이 날 쥐어짰고, 돈도 다 썼어"
+    },
+    {
+      "startMs": 129850,
+      "endMs": 132880,
+      "translation": "그 애에겐 아빠가 필요해, 제발"
+    },
+    {
+      "startMs": 132880,
+      "endMs": 136870,
+      "translation": "그 애를 그 게토 대학에서 자라게 둘 순 없어, 불빛들"
+    },
+    {
+      "startMs": 136870,
+      "endMs": 139410,
+      "translation": "경찰차 불빛, 손전등, 스포트라이트"
+    },
+    {
+      "startMs": 139410,
+      "endMs": 141060,
+      "translation": "스트로보, 가로등"
+    },
+    {
+      "startMs": 141060,
+      "endMs": 143650,
+      "translation": "모든 불빛, 모든 불빛"
+    },
+    {
+      "startMs": 143650,
+      "endMs": 146170,
+      "translation": "빠른 삶, 마약의 삶, 깡패의 삶"
+    },
+    {
+      "startMs": 146170,
+      "endMs": 147820,
+      "translation": "매일 밤 록스타의 삶"
+    },
+    {
+      "startMs": 147820,
+      "endMs": 148650,
+      "translation": "모든 불빛"
+    },
+    {
+      "startMs": 148650,
+      "endMs": 152040,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 152040,
+      "endMs": 155390,
+      "translation": "아주 환하게, 다들 이걸 봤으면 해"
+    },
+    {
+      "startMs": 155390,
+      "endMs": 158620,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 158620,
+      "endMs": 159890,
+      "translation": "내가 뭘 원하는지 알잖아"
+    },
+    {
+      "startMs": 159890,
+      "endMs": 161530,
+      "translation": "네가 전부 봤으면 해"
+    },
+    {
+      "startMs": 161530,
+      "endMs": 163870,
+      "translation": "네가 모든 불빛을 봤으면 해"
+    },
+    {
+      "startMs": 163870,
+      "endMs": 166620,
+      "translation": "내 몫을 챙기는 중이야, 자기"
+    },
+    {
+      "startMs": 166620,
+      "endMs": 170620,
+      "translation": "이놈들에게 알려 줘야 해, 그래"
+    },
+    {
+      "startMs": 170620,
+      "endMs": 173350,
+      "translation": "제대로 해, 에이"
+    },
+    {
+      "startMs": 173350,
+      "endMs": 177390,
+      "translation": "네 몫은 네가 가서 챙겨"
+    },
+    {
+      "startMs": 177390,
+      "endMs": 180130,
+      "translation": "내 몫을 챙기는 중이야, 자기"
+    },
+    {
+      "startMs": 180130,
+      "endMs": 184150,
+      "translation": "이놈들에게 알려 줘야 해, 그래"
+    },
+    {
+      "startMs": 184150,
+      "endMs": 186900,
+      "translation": "제대로 해, 에이"
+    },
+    {
+      "startMs": 186900,
+      "endMs": 190480,
+      "translation": "네 몫은 네가 가서 챙겨"
+    },
+    {
+      "startMs": 190480,
+      "endMs": 192190,
+      "translation": "실업자 줄"
+    },
+    {
+      "startMs": 192190,
+      "endMs": 193860,
+      "translation": "신용카드는 거절됐고"
+    },
+    {
+      "startMs": 193860,
+      "endMs": 197880,
+      "translation": "내가 미치기 직전이었다고 말 안 했나?"
+    },
+    {
+      "startMs": 197880,
+      "endMs": 200390,
+      "translation": "그리고 그 한 줄을 하려던 참이었지"
+    },
+    {
+      "startMs": 200390,
+      "endMs": 208440,
+      "translation": "좋아, 좋아, 이번엔 끝까지 가는 거야"
+    },
+    {
+      "startMs": 208440,
+      "endMs": 215170,
+      "translation": "이번엔 끝까지 가는 거야"
+    },
+    {
+      "startMs": 215170,
+      "endMs": 222020,
+      "translation": "이번엔 끝까지 가는 거야"
+    },
+    {
+      "startMs": 222020,
+      "endMs": 228780,
+      "translation": "이번엔 끝까지 가는 거야"
+    },
+    {
+      "startMs": 228780,
+      "endMs": 243310,
+      "translation": "이번엔 끝까지 가는 거야"
+    },
+    {
+      "startMs": 243310,
+      "endMs": 246730,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 246730,
+      "endMs": 250060,
+      "translation": "아주 환하게, 다들 이걸 봤으면 해"
+    },
+    {
+      "startMs": 250060,
+      "endMs": 253260,
+      "translation": "여기 불 좀 더 밝혀 줘, 자기야"
+    },
+    {
+      "startMs": 253260,
+      "endMs": 254570,
+      "translation": "내가 뭘 원하는지 알잖아"
+    },
+    {
+      "startMs": 254570,
+      "endMs": 256260,
+      "translation": "네가 전부 봤으면 해"
+    },
+    {
+      "startMs": 256260,
+      "endMs": 258030,
+      "translation": "네가 모든 불빛을 봤으면 해"
+    },
+    {
+      "startMs": 258030,
+      "endMs": 261340,
+      "translation": "워, 워, 오"
+    },
+    {
+      "startMs": 261340,
+      "endMs": 264770,
+      "translation": "말하려 했는데, 내가 할 수 있는 말은 '오'뿐이었어"
+    },
+    {
+      "startMs": 264770,
+      "endMs": 268060,
+      "translation": "워, 워, 오"
+    },
+    {
+      "startMs": 268060,
+      "endMs": 271600,
+      "translation": "말하려 했는데, 내가 할 수 있는 말은 '오'뿐이었어"
+    },
+    {
+      "startMs": 271600,
+      "endMs": 274760,
+      "translation": "워, 워, 오"
+    },
+    {
+      "startMs": 274760,
+      "endMs": 278380,
+      "translation": "말하려 했는데, 내가 할 수 있는 말은 '오'뿐이었어"
+    },
+    {
+      "startMs": 278380,
+      "endMs": 281540,
+      "translation": "워, 워, 오"
+    },
+    {
+      "startMs": 281540,
+      "endMs": 300000,
+      "translation": "말하려 했는데, 내가 할 수 있는 말은"
+    }
+  ]
+}

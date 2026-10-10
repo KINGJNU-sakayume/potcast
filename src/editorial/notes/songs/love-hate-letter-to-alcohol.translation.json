@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1049003,
+    "durationMs": 184000
+  },
+  "segments": [
+    {
+      "startMs": 50000,
+      "endMs": 52670,
+      "translation": "바닥에서 눈을 떴어"
+    },
+    {
+      "startMs": 52670,
+      "endMs": 56930,
+      "translation": "그 말은 그냥 혼자 삼켰어야 했나 봐"
+    },
+    {
+      "startMs": 56930,
+      "endMs": 61300,
+      "translation": "알고 보니 난 입을 꽤 잘 놀리더라"
+    },
+    {
+      "startMs": 61300,
+      "endMs": 66570,
+      "translation": "그런데 충분히 잘하진 못했어"
+    },
+    {
+      "startMs": 66570,
+      "endMs": 70250,
+      "translation": "알잖아, 내가 한번 덤비면 불이 꺼지는 거"
+    },
+    {
+      "startMs": 70250,
+      "endMs": 74620,
+      "translation": "노래가 너무 시끄러워서 아무것도 안 들렸어"
+    },
+    {
+      "startMs": 74620,
+      "endMs": 79100,
+      "translation": "어젯밤까지만 해도 입안에 이가 서른두 개였는데"
+    },
+    {
+      "startMs": 79100,
+      "endMs": 82850,
+      "translation": "몇 개는 사라졌어..."
+    },
+    {
+      "startMs": 82850,
+      "endMs": 85010,
+      "translation": "왜 하필 빌어먹게 내 하루를 망쳐야 했어?"
+    },
+    {
+      "startMs": 85010,
+      "endMs": 89870,
+      "translation": "내가 엉덩이를 걷어차인 건 너 때문이야"
+    },
+    {
+      "startMs": 89870,
+      "endMs": 93810,
+      "translation": "그래도 내 슬픔을 잠재울 방법은 너뿐이야"
+    },
+    {
+      "startMs": 93810,
+      "endMs": 99060,
+      "translation": "이건 술에게 보내는 내 사랑과 미움의 편지야"
+    },
+    {
+      "startMs": 99060,
+      "endMs": 104280,
+      "translation": "내가 엉덩이를 걷어차인 건 너 때문이야"
+    },
+    {
+      "startMs": 104280,
+      "endMs": 106690,
+      "translation": "잡지 화보처럼 바닥에 쫙 뻗어 있었어"
+    },
+    {
+      "startMs": 106690,
+      "endMs": 108770,
+      "translation": "제이키랑 그 동료가 날 집까지 태워다 줬어"
+    },
+    {
+      "startMs": 108770,
+      "endMs": 111200,
+      "translation": "거울을 보니 뭔가 잘못됐어"
+    },
+    {
+      "startMs": 111200,
+      "endMs": 113330,
+      "translation": "치과 의사한테 전화 좀 걸어 줘"
+    },
+    {
+      "startMs": 113330,
+      "endMs": 115410,
+      "translation": "열쇠를 찾아서 다시 나갔지"
+    },
+    {
+      "startMs": 115410,
+      "endMs": 118010,
+      "translation": "누가 어떻게 된 거냐고 묻더라"
+    },
+    {
+      "startMs": 118010,
+      "endMs": 122580,
+      "translation": "어제 일처럼 기억나"
+    },
+    {
+      "startMs": 122580,
+      "endMs": 127000,
+      "translation": "한 잔 마시고, 한 잔 마시고, 한 잔 마시고, 또 한 잔 마셨어"
+    },
+    {
+      "startMs": 127000,
+      "endMs": 131850,
+      "translation": "그놈 눈을 노리고 휘두르다 의자에서 그대로 떨어졌어"
+    },
+    {
+      "startMs": 131850,
+      "endMs": 136650,
+      "translation": "그러다 커다란 크롬 반지가 옆에서 날아왔지"
+    },
+    {
+      "startMs": 136650,
+      "endMs": 138050,
+      "translation": "죽은 줄 알았어..."
+    },
+    {
+      "startMs": 138050,
+      "endMs": 140450,
+      "translation": "왜 하필 빌어먹게 내 밤을 망쳐야 했어?"
+    },
+    {
+      "startMs": 140450,
+      "endMs": 145280,
+      "translation": "내가 엉덩이를 걷어차인 건 너 때문이야"
+    },
+    {
+      "startMs": 145280,
+      "endMs": 149620,
+      "translation": "그래도 내 슬픔을 잠재울 방법은 너뿐이야"
+    },
+    {
+      "startMs": 149620,
+      "endMs": 154220,
+      "translation": "이건 술에게 보내는 내 사랑과 미움의 편지야"
+    },
+    {
+      "startMs": 154220,
+      "endMs": 184000,
+      "translation": "내가 엉덩이를 걷어차인 건 너 때문이야"
+    }
+  ]
+}

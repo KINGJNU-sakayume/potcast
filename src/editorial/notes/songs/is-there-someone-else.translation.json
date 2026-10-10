@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 148321,
+    "durationMs": 199000
+  },
+  "segments": [
+    {
+      "startMs": 30340,
+      "endMs": 34090,
+      "translation": "네가 뭔가 숨기고 있다는 거 알아"
+    },
+    {
+      "startMs": 34090,
+      "endMs": 37320,
+      "translation": "네 마음 가까이 두었던 무언가를"
+    },
+    {
+      "startMs": 37320,
+      "endMs": 41240,
+      "translation": "그게 매일 조금씩 다가오는 게 느껴졌어"
+    },
+    {
+      "startMs": 41240,
+      "endMs": 43080,
+      "translation": "베이비, 처음부터"
+    },
+    {
+      "startMs": 43080,
+      "endMs": 47350,
+      "translation": "우리가 싸울 때 네가 짓는 그 표정을 알아 (싸울 때)"
+    },
+    {
+      "startMs": 47350,
+      "endMs": 49930,
+      "translation": "우리가 싸울 때 (싸울 때)"
+    },
+    {
+      "startMs": 49930,
+      "endMs": 54530,
+      "translation": "예전엔 거짓말하던 쪽이 나였으니까 (거짓말)"
+    },
+    {
+      "startMs": 54530,
+      "endMs": 56380,
+      "translation": "오, 거짓말하던 (거짓말)"
+    },
+    {
+      "startMs": 56380,
+      "endMs": 61450,
+      "translation": "오, 다른 사람이 있는 거야, 아니야?"
+    },
+    {
+      "startMs": 61450,
+      "endMs": 64550,
+      "translation": "널 곁에 두고 싶으니까"
+    },
+    {
+      "startMs": 64550,
+      "endMs": 68470,
+      "translation": "내 자리를 잃고 싶지 않아"
+    },
+    {
+      "startMs": 68470,
+      "endMs": 70420,
+      "translation": "알아야겠으니까"
+    },
+    {
+      "startMs": 70420,
+      "endMs": 73910,
+      "translation": "네가 그를 아프게 하는 건지, 나를 아프게 하는 건지"
+    },
+    {
+      "startMs": 73910,
+      "endMs": 79010,
+      "translation": "너와 함께가 아니라면, 난 존재하고 싶지 않아"
+    },
+    {
+      "startMs": 79010,
+      "endMs": 82840,
+      "translation": "다른 사람이 있는 거야, 아니야?"
+    },
+    {
+      "startMs": 82840,
+      "endMs": 87260,
+      "translation": "우, 아니야?"
+    },
+    {
+      "startMs": 87260,
+      "endMs": 91120,
+      "translation": "난 충실한 사람을 가질 자격이 없어"
+    },
+    {
+      "startMs": 91120,
+      "endMs": 94320,
+      "translation": "내가 모를 것 같아?"
+    },
+    {
+      "startMs": 94320,
+      "endMs": 99730,
+      "translation": "그리고 예전의 나에게 갇힌 죄수가 되고 싶지 않아"
+    },
+    {
+      "startMs": 99730,
+      "endMs": 106610,
+      "translation": "맹세해, 더 나은 쪽으로 바뀌었어, 더 나은 쪽으로"
+    },
+    {
+      "startMs": 106610,
+      "endMs": 113270,
+      "translation": "너와 영원히 함께하고 싶으니까, 영원히"
+    },
+    {
+      "startMs": 113270,
+      "endMs": 118320,
+      "translation": "오, 다른 사람이 있는 거야, 아니야?"
+    },
+    {
+      "startMs": 118320,
+      "endMs": 121630,
+      "translation": "널 곁에 두고 싶으니까"
+    },
+    {
+      "startMs": 121630,
+      "endMs": 125430,
+      "translation": "내 자리를 잃고 싶지 않아"
+    },
+    {
+      "startMs": 125430,
+      "endMs": 127380,
+      "translation": "알아야겠으니까"
+    },
+    {
+      "startMs": 127380,
+      "endMs": 130660,
+      "translation": "네가 그를 아프게 하는 건지, 나를 아프게 하는 건지"
+    },
+    {
+      "startMs": 130660,
+      "endMs": 135890,
+      "translation": "너와 함께가 아니라면, 난 존재하고 싶지 않아"
+    },
+    {
+      "startMs": 135890,
+      "endMs": 139940,
+      "translation": "다른 사람이 있는 거야, 아니야?"
+    },
+    {
+      "startMs": 139940,
+      "endMs": 144890,
+      "translation": "우, 아니야?"
+    },
+    {
+      "startMs": 144890,
+      "endMs": 147870,
+      "translation": "워, 예"
+    },
+    {
+      "startMs": 147870,
+      "endMs": 151780,
+      "translation": "헤이!"
+    },
+    {
+      "startMs": 151780,
+      "endMs": 155580,
+      "translation": "예-예, 예-예"
+    },
+    {
+      "startMs": 155580,
+      "endMs": 162100,
+      "translation": "오, 예, 오, 예, 오-오"
+    },
+    {
+      "startMs": 162100,
+      "endMs": 199000,
+      "translation": "헤이!"
+    }
+  ]
+}

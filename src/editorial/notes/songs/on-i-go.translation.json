@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 371645,
+    "durationMs": 189000
+  },
+  "segments": [
+    {
+      "startMs": 10270,
+      "endMs": 12320,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 12320,
+      "endMs": 14430,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 14430,
+      "endMs": 16630,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 16630,
+      "endMs": 19250,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 19250,
+      "endMs": 21540,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 21540,
+      "endMs": 23600,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 23600,
+      "endMs": 25870,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 25870,
+      "endMs": 28810,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 28810,
+      "endMs": 30510,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 30510,
+      "endMs": 32680,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 32680,
+      "endMs": 34890,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 34890,
+      "endMs": 37580,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 37580,
+      "endMs": 39830,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 39830,
+      "endMs": 42010,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 42010,
+      "endMs": 44160,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 44160,
+      "endMs": 46680,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 46680,
+      "endMs": 49420,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 49420,
+      "endMs": 51130,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 51130,
+      "endMs": 53420,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 53420,
+      "endMs": 77960,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 77960,
+      "endMs": 79440,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 79440,
+      "endMs": 81540,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 81540,
+      "endMs": 83740,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 83740,
+      "endMs": 86280,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 86280,
+      "endMs": 88480,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 88480,
+      "endMs": 90670,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 90670,
+      "endMs": 92800,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 92800,
+      "endMs": 95450,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 95450,
+      "endMs": 97620,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 97620,
+      "endMs": 99800,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 99800,
+      "endMs": 101960,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 101960,
+      "endMs": 104620,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 104620,
+      "endMs": 106710,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 106710,
+      "endMs": 109000,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 109000,
+      "endMs": 110640,
+      "translation": "지금까지는 증명하려고…"
+    },
+    {
+      "startMs": 110640,
+      "endMs": 130250,
+      "translation": "아, 젠장, 제기랄"
+    },
+    {
+      "startMs": 130250,
+      "endMs": 135210,
+      "translation": "넌 오래전에 떠났어, 오래전에 떠났어, 오래전에 떠났어"
+    },
+    {
+      "startMs": 135210,
+      "endMs": 137290,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 137290,
+      "endMs": 139510,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 139510,
+      "endMs": 141790,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 141790,
+      "endMs": 144290,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 144290,
+      "endMs": 146390,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 146390,
+      "endMs": 148660,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 148660,
+      "endMs": 150780,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 150780,
+      "endMs": 153360,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 153360,
+      "endMs": 155660,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 155660,
+      "endMs": 157780,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 157780,
+      "endMs": 159940,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 159940,
+      "endMs": 162610,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 162610,
+      "endMs": 164890,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 164890,
+      "endMs": 166970,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 166970,
+      "endMs": 169090,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 169090,
+      "endMs": 171740,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    },
+    {
+      "startMs": 171740,
+      "endMs": 173900,
+      "translation": "나는 간다, 다가가지도 멀어지지도 않고"
+    },
+    {
+      "startMs": 173900,
+      "endMs": 176110,
+      "translation": "지금까지는 하루, 또 하루였다"
+    },
+    {
+      "startMs": 176110,
+      "endMs": 178140,
+      "translation": "지금까지는 증명하려고 서둘렀다"
+    },
+    {
+      "startMs": 178140,
+      "endMs": 189000,
+      "translation": "하지만 이제는 그저 움직이기 위해 움직인다"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11571558,
+    "durationMs": 195000
+  },
+  "segments": [
+    {
+      "startMs": 8820,
+      "endMs": 12730,
+      "translation": "주 40시간 일하다 보니 미쳐 버릴 것 같아"
+    },
+    {
+      "startMs": 12730,
+      "endMs": 16970,
+      "translation": "댈러스는 또 연장전에서 졌고"
+    },
+    {
+      "startMs": 16970,
+      "endMs": 20550,
+      "translation": "65번 도로에서 과속하다 딱지를 떼였어"
+    },
+    {
+      "startMs": 20550,
+      "endMs": 24950,
+      "translation": "어디로 가는지도 모르겠어"
+    },
+    {
+      "startMs": 24950,
+      "endMs": 29000,
+      "translation": "아무래도 또 일을 망쳐 버렸나 봐"
+    },
+    {
+      "startMs": 29000,
+      "endMs": 32960,
+      "translation": "이제 내 여자는 털사의 바람보다 더 멀리 떠났어"
+    },
+    {
+      "startMs": 32960,
+      "endMs": 36600,
+      "translation": "이렇게 말짱한 정신인 걸 보니"
+    },
+    {
+      "startMs": 36600,
+      "endMs": 39500,
+      "translation": "한 병 활짝 따야겠어"
+    },
+    {
+      "startMs": 39500,
+      "endMs": 43660,
+      "translation": "누가 술 좀 따라 줘, 누가 담배 하나만 줘"
+    },
+    {
+      "startMs": 43660,
+      "endMs": 47790,
+      "translation": "이제 곧 취기가 오를 거야, 이제 곧 신이 날 거야"
+    },
+    {
+      "startMs": 47790,
+      "endMs": 51970,
+      "translation": "그래, 존스네 집 따라잡느라 허리가 휘었어"
+    },
+    {
+      "startMs": 51970,
+      "endMs": 55720,
+      "translation": "무슨 말인지 알지, 어떻게 돌아가는지 알잖아"
+    },
+    {
+      "startMs": 55720,
+      "endMs": 61130,
+      "translation": "금요일이 되고 월급을 받으면 나한테 한 잔 밀어 줘"
+    },
+    {
+      "startMs": 61130,
+      "endMs": 67680,
+      "translation": "날 부르는 술 한 잔 소리가 들리면 아무 생각도 안 나 (헤이)"
+    },
+    {
+      "startMs": 67680,
+      "endMs": 72570,
+      "translation": "누가 술 좀 따라 줘"
+    },
+    {
+      "startMs": 72570,
+      "endMs": 77450,
+      "translation": "술 좀 따라 줘"
+    },
+    {
+      "startMs": 77450,
+      "endMs": 81370,
+      "translation": "버번 같은 갈색 눈이 날 취하게 하려 해"
+    },
+    {
+      "startMs": 81370,
+      "endMs": 85420,
+      "translation": "병도 일도 다 끝날 때까진 안 멈춰"
+    },
+    {
+      "startMs": 85420,
+      "endMs": 89370,
+      "translation": "헤이, 미래의 사랑을 찾은 것 같아"
+    },
+    {
+      "startMs": 89370,
+      "endMs": 91980,
+      "translation": "친구, 저 여자한테 한 잔 사 주는 게 좋을걸"
+    },
+    {
+      "startMs": 91980,
+      "endMs": 96070,
+      "translation": "누가 술 좀 따라 줘, 누가 담배 하나만 줘"
+    },
+    {
+      "startMs": 96070,
+      "endMs": 100150,
+      "translation": "이제 곧 취기가 오를 거야, 이제 곧 신이 날 거야"
+    },
+    {
+      "startMs": 100150,
+      "endMs": 104440,
+      "translation": "그래, 존스네 집 따라잡느라 허리가 휘었어"
+    },
+    {
+      "startMs": 104440,
+      "endMs": 108350,
+      "translation": "무슨 말인지 알지, 어떻게 돌아가는지 알잖아"
+    },
+    {
+      "startMs": 108350,
+      "endMs": 113810,
+      "translation": "금요일이 되고 월급을 받으면 나한테 한 잔 밀어 줘"
+    },
+    {
+      "startMs": 113810,
+      "endMs": 120290,
+      "translation": "날 부르는 술 한 잔 소리가 들리면 아무 생각도 안 나 (헤이)"
+    },
+    {
+      "startMs": 120290,
+      "endMs": 124140,
+      "translation": "누가 술 좀 따라 줘"
+    },
+    {
+      "startMs": 124140,
+      "endMs": 130100,
+      "translation": "누가 술 좀 따라 줘"
+    },
+    {
+      "startMs": 130100,
+      "endMs": 138340,
+      "translation": "우"
+    },
+    {
+      "startMs": 138340,
+      "endMs": 142480,
+      "translation": "누가 술 좀 따라 줘 (누가 담배 하나만 줘)"
+    },
+    {
+      "startMs": 142480,
+      "endMs": 146310,
+      "translation": "이제 곧 취기가 오를 거야 (이제 곧 신이 날 거야)"
+    },
+    {
+      "startMs": 146310,
+      "endMs": 150760,
+      "translation": "그래, 허리가 휘었어 (존스네 집 따라잡느라)"
+    },
+    {
+      "startMs": 150760,
+      "endMs": 154650,
+      "translation": "무슨 말인지 알지 (그래, 어떻게 돌아가는지 알잖아)"
+    },
+    {
+      "startMs": 154650,
+      "endMs": 160060,
+      "translation": "금요일이 되고 월급을 받으면 나한테 한 잔 밀어 줘"
+    },
+    {
+      "startMs": 160060,
+      "endMs": 166520,
+      "translation": "날 부르는 술 한 잔 소리가 들리면 아무 생각도 안 나 (헤이)"
+    },
+    {
+      "startMs": 166520,
+      "endMs": 170460,
+      "translation": "누가 술 좀 따라 줘"
+    },
+    {
+      "startMs": 170460,
+      "endMs": 174130,
+      "translation": "누가 술 좀 따라 줘"
+    },
+    {
+      "startMs": 174130,
+      "endMs": 178730,
+      "translation": "그래, 누가 술 좀 따라 줘"
+    },
+    {
+      "startMs": 178730,
+      "endMs": 181850,
+      "translation": "헤이, 네, 선생님, 술 좀 따라 주세요"
+    },
+    {
+      "startMs": 181850,
+      "endMs": 183400,
+      "translation": "지금 갑니다, 친구"
+    },
+    {
+      "startMs": 183400,
+      "endMs": 195000,
+      "translation": "술 좀 따라 줘"
+    }
+  ]
+}

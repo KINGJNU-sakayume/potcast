@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 138194,
+    "durationMs": 164000
+  },
+  "segments": [
+    {
+      "startMs": 1370,
+      "endMs": 4400,
+      "translation": "예, 예, 예"
+    },
+    {
+      "startMs": 4400,
+      "endMs": 7390,
+      "translation": "예, 예, 예, 예"
+    },
+    {
+      "startMs": 7390,
+      "endMs": 12490,
+      "translation": "오, 오, 오"
+    },
+    {
+      "startMs": 12490,
+      "endMs": 14820,
+      "translation": "에"
+    },
+    {
+      "startMs": 14820,
+      "endMs": 17530,
+      "translation": "예, 예, 예"
+    },
+    {
+      "startMs": 17530,
+      "endMs": 20880,
+      "translation": "예, 예, 예, 예"
+    },
+    {
+      "startMs": 20880,
+      "endMs": 23550,
+      "translation": "오, 우리가 가진 건"
+    },
+    {
+      "startMs": 23550,
+      "endMs": 25840,
+      "translation": "베이비, 우리가 가진 건"
+    },
+    {
+      "startMs": 25840,
+      "endMs": 30300,
+      "translation": "안전해, 독한 사랑에 빠졌던 적도 있지"
+    },
+    {
+      "startMs": 30300,
+      "endMs": 32690,
+      "translation": "그게 우릴 갈라놓았어"
+    },
+    {
+      "startMs": 32690,
+      "endMs": 36820,
+      "translation": "네가 원하는 것들, 난 찾고 있지 않아"
+    },
+    {
+      "startMs": 36820,
+      "endMs": 39680,
+      "translation": "넌 이제 내 가장 친한 친구야"
+    },
+    {
+      "startMs": 39680,
+      "endMs": 42050,
+      "translation": "넌 이제 내 가장 친한 친구야"
+    },
+    {
+      "startMs": 42050,
+      "endMs": 44920,
+      "translation": "오, 난 원하지 않아"
+    },
+    {
+      "startMs": 44920,
+      "endMs": 50310,
+      "translation": "우리가 사랑에 빠지면 네 마음을 책임지는 걸"
+    },
+    {
+      "startMs": 50310,
+      "endMs": 53820,
+      "translation": "내가 서툴러서 찢어 버릴 테니까"
+    },
+    {
+      "startMs": 53820,
+      "endMs": 55690,
+      "translation": "널 정말 사랑해"
+    },
+    {
+      "startMs": 55690,
+      "endMs": 58270,
+      "translation": "하지만 우린 가까워질 수 없어"
+    },
+    {
+      "startMs": 58270,
+      "endMs": 60950,
+      "translation": "넌 이제 내 가장 친한 친구야"
+    },
+    {
+      "startMs": 60950,
+      "endMs": 63640,
+      "translation": "넌 이제 내 가장 친한 친구야"
+    },
+    {
+      "startMs": 63640,
+      "endMs": 66410,
+      "translation": "오, 우리가 절정에 이를 때가 좋아"
+    },
+    {
+      "startMs": 66410,
+      "endMs": 67850,
+      "translation": "그리고 난 절대 널 데게 하지 않을 거야"
+    },
+    {
+      "startMs": 67850,
+      "endMs": 69900,
+      "translation": "절대 널 아프게 할 수 없어"
+    },
+    {
+      "startMs": 69900,
+      "endMs": 71680,
+      "translation": "그렇게만 한다면"
+    },
+    {
+      "startMs": 71680,
+      "endMs": 73360,
+      "translation": "더 나아가려 하지 마"
+    },
+    {
+      "startMs": 73360,
+      "endMs": 75280,
+      "translation": "우정에만 집중해"
+    },
+    {
+      "startMs": 75280,
+      "endMs": 77250,
+      "translation": "살짝 옆길로 새고 있잖아"
+    },
+    {
+      "startMs": 77250,
+      "endMs": 78480,
+      "translation": "조금씩 마음이 생기고 있잖아"
+    },
+    {
+      "startMs": 78480,
+      "endMs": 80420,
+      "translation": "우리 약속한 줄 알았는데"
+    },
+    {
+      "startMs": 80420,
+      "endMs": 82350,
+      "translation": "넌 그런 사람이 아닌 줄 알았는데"
+    },
+    {
+      "startMs": 82350,
+      "endMs": 85060,
+      "translation": "그래, 넌 그런 사람이 아닌 줄 알았는데"
+    },
+    {
+      "startMs": 85060,
+      "endMs": 86510,
+      "translation": "오"
+    },
+    {
+      "startMs": 86510,
+      "endMs": 88550,
+      "translation": "더는 친구가 아니야"
+    },
+    {
+      "startMs": 88550,
+      "endMs": 90250,
+      "translation": "친구로서 자는 건 이제"
+    },
+    {
+      "startMs": 90250,
+      "endMs": 94430,
+      "translation": "넌 더는 친구로서 자고 싶지 않대"
+    },
+    {
+      "startMs": 94430,
+      "endMs": 95780,
+      "translation": "더는 친구가 아니야"
+    },
+    {
+      "startMs": 95780,
+      "endMs": 97140,
+      "translation": "우, 우"
+    },
+    {
+      "startMs": 97140,
+      "endMs": 99390,
+      "translation": "더는 친구가 아니야"
+    },
+    {
+      "startMs": 99390,
+      "endMs": 100920,
+      "translation": "친구로서 자는 건 이제 그만"
+    },
+    {
+      "startMs": 100920,
+      "endMs": 104940,
+      "translation": "넌 더는 친구로서 자고 싶지 않대"
+    },
+    {
+      "startMs": 104940,
+      "endMs": 106480,
+      "translation": "오"
+    },
+    {
+      "startMs": 106480,
+      "endMs": 109150,
+      "translation": "오, 우리가 가진 건 (오 예)"
+    },
+    {
+      "startMs": 109150,
+      "endMs": 111130,
+      "translation": "베이비, 우리가 가진 건"
+    },
+    {
+      "startMs": 111130,
+      "endMs": 115830,
+      "translation": "안전해, 독한 사랑에 빠졌던 적도 있지"
+    },
+    {
+      "startMs": 115830,
+      "endMs": 117980,
+      "translation": "그게 우릴 갈라놓았어"
+    },
+    {
+      "startMs": 117980,
+      "endMs": 122250,
+      "translation": "네가 원하는 것들, 난 찾고 있지 않아 (찾고 있지 않아)"
+    },
+    {
+      "startMs": 122250,
+      "endMs": 125050,
+      "translation": "넌 이제 내 가장 친한 친구야 (오 베이비)"
+    },
+    {
+      "startMs": 125050,
+      "endMs": 127870,
+      "translation": "넌 이제 내 가장 친한 친구야"
+    },
+    {
+      "startMs": 127870,
+      "endMs": 130320,
+      "translation": "오, 난 원하지 않아"
+    },
+    {
+      "startMs": 130320,
+      "endMs": 135710,
+      "translation": "우리가 사랑에 빠지면 네 마음을 책임지는 걸 (오 안 돼)"
+    },
+    {
+      "startMs": 135710,
+      "endMs": 139010,
+      "translation": "내가 서툴러서 찢어 버릴 테니까"
+    },
+    {
+      "startMs": 139010,
+      "endMs": 141240,
+      "translation": "널 정말 사랑해 (오 예, 예)"
+    },
+    {
+      "startMs": 141240,
+      "endMs": 143560,
+      "translation": "하지만 우린 가까워질 수 없어"
+    },
+    {
+      "startMs": 143560,
+      "endMs": 146230,
+      "translation": "넌 이제 내 가장 친한 친구야 (가장 친한 친구)"
+    },
+    {
+      "startMs": 146230,
+      "endMs": 149120,
+      "translation": "넌 이제 내 가장 친한 친구야 (가장 친한 친구)"
+    },
+    {
+      "startMs": 149120,
+      "endMs": 150530,
+      "translation": "이제"
+    },
+    {
+      "startMs": 150530,
+      "endMs": 156410,
+      "translation": "Dawn FM (라디오)"
+    },
+    {
+      "startMs": 156410,
+      "endMs": 159080,
+      "translation": "위시 라인, 위시 라인, 위시 라인"
+    },
+    {
+      "startMs": 159080,
+      "endMs": 164000,
+      "translation": "위시 라인, 위시, 위시, 위시"
+    }
+  ]
+}

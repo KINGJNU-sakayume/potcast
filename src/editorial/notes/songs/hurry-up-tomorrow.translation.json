@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974559,
+    "durationMs": 292000
+  },
+  "segments": [
+    {
+      "startMs": 50,
+      "endMs": 12130,
+      "translation": "워, 워, 워 (워)"
+    },
+    {
+      "startMs": 12130,
+      "endMs": 26180,
+      "translation": "워 (워), 워, 워, 워"
+    },
+    {
+      "startMs": 26180,
+      "endMs": 30340,
+      "translation": "당신의 불로 날 씻어 주세요"
+    },
+    {
+      "startMs": 30340,
+      "endMs": 37490,
+      "translation": "내 죄의 값을 또 누가 치러야 하나요?"
+    },
+    {
+      "startMs": 37490,
+      "endMs": 43420,
+      "translation": "내 사랑은 꾸며낸 거였어요, 구하기엔 너무 늦었어요"
+    },
+    {
+      "startMs": 43420,
+      "endMs": 49940,
+      "translation": "이제 끝을 맞을 준비가 됐어요"
+    },
+    {
+      "startMs": 49940,
+      "endMs": 54380,
+      "translation": "그러니 당신의 빛으로 날 태워 주세요"
+    },
+    {
+      "startMs": 54380,
+      "endMs": 61450,
+      "translation": "이제 이길 싸움은 하나도 남지 않았어요"
+    },
+    {
+      "startMs": 61450,
+      "endMs": 67430,
+      "translation": "날 묶어 마주하게 해 주세요, 도망칠 수 없으니까, 그리고"
+    },
+    {
+      "startMs": 67430,
+      "endMs": 73840,
+      "translation": "이게 끝이라는 걸 받아들일게요"
+    },
+    {
+      "startMs": 73840,
+      "endMs": 80180,
+      "translation": "그리고 내가 찾던 걸 찾게 되길 바라요"
+    },
+    {
+      "startMs": 80180,
+      "endMs": 86150,
+      "translation": "누군가 저 위에서 지켜보고 있길 바라요"
+    },
+    {
+      "startMs": 86150,
+      "endMs": 92150,
+      "translation": "거짓말도 끝, 잃는 것도 끝"
+    },
+    {
+      "startMs": 92150,
+      "endMs": 97270,
+      "translation": "내 고백으로 충분하길 바라요"
+    },
+    {
+      "startMs": 97270,
+      "endMs": 103420,
+      "translation": "그래서 삶이 끝난 뒤 천국을 볼 수 있기를"
+    },
+    {
+      "startMs": 103420,
+      "endMs": 109710,
+      "translation": "죽을 때 천국을 원해요"
+    },
+    {
+      "startMs": 109710,
+      "endMs": 115310,
+      "translation": "변하고 싶어요, 이 고통이"
+    },
+    {
+      "startMs": 115310,
+      "endMs": 121940,
+      "translation": "더는 없길, 예"
+    },
+    {
+      "startMs": 121940,
+      "endMs": 124860,
+      "translation": "그들의 거짓말보다 훨씬 많은 걸 빼앗겼어요"
+    },
+    {
+      "startMs": 124860,
+      "endMs": 127620,
+      "translation": "그들이 내 일부를 가져갔고, 난 애써 왔어요"
+    },
+    {
+      "startMs": 127620,
+      "endMs": 130820,
+      "translation": "아버지가 남긴 빈자리를 채우려고"
+    },
+    {
+      "startMs": 130820,
+      "endMs": 133730,
+      "translation": "아무도 다시는 날 버리지 않도록"
+    },
+    {
+      "startMs": 133730,
+      "endMs": 138510,
+      "translation": "미안해요 (예)"
+    },
+    {
+      "startMs": 138510,
+      "endMs": 146570,
+      "translation": "약속해요, 미안해요, 예"
+    },
+    {
+      "startMs": 146570,
+      "endMs": 150220,
+      "translation": "이제 수영을 배웠던 그 욕조에서 익사하고 있어요"
+    },
+    {
+      "startMs": 150220,
+      "endMs": 154830,
+      "translation": "내 순수함을 한 방울이라도 지키려 애쓰던 엄마와 함께"
+    },
+    {
+      "startMs": 154830,
+      "endMs": 157640,
+      "translation": "나 자신을 저버렸듯 엄마도 저버렸어요"
+    },
+    {
+      "startMs": 157640,
+      "endMs": 162580,
+      "translation": "미안해요 (예)"
+    },
+    {
+      "startMs": 162580,
+      "endMs": 169850,
+      "translation": "엄마, 미안해요, 오, 예"
+    },
+    {
+      "startMs": 169850,
+      "endMs": 175790,
+      "translation": "그리고 내가 찾던 걸 찾게 되길 바라요"
+    },
+    {
+      "startMs": 175790,
+      "endMs": 182140,
+      "translation": "그분이 저 위에서 지켜보고 있길 바라요"
+    },
+    {
+      "startMs": 182140,
+      "endMs": 187990,
+      "translation": "거짓말도 끝, 잃는 것도 끝"
+    },
+    {
+      "startMs": 187990,
+      "endMs": 193270,
+      "translation": "이 고백으로 충분하길 바라요"
+    },
+    {
+      "startMs": 193270,
+      "endMs": 199180,
+      "translation": "그래서 삶이 끝난 뒤 천국을 볼 수 있기를"
+    },
+    {
+      "startMs": 199180,
+      "endMs": 205680,
+      "translation": "죽을 때 천국을 원해요"
+    },
+    {
+      "startMs": 205680,
+      "endMs": 211400,
+      "translation": "변하고 싶어요, 이 고통이"
+    },
+    {
+      "startMs": 211400,
+      "endMs": 217230,
+      "translation": "더는 없길, 오, 예"
+    },
+    {
+      "startMs": 217230,
+      "endMs": 223170,
+      "translation": "아니, 삶이 끝난 뒤 천국이 필요해요"
+    },
+    {
+      "startMs": 223170,
+      "endMs": 229560,
+      "translation": "죽을 때 천국을 원해요"
+    },
+    {
+      "startMs": 229560,
+      "endMs": 235460,
+      "translation": "변하고 싶어요, 이 고통이"
+    },
+    {
+      "startMs": 235460,
+      "endMs": 292000,
+      "translation": "더는, 더는, 더는 없길, 아, 아"
+    }
+  ]
+}

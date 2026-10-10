@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 580660,
+    "durationMs": 79000
+  },
+  "segments": [
+    {
+      "startMs": 70,
+      "endMs": 3180,
+      "translation": "브로크, 브로크, 브로크 파이 브로크 (우린 가진 게 없어)"
+    },
+    {
+      "startMs": 3180,
+      "endMs": 6310,
+      "translation": "브로크, 브로크, 브로크 파이 브로크 (우린 가진 게 없어)"
+    },
+    {
+      "startMs": 6310,
+      "endMs": 9670,
+      "translation": "브로크, 브로크, 브로크 파이 브로크 (우린 가진 게 없어)"
+    },
+    {
+      "startMs": 9670,
+      "endMs": 12300,
+      "translation": "브로크, 브로크, 브로크 파이…"
+    },
+    {
+      "startMs": 12300,
+      "endMs": 14650,
+      "translation": "\"오늘 이 비밀 회의를 소집한 건"
+    },
+    {
+      "startMs": 14650,
+      "endMs": 18040,
+      "translation": "우리 가운데 가짜가 있기 때문이야"
+    },
+    {
+      "startMs": 18040,
+      "endMs": 20050,
+      "translation": "우리 가운데 가짜가 있어"
+    },
+    {
+      "startMs": 20050,
+      "endMs": 24270,
+      "translation": "바로 여기 이 형제가 몰래 비트를 만들어 왔어"
+    },
+    {
+      "startMs": 24270,
+      "endMs": 25870,
+      "translation": "그래, 그랬다고"
+    },
+    {
+      "startMs": 25870,
+      "endMs": 28240,
+      "translation": "가난한 척하면서 우리 사이를 걸어 다녔지"
+    },
+    {
+      "startMs": 28240,
+      "endMs": 30170,
+      "translation": "이 형제는 매일 밥을 먹었어"
+    },
+    {
+      "startMs": 30170,
+      "endMs": 33670,
+      "translation": "믿어지나? 매일 밥을 먹었다니까!"
+    },
+    {
+      "startMs": 33670,
+      "endMs": 37390,
+      "translation": "우리 편인 척했지만, 우리 사람이 아니야"
+    },
+    {
+      "startMs": 37390,
+      "endMs": 38740,
+      "translation": "나도 믿고 싶지 않았어"
+    },
+    {
+      "startMs": 38740,
+      "endMs": 41030,
+      "translation": "그런데 형제 카녜의 옷장에 들어갔더니"
+    },
+    {
+      "startMs": 41030,
+      "endMs": 44080,
+      "translation": "새 신발이 있었어!"
+    },
+    {
+      "startMs": 44080,
+      "endMs": 45360,
+      "translation": "새 신발이 있었다고!"
+    },
+    {
+      "startMs": 45360,
+      "endMs": 51020,
+      "translation": "카녜, 앞으로 나와서 이 새 신발에 대해 설명해 볼래?!\""
+    },
+    {
+      "startMs": 51020,
+      "endMs": 55970,
+      "translation": "\"그게, 미쳤어요, 난 안, 안 했, 음, 그냥, 음, 그게…\""
+    },
+    {
+      "startMs": 55970,
+      "endMs": 58820,
+      "translation": "\"아니, 크게 말해, 형제!\""
+    },
+    {
+      "startMs": 58820,
+      "endMs": 60760,
+      "translation": "\"난 지키려, 그러니까 내 뿌리를 지키려고…\""
+    },
+    {
+      "startMs": 60760,
+      "endMs": 61600,
+      "translation": "\"뭐?\""
+    },
+    {
+      "startMs": 61600,
+      "endMs": 62670,
+      "translation": "\"내 뿌리를 지키고 싶었고…\""
+    },
+    {
+      "startMs": 62670,
+      "endMs": 66330,
+      "translation": "\"뭐라고?! 그 새 신발 신고 당장 여기서 나가, 카녜"
+    },
+    {
+      "startMs": 66330,
+      "endMs": 68160,
+      "translation": "다시는 그거 신고 돌아오지 마"
+    },
+    {
+      "startMs": 68160,
+      "endMs": 70160,
+      "translation": "좋은 냄새 풍기면서 돌아오지도 마"
+    },
+    {
+      "startMs": 70160,
+      "endMs": 73210,
+      "translation": "샤워 같은 거 하고 다니면서 말이야, 알겠어?"
+    },
+    {
+      "startMs": 73210,
+      "endMs": 77590,
+      "translation": "여기 브로크 파이 브로크에선 그런 거 안 반겨"
+    },
+    {
+      "startMs": 77590,
+      "endMs": 79000,
+      "translation": "다음은 누구지?\""
+    }
+  ]
+}

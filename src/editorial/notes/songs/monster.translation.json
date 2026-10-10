@@ -1,0 +1,624 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 36612154,
+    "durationMs": 379000
+  },
+  "segments": [
+    {
+      "startMs": 440,
+      "endMs": 4940,
+      "translation": "난 불을 쏴서 꺼 버려"
+    },
+    {
+      "startMs": 4940,
+      "endMs": 9750,
+      "translation": "환해질 때까지 숨어 있어"
+    },
+    {
+      "startMs": 9750,
+      "endMs": 14080,
+      "translation": "오, 그저 또 하나의 외로운 밤"
+    },
+    {
+      "startMs": 14080,
+      "endMs": 20540,
+      "translation": "네 목숨을 바칠 각오가 돼 있어?"
+    },
+    {
+      "startMs": 20540,
+      "endMs": 22810,
+      "translation": "그래, 난 괴물이야, 피 빨아먹는 몹쓸 놈"
+    },
+    {
+      "startMs": 22810,
+      "endMs": 25370,
+      "translation": "뚱뚱한 개자식, 자 이제 누가 곤란해졌지"
+    },
+    {
+      "startMs": 25370,
+      "endMs": 28020,
+      "translation": "내 정글을 달리다 보면 들리는 건 우르릉거리는 소리뿐"
+    },
+    {
+      "startMs": 28020,
+      "endMs": 30620,
+      "translation": "카녜 웨스트가 샘플을 따지, 여기 하나 예를 들자면"
+    },
+    {
+      "startMs": 30620,
+      "endMs": 33240,
+      "translation": "소문, 소문, 친구, 그만해"
+    },
+    {
+      "startMs": 33240,
+      "endMs": 35660,
+      "translation": "다들 알잖아, 내가 지독한 괴물인 거"
+    },
+    {
+      "startMs": 35660,
+      "endMs": 38270,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 38270,
+      "endMs": 40790,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 40790,
+      "endMs": 43380,
+      "translation": "이익, 이익, 친구, 내가 다 챙겼어"
+    },
+    {
+      "startMs": 43380,
+      "endMs": 45920,
+      "translation": "다들 알잖아, 내가 지독한 괴물인 거"
+    },
+    {
+      "startMs": 45920,
+      "endMs": 48420,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 48420,
+      "endMs": 50980,
+      "translation": "너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 50980,
+      "endMs": 54080,
+      "translation": "어, 살았든 죽었든 단연 최고지, 흠"
+    },
+    {
+      "startMs": 54080,
+      "endMs": 56500,
+      "translation": "말은 줄이고, 지금 당장 즐기자, 흠"
+    },
+    {
+      "startMs": 56500,
+      "endMs": 59000,
+      "translation": "내 눈은 악마보다 더 빨개"
+    },
+    {
+      "startMs": 59000,
+      "endMs": 61560,
+      "translation": "이제 판을 한 단계 더 끌어올릴 거야"
+    },
+    {
+      "startMs": 61560,
+      "endMs": 63830,
+      "translation": "누굴 데려와도, 나만큼 차가운 놈은 없어"
+    },
+    {
+      "startMs": 63830,
+      "endMs": 66460,
+      "translation": "랩도 비트도 내가 해, 트리플더블에 어시스트는 없지"
+    },
+    {
+      "startMs": 66460,
+      "endMs": 69020,
+      "translation": "내 관심은 오직 엉뚱한 짓을 계속하는 것"
+    },
+    {
+      "startMs": 69020,
+      "endMs": 71950,
+      "translation": "나이 많은 여자랑 다투면서, 내가 뭘 빚진 것처럼 구는 그 여자랑"
+    },
+    {
+      "startMs": 71950,
+      "endMs": 74250,
+      "translation": "이 비트를 들었어, 트랙에 고통을 준 그 랩들"
+    },
+    {
+      "startMs": 74250,
+      "endMs": 76880,
+      "translation": "늘 허리를 아프게 하는 목걸이를 샀지"
+    },
+    {
+      "startMs": 76880,
+      "endMs": 79580,
+      "translation": "돈을 엉망으로 쓰니까, 그래, 멀쩡한 척해야 했어"
+    },
+    {
+      "startMs": 79580,
+      "endMs": 82160,
+      "translation": "시카고 놈인데, 여자들은 내 억양을 좋아해"
+    },
+    {
+      "startMs": 82160,
+      "endMs": 84470,
+      "translation": "한 여자가 다가와서 말했지, \"이 번호로 전화해"
+    },
+    {
+      "startMs": 84470,
+      "endMs": 87060,
+      "translation": "지금 1순위를 2순위로 바꾸고 싶다면\""
+    },
+    {
+      "startMs": 87060,
+      "endMs": 89620,
+      "translation": "구스랑 말리부를 섞어, '말리부야'라고 부르지"
+    },
+    {
+      "startMs": 89620,
+      "endMs": 92210,
+      "translation": "젠장, 이지는 늘 새로운 스타일로 한 방 먹이지"
+    },
+    {
+      "startMs": 92210,
+      "endMs": 94650,
+      "translation": "그놈 잘 알지, 이제 어쩔 건데?"
+    },
+    {
+      "startMs": 94650,
+      "endMs": 97440,
+      "translation": "하고 싶은 건 뭐든, 이제 괜찮아"
+    },
+    {
+      "startMs": 97440,
+      "endMs": 99880,
+      "translation": "내가 뭘 할지 알잖아, 아, 이게 새로운 지금이야"
+    },
+    {
+      "startMs": 99880,
+      "endMs": 102750,
+      "translation": "너희는 정말, 정말 좀 진정해야 해"
+    },
+    {
+      "startMs": 102750,
+      "endMs": 105090,
+      "translation": "넌 절대 이 위로 못 올라올 테니까"
+    },
+    {
+      "startMs": 105090,
+      "endMs": 107620,
+      "translation": "그러니 아가씨, 제일 좋은 건 그냥 내 위에 올라타는 거야"
+    },
+    {
+      "startMs": 107620,
+      "endMs": 110480,
+      "translation": "파라오랑 자 본 적 있어?"
+    },
+    {
+      "startMs": 110480,
+      "endMs": 112830,
+      "translation": "아, 네 몸을 석관에 넣어 주지"
+    },
+    {
+      "startMs": 112830,
+      "endMs": 115480,
+      "translation": "이제 그녀는 내가 식도를 다치게 했다네"
+    },
+    {
+      "startMs": 115480,
+      "endMs": 117950,
+      "translation": "반에서 일등, 그녀는 막 '삼킴' 장학금을 탔지"
+    },
+    {
+      "startMs": 117950,
+      "endMs": 120730,
+      "translation": "난 미래에 사니까 현재는 내 과거야"
+    },
+    {
+      "startMs": 120730,
+      "endMs": 122870,
+      "translation": "내가 여기 있는 것 자체가 선물이야, 내 엉덩이에 키스나 해"
+    },
+    {
+      "startMs": 122870,
+      "endMs": 125270,
+      "translation": "소문, 소문, 친구, 그만해"
+    },
+    {
+      "startMs": 125270,
+      "endMs": 127950,
+      "translation": "다들 알잖아, 내가 지독한 괴물인 거"
+    },
+    {
+      "startMs": 127950,
+      "endMs": 130560,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 130560,
+      "endMs": 133060,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해 (그래)"
+    },
+    {
+      "startMs": 133060,
+      "endMs": 135650,
+      "translation": "이익, 이익, 친구, 내가 다 챙겼어"
+    },
+    {
+      "startMs": 135650,
+      "endMs": 138060,
+      "translation": "다들 알잖아, 내가 지독한 괴물인 거"
+    },
+    {
+      "startMs": 138060,
+      "endMs": 140620,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 140620,
+      "endMs": 143200,
+      "translation": "너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 143200,
+      "endMs": 145930,
+      "translation": "새스콰치, 고질라, 킹콩, 네스호의 괴물"
+    },
+    {
+      "startMs": 145930,
+      "endMs": 148460,
+      "translation": "고블린, 구울, 양심 없는 좀비"
+    },
+    {
+      "startMs": 148460,
+      "endMs": 150840,
+      "translation": "질문, 이것들의 공통점은 뭘까?"
+    },
+    {
+      "startMs": 150840,
+      "endMs": 153580,
+      "translation": "다들 알잖아, 내가 지독한 괴물인 거"
+    },
+    {
+      "startMs": 153580,
+      "endMs": 156030,
+      "translation": "정복하고, 짓밟아, 시시한 헛소리는 그만해"
+    },
+    {
+      "startMs": 156030,
+      "endMs": 158520,
+      "translation": "헛소리, 너희 중 누구도 늪이 어딘지 몰라"
+    },
+    {
+      "startMs": 158520,
+      "endMs": 161240,
+      "translation": "너희 중 누구도 내가 본 학살을 본 적 없어"
+    },
+    {
+      "startMs": 161240,
+      "endMs": 163900,
+      "translation": "아직도 꿈속에서 중독자들의 비명이 들려"
+    },
+    {
+      "startMs": 163900,
+      "endMs": 166480,
+      "translation": "살인, 검은 컨버터블 속의 살인, 난"
+    },
+    {
+      "startMs": 166480,
+      "endMs": 169070,
+      "translation": "한 블록을 쓸어버리고, 거리를 죽여 버려, 난"
+    },
+    {
+      "startMs": 169070,
+      "endMs": 171520,
+      "translation": "네 마을을 짓밟고 약탈해, 여자와 아이들까지"
+    },
+    {
+      "startMs": 171520,
+      "endMs": 174030,
+      "translation": "다들 내 아킬레스건이 뭔지 알고 싶어 해"
+    },
+    {
+      "startMs": 174030,
+      "endMs": 176720,
+      "translation": "사랑, 난 사랑을 충분히 받아 본 적이 없어"
+    },
+    {
+      "startMs": 176720,
+      "endMs": 179410,
+      "translation": "내가 받는 건 흡혈귀와 피 빨아먹는 놈들뿐"
+    },
+    {
+      "startMs": 179410,
+      "endMs": 181890,
+      "translation": "보이는 건 내가 백만장자로 만들어 준 놈들뿐"
+    },
+    {
+      "startMs": 181890,
+      "endMs": 184510,
+      "translation": "빈둥거리며 제 감정을 허공에 쏟아 놓지"
+    },
+    {
+      "startMs": 184510,
+      "endMs": 186830,
+      "translation": "보이는 건 송곳니도 없는 가짜들뿐"
+    },
+    {
+      "startMs": 186830,
+      "endMs": 189570,
+      "translation": "내 얼음장 같은 혈관에서 피를 뽑아 보려고 애쓰지"
+    },
+    {
+      "startMs": 189570,
+      "endMs": 192150,
+      "translation": "학살의 냄새가 나"
+    },
+    {
+      "startMs": 192150,
+      "endMs": 194720,
+      "translation": "너희 놈들을 물러서게 할 방법은 그것뿐인 것 같아"
+    },
+    {
+      "startMs": 194720,
+      "endMs": 197020,
+      "translation": "소문, 소문, 친구, 그만해"
+    },
+    {
+      "startMs": 197020,
+      "endMs": 199680,
+      "translation": "다들 알잖아, 내가 지독한 괴물인 거"
+    },
+    {
+      "startMs": 199680,
+      "endMs": 202290,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 202290,
+      "endMs": 204700,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 204700,
+      "endMs": 207330,
+      "translation": "이익, 이익, 친구, 내가 다 챙겼어"
+    },
+    {
+      "startMs": 207330,
+      "endMs": 209660,
+      "translation": "다들 알잖아, 내가 지독한 괴물인 거"
+    },
+    {
+      "startMs": 209660,
+      "endMs": 212360,
+      "translation": "공연장에선 너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 212360,
+      "endMs": 215590,
+      "translation": "너희 손이 다 올라가 있어야 해"
+    },
+    {
+      "startMs": 215590,
+      "endMs": 217820,
+      "translation": "괴물 같은 차를 몰고 나타나, 자동차 갱스터"
+    },
+    {
+      "startMs": 217820,
+      "endMs": 219980,
+      "translation": "스리랑카에서 온 끝내주는 여자와 함께"
+    },
+    {
+      "startMs": 219980,
+      "endMs": 222980,
+      "translation": "그래, 난 통카 장난감 차에 있어, 윌리 웡카 색깔로"
+    },
+    {
+      "startMs": 222980,
+      "endMs": 225160,
+      "translation": "넌 왕일 수 있지만, 여왕이 정복하는 걸 지켜봐"
+    },
+    {
+      "startMs": 225160,
+      "endMs": 228130,
+      "translation": "좋아, 우선 네 뇌부터 먹어 치울 거야"
+    },
+    {
+      "startMs": 228130,
+      "endMs": 230630,
+      "translation": "그다음엔 금니와 송곳니를 하고 다니겠지"
+    },
+    {
+      "startMs": 230630,
+      "endMs": 232540,
+      "translation": "그게 지독한 괴물이 하는 짓이니까"
+    },
+    {
+      "startMs": 232540,
+      "endMs": 235470,
+      "translation": "밀라노에서 온 미용사, 그게 괴물의 머리 스타일"
+    },
+    {
+      "startMs": 235470,
+      "endMs": 238250,
+      "translation": "괴물 같은 주세페 힐, 그게 괴물의 신발"
+    },
+    {
+      "startMs": 238250,
+      "endMs": 240590,
+      "translation": "영 머니가 명단이고, 괴물 같은 크루야"
+    },
+    {
+      "startMs": 240590,
+      "endMs": 243880,
+      "translation": "난 우스운 얼굴을 하고 은행에 푹 박혀 있지"
+    },
+    {
+      "startMs": 243880,
+      "endMs": 246330,
+      "translation": "내가 가짜라 해도 몰랐어, 내 돈은 진짜니까"
+    },
+    {
+      "startMs": 246330,
+      "endMs": 248360,
+      "translation": "그러니까 정리해 보자, 잠깐, 내가 신인이라고?"
+    },
+    {
+      "startMs": 248360,
+      "endMs": 251000,
+      "translation": "그런데 내 피처링이랑 공연이 네 몸값의 열 배라고?"
+    },
+    {
+      "startMs": 251000,
+      "endMs": 253370,
+      "translation": "앨범도 안 냈는데 벌스 하나에 5만 달러"
+    },
+    {
+      "startMs": 253370,
+      "endMs": 256380,
+      "translation": "그래, 내 돈은 너무 높아서 내 바비들이 기어올라야 해"
+    },
+    {
+      "startMs": 256380,
+      "endMs": 258310,
+      "translation": "중동의 날씨보다 뜨거워, 거칠게"
+    },
+    {
+      "startMs": 258310,
+      "endMs": 261570,
+      "translation": "토니 매터혼, 엉덩이를 흔들어, 흔들어"
+    },
+    {
+      "startMs": 261570,
+      "endMs": 263500,
+      "translation": "사인할 땐 가슴에 '니키'라고 써 주지"
+    },
+    {
+      "startMs": 263500,
+      "endMs": 266360,
+      "translation": "그래서 이놈들이 한 가지 생각밖에 못 하지"
+    },
+    {
+      "startMs": 266360,
+      "endMs": 269140,
+      "translation": "그래도 정말, 정말 난 하나도 신경 안 써"
+    },
+    {
+      "startMs": 269140,
+      "endMs": 271050,
+      "translation": "\"바비는 잊어, 니키는 엿 먹어, 걘 가, 가짜야\""
+    },
+    {
+      "startMs": 271050,
+      "endMs": 274180,
+      "translation": "\"쟤 다이어트 중이래\", 근데 내 주머니는 치즈케이크를 먹지"
+    },
+    {
+      "startMs": 274180,
+      "endMs": 276770,
+      "translation": "그러니까 말하자면, 처키의 신부, 애들 장난이야"
+    },
+    {
+      "startMs": 276770,
+      "endMs": 279140,
+      "translation": "방금 또 누구 경력 하나를 끝냈어, 온화한 날이네"
+    },
+    {
+      "startMs": 279140,
+      "endMs": 281670,
+      "translation": "게다가, 이에, 걔들은 내 옆에 서지도 못해"
+    },
+    {
+      "startMs": 281670,
+      "endMs": 284370,
+      "translation": "너랑 나랑 앰버랑 금요일에 셋이서 어때"
+    },
+    {
+      "startMs": 284370,
+      "endMs": 286590,
+      "translation": "분홍 가발, 두툼한 엉덩이, 다들 목이 꺾이게 돌아보지"
+    },
+    {
+      "startMs": 286590,
+      "endMs": 289730,
+      "translation": "크게 생각하고, 돈을 벌고, 다들 눈을 깜빡이게 만들지"
+    },
+    {
+      "startMs": 289730,
+      "endMs": 292130,
+      "translation": "자 방금 본 걸 봐, 이게 너희가 살아가는 이유야"
+    },
+    {
+      "startMs": 292130,
+      "endMs": 315690,
+      "translation": "아, 난 지독한 괴물이야!"
+    },
+    {
+      "startMs": 315690,
+      "endMs": 319460,
+      "translation": "난, 난 스포트라이트를 넘어섰어"
+    },
+    {
+      "startMs": 319460,
+      "endMs": 324520,
+      "translation": "그리고 난, 난 신께 맡길 거야"
+    },
+    {
+      "startMs": 324520,
+      "endMs": 329670,
+      "translation": "그리고 난, 난 이 공연들을 버티지 못할 거야"
+    },
+    {
+      "startMs": 329670,
+      "endMs": 334820,
+      "translation": "그러니 난, 난 집으로 가 (집으로)"
+    },
+    {
+      "startMs": 334820,
+      "endMs": 340060,
+      "translation": "난, 난 스포트라이트를 넘어섰어"
+    },
+    {
+      "startMs": 340060,
+      "endMs": 345200,
+      "translation": "그리고 난, 난 신께 맡길 거야 (아니)"
+    },
+    {
+      "startMs": 345200,
+      "endMs": 350270,
+      "translation": "그리고 난, 난 이 공연들을 버티지 못할 거야"
+    },
+    {
+      "startMs": 350270,
+      "endMs": 355630,
+      "translation": "그러니 난, 난 집으로 가 (집으로)"
+    },
+    {
+      "startMs": 355630,
+      "endMs": 360960,
+      "translation": "난, 난 스포트라이트를 넘어섰어 (아니, 스포트라이트를)"
+    },
+    {
+      "startMs": 360960,
+      "endMs": 365760,
+      "translation": "그리고 난, 난 신께 맡길 거야"
+    },
+    {
+      "startMs": 365760,
+      "endMs": 370910,
+      "translation": "그리고 난, 난 이 공연들을 버티지 못할 거야"
+    },
+    {
+      "startMs": 370910,
+      "endMs": 379000,
+      "translation": "그러니 난, 난 집으로 가"
+    }
+  ]
+}

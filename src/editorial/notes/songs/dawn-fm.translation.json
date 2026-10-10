@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 139173,
+    "durationMs": 96000
+  },
+  "segments": [
+    {
+      "startMs": 24310,
+      "endMs": 30530,
+      "translation": "이 부분은 혼자 간다"
+    },
+    {
+      "startMs": 30530,
+      "endMs": 39820,
+      "translation": "내가 앞장서 간다, 이 길은 내가 앞장선다"
+    },
+    {
+      "startMs": 39820,
+      "endMs": 46080,
+      "translation": "그리고 붙잡을 무언가가 필요하다"
+    },
+    {
+      "startMs": 46080,
+      "endMs": 50410,
+      "translation": "믿는 척이라도 믿게 해 다오"
+    },
+    {
+      "startMs": 50410,
+      "endMs": 57960,
+      "translation": "빛이 지나면 어둠일까, 혼자 남는 어둠일까?"
+    },
+    {
+      "startMs": 57960,
+      "endMs": 66960,
+      "translation": "혼자서"
+    },
+    {
+      "startMs": 66960,
+      "endMs": 70850,
+      "translation": "여러분은 지금 103.5 Dawn FM을 듣고 계세요"
+    },
+    {
+      "startMs": 70850,
+      "endMs": 73190,
+      "translation": "너무 오랫동안 어둠 속에 있었어요"
+    },
+    {
+      "startMs": 73190,
+      "endMs": 74920,
+      "translation": "이제 빛으로 걸어 들어가서"
+    },
+    {
+      "startMs": 74920,
+      "endMs": 77230,
+      "translation": "두 팔 벌려 운명을 받아들일 시간이에요"
+    },
+    {
+      "startMs": 77230,
+      "endMs": 79040,
+      "translation": "무서우세요? 걱정 마세요"
+    },
+    {
+      "startMs": 79040,
+      "endMs": 83480,
+      "translation": "저희가 손을 잡고 이 고통 없는 전환을 안내해 드릴게요"
+    },
+    {
+      "startMs": 83480,
+      "endMs": 84730,
+      "translation": "그런데 뭐가 그리 급하세요?"
+    },
+    {
+      "startMs": 84730,
+      "endMs": 91420,
+      "translation": "그냥 긴장 풀고, 103.5 Dawn FM에서 광고 없는, 여러분을 해방하는 음악 한 시간을 즐기세요"
+    },
+    {
+      "startMs": 91420,
+      "endMs": 92230,
+      "translation": "채널 고정하세요"
+    },
+    {
+      "startMs": 92230,
+      "endMs": 96000,
+      "translation": "103.5 Dawn FM"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1090818,
+    "durationMs": 254000
+  },
+  "segments": [
+    {
+      "startMs": 20760,
+      "endMs": 25620,
+      "translation": "몇 시인지도 몰랐어, 불빛은 어두웠고"
+    },
+    {
+      "startMs": 25620,
+      "endMs": 30450,
+      "translation": "라디오에 기대 누웠지"
+    },
+    {
+      "startMs": 30450,
+      "endMs": 37650,
+      "translation": "어떤 녀석이 로큰롤을 틀고 있었어, 소울도 한가득이었지, 그러더니"
+    },
+    {
+      "startMs": 37650,
+      "endMs": 42380,
+      "translation": "그 큰 소리가 점점 사라지는 듯하더니"
+    },
+    {
+      "startMs": 42380,
+      "endMs": 47170,
+      "translation": "위상이 출렁이는 파도 위 느린 목소리처럼 돌아왔어"
+    },
+    {
+      "startMs": 47170,
+      "endMs": 55860,
+      "translation": "그건 DJ가 아니었어, 흐릿한 우주의 자이브였지"
+    },
+    {
+      "startMs": 55860,
+      "endMs": 60970,
+      "translation": "하늘에서 스타맨이 기다리고 있어"
+    },
+    {
+      "startMs": 60970,
+      "endMs": 63460,
+      "translation": "우리와 만나고 싶어 하지만"
+    },
+    {
+      "startMs": 63460,
+      "endMs": 65620,
+      "translation": "우리 정신을 날려 버릴까 봐 걱정한대"
+    },
+    {
+      "startMs": 65620,
+      "endMs": 70610,
+      "translation": "하늘에서 스타맨이 기다리고 있어"
+    },
+    {
+      "startMs": 70610,
+      "endMs": 72850,
+      "translation": "망치지 말라고 우리에게 전했어"
+    },
+    {
+      "startMs": 72850,
+      "endMs": 76340,
+      "translation": "다 그럴 가치가 있다는 걸 아니까, 그가 내게 말했어"
+    },
+    {
+      "startMs": 76340,
+      "endMs": 78780,
+      "translation": "아이들이 마음껏 풀어 놓게 해"
+    },
+    {
+      "startMs": 78780,
+      "endMs": 81050,
+      "translation": "아이들이 그걸 써 보게 해"
+    },
+    {
+      "startMs": 81050,
+      "endMs": 100290,
+      "translation": "모든 아이들이 부기 춤을 추게 해"
+    },
+    {
+      "startMs": 100290,
+      "endMs": 104820,
+      "translation": "누군가에게 전화해야 해서 네가 떠올랐어"
+    },
+    {
+      "startMs": 104820,
+      "endMs": 109580,
+      "translation": "야, 엄청난데, 너도 그걸 들었구나"
+    },
+    {
+      "startMs": 109580,
+      "endMs": 116630,
+      "translation": "TV를 켜, 2번 채널에서 잡힐지도 몰라"
+    },
+    {
+      "startMs": 116630,
+      "endMs": 121480,
+      "translation": "창밖을 봐, 그의 빛이 보여"
+    },
+    {
+      "startMs": 121480,
+      "endMs": 126150,
+      "translation": "우리가 반짝일 수 있다면 오늘 밤 내려올지도 몰라"
+    },
+    {
+      "startMs": 126150,
+      "endMs": 134740,
+      "translation": "아빠한텐 말하지 마, 겁먹고 우릴 가둬 버릴 테니까"
+    },
+    {
+      "startMs": 134740,
+      "endMs": 139970,
+      "translation": "하늘에서 스타맨이 기다리고 있어"
+    },
+    {
+      "startMs": 139970,
+      "endMs": 142180,
+      "translation": "우리와 만나고 싶어 하지만"
+    },
+    {
+      "startMs": 142180,
+      "endMs": 144450,
+      "translation": "우리 정신을 날려 버릴까 봐 걱정한대"
+    },
+    {
+      "startMs": 144450,
+      "endMs": 149470,
+      "translation": "하늘에서 스타맨이 기다리고 있어"
+    },
+    {
+      "startMs": 149470,
+      "endMs": 151760,
+      "translation": "망치지 말라고 우리에게 전했어"
+    },
+    {
+      "startMs": 151760,
+      "endMs": 155150,
+      "translation": "다 그럴 가치가 있다는 걸 아니까, 그가 내게 말했어"
+    },
+    {
+      "startMs": 155150,
+      "endMs": 157460,
+      "translation": "아이들이 마음껏 풀어 놓게 해"
+    },
+    {
+      "startMs": 157460,
+      "endMs": 159720,
+      "translation": "아이들이 그걸 써 보게 해"
+    },
+    {
+      "startMs": 159720,
+      "endMs": 162890,
+      "translation": "모든 아이들이 부기 춤을 추게 해"
+    },
+    {
+      "startMs": 162890,
+      "endMs": 166330,
+      "translation": "하늘에서 기다리는 스타맨"
+    },
+    {
+      "startMs": 166330,
+      "endMs": 168650,
+      "translation": "우리와 만나고 싶어 하지만"
+    },
+    {
+      "startMs": 168650,
+      "endMs": 170940,
+      "translation": "우리 정신을 날려 버릴까 봐 걱정한대"
+    },
+    {
+      "startMs": 170940,
+      "endMs": 175880,
+      "translation": "하늘에서 스타맨이 기다리고 있어"
+    },
+    {
+      "startMs": 175880,
+      "endMs": 178030,
+      "translation": "망치지 말라고 우리에게 전했어"
+    },
+    {
+      "startMs": 178030,
+      "endMs": 181520,
+      "translation": "다 그럴 가치가 있다는 걸 아니까, 그가 내게 말했어"
+    },
+    {
+      "startMs": 181520,
+      "endMs": 183940,
+      "translation": "아이들이 마음껏 풀어 놓게 해"
+    },
+    {
+      "startMs": 183940,
+      "endMs": 186200,
+      "translation": "아이들이 그걸 써 보게 해"
+    },
+    {
+      "startMs": 186200,
+      "endMs": 254000,
+      "translation": "모든 아이들이 부기 춤을 추게 해"
+    }
+  ]
+}

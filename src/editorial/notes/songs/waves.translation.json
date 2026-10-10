@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 585286,
+    "durationMs": 182000
+  },
+  "segments": [
+    {
+      "startMs": 90,
+      "endMs": 3110,
+      "translation": "소리 높여"
+    },
+    {
+      "startMs": 3110,
+      "endMs": 5670,
+      "translation": "여기 이렇게 들어와, 소리 높여"
+    },
+    {
+      "startMs": 5670,
+      "endMs": 8010,
+      "translation": "네 여자가 좋아하는 건 나야"
+    },
+    {
+      "startMs": 8010,
+      "endMs": 10500,
+      "translation": "그래, 네 여자가 좋아하는 건 나야, 소리 높여"
+    },
+    {
+      "startMs": 10500,
+      "endMs": 15350,
+      "translation": "난 이렇게 떠들어. 주먹싸움에서 지는 건 안 무서워, 소리 높여"
+    },
+    {
+      "startMs": 15350,
+      "endMs": 19460,
+      "translation": "걘 내 거를 움켜쥐며 잘 맞을지 보고 싶어 해"
+    },
+    {
+      "startMs": 19460,
+      "endMs": 23160,
+      "translation": "그게 바로 파도야, 그래"
+    },
+    {
+      "startMs": 23160,
+      "endMs": 25330,
+      "translation": "파도는 죽지 않아"
+    },
+    {
+      "startMs": 25330,
+      "endMs": 28150,
+      "translation": "지금 잠깐 여기 머물게 해 줘, 그래"
+    },
+    {
+      "startMs": 28150,
+      "endMs": 29980,
+      "translation": "내 것이 될 필요는 없어"
+    },
+    {
+      "startMs": 29980,
+      "endMs": 33150,
+      "translation": "거짓말 아니야"
+    },
+    {
+      "startMs": 33150,
+      "endMs": 35320,
+      "translation": "파도는 죽지 않아, 자기야"
+    },
+    {
+      "startMs": 35320,
+      "endMs": 37840,
+      "translation": "잠깐 여기 머물게 해 줘"
+    },
+    {
+      "startMs": 37840,
+      "endMs": 40620,
+      "translation": "자기야, 내 것으로, 내 것으로 만들 필요는 없어"
+    },
+    {
+      "startMs": 40620,
+      "endMs": 45620,
+      "translation": "그늘엔 햇살이 비치지 않아, 소리 높여"
+    },
+    {
+      "startMs": 45620,
+      "endMs": 50600,
+      "translation": "새장에선 새가 날 수 없어, 소리 높여"
+    },
+    {
+      "startMs": 50600,
+      "endMs": 59290,
+      "translation": "누군가 떠나도, 소리 높여, 그 마음까지 사라지는 건 아니야"
+    },
+    {
+      "startMs": 59290,
+      "endMs": 62520,
+      "translation": "그게 바로 파도야"
+    },
+    {
+      "startMs": 62520,
+      "endMs": 65240,
+      "translation": "그래, 파도는 죽지 않아"
+    },
+    {
+      "startMs": 65240,
+      "endMs": 68080,
+      "translation": "지금 잠깐 여기 머물게 해 줘"
+    },
+    {
+      "startMs": 68080,
+      "endMs": 69960,
+      "translation": "내 것이 될 필요는 없어"
+    },
+    {
+      "startMs": 69960,
+      "endMs": 73070,
+      "translation": "거짓말 아니야"
+    },
+    {
+      "startMs": 73070,
+      "endMs": 75280,
+      "translation": "파도는 죽지 않아, 자기야"
+    },
+    {
+      "startMs": 75280,
+      "endMs": 77800,
+      "translation": "잠깐 여기 머물게 해 줘"
+    },
+    {
+      "startMs": 77800,
+      "endMs": 82430,
+      "translation": "자기야, 널 내 것으로, 내 것으로 만들 필요는 없어"
+    },
+    {
+      "startMs": 82430,
+      "endMs": 87140,
+      "translation": "거짓말 아니야"
+    },
+    {
+      "startMs": 87140,
+      "endMs": 89680,
+      "translation": "거짓말 아니야"
+    },
+    {
+      "startMs": 89680,
+      "endMs": 91210,
+      "translation": "거짓말 아니야"
+    },
+    {
+      "startMs": 91210,
+      "endMs": 97610,
+      "translation": "넌 밤을 불태웠어"
+    },
+    {
+      "startMs": 97610,
+      "endMs": 99940,
+      "translation": "아침에도 난 여기 있을 거야"
+    },
+    {
+      "startMs": 99940,
+      "endMs": 121460,
+      "translation": "거짓말 아니야"
+    },
+    {
+      "startMs": 121460,
+      "endMs": 126200,
+      "translation": "거짓말 아니야"
+    },
+    {
+      "startMs": 126200,
+      "endMs": 131220,
+      "translation": "오, 자기야, 오, 자기야, 오, 그래"
+    },
+    {
+      "startMs": 131220,
+      "endMs": 137590,
+      "translation": "넌 밤을 불태웠어"
+    },
+    {
+      "startMs": 137590,
+      "endMs": 139890,
+      "translation": "아침에도 난 여기 있을 거야"
+    },
+    {
+      "startMs": 139890,
+      "endMs": 182000,
+      "translation": "거짓말 아니야"
+    }
+  ]
+}

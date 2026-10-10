@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 571399,
+    "durationMs": 82000
+  },
+  "segments": [
+    {
+      "startMs": 110,
+      "endMs": 4070,
+      "translation": "카녜, 대체 그게 뭐야? 아이들을 위한 걸 하라고 했잖아"
+    },
+    {
+      "startMs": 4070,
+      "endMs": 6330,
+      "translation": "당장 그 졸업 입장권 내놔"
+    },
+    {
+      "startMs": 6330,
+      "endMs": 9580,
+      "translation": "졸업반 병 걸리기 전에 그 가운도 내놔"
+    },
+    {
+      "startMs": 9580,
+      "endMs": 12610,
+      "translation": "넌 그 무대를 못 걸어, 미끄러져서도 못 건너"
+    },
+    {
+      "startMs": 12610,
+      "endMs": 16850,
+      "translation": "이 망할 놈아, 내가 끌어서라도 그 무대를 건너게 해 줄 수는 없어, 카녜"
+    },
+    {
+      "startMs": 16850,
+      "endMs": 19420,
+      "translation": "누가 그러라 그랬어? 봐, 힘이 나는 걸 하라고 했잖아"
+    },
+    {
+      "startMs": 19420,
+      "endMs": 22810,
+      "translation": "이 백인들 앞에 너를 세워 보려고 했는데 나한테 이렇게 해?"
+    },
+    {
+      "startMs": 22810,
+      "endMs": 24960,
+      "translation": "있잖아, 넌 그냥 막돼먹은 놈이야"
+    },
+    {
+      "startMs": 24960,
+      "endMs": 27560,
+      "translation": "좋은 뜻으로 하는 말 아니다"
+    },
+    {
+      "startMs": 27560,
+      "endMs": 30150,
+      "translation": "어린애들한테 그딴 걸 부르게 하다니, 아니, 웃긴 건 너야"
+    },
+    {
+      "startMs": 30150,
+      "endMs": 33810,
+      "translation": "두 손을 하늘로 들고 모두에게 작별 인사나 해"
+    },
+    {
+      "startMs": 33810,
+      "endMs": 36070,
+      "translation": "이 캠퍼스에서 꺼지면서 말이야"
+    },
+    {
+      "startMs": 36070,
+      "endMs": 42520,
+      "translation": "이제 어쩔 건데?"
+    },
+    {
+      "startMs": 42520,
+      "endMs": 48290,
+      "translation": "난 더는 혼란스럽지 않아, 하지만 아무한테도 말하지 마"
+    },
+    {
+      "startMs": 48290,
+      "endMs": 53730,
+      "translation": "난 규칙을 깨려고 해, 하지만 아무한테도 말하지 마"
+    },
+    {
+      "startMs": 53730,
+      "endMs": 59520,
+      "translation": "학교보다 나은 걸 찾았어, 하지만 아무한테도 말하지 마"
+    },
+    {
+      "startMs": 59520,
+      "endMs": 64770,
+      "translation": "엄마가 알면 날 죽일 거야, 그러니 아무한테도 말하지 마"
+    },
+    {
+      "startMs": 64770,
+      "endMs": 70290,
+      "translation": "엄마는 내가 남들처럼 번듯한 직장을 갖길 원해"
+    },
+    {
+      "startMs": 70290,
+      "endMs": 82000,
+      "translation": "엄마는 내 처지가 돼 본 적 없잖아, 난 그냥 '모두'가 아니야"
+    }
+  ]
+}

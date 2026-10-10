@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 36240107,
+    "durationMs": 240000
+  },
+  "segments": [
+    {
+      "startMs": 24910,
+      "endMs": 28450,
+      "translation": "열에 들뜬 꿈을 꾸고 말아서"
+    },
+    {
+      "startMs": 28450,
+      "endMs": 33460,
+      "translation": "네 그 미소에 마음이 풀려 버린 해 질 녘"
+    },
+    {
+      "startMs": 33460,
+      "endMs": 36910,
+      "translation": "이 마음이 한때의 착각이라니"
+    },
+    {
+      "startMs": 36910,
+      "endMs": 39120,
+      "translation": "전혀 웃기지 않아"
+    },
+    {
+      "startMs": 39120,
+      "endMs": 42690,
+      "translation": "소매가 스쳐 버렸어"
+    },
+    {
+      "startMs": 42690,
+      "endMs": 44790,
+      "translation": "달리기 시작한 하트를 낚아채"
+    },
+    {
+      "startMs": 44790,
+      "endMs": 46880,
+      "translation": "비트의 끄트머리를 이어 가"
+    },
+    {
+      "startMs": 46880,
+      "endMs": 48570,
+      "translation": "향기로운 가슴에 불을 밝혀"
+    },
+    {
+      "startMs": 48570,
+      "endMs": 51140,
+      "translation": "아침까지 춤추며 밤을 새우자"
+    },
+    {
+      "startMs": 51140,
+      "endMs": 53180,
+      "translation": "휘청 흔들리는 런웨이 끝으로"
+    },
+    {
+      "startMs": 53180,
+      "endMs": 55310,
+      "translation": "내 마음을 데려가 줘"
+    },
+    {
+      "startMs": 55310,
+      "endMs": 56830,
+      "translation": "닿아 있고 싶어, 흔들리고 싶어"
+    },
+    {
+      "startMs": 56830,
+      "endMs": 62940,
+      "translation": "너 아니면 안 되는 이 헤맴"
+    },
+    {
+      "startMs": 62940,
+      "endMs": 66560,
+      "translation": "지금 점점 설렘이 되어 가"
+    },
+    {
+      "startMs": 66560,
+      "endMs": 68700,
+      "translation": "두근거려 가"
+    },
+    {
+      "startMs": 68700,
+      "endMs": 71950,
+      "translation": "생각지도 못한 엉뚱한 랑데부"
+    },
+    {
+      "startMs": 71950,
+      "endMs": 75000,
+      "translation": "점점 들떠 가"
+    },
+    {
+      "startMs": 75000,
+      "endMs": 77200,
+      "translation": "한껏 멋을 부려 가"
+    },
+    {
+      "startMs": 77200,
+      "endMs": 79750,
+      "translation": "달콤한 덫에 걸려 가"
+    },
+    {
+      "startMs": 79750,
+      "endMs": 88150,
+      "translation": "빠져들어 가, 빠져들어 가"
+    },
+    {
+      "startMs": 88150,
+      "endMs": 96470,
+      "translation": "빠져들어 가"
+    },
+    {
+      "startMs": 96470,
+      "endMs": 98630,
+      "translation": "언젠가의 우연 (언젠가의 우연)"
+    },
+    {
+      "startMs": 98630,
+      "endMs": 100890,
+      "translation": "확인하고 싶어 (확인하고 싶어)"
+    },
+    {
+      "startMs": 100890,
+      "endMs": 102340,
+      "translation": "풀어내고 싶어"
+    },
+    {
+      "startMs": 102340,
+      "endMs": 103810,
+      "translation": "아무도 밟지 않은 미스터리"
+    },
+    {
+      "startMs": 103810,
+      "endMs": 105060,
+      "translation": "(알아채지 못한 중력)"
+    },
+    {
+      "startMs": 105060,
+      "endMs": 107100,
+      "translation": "예전처럼 (예전처럼)"
+    },
+    {
+      "startMs": 107100,
+      "endMs": 109380,
+      "translation": "돌아갈 수 없겠지 (돌아갈 수 없겠지)"
+    },
+    {
+      "startMs": 109380,
+      "endMs": 112300,
+      "translation": "어디든 가자, 농담처럼"
+    },
+    {
+      "startMs": 112300,
+      "endMs": 113700,
+      "translation": "(모순의 아이러니)"
+    },
+    {
+      "startMs": 113700,
+      "endMs": 115900,
+      "translation": "그건 하나의 코미디"
+    },
+    {
+      "startMs": 115900,
+      "endMs": 117720,
+      "translation": "아니면 두 개의 비극"
+    },
+    {
+      "startMs": 117720,
+      "endMs": 119960,
+      "translation": "어느 쪽이든 상관없어"
+    },
+    {
+      "startMs": 119960,
+      "endMs": 122170,
+      "translation": "너와 둘이라면"
+    },
+    {
+      "startMs": 122170,
+      "endMs": 124260,
+      "translation": "그건 한때의 광기"
+    },
+    {
+      "startMs": 124260,
+      "endMs": 126390,
+      "translation": "다시 흔들려 돌아오는 제정신"
+    },
+    {
+      "startMs": 126390,
+      "endMs": 128490,
+      "translation": "모든 것이 어느새"
+    },
+    {
+      "startMs": 128490,
+      "endMs": 131110,
+      "translation": "완전히 달라져 버리는 마법"
+    },
+    {
+      "startMs": 131110,
+      "endMs": 133210,
+      "translation": "마음이 앞서 나가는 스텝으로"
+    },
+    {
+      "startMs": 133210,
+      "endMs": 135360,
+      "translation": "달콤한 우주로 날아가"
+    },
+    {
+      "startMs": 135360,
+      "endMs": 136890,
+      "translation": "기다리고 기다린 밤의 끝"
+    },
+    {
+      "startMs": 136890,
+      "endMs": 139580,
+      "translation": "아침까지 춤추며 밤을 새우자"
+    },
+    {
+      "startMs": 139580,
+      "endMs": 141520,
+      "translation": "반짝 빛나는 입술로 취하게 해 줘"
+    },
+    {
+      "startMs": 141520,
+      "endMs": 143700,
+      "translation": "영원으로 이끌어 줘"
+    },
+    {
+      "startMs": 143700,
+      "endMs": 145360,
+      "translation": "닿아 있고 싶어, 흔들리고 싶어"
+    },
+    {
+      "startMs": 145360,
+      "endMs": 151270,
+      "translation": "너 아니면 안 되는 이 헤맴"
+    },
+    {
+      "startMs": 151270,
+      "endMs": 155000,
+      "translation": "지금 점점 사랑이 되어 가"
+    },
+    {
+      "startMs": 155000,
+      "endMs": 157110,
+      "translation": "술렁여 가"
+    },
+    {
+      "startMs": 157110,
+      "endMs": 159420,
+      "translation": "딱 마주친 엉뚱한 까꿍"
+    },
+    {
+      "startMs": 159420,
+      "endMs": 163450,
+      "translation": "눈부시게 빛나 가"
+    },
+    {
+      "startMs": 163450,
+      "endMs": 165610,
+      "translation": "수수께끼처럼 되어 가"
+    },
+    {
+      "startMs": 165610,
+      "endMs": 168210,
+      "translation": "달콤한 덫에 걸려 가"
+    },
+    {
+      "startMs": 168210,
+      "endMs": 185490,
+      "translation": "빠져들어 가"
+    },
+    {
+      "startMs": 185490,
+      "endMs": 187640,
+      "translation": "한때의 착각이 아니야 (아니야)"
+    },
+    {
+      "startMs": 187640,
+      "endMs": 189880,
+      "translation": "거짓이 아닌 마음 (마음)"
+    },
+    {
+      "startMs": 189880,
+      "endMs": 191880,
+      "translation": "혼자만의 믿음이 아니야 (아니야)"
+    },
+    {
+      "startMs": 191880,
+      "endMs": 194080,
+      "translation": "거짓이 아닌 마음 (마음)"
+    },
+    {
+      "startMs": 194080,
+      "endMs": 196190,
+      "translation": "한때의 착각이 아니야 (아니야)"
+    },
+    {
+      "startMs": 196190,
+      "endMs": 198320,
+      "translation": "거짓이 아닌 마음 (마음)"
+    },
+    {
+      "startMs": 198320,
+      "endMs": 200310,
+      "translation": "혼자만의 믿음이 아니야 (아니야)"
+    },
+    {
+      "startMs": 200310,
+      "endMs": 202560,
+      "translation": "거짓이 아닌 마음"
+    },
+    {
+      "startMs": 202560,
+      "endMs": 204560,
+      "translation": "점점 설렘이 되어 가"
+    },
+    {
+      "startMs": 204560,
+      "endMs": 205720,
+      "translation": "(사랑이 되어 가)"
+    },
+    {
+      "startMs": 205720,
+      "endMs": 206680,
+      "translation": "두근거려 가"
+    },
+    {
+      "startMs": 206680,
+      "endMs": 207690,
+      "translation": "(두근거려 가)"
+    },
+    {
+      "startMs": 207690,
+      "endMs": 209910,
+      "translation": "생각지도 못한 엉뚱한 랑데부"
+    },
+    {
+      "startMs": 209910,
+      "endMs": 211100,
+      "translation": "(엉뚱한 랑데부)"
+    },
+    {
+      "startMs": 211100,
+      "endMs": 213100,
+      "translation": "점점 들떠 가"
+    },
+    {
+      "startMs": 213100,
+      "endMs": 214300,
+      "translation": "(들떠 가)"
+    },
+    {
+      "startMs": 214300,
+      "endMs": 215280,
+      "translation": "한껏 멋을 부려 가"
+    },
+    {
+      "startMs": 215280,
+      "endMs": 216330,
+      "translation": "(멋을 부려 가)"
+    },
+    {
+      "startMs": 216330,
+      "endMs": 218820,
+      "translation": "달콤한 덫에 걸려 가"
+    },
+    {
+      "startMs": 218820,
+      "endMs": 227210,
+      "translation": "빠져들어 가, 빠져들어 가"
+    },
+    {
+      "startMs": 227210,
+      "endMs": 240000,
+      "translation": "빠져들어 가"
+    }
+  ]
+}

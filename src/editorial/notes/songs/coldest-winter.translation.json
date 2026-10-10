@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 567255,
+    "durationMs": 164000
+  },
+  "segments": [
+    {
+      "startMs": 4030,
+      "endMs": 7130,
+      "translation": "외로운 밤이면 나는 희미해져 간다"
+    },
+    {
+      "startMs": 7130,
+      "endMs": 10690,
+      "translation": "(외로운 밤이면 나는 희미해져 간다)"
+    },
+    {
+      "startMs": 10690,
+      "endMs": 14180,
+      "translation": "그녀의 사랑은 천 마일 밖에 있다"
+    },
+    {
+      "startMs": 14180,
+      "endMs": 17470,
+      "translation": "(그녀의 사랑은 천 마일 밖에 있다)"
+    },
+    {
+      "startMs": 17470,
+      "endMs": 21750,
+      "translation": "가장 추운 겨울에 만든 기억들"
+    },
+    {
+      "startMs": 21750,
+      "endMs": 28100,
+      "translation": "잘 가라, 친구여, 나는 다시 사랑할 수 있을까?"
+    },
+    {
+      "startMs": 28100,
+      "endMs": 39030,
+      "translation": "가장 추운 겨울에 만든 기억들"
+    },
+    {
+      "startMs": 39030,
+      "endMs": 42840,
+      "translation": "새벽 4시인데 잠들 수 없다"
+    },
+    {
+      "startMs": 42840,
+      "endMs": 46360,
+      "translation": "(새벽 4시인데 잠들 수 없다)"
+    },
+    {
+      "startMs": 46360,
+      "endMs": 49990,
+      "translation": "내 눈에 보이는 건 그녀의 사랑뿐"
+    },
+    {
+      "startMs": 49990,
+      "endMs": 53580,
+      "translation": "(내 눈에 보이는 건 그녀의 사랑뿐)"
+    },
+    {
+      "startMs": 53580,
+      "endMs": 56900,
+      "translation": "가장 추운 겨울에 만든 기억들"
+    },
+    {
+      "startMs": 56900,
+      "endMs": 63890,
+      "translation": "잘 가라, 친구여, 나는 다시 사랑할 수 있을까?"
+    },
+    {
+      "startMs": 63890,
+      "endMs": 69860,
+      "translation": "가장 추운 겨울에 만든 기억들"
+    },
+    {
+      "startMs": 69860,
+      "endMs": 82640,
+      "translation": "겨울, 겨울"
+    },
+    {
+      "startMs": 82640,
+      "endMs": 89290,
+      "translation": "잘 가라, 친구여, 나는 다시 사랑할 수 있을까?"
+    },
+    {
+      "startMs": 89290,
+      "endMs": 96290,
+      "translation": "잘 가라, 친구여, 나는 다시 사랑할 수 있을까?"
+    },
+    {
+      "startMs": 96290,
+      "endMs": 103630,
+      "translation": "잘 가라, 친구여, 나는 다시 사랑할 수 있을까?"
+    },
+    {
+      "startMs": 103630,
+      "endMs": 107300,
+      "translation": "봄이 눈을 거둬 갈 수 있다면"
+    },
+    {
+      "startMs": 107300,
+      "endMs": 110960,
+      "translation": "(봄이 눈을 거둬 갈 수 있다면)"
+    },
+    {
+      "startMs": 110960,
+      "endMs": 114690,
+      "translation": "우리의 실수도 모두 녹여 줄 수 있을까?"
+    },
+    {
+      "startMs": 114690,
+      "endMs": 117670,
+      "translation": "(우리의 실수도 모두 녹여 줄 수 있을까?)"
+    },
+    {
+      "startMs": 117670,
+      "endMs": 121590,
+      "translation": "가장 추운 겨울에 만든 기억들"
+    },
+    {
+      "startMs": 121590,
+      "endMs": 128450,
+      "translation": "잘 가라, 친구여, 나는 다시는 사랑하지 않으리"
+    },
+    {
+      "startMs": 128450,
+      "endMs": 164000,
+      "translation": "다시는"
+    }
+  ]
+}

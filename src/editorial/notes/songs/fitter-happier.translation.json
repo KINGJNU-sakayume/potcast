@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13634,
+    "durationMs": 117000
+  },
+  "segments": [
+    {
+      "startMs": 330,
+      "endMs": 1710,
+      "translation": "더 건강하고 더 행복하게"
+    },
+    {
+      "startMs": 1710,
+      "endMs": 3440,
+      "translation": "더 생산적으로"
+    },
+    {
+      "startMs": 3440,
+      "endMs": 4680,
+      "translation": "편안하게"
+    },
+    {
+      "startMs": 4680,
+      "endMs": 6500,
+      "translation": "과음하지 않기"
+    },
+    {
+      "startMs": 6500,
+      "endMs": 10180,
+      "translation": "헬스장에서 규칙적인 운동 (일주일에 사흘)"
+    },
+    {
+      "startMs": 10180,
+      "endMs": 13880,
+      "translation": "동료, 직원, 또래들과 더 잘 지내기"
+    },
+    {
+      "startMs": 13880,
+      "endMs": 14950,
+      "translation": "느긋하게"
+    },
+    {
+      "startMs": 14950,
+      "endMs": 19340,
+      "translation": "잘 먹기 (전자레인지 식사와 포화 지방은 이제 그만)"
+    },
+    {
+      "startMs": 19340,
+      "endMs": 21390,
+      "translation": "참을성 있는, 더 나은 운전자"
+    },
+    {
+      "startMs": 21390,
+      "endMs": 24540,
+      "translation": "더 안전한 차 (뒷좌석에서 웃는 아기)"
+    },
+    {
+      "startMs": 24540,
+      "endMs": 27010,
+      "translation": "잘 자기 (악몽 없이)"
+    },
+    {
+      "startMs": 27010,
+      "endMs": 28590,
+      "translation": "편집증 없이"
+    },
+    {
+      "startMs": 28590,
+      "endMs": 33150,
+      "translation": "모든 동물에게 조심스럽게 (거미를 배수구로 흘려보내지 않기)"
+    },
+    {
+      "startMs": 33150,
+      "endMs": 37430,
+      "translation": "옛 친구들과 연락 유지 (가끔 한잔 즐기기)"
+    },
+    {
+      "startMs": 37430,
+      "endMs": 42320,
+      "translation": "(도덕) 은행의 잔고를 자주 확인할 것 (현금 인출기)"
+    },
+    {
+      "startMs": 42320,
+      "endMs": 44040,
+      "translation": "호의에는 호의로"
+    },
+    {
+      "startMs": 44040,
+      "endMs": 45980,
+      "translation": "다정하지만 사랑하지는 않는"
+    },
+    {
+      "startMs": 45980,
+      "endMs": 47840,
+      "translation": "자선 단체 자동 이체"
+    },
+    {
+      "startMs": 47840,
+      "endMs": 50580,
+      "translation": "일요일에는 순환 도로 옆 슈퍼마켓"
+    },
+    {
+      "startMs": 50580,
+      "endMs": 54640,
+      "translation": "(나방을 죽이거나 개미에게 끓는 물 붓지 않기)"
+    },
+    {
+      "startMs": 54640,
+      "endMs": 57140,
+      "translation": "세차 (이것도 일요일에)"
+    },
+    {
+      "startMs": 57140,
+      "endMs": 60190,
+      "translation": "더는 어둠도 한낮의 그림자도 두려워하지 않는"
+    },
+    {
+      "startMs": 60190,
+      "endMs": 63090,
+      "translation": "그렇게 우스꽝스럽게 십 대 같고 절박한 일은 없이"
+    },
+    {
+      "startMs": 63090,
+      "endMs": 64650,
+      "translation": "그렇게 유치한 일은 없이"
+    },
+    {
+      "startMs": 64650,
+      "endMs": 66140,
+      "translation": "더 나은 속도로"
+    },
+    {
+      "startMs": 66140,
+      "endMs": 68210,
+      "translation": "더 느리고 더 계산적으로"
+    },
+    {
+      "startMs": 68210,
+      "endMs": 70030,
+      "translation": "탈출할 가능성 없음"
+    },
+    {
+      "startMs": 70030,
+      "endMs": 71660,
+      "translation": "이제 자영업자"
+    },
+    {
+      "startMs": 71660,
+      "endMs": 73650,
+      "translation": "염려하지만 (무력한)"
+    },
+    {
+      "startMs": 73650,
+      "endMs": 78750,
+      "translation": "권한을 갖추고 정보를 아는 사회 구성원 (이상주의가 아닌 실용주의)"
+    },
+    {
+      "startMs": 78750,
+      "endMs": 80700,
+      "translation": "남들 앞에서 울지 않을 것"
+    },
+    {
+      "startMs": 80700,
+      "endMs": 82560,
+      "translation": "병에 걸릴 가능성은 낮게"
+    },
+    {
+      "startMs": 82560,
+      "endMs": 86800,
+      "translation": "젖은 길에서도 미끄러지지 않는 타이어 (뒷좌석에 벨트로 묶인 아기의 화면)"
+    },
+    {
+      "startMs": 86800,
+      "endMs": 88090,
+      "translation": "좋은 기억력"
+    },
+    {
+      "startMs": 88090,
+      "endMs": 90160,
+      "translation": "좋은 영화에는 여전히 우는"
+    },
+    {
+      "startMs": 90160,
+      "endMs": 92280,
+      "translation": "여전히 침을 섞어 키스하는"
+    },
+    {
+      "startMs": 92280,
+      "endMs": 94570,
+      "translation": "더는 텅 비지도 정신없지도 않은"
+    },
+    {
+      "startMs": 94570,
+      "endMs": 102660,
+      "translation": "막대기에 묶여 꽁꽁 언 겨울 똥 속에 처박힌 고양이처럼 (약점을 비웃을 줄 아는 능력)"
+    },
+    {
+      "startMs": 102660,
+      "endMs": 103540,
+      "translation": "차분하게"
+    },
+    {
+      "startMs": 103540,
+      "endMs": 106860,
+      "translation": "더 건강하고, 더 튼튼하고, 더 생산적으로"
+    },
+    {
+      "startMs": 106860,
+      "endMs": 117000,
+      "translation": "항생제를 맞으며 우리에 갇힌 돼지 한 마리"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 37480350,
+    "durationMs": 309000
+  },
+  "segments": [
+    {
+      "startMs": 27680,
+      "endMs": 34130,
+      "translation": "널 만나러 와서, 미안하다고 말하려고"
+    },
+    {
+      "startMs": 34130,
+      "endMs": 41110,
+      "translation": "네가 얼마나 사랑스러운 사람인지 넌 몰라"
+    },
+    {
+      "startMs": 41110,
+      "endMs": 47450,
+      "translation": "널 찾아야만 했어, 네가 필요하다고 말하려고"
+    },
+    {
+      "startMs": 47450,
+      "endMs": 54120,
+      "translation": "널 내게 특별한 사람으로 따로 두고 있었다고 말하려고"
+    },
+    {
+      "startMs": 54120,
+      "endMs": 60580,
+      "translation": "네 비밀을 들려주고 내게 질문을 해 줘"
+    },
+    {
+      "startMs": 60580,
+      "endMs": 66970,
+      "translation": "아, 처음으로 돌아가자"
+    },
+    {
+      "startMs": 66970,
+      "endMs": 73760,
+      "translation": "쳇바퀴를 돌다 동전은 뒷면이 나오고"
+    },
+    {
+      "startMs": 73760,
+      "endMs": 79790,
+      "translation": "머리는 과학과 멀리 떨어져 있어"
+    },
+    {
+      "startMs": 79790,
+      "endMs": 86530,
+      "translation": "쉽다고 말한 사람은 아무도 없었어"
+    },
+    {
+      "startMs": 86530,
+      "endMs": 92880,
+      "translation": "우리가 헤어지는 건 정말 안타까운 일이야"
+    },
+    {
+      "startMs": 92880,
+      "endMs": 99470,
+      "translation": "쉽다고 말한 사람은 아무도 없었어"
+    },
+    {
+      "startMs": 99470,
+      "endMs": 108350,
+      "translation": "이렇게까지 힘들 거라고 말한 사람은 아무도 없었어"
+    },
+    {
+      "startMs": 108350,
+      "endMs": 139330,
+      "translation": "아, 나를 처음으로 데려가 줘"
+    },
+    {
+      "startMs": 139330,
+      "endMs": 145650,
+      "translation": "난 숫자와 수치를 그냥 짐작하고 있었어"
+    },
+    {
+      "startMs": 145650,
+      "endMs": 152440,
+      "translation": "퍼즐을 뜯어 맞추면서"
+    },
+    {
+      "startMs": 152440,
+      "endMs": 158610,
+      "translation": "과학과 진보에 관한 물음들은"
+    },
+    {
+      "startMs": 158610,
+      "endMs": 165060,
+      "translation": "내 마음만큼 크게 말해 주지 않아"
+    },
+    {
+      "startMs": 165060,
+      "endMs": 172170,
+      "translation": "그래도 날 사랑한다고 말해 줘, 돌아와서 날 따라다녀 줘"
+    },
+    {
+      "startMs": 172170,
+      "endMs": 178510,
+      "translation": "아, 난 서둘러 처음으로 달려가"
+    },
+    {
+      "startMs": 178510,
+      "endMs": 185090,
+      "translation": "쳇바퀴를 돌며 서로의 꼬리를 쫓으면서"
+    },
+    {
+      "startMs": 185090,
+      "endMs": 191750,
+      "translation": "있는 그대로의 모습으로 돌아오면서"
+    },
+    {
+      "startMs": 191750,
+      "endMs": 197910,
+      "translation": "쉽다고 말한 사람은 아무도 없었어"
+    },
+    {
+      "startMs": 197910,
+      "endMs": 204730,
+      "translation": "아, 우리가 헤어지는 건 정말 안타까운 일이야"
+    },
+    {
+      "startMs": 204730,
+      "endMs": 210920,
+      "translation": "쉽다고 말한 사람은 아무도 없었어"
+    },
+    {
+      "startMs": 210920,
+      "endMs": 219980,
+      "translation": "이렇게까지 힘들 거라고 말한 사람은 아무도 없었어"
+    },
+    {
+      "startMs": 219980,
+      "endMs": 309000,
+      "translation": "난 처음으로 돌아가는 중이야"
+    }
+  ]
+}

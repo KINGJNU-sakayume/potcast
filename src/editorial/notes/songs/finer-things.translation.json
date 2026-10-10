@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11571313,
+    "durationMs": 186000
+  },
+  "segments": [
+    {
+      "startMs": 8720,
+      "endMs": 12620,
+      "translation": "메기 알 캐비아, 남부 플로리다 시가"
+    },
+    {
+      "startMs": 12620,
+      "endMs": 16540,
+      "translation": "사슴뿔 손잡이 리볼버가 크롬하츠에서 삐져나와"
+    },
+    {
+      "startMs": 16540,
+      "endMs": 19980,
+      "translation": "이엔 플래티넘, 그릴 위엔 와규"
+    },
+    {
+      "startMs": 19980,
+      "endMs": 24040,
+      "translation": "조지 존스를 쿠페 드빌에서 크게 틀어"
+    },
+    {
+      "startMs": 24040,
+      "endMs": 27980,
+      "translation": "그래, 난 오성급"
+    },
+    {
+      "startMs": 27980,
+      "endMs": 31340,
+      "translation": "지옥을 일으키는 허름한 술집 록스타"
+    },
+    {
+      "startMs": 31340,
+      "endMs": 34740,
+      "translation": "난 고급스러운 것에 끌려"
+    },
+    {
+      "startMs": 34740,
+      "endMs": 38390,
+      "translation": "다이아몬드 반지를 끼고 사냥 은신처에 있어"
+    },
+    {
+      "startMs": 38390,
+      "endMs": 42590,
+      "translation": "내 람보르기니랑 탄약은 전부 위장 무늬 초록"
+    },
+    {
+      "startMs": 42590,
+      "endMs": 46950,
+      "translation": "그래, 내겐 F-1 트릴리언 리무진이 있어"
+    },
+    {
+      "startMs": 46950,
+      "endMs": 50540,
+      "translation": "조수석엔 십점 만점 금발 미녀"
+    },
+    {
+      "startMs": 50540,
+      "endMs": 54420,
+      "translation": "난 끌려, 고급스러운 것에 끌려"
+    },
+    {
+      "startMs": 54420,
+      "endMs": 62230,
+      "translation": "그래, 그래"
+    },
+    {
+      "startMs": 62230,
+      "endMs": 66960,
+      "translation": "50피트짜리 폰툰 보트, 에빈루드 엔진 세 개"
+    },
+    {
+      "startMs": 66960,
+      "endMs": 70560,
+      "translation": "내가 지나가면 해일 같은 물살이 일어"
+    },
+    {
+      "startMs": 70560,
+      "endMs": 73950,
+      "translation": "빨간 컵에 패피 리저브를 홀짝여"
+    },
+    {
+      "startMs": 73950,
+      "endMs": 78000,
+      "translation": "도망칠 헬리콥터용 큰 H가 지붕에"
+    },
+    {
+      "startMs": 78000,
+      "endMs": 81560,
+      "translation": "아, '램블린 맨'을 크게 틀어"
+    },
+    {
+      "startMs": 81560,
+      "endMs": 85300,
+      "translation": "호수 전체가 내가 행크 팬이란 걸 알 때까지"
+    },
+    {
+      "startMs": 85300,
+      "endMs": 88790,
+      "translation": "난 고급스러운 것에 끌려"
+    },
+    {
+      "startMs": 88790,
+      "endMs": 92660,
+      "translation": "다이아몬드 반지를 끼고 사냥 은신처에 있어"
+    },
+    {
+      "startMs": 92660,
+      "endMs": 96580,
+      "translation": "내 람보르기니랑 탄약은 전부 위장 무늬 초록"
+    },
+    {
+      "startMs": 96580,
+      "endMs": 100970,
+      "translation": "그래, 내겐 F-1 트릴리언 리무진이 있어"
+    },
+    {
+      "startMs": 100970,
+      "endMs": 104820,
+      "translation": "조수석엔 십점 만점 금발 미녀"
+    },
+    {
+      "startMs": 104820,
+      "endMs": 108620,
+      "translation": "난 끌려, 고급스러운 것에 끌려"
+    },
+    {
+      "startMs": 108620,
+      "endMs": 132070,
+      "translation": "그래, 그래"
+    },
+    {
+      "startMs": 132070,
+      "endMs": 135360,
+      "translation": "난 고급스러운 것에 끌려"
+    },
+    {
+      "startMs": 135360,
+      "endMs": 139240,
+      "translation": "다이아몬드 반지를 끼고 사냥 은신처에 있어"
+    },
+    {
+      "startMs": 139240,
+      "endMs": 143160,
+      "translation": "내 람보르기니랑 탄약은 전부 위장 무늬 초록"
+    },
+    {
+      "startMs": 143160,
+      "endMs": 147420,
+      "translation": "그래, 내겐 F-1 트릴리언 리무진이 있어"
+    },
+    {
+      "startMs": 147420,
+      "endMs": 151360,
+      "translation": "조수석엔 십점 만점 금발 미녀"
+    },
+    {
+      "startMs": 151360,
+      "endMs": 155290,
+      "translation": "난 끌려, 고급스러운 것에 끌려"
+    },
+    {
+      "startMs": 155290,
+      "endMs": 160960,
+      "translation": "그래, 그래"
+    },
+    {
+      "startMs": 160960,
+      "endMs": 186000,
+      "translation": "그래, 그래"
+    }
+  ]
+}

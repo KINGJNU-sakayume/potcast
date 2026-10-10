@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1017363,
+    "durationMs": 245000
+  },
+  "segments": [
+    {
+      "startMs": 350,
+      "endMs": 3230,
+      "translation": "오 그래, 오 그래, 오 그래"
+    },
+    {
+      "startMs": 3230,
+      "endMs": 8000,
+      "translation": "그래, 날 위해 죽겠다고"
+    },
+    {
+      "startMs": 8000,
+      "endMs": 9430,
+      "translation": "죽겠다고 했잖아, 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 9430,
+      "endMs": 12610,
+      "translation": "그런데 거짓말했지, 나한테 거짓말했지"
+    },
+    {
+      "startMs": 12610,
+      "endMs": 15610,
+      "translation": "총알도 대신 맞겠다고, 날 위해 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 15610,
+      "endMs": 18950,
+      "translation": "네가 거짓말해 왔다는 아주 나쁜 예감이 들었어"
+    },
+    {
+      "startMs": 18950,
+      "endMs": 22200,
+      "translation": "우린 조용히 지냈는데 넌 나랑 같이 취해 가고 있었지"
+    },
+    {
+      "startMs": 22200,
+      "endMs": 25500,
+      "translation": "밤 11시가 넘으면 네 다른 얼굴이 보여"
+    },
+    {
+      "startMs": 25500,
+      "endMs": 28870,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 28870,
+      "endMs": 32060,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지"
+    },
+    {
+      "startMs": 32060,
+      "endMs": 35310,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 35310,
+      "endMs": 38880,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지"
+    },
+    {
+      "startMs": 38880,
+      "endMs": 42130,
+      "translation": "첫눈에 반한 사랑이었어, 네가 운명인 것 같았지"
+    },
+    {
+      "startMs": 42130,
+      "endMs": 45630,
+      "translation": "그런데 네 혈관 속의 피는 얼어붙어 있다는 걸 알아 (너무 차가워)"
+    },
+    {
+      "startMs": 45630,
+      "endMs": 47260,
+      "translation": "이젠 참을성도 없어 (없어)"
+    },
+    {
+      "startMs": 47260,
+      "endMs": 49140,
+      "translation": "너무 오래 기다렸어 (그래)"
+    },
+    {
+      "startMs": 49140,
+      "endMs": 53000,
+      "translation": "넌 그걸 숨겼고 내가 제일 마지막에 알았지 (에이)"
+    },
+    {
+      "startMs": 53000,
+      "endMs": 56410,
+      "translation": "네가 들어오는 소리를 들었어, 난 깨어 누워 있었지"
+    },
+    {
+      "startMs": 56410,
+      "endMs": 59720,
+      "translation": "너인 줄 모르고 금고에서 총을 꺼냈어 (젠장)"
+    },
+    {
+      "startMs": 59720,
+      "endMs": 63080,
+      "translation": "네가 날 체포되게 만들었던 거 기억나 (와)"
+    },
+    {
+      "startMs": 63080,
+      "endMs": 66000,
+      "translation": "적어도 감방에선 좀 쉴 수 있었지"
+    },
+    {
+      "startMs": 66000,
+      "endMs": 69170,
+      "translation": "우, 난 항복해 (에이), 이제 널 잊을 때야 (에이)"
+    },
+    {
+      "startMs": 69170,
+      "endMs": 72290,
+      "translation": "널 용서하기엔 너무 지쳤어 (에이), 내 간이 버티질 못해 (에이)"
+    },
+    {
+      "startMs": 72290,
+      "endMs": 75420,
+      "translation": "그리고 너도 알지 (에이), 이제 (에이) 다 끝났어"
+    },
+    {
+      "startMs": 75420,
+      "endMs": 78920,
+      "translation": "네 친구들 전부 (에이), 알잖아 (에이), 다 널 팔아넘겼어"
+    },
+    {
+      "startMs": 78920,
+      "endMs": 82020,
+      "translation": "총알도 대신 맞겠다고, 날 위해 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 82020,
+      "endMs": 85240,
+      "translation": "네가 거짓말해 왔다는 아주 나쁜 예감이 들었어"
+    },
+    {
+      "startMs": 85240,
+      "endMs": 88560,
+      "translation": "우린 조용히 지냈는데 넌 나랑 같이 취해 가고 있었지"
+    },
+    {
+      "startMs": 88560,
+      "endMs": 91960,
+      "translation": "밤 11시가 넘으면 네 다른 얼굴이 보여"
+    },
+    {
+      "startMs": 91960,
+      "endMs": 95290,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 95290,
+      "endMs": 98780,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지"
+    },
+    {
+      "startMs": 98780,
+      "endMs": 101980,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 101980,
+      "endMs": 106360,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지"
+    },
+    {
+      "startMs": 106360,
+      "endMs": 109550,
+      "translation": "VIP석이었어, 하필 내 최고의 밤 중 하나였지"
+    },
+    {
+      "startMs": 109550,
+      "endMs": 112810,
+      "translation": "아침 9시에 클럽에서 나오니 대낮이었어 (대낮)"
+    },
+    {
+      "startMs": 112810,
+      "endMs": 116150,
+      "translation": "못된 여자를 만났는데 내가 너무 잘해 줬어 (너무 잘해 줬어)"
+    },
+    {
+      "startMs": 116150,
+      "endMs": 119400,
+      "translation": "네 약한 모습을 봤지, 그건 내가 원하는 게 아니야 (내가 원하는 게 아니야)"
+    },
+    {
+      "startMs": 119400,
+      "endMs": 122480,
+      "translation": "넌 방금 영혼을 팔았어, 그만 울어 (영혼을 팔았어)"
+    },
+    {
+      "startMs": 122480,
+      "endMs": 126130,
+      "translation": "네 여권을 보니 거짓말하는 것 같아 (차가운 거 알아)"
+    },
+    {
+      "startMs": 126130,
+      "endMs": 129130,
+      "translation": "넌 과거에 무너졌어, 부정하지 마 (내가 아는 거 알지)"
+    },
+    {
+      "startMs": 129130,
+      "endMs": 132590,
+      "translation": "전 남친이 전화했고, 넌 약해져서 날아갔지, 아니 (날아갔지)"
+    },
+    {
+      "startMs": 132590,
+      "endMs": 136060,
+      "translation": "우리 사이가 좋진 않았지만, 난 노력했어 (너한테 노력했어)"
+    },
+    {
+      "startMs": 136060,
+      "endMs": 139340,
+      "translation": "너한테 닿으려고 뭐든 했어 (손을 내밀었어)"
+    },
+    {
+      "startMs": 139340,
+      "endMs": 142440,
+      "translation": "넌 날 무슨 소동에 휘말리게 한 적 없다고 했지 (소동은 없다고)"
+    },
+    {
+      "startMs": 142440,
+      "endMs": 144880,
+      "translation": "난 결국 내 업보와 마주쳤어 (마주쳤어)"
+    },
+    {
+      "startMs": 144880,
+      "endMs": 148290,
+      "translation": "총알도 대신 맞겠다고, 날 위해 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 148290,
+      "endMs": 151450,
+      "translation": "네가 거짓말해 왔다는 아주 나쁜 예감이 들었어"
+    },
+    {
+      "startMs": 151450,
+      "endMs": 155030,
+      "translation": "우린 조용히 지냈는데 넌 나랑 같이 취해 가고 있었지"
+    },
+    {
+      "startMs": 155030,
+      "endMs": 158320,
+      "translation": "밤 11시가 넘으면 네 다른 얼굴이 보여"
+    },
+    {
+      "startMs": 158320,
+      "endMs": 161380,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 161380,
+      "endMs": 164620,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지"
+    },
+    {
+      "startMs": 164620,
+      "endMs": 168110,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 168110,
+      "endMs": 171840,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지"
+    },
+    {
+      "startMs": 171840,
+      "endMs": 174580,
+      "translation": "진정해, 하나하나 말해 줄게, 간단해"
+    },
+    {
+      "startMs": 174580,
+      "endMs": 177760,
+      "translation": "돌아와서 알아냈어, 직감을 따랐어야 했어"
+    },
+    {
+      "startMs": 177760,
+      "endMs": 181110,
+      "translation": "이제 장난 안 해, 네 휴대폰을 뒤졌어"
+    },
+    {
+      "startMs": 181110,
+      "endMs": 184550,
+      "translation": "네 DM 속 여자들을 찾아서 다 내 집에 데려갔지"
+    },
+    {
+      "startMs": 184550,
+      "endMs": 188130,
+      "translation": "네가 내 소식을 마지막으로 들은 지 꽤 됐지"
+    },
+    {
+      "startMs": 188130,
+      "endMs": 191370,
+      "translation": "난 독해졌고, 그래서 이 절을 나한테 맡긴 거야"
+    },
+    {
+      "startMs": 191370,
+      "endMs": 194360,
+      "translation": "공연마다 사람들이 몰려와, 공연에서 들고일어나니까"
+    },
+    {
+      "startMs": 194360,
+      "endMs": 197560,
+      "translation": "이별 편지 하나로 천5백만 장을 팔았어"
+    },
+    {
+      "startMs": 197560,
+      "endMs": 199310,
+      "translation": "우리 침대에 낯선 사람들을 들였지"
+    },
+    {
+      "startMs": 199310,
+      "endMs": 201130,
+      "translation": "이제 넌 사생활을 지킬 권리를 잃었어"
+    },
+    {
+      "startMs": 201130,
+      "endMs": 202560,
+      "translation": "우리 비밀을 다 쏟아내"
+    },
+    {
+      "startMs": 202560,
+      "endMs": 204630,
+      "translation": "나랑 같이 묻힐 줄 알았던 비밀들을"
+    },
+    {
+      "startMs": 204630,
+      "endMs": 207410,
+      "translation": "몰래 그걸 즐기는 거 다 알아"
+    },
+    {
+      "startMs": 207410,
+      "endMs": 209190,
+      "translation": "날 미쳤다고 말할 필요 없어"
+    },
+    {
+      "startMs": 209190,
+      "endMs": 211020,
+      "translation": "아무것도 변하지 않았다는 걸 아니까"
+    },
+    {
+      "startMs": 211020,
+      "endMs": 213980,
+      "translation": "총알도 대신 맞겠다고, 날 위해 죽겠다고 했잖아"
+    },
+    {
+      "startMs": 213980,
+      "endMs": 217400,
+      "translation": "네가 거짓말해 왔다는 아주 나쁜 예감이 들었어"
+    },
+    {
+      "startMs": 217400,
+      "endMs": 220750,
+      "translation": "우린 조용히 지냈는데 넌 나랑 같이 취해 가고 있었지"
+    },
+    {
+      "startMs": 220750,
+      "endMs": 224120,
+      "translation": "밤 11시가 넘으면 네 다른 얼굴이 보여 (그런데 거짓말했지, 거짓말했지, 거짓말했지)"
+    },
+    {
+      "startMs": 224120,
+      "endMs": 227360,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아 (죽겠다고, 죽겠다고, 죽겠다고)"
+    },
+    {
+      "startMs": 227360,
+      "endMs": 230480,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지 (그런데 거짓말했지, 거짓말했지, 거짓말했지)"
+    },
+    {
+      "startMs": 230480,
+      "endMs": 233850,
+      "translation": "날 위해 죽겠다고, 죽겠다고, 죽겠다고 했잖아 (죽겠다고, 죽겠다고, 죽겠다고)"
+    },
+    {
+      "startMs": 233850,
+      "endMs": 245000,
+      "translation": "그런데 거짓말했지, 거짓말했지, 거짓말했지 (그런데 거짓말했지, 거짓말했지, 거짓말했지)"
+    }
+  ]
+}

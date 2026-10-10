@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 573221,
+    "durationMs": 70000
+  },
+  "segments": [
+    {
+      "startMs": 90,
+      "endMs": 17180,
+      "translation": "이 삶이 끝나는 어느 기쁜 아침, 나는 날아가리라"
+    },
+    {
+      "startMs": 17180,
+      "endMs": 33610,
+      "translation": "기쁨이 끝나지 않는 땅으로, 나는 날아가리라"
+    },
+    {
+      "startMs": 33610,
+      "endMs": 42590,
+      "translation": "나는 날아가리라, 오, 영광"
+    },
+    {
+      "startMs": 42590,
+      "endMs": 50560,
+      "translation": "나는 날아가리라"
+    },
+    {
+      "startMs": 50560,
+      "endMs": 59340,
+      "translation": "내가 죽으면, 할렐루야, 머지않아"
+    },
+    {
+      "startMs": 59340,
+      "endMs": 70000,
+      "translation": "나는 날아가리라"
+    }
+  ]
+}

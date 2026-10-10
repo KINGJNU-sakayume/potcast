@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 34596972,
+    "durationMs": 220000
+  },
+  "segments": [
+    {
+      "startMs": 5770,
+      "endMs": 10520,
+      "translation": "신나 있어 (그래) 그래"
+    },
+    {
+      "startMs": 10520,
+      "endMs": 17890,
+      "translation": "헤이, 나나나나나나, 헤이"
+    },
+    {
+      "startMs": 17890,
+      "endMs": 20630,
+      "translation": "왜 우리 사이에 뭔가를 끼워 넣으려는 거야"
+    },
+    {
+      "startMs": 20630,
+      "endMs": 26220,
+      "translation": "우리 사이엔 아무것도 없는데, 오오오, 에이"
+    },
+    {
+      "startMs": 26220,
+      "endMs": 29170,
+      "translation": "왜 삶을 걸고 우리를 붙잡아 두려는 거야"
+    },
+    {
+      "startMs": 29170,
+      "endMs": 34600,
+      "translation": "함께 있게 하려고, 어, 오오오"
+    },
+    {
+      "startMs": 34600,
+      "endMs": 36700,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 36700,
+      "endMs": 38510,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 38510,
+      "endMs": 43120,
+      "translation": "우린 서로에게 좋지 않아, 서로에게 좋지 않아"
+    },
+    {
+      "startMs": 43120,
+      "endMs": 45220,
+      "translation": "우린 떨어져 있을 때 더 나아 (내 베이비)"
+    },
+    {
+      "startMs": 45220,
+      "endMs": 47100,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 47100,
+      "endMs": 51390,
+      "translation": "우린 서로에게 좋지 않아"
+    },
+    {
+      "startMs": 51390,
+      "endMs": 53460,
+      "translation": "외로운 밤"
+    },
+    {
+      "startMs": 53460,
+      "endMs": 59060,
+      "translation": "베이비 걸, 난 외로운 밤에 널 사랑했어, 오"
+    },
+    {
+      "startMs": 59060,
+      "endMs": 61940,
+      "translation": "그게 유일한 때였어"
+    },
+    {
+      "startMs": 61940,
+      "endMs": 68210,
+      "translation": "내가 헛된 기대를 품게 했다면 사과할게, 오"
+    },
+    {
+      "startMs": 68210,
+      "endMs": 71270,
+      "translation": "어떻게 해야 네 결정을 다시 생각하게 할 수 있을까?"
+    },
+    {
+      "startMs": 71270,
+      "endMs": 76710,
+      "translation": "제멋대로인 결정을, 오오오, 헤이"
+    },
+    {
+      "startMs": 76710,
+      "endMs": 79820,
+      "translation": "뭐가 네 입장을 다시 생각하게 할까?"
+    },
+    {
+      "startMs": 79820,
+      "endMs": 85040,
+      "translation": "네 속셈은 알아, 오오오"
+    },
+    {
+      "startMs": 85040,
+      "endMs": 87140,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 87140,
+      "endMs": 89110,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 89110,
+      "endMs": 93450,
+      "translation": "우린 서로에게 좋지 않아, 서로에게 좋지 않아"
+    },
+    {
+      "startMs": 93450,
+      "endMs": 96080,
+      "translation": "우린 떨어져 있을 때 더 나아 (내 베이비)"
+    },
+    {
+      "startMs": 96080,
+      "endMs": 97530,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 97530,
+      "endMs": 102060,
+      "translation": "우린 서로에게 좋지 않아"
+    },
+    {
+      "startMs": 102060,
+      "endMs": 103950,
+      "translation": "외로운 밤"
+    },
+    {
+      "startMs": 103950,
+      "endMs": 109690,
+      "translation": "베이비 걸, 난 외로운 밤에 널 사랑했어, 오"
+    },
+    {
+      "startMs": 109690,
+      "endMs": 112120,
+      "translation": "그게 유일한 때였어"
+    },
+    {
+      "startMs": 112120,
+      "endMs": 127360,
+      "translation": "내가 헛된 기대를 품게 했다면 사과할게, 오"
+    },
+    {
+      "startMs": 127360,
+      "endMs": 129370,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 129370,
+      "endMs": 131150,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 131150,
+      "endMs": 135670,
+      "translation": "우린 서로에게 좋지 않아, 서로에게 좋지 않아"
+    },
+    {
+      "startMs": 135670,
+      "endMs": 137900,
+      "translation": "우린 떨어져 있을 때 더 나아 (내 베이비)"
+    },
+    {
+      "startMs": 137900,
+      "endMs": 139670,
+      "translation": "우린 떨어져 있을 때 더 나아"
+    },
+    {
+      "startMs": 139670,
+      "endMs": 160730,
+      "translation": "우린 서로에게 좋지 않아"
+    },
+    {
+      "startMs": 160730,
+      "endMs": 162700,
+      "translation": "외로운 밤"
+    },
+    {
+      "startMs": 162700,
+      "endMs": 168570,
+      "translation": "베이비 걸, 난 외로운 밤에 널 사랑했어, 오"
+    },
+    {
+      "startMs": 168570,
+      "endMs": 171350,
+      "translation": "그게 유일한 때였어 (유일한 때)"
+    },
+    {
+      "startMs": 171350,
+      "endMs": 177520,
+      "translation": "내가 헛된 기대를 품게 했다면 사과할게, 오"
+    },
+    {
+      "startMs": 177520,
+      "endMs": 179700,
+      "translation": "외로운 밤"
+    },
+    {
+      "startMs": 179700,
+      "endMs": 185350,
+      "translation": "베이비 걸, 난 외로운 밤에 널 사랑했어, 오"
+    },
+    {
+      "startMs": 185350,
+      "endMs": 188110,
+      "translation": "그게 유일한 때였어"
+    },
+    {
+      "startMs": 188110,
+      "endMs": 196370,
+      "translation": "내가 헛된 기대를 품게 했다면 사과할게, 오"
+    },
+    {
+      "startMs": 196370,
+      "endMs": 199010,
+      "translation": "베이비 걸, 난 널 사랑했어"
+    },
+    {
+      "startMs": 199010,
+      "endMs": 201260,
+      "translation": "알잖아, 난 널 사랑했어"
+    },
+    {
+      "startMs": 201260,
+      "endMs": 204380,
+      "translation": "널 사랑했어"
+    },
+    {
+      "startMs": 204380,
+      "endMs": 220000,
+      "translation": "베이비, 나나나나나나나나나나, 에이"
+    }
+  ]
+}

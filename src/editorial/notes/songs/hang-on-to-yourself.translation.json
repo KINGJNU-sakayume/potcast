@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1090808,
+    "durationMs": 160000
+  },
+  "segments": [
+    {
+      "startMs": 6290,
+      "endMs": 8360,
+      "translation": "아, 그녀는 혀를 꼬이게 하는 폭풍이야"
+    },
+    {
+      "startMs": 8360,
+      "endMs": 9850,
+      "translation": "오늘 밤 공연에 오지"
+    },
+    {
+      "startMs": 9850,
+      "endMs": 14190,
+      "translation": "빛의 기계에 기도하면서"
+    },
+    {
+      "startMs": 14190,
+      "endMs": 15890,
+      "translation": "그녀가 원하는 건 내 돈이 아니라 내 꿀이야"
+    },
+    {
+      "startMs": 15890,
+      "endMs": 17530,
+      "translation": "그녀는 펑키한 허벅지를 수집하고"
+    },
+    {
+      "startMs": 17530,
+      "endMs": 21700,
+      "translation": "전기 같은 꿈 위에 누워"
+    },
+    {
+      "startMs": 21700,
+      "endMs": 25060,
+      "translation": "자, 어서, 어서"
+    },
+    {
+      "startMs": 25060,
+      "endMs": 27290,
+      "translation": "우리 정말 제대로 돌아가고 있어"
+    },
+    {
+      "startMs": 27290,
+      "endMs": 30270,
+      "translation": "자, 어서, 그래 어서"
+    },
+    {
+      "startMs": 30270,
+      "endMs": 31690,
+      "translation": "우리가 해낼 거라 생각한다면"
+    },
+    {
+      "startMs": 31690,
+      "endMs": 38840,
+      "translation": "정신 단단히 붙들어"
+    },
+    {
+      "startMs": 38840,
+      "endMs": 41600,
+      "translation": "우린 춤도 못 추고 말도 별로 안 해, 그냥 뒹굴고 연주할 뿐"
+    },
+    {
+      "startMs": 41600,
+      "endMs": 46410,
+      "translation": "그러다 바셀린 위의 호랑이처럼 움직이지"
+    },
+    {
+      "startMs": 46410,
+      "endMs": 49390,
+      "translation": "훔친 기타로 하면 쓴맛도 더 근사하게 나온다"
+    },
+    {
+      "startMs": 49390,
+      "endMs": 53810,
+      "translation": "넌 축복받은 사람이야, 우린 화성에서 온 스파이더스"
+    },
+    {
+      "startMs": 53810,
+      "endMs": 56920,
+      "translation": "자, 어서, 어서"
+    },
+    {
+      "startMs": 56920,
+      "endMs": 59100,
+      "translation": "우리 정말 제대로 돌아가고 있어"
+    },
+    {
+      "startMs": 59100,
+      "endMs": 61930,
+      "translation": "자, 어서, 그래 어서"
+    },
+    {
+      "startMs": 61930,
+      "endMs": 63550,
+      "translation": "우리가 해낼 거라 생각한다면"
+    },
+    {
+      "startMs": 63550,
+      "endMs": 68000,
+      "translation": "정신 단단히 붙들어"
+    },
+    {
+      "startMs": 68000,
+      "endMs": 80420,
+      "translation": "어서"
+    },
+    {
+      "startMs": 80420,
+      "endMs": 81220,
+      "translation": "쏟아부어"
+    },
+    {
+      "startMs": 81220,
+      "endMs": 83950,
+      "translation": "어서, 어서"
+    },
+    {
+      "startMs": 83950,
+      "endMs": 86420,
+      "translation": "우리 정말 제대로 돌아가고 있어"
+    },
+    {
+      "startMs": 86420,
+      "endMs": 89060,
+      "translation": "자, 어서, 그래 어서"
+    },
+    {
+      "startMs": 89060,
+      "endMs": 90600,
+      "translation": "우리가 해낼 거라 생각한다면"
+    },
+    {
+      "startMs": 90600,
+      "endMs": 97690,
+      "translation": "정신 단단히 붙들어"
+    },
+    {
+      "startMs": 97690,
+      "endMs": 100750,
+      "translation": "자, 어서, 그래 어서"
+    },
+    {
+      "startMs": 100750,
+      "endMs": 102980,
+      "translation": "우리 정말 제대로 돌아가고 있어"
+    },
+    {
+      "startMs": 102980,
+      "endMs": 105890,
+      "translation": "자, 어서, 그래 어서"
+    },
+    {
+      "startMs": 105890,
+      "endMs": 107350,
+      "translation": "우리가 해낼 거라 생각한다면"
+    },
+    {
+      "startMs": 107350,
+      "endMs": 122950,
+      "translation": "정신 단단히 붙들어"
+    },
+    {
+      "startMs": 122950,
+      "endMs": 128040,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 128040,
+      "endMs": 133340,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 133340,
+      "endMs": 136040,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 136040,
+      "endMs": 138480,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 138480,
+      "endMs": 140840,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 140840,
+      "endMs": 143520,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 143520,
+      "endMs": 146470,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 146470,
+      "endMs": 148820,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 148820,
+      "endMs": 151430,
+      "translation": "어서, 아, 어서, 아"
+    },
+    {
+      "startMs": 151430,
+      "endMs": 160000,
+      "translation": "어서, 아, 어서, 아"
+    }
+  ]
+}

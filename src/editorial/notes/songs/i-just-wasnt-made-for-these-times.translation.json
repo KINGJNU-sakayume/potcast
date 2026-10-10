@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1530881,
+    "durationMs": 202000
+  },
+  "segments": [
+    {
+      "startMs": 580,
+      "endMs": 10220,
+      "translation": "내 생각을 말할 수 있는, 내가 맞는 자리를 계속 찾고 있다"
+    },
+    {
+      "startMs": 10220,
+      "endMs": 20580,
+      "translation": "내가 두고 떠나지 않을 사람들을 찾으려고 애써 왔다"
+    },
+    {
+      "startMs": 20580,
+      "endMs": 27800,
+      "translation": "다들 내가 머리가 좋다고 하지만, 그게 내게 아무 도움도 되지 않는다"
+    },
+    {
+      "startMs": 27800,
+      "endMs": 31160,
+      "translation": "도움이 되면 좋으련만"
+    },
+    {
+      "startMs": 31160,
+      "endMs": 40660,
+      "translation": "일이 다시 풀리기 시작할 때마다 이번엔 뭔가 잘되고 있다고 생각한다"
+    },
+    {
+      "startMs": 40660,
+      "endMs": 43720,
+      "translation": "그런데 어디서 틀어지는 걸까"
+    },
+    {
+      "startMs": 43720,
+      "endMs": 48750,
+      "translation": "가끔 너무 슬프다"
+    },
+    {
+      "startMs": 48750,
+      "endMs": 49850,
+      "translation": "가끔 너무 슬프다"
+    },
+    {
+      "startMs": 49850,
+      "endMs": 53680,
+      "translation": "(마음과 영혼을 다 쏟을 만한 걸 아직 찾지 못했다)"
+    },
+    {
+      "startMs": 53680,
+      "endMs": 55070,
+      "translation": "가끔 너무 슬프다"
+    },
+    {
+      "startMs": 55070,
+      "endMs": 64460,
+      "translation": "(마음과 영혼을 다 쏟을 만한 걸 아직 찾지 못했다)"
+    },
+    {
+      "startMs": 64460,
+      "endMs": 74570,
+      "translation": "나는 그냥 이 시대에 맞게 만들어지지 않았나 보다"
+    },
+    {
+      "startMs": 74570,
+      "endMs": 84720,
+      "translation": "뭔가를 바꿔 보려는 영감이 떠오를 때마다"
+    },
+    {
+      "startMs": 84720,
+      "endMs": 95650,
+      "translation": "새로운 것이 있을지 모를 곳을 찾는 데 아무도 도와주려 하지 않는다"
+    },
+    {
+      "startMs": 95650,
+      "endMs": 102440,
+      "translation": "좋을 때만 친구인 이들이 발을 빼면 나는 어디로 가야 할까"
+    },
+    {
+      "startMs": 102440,
+      "endMs": 105980,
+      "translation": "다 무슨 의미일까"
+    },
+    {
+      "startMs": 105980,
+      "endMs": 114890,
+      "translation": "일이 다시 풀리기 시작할 때마다 이번엔 뭔가 잘되고 있다고 생각한다"
+    },
+    {
+      "startMs": 114890,
+      "endMs": 118620,
+      "translation": "그런데 어디서 틀어지는 걸까"
+    },
+    {
+      "startMs": 118620,
+      "endMs": 123680,
+      "translation": "가끔 너무 슬프다"
+    },
+    {
+      "startMs": 123680,
+      "endMs": 128630,
+      "translation": "가끔 너무 슬프다 (마음과 영혼을 다 쏟을 만한 걸 아직 찾지 못했다)"
+    },
+    {
+      "startMs": 128630,
+      "endMs": 139380,
+      "translation": "가끔 너무 슬프다 (마음과 영혼을 다 쏟을 만한 걸 아직 찾지 못했다)"
+    },
+    {
+      "startMs": 139380,
+      "endMs": 160450,
+      "translation": "나는 그냥 이 시대에 맞게 만들어지지 않았나 보다"
+    },
+    {
+      "startMs": 160450,
+      "endMs": 166230,
+      "translation": "나는 그냥 이 시대에 맞게 만들어지지 않았나 보다"
+    },
+    {
+      "startMs": 166230,
+      "endMs": 170670,
+      "translation": "나는 그냥 이 시대에 맞게 만들어지지 않았나 보다"
+    },
+    {
+      "startMs": 170670,
+      "endMs": 176070,
+      "translation": "나는 그냥 이 시대에 맞게 만들어지지 않았나 보다"
+    },
+    {
+      "startMs": 176070,
+      "endMs": 181150,
+      "translation": "나는 그냥 이 시대에 맞게 만들어지지 않았나 보다"
+    },
+    {
+      "startMs": 181150,
+      "endMs": 202000,
+      "translation": "나는 그냥 이 시대에 맞게 만들어지지 않았나 보다"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 33959586,
+    "durationMs": 112000
+  },
+  "segments": [
+    {
+      "startMs": 10710,
+      "endMs": 14670,
+      "translation": "환영을 봤어"
+    },
+    {
+      "startMs": 14670,
+      "endMs": 20010,
+      "translation": "부엌에서 내 손톱이 보이는 환영"
+    },
+    {
+      "startMs": 20010,
+      "endMs": 25060,
+      "translation": "조리대를 긁으며 비명을 지르고 있었어"
+    },
+    {
+      "startMs": 25060,
+      "endMs": 27380,
+      "translation": "고양이처럼 등을 휘었어"
+    },
+    {
+      "startMs": 27380,
+      "endMs": 29990,
+      "translation": "내 자세는 멈출 수 없었지"
+    },
+    {
+      "startMs": 29990,
+      "endMs": 31770,
+      "translation": "네가 하고 있었으니까"
+    },
+    {
+      "startMs": 31770,
+      "endMs": 42200,
+      "translation": "울면 안 되는데, 난 좋아, 스타보이"
+    },
+    {
+      "startMs": 42200,
+      "endMs": 52830,
+      "translation": "울면 안 되는데, 난 좋아 (좋아), 스타보이"
+    },
+    {
+      "startMs": 52830,
+      "endMs": 63710,
+      "translation": "울면 안 되는데, 난 좋아, 스타보이"
+    },
+    {
+      "startMs": 63710,
+      "endMs": 75410,
+      "translation": "울면 안 되는데, 난 좋아, 스타보이"
+    },
+    {
+      "startMs": 75410,
+      "endMs": 85880,
+      "translation": "난 네가 빛나는 모습을 보고 싶어, 넌 스타걸이니까"
+    },
+    {
+      "startMs": 85880,
+      "endMs": 96600,
+      "translation": "난 네가 빛나는 모습을 보고 싶어, 넌 스타걸이니까"
+    },
+    {
+      "startMs": 96600,
+      "endMs": 112000,
+      "translation": "난 네가 빛나는 모습을 보고 싶어, 넌 스타걸이니까"
+    }
+  ]
+}

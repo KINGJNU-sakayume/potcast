@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 503956,
+    "durationMs": 194000
+  },
+  "segments": [
+    {
+      "startMs": 3700,
+      "endMs": 10360,
+      "translation": "(그래, 그래, 그래)"
+    },
+    {
+      "startMs": 10360,
+      "endMs": 13230,
+      "translation": "내 손목이 미친 듯 춤추는 거 알아"
+    },
+    {
+      "startMs": 13230,
+      "endMs": 15960,
+      "translation": "요즘 좀 잘나가는 중이야"
+    },
+    {
+      "startMs": 15960,
+      "endMs": 18620,
+      "translation": "예전엔 정말 빌어먹게 참을성 있었지"
+    },
+    {
+      "startMs": 18620,
+      "endMs": 21250,
+      "translation": "하지만 이젠 '꺼져, 돈이나 내놔'야"
+    },
+    {
+      "startMs": 21250,
+      "endMs": 23950,
+      "translation": "이 녀석들 때문에 흔들릴 순 없어"
+    },
+    {
+      "startMs": 23950,
+      "endMs": 26780,
+      "translation": "돈이 날 바꾸게 두진 않아"
+    },
+    {
+      "startMs": 26780,
+      "endMs": 29370,
+      "translation": "엄마가 날 그렇게 키우진 않았어"
+    },
+    {
+      "startMs": 29370,
+      "endMs": 31960,
+      "translation": "자랑하려는 건 아닌데, 날 탓할 수 있어?"
+    },
+    {
+      "startMs": 31960,
+      "endMs": 34570,
+      "translation": "20만 달러에 VVS, 옐로 다이아몬드"
+    },
+    {
+      "startMs": 34570,
+      "endMs": 37270,
+      "translation": "다들 쫓아오려 하지만 절대 날 못 찾아"
+    },
+    {
+      "startMs": 37270,
+      "endMs": 39220,
+      "translation": "권총을 바로 옆에 두고 자"
+    },
+    {
+      "startMs": 39220,
+      "endMs": 40410,
+      "translation": "정부 따윈 엿이나 먹으라 그래"
+    },
+    {
+      "startMs": 40410,
+      "endMs": 42450,
+      "translation": "앉아서 계획을 짜"
+    },
+    {
+      "startMs": 42450,
+      "endMs": 45040,
+      "translation": "몸에 10만 달러를 두르고"
+    },
+    {
+      "startMs": 45040,
+      "endMs": 47780,
+      "translation": "그 녀석들이랑 엮이면 큰일 나"
+    },
+    {
+      "startMs": 47780,
+      "endMs": 50450,
+      "translation": "꼬마 아가씨는 내 주머니만 원해"
+    },
+    {
+      "startMs": 50450,
+      "endMs": 53290,
+      "translation": "페라리는 로켓처럼 출발해"
+    },
+    {
+      "startMs": 53290,
+      "endMs": 55520,
+      "translation": "잠깐, 너무 가까워"
+    },
+    {
+      "startMs": 55520,
+      "endMs": 58180,
+      "translation": "난 몰라, 난 널 몰라"
+    },
+    {
+      "startMs": 58180,
+      "endMs": 60730,
+      "translation": "돈을 불려야 했어, 불려야 했어"
+    },
+    {
+      "startMs": 60730,
+      "endMs": 63380,
+      "translation": "내 방식대로, 내 방식대로, 그래"
+    },
+    {
+      "startMs": 63380,
+      "endMs": 66260,
+      "translation": "뜨고 나면 꼭 그렇지"
+    },
+    {
+      "startMs": 66260,
+      "endMs": 68830,
+      "translation": "다들 널 아는 척해"
+    },
+    {
+      "startMs": 68830,
+      "endMs": 71470,
+      "translation": "영 포스트는 파블로처럼"
+    },
+    {
+      "startMs": 71470,
+      "endMs": 74470,
+      "translation": "다들 널 띄워 주고 싶어 해, 그래"
+    },
+    {
+      "startMs": 74470,
+      "endMs": 77250,
+      "translation": "내 손목이 미친 듯 춤추는 거 알아"
+    },
+    {
+      "startMs": 77250,
+      "endMs": 79960,
+      "translation": "요즘 좀 잘나가는 중이야"
+    },
+    {
+      "startMs": 79960,
+      "endMs": 82660,
+      "translation": "예전엔 정말 빌어먹게 참을성 있었지"
+    },
+    {
+      "startMs": 82660,
+      "endMs": 85450,
+      "translation": "하지만 이젠 '꺼져, 돈이나 내놔'야"
+    },
+    {
+      "startMs": 85450,
+      "endMs": 87960,
+      "translation": "이 녀석들 때문에 흔들릴 순 없어"
+    },
+    {
+      "startMs": 87960,
+      "endMs": 90820,
+      "translation": "돈이 날 바꾸게 두진 않아"
+    },
+    {
+      "startMs": 90820,
+      "endMs": 93390,
+      "translation": "엄마가 날 그렇게 키우진 않았어"
+    },
+    {
+      "startMs": 93390,
+      "endMs": 96130,
+      "translation": "자랑하려는 건 아닌데, 날 탓할 수 있어?"
+    },
+    {
+      "startMs": 96130,
+      "endMs": 98550,
+      "translation": "시속 200으로 고속도로를 이리저리 피해 달려"
+    },
+    {
+      "startMs": 98550,
+      "endMs": 101340,
+      "translation": "날 가둘 순 있어도 절대 멈추게 할 순 없어"
+    },
+    {
+      "startMs": 101340,
+      "endMs": 103180,
+      "translation": "내 집으로 가는 길에"
+    },
+    {
+      "startMs": 103180,
+      "endMs": 104530,
+      "translation": "네 애인한테 다시 메시지 보내 봐"
+    },
+    {
+      "startMs": 104530,
+      "endMs": 106120,
+      "translation": "아마 그 여자가 오고 있을걸"
+    },
+    {
+      "startMs": 106120,
+      "endMs": 108740,
+      "translation": "그래, 벤틀리 안에서 든든하게"
+    },
+    {
+      "startMs": 108740,
+      "endMs": 111600,
+      "translation": "그래, 와서 내 배에 문신을 새겨"
+    },
+    {
+      "startMs": 111600,
+      "endMs": 113880,
+      "translation": "그래, 다들 너무 친한 척해"
+    },
+    {
+      "startMs": 113880,
+      "endMs": 115270,
+      "translation": "다들 배당금을 챙기려 하지"
+    },
+    {
+      "startMs": 115270,
+      "endMs": 117020,
+      "translation": "이건 문제야"
+    },
+    {
+      "startMs": 117020,
+      "endMs": 119930,
+      "translation": "그래, 날 만나 본 적도 없으면서 헛소리만 하지"
+    },
+    {
+      "startMs": 119930,
+      "endMs": 122720,
+      "translation": "디치노가 네 여자랑 잤다고 이제 날 원망하네"
+    },
+    {
+      "startMs": 122720,
+      "endMs": 125310,
+      "translation": "그 사람들 알긴 하지만 날 대변하진 않아"
+    },
+    {
+      "startMs": 125310,
+      "endMs": 129390,
+      "translation": "그 쓸모없는 녀석들, 다 대가를 치르게 할 거야"
+    },
+    {
+      "startMs": 129390,
+      "endMs": 132220,
+      "translation": "그들은 절대 이 계획을 못 막아"
+    },
+    {
+      "startMs": 132220,
+      "endMs": 134830,
+      "translation": "손에서 8만 달러가 튀어 올라"
+    },
+    {
+      "startMs": 134830,
+      "endMs": 136470,
+      "translation": "롤렉스, 롤렉스, 롤렉스"
+    },
+    {
+      "startMs": 136470,
+      "endMs": 138650,
+      "translation": "활짝 열어 봐, 이럴 수가"
+    },
+    {
+      "startMs": 138650,
+      "endMs": 141320,
+      "translation": "내 손목이 미친 듯 춤추는 거 알아"
+    },
+    {
+      "startMs": 141320,
+      "endMs": 144120,
+      "translation": "요즘 좀 잘나가는 중이야"
+    },
+    {
+      "startMs": 144120,
+      "endMs": 146680,
+      "translation": "예전엔 정말 빌어먹게 참을성 있었지"
+    },
+    {
+      "startMs": 146680,
+      "endMs": 149290,
+      "translation": "하지만 이젠 '꺼져, 돈이나 내놔'야"
+    },
+    {
+      "startMs": 149290,
+      "endMs": 151900,
+      "translation": "이 녀석들 때문에 흔들릴 순 없어"
+    },
+    {
+      "startMs": 151900,
+      "endMs": 154940,
+      "translation": "돈이 날 바꾸게 두진 않아"
+    },
+    {
+      "startMs": 154940,
+      "endMs": 157360,
+      "translation": "엄마가 날 그렇게 키우진 않았어"
+    },
+    {
+      "startMs": 157360,
+      "endMs": 160260,
+      "translation": "자랑하려는 건 아닌데, 날 탓할 수 있어?"
+    },
+    {
+      "startMs": 160260,
+      "endMs": 166090,
+      "translation": "(오, 오, 오, 오, 워)"
+    },
+    {
+      "startMs": 166090,
+      "endMs": 171220,
+      "translation": "(오, 오, 오, 오, 워)"
+    },
+    {
+      "startMs": 171220,
+      "endMs": 176780,
+      "translation": "(오, 오, 오, 오, 워)"
+    },
+    {
+      "startMs": 176780,
+      "endMs": 181580,
+      "translation": "(오, 오, 오, 오, 워)"
+    },
+    {
+      "startMs": 181580,
+      "endMs": 194000,
+      "translation": "(오, 오, 오, 오, 워)"
+    }
+  ]
+}

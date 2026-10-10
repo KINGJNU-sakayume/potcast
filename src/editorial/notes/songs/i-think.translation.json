@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 33526496,
+    "durationMs": 211000
+  },
+  "segments": [
+    {
+      "startMs": 540,
+      "endMs": 4140,
+      "translation": "넷, 넷, 넷, 넷, 넷"
+    },
+    {
+      "startMs": 4140,
+      "endMs": 18390,
+      "translation": "스케이트, 넷, 스케이트, 넷, 스케이트, 넷, 스케이트, 넷"
+    },
+    {
+      "startMs": 18390,
+      "endMs": 20390,
+      "translation": "어디로 가는지 모르겠어 (스케이트)"
+    },
+    {
+      "startMs": 20390,
+      "endMs": 22290,
+      "translation": "하지만 내가 뭘 보여 주는지는 알아 (넷)"
+    },
+    {
+      "startMs": 22290,
+      "endMs": 24260,
+      "translation": "감정, 내가 쏟아붓는 건 그거야 (스케이트)"
+    },
+    {
+      "startMs": 24260,
+      "endMs": 26160,
+      "translation": "대체 네 속셈이 뭐야? (넷)"
+    },
+    {
+      "startMs": 26160,
+      "endMs": 28130,
+      "translation": "제발 전화 좀 해 줘 (스케이트)"
+    },
+    {
+      "startMs": 28130,
+      "endMs": 30140,
+      "translation": "네 이름으로 날 불러 줬으면 해, 난 미안하니까 (넷)"
+    },
+    {
+      "startMs": 30140,
+      "endMs": 32040,
+      "translation": "이건 사과가 아니야 (스케이트)"
+    },
+    {
+      "startMs": 32040,
+      "endMs": 34020,
+      "translation": "넌 정말 방해가 돼 (넷)"
+    },
+    {
+      "startMs": 34020,
+      "endMs": 36070,
+      "translation": "그게 T의 상태야, 아 (스케이트)"
+    },
+    {
+      "startMs": 36070,
+      "endMs": 38080,
+      "translation": "네가 내 분위기를 망쳐, 잠깐 (넷)"
+    },
+    {
+      "startMs": 38080,
+      "endMs": 39910,
+      "translation": "넌 날 미치게 해, 자동차 말고 (스케이트)"
+    },
+    {
+      "startMs": 39910,
+      "endMs": 42340,
+      "translation": "난 리언 웨어처럼 널 원해 (엿 먹어)"
+    },
+    {
+      "startMs": 42340,
+      "endMs": 44100,
+      "translation": "좋아, 다시 말해 봐 (엿 먹어)"
+    },
+    {
+      "startMs": 44100,
+      "endMs": 45370,
+      "translation": "좋아, 잠깐만 (워)"
+    },
+    {
+      "startMs": 45370,
+      "endMs": 47660,
+      "translation": "난 그게 무서워, 난 안와르야 (스케이트)"
+    },
+    {
+      "startMs": 47660,
+      "endMs": 52070,
+      "translation": "호기심이 고양이를 죽였지, 끝 (넷, 스케이트)"
+    },
+    {
+      "startMs": 52070,
+      "endMs": 55570,
+      "translation": "사랑에 빠지고 있는 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 55570,
+      "endMs": 59830,
+      "translation": "이번엔 진짜인 것 같아 (넷, 스케이트)"
+    },
+    {
+      "startMs": 59830,
+      "endMs": 63800,
+      "translation": "사랑에 빠지고 있는 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 63800,
+      "endMs": 66030,
+      "translation": "이번엔 진짜인 것 같아 (넷, 스케이트)"
+    },
+    {
+      "startMs": 66030,
+      "endMs": 69800,
+      "translation": "어떻게 말하지? (스케이트) 어떻게 말하지? (넷)"
+    },
+    {
+      "startMs": 69800,
+      "endMs": 73820,
+      "translation": "어떻게 말하지? (스케이트) 어떻게 말하지? (넷)"
+    },
+    {
+      "startMs": 73820,
+      "endMs": 77630,
+      "translation": "어떻게 말하지? (스케이트) 어떻게 말하지? (넷)"
+    },
+    {
+      "startMs": 77630,
+      "endMs": 81140,
+      "translation": "어떻게 말하지? (스케이트) 어떻게 말하지? (넷)"
+    },
+    {
+      "startMs": 81140,
+      "endMs": 84540,
+      "translation": "네가 거기 있는 게 보이고, 난 늘 네 주변에서 귀찮게 굴어"
+    },
+    {
+      "startMs": 84540,
+      "endMs": 89610,
+      "translation": "넌 늘 내 현미경 아래 있어 (넷)"
+    },
+    {
+      "startMs": 89610,
+      "endMs": 91760,
+      "translation": "돈 낭비야, 난 네 관심이 필요해 (스케이트)"
+    },
+    {
+      "startMs": 91760,
+      "endMs": 93580,
+      "translation": "난 균형을 잃었어, 고쳐야 해 (넷)"
+    },
+    {
+      "startMs": 93580,
+      "endMs": 98060,
+      "translation": "난 네 꼭두각시고, 넌 짐 헨슨이야 (스케이트, 넷)"
+    },
+    {
+      "startMs": 98060,
+      "endMs": 99590,
+      "translation": "지금 사랑에 빠지는 중이야 (스케이트)"
+    },
+    {
+      "startMs": 99590,
+      "endMs": 102070,
+      "translation": "사랑에 빠지고 있는 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 102070,
+      "endMs": 103350,
+      "translation": "이제 사랑에 빠졌어 (스케이트)"
+    },
+    {
+      "startMs": 103350,
+      "endMs": 105880,
+      "translation": "이번엔 진짜인 것 같아 (넷, 스케이트)"
+    },
+    {
+      "startMs": 105880,
+      "endMs": 107340,
+      "translation": "이제 사랑에 빠진 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 107340,
+      "endMs": 109820,
+      "translation": "사랑에 빠지고 있는 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 109820,
+      "endMs": 111520,
+      "translation": "이제 사랑에 빠진 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 111520,
+      "endMs": 113680,
+      "translation": "이번엔 진짜인 것 같아 (넷, 스케이트)"
+    },
+    {
+      "startMs": 113680,
+      "endMs": 117270,
+      "translation": "어떻게 말하지? (닥쳐) 어떻게 말하지? (넷)"
+    },
+    {
+      "startMs": 117270,
+      "endMs": 121240,
+      "translation": "어떻게 말하지? (이 망할 놈아) 어떻게 말하지? (넷, 넷)"
+    },
+    {
+      "startMs": 121240,
+      "endMs": 124860,
+      "translation": "어떻게 말하지? (스케이트) 어떻게 말하지? (넷)"
+    },
+    {
+      "startMs": 124860,
+      "endMs": 136350,
+      "translation": "어떻게 말하지? 브리지로 가자"
+    },
+    {
+      "startMs": 136350,
+      "endMs": 144450,
+      "translation": "넷, 넷"
+    },
+    {
+      "startMs": 144450,
+      "endMs": 162700,
+      "translation": "넷"
+    },
+    {
+      "startMs": 162700,
+      "endMs": 164360,
+      "translation": "넷, 넷, 넷, 넷"
+    },
+    {
+      "startMs": 164360,
+      "endMs": 166910,
+      "translation": "넷, 스케이트"
+    },
+    {
+      "startMs": 166910,
+      "endMs": 169370,
+      "translation": "사랑에 빠지고 있는 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 169370,
+      "endMs": 170830,
+      "translation": "이제 사랑에 빠졌어 (스케이트)"
+    },
+    {
+      "startMs": 170830,
+      "endMs": 173280,
+      "translation": "이번엔 진짜인 것 같아 (넷, 스케이트)"
+    },
+    {
+      "startMs": 173280,
+      "endMs": 174810,
+      "translation": "이제 사랑에 빠진 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 174810,
+      "endMs": 178640,
+      "translation": "사랑에 빠지고 있는 것 같아 (스케이트)"
+    },
+    {
+      "startMs": 178640,
+      "endMs": 186320,
+      "translation": "이번엔 진짜인 것 같아 (넷, 스케이트)"
+    },
+    {
+      "startMs": 186320,
+      "endMs": 197010,
+      "translation": "오 그래"
+    },
+    {
+      "startMs": 197010,
+      "endMs": 211000,
+      "translation": "넷, 스케이트, 넷, 스케이트"
+    }
+  ]
+}

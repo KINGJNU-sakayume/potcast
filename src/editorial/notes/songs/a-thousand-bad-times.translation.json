@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 481014,
+    "durationMs": 221000
+  },
+  "segments": [
+    {
+      "startMs": 5000,
+      "endMs": 14500,
+      "translation": "그래, 오, 워, 우"
+    },
+    {
+      "startMs": 14500,
+      "endMs": 17640,
+      "translation": "그래, 그래"
+    },
+    {
+      "startMs": 17640,
+      "endMs": 20610,
+      "translation": "태워 달라더니 내 차를 원했던 거지"
+    },
+    {
+      "startMs": 20610,
+      "endMs": 23590,
+      "translation": "그 얼굴 아니었으면 넌 멀리 못 갔을 거야"
+    },
+    {
+      "startMs": 23590,
+      "endMs": 29570,
+      "translation": "네가 어떤 사람이든 난 네가 정말 좋아, 오 (어떤 사람이든)"
+    },
+    {
+      "startMs": 29570,
+      "endMs": 32630,
+      "translation": "넌 텔레비전에서 날 봐, 내가 스타인 거 알지"
+    },
+    {
+      "startMs": 32630,
+      "endMs": 35730,
+      "translation": "날 모른다고 하지만 그게 거짓말인 거 알아"
+    },
+    {
+      "startMs": 35730,
+      "endMs": 41590,
+      "translation": "대가는 치를게, 자기야, 얼마가 들든 (얼마가 들든?)"
+    },
+    {
+      "startMs": 41590,
+      "endMs": 47830,
+      "translation": "넌 내 삶을 너무 힘들게 해"
+    },
+    {
+      "startMs": 47830,
+      "endMs": 53540,
+      "translation": "그런데 그게 날 짜릿하게 해"
+    },
+    {
+      "startMs": 53540,
+      "endMs": 55100,
+      "translation": "천 번의 나쁜 날을 겪었어"
+    },
+    {
+      "startMs": 55100,
+      "endMs": 59800,
+      "translation": "그러니 한 번 더가 뭐 대수야? (그게 뭐, 그래)"
+    },
+    {
+      "startMs": 59800,
+      "endMs": 61150,
+      "translation": "넌 내 집을 불태우려 하지"
+    },
+    {
+      "startMs": 61150,
+      "endMs": 65650,
+      "translation": "하지만 집 한 채 더가 뭐 대수야? (그게 뭐, 그래)"
+    },
+    {
+      "startMs": 65650,
+      "endMs": 68680,
+      "translation": "네가 뭘 줘도 난 다 견딜 수 있으니까 (네가 뭘 줘도)"
+    },
+    {
+      "startMs": 68680,
+      "endMs": 71800,
+      "translation": "날 죽이려면 훨씬 더 많은 게 필요할 거야"
+    },
+    {
+      "startMs": 71800,
+      "endMs": 73680,
+      "translation": "그러니 무덤을 줘서 고마워 (그래)"
+    },
+    {
+      "startMs": 73680,
+      "endMs": 77050,
+      "translation": "잘 곳이 필요했거든 (잘 곳)"
+    },
+    {
+      "startMs": 77050,
+      "endMs": 80010,
+      "translation": "그리고 네 엄마는 만나고 싶지 않아 (싫어)"
+    },
+    {
+      "startMs": 80010,
+      "endMs": 82960,
+      "translation": "아마 너보다 더 미쳤을 테니까 (아마 너보다 더 미쳤을 테니까)"
+    },
+    {
+      "startMs": 82960,
+      "endMs": 85970,
+      "translation": "더 두꺼운 갑옷이 필요할 거야 (갑옷)"
+    },
+    {
+      "startMs": 85970,
+      "endMs": 89710,
+      "translation": "너랑 또 하룻밤을 보내려면 (계속, 계속, 계속)"
+    },
+    {
+      "startMs": 89710,
+      "endMs": 92790,
+      "translation": "자기야, 어떻게 해야 할지 알아"
+    },
+    {
+      "startMs": 92790,
+      "endMs": 95730,
+      "translation": "네가 날 엿 먹일 때마다 난 너한테 돌아갈 거야"
+    },
+    {
+      "startMs": 95730,
+      "endMs": 99060,
+      "translation": "자기야, 진실은 알고 싶지 않아 (진실은)"
+    },
+    {
+      "startMs": 99060,
+      "endMs": 102020,
+      "translation": "사람들이 네가 한 짓을 다 말해 줘도 난 무시해 (네가 한 짓)"
+    },
+    {
+      "startMs": 102020,
+      "endMs": 105250,
+      "translation": "연습이라도 필요한 것처럼 난 늘 마음이 부서져 (필요한 것처럼)"
+    },
+    {
+      "startMs": 105250,
+      "endMs": 108280,
+      "translation": "내 세상이 무너질 때까지 목을 짓밟혀 (젠장)"
+    },
+    {
+      "startMs": 108280,
+      "endMs": 112000,
+      "translation": "그래도 이건 내가 고른 거야, 끌어당김의 법칙이지, 그래 (끌어당김)"
+    },
+    {
+      "startMs": 112000,
+      "endMs": 114250,
+      "translation": "(계속, 계속, 계속)"
+    },
+    {
+      "startMs": 114250,
+      "endMs": 120010,
+      "translation": "넌 내 삶을 너무 힘들게 해 (너무 힘들게, 너무 힘들게)"
+    },
+    {
+      "startMs": 120010,
+      "endMs": 126260,
+      "translation": "그런데 그게 날 짜릿하게 해"
+    },
+    {
+      "startMs": 126260,
+      "endMs": 127670,
+      "translation": "천 번의 나쁜 날을 겪었어"
+    },
+    {
+      "startMs": 127670,
+      "endMs": 132070,
+      "translation": "그러니 한 번 더가 뭐 대수야? (그게 뭐, 그래)"
+    },
+    {
+      "startMs": 132070,
+      "endMs": 133590,
+      "translation": "넌 내 집을 불태우려 하지"
+    },
+    {
+      "startMs": 133590,
+      "endMs": 138260,
+      "translation": "하지만 집 한 채 더가 뭐 대수야? (그게 뭐, 그래)"
+    },
+    {
+      "startMs": 138260,
+      "endMs": 141160,
+      "translation": "네가 뭘 줘도 난 다 견딜 수 있으니까 (네가 뭘 줘도)"
+    },
+    {
+      "startMs": 141160,
+      "endMs": 144270,
+      "translation": "날 죽이려면 훨씬 더 많은 게 필요할 거야"
+    },
+    {
+      "startMs": 144270,
+      "endMs": 146230,
+      "translation": "그러니 무덤을 줘서 고마워 (그래)"
+    },
+    {
+      "startMs": 146230,
+      "endMs": 151000,
+      "translation": "잘 곳이 필요했거든 (잘 곳)"
+    },
+    {
+      "startMs": 151000,
+      "endMs": 156550,
+      "translation": "빠져나와야 하는데 여전히 더 원해"
+    },
+    {
+      "startMs": 156550,
+      "endMs": 164310,
+      "translation": "빠져나와야 하는데, 난 뭘 기다리는 거지?"
+    },
+    {
+      "startMs": 164310,
+      "endMs": 170140,
+      "translation": "나한텐 다 똑같아, 다 게임일 뿐이야"
+    },
+    {
+      "startMs": 170140,
+      "endMs": 176800,
+      "translation": "나한텐 다 똑같아, 다 똑같아"
+    },
+    {
+      "startMs": 176800,
+      "endMs": 178380,
+      "translation": "천 번의 나쁜 날을 겪었어"
+    },
+    {
+      "startMs": 178380,
+      "endMs": 182730,
+      "translation": "그러니 한 번 더가 뭐 대수야? (그게 뭐, 그래)"
+    },
+    {
+      "startMs": 182730,
+      "endMs": 184360,
+      "translation": "넌 내 집을 불태우려 하지"
+    },
+    {
+      "startMs": 184360,
+      "endMs": 188400,
+      "translation": "하지만 집 한 채 더가 뭐 대수야? (그게 뭐, 그래)"
+    },
+    {
+      "startMs": 188400,
+      "endMs": 191320,
+      "translation": "네가 뭘 줘도 난 다 견딜 수 있으니까 (네가 뭘 줘도)"
+    },
+    {
+      "startMs": 191320,
+      "endMs": 195030,
+      "translation": "날 죽이려면 훨씬 더 많은 게 필요할 거야"
+    },
+    {
+      "startMs": 195030,
+      "endMs": 196350,
+      "translation": "그러니 무덤을 줘서 고마워 (그래)"
+    },
+    {
+      "startMs": 196350,
+      "endMs": 200530,
+      "translation": "잘 곳이 필요했거든 (잘 곳)"
+    },
+    {
+      "startMs": 200530,
+      "endMs": 221000,
+      "translation": "가자, 오"
+    }
+  ]
+}

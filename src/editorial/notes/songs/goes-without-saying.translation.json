@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11570856,
+    "durationMs": 213000
+  },
+  "segments": [
+    {
+      "startMs": 15870,
+      "endMs": 21950,
+      "translation": "위스키랑 키스 휘틀리랑 내 광기를 한 단계 줄일 수도 있었어"
+    },
+    {
+      "startMs": 21950,
+      "endMs": 27760,
+      "translation": "퇴근길 꽃집에서 꽃을 몇 다발 더 살 수도 있었어"
+    },
+    {
+      "startMs": 27760,
+      "endMs": 34900,
+      "translation": "미안하다고 말해야 했는데, 결국 변하긴 했는데"
+    },
+    {
+      "startMs": 34900,
+      "endMs": 40180,
+      "translation": "그래, 말할 것도 없지, 오-오"
+    },
+    {
+      "startMs": 40180,
+      "endMs": 46430,
+      "translation": "그리고 말할 것도 없이, 그 여자는 돌아오지 않아"
+    },
+    {
+      "startMs": 46430,
+      "endMs": 52400,
+      "translation": "말할 것도 없이, 그 여자는 날 과거에 묻었어"
+    },
+    {
+      "startMs": 52400,
+      "endMs": 58270,
+      "translation": "그 기차는 이미 역을 떠났고, 그 여자는 이유를 말할 필요도 없었지"
+    },
+    {
+      "startMs": 58270,
+      "endMs": 68550,
+      "translation": "저기 그 여자가 말없이 떠나, 작별 인사도 없이"
+    },
+    {
+      "startMs": 68550,
+      "endMs": 76320,
+      "translation": "작별 인사도"
+    },
+    {
+      "startMs": 76320,
+      "endMs": 82600,
+      "translation": "그 여자를 먼저 챙기고, 셔츠를 바지에 넣고, 밖에서 노는 대신 교회에 갈 수도 있었어"
+    },
+    {
+      "startMs": 82600,
+      "endMs": 88650,
+      "translation": "가지 말라고 말하고, 마을을 떠나는 낡은 빨간 혼다를 막을 수도 있었어"
+    },
+    {
+      "startMs": 88650,
+      "endMs": 95010,
+      "translation": "그 여자가 걸어 나간 이유를 백 가지라도 댈 수 있지만"
+    },
+    {
+      "startMs": 95010,
+      "endMs": 100770,
+      "translation": "그 여자의 후미등이 모든 걸 말해 주고 있어, 오-오"
+    },
+    {
+      "startMs": 100770,
+      "endMs": 107310,
+      "translation": "그리고 말할 것도 없이, 그 여자는 돌아오지 않아"
+    },
+    {
+      "startMs": 107310,
+      "endMs": 113360,
+      "translation": "말할 것도 없이, 그 여자는 날 과거에 묻었어"
+    },
+    {
+      "startMs": 113360,
+      "endMs": 119280,
+      "translation": "그 기차는 이미 역을 떠났고, 그 여자는 이유를 말할 필요도 없었지"
+    },
+    {
+      "startMs": 119280,
+      "endMs": 129190,
+      "translation": "저기 그 여자가 말없이 떠나, 작별 인사도 없이"
+    },
+    {
+      "startMs": 129190,
+      "endMs": 136470,
+      "translation": "작별 인사도"
+    },
+    {
+      "startMs": 136470,
+      "endMs": 139300,
+      "translation": "'또 봐'도 없고"
+    },
+    {
+      "startMs": 139300,
+      "endMs": 142740,
+      "translation": "'네 탓이 아니라 내 탓이야'도 없어"
+    },
+    {
+      "startMs": 142740,
+      "endMs": 145410,
+      "translation": "길게 끄는 말도 없이"
+    },
+    {
+      "startMs": 145410,
+      "endMs": 149310,
+      "translation": "짧게, 그리 달콤하지도 않게 끝냈지"
+    },
+    {
+      "startMs": 149310,
+      "endMs": 155880,
+      "translation": "그리고 말할 것도 없이, 그 여자는 돌아오지 않아"
+    },
+    {
+      "startMs": 155880,
+      "endMs": 161910,
+      "translation": "말할 것도 없이, 그 여자는 날 과거에 묻었어"
+    },
+    {
+      "startMs": 161910,
+      "endMs": 167650,
+      "translation": "그리고 그 기차는 이미 역을 떠났고, 그 여자는 이유를 말할 필요도 없었지"
+    },
+    {
+      "startMs": 167650,
+      "endMs": 177850,
+      "translation": "저기 그 여자가 말없이 떠나, 작별 인사도 없이"
+    },
+    {
+      "startMs": 177850,
+      "endMs": 183650,
+      "translation": "말할 것도 없이 (말할 것도 없이)"
+    },
+    {
+      "startMs": 183650,
+      "endMs": 213000,
+      "translation": "작별 인사도 없이"
+    }
+  ]
+}

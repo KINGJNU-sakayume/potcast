@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1226,
+    "durationMs": 189000
+  },
+  "segments": [
+    {
+      "startMs": 7110,
+      "endMs": 11260,
+      "translation": "난 한 도시에서 태어났어"
+    },
+    {
+      "startMs": 11260,
+      "endMs": 14750,
+      "translation": "겨울밤이 결코 잠들지 않는 곳에서"
+    },
+    {
+      "startMs": 14750,
+      "endMs": 19060,
+      "translation": "그래서 이 삶은 늘 나와 함께야"
+    },
+    {
+      "startMs": 19060,
+      "endMs": 30220,
+      "translation": "핏줄 속 얼음은 절대 피를 흘리지 않아"
+    },
+    {
+      "startMs": 30220,
+      "endMs": 34560,
+      "translation": "어, 네가 날 고치려 할 때마다"
+    },
+    {
+      "startMs": 34560,
+      "endMs": 38230,
+      "translation": "그 빠진 조각은 절대 못 찾을 거란 걸 알아"
+    },
+    {
+      "startMs": 38230,
+      "endMs": 42720,
+      "translation": "네가 울면서 내가 그립다고 하면"
+    },
+    {
+      "startMs": 42720,
+      "endMs": 46740,
+      "translation": "난 절대 떠나지 않겠다고 거짓말해, 하지만"
+    },
+    {
+      "startMs": 46740,
+      "endMs": 49600,
+      "translation": "난 희생해 (희생해)"
+    },
+    {
+      "startMs": 49600,
+      "endMs": 53300,
+      "translation": "더 많은 밤을 위해 네 사랑을 (밤을 위해)"
+    },
+    {
+      "startMs": 53300,
+      "endMs": 57610,
+      "translation": "맞서 보려고 애쓰지만 (애쓰지만)"
+    },
+    {
+      "startMs": 57610,
+      "endMs": 61220,
+      "translation": "날 묶어 둘 순 없어 (없어)"
+    },
+    {
+      "startMs": 61220,
+      "endMs": 65530,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 65530,
+      "endMs": 69490,
+      "translation": "네 사랑을 위해 노력해"
+    },
+    {
+      "startMs": 69490,
+      "endMs": 73480,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 73480,
+      "endMs": 85870,
+      "translation": "하지만 내 시간이 좋아"
+    },
+    {
+      "startMs": 85870,
+      "endMs": 87850,
+      "translation": "가장 힘든 순간에도 널 붙잡아 줄게"
+    },
+    {
+      "startMs": 87850,
+      "endMs": 89800,
+      "translation": "네가 끝이라고 느낄 때"
+    },
+    {
+      "startMs": 89800,
+      "endMs": 91830,
+      "translation": "삶은 아직 살 가치가 있으니까"
+    },
+    {
+      "startMs": 91830,
+      "endMs": 93740,
+      "translation": "그래, 이 삶은 아직 살 가치가 있어"
+    },
+    {
+      "startMs": 93740,
+      "endMs": 95860,
+      "translation": "널 무너뜨렸다가 다시 일으켜 세우고"
+    },
+    {
+      "startMs": 95860,
+      "endMs": 97690,
+      "translation": "친구처럼 잘 수도 있어"
+    },
+    {
+      "startMs": 97690,
+      "endMs": 99580,
+      "translation": "하지만 마음은 주지 마"
+    },
+    {
+      "startMs": 99580,
+      "endMs": 101800,
+      "translation": "괜히 마음 주지 마, 왜냐면"
+    },
+    {
+      "startMs": 101800,
+      "endMs": 104790,
+      "translation": "난 희생해 (희생해)"
+    },
+    {
+      "startMs": 104790,
+      "endMs": 108560,
+      "translation": "더 많은 밤을 위해 네 사랑을 (밤을 위해)"
+    },
+    {
+      "startMs": 108560,
+      "endMs": 112440,
+      "translation": "맞서 보려고 애쓰지만 (애쓰지만)"
+    },
+    {
+      "startMs": 112440,
+      "endMs": 116590,
+      "translation": "날 묶어 둘 순 없어 (없어, 없어, 없어)"
+    },
+    {
+      "startMs": 116590,
+      "endMs": 120490,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 120490,
+      "endMs": 124330,
+      "translation": "네 사랑을 위해 노력해"
+    },
+    {
+      "startMs": 124330,
+      "endMs": 128200,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 128200,
+      "endMs": 132060,
+      "translation": "하지만 내 시간이 좋아"
+    },
+    {
+      "startMs": 132060,
+      "endMs": 135790,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 135790,
+      "endMs": 139770,
+      "translation": "네 사랑을 위해 (오) 노력해"
+    },
+    {
+      "startMs": 139770,
+      "endMs": 143590,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 143590,
+      "endMs": 148850,
+      "translation": "하지만 내 시간이 좋아"
+    },
+    {
+      "startMs": 148850,
+      "endMs": 151500,
+      "translation": "오, 베이비"
+    },
+    {
+      "startMs": 151500,
+      "endMs": 156910,
+      "translation": "내가, 내가 노력했다는 걸 알아 줘"
+    },
+    {
+      "startMs": 156910,
+      "endMs": 159790,
+      "translation": "오, 베이비 (베이비)"
+    },
+    {
+      "startMs": 159790,
+      "endMs": 165010,
+      "translation": "내 시간이 좋다는 걸 알아 줘, 오"
+    },
+    {
+      "startMs": 165010,
+      "endMs": 168320,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 168320,
+      "endMs": 172900,
+      "translation": "싫어, 노력해 (헤이)"
+    },
+    {
+      "startMs": 172900,
+      "endMs": 176730,
+      "translation": "희생하고 싶지 않아"
+    },
+    {
+      "startMs": 176730,
+      "endMs": 189000,
+      "translation": "하지만 내 시간이 좋아"
+    }
+  ]
+}

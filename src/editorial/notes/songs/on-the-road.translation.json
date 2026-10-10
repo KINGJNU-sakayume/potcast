@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1169105,
+    "durationMs": 218000
+  },
+  "segments": [
+    {
+      "startMs": 11000,
+      "endMs": 14670,
+      "translation": "압박에 무너지는 내 모습은 아무도 본 적 없으니까"
+    },
+    {
+      "startMs": 14670,
+      "endMs": 17090,
+      "translation": "내가 꺾이는 건 절대, 절대 본 적 없어, 아니, 절대"
+    },
+    {
+      "startMs": 17090,
+      "endMs": 19910,
+      "translation": "난 늘 그놈들보다 한 수 앞서, 너무 영리하거든"
+    },
+    {
+      "startMs": 19910,
+      "endMs": 22750,
+      "translation": "내 영혼은 절대, 절대 안 팔아, 아니, 절대"
+    },
+    {
+      "startMs": 22750,
+      "endMs": 25510,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 25510,
+      "endMs": 28260,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 28260,
+      "endMs": 31020,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 31020,
+      "endMs": 33840,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 33840,
+      "endMs": 35900,
+      "translation": "그래, 다들 내가 넘어질 거라는 데 걸지"
+    },
+    {
+      "startMs": 35900,
+      "endMs": 38390,
+      "translation": "난 고작 스물넷이지만, 이봐, 다 겪어 봤어"
+    },
+    {
+      "startMs": 38390,
+      "endMs": 41050,
+      "translation": "히트곡이 너무 많아서 다 기억도 못 해"
+    },
+    {
+      "startMs": 41050,
+      "endMs": 43960,
+      "translation": "볼일 보면서 벽에 걸린 기념패들을 봐"
+    },
+    {
+      "startMs": 43960,
+      "endMs": 46130,
+      "translation": "너희는 그냥 앉아서 떡고물이나 챙겨"
+    },
+    {
+      "startMs": 46130,
+      "endMs": 48930,
+      "translation": "네가 한 것처럼 굴지, 존중 따윈 없어"
+    },
+    {
+      "startMs": 48930,
+      "endMs": 53080,
+      "translation": "인생을 가짜로 사는 놈들한텐, 에이, 에이"
+    },
+    {
+      "startMs": 53080,
+      "endMs": 55320,
+      "translation": "넌 네가 말하는 그런 사람이 아니야"
+    },
+    {
+      "startMs": 55320,
+      "endMs": 58020,
+      "translation": "그러니 속도 좀 내, 날 늦출 순 없어"
+    },
+    {
+      "startMs": 58020,
+      "endMs": 60730,
+      "translation": "내 눈앞에서 꺼져, 전화 좀 그만 할래?"
+    },
+    {
+      "startMs": 60730,
+      "endMs": 63820,
+      "translation": "내 시간은 비싸거든, 공연 한 번에 백만 달러"
+    },
+    {
+      "startMs": 63820,
+      "endMs": 67380,
+      "translation": "네가 아침 먹으러 나가기도 전에 새 차를 샀어, 그래"
+    },
+    {
+      "startMs": 67380,
+      "endMs": 69920,
+      "translation": "압박에 무너지는 내 모습은 아무도 본 적 없으니까"
+    },
+    {
+      "startMs": 69920,
+      "endMs": 72750,
+      "translation": "내가 꺾이는 건 절대, 절대 본 적 없어, 아니, 절대"
+    },
+    {
+      "startMs": 72750,
+      "endMs": 75570,
+      "translation": "난 늘 그놈들보다 한 수 앞서, 너무 영리하거든"
+    },
+    {
+      "startMs": 75570,
+      "endMs": 78330,
+      "translation": "내 영혼은 절대, 절대 안 팔아, 아니, 절대"
+    },
+    {
+      "startMs": 78330,
+      "endMs": 81170,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 81170,
+      "endMs": 83820,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 83820,
+      "endMs": 86490,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 86490,
+      "endMs": 90110,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 90110,
+      "endMs": 92510,
+      "translation": "그래, 넌 어디 있었어? (어디 있었어?)"
+    },
+    {
+      "startMs": 92510,
+      "endMs": 95340,
+      "translation": "일하고 땀 흘려야 할 때 말이야 (땀 흘려야 할 때)"
+    },
+    {
+      "startMs": 95340,
+      "endMs": 97770,
+      "translation": "그놈들을 보면 그냥 웃음이 나, 저것 좀 봐 (하)"
+    },
+    {
+      "startMs": 97770,
+      "endMs": 100430,
+      "translation": "내가 지면 떠났다가 이기자마자 다시 나타나지 (어)"
+    },
+    {
+      "startMs": 100430,
+      "endMs": 102590,
+      "translation": "넌 처음부터 함께한 사람도 아니고, 내 친구도 아닌 거 알아"
+    },
+    {
+      "startMs": 102590,
+      "endMs": 105820,
+      "translation": "그러니 네가 가짜 짓을 하며 척해도 난 탓할 수 없어"
+    },
+    {
+      "startMs": 105820,
+      "endMs": 108380,
+      "translation": "진짜 내 편인 척, 충성은 마음에서 시작되는 건데"
+    },
+    {
+      "startMs": 108380,
+      "endMs": 111190,
+      "translation": "돈이 사랑을 이겨 버리고 얇게 만드는 걸 봤어"
+    },
+    {
+      "startMs": 111190,
+      "endMs": 113940,
+      "translation": "그래도 날 막진 못했어, 계속 올라갔고 정면으로 받아냈지"
+    },
+    {
+      "startMs": 113940,
+      "endMs": 116810,
+      "translation": "내가 꺾일 거라는 말을 들을 때마다 백만 달러씩 벌면 좋겠어"
+    },
+    {
+      "startMs": 116810,
+      "endMs": 119500,
+      "translation": "그러다 제프 베이조스만큼 부자가 될지도, 다시 말해 봐"
+    },
+    {
+      "startMs": 119500,
+      "endMs": 122320,
+      "translation": "절대 안 져, 연장전까지 가, 체육관에 붙어 있어"
+    },
+    {
+      "startMs": 122320,
+      "endMs": 123110,
+      "translation": "가자"
+    },
+    {
+      "startMs": 123110,
+      "endMs": 125630,
+      "translation": "압박에 무너지는 내 모습은 아무도 본 적 없으니까"
+    },
+    {
+      "startMs": 125630,
+      "endMs": 128440,
+      "translation": "내가 꺾이는 건 절대, 절대 본 적 없어, 아니, 절대"
+    },
+    {
+      "startMs": 128440,
+      "endMs": 131320,
+      "translation": "난 늘 그놈들보다 한 수 앞서, 너무 영리하거든"
+    },
+    {
+      "startMs": 131320,
+      "endMs": 133960,
+      "translation": "내 영혼은 절대, 절대 안 팔아, 아니, 절대"
+    },
+    {
+      "startMs": 133960,
+      "endMs": 136890,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 136890,
+      "endMs": 139660,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 139660,
+      "endMs": 142380,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 142380,
+      "endMs": 145940,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 145940,
+      "endMs": 147610,
+      "translation": "피곤한 것도 이젠 지겨워"
+    },
+    {
+      "startMs": 147610,
+      "endMs": 150290,
+      "translation": "이게 내 마지막 기회야, 화내지 마, 적어도 난 해 봤어"
+    },
+    {
+      "startMs": 150290,
+      "endMs": 153040,
+      "translation": "우린 어른이어야 하는데 넌 여전히 애처럼 굴어"
+    },
+    {
+      "startMs": 153040,
+      "endMs": 155770,
+      "translation": "전용기는 혼자 탈 수 있어, 쓸데없는 짐은 필요 없어"
+    },
+    {
+      "startMs": 155770,
+      "endMs": 158550,
+      "translation": "올해 난 독해졌어, 목걸이엔 바게트 컷 다이아"
+    },
+    {
+      "startMs": 158550,
+      "endMs": 161430,
+      "translation": "빠르게 달려도 사고는 안 내, 술은 끊었어야 하는데"
+    },
+    {
+      "startMs": 161430,
+      "endMs": 164250,
+      "translation": "어쩌다 보니 자꾸 취하게 돼"
+    },
+    {
+      "startMs": 164250,
+      "endMs": 167230,
+      "translation": "날 꺾으려면 압박 좀으론 안 될 거야"
+    },
+    {
+      "startMs": 167230,
+      "endMs": 169700,
+      "translation": "할 수 있는 만큼 해 봤지만, 이젠 내 손을 떠났어"
+    },
+    {
+      "startMs": 169700,
+      "endMs": 172750,
+      "translation": "누구 때문에도, 무엇 때문에도 이 돈을 다 써 버리진 않아"
+    },
+    {
+      "startMs": 172750,
+      "endMs": 175460,
+      "translation": "그 여자는 내가 개래, 개는 개를 알아보는 법이지"
+    },
+    {
+      "startMs": 175460,
+      "endMs": 178490,
+      "translation": "죽어라 달려왔어, 혼자였어, 사랑 따윈 필요 없어"
+    },
+    {
+      "startMs": 178490,
+      "endMs": 181470,
+      "translation": "압박에 무너지는 내 모습은 아무도 본 적 없으니까"
+    },
+    {
+      "startMs": 181470,
+      "endMs": 184150,
+      "translation": "내가 꺾이는 건 절대, 절대 본 적 없어, 아니, 절대"
+    },
+    {
+      "startMs": 184150,
+      "endMs": 187130,
+      "translation": "난 늘 그놈들보다 한 수 앞서, 너무 영리하거든"
+    },
+    {
+      "startMs": 187130,
+      "endMs": 189830,
+      "translation": "내 영혼은 절대, 절대 안 팔아, 아니, 절대"
+    },
+    {
+      "startMs": 189830,
+      "endMs": 192520,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 192520,
+      "endMs": 195260,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 195260,
+      "endMs": 198110,
+      "translation": "난 길 위에 있었으니까, 길 위에 있었으니까, 난"
+    },
+    {
+      "startMs": 198110,
+      "endMs": 210000,
+      "translation": "처음부터 나랑 함께였던 척 그만해"
+    },
+    {
+      "startMs": 210000,
+      "endMs": 218000,
+      "translation": "길 위에서, 오"
+    }
+  ]
+}

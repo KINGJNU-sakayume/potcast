@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11564013,
+    "durationMs": 196000
+  },
+  "segments": [
+    {
+      "startMs": 13790,
+      "endMs": 19130,
+      "translation": "리무진에 리프트 키트를 달았어, 테네시엔 골칫거리가 열 개"
+    },
+    {
+      "startMs": 19130,
+      "endMs": 25480,
+      "translation": "그걸 다 해결할 시간이 없어"
+    },
+    {
+      "startMs": 25480,
+      "endMs": 30810,
+      "translation": "티파니에서 아침을 먹는 대신 베서니랑 짧은 설교를 들어"
+    },
+    {
+      "startMs": 30810,
+      "endMs": 36060,
+      "translation": "이제 17번가 술집에 앉아 있어, 난 완전히 취했어"
+    },
+    {
+      "startMs": 36060,
+      "endMs": 39150,
+      "translation": "차가운 맥주는 계속 들어오고"
+    },
+    {
+      "startMs": 39150,
+      "endMs": 42260,
+      "translation": "연기가 내 폐를 채우고 있어"
+    },
+    {
+      "startMs": 42260,
+      "endMs": 45120,
+      "translation": "엿 먹으라고 할 만큼 돈이 많아"
+    },
+    {
+      "startMs": 45120,
+      "endMs": 48050,
+      "translation": "자기야, 이리 와서 좀 가져가"
+    },
+    {
+      "startMs": 48050,
+      "endMs": 50830,
+      "translation": "똑바로 걷기가 힘들어"
+    },
+    {
+      "startMs": 50830,
+      "endMs": 55020,
+      "translation": "청바지 라인이 저렇게 굽어 있으니"
+    },
+    {
+      "startMs": 55020,
+      "endMs": 58440,
+      "translation": "난 그냥 좋은 사람을 찾고 있을 뿐인데"
+    },
+    {
+      "startMs": 58440,
+      "endMs": 74200,
+      "translation": "나쁜 사람들만 자꾸 날 쳐다봐"
+    },
+    {
+      "startMs": 74200,
+      "endMs": 79600,
+      "translation": "루이지애나에 눌러앉았어, 난 나쁜 남자이자 진짜 좋은 남자"
+    },
+    {
+      "startMs": 79600,
+      "endMs": 85910,
+      "translation": "맥주 여섯 캔에 농부처럼 그을린 피부, 세상 꼭대기야 (우)"
+    },
+    {
+      "startMs": 85910,
+      "endMs": 91320,
+      "translation": "다들 날 힐끔대는 건 어쩔 수 없지, 춤추기 싫어하는 그런 놈은 아니야"
+    },
+    {
+      "startMs": 91320,
+      "endMs": 96830,
+      "translation": "그런데 네 카우보이는 말하지, '제발 그 여자를 데려가지 마'"
+    },
+    {
+      "startMs": 96830,
+      "endMs": 99990,
+      "translation": "차가운 맥주를 계속 가져와"
+    },
+    {
+      "startMs": 99990,
+      "endMs": 103080,
+      "translation": "연기가 내 폐를 채우고"
+    },
+    {
+      "startMs": 103080,
+      "endMs": 105970,
+      "translation": "시골 부자가 됐어"
+    },
+    {
+      "startMs": 105970,
+      "endMs": 108750,
+      "translation": "자기야, 이리 와서 좀 가져가"
+    },
+    {
+      "startMs": 108750,
+      "endMs": 111710,
+      "translation": "똑바로 걷기가 힘들어"
+    },
+    {
+      "startMs": 111710,
+      "endMs": 115830,
+      "translation": "청바지 라인이 저렇게 굽어 있으니"
+    },
+    {
+      "startMs": 115830,
+      "endMs": 119240,
+      "translation": "난 그냥 좋은 사람을 찾고 있을 뿐인데"
+    },
+    {
+      "startMs": 119240,
+      "endMs": 158160,
+      "translation": "나쁜 사람들만 자꾸 날 쳐다봐"
+    },
+    {
+      "startMs": 158160,
+      "endMs": 164390,
+      "translation": "나-나-나-나, 나-나-나-나"
+    },
+    {
+      "startMs": 164390,
+      "endMs": 196000,
+      "translation": "나-나-나-나-나"
+    }
+  ]
+}

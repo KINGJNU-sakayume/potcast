@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 507406,
+    "durationMs": 228000
+  },
+  "segments": [
+    {
+      "startMs": 12570,
+      "endMs": 15710,
+      "translation": "대마 한 봉지로 시작했어, 좋아 (좋아)"
+    },
+    {
+      "startMs": 15710,
+      "endMs": 18660,
+      "translation": "그러다 내 인생을 바꿔 버렸지 (내 인생)"
+    },
+    {
+      "startMs": 18660,
+      "endMs": 21480,
+      "translation": "오늘 밤엔 레이스를 끌고 나갈지도 몰라 (오늘 밤)"
+    },
+    {
+      "startMs": 21480,
+      "endMs": 23690,
+      "translation": "날 꼭 안아 줘, 자기야"
+    },
+    {
+      "startMs": 23690,
+      "endMs": 25770,
+      "translation": "난 그냥 날고 싶어"
+    },
+    {
+      "startMs": 25770,
+      "endMs": 28500,
+      "translation": "죽기 전에 오래 가게 하자"
+    },
+    {
+      "startMs": 28500,
+      "endMs": 31530,
+      "translation": "네가 타고 싶어 하는 거 알아"
+    },
+    {
+      "startMs": 31530,
+      "endMs": 35220,
+      "translation": "무슨 생각 해? 무슨 생각 해?"
+    },
+    {
+      "startMs": 35220,
+      "endMs": 38110,
+      "translation": "내 92년식 차엔 람보르기니 같은 문이 달렸어"
+    },
+    {
+      "startMs": 38110,
+      "endMs": 41080,
+      "translation": "마지막 월급은 탄약 사는 데 썼어"
+    },
+    {
+      "startMs": 41080,
+      "endMs": 43900,
+      "translation": "우린 유행을 따르지 않아, 얌스, 편히 잠들길"
+    },
+    {
+      "startMs": 43900,
+      "endMs": 47150,
+      "translation": "네 신곡은 별로야, 앤서니 판타노가 된 기분으로 말하지 (우)"
+    },
+    {
+      "startMs": 47150,
+      "endMs": 49750,
+      "translation": "작년엔 빈털터리였어, 다시는 거기로 못 돌아가"
+    },
+    {
+      "startMs": 49750,
+      "endMs": 52650,
+      "translation": "니코틴 중독인데 담배 한 갑도 못 샀지, 그래"
+    },
+    {
+      "startMs": 52650,
+      "endMs": 55550,
+      "translation": "그 여자는 내 음악을 몰라, 화 안 났다고 말해 줬어, 그래"
+    },
+    {
+      "startMs": 55550,
+      "endMs": 58680,
+      "translation": "내 플래티넘 기념패 위에서 코카인을 자르게 둬, 그래 (와)"
+    },
+    {
+      "startMs": 58680,
+      "endMs": 61420,
+      "translation": "돈뭉치에 손가락을 베였어, 오, 그래"
+    },
+    {
+      "startMs": 61420,
+      "endMs": 64320,
+      "translation": "신경안정제로 머리를 잠가 버렸어, 오, 그래"
+    },
+    {
+      "startMs": 64320,
+      "endMs": 67330,
+      "translation": "돈은 미리 세어서 줘, 오, 그래"
+    },
+    {
+      "startMs": 67330,
+      "endMs": 70980,
+      "translation": "백스트리트 다이아몬드, 네 위에서 춤추는 걸 봐, 그래"
+    },
+    {
+      "startMs": 70980,
+      "endMs": 74040,
+      "translation": "대마 한 봉지로 시작했어, 좋아 (좋아)"
+    },
+    {
+      "startMs": 74040,
+      "endMs": 77000,
+      "translation": "그러다 내 인생을 바꿔 버렸지 (내 인생)"
+    },
+    {
+      "startMs": 77000,
+      "endMs": 80020,
+      "translation": "오늘 밤엔 레이스를 끌고 나갈지도 몰라 (오늘 밤)"
+    },
+    {
+      "startMs": 80020,
+      "endMs": 82030,
+      "translation": "날 꼭 안아 줘, 자기야"
+    },
+    {
+      "startMs": 82030,
+      "endMs": 84280,
+      "translation": "난 그냥 날고 싶어"
+    },
+    {
+      "startMs": 84280,
+      "endMs": 87070,
+      "translation": "죽기 전에 오래 가게 하자"
+    },
+    {
+      "startMs": 87070,
+      "endMs": 90150,
+      "translation": "네가 타고 싶어 하는 거 알아"
+    },
+    {
+      "startMs": 90150,
+      "endMs": 93890,
+      "translation": "무슨 생각 해? 무슨 생각 해?"
+    },
+    {
+      "startMs": 93890,
+      "endMs": 96930,
+      "translation": "그 여자는 내 돈을 쓰고 싶어 하지 않아"
+    },
+    {
+      "startMs": 96930,
+      "endMs": 100070,
+      "translation": "모델 일로 돈을 벌거든 (모델, 모델)"
+    },
+    {
+      "startMs": 100070,
+      "endMs": 102760,
+      "translation": "내가 앞장서면 다들 따라와"
+    },
+    {
+      "startMs": 102760,
+      "endMs": 105350,
+      "translation": "인정해, 넌 내가 아는 걸 몰라"
+    },
+    {
+      "startMs": 105350,
+      "endMs": 108030,
+      "translation": "차를 대, 너한테 줄 게 있어"
+    },
+    {
+      "startMs": 108030,
+      "endMs": 110950,
+      "translation": "트렁크에 너한테 줄 게 있어"
+    },
+    {
+      "startMs": 110950,
+      "endMs": 113740,
+      "translation": "그래도 난 좋은 변호사가 있어"
+    },
+    {
+      "startMs": 113740,
+      "endMs": 116700,
+      "translation": "다들 늘 널 노리고 오지"
+    },
+    {
+      "startMs": 116700,
+      "endMs": 119760,
+      "translation": "선팅한 벤틀리를 타고 나타날 거야 (우)"
+    },
+    {
+      "startMs": 119760,
+      "endMs": 122770,
+      "translation": "기분에 따라 긴 탄창에서 한 발 쏠지도 몰라 (끽)"
+    },
+    {
+      "startMs": 122770,
+      "endMs": 125610,
+      "translation": "내가 느려지는 것 같다고? 친구, 그냥 잊어"
+    },
+    {
+      "startMs": 125610,
+      "endMs": 129680,
+      "translation": "일을 제대로 처리하면 이렇게 되나 봐, 그래"
+    },
+    {
+      "startMs": 129680,
+      "endMs": 132750,
+      "translation": "대마 한 봉지로 시작했어, 좋아 (좋아)"
+    },
+    {
+      "startMs": 132750,
+      "endMs": 135610,
+      "translation": "그러다 내 인생을 바꿔 버렸지 (내 인생)"
+    },
+    {
+      "startMs": 135610,
+      "endMs": 138530,
+      "translation": "오늘 밤엔 레이스를 끌고 나갈지도 몰라 (오늘 밤)"
+    },
+    {
+      "startMs": 138530,
+      "endMs": 140320,
+      "translation": "날 꼭 안아 줘, 자기야"
+    },
+    {
+      "startMs": 140320,
+      "endMs": 142870,
+      "translation": "난 그냥 날고 싶어"
+    },
+    {
+      "startMs": 142870,
+      "endMs": 145690,
+      "translation": "죽기 전에 오래 가게 하자"
+    },
+    {
+      "startMs": 145690,
+      "endMs": 148590,
+      "translation": "네가 타고 싶어 하는 거 알아"
+    },
+    {
+      "startMs": 148590,
+      "endMs": 152390,
+      "translation": "무슨 생각 해? 무슨 생각 해?"
+    },
+    {
+      "startMs": 152390,
+      "endMs": 155220,
+      "translation": "작년엔 빈털터리였어, 다시는 거기로 못 돌아가"
+    },
+    {
+      "startMs": 155220,
+      "endMs": 158230,
+      "translation": "작년엔 빈털터리였어, 다시는 거기로 못 돌아가"
+    },
+    {
+      "startMs": 158230,
+      "endMs": 161180,
+      "translation": "휘발유를 붓고 성냥을 그었어, 그래"
+    },
+    {
+      "startMs": 161180,
+      "endMs": 164050,
+      "translation": "내 스웨그를 뺏으려 하는 거, 확실히 알아, 그래"
+    },
+    {
+      "startMs": 164050,
+      "endMs": 166740,
+      "translation": "선팅한 벤틀리를 타고 나타나 (끽)"
+    },
+    {
+      "startMs": 166740,
+      "endMs": 169600,
+      "translation": "기분에 따라 긴 탄창에서 한 발 쏠지도 몰라 (끽)"
+    },
+    {
+      "startMs": 169600,
+      "endMs": 172490,
+      "translation": "내가 느려지는 것 같다고? 친구, 그냥 잊어"
+    },
+    {
+      "startMs": 172490,
+      "endMs": 176620,
+      "translation": "일을 제대로 처리하면 이렇게 되나 봐, 그래"
+    },
+    {
+      "startMs": 176620,
+      "endMs": 179680,
+      "translation": "대마 한 봉지로 시작했어, 좋아 (좋아)"
+    },
+    {
+      "startMs": 179680,
+      "endMs": 182650,
+      "translation": "그러다 내 인생을 바꿔 버렸지 (내 인생)"
+    },
+    {
+      "startMs": 182650,
+      "endMs": 185420,
+      "translation": "오늘 밤엔 레이스를 끌고 나갈지도 몰라 (오늘 밤)"
+    },
+    {
+      "startMs": 185420,
+      "endMs": 187210,
+      "translation": "날 꼭 안아 줘, 자기야"
+    },
+    {
+      "startMs": 187210,
+      "endMs": 189620,
+      "translation": "난 그냥 날고 싶어"
+    },
+    {
+      "startMs": 189620,
+      "endMs": 192590,
+      "translation": "죽기 전에 오래 가게 하자"
+    },
+    {
+      "startMs": 192590,
+      "endMs": 195470,
+      "translation": "네가 타고 싶어 하는 거 알아"
+    },
+    {
+      "startMs": 195470,
+      "endMs": 199850,
+      "translation": "무슨 생각 해? 무슨 생각 해?"
+    },
+    {
+      "startMs": 199850,
+      "endMs": 202550,
+      "translation": "날고 싶어, 날고 싶어, 그래"
+    },
+    {
+      "startMs": 202550,
+      "endMs": 206920,
+      "translation": "날고 싶어, 날고 싶어, 그래"
+    },
+    {
+      "startMs": 206920,
+      "endMs": 214550,
+      "translation": "날고 싶어"
+    },
+    {
+      "startMs": 214550,
+      "endMs": 228000,
+      "translation": "날고 싶어, 날고 싶어, 그래"
+    }
+  ]
+}

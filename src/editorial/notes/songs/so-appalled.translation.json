@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 3620121,
+    "durationMs": 398000
+  },
+  "segments": [
+    {
+      "startMs": 160,
+      "endMs": 2470,
+      "translation": "신경 안 쓰면 한 손을 들어"
+    },
+    {
+      "startMs": 2470,
+      "endMs": 5150,
+      "translation": "신경 안 쓰면 두 손을 들어"
+    },
+    {
+      "startMs": 5150,
+      "endMs": 7960,
+      "translation": "가끔은 그래, 정말 어처구니없지"
+    },
+    {
+      "startMs": 7960,
+      "endMs": 10500,
+      "translation": "가끔은 그래, 이거 어처구니없어"
+    },
+    {
+      "startMs": 10500,
+      "endMs": 13470,
+      "translation": "신경 안 쓰면 한 손을 들어"
+    },
+    {
+      "startMs": 13470,
+      "endMs": 16130,
+      "translation": "신경 안 쓰면 가운뎃손가락을 들어"
+    },
+    {
+      "startMs": 16130,
+      "endMs": 18800,
+      "translation": "가끔은 그래, 친구, 어처구니없지"
+    },
+    {
+      "startMs": 18800,
+      "endMs": 21570,
+      "translation": "인생은 가끔 어처구니없어"
+    },
+    {
+      "startMs": 21570,
+      "endMs": 24450,
+      "translation": "기가 막혀, 스폴딩 농구공처럼"
+    },
+    {
+      "startMs": 24450,
+      "endMs": 27220,
+      "translation": "머리 벗어진 도널드 트럼프는 너희 돈을 챙기지"
+    },
+    {
+      "startMs": 27220,
+      "endMs": 29900,
+      "translation": "자기, 넌 해고야, 대신 네 여자 친구가 채용됐어"
+    },
+    {
+      "startMs": 29900,
+      "endMs": 32750,
+      "translation": "괜찮다면, 너도 대기 명단엔 올려 둘게"
+    },
+    {
+      "startMs": 32750,
+      "endMs": 35410,
+      "translation": "우린 법 위에 있어, 너희 따윈 신경 안 써"
+    },
+    {
+      "startMs": 35410,
+      "endMs": 38280,
+      "translation": "벽에 구멍을 뚫어 버릴 개들도 있지"
+    },
+    {
+      "startMs": 38280,
+      "endMs": 41010,
+      "translation": "그런데 다들 연인들이니, 콘돔이 더 필요해"
+    },
+    {
+      "startMs": 41010,
+      "endMs": 43860,
+      "translation": "콘돔을 안 쓰면, 이불이 더 필요하고"
+    },
+    {
+      "startMs": 43860,
+      "endMs": 47380,
+      "translation": "객실 청소요, 젠장, 딱 한 번만"
+    },
+    {
+      "startMs": 47380,
+      "endMs": 49490,
+      "translation": "끝내주는 여자가 청소하게 해"
+    },
+    {
+      "startMs": 49490,
+      "endMs": 52270,
+      "translation": "우리가 치리오스처럼 온스 단위로 받는다는 걸 아는 여자"
+    },
+    {
+      "startMs": 52270,
+      "endMs": 54900,
+      "translation": "뮤직비디오에서 우릴 봤으니까 아는 여자"
+    },
+    {
+      "startMs": 54900,
+      "endMs": 57630,
+      "translation": "그 여자는 알아, 네가 날 갖고 노는 날은"
+    },
+    {
+      "startMs": 57630,
+      "endMs": 60410,
+      "translation": "MTV가 뮤직비디오를 트는 날이라는 걸"
+    },
+    {
+      "startMs": 60410,
+      "endMs": 63210,
+      "translation": "그냥 작은 농담이었어, 짜잔!"
+    },
+    {
+      "startMs": 63210,
+      "endMs": 65990,
+      "translation": "가장 높으신 분, 알라께 찬양을"
+    },
+    {
+      "startMs": 65990,
+      "endMs": 68800,
+      "translation": "가장 멋진 분, 프라다께 찬양을"
+    },
+    {
+      "startMs": 68800,
+      "endMs": 71550,
+      "translation": "자기, 난 마술사야, 짜잔!"
+    },
+    {
+      "startMs": 71550,
+      "endMs": 73050,
+      "translation": "전하라고 불러"
+    },
+    {
+      "startMs": 73050,
+      "endMs": 76550,
+      "translation": "유나이티드 항공처럼 높이, 3만 피트 위인데 넌 초대 못 받았어"
+    },
+    {
+      "startMs": 76550,
+      "endMs": 79550,
+      "translation": "다들 일하듯 헛소리를 써 대지"
+    },
+    {
+      "startMs": 79550,
+      "endMs": 82180,
+      "translation": "진짜 힘든 일을 겪는 사람들은 일자리를 잃었는데"
+    },
+    {
+      "startMs": 82180,
+      "endMs": 85020,
+      "translation": "그래서 또 하나의 댄스곡은 아플 수밖에"
+    },
+    {
+      "startMs": 85020,
+      "endMs": 87820,
+      "translation": "그래서 난 차라리 기운 나는 걸 뱉겠어"
+    },
+    {
+      "startMs": 87820,
+      "endMs": 90530,
+      "translation": "샴페인 같은 소원, 백인 여자 서른 명"
+    },
+    {
+      "startMs": 90530,
+      "endMs": 94380,
+      "translation": "내 말은, 이거 진짜 어처구니없어"
+    },
+    {
+      "startMs": 94380,
+      "endMs": 97330,
+      "translation": "진짜 어처구니없어, 내 말은 이거"
+    },
+    {
+      "startMs": 97330,
+      "endMs": 98500,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 98500,
+      "endMs": 101520,
+      "translation": "별 다섯 개 요리, 온갖 이국적인 생선"
+    },
+    {
+      "startMs": 101520,
+      "endMs": 104530,
+      "translation": "이거 진짜 어처구니없어"
+    },
+    {
+      "startMs": 104530,
+      "endMs": 109580,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 109580,
+      "endMs": 112370,
+      "translation": "어디서부터 시작할까, 나 정말 기분 상했어"
+    },
+    {
+      "startMs": 112370,
+      "endMs": 115250,
+      "translation": "어떻게 이 초짜들 입에 내가 오르내리지?"
+    },
+    {
+      "startMs": 115250,
+      "endMs": 118090,
+      "translation": "기가 막혀서, 쇼핑몰이라도 살까 봐"
+    },
+    {
+      "startMs": 118090,
+      "endMs": 120730,
+      "translation": "내가 얼마나 더 많이 갖췄는지 보여 주려고"
+    },
+    {
+      "startMs": 120730,
+      "endMs": 123370,
+      "translation": "난 너희 누구보다 신선해, 그러니 멈출 필요 없어"
+    },
+    {
+      "startMs": 123370,
+      "endMs": 126160,
+      "translation": "너희 모두 바지 너머로 내 불알이나 빨아"
+    },
+    {
+      "startMs": 126160,
+      "endMs": 128750,
+      "translation": "다크 나이트의 기분, 영웅으로 죽든가"
+    },
+    {
+      "startMs": 128750,
+      "endMs": 131640,
+      "translation": "아니면 오래 살아남아 스스로 악당이 되는 걸 보든가"
+    },
+    {
+      "startMs": 131640,
+      "endMs": 134250,
+      "translation": "난 가장 사랑받는 자에서 가장 미움받는 자가 됐어"
+    },
+    {
+      "startMs": 134250,
+      "endMs": 137040,
+      "translation": "아니면 넌 덜 받고 싶어, 과대평가받고 싶어?"
+    },
+    {
+      "startMs": 137040,
+      "endMs": 139700,
+      "translation": "도덕적 승리는 마이너리그 코치들 몫이야"
+    },
+    {
+      "startMs": 139700,
+      "endMs": 142560,
+      "translation": "이에가 이미 말했잖아, \"우린 메이저야\", 이 바퀴벌레들아"
+    },
+    {
+      "startMs": 142560,
+      "endMs": 145470,
+      "translation": "보트가 어디 있는지 보여 줘, 페라리 테스타로사"
+    },
+    {
+      "startMs": 145470,
+      "endMs": 148210,
+      "translation": "해머는 파산했지, 그러니 난 더 정신 차리고 있어"
+    },
+    {
+      "startMs": 148210,
+      "endMs": 150780,
+      "translation": "3천만 달러를 잃었으니 또 3천만을 썼지"
+    },
+    {
+      "startMs": 150780,
+      "endMs": 153550,
+      "translation": "해머와 달리 3천만 달러로는 날 다치게 못 하니까"
+    },
+    {
+      "startMs": 153550,
+      "endMs": 156210,
+      "translation": "완전 미쳤어, 내가 무슨 소릴 하는 거지?"
+    },
+    {
+      "startMs": 156210,
+      "endMs": 159130,
+      "translation": "난 멋질 뿐 아니라, 장난도 안 쳐"
+    },
+    {
+      "startMs": 159130,
+      "endMs": 162110,
+      "translation": "분수도 모르고 설치는 꼬맹이들"
+    },
+    {
+      "startMs": 162110,
+      "endMs": 164470,
+      "translation": "제 다리를 불태우고 있어, 진짜 어처구니없지"
+    },
+    {
+      "startMs": 164470,
+      "endMs": 167590,
+      "translation": "샴페인 같은 소원, 백인 여자 서른 명"
+    },
+    {
+      "startMs": 167590,
+      "endMs": 171790,
+      "translation": "내 말은, 이거 진짜 어처구니없어"
+    },
+    {
+      "startMs": 171790,
+      "endMs": 173090,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 173090,
+      "endMs": 175520,
+      "translation": "내 말은, 이거 진짜 어처구니없어"
+    },
+    {
+      "startMs": 175520,
+      "endMs": 178430,
+      "translation": "별 다섯 개 요리, 온갖 이국적인 생선"
+    },
+    {
+      "startMs": 178430,
+      "endMs": 181780,
+      "translation": "이거 진짜 어처구니없어"
+    },
+    {
+      "startMs": 181780,
+      "endMs": 186450,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 186450,
+      "endMs": 189140,
+      "translation": "성공은 네가 만드는 거야, 오는 대로 받아들여"
+    },
+    {
+      "startMs": 189140,
+      "endMs": 191900,
+      "translation": "20달러짜리로 50만 달러, 내가 자란 곳에선 10억이나 마찬가지"
+    },
+    {
+      "startMs": 191900,
+      "endMs": 194990,
+      "translation": "거만한 마약상, 그게 내가 된 전설이야"
+    },
+    {
+      "startMs": 194990,
+      "endMs": 197720,
+      "translation": "CNN은 내가 스물한 살 전에 죽을 거라고 했지"
+    },
+    {
+      "startMs": 197720,
+      "endMs": 200480,
+      "translation": "블랙잭, 방금 에이스를 뽑았어"
+    },
+    {
+      "startMs": 200480,
+      "endMs": 202450,
+      "translation": "넌 지금 왕의 얼굴을 보고 있는 거야"
+    },
+    {
+      "startMs": 202450,
+      "endMs": 205620,
+      "translation": "내가 꿈꾼 모든 게 모양을 갖춰 가는 걸 지켜보는 중이야"
+    },
+    {
+      "startMs": 205620,
+      "endMs": 208510,
+      "translation": "너한텐 내가 믿음 없는 젊은 부자 놈으로만 보이겠지만"
+    },
+    {
+      "startMs": 208510,
+      "endMs": 211420,
+      "translation": "가죽 지붕 레인지로버, 전쟁을 사랑해, 휴전 따윈 집어치워"
+    },
+    {
+      "startMs": 211420,
+      "endMs": 214490,
+      "translation": "아직도 '새'를 옮겨, 마더 구스와 한 침대에 있는 것처럼"
+    },
+    {
+      "startMs": 214490,
+      "endMs": 216870,
+      "translation": "여자들은 열세 명씩 몰려와"
+    },
+    {
+      "startMs": 216870,
+      "endMs": 219650,
+      "translation": "나랑 있었다고 우기지, 아닌 걸 알면서"
+    },
+    {
+      "startMs": 219650,
+      "endMs": 222340,
+      "translation": "난 이 도시 최고의 여자만 곁에 둬, 제일 똑똑하다고 한 적은 없지만"
+    },
+    {
+      "startMs": 222340,
+      "endMs": 224910,
+      "translation": "그러니 너도 그녀를 가졌다 해도, 난 조금도 상관없어"
+    },
+    {
+      "startMs": 224910,
+      "endMs": 227650,
+      "translation": "조금의 지도가 필요 없는 여자는 본 적이 없어"
+    },
+    {
+      "startMs": 227650,
+      "endMs": 230700,
+      "translation": "그러니 전하를 실망시키기 전까진 그녀의 과거는 묻지 않아"
+    },
+    {
+      "startMs": 230700,
+      "endMs": 233180,
+      "translation": "난 복음을 전해, 거칠게"
+    },
+    {
+      "startMs": 233180,
+      "endMs": 235860,
+      "translation": "토니는 콧구멍에 한 짓 때문에 형을 살고 있어"
+    },
+    {
+      "startMs": 235860,
+      "endMs": 238780,
+      "translation": "편집증에 시달리는 머리, 난 아직 법의 감시하는"
+    },
+    {
+      "startMs": 238780,
+      "endMs": 241340,
+      "translation": "눈 아래 있어, 더 많은 걸 바라지"
+    },
+    {
+      "startMs": 241340,
+      "endMs": 244280,
+      "translation": "킬로가 들어왔고, 우린 너희 턱을 바비 브라운처럼 만들었지"
+    },
+    {
+      "startMs": 244280,
+      "endMs": 247020,
+      "translation": "결정을 내리는 게 너라면 결점도 결점이 아니야"
+    },
+    {
+      "startMs": 247020,
+      "endMs": 249850,
+      "translation": "내 랩은 폭포의 전설과 비슷해"
+    },
+    {
+      "startMs": 249850,
+      "endMs": 253060,
+      "translation": "쏟아지지, 내가 너희 모두를 가졌어, 그래"
+    },
+    {
+      "startMs": 253060,
+      "endMs": 255510,
+      "translation": "신경 안 쓰면 한 손을 들어"
+    },
+    {
+      "startMs": 255510,
+      "endMs": 258150,
+      "translation": "신경 안 쓰면 두 손을 들어"
+    },
+    {
+      "startMs": 258150,
+      "endMs": 260850,
+      "translation": "가끔은 그래, 정말 어처구니없지"
+    },
+    {
+      "startMs": 260850,
+      "endMs": 263330,
+      "translation": "가끔은 그래, 이거 어처구니없어"
+    },
+    {
+      "startMs": 263330,
+      "endMs": 266380,
+      "translation": "신경 안 쓰면 한 손을 들어"
+    },
+    {
+      "startMs": 266380,
+      "endMs": 268840,
+      "translation": "신경 안 쓰면 가운뎃손가락을 들어"
+    },
+    {
+      "startMs": 268840,
+      "endMs": 271590,
+      "translation": "가끔은 그래, 친구, 어처구니없지"
+    },
+    {
+      "startMs": 271590,
+      "endMs": 275620,
+      "translation": "인생은 가끔 어처구니없어"
+    },
+    {
+      "startMs": 275620,
+      "endMs": 277540,
+      "translation": "난 정말 터무니없어"
+    },
+    {
+      "startMs": 277540,
+      "endMs": 280080,
+      "translation": "내 자존심을 팔찌처럼 소매에 차고 다니지"
+    },
+    {
+      "startMs": 280080,
+      "endMs": 282550,
+      "translation": "신에게 아이팟이 있다면, 난 그 재생 목록에 있겠지"
+    },
+    {
+      "startMs": 282550,
+      "endMs": 286330,
+      "translation": "내 문장들은 곳곳의 얼굴들을 놀라게 해"
+    },
+    {
+      "startMs": 286330,
+      "endMs": 288630,
+      "translation": "가장 사랑받는 자, 흠, 내 잔은 100달러짜리로 넘쳐흘러"
+    },
+    {
+      "startMs": 288630,
+      "endMs": 291280,
+      "translation": "바보, 젠장, 그걸 낭비하는 건 나답지 않아"
+    },
+    {
+      "startMs": 291280,
+      "endMs": 293550,
+      "translation": "새로운 계명, 꼬마야, 미워하지 말지어다"
+    },
+    {
+      "startMs": 293550,
+      "endMs": 296350,
+      "translation": "내 운동은 민권 운동 같아, 난 랄프 데이비드"
+    },
+    {
+      "startMs": 296350,
+      "endMs": 299170,
+      "translation": "애버내시, 그러니 내 여자는 로자 파크스라고 불러"
+    },
+    {
+      "startMs": 299170,
+      "endMs": 302120,
+      "translation": "난 그놈들과 전혀 달라, 자기, 걔들은 호구야"
+    },
+    {
+      "startMs": 302120,
+      "endMs": 305110,
+      "translation": "밸런타인데이에 이 여자를 만나서 5월에 잤지"
+    },
+    {
+      "startMs": 305110,
+      "endMs": 307810,
+      "translation": "그녀는 '에이프릴'에 대해 알게 됐고, 그래서 '행진'해 떠나 버렸지"
+    },
+    {
+      "startMs": 307810,
+      "endMs": 310640,
+      "translation": "젠장, 또 하나의 상처받은 마음"
+    },
+    {
+      "startMs": 310640,
+      "endMs": 313460,
+      "translation": "난 여자를 둘씩 둬, 노아의 방주처럼"
+    },
+    {
+      "startMs": 313460,
+      "endMs": 316720,
+      "translation": "7그램을 갖고 있어, 내 대마를 '마크'라 부르지"
+    },
+    {
+      "startMs": 316720,
+      "endMs": 319320,
+      "translation": "게다가 주머니엔 트로전 콘돔, 맷 라이너트처럼"
+    },
+    {
+      "startMs": 319320,
+      "endMs": 321740,
+      "translation": "패스파인더 안엔 총"
+    },
+    {
+      "startMs": 321740,
+      "endMs": 324220,
+      "translation": "너희 혐오자들은 박사 학위가 있으니까"
+    },
+    {
+      "startMs": 324220,
+      "endMs": 327080,
+      "translation": "너희는 미움이 전공이고 수학은 부전공이지"
+    },
+    {
+      "startMs": 327080,
+      "endMs": 329320,
+      "translation": "타이거 우즈처럼, 아이언을 잡게 하지 마"
+    },
+    {
+      "startMs": 329320,
+      "endMs": 332330,
+      "translation": "어이, 샴페인 같은 소원, 백인 여자 서른 명"
+    },
+    {
+      "startMs": 332330,
+      "endMs": 336330,
+      "translation": "이거 진짜 어처구니없는 거 알잖아"
+    },
+    {
+      "startMs": 336330,
+      "endMs": 337880,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 337880,
+      "endMs": 340250,
+      "translation": "이거 진짜 어처구니없는 거 알잖아"
+    },
+    {
+      "startMs": 340250,
+      "endMs": 343390,
+      "translation": "부인에겐 자동차, 정부에겐 모피"
+    },
+    {
+      "startMs": 343390,
+      "endMs": 347240,
+      "translation": "이거 진짜 어처구니없는 거 알잖아"
+    },
+    {
+      "startMs": 347240,
+      "endMs": 349190,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 349190,
+      "endMs": 351670,
+      "translation": "이거 진짜 어처구니없는 거 알잖아"
+    },
+    {
+      "startMs": 351670,
+      "endMs": 355880,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 355880,
+      "endMs": 361180,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 361180,
+      "endMs": 366700,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 366700,
+      "endMs": 367730,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 367730,
+      "endMs": 369070,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 369070,
+      "endMs": 373460,
+      "translation": "진짜 어처구니없어"
+    },
+    {
+      "startMs": 373460,
+      "endMs": 375860,
+      "translation": "신경 안 쓰면 한 손을 들어"
+    },
+    {
+      "startMs": 375860,
+      "endMs": 378510,
+      "translation": "신경 안 쓰면 두 손을 들어"
+    },
+    {
+      "startMs": 378510,
+      "endMs": 381340,
+      "translation": "가끔은 그래, 정말 어처구니없지"
+    },
+    {
+      "startMs": 381340,
+      "endMs": 384120,
+      "translation": "가끔은 그래, 이거 어처구니없어"
+    },
+    {
+      "startMs": 384120,
+      "endMs": 386970,
+      "translation": "신경 안 쓰면 한 손을 들어"
+    },
+    {
+      "startMs": 386970,
+      "endMs": 389710,
+      "translation": "신경 안 쓰면 가운뎃손가락을 들어"
+    },
+    {
+      "startMs": 389710,
+      "endMs": 392350,
+      "translation": "가끔은 그래, 친구, 어처구니없지"
+    },
+    {
+      "startMs": 392350,
+      "endMs": 398000,
+      "translation": "인생은 가끔 어처구니없어"
+    }
+  ]
+}

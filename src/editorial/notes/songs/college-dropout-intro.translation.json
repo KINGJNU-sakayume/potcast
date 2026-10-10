@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 573126,
+    "durationMs": 19000
+  },
+  "segments": [
+    {
+      "startMs": 540,
+      "endMs": 2620,
+      "translation": "카녜, 잠깐 얘기 좀 할 수 있을까?"
+    },
+    {
+      "startMs": 2620,
+      "endMs": 5370,
+      "translation": "나랑 다른 교수진이 궁금해하던 참인데"
+    },
+    {
+      "startMs": 5370,
+      "endMs": 6880,
+      "translation": "자네가 뭐 좀 작은 걸"
+    },
+    {
+      "startMs": 6880,
+      "endMs": 11300,
+      "translation": "뭔가 아름다운 걸, 아이들이 들으면 좋아할 만한 걸 해 줄 수 있을까?"
+    },
+    {
+      "startMs": 11300,
+      "endMs": 15040,
+      "translation": "듣자마자 아이들이 위아래로 뛰고 사탕 같은 걸 나눠 먹게 만드는 거 말이야"
+    },
+    {
+      "startMs": 15040,
+      "endMs": 19000,
+      "translation": "아이들을 위해서, 졸업식에서 부를 만한 걸 하나 해 줄 수 있겠지?"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 34150300,
+    "durationMs": 201000
+  },
+  "segments": [
+    {
+      "startMs": 25820,
+      "endMs": 30340,
+      "translation": "하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나"
+    },
+    {
+      "startMs": 30340,
+      "endMs": 37000,
+      "translation": "어!"
+    },
+    {
+      "startMs": 37000,
+      "endMs": 42500,
+      "translation": "달려, 달려, 달려, 달려"
+    },
+    {
+      "startMs": 42500,
+      "endMs": 43510,
+      "translation": "어!"
+    },
+    {
+      "startMs": 43510,
+      "endMs": 45920,
+      "translation": "천국, 천국"
+    },
+    {
+      "startMs": 45920,
+      "endMs": 47830,
+      "translation": "그가 오고 있어"
+    },
+    {
+      "startMs": 47830,
+      "endMs": 50490,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 50490,
+      "endMs": 53580,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 53580,
+      "endMs": 56470,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 56470,
+      "endMs": 59350,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 59350,
+      "endMs": 63800,
+      "translation": "내 눈은 뜨고 있어, 뜨고 있어, 뜨고 있어 (오, 오, 오)"
+    },
+    {
+      "startMs": 63800,
+      "endMs": 66440,
+      "translation": "내 눈은 뜨고 있어"
+    },
+    {
+      "startMs": 66440,
+      "endMs": 70340,
+      "translation": "내 눈은 뜨고 있어, 뜨고 있어, 뜨고 있어 (오, 오, 오)"
+    },
+    {
+      "startMs": 70340,
+      "endMs": 73160,
+      "translation": "내 눈은 뜨고 있어"
+    },
+    {
+      "startMs": 73160,
+      "endMs": 76190,
+      "translation": "오, 오, 오, 어"
+    },
+    {
+      "startMs": 76190,
+      "endMs": 82480,
+      "translation": "오, 오, 오, 어"
+    },
+    {
+      "startMs": 82480,
+      "endMs": 83300,
+      "translation": "그가 오고 있어"
+    },
+    {
+      "startMs": 83300,
+      "endMs": 85890,
+      "translation": "달려, 달려, 달려, 달려, 달려, 달려"
+    },
+    {
+      "startMs": 85890,
+      "endMs": 91160,
+      "translation": "하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나"
+    },
+    {
+      "startMs": 91160,
+      "endMs": 94840,
+      "translation": "그가 오고 있어"
+    },
+    {
+      "startMs": 94840,
+      "endMs": 97390,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 97390,
+      "endMs": 100490,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 100490,
+      "endMs": 103530,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 103530,
+      "endMs": 108700,
+      "translation": "시내를 돌아다니면, 다들 이 노래를 느끼게 될 거야"
+    },
+    {
+      "startMs": 108700,
+      "endMs": 111270,
+      "translation": "난 돌아다녀, 돌아다녀"
+    },
+    {
+      "startMs": 111270,
+      "endMs": 113090,
+      "translation": "(눈은 뜨고 있어, 뜨고 있어, 뜨고 있어)"
+    },
+    {
+      "startMs": 113090,
+      "endMs": 115680,
+      "translation": "오, 그래 (눈은 뜨고 있어)"
+    },
+    {
+      "startMs": 115680,
+      "endMs": 116700,
+      "translation": "난 돌아다녀, 돌아다녀, 그래, 난"
+    },
+    {
+      "startMs": 116700,
+      "endMs": 118140,
+      "translation": "(눈을 뜨고 있어, 뜨고 있어, 눈을)"
+    },
+    {
+      "startMs": 118140,
+      "endMs": 119200,
+      "translation": "이고르"
+    },
+    {
+      "startMs": 119200,
+      "endMs": 120420,
+      "translation": "하나"
+    },
+    {
+      "startMs": 120420,
+      "endMs": 123990,
+      "translation": "아래로, 아래로, 아래로, 아래로"
+    },
+    {
+      "startMs": 123990,
+      "endMs": 125710,
+      "translation": "아래로, 아래로, 아래로, 아래로"
+    },
+    {
+      "startMs": 125710,
+      "endMs": 128220,
+      "translation": "아래로, 아래로, 아래로, 아래로"
+    },
+    {
+      "startMs": 128220,
+      "endMs": 130300,
+      "translation": "아래로, 아래로, 아래로, 아래로, 하나"
+    },
+    {
+      "startMs": 130300,
+      "endMs": 132430,
+      "translation": "그래, 호"
+    },
+    {
+      "startMs": 132430,
+      "endMs": 133650,
+      "translation": "그래, 호"
+    },
+    {
+      "startMs": 133650,
+      "endMs": 135100,
+      "translation": "그래, 호"
+    },
+    {
+      "startMs": 135100,
+      "endMs": 138120,
+      "translation": "그래, 호"
+    },
+    {
+      "startMs": 138120,
+      "endMs": 140430,
+      "translation": "그래, 호"
+    },
+    {
+      "startMs": 140430,
+      "endMs": 142650,
+      "translation": "하나, 하나, 하나"
+    },
+    {
+      "startMs": 142650,
+      "endMs": 146120,
+      "translation": "눈을 뜨고 있어"
+    },
+    {
+      "startMs": 146120,
+      "endMs": 151860,
+      "translation": "눈을 뜨고 있어"
+    },
+    {
+      "startMs": 151860,
+      "endMs": 159400,
+      "translation": "달려, 달려, 달려"
+    },
+    {
+      "startMs": 159400,
+      "endMs": 166590,
+      "translation": "눈을 뜨고 있어"
+    },
+    {
+      "startMs": 166590,
+      "endMs": 173650,
+      "translation": "하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나, 하나"
+    },
+    {
+      "startMs": 173650,
+      "endMs": 179280,
+      "translation": "하나, 하나"
+    },
+    {
+      "startMs": 179280,
+      "endMs": 184790,
+      "translation": "하나, 하나"
+    },
+    {
+      "startMs": 184790,
+      "endMs": 186750,
+      "translation": "하나, 하나"
+    },
+    {
+      "startMs": 186750,
+      "endMs": 201000,
+      "translation": "내 눈, 내 눈, 내 눈... (하나, 하나)"
+    }
+  ]
+}

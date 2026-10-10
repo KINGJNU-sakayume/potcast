@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 14164,
+    "durationMs": 259000
+  },
+  "segments": [
+    {
+      "startMs": 22280,
+      "endMs": 25430,
+      "translation": "요즘 잘 풀려"
+    },
+    {
+      "startMs": 25430,
+      "endMs": 34760,
+      "translation": "이번엔 잘 풀리고 있어"
+    },
+    {
+      "startMs": 34760,
+      "endMs": 47210,
+      "translation": "운이 바뀔 것 같아"
+    },
+    {
+      "startMs": 47210,
+      "endMs": 50870,
+      "translation": "날 죽여 줘, 세라"
+    },
+    {
+      "startMs": 50870,
+      "endMs": 60480,
+      "translation": "사랑으로 다시 날 죽여 줘"
+    },
+    {
+      "startMs": 60480,
+      "endMs": 71010,
+      "translation": "눈부신 날이 될 거야"
+    },
+    {
+      "startMs": 71010,
+      "endMs": 77570,
+      "translation": "비행기 추락 속에서 날 끌어내 줘"
+    },
+    {
+      "startMs": 77570,
+      "endMs": 84600,
+      "translation": "호수에서 날 끌어내 줘"
+    },
+    {
+      "startMs": 84600,
+      "endMs": 94060,
+      "translation": "난 너의 슈퍼히어로니까"
+    },
+    {
+      "startMs": 94060,
+      "endMs": 115450,
+      "translation": "우린 벼랑 끝에 서 있어"
+    },
+    {
+      "startMs": 115450,
+      "endMs": 127850,
+      "translation": "국가 원수가 내 이름을 불렀어"
+    },
+    {
+      "startMs": 127850,
+      "endMs": 140470,
+      "translation": "하지만 그 사람한테 쓸 시간은 없어"
+    },
+    {
+      "startMs": 140470,
+      "endMs": 153370,
+      "translation": "눈부신 날이 될 거야!"
+    },
+    {
+      "startMs": 153370,
+      "endMs": 163950,
+      "translation": "운이 바뀔 것 같아"
+    },
+    {
+      "startMs": 163950,
+      "endMs": 170570,
+      "translation": "비행기 추락 속에서 날 끌어내 줘"
+    },
+    {
+      "startMs": 170570,
+      "endMs": 176980,
+      "translation": "호수에서 날 끌어내 줘"
+    },
+    {
+      "startMs": 176980,
+      "endMs": 186080,
+      "translation": "난 너의 슈퍼히어로니까"
+    },
+    {
+      "startMs": 186080,
+      "endMs": 248340,
+      "translation": "우린 벼랑 끝에 서 있어"
+    },
+    {
+      "startMs": 248340,
+      "endMs": 259000,
+      "translation": "우린 벼랑 끝에 서 있어"
+    }
+  ]
+}

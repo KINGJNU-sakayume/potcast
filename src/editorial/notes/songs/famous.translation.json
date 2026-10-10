@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 766186,
+    "durationMs": 196000
+  },
+  "segments": [
+    {
+      "startMs": 960,
+      "endMs": 8810,
+      "translation": "있지, 나 같은 여자를 사랑하는 게 조금 어려울 수도 있다는 건 이해해"
+    },
+    {
+      "startMs": 8810,
+      "endMs": 14790,
+      "translation": "자유롭고 싶어 하는 널 그렇게 탓하진 않아"
+    },
+    {
+      "startMs": 14790,
+      "endMs": 18750,
+      "translation": "그저 네가 알아줬으면 했어"
+    },
+    {
+      "startMs": 21530,
+      "endMs": 24290,
+      "translation": "스위즈가 비트를 그대로 흐르게 두랬어"
+    },
+    {
+      "startMs": 27120,
+      "endMs": 29970,
+      "translation": "날 가장 잘 아는 사우스사이드 친구들 모두를 위해"
+    },
+    {
+      "startMs": 29970,
+      "endMs": 32520,
+      "translation": "나랑 테일러는 아직도 섹스할 수 있을 것 같아"
+    },
+    {
+      "startMs": 32520,
+      "endMs": 35730,
+      "translation": "왜냐고? 내가 그 년을 유명하게 만들었거든, 젠장"
+    },
+    {
+      "startMs": 35730,
+      "endMs": 37940,
+      "translation": "내가 그 년을 유명하게 만들었어"
+    },
+    {
+      "startMs": 37940,
+      "endMs": 41130,
+      "translation": "카녜 웨스트랑 잤던 모든 여자들에게"
+    },
+    {
+      "startMs": 41130,
+      "endMs": 43590,
+      "translation": "길에서 만나면 카녜의 안부를 전해 줘"
+    },
+    {
+      "startMs": 43590,
+      "endMs": 46790,
+      "translation": "왜냐고? 유명해지지 못해서 화가 났거든, 젠장"
+    },
+    {
+      "startMs": 46790,
+      "endMs": 49290,
+      "translation": "아직 이름도 알려지지 않았다고 화가 났어. 그래, 말해 봐"
+    },
+    {
+      "startMs": 49290,
+      "endMs": 52160,
+      "translation": "걔 남자는 매장에서 최선을 다해 보지만"
+    },
+    {
+      "startMs": 52160,
+      "endMs": 54760,
+      "translation": "카녜만큼 멋지게 차려입지는 못해"
+    },
+    {
+      "startMs": 54760,
+      "endMs": 57630,
+      "translation": "그래도 우린 동네에선 유명하지, 젠장"
+    },
+    {
+      "startMs": 57630,
+      "endMs": 59140,
+      "translation": "그래, 동네에선 여전히 유명해"
+    },
+    {
+      "startMs": 59140,
+      "endMs": 69570,
+      "translation": "그저 네가 알아줬으면 했어. 처음부터 네 가족보다 더 널 사랑했다는 걸"
+    },
+    {
+      "startMs": 69570,
+      "endMs": 73880,
+      "translation": "자유롭고 싶어 하는 널 그렇게 탓하진 않아"
+    },
+    {
+      "startMs": 73880,
+      "endMs": 75300,
+      "translation": "일어나요, 웨스트 씨!"
+    },
+    {
+      "startMs": 75300,
+      "endMs": 77540,
+      "translation": "그저 네가 알아줬으면 했어. 오, 일어났네!"
+    },
+    {
+      "startMs": 77540,
+      "endMs": 80100,
+      "translation": "푸에르토리코의 날 퍼레이드 행진차처럼 떠다녀"
+    },
+    {
+      "startMs": 80100,
+      "endMs": 82970,
+      "translation": "벤츠 타고 마리나델레이를 느긋하게 달려"
+    },
+    {
+      "startMs": 82970,
+      "endMs": 85860,
+      "translation": "걘 부동산 중개사가 되려고 학교에 다녀"
+    },
+    {
+      "startMs": 85860,
+      "endMs": 88070,
+      "translation": "지난달엔 걔 차 할부금을 보태 줬어"
+    },
+    {
+      "startMs": 88070,
+      "endMs": 90570,
+      "translation": "우린 젊고 살아 있어, 우!"
+    },
+    {
+      "startMs": 90570,
+      "endMs": 93630,
+      "translation": "우린 절대 안 죽어, 우!"
+    },
+    {
+      "startMs": 93630,
+      "endMs": 96100,
+      "translation": "개인 빚 위로 날아가려고 막 전용기를 샀어"
+    },
+    {
+      "startMs": 96100,
+      "endMs": 98830,
+      "translation": "하늘에 한 대 띄워"
+    },
+    {
+      "startMs": 98830,
+      "endMs": 101600,
+      "translation": "햇살이 내 눈에 들어와, 우!"
+    },
+    {
+      "startMs": 101600,
+      "endMs": 104420,
+      "translation": "잠에서 깨니 기분이 좋았어, 우!"
+    },
+    {
+      "startMs": 104420,
+      "endMs": 108740,
+      "translation": "그들이 아무리 애써도, 우, 우린 절대 안 죽어"
+    },
+    {
+      "startMs": 108740,
+      "endMs": 110240,
+      "translation": "그저 네가 알아줬으면 했어"
+    },
+    {
+      "startMs": 110240,
+      "endMs": 112020,
+      "translation": "밤 밤, 에이 에이 에이"
+    },
+    {
+      "startMs": 112020,
+      "endMs": 115370,
+      "translation": "밤 밤 밤, 밤 밤 딜라"
+    },
+    {
+      "startMs": 115370,
+      "endMs": 118380,
+      "translation": "밤 밤, 에이 에이 에이 에이 에이"
+    },
+    {
+      "startMs": 118380,
+      "endMs": 121360,
+      "translation": "지금 기분이 어때? 라이터를 높이 들어 봐"
+    },
+    {
+      "startMs": 121360,
+      "endMs": 123690,
+      "translation": "밤 밤, 에이 에이 에이 에이 에이"
+    },
+    {
+      "startMs": 123690,
+      "endMs": 125270,
+      "translation": "밤 밤, 에이 에이 에이"
+    },
+    {
+      "startMs": 125270,
+      "endMs": 127650,
+      "translation": "가운데손가락을 높이 들어 봐"
+    },
+    {
+      "startMs": 127650,
+      "endMs": 128680,
+      "translation": "에이 에이 에이"
+    },
+    {
+      "startMs": 128680,
+      "endMs": 130740,
+      "translation": "밤 밤 밤, 밤"
+    },
+    {
+      "startMs": 130740,
+      "endMs": 132420,
+      "translation": "여기서 신나게 난리 치는 걸 보여 줘"
+    },
+    {
+      "startMs": 132420,
+      "endMs": 133720,
+      "translation": "밤, 에이 에이 에이"
+    },
+    {
+      "startMs": 133720,
+      "endMs": 135290,
+      "translation": "정말 밤 밤이네, 기분이 어때?"
+    },
+    {
+      "startMs": 135290,
+      "endMs": 136380,
+      "translation": "기분이 어때?"
+    },
+    {
+      "startMs": 136380,
+      "endMs": 137840,
+      "translation": "여기서 기분이 어떠냐고, 젠장"
+    },
+    {
+      "startMs": 137840,
+      "endMs": 139970,
+      "translation": "밤 밤, 에이 에이 에이 에이 에이"
+    },
+    {
+      "startMs": 139970,
+      "endMs": 143150,
+      "translation": "밤 밤, 에이 에이 에이. 이제 우리를 막는 것만은 못 해"
+    },
+    {
+      "startMs": 143150,
+      "endMs": 145240,
+      "translation": "밤 밤, 에이 에이 에이"
+    },
+    {
+      "startMs": 145240,
+      "endMs": 147900,
+      "translation": "밤 밤 밤, 밤 밤 딜라"
+    },
+    {
+      "startMs": 147900,
+      "endMs": 149260,
+      "translation": "이젠 이 흐름을 막을 수 없어"
+    },
+    {
+      "startMs": 149260,
+      "endMs": 150410,
+      "translation": "에이 에이 에이"
+    },
+    {
+      "startMs": 150410,
+      "endMs": 153170,
+      "translation": "야, 너무 늦었어, 너무 늦었어"
+    },
+    {
+      "startMs": 153170,
+      "endMs": 155530,
+      "translation": "너무 늦었어, 우릴 건드릴 수 없어"
+    },
+    {
+      "startMs": 155530,
+      "endMs": 156690,
+      "translation": "에이 에이 에이"
+    },
+    {
+      "startMs": 156690,
+      "endMs": 158610,
+      "translation": "밤 밤, 에이 에이 에이"
+    },
+    {
+      "startMs": 158610,
+      "endMs": 160040,
+      "translation": "정말 밤이네"
+    },
+    {
+      "startMs": 160040,
+      "endMs": 161820,
+      "translation": "밤, 에이 에이 에이"
+    },
+    {
+      "startMs": 161820,
+      "endMs": 164110,
+      "translation": "왼쪽으로, 오른쪽으로"
+    },
+    {
+      "startMs": 164110,
+      "endMs": 165660,
+      "translation": "밤 딜라, 밤 밤"
+    },
+    {
+      "startMs": 165660,
+      "endMs": 168960,
+      "translation": "모두 이렇게 손을 높이 드는 걸 보고 싶어, 에이"
+    },
+    {
+      "startMs": 168960,
+      "endMs": 170350,
+      "translation": "밤 밤 딜라"
+    },
+    {
+      "startMs": 170350,
+      "endMs": 172910,
+      "translation": "밤 밤, 에이 에이 에이 에이 에이"
+    },
+    {
+      "startMs": 172910,
+      "endMs": 175170,
+      "translation": "밤 밤, 에이 에이 에이"
+    },
+    {
+      "startMs": 175170,
+      "endMs": 185530,
+      "translation": "그저 네가 알아줬으면 했어. 처음부터 네 가족보다 더 널 사랑했다는 걸"
+    },
+    {
+      "startMs": 185530,
+      "endMs": 191220,
+      "translation": "자유롭고 싶어 하는 널 그렇게 탓하진 않아"
+    },
+    {
+      "startMs": 191220,
+      "endMs": 194150,
+      "translation": "그저 네가 알아줬으면 했어"
+    }
+  ]
+}

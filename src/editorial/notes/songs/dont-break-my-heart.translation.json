@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 146674,
+    "durationMs": 205000
+  },
+  "segments": [
+    {
+      "startMs": 1940,
+      "endMs": 5610,
+      "translation": "(우, 우, 우, 우)"
+    },
+    {
+      "startMs": 5610,
+      "endMs": 6260,
+      "translation": "(마비됐어)"
+    },
+    {
+      "startMs": 6260,
+      "endMs": 10380,
+      "translation": "(우, 우, 우, 우)"
+    },
+    {
+      "startMs": 10380,
+      "endMs": 13060,
+      "translation": "(우, 우, 우, 우)"
+    },
+    {
+      "startMs": 13060,
+      "endMs": 17070,
+      "translation": "(가자) 보랏빛 조명 속에 잠겨 있는 네가 보여"
+    },
+    {
+      "startMs": 17070,
+      "endMs": 19160,
+      "translation": "다이아몬드가 환하게 빛나고"
+    },
+    {
+      "startMs": 19160,
+      "endMs": 22390,
+      "translation": "네 몸의 얼음 하나하나가 다 보여 (네 몸에)"
+    },
+    {
+      "startMs": 22390,
+      "endMs": 25050,
+      "translation": "넌 내 영혼을 낚아채, 난 십자가에 못 박혀"
+    },
+    {
+      "startMs": 25050,
+      "endMs": 26930,
+      "translation": "마비된 것 같아"
+    },
+    {
+      "startMs": 26930,
+      "endMs": 30320,
+      "translation": "너한테 완전히 홀려 버렸어 (너한테)"
+    },
+    {
+      "startMs": 30320,
+      "endMs": 34980,
+      "translation": "하지만 넌 내게 맞는 사람이란 걸 알아, 황홀해"
+    },
+    {
+      "startMs": 34980,
+      "endMs": 38170,
+      "translation": "자꾸 더 원하게 돼"
+    },
+    {
+      "startMs": 38170,
+      "endMs": 42950,
+      "translation": "넌 날 위해 죽을 수도 있을 것 같아, 운명이야"
+    },
+    {
+      "startMs": 42950,
+      "endMs": 45470,
+      "translation": "그리고 이번엔 확실히 알아"
+    },
+    {
+      "startMs": 45470,
+      "endMs": 49750,
+      "translation": "그냥 내 마음을 부수지 마 (내 마음을 부수지 마)"
+    },
+    {
+      "startMs": 49750,
+      "endMs": 53440,
+      "translation": "날 실망시키지 마, 제발"
+    },
+    {
+      "startMs": 53440,
+      "endMs": 57110,
+      "translation": "내 마음을 부수지 마 (내 마음을 부수지 마)"
+    },
+    {
+      "startMs": 57110,
+      "endMs": 61770,
+      "translation": "더는 견딜 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 61770,
+      "endMs": 65220,
+      "translation": "더는 견딜, 더는 견딜"
+    },
+    {
+      "startMs": 65220,
+      "endMs": 69280,
+      "translation": "또 한 번 상처받으면 견딜 수 없어, 다 끝내 버릴 거야"
+    },
+    {
+      "startMs": 69280,
+      "endMs": 73240,
+      "translation": "그리고 내가 사랑했던 그 여자, 우린 클럽에서 헤어졌어"
+    },
+    {
+      "startMs": 73240,
+      "endMs": 76380,
+      "translation": "그리고 난 디스코텍에서 죽을 뻔했어 (디스코텍)"
+    },
+    {
+      "startMs": 76380,
+      "endMs": 82120,
+      "translation": "우, 이제 알아, 그녀는 내게 맞지 않았어, 적이었어"
+    },
+    {
+      "startMs": 82120,
+      "endMs": 85340,
+      "translation": "그래도 자꾸 더 원했지"
+    },
+    {
+      "startMs": 85340,
+      "endMs": 90120,
+      "translation": "차라리 네가 날 위해 죽었으면 해, 운명이야"
+    },
+    {
+      "startMs": 90120,
+      "endMs": 92520,
+      "translation": "그리고 이번엔 확실히 알아"
+    },
+    {
+      "startMs": 92520,
+      "endMs": 96860,
+      "translation": "그냥 내 마음을 부수지 마 (내 마음을 부수지 마)"
+    },
+    {
+      "startMs": 96860,
+      "endMs": 100860,
+      "translation": "날 실망시키지 마, 제발"
+    },
+    {
+      "startMs": 100860,
+      "endMs": 104450,
+      "translation": "내 마음을 부수지 마 (내 마음을 부수지 마)"
+    },
+    {
+      "startMs": 104450,
+      "endMs": 108720,
+      "translation": "더는 견딜 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 108720,
+      "endMs": 112780,
+      "translation": "내 마음을 부수지 마 (제발, 제발)"
+    },
+    {
+      "startMs": 112780,
+      "endMs": 116530,
+      "translation": "난 이미 무너지고 있어"
+    },
+    {
+      "startMs": 116530,
+      "endMs": 120390,
+      "translation": "내 마음을 부수지 마 (제발, 제발)"
+    },
+    {
+      "startMs": 120390,
+      "endMs": 125630,
+      "translation": "더는 견딜 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 125630,
+      "endMs": 129420,
+      "translation": "술이 말하고 있는 것 같아"
+    },
+    {
+      "startMs": 129420,
+      "endMs": 132670,
+      "translation": "방이 그만 돌았으면 좋겠어"
+    },
+    {
+      "startMs": 132670,
+      "endMs": 136800,
+      "translation": "그리고 난 네가 원하는 사람이 될 수 있어"
+    },
+    {
+      "startMs": 136800,
+      "endMs": 141010,
+      "translation": "네가 내 마음을 부수지만 않는다면"
+    },
+    {
+      "startMs": 141010,
+      "endMs": 145020,
+      "translation": "(그리고 깨달았어, 네 목에 키스했을 때)"
+    },
+    {
+      "startMs": 145020,
+      "endMs": 149030,
+      "translation": "(방이 뜨겁다는 걸, 네 땀 맛이 느껴져)"
+    },
+    {
+      "startMs": 149030,
+      "endMs": 153020,
+      "translation": "(디스코텍엔 너와 나뿐이야)"
+    },
+    {
+      "startMs": 153020,
+      "endMs": 155410,
+      "translation": "하지만 걱정 마"
+    },
+    {
+      "startMs": 155410,
+      "endMs": 159800,
+      "translation": "그냥 내 마음을 부수지 마 (내 마음을 부수지 마)"
+    },
+    {
+      "startMs": 159800,
+      "endMs": 163770,
+      "translation": "날 실망시키지 마, 제발"
+    },
+    {
+      "startMs": 163770,
+      "endMs": 167470,
+      "translation": "내 마음을 부수지 마 (내 마음을 부수지 마)"
+    },
+    {
+      "startMs": 167470,
+      "endMs": 171740,
+      "translation": "더는 견딜 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 171740,
+      "endMs": 175510,
+      "translation": "내 마음을 부수지 마 (제발, 제발)"
+    },
+    {
+      "startMs": 175510,
+      "endMs": 179280,
+      "translation": "난 이미 무너지고 있어"
+    },
+    {
+      "startMs": 179280,
+      "endMs": 183220,
+      "translation": "내 마음을 부수지 마 (제발, 제발)"
+    },
+    {
+      "startMs": 183220,
+      "endMs": 190830,
+      "translation": "더는 견딜 수 있을지 모르겠어"
+    },
+    {
+      "startMs": 190830,
+      "endMs": 195140,
+      "translation": "(우, 우, 우, 우)"
+    },
+    {
+      "startMs": 195140,
+      "endMs": 199040,
+      "translation": "(우, 우, 우, 우)"
+    },
+    {
+      "startMs": 199040,
+      "endMs": 205000,
+      "translation": "(우, 우, 우, 우)"
+    }
+  ]
+}

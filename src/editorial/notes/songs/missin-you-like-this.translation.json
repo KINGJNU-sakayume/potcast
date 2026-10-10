@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11570955,
+    "durationMs": 223000
+  },
+  "segments": [
+    {
+      "startMs": 12520,
+      "endMs": 18670,
+      "translation": "가끔씩 네 생각이 날 줄 알았어"
+    },
+    {
+      "startMs": 18670,
+      "endMs": 24820,
+      "translation": "캔자스에 비가 내릴 때, '더스트 인 더 윈드'를 들을 때"
+    },
+    {
+      "startMs": 24820,
+      "endMs": 30530,
+      "translation": "그 엑슨 주유소 주차장에서 떠난다고 말했을 때"
+    },
+    {
+      "startMs": 30530,
+      "endMs": 37150,
+      "translation": "세상은 계속 돌아갈 줄 알았어, 멈출 거라고 아무도 말해 주지 않았지"
+    },
+    {
+      "startMs": 37150,
+      "endMs": 42830,
+      "translation": "그리고 헤어진 뒤에 네가 말했다면 미쳤다고 했을 거야"
+    },
+    {
+      "startMs": 42830,
+      "endMs": 50290,
+      "translation": "너를 잊는 데 평생이 걸릴 거라고"
+    },
+    {
+      "startMs": 50290,
+      "endMs": 55990,
+      "translation": "자기야, 하룻밤쯤은 너 때문에 술을 마실 줄 알았어"
+    },
+    {
+      "startMs": 55990,
+      "endMs": 61890,
+      "translation": "그런데 몇 년이 지났는데도 여전히 네 꿈을 꿔"
+    },
+    {
+      "startMs": 61890,
+      "endMs": 70260,
+      "translation": "죽을 때까지 맹세해, 하늘에 맹세코, 내가 한 짓은 절대 안 했을 거야"
+    },
+    {
+      "startMs": 70260,
+      "endMs": 85760,
+      "translation": "이렇게 널 그리워하게 될 줄 알았더라면"
+    },
+    {
+      "startMs": 85760,
+      "endMs": 91430,
+      "translation": "아침에 새로운 사람과 한 침대에서 눈을 떠"
+    },
+    {
+      "startMs": 91430,
+      "endMs": 97640,
+      "translation": "그 여자는 몰라, 그 상자엔 부츠 대신 아직 네 사진이 있다는 걸"
+    },
+    {
+      "startMs": 97640,
+      "endMs": 103640,
+      "translation": "넌 내 커피 속 위스키, 내 기도 속 응답받지 못한 것"
+    },
+    {
+      "startMs": 103640,
+      "endMs": 111020,
+      "translation": "그다음으로 좋은 사람이 바로 여기 누워 있어도 내가 여전히 외로운 이유야"
+    },
+    {
+      "startMs": 111020,
+      "endMs": 116670,
+      "translation": "자기야, 하룻밤쯤은 너 때문에 술을 마실 줄 알았어"
+    },
+    {
+      "startMs": 116670,
+      "endMs": 122780,
+      "translation": "그런데 몇 년이 지났는데도 여전히 네 꿈을 꿔"
+    },
+    {
+      "startMs": 122780,
+      "endMs": 131000,
+      "translation": "죽을 때까지 맹세해, 하늘에 맹세코, 내가 한 짓은 절대 안 했을 거야"
+    },
+    {
+      "startMs": 131000,
+      "endMs": 146750,
+      "translation": "이렇게 널 그리워하게 될 줄 알았더라면"
+    },
+    {
+      "startMs": 146750,
+      "endMs": 152200,
+      "translation": "헤어진 뒤에 네가 말했다면 미쳤다고 했을 거야"
+    },
+    {
+      "startMs": 152200,
+      "endMs": 162670,
+      "translation": "너를 잊으려면 땅속 여섯 자 아래 묻혀야 할 거라고"
+    },
+    {
+      "startMs": 162670,
+      "endMs": 168260,
+      "translation": "하룻밤쯤은 너 때문에 술을 마실 줄 알았어"
+    },
+    {
+      "startMs": 168260,
+      "endMs": 174370,
+      "translation": "그런데 몇 년이 지났는데도 여전히 네 꿈을 꿔"
+    },
+    {
+      "startMs": 174370,
+      "endMs": 182570,
+      "translation": "죽을 때까지 맹세해, 하늘에 맹세코, 내가 한 짓은 절대 안 했을 거야"
+    },
+    {
+      "startMs": 182570,
+      "endMs": 202130,
+      "translation": "이렇게 널 그리워하게 될 줄 알았더라면"
+    },
+    {
+      "startMs": 202130,
+      "endMs": 210100,
+      "translation": "이렇게 널 그리워하게 될 줄"
+    },
+    {
+      "startMs": 210100,
+      "endMs": 223000,
+      "translation": "이렇게 널 그리워하게"
+    }
+  ]
+}

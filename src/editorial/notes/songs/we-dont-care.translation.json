@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 585329,
+    "durationMs": 240000
+  },
+  "segments": [
+    {
+      "startMs": 3420,
+      "endMs": 7500,
+      "translation": "그래, 아이들이 부르기 딱 좋은 노래가 있지"
+    },
+    {
+      "startMs": 7500,
+      "endMs": 8560,
+      "translation": "그리고 내 사람들 모두에게, 그러니까"
+    },
+    {
+      "startMs": 8560,
+      "endMs": 11380,
+      "translation": "먹고살려고 마약을 파는"
+    },
+    {
+      "startMs": 11380,
+      "endMs": 19920,
+      "translation": "돈이 하늘 높이 쌓일 때까지 모으는 사람들"
+    },
+    {
+      "startMs": 19920,
+      "endMs": 23070,
+      "translation": "우린 스물다섯을 못 넘길 거라고 했지"
+    },
+    {
+      "startMs": 23070,
+      "endMs": 25950,
+      "translation": "웃기지, 우린 아직 살아 있어"
+    },
+    {
+      "startMs": 25950,
+      "endMs": 28810,
+      "translation": "두 손을 하늘로 들고 외쳐"
+    },
+    {
+      "startMs": 28810,
+      "endMs": 32280,
+      "translation": "\"남들이 뭐라든 우린 상관 안 해\""
+    },
+    {
+      "startMs": 32280,
+      "endMs": 34280,
+      "translation": "이 노래를 처음 듣는다면"
+    },
+    {
+      "startMs": 34280,
+      "endMs": 36960,
+      "translation": "이제 진짜 차가운 걸 겪게 될 거야"
+    },
+    {
+      "startMs": 36960,
+      "endMs": 38850,
+      "translation": "우린 누가 쥐여 준 거 하나 없었어"
+    },
+    {
+      "startMs": 38850,
+      "endMs": 40360,
+      "translation": "아무것도 당연하게 여기지 않았고"
+    },
+    {
+      "startMs": 40360,
+      "endMs": 41940,
+      "translation": "누구 것도 빼앗지 않았어"
+    },
+    {
+      "startMs": 41940,
+      "endMs": 43560,
+      "translation": "난 나 자신의 사람이야"
+    },
+    {
+      "startMs": 43560,
+      "endMs": 46200,
+      "translation": "그래도 꼬맹이 때는 마약상을 올려다봤지"
+    },
+    {
+      "startMs": 46200,
+      "endMs": 49120,
+      "translation": "내가 아는 어른 중에 빈털터리가 아닌 건 그 사람뿐이었거든"
+    },
+    {
+      "startMs": 49120,
+      "endMs": 50540,
+      "translation": "스타터 점퍼를 휙휙 걸치던"
+    },
+    {
+      "startMs": 50540,
+      "endMs": 51930,
+      "translation": "넌 몰라"
+    },
+    {
+      "startMs": 51930,
+      "endMs": 54730,
+      "translation": "남들이 뭐라든 우린 상관 안 해"
+    },
+    {
+      "startMs": 54730,
+      "endMs": 57230,
+      "translation": "이건 겨울 내내 밖에 서 있던 내 사람들을 위한 거야"
+    },
+    {
+      "startMs": 57230,
+      "endMs": 59010,
+      "translation": "이번 여름엔 그들도 말하지 않겠지"
+    },
+    {
+      "startMs": 59010,
+      "endMs": 60560,
+      "translation": "\"내년 여름엔 나도 꼭\"이라고"
+    },
+    {
+      "startMs": 60560,
+      "endMs": 63310,
+      "translation": "동네에 눌러앉아 있는 게 꼭 지역 전문대 같아"
+    },
+    {
+      "startMs": 63310,
+      "endMs": 66160,
+      "translation": "이 마약 판 돈이 꼬마 트레이의 장학금이야"
+    },
+    {
+      "startMs": 66160,
+      "endMs": 69100,
+      "translation": "꿈 없는 놈한테 등록금 같은 건 없고"
+    },
+    {
+      "startMs": 69100,
+      "endMs": 71770,
+      "translation": "집에 눌러앉은 엉덩이에 대출해 주는 데도 없으니까"
+    },
+    {
+      "startMs": 71770,
+      "endMs": 74860,
+      "translation": "그러니 우린 크랙을 팔든, 랩을 하든, 일자리를 구하든 해야 해"
+    },
+    {
+      "startMs": 74860,
+      "endMs": 77950,
+      "translation": "뭐라도 해야지, 이제 다 컸잖아"
+    },
+    {
+      "startMs": 77950,
+      "endMs": 80810,
+      "translation": "먹고살려고 마약을 팔고"
+    },
+    {
+      "startMs": 80810,
+      "endMs": 86540,
+      "translation": "돈이 하늘 높이 쌓일 때까지 모아"
+    },
+    {
+      "startMs": 86540,
+      "endMs": 89130,
+      "translation": "(아이들아, 불러, 아이들아, 불러)"
+    },
+    {
+      "startMs": 89130,
+      "endMs": 92330,
+      "translation": "우린 스물다섯을 못 넘길 거라고 했지"
+    },
+    {
+      "startMs": 92330,
+      "endMs": 95400,
+      "translation": "웃기지, 우린 아직 살아 있어"
+    },
+    {
+      "startMs": 95400,
+      "endMs": 98210,
+      "translation": "두 손을 하늘로 들고 외쳐"
+    },
+    {
+      "startMs": 98210,
+      "endMs": 99810,
+      "translation": "\"남들이 뭐라든 우린 상관 안 해\""
+    },
+    {
+      "startMs": 99810,
+      "endMs": 102600,
+      "translation": "두 번째 벌스는 아홉 시부터 다섯 시까지 일하는 내 친구들 거야"
+    },
+    {
+      "startMs": 102600,
+      "endMs": 106380,
+      "translation": "시급 6달러 55센트로는 빛날 수 없어서 여전히 부업을 뛰는"
+    },
+    {
+      "startMs": 106380,
+      "endMs": 108800,
+      "translation": "다들 화장품을 팔고, 제이콥 시계를 팔고"
+    },
+    {
+      "startMs": 108800,
+      "endMs": 111540,
+      "translation": "불법 복제 테이프를 팔아서 돈을 모으지"
+    },
+    {
+      "startMs": 111540,
+      "endMs": 114140,
+      "translation": "물건은 할부로 맡겨 뒀다가 다시 찾으러 가고"
+    },
+    {
+      "startMs": 114140,
+      "endMs": 117100,
+      "translation": "세금 신고할 땐 남의 애를 부양가족으로 올리고"
+    },
+    {
+      "startMs": 117100,
+      "endMs": 121080,
+      "translation": "그 돈으로 물건을 떼다가 팔아서 돈을 벌어"
+    },
+    {
+      "startMs": 121080,
+      "endMs": 123780,
+      "translation": "남들이 뭐라든 우린 상관 안 해"
+    },
+    {
+      "startMs": 123780,
+      "endMs": 125910,
+      "translation": "엄마는 남쪽으로 이사 가고 싶다며"
+    },
+    {
+      "startMs": 125910,
+      "endMs": 128870,
+      "translation": "복권을 긁으면서 새집을 꿈꿔"
+    },
+    {
+      "startMs": 128870,
+      "endMs": 131380,
+      "translation": "그 무렵 도는 어떤 녀석 집에 쳐들어갔지"
+    },
+    {
+      "startMs": 131380,
+      "endMs": 134060,
+      "translation": "일자리를 못 구했거든, 일을 못 구하니까"
+    },
+    {
+      "startMs": 134060,
+      "endMs": 135600,
+      "translation": "물건을 구하기로 한 거야"
+    },
+    {
+      "startMs": 135600,
+      "endMs": 138420,
+      "translation": "마약 장사는 거식증 같아서 무게를 늘리기가 힘들어"
+    },
+    {
+      "startMs": 138420,
+      "endMs": 141310,
+      "translation": "그래서 돈이 꼭 뒤틀린 것처럼 바로 펴지질 않지"
+    },
+    {
+      "startMs": 141310,
+      "endMs": 144260,
+      "translation": "그래도 우린 계속 구울 거야, 케이크가 나올 때까지"
+    },
+    {
+      "startMs": 144260,
+      "endMs": 146640,
+      "translation": "남들이 뭐라든 우린 상관 안 해"
+    },
+    {
+      "startMs": 146640,
+      "endMs": 147190,
+      "translation": "내 사람들"
+    },
+    {
+      "startMs": 147190,
+      "endMs": 150130,
+      "translation": "먹고살려고 마약을 팔고"
+    },
+    {
+      "startMs": 150130,
+      "endMs": 155900,
+      "translation": "돈이 하늘 높이 쌓일 때까지 모아"
+    },
+    {
+      "startMs": 155900,
+      "endMs": 158690,
+      "translation": "(아이들아, 불러, 아이들아, 불러)"
+    },
+    {
+      "startMs": 158690,
+      "endMs": 161580,
+      "translation": "우린 스물다섯을 못 넘길 거라고 했지"
+    },
+    {
+      "startMs": 161580,
+      "endMs": 164620,
+      "translation": "웃기지, 우린 아직 살아 있어"
+    },
+    {
+      "startMs": 164620,
+      "endMs": 167430,
+      "translation": "두 손을 하늘로 들고 외쳐"
+    },
+    {
+      "startMs": 167430,
+      "endMs": 170550,
+      "translation": "남들이 뭐라든 우린 상관 안 해"
+    },
+    {
+      "startMs": 170550,
+      "endMs": 172730,
+      "translation": "알잖아, 방과 후 프로그램을 끊어 버리면"
+    },
+    {
+      "startMs": 172730,
+      "endMs": 175650,
+      "translation": "아이들이 엇나가는 거"
+    },
+    {
+      "startMs": 175650,
+      "endMs": 178820,
+      "translation": "아동복지국 신세인 애들도, 난독증인 애들도 있어"
+    },
+    {
+      "startMs": 178820,
+      "endMs": 181220,
+      "translation": "좋아하는 50센트 노래는 '12 Questions'"
+    },
+    {
+      "startMs": 181220,
+      "endMs": 183280,
+      "translation": "우린 외치지, \"크랙, 코카인, 대마, 공원\""
+    },
+    {
+      "startMs": 183280,
+      "endMs": 184860,
+      "translation": "봐, 이제 우리도 똑똑하잖아"
+    },
+    {
+      "startMs": 184860,
+      "endMs": 187620,
+      "translation": "선생들이 생각한 것처럼 모자라지 않아"
+    },
+    {
+      "startMs": 187620,
+      "endMs": 190600,
+      "translation": "잠깐, 꽉 잡아, 우린 돈을 더 벌어"
+    },
+    {
+      "startMs": 190600,
+      "endMs": 193320,
+      "translation": "이제 엄마한테 내가 느린 반에 가야 한다고 말해 봐"
+    },
+    {
+      "startMs": 193320,
+      "endMs": 195280,
+      "translation": "생활 보조금을 받는 것도 서러운데"
+    },
+    {
+      "startMs": 195280,
+      "endMs": 197460,
+      "translation": "날 스쿨버스에 태우려고 하네"
+    },
+    {
+      "startMs": 197460,
+      "endMs": 198960,
+      "translation": "휠체어 자리가 있는 그 버스에"
+    },
+    {
+      "startMs": 198960,
+      "endMs": 202130,
+      "translation": "난 크롬 휠이 번쩍이는 차를 원하는데"
+    },
+    {
+      "startMs": 202130,
+      "endMs": 205030,
+      "translation": "넌 우리가 여기 살지도 않는 것처럼 전기를 끊으려 하지"
+    },
+    {
+      "startMs": 205030,
+      "endMs": 207850,
+      "translation": "우리 손에 쥐여 준 걸 봐, 아버지들은 우릴 버렸어"
+    },
+    {
+      "startMs": 207850,
+      "endMs": 210570,
+      "translation": "우리가 총을 들면 그때 구급차나 불러"
+    },
+    {
+      "startMs": 210570,
+      "endMs": 213440,
+      "translation": "가끔은 이 세상에 우릴 이해하는 사람이 아무도 없는 것 같아"
+    },
+    {
+      "startMs": 213440,
+      "endMs": 215980,
+      "translation": "그래도 남들이 뭐라든 우린 상관 안 해"
+    },
+    {
+      "startMs": 215980,
+      "endMs": 216920,
+      "translation": "내 사람들"
+    },
+    {
+      "startMs": 216920,
+      "endMs": 219330,
+      "translation": "먹고살려고 마약을 팔고"
+    },
+    {
+      "startMs": 219330,
+      "endMs": 225150,
+      "translation": "돈이 하늘 높이 쌓일 때까지 모아"
+    },
+    {
+      "startMs": 225150,
+      "endMs": 227860,
+      "translation": "(아이들아, 불러, 아이들아, 불러)"
+    },
+    {
+      "startMs": 227860,
+      "endMs": 231010,
+      "translation": "우린 스물다섯을 못 넘길 거라고 했지"
+    },
+    {
+      "startMs": 231010,
+      "endMs": 233670,
+      "translation": "웃기지, 우린 아직 살아 있어"
+    },
+    {
+      "startMs": 233670,
+      "endMs": 236580,
+      "translation": "두 손을 하늘로 들고 외쳐"
+    },
+    {
+      "startMs": 236580,
+      "endMs": 240000,
+      "translation": "\"남들이 뭐라든 우린 상관 안 해\""
+    }
+  ]
+}

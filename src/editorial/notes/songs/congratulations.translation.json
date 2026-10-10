@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 3822101,
+    "durationMs": 222000
+  },
+  "segments": [
+    {
+      "startMs": 5850,
+      "endMs": 14000,
+      "translation": "(그래, 그래)"
+    },
+    {
+      "startMs": 14000,
+      "endMs": 14810,
+      "translation": "(그래)"
+    },
+    {
+      "startMs": 14810,
+      "endMs": 19620,
+      "translation": "엄마가 전화했어, '아들아, 텔레비전에서 봤다'"
+    },
+    {
+      "startMs": 19620,
+      "endMs": 23520,
+      "translation": "우리가 뜬 뒤로 다 변했대"
+    },
+    {
+      "startMs": 23520,
+      "endMs": 27450,
+      "translation": "어릴 때부터 다 꿈꿔 왔어"
+    },
+    {
+      "startMs": 27450,
+      "endMs": 29020,
+      "translation": "다들 내가 아무것도 못 될 거라 했지"
+    },
+    {
+      "startMs": 29020,
+      "endMs": 32650,
+      "translation": "이젠 다들 '축하해'라고 해 (어, 어, 어)"
+    },
+    {
+      "startMs": 32650,
+      "endMs": 36440,
+      "translation": "너무 열심히 일해서 쉬는 법도 잊었어 (어-허)"
+    },
+    {
+      "startMs": 36440,
+      "endMs": 40170,
+      "translation": "그들은 그런 헌신이 없었지 (어, 어)"
+    },
+    {
+      "startMs": 40170,
+      "endMs": 43920,
+      "translation": "사람들은 미워하며 우리가 변했다지만, 봐, 우리가 해냈어 (어, 어)"
+    },
+    {
+      "startMs": 43920,
+      "endMs": 45960,
+      "translation": "그래, 우리가 해냈어 (어, 어, 어)"
+    },
+    {
+      "startMs": 45960,
+      "endMs": 48420,
+      "translation": "그들은 한 번도 친절하지 않았지, 그래"
+    },
+    {
+      "startMs": 48420,
+      "endMs": 50190,
+      "translation": "이제 난 벤틀리에서 뛰어내려, 그래"
+    },
+    {
+      "startMs": 50190,
+      "endMs": 52220,
+      "translation": "과장되게 들리는 거 알아, 그래"
+    },
+    {
+      "startMs": 52220,
+      "endMs": 54210,
+      "translation": "하지만 꼭 가져야 한다는 걸 알았어, 그래"
+    },
+    {
+      "startMs": 54210,
+      "endMs": 55980,
+      "translation": "돈 앞에선 난 야수야, 그래"
+    },
+    {
+      "startMs": 55980,
+      "endMs": 57930,
+      "translation": "습관처럼 근질거리게 했지, 그래"
+    },
+    {
+      "startMs": 57930,
+      "endMs": 60040,
+      "translation": "끝내주는 여자 스무 명에 둘러싸여 있어, 그래"
+    },
+    {
+      "startMs": 60040,
+      "endMs": 62060,
+      "translation": "하지만 작년엔 날 몰랐지, 그래"
+    },
+    {
+      "startMs": 62060,
+      "endMs": 64120,
+      "translation": "다들 자기가 중요한 척하고 싶어 해"
+    },
+    {
+      "startMs": 64120,
+      "endMs": 66070,
+      "translation": "(그래-그래-그래)"
+    },
+    {
+      "startMs": 66070,
+      "endMs": 68390,
+      "translation": "하지만 내 친구를 만나면 그런 건 다 아무 의미 없어"
+    },
+    {
+      "startMs": 68390,
+      "endMs": 70000,
+      "translation": "(그래-그래-그래)"
+    },
+    {
+      "startMs": 70000,
+      "endMs": 72260,
+      "translation": "다들 내가 공을 놓치길 기대하지"
+    },
+    {
+      "startMs": 72260,
+      "endMs": 73870,
+      "translation": "(그래-그래-그래)"
+    },
+    {
+      "startMs": 73870,
+      "endMs": 77690,
+      "translation": "국경에서 검사받듯 모든 게 맞춤이야, 그래, 그래"
+    },
+    {
+      "startMs": 77690,
+      "endMs": 81500,
+      "translation": "이기는 게 좋다면 라이터를 하늘로 들어"
+    },
+    {
+      "startMs": 81500,
+      "endMs": 85320,
+      "translation": "머릿속에 수백만 달러가 있는데 어떻게 말이 되겠어?"
+    },
+    {
+      "startMs": 85320,
+      "endMs": 89260,
+      "translation": "헛소리를 들고 오면 그냥 옆으로 치워 둬"
+    },
+    {
+      "startMs": 89260,
+      "endMs": 93560,
+      "translation": "아기 때부터 잘나갔지, 내 눈에 다 보였대"
+    },
+    {
+      "startMs": 93560,
+      "endMs": 97440,
+      "translation": "엄마가 전화했어, '아들아, 텔레비전에서 봤다'"
+    },
+    {
+      "startMs": 97440,
+      "endMs": 101510,
+      "translation": "우리가 뜬 뒤로 다 변했대"
+    },
+    {
+      "startMs": 101510,
+      "endMs": 105250,
+      "translation": "어릴 때부터 다 꿈꿔 왔어"
+    },
+    {
+      "startMs": 105250,
+      "endMs": 106740,
+      "translation": "다들 내가 아무것도 못 될 거라 했지"
+    },
+    {
+      "startMs": 106740,
+      "endMs": 110710,
+      "translation": "이젠 다들 '축하해'라고 해 (축하해)"
+    },
+    {
+      "startMs": 110710,
+      "endMs": 114120,
+      "translation": "너무 열심히 일해서 쉬는 법도 잊었어 (우)"
+    },
+    {
+      "startMs": 114120,
+      "endMs": 117950,
+      "translation": "그들은 그런 헌신이 없었지 (에이, 어, 어)"
+    },
+    {
+      "startMs": 117950,
+      "endMs": 121820,
+      "translation": "사람들은 미워하며 우리가 변했다지만, 봐, 우리가 해냈어 (어, 어)"
+    },
+    {
+      "startMs": 121820,
+      "endMs": 123880,
+      "translation": "그래, 우리가 해냈어 (그래, 어, 어, 어)"
+    },
+    {
+      "startMs": 123880,
+      "endMs": 126840,
+      "translation": "난 참았어 (그래, 오)"
+    },
+    {
+      "startMs": 126840,
+      "endMs": 130730,
+      "translation": "오, 난 참았어 (에이, 우)"
+    },
+    {
+      "startMs": 130730,
+      "endMs": 134090,
+      "translation": "이제 우리가 해냈다고 소리칠 수 있어 (해냈어)"
+    },
+    {
+      "startMs": 134090,
+      "endMs": 138070,
+      "translation": "이제 어딜 가든 다들 '축하해'라고 해 (우)"
+    },
+    {
+      "startMs": 138070,
+      "endMs": 140050,
+      "translation": "어린놈, 어린놈, 졸업이야 (그래)"
+    },
+    {
+      "startMs": 140050,
+      "endMs": 141890,
+      "translation": "공을 잡고 뛰어, 자기야 (뛰어)"
+    },
+    {
+      "startMs": 141890,
+      "endMs": 143730,
+      "translation": "전화할 사람을 찾고 있어, 자기야"
+    },
+    {
+      "startMs": 143730,
+      "endMs": 145700,
+      "translation": "하지만 지금은 일이 좀 있어 (에이)"
+    },
+    {
+      "startMs": 145700,
+      "endMs": 147680,
+      "translation": "늘 벤저민 프랭클린 지폐뿐 (현금)"
+    },
+    {
+      "startMs": 147680,
+      "endMs": 149770,
+      "translation": "큰 반지 (우), 샴페인 (샴페인)"
+    },
+    {
+      "startMs": 149770,
+      "endMs": 151760,
+      "translation": "내 인생은 한 판의 경기 같아 (경기)"
+    },
+    {
+      "startMs": 151760,
+      "endMs": 153780,
+      "translation": "그런데 난 대신 트랩에 있지 (트랩에)"
+    },
+    {
+      "startMs": 153780,
+      "endMs": 155520,
+      "translation": "냄비가 너무 커서 슈퍼볼이라 불러 (슈퍼볼, 우)"
+    },
+    {
+      "startMs": 155520,
+      "endMs": 160090,
+      "translation": "슈퍼볼, 여자들을 불러 (브르릇), 롤스에 타 (끽)"
+    },
+    {
+      "startMs": 160090,
+      "endMs": 164240,
+      "translation": "꼭대기 층의 삶 (꼭대기), 혼초와 포스트 (그래, 에이)"
+    },
+    {
+      "startMs": 164240,
+      "endMs": 167270,
+      "translation": "말론 (에이), 휴대폰에 계획이 있어 (에이)"
+    },
+    {
+      "startMs": 167270,
+      "endMs": 169200,
+      "translation": "내가 뭐 하는지 알잖아 (에이)"
+    },
+    {
+      "startMs": 169200,
+      "endMs": 171380,
+      "translation": "헌초 후디니는 사라졌어 (에이)"
+    },
+    {
+      "startMs": 171380,
+      "endMs": 175520,
+      "translation": "엄마가 전화했어, '아들아, 텔레비전에서 봤다'"
+    },
+    {
+      "startMs": 175520,
+      "endMs": 179330,
+      "translation": "우리가 뜬 뒤로 다 변했대"
+    },
+    {
+      "startMs": 179330,
+      "endMs": 183310,
+      "translation": "어릴 때부터 다 꿈꿔 왔어"
+    },
+    {
+      "startMs": 183310,
+      "endMs": 184790,
+      "translation": "다들 내가 아무것도 못 될 거라 했지"
+    },
+    {
+      "startMs": 184790,
+      "endMs": 188770,
+      "translation": "이젠 다들 '축하해'라고 해 (에이, 어, 어, 어)"
+    },
+    {
+      "startMs": 188770,
+      "endMs": 193090,
+      "translation": "너무 열심히 일해서 쉬는 법도 잊었어 (어-허, 우)"
+    },
+    {
+      "startMs": 193090,
+      "endMs": 196340,
+      "translation": "그들은 그런 헌신이 없었지 (에이, 어, 어)"
+    },
+    {
+      "startMs": 196340,
+      "endMs": 200240,
+      "translation": "사람들은 미워하며 우리가 변했다지만, 봐, 우리가 해냈어 (그래)"
+    },
+    {
+      "startMs": 200240,
+      "endMs": 222000,
+      "translation": "그래, 우리가 해냈어"
+    }
+  ]
+}

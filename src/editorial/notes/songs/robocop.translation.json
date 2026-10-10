@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 579331,
+    "durationMs": 274000
+  },
+  "segments": [
+    {
+      "startMs": 14720,
+      "endMs": 18740,
+      "translation": "내가 본 중에 제일 끝내주는 여자였어"
+    },
+    {
+      "startMs": 18740,
+      "endMs": 22200,
+      "translation": "영화 속 장면에서 막 걸어 나온 것 같았지"
+    },
+    {
+      "startMs": 22200,
+      "endMs": 25580,
+      "translation": "그녀가 드라마 퀸일 줄 누가 알았겠어"
+    },
+    {
+      "startMs": 25580,
+      "endMs": 29470,
+      "translation": "내 삶을 스티븐 킹의 소설로 만들어 버릴 줄"
+    },
+    {
+      "startMs": 29470,
+      "endMs": 33020,
+      "translation": "밤늦게까지 순찰이라도 도는 것처럼"
+    },
+    {
+      "startMs": 33020,
+      "endMs": 36630,
+      "translation": "내가 가석방 중인 것처럼 모든 걸 확인해"
+    },
+    {
+      "startMs": 36630,
+      "endMs": 40020,
+      "translation": "몰라도 되는 일도 있다고 말했는데"
+    },
+    {
+      "startMs": 40020,
+      "endMs": 42310,
+      "translation": "그녀는 절대 그냥 넘기지 않았어, 오"
+    },
+    {
+      "startMs": 42310,
+      "endMs": 45990,
+      "translation": "오케이, 오케이, 오케이, 오케이"
+    },
+    {
+      "startMs": 45990,
+      "endMs": 47610,
+      "translation": "넌 이제 절대 못 멈출 거야"
+    },
+    {
+      "startMs": 47610,
+      "endMs": 49830,
+      "translation": "넌 절대 안 멈추지"
+    },
+    {
+      "startMs": 49830,
+      "endMs": 52870,
+      "translation": "오케이, 오케이, 오케이"
+    },
+    {
+      "startMs": 52870,
+      "endMs": 54850,
+      "translation": "넌 이제 절대 못 멈출 거야"
+    },
+    {
+      "startMs": 54850,
+      "endMs": 56220,
+      "translation": "이제 그만둬야 해"
+    },
+    {
+      "startMs": 56220,
+      "endMs": 57820,
+      "translation": "그만둬, 그만둬"
+    },
+    {
+      "startMs": 57820,
+      "endMs": 61380,
+      "translation": "난 로보캅은 필요 없으니까"
+    },
+    {
+      "startMs": 61380,
+      "endMs": 64890,
+      "translation": "넌 로보캅처럼 움직여"
+    },
+    {
+      "startMs": 64890,
+      "endMs": 68300,
+      "translation": "언제부터 로보캅이 된 거야?"
+    },
+    {
+      "startMs": 68300,
+      "endMs": 71940,
+      "translation": "이제 로보캅은 필요 없어"
+    },
+    {
+      "startMs": 71940,
+      "endMs": 75660,
+      "translation": "네 지난 일들만 봐도"
+    },
+    {
+      "startMs": 75660,
+      "endMs": 79060,
+      "translation": "넌 『미저리』의 그 여자 같아"
+    },
+    {
+      "startMs": 79060,
+      "endMs": 83090,
+      "translation": "그녀는 이 정도까지 할 생각은 아니었대"
+    },
+    {
+      "startMs": 83090,
+      "endMs": 86520,
+      "translation": "좋아, 서로 생각이 다르다는 걸로 하자"
+    },
+    {
+      "startMs": 86520,
+      "endMs": 90480,
+      "translation": "이 여자 좀 미쳤지만 그게 날 끌어당겨"
+    },
+    {
+      "startMs": 90480,
+      "endMs": 93980,
+      "translation": "계속 이어 갈 만큼은 맞춰 주지"
+    },
+    {
+      "startMs": 93980,
+      "endMs": 97460,
+      "translation": "몰라도 되는 일도 있다고 말했는데"
+    },
+    {
+      "startMs": 97460,
+      "endMs": 99530,
+      "translation": "그녀는 절대 그냥 넘기지 않았어, 오"
+    },
+    {
+      "startMs": 99530,
+      "endMs": 103230,
+      "translation": "오케이, 오케이, 오케이, 오케이"
+    },
+    {
+      "startMs": 103230,
+      "endMs": 104940,
+      "translation": "넌 이제 절대 못 멈출 거야"
+    },
+    {
+      "startMs": 104940,
+      "endMs": 107270,
+      "translation": "넌 절대 안 멈추지"
+    },
+    {
+      "startMs": 107270,
+      "endMs": 110350,
+      "translation": "오케이, 오케이, 오케이"
+    },
+    {
+      "startMs": 110350,
+      "endMs": 112390,
+      "translation": "넌 이제 절대 못 멈출 거야"
+    },
+    {
+      "startMs": 112390,
+      "endMs": 113680,
+      "translation": "이제 그만둬야 해"
+    },
+    {
+      "startMs": 113680,
+      "endMs": 115330,
+      "translation": "그만둬, 그만둬"
+    },
+    {
+      "startMs": 115330,
+      "endMs": 118960,
+      "translation": "난 로보캅은 필요 없으니까"
+    },
+    {
+      "startMs": 118960,
+      "endMs": 122400,
+      "translation": "넌 로보캅처럼 움직여"
+    },
+    {
+      "startMs": 122400,
+      "endMs": 125970,
+      "translation": "언제부터 로보캅이 된 거야?"
+    },
+    {
+      "startMs": 125970,
+      "endMs": 128480,
+      "translation": "누가 제발 이 여자 좀 말려 줘"
+    },
+    {
+      "startMs": 128480,
+      "endMs": 133410,
+      "translation": "멈춰, 엎드려, 굴러, 펑"
+    },
+    {
+      "startMs": 133410,
+      "endMs": 136970,
+      "translation": "난 차가워, 난"
+    },
+    {
+      "startMs": 136970,
+      "endMs": 140200,
+      "translation": "그만하라는 말을 듣는 데 익숙하지 않아"
+    },
+    {
+      "startMs": 140200,
+      "endMs": 143750,
+      "translation": "그러니 난 절대 네 로봇이 될 수 없어"
+    },
+    {
+      "startMs": 143750,
+      "endMs": 147250,
+      "translation": "빠르든 느리든, 남아도 되고 떠나도 돼"
+    },
+    {
+      "startMs": 147250,
+      "endMs": 148960,
+      "translation": "이제, 이제 알았으니까"
+    },
+    {
+      "startMs": 148960,
+      "endMs": 150970,
+      "translation": "이제, 이제 알았으니까"
+    },
+    {
+      "startMs": 150970,
+      "endMs": 154480,
+      "translation": "그래, 그 여자랑 전에 그런 적 있지만 다 지난 일이야"
+    },
+    {
+      "startMs": 154480,
+      "endMs": 155940,
+      "translation": "알고 나면 넌 화를 내잖아"
+    },
+    {
+      "startMs": 155940,
+      "endMs": 157770,
+      "translation": "그러니 더는 묻지 마"
+    },
+    {
+      "startMs": 157770,
+      "endMs": 164170,
+      "translation": "오케이, 오케이, 오케이, 어, 어"
+    },
+    {
+      "startMs": 164170,
+      "endMs": 185380,
+      "translation": "괜찮지 않아, 오케이, 오케이, 어"
+    },
+    {
+      "startMs": 185380,
+      "endMs": 189130,
+      "translation": "넌 버릇없는 LA 여자야"
+    },
+    {
+      "startMs": 189130,
+      "endMs": 192530,
+      "translation": "넌 그냥 LA 여자일 뿐이야"
+    },
+    {
+      "startMs": 192530,
+      "endMs": 196680,
+      "translation": "넌 버릇없는 LA 여자야"
+    },
+    {
+      "startMs": 196680,
+      "endMs": 213960,
+      "translation": "넌 그냥 LA 여자일 뿐이야"
+    },
+    {
+      "startMs": 213960,
+      "endMs": 218120,
+      "translation": "넌 버릇없는 LA 여자야"
+    },
+    {
+      "startMs": 218120,
+      "endMs": 221370,
+      "translation": "넌 그냥 LA 여자일 뿐이야 (이제 그만해야 해)"
+    },
+    {
+      "startMs": 221370,
+      "endMs": 225120,
+      "translation": "넌 버릇없는 LA 여자야"
+    },
+    {
+      "startMs": 225120,
+      "endMs": 230460,
+      "translation": "넌 그냥 LA 여자일 뿐이야 (이제 그만해야 해)"
+    },
+    {
+      "startMs": 230460,
+      "endMs": 232700,
+      "translation": "오, 농담하는 거지"
+    },
+    {
+      "startMs": 232700,
+      "endMs": 234270,
+      "translation": "장난치는 거겠지"
+    },
+    {
+      "startMs": 234270,
+      "endMs": 235730,
+      "translation": "아니면 뭘 피웠거나"
+    },
+    {
+      "startMs": 235730,
+      "endMs": 237960,
+      "translation": "오, 오, 농담하는 거지"
+    },
+    {
+      "startMs": 237960,
+      "endMs": 239460,
+      "translation": "오, 농담하는 거지"
+    },
+    {
+      "startMs": 239460,
+      "endMs": 241310,
+      "translation": "하하, 그거 웃겼다"
+    },
+    {
+      "startMs": 241310,
+      "endMs": 244990,
+      "translation": "오랜만에 처음으로 웃긴 소리 했네"
+    },
+    {
+      "startMs": 244990,
+      "endMs": 248530,
+      "translation": "오랜만에 처음으로 웃긴 소리 했네"
+    },
+    {
+      "startMs": 248530,
+      "endMs": 251920,
+      "translation": "이제 그만해야 해"
+    },
+    {
+      "startMs": 251920,
+      "endMs": 255370,
+      "translation": "이제 그만해야 해"
+    },
+    {
+      "startMs": 255370,
+      "endMs": 274000,
+      "translation": "오, 이제 그만해야 해"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 570462,
+    "durationMs": 38000
+  },
+  "segments": [
+    {
+      "startMs": 480,
+      "endMs": 4470,
+      "translation": "울림들이 모두 울려 퍼진다"
+    },
+    {
+      "startMs": 4470,
+      "endMs": 7960,
+      "translation": "타 버리고, 무너져 내린다"
+    },
+    {
+      "startMs": 7960,
+      "endMs": 11470,
+      "translation": "검게 그을려 어둠에 잠긴다"
+    },
+    {
+      "startMs": 11470,
+      "endMs": 14960,
+      "translation": "이젠 섞는다, 형태를 갖춰"
+    },
+    {
+      "startMs": 14960,
+      "endMs": 18520,
+      "translation": "열기 없는 빛이 있다"
+    },
+    {
+      "startMs": 18520,
+      "endMs": 22010,
+      "translation": "우린 식었고, 바깥도 서늘하다"
+    },
+    {
+      "startMs": 22010,
+      "endMs": 25450,
+      "translation": "삶은 소중하다"
+    },
+    {
+      "startMs": 25450,
+      "endMs": 30940,
+      "translation": "우린 알게 되었다, 알게 되었다"
+    },
+    {
+      "startMs": 30940,
+      "endMs": 32480,
+      "translation": "우린 알게 되었다"
+    }
+  ]
+}

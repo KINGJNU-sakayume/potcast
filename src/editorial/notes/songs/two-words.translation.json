@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 18726361,
+    "durationMs": 266000
+  },
+  "segments": [
+    {
+      "startMs": 14060,
+      "endMs": 16290,
+      "translation": "우린 거리에 있어, 친구, 잘 들어"
+    },
+    {
+      "startMs": 16290,
+      "endMs": 18840,
+      "translation": "결국 가는 곳은 둘뿐이야, 죽거나 감옥이거나"
+    },
+    {
+      "startMs": 18840,
+      "endMs": 21670,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 21670,
+      "endMs": 24640,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 24640,
+      "endMs": 25710,
+      "translation": "자, 손을 들어"
+    },
+    {
+      "startMs": 25710,
+      "endMs": 28670,
+      "translation": "허슬러, 허풍쟁이, 좀도둑, 여자들"
+    },
+    {
+      "startMs": 28670,
+      "endMs": 30040,
+      "translation": "다들, 엿 먹으라 그래"
+    },
+    {
+      "startMs": 30040,
+      "endMs": 33100,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 33100,
+      "endMs": 35260,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 35260,
+      "endMs": 36490,
+      "translation": "(들어 봐)"
+    },
+    {
+      "startMs": 36490,
+      "endMs": 39190,
+      "translation": "두 단어, 미합중국, 사랑 없음, 쉴 틈 없음"
+    },
+    {
+      "startMs": 39190,
+      "endMs": 41980,
+      "translation": "낮은 수준, 높은 판돈, 크랙 연기, 흑인들"
+    },
+    {
+      "startMs": 41980,
+      "endMs": 44770,
+      "translation": "빅맥, 뚱뚱한 사람들, 엑스터시 캡슐"
+    },
+    {
+      "startMs": 44770,
+      "endMs": 47440,
+      "translation": "대통령 스캔들, 모두 움직여"
+    },
+    {
+      "startMs": 47440,
+      "endMs": 50430,
+      "translation": "두 단어, 모스 데프, K 웨스트, 뜨거운 것"
+    },
+    {
+      "startMs": 50430,
+      "endMs": 53170,
+      "translation": "진정해, 물러서, 게토 사람들이 맡았어"
+    },
+    {
+      "startMs": 53170,
+      "endMs": 56080,
+      "translation": "게임 장악, 총은 장전"
+    },
+    {
+      "startMs": 56080,
+      "endMs": 58750,
+      "translation": "우린 안 멈춰, 모두 움직여"
+    },
+    {
+      "startMs": 58750,
+      "endMs": 61610,
+      "translation": "두 단어, 브루클린, 뉴욕, 베드스타이"
+    },
+    {
+      "startMs": 61610,
+      "endMs": 64550,
+      "translation": "너무 거칠고, 너무 배고프고, 너무 많아, 그래서야"
+    },
+    {
+      "startMs": 64550,
+      "endMs": 67460,
+      "translation": "이 거리는 게임을 알아, 놀 줄도 모르고, 장난도 안 쳐"
+    },
+    {
+      "startMs": 67460,
+      "endMs": 69910,
+      "translation": "꽉 막힌 길, 차선 하나, 모두 움직여"
+    },
+    {
+      "startMs": 69910,
+      "endMs": 73000,
+      "translation": "두 단어, 모스 데프, 블랙 잭, 뜨거운 것"
+    },
+    {
+      "startMs": 73000,
+      "endMs": 75710,
+      "translation": "진정해, 물러서, 게토 사람들이 맡았어"
+    },
+    {
+      "startMs": 75710,
+      "endMs": 78740,
+      "translation": "게임 장악, 총은 장전"
+    },
+    {
+      "startMs": 78740,
+      "endMs": 81050,
+      "translation": "우린 안 멈춰, 모두 움직여"
+    },
+    {
+      "startMs": 81050,
+      "endMs": 82200,
+      "translation": "자, 손을 들어 (손을 높이 들어)"
+    },
+    {
+      "startMs": 82200,
+      "endMs": 84940,
+      "translation": "허슬러, 허풍쟁이, 좀도둑, 여자들"
+    },
+    {
+      "startMs": 84940,
+      "endMs": 86790,
+      "translation": "다들, 엿 먹으라 그래"
+    },
+    {
+      "startMs": 86790,
+      "endMs": 89520,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 89520,
+      "endMs": 92390,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 92390,
+      "endMs": 93550,
+      "translation": "손을 계속 들고 있어 (하늘에 닿을 때까지)"
+    },
+    {
+      "startMs": 93550,
+      "endMs": 96190,
+      "translation": "허슬러, 허풍쟁이, 좀도둑, 여자들"
+    },
+    {
+      "startMs": 96190,
+      "endMs": 97790,
+      "translation": "다들, 엿 먹으라 그래"
+    },
+    {
+      "startMs": 97790,
+      "endMs": 100720,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 100720,
+      "endMs": 103670,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 103670,
+      "endMs": 106850,
+      "translation": "자, 두 단어, 시카고, 사우스사이드, 전 세계"
+    },
+    {
+      "startMs": 106850,
+      "endMs": 109730,
+      "translation": "죽을 때까지 난 거길 대표할 거니까"
+    },
+    {
+      "startMs": 109730,
+      "endMs": 112590,
+      "translation": "목 하나에 체인 둘, 허리 하나에 총 둘"
+    },
+    {
+      "startMs": 112590,
+      "endMs": 115330,
+      "translation": "벽 하나에 상패 스무 개, 대가는 치렀으니 내놔"
+    },
+    {
+      "startMs": 115330,
+      "endMs": 118070,
+      "translation": "난 각광, 『블루프린트』, 마이크 다섯 개"
+    },
+    {
+      "startMs": 118070,
+      "endMs": 121270,
+      "translation": "고 게터스 시절 랩은 두 번은 계약됐어야 했지"
+    },
+    {
+      "startMs": 121270,
+      "endMs": 123830,
+      "translation": "가장 많이 따라 하는, 그래미 후보"
+    },
+    {
+      "startMs": 123830,
+      "endMs": 126600,
+      "translation": "호텔 숙박 제공, 치어리더, 프롬 파트너"
+    },
+    {
+      "startMs": 126600,
+      "endMs": 129470,
+      "translation": "이발소에선 시기받고, 동네 가게에선 해적판"
+    },
+    {
+      "startMs": 129470,
+      "endMs": 131980,
+      "translation": "지붕이 무너질 때까지 비가 오는 것 같았어"
+    },
+    {
+      "startMs": 131980,
+      "endMs": 134880,
+      "translation": "두 단어, 시카고가 날 키웠어, 미쳤지"
+    },
+    {
+      "startMs": 134880,
+      "endMs": 138430,
+      "translation": "그래서 난 두 단어로 살아, \"돈이나 내놔\""
+    },
+    {
+      "startMs": 138430,
+      "endMs": 140730,
+      "translation": "그리고 외쳐, \"예수님, 살려 주세요\""
+    },
+    {
+      "startMs": 140730,
+      "endMs": 143750,
+      "translation": "게임이 어떤지 알잖아, 저들이 날 바꾸게 둘 순 없어"
+    },
+    {
+      "startMs": 143750,
+      "endMs": 147470,
+      "translation": "심판의 날에 넌 나를 탓할 테니까"
+    },
+    {
+      "startMs": 147470,
+      "endMs": 148850,
+      "translation": "보세요, 하나님, 똑같은 저예요"
+    },
+    {
+      "startMs": 148850,
+      "endMs": 152130,
+      "translation": "이제 기본적으로 알아, 우린 인종 때문에 표적이 된다는 걸 (손을 높이 들어)"
+    },
+    {
+      "startMs": 152130,
+      "endMs": 155190,
+      "translation": "수갑 차고 물대포 맞고, 포주처럼 꾸미고 창녀처럼 끌려다니고"
+    },
+    {
+      "startMs": 155190,
+      "endMs": 157380,
+      "translation": "게다가 난 도시 하나를 지켜야 해"
+    },
+    {
+      "startMs": 157380,
+      "endMs": 160020,
+      "translation": "바닥에서 왔으니 이제 갈 곳은 꼭대기뿐이야"
+    },
+    {
+      "startMs": 160020,
+      "endMs": 160960,
+      "translation": "자, 손을 들어 (손을 높이 들어)"
+    },
+    {
+      "startMs": 160960,
+      "endMs": 163870,
+      "translation": "허슬러, 허풍쟁이, 좀도둑, 여자들"
+    },
+    {
+      "startMs": 163870,
+      "endMs": 165470,
+      "translation": "다들, 엿 먹으라 그래"
+    },
+    {
+      "startMs": 165470,
+      "endMs": 168450,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 168450,
+      "endMs": 171630,
+      "translation": "여전히 갈 곳이 없어 (갈 곳이 없어)"
+    },
+    {
+      "startMs": 171630,
+      "endMs": 174560,
+      "translation": "두 단어, 프리웨이, 두 글자, A-R"
+    },
+    {
+      "startMs": 174560,
+      "endMs": 177680,
+      "translation": "너희 래퍼들을 두 단어로 만들어 주지, 빠른 도망자"
+    },
+    {
+      "startMs": 177680,
+      "endMs": 180310,
+      "translation": "재키 조이너처럼, 총을 끌어안고 자는 게 좋을 거야"
+    },
+    {
+      "startMs": 180310,
+      "endMs": 183660,
+      "translation": "총알이 튀고, 네 차 사이로 화환이 날아가, 세상에"
+    },
+    {
+      "startMs": 183660,
+      "endMs": 185860,
+      "translation": "두 단어, 총 없이, 팔을 부러뜨려"
+    },
+    {
+      "startMs": 185860,
+      "endMs": 188390,
+      "translation": "목을 부러뜨리고, 등을 부러뜨려, 스티븐 시걸처럼"
+    },
+    {
+      "startMs": 188390,
+      "endMs": 191210,
+      "translation": "프리, 젊은 보스, 로커펠라의 신입생"
+    },
+    {
+      "startMs": 191210,
+      "endMs": 194510,
+      "translation": "냄비에 소고기가 끓으면 제이가 싸움개들을 보내지"
+    },
+    {
+      "startMs": 194510,
+      "endMs": 196690,
+      "translation": "네 패거리는 잊어, 혼자 살아남는 게 좋을 거야"
+    },
+    {
+      "startMs": 196690,
+      "endMs": 199990,
+      "translation": "네 단어를 외치게 해 줄게, \"경찰을 불러 줘\", 어"
+    },
+    {
+      "startMs": 199990,
+      "endMs": 203080,
+      "translation": "두 단어, 프리웨이, 살짝 돌았지"
+    },
+    {
+      "startMs": 203080,
+      "endMs": 205570,
+      "translation": "까불면 네 래퍼한테 탄창을 비우고 그 여자를 데려갈 거야"
+    },
+    {
+      "startMs": 205570,
+      "endMs": 208280,
+      "translation": "빨강, 하양, 파랑, 검정 (손을 들어)"
+    },
+    {
+      "startMs": 208280,
+      "endMs": 211040,
+      "translation": "진정해, 물러서 (손을 들어)"
+    },
+    {
+      "startMs": 211040,
+      "endMs": 213880,
+      "translation": "다들 묻지, \"저게 누구야?\" (손을 들어)"
+    },
+    {
+      "startMs": 213880,
+      "endMs": 216670,
+      "translation": "전능하신 블랙 잭인 거 알잖아 (손을 들어)"
+    },
+    {
+      "startMs": 216670,
+      "endMs": 219470,
+      "translation": "모스 데프, K 웨스트 (손을 들어)"
+    },
+    {
+      "startMs": 219470,
+      "endMs": 222230,
+      "translation": "게토 사람들, 가슴에 맺힌 걸 털어놔 (손을 들어)"
+    },
+    {
+      "startMs": 222230,
+      "endMs": 225060,
+      "translation": "북에서 남으로, 동에서 서로 (손을 들어)"
+    },
+    {
+      "startMs": 225060,
+      "endMs": 229860,
+      "translation": "블랙 잭 존슨, 상대가 안 되지 (손을 들어)"
+    },
+    {
+      "startMs": 229860,
+      "endMs": 266000,
+      "translation": "그리고 그들에게 보여 줘, 이렇게"
+    }
+  ]
+}

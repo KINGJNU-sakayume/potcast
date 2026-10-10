@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 565537,
+    "durationMs": 288000
+  },
+  "segments": [
+    {
+      "startMs": 11800,
+      "endMs": 13670,
+      "translation": "스타디움급이지"
+    },
+    {
+      "startMs": 13670,
+      "endMs": 14780,
+      "translation": "어"
+    },
+    {
+      "startMs": 14780,
+      "endMs": 16910,
+      "translation": "우리 형은 비기의 형이었어"
+    },
+    {
+      "startMs": 16910,
+      "endMs": 18280,
+      "translation": "데임과 빅스의 형이었고"
+    },
+    {
+      "startMs": 18280,
+      "endMs": 19100,
+      "translation": "힙합의 형이었고, 노 아이디의 친구였지"
+    },
+    {
+      "startMs": 19100,
+      "endMs": 19950,
+      "translation": "노 아이디는 내 멘토, 이제 이야기를 시작하지"
+    },
+    {
+      "startMs": 19950,
+      "endMs": 21040,
+      "translation": "하드 녹 라이프 투어, 매진이야"
+    },
+    {
+      "startMs": 21040,
+      "endMs": 29050,
+      "translation": "쇼핑몰에서 아이스버그 옷을 사면서 \"지가!\" 하고 외치는 우릴 떠올려 봐 (지가)"
+    },
+    {
+      "startMs": 29050,
+      "endMs": 31270,
+      "translation": "그래, 우린 그렇게 외치곤 했지, 외쳤지"
+    },
+    {
+      "startMs": 31270,
+      "endMs": 34470,
+      "translation": "이름은 알잖아, 철자까지 불러 줘야 해, 얘기해 줘야 해?"
+    },
+    {
+      "startMs": 34470,
+      "endMs": 37240,
+      "translation": "J-A-Y, 그리고 예는 너무 수줍었어"
+    },
+    {
+      "startMs": 37240,
+      "endMs": 40270,
+      "translation": "우상에게 다가가 \"안녕하세요\" 한마디도 못 했지"
+    },
+    {
+      "startMs": 40270,
+      "endMs": 42970,
+      "translation": "팬터마임 배우처럼 서서 기회를 놓쳐 버렸어"
+    },
+    {
+      "startMs": 42970,
+      "endMs": 46480,
+      "translation": "머릿속으론 \"그 사람이 네 인생을 바꿀 수 있어"
+    },
+    {
+      "startMs": 46480,
+      "endMs": 48630,
+      "translation": "네가 만든 비트들, 적어도 들려주기라도 해"
+    },
+    {
+      "startMs": 48630,
+      "endMs": 52430,
+      "translation": "그럼 적어도 친구들한테 자랑이라도 할 수 있잖아\" 했는데"
+    },
+    {
+      "startMs": 52430,
+      "endMs": 55280,
+      "translation": "그런데 형은 날 엄마 집에서 데리고 나왔어"
+    },
+    {
+      "startMs": 55280,
+      "endMs": 57160,
+      "translation": "그러고는 엄마한테 집을 마련해 드리게 도와줬지"
+    },
+    {
+      "startMs": 57160,
+      "endMs": 59820,
+      "translation": "형은 비기의 형이었어"
+    },
+    {
+      "startMs": 59820,
+      "endMs": 62670,
+      "translation": "데임과 빅스의 형이었고"
+    },
+    {
+      "startMs": 62670,
+      "endMs": 65720,
+      "translation": "힙합의 형이었고, 노 아이디의 친구였지"
+    },
+    {
+      "startMs": 65720,
+      "endMs": 69760,
+      "translation": "노 아이디는 내 멘토, 이제 이야기를 시작하지, 시작하지"
+    },
+    {
+      "startMs": 69760,
+      "endMs": 74010,
+      "translation": "이야기를 시작하지, 이야기를 시작하지"
+    },
+    {
+      "startMs": 74010,
+      "endMs": 80470,
+      "translation": "내 마음을 느낀다면 손을 흔들어 봐"
+    },
+    {
+      "startMs": 80470,
+      "endMs": 82930,
+      "translation": "막 비행기에서 내려 베이스라인 스튜디오로 갔어"
+    },
+    {
+      "startMs": 82930,
+      "endMs": 86560,
+      "translation": "아무도 주지 않으니 내 몫은 내가 가져갈 거야"
+    },
+    {
+      "startMs": 86560,
+      "endMs": 88360,
+      "translation": "그 『The Blueprint』 1집 무렵"
+    },
+    {
+      "startMs": 88360,
+      "endMs": 91510,
+      "translation": "내 주머니 속 비트들이 형에게는 청사진이었지"
+    },
+    {
+      "startMs": 91510,
+      "endMs": 94490,
+      "translation": "그 낡은 뒷방에서 내 작은 노래들을 틀면"
+    },
+    {
+      "startMs": 94490,
+      "endMs": 97130,
+      "translation": "형은 고개를 까딱이며 \"와, 그게 너야?\" 했어"
+    },
+    {
+      "startMs": 97130,
+      "endMs": 99820,
+      "translation": "그런데 『The Black Album』 무렵엔 난 정신을 잃을 만큼"
+    },
+    {
+      "startMs": 99820,
+      "endMs": 102670,
+      "translation": "S.O.B.'s에서 파티를 하며 관객을 꽉 채웠어"
+    },
+    {
+      "startMs": 102670,
+      "endMs": 105420,
+      "translation": "형이 매디슨 스퀘어 가든에서 공연을 했지"
+    },
+    {
+      "startMs": 105420,
+      "endMs": 108730,
+      "translation": "난 \"그래, 그래, 우리도 갈게요\" 했는데"
+    },
+    {
+      "startMs": 108730,
+      "endMs": 112240,
+      "translation": "랩할 기회를 얻기는커녕"
+    },
+    {
+      "startMs": 112240,
+      "endMs": 114430,
+      "translation": "칼린이 표 두 장은 살 수 있다고 하더라"
+    },
+    {
+      "startMs": 114430,
+      "endMs": 117590,
+      "translation": "형은 생각이 좀 달랐나 봐"
+    },
+    {
+      "startMs": 117590,
+      "endMs": 120390,
+      "translation": "동생을 멀찍이 떨어뜨려 놨지"
+    },
+    {
+      "startMs": 120390,
+      "endMs": 123590,
+      "translation": "하지만 그 억울했던 것들이"
+    },
+    {
+      "startMs": 123590,
+      "endMs": 125760,
+      "translation": "나를 더 집중하게 했고, 더 강하게 쓰게 했어"
+    },
+    {
+      "startMs": 125760,
+      "endMs": 128760,
+      "translation": "내가 알고 싶은 건 왜 내가 늘 외면당했는지뿐이야"
+    },
+    {
+      "startMs": 128760,
+      "endMs": 131530,
+      "translation": "나이가 더 들면 이해하게 되겠지"
+    },
+    {
+      "startMs": 131530,
+      "endMs": 134240,
+      "translation": "형은 맨 밑바닥에 있는 날 봤어"
+    },
+    {
+      "startMs": 134240,
+      "endMs": 137040,
+      "translation": "이제 난 꼭대기에 있고 다들 내 밑에 있지"
+    },
+    {
+      "startMs": 137040,
+      "endMs": 139820,
+      "translation": "우리 형은 비기의 형이었어"
+    },
+    {
+      "startMs": 139820,
+      "endMs": 142570,
+      "translation": "데임과 빅스의 형이었고"
+    },
+    {
+      "startMs": 142570,
+      "endMs": 145580,
+      "translation": "힙합의 형이었고, 노 아이디의 친구였지"
+    },
+    {
+      "startMs": 145580,
+      "endMs": 148900,
+      "translation": "노 아이디는 내 멘토, 이제 이야기를 시작하지, 시작하지"
+    },
+    {
+      "startMs": 148900,
+      "endMs": 153140,
+      "translation": "이야기를 시작하지, 시작하지"
+    },
+    {
+      "startMs": 153140,
+      "endMs": 159900,
+      "translation": "내 마음을 느낀다면 손을 흔들어 봐"
+    },
+    {
+      "startMs": 159900,
+      "endMs": 163170,
+      "translation": "거인의 그림자 속을 걸어 본 적 있어?"
+    },
+    {
+      "startMs": 163170,
+      "endMs": 165760,
+      "translation": "그냥 고객이 아니라 대통령이었지"
+    },
+    {
+      "startMs": 165760,
+      "endMs": 167970,
+      "translation": "올라, 호비토"
+    },
+    {
+      "startMs": 167970,
+      "endMs": 170470,
+      "translation": "판이 더러워지니 여기 자유투 하나"
+    },
+    {
+      "startMs": 170470,
+      "endMs": 173230,
+      "translation": "난 늘 문구멍 반대편에 있었어"
+    },
+    {
+      "startMs": 173230,
+      "endMs": 176100,
+      "translation": "그러다 'Jesus Walks'를 냈고, 이제 첨탑 위에 올랐지"
+    },
+    {
+      "startMs": 176100,
+      "endMs": 180130,
+      "translation": "그리고 알잖아, 「뉴 잭 시티」처럼 형은 지켜야 해"
+    },
+    {
+      "startMs": 180130,
+      "endMs": 182600,
+      "translation": "하지만 1등이 되려면 형을 이겨야 해"
+    },
+    {
+      "startMs": 182600,
+      "endMs": 185820,
+      "translation": "그 'Diamonds' 리믹스에서 내가 제대로 미쳤다고 생각했는데"
+    },
+    {
+      "startMs": 185820,
+      "endMs": 188430,
+      "translation": "형이 와서 날 완전히 눌러 버렸지"
+    },
+    {
+      "startMs": 188430,
+      "endMs": 191340,
+      "translation": "형제간의 경쟁, 나만 그렇게 봤던 거야"
+    },
+    {
+      "startMs": 191340,
+      "endMs": 193840,
+      "translation": "날 몰아간 건 내 안의 자존심이었어"
+    },
+    {
+      "startMs": 193840,
+      "endMs": 196810,
+      "translation": "그래미에서 난 \"내가 나에게 영감을 줬다\"고 했지"
+    },
+    {
+      "startMs": 196810,
+      "endMs": 199560,
+      "translation": "하지만 난 늘 형처럼 되고 싶었어"
+    },
+    {
+      "startMs": 199560,
+      "endMs": 202680,
+      "translation": "내가 랩을 할 땐 픽앤롤 같았어"
+    },
+    {
+      "startMs": 202680,
+      "endMs": 205760,
+      "translation": "형이 공을 줘도 주고받기였으니까"
+    },
+    {
+      "startMs": 205760,
+      "endMs": 208890,
+      "translation": "비니의 스타일은 슬램덩크에 가까웠다면"
+    },
+    {
+      "startMs": 208890,
+      "endMs": 211370,
+      "translation": "내 건 핑거롤에 가까웠지"
+    },
+    {
+      "startMs": 211370,
+      "endMs": 212950,
+      "translation": "그래도 히트 싱글은 내가 있었어"
+    },
+    {
+      "startMs": 212950,
+      "endMs": 217280,
+      "translation": "그리고 공연장의 여자들도 어울릴 테고, 헤, 다들 알잖아"
+    },
+    {
+      "startMs": 217280,
+      "endMs": 220840,
+      "translation": "제이한테 콜드플레이랑 노래했다고 말했어"
+    },
+    {
+      "startMs": 220840,
+      "endMs": 223020,
+      "translation": "그런데 어느새 형도 콜드플레이랑 노래를 했더라"
+    },
+    {
+      "startMs": 223020,
+      "endMs": 225220,
+      "translation": "머릿속으론 \"젠장, 말도 안 돼\""
+    },
+    {
+      "startMs": 225220,
+      "endMs": 228980,
+      "translation": "스페인어로 옮기면 \"노 웨이, 호세\""
+    },
+    {
+      "startMs": 228980,
+      "endMs": 231870,
+      "translation": "그러고는 제이 브라운한테 가서 말했지"
+    },
+    {
+      "startMs": 231870,
+      "endMs": 234540,
+      "translation": "그게 돌고 돌아올 줄 알았어야 했는데"
+    },
+    {
+      "startMs": 234540,
+      "endMs": 237060,
+      "translation": "사나이답게 형한테 먼저 직접 말했어야 했는데"
+    },
+    {
+      "startMs": 237060,
+      "endMs": 239950,
+      "translation": "다른 사람한테 말해 버렸고 그래서 일이 더 꼬였지"
+    },
+    {
+      "startMs": 239950,
+      "endMs": 243040,
+      "translation": "우리 형은 비기의 형이었어"
+    },
+    {
+      "startMs": 243040,
+      "endMs": 245700,
+      "translation": "그러니 여기 막내 동생이 몇 마디 할게"
+    },
+    {
+      "startMs": 245700,
+      "endMs": 248960,
+      "translation": "누군가를 존경한다면 그냥 말해"
+    },
+    {
+      "startMs": 248960,
+      "endMs": 251510,
+      "translation": "살아서 냄새 맡을 수 있을 때 꽃을 받는 사람은 없어"
+    },
+    {
+      "startMs": 251510,
+      "endMs": 254570,
+      "translation": "내 눈엔 우상이고, 이 판의 신이야"
+    },
+    {
+      "startMs": 254570,
+      "endMs": 257230,
+      "translation": "'Heart of the City', 로커펠라 체인"
+    },
+    {
+      "startMs": 257230,
+      "endMs": 259680,
+      "translation": "다시는 이런 사람 없을 거야, 또 다른 사람은 없어"
+    },
+    {
+      "startMs": 259680,
+      "endMs": 262710,
+      "translation": "넘버원, 젊은 호브, 그리고 우리 형"
+    },
+    {
+      "startMs": 262710,
+      "endMs": 265940,
+      "translation": "우리 형은 비기의 형이었어"
+    },
+    {
+      "startMs": 265940,
+      "endMs": 268220,
+      "translation": "데임과 빅스의 형이었고"
+    },
+    {
+      "startMs": 268220,
+      "endMs": 271320,
+      "translation": "힙합의 형이었고, 노 아이디의 친구였지"
+    },
+    {
+      "startMs": 271320,
+      "endMs": 274860,
+      "translation": "노 아이디는 내 멘토, 그리고 이야기는 여기서 끝나"
+    },
+    {
+      "startMs": 274860,
+      "endMs": 288000,
+      "translation": "툼프가 끝내주게 만들었어"
+    }
+  ]
+}

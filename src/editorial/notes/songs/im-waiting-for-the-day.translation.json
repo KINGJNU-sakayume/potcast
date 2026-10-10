@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 239724,
+    "durationMs": 187000
+  },
+  "segments": [
+    {
+      "startMs": 12270,
+      "endMs": 23680,
+      "translation": "그가 네 마음을 아프게 했을 때 내가 나타났지, 그를 잊게 도와줄 누군가가 필요했던 그때"
+    },
+    {
+      "startMs": 23680,
+      "endMs": 35100,
+      "translation": "난 새로 시작하는 사랑을 줬어, 부서진 네 마음을 풀어 주는 데 가장 필요했던 걸"
+    },
+    {
+      "startMs": 35100,
+      "endMs": 40960,
+      "translation": "네가 울었고 우울했던 거 알아"
+    },
+    {
+      "startMs": 40960,
+      "endMs": 47040,
+      "translation": "하지만 할 수 있을 때마다 너에게 힘이 되어 줬어"
+    },
+    {
+      "startMs": 47040,
+      "endMs": 58850,
+      "translation": "네가 다시 사랑할 수 있는 날을 기다리고 있어"
+    },
+    {
+      "startMs": 58850,
+      "endMs": 69870,
+      "translation": "네 입술에 키스했을 때 슬퍼 보이는 네 얼굴을 보면 그가 떠올랐어, 네가 아직 그를 많이 사랑한다는 것도"
+    },
+    {
+      "startMs": 69870,
+      "endMs": 81930,
+      "translation": "하지만 알잖아, 곧 넌 나와 함께라서 기뻐했고 사랑이 드러나기 시작했지"
+    },
+    {
+      "startMs": 81930,
+      "endMs": 87890,
+      "translation": "그때 그가 널 아프게 했지만, 다 지나간 일이야"
+    },
+    {
+      "startMs": 87890,
+      "endMs": 93570,
+      "translation": "내 말은, 너뿐이라는 거야"
+    },
+    {
+      "startMs": 93570,
+      "endMs": 122920,
+      "translation": "네가 다시 사랑할 수 있는 날을 기다리고 있어"
+    },
+    {
+      "startMs": 122920,
+      "endMs": 128580,
+      "translation": "그때 그가 널 아프게 했지만, 다 끝난 일이야"
+    },
+    {
+      "startMs": 128580,
+      "endMs": 134430,
+      "translation": "내 말은, 너뿐이라는 거야"
+    },
+    {
+      "startMs": 134430,
+      "endMs": 156570,
+      "translation": "네가 다시 사랑할 수 있는 날을 기다리고 있어"
+    },
+    {
+      "startMs": 156570,
+      "endMs": 162700,
+      "translation": "내가 가만히 앉아서 그가 마음대로 하게 둘 줄 알았니"
+    },
+    {
+      "startMs": 162700,
+      "endMs": 168480,
+      "translation": "내가 가만히 앉아서 그가 널 데려가는 걸 지켜볼 줄 알았니"
+    },
+    {
+      "startMs": 168480,
+      "endMs": 173440,
+      "translation": "내가 가만히 앉아서 그를 그냥 보낼 줄 알았니"
+    },
+    {
+      "startMs": 173440,
+      "endMs": 179570,
+      "translation": "내가 가만히 물러앉아 널 보내 줄 줄 알았니"
+    },
+    {
+      "startMs": 179570,
+      "endMs": 187000,
+      "translation": "내가 가만히 앉아서 그가 마음대로 하게 둘 줄 알았니"
+    }
+  ]
+}

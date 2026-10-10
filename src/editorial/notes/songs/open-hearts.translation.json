@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974282,
+    "durationMs": 235000
+  },
+  "segments": [
+    {
+      "startMs": 16120,
+      "endMs": 23760,
+      "translation": "창문 너머로도 바람 소리가 들려"
+    },
+    {
+      "startMs": 23760,
+      "endMs": 31470,
+      "translation": "귀를 막아도 속삭임이 들려"
+    },
+    {
+      "startMs": 31470,
+      "endMs": 37250,
+      "translation": "은과 금은 내 살갗을 차갑게 만들었을 뿐이야"
+    },
+    {
+      "startMs": 37250,
+      "endMs": 41560,
+      "translation": "절대 늙지 않겠다고 다짐했어"
+    },
+    {
+      "startMs": 41560,
+      "endMs": 44800,
+      "translation": "그런데 네가 날 가까이 끌어당겼지"
+    },
+    {
+      "startMs": 44800,
+      "endMs": 46370,
+      "translation": "오, 오, 오, 오"
+    },
+    {
+      "startMs": 46370,
+      "endMs": 52730,
+      "translation": "추락한 천사들이 내 이름을 불러"
+    },
+    {
+      "startMs": 52730,
+      "endMs": 56900,
+      "translation": "하지만 네가 하는 말들이"
+    },
+    {
+      "startMs": 56900,
+      "endMs": 60770,
+      "translation": "날 다시 살게 해"
+    },
+    {
+      "startMs": 60770,
+      "endMs": 68350,
+      "translation": "마음을 열 때 어디서부터 시작해야 할까?"
+    },
+    {
+      "startMs": 68350,
+      "endMs": 76220,
+      "translation": "다시 사랑에 빠지는 건 결코 쉽지 않아"
+    },
+    {
+      "startMs": 76220,
+      "endMs": 83900,
+      "translation": "팔을 벌릴 때 내 흉터를 가려 줘"
+    },
+    {
+      "startMs": 83900,
+      "endMs": 90850,
+      "translation": "다시 사랑에 빠지는 건 결코 쉽지 않아"
+    },
+    {
+      "startMs": 90850,
+      "endMs": 99510,
+      "translation": "빠져들어, 사랑에 빠져들어"
+    },
+    {
+      "startMs": 99510,
+      "endMs": 106370,
+      "translation": "다시 사랑에 빠지는 건 결코 쉽지 않아"
+    },
+    {
+      "startMs": 106370,
+      "endMs": 118810,
+      "translation": "빠져들어, 사랑에 빠져들어"
+    },
+    {
+      "startMs": 118810,
+      "endMs": 124660,
+      "translation": "다시 사랑에 빠져"
+    },
+    {
+      "startMs": 124660,
+      "endMs": 132500,
+      "translation": "연옥에 갇혀, 내 영혼의 창문으로 바깥을 보고 있어"
+    },
+    {
+      "startMs": 132500,
+      "endMs": 137570,
+      "translation": "괴로웠어, 바닥까지 떨어졌어, 그러다 네 후광을 봐"
+    },
+    {
+      "startMs": 137570,
+      "endMs": 139100,
+      "translation": "오, 오, 오, 오"
+    },
+    {
+      "startMs": 139100,
+      "endMs": 145430,
+      "translation": "추락한 천사들이 내 이름을 불러"
+    },
+    {
+      "startMs": 145430,
+      "endMs": 149010,
+      "translation": "하지만 네가 하는 말들이"
+    },
+    {
+      "startMs": 149010,
+      "endMs": 153810,
+      "translation": "날 하루 더 살게 해"
+    },
+    {
+      "startMs": 153810,
+      "endMs": 161480,
+      "translation": "마음을 열 때 어디서부터 시작해야 할까?"
+    },
+    {
+      "startMs": 161480,
+      "endMs": 169100,
+      "translation": "다시 사랑에 빠지는 건 결코 쉽지 않아"
+    },
+    {
+      "startMs": 169100,
+      "endMs": 176850,
+      "translation": "팔을 벌릴 때 (팔을 벌릴 때) 내 흉터를 가려 줘 (흉터를 가려 줘)"
+    },
+    {
+      "startMs": 176850,
+      "endMs": 183650,
+      "translation": "다시 사랑에 빠지는 건 결코 쉽지 않아"
+    },
+    {
+      "startMs": 183650,
+      "endMs": 192550,
+      "translation": "빠져들어, 사랑에 빠져들어"
+    },
+    {
+      "startMs": 192550,
+      "endMs": 199350,
+      "translation": "다시 사랑에 빠지는 건 결코 쉽지 않아"
+    },
+    {
+      "startMs": 199350,
+      "endMs": 211880,
+      "translation": "빠져들어, 사랑에 빠져들어"
+    },
+    {
+      "startMs": 211880,
+      "endMs": 235000,
+      "translation": "다시 사랑에 빠져"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 572234,
+    "durationMs": 327000
+  },
+  "segments": [
+    {
+      "startMs": 2330,
+      "endMs": 5920,
+      "translation": "난 술은 잘 버텨"
+    },
+    {
+      "startMs": 5920,
+      "endMs": 10930,
+      "translation": "하지만 이 남자는 대마를 못 견뎌"
+    },
+    {
+      "startMs": 10930,
+      "endMs": 14780,
+      "translation": "이제 어둡고 외로워"
+    },
+    {
+      "startMs": 14780,
+      "endMs": 19230,
+      "translation": "시카고, 도시의 남쪽에서"
+    },
+    {
+      "startMs": 19230,
+      "endMs": 23500,
+      "translation": "인디애나로 가는 길이야"
+    },
+    {
+      "startMs": 23500,
+      "endMs": 33020,
+      "translation": "이제 라디오에서 그걸 들었어"
+    },
+    {
+      "startMs": 33020,
+      "endMs": 37230,
+      "translation": "난 술을 못 이겨"
+    },
+    {
+      "startMs": 37230,
+      "endMs": 42080,
+      "translation": "하지만 여자들은 날 감당 못 해"
+    },
+    {
+      "startMs": 42080,
+      "endMs": 46270,
+      "translation": "난 내 친구들을 통제 못 해"
+    },
+    {
+      "startMs": 46270,
+      "endMs": 51050,
+      "translation": "내 친구들도 날 통제 못 해"
+    },
+    {
+      "startMs": 51050,
+      "endMs": 54990,
+      "translation": "넌 날 안다고 하지, 친구"
+    },
+    {
+      "startMs": 54990,
+      "endMs": 64630,
+      "translation": "하지만 넌 예전의 나만 알 뿐이야"
+    },
+    {
+      "startMs": 64630,
+      "endMs": 66880,
+      "translation": "그래, 나 혼수상태에서 깨어났어"
+    },
+    {
+      "startMs": 66880,
+      "endMs": 69060,
+      "translation": "네 소파 위에서 눈을 떴지"
+    },
+    {
+      "startMs": 69060,
+      "endMs": 71250,
+      "translation": "내 레인지로버를 세우다가"
+    },
+    {
+      "startMs": 71250,
+      "endMs": 73430,
+      "translation": "네 코롤라를 살짝 긁었어"
+    },
+    {
+      "startMs": 73430,
+      "endMs": 75550,
+      "translation": "그래, 네 코롤라를 박살 냈어"
+    },
+    {
+      "startMs": 75550,
+      "endMs": 77940,
+      "translation": "숙취에 매달려 있어"
+    },
+    {
+      "startMs": 77940,
+      "endMs": 79900,
+      "translation": "우리 끝난 지 5년이야"
+    },
+    {
+      "startMs": 79900,
+      "endMs": 82460,
+      "translation": "내가 왜 왔는지 물어봐"
+    },
+    {
+      "startMs": 82460,
+      "endMs": 84570,
+      "translation": "한 번만 더 피우면 널 가질 수 있어"
+    },
+    {
+      "startMs": 84570,
+      "endMs": 87010,
+      "translation": "한 번만 더 자면 널 가질 수 있어"
+    },
+    {
+      "startMs": 87010,
+      "endMs": 89080,
+      "translation": "10월의 어느 추운 밤"
+    },
+    {
+      "startMs": 89080,
+      "endMs": 91450,
+      "translation": "그 밤에 난 붕 떠올랐어"
+    },
+    {
+      "startMs": 91450,
+      "endMs": 93510,
+      "translation": "디팩 초프라가 된 기분"
+    },
+    {
+      "startMs": 93510,
+      "endMs": 95830,
+      "translation": "그 밤에 난 죽은 듯 녹아내렸어"
+    },
+    {
+      "startMs": 95830,
+      "endMs": 98010,
+      "translation": "투팍이라도 불러야 할까"
+    },
+    {
+      "startMs": 98010,
+      "endMs": 100570,
+      "translation": "내 이지 신발이 온통 네 소파 위에"
+    },
+    {
+      "startMs": 100570,
+      "endMs": 102590,
+      "translation": "이게 그 레드 옥토버야"
+    },
+    {
+      "startMs": 102590,
+      "endMs": 104990,
+      "translation": "여전히 예의는 못 배웠어"
+    },
+    {
+      "startMs": 104990,
+      "endMs": 107090,
+      "translation": "넌 내가 취해 있을 때도 날 사랑하지"
+    },
+    {
+      "startMs": 107090,
+      "endMs": 109320,
+      "translation": "넌 내가 숙취에 시달릴 때도 날 사랑하지"
+    },
+    {
+      "startMs": 109320,
+      "endMs": 111530,
+      "translation": "내가 대마를 피울 때조차"
+    },
+    {
+      "startMs": 111530,
+      "endMs": 113980,
+      "translation": "그때 그녀의 이모가 왔어"
+    },
+    {
+      "startMs": 113980,
+      "endMs": 116050,
+      "translation": "어깨도 없는 깡마른 여자가"
+    },
+    {
+      "startMs": 116050,
+      "endMs": 118140,
+      "translation": "내가 가짜라고 너한테 말하지"
+    },
+    {
+      "startMs": 118140,
+      "endMs": 120500,
+      "translation": "넌 우리를 알지도 못하면서"
+    },
+    {
+      "startMs": 120500,
+      "endMs": 122890,
+      "translation": "\"얘야, 그 남자는 외톨이야"
+    },
+    {
+      "startMs": 122890,
+      "endMs": 124820,
+      "translation": "얘야, 그 남자는 외톨이야"
+    },
+    {
+      "startMs": 124820,
+      "endMs": 127380,
+      "translation": "늦은 밤의 장기 기증자"
+    },
+    {
+      "startMs": 127380,
+      "endMs": 129650,
+      "translation": "그다음엔 널 모른 척하지"
+    },
+    {
+      "startMs": 129650,
+      "endMs": 131620,
+      "translation": "그다음엔 그냥 가망 없는 사람이야"
+    },
+    {
+      "startMs": 131620,
+      "endMs": 133910,
+      "translation": "영혼의 짝이 영혼을 잃게 돼"
+    },
+    {
+      "startMs": 133910,
+      "endMs": 136020,
+      "translation": "끝나면 끝인 거야\""
+    },
+    {
+      "startMs": 136020,
+      "endMs": 137990,
+      "translation": "그래, 나 혼수상태에서 깨어났어"
+    },
+    {
+      "startMs": 137990,
+      "endMs": 142070,
+      "translation": "네 삼촌 집에 전화를 걸어"
+    },
+    {
+      "startMs": 142070,
+      "endMs": 146450,
+      "translation": "모든 게 엉망이야"
+    },
+    {
+      "startMs": 146450,
+      "endMs": 151040,
+      "translation": "네 전화 소리가 안 들려"
+    },
+    {
+      "startMs": 151040,
+      "endMs": 159410,
+      "translation": "오, 집에 전화하고 싶어"
+    },
+    {
+      "startMs": 159410,
+      "endMs": 162850,
+      "translation": "난 술을 못 이겨"
+    },
+    {
+      "startMs": 162850,
+      "endMs": 167700,
+      "translation": "하지만 여자들은 날 감당 못 해"
+    },
+    {
+      "startMs": 167700,
+      "endMs": 171880,
+      "translation": "난 내 친구들을 통제 못 해"
+    },
+    {
+      "startMs": 171880,
+      "endMs": 176660,
+      "translation": "내 친구들도 날 통제 못 해"
+    },
+    {
+      "startMs": 176660,
+      "endMs": 180980,
+      "translation": "넌 날 안다고 하지, 친구"
+    },
+    {
+      "startMs": 180980,
+      "endMs": 191340,
+      "translation": "하지만 넌 예전의 나만 알 뿐이야"
+    },
+    {
+      "startMs": 191340,
+      "endMs": 195980,
+      "translation": "새 유행이 필요하다며 (새 여자)"
+    },
+    {
+      "startMs": 195980,
+      "endMs": 200220,
+      "translation": "돈다발이 더 필요하다며 (새 여자)"
+    },
+    {
+      "startMs": 200220,
+      "endMs": 204650,
+      "translation": "새 전화기가 필요하다며 (새 여자)"
+    },
+    {
+      "startMs": 204650,
+      "endMs": 209260,
+      "translation": "네 부모님은 집에 없다는 거 알아 (새 여자)"
+    },
+    {
+      "startMs": 209260,
+      "endMs": 213610,
+      "translation": "네 삼촌 집에 전화를 걸어"
+    },
+    {
+      "startMs": 213610,
+      "endMs": 218150,
+      "translation": "모든 게 엉망이야"
+    },
+    {
+      "startMs": 218150,
+      "endMs": 222650,
+      "translation": "네 전화 소리가 안 들려"
+    },
+    {
+      "startMs": 222650,
+      "endMs": 327000,
+      "translation": "오, 집에 전화하고 싶어"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974867,
+    "durationMs": 216000
+  },
+  "segments": [
+    {
+      "startMs": 28270,
+      "endMs": 31330,
+      "translation": "하늘과 나누는 대화"
+    },
+    {
+      "startMs": 31330,
+      "endMs": 37780,
+      "translation": "내 영혼에 자비를, 진작 알았어야 했던 것들"
+    },
+    {
+      "startMs": 37780,
+      "endMs": 40910,
+      "translation": "기만의 거짓말에 능한 자가"
+    },
+    {
+      "startMs": 40910,
+      "endMs": 45140,
+      "translation": "날 연약하게 만들고, 혼자 남겨 두었죠"
+    },
+    {
+      "startMs": 45140,
+      "endMs": 49820,
+      "translation": "길을 잃을 때마다 당신을 향한 믿음을 잃었어요"
+    },
+    {
+      "startMs": 49820,
+      "endMs": 54510,
+      "translation": "유혹과 싸우느라 내 몸을 학대했어요"
+    },
+    {
+      "startMs": 54510,
+      "endMs": 59270,
+      "translation": "악마는 낙원으로 속였지만, 그 어느 것도 진짜가 아니에요"
+    },
+    {
+      "startMs": 59270,
+      "endMs": 62960,
+      "translation": "당신의 빛을 위해 싸우며"
+    },
+    {
+      "startMs": 62960,
+      "endMs": 66350,
+      "translation": "이 모든 피 흘림이 가치 있기를 바라요"
+    },
+    {
+      "startMs": 66350,
+      "endMs": 68910,
+      "translation": "내가 무너졌을 때"
+    },
+    {
+      "startMs": 68910,
+      "endMs": 71470,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 71470,
+      "endMs": 73520,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 73520,
+      "endMs": 78590,
+      "translation": "내가 지쳐 바닥났을 때 당신이 날 봐 주길 바라요"
+    },
+    {
+      "startMs": 78590,
+      "endMs": 80840,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 80840,
+      "endMs": 85420,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 85420,
+      "endMs": 88470,
+      "translation": "내 죄의 유령이 지나가요"
+    },
+    {
+      "startMs": 88470,
+      "endMs": 90700,
+      "translation": "얼굴 없는 눈"
+    },
+    {
+      "startMs": 90700,
+      "endMs": 94800,
+      "translation": "아무 말도 없이"
+    },
+    {
+      "startMs": 94800,
+      "endMs": 97910,
+      "translation": "내 죄에 심판을 내려요"
+    },
+    {
+      "startMs": 97910,
+      "endMs": 100220,
+      "translation": "전부 내주었어요"
+    },
+    {
+      "startMs": 100220,
+      "endMs": 102120,
+      "translation": "그저 당신의 은총을 느끼려고"
+    },
+    {
+      "startMs": 102120,
+      "endMs": 106900,
+      "translation": "길을 잃을 때마다 당신을 향한 믿음을 잃었어요"
+    },
+    {
+      "startMs": 106900,
+      "endMs": 111490,
+      "translation": "유혹과 싸우느라 내 몸을 학대했어요"
+    },
+    {
+      "startMs": 111490,
+      "endMs": 116160,
+      "translation": "당신만이 나의 유일한 낙원이에요, 이제 그게 진실인 걸 알아요"
+    },
+    {
+      "startMs": 116160,
+      "endMs": 119760,
+      "translation": "살기 위해 싸우며"
+    },
+    {
+      "startMs": 119760,
+      "endMs": 123340,
+      "translation": "이 모든 피 흘림이 가치 있기를 바라요"
+    },
+    {
+      "startMs": 123340,
+      "endMs": 125910,
+      "translation": "내가 무너졌을 때"
+    },
+    {
+      "startMs": 125910,
+      "endMs": 128380,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 128380,
+      "endMs": 130410,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 130410,
+      "endMs": 135430,
+      "translation": "내가 지쳐 바닥났을 때 당신이 날 봐 주길 바라요"
+    },
+    {
+      "startMs": 135430,
+      "endMs": 137740,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 137740,
+      "endMs": 139940,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 139940,
+      "endMs": 145910,
+      "translation": "우, 내가 어둠 속에 있을 때"
+    },
+    {
+      "startMs": 145910,
+      "endMs": 148950,
+      "translation": "내 마음은 길을 잃었어요"
+    },
+    {
+      "startMs": 148950,
+      "endMs": 151280,
+      "translation": "밤의 죄인"
+    },
+    {
+      "startMs": 151280,
+      "endMs": 157530,
+      "translation": "낮에 피난처를 찾아요"
+    },
+    {
+      "startMs": 157530,
+      "endMs": 161460,
+      "translation": "하지만 이제 이 모든 피 흘림이 가치 있었다는 걸 알아요"
+    },
+    {
+      "startMs": 161460,
+      "endMs": 164050,
+      "translation": "내가 무너졌을 때"
+    },
+    {
+      "startMs": 164050,
+      "endMs": 166390,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 166390,
+      "endMs": 168720,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 168720,
+      "endMs": 173660,
+      "translation": "내가 지쳐 바닥났을 때 당신이 날 봐 주길 바라요"
+    },
+    {
+      "startMs": 173660,
+      "endMs": 175770,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 175770,
+      "endMs": 178250,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 178250,
+      "endMs": 180460,
+      "translation": "이 모든 피 흘림이 가치 있어요"
+    },
+    {
+      "startMs": 180460,
+      "endMs": 183000,
+      "translation": "내가 무너졌을 때"
+    },
+    {
+      "startMs": 183000,
+      "endMs": 185370,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 185370,
+      "endMs": 187730,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 187730,
+      "endMs": 192500,
+      "translation": "내가 지쳐 바닥났을 때 당신이 날 봐 주길 바라요"
+    },
+    {
+      "startMs": 192500,
+      "endMs": 194880,
+      "translation": "늘 그랬듯 자비를 베풀어 주세요"
+    },
+    {
+      "startMs": 194880,
+      "endMs": 199450,
+      "translation": "그리고 늘 그랬듯 용서해 주세요"
+    },
+    {
+      "startMs": 199450,
+      "endMs": 200820,
+      "translation": "다 다 다 다 다 다 다"
+    },
+    {
+      "startMs": 200820,
+      "endMs": 208900,
+      "translation": "(당신은 내게 자비를 베풀어요, 예, 오)"
+    },
+    {
+      "startMs": 208900,
+      "endMs": 210150,
+      "translation": "다 다 다 다 다 다 다"
+    },
+    {
+      "startMs": 210150,
+      "endMs": 216000,
+      "translation": "(당신은 내게 자비를 베풀어요)"
+    }
+  ]
+}

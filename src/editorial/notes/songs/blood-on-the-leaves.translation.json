@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 565808,
+    "durationMs": 360000
+  },
+  "segments": [
+    {
+      "startMs": 1640,
+      "endMs": 12120,
+      "translation": "이상한 열매가 포플러나무에 매달려 있어"
+    },
+    {
+      "startMs": 12120,
+      "endMs": 13530,
+      "translation": "(나뭇잎에 묻은 피)"
+    },
+    {
+      "startMs": 13530,
+      "endMs": 15560,
+      "translation": "이제 머릿속을 좀 비워야 해"
+    },
+    {
+      "startMs": 15560,
+      "endMs": 18050,
+      "translation": "여름부터 쉬지 않고 내달렸거든"
+    },
+    {
+      "startMs": 18050,
+      "endMs": 20360,
+      "translation": "이제 난 이 여름을 버티고 있어"
+    },
+    {
+      "startMs": 20360,
+      "endMs": 23810,
+      "translation": "내가 원하는 건 지금 살 수 없는 것뿐이야"
+    },
+    {
+      "startMs": 23810,
+      "endMs": 26360,
+      "translation": "지금 내 손엔 돈이 없으니까"
+    },
+    {
+      "startMs": 26360,
+      "endMs": 29100,
+      "translation": "그래서 기다리라고 했잖아"
+    },
+    {
+      "startMs": 29100,
+      "endMs": 31900,
+      "translation": "그래, 기다리라고 했잖아"
+    },
+    {
+      "startMs": 31900,
+      "endMs": 35260,
+      "translation": "그러니 시간이 조금 더 필요해"
+    },
+    {
+      "startMs": 35260,
+      "endMs": 37790,
+      "translation": "지금 내 손엔 돈이 없으니까"
+    },
+    {
+      "startMs": 37790,
+      "endMs": 40870,
+      "translation": "네가 기다릴 수 있을 줄 알았어"
+    },
+    {
+      "startMs": 40870,
+      "endMs": 43420,
+      "translation": "그래, 네가 기다릴 수 있을 줄 알았어"
+    },
+    {
+      "startMs": 43420,
+      "endMs": 47620,
+      "translation": "여자들이 날 둘러싸고"
+    },
+    {
+      "startMs": 47620,
+      "endMs": 52170,
+      "translation": "다들 나한테서 뭔가를 원해"
+    },
+    {
+      "startMs": 52170,
+      "endMs": 54370,
+      "translation": "그러고는 내 얘기를 떠들지"
+    },
+    {
+      "startMs": 54370,
+      "endMs": 57040,
+      "translation": "나 없으면 길을 잃을 거면서"
+    },
+    {
+      "startMs": 57040,
+      "endMs": 59770,
+      "translation": "우린 뭔가가 될 수 있었어"
+    },
+    {
+      "startMs": 59770,
+      "endMs": 62620,
+      "translation": "넌 다를 줄 알았는데"
+    },
+    {
+      "startMs": 62620,
+      "endMs": 66760,
+      "translation": "이제 알아, 넌 아니라는 걸 (내가 포플러나무야)"
+    },
+    {
+      "startMs": 66760,
+      "endMs": 68080,
+      "translation": "그러니 이제 계속 가 보자"
+    },
+    {
+      "startMs": 68080,
+      "endMs": 71060,
+      "translation": "우린 뭔가가 될 수 있었어"
+    },
+    {
+      "startMs": 71060,
+      "endMs": 73550,
+      "translation": "그런데 넌 남한테 말해 버려야 했지"
+    },
+    {
+      "startMs": 73550,
+      "endMs": 76640,
+      "translation": "그 첫 파티로 돌아가 보자"
+    },
+    {
+      "startMs": 76640,
+      "endMs": 79750,
+      "translation": "네가 처음 몰리를 했던 그때"
+    },
+    {
+      "startMs": 79750,
+      "endMs": 82210,
+      "translation": "몸 밖으로 빠져나왔던 그때"
+    },
+    {
+      "startMs": 82210,
+      "endMs": 85180,
+      "translation": "몸 밖으로 빠져나왔던 그때"
+    },
+    {
+      "startMs": 85180,
+      "endMs": 88050,
+      "translation": "알몸으로 로비를 달리며"
+    },
+    {
+      "startMs": 88050,
+      "endMs": 90790,
+      "translation": "날 사랑한다고 소리쳤지"
+    },
+    {
+      "startMs": 90790,
+      "endMs": 93340,
+      "translation": "스포트라이트가 널 찢어 놓기 전에"
+    },
+    {
+      "startMs": 93340,
+      "endMs": 96080,
+      "translation": "스포트라이트가 널 훔쳐 가기 전에"
+    },
+    {
+      "startMs": 96080,
+      "endMs": 99020,
+      "translation": "기억해, 우린 정말 어렸지"
+    },
+    {
+      "startMs": 99020,
+      "endMs": 103770,
+      "translation": "내가 널 안아 주던 때"
+    },
+    {
+      "startMs": 103770,
+      "endMs": 110750,
+      "translation": "나뭇잎에 피가 묻기 전에"
+    },
+    {
+      "startMs": 110750,
+      "endMs": 115560,
+      "translation": "나한테 잘못된 건 없다는 걸 알아"
+    },
+    {
+      "startMs": 115560,
+      "endMs": 124130,
+      "translation": "뭔가 이상한 일이 일어나고 있어"
+    },
+    {
+      "startMs": 124130,
+      "endMs": 126160,
+      "translation": "넌 뭔가가 될 수 있었어"
+    },
+    {
+      "startMs": 126160,
+      "endMs": 129830,
+      "translation": "우린, 으, 우린 뭔가가 될 수 있었어"
+    },
+    {
+      "startMs": 129830,
+      "endMs": 132630,
+      "translation": "아니면 그 첫 파티였을까"
+    },
+    {
+      "startMs": 132630,
+      "endMs": 135640,
+      "translation": "우리가 처음 몰리를 했던 그때"
+    },
+    {
+      "startMs": 135640,
+      "endMs": 138200,
+      "translation": "우리 몸 밖으로 빠져나왔던 그때"
+    },
+    {
+      "startMs": 138200,
+      "endMs": 144610,
+      "translation": "우리 몸 밖으로 빠져나왔던 그때"
+    },
+    {
+      "startMs": 144610,
+      "endMs": 146820,
+      "translation": "변호사들을 부르기 전에"
+    },
+    {
+      "startMs": 146820,
+      "endMs": 149620,
+      "translation": "네가 우릴 망가뜨리려 하기 전에"
+    },
+    {
+      "startMs": 149620,
+      "endMs": 152230,
+      "translation": "어떻게 변호사한테 거짓말을 해?"
+    },
+    {
+      "startMs": 152230,
+      "endMs": 154900,
+      "translation": "널 전혀 모르는 사람 같아"
+    },
+    {
+      "startMs": 154900,
+      "endMs": 157380,
+      "translation": "매그놀리아 시절로 돌아가야겠어"
+    },
+    {
+      "startMs": 157380,
+      "endMs": 159370,
+      "translation": "다른 놈들은 엿이나 먹어, 난 내 사람들 편이니까"
+    },
+    {
+      "startMs": 159370,
+      "endMs": 162350,
+      "translation": "다른 놈들은 엿이나 먹어, 난 내 사람들 편이니까"
+    },
+    {
+      "startMs": 162350,
+      "endMs": 165100,
+      "translation": "다른 놈들은 엿이나 먹어, 난 내 사람들 편이니까"
+    },
+    {
+      "startMs": 165100,
+      "endMs": 190430,
+      "translation": "난 내 사람들과 달려, 내 사람들을 위해 죽을 수도…"
+    },
+    {
+      "startMs": 190430,
+      "endMs": 193140,
+      "translation": "애 하나 가져 보려는 2순위 여자들에게"
+    },
+    {
+      "startMs": 193140,
+      "endMs": 196260,
+      "translation": "애를 가지려 하다니, 이제 미친 소리를 하네"
+    },
+    {
+      "startMs": 196260,
+      "endMs": 198500,
+      "translation": "네가 예전에 제이지랑 연락했든 말든 상관없어"
+    },
+    {
+      "startMs": 198500,
+      "endMs": 201190,
+      "translation": "그는 너랑 있지 않아, 비욘세랑 있지, 게으르게 굴지 좀 마"
+    },
+    {
+      "startMs": 201190,
+      "endMs": 204310,
+      "translation": "그녀는 '#끝내주는여자주의보'를 달고 셀카를 올려"
+    },
+    {
+      "startMs": 204310,
+      "endMs": 206900,
+      "translation": "그는 시계 사진에 '#미친부자주의보'를 달지"
+    },
+    {
+      "startMs": 206900,
+      "endMs": 209770,
+      "translation": "그는 그 몸의 뒷모습만 보고 싶을 뿐이야"
+    },
+    {
+      "startMs": 209770,
+      "endMs": 212540,
+      "translation": "2천 달러짜리 가방에 지갑엔 현금 한 푼 없지"
+    },
+    {
+      "startMs": 212540,
+      "endMs": 215190,
+      "translation": "이제 넌 코트 맨 앞자리에, 아내는 반대편에 앉아"
+    },
+    {
+      "startMs": 215190,
+      "endMs": 217100,
+      "translation": "둘을 떼어 놔야 해, 난 그걸 아파르트헤이트라 불러"
+    },
+    {
+      "startMs": 217100,
+      "endMs": 220740,
+      "translation": "그러다 그녀가 임신했다고 해, 그날 밤 네 심장은 죽었지"
+    },
+    {
+      "startMs": 220740,
+      "endMs": 223700,
+      "translation": "그러면 넌 네 여자한테 가서 털어놔야 해"
+    },
+    {
+      "startMs": 223700,
+      "endMs": 226570,
+      "translation": "무엇보다 목사가 아이를 지울 수 없다고 했으니까"
+    },
+    {
+      "startMs": 226570,
+      "endMs": 229390,
+      "translation": "이제 기사는 새 벤츠는 감당 못 한대"
+    },
+    {
+      "startMs": 229390,
+      "endMs": 231880,
+      "translation": "테이블 위의 코카인도 이제 못 하지"
+    },
+    {
+      "startMs": 231880,
+      "endMs": 235090,
+      "translation": "그 돈은 다 법원이 가져갈 빚으로 가"
+    },
+    {
+      "startMs": 235090,
+      "endMs": 240340,
+      "translation": "위자료에 다 털렸지, 어, 그래, 그녀가 널 잡았어, 친구"
+    },
+    {
+      "startMs": 240340,
+      "endMs": 248600,
+      "translation": "죽음이 갈라놓을 때까지, 그래도 네 몫은 해, 거룩하지 않은 결혼"
+    },
+    {
+      "startMs": 248600,
+      "endMs": 258010,
+      "translation": "남부의 바람에 흔들리는 검은 몸들, 바람"
+    },
+    {
+      "startMs": 258010,
+      "endMs": 268800,
+      "translation": "이상한 열매, 포플러나무의 열매, 포플러나무에서"
+    },
+    {
+      "startMs": 268800,
+      "endMs": 279110,
+      "translation": "그 여름밤은 길게, 길게 이어지고"
+    },
+    {
+      "startMs": 279110,
+      "endMs": 286420,
+      "translation": "여름 장미를 기다리지 않고 (숨 쉬어)"
+    },
+    {
+      "startMs": 286420,
+      "endMs": 290110,
+      "translation": "숨 쉬고 또 숨 쉬어"
+    },
+    {
+      "startMs": 290110,
+      "endMs": 292330,
+      "translation": "숨 쉬고 또 숨 쉬어"
+    },
+    {
+      "startMs": 292330,
+      "endMs": 309150,
+      "translation": "숨 쉬고 또 숨 쉬어"
+    },
+    {
+      "startMs": 309150,
+      "endMs": 311600,
+      "translation": "살면서 배워"
+    },
+    {
+      "startMs": 311600,
+      "endMs": 316230,
+      "translation": "살면서 배워"
+    },
+    {
+      "startMs": 316230,
+      "endMs": 320520,
+      "translation": "외로운 듯 살아가고 또 살아가"
+    },
+    {
+      "startMs": 320520,
+      "endMs": 324060,
+      "translation": "외롭게, 외롭게"
+    },
+    {
+      "startMs": 324060,
+      "endMs": 328320,
+      "translation": "가진 전부를 살아"
+    },
+    {
+      "startMs": 328320,
+      "endMs": 333570,
+      "translation": "전부를 살아"
+    },
+    {
+      "startMs": 333570,
+      "endMs": 338500,
+      "translation": "살아"
+    },
+    {
+      "startMs": 338500,
+      "endMs": 347490,
+      "translation": "살아"
+    },
+    {
+      "startMs": 347490,
+      "endMs": 352860,
+      "translation": "(나뭇잎에 묻은 피)"
+    },
+    {
+      "startMs": 352860,
+      "endMs": 360000,
+      "translation": "바람, 바람"
+    }
+  ]
+}

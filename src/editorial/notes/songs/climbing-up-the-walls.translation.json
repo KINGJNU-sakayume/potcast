@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13448,
+    "durationMs": 285000
+  },
+  "segments": [
+    {
+      "startMs": 36130,
+      "endMs": 48640,
+      "translation": "나는 지하실에 네 장난감을 가둬 둔 네 집 자물쇠의 열쇠야"
+    },
+    {
+      "startMs": 48640,
+      "endMs": 65160,
+      "translation": "너무 깊이 들어오면 내 모습만 비쳐 보일 거야"
+    },
+    {
+      "startMs": 65160,
+      "endMs": 71070,
+      "translation": "언제나 이불을 덮고 있는 게 제일 나아"
+    },
+    {
+      "startMs": 71070,
+      "endMs": 77310,
+      "translation": "나는 얼음에 박힌 송곳이야"
+    },
+    {
+      "startMs": 77310,
+      "endMs": 83780,
+      "translation": "소리 지르지 마, 경보도 누르지 마"
+    },
+    {
+      "startMs": 83780,
+      "endMs": 89750,
+      "translation": "우린 죽을 때까지 친구잖아"
+    },
+    {
+      "startMs": 89750,
+      "endMs": 95910,
+      "translation": "어느 쪽으로 돌아서든 내가 거기 있을 거야"
+    },
+    {
+      "startMs": 95910,
+      "endMs": 102330,
+      "translation": "네 두개골을 열어 봐, 내가 거기 있을 거야"
+    },
+    {
+      "startMs": 102330,
+      "endMs": 116010,
+      "translation": "벽을 기어오르며"
+    },
+    {
+      "startMs": 116010,
+      "endMs": 122370,
+      "translation": "언제나 불이 꺼져 있을 때가 제일 좋아"
+    },
+    {
+      "startMs": 122370,
+      "endMs": 128990,
+      "translation": "언제나 바깥이 더 나아"
+    },
+    {
+      "startMs": 128990,
+      "endMs": 135190,
+      "translation": "뒤통수에 열다섯 번의 가격"
+    },
+    {
+      "startMs": 135190,
+      "endMs": 144290,
+      "translation": "네 정신에 열다섯 번의 가격"
+    },
+    {
+      "startMs": 144290,
+      "endMs": 150720,
+      "translation": "그러니 오늘 밤엔 아이들을 안전하게 가둬 둬"
+    },
+    {
+      "startMs": 150720,
+      "endMs": 156830,
+      "translation": "벽장 속의 눈들을 감겨 둬"
+    },
+    {
+      "startMs": 156830,
+      "endMs": 168350,
+      "translation": "이 동네 남자의 냄새가 나, 세상에서 가장 외로운 기분을 품은 남자"
+    },
+    {
+      "startMs": 168350,
+      "endMs": 174640,
+      "translation": "어느 쪽으로 돌아서든 내가 거기 있을 거야"
+    },
+    {
+      "startMs": 174640,
+      "endMs": 180700,
+      "translation": "네 두개골을 열어 봐, 내가 거기 있을 거야"
+    },
+    {
+      "startMs": 180700,
+      "endMs": 223390,
+      "translation": "벽을 기어오르며"
+    },
+    {
+      "startMs": 223390,
+      "endMs": 235620,
+      "translation": "벽을 기어오르며"
+    },
+    {
+      "startMs": 235620,
+      "endMs": 285000,
+      "translation": "벽을 기어오르며"
+    }
+  ]
+}

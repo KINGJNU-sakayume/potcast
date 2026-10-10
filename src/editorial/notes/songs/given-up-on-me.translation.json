@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16974443,
+    "durationMs": 355000
+  },
+  "segments": [
+    {
+      "startMs": 1470,
+      "endMs": 11390,
+      "translation": "날 사랑해, 사랑해, 사랑해, 사랑한다고 말해 줘"
+    },
+    {
+      "startMs": 11390,
+      "endMs": 21040,
+      "translation": "너와 함께 날아가게 해 줘"
+    },
+    {
+      "startMs": 21040,
+      "endMs": 32710,
+      "translation": "이 희망을 채워 줘"
+    },
+    {
+      "startMs": 32710,
+      "endMs": 41410,
+      "translation": "에이, 에이, 예"
+    },
+    {
+      "startMs": 41410,
+      "endMs": 45090,
+      "translation": "너희 얼굴에 대고 거짓말해 왔어, 예"
+    },
+    {
+      "startMs": 45090,
+      "endMs": 50110,
+      "translation": "늘 취해 있었어, 날 구하기엔 너무 늦었어"
+    },
+    {
+      "startMs": 50110,
+      "endMs": 52020,
+      "translation": "날 구해 줘"
+    },
+    {
+      "startMs": 52020,
+      "endMs": 54100,
+      "translation": "날 구해 줘"
+    },
+    {
+      "startMs": 54100,
+      "endMs": 56030,
+      "translation": "날 구해 줘"
+    },
+    {
+      "startMs": 56030,
+      "endMs": 57850,
+      "translation": "오, 날 구해 줘"
+    },
+    {
+      "startMs": 57850,
+      "endMs": 60900,
+      "translation": "버림받음으로 잔을 또 채워"
+    },
+    {
+      "startMs": 60900,
+      "endMs": 66520,
+      "translation": "그래, 배가 아플 때까지, 얼굴이 퉁퉁 부을 때까지, 그리고"
+    },
+    {
+      "startMs": 66520,
+      "endMs": 68530,
+      "translation": "직시해"
+    },
+    {
+      "startMs": 68530,
+      "endMs": 70550,
+      "translation": "직시해"
+    },
+    {
+      "startMs": 70550,
+      "endMs": 72430,
+      "translation": "직시해"
+    },
+    {
+      "startMs": 72430,
+      "endMs": 75860,
+      "translation": "그냥 날 놓아줘"
+    },
+    {
+      "startMs": 75860,
+      "endMs": 79900,
+      "translation": "난 늘 너한테 거짓말할 거야"
+    },
+    {
+      "startMs": 79900,
+      "endMs": 83890,
+      "translation": "난 믿을 수 없는 사람이야"
+    },
+    {
+      "startMs": 83890,
+      "endMs": 87450,
+      "translation": "날 아낀다고 말해 줘"
+    },
+    {
+      "startMs": 87450,
+      "endMs": 92580,
+      "translation": "내게 필요한 걸 줘"
+    },
+    {
+      "startMs": 92580,
+      "endMs": 96490,
+      "translation": "왜 날 놓아주지 않아?"
+    },
+    {
+      "startMs": 96490,
+      "endMs": 100750,
+      "translation": "왜 날 떠나게 해 주지 않아?"
+    },
+    {
+      "startMs": 100750,
+      "endMs": 104640,
+      "translation": "나는 나를 포기했어, 예"
+    },
+    {
+      "startMs": 104640,
+      "endMs": 108840,
+      "translation": "너무 깊이 빠진 것 같아"
+    },
+    {
+      "startMs": 108840,
+      "endMs": 112940,
+      "translation": "왜 날 놓아주지 않아? 오-오"
+    },
+    {
+      "startMs": 112940,
+      "endMs": 117040,
+      "translation": "왜 날 떠나게 해 주지 않아?"
+    },
+    {
+      "startMs": 117040,
+      "endMs": 121180,
+      "translation": "나는 나를 포기했어, 예"
+    },
+    {
+      "startMs": 121180,
+      "endMs": 122840,
+      "translation": "너무 깊이 빠진 것 같아"
+    },
+    {
+      "startMs": 122840,
+      "endMs": 129010,
+      "translation": "오-오, 오-오, 오-오"
+    },
+    {
+      "startMs": 129010,
+      "endMs": 131170,
+      "translation": "네가 이렇게 해 줘야 해"
+    },
+    {
+      "startMs": 131170,
+      "endMs": 141630,
+      "translation": "놓아줘, 놓아줘, 놓아줘"
+    },
+    {
+      "startMs": 141630,
+      "endMs": 145720,
+      "translation": "왜 날 잠들게 해 주지 않아?"
+    },
+    {
+      "startMs": 145720,
+      "endMs": 149940,
+      "translation": "왜 날 놓아주지 않아?"
+    },
+    {
+      "startMs": 149940,
+      "endMs": 154060,
+      "translation": "왜 날 해 보게 두지 않아?"
+    },
+    {
+      "startMs": 154060,
+      "endMs": 156570,
+      "translation": "왜 날 죽게 두지 않아?"
+    },
+    {
+      "startMs": 156570,
+      "endMs": 161590,
+      "translation": "널 혼자 둘 수 없어"
+    },
+    {
+      "startMs": 161590,
+      "endMs": 166380,
+      "translation": "널 혼자 둘 수 없어"
+    },
+    {
+      "startMs": 166380,
+      "endMs": 170720,
+      "translation": "널 혼자 둘 수 없어"
+    },
+    {
+      "startMs": 170720,
+      "endMs": 171920,
+      "translation": "혼자 둘 수 없어"
+    },
+    {
+      "startMs": 171920,
+      "endMs": 173180,
+      "translation": "혼자 둘 수 없어"
+    },
+    {
+      "startMs": 173180,
+      "endMs": 174480,
+      "translation": "혼자 둘 수 없어"
+    },
+    {
+      "startMs": 174480,
+      "endMs": 188900,
+      "translation": "널 두고"
+    },
+    {
+      "startMs": 188900,
+      "endMs": 194300,
+      "translation": "그게 날 계속 불러"
+    },
+    {
+      "startMs": 194300,
+      "endMs": 200160,
+      "translation": "햇살이"
+    },
+    {
+      "startMs": 200160,
+      "endMs": 211330,
+      "translation": "처음으로 살갗에 온기가 느껴져"
+    },
+    {
+      "startMs": 211330,
+      "endMs": 222160,
+      "translation": "너에게서 멀리 있을 때, 베이브, 난 불타올라"
+    },
+    {
+      "startMs": 222160,
+      "endMs": 230820,
+      "translation": "나의 햇살, 나의 햇살"
+    },
+    {
+      "startMs": 230820,
+      "endMs": 233750,
+      "translation": "내게 좋지 않다는 거 알아"
+    },
+    {
+      "startMs": 233750,
+      "endMs": 236350,
+      "translation": "내게 좋지 않다는 거 알아"
+    },
+    {
+      "startMs": 236350,
+      "endMs": 239280,
+      "translation": "내게 공평하지 않다는 거 알아"
+    },
+    {
+      "startMs": 239280,
+      "endMs": 247570,
+      "translation": "넌 내게 좋지 않다는 거 알아, 베이비"
+    },
+    {
+      "startMs": 247570,
+      "endMs": 253060,
+      "translation": "나의 햇살"
+    },
+    {
+      "startMs": 253060,
+      "endMs": 275670,
+      "translation": "내게 좋지 않아, 아니, 그 햇살은"
+    },
+    {
+      "startMs": 275670,
+      "endMs": 285270,
+      "translation": "오 주님, 당신과 함께하고 싶습니다"
+    },
+    {
+      "startMs": 285270,
+      "endMs": 295130,
+      "translation": "오 주님, 오 주님, 저를 포기하지 마소서"
+    },
+    {
+      "startMs": 295130,
+      "endMs": 301610,
+      "translation": "자비를 베푸소서"
+    },
+    {
+      "startMs": 301610,
+      "endMs": 307750,
+      "translation": "오 주님, 나의 동반자여"
+    },
+    {
+      "startMs": 307750,
+      "endMs": 312840,
+      "translation": "자비를 베푸소서"
+    },
+    {
+      "startMs": 312840,
+      "endMs": 355000,
+      "translation": "우, 들어 봐"
+    }
+  ]
+}

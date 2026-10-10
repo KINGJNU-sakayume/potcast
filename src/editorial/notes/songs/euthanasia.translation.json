@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 154073,
+    "durationMs": 146000
+  },
+  "segments": [
+    {
+      "startMs": 7210,
+      "endMs": 13830,
+      "translation": "빌어먹을 재떨이에서 한 모금 마셨어"
+    },
+    {
+      "startMs": 13830,
+      "endMs": 19910,
+      "translation": "그렇게 신경 쓰이지도 않았어"
+    },
+    {
+      "startMs": 19910,
+      "endMs": 26070,
+      "translation": "쓰레기통에 이를 하나 더 뱉어"
+    },
+    {
+      "startMs": 26070,
+      "endMs": 31990,
+      "translation": "나를 챙기는 건 포기했어"
+    },
+    {
+      "startMs": 31990,
+      "endMs": 46590,
+      "translation": "내가 떠날 때는 하나도 아프지 않을 거야"
+    },
+    {
+      "startMs": 46590,
+      "endMs": 59390,
+      "translation": "천사들의 합창, 안락사"
+    },
+    {
+      "startMs": 59390,
+      "endMs": 65120,
+      "translation": "보라, 맨정신의 순간을"
+    },
+    {
+      "startMs": 65120,
+      "endMs": 72530,
+      "translation": "너무 짧고, 너무 드물어"
+    },
+    {
+      "startMs": 72530,
+      "endMs": 78680,
+      "translation": "한 병 따야겠어"
+    },
+    {
+      "startMs": 78680,
+      "endMs": 83950,
+      "translation": "깨끗해진 걸 축하하려면"
+    },
+    {
+      "startMs": 83950,
+      "endMs": 98540,
+      "translation": "내가 떠날 때는 하나도 아프지 않을 거야"
+    },
+    {
+      "startMs": 98540,
+      "endMs": 109900,
+      "translation": "분노의 끝, 안락사"
+    },
+    {
+      "startMs": 109900,
+      "endMs": 124490,
+      "translation": "내가 떠날 때는 하나도 아프지 않을 거야"
+    },
+    {
+      "startMs": 124490,
+      "endMs": 137520,
+      "translation": "낯익은 이방인, 안락사"
+    },
+    {
+      "startMs": 137520,
+      "endMs": 140990,
+      "translation": "고통이 없대"
+    },
+    {
+      "startMs": 140990,
+      "endMs": 146000,
+      "translation": "안락사"
+    }
+  ]
+}

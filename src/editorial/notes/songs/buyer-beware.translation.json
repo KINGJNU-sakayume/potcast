@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 8911471,
+    "durationMs": 173000
+  },
+  "segments": [
+    {
+      "startMs": 25300,
+      "endMs": 29220,
+      "translation": "향을 피운 지 꽤 됐어"
+    },
+    {
+      "startMs": 29220,
+      "endMs": 33120,
+      "translation": "라이터는 담배 한 갑에 다 써 버렸지"
+    },
+    {
+      "startMs": 33120,
+      "endMs": 36260,
+      "translation": "내 성경이 대체 어디 갔는지 모르겠어"
+    },
+    {
+      "startMs": 36260,
+      "endMs": 40420,
+      "translation": "그래도 분명 날 용서해 주겠지"
+    },
+    {
+      "startMs": 40420,
+      "endMs": 46160,
+      "translation": "그러니 제발 내게 구멍을 내지 마"
+    },
+    {
+      "startMs": 46160,
+      "endMs": 53200,
+      "translation": "나-나, 그들이 네게 필요한 걸 가진 것처럼 보인다는 거 알아"
+    },
+    {
+      "startMs": 53200,
+      "endMs": 56590,
+      "translation": "너보다 너를 잘 아는 사람은 없어"
+    },
+    {
+      "startMs": 56590,
+      "endMs": 60650,
+      "translation": "그러니 걱정하지 마"
+    },
+    {
+      "startMs": 60650,
+      "endMs": 65990,
+      "translation": "천 원짜리 가게에서 파는 기적에 돈 쓰지 마"
+    },
+    {
+      "startMs": 65990,
+      "endMs": 68590,
+      "translation": "미안해"
+    },
+    {
+      "startMs": 68590,
+      "endMs": 73150,
+      "translation": "자기야, 난 다 아는 척하지만 답은 몰라"
+    },
+    {
+      "startMs": 73150,
+      "endMs": 77240,
+      "translation": "그러니 내려놔, 넌 절대 알 수 없어, 돌에 새겨진 건 없어"
+    },
+    {
+      "startMs": 77240,
+      "endMs": 82040,
+      "translation": "네가 너의 신탁이야, 이건 그냥 빌어먹을 시일 뿐이야"
+    },
+    {
+      "startMs": 82040,
+      "endMs": 84540,
+      "translation": "미안해"
+    },
+    {
+      "startMs": 84540,
+      "endMs": 89140,
+      "translation": "자기야, 난 다 아는 척하지만 답은 몰라"
+    },
+    {
+      "startMs": 89140,
+      "endMs": 93180,
+      "translation": "베벌리힐스엔 식당이 그렇게 많은데"
+    },
+    {
+      "startMs": 93180,
+      "endMs": 97140,
+      "translation": "내가 제일 좋아하는 저녁은 스물네 캔 묶음으로 와"
+    },
+    {
+      "startMs": 97140,
+      "endMs": 100410,
+      "translation": "창틀을 넘어서 집에 들어왔어"
+    },
+    {
+      "startMs": 100410,
+      "endMs": 104170,
+      "translation": "그래도 그 여자는 분명 날 용서해 주겠지"
+    },
+    {
+      "startMs": 104170,
+      "endMs": 110220,
+      "translation": "그러니 제발 내게 구멍을 내지 마"
+    },
+    {
+      "startMs": 110220,
+      "endMs": 117220,
+      "translation": "나-나, 그들이 네게 필요한 걸 가진 것처럼 보인다는 거 알아"
+    },
+    {
+      "startMs": 117220,
+      "endMs": 120340,
+      "translation": "너보다 너를 잘 아는 사람은 없어"
+    },
+    {
+      "startMs": 120340,
+      "endMs": 124660,
+      "translation": "그러니 걱정하지 마"
+    },
+    {
+      "startMs": 124660,
+      "endMs": 129870,
+      "translation": "천 원짜리 가게에서 파는 기적에 돈 쓰지 마"
+    },
+    {
+      "startMs": 129870,
+      "endMs": 132500,
+      "translation": "미안해"
+    },
+    {
+      "startMs": 132500,
+      "endMs": 137180,
+      "translation": "자기야, 난 다 아는 척하지만 답은 몰라"
+    },
+    {
+      "startMs": 137180,
+      "endMs": 141130,
+      "translation": "그러니 내려놔, 넌 절대 알 수 없어, 돌에 새겨진 건 없어"
+    },
+    {
+      "startMs": 141130,
+      "endMs": 146120,
+      "translation": "네가 너의 신탁이야, 이건 그냥 빌어먹을 시일 뿐이야"
+    },
+    {
+      "startMs": 146120,
+      "endMs": 148280,
+      "translation": "미안해"
+    },
+    {
+      "startMs": 148280,
+      "endMs": 153380,
+      "translation": "자기야, 난 다 아는 척하지만 답은 몰라"
+    },
+    {
+      "startMs": 153380,
+      "endMs": 157400,
+      "translation": "내려놔, 넌 절대 알 수 없어, 돌에 새겨진 건 없어"
+    },
+    {
+      "startMs": 157400,
+      "endMs": 162000,
+      "translation": "네가 너의 신탁이야, 이건 그냥 빌어먹을 시일 뿐이야"
+    },
+    {
+      "startMs": 162000,
+      "endMs": 164460,
+      "translation": "미안해"
+    },
+    {
+      "startMs": 164460,
+      "endMs": 173000,
+      "translation": "자기야, 난 답을 몰라, 젠장, 어쩌면 난 아무것도 모르는지도 몰라"
+    }
+  ]
+}

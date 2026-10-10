@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2904880,
+    "durationMs": 184000
+  },
+  "segments": [
+    {
+      "startMs": 13910,
+      "endMs": 19210,
+      "translation": "옥시토신이 모든 걸 괜찮게 만들어"
+    },
+    {
+      "startMs": 19210,
+      "endMs": 24880,
+      "translation": "다시 내려오면 그 기분이 아니야"
+    },
+    {
+      "startMs": 24880,
+      "endMs": 30700,
+      "translation": "이제 난 종일 앉아서 세상이 끝나기만 기다려"
+    },
+    {
+      "startMs": 30700,
+      "endMs": 36750,
+      "translation": "애써도 너를 떠날 수 없으니까"
+    },
+    {
+      "startMs": 36750,
+      "endMs": 39950,
+      "translation": "넌 날 부수고, 난 내 원칙을 깨"
+    },
+    {
+      "startMs": 39950,
+      "endMs": 42750,
+      "translation": "지난번도 마지막이라고 했지"
+    },
+    {
+      "startMs": 42750,
+      "endMs": 47850,
+      "translation": "엉망인 거 알아, 그래도 난 여전히"
+    },
+    {
+      "startMs": 47850,
+      "endMs": 53580,
+      "translation": "파티장 밖에서 너랑 차 안에서 담배를 피우고"
+    },
+    {
+      "startMs": 53580,
+      "endMs": 59120,
+      "translation": "'세븐 네이션 아미'가 흐르는 술집에서 너랑 싸우고"
+    },
+    {
+      "startMs": 59120,
+      "endMs": 63620,
+      "translation": "미안하다고 말하고, 내가 뭘 해야 하는지 말해 달라고 해"
+    },
+    {
+      "startMs": 63620,
+      "endMs": 69540,
+      "translation": "난 놓을 수가 없으니까, 이건 화학 작용이야"
+    },
+    {
+      "startMs": 69540,
+      "endMs": 76080,
+      "translation": "아니, 난 놓을 수가 없어, 이건 화학 작용이야"
+    },
+    {
+      "startMs": 76080,
+      "endMs": 81530,
+      "translation": "내가 변하려고 마음먹을 때마다"
+    },
+    {
+      "startMs": 81530,
+      "endMs": 86800,
+      "translation": "넌 돌아서서 내 정신을 쏙 빼놓아"
+    },
+    {
+      "startMs": 86800,
+      "endMs": 92820,
+      "translation": "운명을 찾으려는 게 아니야, 체면을 지키기엔 너무 늦었어"
+    },
+    {
+      "startMs": 92820,
+      "endMs": 98930,
+      "translation": "벗어날 수가 없어, 어쩌면 실수 같은 건 없는지도 몰라 (실수 같은 건 없는지도)"
+    },
+    {
+      "startMs": 98930,
+      "endMs": 102080,
+      "translation": "넌 날 부수고, 난 내 원칙을 깨"
+    },
+    {
+      "startMs": 102080,
+      "endMs": 104670,
+      "translation": "지난번도 마지막이라고 했지"
+    },
+    {
+      "startMs": 104670,
+      "endMs": 109850,
+      "translation": "엉망인 거 알아, 그래도 난 여전히"
+    },
+    {
+      "startMs": 109850,
+      "endMs": 115490,
+      "translation": "그리고 파티장 밖에서 너랑 차 안에서 담배를 피우고"
+    },
+    {
+      "startMs": 115490,
+      "endMs": 121130,
+      "translation": "'세븐 네이션 아미'가 흐르는 술집에서 너랑 싸우고"
+    },
+    {
+      "startMs": 121130,
+      "endMs": 125970,
+      "translation": "미안하다고 말하고, 내가 뭘 해야 하는지 말해 달라고 해"
+    },
+    {
+      "startMs": 125970,
+      "endMs": 131660,
+      "translation": "난 놓을 수가 없으니까, 이건 화학 작용이야 (화학 작용)"
+    },
+    {
+      "startMs": 131660,
+      "endMs": 137150,
+      "translation": "아니, 난 놓을 수가 없어, 이건 화학 작용이야 (화학 작용)"
+    },
+    {
+      "startMs": 137150,
+      "endMs": 154030,
+      "translation": "아니, 난 놓을 수가 없어, 이건 화학 작용이야"
+    },
+    {
+      "startMs": 154030,
+      "endMs": 160150,
+      "translation": "난 놓을 수가 없어, 이건 화학 작용이야"
+    },
+    {
+      "startMs": 160150,
+      "endMs": 166340,
+      "translation": "다-다-다-다-다-다, 다-다-다"
+    },
+    {
+      "startMs": 166340,
+      "endMs": 171100,
+      "translation": "미안하다고 말하고, 내가 뭘 해야 하는지 말해 달라고 해"
+    },
+    {
+      "startMs": 171100,
+      "endMs": 184000,
+      "translation": "아니, 난 놓을 수가 없어, 이건 화학 작용이야"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13222,
+    "durationMs": 288000
+  },
+  "segments": [
+    {
+      "startMs": 24240,
+      "endMs": 32390,
+      "translation": "다음 세계대전 속에서"
+    },
+    {
+      "startMs": 32390,
+      "endMs": 36870,
+      "translation": "접힌 채 미끄러진 대형 트럭 안에서"
+    },
+    {
+      "startMs": 36870,
+      "endMs": 43280,
+      "translation": "나는 다시 태어난다"
+    },
+    {
+      "startMs": 43280,
+      "endMs": 54080,
+      "translation": "위아래로 흘러가는 네온사인 속에서"
+    },
+    {
+      "startMs": 54080,
+      "endMs": 60700,
+      "translation": "나는 다시 태어난다"
+    },
+    {
+      "startMs": 60700,
+      "endMs": 66530,
+      "translation": "성간의 폭발 속에서"
+    },
+    {
+      "startMs": 66530,
+      "endMs": 92770,
+      "translation": "나는 우주를 구하러 돌아왔다"
+    },
+    {
+      "startMs": 92770,
+      "endMs": 102860,
+      "translation": "순진한 이들의 깊고 깊은 잠 속에서"
+    },
+    {
+      "startMs": 102860,
+      "endMs": 108960,
+      "translation": "나는 다시 태어난다"
+    },
+    {
+      "startMs": 108960,
+      "endMs": 114910,
+      "translation": "빠른 독일 차 안에서"
+    },
+    {
+      "startMs": 114910,
+      "endMs": 120240,
+      "translation": "살아남았다는 게 놀랍다"
+    },
+    {
+      "startMs": 120240,
+      "endMs": 126520,
+      "translation": "에어백이 내 목숨을 구했다"
+    },
+    {
+      "startMs": 126520,
+      "endMs": 132170,
+      "translation": "성간의 폭발 속에서"
+    },
+    {
+      "startMs": 132170,
+      "endMs": 178410,
+      "translation": "나는 우주를 구하러 돌아왔다"
+    },
+    {
+      "startMs": 178410,
+      "endMs": 183550,
+      "translation": "성간의 폭발 속에서"
+    },
+    {
+      "startMs": 183550,
+      "endMs": 195180,
+      "translation": "나는 우주를 구하러 돌아왔다"
+    },
+    {
+      "startMs": 195180,
+      "endMs": 200730,
+      "translation": "성간의 폭발 속에서"
+    },
+    {
+      "startMs": 200730,
+      "endMs": 288000,
+      "translation": "나는 우주를 구하러 돌아왔다"
+    }
+  ]
+}

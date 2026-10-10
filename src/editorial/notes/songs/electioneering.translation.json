@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13574,
+    "durationMs": 231000
+  },
+  "segments": [
+    {
+      "startMs": 33890,
+      "endMs": 46270,
+      "translation": "저는 멈추지 않겠습니다, 무슨 일이 있어도 멈추지 않겠습니다"
+    },
+    {
+      "startMs": 46270,
+      "endMs": 55590,
+      "translation": "선거 유세 때는 옳은 말만 하겠습니다"
+    },
+    {
+      "startMs": 55590,
+      "endMs": 63440,
+      "translation": "여러분의 한 표를 믿어도 되리라 확신합니다"
+    },
+    {
+      "startMs": 63440,
+      "endMs": 69700,
+      "translation": "제가 앞으로 가면 여러분은 뒤로 갑니다"
+    },
+    {
+      "startMs": 69700,
+      "endMs": 75810,
+      "translation": "그리고 어딘가에서 우리는 만날 것입니다"
+    },
+    {
+      "startMs": 75810,
+      "endMs": 82090,
+      "translation": "제가 앞으로 가면 여러분은 뒤로 갑니다"
+    },
+    {
+      "startMs": 82090,
+      "endMs": 87510,
+      "translation": "그리고 어딘가에서 우리는 만날 것입니다"
+    },
+    {
+      "startMs": 87510,
+      "endMs": 101820,
+      "translation": "하하하"
+    },
+    {
+      "startMs": 101820,
+      "endMs": 114300,
+      "translation": "진압 방패, 부두 경제학"
+    },
+    {
+      "startMs": 114300,
+      "endMs": 123430,
+      "translation": "그저 비즈니스일 뿐입니다, 가축 전기봉과 IMF"
+    },
+    {
+      "startMs": 123430,
+      "endMs": 131360,
+      "translation": "여러분의 한 표를 믿어도 되리라 확신합니다"
+    },
+    {
+      "startMs": 131360,
+      "endMs": 137100,
+      "translation": "제가 앞으로 가면 여러분은 뒤로 갑니다"
+    },
+    {
+      "startMs": 137100,
+      "endMs": 143630,
+      "translation": "그리고 어딘가에서 우리는 만날 것입니다"
+    },
+    {
+      "startMs": 143630,
+      "endMs": 149520,
+      "translation": "제가 앞으로 가면 여러분은 뒤로 갑니다"
+    },
+    {
+      "startMs": 149520,
+      "endMs": 231000,
+      "translation": "그리고 어딘가에서 우리는 만날 것입니다"
+    }
+  ]
+}

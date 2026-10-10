@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 81214,
+    "durationMs": 164000
+  },
+  "segments": [
+    {
+      "startMs": 30930,
+      "endMs": 35790,
+      "translation": "이봐, 별일 없었어?"
+    },
+    {
+      "startMs": 35790,
+      "endMs": 39710,
+      "translation": "나 막 돌아왔어, 돌아올 줄 알았지?"
+    },
+    {
+      "startMs": 39710,
+      "endMs": 45060,
+      "translation": "전쟁은 지옥이야, 언제 끝나는 걸까?"
+    },
+    {
+      "startMs": 45060,
+      "endMs": 50550,
+      "translation": "사람들은 언제 다시 하나로 뭉치게 될까?"
+    },
+    {
+      "startMs": 50550,
+      "endMs": 60360,
+      "translation": "신문에 나온 대로 정말 나아지고 있는 거야?"
+    },
+    {
+      "startMs": 60360,
+      "endMs": 70030,
+      "translation": "친구, 내가 읽은 것 말고 새로운 소식 좀 있어?"
+    },
+    {
+      "startMs": 70030,
+      "endMs": 75060,
+      "translation": "일거리도 없고, 일자리도 못 찾겠어, 친구"
+    },
+    {
+      "startMs": 75060,
+      "endMs": 79540,
+      "translation": "돈이 그 어느 때보다 빠듯해"
+    },
+    {
+      "startMs": 79540,
+      "endMs": 85440,
+      "translation": "이봐, 난 정말 모르겠어, 이 땅에서 무슨 일이 벌어지고 있는 건지"
+    },
+    {
+      "startMs": 85440,
+      "endMs": 89100,
+      "translation": "아, 요즘 어때, 형제?"
+    },
+    {
+      "startMs": 89100,
+      "endMs": 97100,
+      "translation": "그래, 어떻게 돌아가? 어떻게 돌아가는 거야, 친구?"
+    },
+    {
+      "startMs": 97100,
+      "endMs": 101920,
+      "translation": "우리 춤추러 가던 데선 아직도 다들 신나게 놀아?"
+    },
+    {
+      "startMs": 101920,
+      "endMs": 107090,
+      "translation": "우리 야구팀이 우승할까? 가능성이 있다고 생각해?"
+    },
+    {
+      "startMs": 107090,
+      "endMs": 113880,
+      "translation": "그리고 말해 봐, 친구, 대체 어떻게 지냈어?"
+    },
+    {
+      "startMs": 113880,
+      "endMs": 119170,
+      "translation": "뭐가 한물갔고 뭐가 요즘 뜨는지 알고 싶어"
+    },
+    {
+      "startMs": 119170,
+      "endMs": 121350,
+      "translation": "어떻게 된 거야"
+    },
+    {
+      "startMs": 121350,
+      "endMs": 123900,
+      "translation": "요즘 어때? 말해 줘, 형제"
+    },
+    {
+      "startMs": 123900,
+      "endMs": 127730,
+      "translation": "요즘 어때, 형제?"
+    },
+    {
+      "startMs": 127730,
+      "endMs": 133040,
+      "translation": "아, 요즘 어때, 형제?"
+    },
+    {
+      "startMs": 133040,
+      "endMs": 134660,
+      "translation": "어떻게 돌아가는 거야, 친구?"
+    },
+    {
+      "startMs": 134660,
+      "endMs": 141500,
+      "translation": "우, 아, 요즘 어때, 형제?"
+    },
+    {
+      "startMs": 141500,
+      "endMs": 147480,
+      "translation": "이봐, 우, 요즘 어때, 형제?"
+    },
+    {
+      "startMs": 147480,
+      "endMs": 152700,
+      "translation": "여기저기서 무슨 일들이 있었어?"
+    },
+    {
+      "startMs": 152700,
+      "endMs": 164000,
+      "translation": "알고 싶어, 난 시대에 조금 뒤처져 있으니까"
+    }
+  ]
+}

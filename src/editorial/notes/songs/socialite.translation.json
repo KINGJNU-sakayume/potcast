@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 8948272,
+    "durationMs": 199000
+  },
+  "segments": [
+    {
+      "startMs": 40,
+      "endMs": 10610,
+      "translation": "젠장"
+    },
+    {
+      "startMs": 10610,
+      "endMs": 13460,
+      "translation": "좋은 하루까지 늘 술 한 잔이 모자라"
+    },
+    {
+      "startMs": 13460,
+      "endMs": 16180,
+      "translation": "조데시를 틀고 풀어져, 에이"
+    },
+    {
+      "startMs": 16180,
+      "endMs": 18630,
+      "translation": "워터보이처럼 들이받아, 난 바비 부셰야"
+    },
+    {
+      "startMs": 18630,
+      "endMs": 21260,
+      "translation": "그래서 다들 내 헛짓을 다 참아 주나 봐"
+    },
+    {
+      "startMs": 21260,
+      "endMs": 24050,
+      "translation": "그리고 지붕 없는 벤틀리를 새로 샀어, 에이"
+    },
+    {
+      "startMs": 24050,
+      "endMs": 26690,
+      "translation": "LA에선 내 트럭이 바보 같대"
+    },
+    {
+      "startMs": 26690,
+      "endMs": 29420,
+      "translation": "막다른 골목에서 도넛을 그려, 이봐, 난 골칫거리야"
+    },
+    {
+      "startMs": 29420,
+      "endMs": 31960,
+      "translation": "내 프린스는 레볼루션이랑 두고 왔어"
+    },
+    {
+      "startMs": 31960,
+      "endMs": 35870,
+      "translation": "혼자서 잔뜩 취해"
+    },
+    {
+      "startMs": 35870,
+      "endMs": 41950,
+      "translation": "그래도 날 불쌍하게 여기진 마"
+    },
+    {
+      "startMs": 41950,
+      "endMs": 46360,
+      "translation": "내 운전기사가 패트론을 마시니까"
+    },
+    {
+      "startMs": 46360,
+      "endMs": 53000,
+      "translation": "나 대신 택시를 불러 줘, 그럼 갈게"
+    },
+    {
+      "startMs": 53000,
+      "endMs": 63270,
+      "translation": "날 망가뜨려, 그냥 몸일 뿐이야 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 63270,
+      "endMs": 74030,
+      "translation": "신이 있다면 문제 될 것도 없어 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 74030,
+      "endMs": 90000,
+      "translation": "사교계 명사"
+    },
+    {
+      "startMs": 90000,
+      "endMs": 92770,
+      "translation": "일요일인데 짓궂은 기분이야"
+    },
+    {
+      "startMs": 92770,
+      "endMs": 95150,
+      "translation": "현대차 뒷좌석에서"
+    },
+    {
+      "startMs": 95150,
+      "endMs": 97920,
+      "translation": "그 여자를 슈렉이라 불러, 동키가 있으니까"
+    },
+    {
+      "startMs": 97920,
+      "endMs": 100000,
+      "translation": "우리가 이렇게 잘 맞는 게 신기해"
+    },
+    {
+      "startMs": 100000,
+      "endMs": 102650,
+      "translation": "방금 만난 새 절친"
+    },
+    {
+      "startMs": 102650,
+      "endMs": 105210,
+      "translation": "이젠 '다른 사람은 다 꺼져'야"
+    },
+    {
+      "startMs": 105210,
+      "endMs": 107970,
+      "translation": "여섯 번의 주말 동안 누군가를 사랑하고"
+    },
+    {
+      "startMs": 107970,
+      "endMs": 111110,
+      "translation": "다시는 말도 안 하지"
+    },
+    {
+      "startMs": 111110,
+      "endMs": 114860,
+      "translation": "뭐라고 부르든 상관없어"
+    },
+    {
+      "startMs": 114860,
+      "endMs": 121480,
+      "translation": "정말 비극이야"
+    },
+    {
+      "startMs": 121480,
+      "endMs": 125400,
+      "translation": "내가 제일 짧은 제비를 뽑았어"
+    },
+    {
+      "startMs": 125400,
+      "endMs": 132170,
+      "translation": "또 하나의 희생자, 이만 가 볼게"
+    },
+    {
+      "startMs": 132170,
+      "endMs": 142300,
+      "translation": "날 망가뜨려, 그냥 몸일 뿐이야 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 142300,
+      "endMs": 153330,
+      "translation": "신이 있다면 문제 될 것도 없어 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 153330,
+      "endMs": 163510,
+      "translation": "날 망가뜨려, 내 생일 파티잖아 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 163510,
+      "endMs": 174510,
+      "translation": "그러니 우리 공통점이 뭔지 말해 봐 (그래, 그래, 그래)"
+    },
+    {
+      "startMs": 174510,
+      "endMs": 199000,
+      "translation": "사교계 명사, 사교계 명사"
+    }
+  ]
+}

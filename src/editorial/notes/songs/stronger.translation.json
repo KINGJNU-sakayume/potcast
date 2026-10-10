@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 581737,
+    "durationMs": 312000
+  },
+  "segments": [
+    {
+      "startMs": 60,
+      "endMs": 2220,
+      "translation": "일해, 만들어, 해내, 그게 우릴"
+    },
+    {
+      "startMs": 2220,
+      "endMs": 4920,
+      "translation": "더 세게, 더 좋게, 더 빠르게, 더 강하게"
+    },
+    {
+      "startMs": 4920,
+      "endMs": 7330,
+      "translation": "이, 이제, 날 죽이지 못하는 건"
+    },
+    {
+      "startMs": 7330,
+      "endMs": 9820,
+      "translation": "날 더 강하게 만들 뿐이야"
+    },
+    {
+      "startMs": 9820,
+      "endMs": 11970,
+      "translation": "서둘러 줘"
+    },
+    {
+      "startMs": 11970,
+      "endMs": 14120,
+      "translation": "더는 못 기다리겠으니까"
+    },
+    {
+      "startMs": 14120,
+      "endMs": 16530,
+      "translation": "이번엔 제대로 해야 한다는 거 알아"
+    },
+    {
+      "startMs": 16530,
+      "endMs": 19040,
+      "translation": "더 틀릴 수도 없을 만큼 틀렸으니까"
+    },
+    {
+      "startMs": 19040,
+      "endMs": 21180,
+      "translation": "밤새 기다렸어"
+    },
+    {
+      "startMs": 21180,
+      "endMs": 23150,
+      "translation": "그만큼 오래 너한테 빠져 있었지"
+    },
+    {
+      "startMs": 23150,
+      "endMs": 25390,
+      "translation": "더 세게 일하고, 더 좋게 만들어"
+    },
+    {
+      "startMs": 25390,
+      "endMs": 26240,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 26240,
+      "endMs": 27890,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 27890,
+      "endMs": 28670,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 28670,
+      "endMs": 30880,
+      "translation": "한 시간 또 한 시간 일해"
+    },
+    {
+      "startMs": 30880,
+      "endMs": 31980,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 31980,
+      "endMs": 33310,
+      "translation": "오늘 밤 같이 사라지자"
+    },
+    {
+      "startMs": 33310,
+      "endMs": 35730,
+      "translation": "오늘 밤 넌 내 흑인 케이트 모스가 될 수 있어"
+    },
+    {
+      "startMs": 35730,
+      "endMs": 37770,
+      "translation": "넌 비서 놀이를 해, 오늘 밤 사장은 나야"
+    },
+    {
+      "startMs": 37770,
+      "endMs": 40360,
+      "translation": "그리고 남들이 뭐라든 상관 안 하지, 그렇지?"
+    },
+    {
+      "startMs": 40360,
+      "endMs": 42860,
+      "translation": "끝내줘, 크리스티앙 디오르의 크리스티앙처럼"
+    },
+    {
+      "startMs": 42860,
+      "endMs": 45210,
+      "translation": "이런, 이런 건 더 이상 안 만들어"
+    },
+    {
+      "startMs": 45210,
+      "endMs": 47140,
+      "translation": "잘 모르겠으니까 물어볼게"
+    },
+    {
+      "startMs": 47140,
+      "endMs": 49720,
+      "translation": "요즘 누가 진짜를 만들긴 해?"
+    },
+    {
+      "startMs": 49720,
+      "endMs": 51970,
+      "translation": "위대함 앞에 고개를 숙여"
+    },
+    {
+      "startMs": 51970,
+      "endMs": 54210,
+      "translation": "지금 너희가 우릴 버렸으니까"
+    },
+    {
+      "startMs": 54210,
+      "endMs": 56250,
+      "translation": "내가 늦게 와 준 것도 영광으로 알아"
+    },
+    {
+      "startMs": 56250,
+      "endMs": 58480,
+      "translation": "이런 가짜 판에 나타나 주기라도 한 걸"
+    },
+    {
+      "startMs": 58480,
+      "endMs": 60830,
+      "translation": "그러니 마음껏 미쳐, 날뛰어 봐"
+    },
+    {
+      "startMs": 60830,
+      "endMs": 63190,
+      "translation": "특히 내 파스텔 옷, 내 베이프 차림에"
+    },
+    {
+      "startMs": 63190,
+      "endMs": 65150,
+      "translation": "누가 이걸 만들었는지 모르는 척해 봐"
+    },
+    {
+      "startMs": 65150,
+      "endMs": 67360,
+      "translation": "새로운 복음이야, 친구, 테이크 식스"
+    },
+    {
+      "startMs": 67360,
+      "endMs": 69520,
+      "translation": "이거나 받아, 미워하는 놈들아!"
+    },
+    {
+      "startMs": 69520,
+      "endMs": 72090,
+      "translation": "이, 이제, 날 죽이지 못하는 건"
+    },
+    {
+      "startMs": 72090,
+      "endMs": 74370,
+      "translation": "날 더 강하게 만들 뿐이야"
+    },
+    {
+      "startMs": 74370,
+      "endMs": 76590,
+      "translation": "서둘러 줘"
+    },
+    {
+      "startMs": 76590,
+      "endMs": 78810,
+      "translation": "더는 못 기다리겠으니까"
+    },
+    {
+      "startMs": 78810,
+      "endMs": 81310,
+      "translation": "이번엔 제대로 해야 한다는 거 알아"
+    },
+    {
+      "startMs": 81310,
+      "endMs": 83520,
+      "translation": "더 틀릴 수도 없을 만큼 틀렸으니까"
+    },
+    {
+      "startMs": 83520,
+      "endMs": 85790,
+      "translation": "밤새 기다렸어"
+    },
+    {
+      "startMs": 85790,
+      "endMs": 87660,
+      "translation": "그만큼 오래 너한테 빠져 있었지"
+    },
+    {
+      "startMs": 87660,
+      "endMs": 89820,
+      "translation": "더 세게 일하고, 더 좋게 만들어"
+    },
+    {
+      "startMs": 89820,
+      "endMs": 90930,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 90930,
+      "endMs": 92350,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 92350,
+      "endMs": 93400,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 93400,
+      "endMs": 95310,
+      "translation": "한 시간 또 한 시간 일해"
+    },
+    {
+      "startMs": 95310,
+      "endMs": 97440,
+      "translation": "(지금 당장 네가 필요해!) 마음에 들어"
+    },
+    {
+      "startMs": 97440,
+      "endMs": 100100,
+      "translation": "너한테 남자가 있는지 없는지 몰라"
+    },
+    {
+      "startMs": 100100,
+      "endMs": 102240,
+      "translation": "계획이 있는지 없는지"
+    },
+    {
+      "startMs": 102240,
+      "endMs": 104120,
+      "translation": "신이 너의 계획에 날 넣었는지 아닌지"
+    },
+    {
+      "startMs": 104120,
+      "endMs": 106670,
+      "translation": "내가 좀 취했나 봐, 술 때문에 말이 많아졌어"
+    },
+    {
+      "startMs": 106670,
+      "endMs": 109210,
+      "translation": "그래도 신이 너를 내 앞에 두었다는 건 알아"
+    },
+    {
+      "startMs": 109210,
+      "endMs": 110930,
+      "translation": "그러니 네가 어떻게 날 무시할 수 있겠어?"
+    },
+    {
+      "startMs": 110930,
+      "endMs": 113320,
+      "translation": "너 같은 사람은 천 명이지만, 나는 하나뿐이야"
+    },
+    {
+      "startMs": 113320,
+      "endMs": 116030,
+      "translation": "내가 좀 들떴어, 이 순간에 빠져 버렸지, 그렇지?"
+    },
+    {
+      "startMs": 116030,
+      "endMs": 118110,
+      "translation": "오늘은 루이 비통 돈의 밤이니까"
+    },
+    {
+      "startMs": 118110,
+      "endMs": 120340,
+      "translation": "그러니 우린 칸이 좋아하는 건 다 할 거야"
+    },
+    {
+      "startMs": 120340,
+      "endMs": 122780,
+      "translation": "다들 클론다이크 아이스크림을 위해선 뭐든 한다던데"
+    },
+    {
+      "startMs": 122780,
+      "endMs": 125100,
+      "translation": "난 금발의 그녀를 위해서라면 뭐든 할 거야"
+    },
+    {
+      "startMs": 125100,
+      "endMs": 127380,
+      "translation": "그녀는 스포트라이트를 위해서라면 뭐든 하겠지"
+    },
+    {
+      "startMs": 127380,
+      "endMs": 130080,
+      "translation": "때가 오면 우린 뭐든 할 거야"
+    },
+    {
+      "startMs": 130080,
+      "endMs": 131650,
+      "translation": "어, 자기, 네가 날"
+    },
+    {
+      "startMs": 131650,
+      "endMs": 134040,
+      "translation": "(더 세게, 더 좋게, 더 빠르게, 더 강하게) 오"
+    },
+    {
+      "startMs": 134040,
+      "endMs": 136790,
+      "translation": "이, 이제, 날 죽이지 못하는 건 (오)"
+    },
+    {
+      "startMs": 136790,
+      "endMs": 138950,
+      "translation": "날 더 강하게 만들 뿐이야 (오)"
+    },
+    {
+      "startMs": 138950,
+      "endMs": 141410,
+      "translation": "서둘러 줘 (오)"
+    },
+    {
+      "startMs": 141410,
+      "endMs": 143590,
+      "translation": "더는 못 기다리겠으니까 (오)"
+    },
+    {
+      "startMs": 143590,
+      "endMs": 145850,
+      "translation": "이번엔 제대로 해야 한다는 거 알아 (오)"
+    },
+    {
+      "startMs": 145850,
+      "endMs": 148230,
+      "translation": "더 틀릴 수도 없을 만큼 틀렸으니까 (오)"
+    },
+    {
+      "startMs": 148230,
+      "endMs": 150430,
+      "translation": "밤새 기다렸어"
+    },
+    {
+      "startMs": 150430,
+      "endMs": 152340,
+      "translation": "그만큼 오래 너한테 빠져 있었지"
+    },
+    {
+      "startMs": 152340,
+      "endMs": 154780,
+      "translation": "더 세게 일하고, 더 좋게 만들어"
+    },
+    {
+      "startMs": 154780,
+      "endMs": 155640,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 155640,
+      "endMs": 157080,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 157080,
+      "endMs": 157940,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 157940,
+      "endMs": 160140,
+      "translation": "한 시간 또 한 시간, 일은 끝나지 않아"
+    },
+    {
+      "startMs": 160140,
+      "endMs": 161890,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 161890,
+      "endMs": 164290,
+      "translation": "내가 얼마나 오래 너한테 빠져 있었는지 알지"
+    },
+    {
+      "startMs": 164290,
+      "endMs": 166350,
+      "translation": "프린스가 아폴로니아와 있던 시절부터"
+    },
+    {
+      "startMs": 166350,
+      "endMs": 168840,
+      "translation": "O.J.가 아이소토너 장갑을 끼던 시절부터"
+    },
+    {
+      "startMs": 168840,
+      "endMs": 170910,
+      "translation": "내가 말 안 했다는 듯이 굴지 마"
+    },
+    {
+      "startMs": 170910,
+      "endMs": 173430,
+      "translation": "(일해, 일은 끝나지 않아)"
+    },
+    {
+      "startMs": 173430,
+      "endMs": 175360,
+      "translation": "내가 말 안 했다는 듯이 굴지 마"
+    },
+    {
+      "startMs": 175360,
+      "endMs": 177050,
+      "translation": "(더 세게, 일은 끝나지 않아)"
+    },
+    {
+      "startMs": 177050,
+      "endMs": 180350,
+      "translation": "어, 내가 말 안 했다는 듯이 굴지 마"
+    },
+    {
+      "startMs": 180350,
+      "endMs": 182400,
+      "translation": "내가 말 안 했다는 듯이 굴지 마"
+    },
+    {
+      "startMs": 182400,
+      "endMs": 185460,
+      "translation": "내가 말 안 했다는 듯이 굴지 마"
+    },
+    {
+      "startMs": 185460,
+      "endMs": 187000,
+      "translation": "어, 자기, 네가 날"
+    },
+    {
+      "startMs": 187000,
+      "endMs": 189590,
+      "translation": "(더 세게, 더 좋게, 더 빠르게, 더 강하게)"
+    },
+    {
+      "startMs": 189590,
+      "endMs": 191960,
+      "translation": "이, 이제, 날 죽이지 못하는 건"
+    },
+    {
+      "startMs": 191960,
+      "endMs": 194480,
+      "translation": "날 더 강하게 만들 뿐이야"
+    },
+    {
+      "startMs": 194480,
+      "endMs": 196570,
+      "translation": "서둘러 줘"
+    },
+    {
+      "startMs": 196570,
+      "endMs": 198720,
+      "translation": "더는 못 기다리겠으니까"
+    },
+    {
+      "startMs": 198720,
+      "endMs": 201220,
+      "translation": "이번엔 제대로 해야 한다는 거 알아"
+    },
+    {
+      "startMs": 201220,
+      "endMs": 203670,
+      "translation": "더 틀릴 수도 없을 만큼 틀렸으니까"
+    },
+    {
+      "startMs": 203670,
+      "endMs": 205860,
+      "translation": "밤새 기다렸어"
+    },
+    {
+      "startMs": 205860,
+      "endMs": 207540,
+      "translation": "그만큼 오래 너한테 빠져 있었지"
+    },
+    {
+      "startMs": 207540,
+      "endMs": 209960,
+      "translation": "더 세게 일하고, 더 좋게 만들어"
+    },
+    {
+      "startMs": 209960,
+      "endMs": 210810,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 210810,
+      "endMs": 212460,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 212460,
+      "endMs": 213380,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 213380,
+      "endMs": 215560,
+      "translation": "한 시간 또 한 시간, 일은 끝나지 않아"
+    },
+    {
+      "startMs": 215560,
+      "endMs": 216850,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 216850,
+      "endMs": 219330,
+      "translation": "더 세게 일하고, 더 좋게 만들어"
+    },
+    {
+      "startMs": 219330,
+      "endMs": 219940,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 219940,
+      "endMs": 221500,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 221500,
+      "endMs": 222680,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 222680,
+      "endMs": 224840,
+      "translation": "한 시간 또 한 시간, 일은 끝나지 않아"
+    },
+    {
+      "startMs": 224840,
+      "endMs": 226490,
+      "translation": "(지금 당장 네가 필요해!)"
+    },
+    {
+      "startMs": 226490,
+      "endMs": 228830,
+      "translation": "내가 얼마나 오래 너한테 빠져 있었는지 알지"
+    },
+    {
+      "startMs": 228830,
+      "endMs": 231080,
+      "translation": "프린스가 아폴로니아와 있던 시절부터"
+    },
+    {
+      "startMs": 231080,
+      "endMs": 233410,
+      "translation": "O.J.가 아이소토너 장갑을 끼던 시절부터"
+    },
+    {
+      "startMs": 233410,
+      "endMs": 235860,
+      "translation": "내가 말 안 했다는 듯이 굴지 마"
+    },
+    {
+      "startMs": 235860,
+      "endMs": 238050,
+      "translation": "내가 얼마나 오래 너한테 빠져 있었는지 알지"
+    },
+    {
+      "startMs": 238050,
+      "endMs": 240260,
+      "translation": "프린스가 아폴로니아와 있던 시절부터"
+    },
+    {
+      "startMs": 240260,
+      "endMs": 242620,
+      "translation": "O.J.가 아이소토너 장갑을 끼던 시절부터"
+    },
+    {
+      "startMs": 242620,
+      "endMs": 245150,
+      "translation": "내가 말 안 했다는 듯이 굴지 마, 말했잖아, 말했잖아"
+    },
+    {
+      "startMs": 245150,
+      "endMs": 248130,
+      "translation": "말 안 했다고, 말했잖아, 말했잖아"
+    },
+    {
+      "startMs": 248130,
+      "endMs": 250320,
+      "translation": "말 안 했다고, 말했잖아, 말했잖아"
+    },
+    {
+      "startMs": 250320,
+      "endMs": 252740,
+      "translation": "말 안 했다고, 말했잖아, 말했잖아"
+    },
+    {
+      "startMs": 252740,
+      "endMs": 254800,
+      "translation": "말 안 했다고"
+    },
+    {
+      "startMs": 254800,
+      "endMs": 264100,
+      "translation": "끝나지 않아, 끝나지 않아, 끝나지 않아, 끝나지 않아"
+    },
+    {
+      "startMs": 264100,
+      "endMs": 269910,
+      "translation": "끝나지 않아, 끝나지 않아, 끝나지 않아"
+    },
+    {
+      "startMs": 269910,
+      "endMs": 272220,
+      "translation": "더 세게, 더 좋게, 더 빠르게, 더 강하게"
+    },
+    {
+      "startMs": 272220,
+      "endMs": 274630,
+      "translation": "일해, 더 세게, 더 좋게 만들어"
+    },
+    {
+      "startMs": 274630,
+      "endMs": 276890,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 276890,
+      "endMs": 277980,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 277980,
+      "endMs": 281570,
+      "translation": "한 시간 또 한 시간, 일은 끝나지 않아"
+    },
+    {
+      "startMs": 281570,
+      "endMs": 283950,
+      "translation": "일해, 더 세게, 더 좋게 만들어"
+    },
+    {
+      "startMs": 283950,
+      "endMs": 286100,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 286100,
+      "endMs": 287230,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 287230,
+      "endMs": 290750,
+      "translation": "한 시간 또 한 시간, 일은 끝나지 않아"
+    },
+    {
+      "startMs": 290750,
+      "endMs": 293260,
+      "translation": "일해, 더 세게, 더 좋게 만들어"
+    },
+    {
+      "startMs": 293260,
+      "endMs": 295390,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 295390,
+      "endMs": 296490,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 296490,
+      "endMs": 300010,
+      "translation": "한 시간 또 한 시간, 일은 끝나지 않아"
+    },
+    {
+      "startMs": 300010,
+      "endMs": 302390,
+      "translation": "일해, 더 세게, 더 좋게 만들어"
+    },
+    {
+      "startMs": 302390,
+      "endMs": 304660,
+      "translation": "더 빠르게 해내면 우린 더 강해져"
+    },
+    {
+      "startMs": 304660,
+      "endMs": 305750,
+      "translation": "그 어느 때보다"
+    },
+    {
+      "startMs": 305750,
+      "endMs": 312000,
+      "translation": "한 시간 또 한 시간, 일은 끝나지 않아"
+    }
+  ]
+}

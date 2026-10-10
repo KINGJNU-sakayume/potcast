@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 8934035,
+    "durationMs": 183000
+  },
+  "segments": [
+    {
+      "startMs": 3420,
+      "endMs": 8780,
+      "translation": "난 구르는 돌이야"
+    },
+    {
+      "startMs": 8780,
+      "endMs": 13390,
+      "translation": "널 놀라게 했지"
+    },
+    {
+      "startMs": 13390,
+      "endMs": 23700,
+      "translation": "넌 뭔가를, 뭐라도 붙잡고 있어"
+    },
+    {
+      "startMs": 23700,
+      "endMs": 29310,
+      "translation": "한 줄기 반짝이는 빛처럼"
+    },
+    {
+      "startMs": 29310,
+      "endMs": 34520,
+      "translation": "아, 칼은 그렇게 떨어졌지"
+    },
+    {
+      "startMs": 34520,
+      "endMs": 41520,
+      "translation": "난 말했어, '넌 정말 대단해, 내 전부야"
+    },
+    {
+      "startMs": 41520,
+      "endMs": 52100,
+      "translation": "나한테는, 난 추우니까 더 꼭 안아 줘, 자기야'"
+    },
+    {
+      "startMs": 52100,
+      "endMs": 57390,
+      "translation": "네가 왜 나를 그렇게 좋아하는지 모르겠어"
+    },
+    {
+      "startMs": 57390,
+      "endMs": 62860,
+      "translation": "난 내가 싫거든"
+    },
+    {
+      "startMs": 62860,
+      "endMs": 67760,
+      "translation": "네가 왜 나를 그렇게 좋아하는지 모르겠어"
+    },
+    {
+      "startMs": 67760,
+      "endMs": 73140,
+      "translation": "내가 다른 사람이었으면 좋겠어"
+    },
+    {
+      "startMs": 73140,
+      "endMs": 78210,
+      "translation": "넌 이유가 백만 개나 있다고 하지만"
+    },
+    {
+      "startMs": 78210,
+      "endMs": 83470,
+      "translation": "난 하나도 떠오르지 않아"
+    },
+    {
+      "startMs": 83470,
+      "endMs": 88710,
+      "translation": "네가 어떻게 나를 그렇게 좋아하는지 모르겠어"
+    },
+    {
+      "startMs": 88710,
+      "endMs": 93120,
+      "translation": "난 내가 싫거든"
+    },
+    {
+      "startMs": 93120,
+      "endMs": 99540,
+      "translation": "음-음"
+    },
+    {
+      "startMs": 99540,
+      "endMs": 105140,
+      "translation": "널 위해 교회를 지을게"
+    },
+    {
+      "startMs": 105140,
+      "endMs": 110210,
+      "translation": "사람들이 먼 곳에서 찾아올 거야"
+    },
+    {
+      "startMs": 110210,
+      "endMs": 117250,
+      "translation": "자기야, 넌 정말 대단해, 내 전부야"
+    },
+    {
+      "startMs": 117250,
+      "endMs": 128080,
+      "translation": "나한테는, 난 추우니까 더 꼭 안아 줘, 자기야"
+    },
+    {
+      "startMs": 128080,
+      "endMs": 132630,
+      "translation": "네가 어떻게 나를 그렇게 좋아하는지 모르겠어"
+    },
+    {
+      "startMs": 132630,
+      "endMs": 138160,
+      "translation": "난 내가 싫거든"
+    },
+    {
+      "startMs": 138160,
+      "endMs": 143350,
+      "translation": "네가 어떻게 나를 그렇게 좋아하는지 모르겠어"
+    },
+    {
+      "startMs": 143350,
+      "endMs": 148990,
+      "translation": "내가 다른 사람이었으면 좋겠어"
+    },
+    {
+      "startMs": 148990,
+      "endMs": 153920,
+      "translation": "넌 이유가 백만 개나 있다고 하지만"
+    },
+    {
+      "startMs": 153920,
+      "endMs": 159060,
+      "translation": "난 하나도 떠오르지 않아"
+    },
+    {
+      "startMs": 159060,
+      "endMs": 164070,
+      "translation": "네가 어떻게 나를 그렇게 좋아하는지 모르겠어"
+    },
+    {
+      "startMs": 164070,
+      "endMs": 168550,
+      "translation": "난 내가 싫거든"
+    },
+    {
+      "startMs": 168550,
+      "endMs": 183000,
+      "translation": "음-음, 음-음"
+    }
+  ]
+}

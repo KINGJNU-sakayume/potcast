@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 34472601,
+    "durationMs": 210000
+  },
+  "segments": [
+    {
+      "startMs": 30,
+      "endMs": 2850,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 2850,
+      "endMs": 5740,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 5740,
+      "endMs": 8880,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 8880,
+      "endMs": 11330,
+      "translation": "넌 정말 위험해"
+    },
+    {
+      "startMs": 11330,
+      "endMs": 13420,
+      "translation": "넌 정말 위험해"
+    },
+    {
+      "startMs": 13420,
+      "endMs": 15140,
+      "translation": "네가 내 목을 쥐고 있어 (소년은 총이야)"
+    },
+    {
+      "startMs": 15140,
+      "endMs": 17200,
+      "translation": "그래서 다른 녀석들은 우리한테 시시해"
+    },
+    {
+      "startMs": 17200,
+      "endMs": 19490,
+      "translation": "다른 녀석들은 다 지독하게 시시해서"
+    },
+    {
+      "startMs": 19490,
+      "endMs": 21970,
+      "translation": "우린 존중해 주지도 않아"
+    },
+    {
+      "startMs": 21970,
+      "endMs": 24220,
+      "translation": "때가 되면"
+    },
+    {
+      "startMs": 24220,
+      "endMs": 25830,
+      "translation": "때가 되면, 베이비"
+    },
+    {
+      "startMs": 25830,
+      "endMs": 27920,
+      "translation": "때가 되면 (소년은 총이야)"
+    },
+    {
+      "startMs": 27920,
+      "endMs": 30010,
+      "translation": "(볼륨 좀 올려 줘)"
+    },
+    {
+      "startMs": 30010,
+      "endMs": 33590,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 33590,
+      "endMs": 36410,
+      "translation": "후드를 벗어, 왜 얼굴을 숨겨?"
+    },
+    {
+      "startMs": 36410,
+      "endMs": 39430,
+      "translation": "마음을 정해, 얌전히 기다리는 거 지긋지긋해"
+    },
+    {
+      "startMs": 39430,
+      "endMs": 42470,
+      "translation": "넌 왜 나한테 최고지? 나한테 최악이라는 것도 아는데"
+    },
+    {
+      "startMs": 42470,
+      "endMs": 45650,
+      "translation": "소년, 넌 설탕처럼 달콤해, 완전 당뇨야"
+    },
+    {
+      "startMs": 45650,
+      "endMs": 48420,
+      "translation": "스파이디 센스가 날 담장 위에 올려놨어"
+    },
+    {
+      "startMs": 48420,
+      "endMs": 51520,
+      "translation": "긴자에 온 무리, 발렌시아가 여행 가방"
+    },
+    {
+      "startMs": 51520,
+      "endMs": 54580,
+      "translation": "큰 개가 6단 기어로 큰 윌리를 해"
+    },
+    {
+      "startMs": 54580,
+      "endMs": 57590,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 57590,
+      "endMs": 60000,
+      "translation": "넌 정말 위험해"
+    },
+    {
+      "startMs": 60000,
+      "endMs": 62230,
+      "translation": "넌 정말 위험해"
+    },
+    {
+      "startMs": 62230,
+      "endMs": 63960,
+      "translation": "네가 내 목을 쥐고 있어 (소년은 총이야)"
+    },
+    {
+      "startMs": 63960,
+      "endMs": 66260,
+      "translation": "그래서 다른 녀석들은 우리한테 시시해"
+    },
+    {
+      "startMs": 66260,
+      "endMs": 68590,
+      "translation": "다른 녀석들은 다 지독하게 시시해서"
+    },
+    {
+      "startMs": 68590,
+      "endMs": 70920,
+      "translation": "그들은 존중해 주지도 않아"
+    },
+    {
+      "startMs": 70920,
+      "endMs": 73090,
+      "translation": "때가 되면"
+    },
+    {
+      "startMs": 73090,
+      "endMs": 75590,
+      "translation": "때가 되면, 베이비"
+    },
+    {
+      "startMs": 75590,
+      "endMs": 78660,
+      "translation": "(소년은 총이야)"
+    },
+    {
+      "startMs": 78660,
+      "endMs": 79430,
+      "translation": "(봐)"
+    },
+    {
+      "startMs": 79430,
+      "endMs": 82530,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 82530,
+      "endMs": 85440,
+      "translation": "오, 수동 공격적인 거야? 화난 척하는 거야?"
+    },
+    {
+      "startMs": 85440,
+      "endMs": 88670,
+      "translation": "오, 집에 가고 싶어? 좋아, 택시를 불러"
+    },
+    {
+      "startMs": 88670,
+      "endMs": 91750,
+      "translation": "난 안 데려다줄 거야, 널 떨쳐 내는 중이야"
+    },
+    {
+      "startMs": 91750,
+      "endMs": 94690,
+      "translation": "이 파카는 꼼 데 가르송이고, 넌 내가 제일 좋아하는 소년이야"
+    },
+    {
+      "startMs": 94690,
+      "endMs": 97780,
+      "translation": "떠나지 마, 여기 있어, 바로 곁에 있어 줘"
+    },
+    {
+      "startMs": 97780,
+      "endMs": 100430,
+      "translation": "아침 먹으러 오라고 해 놓고 전 애인은 왜 여기 있는 거야?"
+    },
+    {
+      "startMs": 100430,
+      "endMs": 103560,
+      "translation": "내년 이맘때 네가 여전히 신 같은 존재일지 보자"
+    },
+    {
+      "startMs": 103560,
+      "endMs": 106300,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 106300,
+      "endMs": 109370,
+      "translation": "날 쏘지 마 (망했네)"
+    },
+    {
+      "startMs": 109370,
+      "endMs": 112280,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 112280,
+      "endMs": 115510,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 115510,
+      "endMs": 117970,
+      "translation": "넌 정말 위험해"
+    },
+    {
+      "startMs": 117970,
+      "endMs": 120000,
+      "translation": "넌 정말 위험해"
+    },
+    {
+      "startMs": 120000,
+      "endMs": 121950,
+      "translation": "네가 내 목을 쥐고 있어 (소년은 총이야)"
+    },
+    {
+      "startMs": 121950,
+      "endMs": 124240,
+      "translation": "그래서 이게 시시하다는 생각이 들기 시작해"
+    },
+    {
+      "startMs": 124240,
+      "endMs": 128850,
+      "translation": "(글쎄, 난 널 위해 여기 있어)"
+    },
+    {
+      "startMs": 128850,
+      "endMs": 131270,
+      "translation": "때가 되면"
+    },
+    {
+      "startMs": 131270,
+      "endMs": 132780,
+      "translation": "때가 되면, 베이비"
+    },
+    {
+      "startMs": 132780,
+      "endMs": 136840,
+      "translation": "때가 되면 (소년은 총이야)"
+    },
+    {
+      "startMs": 136840,
+      "endMs": 140970,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 140970,
+      "endMs": 148170,
+      "translation": "넌 총이야, 난 네가 늘 내 편이길 바라니까"
+    },
+    {
+      "startMs": 148170,
+      "endMs": 151880,
+      "translation": "넌 날 지켜 줘 (날 쏘지 마)"
+    },
+    {
+      "startMs": 151880,
+      "endMs": 157230,
+      "translation": "잠깐, 잠깐, 상황에 따라, 알잖아 (언제나)"
+    },
+    {
+      "startMs": 157230,
+      "endMs": 160830,
+      "translation": "넌 내게 위험할 수 있어 (언제나)"
+    },
+    {
+      "startMs": 160830,
+      "endMs": 163790,
+      "translation": "다른 누구에게도"
+    },
+    {
+      "startMs": 163790,
+      "endMs": 166260,
+      "translation": "봐, 사람들이 우리 얘기를 꺼내"
+    },
+    {
+      "startMs": 166260,
+      "endMs": 167720,
+      "translation": "그래, 가끔씩"
+    },
+    {
+      "startMs": 167720,
+      "endMs": 170870,
+      "translation": "사람들이 뭐라 하든 상관없어, 난 널 10점 만점으로 봐"
+    },
+    {
+      "startMs": 170870,
+      "endMs": 173720,
+      "translation": "여기서 끝낼게, 우린 친구로 남기자"
+    },
+    {
+      "startMs": 173720,
+      "endMs": 178460,
+      "translation": "아이러니하게도 난 널 다시 보고 싶지 않아"
+    },
+    {
+      "startMs": 178460,
+      "endMs": 181500,
+      "translation": "나한테서 떨어져 있어"
+    },
+    {
+      "startMs": 181500,
+      "endMs": 184570,
+      "translation": "나한테서 떨어져 있어"
+    },
+    {
+      "startMs": 184570,
+      "endMs": 186430,
+      "translation": "나한테서 떨어져 있어"
+    },
+    {
+      "startMs": 186430,
+      "endMs": 190060,
+      "translation": "같은 말 반복 안 해, 나한테서 떨어져 있어"
+    },
+    {
+      "startMs": 190060,
+      "endMs": 194360,
+      "translation": "(넌 가벼운 인사로 시작했지)"
+    },
+    {
+      "startMs": 194360,
+      "endMs": 198010,
+      "translation": "(소년은 총이야)"
+    },
+    {
+      "startMs": 198010,
+      "endMs": 202290,
+      "translation": "날 쏘지 마"
+    },
+    {
+      "startMs": 202290,
+      "endMs": 206430,
+      "translation": "(넌 가벼운 인사로 시작했지)"
+    },
+    {
+      "startMs": 206430,
+      "endMs": 210000,
+      "translation": "(소년은 총이야)"
+    }
+  ]
+}

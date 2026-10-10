@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1191569,
+    "durationMs": 44000
+  },
+  "segments": [
+    {
+      "startMs": 690,
+      "endMs": 2660,
+      "translation": "계속 가는 거야, 친구, 책을 계속 굴려"
+    },
+    {
+      "startMs": 2660,
+      "endMs": 5740,
+      "translation": "그 책들을 집어 들고 읽는 거야"
+    },
+    {
+      "startMs": 5740,
+      "endMs": 7300,
+      "translation": "기억은 안 나도 그냥 굴러가는 거야"
+    },
+    {
+      "startMs": 7300,
+      "endMs": 9650,
+      "translation": "전문학사를 따, 좋아"
+    },
+    {
+      "startMs": 9650,
+      "endMs": 11620,
+      "translation": "그다음엔 학사, 그다음엔 석사"
+    },
+    {
+      "startMs": 11620,
+      "endMs": 13500,
+      "translation": "그다음엔 석사의 석사"
+    },
+    {
+      "startMs": 13500,
+      "endMs": 14760,
+      "translation": "그다음엔 박사"
+    },
+    {
+      "startMs": 14760,
+      "endMs": 17130,
+      "translation": "계속 가, 친구, 다들 그만두라고 할 때"
+    },
+    {
+      "startMs": 17130,
+      "endMs": 19330,
+      "translation": "그 학위들을 보여 줘"
+    },
+    {
+      "startMs": 19330,
+      "endMs": 22650,
+      "translation": "다들 \"야, 넌 일도 안 하잖아, 돈도 못 벌잖아\" 할 때"
+    },
+    {
+      "startMs": 22650,
+      "endMs": 25640,
+      "translation": "이렇게 말해, \"내 학위를 보고 내 인생을 봐"
+    },
+    {
+      "startMs": 25640,
+      "endMs": 28480,
+      "translation": "그래, 나 쉰두 살이야, 그래서 뭐?\""
+    },
+    {
+      "startMs": 28480,
+      "endMs": 29040,
+      "translation": "미워하려면 실컷 미워해"
+    },
+    {
+      "startMs": 29040,
+      "endMs": 32150,
+      "translation": "그래도 난 똑똑해, 엄청 똑똑하고, 학교에 다녀"
+    },
+    {
+      "startMs": 32150,
+      "endMs": 33800,
+      "translation": "이 사람들은 밖에서, 흠"
+    },
+    {
+      "startMs": 33800,
+      "endMs": 36590,
+      "translation": "온갖 방법으로 돈을 버는데, 난 똑똑해지려고 내 돈을 써"
+    },
+    {
+      "startMs": 36590,
+      "endMs": 37450,
+      "translation": "왜냐고?"
+    },
+    {
+      "startMs": 37450,
+      "endMs": 39140,
+      "translation": "왜냐면 내가 죽을 때, 친구"
+    },
+    {
+      "startMs": 39140,
+      "endMs": 41110,
+      "translation": "뭐가 날 따뜻하게 해 줄 것 같아?"
+    },
+    {
+      "startMs": 41110,
+      "endMs": 44000,
+      "translation": "맞아, 그 학위들이지"
+    }
+  ]
+}

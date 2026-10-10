@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 480622,
+    "durationMs": 211000
+  },
+  "segments": [
+    {
+      "startMs": 70,
+      "endMs": 3660,
+      "translation": "우-우, 와"
+    },
+    {
+      "startMs": 3660,
+      "endMs": 7570,
+      "translation": "아, 그래-그래 (와)"
+    },
+    {
+      "startMs": 7570,
+      "endMs": 11060,
+      "translation": "그래-그래, 그래-그래, 그래-그래"
+    },
+    {
+      "startMs": 11060,
+      "endMs": 13020,
+      "translation": "런던 온 다 트랙이야"
+    },
+    {
+      "startMs": 13020,
+      "endMs": 14810,
+      "translation": "시속 120마일, 잡을 테면 잡아 봐"
+    },
+    {
+      "startMs": 14810,
+      "endMs": 16350,
+      "translation": "배 속엔 맥주 40온스짜리들"
+    },
+    {
+      "startMs": 16350,
+      "endMs": 19650,
+      "translation": "운전하면 안 되는데, 취했어 (끽, 그래, 그래)"
+    },
+    {
+      "startMs": 19650,
+      "endMs": 21380,
+      "translation": "너바나 티셔츠를 입어, 내가 제일 좋아하는 밴드"
+    },
+    {
+      "startMs": 21380,
+      "endMs": 22950,
+      "translation": "젠장, 그 여자 이름을 까먹었어"
+    },
+    {
+      "startMs": 22950,
+      "endMs": 26490,
+      "translation": "조수석에서 헤드뱅잉을 해 (그래, 그래)"
+    },
+    {
+      "startMs": 26490,
+      "endMs": 30320,
+      "translation": "그래, 돈 세는 기계 소리가 기관총 같아, 기관총 (기관총, 기관총)"
+    },
+    {
+      "startMs": 30320,
+      "endMs": 33680,
+      "translation": "스피커가 쿵쿵 울려, 너희 동네를 박살 내 (동네를 박살 내)"
+    },
+    {
+      "startMs": 33680,
+      "endMs": 36830,
+      "translation": "예전엔 그를 비웃었는데, 이젠 맞춤 벤틀리 시안을 봐 (시안)"
+    },
+    {
+      "startMs": 36830,
+      "endMs": 38980,
+      "translation": "끝내주는 신곡, 감방에서 걸려 온 전화"
+    },
+    {
+      "startMs": 38980,
+      "endMs": 42150,
+      "translation": "에코를 산다면서 왜 거짓말해? 넌 빈털터리잖아"
+    },
+    {
+      "startMs": 42150,
+      "endMs": 45430,
+      "translation": "가방엔 9밀리 권총, 담배처럼 연기를 먹여 줄게"
+    },
+    {
+      "startMs": 45430,
+      "endMs": 48770,
+      "translation": "계속 내 옷자락에 매달려, 네 신곡은 웃음거리야"
+    },
+    {
+      "startMs": 48770,
+      "endMs": 52470,
+      "translation": "왜 내 플로를 베껴? 뭐가 되고 싶은 건데, 포스트?"
+    },
+    {
+      "startMs": 52470,
+      "endMs": 55650,
+      "translation": "우, 자기야, 우, 자기야, 돈이 계속 불어나"
+    },
+    {
+      "startMs": 55650,
+      "endMs": 58960,
+      "translation": "우, 날 엉망으로 만들어 줘, 로맨스 같은 건 필요 없어"
+    },
+    {
+      "startMs": 58960,
+      "endMs": 62360,
+      "translation": "우, 자기야, 저 녀석들이 힐끔거리는 게 보여"
+    },
+    {
+      "startMs": 62360,
+      "endMs": 65650,
+      "translation": "내 차가 멈춰도 바퀴 휠은 계속 돌아가"
+    },
+    {
+      "startMs": 65650,
+      "endMs": 68970,
+      "translation": "우, 자기야, 우, 자기야, 돈이 계속 불어나"
+    },
+    {
+      "startMs": 68970,
+      "endMs": 72220,
+      "translation": "우, 날 엉망으로 만들어 줘, 로맨스 같은 건 필요 없어"
+    },
+    {
+      "startMs": 72220,
+      "endMs": 75590,
+      "translation": "우, 자기야, 저 녀석들이 힐끔거리는 게 보여"
+    },
+    {
+      "startMs": 75590,
+      "endMs": 79630,
+      "translation": "내 차가 멈춰도 바퀴 휠은 계속 돌아가"
+    },
+    {
+      "startMs": 79630,
+      "endMs": 82950,
+      "translation": "그 여자는 쇼핑몰에서 쇼핑하던 애였어 (우)"
+    },
+    {
+      "startMs": 82950,
+      "endMs": 86340,
+      "translation": "그 아가씨한테 돈 쓰는 법을 가르쳐 줄게"
+    },
+    {
+      "startMs": 86340,
+      "endMs": 89680,
+      "translation": "로데오 거리에 가서 4만 달러쯤 썼어 (와)"
+    },
+    {
+      "startMs": 89680,
+      "endMs": 92230,
+      "translation": "구찌 양말 4백 켤레"
+    },
+    {
+      "startMs": 92230,
+      "endMs": 95520,
+      "translation": "친구는 다 잃었고 적은 잔뜩 생겼어"
+    },
+    {
+      "startMs": 95520,
+      "endMs": 98940,
+      "translation": "수백만 달러를 벌었고 큰일도 많이 벌였어"
+    },
+    {
+      "startMs": 98940,
+      "endMs": 102200,
+      "translation": "금고를 열어, 난 형제들이랑만 있어"
+    },
+    {
+      "startMs": 102200,
+      "endMs": 105480,
+      "translation": "458을 뽑았어, 25만 달러 들었지 (그래)"
+    },
+    {
+      "startMs": 105480,
+      "endMs": 108570,
+      "translation": "이봐, 내 다이아몬드 좀 봐 (다이아)"
+    },
+    {
+      "startMs": 108570,
+      "endMs": 112020,
+      "translation": "네 진짜 여자 친구랑 두 번이나 잤어 (두 번이나)"
+    },
+    {
+      "startMs": 112020,
+      "endMs": 115330,
+      "translation": "충고 하나 해 줄게 (충고 하나)"
+    },
+    {
+      "startMs": 115330,
+      "endMs": 118420,
+      "translation": "그 여자랑 헤어져 (헤어져)"
+    },
+    {
+      "startMs": 118420,
+      "endMs": 121510,
+      "translation": "우, 자기야, 우, 자기야, 돈이 계속 불어나"
+    },
+    {
+      "startMs": 121510,
+      "endMs": 124890,
+      "translation": "우, 날 엉망으로 만들어 줘, 로맨스 같은 건 필요 없어"
+    },
+    {
+      "startMs": 124890,
+      "endMs": 128110,
+      "translation": "우, 자기야, 저 녀석들이 힐끔거리는 게 보여"
+    },
+    {
+      "startMs": 128110,
+      "endMs": 131430,
+      "translation": "내 차가 멈춰도 바퀴 휠은 계속 돌아가"
+    },
+    {
+      "startMs": 131430,
+      "endMs": 134670,
+      "translation": "우, 자기야, 우, 자기야, 돈이 계속 불어나"
+    },
+    {
+      "startMs": 134670,
+      "endMs": 137960,
+      "translation": "우, 날 엉망으로 만들어 줘, 로맨스 같은 건 필요 없어"
+    },
+    {
+      "startMs": 137960,
+      "endMs": 141220,
+      "translation": "우, 자기야, 저 녀석들이 힐끔거리는 게 보여"
+    },
+    {
+      "startMs": 141220,
+      "endMs": 145820,
+      "translation": "내 차가 멈춰도 바퀴 휠은 계속 돌아가"
+    },
+    {
+      "startMs": 145820,
+      "endMs": 148980,
+      "translation": "손목은 차갑게 얼어 있어"
+    },
+    {
+      "startMs": 148980,
+      "endMs": 152490,
+      "translation": "돈 자루가 가득, 골드만삭스처럼"
+    },
+    {
+      "startMs": 152490,
+      "endMs": 155600,
+      "translation": "술집을 통째로 샀어, 로잔처럼"
+    },
+    {
+      "startMs": 155600,
+      "endMs": 157630,
+      "translation": "농담 아니야, 무표정으로"
+    },
+    {
+      "startMs": 157630,
+      "endMs": 160960,
+      "translation": "우, 자기야, 우, 자기야, 돈이 계속 불어나"
+    },
+    {
+      "startMs": 160960,
+      "endMs": 164260,
+      "translation": "우, 날 엉망으로 만들어 줘, 로맨스 같은 건 필요 없어"
+    },
+    {
+      "startMs": 164260,
+      "endMs": 167590,
+      "translation": "우, 자기야, 저 녀석들이 힐끔거리는 게 보여"
+    },
+    {
+      "startMs": 167590,
+      "endMs": 170820,
+      "translation": "내 차가 멈춰도 바퀴 휠은 계속 돌아가"
+    },
+    {
+      "startMs": 170820,
+      "endMs": 174180,
+      "translation": "우, 자기야, 우, 자기야, 돈이 계속 불어나"
+    },
+    {
+      "startMs": 174180,
+      "endMs": 177480,
+      "translation": "우, 날 엉망으로 만들어 줘, 로맨스 같은 건 필요 없어"
+    },
+    {
+      "startMs": 177480,
+      "endMs": 180760,
+      "translation": "우, 자기야, 저 녀석들이 힐끔거리는 게 보여"
+    },
+    {
+      "startMs": 180760,
+      "endMs": 184630,
+      "translation": "내 차가 멈춰도 바퀴 휠은 계속 돌아가"
+    },
+    {
+      "startMs": 184630,
+      "endMs": 187230,
+      "translation": "우 (우-우)"
+    },
+    {
+      "startMs": 187230,
+      "endMs": 190440,
+      "translation": "그래, 하하 (우-우)"
+    },
+    {
+      "startMs": 190440,
+      "endMs": 193370,
+      "translation": "우 (우-우)"
+    },
+    {
+      "startMs": 193370,
+      "endMs": 195450,
+      "translation": "(우-우)"
+    },
+    {
+      "startMs": 195450,
+      "endMs": 211000,
+      "translation": "런던 온 다 트랙이야"
+    }
+  ]
+}

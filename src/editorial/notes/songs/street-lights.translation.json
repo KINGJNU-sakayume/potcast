@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 581679,
+    "durationMs": 190000
+  },
+  "segments": [
+    {
+      "startMs": 4340,
+      "endMs": 8140,
+      "translation": "알려 줘"
+    },
+    {
+      "startMs": 8140,
+      "endMs": 13630,
+      "translation": "나 아직 자랄 시간이 있을까?"
+    },
+    {
+      "startMs": 13630,
+      "endMs": 20300,
+      "translation": "모든 게 늘 돌에 새긴 듯 정해진 건 아니잖아"
+    },
+    {
+      "startMs": 20300,
+      "endMs": 24590,
+      "translation": "그건 다들 아는 거니까, 알려 줘"
+    },
+    {
+      "startMs": 24590,
+      "endMs": 26590,
+      "translation": "알려"
+    },
+    {
+      "startMs": 26590,
+      "endMs": 33160,
+      "translation": "가로등 불빛이 빛나는 게 꼭"
+    },
+    {
+      "startMs": 33160,
+      "endMs": 38660,
+      "translation": "눈앞을 스쳐 가는 순간들 같아"
+    },
+    {
+      "startMs": 38660,
+      "endMs": 44530,
+      "translation": "그래서 택시에 올라타 요금을 냈어"
+    },
+    {
+      "startMs": 44530,
+      "endMs": 50340,
+      "translation": "봐, 목적지는 아는데, 난 아직 거기 없어"
+    },
+    {
+      "startMs": 50340,
+      "endMs": 56150,
+      "translation": "거리마다 빛나는 불빛이 꼭"
+    },
+    {
+      "startMs": 56150,
+      "endMs": 61630,
+      "translation": "눈앞을 스쳐 가는 순간들 같아"
+    },
+    {
+      "startMs": 61630,
+      "endMs": 67570,
+      "translation": "그래서 택시에 올라타 요금을 냈어"
+    },
+    {
+      "startMs": 67570,
+      "endMs": 73380,
+      "translation": "봐, 목적지는 아는데, 난 아직 거기 없어"
+    },
+    {
+      "startMs": 73380,
+      "endMs": 78900,
+      "translation": "거리에서"
+    },
+    {
+      "startMs": 78900,
+      "endMs": 82740,
+      "translation": "거리에서"
+    },
+    {
+      "startMs": 82740,
+      "endMs": 88600,
+      "translation": "난 아직 거기 없어, 거리에서"
+    },
+    {
+      "startMs": 88600,
+      "endMs": 91670,
+      "translation": "난 아직 거기 없어"
+    },
+    {
+      "startMs": 91670,
+      "endMs": 95560,
+      "translation": "인생은 그냥 공평하지 않아"
+    },
+    {
+      "startMs": 95560,
+      "endMs": 101880,
+      "translation": "가로등 불빛이 빛나는 게 꼭"
+    },
+    {
+      "startMs": 101880,
+      "endMs": 107770,
+      "translation": "눈앞을 스쳐 가는 순간들 같아"
+    },
+    {
+      "startMs": 107770,
+      "endMs": 113330,
+      "translation": "그래서 택시에 올라타 요금을 냈어"
+    },
+    {
+      "startMs": 113330,
+      "endMs": 119000,
+      "translation": "봐, 목적지는 아는데, 난 아직 거기 없어"
+    },
+    {
+      "startMs": 119000,
+      "endMs": 124940,
+      "translation": "거리마다 빛나는 불빛이 꼭"
+    },
+    {
+      "startMs": 124940,
+      "endMs": 130400,
+      "translation": "눈앞을 스쳐 가는 순간들 같아"
+    },
+    {
+      "startMs": 130400,
+      "endMs": 136220,
+      "translation": "그래서 택시에 올라타 요금을 냈어"
+    },
+    {
+      "startMs": 136220,
+      "endMs": 142130,
+      "translation": "봐, 목적지는 아는데, 난 아직 거기 없어"
+    },
+    {
+      "startMs": 142130,
+      "endMs": 147750,
+      "translation": "거리마다 빛나는 불빛이 꼭"
+    },
+    {
+      "startMs": 147750,
+      "endMs": 153540,
+      "translation": "눈앞을 스쳐 가는 순간들 같아"
+    },
+    {
+      "startMs": 153540,
+      "endMs": 159010,
+      "translation": "그래서 택시에 올라타 요금을 냈어"
+    },
+    {
+      "startMs": 159010,
+      "endMs": 165060,
+      "translation": "봐, 목적지는 아는데, 난 아직 거기 없어"
+    },
+    {
+      "startMs": 165060,
+      "endMs": 170780,
+      "translation": "거리에서"
+    },
+    {
+      "startMs": 170780,
+      "endMs": 174660,
+      "translation": "거리에서"
+    },
+    {
+      "startMs": 174660,
+      "endMs": 180290,
+      "translation": "난 아직 거기 없어, 거리에서"
+    },
+    {
+      "startMs": 180290,
+      "endMs": 183370,
+      "translation": "난 아직 거기 없어"
+    },
+    {
+      "startMs": 183370,
+      "endMs": 186450,
+      "translation": "인생은 그냥 공평하지 않아"
+    },
+    {
+      "startMs": 186450,
+      "endMs": 190000,
+      "translation": "인생은 그냥 공평하지 않아"
+    }
+  ]
+}

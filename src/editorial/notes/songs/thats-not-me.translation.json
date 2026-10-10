@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 263695,
+    "durationMs": 151000
+  },
+  "segments": [
+    {
+      "startMs": 240,
+      "endMs": 4210,
+      "translation": "혼자서도 해낼 수 있다는 걸 증명해야 했어"
+    },
+    {
+      "startMs": 4210,
+      "endMs": 9060,
+      "translation": "하지만 그건 내가 아니야"
+    },
+    {
+      "startMs": 9060,
+      "endMs": 13210,
+      "translation": "내가 얼마나 독립적으로 컸는지 보여 주고 싶었어"
+    },
+    {
+      "startMs": 13210,
+      "endMs": 17080,
+      "translation": "하지만 그건 내가 아니야"
+    },
+    {
+      "startMs": 17080,
+      "endMs": 21230,
+      "translation": "세상 사람들 눈에 크게 보이려고 애쓸 수도 있겠지"
+    },
+    {
+      "startMs": 21230,
+      "endMs": 33780,
+      "translation": "내게 중요한 건 단 한 사람에게 내가 어떤 사람이 될 수 있느냐야"
+    },
+    {
+      "startMs": 33780,
+      "endMs": 42040,
+      "translation": "조금 겁이 나, 오랫동안 집에 가지 않았으니까"
+    },
+    {
+      "startMs": 42040,
+      "endMs": 52510,
+      "translation": "넌 내 사랑이 필요했는데, 난 하필 그때 떠났지"
+    },
+    {
+      "startMs": 52510,
+      "endMs": 59960,
+      "translation": "부모님께 편지로 요즘 뭘 하는지 말씀드리고는, 그건 내가 아니라고 했어"
+    },
+    {
+      "startMs": 59960,
+      "endMs": 68720,
+      "translation": "온갖 변화를 겪고 나서 나를 돌아보고 말했어, 그건 내가 아니라고"
+    },
+    {
+      "startMs": 68720,
+      "endMs": 73270,
+      "translation": "내 방과 내가 알던 곳들이 그리워"
+    },
+    {
+      "startMs": 73270,
+      "endMs": 85820,
+      "translation": "그리고 밤마다 혼자 누워 꿈을 꿀 거야"
+    },
+    {
+      "startMs": 85820,
+      "endMs": 87490,
+      "translation": "한때 꿈이 있었어"
+    },
+    {
+      "startMs": 87490,
+      "endMs": 94030,
+      "translation": "그래서 짐을 싸서 도시로 떠났지"
+    },
+    {
+      "startMs": 94030,
+      "endMs": 101920,
+      "translation": "그런데 곧 알았어, 혼자 사는 삶이 그리 근사하지 않다는 걸"
+    },
+    {
+      "startMs": 101920,
+      "endMs": 112370,
+      "translation": "떠났던 게 다행이야, 이제 우리가 준비됐다는 걸 훨씬 더 확신하니까"
+    },
+    {
+      "startMs": 112370,
+      "endMs": 114690,
+      "translation": "한때 꿈이 있었어"
+    },
+    {
+      "startMs": 114690,
+      "endMs": 120600,
+      "translation": "그래서 짐을 싸서 도시로 떠났지"
+    },
+    {
+      "startMs": 120600,
+      "endMs": 128810,
+      "translation": "그런데 곧 알았어, 혼자 사는 삶이 그리 근사하지 않다는 걸"
+    },
+    {
+      "startMs": 128810,
+      "endMs": 130620,
+      "translation": "한때 꿈이 있었어"
+    },
+    {
+      "startMs": 130620,
+      "endMs": 136920,
+      "translation": "그래서 짐을 싸서 도시로 떠났지"
+    },
+    {
+      "startMs": 136920,
+      "endMs": 151000,
+      "translation": "그런데 곧 알았어, 혼자 사는 삶이 그리 근사하지 않다는 걸"
+    }
+  ]
+}

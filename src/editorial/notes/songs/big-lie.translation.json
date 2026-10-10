@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 483855,
+    "durationMs": 208000
+  },
+  "segments": [
+    {
+      "startMs": 5710,
+      "endMs": 8280,
+      "translation": "알아, 알아"
+    },
+    {
+      "startMs": 8280,
+      "endMs": 9920,
+      "translation": "알아, 알아"
+    },
+    {
+      "startMs": 9920,
+      "endMs": 11890,
+      "translation": "머스타드가 비트를 맡았지"
+    },
+    {
+      "startMs": 11890,
+      "endMs": 14430,
+      "translation": "돈을 불려, 불려"
+    },
+    {
+      "startMs": 14430,
+      "endMs": 17520,
+      "translation": "세어 봐, 세어 봐"
+    },
+    {
+      "startMs": 17520,
+      "endMs": 20270,
+      "translation": "내 차엔 95년식 감성"
+    },
+    {
+      "startMs": 20270,
+      "endMs": 23090,
+      "translation": "핏속엔 니코틴"
+    },
+    {
+      "startMs": 23090,
+      "endMs": 25000,
+      "translation": "가, 불려, 불려"
+    },
+    {
+      "startMs": 25000,
+      "endMs": 26210,
+      "translation": "세어 봐, 세어 봐"
+    },
+    {
+      "startMs": 26210,
+      "endMs": 28720,
+      "translation": "가, 뭔가 보여 줘 봐, 에이, 에이"
+    },
+    {
+      "startMs": 28720,
+      "endMs": 30520,
+      "translation": "가, 허세 떨어 봐"
+    },
+    {
+      "startMs": 30520,
+      "endMs": 31800,
+      "translation": "계속 짖어 봐, 꼬맹아"
+    },
+    {
+      "startMs": 31800,
+      "endMs": 33600,
+      "translation": "여자들은 신나게 놀고 싶어 하지, 젠장"
+    },
+    {
+      "startMs": 33600,
+      "endMs": 35970,
+      "translation": "발망을 입고 로제를 따"
+    },
+    {
+      "startMs": 35970,
+      "endMs": 37560,
+      "translation": "계속 전화가 오지만"
+    },
+    {
+      "startMs": 37560,
+      "endMs": 39740,
+      "translation": "내가 휴대폰을 안 받는 거 다들 알아"
+    },
+    {
+      "startMs": 39740,
+      "endMs": 41810,
+      "translation": "아니, 네 엄마는 몰라"
+    },
+    {
+      "startMs": 41810,
+      "endMs": 43170,
+      "translation": "난 돈이 넘쳐"
+    },
+    {
+      "startMs": 43170,
+      "endMs": 45810,
+      "translation": "있잖아, 난 나한테만 관심 있어"
+    },
+    {
+      "startMs": 45810,
+      "endMs": 48320,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 48320,
+      "endMs": 51040,
+      "translation": "내가 나타나면 이 여자한테 내 번호를 줘"
+    },
+    {
+      "startMs": 51040,
+      "endMs": 56640,
+      "translation": "내 몫은 내가 챙길 거 알잖아, 그래, 그래"
+    },
+    {
+      "startMs": 56640,
+      "endMs": 59710,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 59710,
+      "endMs": 62550,
+      "translation": "내가 나타나면 이 여자한테 내 번호를 줘"
+    },
+    {
+      "startMs": 62550,
+      "endMs": 67980,
+      "translation": "내 몫은 내가 챙길 거 알잖아, 그래, 그래"
+    },
+    {
+      "startMs": 67980,
+      "endMs": 71030,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 71030,
+      "endMs": 73860,
+      "translation": "없는 걸 가졌다고 하지"
+    },
+    {
+      "startMs": 73860,
+      "endMs": 79550,
+      "translation": "그 말 백 번은 들었어, 그래, 그래"
+    },
+    {
+      "startMs": 79550,
+      "endMs": 82390,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 82390,
+      "endMs": 85320,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 85320,
+      "endMs": 88060,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 88060,
+      "endMs": 89770,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 89770,
+      "endMs": 92150,
+      "translation": "오, 차는 발레파킹 맡겨"
+    },
+    {
+      "startMs": 92150,
+      "endMs": 94860,
+      "translation": "캐딜락, 76년식"
+    },
+    {
+      "startMs": 94860,
+      "endMs": 97600,
+      "translation": "내 여자는 다른 여자랑 한판 붙을걸"
+    },
+    {
+      "startMs": 97600,
+      "endMs": 100470,
+      "translation": "다들 그 일엔 끼고 싶어 하지 않아"
+    },
+    {
+      "startMs": 100470,
+      "endMs": 103430,
+      "translation": "돈이 튀어 오르고, 페이드 머리로 잘나가는 게 자랑스러워"
+    },
+    {
+      "startMs": 103430,
+      "endMs": 106300,
+      "translation": "경기 못 봤어? 다시 보기로 보면 돼"
+    },
+    {
+      "startMs": 106300,
+      "endMs": 109070,
+      "translation": "지붕 내리고 네 파티에 나타나"
+    },
+    {
+      "startMs": 109070,
+      "endMs": 112650,
+      "translation": "버드와이저 하나 집어서 너한테 뚜껑 따고 부어 버려"
+    },
+    {
+      "startMs": 112650,
+      "endMs": 115920,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 115920,
+      "endMs": 119000,
+      "translation": "내가 나타나면 이 자리가 달아오르지"
+    },
+    {
+      "startMs": 119000,
+      "endMs": 123950,
+      "translation": "내 몫은 내가 챙길 거 알잖아, 그래, 그래"
+    },
+    {
+      "startMs": 123950,
+      "endMs": 127010,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 127010,
+      "endMs": 129880,
+      "translation": "내가 나타나면 이 자리가 달아오르지"
+    },
+    {
+      "startMs": 129880,
+      "endMs": 135320,
+      "translation": "내 몫은 내가 챙길 거 알잖아, 그래, 그래"
+    },
+    {
+      "startMs": 135320,
+      "endMs": 138360,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 138360,
+      "endMs": 141180,
+      "translation": "없는 걸 가졌다고 하지"
+    },
+    {
+      "startMs": 141180,
+      "endMs": 146500,
+      "translation": "그 말 백 번은 들었어, 그래, 그래"
+    },
+    {
+      "startMs": 146500,
+      "endMs": 149770,
+      "translation": "그리고 우리가 누군지 알아, 그래"
+    },
+    {
+      "startMs": 149770,
+      "endMs": 152400,
+      "translation": "그리고 우리가 잘나가는 것도 알아"
+    },
+    {
+      "startMs": 152400,
+      "endMs": 154930,
+      "translation": "네가 이 돈을 벌고 싶을 때"
+    },
+    {
+      "startMs": 154930,
+      "endMs": 158010,
+      "translation": "네 여자는 관심 없어, 그것만 알아 둬"
+    },
+    {
+      "startMs": 158010,
+      "endMs": 160920,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 160920,
+      "endMs": 163680,
+      "translation": "내가 나타나면 이 자리가 달아오르지"
+    },
+    {
+      "startMs": 163680,
+      "endMs": 168800,
+      "translation": "내 몫은 내가 챙길 거 알잖아, 그래, 그래"
+    },
+    {
+      "startMs": 168800,
+      "endMs": 172050,
+      "translation": "네가 과시한다고? 그건 새빨간 거짓말이야"
+    },
+    {
+      "startMs": 172050,
+      "endMs": 174850,
+      "translation": "없는 걸 가졌다고 하지"
+    },
+    {
+      "startMs": 174850,
+      "endMs": 180050,
+      "translation": "그 말 백 번은 들었어, 그래, 그래"
+    },
+    {
+      "startMs": 180050,
+      "endMs": 183150,
+      "translation": "그리고 우리가 누군지 알아, 그래"
+    },
+    {
+      "startMs": 183150,
+      "endMs": 185980,
+      "translation": "그리고 우리가 잘나가는 것도 알아"
+    },
+    {
+      "startMs": 185980,
+      "endMs": 188520,
+      "translation": "네가 이 돈을 벌고 싶을 때"
+    },
+    {
+      "startMs": 188520,
+      "endMs": 191420,
+      "translation": "네 여자는 관심 없어, 그것만 알아 둬"
+    },
+    {
+      "startMs": 191420,
+      "endMs": 193430,
+      "translation": "알아, 알아"
+    },
+    {
+      "startMs": 193430,
+      "endMs": 196280,
+      "translation": "알아, 알아"
+    },
+    {
+      "startMs": 196280,
+      "endMs": 199230,
+      "translation": "알아, 알아"
+    },
+    {
+      "startMs": 199230,
+      "endMs": 208000,
+      "translation": "알아, 알아"
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1049182,
+    "durationMs": 212000
+  },
+  "segments": [
+    {
+      "startMs": 10190,
+      "endMs": 12490,
+      "translation": "LA에 너무 오래 있었어"
+    },
+    {
+      "startMs": 12490,
+      "endMs": 14750,
+      "translation": "어딜 가든 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 14750,
+      "endMs": 17140,
+      "translation": "어디 출신인지는 별로 중요하지 않아"
+    },
+    {
+      "startMs": 17140,
+      "endMs": 19310,
+      "translation": "배우 아니면 모델, 전에 다 들어 본 얘기야"
+    },
+    {
+      "startMs": 19310,
+      "endMs": 21630,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 21630,
+      "endMs": 24060,
+      "translation": "(왜 똑같은 여자들만 보이지?) 그래, 그래"
+    },
+    {
+      "startMs": 24060,
+      "endMs": 26550,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 26550,
+      "endMs": 29350,
+      "translation": "(왜 똑같은 여자들만 보이지?) 그래, 그래, 그래"
+    },
+    {
+      "startMs": 29350,
+      "endMs": 31000,
+      "translation": "네 DM에 메시지를 보냈어, 자기야"
+    },
+    {
+      "startMs": 31000,
+      "endMs": 33360,
+      "translation": "넌 그걸 캡처했지, 그래, 날 갖고 놀려고"
+    },
+    {
+      "startMs": 33360,
+      "endMs": 35400,
+      "translation": "분명 네 평판엔 도움이 됐겠지"
+    },
+    {
+      "startMs": 35400,
+      "endMs": 38390,
+      "translation": "난 그냥 넘어갔어, 네 벗은 모습을 보려고"
+    },
+    {
+      "startMs": 38390,
+      "endMs": 40560,
+      "translation": "이런 세상에, 너 타고 온 차 좀 봐"
+    },
+    {
+      "startMs": 40560,
+      "endMs": 43180,
+      "translation": "팔로워는 백만인데 범퍼는 깨져 있네"
+    },
+    {
+      "startMs": 43180,
+      "endMs": 45170,
+      "translation": "네 관심은 뭐야? 목표가 뭔지 말해 봐"
+    },
+    {
+      "startMs": 45170,
+      "endMs": 46220,
+      "translation": "네가 날 좋아하는 건"
+    },
+    {
+      "startMs": 46220,
+      "endMs": 48820,
+      "translation": "내가 하룻밤에 10만 달러를 써서인 거 알아"
+    },
+    {
+      "startMs": 48820,
+      "endMs": 51370,
+      "translation": "하룻밤에 10만 달러를 썼지"
+    },
+    {
+      "startMs": 51370,
+      "endMs": 53960,
+      "translation": "이렇게 살고 싶은 거 알아"
+    },
+    {
+      "startMs": 53960,
+      "endMs": 57340,
+      "translation": "하지만 그런 여자를 아내로 만들 순 없어, 오, 아니"
+    },
+    {
+      "startMs": 57340,
+      "endMs": 60460,
+      "translation": "이름이 뭐야? 아빠는 누구야?"
+    },
+    {
+      "startMs": 60460,
+      "endMs": 65510,
+      "translation": "그 사람도 나만큼 부자야? 나만큼 부자야?"
+    },
+    {
+      "startMs": 65510,
+      "endMs": 67360,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 67360,
+      "endMs": 69890,
+      "translation": "LA에 너무 오래 있었어"
+    },
+    {
+      "startMs": 69890,
+      "endMs": 72560,
+      "translation": "어딜 가든 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 72560,
+      "endMs": 74950,
+      "translation": "어디 출신인지는 별로 중요하지 않아"
+    },
+    {
+      "startMs": 74950,
+      "endMs": 76830,
+      "translation": "배우 아니면 모델, 전에 다 들어 본 얘기야"
+    },
+    {
+      "startMs": 76830,
+      "endMs": 79340,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 79340,
+      "endMs": 81710,
+      "translation": "(왜 똑같은 여자들만 보이지?) 어, 그래, 그래"
+    },
+    {
+      "startMs": 81710,
+      "endMs": 84180,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 84180,
+      "endMs": 87140,
+      "translation": "(제럴드) 그래, 그래, 그래"
+    },
+    {
+      "startMs": 87140,
+      "endMs": 88590,
+      "translation": "어딜 가든 똑같은 여자가 보여"
+    },
+    {
+      "startMs": 88590,
+      "endMs": 90830,
+      "translation": "인스타그램엔 늘 각도 잡은 셀카를 올려"
+    },
+    {
+      "startMs": 90830,
+      "endMs": 93380,
+      "translation": "사진만 그럴듯한 가짜, 천사가 아니라 할리우드 악마"
+    },
+    {
+      "startMs": 93380,
+      "endMs": 95810,
+      "translation": "가방은 샤넬인데 차는 듀랑고야"
+    },
+    {
+      "startMs": 95810,
+      "endMs": 98060,
+      "translation": "그래, 난 돈을 챙기러 가"
+    },
+    {
+      "startMs": 98060,
+      "endMs": 100650,
+      "translation": "깨어 있고 이 판을 잘 알아, 그래서 감사해"
+    },
+    {
+      "startMs": 100650,
+      "endMs": 103160,
+      "translation": "선배들이 날 투어에 데려가 줬어, 그래서 다 갖췄지"
+    },
+    {
+      "startMs": 103160,
+      "endMs": 106020,
+      "translation": "진짜는 진짜를 알아봐, 넌 우리 말을 못 해"
+    },
+    {
+      "startMs": 106020,
+      "endMs": 108150,
+      "translation": "옷은 다 새것, 주름 하나 없어"
+    },
+    {
+      "startMs": 108150,
+      "endMs": 110530,
+      "translation": "너한테 요령을 알려 주고 보석을 둘러"
+    },
+    {
+      "startMs": 110530,
+      "endMs": 112420,
+      "translation": "테이블엔 병들, 내 잔은 가득 차 있어"
+    },
+    {
+      "startMs": 112420,
+      "endMs": 115340,
+      "translation": "난 짐승이 돼, 난 개야, 난 핏불이야"
+    },
+    {
+      "startMs": 115340,
+      "endMs": 117700,
+      "translation": "이 삶이 날 이렇게 만들었어, 되돌아갈 수 없어"
+    },
+    {
+      "startMs": 117700,
+      "endMs": 120000,
+      "translation": "내가 그 여자를 데려가면 넌 절대 못 돌려받아"
+    },
+    {
+      "startMs": 120000,
+      "endMs": 121810,
+      "translation": "그래, 비트가 쿵쿵 울려, 그래, 이거 박수 나오지"
+    },
+    {
+      "startMs": 121810,
+      "endMs": 124920,
+      "translation": "서부에 온 걸 환영해, 여기서 사람들이 부자가 돼, 에이"
+    },
+    {
+      "startMs": 124920,
+      "endMs": 127630,
+      "translation": "LA에 너무 오래 있었어 (G)"
+    },
+    {
+      "startMs": 127630,
+      "endMs": 129500,
+      "translation": "어딜 가든 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 129500,
+      "endMs": 130180,
+      "translation": "(이지야, 알지?)"
+    },
+    {
+      "startMs": 130180,
+      "endMs": 132170,
+      "translation": "어디 출신인지는 별로 중요하지 않아 (이, 이, 이)"
+    },
+    {
+      "startMs": 132170,
+      "endMs": 134850,
+      "translation": "배우 아니면 모델, 전에 다 들어 본 얘기야 (에이)"
+    },
+    {
+      "startMs": 134850,
+      "endMs": 137010,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 137010,
+      "endMs": 138930,
+      "translation": "(웨스트사이드 놈) 어떻게? 그래, 그래"
+    },
+    {
+      "startMs": 138930,
+      "endMs": 141840,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 141840,
+      "endMs": 144460,
+      "translation": "(내 자랑 좀 실컷 할게) 그래, 그래, 그래"
+    },
+    {
+      "startMs": 144460,
+      "endMs": 146690,
+      "translation": "LA에 너무 오래 있었어"
+    },
+    {
+      "startMs": 146690,
+      "endMs": 148880,
+      "translation": "나랑 내 친구들은 같은 여자들이랑 자"
+    },
+    {
+      "startMs": 148880,
+      "endMs": 151000,
+      "translation": "LA, 할리우드, 밸리 쪽 여자들이지"
+    },
+    {
+      "startMs": 151000,
+      "endMs": 153790,
+      "translation": "내가 잘하냐고? 다들 알아"
+    },
+    {
+      "startMs": 153790,
+      "endMs": 156560,
+      "translation": "그래, 그래, 상관없어, 내려가, 자기야, 넌 막 나가잖아"
+    },
+    {
+      "startMs": 156560,
+      "endMs": 158040,
+      "translation": "난 다 알고 있어, 자기야 (그래)"
+    },
+    {
+      "startMs": 158040,
+      "endMs": 160490,
+      "translation": "소문이 돌아, 넌 온 동네 남자랑 다 놀았다며, 자기야"
+    },
+    {
+      "startMs": 160490,
+      "endMs": 161100,
+      "translation": "모타운처럼 형제들을 위해 하려는 거야, 자기야"
+    },
+    {
+      "startMs": 161100,
+      "endMs": 163430,
+      "translation": "(기록으로 남기자면)"
+    },
+    {
+      "startMs": 163430,
+      "endMs": 165800,
+      "translation": "그 여자는 LA 레이커스 선수랑 잤어, 기록으로 남기자면"
+    },
+    {
+      "startMs": 165800,
+      "endMs": 168060,
+      "translation": "다저스 야구 선수랑도 잤어, 기록으로 남기자면"
+    },
+    {
+      "startMs": 168060,
+      "endMs": 170590,
+      "translation": "우리 음반사 대표랑도 잤어 (우)"
+    },
+    {
+      "startMs": 170590,
+      "endMs": 172270,
+      "translation": "그 여자가 어떻게 그렇게 잘나가는 것 같아?"
+    },
+    {
+      "startMs": 172270,
+      "endMs": 175590,
+      "translation": "아, 젠장, 아, 젠장, 그래도 그 여자는 할 마음이 있어"
+    },
+    {
+      "startMs": 175590,
+      "endMs": 177640,
+      "translation": "온통 명품에 벤츠 트럭"
+    },
+    {
+      "startMs": 177640,
+      "endMs": 180500,
+      "translation": "네 친구랑 같이 나타났네, 저 여자 누구야?"
+    },
+    {
+      "startMs": 180500,
+      "endMs": 182610,
+      "translation": "아, 됐어, 내 친구랑 잤구나"
+    },
+    {
+      "startMs": 182610,
+      "endMs": 185290,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 185290,
+      "endMs": 187110,
+      "translation": "(아, 됐어, 내 친구랑 잤구나)"
+    },
+    {
+      "startMs": 187110,
+      "endMs": 189620,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 189620,
+      "endMs": 192100,
+      "translation": "(하하, 됐어, 내 친구랑 잤구나)"
+    },
+    {
+      "startMs": 192100,
+      "endMs": 194430,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 194430,
+      "endMs": 196650,
+      "translation": "(왜 똑같은 여자들만 보이지?) 그래, 그래, 그래"
+    },
+    {
+      "startMs": 196650,
+      "endMs": 198610,
+      "translation": "인구가 4백만인데 왜 똑같은 여자들만 보이지?"
+    },
+    {
+      "startMs": 198610,
+      "endMs": 212000,
+      "translation": "(왜 똑같은 여자들만 보이지?) 그래, 그래, 그래"
+    }
+  ]
+}

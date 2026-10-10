@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 580655,
+    "durationMs": 31000
+  },
+  "segments": [
+    {
+      "startMs": 450,
+      "endMs": 2530,
+      "translation": "우린 브로크, 브로크, 브로크 파이 브로크"
+    },
+    {
+      "startMs": 2530,
+      "endMs": 3850,
+      "translation": "(우린 가진 게 없어)"
+    },
+    {
+      "startMs": 3850,
+      "endMs": 5740,
+      "translation": "브로크, 브로크, 브로크 파이 브로크"
+    },
+    {
+      "startMs": 5740,
+      "endMs": 7100,
+      "translation": "(우린 가진 게 없어)"
+    },
+    {
+      "startMs": 7100,
+      "endMs": 8860,
+      "translation": "돈은 한 푼도 안 써"
+    },
+    {
+      "startMs": 8860,
+      "endMs": 10470,
+      "translation": "옷도 없고"
+    },
+    {
+      "startMs": 10470,
+      "endMs": 11910,
+      "translation": "차도 없고"
+    },
+    {
+      "startMs": 11910,
+      "endMs": 13280,
+      "translation": "여자도 없어"
+    },
+    {
+      "startMs": 13280,
+      "endMs": 15250,
+      "translation": "우린 브로크, 브로크, 브로크 파이 브로크"
+    },
+    {
+      "startMs": 15250,
+      "endMs": 16310,
+      "translation": "(우린 가진 게 없어)"
+    },
+    {
+      "startMs": 16310,
+      "endMs": 18430,
+      "translation": "브로크, 브로크, 브로크 파이 브로크"
+    },
+    {
+      "startMs": 18430,
+      "endMs": 19610,
+      "translation": "(우린 가진 게 없어)"
+    },
+    {
+      "startMs": 19610,
+      "endMs": 21270,
+      "translation": "돈도 없고 (돈도 없고)"
+    },
+    {
+      "startMs": 21270,
+      "endMs": 22790,
+      "translation": "옷도 없고 (옷도 없고)"
+    },
+    {
+      "startMs": 22790,
+      "endMs": 24190,
+      "translation": "차도 없고 (차도 없고)"
+    },
+    {
+      "startMs": 24190,
+      "endMs": 25790,
+      "translation": "여자도 못 만나"
+    },
+    {
+      "startMs": 25790,
+      "endMs": 28120,
+      "translation": "우린 브로크, 브로크, 브로크, 브로크, 브로크"
+    },
+    {
+      "startMs": 28120,
+      "endMs": 28930,
+      "translation": "이 녀석들"
+    },
+    {
+      "startMs": 28930,
+      "endMs": 31000,
+      "translation": "브로크, 브로크, 브로크, 브로크, 브로크!"
+    }
+  ]
+}

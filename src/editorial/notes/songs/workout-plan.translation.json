@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 585987,
+    "durationMs": 46000
+  },
+  "segments": [
+    {
+      "startMs": 80,
+      "endMs": 1470,
+      "translation": "어머, 얘, 잘 지냈어?"
+    },
+    {
+      "startMs": 1470,
+      "endMs": 2760,
+      "translation": "안녕, 얘"
+    },
+    {
+      "startMs": 2760,
+      "endMs": 3390,
+      "translation": "어머, 어떻게 지내?"
+    },
+    {
+      "startMs": 3390,
+      "endMs": 5330,
+      "translation": "있잖아, 나 드디어 정신 차렸어"
+    },
+    {
+      "startMs": 5330,
+      "endMs": 7780,
+      "translation": "그 운동법 계속 보고 있거든!"
+    },
+    {
+      "startMs": 7780,
+      "endMs": 8760,
+      "translation": "그러게, 너 완전 좋아 보인다, 몸이 아주"
+    },
+    {
+      "startMs": 8760,
+      "endMs": 10960,
+      "translation": "얘, 그 운동 덕분인 거 알지"
+    },
+    {
+      "startMs": 10960,
+      "endMs": 13130,
+      "translation": "식스팩이 투팍 샤커급이야"
+    },
+    {
+      "startMs": 13130,
+      "endMs": 13760,
+      "translation": "말도 마"
+    },
+    {
+      "startMs": 13760,
+      "endMs": 16850,
+      "translation": "친구야, 친구야, 남자 삐삐에 187 찍어 보내는 것도 이제 지겨워"
+    },
+    {
+      "startMs": 16850,
+      "endMs": 17810,
+      "translation": "그런 거 이젠 안 통하거든"
+    },
+    {
+      "startMs": 17810,
+      "endMs": 20770,
+      "translation": "얘, 나 이제 뮤직비디오 전문가잖아 (얘)"
+    },
+    {
+      "startMs": 20770,
+      "endMs": 23880,
+      "translation": "그 새 운동법을 산 뒤로 일이 술술 풀려"
+    },
+    {
+      "startMs": 23880,
+      "endMs": 28210,
+      "translation": "렉서스에 아큐라에, 다 타고 다녀, 얘"
+    },
+    {
+      "startMs": 28210,
+      "endMs": 30990,
+      "translation": "얘, 그거 어디서 사? 얼마야?"
+    },
+    {
+      "startMs": 30990,
+      "endMs": 37250,
+      "translation": "얘, 내 앞에선 돈 낼 필요 없지, 난 해적판의 여왕이잖아, 공짜 99센트에 줄게"
+    },
+    {
+      "startMs": 37250,
+      "endMs": 38910,
+      "translation": "공짜 99센트?!"
+    },
+    {
+      "startMs": 38910,
+      "endMs": 41340,
+      "translation": "역시 내 친구야, 늘 우릴 챙겨 준다니까"
+    },
+    {
+      "startMs": 41340,
+      "endMs": 45010,
+      "translation": "친구야, 이제 버스 카드 같은 건 버려도 되겠다, 세상에"
+    },
+    {
+      "startMs": 45010,
+      "endMs": 46000,
+      "translation": "어머나"
+    }
+  ]
+}

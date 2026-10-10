@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 572733,
+    "durationMs": 45000
+  },
+  "segments": [
+    {
+      "startMs": 220,
+      "endMs": 2910,
+      "translation": "옛날 카녜가 그리워, 시카고에서 막 나온 카녜"
+    },
+    {
+      "startMs": 2910,
+      "endMs": 5950,
+      "translation": "소울을 잘라 붙이던 카녜, 목표만 보던 카녜"
+    },
+    {
+      "startMs": 5950,
+      "endMs": 9150,
+      "translation": "새 카녜는 싫어, 기분 나쁜 카녜"
+    },
+    {
+      "startMs": 9150,
+      "endMs": 12280,
+      "translation": "늘 무례한 카녜, 뉴스에서 난리 치는 카녜"
+    },
+    {
+      "startMs": 12280,
+      "endMs": 15250,
+      "translation": "다정한 카녜가 그리워, 비트를 잘라 붙이던 카녜"
+    },
+    {
+      "startMs": 15250,
+      "endMs": 18090,
+      "translation": "솔직히 그때는 카녜를 만나고 싶었어"
+    },
+    {
+      "startMs": 18090,
+      "endMs": 21120,
+      "translation": "봐, 카녜는 내가 만들었어, 그땐 카녜들이 없었지"
+    },
+    {
+      "startMs": 21120,
+      "endMs": 24180,
+      "translation": "이젠 주변을 둘러보고 또 둘러봐도 카녜가 너무 많아"
+    },
+    {
+      "startMs": 24180,
+      "endMs": 27330,
+      "translation": "난 카녜를 사랑했어, 카녜를 사랑했어"
+    },
+    {
+      "startMs": 27330,
+      "endMs": 30280,
+      "translation": "분홍 폴로도 있었어, 내가 카녜인 줄 알았지"
+    },
+    {
+      "startMs": 30280,
+      "endMs": 36430,
+      "translation": "카녜가 카녜에 대한 노래를 만들어 '옛날 카녜가 그리워'라고 부르면 어떨까? 야, 그건 정말 카녜답겠지"
+    },
+    {
+      "startMs": 36430,
+      "endMs": 39670,
+      "translation": "그게 전부였어, 카녜. 우린 여전히 카녜를 사랑해"
+    },
+    {
+      "startMs": 39670,
+      "endMs": 42580,
+      "translation": "카녜가 카녜를 사랑하듯 난 널 사랑해"
+    }
+  ]
+}
