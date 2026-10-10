@@ -38,6 +38,12 @@ export interface PlaybackEngine {
   /** Spotify's shuffle mode; it stays on for whatever plays next, as in Spotify's own apps. */
   setShuffle(shuffle: boolean): Promise<void>;
 
+  /**
+   * Whether this browser may play at all. Off, the page is only a remote for
+   * a Spotify app (the one installed on the computer, a phone): for a browser
+   * that cannot play Spotify's protected audio. Remembered in this browser.
+   */
+  setBrowserPlayback(enabled: boolean): Promise<void>;
   transferToBrowser(play?: boolean): Promise<void>;
   transferTo(deviceId: string, play?: boolean): Promise<void>;
   /** Re-reads the authoritative playback state. */

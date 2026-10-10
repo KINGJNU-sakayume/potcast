@@ -57,6 +57,11 @@ export interface PlayerSnapshot {
 
 export type SdkErrorReason = 'unsupported' | 'load' | 'initialization' | 'authentication' | 'account' | 'playback';
 
+/**
+ * This browser's player. `disabled`: it is not used — the preview, or a
+ * session in which playback in the browser is turned off and a Spotify app
+ * plays instead (see PlaybackEngine.setBrowserPlayback).
+ */
 export type SdkStatus =
   | { kind: 'disabled' }
   | { kind: 'loading' }
@@ -74,7 +79,9 @@ export type PlaybackIssueKind =
   | 'unauthorized'
   | 'command-failed'
   /** This browser's player keeps skipping tracks it cannot play (usually DRM); playback was stopped. */
-  | 'playback-failed';
+  | 'playback-failed'
+  /** The same, with a Spotify app online: playback was moved there and this browser no longer plays. Not an alert. */
+  | 'moved-to-app';
 
 export interface PlaybackIssue {
   kind: PlaybackIssueKind;

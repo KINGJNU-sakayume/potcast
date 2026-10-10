@@ -133,6 +133,10 @@ export class PreviewPlaybackEngine implements PlaybackEngine {
     this.moveTo(this.index, this.store.getState().snapshot.paused, this.position());
   }
 
+  async setBrowserPlayback(): Promise<void> {
+    /* the preview has no browser player to turn off */
+  }
+
   async transferToBrowser(): Promise<void> {
     /* single preview device */
   }

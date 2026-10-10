@@ -154,6 +154,8 @@ function NothingPlaying() {
   } else if (sdk.kind === 'error') {
     title = 'Browser playback unavailable';
     body = `${sdk.message} Start music on another Spotify device and it will appear here.`;
+  } else if (sdk.kind === 'disabled' && engine.kind === 'spotify') {
+    body = 'Start a track from your library or Search: the Spotify app plays it, and this page is its remote. Open the Spotify app on this computer first.';
   }
 
   return (

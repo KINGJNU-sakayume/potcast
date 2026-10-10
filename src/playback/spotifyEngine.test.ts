@@ -544,6 +544,174 @@ describe('SpotifyPlaybackEngine', () => {
   });
 });
 
+describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that cannot play protected audio)', () => {
+  const DESKTOP = { id: 'desktop', is_active: false, is_private_session: false, is_restricted: false, name: 'LAB-PC-07', type: 'Computer', volume_percent: 80 };
+  const PHONE = { id: 'phone', is_active: false, is_private_session: false, is_restricted: false, name: 'Pixel', type: 'Smartphone', volume_percent: 50 };
+  const WEB_PLAYER = { ...DESKTOP, id: 'web', name: 'Web Player (Chrome)' };
+  const OTHER_TAB = { ...DESKTOP, id: 'tab', name: 'ARC Music Browser' };
+  const SPEAKER = { ...DESKTOP, id: 'speaker', name: 'Kitchen', type: 'Speaker', is_restricted: true };
+
+  /** Devices online, and what GET /me/player answers (204: nothing is active anywhere). */
+  function routes(devices: unknown[], playback: SpotifyPlaybackState | null = null): Route {
+    return (method, path) => {
+      if (path === '/me/player/devices') return new Response(JSON.stringify({ devices }), { status: 200 });
+      if (method === 'GET' && path === '/me/player') return playback ? new Response(JSON.stringify(playback), { status: 200 }) : new Response(null, { status: 204 });
+      return new Response(null, { status: 204 });
+    };
+  }
+  const off = () => window.localStorage.setItem('arc.player.browser-playback.v1', 'false');
+  const puts = (h: ReturnType<typeof harness>, path: string) => h.requests.filter((r) => r.method === 'PUT' && r.path === path);
+
+  it('does not connect a browser player at all, and sends what is played to the app on the computer', async () => {
+    off();
+    const h = harness({ route: routes([PHONE, SPEAKER, WEB_PLAYER, OTHER_TAB, DESKTOP]) });
+    h.engine.start();
+    await h.flush();
+    expect(h.created).toHaveLength(0);
+    expect(h.store.getState().sdk).toEqual({ kind: 'disabled' });
+    expect(h.engine.ducking()).toBe('none');
+
+    await h.engine.play({ uris: ['spotify:track:trk1'], positionMs: 47_000 });
+    const [play] = puts(h, '/me/player/play');
+    // Not the phone that happens to be listed first, not a speaker that cannot be controlled, not another browser.
+    expect(play?.query.get('device_id')).toBe('desktop');
+    expect(play?.body).toEqual({ uris: ['spotify:track:trk1'], position_ms: 47_000 });
+    expect(h.store.getState().issue).toBeNull();
+    h.engine.stop();
+  });
+
+  it('plays on the device that is already active, and on the one the listener chose here even when another is active', async () => {
+    off();
+    const h = harness({ route: routes([{ ...PHONE, is_active: true }, DESKTOP], remoteState()) });
+    h.engine.start();
+    await h.flush();
+    await h.engine.play({ contextUri: 'spotify:album:alb1' });
+    expect(puts(h, '/me/player/play')[0]?.query.has('device_id')).toBe(false);
+
+    // Chosen in the device menu: remembered for the next visit too.
+    await h.engine.transferTo('desktop');
+    expect(window.localStorage.getItem('arc.player.remote-device.v1')).toBe('"desktop"');
+    h.engine.stop();
+
+    const next = harness({ route: routes([{ ...PHONE, is_active: true }, DESKTOP], remoteState()) });
+    next.engine.start();
+    await next.flush();
+    await next.engine.play({ contextUri: 'spotify:album:alb1' });
+    expect(puts(next, '/me/player/play')[0]?.query.get('device_id')).toBe('desktop');
+    next.engine.stop();
+  });
+
+  it('says what to do when no Spotify app is running', async () => {
+    off();
+    const h = harness({ route: routes([WEB_PLAYER, SPEAKER]) });
+    h.engine.start();
+    await h.flush();
+    await h.engine.play({ contextUri: 'spotify:album:alb1' });
+    expect(h.store.getState().issue).toMatchObject({ kind: 'no-active-device', message: expect.stringMatching(/Open Spotify on this computer/) });
+    expect(puts(h, '/me/player/play')).toHaveLength(0);
+    await h.engine.resume();
+    expect(h.store.getState().issue?.message).toMatch(/No Spotify app is running to resume in/);
+    h.engine.stop();
+  });
+
+  it('wakes an app that has gone idle when asked to resume', async () => {
+    off();
+    const h = harness({ route: routes([DESKTOP]) });
+    h.engine.start();
+    await h.flush();
+    await h.engine.resume();
+    expect(puts(h, '/me/player')[0]?.body).toEqual({ device_ids: ['desktop'], play: true });
+    h.engine.stop();
+  });
+
+  it('moves what is playing here to the app when browser playback is turned off, and remembers the choice', async () => {
+    const h = harness({ route: routes([DESKTOP]) });
+    h.engine.start();
+    await h.flush();
+    h.callbacks().onReady('web-device');
+    h.callbacks().onState(sdkState());
+    expect(h.store.getState().snapshot.source).toBe('sdk');
+
+    await h.engine.setBrowserPlayback(false);
+    // Transferred while still playing, so the track, the queue and the position go along.
+    expect(puts(h, '/me/player')[0]?.body).toEqual({ device_ids: ['desktop'], play: true });
+    expect(h.device.disconnect).toHaveBeenCalled();
+    expect(h.store.getState().sdk).toEqual({ kind: 'disabled' });
+    expect(h.store.getState().snapshot.source).not.toBe('sdk');
+    expect(window.localStorage.getItem('arc.player.browser-playback.v1')).toBe('false');
+
+    // Nothing the old player reports afterwards counts.
+    h.callbacks().onState(sdkState());
+    expect(h.store.getState().snapshot.source).not.toBe('sdk');
+    // And "resume" no longer brings the music back to this browser.
+    await h.engine.resume();
+    expect(puts(h, '/me/player').at(-1)?.body).toEqual({ device_ids: ['desktop'], play: true });
+    h.engine.stop();
+  });
+
+  it('leaves a paused track paused when it moves it', async () => {
+    const h = harness({ route: routes([DESKTOP]) });
+    h.engine.start();
+    await h.flush();
+    h.callbacks().onReady('web-device');
+    h.callbacks().onState(sdkState(true));
+    await h.engine.setBrowserPlayback(false);
+    expect(puts(h, '/me/player')[0]?.body).toEqual({ device_ids: ['desktop'], play: false });
+    h.engine.stop();
+  });
+
+  it('connects the browser player again when turned back on, without pulling the music over', async () => {
+    off();
+    const h = harness({ route: routes([{ ...DESKTOP, is_active: true }], remoteState({ device: { ...DESKTOP, is_active: true } })) });
+    h.engine.start();
+    await h.flush();
+    await h.engine.setBrowserPlayback(true);
+    await h.flush();
+    expect(h.created).toHaveLength(1);
+    expect(h.device.connect).toHaveBeenCalled();
+    expect(puts(h, '/me/player')).toHaveLength(0);
+    expect(window.localStorage.getItem('arc.player.browser-playback.v1')).toBe('true');
+    h.engine.stop();
+  });
+
+  it('hands playback to the app by itself when this browser turns out unable to play, and makes the request again there', async () => {
+    const h = harness({ route: routes([DESKTOP]), protectedAudio: false });
+    h.engine.start();
+    await h.flush();
+    h.callbacks().onReady('web-device');
+    await h.engine.play({ contextUri: 'spotify:album:alb1', offsetUri: 'spotify:track:trk1' });
+    h.callbacks().onState(sdkTrackState('t0'));
+    // Past the moment in which a change of track is put down to the play request itself.
+    h.advance(SKIP_LOOP.commandMs + 500);
+    let call = 0;
+    vi.mocked(h.device.getCurrentState).mockImplementation(async () => sdkTrackState(`t${10 + call++}`));
+    for (let i = 1; i <= SKIP_LOOP.unplayedTracks; i += 1) {
+      h.advance(1_000);
+      h.callbacks().onState(sdkTrackState(`t${i}`));
+    }
+    h.runTimers();
+    for (let i = 0; i < 8; i += 1) await h.flush();
+
+    const plays = puts(h, '/me/player/play');
+    expect(plays[0]?.query.get('device_id')).toBe('web-device');
+    // The album from the track that was asked for, not from wherever the silent skipping had got to.
+    expect(plays.at(-1)?.query.get('device_id')).toBe('desktop');
+    expect(plays.at(-1)?.body).toEqual({ context_uri: 'spotify:album:alb1', offset: { uri: 'spotify:track:trk1' } });
+    expect(h.device.disconnect).toHaveBeenCalled();
+    expect(h.store.getState().sdk).toEqual({ kind: 'disabled' });
+    expect(h.store.getState().issue).toMatchObject({ kind: 'moved-to-app', message: expect.stringMatching(/LAB-PC-07 plays it from now on/) });
+    expect(window.localStorage.getItem('arc.player.browser-playback.v1')).toBe('false');
+
+    // The next request goes straight to the app.
+    await h.engine.play({ uris: ['spotify:track:trk1'] });
+    expect(puts(h, '/me/player/play').at(-1)?.query.get('device_id')).toBe('desktop');
+    // Changing one's mind clears the notice.
+    await h.engine.setBrowserPlayback(true);
+    expect(h.store.getState().issue).toBeNull();
+    h.engine.stop();
+  });
+});
+
 describe('SpotifyPlaybackEngine gain (fades and talk-over in an episode)', () => {
   /** This browser's player is ready and playing. */
   async function playingHere() {
