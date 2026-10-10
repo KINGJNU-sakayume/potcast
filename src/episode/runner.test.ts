@@ -75,6 +75,58 @@ describe('talk', () => {
     await advance(5000);
     expect(narrator.spoken).toEqual(['0:하나.', '0:둘.', '0:둘.', '0:셋.']);
     expect(runner.getState().status).toBe('ended');
+    // Only the utterance the pause stopped is handed back as one to carry on with.
+    expect(narrator.calls.map((call) => Boolean(call.resume))).toEqual([false, false, true, false]);
+  });
+
+  it('does not bring back an utterance that was finished when the pause came', async () => {
+    const { runner, narrator, episode } = stage('A: 하나. 둘.\nB: 셋.');
+    runner.start(episode);
+    // 1000 ms of "하나.", then the short gap before "둘.".
+    await advance(1050);
+    runner.pause();
+    expect(runner.getState()).toMatchObject({ status: 'paused', lineIndex: 0, utteranceIndex: 1 });
+    runner.resume();
+    await advance(1050);
+    // The same in the longer gap between two hosts.
+    runner.pause();
+    expect(runner.getState()).toMatchObject({ status: 'paused', lineIndex: 1, utteranceIndex: 0 });
+    runner.resume();
+    await advance(5000);
+    expect(narrator.spoken).toEqual(['0:하나.', '0:둘.', '1:셋.']);
+    expect(runner.getState().status).toBe('ended');
+  });
+
+  it('hands each line over with its host\'s recorded voice and the episode\'s readings', async () => {
+    const { runner, narrator, episode } = stage('A: 하나.\nB: 둘.');
+    episode.say = [{ from: '하나', to: '일' }];
+    runner.start(episode);
+    await advance(5000);
+    expect(narrator.calls).toEqual([
+      { voiceSlot: 0, voice: 'F3', say: episode.say, resume: false },
+      { voiceSlot: 1, voice: 'M5', say: episode.say, resume: false },
+    ]);
+  });
+
+  it('announces what is said next, past the music, so recordings can be fetched ahead', async () => {
+    const { runner, narrator, episode } = stage(['A: 하나. 둘.', '> play one to 0:30', 'B: 셋.', '> play one from 1:00 to 1:30', 'A~ 넷.'].join('\n'));
+    runner.start(episode);
+    await advance(100);
+    expect(narrator.prepared[0]!.map((utterance) => `${utterance.voice}:${utterance.text}`)).toEqual(['F3:하나.', 'F3:둘.', 'M5:셋.', 'F3:넷.']);
+    // Started in the middle: only what is still to come.
+    runner.jump(2);
+    await advance(100);
+    expect(narrator.prepared.at(-1)!.map((utterance) => utterance.text)).toEqual(['셋.', '넷.']);
+  });
+
+  it('starts a line from its top after a jump, even the one a pause had stopped', async () => {
+    const { runner, narrator, episode } = stage('A: 하나. 둘.');
+    runner.start(episode);
+    await advance(500);
+    runner.pause();
+    runner.jump(0);
+    await advance(5000);
+    expect(narrator.calls.map((call) => Boolean(call.resume))).toEqual([false, false, false]);
   });
 
   it('steps back when music is started from somewhere else during a talk', async () => {

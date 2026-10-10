@@ -15,10 +15,11 @@ import { withoutUnspokenMarks } from '../speechText';
 
 /**
  * What produced the clips. The id is part of every clip key, so changing the
- * model, the number of steps or the speed renders everything again.
+ * model, the number of steps, the speed, or how the audio is finished
+ * (scripts/narration/audio.ts) renders everything again.
  */
 export const NARRATION_ENGINE = {
-  id: 'supertonic-3/steps-10/speed-1.05',
+  id: 'supertonic-3/steps-10/speed-1.05/finish-2',
   name: 'Supertonic 3',
   steps: 10,
   speed: 1.05,
@@ -43,8 +44,12 @@ export const VOICE_CHARACTER: Record<RecordedVoice, string> = {
   M5: 'warm, storytelling',
 };
 
-/** The voices of the first and second host when a script names none. */
-export const DEFAULT_HOST_VOICES: readonly RecordedVoice[] = ['F4', 'M5'];
+/**
+ * The voices of the first and second host when a script names none: the two
+ * that speak Korean at the same unhurried pace (F4 and M3 are about a fifth
+ * faster than the other eight).
+ */
+export const DEFAULT_HOST_VOICES: readonly RecordedVoice[] = ['F3', 'M5'];
 
 export function isRecordedVoice(value: string): value is RecordedVoice {
   return (RECORDED_VOICES as readonly string[]).includes(value);

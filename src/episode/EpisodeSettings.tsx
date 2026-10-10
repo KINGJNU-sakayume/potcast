@@ -1,5 +1,8 @@
 import { usePreferences } from '../preferences/preferences';
 import { Slider } from '../components/Slider';
+import { RECORDED_VOICES, VOICE_CHARACTER } from './narration/clip';
+import { narrationLibrary } from './narration/library';
+import { useNarrationManifest } from './narration/useNarration';
 import { speechText } from './speechText';
 import { chooseVoices, koreanVoices, useVoices } from './voices';
 
@@ -9,6 +12,26 @@ const SAMPLE = ['안녕하세요. 이 목소리로 앨범을 같이 듣겠습니
 
 /** The "Hear it" sample being said, kept reachable until it has ended. */
 const samples = new Set<SpeechSynthesisUtterance>();
+
+/** The element the recorded samples play through: one, so a new sample stops the one before it. */
+let samplePlayer: HTMLAudioElement | null = null;
+
+/** Plays a recorded voice's sample. Called from a click, which is what lets the audio start. */
+function hearRecorded(clipKey: string, rate: number): void {
+  if (typeof Audio !== 'function') return;
+  samplePlayer ??= new Audio();
+  const player = samplePlayer;
+  player.pause();
+  void narrationLibrary
+    .clip(clipKey)
+    .then((url) => {
+      player.src = url;
+      player.defaultPlaybackRate = rate;
+      player.playbackRate = rate;
+      return player.play();
+    })
+    .catch(() => undefined);
+}
 
 /** "Microsoft SunHi Online (Natural) - Korean (Korea)" → "SunHi (Natural)". */
 function shortName(voice: SpeechSynthesisVoice): string {
@@ -20,12 +43,16 @@ function shortName(voice: SpeechSynthesisVoice): string {
 }
 
 /**
- * Settings for episodes: each host's voice, the pace they speak at, and what
- * the music does under a talk-over. The voices are the browser's own, so the
- * list is whatever this browser and system offer for Korean.
+ * Settings for episodes: the pace the hosts speak at and what the music does
+ * under a talk-over, for every listener; and the voices. On a site with
+ * recordings the hosts' voices belong to each episode's script (the ten
+ * Supertonic voices can be heard here, for choosing them), and the browser's
+ * own voices only say the lines that have no recording.
  */
 export function EpisodeSettings() {
   const [preferences, setPreferences] = usePreferences();
+  const narration = useNarrationManifest();
+  const sampled = narration ? RECORDED_VOICES.filter((voice) => narration.samples[voice] !== undefined) : [];
   const voices = useVoices();
   const korean = koreanVoices(voices);
   const chosen = chooseVoices(HOST_LABELS.length, voices, preferences.episodeVoices);
@@ -58,14 +85,48 @@ export function EpisodeSettings() {
   return (
     <>
       <div className="label">Episodes</div>
+      {narration && (
+        <>
+          <p>
+            The hosts are recorded with {narration.engine.name}, a machine-generated voice. Which of its voices each host has is written in the episode’s
+            script; a line without a recording is said by this browser’s voice.
+          </p>
+          {sampled.length > 0 && (
+            <div className="settings-fields">
+              <div className="settings-field" role="group" aria-label="The recorded voices">
+                <span>Voices</span>
+                <span className="settings-choices">
+                  {sampled.map((voice) => (
+                    <button
+                      key={voice}
+                      type="button"
+                      className="text-toggle"
+                      title={`Hear ${voice}: ${VOICE_CHARACTER[voice]}`}
+                      aria-label={`Hear voice ${voice}, ${VOICE_CHARACTER[voice]}`}
+                      onClick={() => hearRecorded(narration.samples[voice]!, preferences.episodeRate)}
+                    >
+                      {voice}
+                    </button>
+                  ))}
+                </span>
+              </div>
+            </div>
+          )}
+        </>
+      )}
       {korean.length === 0 ? (
         <p>
-          This browser has no Korean voice, so an episode shows the hosts’ lines instead of speaking them. Microsoft Edge comes with natural-sounding
-          Korean voices; Chrome uses the ones installed in Windows or macOS.
+          {narration
+            ? 'This browser has no Korean voice, so a line without a recording is shown instead of spoken.'
+            : 'This browser has no Korean voice, so an episode shows the hosts’ lines instead of speaking them.'}{' '}
+          Microsoft Edge comes with natural-sounding Korean voices; Chrome uses the ones installed in Windows or macOS.
         </p>
       ) : (
         <>
-          <p>The hosts speak with this browser’s Korean voices{korean.length === 1 ? ' — there is one, so the second host uses it at a lower pitch' : ''}.</p>
+          <p>
+            {narration ? 'Lines without a recording are said by' : 'The hosts speak with'} this browser’s Korean voices
+            {korean.length === 1 ? ' — there is one, so the second host uses it at a lower pitch' : ''}.
+          </p>
           <div className="settings-fields">
             {HOST_LABELS.map((label, slot) => (
               <label key={label} className="settings-field">

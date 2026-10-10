@@ -5,7 +5,7 @@ hosts:
   a: 진행
   b: 해설
 voices:
-  a: F4
+  a: F3
   b: M5
 say:
   - IGOR = 이고르

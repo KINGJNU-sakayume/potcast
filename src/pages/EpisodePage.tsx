@@ -17,9 +17,11 @@ import { songNotes } from '../editorial/songs';
 import { useEpisodeRunner } from '../episode/episodeContext';
 import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
+import { coverage } from '../episode/narration/plan';
+import { useNarrationManifest } from '../episode/narration/useNarration';
 import { albumEpisodeTracks, episodeMusicMs, episodeRelease, episodeTalkMs, resolveEpisode } from '../episode/resolve';
 import type { EpisodeState } from '../episode/runner';
-import { splitUtterances } from '../episode/speechText';
+import { captionText, splitUtterances } from '../episode/speechText';
 import { EpisodeError, type Cue, type Episode, type MusicCue, type SpokenLine } from '../episode/types';
 import { formatDuration, formatRuntime, joinArtistNames } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
@@ -100,10 +102,12 @@ function NowMusic({ cue, trackIndex, playing }: { cue: MusicCue; trackIndex: num
 
 function NowSpoken({ episode, cue, state }: { episode: Episode; cue: Exclude<Cue, MusicCue>; state: EpisodeState }) {
   const line: SpokenLine | undefined = cue.lines[Math.min(state.lineIndex, cue.lines.length - 1)];
-  const utterances = useMemo(() => (line ? splitUtterances(line.text) : []), [line]);
+  // What is shown leaves out the sounds only a recorded voice makes (<laugh>).
+  const utterances = useMemo(() => (line ? splitUtterances(line.text).map(captionText) : []), [line]);
   if (!line) return null;
   const index = Math.min(state.utteranceIndex, utterances.length - 1);
-  const following = utterances[index + 1] ?? cue.lines[state.lineIndex + 1]?.text;
+  const nextLine = cue.lines[state.lineIndex + 1]?.text;
+  const following = utterances[index + 1] ?? (nextLine ? captionText(nextLine) : undefined);
   return (
     <>
       <div className="ep-now-kicker">
@@ -231,7 +235,7 @@ function ScriptList({
                 >
                   <span className="ep-row-lead ep-speaker">{hostName(episode, line.host)}</span>
                   <span className="ep-row-text" lang="ko">
-                    {line.text}
+                    {captionText(line.text)}
                   </span>
                   {cue.type === 'over' && lineIndex === 0 && <span className="ep-row-aside">over the music</span>}
                 </button>
@@ -265,6 +269,7 @@ export function EpisodePage() {
   const shell = useShell();
   const mobile = useIsMobile();
   const [preferences, setPreferences] = usePreferences();
+  const narration = useNarrationManifest();
   const data = album.data;
   usePageTitle('Episode', data?.name ?? null);
   usePageSurface(isSpotifyId(albumId) ? { key: albumId, imageUrl: data ? pickImageUrl(data.images, 64) : null } : null);
@@ -335,7 +340,18 @@ export function EpisodePage() {
   const playing = active && state.status === 'playing';
   const ended = active && state.status === 'ended';
   const chapter = active && !ended ? chapterOf(episode, state.cueIndex) : null;
-  const minutes = formatRuntime(episodeMusicMs(episode) + episodeTalkMs(episode, preferences.episodeRate));
+  const recordedMs = (key: string) => narration?.clips[key];
+  const minutes = formatRuntime(episodeMusicMs(episode) + episodeTalkMs(episode, preferences.episodeRate, recordedMs));
+  // How many of the hosts' lines the site has recordings of; the rest fall to the browser's voice.
+  const recorded = coverage(episode, (key) => recordedMs(key) !== undefined);
+  const engineName = narration?.engine.name ?? 'Recorded';
+  const browserVoice = state.narration === 'captions' ? 'Captions only' : 'This browser’s Korean voice';
+  const voiceLabel =
+    recorded.recorded === 0
+      ? browserVoice
+      : recorded.recorded === recorded.total
+        ? `Recorded · ${engineName}`
+        : `Recorded in part · ${recorded.recorded} of ${recorded.total} lines`;
   const titleLang = detectLineLanguage(data.name);
 
   const playOrPause = () => {
@@ -382,13 +398,14 @@ export function EpisodePage() {
                 </div>
                 <div>
                   <b>Voice</b>
-                  <span>{state.narration === 'voice' ? 'This browser’s Korean voice' : 'Captions only'}</span>
+                  <span>{voiceLabel}</span>
                 </div>
               </div>
-              {state.narration === 'captions' && (
+              {recorded.recorded < recorded.total && state.narration === 'captions' && (
                 <p className="ep-hint">
-                  This browser has no Korean voice to speak with, so the hosts’ lines are shown for as long as they would take to say. Microsoft Edge
-                  comes with natural-sounding Korean voices.
+                  {recorded.recorded > 0 ? 'Some lines have no recording yet, and this' : 'This'} browser has no Korean voice to speak with, so{' '}
+                  {recorded.recorded > 0 ? 'those lines' : 'the hosts’ lines'} are shown for as long as they would take to say. Microsoft Edge comes with
+                  natural-sounding Korean voices.
                 </p>
               )}
               <div className="object-actions">
@@ -404,6 +421,7 @@ export function EpisodePage() {
                   Album
                 </Link>
               </div>
+              {recorded.recorded > 0 && <p className="fineprint">The hosts’ voices are machine-generated ({engineName}).</p>}
               {episode.warnings.map((warning) => (
                 <p key={warning} className="fineprint">
                   {warning}

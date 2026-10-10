@@ -25,7 +25,7 @@ import { clipPath, NARRATION_ENGINE, type NarrationManifest } from '../../src/ep
 import { episodeClips, readAsWritten, sampleClips, type PlannedClip } from '../../src/episode/narration/plan';
 import { parseEpisodeScript } from '../../src/episode/script';
 import { estimateSpeechMs } from '../../src/episode/speechText';
-import { encodeMp3, finishClip, MP3_BITRATE } from './audio';
+import { encodeMp3, finishClip, MP3_BITRATE, pauseAfter } from './audio';
 import { ensureModel, MODEL, modelDirectory } from './model';
 import { Supertonic } from './supertonic';
 
@@ -140,10 +140,10 @@ if (!check && missing.length > 0) {
           seed: Number.parseInt(clip.key.slice(0, 8), 16),
         });
         for (const character of synthesis.unknown) unknownCharacters.set(character, (unknownCharacters.get(character) ?? 0) + 1);
-        const finished = finishClip(synthesis.samples, synthesis.sampleRate);
+        const finished = finishClip(synthesis.samples, synthesis.sampleRate, pauseAfter(clip.text));
         // A clip far shorter or longer than the line would take to say usually means the model skipped or repeated something.
         const expected = estimateSpeechMs(clip.text);
-        if (finished.ms < expected * 0.4 || finished.ms > expected * 2.5) odd.push(`${clip.voice} ${seconds(finished.ms)} (expected about ${seconds(expected)}): ${clip.text}`);
+        if (finished.ms < expected * 0.35 || finished.ms > expected * 2.5) odd.push(`${clip.voice} ${seconds(finished.ms)} (expected about ${seconds(expected)}): ${clip.text}`);
         store(clip.key, await encodeMp3(finished.samples, synthesis.sampleRate), { ms: finished.ms, voice: clip.voice, text: clip.text, engine: NARRATION_ENGINE.id });
         rendered += 1;
         renderedAudioMs += finished.ms;

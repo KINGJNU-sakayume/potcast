@@ -63,9 +63,9 @@ const DUCK_MS = 450;
 const UNDUCK_MS = 700;
 const FADE_STEP_MS = 50;
 const PAUSE_LAND_MS = 150;
-/** Breathing room between utterances and between hosts. */
+/** Breathing room between utterances and between hosts, on top of the pause a recorded clip ends with. */
 const UTTERANCE_GAP_MS = 140;
-const TURN_GAP_MS = 380;
+const TURN_GAP_MS = 300;
 /** How many utterances ahead the narrator is told about, so their recordings are ready when their turn comes. */
 const PREPARE_AHEAD = 14;
 /** "Previous" restarts the cue once it has run this long, like a CD player. */
