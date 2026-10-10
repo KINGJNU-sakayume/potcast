@@ -1,6 +1,6 @@
 # ARC Music v7 — Spotify web player, with album episodes
 
-> **potcast** is the private copy of [player2](https://github.com/KINGJNU-sakayume/player2) in which **album episodes**
+> **potcast** is the personal copy of [player2](https://github.com/KINGJNU-sakayume/player2) in which **album episodes**
 > are built: two hosts talk through an album while the app plays the album itself in between and underneath
 > ([Episodes](#episodes)). It is published for personal use at `https://kingjnu-sakayume.github.io/potcast/` — see
 > [Running potcast](#running-potcast).
@@ -306,8 +306,8 @@ the seam for another source of speech, such as pre-rendered audio files.
 - Not a podcast file: it cannot be exported, and it needs Spotify Premium like everything else that plays here.
 - Not for an audience. Spotify's [Developer Policy](https://developer.spotify.com/policy) says not to "segue, mix,
   re-mix, or overlap any Spotify Content with any other audio content", which talking over (and arguably between)
-  tracks does. That is why this is a personal build — a private repository, a site only allow-listed Spotify accounts
-  can sign in to — and not something to share. *Music stops* avoids the overlap.
+  tracks does. That is why this is a personal build — a site only allow-listed Spotify accounts can sign in to — and
+  not something to share. *Music stops* avoids the overlap.
 - Tested on the preview archive and in unit tests with a simulated player; real Spotify playback and real voices
   were not available where it was written.
 
@@ -374,19 +374,19 @@ checked (`check.yml`).
 
 It uses the same Spotify Developer app as player2. Three settings, once:
 
-1. **GitHub** — potcast → Settings → Pages → *Build and deployment* → Source: **GitHub Actions**. GitHub Pages works
-   for a private repository on GitHub Pro (free for students through GitHub Education); on GitHub Free the repository
-   would have to be public.
+1. **GitHub** — potcast → Settings → Pages → *Build and deployment* → Source: **GitHub Actions**. On GitHub Free,
+   Pages needs the repository to be public; a private repository needs GitHub Pro (free for students through GitHub
+   Education).
 2. **GitHub** — potcast → Settings → Secrets and variables → Actions → *Variables* → `VITE_SPOTIFY_CLIENT_ID`: the
    same Client ID player2 uses (it is a public value, not a secret). Optionally `VITE_LYRICS_PROVIDER`,
    `VITE_TRANSLATION_PROVIDER`, `VITE_TRANSLATION_ENDPOINT`, `VITE_TRANSLATION_TARGET`, `VITE_ENABLE_PREVIEW`.
 3. **Spotify** — [Developer Dashboard](https://developer.spotify.com/dashboard) → the app → Settings → Redirect URIs:
    add `https://kingjnu-sakayume.github.io/potcast/` (with the trailing slash).
 
-**Who can use it.** The address is public — a Pages site published from a private repository still is — so the built
-notes and episode scripts can be read by anyone who has the address. Signing in and playing is another matter: the
-Spotify app is in Development Mode, so only the accounts in its *User Management* can connect. The page carries
-`noindex`, so search engines leave it out. The repository itself stays private.
+**Who can use it.** The address is public whether the repository is public or private, so the built notes and episode
+scripts can be read by anyone who has the address. Signing in and playing is another matter: the Spotify app is in
+Development Mode, so only the accounts in its *User Management* can connect. The page carries `noindex`, so search
+engines leave it out.
 
 To run it on your own computer instead: copy player2's `.env.local`, then `npm ci && npm run dev`
 (`http://127.0.0.1:5173/` is already a registered redirect URI).
