@@ -9,8 +9,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# contents: write is for the `narration` branch, where the hosts' recorded lines are kept (see the narration action).
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -32,6 +33,14 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      # Usually there is nothing left to render here: the pull request's check has already recorded its new lines.
+      # A failure is not allowed to hold the site back; lines without a recording are said by the browser's voice.
+      - name: Record the hosts
+        uses: ./.github/actions/narration
+        continue-on-error: true
+        with:
+          token: ${{ github.token }}
 
       - name: Typecheck, lint, test, and build
         run: npm run check

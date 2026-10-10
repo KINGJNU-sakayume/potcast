@@ -172,6 +172,7 @@ export function resolveEpisode(
     title: script.title,
     ...(script.short ? { short: script.short } : {}),
     hosts: script.hosts,
+    say: script.say,
     chapters: script.chapters,
     cues,
     warnings: [...warnings],

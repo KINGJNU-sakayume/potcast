@@ -16,8 +16,28 @@ const UNSPOKEN = /[『』「」《》〈〉“”‘"*]/g;
 /** A quote mark around a title; the apostrophe inside "IGOR'S" or "DON'T" stays. */
 const QUOTE_MARK = /(?<![A-Za-z])['’]|['’](?![A-Za-z])/g;
 
-/** The line as the voice should say it. The captions keep the original. */
-export function speechText(text: string): string {
+/**
+ * Sounds a recorded host can make in the middle of a line, written as
+ * `<laugh>`. Only the recorded voice performs them; they are never shown and a
+ * browser voice skips them.
+ */
+export const EXPRESSION_TAGS = ['laugh', 'breath', 'sigh'] as const;
+const EXPRESSION_TAG = new RegExp(`\\s*<(?:${EXPRESSION_TAGS.join('|')})>\\s*`, 'g');
+/** Anything else in angle brackets is a mistake in the script. */
+const ANY_TAG = /<[^<>\s]*>/g;
+
+/** The tags in a line that are not expression tags. */
+export function unknownTags(text: string): string[] {
+  return (text.match(ANY_TAG) ?? []).filter((tag) => !(EXPRESSION_TAGS as readonly string[]).includes(tag.slice(1, -1)));
+}
+
+/** The line as it is shown: without the sounds only a recorded voice makes. */
+export function captionText(text: string): string {
+  return text.replace(EXPRESSION_TAG, ' ').replace(/\s+([,.!?…])/g, '$1').replace(/\s+/g, ' ').trim();
+}
+
+/** Title brackets and quotes off, separators turned into pauses; expression tags are left alone. */
+export function withoutUnspokenMarks(text: string): string {
   return text
     .replace(UNSPOKEN, '')
     .replace(QUOTE_MARK, '')
@@ -25,6 +45,11 @@ export function speechText(text: string): string {
     .replace(/\s*[–—]\s*/g, ', ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/** The line as a browser voice should say it. The captions keep the original. */
+export function speechText(text: string): string {
+  return withoutUnspokenMarks(captionText(text));
 }
 
 /**

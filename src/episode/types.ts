@@ -11,12 +11,15 @@
  */
 
 import type { ImageRef } from '../domain/types';
+import type { RecordedVoice, SayRule } from './narration/clip';
 
 export interface EpisodeHost {
   /** Lower-case key used in the script (`A:` → `a`). */
   id: string;
   /** Name shown beside the host's lines. */
   name: string;
+  /** The recorded voice that says the host's lines (see narration/clip.ts). */
+  voice: RecordedVoice;
 }
 
 /**
@@ -83,6 +86,8 @@ export interface EpisodeScript {
   /** One or two lines for the album page. */
   short?: string;
   hosts: EpisodeHost[];
+  /** How the hosts say what is written differently: English titles, numbers. */
+  say: SayRule[];
   written?: string;
   updated?: string;
   chapters: EpisodeChapter[];
@@ -146,6 +151,7 @@ export interface Episode {
   title: string;
   short?: string;
   hosts: EpisodeHost[];
+  say: SayRule[];
   chapters: EpisodeChapter[];
   cues: Cue[];
   /** Things that may play slightly off, e.g. lyric positions on another edit of a song. */

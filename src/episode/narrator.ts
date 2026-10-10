@@ -1,3 +1,4 @@
+import { applySay, type SayRule } from './narration/clip';
 import { estimateSpeechMs, speechText } from './speechText';
 import type { VoiceChoice } from './voices';
 
@@ -5,16 +6,29 @@ import type { VoiceChoice } from './voices';
  * Says the hosts' lines. The runner hands over one utterance at a time and
  * waits for it to finish; stopping an utterance rejects with an AbortError.
  *
+ * - `recorded`: the site has the hosts' lines as recordings (Supertonic 3,
+ *   see narration/); a line without one falls to the next kind.
  * - `voice`: the browser's speech synthesis says the line.
  * - `captions`: there is no usable voice (none installed for Korean, or the
  *   browser's speech does not respond), so the line is only shown, for as
  *   long as it would take to say. An episode therefore always runs.
  */
-export type NarrationMode = 'voice' | 'captions';
+export type NarrationMode = 'recorded' | 'voice' | 'captions';
 
-export interface SpeakOptions {
-  /** Index of the host among the episode's hosts: picks the voice. */
+/** An utterance and who says it. */
+export interface Utterance {
+  text: string;
+  /** Index of the host among the episode's hosts: picks the browser voice. */
   voiceSlot: number;
+  /** The host's recorded voice. */
+  voice?: string;
+  /** The episode's readings (see SayRule). */
+  say?: readonly SayRule[];
+}
+
+export interface SpeakOptions extends Omit<Utterance, 'text'> {
+  /** The utterance was stopped part-way by a pause: carry on from there if that is possible. */
+  resume?: boolean;
   signal: AbortSignal;
 }
 
@@ -25,6 +39,10 @@ export interface Narrator {
   /** Call inside a click or key handler: some browsers only let speech start from one. */
   unlock(): void;
   speak(text: string, options: SpeakOptions): Promise<void>;
+  /** What will be said next, in order, for a narrator that has something to get ready. */
+  prepare?(upcoming: readonly Utterance[]): void;
+  /** How long an utterance takes when that is known exactly. */
+  durationMs?(utterance: Utterance): number | undefined;
 }
 
 export interface NarrationSettings {
@@ -151,7 +169,7 @@ export class SpeechNarrator implements Narrator {
     }
   }
 
-  speak(text: string, { voiceSlot, signal }: SpeakOptions): Promise<void> {
+  speak(text: string, { voiceSlot, say, signal }: SpeakOptions): Promise<void> {
     const { rate, voices } = this.settings();
     const choice = voices[voiceSlot] ?? voices[0];
     const estimate = estimateSpeechMs(text, rate);
@@ -201,7 +219,7 @@ export class SpeechNarrator implements Narrator {
         );
       };
 
-      const utterance = this.createUtterance(speechText(text));
+      const utterance = this.createUtterance(speechText(applySay(text, say ?? [])));
       utterance.voice = choice.voice;
       utterance.lang = choice.voice!.lang;
       utterance.rate = rate;

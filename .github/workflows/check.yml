@@ -1,6 +1,7 @@
 name: Check
 
 # The checks of `npm run check` on pull requests. Pushes to main are checked by the deploy workflow.
+# A second job records the hosts' lines that are new in the pull request and reports on them in a comment.
 on:
   pull_request:
   workflow_dispatch:
@@ -30,3 +31,56 @@ jobs:
 
       - name: Typecheck, lint, test, and build
         run: npm run check
+
+  narration:
+    # Needs to push to the `narration` branch, which a pull request from a fork may not.
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      pull-requests: write
+    # One render at a time across the repository; a run in progress is left to finish.
+    concurrency:
+      group: narration
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Record the hosts
+        uses: ./.github/actions/narration
+        with:
+          token: ${{ github.token }}
+
+      - name: Report on the pull request
+        if: always() && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          if [ -f narration-report.md ]; then
+            cp narration-report.md comment.md
+          else
+            { echo '### Narration'; echo; echo 'The render did not get as far as a report. The end of its log:'; echo; echo '```'; tail -n 80 narration.log 2>/dev/null || echo '(no log)'; echo '```'; } > comment.md
+          fi
+          printf '\n<sub>Run %s · commit %s</sub>\n' "$GITHUB_RUN_ID" "${{ github.event.pull_request.head.sha }}" >> comment.md
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --edit-last --body-file comment.md || gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file comment.md
+
+      - name: Keep the clips for listening
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: narration
+          path: public/narration
+          if-no-files-found: ignore
+          retention-days: 14

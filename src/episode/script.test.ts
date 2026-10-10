@@ -115,7 +115,7 @@ describe('episode script', () => {
 
   it('lets a single host carry an episode', () => {
     const script = parse('A: 혼자 진행합니다.\n> play one', '---\nalbum: x\ntitle: T\nhosts:\n  a: 진행\n---\n');
-    expect(script.hosts).toEqual([{ id: 'a', name: '진행' }]);
+    expect(script.hosts).toEqual([{ id: 'a', name: '진행', voice: 'F4' }]);
     expect(script.cues).toHaveLength(2);
   });
 });
