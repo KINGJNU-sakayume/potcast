@@ -229,6 +229,25 @@ stays in Spotify's player and cannot be exported, so an episode exists only whil
 | [`scripts/narration/`](scripts/narration/) | Recording them: Supertonic 3 on ONNX Runtime (`supertonic.ts`), finishing and MP3 (`audio.ts`), the command (`render.ts`) |
 | [`src/episode/narrator.ts`](src/episode/narrator.ts) · [`voices.ts`](src/episode/voices.ts) | The browser's own voice, which says any line that has no recording |
 
+### On screen
+
+The episode's page ([`src/pages/EpisodePage.tsx`](src/pages/EpisodePage.tsx)) is Now Playing's layout with one thing
+added. The cover, the title under it, the lyrics with their translation, the seek bar and the transport are where
+they are on Now Playing, and while a stretch of music plays that is all there is.
+
+- **The hosts' line** is on a dark slab across the lower part of the cover, one layer in front of it, for as long as
+  a host is speaking: large while the music is stopped for the talk, smaller while it plays on underneath (the lyrics
+  go on beside it). It is gone when the hosts are.
+- **While the hosts talk with the music stopped**, the cover and the title already stand for the track they are
+  leading up to, and the lyrics' place says what comes next and how much of it (*Up next · From the start to 3:19*).
+- **The line for the episode** is where Now Playing has the Listening note's: the chapter, what to listen for, and
+  *Script*, which opens the whole script in the lyrics' place — any line or stretch of music in it starts the episode
+  from there.
+- **The seek bar** shows the whole track, with the stretch the episode plays marked on it. It is not a control: the
+  episode moves by parts (*Previous part*, *Next part*).
+- **A track from outside the album** (see below) brings its own cover in front of the album's, and the lyrics' place
+  shows the pairing: the stretch of it being played, and the stretch of the album's own track it is heard against next.
+
 ### The script
 
 ```markdown
@@ -244,6 +263,15 @@ voices:                                  each host's recorded voice (F1–F5, M1
 say:                                     how to say what is written differently
   - EARFQUAKE = 어스퀘이크
   - 2019년 5월 = 이천십구 년 오월
+covers: [dark-fantasy, gorgeous, power]  the tracks it walks through, when that is not the whole album
+outside:                                 tracks from outside the album, played as `@name` (these are from the MBDTF script)
+  schizoid:
+    track: 2MfrET7Nc3StKQcGoZKqr9        its Spotify track ID
+    title: 21st Century Schizoid Man
+    artist: King Crimson
+    year: 1969                           optional
+    length: 7:22                         of the recording the positions were taken on
+    why: POWER의 후렴 끝마다 잘려 들어오는 목소리      a few words on why it is played; optional
 written: 2026-10-10
 short: >
   One or two lines shown before the episode starts.
@@ -260,11 +288,12 @@ B: 반주와 목소리를 따로 들어 보세요.
 > play earfquake from 2:25               from a position to the end
 > play earfquake to L13 | 첫 후렴까지      `|` adds what to listen for, shown while it plays
 > play interlude + the-next-song         tracks back to back, in one request, without a gap
+> play @schizoid 0:47–1:05 | 원곡의 그 대목  part of a track from outside the album
 
 A~ 지금 들리는 이 피아노가…               talk over the music, which keeps playing turned down
 > play to 1:05                           the current track carries on (here until 1:05; `to end` for the rest)
 A: 그건 좀 심했죠. <laugh>                a sound the recorded voice makes: <laugh>, <breath> or <sigh>
-<!-- a note to yourself -->
+<!-- a note to yourself; it may run over several lines -->
 ```
 
 - **Tracks** are song note keys from the album note's `tracks:`. The page matches them to the Spotify album with the
@@ -274,6 +303,14 @@ A: 그건 좀 심했죠. <laugh>                a sound the recorded voice makes
   of line 14 to the end of line 17, starting 0.6 s early so the first syllable is not clipped; `L14.start` / `L14.end`
   name one edge. Lyric positions need a curated translation; when the Spotify track's length is more than 3 s off the
   record the lines were timed on, the page says the positions may be off.
+- **Tracks from outside the album** — the record a sample was taken from, a song the album answers — are declared
+  under `outside:` and played as `@name`, a stretch at a time and by the clock only (`m:ss`; there are no lyric lines
+  to count). The page asks Spotify for each one (`GET /tracks/{id}`): its cover, the length of the pressing it plays
+  here, and whether it plays here at all. One that Spotify does not have in the listener's market is gone past without
+  a sound — the hosts' lines around it are still said — and the page says so before the episode starts.
+  [`my-beautiful-dark-twisted-fantasy.md`](src/editorial/notes/episodes/my-beautiful-dark-twisted-fantasy.md) plays the
+  sources of two of its samples this way.
+- **`covers:`** names the album's tracks an episode walks through when it is not all of them (the first three, say).
 - **Talk after music** fades the music out and pauses it. A following `> play to …` goes back to where the fade began,
   so nothing is lost under it.
 - **A line right under a host's line continues it**; a blank line ends the turn. Anything else is an error with its
@@ -283,8 +320,9 @@ A: 그건 좀 심했죠. <laugh>                a sound the recorded voice makes
   the voice gets the reading. The longest match wins, and an English word or a number only matches whole.
 - **`<laugh>`, `<breath>`, `<sigh>`** are performed by the recorded voice and never shown; a browser voice skips them.
 
-`npm run test:run` parses every script, resolves it against its album note, and checks that each track is heard whole
-once, that a talk-over fits in what is left of its track, that the lines are written to be spoken (short turns, no
+`npm run test:run` parses every script, resolves it against its album note, and checks that each track it covers is
+heard whole once, that a track from outside the album is played by itself and for no more than a minute, that a
+talk-over fits in what is left of its track, that the lines are written to be spoken (short turns, no
 written "-다" endings), and that they are written to be recorded (no utterance cut in the middle of a clause, and a
 `say:` reading for every English word and numeral). To have Claude write one, ask for it (*"STRAY SHEEP 에피소드 써줘"*); the procedure is in
 [`.claude/skills/write-episode/SKILL.md`](.claude/skills/write-episode/SKILL.md).
@@ -334,8 +372,8 @@ Supertone's own; no one's voice is cloned here.
   this mode, so it runs anywhere the page does — a phone with the Spotify app beside it, a shared computer — and
   nothing is ever played over anything else. Talk written to go over the music is simply said.
 
-The choice is on the episode page (*Music: …*) and in **Settings → Episodes**. When the music does not start in the
-first mode, the notice offers the second. This second mode is the guided-listening idea of the sibling
+The choice is in **Settings → Episodes** (*Voices and pace* on the episode page opens it). When the music does not
+start in the first mode, the notice offers the second. This second mode is the guided-listening idea of the sibling
 `listening-room-tts` repository (narration, a link to the song, a manual step), performed by this player.
 
 ### How it behaves
@@ -345,8 +383,8 @@ first mode, the notice offers the second. This second mode is the guided-listeni
   stopped.
 - **Pause** stops the utterance in progress; continuing carries on inside it (a browser voice says it again from its
   start). Music resumes at its position.
-- **The music is subtitled.** While a stretch of music plays, the line being sung is shown in the song note's Korean
-  translation (when the song has one and Settings has translation on).
+- **The music has its lyrics.** While a stretch of music plays, the lyrics' place is Now Playing's own: the line just
+  sung, the current line with its translation, the next two.
 - **An episode left part-way** is remembered in this browser: *Continue* picks it up at the line or the stretch of
   music it was left on, *From the top* starts over. One heard to its end starts from the top again.
 - **A phone's screen stays on** while an episode plays (Screen Wake Lock): the page performs the episode, and a
@@ -359,7 +397,9 @@ first mode, the notice offers the second. This second mode is the guided-listeni
   A stretch of several tracks (`a + b`) turns Spotify's shuffle off, because they have to come in the order written,
   and leaves it off.
 - **Timing** is as good as the player's: a few tenths of a second for starts and stops in this browser, more on
-  another device. Positions inside instrumental passages have to be found by ear and written as `m:ss`.
+  another device. Positions inside instrumental passages have to be found by ear and written as `m:ss` — and so do
+  positions in a track from outside the album, where the script has no lyric lines to go by. Those in the archive were
+  taken from the line times of LRCLIB's synchronized lyrics and say so in a comment; nobody had heard them.
 
 ### What it is not
 
@@ -377,7 +417,8 @@ first mode, the notice offers the second. This second mode is the guided-listeni
 **Preview without Spotify** (`/?preview`) runs every surface on a sample archive with a simulated clock and no audio:
 Kenshi Yonezu, tripleS, Coldplay, Vaundy and Tyler, The Creator with their noted albums. `IGOR` has its
 [episode](#episodes): `/?preview#/episode/5zi7WsKlIiUXv09tbGLKsE` rehearses it on the simulated clock (silently, and with
-captions when the browser has no Korean voice). Artist, album and noted-track
+captions when the browser has no Korean voice). So does *My Beautiful Dark Twisted Fantasy*
+(`/?preview#/episode/20r762YmB5HeofjMCiPMLv`), whose episode steps out of the album to two other records. Artist, album and noted-track
 IDs are real Spotify IDs, so the preview shows the real notes; track lists and timings are sample data and every lyric
 line is an original test line. It never calls Spotify, LRCLIB or a translation service.
 

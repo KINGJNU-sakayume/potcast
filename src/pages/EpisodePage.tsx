@@ -1,17 +1,20 @@
-import { useEffect, useMemo, useRef, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { BackLink } from '../app/backHistory';
 import { usePageTitle } from '../app/pageTitle';
 import { useShell } from '../app/shellContext';
 import { usePageSurface } from '../app/surface';
 import { useIsMobile } from '../app/useIsMobile';
-import { useAlbum } from '../catalogue/queries';
+import { useAlbum, useTracks } from '../catalogue/queries';
 import { ArtistLinks } from '../components/ArtistLinks';
 import { CoverImage } from '../components/CoverImage';
 import { NextIcon, PlayIcon, PreviousIcon } from '../components/icons';
+import { DevicePicker } from '../components/player/DevicePicker';
+import { LyricsBlock } from '../components/player/LyricsBlock';
 import { PlaybackNotice } from '../components/player/PlaybackNotice';
+import { Volume } from '../components/player/TransportExtras';
 import { PlayingMark } from '../components/PlayingMark';
 import { StateView } from '../components/StateView';
+import type { AlbumDetail } from '../domain/types';
 import { getAlbumNote } from '../editorial/lookup';
 import { songNotes } from '../editorial/songs';
 import { readBookmark } from '../episode/bookmark';
@@ -20,15 +23,16 @@ import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
 import { coverage } from '../episode/narration/plan';
 import { useNarrationManifest } from '../episode/narration/useNarration';
-import { albumEpisodeTracks, episodeMusicMs, episodeRelease, episodeTalkMs, resolveEpisode } from '../episode/resolve';
-import type { EpisodeState } from '../episode/runner';
+import { albumEpisodeTracks, episodeMusicMs, episodeRelease, episodeTalkMs, outsideFound, resolveEpisode, unplayable } from '../episode/resolve';
+import { sameTrack, type EpisodeState } from '../episode/runner';
 import { captionText, splitUtterances } from '../episode/speechText';
-import { hasSungLines, sungLine, sungLinesBetween } from '../episode/sungLine';
-import { EpisodeError, type Cue, type Episode, type MusicCue, type SpokenLine } from '../episode/types';
+import { sungLinesBetween } from '../episode/sungLine';
+import { EpisodeError, type Cue, type Episode, type EpisodeTrack, type MusicCue, type SpokenLine } from '../episode/types';
 import { formatDuration, formatRuntime, joinArtistNames } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
 import { isSpotifyId } from '../lib/spotifyUri';
-import { useEngine, usePlaybackPosition, usePlayerSelector } from '../playback/hooks';
+import { useTimedLyrics } from '../lyrics/useTimedLyrics';
+import { useEngine, usePlaybackPosition, usePlayerSelector, usePlayerSnapshot } from '../playback/hooks';
 import { usePreferences } from '../preferences/preferences';
 import { describeSpotifyError } from '../spotify/errors';
 import { detectLineLanguage } from '../translation/languageDetect';
@@ -74,43 +78,219 @@ function stretchLabel(cue: MusicCue): string {
   return `From ${from <= 0 ? 'the start' : formatDuration(from)} to ${end}`;
 }
 
+/** "King Crimson · 1969" */
+function outsideCredit(track: EpisodeTrack): string {
+  const outside = track.outside!;
+  return outside.year ? `${outside.artist} · ${outside.year}` : outside.artist;
+}
+
 /** The longest stretch whose lines are listed for reading along. */
 const MAX_LISTED_LINES = 8;
 
-/* ── Now: the line being said, or the music being played ───────────────── */
+/* ── What the screen is about ──────────────────────────────────────────── */
+
+/**
+ * The track the cover, the title and the seek bar stand for: the one playing,
+ * or — while the hosts talk with the music stopped — the one they are leading
+ * up to. `stretch` is the part of it the episode plays, when that is known.
+ */
+interface Subject {
+  track: EpisodeTrack | null;
+  stretch: MusicCue | null;
+  /** Not on yet: the hosts are talking their way to it. */
+  ahead: boolean;
+}
+
+const NO_SUBJECT: Subject = { track: null, stretch: null, ahead: false };
+
+function subjectOf(episode: Episode, state: EpisodeState, active: boolean): Subject {
+  if (!active || state.status === 'ended') return NO_SUBJECT;
+  const cue = episode.cues[state.cueIndex];
+  if (!cue) return NO_SUBJECT;
+  if (cue.type === 'music') return { track: cue.tracks[Math.min(state.trackIndex, cue.tracks.length - 1)]!, stretch: cue, ahead: false };
+  if (cue.type === 'over') return { track: cue.track, stretch: null, ahead: false };
+  for (let i = state.cueIndex + 1; i < episode.cues.length; i += 1) {
+    const next = episode.cues[i]!;
+    if (next.type === 'talk') continue;
+    // Music Spotify cannot play here is gone past without a sound.
+    if (next.type === 'over' ? unplayable(next.track) : next.tracks.some(unplayable)) continue;
+    return next.type === 'over' ? { track: next.track, stretch: null, ahead: true } : { track: next.tracks[0]!, stretch: next, ahead: true };
+  }
+  // The closing words: what was heard last stays up.
+  for (let i = state.cueIndex - 1; i >= 0; i -= 1) {
+    const before = episode.cues[i]!;
+    if (before.type === 'over') return { track: before.track, stretch: null, ahead: false };
+    if (before.type === 'music' && !before.tracks.some(unplayable)) return { track: before.tracks[before.tracks.length - 1]!, stretch: null, ahead: false };
+  }
+  return NO_SUBJECT;
+}
+
+/* ── The cover, and the hosts' line in front of it ─────────────────────── */
+
+/**
+ * What the host is saying, on a dark slab across the lower part of the cover:
+ * the one thing an episode adds to Now Playing. It is large while the music is
+ * stopped for the talk and smaller while the music plays on underneath, and it
+ * is gone as soon as the hosts are.
+ */
+function Caption({ episode, cue, state }: { episode: Episode; cue: Exclude<Cue, MusicCue>; state: EpisodeState }) {
+  const line: SpokenLine | undefined = cue.lines[Math.min(state.lineIndex, cue.lines.length - 1)];
+  // What is shown leaves out the sounds only a recorded voice makes (<laugh>).
+  const utterances = useMemo(() => (line ? splitUtterances(line.text).map(captionText) : []), [line]);
+  if (!line) return null;
+  const index = Math.min(state.utteranceIndex, utterances.length - 1);
+  return (
+    <div className="ep-caption" data-over={cue.type === 'over' ? '' : undefined} role="group" aria-label="The hosts">
+      <div className="ep-caption-who">
+        <span className="ep-speaker">{hostName(episode, line.host)}</span>
+        {cue.type === 'over' && <span>over the music</span>}
+      </div>
+      {/* Keyed so each utterance comes in afresh, as a lyric line does. */}
+      <p key={`${state.cueIndex}:${state.lineIndex}:${index}`} className="ep-caption-line" lang="ko" aria-live="off">
+        {utterances[index]}
+      </p>
+    </div>
+  );
+}
+
+function Cover({ album, track, children }: { album: AlbumDetail; track: EpisodeTrack | null; children?: ReactNode }) {
+  const artists = joinArtistNames(album.artists);
+  const albumCover = (
+    <CoverImage images={album.images} size={640} alt={`${album.name} album cover`} title={album.name} subtitle={artists} paletteKey={album.id} priority />
+  );
+  const outside = track?.outside;
+  return (
+    <div className="np-cover ep-cover" data-outside={outside ? '' : undefined}>
+      {outside && (
+        <div className="ep-cover-behind" aria-hidden="true">
+          {albumCover}
+        </div>
+      )}
+      <div className="ep-cover-front">
+        {outside && track ? (
+          <CoverImage
+            key={track.id}
+            images={outside.images}
+            size={640}
+            alt={`${track.title} cover`}
+            title={track.title}
+            subtitle={outside.artist}
+            paletteKey={outside.albumId}
+            priority
+          />
+        ) : (
+          albumCover
+        )}
+      </div>
+      {children}
+    </div>
+  );
+}
+
+/* ── The right-hand panel, when it is not the lyrics ───────────────────── */
+
+function PanelHead({ title, children }: { title: string; children?: ReactNode }) {
+  return (
+    <div className="listening-head">
+      <h2 id="episode-panel-label">{title}</h2>
+      {children && <span className="translation-tools">{children}</span>}
+    </div>
+  );
+}
+
+/** Before the episode has been started: what it is, and the ways in. */
+function IntroPanel({
+  episode,
+  facts,
+  hint,
+  fineprint,
+  children,
+}: {
+  episode: Episode;
+  facts: string[];
+  hint: string | null;
+  fineprint: string[];
+  children: ReactNode;
+}) {
+  return (
+    <section className="lyrics-panel ep-panel" aria-labelledby="episode-panel-label">
+      <p className="ep-kicker" lang="ko">
+        {episode.hosts.map((host) => host.name).join(' · ')}
+      </p>
+      <p className="current-lyric ep-title" lang="ko">
+        {episode.title}
+      </p>
+      {episode.short && (
+        <p className="current-trans ep-short" lang="ko">
+          {episode.short}
+        </p>
+      )}
+      <p className="ep-facts">
+        {facts.map((fact) => (
+          <span key={fact}>{fact}</span>
+        ))}
+      </p>
+      {hint && <p className="ep-hint">{hint}</p>}
+      <div className="object-actions ep-actions">{children}</div>
+      {fineprint.map((line) => (
+        <p key={line} className="fineprint">
+          {line}
+        </p>
+      ))}
+    </section>
+  );
+}
+
+/** The hosts are talking with the music stopped: the lyrics' place says what they are leading up to. */
+function RestPanel({ kicker, title, stretch, cue }: { kicker: string; title: string; stretch?: string; cue?: string }) {
+  return (
+    <section className="lyrics-panel ep-panel" aria-labelledby="episode-panel-label">
+      <p className="ep-kicker">{kicker}</p>
+      <p className="current-lyric is-state ep-rest-title" lang={detectLineLanguage(title)}>
+        {title}
+      </p>
+      {stretch && <p className="current-trans ep-stretch">{stretch}</p>}
+      {cue && (
+        <p className="next-line ep-rest-cue" lang="ko">
+          {cue}
+        </p>
+      )}
+    </section>
+  );
+}
 
 /**
  * A stretch of music the listener plays themselves: what to play and how much
  * of it, a link that opens it in Spotify, and the button that tells the
  * episode it has been heard.
  */
-function NowManual({ cue, translate, onHeard }: { cue: MusicCue; translate: boolean; onHeard: () => void }) {
+function ManualPanel({ cue, translate, onHeard }: { cue: MusicCue; translate: boolean; onHeard: () => void }) {
   const first = cue.tracks[0]!;
   const cueText = listeningCue(cue);
   const lines = translate && cue.tracks.length === 1 && cue.untilMs !== null ? sungLinesBetween(first, cue.fromMs ?? cue.fallbackFromMs, cue.untilMs) : [];
   return (
-    <>
-      <div className="ep-now-kicker">
-        <span className="ep-speaker">Your turn</span>
-        <span>Play this in Spotify</span>
-      </div>
-      <p className="ep-now-line is-title" lang={detectLineLanguage(first.title)}>
+    <section className="lyrics-panel ep-panel" aria-labelledby="episode-panel-label">
+      <p className="ep-kicker">Play this in Spotify</p>
+      <p className="current-lyric ep-rest-title" lang={detectLineLanguage(first.title)}>
         {cue.tracks.map((track) => track.title).join(' → ')}
       </p>
-      <p className="ep-now-stretch">{stretchLabel(cue)}</p>
+      <p className="current-trans ep-stretch">
+        {first.outside ? `${outsideCredit(first)} · ` : ''}
+        {stretchLabel(cue)}
+      </p>
       {cueText && (
-        <p className="ep-now-next" lang="ko">
+        <p className="next-line ep-rest-cue" lang="ko">
           {cueText}
         </p>
       )}
       {lines.length > 0 && lines.length <= MAX_LISTED_LINES && (
-        <ul className="ep-now-lines" lang="ko" aria-label="The lines of this stretch, translated">
+        <ul className="ep-lines" lang="ko" aria-label="The lines of this stretch, translated">
           {lines.map((line, index) => (
             <li key={index}>{line}</li>
           ))}
         </ul>
       )}
-      <div className="object-actions ep-now-actions">
+      <div className="object-actions ep-actions">
         <button type="button" className="plain-action primary" onClick={onHeard}>
           Heard it · go on
         </button>
@@ -120,128 +300,72 @@ function NowManual({ cue, translate, onHeard }: { cue: MusicCue; translate: bool
           </a>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 
-function NowMusic({ cue, trackIndex, playing, translate }: { cue: MusicCue; trackIndex: number; playing: boolean; translate: boolean }) {
-  const position = usePlaybackPosition();
-  const index = Math.min(trackIndex, cue.tracks.length - 1);
-  const track = cue.tracks[index]!;
-  const isLast = index === cue.tracks.length - 1;
-  const from = index === 0 ? (cue.fromMs ?? cue.fallbackFromMs) : 0;
-  const until = isLast ? (cue.untilMs ?? track.durationMs) : track.durationMs;
-  const fraction = until > from ? Math.min(1, Math.max(0, (position - from) / (until - from))) : 0;
-  const cueText = listeningCue(cue, index);
-  // The line being sung, in the song note's translation: the episode's own subtitles for the music.
-  const lyric = translate ? sungLine(track, position) : null;
-  return (
-    <>
-      <div className="ep-now-kicker">
-        <PlayingMark playing={playing} />
-        <span>
-          {from > 0 || (isLast && cue.untilMs !== null) ? 'Listening to a part' : 'Listening'}
-          {cue.tracks.length > 1 ? ` · ${index + 1} of ${cue.tracks.length}` : ''}
-        </span>
-      </div>
-      <p className="ep-now-line is-title" lang={detectLineLanguage(track.title)}>
-        {track.title}
-      </p>
-      {cueText && (
-        <p className="ep-now-next" lang="ko">
-          {cueText}
-        </p>
-      )}
-      {/* Always there while a translated song plays, so the panel does not jump between lines. */}
-      {translate && hasSungLines(track) && (
-        <p className="ep-now-lyric" lang="ko" aria-live="off" data-empty={lyric ? undefined : ''}>
-          {lyric ?? '\u00a0'}
-        </p>
-      )}
-      <div className="ep-now-progress" aria-hidden="true">
-        <span>{formatDuration(Math.max(from, Math.min(position, until)))}</span>
-        <div className="ep-now-bar">
-          <div style={{ width: `${(fraction * 100).toFixed(2)}%` }} />
-        </div>
-        <span>{formatDuration(until)}</span>
-      </div>
-    </>
-  );
-}
-
-function NowSpoken({ episode, cue, state }: { episode: Episode; cue: Exclude<Cue, MusicCue>; state: EpisodeState }) {
-  const line: SpokenLine | undefined = cue.lines[Math.min(state.lineIndex, cue.lines.length - 1)];
-  // What is shown leaves out the sounds only a recorded voice makes (<laugh>).
-  const utterances = useMemo(() => (line ? splitUtterances(line.text).map(captionText) : []), [line]);
-  if (!line) return null;
-  const index = Math.min(state.utteranceIndex, utterances.length - 1);
-  const nextLine = cue.lines[state.lineIndex + 1]?.text;
-  const following = utterances[index + 1] ?? (nextLine ? captionText(nextLine) : undefined);
-  return (
-    <>
-      <div className="ep-now-kicker">
-        <span className="ep-speaker">{hostName(episode, line.host)}</span>
-        {cue.type === 'over' && <span>over {cue.track.title}</span>}
-      </div>
-      {/* Keyed so each utterance comes in afresh, as a lyric line does. */}
-      <p key={`${state.cueIndex}:${state.lineIndex}:${index}`} className="ep-now-line" lang="ko" aria-live="off">
-        {utterances[index]}
-      </p>
-      {following && (
-        <p className="ep-now-next" lang="ko">
-          {following}
-        </p>
-      )}
-    </>
-  );
-}
-
-function NowPanel({
-  episode,
-  state,
-  active,
-  translate,
-  onHeard,
-}: {
-  episode: Episode;
-  state: EpisodeState;
-  active: boolean;
-  translate: boolean;
-  onHeard: () => void;
-}) {
-  let content: ReactNode;
-  const cue = active ? episode.cues[state.cueIndex] : undefined;
-  if (!active) {
-    content = (
-      <>
-        <div className="ep-now-kicker">
-          <span>{episode.hosts.map((host) => host.name).join(' · ')}</span>
-        </div>
-        <p className="ep-now-line is-idle" lang="ko">
-          {episode.short ?? episode.title}
-        </p>
-      </>
-    );
-  } else if (state.status === 'ended' || !cue) {
-    content = (
-      <>
-        <div className="ep-now-kicker">
-          <span>The end</span>
-        </div>
-        <p className="ep-now-line is-idle">That was the whole episode.</p>
-        <p className="ep-now-next">Play again starts it from the top; any line in the script starts it from there.</p>
-      </>
-    );
-  } else if (cue.type === 'music' && state.manual) {
-    content = <NowManual cue={cue} translate={translate} onHeard={onHeard} />;
-  } else if (cue.type === 'music') {
-    content = <NowMusic cue={cue} trackIndex={state.trackIndex} playing={state.status === 'playing'} translate={translate} />;
-  } else {
-    content = <NowSpoken episode={episode} cue={cue} state={state} />;
+/**
+ * A track from outside the album: what it is and why it is being played, then
+ * the pairing — the stretch of it the episode plays, and the stretch of the
+ * album's own track that it is heard against right after.
+ */
+function OutsidePanel({ episode, state, track, sounding }: { episode: Episode; state: EpisodeState; track: EpisodeTrack; sounding: boolean }) {
+  // The stretch of this track: the cue being played, the one a talk-over sits on, or the one the hosts are leading up to.
+  let at = -1;
+  const current = episode.cues[state.cueIndex];
+  if (current?.type === 'music' && current.tracks.includes(track)) at = state.cueIndex;
+  for (let i = state.cueIndex - 1; at < 0 && i >= 0 && current?.type === 'over'; i -= 1) {
+    const cue = episode.cues[i]!;
+    if (cue.type === 'music' && cue.tracks.includes(track)) at = i;
+  }
+  for (let i = state.cueIndex + 1; at < 0 && i < episode.cues.length; i += 1) {
+    const cue = episode.cues[i]!;
+    if (cue.type === 'music' && cue.tracks.includes(track)) at = i;
+  }
+  const own = at >= 0 ? (episode.cues[at] as MusicCue) : null;
+  // What it is heard against: the next stretch of one of the album's own tracks.
+  let against: MusicCue | null = null;
+  for (let i = Math.max(at, state.cueIndex) + 1; !against && i < episode.cues.length; i += 1) {
+    const cue = episode.cues[i]!;
+    if (cue.type === 'music' && !cue.tracks[0]!.outside) against = cue;
   }
   return (
-    <section className="ep-now" aria-label="Now in the episode" data-status={active ? state.status : 'idle'}>
-      {content}
+    <section className="lyrics-panel ep-panel" aria-labelledby="episode-panel-label">
+      {track.outside!.why && (
+        <p className="ep-kicker" lang="ko">
+          {track.outside!.why}
+        </p>
+      )}
+      <p className="current-lyric ep-rest-title" lang={detectLineLanguage(track.title)}>
+        {track.title}
+      </p>
+      <p className="current-trans ep-stretch">{outsideCredit(track)}</p>
+      <ol className="ep-pair" aria-label="What is played, and what it is heard against">
+        {own && (
+          <li aria-current={sounding ? 'true' : undefined}>
+            <span className="ep-pair-mark" aria-hidden="true">
+              A
+            </span>
+            <span className="ep-pair-text">
+              <b lang={detectLineLanguage(track.title)}>{track.title}</b>
+              {own.caption && <span lang="ko">{own.caption}</span>}
+            </span>
+            <span className="ep-pair-range">{rangeLabel(own)}</span>
+          </li>
+        )}
+        {against && (
+          <li>
+            <span className="ep-pair-mark" aria-hidden="true">
+              B
+            </span>
+            <span className="ep-pair-text">
+              <b lang={detectLineLanguage(against.tracks[0]!.title)}>{against.tracks.map((item) => item.title).join(' → ')}</b>
+              {listeningCue(against) && <span lang="ko">{listeningCue(against)}</span>}
+            </span>
+            <span className="ep-pair-range">{rangeLabel(against)}</span>
+          </li>
+        )}
+      </ol>
     </section>
   );
 }
@@ -284,6 +408,8 @@ function ScriptList({
       {episode.cues.map((cue, cueIndex) => {
         const heading = chapterAt.get(cueIndex);
         const past = active && cueIndex < state.cueIndex;
+        const first = cue.type === 'music' ? cue.tracks[0]! : null;
+        const missing = cue.type === 'music' && cue.tracks.some(unplayable);
         return (
           <div key={cueIndex} className="ep-cue" data-type={cue.type} data-past={past || undefined}>
             {heading && (
@@ -295,6 +421,7 @@ function ScriptList({
               <button
                 type="button"
                 className="ep-row ep-row-music"
+                data-missing={missing || undefined}
                 aria-current={currentKey === `${cueIndex}:0` ? 'true' : undefined}
                 onClick={() => onJump(cueIndex, 0)}
               >
@@ -302,10 +429,13 @@ function ScriptList({
                   {currentKey === `${cueIndex}:0` ? <PlayingMark playing={state.status === 'playing'} /> : <PlayIcon paused />}
                 </span>
                 <span className="ep-row-text">
-                  <b lang={detectLineLanguage(cue.tracks[0]!.title)}>{cue.tracks.map((track) => track.title).join(' → ')}</b>
+                  <b lang={detectLineLanguage(first!.title)}>
+                    {cue.tracks.map((track) => track.title).join(' → ')}
+                    {first!.outside && <i> — {outsideCredit(first!)}</i>}
+                  </b>
                   {listeningCue(cue) && <span lang="ko">{listeningCue(cue)}</span>}
                 </span>
-                <span className="ep-row-aside">{rangeLabel(cue)}</span>
+                <span className="ep-row-aside">{missing ? 'not on Spotify here' : rangeLabel(cue)}</span>
               </button>
             ) : (
               cue.lines.map((line, lineIndex) => (
@@ -331,6 +461,41 @@ function ScriptList({
   );
 }
 
+/* ── The seek bar: where the track is, and the stretch the episode plays ─ */
+
+function StageProgress({ subject, state, live }: { subject: Subject; state: EpisodeState; live: boolean }) {
+  const position = usePlaybackPosition();
+  const { track, stretch } = subject;
+  if (!track) {
+    return (
+      <div className="progress-wrap ep-progress" aria-hidden="true">
+        <span />
+        <div className="ep-bar" />
+        <span />
+      </div>
+    );
+  }
+  const duration = Math.max(1, track.durationMs);
+  // The stretch belongs to this track when it is the only one, or the first or last of several.
+  const index = stretch ? Math.min(state.trackIndex, stretch.tracks.length - 1) : 0;
+  const isLast = !stretch || index === stretch.tracks.length - 1;
+  const from = stretch && index === 0 ? (stretch.fromMs ?? stretch.fallbackFromMs) : 0;
+  const until = stretch && isLast && stretch.untilMs !== null ? stretch.untilMs : duration;
+  const at = live ? Math.min(duration, Math.max(0, position)) : from;
+  const part = stretch !== null && (from > 0 || until < duration);
+  const percent = (ms: number) => `${((Math.min(duration, Math.max(0, ms)) / duration) * 100).toFixed(2)}%`;
+  return (
+    <div className="progress-wrap ep-progress" aria-hidden="true">
+      <span>{formatDuration(at)}</span>
+      <div className="ep-bar">
+        <div className="ep-bar-fill" style={{ width: percent(at) }} />
+        {part && <div className="ep-bar-stretch" style={{ left: percent(from), width: percent(until - from) }} />}
+      </div>
+      <span>{formatDuration(duration)}</span>
+    </div>
+  );
+}
+
 /* ── Page ──────────────────────────────────────────────────────────────── */
 
 const NOTICE_TEXT = {
@@ -339,10 +504,13 @@ const NOTICE_TEXT = {
 } as const;
 
 /**
- * An album's episode: the hosts' script on the right — the line being said in
- * large type above it, as Now Playing shows a lyric — and the album it walks
- * through on the left, in the cover's colour. The episode itself belongs to the
- * session (EpisodeProvider): it keeps running when this page is left.
+ * An album's episode, on the Now Playing layout: the cover with the title
+ * under it on the left; on the right the lyrics of what is playing, a line
+ * for the episode where the Listening note's would be, the seek bar and the
+ * transport. The one thing added is the hosts' line, on a slab in front of
+ * the cover while they speak. The script opens in the lyrics' place when it
+ * is asked for. The episode itself belongs to the session (EpisodeProvider):
+ * it keeps running when this page is left.
  */
 export function EpisodePage() {
   const { albumId } = useParams();
@@ -354,6 +522,8 @@ export function EpisodePage() {
   const [preferences, setPreferences] = usePreferences();
   const narration = useNarrationManifest();
   const engine = useEngine();
+  const playerTrack = usePlayerSnapshot().track;
+  const [scriptOpen, setScriptOpen] = useState(false);
   // Whether this browser is (or is trying to be) the player: when the music will not start, the app on the computer can be.
   const browserPlays = usePlayerSelector((s) => s.sdk.kind !== 'disabled') && engine.kind === 'spotify' && !mobile;
   const data = album.data;
@@ -362,15 +532,38 @@ export function EpisodePage() {
 
   const note = data ? getAlbumNote({ id: data.id, name: data.name, artistNames: data.artists.map((a) => a.name), releaseDate: data.releaseDate }) : null;
   const script = getEpisodeScript(note?.key);
+  // The script's tracks from outside the album: their covers, and whether Spotify plays them here.
+  const outsideIds = useMemo(() => script?.outside.map((track) => track.id) ?? [], [script]);
+  const lookups = useTracks(outsideIds);
   const resolved = useMemo(() => {
-    if (!data || !script) return null;
+    if (!data || !script || !lookups.settled) return null;
     try {
-      return { episode: resolveEpisode(script, albumEpisodeTracks(data), songNotes, episodeRelease(data)), problems: null };
+      return { episode: resolveEpisode(script, albumEpisodeTracks(data), songNotes, episodeRelease(data), outsideFound(script, lookups.tracks)), problems: null };
     } catch (error) {
       if (error instanceof EpisodeError) return { episode: null, problems: error.problems };
       throw error;
     }
-  }, [data, script]);
+  }, [data, script, lookups]);
+
+  // Once this episode is in the runner, its own copy is the one on screen.
+  const active = Boolean(resolved?.episode && data) && state.episode !== null && state.episode.key === resolved!.episode!.key && state.episode.release?.id === data!.id;
+  const episode = active ? state.episode! : (resolved?.episode ?? null);
+  const subject = episode ? subjectOf(episode, state, active) : NO_SUBJECT;
+  const cue = episode && active && state.status !== 'ended' ? episode.cues[state.cueIndex] : undefined;
+  // Music is meant to be sounding from the session's player (rather than stopped for a talk, or the listener's to play).
+  const sounding = Boolean(cue && cue.type !== 'talk' && !state.manual);
+  const onAir = sounding && subject.track !== null && sameTrack(subject.track, playerTrack);
+  const showLyrics = onAir && !subject.track!.outside && !scriptOpen;
+  const lyricsState = useTimedLyrics(showLyrics ? playerTrack : null);
+
+  // Who plays the music is chosen in the settings. A change in the middle of a stretch of music takes that stretch up again in the new way.
+  const musicChoice = useRef(preferences.episodeMusic);
+  useEffect(() => {
+    if (musicChoice.current === preferences.episodeMusic) return;
+    musicChoice.current = preferences.episodeMusic;
+    const now = runner.getState();
+    if (now.episode && now.status === 'playing' && now.episode.cues[now.cueIndex]?.type === 'music') runner.jump(now.cueIndex);
+  }, [preferences.episodeMusic, runner]);
 
   const albumLink = (
     <Link className="plain-action" to={isSpotifyId(albumId) ? `/album/${albumId}` : '/library'}>
@@ -385,7 +578,7 @@ export function EpisodePage() {
       </StateView>
     );
   }
-  if (album.isPending) {
+  if (album.isPending || (data && script && !lookups.settled)) {
     return (
       <StateView label="Episode" title="Loading the episode…">
         <p>Reading the album’s tracks.</p>
@@ -407,12 +600,12 @@ export function EpisodePage() {
       </StateView>
     );
   }
-  if (!resolved.episode) {
+  if (!resolved.episode || !episode) {
     return (
       <StateView label="Episode" title="This episode doesn’t fit this release" tone="alert" actions={albumLink}>
         <p>The script names tracks or positions this edition of {data.name} doesn’t have:</p>
         <ul className="notice-hints">
-          {resolved.problems.map((problem) => (
+          {(resolved.problems ?? []).map((problem) => (
             <li key={problem}>{problem}</li>
           ))}
         </ul>
@@ -420,9 +613,6 @@ export function EpisodePage() {
     );
   }
 
-  // Once this episode is in the runner, its own copy is the one on screen.
-  const active = state.episode !== null && state.episode.key === resolved.episode.key && state.episode.release?.id === data.id;
-  const episode = active ? state.episode! : resolved.episode;
   const playing = active && state.status === 'playing';
   const ended = active && state.status === 'ended';
   const chapter = active && !ended ? chapterOf(episode, state.cueIndex) : null;
@@ -438,7 +628,18 @@ export function EpisodePage() {
       : recorded.recorded === recorded.total
         ? `Recorded · ${engineName}`
         : `Recorded in part · ${recorded.recorded} of ${recorded.total} lines`;
-  const titleLang = detectLineLanguage(data.name);
+  const voiceHint =
+    recorded.recorded < recorded.total && state.spareNarration === 'captions'
+      ? `${recorded.recorded > 0 ? 'Some lines have no recording yet, and this' : 'This'} browser has no Korean voice to speak with, so ${
+          recorded.recorded > 0 ? 'those lines' : 'the hosts’ lines'
+        } are shown for as long as they would take to say. Microsoft Edge comes with natural-sounding Korean voices.`
+      : null;
+  const missing = episode.cues.flatMap((item) => (item.type === 'music' ? item.tracks.filter(unplayable) : []));
+  const fineprint = [
+    ...(recorded.recorded > 0 ? [`The hosts’ voices are machine-generated (${engineName}).`] : []),
+    ...[...new Set(missing)].map((track) => `Spotify does not have “${track.title}” (${track.outside!.artist}) where you are: the episode goes past it.`),
+    ...episode.warnings,
+  ];
 
   // Where an earlier visit left this episode: Play carries on from there, and the top is one more button away.
   const bookmark = active ? null : readBookmark(episode);
@@ -454,175 +655,211 @@ export function EpisodePage() {
   };
   const mainLabel = !active ? (bookmark ? 'Continue' : 'Play episode') : playing ? 'Pause' : ended ? 'Play again' : 'Continue';
 
-  // Who plays the music. A change in the middle of a stretch of music takes that stretch up again in the new way.
   const ownMusic = preferences.episodeMusic === 'manual';
-  const setMusic = (music: 'auto' | 'manual') => {
-    setPreferences({ episodeMusic: music });
-    if (active && state.status === 'playing' && episode.cues[state.cueIndex]?.type === 'music') runner.jump(state.cueIndex);
-  };
   const playItMyself = () => {
     setPreferences({ episodeMusic: 'manual' });
     runner.resume();
   };
   const playThroughApp = () => void engine.setBrowserPlayback(false).then(() => runner.resume());
 
+  const track = subject.track;
+  const title = track?.title ?? data.name;
+  const upcoming = subject.stretch && cue?.type !== 'music' ? subject.stretch : null;
+  const musicCue = cue?.type === 'music' ? cue : null;
+  const lineText = !active
+    ? episode.title
+    : ended
+      ? 'That was the whole episode.'
+      : [chapter?.title, musicCue ? listeningCue(musicCue, state.trackIndex) : undefined].filter(Boolean).join(' — ');
+
+  let panel: 'script' | 'intro' | 'ended' | 'manual' | 'outside' | 'lyrics' | 'rest';
+  if (scriptOpen) panel = 'script';
+  else if (!active) panel = 'intro';
+  else if (ended || !cue) panel = 'ended';
+  else if (cue.type === 'music' && state.manual) panel = 'manual';
+  else if (track?.outside) panel = 'outside';
+  else if (showLyrics) panel = 'lyrics';
+  else panel = 'rest';
+
+  const overview = leftAt
+    ? `Left at ${leftAt.number} / ${episode.chapters.length} · ${leftAt.title}`
+    : `${episode.chapters.length} chapters · about ${minutes}`;
+
   return (
     <div className="view active">
-      <div className="ep">
-        <div className="ep-grid">
-          <section className="ep-object" aria-label="Episode details">
-            {!mobile && <BackLink />}
-            <div className="ep-cover">
-              <CoverImage
-                images={data.images}
-                size={420}
-                alt={`${data.name} album cover`}
-                title={data.name}
-                subtitle={joinArtistNames(data.artists)}
-                paletteKey={data.id}
-                priority
-              />
+      <div className="np ep-stage" data-panel={panel}>
+        <div className="np-main">
+          <div className="np-grid" role="region" aria-label="Now in the episode" data-status={active ? state.status : 'idle'}>
+            <section className="np-object" aria-label="What the episode is on">
+              <figure className="np-art">
+                <Cover album={data} track={track}>
+                  {cue && cue.type !== 'music' && <Caption episode={episode} cue={cue} state={state} />}
+                </Cover>
+                <figcaption className="np-caption">
+                  <h1 lang={detectLineLanguage(title)} title={title}>
+                    {title}
+                  </h1>
+                  <div className="artist-line">
+                    {track?.outside ? (
+                      <span>{outsideCredit(track)}</span>
+                    ) : (
+                      <>
+                        <ArtistLinks artists={data.artists} />
+                        <span className="sep" aria-hidden="true">
+                          {' · '}
+                        </span>
+                        <Link className="linkish" to={`/album/${data.id}`} lang={detectLineLanguage(data.name)}>
+                          {track ? data.name : 'Album'}
+                        </Link>
+                      </>
+                    )}
+                  </div>
+                </figcaption>
+              </figure>
+            </section>
+
+            {panel === 'lyrics' && playerTrack && <LyricsBlock key={playerTrack.spotifyTrackId} track={playerTrack} lyricsState={lyricsState} />}
+
+            {panel === 'script' && (
+              <>
+                <PanelHead title="Script">
+                  <span lang="ko">{chapter ? `${chapter.number} / ${episode.chapters.length} · ${chapter.title}` : overview}</span>
+                </PanelHead>
+                <section className="ep-script-panel" aria-labelledby="episode-panel-label">
+                  <ScriptList episode={episode} state={state} active={active} onJump={jump} />
+                </section>
+              </>
+            )}
+
+            {panel === 'intro' && (
+              <>
+                <PanelHead title="Episode">
+                  <span lang="ko">{overview}</span>
+                </PanelHead>
+                <IntroPanel episode={episode} facts={[`About ${minutes}`, voiceLabel]} hint={voiceHint} fineprint={fineprint}>
+                  <button type="button" className="plain-action primary" onClick={playOrPause}>
+                    {mainLabel}
+                  </button>
+                  {bookmark && (
+                    <button type="button" className="plain-action" onClick={() => runner.start(episode)}>
+                      From the top
+                    </button>
+                  )}
+                  <button type="button" className="plain-action" onClick={() => setScriptOpen(true)}>
+                    Read the script
+                  </button>
+                </IntroPanel>
+              </>
+            )}
+
+            {panel === 'ended' && (
+              <>
+                <PanelHead title="Episode" />
+                <RestPanel kicker="The end" title="That was the whole episode." cue="Play again starts it from the top; any line in the script starts it from there." />
+              </>
+            )}
+
+            {panel === 'manual' && musicCue && (
+              <>
+                <PanelHead title="Your turn" />
+                <ManualPanel cue={musicCue} translate={preferences.translationEnabled} onHeard={() => runner.proceed()} />
+              </>
+            )}
+
+            {panel === 'outside' && track && (
+              <>
+                <PanelHead title="Outside the album">
+                  <span>{subject.ahead ? 'Up next' : sounding ? (cue?.type === 'over' ? 'Playing under the talk' : 'Playing') : 'Just heard'}</span>
+                </PanelHead>
+                <OutsidePanel episode={episode} state={state} track={track} sounding={sounding} />
+              </>
+            )}
+
+            {panel === 'rest' && (
+              <>
+                <PanelHead title="Lyrics" />
+                {track ? (
+                  <RestPanel
+                    kicker={sounding ? 'Starting' : subject.ahead ? 'Up next' : 'Just heard'}
+                    title={upcoming && upcoming.tracks.length > 1 ? upcoming.tracks.map((item) => item.title).join(' → ') : track.title}
+                    stretch={upcoming ? stretchLabel(upcoming) : musicCue ? stretchLabel(musicCue) : undefined}
+                    cue={upcoming ? listeningCue(upcoming) : musicCue ? listeningCue(musicCue, state.trackIndex) : undefined}
+                  />
+                ) : (
+                  <RestPanel kicker={chapter ? `${chapter.number} / ${episode.chapters.length}` : 'Episode'} title={chapter?.title ?? episode.title} />
+                )}
+              </>
+            )}
+
+            <div className="note-line ep-line">
+              <span className="note-line-kicker">{chapter ? `Episode · ${chapter.number} / ${episode.chapters.length}` : 'Episode'}</span>
+              <p lang="ko">{lineText}</p>
+              <button type="button" className="note-more" aria-expanded={scriptOpen} onClick={() => setScriptOpen((open) => !open)}>
+                {scriptOpen ? 'Close the script' : 'Script'} <span aria-hidden="true">→</span>
+              </button>
             </div>
-            <div className="ep-object-copy">
-              <div className="label">Episode</div>
-              <h1 lang={titleLang}>{data.name}</h1>
-              <div className="artist">
-                <ArtistLinks artists={data.artists} />
+
+            <div className="player-controls">
+              <StageProgress subject={subject} state={state} live={onAir || (track !== null && !subject.ahead && sameTrack(track, playerTrack))} />
+              <div className="transport-row">
+                <div className={mobile ? 'm-transport compact' : 'transport'}>
+                  <button type="button" className={mobile ? 'm-ctl ink' : 'ctl'} title="Back" aria-label="Previous part" disabled={!active} onClick={() => runner.previous()}>
+                    <PreviousIcon />
+                  </button>
+                  <button type="button" className={mobile ? 'm-play' : 'play'} title={mainLabel} aria-label={mainLabel} onClick={playOrPause}>
+                    <PlayIcon paused={!playing} />
+                  </button>
+                  <button
+                    type="button"
+                    className={mobile ? 'm-ctl ink' : 'ctl'}
+                    title="Skip"
+                    aria-label="Next part"
+                    disabled={!active || state.cueIndex >= episode.cues.length - 1}
+                    onClick={() => runner.next()}
+                  >
+                    <NextIcon />
+                  </button>
+                </div>
+                <div className="transport-extras ep-extras">
+                  {active && (
+                    <button type="button" className="text-toggle" onClick={() => runner.stop()}>
+                      End episode
+                    </button>
+                  )}
+                  <button type="button" className="text-toggle" title="Voices, pace, and who plays the music" onClick={shell.toggleSettings}>
+                    Voices and pace
+                  </button>
+                  {!mobile && !ownMusic && (
+                    <>
+                      <DevicePicker />
+                      <Volume />
+                    </>
+                  )}
+                </div>
               </div>
-              <div className="album-hero-meta">
-                <div>
-                  <b>Hosts</b>
-                  <span lang="ko">{episode.hosts.map((host) => host.name).join(' · ')}</span>
-                </div>
-                <div>
-                  <b>Runs</b>
-                  <span>about {minutes}</span>
-                </div>
-                <div>
-                  <b>Voice</b>
-                  <span>{voiceLabel}</span>
-                </div>
-              </div>
-              {recorded.recorded < recorded.total && state.spareNarration === 'captions' && (
-                <p className="ep-hint">
-                  {recorded.recorded > 0 ? 'Some lines have no recording yet, and this' : 'This'} browser has no Korean voice to speak with, so{' '}
-                  {recorded.recorded > 0 ? 'those lines' : 'the hosts’ lines'} are shown for as long as they would take to say. Microsoft Edge comes with
-                  natural-sounding Korean voices.
+              {active && state.notice && (
+                <p className="playback-state alert ep-notice" role="alert">
+                  {NOTICE_TEXT[state.notice]}
+                  {state.notice === 'no-playback' && !ownMusic && browserPlays && (
+                    <button
+                      type="button"
+                      className="note-more"
+                      title="Stop playing in this browser: the Spotify app on this computer plays, and this page starts and stops it"
+                      onClick={playThroughApp}
+                    >
+                      Play through the Spotify app
+                    </button>
+                  )}
+                  {state.notice === 'no-playback' && !ownMusic && (
+                    <button type="button" className="note-more" onClick={playItMyself}>
+                      Play the music myself
+                    </button>
+                  )}
                 </p>
               )}
-              <div className="object-actions">
-                <button type="button" className="plain-action primary" onClick={playOrPause}>
-                  {mainLabel}
-                </button>
-                {active && (
-                  <button type="button" className="plain-action" onClick={() => runner.stop()}>
-                    End episode
-                  </button>
-                )}
-                {bookmark && (
-                  <button type="button" className="plain-action" onClick={() => runner.start(episode)}>
-                    From the top
-                  </button>
-                )}
-                <Link className="plain-action" to={`/album/${data.id}`}>
-                  Album
-                </Link>
-              </div>
-              {recorded.recorded > 0 && <p className="fineprint">The hosts’ voices are machine-generated ({engineName}).</p>}
-              {episode.warnings.map((warning) => (
-                <p key={warning} className="fineprint">
-                  {warning}
-                </p>
-              ))}
+              <PlaybackNotice />
             </div>
-          </section>
-
-          <section className="ep-read" aria-labelledby="episode-title">
-            <div className="sequence-head">
-              <h2 id="episode-title" lang="ko">
-                {episode.title}
-              </h2>
-              <span lang="ko">
-                {chapter
-                  ? `${chapter.number} / ${episode.chapters.length} · ${chapter.title}`
-                  : leftAt
-                    ? `Left at ${leftAt.number} / ${episode.chapters.length} · ${leftAt.title}`
-                    : `${episode.chapters.length} chapters · about ${minutes}`}
-              </span>
-            </div>
-
-            <NowPanel episode={episode} state={state} active={active} translate={preferences.translationEnabled} onHeard={() => runner.proceed()} />
-
-            {active && state.notice && (
-              <p className="playback-state alert ep-notice" role="alert">
-                {NOTICE_TEXT[state.notice]}
-                {state.notice === 'no-playback' && !ownMusic && browserPlays && (
-                  <button
-                    type="button"
-                    className="note-more"
-                    title="Stop playing in this browser: the Spotify app on this computer plays, and this page starts and stops it"
-                    onClick={playThroughApp}
-                  >
-                    Play through the Spotify app
-                  </button>
-                )}
-                {state.notice === 'no-playback' && !ownMusic && (
-                  <button type="button" className="note-more" onClick={playItMyself}>
-                    Play the music myself
-                  </button>
-                )}
-              </p>
-            )}
-            <PlaybackNotice />
-
-            <div className="ep-controls">
-              <div className={mobile ? 'm-transport compact' : 'transport'}>
-                <button type="button" className={mobile ? 'm-ctl ink' : 'ctl'} title="Back" aria-label="Previous part" disabled={!active} onClick={() => runner.previous()}>
-                  <PreviousIcon />
-                </button>
-                <button type="button" className={mobile ? 'm-play' : 'play'} title={mainLabel} aria-label={mainLabel} onClick={playOrPause}>
-                  <PlayIcon paused={!playing} />
-                </button>
-                <button
-                  type="button"
-                  className={mobile ? 'm-ctl ink' : 'ctl'}
-                  title="Skip"
-                  aria-label="Next part"
-                  disabled={!active || state.cueIndex >= episode.cues.length - 1}
-                  onClick={() => runner.next()}
-                >
-                  <NextIcon />
-                </button>
-              </div>
-              <div className="ep-options">
-                <button
-                  type="button"
-                  className="text-toggle"
-                  aria-pressed={ownMusic}
-                  title="The episode can play the music in this app’s player, or show what to play and wait while you play it in Spotify yourself"
-                  onClick={() => setMusic(ownMusic ? 'auto' : 'manual')}
-                >
-                  Music: <b>{ownMusic ? 'I play it myself' : 'played for me'}</b>
-                </button>
-                {!ownMusic && (
-                  <button
-                    type="button"
-                    className="text-toggle"
-                    aria-pressed={preferences.episodeTalkOver === 'duck'}
-                    title="What the music does while a host talks over it"
-                    onClick={() => setPreferences({ episodeTalkOver: preferences.episodeTalkOver === 'duck' ? 'pause' : 'duck' })}
-                  >
-                    Talk over music: <b>{preferences.episodeTalkOver === 'duck' ? 'music turned down' : 'music stops'}</b>
-                  </button>
-                )}
-                <button type="button" className="text-toggle" onClick={shell.toggleSettings}>
-                  Voices and pace
-                </button>
-              </div>
-            </div>
-
-            <ScriptList episode={episode} state={state} active={active} onJump={jump} />
-          </section>
+          </div>
         </div>
       </div>
     </div>

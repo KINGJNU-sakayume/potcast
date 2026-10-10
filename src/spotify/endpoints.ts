@@ -16,6 +16,7 @@ import type {
   SpotifySimplifiedAlbum,
   SpotifySimplifiedPlaylist,
   SpotifySimplifiedTrack,
+  SpotifyTrack,
 } from './types';
 
 /**
@@ -151,6 +152,11 @@ export async function getAlbumTracks(
     signal,
   );
   return required(result, '/albums/{id}/tracks');
+}
+
+/** GET /tracks/{id} — one track, as it plays in the listener's market. */
+export async function getTrack(client: SpotifyClient, id: string, signal?: AbortSignal): Promise<SpotifyTrack> {
+  return required(await client.get<SpotifyTrack>(`/tracks/${encodeURIComponent(id)}`, undefined, signal), '/tracks/{id}');
 }
 
 export async function getArtist(client: SpotifyClient, id: string, signal?: AbortSignal): Promise<SpotifyArtist> {

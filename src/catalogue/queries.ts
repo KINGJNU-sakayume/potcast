@@ -1,8 +1,11 @@
-import { useInfiniteQuery, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { useInfiniteQuery, useMutation, useQueries, useQuery, useQueryClient, type UseQueryResult } from '@tanstack/react-query';
+import { useCallback } from 'react';
 import { useSession } from '../app/sessionContext';
 import { loadDiscography } from '../discography/loadDiscography';
 import type { ReleaseGroup, SearchResults, SearchType } from '../domain/types';
 import { isSpotifyId } from '../lib/spotifyUri';
+import { SpotifyApiError } from '../spotify/errors';
+import type { TrackLookup } from './CatalogueSource';
 import { drawLikedShuffle } from './likedShuffle';
 
 const MINUTE = 60_000;
@@ -88,6 +91,38 @@ export function useAlbum(albumId: string | undefined) {
     queryFn: ({ signal }) => catalogue.getAlbum(albumId!, signal),
     enabled: isSpotifyId(albumId),
     staleTime: 30 * MINUTE,
+  });
+}
+
+/**
+ * Tracks looked up one by one (an episode's few tracks from outside its
+ * album). `settled` once every lookup has an answer; a track is `null` when
+ * Spotify says it does not exist, and `undefined` when the lookup failed for
+ * any other reason — which says nothing about the track.
+ */
+export function useTracks(ids: readonly string[]): { settled: boolean; tracks: Record<string, TrackLookup | null | undefined> } {
+  const { catalogue } = useSession();
+  // Kept the same from one render to the next, so the answer is too: a new object only when a lookup's result changes.
+  const combine = useCallback(
+    (results: Array<UseQueryResult<TrackLookup | null>>) => ({
+      settled: results.every((result) => !result.isPending),
+      tracks: Object.fromEntries(results.map((result, index) => [ids[index]!, result.isError ? undefined : result.data])),
+    }),
+    [ids],
+  );
+  return useQueries({
+    queries: ids.map((id) => ({
+      queryKey: [catalogue.mode, 'track', id],
+      queryFn: ({ signal }: { signal: AbortSignal }): Promise<TrackLookup | null> =>
+        catalogue.getTrack(id, signal).catch((error: unknown) => {
+          // Not in this market at all (or not in the preview): an answer, not a failure.
+          if (error instanceof SpotifyApiError && error.kind === 'not-found') return null;
+          throw error;
+        }),
+      staleTime: 30 * MINUTE,
+      retry: 1,
+    })),
+    combine,
   });
 }
 
