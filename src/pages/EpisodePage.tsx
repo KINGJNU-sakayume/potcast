@@ -153,6 +153,12 @@ function Caption({ episode, cue, state }: { episode: Episode; cue: Exclude<Cue, 
   );
 }
 
+/**
+ * The cover of what is sounding. A track from outside the album takes the
+ * whole square, as any playing track would; where the album is, and where the
+ * episode goes next, is said in words under the title (OutsideReturn), not by
+ * a sliver of the album's cover peeking out behind.
+ */
 function Cover({ album, track, children }: { album: AlbumDetail; track: EpisodeTrack | null; children?: ReactNode }) {
   const artists = joinArtistNames(album.artists);
   const albumCover = (
@@ -161,11 +167,6 @@ function Cover({ album, track, children }: { album: AlbumDetail; track: EpisodeT
   const outside = track?.outside;
   return (
     <div className="np-cover ep-cover" data-outside={outside ? '' : undefined}>
-      {outside && (
-        <div className="ep-cover-behind" aria-hidden="true">
-          {albumCover}
-        </div>
-      )}
       <div className="ep-cover-front">
         {outside && track ? (
           <CoverImage
@@ -271,7 +272,8 @@ function TalkPanel({
   const before = at > 0 ? cue.lines[at - 1] : undefined;
   const after = cue.lines[at + 1];
   const title = upcoming && upcoming.tracks.length > 1 ? upcoming.tracks.map((item) => item.title).join(' → ') : upTrack?.title;
-  const cueText = upcoming ? listeningCue(upcoming) : undefined;
+  // For a track from outside the album, why it is here says more before it plays than what to listen for in it.
+  const cueText = upTrack?.outside?.why ?? (upcoming ? listeningCue(upcoming) : undefined);
   return (
     <section className="lyrics-panel ep-panel ep-talk" aria-labelledby="episode-panel-label">
       {before && (
@@ -298,7 +300,10 @@ function TalkPanel({
       )}
       {upTrack && title && (
         <div className="ep-upnext">
-          <span className="ep-upnext-kicker">{ahead ? 'Up next' : 'Just heard'}</span>
+          <span className="ep-upnext-kicker">
+            {ahead ? 'Up next' : 'Just heard'}
+            {upTrack.outside && <em>Outside the album</em>}
+          </span>
           <span className="ep-upnext-text">
             <b lang={detectLineLanguage(title)}>
               {title}
@@ -377,11 +382,11 @@ function ManualPanel({ cue, translate, onHeard }: { cue: MusicCue; translate: bo
 }
 
 /**
- * A track from outside the album: what it is and why it is being played, then
- * the pairing — the stretch of it the episode plays, and the stretch of the
- * album's own track that it is heard against right after.
+ * Where a track from outside the album sits in the episode: the stretch of it
+ * that is played, and the stretch of the album's own track it is heard
+ * against right after.
  */
-function OutsidePanel({ episode, state, track, sounding }: { episode: Episode; state: EpisodeState; track: EpisodeTrack; sounding: boolean }) {
+function pairOf(episode: Episode, state: EpisodeState, track: EpisodeTrack): { own: MusicCue | null; against: MusicCue | null } {
   // The stretch of this track: the cue being played, the one a talk-over sits on, or the one the hosts are leading up to.
   let at = -1;
   const current = episode.cues[state.cueIndex];
@@ -401,25 +406,32 @@ function OutsidePanel({ episode, state, track, sounding }: { episode: Episode; s
     const cue = episode.cues[i]!;
     if (cue.type === 'music' && !cue.tracks[0]!.outside) against = cue;
   }
+  return { own, against };
+}
+
+/**
+ * A track from outside the album. The title and the artist are already under
+ * the cover, so the panel leads with why it is here, then walks the pairing in
+ * order: the original, then the place in the album it is heard in.
+ */
+function OutsidePanel({ episode, state, track, sounding }: { episode: Episode; state: EpisodeState; track: EpisodeTrack; sounding: boolean }) {
+  const { own, against } = pairOf(episode, state, track);
+  const why = track.outside!.why;
   return (
-    <section className="lyrics-panel ep-panel" aria-labelledby="episode-panel-label">
-      {track.outside!.why && (
-        <p className="ep-kicker" lang="ko">
-          {track.outside!.why}
-        </p>
-      )}
-      <p className="current-lyric ep-rest-title" lang={detectLineLanguage(track.title)}>
-        {track.title}
+    <section className="lyrics-panel ep-panel ep-outside" aria-labelledby="episode-panel-label">
+      <p className="current-lyric is-state ep-why" lang={why ? 'ko' : detectLineLanguage(track.title)}>
+        {why ?? track.title}
       </p>
-      <p className="current-trans ep-stretch">{outsideCredit(track)}</p>
       <ol className="ep-pair" aria-label="What is played, and what it is heard against">
         {own && (
           <li aria-current={sounding ? 'true' : undefined}>
-            <span className="ep-pair-mark" aria-hidden="true">
-              A
-            </span>
+            <span className="ep-pair-mark" aria-hidden="true" />
             <span className="ep-pair-text">
-              <b lang={detectLineLanguage(track.title)}>{track.title}</b>
+              <span className="ep-pair-role">{sounding ? 'Playing · the original' : 'First · the original'}</span>
+              <b lang={detectLineLanguage(track.title)}>
+                {track.title}
+                <i> — {outsideCredit(track)}</i>
+              </b>
               {own.caption && <span lang="ko">{own.caption}</span>}
             </span>
             <span className="ep-pair-range">{rangeLabel(own)}</span>
@@ -427,10 +439,9 @@ function OutsidePanel({ episode, state, track, sounding }: { episode: Episode; s
         )}
         {against && (
           <li>
-            <span className="ep-pair-mark" aria-hidden="true">
-              B
-            </span>
+            <span className="ep-pair-mark" aria-hidden="true" />
             <span className="ep-pair-text">
+              <span className="ep-pair-role">Then · in the album</span>
               <b lang={detectLineLanguage(against.tracks[0]!.title)}>{against.tracks.map((item) => item.title).join(' → ')}</b>
               {listeningCue(against) && <span lang="ko">{listeningCue(against)}</span>}
             </span>
@@ -439,6 +450,26 @@ function OutsidePanel({ episode, state, track, sounding }: { episode: Episode; s
         )}
       </ol>
     </section>
+  );
+}
+
+/** Under the title of a track from outside the album: the album it is played for, and where the episode goes back to. */
+function OutsideReturn({ album, against }: { album: AlbumDetail; against: MusicCue | null }) {
+  return (
+    <p className="ep-return">
+      <span className="ep-return-cover" aria-hidden="true">
+        <CoverImage images={album.images} size={64} alt="" title={album.name} paletteKey={album.id} />
+      </span>
+      <span>
+        Not on <span lang={detectLineLanguage(album.name)}>{album.name}</span>
+        {against && (
+          <>
+            {' · back to '}
+            <b lang={detectLineLanguage(against.tracks[0]!.title)}>{against.tracks[0]!.title}</b> next
+          </>
+        )}
+      </span>
+    </p>
   );
 }
 
@@ -500,6 +531,7 @@ function ScriptList({
                 type="button"
                 className="ep-row ep-row-music"
                 data-missing={missing || undefined}
+                data-outside={first!.outside ? '' : undefined}
                 aria-current={currentKey === `${cueIndex}:0` ? 'true' : undefined}
                 onClick={() => onJump(cueIndex, 0)}
               >
@@ -796,6 +828,7 @@ export function EpisodePage() {
                       </>
                     )}
                   </div>
+                  {shown?.outside && <OutsideReturn album={data} against={pairOf(episode, state, shown).against} />}
                 </figcaption>
               </figure>
             </section>
