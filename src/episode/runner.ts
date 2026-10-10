@@ -423,41 +423,55 @@ export class EpisodeRunner {
 
     const isLast = () => index === cue.tracks.length - 1;
     let lastPosition = positionAt(this.snapshot(), this.now());
-    await this.until(signal, (): Verdict => {
-      const now = this.now();
-      const current = this.snapshot();
-      const track = cue.tracks[index]!;
+    for (;;) {
+      /** An earlier track of several started over instead of running on (the listener's repeat mode). */
+      let repeated = false;
+      await this.until(signal, (): Verdict => {
+        const now = this.now();
+        const current = this.snapshot();
+        const track = cue.tracks[index]!;
 
-      if (!sameTrack(track, current.track)) {
-        const following = cue.tracks[index + 1];
-        if (following && sameTrack(following, current.track)) {
-          index += 1;
-          lastPosition = 0;
-          this.update({ trackIndex: index });
-          return { waitMs: 0 };
+        if (!sameTrack(track, current.track)) {
+          const following = cue.tracks[index + 1];
+          if (following && sameTrack(following, current.track)) {
+            index += 1;
+            lastPosition = 0;
+            this.update({ trackIndex: index });
+            return { waitMs: 0 };
+          }
+          if (this.settling()) return { waitMs: 250 };
+          // The last track ran out and the player moved on by itself.
+          if (isLast() && lastPosition >= track.durationMs - END_SLACK_MS) return { done: true };
+          return { interrupt: 'interrupted' };
         }
-        if (this.settling()) return { waitMs: 250 };
-        // The last track ran out and the player moved on by itself.
-        if (isLast() && lastPosition >= track.durationMs - END_SLACK_MS) return { done: true };
-        return { interrupt: 'interrupted' };
-      }
 
-      const duration = current.durationMs > 0 ? current.durationMs : track.durationMs;
-      const position = positionAt(current, now);
-      if (current.paused) {
-        if (this.settling()) return { waitMs: 250 };
-        if (isLast() && Math.max(lastPosition, position) >= duration - END_SLACK_MS) return { done: true };
-        return { interrupt: 'interrupted' };
-      }
+        const duration = current.durationMs > 0 ? current.durationMs : track.durationMs;
+        const position = positionAt(current, now);
+        if (current.paused) {
+          if (this.settling()) return { waitMs: 250 };
+          if (isLast() && Math.max(lastPosition, position) >= duration - END_SLACK_MS) return { done: true };
+          return { interrupt: 'interrupted' };
+        }
 
-      lastPosition = position;
-      this.positions.set(track.key, position);
-      // An earlier track of several runs into the next one by itself.
-      if (!isLast()) return { waitMs: 1000 };
-      const target = cue.untilMs ?? duration - END_GUARD_MS;
-      if (position >= target) return { done: true };
-      return { waitMs: current.buffering ? 500 : target - position };
-    });
+        if (!isLast() && lastPosition >= duration - END_SLACK_MS && position < END_SLACK_MS) {
+          repeated = true;
+          return { done: true };
+        }
+        lastPosition = position;
+        this.positions.set(track.key, position);
+        // An earlier track of several runs into the next one by itself.
+        if (!isLast()) return { waitMs: 1000 };
+        const target = cue.untilMs ?? duration - END_GUARD_MS;
+        if (position >= target) return { done: true };
+        return { waitMs: current.buffering ? 500 : target - position };
+      });
+      if (!repeated) break;
+      // Put the next track on ourselves.
+      index += 1;
+      lastPosition = 0;
+      this.update({ trackIndex: index });
+      await this.startMusic(cue.tracks.slice(index), 0, 1, signal);
+    }
 
     const next = this.state.episode?.cues[this.state.cueIndex + 1];
     if (cue.untilMs === null) {
@@ -503,6 +517,8 @@ export class EpisodeRunner {
     }
     if (!confirmed) {
       this.commanded();
+      // Several tracks have to come in the order written: shuffle would rearrange them.
+      if (tracks.length > 1 && this.snapshot().shuffle) await this.engine.setShuffle(false);
       await this.engine.play({ uris: tracks.map((item) => item.uri), positionMs: Math.max(0, Math.round(startMs)) });
       this.commanded();
       confirmed = await this.confirm(track, startMs, SETTLE_MS, signal);

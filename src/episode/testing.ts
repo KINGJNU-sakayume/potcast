@@ -90,6 +90,10 @@ export class StageEngine implements PlaybackEngine {
   dead = false;
   /** What Spotify would put on after the requested tracks run out. */
   autoplay: EpisodeTrack | null = null;
+  /** The listener's repeat mode is "repeat one": a track starts over at its end. */
+  repeatOne = false;
+  /** The listener's shuffle mode. */
+  shuffle = false;
 
   private queue: EpisodeTrack[] = [];
   private index = 0;
@@ -163,7 +167,11 @@ export class StageEngine implements PlaybackEngine {
   async setGain(gain: number): Promise<void> {
     this.gains.push(Math.round(gain * 1000) / 1000);
   }
-  async setShuffle(): Promise<void> {}
+  async setShuffle(shuffle: boolean): Promise<void> {
+    this.commands.push(`shuffle ${shuffle ? 'on' : 'off'}`);
+    this.shuffle = shuffle;
+    this.patch({ shuffle });
+  }
   async transferToBrowser(): Promise<void> {}
   async transferTo(): Promise<void> {}
   async resync(): Promise<void> {}
@@ -189,7 +197,7 @@ export class StageEngine implements PlaybackEngine {
       track: identity(item),
       context: null,
       paused: state.paused,
-      shuffle: false,
+      shuffle: this.shuffle,
       buffering: false,
       positionMs: state.positionMs,
       sampledAt: this.now(),
@@ -218,7 +226,9 @@ export class StageEngine implements PlaybackEngine {
   }
 
   private advance(): void {
-    if (this.index < this.queue.length - 1) {
+    if (this.repeatOne) {
+      this.show({ positionMs: 0, paused: false });
+    } else if (this.index < this.queue.length - 1) {
       this.index += 1;
       this.show({ positionMs: 0, paused: false });
     } else if (this.autoplay) {

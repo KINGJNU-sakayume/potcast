@@ -543,3 +543,103 @@ describe('SpotifyPlaybackEngine', () => {
     h.engine.stop();
   });
 });
+
+describe('SpotifyPlaybackEngine gain (fades and talk-over in an episode)', () => {
+  /** This browser's player is ready and playing. */
+  async function playingHere() {
+    // Nothing is playing on any other device.
+    const h = harness({ route: () => new Response(null, { status: 204 }) });
+    h.engine.start();
+    await h.flush();
+    h.callbacks().onReady('browser-device');
+    h.callbacks().onState(sdkState());
+    await h.flush();
+    vi.mocked(h.device.setVolume).mockClear();
+    return h;
+  }
+
+  it('turns this browser\'s player down by a factor without touching the listener\'s volume', async () => {
+    const h = await playingHere();
+    expect(h.engine.ducking()).toBe('smooth');
+    await h.engine.setVolume(0.5);
+    await h.engine.setGain(0.2);
+    expect(h.device.setVolume).toHaveBeenLastCalledWith(0.1);
+    // The slider and the stored volume are still the listener's.
+    expect(h.store.getState().snapshot.volume).toBe(0.5);
+    expect(JSON.parse(window.localStorage.getItem('arc.player.volume.v1')!)).toBe(0.5);
+    const commandAt = h.store.getState().lastCommandAt;
+
+    // A volume change by the listener in the middle of a talk-over keeps the factor.
+    await h.engine.setVolume(0.8);
+    expect(h.device.setVolume).toHaveBeenLastCalledWith(0.8 * 0.2);
+    h.advance(500);
+    await h.engine.setGain(1);
+    expect(h.device.setVolume).toHaveBeenLastCalledWith(0.8);
+    // Fades are not listener commands: they do not make later state reads look stale.
+    expect(h.store.getState().lastCommandAt).toBe(commandAt + 0);
+    expect(h.requests.some((r) => r.path === '/me/player/volume')).toBe(false);
+    h.engine.stop();
+  });
+
+  it('counts this browser as the player to turn down before anything plays in it', async () => {
+    const h = harness({ route: () => new Response(null, { status: 204 }) });
+    h.engine.start();
+    await h.flush();
+    expect(h.engine.ducking()).toBe('none');
+    h.callbacks().onReady('browser-device');
+    await h.flush();
+    // Playback started from here goes to this browser, so the fade-in level is set on it in advance.
+    expect(h.engine.ducking()).toBe('smooth');
+    await h.engine.setGain(0);
+    expect(h.device.setVolume).toHaveBeenLastCalledWith(0);
+    h.engine.stop();
+  });
+
+  it('sets another device\'s volume in one request and puts it back afterwards', async () => {
+    const h = harness({ supported: false });
+    h.engine.start();
+    await h.flush();
+    expect(h.store.getState().snapshot).toMatchObject({ source: 'remote', volume: 0.5 });
+    expect(h.engine.ducking()).toBe('coarse');
+    const volumes = () => h.requests.filter((r) => r.path === '/me/player/volume').map((r) => r.query.get('volume_percent'));
+
+    await h.engine.setGain(1);
+    expect(volumes()).toEqual([]);
+    await h.engine.setGain(0.2);
+    expect(volumes()).toEqual(['10']);
+    // The device now reports the lowered volume; restoring still returns to where it was.
+    h.store.dispatch({ type: 'remote/state', snapshot: { ...h.store.getState().snapshot, volume: 0.1 }, requestedAt: 9_999_999 });
+    await h.engine.setGain(1);
+    expect(volumes()).toEqual(['10', '50']);
+    await h.engine.setGain(1);
+    expect(volumes()).toEqual(['10', '50']);
+    h.engine.stop();
+  });
+
+  it('has nothing to turn down on a device that does not take volume commands', async () => {
+    const state = remoteState();
+    const h = harness({
+      supported: false,
+      route: (method, path) =>
+        method === 'GET' && path === '/me/player'
+          ? new Response(JSON.stringify({ ...state, device: { ...state.device, supports_volume: false, volume_percent: null } }), { status: 200 })
+          : new Response(null, { status: 204 }),
+    });
+    h.engine.start();
+    await h.flush();
+    expect(h.engine.ducking()).toBe('none');
+    await h.engine.setGain(0.2);
+    expect(h.requests.some((r) => r.path === '/me/player/volume')).toBe(false);
+    h.engine.stop();
+  });
+
+  it('is back at the listener\'s volume for the next session', async () => {
+    const h = await playingHere();
+    await h.engine.setGain(0.2);
+    h.engine.stop();
+    h.engine.start();
+    await h.flush();
+    expect(h.created.at(-1)!.initialVolume).toBe(0.6);
+    h.engine.stop();
+  });
+});

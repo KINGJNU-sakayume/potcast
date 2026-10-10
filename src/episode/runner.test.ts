@@ -170,6 +170,35 @@ describe('music', () => {
     expect(engine.position()).toBeGreaterThanOrEqual(30_000);
   });
 
+  it('turns shuffle off before queueing several tracks, so they come in the order written', async () => {
+    const { runner, engine, episode } = stage('> play two + three to 0:30');
+    engine.shuffle = true;
+    engine.playOutside(OTHER);
+    runner.start(episode);
+    await advance(1000);
+    expect(engine.commands).toEqual(['shuffle off', 'play two+three@0']);
+    // A single track needs no such thing.
+    const single = stage('> play one to 0:30');
+    single.engine.shuffle = true;
+    single.engine.playOutside(OTHER);
+    single.runner.start(single.episode);
+    await advance(1000);
+    expect(single.engine.commands).toEqual(['play one@0']);
+  });
+
+  it('puts the next track on itself when the listener\'s repeat mode starts the first one over', async () => {
+    const { runner, engine, episode } = stage(['> play two + three to 0:30', 'A: 끝.'].join('\n'));
+    engine.repeatOne = true;
+    runner.start(episode);
+    await advance(TWO.durationMs + 1500);
+    expect(engine.commands).toEqual(['play two+three@0', 'play three@0']);
+    expect(runner.getState().trackIndex).toBe(1);
+    await advance(32_000);
+    expect(engine.commands.slice(2)).toEqual(['pause']);
+    expect(engine.snapshot().track?.title).toBe('THREE');
+    expect(engine.position()).toBeGreaterThanOrEqual(30_000);
+  });
+
   it('pauses and resumes at the position it had', async () => {
     const { runner, engine, episode } = stage('> play one');
     runner.start(episode);

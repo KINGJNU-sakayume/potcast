@@ -43,7 +43,7 @@
 .ep-row[aria-current='true'] { color: var(--ink); }
 .ep-row-lead { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
 .ep-row[aria-current='true'] .ep-row-lead { color: var(--main-text); }
-.ep-row-text { min-width: 0; font-size: 15px; line-height: 1.72; word-break: keep-all; overflow-wrap: anywhere; }
+.ep-row-text { min-width: 0; max-width: 54em; font-size: 15px; line-height: 1.72; word-break: keep-all; overflow-wrap: anywhere; }
 .ep-row-aside { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .ep-cue[data-past] .ep-row { color: var(--dim); }
 .ep-cue[data-past] .ep-row-music b { color: var(--muted); }
