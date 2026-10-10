@@ -161,7 +161,8 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     const user = userEvent.setup();
     renderApp(`#/episode/${IGOR}`);
     await playEpisode(user);
-    await user.click(within(now()).getByRole('link', { name: 'IGOR' }));
+    // The hosts are still talking: the album stands under the cover, linked as on the intro.
+    await user.click(within(now()).getByRole('link', { name: 'Album' }));
     expect(await screen.findByRole('link', { name: 'Back to the episode' })).toHaveAttribute('href', `#/episode/${IGOR}`);
   });
 
