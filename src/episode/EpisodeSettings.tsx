@@ -7,6 +7,9 @@ const PACES = [0.9, 1, 1.1, 1.25] as const;
 const HOST_LABELS = ['First host', 'Second host'];
 const SAMPLE = ['안녕하세요. 이 목소리로 앨범을 같이 듣겠습니다.', '저는 이 목소리로 곡 이야기를 덧붙이겠습니다.'];
 
+/** The "Hear it" sample being said, kept reachable until it has ended. */
+const samples = new Set<SpeechSynthesisUtterance>();
+
 /** "Microsoft SunHi Online (Natural) - Korean (Korea)" → "SunHi (Natural)". */
 function shortName(voice: SpeechSynthesisVoice): string {
   return voice.name
@@ -42,8 +45,14 @@ export function EpisodeSettings() {
     utterance.lang = choice.voice.lang;
     utterance.rate = preferences.episodeRate;
     utterance.pitch = choice.pitch;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
+    // Chrome drops an utterance spoken right after cancel(), and one nothing refers to may never finish.
+    const synth = window.speechSynthesis;
+    const busy = synth.speaking || synth.pending;
+    if (busy) synth.cancel();
+    samples.clear();
+    samples.add(utterance);
+    utterance.onend = () => samples.delete(utterance);
+    window.setTimeout(() => synth.speak(utterance), busy ? 200 : 0);
   };
 
   return (
