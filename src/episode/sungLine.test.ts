@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { TranslationTimeline } from '../translation/curated/types';
-import { hasSungLines, sungLine } from './sungLine';
+import { hasSungLines, sungLine, sungLinesBetween } from './sungLine';
 
 const TIMELINE: TranslationTimeline = {
   schemaVersion: 2,
@@ -42,6 +42,16 @@ describe('the line being sung', () => {
     expect(hasSungLines({ key: 'one', durationMs: 200_000 }, timelineOf)).toBe(true);
     expect(hasSungLines({ key: 'one', durationMs: 204_000 }, timelineOf)).toBe(false);
     expect(hasSungLines({ key: 'other', durationMs: 200_000 }, timelineOf)).toBe(false);
+  });
+
+  it('lists the lines of a stretch, for reading along when the position is not known', () => {
+    const one = { key: 'one', durationMs: 200_000 };
+    // A stretch written as L1–L2 starts 0.6 s before the first line.
+    expect(sungLinesBetween(one, 9_400, 18_000, timelineOf)).toEqual(['첫 줄', '둘째 줄']);
+    expect(sungLinesBetween(one, 14_000, 40_000, timelineOf)).toEqual(['둘째 줄', '셋째 줄']);
+    // A line that is only partly inside is not part of the stretch.
+    expect(sungLinesBetween(one, 12_000, 16_000, timelineOf)).toEqual([]);
+    expect(sungLinesBetween({ key: 'one', durationMs: 204_000 }, 0, 200_000, timelineOf)).toEqual([]);
   });
 
   it('reads the archive\'s own translations by default', () => {

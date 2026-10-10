@@ -28,7 +28,7 @@ still no global playback footer, no Catalogue or Specimen mode, and transport co
 | **Focus Mode** | `F` or the transport button: full screen, cover, lyrics and progress. `Esc` leaves. |
 | **Artist** | In the colour of the artist's photograph. Portrait, name, origin line and Editorial Note; below it, the **Discography** as a chronology in two or three columns. Albums, Singles & EPs, Compilations and Appears on each load in full, oldest first (or newest first). Releases are grouped by year, with deluxe / remaster / regional editions folded under the original (*+2 editions*), the note's career eras marked in the timeline, and noted releases marked. *Play artist*, *Open in Spotify*. |
 | **Album** | In the cover's colour. Cover, title, artist, release / format / tracks / duration and Editorial Note left; the complete Track Sequence right, with the playing track, guests, explicit marks, discs and a *Note* mark on songs with a song note. *Play album*, *Save album*. Under the sequence, the release's place in the discography (`03 / 12 · Albums`) with the previous and next release — `[` / `]` step through. An artist note's `discography:` list sets that album order (e.g. to skip a live album). |
-| **Episode** | An album's episode, opened with *Listen with the hosts* on its Album page (`#/episode/<album ID>`). In the cover's colour: the line a host is saying — or the track being played, with what to listen for and its progress — in large type; play / pause and back / skip; and the whole script, where any line or stretch of music starts the episode from there. The episode keeps running on other pages: the rail's cover leads back to it, and `Space` and Now Playing's play button pause it. |
+| **Episode** | An album's episode, opened with *Listen with the hosts* on its Album page or *Episode* on its card in the Archive (`#/episode/<album ID>`). In the cover's colour: the line a host is saying — or the track being played, with what to listen for and its progress — in large type; play / pause and back / skip; and the whole script, where any line or stretch of music starts the episode from there. The episode keeps running on other pages: the rail's cover leads back to it, and `Space` and Now Playing's play button pause it. |
 | **Archive** | The index of the archive's own writing: every artist with a note on the left; the chosen artist's note and portrait, album notes with covers, and one Listening note per song (with the song's translation note inside it) under its album in tracklist order on the right, each opening its note or playing the track. Artwork is the note's `image` / `cover` URL (`npm run notes:art` fills them), else Spotify's when connected, else the archive plates. |
 | **Library** | One screen: liked songs (*Shuffle* draws from the whole library, *Play all*) and recently played as lists; liked albums, playlists and followed artists as big covers. |
 | **Search** | The overlay (`/`): tracks, artists, albums and playlists side by side, type filters with paging, `↓` / `↑` through results. |
@@ -323,6 +323,21 @@ The model's weights are under the [OpenRAIL-M licence](https://huggingface.co/su
 episode page and the settings say so — and forbids, among other things, impersonating a person. The preset voices are
 Supertone's own; no one's voice is cloned here.
 
+### Who plays the music
+
+- **Played for me** (the default): the episode drives the session's player — starts each stretch at its position,
+  stops it, turns it down under a talk-over. This needs a player the app can drive: this browser's (Premium, a desktop
+  browser) or another Spotify device it controls as a remote.
+- **I play it myself**: the hosts' lines play by themselves, and at each stretch of music the episode shows what to
+  play and how much of it (*The whole track*, *From 0:46 to 1:11*), the translated lines of a short stretch to read
+  along with, a link that opens the track in Spotify, and *Heard it · go on*. The episode never touches a player in
+  this mode, so it runs anywhere the page does — a phone with the Spotify app beside it, a shared computer — and
+  nothing is ever played over anything else. Talk written to go over the music is simply said.
+
+The choice is on the episode page (*Music: …*) and in **Settings → Episodes**. When the music does not start in the
+first mode, the notice offers the second. This second mode is the guided-listening idea of the sibling
+`listening-room-tts` repository (narration, a link to the song, a manual step), performed by this player.
+
 ### How it behaves
 
 - **The player is the listener's.** When playback is changed from outside the episode (another track, pause or play in
@@ -490,7 +505,8 @@ paper and the playing album's accent.
 - **Episodes** are performed live and only here (see [What it is not](#what-it-is-not)). An episode names tracks by
   their song notes, so an album needs its notes first; lyric positions need the song's curated translation. On a phone
   the hosts play in the phone's browser while the music plays in the Spotify app, which has not been tried: starting
-  audio in the browser may make the phone pause or turn down the Spotify app.
+  audio in the browser may make the phone pause or turn down the Spotify app. *I play it myself*
+  ([Who plays the music](#who-plays-the-music)) does not depend on any of that.
 - **Recorded hosts** are only as right as their script: the voice reads Hangul well, and whether a `say:` reading or
   a voice's tone sounds right has to be judged by ear. Supertone archived Supertonic in 2026; the clips already on
   the `narration` branch keep working without it, and rendering new ones needs the archived model to stay downloadable.

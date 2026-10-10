@@ -165,32 +165,47 @@ export function EpisodeSettings() {
             ))}
           </span>
         </div>
-        <div className="settings-field" role="group" aria-label="Music while a host talks over it">
-          <span>Under talk</span>
+        <div className="settings-field" role="group" aria-label="Who plays the music">
+          <span>Music</span>
           <span className="settings-choices">
-            <button type="button" className="text-toggle" aria-pressed={preferences.episodeTalkOver === 'duck'} onClick={() => setPreferences({ episodeTalkOver: 'duck' })}>
-              Music turned down
+            <button type="button" className="text-toggle" aria-pressed={preferences.episodeMusic === 'auto'} onClick={() => setPreferences({ episodeMusic: 'auto' })}>
+              Played for me
             </button>
-            <button type="button" className="text-toggle" aria-pressed={preferences.episodeTalkOver === 'pause'} onClick={() => setPreferences({ episodeTalkOver: 'pause' })}>
-              Music stops
+            <button type="button" className="text-toggle" aria-pressed={preferences.episodeMusic === 'manual'} onClick={() => setPreferences({ episodeMusic: 'manual' })}>
+              I play it myself
             </button>
           </span>
         </div>
-        {preferences.episodeTalkOver === 'duck' && (
-          <div className="settings-field">
-            <span>Level</span>
-            <Slider
-              className="volume-slider settings-slider"
-              label="Music level under talk"
-              value={preferences.episodeDuckLevel / 0.6}
-              step={0.05 / 0.6}
-              bigStep={0.15 / 0.6}
-              scale={60}
-              valueText={(fraction) => `${Math.round(fraction * 60)} percent of your volume`}
-              onCommit={(fraction) => setPreferences({ episodeDuckLevel: Math.round(Math.max(0.05, fraction * 0.6) * 100) / 100 })}
-            />
-            <span className="settings-value">{Math.round(preferences.episodeDuckLevel * 100)}%</span>
-          </div>
+        {preferences.episodeMusic === 'auto' && (
+          <>
+            <div className="settings-field" role="group" aria-label="Music while a host talks over it">
+              <span>Under talk</span>
+              <span className="settings-choices">
+                <button type="button" className="text-toggle" aria-pressed={preferences.episodeTalkOver === 'duck'} onClick={() => setPreferences({ episodeTalkOver: 'duck' })}>
+                  Music turned down
+                </button>
+                <button type="button" className="text-toggle" aria-pressed={preferences.episodeTalkOver === 'pause'} onClick={() => setPreferences({ episodeTalkOver: 'pause' })}>
+                  Music stops
+                </button>
+              </span>
+            </div>
+            {preferences.episodeTalkOver === 'duck' && (
+              <div className="settings-field">
+                <span>Level</span>
+                <Slider
+                  className="volume-slider settings-slider"
+                  label="Music level under talk"
+                  value={preferences.episodeDuckLevel / 0.6}
+                  step={0.05 / 0.6}
+                  bigStep={0.15 / 0.6}
+                  scale={60}
+                  valueText={(fraction) => `${Math.round(fraction * 60)} percent of your volume`}
+                  onCommit={(fraction) => setPreferences({ episodeDuckLevel: Math.round(Math.max(0.05, fraction * 0.6) * 100) / 100 })}
+                />
+                <span className="settings-value">{Math.round(preferences.episodeDuckLevel * 100)}%</span>
+              </div>
+            )}
+          </>
         )}
       </div>
     </>

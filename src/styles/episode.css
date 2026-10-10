@@ -22,6 +22,11 @@
 .ep-now-line.is-title { line-height: 1.05; letter-spacing: -.045em; }
 .ep-now-line.is-idle { max-width: 34em; font-size: clamp(20px, 1.75vw, 32px); line-height: 1.4; letter-spacing: -.025em; animation: none; }
 .ep-now-next { margin: 14px 0 0; max-width: 46em; font-size: clamp(15px, 1.2vw, 20px); line-height: 1.55; color: var(--muted); word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+/* A stretch the listener plays themselves: how much of the track, its lines to read along, and the two actions */
+.ep-now-stretch { margin: 10px 0 0; font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--main-text); font-variant-numeric: tabular-nums; }
+.ep-now-lines { margin: 16px 0 0; padding: 0 0 0 12px; border-left: 2px solid var(--line); list-style: none; max-width: 40em; font-size: clamp(14px, 1.1vw, 18px); line-height: 1.6; color: var(--ink-2); word-break: keep-all; }
+.ep-now-actions { margin-top: 20px; }
+.ep-notice .note-more { margin: 0 0 0 14px; white-space: nowrap; }
 /* The line being sung, in translation: one line's height is kept between lines so the panel holds still. */
 .ep-now-lyric { margin: 16px 0 0; max-width: 40em; min-height: 1.5em; padding-left: 12px; border-left: 2px solid var(--main); font-size: clamp(16px, 1.35vw, 22px); line-height: 1.5; color: var(--ink); word-break: keep-all; overflow-wrap: anywhere; transition: border-color .3s ease; }
 .ep-now-lyric[data-empty] { border-left-color: var(--line); }
@@ -86,6 +91,8 @@
 .desktop .ep-now-line.is-idle { font-size: clamp(20px, min(1.75vw, 2.9vh), 38px); }
 .desktop .ep-now-next { font-size: clamp(15px, min(1.2vw, 2vh), 24px); }
 .desktop .ep-now-lyric { font-size: clamp(16px, min(1.35vw, 2.25vh), 27px); }
+.desktop .ep-now-stretch { font-size: calc(12px * var(--t)); }
+.desktop .ep-now-lines { font-size: clamp(14px, min(1.1vw, 1.85vh), 21px); }
 .desktop .ep-now-progress { font-size: calc(12px * var(--t)); }
 .desktop .ep-read > .ep-script { flex: 1; min-height: 0; overflow: auto; padding: 14px 8px 28px 0; scrollbar-width: thin; scrollbar-color: var(--line) transparent; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); }
 .desktop .ep-chapter { font-size: calc(13px * var(--t)); }
@@ -115,6 +122,8 @@
 .m-shell .ep-now-line.is-idle { font-size: 19px; }
 .m-shell .ep-now-next { font-size: 14.5px; }
 .m-shell .ep-now-lyric { font-size: 15.5px; }
+.m-shell .ep-now-lines { font-size: 14.5px; }
+.m-shell .ep-now-actions .plain-action { min-height: 44px; }
 .m-shell .ep-controls { justify-content: center; }
 .m-shell .ep-options { justify-content: center; }
 .m-shell .ep-options .text-toggle { min-height: 40px; }

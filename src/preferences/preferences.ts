@@ -3,6 +3,8 @@ import { readJson, writeJson } from '../lib/storage';
 
 export interface Preferences {
   translationEnabled: boolean;
+  /** Episodes: the episode plays the music itself (`auto`), or shows what to play and waits (`manual`). */
+  episodeMusic: 'auto' | 'manual';
   /** Episodes: under a talk-over the music is turned down (`duck`) or stopped (`pause`). */
   episodeTalkOver: 'duck' | 'pause';
   /** How loud the music stays under a talk-over, as a fraction of the listener's volume. */
@@ -16,6 +18,7 @@ export interface Preferences {
 const KEY = 'arc.preferences.v1';
 export const DEFAULT_PREFERENCES: Preferences = {
   translationEnabled: true,
+  episodeMusic: 'auto',
   episodeTalkOver: 'duck',
   episodeDuckLevel: 0.2,
   episodeRate: 1,

@@ -23,7 +23,7 @@ import { useNarrationManifest } from '../episode/narration/useNarration';
 import { albumEpisodeTracks, episodeMusicMs, episodeRelease, episodeTalkMs, resolveEpisode } from '../episode/resolve';
 import type { EpisodeState } from '../episode/runner';
 import { captionText, splitUtterances } from '../episode/speechText';
-import { hasSungLines, sungLine } from '../episode/sungLine';
+import { hasSungLines, sungLine, sungLinesBetween } from '../episode/sungLine';
 import { EpisodeError, type Cue, type Episode, type MusicCue, type SpokenLine } from '../episode/types';
 import { formatDuration, formatRuntime, joinArtistNames } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
@@ -63,7 +63,66 @@ function chapterOf(episode: Episode, cueIndex: number): { title: string; number:
   return null;
 }
 
+/** "The whole track", "From the start to 0:25", "From 0:46 to 1:11", "Carry on from 0:25 to the end". */
+function stretchLabel(cue: MusicCue): string {
+  const last = cue.tracks[cue.tracks.length - 1]!;
+  const from = cue.fromMs ?? cue.fallbackFromMs;
+  const end = cue.untilMs === null ? 'the end' : formatDuration(cue.untilMs);
+  if (cue.tracks.length > 1) return `One after the other${cue.untilMs === null ? '' : `, the last one to ${end}`}`;
+  if (from <= 0 && cue.untilMs === null) return `The whole track · ${formatDuration(last.durationMs)}`;
+  if (cue.fromMs === null) return `Carry on from ${formatDuration(from)} to ${end}`;
+  return `From ${from <= 0 ? 'the start' : formatDuration(from)} to ${end}`;
+}
+
+/** The longest stretch whose lines are listed for reading along. */
+const MAX_LISTED_LINES = 8;
+
 /* ── Now: the line being said, or the music being played ───────────────── */
+
+/**
+ * A stretch of music the listener plays themselves: what to play and how much
+ * of it, a link that opens it in Spotify, and the button that tells the
+ * episode it has been heard.
+ */
+function NowManual({ cue, translate, onHeard }: { cue: MusicCue; translate: boolean; onHeard: () => void }) {
+  const first = cue.tracks[0]!;
+  const cueText = listeningCue(cue);
+  const lines = translate && cue.tracks.length === 1 && cue.untilMs !== null ? sungLinesBetween(first, cue.fromMs ?? cue.fallbackFromMs, cue.untilMs) : [];
+  return (
+    <>
+      <div className="ep-now-kicker">
+        <span className="ep-speaker">Your turn</span>
+        <span>Play this in Spotify</span>
+      </div>
+      <p className="ep-now-line is-title" lang={detectLineLanguage(first.title)}>
+        {cue.tracks.map((track) => track.title).join(' → ')}
+      </p>
+      <p className="ep-now-stretch">{stretchLabel(cue)}</p>
+      {cueText && (
+        <p className="ep-now-next" lang="ko">
+          {cueText}
+        </p>
+      )}
+      {lines.length > 0 && lines.length <= MAX_LISTED_LINES && (
+        <ul className="ep-now-lines" lang="ko" aria-label="The lines of this stretch, translated">
+          {lines.map((line, index) => (
+            <li key={index}>{line}</li>
+          ))}
+        </ul>
+      )}
+      <div className="object-actions ep-now-actions">
+        <button type="button" className="plain-action primary" onClick={onHeard}>
+          Heard it · go on
+        </button>
+        {cue.tracks.map((track) => (
+          <a key={track.id} className="plain-action" href={`https://open.spotify.com/track/${track.id}`} target="_blank" rel="noreferrer">
+            {cue.tracks.length > 1 ? `Open ${track.title} in Spotify` : 'Open in Spotify'}
+          </a>
+        ))}
+      </div>
+    </>
+  );
+}
 
 function NowMusic({ cue, trackIndex, playing, translate }: { cue: MusicCue; trackIndex: number; playing: boolean; translate: boolean }) {
   const position = usePlaybackPosition();
@@ -137,7 +196,19 @@ function NowSpoken({ episode, cue, state }: { episode: Episode; cue: Exclude<Cue
   );
 }
 
-function NowPanel({ episode, state, active, translate }: { episode: Episode; state: EpisodeState; active: boolean; translate: boolean }) {
+function NowPanel({
+  episode,
+  state,
+  active,
+  translate,
+  onHeard,
+}: {
+  episode: Episode;
+  state: EpisodeState;
+  active: boolean;
+  translate: boolean;
+  onHeard: () => void;
+}) {
   let content: ReactNode;
   const cue = active ? episode.cues[state.cueIndex] : undefined;
   if (!active) {
@@ -161,6 +232,8 @@ function NowPanel({ episode, state, active, translate }: { episode: Episode; sta
         <p className="ep-now-next">Play again starts it from the top; any line in the script starts it from there.</p>
       </>
     );
+  } else if (cue.type === 'music' && state.manual) {
+    content = <NowManual cue={cue} translate={translate} onHeard={onHeard} />;
   } else if (cue.type === 'music') {
     content = <NowMusic cue={cue} trackIndex={state.trackIndex} playing={state.status === 'playing'} translate={translate} />;
   } else {
@@ -262,7 +335,7 @@ function ScriptList({
 
 const NOTICE_TEXT = {
   interrupted: 'Playback was changed outside the episode, so it stepped back. Continue picks it up where it stopped.',
-  'no-playback': 'The music did not start. Check the device, then continue.',
+  'no-playback': 'The music did not start. Check the device, then continue — or play the music yourself, and the episode waits for you.',
 } as const;
 
 /**
@@ -378,6 +451,17 @@ export function EpisodePage() {
   };
   const mainLabel = !active ? (bookmark ? 'Continue' : 'Play episode') : playing ? 'Pause' : ended ? 'Play again' : 'Continue';
 
+  // Who plays the music. A change in the middle of a stretch of music takes that stretch up again in the new way.
+  const ownMusic = preferences.episodeMusic === 'manual';
+  const setMusic = (music: 'auto' | 'manual') => {
+    setPreferences({ episodeMusic: music });
+    if (active && state.status === 'playing' && episode.cues[state.cueIndex]?.type === 'music') runner.jump(state.cueIndex);
+  };
+  const playItMyself = () => {
+    setPreferences({ episodeMusic: 'manual' });
+    runner.resume();
+  };
+
   return (
     <div className="view active">
       <div className="ep">
@@ -463,11 +547,16 @@ export function EpisodePage() {
               </span>
             </div>
 
-            <NowPanel episode={episode} state={state} active={active} translate={preferences.translationEnabled} />
+            <NowPanel episode={episode} state={state} active={active} translate={preferences.translationEnabled} onHeard={() => runner.proceed()} />
 
             {active && state.notice && (
               <p className="playback-state alert ep-notice" role="alert">
                 {NOTICE_TEXT[state.notice]}
+                {state.notice === 'no-playback' && !ownMusic && (
+                  <button type="button" className="note-more" onClick={playItMyself}>
+                    Play the music myself
+                  </button>
+                )}
               </p>
             )}
             <PlaybackNotice />
@@ -495,12 +584,23 @@ export function EpisodePage() {
                 <button
                   type="button"
                   className="text-toggle"
-                  aria-pressed={preferences.episodeTalkOver === 'duck'}
-                  title="What the music does while a host talks over it"
-                  onClick={() => setPreferences({ episodeTalkOver: preferences.episodeTalkOver === 'duck' ? 'pause' : 'duck' })}
+                  aria-pressed={ownMusic}
+                  title="The episode can play the music in this app’s player, or show what to play and wait while you play it in Spotify yourself"
+                  onClick={() => setMusic(ownMusic ? 'auto' : 'manual')}
                 >
-                  Talk over music: <b>{preferences.episodeTalkOver === 'duck' ? 'music turned down' : 'music stops'}</b>
+                  Music: <b>{ownMusic ? 'I play it myself' : 'played for me'}</b>
                 </button>
+                {!ownMusic && (
+                  <button
+                    type="button"
+                    className="text-toggle"
+                    aria-pressed={preferences.episodeTalkOver === 'duck'}
+                    title="What the music does while a host talks over it"
+                    onClick={() => setPreferences({ episodeTalkOver: preferences.episodeTalkOver === 'duck' ? 'pause' : 'duck' })}
+                  >
+                    Talk over music: <b>{preferences.episodeTalkOver === 'duck' ? 'music turned down' : 'music stops'}</b>
+                  </button>
+                )}
                 <button type="button" className="text-toggle" onClick={shell.toggleSettings}>
                   Voices and pace
                 </button>

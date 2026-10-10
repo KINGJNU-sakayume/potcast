@@ -45,7 +45,7 @@ export function EpisodeProvider({ children }: { children: ReactNode }) {
         narrator: createNarrator(),
         options: () => {
           const preferences = preferencesStore.get();
-          return { talkOver: preferences.episodeTalkOver, duckLevel: preferences.episodeDuckLevel };
+          return { music: preferences.episodeMusic, talkOver: preferences.episodeTalkOver, duckLevel: preferences.episodeDuckLevel };
         },
       }),
     [engine, store],

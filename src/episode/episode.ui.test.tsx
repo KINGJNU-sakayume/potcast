@@ -198,6 +198,55 @@ describe('the music in an episode', () => {
   });
 });
 
+describe('an episode whose music the listener plays themselves', () => {
+  it('shows what to play, links to it in Spotify, and goes on when told it has been heard', async () => {
+    const user = userEvent.setup();
+    renderApp(`#/episode/${IGOR}`);
+    const script = await screen.findByRole('group', { name: 'Script' });
+    const toggle = screen.getByRole('button', { name: /^Music:/ });
+    expect(toggle).toHaveTextContent('played for me');
+    await user.click(toggle);
+    expect(toggle).toHaveTextContent('I play it myself');
+    expect(preferencesStore.get().episodeMusic).toBe('manual');
+    // Talking over the music is not a choice any more: the music is not the episode's to turn down.
+    expect(screen.queryByRole('button', { name: /Talk over music/ })).not.toBeInTheDocument();
+
+    await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
+    expect(within(now()).getByText('Your turn')).toBeInTheDocument();
+    expect(within(now()).getByText('EARFQUAKE')).toBeInTheDocument();
+    expect(within(now()).getByText(/^From 0:4\d to 1:1\d$/)).toBeInTheDocument();
+    // The lines of the stretch, to read along with.
+    const lines = within(now()).getByRole('list', { name: 'The lines of this stretch, translated' });
+    expect(within(lines).getAllByRole('listitem').length).toBeGreaterThan(1);
+    expect(within(now()).getByRole('link', { name: 'Open in Spotify' })).toHaveAttribute('href', expect.stringMatching(/^https:\/\/open\.spotify\.com\/track\/[A-Za-z0-9]{22}$/));
+
+    await user.click(within(now()).getByRole('button', { name: 'Heard it · go on' }));
+    expect(within(now()).getByText('화성은 똑같이 돌아오는데 안정감이 생기지 않아요.')).toBeInTheDocument();
+  });
+
+  it('asks for a whole track as a whole track, and takes up a stretch again when the choice is changed in the middle of it', async () => {
+    const user = userEvent.setup();
+    preferencesStore.set({ episodeMusic: 'manual' });
+    renderApp(`#/episode/${IGOR}`);
+    const script = await screen.findByRole('group', { name: 'Script' });
+    await user.click(within(script).getByRole('button', { name: /부드러운 코드와 불안정한 보컬이 동시에 움직인다/ }));
+    expect(within(now()).getByText(/^The whole track · \d:\d\d$/)).toBeInTheDocument();
+    expect(within(now()).queryByRole('list')).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: /^Music:/ }));
+    expect(within(now()).getByText('Listening')).toBeInTheDocument();
+    expect(within(now()).queryByText('Your turn')).not.toBeInTheDocument();
+  });
+});
+
+describe('the archive', () => {
+  it('counts the episodes and leads to an album\'s episode from its card', async () => {
+    renderApp('#/archive?artist=tyler');
+    expect(await screen.findByText(/· 1 episode ·/)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Listen to IGOR with the hosts' })).toHaveAttribute('href', `#/episode/${IGOR}`);
+  });
+});
+
 describe('an episode on a site with recorded hosts', () => {
   function recorded(part: 'all' | 'half'): NarrationManifest {
     const clips = episodeClips(getEpisodeScript('igor')!);

@@ -51,3 +51,16 @@ export function sungLine(track: Track, positionMs: number, timelineOf: TimelineS
   const segment = segments[found];
   return segment && positionMs < segment.endMs ? segment.translation : null;
 }
+
+/** How far outside a stretch a line may reach and still belong to it: stretches start a little before their first line. */
+const EDGE_MS = 800;
+
+/**
+ * The translated lines sung in a stretch of a track, in order: what a
+ * listener who plays the stretch themselves reads along with.
+ */
+export function sungLinesBetween(track: Track, fromMs: number, untilMs: number, timelineOf: TimelineSource = archive): string[] {
+  const timeline = usableTimeline(track, timelineOf);
+  if (!timeline) return [];
+  return timeline.segments.filter((segment) => segment.startMs >= fromMs - EDGE_MS && segment.endMs <= untilMs + EDGE_MS).map((segment) => segment.translation);
+}

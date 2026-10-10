@@ -14,7 +14,7 @@ function stage(body: string, options: Partial<RunnerOptions> = {}) {
   const store = new PlayerStore();
   const engine = new StageEngine(store, TRACKS);
   const narrator = new ScriptedNarrator();
-  const settings: RunnerOptions = { talkOver: 'duck', duckLevel: 0.2, ...options };
+  const settings: RunnerOptions = { music: 'auto', talkOver: 'duck', duckLevel: 0.2, ...options };
   const runner = new EpisodeRunner({ engine, store, narrator, options: () => settings });
   const episode = episodeFrom(body, TRACKS, NOTES);
   return { store, engine, narrator, runner, episode, settings };
@@ -415,6 +415,91 @@ describe('talk over the music', () => {
     expect(engine.commands).toEqual(['play one@30000']);
     await advance(1000);
     expect(engine.gain).toBe(0.2);
+  });
+});
+
+describe('music the listener plays themselves', () => {
+  const BODY = ['A: 하나.', '> play one to 0:30', 'B~ 둘.', '> play to end', 'A: 셋.'].join('\n');
+
+  it('talks, waits at each stretch of music to be told it has been heard, and never touches the player', async () => {
+    const { runner, engine, narrator, episode } = stage(BODY, { music: 'manual' });
+    runner.start(episode);
+    await advance(5000);
+    expect(narrator.spoken).toEqual(['0:하나.']);
+    expect(runner.getState()).toMatchObject({ status: 'playing', cueIndex: 1, manual: true });
+
+    // However long the listener takes, the episode stays where it is.
+    await advance(600_000);
+    expect(runner.getState()).toMatchObject({ status: 'playing', cueIndex: 1, manual: true });
+
+    runner.proceed();
+    await advance(5000);
+    // What was written as talk over the music is simply said.
+    expect(narrator.spoken).toEqual(['0:하나.', '1:둘.']);
+    expect(runner.getState()).toMatchObject({ cueIndex: 3, manual: true });
+
+    runner.proceed();
+    await advance(5000);
+    expect(narrator.spoken).toEqual(['0:하나.', '1:둘.', '0:셋.']);
+    expect(runner.getState()).toMatchObject({ status: 'ended', manual: false });
+    expect(engine.commands).toEqual([]);
+    expect(engine.gains).toEqual([]);
+  });
+
+  it('leaves alone whatever the listener has playing', async () => {
+    const { runner, engine, narrator, episode } = stage(BODY, { music: 'manual' });
+    engine.playOutside(OTHER, 30_000);
+    runner.start(episode);
+    await advance(5000);
+    // In the other mode a talk would have stopped this music, and music started elsewhere would have stopped the talk.
+    expect(narrator.spoken).toEqual(['0:하나.']);
+    expect(runner.getState()).toMatchObject({ status: 'playing', notice: null });
+    runner.pause();
+    runner.stop();
+    await advance(1000);
+    expect(engine.commands).toEqual([]);
+    expect(engine.snapshot().paused).toBe(false);
+  });
+
+  it('pauses and continues at the wait, and can be skipped past or gone back from', async () => {
+    const { runner, narrator, episode } = stage(BODY, { music: 'manual' });
+    runner.start(episode, 1);
+    await advance(100);
+    expect(runner.getState()).toMatchObject({ cueIndex: 1, manual: true });
+    runner.pause();
+    expect(runner.getState()).toMatchObject({ status: 'paused', cueIndex: 1 });
+    // Not waiting any more: saying "heard it" while paused does nothing.
+    runner.proceed();
+    await advance(1000);
+    expect(runner.getState()).toMatchObject({ status: 'paused', cueIndex: 1 });
+    runner.resume();
+    await advance(100);
+    expect(runner.getState()).toMatchObject({ status: 'playing', cueIndex: 1, manual: true });
+    runner.next();
+    await advance(100);
+    expect(runner.getState()).toMatchObject({ cueIndex: 2, manual: false });
+    expect(narrator.spoken).toEqual(['1:둘.']);
+  });
+
+  it('takes a change of mind at the next cue', async () => {
+    const { runner, engine, episode, settings } = stage(BODY, { music: 'manual' });
+    runner.start(episode, 1);
+    await advance(100);
+    settings.music = 'auto';
+    runner.proceed();
+    await advance(5000);
+    // The talk-over now needs its track, which the episode starts itself.
+    expect(engine.commands[0]).toBe('play one@30000');
+    expect(runner.getState().manual).toBe(false);
+  });
+
+  it('does nothing when asked to go on while it is not waiting', async () => {
+    const { runner, narrator, episode } = stage('A: 하나. 둘.', { music: 'manual' });
+    runner.proceed();
+    runner.start(episode);
+    runner.proceed();
+    await advance(5000);
+    expect(narrator.spoken).toEqual(['0:하나.', '0:둘.']);
   });
 });
 

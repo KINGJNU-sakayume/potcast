@@ -33,9 +33,24 @@ export interface EpisodeState {
   narration: NarrationMode;
   /** What says a line that has no recording: the same as `narration` unless that is `recorded`. */
   spareNarration: Exclude<NarrationMode, 'recorded'>;
+  /**
+   * The episode is waiting at a stretch of music for the listener, who plays
+   * it in Spotify themselves and says when they have heard it (see
+   * RunnerOptions.music).
+   */
+  manual: boolean;
 }
 
 export interface RunnerOptions {
+  /**
+   * Who plays the music. `auto`: the episode drives the session's player.
+   * `manual`: the listener does, in Spotify, wherever they like — the episode
+   * shows what to play, waits to be told it has been heard, and never touches
+   * the player. That works where the player cannot be driven at all (a phone
+   * without an active device, an account without Premium), and nothing is
+   * ever played over anything else.
+   */
+  music: 'auto' | 'manual';
   /** `duck`: the music plays on, turned down, under a talk-over. `pause`: it stops for it. */
   talkOver: 'duck' | 'pause';
   /** How loud the music stays under a talk-over, as a fraction of the listener's volume. */
@@ -104,6 +119,7 @@ const IDLE: EpisodeState = {
   notice: null,
   narration: 'captions',
   spareNarration: 'captions',
+  manual: false,
 };
 
 /**
@@ -139,6 +155,8 @@ export class EpisodeRunner {
   /** The last position seen in each track (by song key), to carry on from after a pause. */
   private readonly positions = new Map<string, number>();
   private cueStartedAt = 0;
+  /** Ends the wait at a stretch of music the listener is playing themselves. */
+  private heard: (() => void) | null = null;
 
   constructor(dependencies: RunnerDependencies) {
     this.engine = dependencies.engine;
@@ -209,7 +227,15 @@ export class EpisodeRunner {
     if (this.state.status !== 'playing') return;
     this.abort();
     this.update({ status: 'paused', notice: null });
-    void this.settleMusic();
+    if (!this.handsOff()) void this.settleMusic();
+  }
+
+  /**
+   * The listener has heard the stretch of music they were asked to play: the
+   * episode goes on. Does nothing unless it is waiting for exactly that.
+   */
+  proceed(): void {
+    this.heard?.();
   }
 
   /** Continues from the utterance or the position the episode stopped at. Call from a click or key handler. */
@@ -256,8 +282,10 @@ export class EpisodeRunner {
   stop(): void {
     if (!this.state.episode) return;
     const wasPlaying = this.state.status === 'playing';
+    const handsOff = this.handsOff();
     this.abort();
     this.update({ ...IDLE, ...this.narration() });
+    if (handsOff) return;
     if (wasPlaying) void this.settleMusic();
     else void this.applyGain(1);
   }
@@ -266,7 +294,12 @@ export class EpisodeRunner {
 
   private unlock(): void {
     this.narrator.unlock();
-    this.engine.activateAudio();
+    if (!this.handsOff()) this.engine.activateAudio();
+  }
+
+  /** The music is the listener's to play: the player is not to be touched. */
+  private handsOff(): boolean {
+    return this.options().music === 'manual';
   }
 
   private abort(): void {
@@ -279,7 +312,7 @@ export class EpisodeRunner {
   private enter(cueIndex: number, lineIndex: number, entry: Entry): void {
     const count = this.state.episode?.cues.length ?? 0;
     const index = Math.min(Math.max(0, cueIndex), count);
-    this.update({ status: 'playing', notice: null, cueIndex: index, lineIndex: Math.max(0, lineIndex), utteranceIndex: 0, trackIndex: 0 });
+    this.update({ status: 'playing', notice: null, manual: false, cueIndex: index, lineIndex: Math.max(0, lineIndex), utteranceIndex: 0, trackIndex: 0 });
     void this.run(entry);
   }
 
@@ -301,12 +334,19 @@ export class EpisodeRunner {
         }
         if (how !== 'resume') this.cueStartedAt = this.now();
         this.prepare(episode, this.state.cueIndex, this.state.lineIndex, this.state.utteranceIndex);
-        if (cue.type === 'talk') await this.runTalk(cue, signal, how);
+        // Read at every cue, so a change of mind takes effect at the next one.
+        const handsOff = this.handsOff();
+        this.update({ manual: handsOff && cue.type === 'music' });
+        if (handsOff) {
+          // The hosts only talk; the music in between is the listener's.
+          if (cue.type === 'music') await this.waitForListener(signal);
+          else await this.speakLines(cue, signal, how);
+        } else if (cue.type === 'talk') await this.runTalk(cue, signal, how);
         else if (cue.type === 'over') await this.runOver(cue, signal, how);
         else await this.runMusic(cue, signal, how);
         if (signal.aborted) return;
         how = 'flow';
-        this.update({ cueIndex: this.state.cueIndex + 1, lineIndex: 0, utteranceIndex: 0, trackIndex: 0 });
+        this.update({ cueIndex: this.state.cueIndex + 1, lineIndex: 0, utteranceIndex: 0, trackIndex: 0, manual: false });
       }
     } catch (error) {
       // Paused, jumped or stopped: whoever aborted has already set the next state.
@@ -315,16 +355,39 @@ export class EpisodeRunner {
       this.rampId += 1;
       this.update({ status: 'paused', notice: error instanceof Interrupted ? error.notice : 'interrupted' });
       // The listener (or a failure) has the player now: leave it where it is, at its own volume.
-      void this.applyGain(1);
+      if (!this.handsOff()) void this.applyGain(1);
       if (!(error instanceof Interrupted)) devWarn(`The episode stopped on an error: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
 
   private async finish(signal: AbortSignal): Promise<void> {
-    if (this.audible()) await this.fadeTo(0, FADE_OUT_MS, signal);
-    await this.pauseMusic();
+    if (!this.handsOff()) {
+      if (this.audible()) await this.fadeTo(0, FADE_OUT_MS, signal);
+      await this.pauseMusic();
+    }
     this.controller = null;
     this.update({ status: 'ended', lineIndex: 0, utteranceIndex: 0, trackIndex: 0 });
+  }
+
+  /* ── Music the listener plays ────────────────────────────────────────── */
+
+  /** Waits until the listener says they have heard the stretch (`proceed`), or the episode moves elsewhere. */
+  private waitForListener(signal: AbortSignal): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      const done = (act: () => void) => {
+        if (this.heard === onHeard) this.heard = null;
+        signal.removeEventListener('abort', onAbort);
+        act();
+      };
+      const onHeard = () => done(resolve);
+      const onAbort = () => done(() => reject(abortError()));
+      if (signal.aborted) {
+        reject(abortError());
+        return;
+      }
+      this.heard = onHeard;
+      signal.addEventListener('abort', onAbort, { once: true });
+    });
   }
 
   /* ── Talk ────────────────────────────────────────────────────────────── */

@@ -4,6 +4,7 @@ import { useAlbum, useArtist } from '../catalogue/queries';
 import { CoverImage, Portrait } from '../components/CoverImage';
 import { useNote } from '../components/NoteContext';
 import { songNotePayload } from '../components/SongNote';
+import { episodeScripts, getEpisodeScript } from '../episode/episodes';
 import { albumNotes } from '../editorial/albums';
 import { artistNotes } from '../editorial/artists';
 import { songNotes } from '../editorial/songs';
@@ -163,6 +164,7 @@ function AlbumCard({ album, artistName }: { album: AlbumNote; artistName: string
   const albumId = album.albumIds[0];
   const stored = storedImage(album.cover);
   const fetched = useAlbum(stored ? undefined : albumId);
+  const episode = getEpisodeScript(album.key);
   return (
     <li className="archive-card">
       <CoverImage
@@ -190,6 +192,11 @@ function AlbumCard({ album, artistName }: { album: AlbumNote; artistName: string
         </span>
         <span className="archive-actions">
           <ReadMore kind="ALBUM" note={album} title={title} subtitle={[artistName, album.releaseYear].filter(Boolean).join(' · ')} />
+          {albumId && episode && (
+            <Link className="row-play" to={`/episode/${albumId}`} title={episode.title} aria-label={`Listen to ${title} with the hosts`}>
+              Episode
+            </Link>
+          )}
         </span>
       </div>
     </li>
@@ -307,6 +314,7 @@ export function ArchivePage() {
     pluralise(entries.length, 'artist'),
     pluralise(albumNotes.length, 'album note'),
     pluralise(songNotes.length, 'listening note'),
+    ...(episodeScripts.length > 0 ? [pluralise(episodeScripts.length, 'episode')] : []),
   ];
 
   return (
