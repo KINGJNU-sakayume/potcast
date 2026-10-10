@@ -3,6 +3,7 @@ import { getSongNote } from '../editorial/lookup';
 import type { SongNote } from '../editorial/types';
 import { formatDuration } from '../lib/format';
 import { DURATION_TOLERANCE_MS } from '../translation/curated';
+import { clipKey, clipText } from './narration/clip';
 import { estimateSpeechMs, splitUtterances } from './speechText';
 import {
   EpisodeError,
@@ -172,6 +173,7 @@ export function resolveEpisode(
     title: script.title,
     ...(script.short ? { short: script.short } : {}),
     hosts: script.hosts,
+    say: script.say,
     chapters: script.chapters,
     cues,
     warnings: [...warnings],
@@ -183,18 +185,28 @@ export function episodeRelease(album: AlbumDetail): EpisodeRelease {
   return { id: album.id, name: album.name, artistNames: album.artists.map((artist) => artist.name).join(', '), images: album.images };
 }
 
-/** About how long the hosts talk in an episode, at the given speech rate. */
-export function episodeTalkMs(episode: Episode, rate = 1): number {
+/**
+ * How long the hosts talk in an episode at the given pace: the length of each
+ * line's recording where `recordedMs` knows it (by clip key, see
+ * narration/clip.ts), and an estimate for the rest.
+ */
+export function episodeTalkMs(episode: Episode, rate = 1, recordedMs: (clipKey: string) => number | undefined = () => undefined): number {
+  const pace = Math.min(2, Math.max(0.5, rate));
+  const voices = new Map(episode.hosts.map((host) => [host.id, host.voice]));
   let total = 0;
   for (const cue of episode.cues) {
     if (cue.type === 'music') continue;
     for (const line of cue.lines) {
+      const voice = voices.get(line.host);
       // The pauses between utterances and between hosts are part of the pace.
-      for (const utterance of splitUtterances(line.text)) total += estimateSpeechMs(utterance, rate) + 200;
+      for (const utterance of splitUtterances(line.text)) {
+        const recorded = voice ? recordedMs(clipKey(voice, clipText(utterance, episode.say))) : undefined;
+        total += (recorded === undefined ? estimateSpeechMs(utterance, rate) : recorded / pace) + 200;
+      }
       total += 250;
     }
   }
-  return total;
+  return Math.round(total);
 }
 
 /** Running time of the music in an episode, for the album page ("about 48 min"). */

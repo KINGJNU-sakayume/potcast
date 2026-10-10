@@ -28,7 +28,7 @@ still no global playback footer, no Catalogue or Specimen mode, and transport co
 | **Focus Mode** | `F` or the transport button: full screen, cover, lyrics and progress. `Esc` leaves. |
 | **Artist** | In the colour of the artist's photograph. Portrait, name, origin line and Editorial Note; below it, the **Discography** as a chronology in two or three columns. Albums, Singles & EPs, Compilations and Appears on each load in full, oldest first (or newest first). Releases are grouped by year, with deluxe / remaster / regional editions folded under the original (*+2 editions*), the note's career eras marked in the timeline, and noted releases marked. *Play artist*, *Open in Spotify*. |
 | **Album** | In the cover's colour. Cover, title, artist, release / format / tracks / duration and Editorial Note left; the complete Track Sequence right, with the playing track, guests, explicit marks, discs and a *Note* mark on songs with a song note. *Play album*, *Save album*. Under the sequence, the release's place in the discography (`03 / 12 · Albums`) with the previous and next release — `[` / `]` step through. An artist note's `discography:` list sets that album order (e.g. to skip a live album). |
-| **Episode** | An album's episode, opened with *Listen with the hosts* on its Album page (`#/episode/<album ID>`). In the cover's colour: the line a host is saying — or the track being played, with what to listen for and its progress — in large type; play / pause and back / skip; and the whole script, where any line or stretch of music starts the episode from there. The episode keeps running on other pages: the rail's cover leads back to it, and `Space` and Now Playing's play button pause it. |
+| **Episode** | An album's episode, opened with *Listen with the hosts* on its Album page or *Episode* on its card in the Archive (`#/episode/<album ID>`). In the cover's colour: the line a host is saying — or the track being played, with what to listen for and its progress — in large type; play / pause and back / skip; and the whole script, where any line or stretch of music starts the episode from there. The episode keeps running on other pages: the rail's cover leads back to it, and `Space` and Now Playing's play button pause it. |
 | **Archive** | The index of the archive's own writing: every artist with a note on the left; the chosen artist's note and portrait, album notes with covers, and one Listening note per song (with the song's translation note inside it) under its album in tracklist order on the right, each opening its note or playing the track. Artwork is the note's `image` / `cover` URL (`npm run notes:art` fills them), else Spotify's when connected, else the archive plates. |
 | **Library** | One screen: liked songs (*Shuffle* draws from the whole library, *Play all*) and recently played as lists; liked albums, playlists and followed artists as big covers. |
 | **Search** | The overlay (`/`): tracks, artists, albums and playlists side by side, type filters with paging, `↓` / `↑` through results. |
@@ -215,17 +215,19 @@ needs a secret must sit behind your own backend. No copyrighted lyrics are store
 
 ## Episodes
 
-An episode is a script performed live. The app speaks the hosts' lines with the browser's speech synthesis, starts and
-stops Spotify playback at the positions the script names, and turns the music down while a host talks over it. Nothing
-is mixed into a file: Spotify's audio stays in Spotify's player and cannot be exported, so an episode exists only while
-the app is performing it.
+An episode is a script performed live. The app plays the hosts' lines — recorded ahead of time with
+[Supertonic 3](#voices), a machine-generated voice — starts and stops Spotify playback at the positions the script
+names, and turns the music down while a host talks over it. The music is never mixed into a file: Spotify's audio
+stays in Spotify's player and cannot be exported, so an episode exists only while the app is performing it.
 
 | Where | What |
 | --- | --- |
 | [`src/editorial/notes/episodes/<album>.md`](src/editorial/notes/episodes/) | The script, named after its album note (`igor.md` for `notes/albums/igor.md`) |
 | [`src/episode/script.ts`](src/episode/script.ts) · [`resolve.ts`](src/episode/resolve.ts) | The format, and matching it to the album's tracks and times |
 | [`src/episode/runner.ts`](src/episode/runner.ts) | The performance: talk, music, talk-over, fades, pause / resume / jump |
-| [`src/episode/narrator.ts`](src/episode/narrator.ts) · [`voices.ts`](src/episode/voices.ts) | The voices |
+| [`src/episode/narration/`](src/episode/narration/) | The recorded hosts: how a line finds its clip (`clip.ts`), the site's clips (`library.ts`), playing them (`recordedNarrator.ts`) |
+| [`scripts/narration/`](scripts/narration/) | Recording them: Supertonic 3 on ONNX Runtime (`supertonic.ts`), finishing and MP3 (`audio.ts`), the command (`render.ts`) |
+| [`src/episode/narrator.ts`](src/episode/narrator.ts) · [`voices.ts`](src/episode/voices.ts) | The browser's own voice, which says any line that has no recording |
 
 ### The script
 
@@ -236,6 +238,12 @@ title: 『IGOR』 같이 듣기
 hosts:
   a: 진행
   b: 해설
+voices:                                  each host's recorded voice (F1–F5, M1–M5); F1 and M2 when left out
+  a: F1
+  b: M2
+say:                                     how to say what is written differently
+  - EARFQUAKE = 어스퀘이크
+  - 2019년 5월 = 이천십구 년 오월
 written: 2026-10-10
 short: >
   One or two lines shown before the episode starts.
@@ -255,6 +263,7 @@ B: 반주와 목소리를 따로 들어 보세요.
 
 A~ 지금 들리는 이 피아노가…               talk over the music, which keeps playing turned down
 > play to 1:05                           the current track carries on (here until 1:05; `to end` for the rest)
+A: 그건 좀 심했죠. <laugh>                a sound the recorded voice makes: <laugh>, <breath> or <sigh>
 <!-- a note to yourself -->
 ```
 
@@ -269,28 +278,79 @@ A~ 지금 들리는 이 피아노가…               talk over the music, which
   so nothing is lost under it.
 - **A line right under a host's line continues it**; a blank line ends the turn. Anything else is an error with its
   line number.
+- **`say:`** gives the reading of anything a Korean voice should not be left to work out: English titles and names
+  (`EARFQUAKE = 어스퀘이크`) and numerals (`13위 = 십삼 위`). The script and the captions keep what is written; only
+  the voice gets the reading. The longest match wins, and an English word or a number only matches whole.
+- **`<laugh>`, `<breath>`, `<sigh>`** are performed by the recorded voice and never shown; a browser voice skips them.
 
 `npm run test:run` parses every script, resolves it against its album note, and checks that each track is heard whole
-once, that a talk-over fits in what is left of its track, and that the lines are written to be spoken (short turns, no
-written "-다" endings). To have Claude write one, ask for it (*"STRAY SHEEP 에피소드 써줘"*); the procedure is in
+once, that a talk-over fits in what is left of its track, that the lines are written to be spoken (short turns, no
+written "-다" endings), and that they are written to be recorded (no utterance cut in the middle of a clause, and a
+`say:` reading for every English word and numeral). To have Claude write one, ask for it (*"STRAY SHEEP 에피소드 써줘"*); the procedure is in
 [`.claude/skills/write-episode/SKILL.md`](.claude/skills/write-episode/SKILL.md).
 
 ### Voices
 
-The hosts speak with the browser's own Korean voices (Web Speech API): nothing to set up and no key, but the voices
-depend on the browser. **Microsoft Edge** comes with natural-sounding Korean voices; Chrome has one network voice plus
-whatever Windows or macOS has installed. **Settings → Episodes** chooses each host's voice (with *Hear it*), the pace,
-and what the music does under a talk-over (*Music turned down* with its level, or *Music stops*). With a single voice
-the second host uses it at a lower pitch. With no Korean voice — or one that never starts — the lines are shown for
-as long as they would take to say, so an episode always runs. `Narrator` ([`narrator.ts`](src/episode/narrator.ts)) is
-the seam for another source of speech, such as pre-rendered audio files.
+The hosts are **recorded**: every line is synthesised ahead of time with
+[Supertonic 3](https://github.com/supertone-oss-archive/supertonic) — Supertone's open-weight text-to-speech model, 31
+languages including Korean, ten preset voices — and played back as a short MP3 clip. Every browser and phone hears
+the same two voices, nothing is downloaded or computed while listening beyond the clips themselves (about 5 MB for
+*IGOR*), and a clip reports its end reliably, which a browser's speech synthesis does not.
+
+- **A clip per utterance.** A host's turn is cut into utterances (sentences; a long sentence at a comma), and each is
+  one clip named after its voice and the exact text it says ([`clip.ts`](src/episode/narration/clip.ts)). A line that
+  has not changed is never rendered twice; an edited line gets a new clip.
+- **`npm run narration`** renders the clips that are missing into `.narration/` and copies the ones the scripts need,
+  with their index, to `public/narration/`, which the build publishes. It downloads the model (about 400 MB, pinned to
+  one revision of the archive on Hugging Face) the first time; `SUPERTONIC_DIR` points it at a copy on disk.
+  `-- --check` only reports. The audio is finished in [`audio.ts`](scripts/narration/audio.ts): rumble filtered out,
+  silence trimmed, the pause that belongs after the line left in, every clip levelled to the same loudness.
+- **In GitHub Actions** the store is the repository's `narration` branch (only clips; no shared history with `main`).
+  A pull request's check records its new lines and reports on them in a comment — how many clips, how long, anything
+  the voice was left to read as written — and uploads the clips as an artifact to listen to. The deploy then finds
+  them there. Rendering *IGOR* (135 clips, nine minutes of speech) took between three and seven minutes on a hosted runner.
+- **Which voice.** A script's `voices:` names each host's; **Settings → Episodes** plays a sample of all ten. The
+  defaults, F1 and M2, were picked by ear from the ten. They speak Korean at the same pace (about six syllables a
+  second); F4 and M3 are a fifth faster.
+- **A line without a recording** — a site built without `npm run narration`, a clip that will not load — is said by
+  the browser's own Korean voice (Web Speech API), chosen in the same settings: Microsoft Edge has natural-sounding
+  ones, Chrome one network voice plus the system's. With no Korean voice at all the line is shown for as long as it
+  would take to say. An episode therefore always runs.
+- **Pace** (0.9× to 1.25×) changes the playback speed of the clips without changing their pitch.
+
+The model's weights are under the [OpenRAIL-M licence](https://huggingface.co/supertone-oss-archive/supertonic-3/blob/main/LICENSE)
+(the sample code this port follows is MIT). It asks that generated speech be presented as machine-generated — the
+episode page and the settings say so — and forbids, among other things, impersonating a person. The preset voices are
+Supertone's own; no one's voice is cloned here.
+
+### Who plays the music
+
+- **Played for me** (the default): the episode drives the session's player — starts each stretch at its position,
+  stops it, turns it down under a talk-over. This needs a player the app can drive: this browser's (Premium, a desktop
+  browser) or another Spotify device it controls as a remote.
+- **I play it myself**: the hosts' lines play by themselves, and at each stretch of music the episode shows what to
+  play and how much of it (*The whole track*, *From 0:46 to 1:11*), the translated lines of a short stretch to read
+  along with, a link that opens the track in Spotify, and *Heard it · go on*. The episode never touches a player in
+  this mode, so it runs anywhere the page does — a phone with the Spotify app beside it, a shared computer — and
+  nothing is ever played over anything else. Talk written to go over the music is simply said.
+
+The choice is on the episode page (*Music: …*) and in **Settings → Episodes**. When the music does not start in the
+first mode, the notice offers the second. This second mode is the guided-listening idea of the sibling
+`listening-room-tts` repository (narration, a link to the song, a manual step), performed by this player.
 
 ### How it behaves
 
 - **The player is the listener's.** When playback is changed from outside the episode (another track, pause or play in
   the Spotify app), the episode pauses itself instead of fighting for the player; *Continue* picks it up where it
   stopped.
-- **Pause** stops the utterance in progress; continuing says it again from its start. Music resumes at its position.
+- **Pause** stops the utterance in progress; continuing carries on inside it (a browser voice says it again from its
+  start). Music resumes at its position.
+- **The music is subtitled.** While a stretch of music plays, the line being sung is shown in the song note's Korean
+  translation (when the song has one and Settings has translation on).
+- **An episode left part-way** is remembered in this browser: *Continue* picks it up at the line or the stretch of
+  music it was left on, *From the top* starts over. One heard to its end starts from the top again.
+- **A phone's screen stays on** while an episode plays (Screen Wake Lock): the page performs the episode, and a
+  locked phone suspends the page.
 - **Fades and talk-over** use a gain on top of the listener's volume (`PlaybackEngine.setGain`): it never changes the
   volume the listener set and is not stored. Only this browser's player takes smooth ramps. Another Spotify device gets
   the talk-over level in one Web API request and no fades; a device whose volume cannot be set (most phones) has the
@@ -308,8 +368,9 @@ the seam for another source of speech, such as pre-rendered audio files.
   re-mix, or overlap any Spotify Content with any other audio content", which talking over (and arguably between)
   tracks does. That is why this is a personal build — a site only allow-listed Spotify accounts can sign in to — and
   not something to share. *Music stops* avoids the overlap.
-- Tested on the preview archive and in unit tests with a simulated player; real Spotify playback and real voices
-  were not available where it was written.
+- Tested on the preview archive and in unit tests with a simulated player, and — the recorded voices — in a real
+  browser playing the real clips. Real Spotify playback was not available where it was written, and nobody had
+  listened to the voices there: whether a reading or a voice sounds right is for a listener to say.
 
 ## Preview mode
 
@@ -362,15 +423,18 @@ npm run check      # all of the above — run before pushing
 npm run lyrics:lines -- …   # curated-translation tool (see Curated translations)
 npm run notes:audit -- …    # notes against the quality floor (all, an artist key, or songs/<key>)
 npm run episode:lines -- …  # the numbered lyric lines an episode script can point at (a song key, or --album <key>)
+npm run narration           # record the hosts' lines that have no clip yet (Supertonic 3); -- --check only reports
 npm run notes:migrate -- --dry-run   # one-time: hash-keyed translations → song notes (already run)
 npm run preview    # serve dist/ on http://127.0.0.1:4173/
 ```
 
 ## Running potcast
 
-`.github/workflows/deploy-pages.yml` runs `npm run check`, builds with the repository base path and publishes `dist/`
-to GitHub Pages on every push to `main`: **`https://kingjnu-sakayume.github.io/potcast/`**. Pull requests are only
-checked (`check.yml`).
+`.github/workflows/deploy-pages.yml` records any host lines that have no clip yet, runs `npm run check`, builds with
+the repository base path and publishes `dist/` to GitHub Pages on every push to `main`:
+**`https://kingjnu-sakayume.github.io/potcast/`**. Pull requests are checked (`check.yml`), and their new host lines
+are recorded and reported in a comment ([Voices](#voices)). Both workflows push clips to the `narration` branch, which
+is why they ask for `contents: write`; nothing else is written to the repository.
 
 It uses the same Spotify Developer app as player2. Three settings, once:
 
@@ -440,7 +504,12 @@ paper and the playing album's accent.
   be missing and are never required.
 - **Episodes** are performed live and only here (see [What it is not](#what-it-is-not)). An episode names tracks by
   their song notes, so an album needs its notes first; lyric positions need the song's curated translation. On a phone
-  the voices come from the phone's browser while the music plays in the Spotify app, which has not been tried.
+  the hosts play in the phone's browser while the music plays in the Spotify app, which has not been tried: starting
+  audio in the browser may make the phone pause or turn down the Spotify app. *I play it myself*
+  ([Who plays the music](#who-plays-the-music)) does not depend on any of that.
+- **Recorded hosts** are only as right as their script: the voice reads Hangul well, and whether a `say:` reading or
+  a voice's tone sounds right has to be judged by ear. Supertone archived Supertonic in 2026; the clips already on
+  the `narration` branch keep working without it, and rendering new ones needs the archived model to stay downloadable.
 - **Queue** is read-only (the Web API cannot reorder it). Episodes, ads and local files show the idle state.
 - **Playlists** play as a context; there is no playlist page.
 - **Autoplay.** The first play in a session may need one click or key press.

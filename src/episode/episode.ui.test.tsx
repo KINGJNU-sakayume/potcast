@@ -6,6 +6,10 @@ import { readConfig } from '../app/config';
 import { createAppServices } from '../app/services';
 import { MOBILE_QUERY } from '../app/useIsMobile';
 import { DEFAULT_PREFERENCES, preferencesStore } from '../preferences/preferences';
+import { getEpisodeScript } from './episodes';
+import { NARRATION_ENGINE, RECORDED_VOICES, type NarrationManifest } from './narration/clip';
+import { narrationLibrary } from './narration/library';
+import { episodeClips, sampleClips } from './narration/plan';
 
 const IGOR = '5zi7WsKlIiUXv09tbGLKsE';
 const FIRST_LINE = '오늘 같이 들을 앨범은 타일러 더 크리에이터의 『IGOR』예요.';
@@ -147,6 +151,143 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     await user.click(within(settings).getByRole('button', { name: 'Music stops' }));
     expect(screen.getByRole('button', { name: /Talk over music/ })).toHaveTextContent('music stops');
     expect(within(settings).queryByRole('slider', { name: 'Music level under talk' })).not.toBeInTheDocument();
+  });
+});
+
+describe('an episode that was left part-way', () => {
+  it('offers to carry on from where it was left, or to start from the top', async () => {
+    const user = userEvent.setup();
+    renderApp(`#/episode/${IGOR}`);
+    const script = await screen.findByRole('group', { name: 'Script' });
+    const details = screen.getByRole('region', { name: 'Episode details' });
+    expect(within(details).queryByRole('button', { name: 'From the top' })).not.toBeInTheDocument();
+
+    await user.click(within(script).getByRole('button', { name: /후렴 뒤에 떠나지 말라는 부탁이 세 번/ }));
+    await user.click(within(details).getByRole('button', { name: 'End episode' }));
+    expect(now()).toHaveAttribute('data-status', 'idle');
+    expect(screen.getByText('Left at 3 / 13 · EARFQUAKE')).toBeInTheDocument();
+
+    await user.click(within(details).getByRole('button', { name: 'Continue' }));
+    expect(within(now()).getByText(/후렴 뒤에 떠나지 말라는 부탁이 세 번/)).toBeInTheDocument();
+    await user.click(within(details).getByRole('button', { name: 'End episode' }));
+
+    await user.click(within(details).getByRole('button', { name: 'From the top' }));
+    expect(within(now()).getByText(FIRST_LINE)).toBeInTheDocument();
+  });
+});
+
+describe('the music in an episode', () => {
+  it('is subtitled with the song note\'s translation of the line being sung', async () => {
+    const user = userEvent.setup();
+    const { container } = renderApp(`#/episode/${IGOR}`);
+    const script = await screen.findByRole('group', { name: 'Script' });
+    // The replayed stretch of EARFQUAKE starts on a sung line.
+    await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
+    await waitFor(() => expect(container.querySelector('.ep-now-lyric')?.textContent?.trim().length ?? 0).toBeGreaterThan(1));
+    expect(container.querySelector('.ep-now-lyric')).toHaveAttribute('lang', 'ko');
+  });
+
+  it('is left without subtitles when translations are turned off', async () => {
+    const user = userEvent.setup();
+    preferencesStore.set({ translationEnabled: false });
+    const { container } = renderApp(`#/episode/${IGOR}`);
+    const script = await screen.findByRole('group', { name: 'Script' });
+    await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
+    await waitFor(() => expect(within(now()).getByText(/^0:4[6-9]$/)).toBeInTheDocument());
+    expect(container.querySelector('.ep-now-lyric')).not.toBeInTheDocument();
+  });
+});
+
+describe('an episode whose music the listener plays themselves', () => {
+  it('shows what to play, links to it in Spotify, and goes on when told it has been heard', async () => {
+    const user = userEvent.setup();
+    renderApp(`#/episode/${IGOR}`);
+    const script = await screen.findByRole('group', { name: 'Script' });
+    const toggle = screen.getByRole('button', { name: /^Music:/ });
+    expect(toggle).toHaveTextContent('played for me');
+    await user.click(toggle);
+    expect(toggle).toHaveTextContent('I play it myself');
+    expect(preferencesStore.get().episodeMusic).toBe('manual');
+    // Talking over the music is not a choice any more: the music is not the episode's to turn down.
+    expect(screen.queryByRole('button', { name: /Talk over music/ })).not.toBeInTheDocument();
+
+    await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
+    expect(within(now()).getByText('Your turn')).toBeInTheDocument();
+    expect(within(now()).getByText('EARFQUAKE')).toBeInTheDocument();
+    expect(within(now()).getByText(/^From 0:4\d to 1:1\d$/)).toBeInTheDocument();
+    // The lines of the stretch, to read along with.
+    const lines = within(now()).getByRole('list', { name: 'The lines of this stretch, translated' });
+    expect(within(lines).getAllByRole('listitem').length).toBeGreaterThan(1);
+    expect(within(now()).getByRole('link', { name: 'Open in Spotify' })).toHaveAttribute('href', expect.stringMatching(/^https:\/\/open\.spotify\.com\/track\/[A-Za-z0-9]{22}$/));
+
+    await user.click(within(now()).getByRole('button', { name: 'Heard it · go on' }));
+    expect(within(now()).getByText('화성은 똑같이 돌아오는데 안정감이 생기지 않아요.')).toBeInTheDocument();
+  });
+
+  it('asks for a whole track as a whole track, and takes up a stretch again when the choice is changed in the middle of it', async () => {
+    const user = userEvent.setup();
+    preferencesStore.set({ episodeMusic: 'manual' });
+    renderApp(`#/episode/${IGOR}`);
+    const script = await screen.findByRole('group', { name: 'Script' });
+    await user.click(within(script).getByRole('button', { name: /부드러운 코드와 불안정한 보컬이 동시에 움직인다/ }));
+    expect(within(now()).getByText(/^The whole track · \d:\d\d$/)).toBeInTheDocument();
+    expect(within(now()).queryByRole('list')).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: /^Music:/ }));
+    expect(within(now()).getByText('Listening')).toBeInTheDocument();
+    expect(within(now()).queryByText('Your turn')).not.toBeInTheDocument();
+  });
+});
+
+describe('the archive', () => {
+  it('counts the episodes and leads to an album\'s episode from its card', async () => {
+    renderApp('#/archive?artist=tyler');
+    expect(await screen.findByText(/· 1 episode ·/)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Listen to IGOR with the hosts' })).toHaveAttribute('href', `#/episode/${IGOR}`);
+  });
+});
+
+describe('an episode on a site with recorded hosts', () => {
+  function recorded(part: 'all' | 'half'): NarrationManifest {
+    const clips = episodeClips(getEpisodeScript('igor')!);
+    const kept = part === 'all' ? clips : clips.slice(0, Math.floor(clips.length / 2));
+    const samples = sampleClips();
+    return {
+      version: 1,
+      engine: { id: NARRATION_ENGINE.id, name: NARRATION_ENGINE.name },
+      clips: Object.fromEntries([...kept, ...samples].map((clip) => [clip.key, 3000])),
+      samples: Object.fromEntries(samples.map((clip) => [clip.voice, clip.key])),
+    };
+  }
+
+  it('says that the hosts are recorded and machine-generated, and how long the episode really runs', async () => {
+    vi.spyOn(narrationLibrary, 'getManifest').mockReturnValue(recorded('all'));
+    renderApp(`#/episode/${IGOR}`);
+    const details = await screen.findByRole('region', { name: 'Episode details' });
+    expect(within(details).getByText('Recorded · Supertonic 3')).toBeInTheDocument();
+    expect(within(details).getByText('The hosts’ voices are machine-generated (Supertonic 3).')).toBeInTheDocument();
+    expect(within(details).queryByText(/has no Korean voice/)).not.toBeInTheDocument();
+  });
+
+  it('says how much is recorded when only part of it is', async () => {
+    vi.spyOn(narrationLibrary, 'getManifest').mockReturnValue(recorded('half'));
+    renderApp(`#/episode/${IGOR}`);
+    const details = await screen.findByRole('region', { name: 'Episode details' });
+    expect(within(details).getByText(/^Recorded in part · \d+ of \d+ lines$/)).toBeInTheDocument();
+    // jsdom has no voice for the other half.
+    expect(within(details).getByText(/Some lines have no recording yet/)).toBeInTheDocument();
+  });
+
+  it('lets each of the ten voices be heard in the settings', async () => {
+    const user = userEvent.setup();
+    vi.spyOn(narrationLibrary, 'getManifest').mockReturnValue(recorded('all'));
+    const clip = vi.spyOn(narrationLibrary, 'clip').mockRejectedValue(new Error('no network in the tests'));
+    renderApp(`#/episode/${IGOR}`);
+    await user.click(await screen.findByRole('button', { name: 'Voices and pace' }));
+    const voices = within(screen.getByRole('complementary', { name: 'Settings' })).getByRole('group', { name: 'The recorded voices' });
+    expect(within(voices).getAllByRole('button')).toHaveLength(RECORDED_VOICES.length);
+    await user.click(within(voices).getByRole('button', { name: /Hear voice M5, warm, storytelling/ }));
+    expect(clip).toHaveBeenCalledWith(recorded('all').samples.M5);
   });
 });
 

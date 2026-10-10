@@ -113,9 +113,40 @@ describe('episode script', () => {
     expect(problems('', HEAD)[0]).toMatch(/has no lines/);
   });
 
+  it('gives each host a recorded voice: the script\'s choice, or the default for its place', () => {
+    expect(parse('A: 말.').hosts.map((host) => host.voice)).toEqual(['F1', 'M2']);
+    const head = HEAD.replace('written:', 'voices:\n  b: M4\nwritten:');
+    expect(parse('A: 말.', head).hosts).toEqual([
+      { id: 'a', name: '진행', voice: 'F1' },
+      { id: 'b', name: '해설', voice: 'M4' },
+    ]);
+    expect(problems('A: 말.', HEAD.replace('written:', 'voices:\n  a: F9\nwritten:'))[0]).toMatch(/"voices.a" must be one of F1, F2, .* got "F9"/);
+    expect(problems('A: 말.', HEAD.replace('written:', 'voices:\n  c: F1\nwritten:'))[0]).toMatch(/"voices.c" names no host \(a, b\)/);
+  });
+
+  it('reads how to say what is written differently', () => {
+    const head = HEAD.replace('written:', "say:\n  - EARFQUAKE = 어스퀘이크\n  - IGOR'S THEME = 이고르스 테마\n  - 2 + 2 = 4 = 이 더하기 이는 사\nwritten:");
+    expect(parse('A: 말.', head).say).toEqual([
+      { from: 'EARFQUAKE', to: '어스퀘이크' },
+      { from: "IGOR'S THEME", to: '이고르스 테마' },
+      { from: '2 + 2', to: '4 = 이 더하기 이는 사' },
+    ]);
+    expect(parse('A: 말.').say).toEqual([]);
+    expect(problems('A: 말.', HEAD.replace('written:', 'say:\n  - EARFQUAKE 어스퀘이크\nwritten:'))[0]).toMatch(/"say" items read "as written = as said"/);
+    expect(problems('A: 말.', HEAD.replace('written:', 'say:\n  - A = 에이\n  - A = 아\nwritten:'))[0]).toMatch(/"say" has "A" twice/);
+  });
+
+  it('accepts the sounds a host can make and rejects any other tag', () => {
+    const { cues } = parse('A: 그건 좀 심했죠. <laugh>\nB~ <breath> 자, 들어 볼게요.\n> play one');
+    expect(cues[0]).toMatchObject({ lines: [{ host: 'a', text: '그건 좀 심했죠. <laugh>' }] });
+    const found = problems('A: 좋아요 <giggle>.');
+    expect(found).toHaveLength(1);
+    expect(found[0]).toMatch(/Unknown <giggle>\. The sounds a host can make are <laugh>, <breath>, <sigh>/);
+  });
+
   it('lets a single host carry an episode', () => {
     const script = parse('A: 혼자 진행합니다.\n> play one', '---\nalbum: x\ntitle: T\nhosts:\n  a: 진행\n---\n');
-    expect(script.hosts).toEqual([{ id: 'a', name: '진행' }]);
+    expect(script.hosts).toEqual([{ id: 'a', name: '진행', voice: 'F1' }]);
     expect(script.cues).toHaveLength(2);
   });
 });

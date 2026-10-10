@@ -7,6 +7,8 @@ import { createAppServices } from '../app/services';
 import { albumNotes } from '../editorial/albums';
 import { artistNotes } from '../editorial/artists';
 import { songNotes } from '../editorial/songs';
+import { episodeScripts } from '../episode/episodes';
+import { pluralise } from '../lib/format';
 
 const KENSHI = '1snhtMLeb2DYoMOcVbb8iB';
 const STRAY_SHEEP = '052EiTRYh35MuDVJN9Emdh';
@@ -74,7 +76,9 @@ describe('discography digging (preview archive)', () => {
     expect(await screen.findByRole('heading', { level: 1, name: 'Archive' })).toBeInTheDocument();
     // Counts and order follow the note files, so adding a note never breaks this test.
     expect(
-      screen.getByText(`${artistNotes.length} artists · ${albumNotes.length} album notes · ${songNotes.length} listening notes · works offline`),
+      screen.getByText(
+        `${artistNotes.length} artists · ${albumNotes.length} album notes · ${songNotes.length} listening notes · ${pluralise(episodeScripts.length, 'episode')} · works offline`,
+      ),
     ).toBeInTheDocument();
     const index = screen.getByRole('navigation', { name: 'Artists with notes' });
     const names = artistNotes.map((artist) => artist.names[0]!).sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));

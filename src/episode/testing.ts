@@ -4,7 +4,7 @@ import type { Ducking, PlaybackEngine } from '../playback/engine';
 import { monotonicNow, positionAt } from '../playback/playbackClock';
 import type { PlayerStore } from '../playback/playerStore';
 import { NO_DISALLOWS, type PlayRequest, type PlayerSnapshot, type QueueSnapshot } from '../playback/types';
-import { sleep, type NarrationMode, type Narrator, type SpeakOptions } from './narrator';
+import { sleep, type NarrationMode, type Narrator, type SpeakOptions, type Utterance } from './narrator';
 import { resolveEpisode } from './resolve';
 import { parseEpisodeScript } from './script';
 import type { Episode, EpisodeTrack } from './types';
@@ -251,6 +251,10 @@ export class StageEngine implements PlaybackEngine {
 /** Says every utterance in `utteranceMs` and logs it as `slot:text`. */
 export class ScriptedNarrator implements Narrator {
   readonly spoken: string[] = [];
+  /** What each utterance was handed over with, in the same order as `spoken`. */
+  readonly calls: Array<Omit<SpeakOptions, 'signal'>> = [];
+  /** Every list of upcoming utterances the runner announced. */
+  readonly prepared: Utterance[][] = [];
   readonly unlocks: number[] = [];
   utteranceMs = 1000;
   narration: NarrationMode = 'voice';
@@ -264,8 +268,12 @@ export class ScriptedNarrator implements Narrator {
   unlock(): void {
     this.unlocks.push(this.spoken.length);
   }
-  async speak(text: string, { voiceSlot, signal }: SpeakOptions): Promise<void> {
-    this.spoken.push(`${voiceSlot}:${text}`);
+  prepare(upcoming: readonly Utterance[]): void {
+    this.prepared.push([...upcoming]);
+  }
+  async speak(text: string, { signal, ...options }: SpeakOptions): Promise<void> {
+    this.spoken.push(`${options.voiceSlot}:${text}`);
+    this.calls.push(options);
     await sleep(this.utteranceMs, signal);
   }
 }

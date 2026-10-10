@@ -23,12 +23,17 @@ interface FakeUtterance {
 function fakeSynth() {
   const queue: FakeUtterance[] = [];
   const synth = {
+    /** What the engine reports about itself; the tests set these as a browser would. */
+    speaking: false,
+    pending: false,
     speak: vi.fn((utterance: SpeechSynthesisUtterance) => {
       queue.push(utterance as unknown as FakeUtterance);
     }),
     cancel: vi.fn(() => {
+      synth.speaking = false;
       for (const utterance of queue.splice(0)) utterance.onerror?.({ error: 'canceled' });
     }),
+    resume: vi.fn(),
   };
   const create = (text: string) =>
     ({ text, voice: null, lang: '', rate: 1, pitch: 1, volume: 1, onstart: null, onend: null, onerror: null }) as unknown as SpeechSynthesisUtterance;
@@ -44,7 +49,7 @@ function settings(voices = chooseVoices(2, [HEAMI, SUNHI, INJOON]), rate = 1): (
 }
 
 beforeEach(() => {
-  vi.useFakeTimers();
+  vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout', 'setInterval', 'clearInterval', 'performance', 'Date'] });
 });
 
 afterEach(() => {
@@ -119,7 +124,7 @@ describe('SpeechNarrator', () => {
 
     let finished = false;
     void narrator.speak(text, { voiceSlot: 0, signal: new AbortController().signal }).then(() => (finished = true));
-    await vi.advanceTimersByTimeAsync(4000 + estimateSpeechMs(text) - 10);
+    await vi.advanceTimersByTimeAsync(5000 + estimateSpeechMs(text) - 10);
     expect(finished).toBe(false);
     await vi.advanceTimersByTimeAsync(20);
     expect(finished).toBe(true);
@@ -127,7 +132,7 @@ describe('SpeechNarrator', () => {
     expect(changed).not.toHaveBeenCalled();
 
     void narrator.speak(text, { voiceSlot: 0, signal: new AbortController().signal });
-    await vi.advanceTimersByTimeAsync(4100);
+    await vi.advanceTimersByTimeAsync(5100);
     expect(narrator.mode()).toBe('captions');
     expect(changed).toHaveBeenCalledTimes(1);
 
@@ -145,12 +150,70 @@ describe('SpeechNarrator', () => {
     const text = '끝났다는 신호가 오지 않는 줄.';
     let finished = false;
     void narrator.speak(text, { voiceSlot: 0, signal: new AbortController().signal }).then(() => (finished = true));
+    synth.speaking = true;
     queue[0]!.onstart?.();
-    await vi.advanceTimersByTimeAsync(estimateSpeechMs(text) * 2.5 + 5000);
+    await vi.advanceTimersByTimeAsync(3000);
     expect(finished).toBe(false);
-    await vi.advanceTimersByTimeAsync(1100);
+    // The engine has gone quiet without an `end`: two looks at it are enough.
+    synth.speaking = false;
+    await vi.advanceTimersByTimeAsync(700);
     expect(finished).toBe(true);
     expect(narrator.mode()).toBe('voice');
+  });
+
+  it('moves on even when the engine claims to be speaking for ever', async () => {
+    const { synth, create, queue } = fakeSynth();
+    const narrator = new SpeechNarrator(synth, create, settings());
+    const text = '끝나지 않는 척하는 줄.';
+    let finished = false;
+    void narrator.speak(text, { voiceSlot: 0, signal: new AbortController().signal }).then(() => (finished = true));
+    synth.speaking = true;
+    queue[0]!.onstart?.();
+    await vi.advanceTimersByTimeAsync(estimateSpeechMs(text) * 2 + 3900);
+    expect(finished).toBe(false);
+    await vi.advanceTimersByTimeAsync(200);
+    expect(finished).toBe(true);
+  });
+
+  it('never hands an utterance over right after a cancel, which Chrome would drop', async () => {
+    const { synth, create, queue } = fakeSynth();
+    const narrator = new SpeechNarrator(synth, create, settings());
+    const first = new AbortController();
+    const interrupted = narrator.speak('끊기는 줄.', { voiceSlot: 0, signal: first.signal });
+    queue[0]!.onstart?.();
+    first.abort();
+    await expect(interrupted).rejects.toSatisfy(isAbortError);
+    expect(synth.cancel).toHaveBeenCalledTimes(1);
+
+    let finished = false;
+    void narrator.speak('바로 이어지는 줄.', { voiceSlot: 0, signal: new AbortController().signal }).then(() => (finished = true));
+    expect(queue).toHaveLength(0);
+    await vi.advanceTimersByTimeAsync(170);
+    expect(queue).toHaveLength(0);
+    await vi.advanceTimersByTimeAsync(20);
+    expect(queue).toHaveLength(1);
+    expect(queue[0]).toMatchObject({ text: '바로 이어지는 줄.' });
+    queue[0]!.onstart?.();
+    queue[0]!.onend?.();
+    await vi.advanceTimersByTimeAsync(0);
+    expect(finished).toBe(true);
+  });
+
+  it('drops a line that is stopped while it waits out a cancel, without cancelling again', async () => {
+    const { synth, create, queue } = fakeSynth();
+    const narrator = new SpeechNarrator(synth, create, settings());
+    const first = new AbortController();
+    const interrupted = narrator.speak('끊기는 줄.', { voiceSlot: 0, signal: first.signal });
+    first.abort();
+    await expect(interrupted).rejects.toSatisfy(isAbortError);
+
+    const second = new AbortController();
+    const waiting = narrator.speak('기다리다 멈춘 줄.', { voiceSlot: 0, signal: second.signal });
+    second.abort();
+    await expect(waiting).rejects.toSatisfy(isAbortError);
+    await vi.advanceTimersByTimeAsync(1000);
+    expect(queue).toHaveLength(0);
+    expect(synth.cancel).toHaveBeenCalledTimes(1);
   });
 
   it('is captions-only without a Korean voice', async () => {
@@ -163,12 +226,33 @@ describe('SpeechNarrator', () => {
     expect(synth.speak).not.toHaveBeenCalled();
   });
 
-  it('unlocks with a silent utterance and survives a broken speech engine', () => {
+  it('clears what was left speaking before it starts, and survives a broken speech engine', () => {
     const { synth, create, queue } = fakeSynth();
-    new SpeechNarrator(synth, create, settings()).unlock();
-    expect(synth.cancel).toHaveBeenCalled();
-    expect(queue[0]).toMatchObject({ volume: 0 });
-    const broken = { speak: () => { throw new Error('no speech'); }, cancel: () => { throw new Error('no speech'); } };
+    const narrator = new SpeechNarrator(synth, create, settings());
+    narrator.unlock();
+    // Nothing was speaking: no cancel (the first line would be dropped after one) and nothing queued.
+    expect(synth.cancel).not.toHaveBeenCalled();
+    expect(synth.resume).toHaveBeenCalled();
+    expect(queue).toHaveLength(0);
+    synth.speaking = true;
+    narrator.unlock();
+    expect(synth.cancel).toHaveBeenCalledTimes(1);
+
+    const broken = {
+      get speaking(): boolean {
+        throw new Error('no speech');
+      },
+      pending: false,
+      speak: () => {
+        throw new Error('no speech');
+      },
+      cancel: () => {
+        throw new Error('no speech');
+      },
+      resume: () => {
+        throw new Error('no speech');
+      },
+    };
     expect(() => new SpeechNarrator(broken, create, settings()).unlock()).not.toThrow();
   });
 });

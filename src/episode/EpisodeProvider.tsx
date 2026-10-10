@@ -2,10 +2,14 @@ import { useCallback, useEffect, useMemo, useSyncExternalStore, type ReactNode }
 import { useSession } from '../app/sessionContext';
 import { useEngine, usePlayerSelector } from '../playback/hooks';
 import { preferencesStore } from '../preferences/preferences';
+import { clearBookmark, saveBookmark } from './bookmark';
 import { EpisodeContext, useEpisodeRunner } from './episodeContext';
+import { narrationLibrary } from './narration/library';
+import { RecordedNarrator } from './narration/recordedNarrator';
 import { CaptionNarrator, SpeechNarrator, type NarrationSettings, type Narrator } from './narrator';
 import { EpisodeRunner, type EpisodeState } from './runner';
 import { chooseVoices, voiceCatalog } from './voices';
+import { useScreenAwake } from './wakeLock';
 
 /** At most two hosts speak, so two voices are kept ready. */
 const VOICE_SLOTS = 2;
@@ -15,10 +19,15 @@ function narrationSettings(): NarrationSettings {
   return { rate: preferences.episodeRate, voices: chooseVoices(VOICE_SLOTS, voiceCatalog.getSnapshot(), preferences.episodeVoices) };
 }
 
-function createNarrator(): Narrator {
+/** The browser's own voice, or captions where it has none: what says a line the site has no recording of. */
+function createBrowserNarrator(): Narrator {
   const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
   if (!synth || typeof SpeechSynthesisUtterance === 'undefined') return new CaptionNarrator(narrationSettings);
   return new SpeechNarrator(synth, (text) => new SpeechSynthesisUtterance(text), narrationSettings);
+}
+
+function createNarrator(): Narrator {
+  return new RecordedNarrator(narrationLibrary, createBrowserNarrator(), () => ({ rate: preferencesStore.get().episodeRate }));
 }
 
 /**
@@ -36,13 +45,33 @@ export function EpisodeProvider({ children }: { children: ReactNode }) {
         narrator: createNarrator(),
         options: () => {
           const preferences = preferencesStore.get();
-          return { talkOver: preferences.episodeTalkOver, duckLevel: preferences.episodeDuckLevel };
+          return { music: preferences.episodeMusic, talkOver: preferences.episodeTalkOver, duckLevel: preferences.episodeDuckLevel };
         },
       }),
     [engine, store],
   );
 
   useEffect(() => runner.attach(), [runner]);
+  // The index of the recorded lines; an episode started before it arrives uses the browser's voice until it does.
+  useEffect(() => void narrationLibrary.load(), []);
+  // Where the episode is, kept for the next visit; an episode heard to its end starts from the top again.
+  useEffect(() => {
+    let saved = '';
+    return runner.subscribe(() => {
+      const { episode, status, cueIndex, lineIndex } = runner.getState();
+      if (!episode) return;
+      if (status === 'ended') {
+        clearBookmark(episode);
+        saved = '';
+        return;
+      }
+      const place = `${episode.key}@${episode.release?.id ?? ''}:${cueIndex}:${lineIndex}`;
+      if (place === saved || cueIndex >= episode.cues.length) return;
+      saved = place;
+      saveBookmark(episode, { cueIndex, lineIndex });
+    });
+  }, [runner]);
+  useScreenAwake(useSyncExternalStore(runner.subscribe, () => runner.getState().status === 'playing'));
   // Voices arrive a moment after the page loads, and the listener can change them: "voice" or "captions" follows.
   useEffect(() => {
     const refresh = () => runner.refresh();

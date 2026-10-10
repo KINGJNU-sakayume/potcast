@@ -3,8 +3,10 @@ import { albumNotes } from '../editorial/albums';
 import { songNotes } from '../editorial/songs';
 import { createPreviewCatalogueSource } from '../preview/previewSource';
 import { EPISODE_FILES, getEpisodeScript, loadEpisodeScripts } from './episodes';
+import { applySay } from './narration/clip';
+import { episodeClips, readAsWritten } from './narration/plan';
 import { albumEpisodeTracks, episodeMusicMs, episodeRelease, episodeTalkMs, resolveEpisode } from './resolve';
-import { estimateSpeechMs, MAX_UTTERANCE_CHARS, splitUtterances } from './speechText';
+import { captionText, estimateSpeechMs, MAX_UTTERANCE_CHARS, splitUtterances } from './speechText';
 import type { EpisodeTrack } from './types';
 
 /** A song note as a track, with the length its lyric times were taken on (or a long one when it has none). */
@@ -82,6 +84,25 @@ describe('the episode scripts in the archive', () => {
         expect(line.text, `line ${cue.sourceLine}: ends like a written note`).not.toMatch(/[^니까]다\.$/);
       }
     }
+  });
+
+  it.each(scripts.map((script) => [script.key, script] as const))('%s is written to be recorded', (_key, script) => {
+    for (const cue of script.cues) {
+      if (cue.type === 'music') continue;
+      for (const line of cue.lines) {
+        for (const utterance of splitUtterances(line.text)) {
+          // Each utterance is recorded by itself. One that stops in the middle of a clause is said as if the sentence
+          // ended there: a long sentence needs a comma near its middle, or to be two sentences.
+          expect(captionText(utterance), `line ${cue.sourceLine}: "${utterance}" is cut in the middle of a clause`).toMatch(/[.!?…,]$/);
+        }
+      }
+    }
+    // A Korean voice reads Hangul reliably, and English titles and numerals less so: each gets a reading under `say:`.
+    const asWritten = [...new Set(episodeClips(script).flatMap((clip) => readAsWritten(clip.text)))];
+    expect(asWritten, `${script.key}: add a "say:" line for each of these`).toEqual([]);
+    // Every reading is used; one that no longer matches anything is a typo or a leftover.
+    const spoken = script.cues.flatMap((cue) => (cue.type === 'music' ? [] : cue.lines.map((line) => line.text))).join('\n');
+    for (const rule of script.say) expect(applySay(spoken, [rule]), `${script.key}: the reading for "${rule.from}" matches no line`).not.toBe(spoken);
   });
 });
 

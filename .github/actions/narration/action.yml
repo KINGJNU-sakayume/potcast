@@ -1,0 +1,54 @@
+name: Record the hosts
+description: >
+  Renders the episode lines that have no recording yet (Supertonic 3, on this runner), keeps them on the
+  repository's `narration` branch, and puts the clips the site needs in public/narration, where the build
+  picks them up. Run it after `npm ci` and before the build.
+
+inputs:
+  token:
+    description: A token that may push to the `narration` branch (contents write).
+    required: true
+
+outputs:
+  missing:
+    description: How many clips the site still lacks after this run.
+    value: ${{ steps.render.outputs.missing }}
+  rendered:
+    description: How many clips this run rendered.
+    value: ${{ steps.render.outputs.rendered }}
+
+runs:
+  using: composite
+  steps:
+    - name: Fetch the narration store
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}
+      run: bash scripts/narration/store.sh fetch
+
+    - name: See what has no recording yet
+      id: plan
+      shell: bash
+      run: npm run --silent narration -- --check
+
+    # About 400 MB, and only needed when there is something to render.
+    - name: Restore the Supertonic 3 model
+      if: steps.plan.outputs.missing != '0'
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/potcast
+        key: supertonic-3-aafc6e32
+
+    - name: Render and publish
+      id: render
+      shell: bash
+      run: |
+        set -o pipefail
+        npm run --silent narration -- --report narration-report.md 2>&1 | tee narration.log
+
+    - name: Keep the new clips
+      if: always() && steps.plan.outputs.missing != '0'
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}
+      run: bash scripts/narration/store.sh push

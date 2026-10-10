@@ -1,11 +1,27 @@
 import { describe, expect, it } from 'vitest';
-import { estimateSpeechMs, MAX_UTTERANCE_CHARS, speechText, splitUtterances } from './speechText';
+import { captionText, estimateSpeechMs, MAX_UTTERANCE_CHARS, speechText, splitUtterances, unknownTags, withoutUnspokenMarks } from './speechText';
 
 describe('speech text', () => {
   it('drops marks that are written but not said', () => {
     expect(speechText("『IGOR』의 'A BOY IS A GUN*'과 “Bound”")).toBe('IGOR의 A BOY IS A GUN과 Bound');
     expect(speechText("'GONE, GONE / THANK YOU'는  길다 — 6분.")).toBe('GONE, GONE, THANK YOU는 길다, 6분.');
     expect(speechText("첫 곡 'IGOR'S THEME'과 'I DON’T LOVE YOU ANYMORE'")).toBe("첫 곡 IGOR'S THEME과 I DON’T LOVE YOU ANYMORE");
+  });
+
+  it('keeps the sounds a host makes out of the captions and away from a browser voice', () => {
+    const line = "그건 좀 심했죠. <laugh> 『IGOR』가 그래요 <sigh>.";
+    expect(captionText(line)).toBe('그건 좀 심했죠. 『IGOR』가 그래요.');
+    expect(speechText(line)).toBe('그건 좀 심했죠. IGOR가 그래요.');
+    // The recorded voice gets them: only the marks around titles go.
+    expect(withoutUnspokenMarks(line)).toBe('그건 좀 심했죠. <laugh> IGOR가 그래요 <sigh>.');
+    expect(captionText('<breath> 자, 시작할게요.')).toBe('자, 시작할게요.');
+    expect(estimateSpeechMs('네. <laugh>')).toBe(estimateSpeechMs('네.'));
+  });
+
+  it('tells a mistyped tag from a real one', () => {
+    expect(unknownTags('좋아요 <laugh> 그리고 <breath>')).toEqual([]);
+    expect(unknownTags('좋아요 <lol> 그리고 <Laugh>')).toEqual(['<lol>', '<Laugh>']);
+    expect(unknownTags('3 < 5 이고 5 > 3')).toEqual([]);
   });
 
   it('splits a turn at sentence ends', () => {
