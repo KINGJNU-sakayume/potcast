@@ -41,7 +41,9 @@ describe('the episode scripts in the archive', () => {
     expect(episode.cues[0]!.type).toBe('talk');
     expect(episode.cues.at(-1)!.type).toBe('talk');
 
-    // Each track of the album is heard whole at least once.
+    // Each track the episode walks through — the whole album unless it says otherwise — is heard whole at least once.
+    const covered = script.covers ?? album.tracks ?? [];
+    for (const key of covered) expect(album.tracks ?? [], `${script.key}: "covers" names "${key}", which is not on the album`).toContain(key);
     const whole = new Set(
       episode.cues.flatMap((cue, index) => {
         if (cue.type !== 'music') return [];
@@ -54,10 +56,19 @@ describe('the episode scripts in the archive', () => {
           if (next.fromMs !== null) break;
           ended = next.untilMs === null;
         }
-        return cue.fromMs === 0 && ended ? cue.tracks.map((track) => track.key) : [];
+        // Tracks from outside the album are played in part, or not: they are not what the episode is about.
+        return cue.fromMs === 0 && ended ? cue.tracks.filter((track) => !track.outside).map((track) => track.key) : [];
       }),
     );
-    expect([...whole].sort()).toEqual([...(album.tracks ?? [])].sort());
+    expect([...whole].sort()).toEqual([...covered].sort());
+
+    // A stretch of a track from outside the album is a quotation, not a second programme.
+    for (const cue of episode.cues) {
+      if (cue.type !== 'music' || !cue.tracks.some((track) => track.outside)) continue;
+      expect(cue.tracks, 'a track from outside the album is played by itself').toHaveLength(1);
+      const playedMs = (cue.untilMs ?? cue.tracks[0]!.durationMs) - (cue.fromMs ?? cue.fallbackFromMs);
+      expect(playedMs, `"${cue.tracks[0]!.title}" is played for too long`).toBeLessThanOrEqual(60_000);
+    }
 
     // A talk-over has to fit in what is left of the track it sits on, with room to spare for a slower voice.
     for (const cue of episode.cues) {

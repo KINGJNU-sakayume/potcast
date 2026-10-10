@@ -144,6 +144,63 @@ describe('episode script', () => {
     expect(found[0]).toMatch(/Unknown <giggle>\. The sounds a host can make are <laugh>, <breath>, <sigh>/);
   });
 
+  it('lets a comment run over several lines', () => {
+    const script = parse(['## 여는 말', '<!--', '근거: 곡 노트.', '> play nothing — 주석 안에서는 아무것도 읽지 않는다.', '-->', 'A: 시작.', '<!-- 한 줄 주석 -->', '> play one'].join('\n'));
+    expect(script.cues.map((cue) => cue.type)).toEqual(['talk', 'music']);
+    expect(problems(['A: 시작.', '<!-- 닫지 않은 주석', 'B: 이 줄은 읽히지 않는다.'].join('\n'))).toEqual([expect.stringMatching(/test-album\.md:11: This comment is never closed/)]);
+  });
+
+  describe('tracks from outside the album', () => {
+    const SOURCE = ['outside:', '  schizoid:', '    track: 2MfrET7Nc3StKQcGoZKqr9', '    title: 21st Century Schizoid Man', '    artist: King Crimson', '    year: 1969', '    length: 7:22', '    why: 그 목소리가 온 곳'];
+    const head = (lines: string[] = SOURCE) => HEAD.replace('written:', `${lines.join('\n')}\nwritten:`);
+
+    it('are declared in the frontmatter and played by name', () => {
+      const script = parse(['A: 원곡을 듣겠습니다.', '> play @schizoid 0:47–1:05 | 원곡의 그 대목', '> play one + two'].join('\n'), head());
+      expect(script.outside).toEqual([
+        { key: '@schizoid', id: '2MfrET7Nc3StKQcGoZKqr9', title: '21st Century Schizoid Man', artist: 'King Crimson', year: 1969, durationMs: 442_000, why: '그 목소리가 온 곳' },
+      ]);
+      expect(script.cues[1]).toMatchObject({ type: 'music', tracks: ['@schizoid'], from: { kind: 'time', ms: 47_000 }, until: { kind: 'time', ms: 65_000 }, caption: '원곡의 그 대목' });
+      expect(script.cues[2]).toMatchObject({ tracks: ['one', 'two'] });
+      expect(parse('A: 말.').outside).toEqual([]);
+      // The year and the reason may be left out.
+      expect(parse('> play @schizoid to 0:30\nA: 말.', head(SOURCE.filter((line) => !/year|why/.test(line)))).outside[0]).toEqual({
+        key: '@schizoid',
+        id: '2MfrET7Nc3StKQcGoZKqr9',
+        title: '21st Century Schizoid Man',
+        artist: 'King Crimson',
+        durationMs: 442_000,
+      });
+    });
+
+    it('have to be declared before they are played, and played once declared', () => {
+      expect(problems('A: 말.\n> play @elsewhere 0:10–0:20')[0]).toMatch(/test-album\.md:11: "@elsewhere" is not declared under "outside:" in the frontmatter\.$/);
+      expect(problems('A: 말.\n> play @elsewhere 0:10–0:20', head())[0]).toMatch(/"@elsewhere" is not declared under "outside:" in the frontmatter \(declared: @schizoid\)/);
+      expect(problems('A: 말.\n> play one', head())[0]).toMatch(/"outside\.schizoid" is never played\. Play it with "> play @schizoid …" or remove it/);
+    });
+
+    it('need a Spotify track ID, a title, an artist and a length', () => {
+      const without = (field: string) => head(SOURCE.filter((line) => !line.includes(`${field}:`)));
+      const withLine = (field: string, value: string) => head(SOURCE.map((line) => (line.includes(`${field}:`) ? `    ${field}: ${value}` : line)));
+      const body = 'A: 말.\n> play @schizoid to 0:30';
+      expect(problems(body, without('track'))[0]).toMatch(/"outside\.schizoid\.track" is required/);
+      expect(problems(body, without('title'))[0]).toMatch(/"outside\.schizoid\.title" is required/);
+      expect(problems(body, without('artist'))[0]).toMatch(/"outside\.schizoid\.artist" is required/);
+      expect(problems(body, without('length'))[0]).toMatch(/"outside\.schizoid\.length" is required/);
+      expect(problems(body, withLine('track', 'not an id'))[0]).toMatch(/"outside\.schizoid\.track" must be a Spotify track ID, got "not an id"/);
+      expect(problems(body, withLine('length', '442'))[0]).toMatch(/"outside\.schizoid\.length" must be m:ss, got "442"/);
+      expect(problems(body, head([...SOURCE, '    label: Island']))[0]).toMatch(/"outside\.schizoid" has unknown "label"\. Its fields are track, title, artist, year, length, why/);
+      expect(problems(body, head(['outside:', '  Schizoid:', '    track: x']))[0]).toMatch(/"outside\.Schizoid" must be lower-case letters, digits or hyphens/);
+      expect(problems(body, head(['outside:', '  schizoid: 2MfrET7Nc3StKQcGoZKqr9']))[0]).toMatch(/"outside\.schizoid" must be a nested block of "field: value" lines/);
+    });
+  });
+
+  it('says which of the album\'s tracks it walks through when that is not all of them', () => {
+    expect(parse('A: 말.').covers).toBeUndefined();
+    expect(parse('A: 말.', HEAD.replace('written:', 'covers: [one, two]\nwritten:')).covers).toEqual(['one', 'two']);
+    expect(problems('A: 말.', HEAD.replace('written:', 'covers: [one, one]\nwritten:'))[0]).toMatch(/"covers" names a track twice/);
+    expect(problems('A: 말.', HEAD.replace('written:', 'covers: [One Song]\nwritten:'))[0]).toMatch(/"covers" lists song note keys, got "One Song"/);
+  });
+
   it('lets a single host carry an episode', () => {
     const script = parse('A: 혼자 진행합니다.\n> play one', '---\nalbum: x\ntitle: T\nhosts:\n  a: 진행\n---\n');
     expect(script.hosts).toEqual([{ id: 'a', name: '진행', voice: 'F1' }]);

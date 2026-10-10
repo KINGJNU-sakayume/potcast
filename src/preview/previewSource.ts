@@ -141,6 +141,12 @@ export function createPreviewCatalogueSource(now: () => number = Date.now): Cata
       return delay(album, signal);
     },
 
+    async getTrack(id, signal) {
+      const track = PREVIEW_TRACKS.find((item) => item.spotifyTrackId === id);
+      if (!track) throw notInPreview('track', '/tracks/{id}');
+      return delay({ track, playable: true }, signal);
+    },
+
     async getArtist(id, signal) {
       const artist = previewArtist(id);
       if (!artist) throw notInPreview('artist', '/artists/{id}');

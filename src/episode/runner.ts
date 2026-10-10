@@ -6,6 +6,7 @@ import { monotonicNow, positionAt } from '../playback/playbackClock';
 import type { PlayerStore } from '../playback/playerStore';
 import type { PlayerSnapshot } from '../playback/types';
 import { abortError, isAbortError, sleep, type NarrationMode, type Narrator, type Utterance } from './narrator';
+import { unplayable } from './resolve';
 import { splitUtterances } from './speechText';
 import type { Cue, Episode, EpisodeTrack, MusicCue, OverCue, TalkCue } from './types';
 
@@ -102,11 +103,16 @@ class Interrupted extends Error {
 type Verdict = { done: true } | { waitMs: number } | { interrupt: EpisodeNotice };
 type Entry = 'flow' | 'resume' | 'jump';
 
-function sameTrack(track: EpisodeTrack, playing: TrackIdentity | null): boolean {
+/** Whether the player is on this track of the episode. */
+export function sameTrack(track: EpisodeTrack, playing: TrackIdentity | null): boolean {
   if (!playing) return false;
   if (playing.uri === track.uri || playing.spotifyTrackId === track.id) return true;
   // Spotify may play the same recording under another ID in the listener's market.
-  return normaliseTitle(playing.title) === normaliseTitle(track.title) && Math.abs(playing.durationMs - track.durationMs) < END_SLACK_MS;
+  const playingTitle = normaliseTitle(playing.title);
+  const title = normaliseTitle(track.title);
+  // A track from outside the album goes by the script's plain title; Spotify's may add the pressing to it ("… - 2016 Remaster").
+  const sameTitle = playingTitle === title || (track.outside !== undefined && title.length > 0 && playingTitle.startsWith(title));
+  return sameTitle && Math.abs(playing.durationMs - track.durationMs) < END_SLACK_MS;
 }
 
 const IDLE: EpisodeState = {
@@ -336,12 +342,16 @@ export class EpisodeRunner {
         this.prepare(episode, this.state.cueIndex, this.state.lineIndex, this.state.utteranceIndex);
         // Read at every cue, so a change of mind takes effect at the next one.
         const handsOff = this.handsOff();
-        this.update({ manual: handsOff && cue.type === 'music' });
-        if (handsOff) {
+        // Music Spotify cannot play here (a track from outside the album, not licensed in this market).
+        const missing = cue.type === 'music' ? cue.tracks.some(unplayable) : cue.type === 'over' && unplayable(cue.track);
+        this.update({ manual: handsOff && cue.type === 'music' && !missing });
+        if (cue.type === 'music' && missing) {
+          // Nothing to play and nothing to wait for: the hosts carry on.
+        } else if (handsOff) {
           // The hosts only talk; the music in between is the listener's.
           if (cue.type === 'music') await this.waitForListener(signal);
           else await this.speakLines(cue, signal, how);
-        } else if (cue.type === 'talk') await this.runTalk(cue, signal, how);
+        } else if (cue.type === 'talk' || (cue.type === 'over' && missing)) await this.runTalk(cue, signal, how);
         else if (cue.type === 'over') await this.runOver(cue, signal, how);
         else await this.runMusic(cue, signal, how);
         if (signal.aborted) return;

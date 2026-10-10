@@ -37,6 +37,12 @@ export interface ListenerProfile {
   displayName: string | null;
 }
 
+export interface TrackLookup {
+  track: TrackIdentity;
+  /** False when the track exists but is not licensed where the listener is. */
+  playable: boolean;
+}
+
 export interface CatalogueSource {
   readonly mode: SessionMode;
   getProfile(signal?: AbortSignal): Promise<ListenerProfile>;
@@ -49,6 +55,8 @@ export interface CatalogueSource {
   getPlaylists(page: PageRequest, signal?: AbortSignal): Promise<Page<PlaylistSummary>>;
   /** Album with its complete track sequence. */
   getAlbum(id: string, signal?: AbortSignal): Promise<AlbumDetail>;
+  /** One track by ID, and whether Spotify can play it for this listener. */
+  getTrack(id: string, signal?: AbortSignal): Promise<TrackLookup>;
   getArtist(id: string, signal?: AbortSignal): Promise<ArtistDetail>;
   /** One page of an artist's releases in the given groups (Spotify order). */
   getArtistReleases(

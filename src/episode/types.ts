@@ -58,7 +58,11 @@ export interface ScriptOverCue extends ScriptCueBase {
 /** Music at full volume. */
 export interface ScriptMusicCue extends ScriptCueBase {
   type: 'music';
-  /** Song note keys played back to back; empty means "the track already playing". */
+  /**
+   * Song note keys played back to back; empty means "the track already
+   * playing". A key that starts with `@` names a track from outside the album
+   * (see OutsideTrack).
+   */
   tracks: string[];
   /** Where the first track starts; null keeps the current position (only without `tracks`). */
   from: TimeRef | null;
@@ -69,6 +73,25 @@ export interface ScriptMusicCue extends ScriptCueBase {
 }
 
 export type ScriptCue = ScriptTalkCue | ScriptOverCue | ScriptMusicCue;
+
+/**
+ * A track from outside the album that an episode plays a part of: the record a
+ * sample was taken from, a song the album answers. It is declared in the
+ * script's frontmatter and played with `> play @name 0:47–1:06`.
+ */
+export interface OutsideTrack {
+  /** What the script calls it, with its `@` (`@schizoid`). */
+  key: string;
+  /** Spotify track ID. */
+  id: string;
+  title: string;
+  artist: string;
+  year?: number;
+  /** Length of the recording the script's positions were taken on. */
+  durationMs: number;
+  /** Why the episode plays it, in a few words. */
+  why?: string;
+}
 
 export interface EpisodeChapter {
   title: string;
@@ -88,21 +111,47 @@ export interface EpisodeScript {
   hosts: EpisodeHost[];
   /** How the hosts say what is written differently: English titles, numbers. */
   say: SayRule[];
+  /** Tracks from outside the album that the script plays. */
+  outside: OutsideTrack[];
+  /** The album's tracks the episode walks through, when it is not all of them. */
+  covers?: string[];
   written?: string;
   updated?: string;
   chapters: EpisodeChapter[];
   cues: ScriptCue[];
 }
 
-/** An album track an episode can play. */
+/** A track an episode can play: one of the album's, or one from outside it. */
 export interface EpisodeTrack {
-  /** Song note key. */
+  /** Song note key; `@name` for a track from outside the album. */
   key: string;
   /** Spotify track ID and URI. */
   id: string;
   uri: string;
   title: string;
   durationMs: number;
+  /** Set on a track from outside the album. */
+  outside?: {
+    artist: string;
+    year?: number;
+    why?: string;
+    /** Its own cover and the album it is on, once Spotify has been asked. */
+    images: ImageRef[];
+    albumId?: string;
+    /** Spotify cannot play it for this listener: the episode goes past its music. */
+    unavailable: boolean;
+  };
+}
+
+/** What Spotify says about a track from outside the album, by the ID the script gives. */
+export interface OutsideFound {
+  /** The ID and URI it plays under here (Spotify may hand back another pressing of the same recording). */
+  id: string;
+  uri: string;
+  durationMs: number;
+  images: ImageRef[];
+  albumId?: string;
+  playable: boolean;
 }
 
 export interface TalkCue {

@@ -1,4 +1,5 @@
 import { FieldReader, fileKey, FrontmatterError, parseFrontmatter } from '../editorial/frontmatter';
+import { isSpotifyId } from '../lib/spotifyUri';
 import { DEFAULT_HOST_VOICES, isRecordedVoice, RECORDED_VOICES, type SayRule } from './narration/clip';
 import { EXPRESSION_TAGS, unknownTags } from './speechText';
 import {
@@ -6,6 +7,7 @@ import {
   type EpisodeChapter,
   type EpisodeHost,
   type EpisodeScript,
+  type OutsideTrack,
   type ScriptCue,
   type ScriptMusicCue,
   type SpokenLine,
@@ -29,6 +31,15 @@ import {
  * say:                                 how to say what is written differently; optional
  *   - EARFQUAKE = 어스퀘이크
  *   - 2019년 = 이천십구 년
+ * covers: [dark-fantasy, gorgeous]     the tracks it walks through, when not the whole album; optional
+ * outside:                             tracks from outside the album, played as `@name`; optional
+ *   schizoid:
+ *     track: 2MfrET7Nc3StKQcGoZKqr9    Spotify track ID
+ *     title: 21st Century Schizoid Man
+ *     artist: King Crimson
+ *     year: 1969                       optional
+ *     length: 7:22                     of the recording the positions were taken on
+ *     why: POWER가 가져온 목소리        a few words on why it is played; optional
  * ---
  *
  * ## 여는 말                           a chapter
@@ -43,10 +54,11 @@ import {
  * > play a-song + the-next-song        tracks back to back
  * > play to 1:05                       let the current track run on to 1:05
  * > play earfquake to L5 | 첫 후렴까지   `|` adds what to listen for
+ * > play @schizoid 0:47–1:06           part of a track from outside the album (m:ss only)
  *
  * A~ 이 신스 베이스가…                  talk over the music, which is turned down
  * A: 그건 좀 심했죠. <laugh>            a sound the recorded voice makes: <laugh>, <breath> or <sigh>
- * <!-- a note to yourself -->
+ * <!-- a note to yourself -->          may run over several lines, each of them the note's own
  * ```
  *
  * A line right under a host's line continues it; a blank line ends it.
@@ -59,7 +71,10 @@ const SPEAKER_LINE = /^([A-Za-z][A-Za-z0-9]{0,11})([:~])\s+(\S.*)$/;
 const HEADING = /^##\s+(\S.*)$/;
 const DIRECTIVE = /^>\s*(\S+)(?:\s+(.*))?$/;
 const COMMENT = /^<!--.*-->$/;
-const TRACK_KEY = /^[a-z0-9][a-z0-9-]*$/;
+/** A song note key, or `@name` for a track from outside the album. */
+const TRACK_KEY = /^@?[a-z0-9][a-z0-9-]*$/;
+const OUTSIDE_NAME = /^[a-z0-9][a-z0-9-]*$/;
+const OUTSIDE_FIELDS = ['track', 'title', 'artist', 'year', 'length', 'why'];
 const CLOCK = /^(\d+):([0-5]\d)(?:\.(\d{1,3}))?$/;
 const LYRIC = /^L(\d+)(?:\.(start|end))?$/;
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
@@ -187,6 +202,29 @@ function readSay(fields: FieldReader): SayRule[] {
   return rules;
 }
 
+/** The `outside:` block: one nested block per track, named as the script calls it. */
+function readOutside(fields: FieldReader): OutsideTrack[] {
+  const map = fields.optionalMap('outside');
+  if (!map) return [];
+  return map.keys().map((name) => {
+    if (!OUTSIDE_NAME.test(name)) fields.fail(`"outside.${name}" must be lower-case letters, digits or hyphens.`);
+    const entry = map.optionalMap(name);
+    if (!entry) fields.fail(`"outside.${name}" needs its "track", "title", "artist" and "length" indented under it.`);
+    const unknown = entry.keys().filter((key) => !OUTSIDE_FIELDS.includes(key));
+    if (unknown.length > 0) fields.fail(`"outside.${name}" has unknown ${unknown.map((key) => `"${key}"`).join(', ')}. Its fields are ${OUTSIDE_FIELDS.join(', ')}.`);
+    const id = entry.string('track');
+    if (!isSpotifyId(id)) fields.fail(`"outside.${name}.track" must be a Spotify track ID, got "${id}".`);
+    const length = entry.string('length');
+    const clock = CLOCK.exec(length);
+    if (!clock) fields.fail(`"outside.${name}.length" must be m:ss, got "${length}".`);
+    const durationMs = Number(clock[1]) * 60_000 + Number(clock[2]) * 1000;
+    if (durationMs <= 0) fields.fail(`"outside.${name}.length" cannot be zero.`);
+    const year = entry.optionalNumber('year');
+    const why = entry.optionalString('why');
+    return { key: `@${name}`, id, title: entry.string('title'), artist: entry.string('artist'), ...(year === undefined ? {} : { year }), durationMs, ...(why ? { why } : {}) };
+  });
+}
+
 /** Parses one script file. `file` is its path; the file name is the episode key. */
 export function parseEpisodeScript(file: string, source: string): EpisodeScript {
   let data: ReturnType<typeof parseFrontmatter>['data'];
@@ -202,6 +240,8 @@ export function parseEpisodeScript(file: string, source: string): EpisodeScript 
   let short: string | undefined;
   let hosts: EpisodeHost[];
   let say: SayRule[];
+  let outside: OutsideTrack[];
+  let covers: string[] | undefined;
   let written: string | undefined;
   let updated: string | undefined;
   try {
@@ -211,6 +251,15 @@ export function parseEpisodeScript(file: string, source: string): EpisodeScript 
     short = fields.optionalString('short');
     hosts = readHosts(fields);
     say = readSay(fields);
+    outside = readOutside(fields);
+    covers = fields.optionalList('covers');
+    if (covers) {
+      if (covers.length === 0) fields.fail('"covers" lists the tracks the episode walks through; leave it out for the whole album.');
+      for (const key of covers) {
+        if (!OUTSIDE_NAME.test(key)) fields.fail(`"covers" lists song note keys, got "${key}".`);
+      }
+      if (new Set(covers).size !== covers.length) fields.fail('"covers" names a track twice.');
+    }
     written = fields.optionalString('written');
     updated = fields.optionalString('updated');
     for (const date of [written, updated]) {
@@ -226,6 +275,8 @@ export function parseEpisodeScript(file: string, source: string): EpisodeScript 
   const allLines = text.split('\n');
   const closing = allLines.findIndex((line, i) => i > 0 && line.trimEnd() === '---');
   const hostIds = new Set(hosts.map((host) => host.id));
+  const outsideKeys = new Set(outside.map((track) => track.key));
+  const outsidePlayed = new Set<string>();
 
   const cues: ScriptCue[] = [];
   const chapters: EpisodeChapter[] = [];
@@ -248,15 +299,25 @@ export function parseEpisodeScript(file: string, source: string): EpisodeScript 
     pending.chapter = null;
   };
 
+  /** The line a comment that runs over several lines was opened on. */
+  let commentFrom: number | null = null;
   for (let i = closing + 1; i < allLines.length; i += 1) {
     const number = i + 1;
     const line = allLines[i]!.trim();
     try {
+      if (commentFrom !== null) {
+        if (line.endsWith('-->')) commentFrom = null;
+        continue;
+      }
       if (line === '') {
         pending.continuing = null;
         continue;
       }
       if (COMMENT.test(line)) continue;
+      if (line.startsWith('<!--')) {
+        commentFrom = number;
+        continue;
+      }
 
       const heading = HEADING.exec(line);
       if (heading) {
@@ -272,8 +333,14 @@ export function parseEpisodeScript(file: string, source: string): EpisodeScript 
         if (directive[1] !== 'play') fail(`Unknown directive "> ${directive[1]}". The only one is "> play".`);
         const [spec = '', ...captionParts] = (directive[2] ?? '').split('|');
         const caption = captionParts.join('|').trim();
+        const play = parsePlay(spec.trim());
+        for (const key of play.tracks) {
+          if (!key.startsWith('@')) continue;
+          if (!outsideKeys.has(key)) fail(`"${key}" is not declared under "outside:" in the frontmatter${outside.length > 0 ? ` (declared: ${[...outsideKeys].join(', ')})` : ''}.`);
+          outsidePlayed.add(key);
+        }
         claimChapter();
-        cues.push({ type: 'music', sourceLine: number, ...parsePlay(spec.trim()), ...(caption ? { caption } : {}) });
+        cues.push({ type: 'music', sourceLine: number, ...play, ...(caption ? { caption } : {}) });
         continue;
       }
 
@@ -306,9 +373,14 @@ export function parseEpisodeScript(file: string, source: string): EpisodeScript 
     }
   }
   closeSpoken();
+  if (commentFrom !== null) problems.push(`${file}:${commentFrom}: This comment is never closed with "-->".`);
   if (pending.chapter) problems.push(`${file}:${pending.chapter.line}: The chapter "${pending.chapter.title}" has nothing in it.`);
   if (cues.length === 0 && problems.length === 0) problems.push(`${file}: The script has no lines.`);
+  // A declared track that is never played is a leftover or a mistyped name.
+  for (const track of outside) {
+    if (!outsidePlayed.has(track.key) && problems.length === 0) problems.push(`${file}: "outside.${track.key.slice(1)}" is never played. Play it with "> play ${track.key} …" or remove it.`);
+  }
   if (problems.length > 0) throw new EpisodeError(problems.join('\n'), problems);
 
-  return { key: fileKey(file), album, title, ...(short ? { short } : {}), hosts, say, written, updated, chapters, cues };
+  return { key: fileKey(file), album, title, ...(short ? { short } : {}), hosts, say, outside, ...(covers ? { covers } : {}), written, updated, chapters, cues };
 }

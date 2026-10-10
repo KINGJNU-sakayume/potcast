@@ -73,6 +73,13 @@ export function createSpotifyCatalogueSource(client: SpotifyClient): CatalogueSo
       return mapAlbumDetail(album, tracks);
     },
 
+    async getTrack(id, signal) {
+      const item = await api.getTrack(client, id, signal);
+      const track = mapTrackIdentity(item);
+      if (!track) throw new Error(`Spotify returned no track for ${id}.`);
+      return { track, playable: item.is_playable !== false && !item.restrictions?.reason };
+    },
+
     async getArtist(id, signal) {
       return mapArtistDetail(await api.getArtist(client, id, signal));
     },

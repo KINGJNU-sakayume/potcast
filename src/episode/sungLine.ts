@@ -5,9 +5,6 @@ import type { EpisodeTrack } from './types';
 
 const TIMELINES = new Map(songNotes.flatMap((note) => (note.translation ? [[note.key, note.translation.timeline] as const] : [])));
 
-/** A line is shown a moment before it is sung, as on Now Playing: reading takes longer than hearing. */
-const LEAD_MS = 250;
-
 type Track = Pick<EpisodeTrack, 'key' | 'durationMs'>;
 type TimelineSource = (songKey: string) => TranslationTimeline | undefined;
 const archive: TimelineSource = (key) => TIMELINES.get(key);
@@ -20,36 +17,6 @@ const archive: TimelineSource = (key) => TIMELINES.get(key);
 function usableTimeline(track: Track, timelineOf: TimelineSource): TranslationTimeline | null {
   const timeline = timelineOf(track.key);
   return timeline && Math.abs(track.durationMs - timeline.timing.durationMs) <= DURATION_TOLERANCE_MS ? timeline : null;
-}
-
-/** Whether `sungLine` has anything to say about this track at all. */
-export function hasSungLines(track: Track, timelineOf: TimelineSource = archive): boolean {
-  return usableTimeline(track, timelineOf) !== null;
-}
-
-/**
- * The translated line being sung at `positionMs`, from the song note's
- * curated translation, or null between lines and for a song without one.
- */
-export function sungLine(track: Track, positionMs: number, timelineOf: TimelineSource = archive): string | null {
-  const timeline = usableTimeline(track, timelineOf);
-  if (!timeline) return null;
-  const { segments } = timeline;
-  // The last segment that has started; the segments are sorted and never overlap.
-  let low = 0;
-  let high = segments.length - 1;
-  let found = -1;
-  while (low <= high) {
-    const middle = (low + high) >> 1;
-    if (segments[middle]!.startMs - LEAD_MS <= positionMs) {
-      found = middle;
-      low = middle + 1;
-    } else {
-      high = middle - 1;
-    }
-  }
-  const segment = segments[found];
-  return segment && positionMs < segment.endMs ? segment.translation : null;
 }
 
 /** How far outside a stretch a line may reach and still belong to it: stretches start a little before their first line. */

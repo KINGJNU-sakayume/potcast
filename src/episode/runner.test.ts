@@ -1,7 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { PlayerStore } from '../playback/playerStore';
-import { END_GUARD_MS, EpisodeRunner, GRACE_MS, SETTLE_MS, type RunnerOptions } from './runner';
-import { episodeFrom, ScriptedNarrator, StageEngine, timedNote, track } from './testing';
+import { END_GUARD_MS, EpisodeRunner, GRACE_MS, sameTrack, SETTLE_MS, type RunnerOptions } from './runner';
+import { episodeFrom, HEAD_WITH_SOURCE, identity, ScriptedNarrator, SOURCE_ID, StageEngine, timedNote, track } from './testing';
+import type { OutsideFound } from './types';
 
 const ONE = track('one', 200_000);
 const TWO = track('two', 15_000);
@@ -500,6 +501,69 @@ describe('music the listener plays themselves', () => {
     runner.proceed();
     await advance(5000);
     expect(narrator.spoken).toEqual(['0:하나.', '0:둘.']);
+  });
+});
+
+describe('a track from outside the album', () => {
+  const SOURCE = { ...track('source', 442_000, 'Source Song'), key: '@source', id: SOURCE_ID, uri: `spotify:track:${SOURCE_ID}` };
+  const BODY = ['A: 하나.', '> play @source 0:47–0:52', 'B~ 둘.', '> play to 0:55', 'A: 셋.', '> play one to 0:05', 'A: 넷.'].join('\n');
+
+  function outside(found?: Record<string, OutsideFound>, options: Partial<RunnerOptions> = {}) {
+    const store = new PlayerStore();
+    const engine = new StageEngine(store, [...TRACKS, SOURCE]);
+    const narrator = new ScriptedNarrator();
+    const settings: RunnerOptions = { music: 'auto', talkOver: 'duck', duckLevel: 0.2, ...options };
+    const runner = new EpisodeRunner({ engine, store, narrator, options: () => settings });
+    const episode = episodeFrom(BODY, TRACKS, NOTES, { head: HEAD_WITH_SOURCE, found });
+    return { store, engine, narrator, runner, episode };
+  }
+
+  it('is played by its own URI, talked over and stopped like one of the album\'s', async () => {
+    const { runner, engine, narrator, episode } = outside();
+    runner.start(episode);
+    await advance(60_000);
+    expect(runner.getState().status).toBe('ended');
+    expect(narrator.spoken).toEqual(['0:하나.', '1:둘.', '0:셋.', '0:넷.']);
+    expect(engine.commands.filter((command) => command.startsWith('play'))).toEqual([`play ${SOURCE_ID}@47000`, 'play one@0']);
+  });
+
+  it('is recognised when Spotify plays it under another ID and with the pressing added to its title', () => {
+    const { episode } = outside();
+    const cue = episode.cues[1]!;
+    const source = cue.type === 'music' ? cue.tracks[0]! : null;
+    expect(source?.outside).toBeDefined();
+    const playing = (title: string, durationMs: number) => identity({ ...track('another-pressing', durationMs, title) });
+    expect(sameTrack(source!, playing('Source Song - 2016 Remaster', 441_000))).toBe(true);
+    expect(sameTrack(source!, playing('Source Song', 442_500))).toBe(true);
+    // Another recording of it is another track: the length tells them apart.
+    expect(sameTrack(source!, playing('Source Song - Live', 600_000))).toBe(false);
+    expect(sameTrack(source!, playing('Another Song', 442_000))).toBe(false);
+    expect(sameTrack(source!, null)).toBe(false);
+    // The album's own tracks are matched by their exact title, as before.
+    expect(sameTrack(ONE, playing('ONE', 200_000))).toBe(true);
+    expect(sameTrack(ONE, playing('ONE - Live', 200_000))).toBe(false);
+  });
+
+  it('is gone past without a sound when Spotify cannot play it here, and what was to be said over it is simply said', async () => {
+    const found = { [SOURCE_ID]: { id: SOURCE_ID, uri: SOURCE.uri, durationMs: 442_000, images: [], playable: false } };
+    const { runner, engine, narrator, episode } = outside(found);
+    runner.start(episode);
+    await advance(60_000);
+    expect(runner.getState().status).toBe('ended');
+    expect(narrator.spoken).toEqual(['0:하나.', '1:둘.', '0:셋.', '0:넷.']);
+    // Nothing was asked of the player for the missing track, and the album's own track still played.
+    expect(engine.commands.filter((command) => command.startsWith('play'))).toEqual(['play one@0']);
+  });
+
+  it('is not waited for either when the listener plays the music themselves and it cannot be played', async () => {
+    const found = { [SOURCE_ID]: { id: SOURCE_ID, uri: SOURCE.uri, durationMs: 442_000, images: [], playable: false } };
+    const { runner, engine, narrator, episode } = outside(found, { music: 'manual' });
+    runner.start(episode);
+    await advance(20_000);
+    // Straight through to the album's own track, which is the listener's to play.
+    expect(narrator.spoken).toEqual(['0:하나.', '1:둘.', '0:셋.']);
+    expect(runner.getState()).toMatchObject({ status: 'playing', cueIndex: 5, manual: true });
+    expect(engine.commands).toEqual([]);
   });
 });
 

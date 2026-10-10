@@ -51,6 +51,9 @@ const VAUNDY = '2IUl3m1H1EQ7QfNbNWvgru';
 const TRIPLES = '5Z71xE9prhpHrqL5thVMyK';
 const KENSHI = '1snhtMLeb2DYoMOcVbb8iB';
 const COLDPLAY = '4gzpq5DPGxSnKTe4SA8HAU';
+const KANYE = '5K4W6rqBFWDnAN6FQUkS6x';
+const KING_CRIMSON = '7M1FPw29m5FbicYzS2xdpi';
+const TURTLES = '2VIoWte1HPDbZ2WqHd2La7';
 const ENSEMBLE = '0ArcPreviewEnsemble';
 
 export const PREVIEW_ARTISTS: ArtistDetail[] = [
@@ -59,6 +62,9 @@ export const PREVIEW_ARTISTS: ArtistDetail[] = [
   { id: COLDPLAY, name: 'Coldplay' },
   { id: VAUNDY, name: 'Vaundy' },
   { id: TYLER, name: 'Tyler, The Creator' },
+  { id: KANYE, name: 'Kanye West' },
+  { id: KING_CRIMSON, name: 'King Crimson' },
+  { id: TURTLES, name: 'The Turtles' },
   { id: ENSEMBLE, name: 'ARC Preview Ensemble' },
 ].map((a) => ({ ...a, uri: `spotify:artist:${a.id}`, images: [], genres: [], followers: null }));
 
@@ -315,6 +321,67 @@ const ALBUMS: AlbumDef[] = [
     ),
   },
   {
+    id: '20r762YmB5HeofjMCiPMLv',
+    name: 'My Beautiful Dark Twisted Fantasy',
+    artistIds: [KANYE],
+    albumType: 'album',
+    releaseDate: '2010-11-22',
+    precision: 'day',
+    totalTracks: 13,
+    tracks: tracks(
+      'Mbdtf',
+      [
+        ['Dark Fantasy', 281],
+        ['Gorgeous', 358],
+        ['POWER', 292],
+        ['All Of The Lights (Interlude)', 62, 'instrumental'],
+        ['All Of The Lights', 300],
+        ['Monster', 379],
+        ['So Appalled', 398],
+        ['Devil In A New Dress', 353],
+        ['Runaway', 548],
+        ['Hell Of A Life', 328],
+        ['Blame Game', 470],
+        ['Lost In The World', 257],
+        ['Who Will Survive In America', 98],
+      ],
+      {
+        1: '7yNK27ZTpHew0c55VvIJgm',
+        2: '23SZWX2IaDnxmhFsSLvkG2',
+        3: '2gZUPNdnz5Y45eiGxpHGSc',
+        4: '4D6TpthzUVNTjWQqfBW5Kb',
+        5: '22L7bfCiAkJo5xGSQgmiIO',
+        6: '1ZHYJ2Wwgxes4m8Ba88PeK',
+        7: '6K07Ahf6V7CAQn0ikrOztl',
+        8: '1UGD3lW3tDmgZfAVDh6w7r',
+        9: '3DK6m7It6Pw857FcQftMds',
+        10: '3rCNmRonlHN1TXQLcG3dSk',
+        11: '4EndPA8b6FDWYp1RgsnLEB',
+        12: '2Im64pIz6m0EJKdUe6eZ8r',
+        13: '4e5IPJxSGVWPsaxQzdRseN',
+      },
+    ),
+  },
+  // The records the MBDTF episode steps out to: only the one track of each that it plays.
+  {
+    id: '75ol9OP8bJaRqzGimpFHDm',
+    name: 'In The Court Of The Crimson King',
+    artistIds: [KING_CRIMSON],
+    albumType: 'album',
+    releaseDate: '1969-10-10',
+    precision: 'day',
+    totalTracks: null,
+  },
+  {
+    id: '155OAoTAYR4Uu0LpSMvy5W',
+    name: 'The Turtles Present The Battle of the Bands',
+    artistIds: [TURTLES],
+    albumType: 'album',
+    releaseDate: '1968',
+    precision: 'year',
+    totalTracks: null,
+  },
+  {
     id: '0ArcTestPressing01',
     name: 'Test Pressing',
     artistIds: [ENSEMBLE],
@@ -339,6 +406,8 @@ const ALBUMS: AlbumDef[] = [
 const LOOSE_TRACKS: Array<{ albumId: string; track: TrackDef }> = [
   { albumId: '2HfY1kPSmmYfR13OSKYH5T', track: { id: '7oYCBKvdjrqp5vDbhDBuac', name: 'KICK BACK', durationMs: 194_000, lyrics: 'ja' } },
   { albumId: '6ArYgWdHk7mcG4knENgPN5', track: { id: '6QCPweR3aP6nj7P43WpiZs', name: 'Rising', durationMs: 160_000, lyrics: 'mixed' } },
+  { albumId: '75ol9OP8bJaRqzGimpFHDm', track: { id: '2MfrET7Nc3StKQcGoZKqr9', name: '21st Century Schizoid Man', durationMs: 442_000, lyrics: 'en' } },
+  { albumId: '155OAoTAYR4Uu0LpSMvy5W', track: { id: '7j1ABZOylWUPUIZTt5x6AL', name: 'You Showed Me', durationMs: 196_000, lyrics: 'en' } },
 ];
 
 const artistById = new Map(PREVIEW_ARTISTS.map((a) => [a.id, a]));
@@ -556,6 +625,9 @@ const palette = (dominant: string, secondary: string, accent: string, light: str
 export const PREVIEW_PALETTES: Array<[albumId: string, palette: AlbumPalette]> = [
   ['4dKFBa0YCH4636ZtY4L2p7', palette('#b91f2e', '#20302d', '#d9c6a6', '#e7dec9', '#101315')],
   ['5zi7WsKlIiUXv09tbGLKsE', palette('#d88fae', '#2d292b', '#f6d8e4', '#f0d9df', '#161416')],
+  ['20r762YmB5HeofjMCiPMLv', palette('#b0302a', '#2a1a18', '#f0c9c4', '#f1dedb', '#1a1110')],
+  ['75ol9OP8bJaRqzGimpFHDm', palette('#c0486a', '#2a2130', '#7fb4d6', '#efe1e4', '#1b141a')],
+  ['155OAoTAYR4Uu0LpSMvy5W', palette('#c9a13a', '#2b2a22', '#3f6e63', '#f1ead3', '#17160f')],
   ['1FEdDqMaOL8oZYzI4n27GM', palette('#e76046', '#e1caa7', '#e9eff0', '#ece2d1', '#2a211d')],
   ['6ArYgWdHk7mcG4knENgPN5', palette('#4f6fb3', '#dfe4ef', '#e76046', '#e9edf5', '#1b2233')],
   ['052EiTRYh35MuDVJN9Emdh', palette('#3f6f8f', '#e5e1d6', '#c9a86a', '#ece9e1', '#16222b')],

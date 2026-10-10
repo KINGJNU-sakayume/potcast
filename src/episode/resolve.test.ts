@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import type { AlbumDetail } from '../domain/types';
-import { albumEpisodeTracks, episodeMusicMs, LYRIC_LEAD_IN_MS } from './resolve';
-import { episodeFrom, timedNote, track } from './testing';
+import { albumEpisodeTracks, episodeMusicMs, LYRIC_LEAD_IN_MS, outsideFound, unplayable } from './resolve';
+import { parseEpisodeScript } from './script';
+import { episodeFrom, HEAD_WITH_SOURCE, SOURCE_ID, timedNote, track } from './testing';
 import { EpisodeError } from './types';
 
 const ONE = track('one', 200_000);
@@ -16,9 +17,9 @@ const NOTES = [
   ]),
 ];
 
-function problems(body: string, tracks = TRACKS, notes = NOTES): string[] {
+function problems(body: string, tracks = TRACKS, notes = NOTES, head?: string): string[] {
   try {
-    episodeFrom(body, tracks, notes);
+    episodeFrom(body, tracks, notes, { head });
   } catch (error) {
     if (error instanceof EpisodeError) return error.problems;
     throw error;
@@ -101,6 +102,93 @@ describe('resolving an episode against its album', () => {
   it('adds up the music an episode plays', () => {
     const episode = episodeFrom(['> play one to 0:30', 'A~ 위에서.', '> play to 1:00', '> play two + three to 1:00', '> play one 0:10–0:20'].join('\n'), TRACKS, NOTES);
     expect(episodeMusicMs(episode)).toBe(30_000 + 30_000 + (15_000 + 60_000) + 10_000);
+  });
+});
+
+describe('tracks from outside the album', () => {
+  const head = HEAD_WITH_SOURCE;
+  const BODY = ['A: 원곡을 듣겠습니다.', '> play @source 0:47–1:05 | 그 대목', 'B: 이번에는 앨범에서.', '> play one 0:20–0:40'].join('\n');
+  const SOURCE = {
+    key: '@source',
+    id: SOURCE_ID,
+    uri: `spotify:track:${SOURCE_ID}`,
+    title: 'Source Song',
+    durationMs: 442_000,
+    outside: { artist: 'King Crimson', year: 1969, why: '그 목소리가 온 곳', images: [], unavailable: false },
+  };
+
+  it('are known from the script alone: its title, its length, and the track ID to play', () => {
+    const { cues, warnings } = episodeFrom(BODY, TRACKS, NOTES, { head });
+    expect(cues[1]).toEqual({ type: 'music', tracks: [SOURCE], fromMs: 47_000, fallbackFromMs: 47_000, untilMs: 65_000, caption: '그 대목' });
+    expect(cues[3]).toMatchObject({ tracks: [ONE], fromMs: 20_000, untilMs: 40_000 });
+    expect(warnings).toEqual([]);
+    expect(unplayable(SOURCE)).toBe(false);
+    expect(unplayable(ONE)).toBe(false);
+  });
+
+  it('take from Spotify the pressing it plays here, its length and its cover', () => {
+    const images = [{ url: 'https://i.scdn.co/image/cover', width: 640, height: 640 }];
+    const found = { [SOURCE_ID]: { id: 'relinked1234567890abcd', uri: 'spotify:track:relinked1234567890abcd', durationMs: 441_200, images, albumId: 'album1234567890abcdefg', playable: true } };
+    const { cues, warnings } = episodeFrom(BODY, TRACKS, NOTES, { head, found });
+    expect(cues[1]).toMatchObject({
+      tracks: [
+        {
+          key: '@source',
+          id: 'relinked1234567890abcd',
+          uri: 'spotify:track:relinked1234567890abcd',
+          // The script's own title stands: Spotify's often carries the pressing.
+          title: 'Source Song',
+          durationMs: 441_200,
+          outside: { images, albumId: 'album1234567890abcdefg', unavailable: false },
+        },
+      ],
+    });
+    expect(warnings).toEqual([]);
+  });
+
+  it('warn when Spotify plays a recording of another length than the one the positions were taken on', () => {
+    const found = { [SOURCE_ID]: { id: SOURCE_ID, uri: `spotify:track:${SOURCE_ID}`, durationMs: 401_000, images: [], playable: true } };
+    const { warnings } = episodeFrom(BODY, TRACKS, NOTES, { head, found });
+    expect(warnings).toEqual([expect.stringMatching(/"Source Song" is 6:41 on Spotify here but the script's positions were taken on a 7:22 recording/)]);
+  });
+
+  it('are marked when Spotify cannot play them here, so the episode goes past them', () => {
+    const found = { [SOURCE_ID]: { id: SOURCE_ID, uri: `spotify:track:${SOURCE_ID}`, durationMs: 442_000, images: [], playable: false } };
+    const { cues, warnings } = episodeFrom(BODY, TRACKS, NOTES, { head, found });
+    const cue = cues[1]!;
+    expect(cue.type === 'music' && unplayable(cue.tracks[0]!)).toBe(true);
+    // The cue stays where it is in the script: chapters and bookmarks count cues.
+    expect(cues.map((item) => item.type)).toEqual(['talk', 'music', 'talk', 'music']);
+    expect(warnings).toEqual([]);
+  });
+
+  it('are placed by the clock only, inside their own length', () => {
+    expect(problems('A: 말.\n> play @source L1–L2', TRACKS, NOTES, head)[0]).toMatch(/L1 needs a curated translation for "@source"/);
+    expect(problems('A: 말.\n> play @source 7:30–7:40', TRACKS, NOTES, head)[0]).toMatch(/7:30 is past the end of "Source Song" \(7:22\)/);
+    expect(problems('A: 말.\n> play @source 1:05–0:47', TRACKS, NOTES, head)[0]).toMatch(/The range 1:05–0:47 of "Source Song" is empty or runs backwards/);
+  });
+
+  it('can be talked over and carried on like any other track', () => {
+    const { cues } = episodeFrom(['A: 말.', '> play @source 0:47–0:58', 'B~ 지금 이 목소리예요.', '> play to 1:05'].join('\n'), TRACKS, NOTES, { head });
+    expect(cues[2]).toMatchObject({ type: 'over', track: SOURCE, fromMs: 58_000 });
+    expect(cues[3]).toMatchObject({ tracks: [SOURCE], fromMs: null, fallbackFromMs: 58_000, untilMs: 65_000 });
+  });
+
+  it('read the catalogue\'s lookups: found, not on Spotify here, or not known', () => {
+    const script = parseEpisodeScript('./notes/episodes/test-album.md', `${head}\n${BODY}`);
+    const lookup = {
+      track: { spotifyTrackId: 'relinked1234567890abcd', uri: 'spotify:track:relinked1234567890abcd', durationMs: 441_200, album: { id: 'album1234567890abcdefg', images: [] } },
+      playable: true,
+    };
+    expect(outsideFound(script, { [SOURCE_ID]: lookup })).toEqual({
+      [SOURCE_ID]: { id: 'relinked1234567890abcd', uri: 'spotify:track:relinked1234567890abcd', durationMs: 441_200, images: [], albumId: 'album1234567890abcdefg', playable: true },
+    });
+    expect(outsideFound(script, { [SOURCE_ID]: { ...lookup, playable: false } })[SOURCE_ID]).toMatchObject({ playable: false });
+    // Spotify has no such track for this listener.
+    expect(outsideFound(script, { [SOURCE_ID]: null })).toEqual({ [SOURCE_ID]: { id: SOURCE_ID, uri: `spotify:track:${SOURCE_ID}`, durationMs: 442_000, images: [], playable: false } });
+    // The lookup failed: nothing is known, and the script's own description stands.
+    expect(outsideFound(script, { [SOURCE_ID]: undefined })).toEqual({});
+    expect(outsideFound(script, {})).toEqual({});
   });
 });
 

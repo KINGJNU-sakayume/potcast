@@ -1,4 +1,4 @@
-import type { AlbumDetail } from '../domain/types';
+import type { AlbumDetail, ImageRef } from '../domain/types';
 import { getSongNote } from '../editorial/lookup';
 import type { SongNote } from '../editorial/types';
 import { formatDuration } from '../lib/format';
@@ -13,6 +13,7 @@ import {
   type EpisodeScript,
   type EpisodeTrack,
   type MusicCue,
+  type OutsideFound,
   type TimeRef,
 } from './types';
 
@@ -25,6 +26,13 @@ export const LYRIC_LEAD_IN_MS = 600;
 const END_SNAP_MS = 1500;
 /** The shortest stretch of music worth starting. */
 const MIN_RANGE_MS = 1000;
+/** A recording this much longer or shorter than the one a script's positions were taken on may play them off. */
+const OUTSIDE_TOLERANCE_MS = 3000;
+
+/** A track from outside the album that Spotify cannot play for this listener: the episode goes past its music. */
+export function unplayable(track: EpisodeTrack): boolean {
+  return track.outside?.unavailable === true;
+}
 
 /** The album's tracks an episode can name: those with a song note, under the note's key. */
 export function albumEpisodeTracks(album: AlbumDetail, findNote: typeof getSongNote = getSongNote): EpisodeTrack[] {
@@ -44,17 +52,47 @@ export function albumEpisodeTracks(album: AlbumDetail, findNote: typeof getSongN
 /**
  * Matches a script to real tracks and turns its positions into milliseconds.
  * Every problem is collected and thrown together, each with its script line.
+ *
+ * `found` is what Spotify says about the script's tracks from outside the
+ * album, by the track ID the script gives: where one is missing the script's
+ * own description stands, and one Spotify cannot play here is marked so the
+ * episode goes past it.
  */
 export function resolveEpisode(
   script: EpisodeScript,
   tracks: readonly EpisodeTrack[],
   songs: readonly SongNote[],
   release: EpisodeRelease | null = null,
+  found: Readonly<Record<string, OutsideFound | undefined>> = {},
 ): Episode {
   const byKey = new Map(tracks.map((track) => [track.key, track]));
   const notes = new Map(songs.map((note) => [note.key, note]));
   const problems: string[] = [];
   const warnings = new Set<string>();
+  for (const item of script.outside) {
+    const real = found[item.id];
+    if (real && real.playable && Math.abs(real.durationMs - item.durationMs) > OUTSIDE_TOLERANCE_MS) {
+      warnings.add(
+        `"${item.title}" is ${formatDuration(real.durationMs)} on Spotify here but the script's positions were taken on a ${formatDuration(item.durationMs)} recording: the stretch played may be off.`,
+      );
+    }
+    byKey.set(item.key, {
+      key: item.key,
+      id: real?.id ?? item.id,
+      uri: real?.uri ?? `spotify:track:${item.id}`,
+      // The script's own title: Spotify's often carries the pressing ("- 2016 Remaster").
+      title: item.title,
+      durationMs: real?.durationMs ?? item.durationMs,
+      outside: {
+        artist: item.artist,
+        ...(item.year === undefined ? {} : { year: item.year }),
+        ...(item.why ? { why: item.why } : {}),
+        images: real?.images ?? [],
+        ...(real?.albumId ? { albumId: real.albumId } : {}),
+        unavailable: real?.playable === false,
+      },
+    });
+  }
   const cues: Cue[] = [];
   /** The track the player would be on, and whether it has run out. */
   let current: { track: EpisodeTrack; ended: boolean; atMs: number } | null = null;
@@ -124,7 +162,7 @@ export function resolveEpisode(
     } else {
       const missing = cue.tracks.filter((key) => !byKey.has(key));
       if (missing.length > 0) {
-        problems.push(`${at}: ${missing.map((key) => `"${key}"`).join(', ')} ${missing.length === 1 ? 'is' : 'are'} not on this album (known: ${tracks.map((t) => t.key).join(', ') || 'none'}).`);
+        problems.push(`${at}: ${missing.map((key) => `"${key}"`).join(', ')} ${missing.length === 1 ? 'is' : 'are'} not on this album (known: ${[...byKey.keys()].join(', ') || 'none'}).`);
         continue;
       }
       cueTracks = cue.tracks.map((key) => byKey.get(key)!);
@@ -178,6 +216,35 @@ export function resolveEpisode(
     cues,
     warnings: [...warnings],
   };
+}
+
+/**
+ * What the catalogue's lookups say about a script's tracks from outside the
+ * album, in the shape `resolveEpisode` takes. `null` is Spotify saying the
+ * track does not exist here; a lookup that failed some other way (`undefined`)
+ * leaves the script's own description standing.
+ */
+export function outsideFound(
+  script: EpisodeScript,
+  lookups: Readonly<Record<string, { track: { spotifyTrackId: string; uri: string; durationMs: number; album: { id: string; images: ImageRef[] } }; playable: boolean } | null | undefined>>,
+): Record<string, OutsideFound> {
+  const found: Record<string, OutsideFound> = {};
+  for (const item of script.outside) {
+    const lookup = lookups[item.id];
+    if (lookup === undefined) continue;
+    found[item.id] =
+      lookup === null
+        ? { id: item.id, uri: `spotify:track:${item.id}`, durationMs: item.durationMs, images: [], playable: false }
+        : {
+            id: lookup.track.spotifyTrackId,
+            uri: lookup.track.uri,
+            durationMs: lookup.track.durationMs,
+            images: lookup.track.album.images,
+            ...(lookup.track.album.id ? { albumId: lookup.track.album.id } : {}),
+            playable: lookup.playable,
+          };
+  }
+  return found;
 }
 
 /** The release an album's episode plays from. */

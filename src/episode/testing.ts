@@ -7,7 +7,7 @@ import { NO_DISALLOWS, type PlayRequest, type PlayerSnapshot, type QueueSnapshot
 import { sleep, type NarrationMode, type Narrator, type SpeakOptions, type Utterance } from './narrator';
 import { resolveEpisode } from './resolve';
 import { parseEpisodeScript } from './script';
-import type { Episode, EpisodeTrack } from './types';
+import type { Episode, EpisodeTrack, OutsideFound } from './types';
 
 /** Fixtures shared by the episode tests: scripts, a simulated player and a narrator. */
 
@@ -44,8 +44,20 @@ export function timedNote(key: string, durationMs: number, segments: Array<[numb
   };
 }
 
-export function episodeFrom(body: string, tracks: readonly EpisodeTrack[], songs: readonly SongNote[] = []): Episode {
-  return resolveEpisode(parseEpisodeScript('./notes/episodes/test-album.md', `${HEAD}\n${body}`), tracks, songs);
+/** `HEAD` with a track from outside the album declared as `@source`: 7:22 long, played by King Crimson in 1969. */
+export const SOURCE_ID = '2MfrET7Nc3StKQcGoZKqr9';
+export const HEAD_WITH_SOURCE = HEAD.replace(
+  /---\n$/,
+  `outside:\n  source:\n    track: ${SOURCE_ID}\n    title: Source Song\n    artist: King Crimson\n    year: 1969\n    length: 7:22\n    why: 그 목소리가 온 곳\n---\n`,
+);
+
+export function episodeFrom(
+  body: string,
+  tracks: readonly EpisodeTrack[],
+  songs: readonly SongNote[] = [],
+  options: { head?: string; found?: Record<string, OutsideFound> } = {},
+): Episode {
+  return resolveEpisode(parseEpisodeScript('./notes/episodes/test-album.md', `${options.head ?? HEAD}\n${body}`), tracks, songs, null, options.found);
 }
 
 /* ── A player and a narrator for the runner tests ──────────────────────── */
