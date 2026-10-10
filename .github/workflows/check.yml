@@ -76,11 +76,16 @@ jobs:
           printf '\n<sub>Run %s · commit %s</sub>\n' "$GITHUB_RUN_ID" "${{ github.event.pull_request.head.sha }}" >> comment.md
           gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --edit-last --body-file comment.md || gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file comment.md
 
-      - name: Keep the clips for listening
+      # One MP3 per episode with all its lines in order (the hosts without the music), and the ten voices' samples.
+      - name: Put the lines together for listening
+        if: always()
+        run: npm run --silent narration -- --check --listen narration-listen > /dev/null
+
+      - name: Keep them for listening
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: narration
-          path: public/narration
+          path: narration-listen
           if-no-files-found: ignore
           retention-days: 14

@@ -8,6 +8,8 @@
  *   --out <dir>      where the site's copy is written             (default public/narration)
  *   --report <file>  also write the report there, as Markdown
  *   --max <n>        render at most n clips in this run
+ *   --listen <dir>   also write one MP3 per episode with all its lines in order (the hosts without the music),
+ *                    and `voices.mp3` with the ten voices' samples, F1 to F5 and then M1 to M5
  *
  * The store only grows: a clip is named after the voice and the exact text it says (src/episode/narration/clip.ts),
  * so a line that has not changed is never rendered twice and an edited line simply gets a new clip. "Publishing"
@@ -54,6 +56,7 @@ const storeDir = option('store') ?? '.narration';
 const outDir = option('out') ?? 'public/narration';
 const reportFile = option('report');
 const max = option('max') === undefined ? Number.POSITIVE_INFINITY : Number(option('max'));
+const listenDir = option('listen');
 
 const seconds = (ms: number): string => `${(ms / 1000).toFixed(1)} s`;
 const minutes = (ms: number): string => `${Math.floor(ms / 60_000)} min ${Math.round((ms % 60_000) / 1000)} s`;
@@ -182,6 +185,17 @@ for (const clip of samples) if (manifest.clips[clip.key] !== undefined) manifest
 const published = Object.keys(manifest.clips).length;
 // Without a single clip the site gets no index at all, and the app uses the browser's voice throughout.
 if (published > 0) writeFileSync(path.join(outDir, 'index.json'), JSON.stringify(manifest));
+
+/* ── For listening ─────────────────────────────────────────────────────── */
+
+// Clips are constant-bitrate MP3 with the same settings, and each ends with its own pause: put end to end they
+// are one playable file that sounds like the hosts' side of the episode.
+if (listenDir) {
+  mkdirSync(listenDir, { recursive: true });
+  const joined = (clips: readonly PlannedClip[]) => Buffer.concat(clips.filter((clip) => stored(clip.key)).map((clip) => readFileSync(clipFile(clip.key))));
+  for (const script of scripts) writeFileSync(path.join(listenDir, `${script.key}.mp3`), joined(episodeClips(script)));
+  writeFileSync(path.join(listenDir, 'voices.mp3'), joined(samples));
+}
 
 /* ── Report ────────────────────────────────────────────────────────────── */
 
