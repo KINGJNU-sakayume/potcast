@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import type { SessionMode } from '../catalogue/CatalogueSource';
+import { EpisodeProvider } from '../episode/EpisodeProvider';
 import { AlbumPage } from '../pages/AlbumPage';
 import { ArchivePage } from '../pages/ArchivePage';
 import { ArtistPage } from '../pages/ArtistPage';
+import { EpisodePage } from '../pages/EpisodePage';
 import { LibraryPage } from '../pages/LibraryPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 import { NowPlayingPage } from '../pages/NowPlayingPage';
@@ -30,18 +32,21 @@ import { SessionControlsContext, type SessionControls } from './sessionControls'
 function SessionScope({ session }: { session: Session }) {
   return (
     <SessionContext.Provider value={session}>
-      <Routes>
-        <Route element={<AppShell />}>
-          <Route index element={<Navigate to="/now-playing" replace />} />
-          <Route path="now-playing" element={<Responsive desktop={<NowPlayingPage />} mobile={<MobileNowPlayingPage />} />} />
-          <Route path="library" element={<Responsive desktop={<LibraryPage />} mobile={<MobileLibraryPage />} />} />
-          <Route path="search" element={<Responsive desktop={<DesktopSearchRoute />} mobile={<MobileSearchPage />} />} />
-          <Route path="archive" element={<Responsive desktop={<ArchivePage />} mobile={<MobileArchivePage />} />} />
-          <Route path="artist/:artistId" element={<ArtistPage />} />
-          <Route path="album/:albumId" element={<AlbumPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
+      <EpisodeProvider>
+        <Routes>
+          <Route element={<AppShell />}>
+            <Route index element={<Navigate to="/now-playing" replace />} />
+            <Route path="now-playing" element={<Responsive desktop={<NowPlayingPage />} mobile={<MobileNowPlayingPage />} />} />
+            <Route path="library" element={<Responsive desktop={<LibraryPage />} mobile={<MobileLibraryPage />} />} />
+            <Route path="search" element={<Responsive desktop={<DesktopSearchRoute />} mobile={<MobileSearchPage />} />} />
+            <Route path="archive" element={<Responsive desktop={<ArchivePage />} mobile={<MobileArchivePage />} />} />
+            <Route path="artist/:artistId" element={<ArtistPage />} />
+            <Route path="album/:albumId" element={<AlbumPage />} />
+            <Route path="episode/:albumId" element={<EpisodePage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </EpisodeProvider>
     </SessionContext.Provider>
   );
 }

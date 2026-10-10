@@ -11,6 +11,7 @@ import { PlayingMark } from '../components/PlayingMark';
 import { QueueContent } from '../components/QueueDrawer';
 import { SearchOverlay } from '../components/SearchOverlay';
 import { SettingsBody } from '../components/SettingsPanel';
+import { useEpisodeState } from '../episode/EpisodeProvider';
 import { usePlayerSelector, useProgressProperty } from '../playback/hooks';
 import { AccentTokens } from './AccentTokens';
 import { BackHistoryProvider } from './backHistory';
@@ -30,13 +31,34 @@ function initials(name: string | null | undefined): string {
 
 type Panel = 'queue' | 'settings';
 
-/** Away from Now Playing: the playing cover, its progress and a playing mark at the foot of the rail. */
+/**
+ * Away from Now Playing: the playing cover, its progress and a playing mark at the foot of the rail.
+ * While an episode is running it is the episode's album instead, and leads back to the episode.
+ */
 function RailNow() {
   const track = usePlayerSelector((s) => s.snapshot.track);
   const paused = usePlayerSelector((s) => s.snapshot.paused);
+  const episode = useEpisodeState();
   const { pathname } = useLocation();
   const ref = useRef<HTMLAnchorElement>(null);
   useProgressProperty(ref);
+  const release = episode.status === 'playing' || episode.status === 'paused' ? episode.episode?.release : null;
+  if (release && episode.episode) {
+    const to = `/episode/${release.id}`;
+    if (pathname === to) return null;
+    return (
+      <Link ref={ref} to={to} className="rail-now" aria-label={`Episode: ${episode.episode.title}. Back to the episode`} title={episode.episode.title}>
+        <span className="rail-now-cover">
+          <CoverImage images={release.images} size={50} alt="" title={release.name} paletteKey={release.id} />
+          <PlayingMark playing={episode.status === 'playing'} />
+        </span>
+        <span className="rail-now-bar" aria-hidden="true" />
+        <span className="rail-now-label" aria-hidden="true">
+          Episode
+        </span>
+      </Link>
+    );
+  }
   if (!track || pathname === '/now-playing') return null;
   return (
     <Link ref={ref} to="/now-playing" className="rail-now" aria-label={`Now playing: ${track.title}. Open Now Playing`} title={track.title}>

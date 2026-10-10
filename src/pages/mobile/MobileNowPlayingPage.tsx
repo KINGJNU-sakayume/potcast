@@ -24,6 +24,7 @@ import { Slider } from '../../components/Slider';
 import { songNotePayload } from '../../components/SongNote';
 import type { TrackIdentity } from '../../domain/types';
 import { getSongNote } from '../../editorial/lookup';
+import { usePlaybackToggle } from '../../episode/EpisodeProvider';
 import { formatDuration, formatDurationForSpeech, formatTrackNumber, joinArtistNames } from '../../lib/format';
 import { useWakeLock } from '../../lib/useWakeLock';
 import { useLyricView } from '../../lyrics/useLyricView';
@@ -400,8 +401,8 @@ function Transport({ compact = false }: { compact?: boolean }) {
   const snapshot = usePlayerSnapshot();
   const engine = useEngine();
   const shell = useShell();
+  const { paused, episode, toggle } = usePlaybackToggle();
   const hasTrack = Boolean(snapshot.track);
-  const paused = snapshot.paused;
   return (
     <div className={compact ? 'm-transport compact' : 'm-transport'}>
       {!compact && (
@@ -422,12 +423,9 @@ function Transport({ compact = false }: { compact?: boolean }) {
       <button
         type="button"
         className="m-play"
-        aria-label={paused ? 'Play' : 'Pause'}
-        disabled={!hasTrack || (paused ? snapshot.disallows.resuming : snapshot.disallows.pausing)}
-        onClick={() => {
-          engine.activateAudio();
-          void engine.togglePlay();
-        }}
+        aria-label={episode ? (paused ? 'Continue episode' : 'Pause episode') : paused ? 'Play' : 'Pause'}
+        disabled={!episode && (!hasTrack || (paused ? snapshot.disallows.resuming : snapshot.disallows.pausing))}
+        onClick={toggle}
       >
         <PlayIcon paused={paused} />
       </button>

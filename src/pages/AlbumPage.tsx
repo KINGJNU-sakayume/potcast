@@ -13,6 +13,8 @@ import { PlayingMark } from '../components/PlayingMark';
 import { StateView } from '../components/StateView';
 import type { AlbumDetail, AlbumTrack } from '../domain/types';
 import { getAlbumNote, getSongNote } from '../editorial/lookup';
+import { useEpisodeState } from '../episode/EpisodeProvider';
+import { getEpisodeScript } from '../episode/episodes';
 import {
   albumTypeLabel,
   formatDuration,
@@ -126,6 +128,7 @@ export function AlbumPage() {
   const palette = useAlbumPalette(albumId, data ? pickImageUrl(data.images, 64) : null);
   const accent = useMemo(() => mapPaletteToTokens(palette), [palette]);
   const mobile = useIsMobile();
+  const runningEpisode = useEpisodeState().episode;
   usePageTitle('Album', data?.name ?? null);
   // Desktop (v7.5): the page takes its own cover's colour. The phone keeps paper with the cover's accent.
   usePageSurface(isSpotifyId(albumId) ? { key: albumId, imageUrl: data ? pickImageUrl(data.images, 64) : null } : null);
@@ -178,6 +181,8 @@ export function AlbumPage() {
   const trackCount = loaded.tracks.length || loaded.totalTracks;
   const note = getAlbumNote({ id: loaded.id, name: loaded.name, artistNames, releaseDate: loaded.releaseDate });
   const fineprint = [loaded.label, ...loaded.copyrights].filter(Boolean);
+  const episode = getEpisodeScript(note?.key);
+  const episodeRunning = episode !== null && runningEpisode?.key === episode.key && runningEpisode.release?.id === loaded.id;
   const titleLang = detectLineLanguage(loaded.name);
 
   return (
@@ -238,6 +243,11 @@ export function AlbumPage() {
                 >
                   Play album
                 </button>
+                {episode && (
+                  <Link className="plain-action" to={`/episode/${loaded.id}`} title={episode.title}>
+                    {episodeRunning ? 'Back to the episode' : 'Listen with the hosts'}
+                  </Link>
+                )}
                 <SaveAlbumButton uri={loaded.uri} />
               </div>
               {fineprint.length > 0 && <p className="fineprint">{fineprint.join(' · ')}</p>}
