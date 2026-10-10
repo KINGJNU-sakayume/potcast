@@ -128,10 +128,10 @@ function subjectOf(episode: Episode, state: EpisodeState, active: boolean): Subj
 /* ── The cover, and the hosts' line in front of it ─────────────────────── */
 
 /**
- * What the host is saying, on a dark slab across the lower part of the cover:
- * the one thing an episode adds to Now Playing. It is large while the music is
- * stopped for the talk and smaller while the music plays on underneath, and it
- * is gone as soon as the hosts are.
+ * What the host is saying while the music plays on underneath: a slab across
+ * the foot of the cover, inside its edges, so the lyrics keep the right-hand
+ * column. While the music is stopped for the talk, the line is the lyrics'
+ * place's own (TalkPanel) and the cover stays clear.
  */
 function Caption({ episode, cue, state }: { episode: Episode; cue: Exclude<Cue, MusicCue>; state: EpisodeState }) {
   const line: SpokenLine | undefined = cue.lines[Math.min(state.lineIndex, cue.lines.length - 1)];
@@ -217,7 +217,7 @@ function IntroPanel({
       <p className="ep-kicker" lang="ko">
         {episode.hosts.map((host) => host.name).join(' · ')}
       </p>
-      <p className="current-lyric ep-title" lang="ko">
+      <p className="current-lyric ep-title" lang="ko" data-hang={episode.title.startsWith('『') || undefined}>
         {episode.title}
       </p>
       {episode.short && (
@@ -225,18 +225,90 @@ function IntroPanel({
           {episode.short}
         </p>
       )}
+      {/* The way in comes first: on the phone it has to be on the first screen. */}
+      <div className="object-actions ep-actions">{children}</div>
       <p className="ep-facts">
         {facts.map((fact) => (
           <span key={fact}>{fact}</span>
         ))}
       </p>
       {hint && <p className="ep-hint">{hint}</p>}
-      <div className="object-actions ep-actions">{children}</div>
       {fineprint.map((line) => (
         <p key={line} className="fineprint">
           {line}
         </p>
       ))}
+    </section>
+  );
+}
+
+/**
+ * The hosts are talking with the music stopped, so what they say is what is
+ * on: it takes the lyrics' place, read the way lyrics are — the line before,
+ * the line being said (the sentence being spoken in full ink), the line after.
+ * Under it, small, the music they are leading up to.
+ */
+function TalkPanel({
+  episode,
+  cue,
+  state,
+  upcoming,
+  upTrack,
+  ahead,
+}: {
+  episode: Episode;
+  cue: Exclude<Cue, MusicCue>;
+  state: EpisodeState;
+  upcoming: MusicCue | null;
+  upTrack: EpisodeTrack | null;
+  ahead: boolean;
+}) {
+  const at = Math.min(state.lineIndex, cue.lines.length - 1);
+  const line: SpokenLine | undefined = cue.lines[at];
+  const utterances = useMemo(() => (line ? splitUtterances(line.text).map(captionText) : []), [line]);
+  if (!line) return null;
+  const said = Math.min(state.utteranceIndex, utterances.length - 1);
+  const before = at > 0 ? cue.lines[at - 1] : undefined;
+  const after = cue.lines[at + 1];
+  const title = upcoming && upcoming.tracks.length > 1 ? upcoming.tracks.map((item) => item.title).join(' → ') : upTrack?.title;
+  const cueText = upcoming ? listeningCue(upcoming) : undefined;
+  return (
+    <section className="lyrics-panel ep-panel ep-talk" aria-labelledby="episode-panel-label">
+      {before && (
+        <p className="ep-talk-around ep-talk-before" lang="ko">
+          <span className="ep-speaker">{hostName(episode, before.host)}</span>
+          {captionText(before.text)}
+        </p>
+      )}
+      <div className="ep-talk-now" role="group" aria-label="The hosts">
+        <span className="ep-speaker">{hostName(episode, line.host)}</span>
+        <p key={`${state.cueIndex}:${at}`} className="ep-talk-line" lang="ko" aria-live="off">
+          {utterances.map((text, index) => (
+            <span key={index} data-at={index < said ? 'said' : index === said ? 'now' : 'ahead'}>
+              {text}{' '}
+            </span>
+          ))}
+        </p>
+      </div>
+      {after && (
+        <p className="ep-talk-around ep-talk-after" lang="ko">
+          <span className="ep-speaker">{hostName(episode, after.host)}</span>
+          {captionText(after.text)}
+        </p>
+      )}
+      {upTrack && title && (
+        <div className="ep-upnext">
+          <span className="ep-upnext-kicker">{ahead ? 'Up next' : 'Just heard'}</span>
+          <span className="ep-upnext-text">
+            <b lang={detectLineLanguage(title)}>
+              {title}
+              {upTrack.outside && <i> — {outsideCredit(upTrack)}</i>}
+            </b>
+            {cueText && <span lang="ko">{cueText}</span>}
+          </span>
+          {upcoming && <span className="ep-upnext-range">{stretchLabel(upcoming)}</span>}
+        </div>
+      )}
     </section>
   );
 }
@@ -386,22 +458,27 @@ function ScriptList({
   const listRef = useRef<HTMLDivElement>(null);
   const currentKey = active && state.status !== 'ended' ? `${state.cueIndex}:${episode.cues[state.cueIndex]?.type === 'music' ? 0 : state.lineIndex}` : null;
 
-  // Keeps the line being said in view where the script scrolls by itself (the desktop). On the phone the
-  // page is the scroller, and moving it would pull the listener away from whatever they are reading.
+  // Keeps the line being said in view where the script scrolls by itself (the desktop, where the panel around
+  // the list is the scroller). On the phone the page is the scroller, and moving it would pull the listener
+  // away from whatever they are reading. The first time the script opens it jumps straight to the line.
+  const opened = useRef(false);
   useEffect(() => {
     const list = listRef.current;
-    if (!currentKey || !list || list.scrollHeight <= list.clientHeight + 1) return;
+    const scroller = list?.parentElement;
+    if (!currentKey || !list || !scroller || scroller.scrollHeight <= scroller.clientHeight + 1) return;
     const row = list.querySelector<HTMLElement>('[aria-current="true"]');
-    if (!row || typeof list.scrollTo !== 'function') return;
-    const frame = list.getBoundingClientRect();
+    if (!row || typeof scroller.scrollTo !== 'function') return;
+    const frame = scroller.getBoundingClientRect();
     const at = row.getBoundingClientRect();
+    const first = !opened.current;
+    opened.current = true;
     // Comfortably visible already: leave the scroll alone.
     if (at.top >= frame.top + frame.height * 0.08 && at.bottom <= frame.top + frame.height * 0.72) return;
     const reduced = typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    list.scrollTo({ top: list.scrollTop + (at.top - frame.top) - frame.height * 0.22, behavior: reduced ? 'auto' : 'smooth' });
+    scroller.scrollTo({ top: scroller.scrollTop + (at.top - frame.top) - frame.height * 0.22, behavior: reduced || first ? 'auto' : 'smooth' });
   }, [currentKey]);
 
-  const chapterAt = new Map(episode.chapters.map((chapter) => [chapter.cueIndex, chapter.title]));
+  const chapterAt = new Map(episode.chapters.map((chapter, index) => [chapter.cueIndex, { title: chapter.title, number: index + 1 }]));
 
   return (
     <div ref={listRef} className="ep-script" role="group" aria-label="Script">
@@ -414,7 +491,8 @@ function ScriptList({
           <div key={cueIndex} className="ep-cue" data-type={cue.type} data-past={past || undefined}>
             {heading && (
               <h3 className="ep-chapter" lang="ko">
-                {heading}
+                <span className="ep-chapter-no">{heading.number}</span>
+                {heading.title}
               </h3>
             )}
             {cue.type === 'music' ? (
@@ -663,7 +741,10 @@ export function EpisodePage() {
   const playThroughApp = () => void engine.setBrowserPlayback(false).then(() => runner.resume());
 
   const track = subject.track;
-  const title = track?.title ?? data.name;
+  // The cover and the title under it name what is sounding. While the hosts lead up to a track it is not on
+  // yet: the album stands there, and the track is named as what is next, in the lyrics' place.
+  const shown = subject.ahead ? null : track;
+  const title = shown?.title ?? data.name;
   const upcoming = subject.stretch && cue?.type !== 'music' ? subject.stretch : null;
   const musicCue = cue?.type === 'music' ? cue : null;
   const lineText = !active
@@ -672,10 +753,11 @@ export function EpisodePage() {
       ? 'That was the whole episode.'
       : [chapter?.title, musicCue ? listeningCue(musicCue, state.trackIndex) : undefined].filter(Boolean).join(' — ');
 
-  let panel: 'script' | 'intro' | 'ended' | 'manual' | 'outside' | 'lyrics' | 'rest';
+  let panel: 'script' | 'intro' | 'ended' | 'talk' | 'manual' | 'outside' | 'lyrics' | 'rest';
   if (scriptOpen) panel = 'script';
   else if (!active) panel = 'intro';
   else if (ended || !cue) panel = 'ended';
+  else if (cue.type === 'talk') panel = 'talk';
   else if (cue.type === 'music' && state.manual) panel = 'manual';
   else if (track?.outside) panel = 'outside';
   else if (showLyrics) panel = 'lyrics';
@@ -692,16 +774,16 @@ export function EpisodePage() {
           <div className="np-grid" role="region" aria-label="Now in the episode" data-status={active ? state.status : 'idle'}>
             <section className="np-object" aria-label="What the episode is on">
               <figure className="np-art">
-                <Cover album={data} track={track}>
-                  {cue && cue.type !== 'music' && <Caption episode={episode} cue={cue} state={state} />}
+                <Cover album={data} track={shown}>
+                  {cue && cue.type === 'over' && <Caption episode={episode} cue={cue} state={state} />}
                 </Cover>
                 <figcaption className="np-caption">
                   <h1 lang={detectLineLanguage(title)} title={title}>
                     {title}
                   </h1>
                   <div className="artist-line">
-                    {track?.outside ? (
-                      <span>{outsideCredit(track)}</span>
+                    {shown?.outside ? (
+                      <span>{outsideCredit(shown)}</span>
                     ) : (
                       <>
                         <ArtistLinks artists={data.artists} />
@@ -709,7 +791,7 @@ export function EpisodePage() {
                           {' · '}
                         </span>
                         <Link className="linkish" to={`/album/${data.id}`} lang={detectLineLanguage(data.name)}>
-                          {track ? data.name : 'Album'}
+                          {shown ? data.name : 'Album'}
                         </Link>
                       </>
                     )}
@@ -759,6 +841,13 @@ export function EpisodePage() {
               </>
             )}
 
+            {panel === 'talk' && cue && cue.type === 'talk' && (
+              <>
+                <PanelHead title="The hosts" />
+                <TalkPanel episode={episode} cue={cue} state={state} upcoming={upcoming} upTrack={track} ahead={subject.ahead} />
+              </>
+            )}
+
             {panel === 'manual' && musicCue && (
               <>
                 <PanelHead title="Your turn" />
@@ -792,6 +881,14 @@ export function EpisodePage() {
             )}
 
             <div className="note-line ep-line">
+              {/* Where the whole episode is: one mark per chapter, in place of the line's top rule. */}
+              <div className="ep-chapters" aria-hidden="true">
+                {episode.chapters.map((item, index) => {
+                  const at = chapter ?? leftAt;
+                  const mark = ended ? 'past' : !at ? undefined : index + 1 < at.number ? 'past' : index + 1 === at.number ? 'now' : undefined;
+                  return <span key={item.cueIndex} data-at={mark} />;
+                })}
+              </div>
               <span className="note-line-kicker">{chapter ? `Episode · ${chapter.number} / ${episode.chapters.length}` : 'Episode'}</span>
               <p lang="ko">{lineText}</p>
               <button type="button" className="note-more" aria-expanded={scriptOpen} onClick={() => setScriptOpen((open) => !open)}>
