@@ -5,8 +5,8 @@ hosts:
   a: 진행
   b: 해설
 voices:
-  a: F3
-  b: M5
+  a: F1
+  b: M2
 say:
   - IGOR = 이고르
   - EARFQUAKE = 어스퀘이크

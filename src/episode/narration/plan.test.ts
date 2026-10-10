@@ -12,7 +12,7 @@ hosts:
   a: 진행
   b: 해설
 voices:
-  b: M2
+  b: M4
 say:
   - IGOR = 이고르
 ---
@@ -26,9 +26,9 @@ B~ 여기서 목소리가 들어옵니다.
 describe('the clips of an episode', () => {
   it('are its utterances in order, each in its host\'s voice, as the voice says them', () => {
     expect(episodeClips(SCRIPT)).toEqual([
-      { key: clipKey('F3', '이고르를 들어요.'), voice: 'F3', text: '이고르를 들어요.' },
-      { key: clipKey('F3', '첫 곡부터요.'), voice: 'F3', text: '첫 곡부터요.' },
-      { key: clipKey('M2', '여기서 목소리가 들어옵니다.'), voice: 'M2', text: '여기서 목소리가 들어옵니다.' },
+      { key: clipKey('F1', '이고르를 들어요.'), voice: 'F1', text: '이고르를 들어요.' },
+      { key: clipKey('F1', '첫 곡부터요.'), voice: 'F1', text: '첫 곡부터요.' },
+      { key: clipKey('M4', '여기서 목소리가 들어옵니다.'), voice: 'M4', text: '여기서 목소리가 들어옵니다.' },
     ]);
   });
 

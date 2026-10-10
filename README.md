@@ -238,9 +238,9 @@ title: 『IGOR』 같이 듣기
 hosts:
   a: 진행
   b: 해설
-voices:                                  each host's recorded voice (F1–F5, M1–M5); F3 and M5 when left out
-  a: F3
-  b: M5
+voices:                                  each host's recorded voice (F1–F5, M1–M5); F1 and M2 when left out
+  a: F1
+  b: M2
 say:                                     how to say what is written differently
   - EARFQUAKE = 어스퀘이크
   - 2019년 5월 = 이천십구 년 오월
@@ -310,7 +310,8 @@ the same two voices, nothing is downloaded or computed while listening beyond th
   the voice was left to read as written — and uploads the clips as an artifact to listen to. The deploy then finds
   them there. Rendering *IGOR* (135 clips, nine minutes of speech) took between three and seven minutes on a hosted runner.
 - **Which voice.** A script's `voices:` names each host's; **Settings → Episodes** plays a sample of all ten. The
-  defaults, F3 and M5, speak Korean at the same pace (about six syllables a second); F4 and M3 are a fifth faster.
+  defaults, F1 and M2, were picked by ear from the ten. They speak Korean at the same pace (about six syllables a
+  second); F4 and M3 are a fifth faster.
 - **A line without a recording** — a site built without `npm run narration`, a clip that will not load — is said by
   the browser's own Korean voice (Web Speech API), chosen in the same settings: Microsoft Edge has natural-sounding
   ones, Chrome one network voice plus the system's. With no Korean voice at all the line is shown for as long as it

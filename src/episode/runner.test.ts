@@ -103,8 +103,8 @@ describe('talk', () => {
     runner.start(episode);
     await advance(5000);
     expect(narrator.calls).toEqual([
-      { voiceSlot: 0, voice: 'F3', say: episode.say, resume: false },
-      { voiceSlot: 1, voice: 'M5', say: episode.say, resume: false },
+      { voiceSlot: 0, voice: 'F1', say: episode.say, resume: false },
+      { voiceSlot: 1, voice: 'M2', say: episode.say, resume: false },
     ]);
   });
 
@@ -112,7 +112,7 @@ describe('talk', () => {
     const { runner, narrator, episode } = stage(['A: 하나. 둘.', '> play one to 0:30', 'B: 셋.', '> play one from 1:00 to 1:30', 'A~ 넷.'].join('\n'));
     runner.start(episode);
     await advance(100);
-    expect(narrator.prepared[0]!.map((utterance) => `${utterance.voice}:${utterance.text}`)).toEqual(['F3:하나.', 'F3:둘.', 'M5:셋.', 'F3:넷.']);
+    expect(narrator.prepared[0]!.map((utterance) => `${utterance.voice}:${utterance.text}`)).toEqual(['F1:하나.', 'F1:둘.', 'M2:셋.', 'F1:넷.']);
     // Started in the middle: only what is still to come.
     runner.jump(2);
     await advance(100);

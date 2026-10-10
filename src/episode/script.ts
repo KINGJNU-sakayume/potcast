@@ -24,8 +24,8 @@ import {
  *   a: 진행
  *   b: 해설
  * voices:                              the recorded voice of each host (F1–F5, M1–M5); optional
- *   a: F3
- *   b: M5
+ *   a: F1
+ *   b: M2
  * say:                                 how to say what is written differently; optional
  *   - EARFQUAKE = 어스퀘이크
  *   - 2019년 = 이천십구 년

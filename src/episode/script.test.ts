@@ -114,11 +114,11 @@ describe('episode script', () => {
   });
 
   it('gives each host a recorded voice: the script\'s choice, or the default for its place', () => {
-    expect(parse('A: 말.').hosts.map((host) => host.voice)).toEqual(['F3', 'M5']);
-    const head = HEAD.replace('written:', 'voices:\n  b: M2\nwritten:');
+    expect(parse('A: 말.').hosts.map((host) => host.voice)).toEqual(['F1', 'M2']);
+    const head = HEAD.replace('written:', 'voices:\n  b: M4\nwritten:');
     expect(parse('A: 말.', head).hosts).toEqual([
-      { id: 'a', name: '진행', voice: 'F3' },
-      { id: 'b', name: '해설', voice: 'M2' },
+      { id: 'a', name: '진행', voice: 'F1' },
+      { id: 'b', name: '해설', voice: 'M4' },
     ]);
     expect(problems('A: 말.', HEAD.replace('written:', 'voices:\n  a: F9\nwritten:'))[0]).toMatch(/"voices.a" must be one of F1, F2, .* got "F9"/);
     expect(problems('A: 말.', HEAD.replace('written:', 'voices:\n  c: F1\nwritten:'))[0]).toMatch(/"voices.c" names no host \(a, b\)/);
@@ -146,7 +146,7 @@ describe('episode script', () => {
 
   it('lets a single host carry an episode', () => {
     const script = parse('A: 혼자 진행합니다.\n> play one', '---\nalbum: x\ntitle: T\nhosts:\n  a: 진행\n---\n');
-    expect(script.hosts).toEqual([{ id: 'a', name: '진행', voice: 'F3' }]);
+    expect(script.hosts).toEqual([{ id: 'a', name: '진행', voice: 'F1' }]);
     expect(script.cues).toHaveLength(2);
   });
 });

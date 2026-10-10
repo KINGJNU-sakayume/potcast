@@ -46,10 +46,11 @@ export const VOICE_CHARACTER: Record<RecordedVoice, string> = {
 
 /**
  * The voices of the first and second host when a script names none: the two
- * that speak Korean at the same unhurried pace (F4 and M3 are about a fifth
- * faster than the other eight).
+ * the archive's owner picked after hearing all ten. They also speak Korean at
+ * the same unhurried pace (F4 and M3 are about a fifth faster than the other
+ * eight, and make an uneven pair with any of them).
  */
-export const DEFAULT_HOST_VOICES: readonly RecordedVoice[] = ['F3', 'M5'];
+export const DEFAULT_HOST_VOICES: readonly RecordedVoice[] = ['F1', 'M2'];
 
 export function isRecordedVoice(value: string): value is RecordedVoice {
   return (RECORDED_VOICES as readonly string[]).includes(value);
