@@ -1,0 +1,494 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 890429,
+    "durationMs": 206000
+  },
+  "segments": [
+    {
+      "startMs": 160,
+      "endMs": 2990,
+      "translation": "지금 골프 라디오에서만 나오는 신곡이야"
+    },
+    {
+      "startMs": 2990,
+      "endMs": 18460,
+      "translation": "(와, 이 샘플 진짜 좋아)"
+    },
+    {
+      "startMs": 18460,
+      "endMs": 25480,
+      "translation": "우린 춤추고, 운동하고, 재밌게 놀 거야. 이 새끼들한테 쓸 시간 없어"
+    },
+    {
+      "startMs": 25480,
+      "endMs": 26640,
+      "translation": "저놈한테는 손목시계나 던져 줘야겠네"
+    },
+    {
+      "startMs": 26640,
+      "endMs": 28820,
+      "translation": "내 애들이 여기 와서 무슨 세미나라도 하는 꼴이었지"
+    },
+    {
+      "startMs": 28820,
+      "endMs": 30420,
+      "translation": "너 지금 누구한테 말하는 거야, 이 개새끼야?"
+    },
+    {
+      "startMs": 30420,
+      "endMs": 33880,
+      "translation": "야, 이 년들한테 쓸 시간 없어"
+    },
+    {
+      "startMs": 33880,
+      "endMs": 35580,
+      "translation": "이 여자들한테는 벽시계나 던져 줘야겠네"
+    },
+    {
+      "startMs": 35580,
+      "endMs": 37540,
+      "translation": "이 여자들 데리고 왔더니 물 호스라도 찾는 꼴이더라"
+    },
+    {
+      "startMs": 37540,
+      "endMs": 39260,
+      "translation": "너 지금 누구한테 말하는 거야, 이 개새끼야?"
+    },
+    {
+      "startMs": 39260,
+      "endMs": 41050,
+      "translation": "야, 나 시간 없어"
+    },
+    {
+      "startMs": 41050,
+      "endMs": 42140,
+      "translation": "야, 휴지 좀 줘"
+    },
+    {
+      "startMs": 42140,
+      "endMs": 44200,
+      "translation": "내가 어떻게 여기까지 왔지? 야, 믿기지가 않아"
+    },
+    {
+      "startMs": 44200,
+      "endMs": 46560,
+      "translation": "이 차를 갖게 돼서, 일부러 경치 좋은 길로 갔어"
+    },
+    {
+      "startMs": 46560,
+      "endMs": 48710,
+      "translation": "조수석엔 리버 피닉스처럼 생긴 백인 애"
+    },
+    {
+      "startMs": 48710,
+      "endMs": 50870,
+      "translation": "먼저, (생일 축하해!)"
+    },
+    {
+      "startMs": 50870,
+      "endMs": 52930,
+      "translation": "이 비열한 새끼야, 그래, 난 목말라 있어"
+    },
+    {
+      "startMs": 52930,
+      "endMs": 55080,
+      "translation": "네가 쏘아 댄 그 잔 총알들은 나한테 아프지도 않았어"
+    },
+    {
+      "startMs": 55080,
+      "endMs": 57410,
+      "translation": "애초에 너 같은 비열한 놈하고는 어울리지도 않았어"
+    },
+    {
+      "startMs": 57410,
+      "endMs": 60540,
+      "translation": "이 새끼들한테 쓸 시간 없어"
+    },
+    {
+      "startMs": 60540,
+      "endMs": 61820,
+      "translation": "저놈한테는 손목시계나 던져 줘야겠네"
+    },
+    {
+      "startMs": 61820,
+      "endMs": 64010,
+      "translation": "내 애들이 여기 와서 무슨 세미나라도 하는 꼴이었지"
+    },
+    {
+      "startMs": 64010,
+      "endMs": 65760,
+      "translation": "너 지금 누구한테 말하는 거야, 이 개새끼야?"
+    },
+    {
+      "startMs": 65760,
+      "endMs": 69260,
+      "translation": "야, 이 년들한테 쓸 시간 없어"
+    },
+    {
+      "startMs": 69260,
+      "endMs": 70750,
+      "translation": "이 여자들한테는 벽시계나 던져 줘야겠네"
+    },
+    {
+      "startMs": 70750,
+      "endMs": 73210,
+      "translation": "이 여자들 데리고 왔더니 물 호스라도 찾는 꼴이더라"
+    },
+    {
+      "startMs": 73210,
+      "endMs": 76990,
+      "translation": "너 지금 누구한테 말하는 거야, 이 개새끼야? 야, 나 시간 없어. 냇 터너가 날 보면 얼마나 자랑스러워할까"
+    },
+    {
+      "startMs": 76990,
+      "endMs": 79230,
+      "translation": "이 (새끼들) 스타일이 전부 내 거니까"
+    },
+    {
+      "startMs": 79230,
+      "endMs": 81220,
+      "translation": "다들 관중석에서 나를 쳐다보고 있겠지"
+    },
+    {
+      "startMs": 81220,
+      "endMs": 83370,
+      "translation": "내가 시키면 나한테 고개 숙일 거야"
+    },
+    {
+      "startMs": 83370,
+      "endMs": 85690,
+      "translation": "하지만 넌 순종적인 집안 노예 같은 놈이라서 모르지"
+    },
+    {
+      "startMs": 85690,
+      "endMs": 89000,
+      "translation": "내 두툼한 입술이랑 큰 코로 사는 게 어떤 건지"
+    },
+    {
+      "startMs": 89000,
+      "endMs": 90910,
+      "translation": "큰 거시기랑 짧은 머리로 사는 게 어떤 건지"
+    },
+    {
+      "startMs": 90910,
+      "endMs": 93120,
+      "translation": "내 머리가 얼마나 느리게 자라는지는 너도 이미 알잖아"
+    },
+    {
+      "startMs": 93120,
+      "endMs": 94020,
+      "translation": "(헤이)"
+    },
+    {
+      "startMs": 94020,
+      "endMs": 95000,
+      "translation": "째깍"
+    },
+    {
+      "startMs": 95000,
+      "endMs": 96090,
+      "translation": "째깍"
+    },
+    {
+      "startMs": 96090,
+      "endMs": 97060,
+      "translation": "째깍 (그래)"
+    },
+    {
+      "startMs": 97060,
+      "endMs": 98360,
+      "translation": "째깍"
+    },
+    {
+      "startMs": 98360,
+      "endMs": 99340,
+      "translation": "째깍 (야)"
+    },
+    {
+      "startMs": 99340,
+      "endMs": 100410,
+      "translation": "째깍"
+    },
+    {
+      "startMs": 100410,
+      "endMs": 101770,
+      "translation": "째깍"
+    },
+    {
+      "startMs": 101770,
+      "endMs": 103710,
+      "translation": "피클 계획을 가진 남자였지, 다들 딜이 뭔지 알아"
+    },
+    {
+      "startMs": 103710,
+      "endMs": 106520,
+      "translation": "카니발을 팔면 1억은 받을 거야 (헤이)"
+    },
+    {
+      "startMs": 106520,
+      "endMs": 108340,
+      "translation": "다음 줄이면 다들 \"우와\" 하겠지"
+    },
+    {
+      "startMs": 108340,
+      "endMs": 110340,
+      "translation": "2004년부터 백인 애들이랑 키스했어"
+    },
+    {
+      "startMs": 110340,
+      "endMs": 112910,
+      "translation": "나 하나, 발 두 개, 엠 세 개"
+    },
+    {
+      "startMs": 112910,
+      "endMs": 114150,
+      "translation": "4년, 5년, 6년 전엔 구렸어"
+    },
+    {
+      "startMs": 114150,
+      "endMs": 115980,
+      "translation": "일곱 자릿수 금액"
+    },
+    {
+      "startMs": 115980,
+      "endMs": 119530,
+      "translation": "컨버스랑 계약은 끝났어, 반스는 망했으니까"
+    },
+    {
+      "startMs": 119530,
+      "endMs": 121760,
+      "translation": "난 쉼표를 읽을 테니 넌 댓글이나 달아"
+    },
+    {
+      "startMs": 121760,
+      "endMs": 124150,
+      "translation": "내가 했어야 한다고 떠들지만, 넌 아무것도 안 했잖아"
+    },
+    {
+      "startMs": 124150,
+      "endMs": 125290,
+      "translation": "넌 중요한 사람이 아니야"
+    },
+    {
+      "startMs": 125290,
+      "endMs": 126420,
+      "translation": "난 계속 내 스타일대로 갈 거야"
+    },
+    {
+      "startMs": 126420,
+      "endMs": 128860,
+      "translation": "여기선 다들 웃고 있어, 더 가든 외쳐 줘 (째깍)"
+    },
+    {
+      "startMs": 128860,
+      "endMs": 129970,
+      "translation": "(그건 사실이야, 야)"
+    },
+    {
+      "startMs": 129970,
+      "endMs": 133350,
+      "translation": "난 내 일을 체스판처럼 처리하지 (째깍, 째깍)"
+    },
+    {
+      "startMs": 133350,
+      "endMs": 136560,
+      "translation": "골프 애들? 그게 내 편이야, 야"
+    },
+    {
+      "startMs": 136560,
+      "endMs": 138400,
+      "translation": "두꺼운 탄산음료처럼 삼키기 힘든 쓴 알약이지"
+    },
+    {
+      "startMs": 138400,
+      "endMs": 140570,
+      "translation": "주머니가 두툼한 요다 같아서 걸음이 이상해"
+    },
+    {
+      "startMs": 140570,
+      "endMs": 142530,
+      "translation": "스카이워커를 몰고 태양 둘레를 도는 중이야"
+    },
+    {
+      "startMs": 142530,
+      "endMs": 144700,
+      "translation": "아나킨 피부색 스프라이트, 틴트는 콜라"
+    },
+    {
+      "startMs": 144700,
+      "endMs": 147170,
+      "translation": "어깨 넓은 여자한테 입으로 받으면서"
+    },
+    {
+      "startMs": 147170,
+      "endMs": 149450,
+      "translation": "네 허리춤 권총집에서 9밀리가 터지듯 내가 터질 때까지"
+    },
+    {
+      "startMs": 149450,
+      "endMs": 151520,
+      "translation": "내가 하는 말은 다 뜨거워, 난 토스터 말을 하거든"
+    },
+    {
+      "startMs": 151520,
+      "endMs": 153610,
+      "translation": "그리고 빵은 정통파야, 코셔만 먹는 것처럼"
+    },
+    {
+      "startMs": 153610,
+      "endMs": 155850,
+      "translation": "(쉿)한테 감사해, 큰 덩어리를 줬으니까"
+    },
+    {
+      "startMs": 155850,
+      "endMs": 157920,
+      "translation": "초록 빵 덕에 깨끗한 소파처럼 느긋해"
+    },
+    {
+      "startMs": 157920,
+      "endMs": 159370,
+      "translation": "이 짙은 냄새는 뭐지?"
+    },
+    {
+      "startMs": 159370,
+      "endMs": 160310,
+      "translation": "영 밀리 티"
+    },
+    {
+      "startMs": 160310,
+      "endMs": 162660,
+      "translation": "젊고 집중하는 흑인 소년, 아이고 내가 바보네"
+    },
+    {
+      "startMs": 162660,
+      "endMs": 163480,
+      "translation": "(나 시간 없어!)"
+    },
+    {
+      "startMs": 163480,
+      "endMs": 164890,
+      "translation": "떠들 거면 떠들어"
+    },
+    {
+      "startMs": 164890,
+      "endMs": 166970,
+      "translation": "난 컨스 아니면 골프 옷 중 하나를 입고 있으니까"
+    },
+    {
+      "startMs": 166970,
+      "endMs": 169000,
+      "translation": "바지 단이 좀 짧아, 입 닥쳐"
+    },
+    {
+      "startMs": 169000,
+      "endMs": 171130,
+      "translation": "난 릴 부시야, 릴 부시, 내가 닦아내는 방식이 그래"
+    },
+    {
+      "startMs": 171130,
+      "endMs": 172310,
+      "translation": "(야, 나 시간 없어!)"
+    },
+    {
+      "startMs": 172310,
+      "endMs": 174510,
+      "translation": "그래, 지금은, 매일 사람들이 죽어 가니까"
+    },
+    {
+      "startMs": 174510,
+      "endMs": 175980,
+      "translation": "그리고 난 연한 갈색 피부도 아니야"
+    },
+    {
+      "startMs": 175980,
+      "endMs": 177900,
+      "translation": "아이디는 나한테 포즈 하나 안 줬어"
+    },
+    {
+      "startMs": 177900,
+      "endMs": 179950,
+      "translation": "그래서 보그에서 12쪽짜리 특집을 해 버렸지"
+    },
+    {
+      "startMs": 179950,
+      "endMs": 181450,
+      "translation": "(야, 나 시간 없어!)"
+    },
+    {
+      "startMs": 181450,
+      "endMs": 183050,
+      "translation": "들어 봐, 내가 바로 걔야"
+    },
+    {
+      "startMs": 183050,
+      "endMs": 185150,
+      "translation": "너희 어린 새끼들은 다 복제품이고, 내가 그 빈자리를 채워"
+    },
+    {
+      "startMs": 185150,
+      "endMs": 186380,
+      "translation": "그 소음은 꺼 두는 게 좋을걸"
+    },
+    {
+      "startMs": 186380,
+      "endMs": 187820,
+      "translation": "돌아서서 길을 다시 찾아"
+    },
+    {
+      "startMs": 187820,
+      "endMs": 189820,
+      "translation": "큰 귀랑 벌어진 앞니를 가진 그 애를 보면"
+    },
+    {
+      "startMs": 189820,
+      "endMs": 190930,
+      "translation": "째깍 (씨발)"
+    },
+    {
+      "startMs": 190930,
+      "endMs": 191780,
+      "translation": "째깍"
+    },
+    {
+      "startMs": 191780,
+      "endMs": 193030,
+      "translation": "째깍"
+    },
+    {
+      "startMs": 193030,
+      "endMs": 194200,
+      "translation": "째깍 (난 시간이 없으니까)"
+    },
+    {
+      "startMs": 194200,
+      "endMs": 196530,
+      "translation": "슈가, 오"
+    },
+    {
+      "startMs": 196530,
+      "endMs": 198830,
+      "translation": "넌 너무 달콤해"
+    },
+    {
+      "startMs": 198830,
+      "endMs": 199980,
+      "translation": "뭐야?"
+    },
+    {
+      "startMs": 199980,
+      "endMs": 202270,
+      "translation": "널 슈가라고 불러야겠어"
+    },
+    {
+      "startMs": 202270,
+      "endMs": 205360,
+      "translation": "넌 너무 달콤하니까—"
+    },
+    {
+      "startMs": 205360,
+      "endMs": 206000,
+      "translation": "여보세요?"
+    }
+  ]
+}

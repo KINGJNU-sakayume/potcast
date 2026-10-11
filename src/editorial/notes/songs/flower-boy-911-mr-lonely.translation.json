@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1612341,
+    "durationMs": 256000
+  },
+  "segments": [
+    {
+      "startMs": 380,
+      "endMs": 2750,
+      "translation": "전화해, 전화해, 전화해, 어"
+    },
+    {
+      "startMs": 2750,
+      "endMs": 5550,
+      "translation": "전화해, 전화해, 전화해, 어"
+    },
+    {
+      "startMs": 5550,
+      "endMs": 7570,
+      "translation": "전화해, 전화해, 전화해, 어"
+    },
+    {
+      "startMs": 7570,
+      "endMs": 10720,
+      "translation": "전화해, 전화해, 전화해"
+    },
+    {
+      "startMs": 10720,
+      "endMs": 13210,
+      "translation": "전화해, 잘 지내?"
+    },
+    {
+      "startMs": 13210,
+      "endMs": 16310,
+      "translation": "전화해, 내 이름은 외로움이야, 반가워"
+    },
+    {
+      "startMs": 16310,
+      "endMs": 19040,
+      "translation": "여기 내 번호야"
+    },
+    {
+      "startMs": 19040,
+      "endMs": 26320,
+      "translation": "여기로 연락하면 돼, 우! (전화해) 911, 언제 한번 전화해"
+    },
+    {
+      "startMs": 26320,
+      "endMs": 26730,
+      "translation": "(전화해 줘)"
+    },
+    {
+      "startMs": 26730,
+      "endMs": 31110,
+      "translation": "911, 언제 한번 전화해"
+    },
+    {
+      "startMs": 31110,
+      "endMs": 31570,
+      "translation": "(전화해 줘, 오)"
+    },
+    {
+      "startMs": 31570,
+      "endMs": 34420,
+      "translation": "911"
+    },
+    {
+      "startMs": 34420,
+      "endMs": 35730,
+      "translation": "(전화해)"
+    },
+    {
+      "startMs": 35730,
+      "endMs": 42030,
+      "translation": "911"
+    },
+    {
+      "startMs": 42030,
+      "endMs": 42880,
+      "translation": "그래, 그래, 그래, 그래"
+    },
+    {
+      "startMs": 42880,
+      "endMs": 45150,
+      "translation": "내 갈증 수치는 무한대 그 너머야"
+    },
+    {
+      "startMs": 45150,
+      "endMs": 48290,
+      "translation": "레모네이드를 홀짝이는데 비욘세가 필요해"
+    },
+    {
+      "startMs": 48290,
+      "endMs": 50540,
+      "translation": "앞이 안 보여, 이 선글라스가 셀린 디온이거든"
+    },
+    {
+      "startMs": 50540,
+      "endMs": 53290,
+      "translation": "네가 날 띄워 주지 않아서 아쉽네, 일론한테 안부 전해 줘"
+    },
+    {
+      "startMs": 53290,
+      "endMs": 55770,
+      "translation": "머스크한테도, 그래 난 매진된 공연이 있어"
+    },
+    {
+      "startMs": 55770,
+      "endMs": 58380,
+      "translation": "관객은 난리가 나도 상관없어, 넌 앞줄에 없으니까"
+    },
+    {
+      "startMs": 58380,
+      "endMs": 61280,
+      "translation": "내 짝을 찾고 있었어, 스피커 말을 들어 봐"
+    },
+    {
+      "startMs": 61280,
+      "endMs": 63700,
+      "translation": "조건에 맞으면 삐삐로 연락해"
+    },
+    {
+      "startMs": 63700,
+      "endMs": 64930,
+      "translation": "그 911으로"
+    },
+    {
+      "startMs": 64930,
+      "endMs": 67770,
+      "translation": "언제 한번 전화해"
+    },
+    {
+      "startMs": 67770,
+      "endMs": 69360,
+      "translation": "딸랑, 딸랑, 딸랑"
+    },
+    {
+      "startMs": 69360,
+      "endMs": 74370,
+      "translation": "제발 내 번호를 눌러 줘, 내가 받을 거 알잖아"
+    },
+    {
+      "startMs": 74370,
+      "endMs": 75420,
+      "translation": "딸깍"
+    },
+    {
+      "startMs": 75420,
+      "endMs": 78340,
+      "translation": "언제 한번 전화해"
+    },
+    {
+      "startMs": 78340,
+      "endMs": 80620,
+      "translation": "딸랑, 딸랑, 딸랑"
+    },
+    {
+      "startMs": 80620,
+      "endMs": 90250,
+      "translation": "제발 내 번호를 눌러 줘. 전화해, 911, 언제 한번 전화해"
+    },
+    {
+      "startMs": 90250,
+      "endMs": 90680,
+      "translation": "전화해 줘"
+    },
+    {
+      "startMs": 90680,
+      "endMs": 95330,
+      "translation": "911, 언제 한번 전화해"
+    },
+    {
+      "startMs": 95330,
+      "endMs": 96090,
+      "translation": "전화해 줘, 오"
+    },
+    {
+      "startMs": 96090,
+      "endMs": 99250,
+      "translation": "911"
+    },
+    {
+      "startMs": 99250,
+      "endMs": 103860,
+      "translation": "전화해 줘"
+    },
+    {
+      "startMs": 103860,
+      "endMs": 106610,
+      "translation": "911"
+    },
+    {
+      "startMs": 106610,
+      "endMs": 108980,
+      "translation": "짹짹"
+    },
+    {
+      "startMs": 108980,
+      "endMs": 111670,
+      "translation": "짹짹"
+    },
+    {
+      "startMs": 111670,
+      "endMs": 113290,
+      "translation": "교외에서 눈을 떴어, 교외에서"
+    },
+    {
+      "startMs": 113290,
+      "endMs": 114510,
+      "translation": "새들하고, 새들하고"
+    },
+    {
+      "startMs": 114510,
+      "endMs": 117000,
+      "translation": "네가 예전엔 날 휙 하고 데리러 오던 곳에서"
+    },
+    {
+      "startMs": 117000,
+      "endMs": 120120,
+      "translation": "요즘은 시간을 따로 내야 해"
+    },
+    {
+      "startMs": 120120,
+      "endMs": 123990,
+      "translation": "밤 전화 시간대에도"
+    },
+    {
+      "startMs": 123990,
+      "endMs": 126760,
+      "translation": "업무용 회선에도"
+    },
+    {
+      "startMs": 126760,
+      "endMs": 127920,
+      "translation": "9번을 눌러"
+    },
+    {
+      "startMs": 127920,
+      "endMs": 131630,
+      "translation": "차가 다섯 대 들어가는 차고"
+    },
+    {
+      "startMs": 131630,
+      "endMs": 133750,
+      "translation": "기름이 가득 찬 탱크"
+    },
+    {
+      "startMs": 133750,
+      "endMs": 135300,
+      "translation": "그래도 아무 의미 없어, 없어"
+    },
+    {
+      "startMs": 135300,
+      "endMs": 138710,
+      "translation": "없어, 없어, 조수석에 네가 없으면"
+    },
+    {
+      "startMs": 138710,
+      "endMs": 141740,
+      "translation": "난 세상에서 가장 외로운 남자야"
+    },
+    {
+      "startMs": 141740,
+      "endMs": 143800,
+      "translation": "그래도 사람들을 따돌리려고 계속 춤을 춰"
+    },
+    {
+      "startMs": 143800,
+      "endMs": 146940,
+      "translation": "블루스엔 그루브를 못 타니까 춤 동작이 곧 바닥나겠지"
+    },
+    {
+      "startMs": 146940,
+      "endMs": 155020,
+      "translation": "아는 DJ 있으면 911로 나한테 전화하라고 해 줘"
+    },
+    {
+      "startMs": 155020,
+      "endMs": 157670,
+      "translation": "솔직히 말해서, 나 존나 외로웠어"
+    },
+    {
+      "startMs": 157670,
+      "endMs": 158710,
+      "translation": "외로운 늙은 새끼... 가서 여자나 좀 만나든가 해야겠네"
+    },
+    {
+      "startMs": 158710,
+      "endMs": 163530,
+      "translation": "솔직히 말해서, 나 존나 외로웠어"
+    },
+    {
+      "startMs": 163530,
+      "endMs": 164520,
+      "translation": "이상한 새끼"
+    },
+    {
+      "startMs": 164520,
+      "endMs": 167540,
+      "translation": "솔직히 말해서, 나 존나 외로웠어. 솔직히 말해서, 난 외로워, 외로워, 외로워, 외로워"
+    },
+    {
+      "startMs": 167540,
+      "endMs": 169280,
+      "translation": "방에서 제일 시끄러운 사람이 약하다고들 해"
+    },
+    {
+      "startMs": 169280,
+      "endMs": 170600,
+      "translation": "다들 그렇게 짐작하지만 난 생각이 달라"
+    },
+    {
+      "startMs": 170600,
+      "endMs": 171980,
+      "translation": "내 말은, 방에서 제일 시끄러운 사람이"
+    },
+    {
+      "startMs": 171980,
+      "endMs": 174080,
+      "translation": "아마 그 방에서 제일 외로운 사람이라는 거야 (그게 나야)"
+    },
+    {
+      "startMs": 174080,
+      "endMs": 175550,
+      "translation": "관심에 목마른 놈, 연설가"
+    },
+    {
+      "startMs": 175550,
+      "endMs": 177240,
+      "translation": "세상에, 저 애 진짜 존나 외롭다"
+    },
+    {
+      "startMs": 177240,
+      "endMs": 178790,
+      "translation": "존재하지도 않는 사람들 얘기로 노래를 쓰고"
+    },
+    {
+      "startMs": 178790,
+      "endMs": 180640,
+      "translation": "완전 가짜잖아"
+    },
+    {
+      "startMs": 180640,
+      "endMs": 182310,
+      "translation": "내가 아는 한 가지는, 난 원한다는 거야"
+    },
+    {
+      "startMs": 182310,
+      "endMs": 183790,
+      "translation": "이기고 싶어 죽겠는데, 난 시카고가 아니야"
+    },
+    {
+      "startMs": 183790,
+      "endMs": 185450,
+      "translation": "마음이 낮아, 진짜 낮아, 너무 낮아"
+    },
+    {
+      "startMs": 185450,
+      "endMs": 187120,
+      "translation": "날 끌어올릴 수 없어, 난 가야르도처럼 낮거든"
+    },
+    {
+      "startMs": 187120,
+      "endMs": 188420,
+      "translation": "처음부터 정말 어두웠어"
+    },
+    {
+      "startMs": 188420,
+      "endMs": 190540,
+      "translation": "너무 어두워서 날 숯불에 구웠다고 불러도 되겠네, 하"
+    },
+    {
+      "startMs": 190540,
+      "endMs": 192080,
+      "translation": "하스브로처럼 장난치고 있어"
+    },
+    {
+      "startMs": 192080,
+      "endMs": 193740,
+      "translation": "난 사실 사리야, 아르토라고 불러"
+    },
+    {
+      "startMs": 193740,
+      "endMs": 195080,
+      "translation": "맥라렌을 박살 내고 테슬라를 샀어"
+    },
+    {
+      "startMs": 195080,
+      "endMs": 196940,
+      "translation": "내가 자동차 얘기만 해서 지겨운 거 알아 (끼익)"
+    },
+    {
+      "startMs": 196940,
+      "endMs": 198440,
+      "translation": "근데 대체 나한테 뭘 더 바라는 거야?"
+    },
+    {
+      "startMs": 198440,
+      "endMs": 200090,
+      "translation": "그게 내 유일한 말동무인데"
+    },
+    {
+      "startMs": 200090,
+      "endMs": 201590,
+      "translation": "짜증이 날 때까지 물건을 사들여"
+    },
+    {
+      "startMs": 201590,
+      "endMs": 203250,
+      "translation": "이 물건들이 빈 곳을 채우고 있어"
+    },
+    {
+      "startMs": 203250,
+      "endMs": 204940,
+      "translation": "아주 오랫동안 채워 왔어"
+    },
+    {
+      "startMs": 204940,
+      "endMs": 206810,
+      "translation": "내가 이걸 좋아하기는 하는지조차 모르겠어 (오)"
+    },
+    {
+      "startMs": 206810,
+      "endMs": 208730,
+      "translation": "어른으로서 지금 치르는 싸움"
+    },
+    {
+      "startMs": 208730,
+      "endMs": 210260,
+      "translation": "내 파트너는 그림자야"
+    },
+    {
+      "startMs": 210260,
+      "endMs": 212150,
+      "translation": "사랑이 필요해, 빌려줄 사랑 있어?"
+    },
+    {
+      "startMs": 212150,
+      "endMs": 213450,
+      "translation": "에이, 내일 찾으면 되지"
+    },
+    {
+      "startMs": 213450,
+      "endMs": 214400,
+      "translation": "우, 근데 그 내일은 오지 않아"
+    },
+    {
+      "startMs": 214400,
+      "endMs": 216160,
+      "translation": "정관수술처럼, 내가 무슨 짓을 한 걸까?"
+    },
+    {
+      "startMs": 216160,
+      "endMs": 217800,
+      "translation": "재능도, 얼굴도, 돈도 있는데"
+    },
+    {
+      "startMs": 217800,
+      "endMs": 219790,
+      "translation": "나 자신은 오래전에 찾았는데 같이 있을 사람은 아직 못 찾았어 (누구)"
+    },
+    {
+      "startMs": 219790,
+      "endMs": 221460,
+      "translation": "거울아, 거울아 (누구)"
+    },
+    {
+      "startMs": 221460,
+      "endMs": 223580,
+      "translation": "제일 외로운 건 누구니 (나)"
+    },
+    {
+      "startMs": 223580,
+      "endMs": 224470,
+      "translation": "큐피드가 멍청하게 굴어"
+    },
+    {
+      "startMs": 224470,
+      "endMs": 226020,
+      "translation": "전화할 다른 번호 있어?"
+    },
+    {
+      "startMs": 226020,
+      "endMs": 227120,
+      "translation": "반려동물을 키워 본 적이 없어"
+    },
+    {
+      "startMs": 227120,
+      "endMs": 228870,
+      "translation": "한 번도 키워 본 적이 없어"
+    },
+    {
+      "startMs": 228870,
+      "endMs": 230060,
+      "translation": "바다엔 물고기가 많다지만"
+    },
+    {
+      "startMs": 230060,
+      "endMs": 232240,
+      "translation": "나는 애초에 금붕어도 키운 적이 없어"
+    },
+    {
+      "startMs": 232240,
+      "endMs": 233960,
+      "translation": "개를 키운 적도 없어"
+    },
+    {
+      "startMs": 233960,
+      "endMs": 235110,
+      "translation": "그래서 계집들 다루는 건 영 서툴러"
+    },
+    {
+      "startMs": 235110,
+      "endMs": 236460,
+      "translation": "공을 던져서 물어 오게 해 본 적이 없으니까"
+    },
+    {
+      "startMs": 236460,
+      "endMs": 239680,
+      "translation": "반려동물이 없었던 게 그 뿌리일 거야, 장담해"
+    },
+    {
+      "startMs": 239680,
+      "endMs": 241560,
+      "translation": "나를 자동이체 입금처럼 대해 줘"
+    },
+    {
+      "startMs": 241560,
+      "endMs": 243050,
+      "translation": "가끔 안부를 물어봐 줘"
+    },
+    {
+      "startMs": 243050,
+      "endMs": 244730,
+      "translation": "진짜 어떻게 지내냐고 물어봐 줘"
+    },
+    {
+      "startMs": 244730,
+      "endMs": 248040,
+      "translation": "그러면 내가 그 911을 누를 일은 없을 테니까"
+    },
+    {
+      "startMs": 248040,
+      "endMs": 256000,
+      "translation": "오! 젠장! 젠장!"
+    }
+  ]
+}

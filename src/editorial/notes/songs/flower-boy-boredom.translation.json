@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2947040,
+    "durationMs": 321000
+  },
+  "segments": [
+    {
+      "startMs": 300,
+      "endMs": 6870,
+      "translation": "신나게 놀 때, 놀 때 (놀 때)"
+    },
+    {
+      "startMs": 6870,
+      "endMs": 12680,
+      "translation": "신나게 놀 때"
+    },
+    {
+      "startMs": 12680,
+      "endMs": 24510,
+      "translation": "시간은 창밖으로 날아가 (가, 가, 가)"
+    },
+    {
+      "startMs": 24510,
+      "endMs": 27370,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 27370,
+      "endMs": 30600,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 30600,
+      "endMs": 33350,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 33350,
+      "endMs": 36640,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 36640,
+      "endMs": 39160,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 39160,
+      "endMs": 48870,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 48870,
+      "endMs": 50870,
+      "translation": "지루함에게 새 절친이 생겼어"
+    },
+    {
+      "startMs": 50870,
+      "endMs": 54640,
+      "translation": "(지루함, 지루함, 절친)"
+    },
+    {
+      "startMs": 54640,
+      "endMs": 60770,
+      "translation": "지루함에게 새 절친이 생겼으니까 (오, 오, 오)"
+    },
+    {
+      "startMs": 60770,
+      "endMs": 66770,
+      "translation": "지루함에게 새 절친이 생겼어"
+    },
+    {
+      "startMs": 66770,
+      "endMs": 72880,
+      "translation": "(오, 안 돼, 안 돼, 안 돼)"
+    },
+    {
+      "startMs": 72880,
+      "endMs": 75130,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 75130,
+      "endMs": 78230,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 78230,
+      "endMs": 83980,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 83980,
+      "endMs": 95860,
+      "translation": "(시간 좀 내 봐, 오)"
+    },
+    {
+      "startMs": 95860,
+      "endMs": 97320,
+      "translation": "지루해, 지루해, 지루해, 지루해"
+    },
+    {
+      "startMs": 97320,
+      "endMs": 98670,
+      "translation": "지루해, 지루해, 지루해, 지루해"
+    },
+    {
+      "startMs": 98670,
+      "endMs": 101620,
+      "translation": "야, 내 방 바닥은 시리얼 무덤이야, 진짜야"
+    },
+    {
+      "startMs": 101620,
+      "endMs": 104560,
+      "translation": "빈 상자, 시체들을 내가 다 먹었어, 그래, 세어 보고 있다니까"
+    },
+    {
+      "startMs": 104560,
+      "endMs": 105900,
+      "translation": "제대로 된 끼니 얘기라면"
+    },
+    {
+      "startMs": 105900,
+      "endMs": 107470,
+      "translation": "내 위장한테 물어봐, 걔는 본 적도 없을걸"
+    },
+    {
+      "startMs": 107470,
+      "endMs": 109730,
+      "translation": "이 망할 방에 너무 오래 처박혀 있었어"
+    },
+    {
+      "startMs": 109730,
+      "endMs": 111960,
+      "translation": "눈알이 벽 석고보드로 변해 가고 있어"
+    },
+    {
+      "startMs": 111960,
+      "endMs": 114260,
+      "translation": "내 친구들 별로야, 엿 먹으라 그래, 이제 걔들 지겨워"
+    },
+    {
+      "startMs": 114260,
+      "endMs": 116410,
+      "translation": "\"안녕 얘들아, 너희 하루 종일 연락이 없네"
+    },
+    {
+      "startMs": 116410,
+      "endMs": 118590,
+      "translation": "대체 뭐가 문제야? 나 때문이야?"
+    },
+    {
+      "startMs": 118590,
+      "endMs": 120630,
+      "translation": "난 해결이 안 됐고, 난, 지루해\""
+    },
+    {
+      "startMs": 120630,
+      "endMs": 122820,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 122820,
+      "endMs": 126570,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 126570,
+      "endMs": 128920,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 128920,
+      "endMs": 132830,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 132830,
+      "endMs": 134740,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 134740,
+      "endMs": 138330,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 138330,
+      "endMs": 144700,
+      "translation": "(오, 오, 오)"
+    },
+    {
+      "startMs": 144700,
+      "endMs": 146590,
+      "translation": "얘 지금 완전 절박해"
+    },
+    {
+      "startMs": 146590,
+      "endMs": 149800,
+      "translation": "휴대폰은 재미없고, 누가 좀 재밌게 해 줬으면 좋겠어"
+    },
+    {
+      "startMs": 149800,
+      "endMs": 152660,
+      "translation": "재밌는 약속이라도 문자로 보내 주면 좋겠는데"
+    },
+    {
+      "startMs": 152660,
+      "endMs": 156470,
+      "translation": "이 벽에서 나가는 길을 본 적이 없는데, 오늘 아침도 또 저물어 가네"
+    },
+    {
+      "startMs": 156470,
+      "endMs": 161830,
+      "translation": "(아침, 아침, 아침, 아침)"
+    },
+    {
+      "startMs": 161830,
+      "endMs": 164040,
+      "translation": "받을 수 있는 전화는 좀 있는데"
+    },
+    {
+      "startMs": 164040,
+      "endMs": 165340,
+      "translation": "써먹을 데가 없어"
+    },
+    {
+      "startMs": 165340,
+      "endMs": 166520,
+      "translation": "배는 성나서 소리를 질러"
+    },
+    {
+      "startMs": 166520,
+      "endMs": 168170,
+      "translation": "먹을 게 필요해서 주문하러 가지만"
+    },
+    {
+      "startMs": 168170,
+      "endMs": 169880,
+      "translation": "혼자 먹는 건 싫어"
+    },
+    {
+      "startMs": 169880,
+      "endMs": 172500,
+      "translation": "주차장에서 같이 빈둥댈 사람이 필요해"
+    },
+    {
+      "startMs": 172500,
+      "endMs": 174140,
+      "translation": "국경 쪽 해 질 녘도, 그래"
+    },
+    {
+      "startMs": 174140,
+      "endMs": 177000,
+      "translation": "딩동댕, 혼자 있을 수가 없어"
+    },
+    {
+      "startMs": 177000,
+      "endMs": 180260,
+      "translation": "요즘 이런 기분이 들기 시작했어, 아는 사람이 아무도 없는 것 같아"
+    },
+    {
+      "startMs": 180260,
+      "endMs": 185870,
+      "translation": "그래서 지금은 천장만 쳐다보면서 내가 어디로 가는지도 모르겠다고 중얼거려"
+    },
+    {
+      "startMs": 185870,
+      "endMs": 187730,
+      "translation": "째깍째깍"
+    },
+    {
+      "startMs": 187730,
+      "endMs": 192800,
+      "translation": "(젠장)"
+    },
+    {
+      "startMs": 192800,
+      "endMs": 195030,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 195030,
+      "endMs": 197500,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 197500,
+      "endMs": 198820,
+      "translation": "(야, 나 좀 빨리 도와줄래?)"
+    },
+    {
+      "startMs": 198820,
+      "endMs": 200530,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 200530,
+      "endMs": 204540,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 204540,
+      "endMs": 207040,
+      "translation": "시간 좀 내 봐"
+    },
+    {
+      "startMs": 207040,
+      "endMs": 210010,
+      "translation": "뭐라도 할 시간 좀 내 봐"
+    },
+    {
+      "startMs": 210010,
+      "endMs": 216260,
+      "translation": "(오, 오, 오)"
+    },
+    {
+      "startMs": 216260,
+      "endMs": 222980,
+      "translation": "지루함에게 새 절친이 생겼으니까"
+    },
+    {
+      "startMs": 222980,
+      "endMs": 232160,
+      "translation": "지루함에게 새 절친이 생겼어"
+    },
+    {
+      "startMs": 232160,
+      "endMs": 261790,
+      "translation": "지루함에게 새 절친이 생겼으니까"
+    },
+    {
+      "startMs": 261790,
+      "endMs": 267070,
+      "translation": "시간 좀 내 봐, 시간 좀 내 봐"
+    },
+    {
+      "startMs": 267070,
+      "endMs": 269750,
+      "translation": "시간을 내야 해, 시간을 내야 해"
+    },
+    {
+      "startMs": 269750,
+      "endMs": 272680,
+      "translation": "시간을 낼 거야, 낼 거야"
+    },
+    {
+      "startMs": 272680,
+      "endMs": 275640,
+      "translation": "시간을 내야 해, 시간을 내야 해"
+    },
+    {
+      "startMs": 275640,
+      "endMs": 278720,
+      "translation": "시간을 낼 거야, 낼 거야"
+    },
+    {
+      "startMs": 278720,
+      "endMs": 281720,
+      "translation": "시간을 내야 해, 시간을 내야 해"
+    },
+    {
+      "startMs": 281720,
+      "endMs": 287890,
+      "translation": "시간을 낼 거야, 낼 거야"
+    },
+    {
+      "startMs": 287890,
+      "endMs": 293870,
+      "translation": "시간, 시간, 시간, 시간"
+    },
+    {
+      "startMs": 293870,
+      "endMs": 299840,
+      "translation": "시간, 시간, 시간, 시간"
+    },
+    {
+      "startMs": 299840,
+      "endMs": 305860,
+      "translation": "시간, 시간, 시간, 시간"
+    },
+    {
+      "startMs": 305860,
+      "endMs": 317550,
+      "translation": "시간, 시간, 시간"
+    },
+    {
+      "startMs": 317550,
+      "endMs": 321000,
+      "translation": "\"다 왔어, 우리 뭔가 보러 갈 표도 있는데—\""
+    }
+  ]
+}

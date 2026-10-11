@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 36358280,
+    "durationMs": 225000
+  },
+  "segments": [
+    {
+      "startMs": 11120,
+      "endMs": 21130,
+      "translation": "더 말해 봐, 그 얘긴 절대 하고 싶지 않지만"
+    },
+    {
+      "startMs": 21130,
+      "endMs": 23880,
+      "translation": "기분이 이상해, 우"
+    },
+    {
+      "startMs": 23880,
+      "endMs": 26450,
+      "translation": "기분이 이상해, 우"
+    },
+    {
+      "startMs": 26450,
+      "endMs": 31940,
+      "translation": "기분이 이상해, 우"
+    },
+    {
+      "startMs": 31940,
+      "endMs": 34610,
+      "translation": "나를 11월로 데려다줘"
+    },
+    {
+      "startMs": 34610,
+      "endMs": 37090,
+      "translation": "나를 11월로 데려다줘"
+    },
+    {
+      "startMs": 37090,
+      "endMs": 39620,
+      "translation": "겨울에 하와이안 셔츠, 차가운 물, 차가운 물"
+    },
+    {
+      "startMs": 39620,
+      "endMs": 42580,
+      "translation": "그래, 나를 11월로 데려다줘, 어때"
+    },
+    {
+      "startMs": 42580,
+      "endMs": 44950,
+      "translation": "11월로 돌아갈 수 있을까?"
+    },
+    {
+      "startMs": 44950,
+      "endMs": 47520,
+      "translation": "나를 11월로 데려다줘"
+    },
+    {
+      "startMs": 47520,
+      "endMs": 50210,
+      "translation": "겨울에 하와이안 셔츠, 깊은 생각, 깊은 생각"
+    },
+    {
+      "startMs": 50210,
+      "endMs": 51820,
+      "translation": "아니, 나를 11월로 데려다줘, 어때"
+    },
+    {
+      "startMs": 51820,
+      "endMs": 53490,
+      "translation": "클랜시가 나를 엿 먹이고 있으면 어떡해?"
+    },
+    {
+      "startMs": 53490,
+      "endMs": 56070,
+      "translation": "'Who Dat Boy'가 수사적 질문이었고 이게 끝이면 어떡해?"
+    },
+    {
+      "startMs": 56070,
+      "endMs": 57550,
+      "translation": "내가 거꾸로 달리고 있으면 어떡해?"
+    },
+    {
+      "startMs": 57550,
+      "endMs": 59440,
+      "translation": "회계사가 내 세금을 안 내고 있으면 어떡해?"
+    },
+    {
+      "startMs": 59440,
+      "endMs": 62010,
+      "translation": "자기 주머니만 채우고, 국세청이 나타나서 나한테 질문하면"
+    },
+    {
+      "startMs": 62010,
+      "endMs": 64550,
+      "translation": "난 대답 못 하겠지, 명반 만드느라 너무 바빴으니까"
+    },
+    {
+      "startMs": 64550,
+      "endMs": 65600,
+      "translation": "얘는 명반이라곤 없잖아"
+    },
+    {
+      "startMs": 65600,
+      "endMs": 67380,
+      "translation": "내 음악이 대중에겐 너무 이상하면 어떡해?"
+    },
+    {
+      "startMs": 67380,
+      "endMs": 69560,
+      "translation": "비트보다 트윗으로 더 유명하면"
+    },
+    {
+      "startMs": 69560,
+      "endMs": 72880,
+      "translation": "7번 트랙 때문에 내 오랜 팬들이 서넛으로 줄었어"
+    },
+    {
+      "startMs": 72880,
+      "endMs": 74550,
+      "translation": "젠장, 내가 갇혀 버리면 어떡하지"
+    },
+    {
+      "startMs": 74550,
+      "endMs": 77490,
+      "translation": "너무 편해져 버리면 어떡해? 계속 솔직해야 하는데"
+    },
+    {
+      "startMs": 77490,
+      "endMs": 80520,
+      "translation": "다 잃고 라데라로 돌아가면 어떡해"
+    },
+    {
+      "startMs": 80520,
+      "endMs": 83350,
+      "translation": "뱅크 오브 아메리카 건너편의 그 후진 아파트로"
+    },
+    {
+      "startMs": 83350,
+      "endMs": 85260,
+      "translation": "젠장, 아프겠지"
+    },
+    {
+      "startMs": 85260,
+      "endMs": 87610,
+      "translation": "와이파이가 안 돼서 이 노래들을 전부 썼어"
+    },
+    {
+      "startMs": 87610,
+      "endMs": 90250,
+      "translation": "작년에 내가 낸 건 통틀어 벌스 두 개뿐인데"
+    },
+    {
+      "startMs": 90250,
+      "endMs": 92950,
+      "translation": "그 뒤로 일곱 자릿수를 다섯 번 벌었어, 인생 꽤 완벽하지"
+    },
+    {
+      "startMs": 92950,
+      "endMs": 95530,
+      "translation": "오, 정말로? 오, 정말로? 야, 내가 어떤지 알잖아"
+    },
+    {
+      "startMs": 95530,
+      "endMs": 98980,
+      "translation": "진짜 이러쿵저러쿵 말도 안 돼, 내가 밀리 록 추듯 그 빌리를 잡아"
+    },
+    {
+      "startMs": 98980,
+      "endMs": 100840,
+      "translation": "공감도 못 하면서 미워하기 시작할 때"
+    },
+    {
+      "startMs": 100840,
+      "endMs": 102890,
+      "translation": "걔들은 이런 차를 안 몰잖아, 그래서 최후통첩이 뭔데"
+    },
+    {
+      "startMs": 102890,
+      "endMs": 105820,
+      "translation": "말해 봐, 네 11월은 뭐야? 사람이야?"
+    },
+    {
+      "startMs": 105820,
+      "endMs": 108940,
+      "translation": "내 건 06년 여름이야, 기억나, (경적)"
+    },
+    {
+      "startMs": 108940,
+      "endMs": 111680,
+      "translation": "브레이크를 가속 페달로 착각해서 박았으면 어떡해"
+    },
+    {
+      "startMs": 111680,
+      "endMs": 113650,
+      "translation": "이 깊은 생각이 내 마지막 생각이었으면 어떡해"
+    },
+    {
+      "startMs": 113650,
+      "endMs": 115030,
+      "translation": "잠깐 세울게, 빨리!"
+    },
+    {
+      "startMs": 115030,
+      "endMs": 117830,
+      "translation": "그리고 11월로 되돌아가자"
+    },
+    {
+      "startMs": 117830,
+      "endMs": 120780,
+      "translation": "나를 11월로 데려다줘"
+    },
+    {
+      "startMs": 120780,
+      "endMs": 123150,
+      "translation": "겨울에 하와이안 셔츠, 차가운 물, 차가운 물"
+    },
+    {
+      "startMs": 123150,
+      "endMs": 125950,
+      "translation": "그래, 나를 11월로 데려다줘, 어때"
+    },
+    {
+      "startMs": 125950,
+      "endMs": 128470,
+      "translation": "11월로 돌아갈 수 있을까?"
+    },
+    {
+      "startMs": 128470,
+      "endMs": 131020,
+      "translation": "나를 11월로 데려다줘"
+    },
+    {
+      "startMs": 131020,
+      "endMs": 133510,
+      "translation": "겨울에 하와이안 셔츠, 깊은 생각, 깊은 생각"
+    },
+    {
+      "startMs": 133510,
+      "endMs": 135610,
+      "translation": "아니, 나를 11월로 데려다줘, 어때"
+    },
+    {
+      "startMs": 135610,
+      "endMs": 139340,
+      "translation": "내 11월은 오드 퓨처의 일요일들이야, 하루 종일 스케이트를 타던 때"
+    },
+    {
+      "startMs": 139340,
+      "endMs": 140960,
+      "translation": "내 11월은 릴 웨인과 공연하던 때야"
+    },
+    {
+      "startMs": 140960,
+      "endMs": 142220,
+      "translation": "내 11월은 끝내줬어, 첫 장편 영화에 캐스팅됐거든"
+    },
+    {
+      "startMs": 142220,
+      "endMs": 143920,
+      "translation": "내 11월은 게츠와 지우베르투 앨범을 선물받았을 때야"
+    },
+    {
+      "startMs": 143920,
+      "endMs": 147930,
+      "translation": "내 11월은 에리카 바두의 공연을 봤을 때야"
+    },
+    {
+      "startMs": 147930,
+      "endMs": 150110,
+      "translation": "내 11월은 형이 나를 처음으로 콘서트에 데려가 줬을 때야"
+    },
+    {
+      "startMs": 150110,
+      "endMs": 151370,
+      "translation": "내 11월은 2015년 여름, 어떤 사람과 사랑에 빠졌을 때야"
+    },
+    {
+      "startMs": 151370,
+      "endMs": 152420,
+      "translation": "그 사람이 내 세상을 통째로 뒤집어 놨고, 삶을 다르게 보여 줬어"
+    },
+    {
+      "startMs": 152420,
+      "endMs": 156440,
+      "translation": "2014년 마이애미 43번가, 매일이 11월이었어"
+    },
+    {
+      "startMs": 156440,
+      "endMs": 159330,
+      "translation": "데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 159330,
+      "endMs": 161490,
+      "translation": "데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 161490,
+      "endMs": 164450,
+      "translation": "데려가 줘, 데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 164450,
+      "endMs": 166990,
+      "translation": "데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 166990,
+      "endMs": 169740,
+      "translation": "데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 169740,
+      "endMs": 171990,
+      "translation": "데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 171990,
+      "endMs": 174870,
+      "translation": "데려가 줘, 데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 174870,
+      "endMs": 177280,
+      "translation": "데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 177280,
+      "endMs": 179980,
+      "translation": "나 괜찮지 않아, 정신이 나가 버렸어"
+    },
+    {
+      "startMs": 179980,
+      "endMs": 182400,
+      "translation": "시간 여행으로 돌아가서 나 좀 찾게 도와줘"
+    },
+    {
+      "startMs": 182400,
+      "endMs": 186930,
+      "translation": "데려가 줘, 11월로 데려가 줘, 이건 확실히 알아"
+    },
+    {
+      "startMs": 186930,
+      "endMs": 192270,
+      "translation": "데려가 줘, 데려가 줘"
+    },
+    {
+      "startMs": 192270,
+      "endMs": 195360,
+      "translation": "데려가 줘, 11월로 데려가 줘, 이건 확실히 알아"
+    },
+    {
+      "startMs": 195360,
+      "endMs": 198060,
+      "translation": "\"내 11월은 바로 지금이야\""
+    },
+    {
+      "startMs": 198060,
+      "endMs": 200110,
+      "translation": "너에 대한 노래를 썼어, 네 의견을 듣고 싶어"
+    },
+    {
+      "startMs": 200110,
+      "endMs": 202940,
+      "translation": "끝으로 갈수록 내 심박수가 느려졌다고 생각해"
+    },
+    {
+      "startMs": 202940,
+      "endMs": 206130,
+      "translation": "너를 향한 사랑이 겉모습을 넘어섰으니까, 가사는"
+    },
+    {
+      "startMs": 206130,
+      "endMs": 208670,
+      "translation": "아예 그냥 너한테 전화할게, 네가 직접 들을 수 있게"
+    },
+    {
+      "startMs": 208670,
+      "endMs": 211310,
+      "translation": "받는다면 사실을 말하려고 틀어 줄 거야"
+    },
+    {
+      "startMs": 211310,
+      "endMs": 213950,
+      "translation": "네가 뭐라고 대답할지는 이미 알고 있지만"
+    },
+    {
+      "startMs": 213950,
+      "endMs": 216380,
+      "translation": "그러면 전화를 끊고, 사라져서 물러나 있을 거야"
+    },
+    {
+      "startMs": 216380,
+      "endMs": 218830,
+      "translation": "안 받으면 재생해서 음성 메시지로 남길게"
+    },
+    {
+      "startMs": 218830,
+      "endMs": 221490,
+      "translation": "여보세요, 지금은 전화를 받을 수 없습니다"
+    },
+    {
+      "startMs": 221490,
+      "endMs": 225000,
+      "translation": "삐 소리 뒤에 메시지를 남겨 주세요"
+    }
+  ]
+}
