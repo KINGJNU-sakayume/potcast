@@ -1,0 +1,11 @@
+# potcast: cost-conscious project defaults for supported, trusted local Codex clients.
+# A model explicitly chosen in the Codex UI / command line can override these defaults.
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+
+[agents]
+enabled = true
+default_subagent_model = "gpt-6.1-sol"
+default_subagent_reasoning_effort = "medium"
+# Avoid spawning one context-heavy agent for every track at once.
+max_concurrent_threads_per_session = 4
