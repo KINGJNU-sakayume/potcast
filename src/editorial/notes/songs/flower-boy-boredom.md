@@ -7,6 +7,8 @@ sources:
   - https://pitchfork.com/reviews/tracks/tyler-the-creator-boredom/
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://music.apple.com/us/album/flower-boy/1254572564
+  - https://podscripts.co/podcasts/dissect/s4e8-boredom-by-tyler-the-creator
+  - https://www.azlyrics.com/lyrics/tylerthecreator/boredom.html
   - "Genius 주석 (사용자 제공) — Boredom"
 short: >
   기타로 시작한 공간이 여러 목소리로 채워지는 동안 정작 화자는 혼자다. 앞서 나온 노래하는 목소리와 뒤늦게 들어오는 낮은 랩의 거리를 들으면 지루함의 의미가 달라진다.
@@ -32,6 +34,12 @@ translation:
     - source: "I'm not solved"
       target: "난 아직 안 풀렸고"
       note: "'day'와 운을 맞추면 'gay'가 올 법한 자리에 짧게 쉬었다가 'bored'를 넣어 라임을 비튼 코믹한 장치다. 타일러가 친구들이 안 놀아 주는 이유를 생각하다가 말을 돌리는 것으로 읽었다(Genius 주석). 'I'm not solved'는 앞의 문제 이야기를 받아 자신을 안 풀린 문제처럼 말한 것이다."
+    - source: "fall this morning"
+      target: "오늘 아침 전부터"
+      note: "AZLyrics와 다이섹트 방송이 'since before this morning'으로 듣는다. 화면의 표기는 소리를 잘못 받아 적은 것으로 읽고 '출구를 본 적이 없다'는 말과 이어 옮겼다(출처 B)."
+    - source: "Ride's over"
+      target: "이제 타는 건 끝났어"
+      note: "AZLyrics는 [Shane Powers]의 대사로 적고, 다이섹트 방송은 같은 소리를 다르게 받아 적으면서 뒤의 Golf Radio 멘트로 이어지는 라디오 소리로 다룬다. 자동차인지 놀이기구인지 확정할 근거가 없어 번역은 그대로 둔다(출처 D)."
   written: 2026-10-11
   updated: 2026-10-11
 ---
@@ -46,4 +54,4 @@ translation:
 
 ## 번역에 대하여
 
-중간의 큰따옴표 안 문장은 친구들에게 보낼 법한 문자를 그대로 말하는 구어체이고, 후렴의 'Find some time'도 상대를 부르는 명령형이라 가까운 사이의 **해체**로 정했다. 노트와 Pitchfork 리뷰, FADER 크레디트가 가리키듯 이 곡은 'Garden Shed' 다음에 고립을 생활의 크기로 낮추는 자리이며, 화자가 원하는 것은 할 일이 아니라 함께할 사람이라서 말투를 투덜거리되 다정하게 유지했다. 방 안의 혼잣말이니 해라체로 하는 안도 있었으나, 문자를 인용하는 대목과 후렴이 청자를 향하고 있어 한 어체로 끝까지 가는 쪽을 택했다. 이 곡에서는 보컬이 겹치는 후렴이든 랩이든 어체를 바꾸지 않았고, 'fall this morning'과 끝의 'Ride's over' 대사는 해설을 찾지 못해 불확실한 해석이다. "I'm not solved" 대목은 'gay'가 올 법한 라임 자리에 'bored'를 넣어 비트는 코믹한 장치로 읽었다(Genius 주석).
+중간의 큰따옴표 안 문장은 친구들에게 보낼 법한 문자를 그대로 말하는 구어체이고, 후렴의 'Find some time'도 상대를 부르는 명령형이라 가까운 사이의 **해체**로 정했다. 노트와 Pitchfork 리뷰, FADER 크레디트가 가리키듯 이 곡은 'Garden Shed' 다음에 고립을 생활의 크기로 낮추는 자리이며, 화자가 원하는 것은 할 일이 아니라 함께할 사람이라서 말투를 투덜거리되 다정하게 유지했다. 방 안의 혼잣말이니 해라체로 하는 안도 있었으나, 문자를 인용하는 대목과 후렴이 청자를 향하고 있어 한 어체로 끝까지 가는 쪽을 택했다. 이 곡에서는 보컬이 겹치는 후렴이든 랩이든 어체를 바꾸지 않았고, 'fall this morning'은 가사 사이트(AZLyrics)와 다이섹트 방송이 모두 'since before this morning'으로 듣는 소리 오기로 보고 "오늘 아침 전부터"로 옮겼다. 끝의 'Ride's over' 대사는 라디오 멘트가 끊긴 듯한 소리인데 다이섹트 방송도 다르게 받아 적어 뜻을 확정하지 못했고, 불확실한 해석으로 남아 있다. "I'm not solved" 대목은 'gay'가 올 법한 라임 자리에 'bored'를 넣어 비트는 코믹한 장치로 읽었다(Genius 주석).
