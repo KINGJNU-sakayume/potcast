@@ -67,4 +67,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 헤어지려는 연인에게 직접 말한다. 서로를 망치는 연인 사이의 말이라 **해체**로 옮겼다. 'Kurt'는 가사에서 이름만 나와 '커트'로 두었다. '80 proof'는 미국식 도수 표기라 '40도짜리 술'로 옮겼다. 후렴의 'I'm no good at goodbyes'는 '난 작별 인사에 서툴러'로 고정했다. 영 서그의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 'my argue possessive'는 Spotify 공식 가사 표기('My argues possessive, it got you precise')에 맞춰 옮겼다. 'blue diamond, no shark', 'Barbie life doll' 줄은 웹에서 뜻을 확인하지 못해 직역에 가깝고 확신이 낮으며, 'cut you'가 속어(성관계)를 겸하는지는 Urban Dictionary 정의 하나로만 짐작될 뿐 확정하지 못했고, 'blue diamond, no shark'는 재력 과시로 읽는 해설 한 곳이 있을 뿐이다.
+화자는 헤어지려는 연인에게 직접 말한다. 서로를 망치는 연인 사이의 말이라 **해체**로 옮겼다. 'Kurt'는 가사에서 이름만 나와 '커트'로 두었다. '80 proof'는 미국식 도수 표기라 '40도짜리 술'로 옮겼다. 후렴의 'I'm no good at goodbyes'는 '난 작별 인사에 서툴러'로 고정했다. 영 서그의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 'my argue possessive'는 Spotify 공식 가사 표기('My argues possessive, it got you precise')에 맞춰 옮겼다. 'blue diamond, no shark', 'Barbie life doll' 줄은 웹에서 뜻을 확인하지 못해 직역에 가깝고 확신이 낮으며, 'cut you'가 속어(성관계)를 겸하는지는 Urban Dictionary 정의 하나로만 짐작될 뿐 확정하지 못했고, 'blue diamond, no shark'는 재력 과시로 읽는 해설 한 곳이 있을 뿐이다. 욕설과 성적 표현은 원문 수위대로 옮겼다.
