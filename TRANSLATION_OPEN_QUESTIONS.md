@@ -58,6 +58,16 @@
 | rock-n-roll-star | 7, 21 | 'feed my head'의 뜻 (White Rabbit에서 왔다는 설은 입증 못 함) | 직역 | 노엘 인터뷰 |
 | live-forever | — | "how your garden grows" (남의 일에 관심 없다는 뜻으로 읽는 해석) | 직역 | 노엘 설명 |
 
+### tripleS 『ASSEMBLE』 / NMIXX 『Blue Valentine』
+
+| 곡 | 줄 | 쟁점 | 현재 처리 | 필요한 근거 |
+| --- | --- | --- | --- | --- |
+| before-the-rise | — | LRCLIB에 가사가 없음. 연주곡인지, 보컬이 있는 곡인지 확정 못 함 (위키 표에는 작사자 칸이 비어 있고 0:53) | 노트 변경 없음 (`lyricsLanguage` 미지정) | Spotify 가사 탭 확인, 크레디트 |
+| chowall | 1–2, 13–14 | 'la-la' 허밍 줄에 '라라라'를 번역으로 적은 처리가 앱에서 어떻게 보이는지 | 소리만 적음 | 앱 화면 확인 |
+| chowall | 5–12 | "All hands on deck"의 관용구 뉘앙스 (전원 출동) | 모두 갑판으로 | 인터뷰, 컨셉 설명 |
+| crush-on-you | — | 한국어 곡으로 판단했으나 LRCLIB 레코드가 로마자 표기본이라 한글 줄 비율로 판별하지 못함 | `lyricsLanguage: ko` (노트 본문 900자 미달로 `PENDING_REVIEW` 유지) | Spotify 가사 탭에서 한글 비율 확인 |
+| adore-u | — | 한국어 줄 약 59%로 경계(40~60%)에 걸침. 영어 훅 비중이 큼 | `lyricsLanguage: ko` (본문 900자 미달로 `PENDING_REVIEW` 유지) | Spotify 가사 탭, 발매 버전 확인 |
+
 ### 다른 앨범 (아직 점검 안 함)
 
 `Blonde`, `IGOR`, `Lost Corner`, `MBDTF`의 기존 번역은 이번 점검 대상이 아니었다. 번역을 다시 읽다가 의심이 가는 줄이 나오면 위 형식으로 추가한다.
