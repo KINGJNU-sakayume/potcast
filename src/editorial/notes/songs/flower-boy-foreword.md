@@ -7,6 +7,7 @@ sources:
   - https://podscripts.co/podcasts/dissect/s4e2-foreword-by-tyler-the-creator
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://www.surrealresolution.com/index.php/2017/07/29/review-tyler-the-creator-flower-boy/
+  - "Genius 주석 (사용자 제공 레퍼런스) — Foreword"
 short: >
   반복되는 박자 위에 기타가 얹히다가 부풀어 오르는 신시사이저로 질감이 바뀌는 순간을 들어 보라. 렉스 오렌지 카운티의 노래는 랩이 남긴 질문을 끝까지 붙든다.
 translation:
@@ -18,16 +19,26 @@ translation:
   relationship: 성공한 래퍼와 그를 지켜보는 청중·과거의 상대들, 그리고 자기 자신
   situation: 차, 돈, 집을 쌓아 가면서도 끝이 어디인지, 사라지면 누가 알아줄지 묻는 서문
   glossary:
-    - source: drive
-      target: 굴러갈 힘
-      note: "차(car) - 동력 - 길 - 땅 - 바다로 이어지는 연쇄 질문의 고리라서 '의욕'이 아니라 '굴러갈 힘'으로 두어 연쇄를 유지했다."
     - source: fans
       target: 팬
       note: "선풍기와 팬덤을 겹친 말장난이라 둘 다 읽히는 한국어 '팬'을 그대로 썼다. 다이섹트 방송은 팬층이 식을까 하는 불안과 에어컨이 터지는 이미지가 같은 걱정이라고 읽는다."
     - source: will not let me be one
       target: 그런 희생자 중 하나가 되도록 두지 않는다
       note: "바로 앞 줄들이 경찰의 총격과 Black Lives Matter를 말하고, 방송이 'one'을 경찰에게 희생되는 흑인으로 읽으므로 대명사를 풀어 '그런 희생자 중 하나'로 옮겼다."
+    - source: "play it cool / paid in full"
+      target: "침착하게 굴다 / 현금 완납"
+      note: "경찰에게 차를 세워질 때마다 총을 맞을 빌미를 주지 않으려 침착하게 군다는 뜻이다. Genius 주석은 그가 타는 약 30만 달러짜리 McLaren 650S를 '현금 완납'으로 사서, 이제 잃을 것이 없던 사람이 아니라 지킬 삶이 있는 사람이 되었다는 말로 읽는다. 이 때문에 자존심과 소유물이 그를 '희생자 중 하나'가 되지 못하게 한다."
+    - source: "Life a game of basketball, you better shoot"
+      target: "인생은 농구 경기다, 슛해야 한다"
+      note: "'shoot'가 농구의 슛과 총격을 겹친 말장난이다. Genius 주석은 흑인은 운동을 잘한다는 고정관념과, 경찰이 농구 선수만큼이나 쏠 준비가 되어 있다는 비꼼이 함께 들어 있다고 읽는다. 앞 줄들의 블랙 라이브스 매터와 볼티모어 폭동(2015, 프레디 그레이), 필란도 카스틸 사건과 이어진다."
+    - source: "drive"
+      target: "굴러갈 힘"
+      note: "자동차를 굴리는 동력과 사람의 의욕·추진력이 겹친다. Genius 주석은 이 곡의 친구 이야기에서, 타일러가 커리어를 쌓느라 애쓰는 친구들을 도우려 하지만 그들이 자존심 때문이거나 같은 'drive'가 없어서 받아들이지 않는다고 읽는다. 그래서 두 뜻이 모두 읽히는 '굴러갈 힘'으로 옮겼다."
+    - source: "if I don't come back, who's gonna know"
+      target: "돌아오지 못하면 누가 알아줄까"
+      note: "끝의 렉스 오렌지 카운티 구간은 Genius 주석에서 자기가 세상에 남기는 흔적이 의미 있는지 의심하는 물음으로 읽힌다. 갑자기 사라져도 기억해 줄 사람이 없을 거라는 생각이 우울과 이어지고, 그 끝에 극단적인 선택까지 떠올리는 대목이라는 해석이다. 번역은 특정 사건으로 단정하지 않고 되묻는 말투를 그대로 살렸다."
   written: 2026-10-11
+  updated: 2026-10-11
 ---
 
 'Foreword'는 결론을 내리는 목소리보다 계속 질문하는 목소리로 시작한다. 일정하게 되돌아오는 박자가 말의 속도를 붙잡고, 오스틴 파인스타인(Austin Feinstein)의 기타가 그 위에 자리를 만든다. 랩 사이에 렉스 오렌지 카운티(Rex Orange County)의 노래가 들어오면 질문의 주체는 그대로인데 말하는 방식이 바뀐다. 후반의 부풀어 오르는 신시사이저는 앞의 기타와 다른 폭을 열어, 같은 고민이 더 큰 공간으로 번지는 인상을 준다.
