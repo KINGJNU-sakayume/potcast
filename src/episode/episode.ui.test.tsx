@@ -347,7 +347,7 @@ describe('an episode whose music the listener plays themselves', () => {
 describe('the archive', () => {
   it('counts the episodes and leads to an album\'s episode from its card', async () => {
     renderApp('#/archive?artist=tyler');
-    expect(await screen.findByText(/· 3 episodes ·/)).toBeInTheDocument();
+    expect(await screen.findByText(/· 4 episodes ·/)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Listen to IGOR with the hosts' })).toHaveAttribute('href', `#/episode/${IGOR}`);
     expect(screen.getByRole('link', { name: 'Listen to Flower Boy with the hosts' })).toHaveAttribute('href', '#/episode/2nkto6YNI4rUYTLqEwWJ3o');
   });
