@@ -7,6 +7,8 @@ sources:
   - https://djbooth.net/features/2017-07-11-tyler-the-creator-flower-boy-album-review/
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://www.surrealresolution.com/index.php/2017/07/29/review-tyler-the-creator-flower-boy/
+  - https://podscripts.co/podcasts/dissect/s4e6-pothole-by-tyler-the-creator
+  - https://en.wikipedia.org/wiki/Tenderoni
 short: >
   앞 곡의 공격적인 에너지 뒤에서 한층 차분해진 랩과 제이든 스미스의 후렴을 구별하라. 반복되는 도로의 위험은 비트의 속도보다 관계에 대한 의심을 붙든다.
 translation:
@@ -26,8 +28,23 @@ translation:
       target: 포트홀
       note: "믿었던 관계가 일으키는 장애물을 가리키는 핵심어라 한국어에서도 같은 뜻으로 쓰이는 '포트홀'로 통일했다."
     - source: shade
-      target: 비꼬는 말(shade)
-      note: "비꼼과 그늘, 와이퍼가 겹치는 말장난이라 괄호로 원어를 남겼다."
+      target: 험담(shade)
+      note: "험담을 던진다는 뜻과 그늘, 비를 닦는 와이퍼가 겹치는 말장난이라 괄호로 원어를 남겼다. 다이섹트 방송은 이 줄을 곁의 사람들이 쏟아낼 비난에 대비하는 말로 읽는다."
+    - source: dealerships
+      target: 자동차 대리점
+      note: "다이섹트 방송이 마약 딜러가 아니라 자동차 대리점이라고 설명하고, Clancy를 타일러의 매니저로 소개한다. '딜러'만 쓰면 마약상으로 읽힐 수 있어 대리점으로 옮겼다."
+    - source: you off it
+      target: 완전히 맛이 갔다
+      note: "'off it'은 정신이 나가 있다는 구어로 읽었다. 방송은 이 대목을 약물에 빠진 친구들과 이어 읽지만 직접 풀어 주지 않았다. 그래서 약물을 단정하지 않는 '맛이 갔다'로 두었다."
+    - source: draw my piggies
+      target: 돼지(경찰)들을 끌어들인다
+      note: "방송이 Piggy를 타일러가 경찰을 부르는 말이라고 설명하고, 이어지는 베이컨 이야기와 맞물린다. 비싼 차를 타면 안전하다는 감각을 말하는 대목이라 draw를 그린다보다 끌어들인다로 읽었다."
+    - source: tenderonies
+      target: 어린 예쁜 애들
+      note: "tenderoni는 젊고 매력적인 여자를 가리키는 속어(초그린 슬랭 사전은 '매력적인 젊은 여자')이므로 음차 대신 풀어 옮겼다."
+    - source: four for four
+      target: 4타수 4안타
+      note: "야구 타석처럼 네 번 모두 성공이라는 뜻이다. 방송은 앞선 네 앨범을 가리키는 것으로 읽는다. 어느 앨범까지 세는지는 가사에서 확정되지 않는다."
     - source: trunk
       target: 트렁크
       note: "자동차 트렁크와 나무 몸통을 겹치는 앨범 전체의 이미지와 이어지므로 그대로 두었다."
@@ -44,4 +61,4 @@ translation:
 
 ## 번역에 대하여
 
-이 곡은 운전하면서 지인에게 말을 걸듯 지난 관계를 되짚는 이야기라 **해체**로 정했다. 가사 안에서 "my nigga"를 부르는 구절과 "Just let me know"처럼 상대에게 직접 말하는 대목이 있고, 반복되는 후렴은 곁의 누군가에게 도로 위험을 알려 주는 경고라 격식 있는 어투가 어울리지 않는다. 감상 노트가 짚듯 이 곡은 'Who Dat Boy'의 과시를 이어받되 어머니의 조언과 누구를 믿을지에 대한 검토로 한층 차분해지므로, 거친 어조를 유지하면서도 설명하는 문장은 '-했어', '-해' 정도로 풀었다. 어머니의 말을 전하는 부분은 인용된 말이지만 간접 화법으로 소화해 어체를 따로 바꾸지 않았고, 후렴을 부르는 제이든 스미스도 같은 경고의 목소리로 보아 같은 어체를 썼다.
+이 곡은 운전하면서 지인에게 말을 걸듯 지난 관계를 되짚는 이야기라 **해체**로 정했다. 가사 안에서 "my nigga"를 부르는 구절과 "Just let me know"처럼 상대에게 직접 말하는 대목이 있고, 반복되는 후렴은 곁의 누군가에게 도로 위험을 알려 주는 경고라 격식 있는 어투가 어울리지 않는다. 감상 노트가 짚듯 이 곡은 'Who Dat Boy'의 과시를 이어받되 어머니의 조언과 누구를 믿을지에 대한 검토로 한층 차분해지므로, 거친 어조를 유지하면서도 설명하는 문장은 '-했어', '-해' 정도로 풀었다. 어머니의 말을 전하는 부분은 인용된 말이지만 간접 화법으로 소화해 어체를 따로 바꾸지 않았고, 후렴을 부르는 제이든 스미스도 같은 경고의 목소리로 보아 같은 어체를 썼다. 'dealerships'는 자동차 대리점으로, 'tenderonies'는 젊은 여자를 가리키는 속어로 확인해 옮겼고, 'draw my piggies'는 돼지를 경찰로 읽는 방송의 해설을 따랐다. 'you off it'은 약물과 이어지는지 확실하지 않아 '맛이 갔다'로 가볍게 옮겼으며, 'four for four'가 세는 앨범의 범위도 확정되지 않았다.
