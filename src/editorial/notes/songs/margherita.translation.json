@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 22568891,
+    "durationMs": 183120
+  },
+  "segments": [
+    { "startMs": 21870, "endMs": 29150, "translation": "스치듯 지난 해안 길, 떠도는 냄새에 벌레가 꼬여 들어" },
+    { "startMs": 29150, "endMs": 36360, "translation": "유행하는 프렌치 허니, 그것도 좋지만 아쉬워" },
+    { "startMs": 36360, "endMs": 43500, "translation": "괴로운 걸 더 줘, 머릿속을 노크할 만큼 확신을 뒤흔드는 천재지변처럼" },
+    { "startMs": 43500, "endMs": 48360, "translation": "배부른 이도 왕생을 하거늘 하물며 배고픈 이야" },
+    { "startMs": 48360, "endMs": 49870, "translation": "심히 xoxo" },
+    { "startMs": 49870, "endMs": 56810, "translation": "마르게리타, 녹은 치즈가 달콤하고 독한 밤으로 이끌어" },
+    { "startMs": 56810, "endMs": 64880, "translation": "짓궂은 얼굴로 웃어 보였어, 거기서부터는 어둠 속" },
+    { "startMs": 64880, "endMs": 72110, "translation": "내달린 센터라인, 가스에 섞여 무언가 풍겨 와" },
+    { "startMs": 72110, "endMs": 79310, "translation": "흘러나오기 시작한 PJ 하비, 맛 빠진 껌은 필요 없어" },
+    { "startMs": 79310, "endMs": 86490, "translation": "격렬한 걸 더 줘, 뚫고 나가 핑 돌고 싶어, 하늘에 계신 뱀처럼" },
+    { "startMs": 86490, "endMs": 91190, "translation": "배부른 이도 왕생을 하거늘 하물며 배고픈 이야" },
+    { "startMs": 91190, "endMs": 92790, "translation": "심히 xoxo" },
+    { "startMs": 92790, "endMs": 99920, "translation": "마르게리타, 흘러내린 소스가 김빠진 매일을 갉아먹어" },
+    { "startMs": 99920, "endMs": 107730, "translation": "짓궂게 칼날을 들이댔어, 거기서부터는 어둠 속" },
+    { "startMs": 107730, "endMs": 111280, "translation": "원타임 뚫어 버리고 투타임 잘 자" },
+    { "startMs": 111280, "endMs": 114750, "translation": "이것도 저것도 지금 당장 먹고 싶어" },
+    { "startMs": 114750, "endMs": 118540, "translation": "원타임 두근두근 투타임 질려 버려" },
+    { "startMs": 118540, "endMs": 135800, "translation": "뭐든 그저 아쉬워" },
+    { "startMs": 135800, "endMs": 142790, "translation": "마르게리타, 녹은 치즈가 달콤하고 독한 밤으로 이끌어" },
+    { "startMs": 142790, "endMs": 150520, "translation": "짓궂은 얼굴로 웃어 보였어, 거기서부터는 어둠 속" },
+    { "startMs": 150520, "endMs": 154390, "translation": "원타임 뚫어 버리고 투타임 잘 자" },
+    { "startMs": 154390, "endMs": 157850, "translation": "이것도 저것도 지금 당장 먹고 싶어" },
+    { "startMs": 157850, "endMs": 161320, "translation": "원타임 두근두근 투타임 질려 버려" },
+    { "startMs": 161320, "endMs": 166310, "translation": "뭐든 그저 아쉬워" },
+    { "startMs": 166310, "endMs": 169920, "translation": "xoxo" },
+    { "startMs": 169920, "endMs": 173490, "translation": "xoxo" },
+    { "startMs": 173490, "endMs": 183120, "translation": "xoxo, oh" }
+  ]
+}

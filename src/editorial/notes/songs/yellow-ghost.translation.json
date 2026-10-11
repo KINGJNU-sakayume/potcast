@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11732077,
+    "durationMs": 173000
+  },
+  "segments": [
+    {
+      "startMs": 15980,
+      "endMs": 23550,
+      "translation": "헤어질 거면 그건 두고 가. 네가 생각하는 것보다 마음에 들어 하거든"
+    },
+    {
+      "startMs": 23550,
+      "endMs": 30720,
+      "translation": "시간이 지나면 잊어버릴 만큼 가벼운 거였으면 좋았을 텐데"
+    },
+    {
+      "startMs": 30720,
+      "endMs": 38260,
+      "translation": "사랑은 살 수 없고 다툼은 끊이지 않아. 아직 다 마르지 않은 목덜미의 냄새"
+    },
+    {
+      "startMs": 38260,
+      "endMs": 45590,
+      "translation": "언제나 구하지 못하고 슬픔은 아물지 않아. 아무리 해도 사라지지 않아"
+    },
+    {
+      "startMs": 45590,
+      "endMs": 53490,
+      "translation": "아직 만지지 마, 숨 쉬지 마. 무서워하지 마, 이 눈을 봐"
+    },
+    {
+      "startMs": 53490,
+      "endMs": 57230,
+      "translation": "떨지 마. 살아도 살아도 모자라네"
+    },
+    {
+      "startMs": 57230,
+      "endMs": 76740,
+      "translation": "이 밤만큼은 떠나지 말아 줘"
+    },
+    {
+      "startMs": 76740,
+      "endMs": 84660,
+      "translation": "이뤄지지 못했지, 우리의 소원은. 생각해 보면 처음부터 정해져 있었겠지"
+    },
+    {
+      "startMs": 84660,
+      "endMs": 92040,
+      "translation": "갈비뼈가 드러난 네 살갗을 쓰다듬으며, 우리가 살아 있다는 걸 끝까지 확인했어"
+    },
+    {
+      "startMs": 92040,
+      "endMs": 98690,
+      "translation": "아멘. 왜 우리 둘을 인정해 주지 않았어?"
+    },
+    {
+      "startMs": 98690,
+      "endMs": 106860,
+      "translation": "희생도 죄도 우리를 나타내는 아름다운 노래인데"
+    },
+    {
+      "startMs": 106860,
+      "endMs": 114670,
+      "translation": "사랑은 살 수 없고 다툼은 끊이지 않아. 아직 다 마르지 않은 목덜미의 냄새"
+    },
+    {
+      "startMs": 114670,
+      "endMs": 121610,
+      "translation": "언제나 구하지 못하고 슬픔은 아물지 않아. 아무리 해도 사라지지 않아"
+    },
+    {
+      "startMs": 121610,
+      "endMs": 131640,
+      "translation": "아직 만지지 마, 숨 쉬지 마. 무서워하지 마, 이 눈을 봐"
+    },
+    {
+      "startMs": 131640,
+      "endMs": 135270,
+      "translation": "떨지 마. 살아도 살아도 모자라네"
+    },
+    {
+      "startMs": 135270,
+      "endMs": 139020,
+      "translation": "이 밤만큼은 떠나지 말아 줘"
+    },
+    {
+      "startMs": 139020,
+      "endMs": 143120,
+      "translation": "허공을 날아 바다로 떨어져 간 그 꽃 (떠나지 말아 줘)"
+    },
+    {
+      "startMs": 143120,
+      "endMs": 146640,
+      "translation": "언제까지나 사라지지 않는 팔의 멍"
+    },
+    {
+      "startMs": 146640,
+      "endMs": 150620,
+      "translation": "시체처럼 포갠 우리의 몸 (떠나지 말아 줘)"
+    },
+    {
+      "startMs": 150620,
+      "endMs": 156370,
+      "translation": "마지막만큼은 웃는 채로 안녕"
+    },
+    {
+      "startMs": 156370,
+      "endMs": 160020,
+      "translation": "Yeah"
+    },
+    {
+      "startMs": 160020,
+      "endMs": 163940,
+      "translation": "Yeah"
+    },
+    {
+      "startMs": 163940,
+      "endMs": 167740,
+      "translation": "Yeah"
+    },
+    {
+      "startMs": 167740,
+      "endMs": 173000,
+      "translation": "Yeah"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 24808192,
+    "durationMs": 263210
+  },
+  "segments": [
+    { "startMs": 750, "endMs": 17820, "translation": "아득한 하늘의 별이 너무나 눈부시게 보였기에, 나는 떨면서 그 빛을 쫓았다." },
+    { "startMs": 17820, "endMs": 26320, "translation": "깨진 거울 속에서 지난날의 나를 바라보고 있었다." },
+    { "startMs": 26320, "endMs": 35830, "translation": "강해지고 싶었다. 모든 것을 동경하고 있었다." },
+    { "startMs": 35830, "endMs": 48430, "translation": "너는 바람에 날려 나부끼는 모자를 올려다보며 길고도 짧은 여정을 간다." },
+    { "startMs": 48430, "endMs": 54700, "translation": "먼 날의 모습." },
+    { "startMs": 54700, "endMs": 63420, "translation": "네가 바란다면, 그것은 강하게 응답해 줄 것이다." },
+    { "startMs": 63420, "endMs": 67430, "translation": "지금은 모든 것을 두려워하지 마라." },
+    { "startMs": 67430, "endMs": 88680, "translation": "아픔을 아는 단 한 사람이어라." },
+    { "startMs": 88680, "endMs": 105750, "translation": "이내 시들 꽃이 마지막으로 나에게 말을 건넸다. \"모습은 보이지 않아도 아득한 저편에서 지켜보고 있다\"고." },
+    { "startMs": 105750, "endMs": 115090, "translation": "그래, 너는 짓눌리고 깎여 가는 마음의 밑바닥에 있다." },
+    { "startMs": 115090, "endMs": 125570, "translation": "이야기의 시작은 희미한 쓸쓸함이다." },
+    { "startMs": 125570, "endMs": 138050, "translation": "네 손이 닿았다. 그것이 서로 끌어당기는 고독의 힘이라면, 누가 어떻게 빼앗을 수 있겠는가." },
+    { "startMs": 138050, "endMs": 151430, "translation": "서로를 구할 수 있다, 목숨이 다할 때까지." },
+    { "startMs": 151430, "endMs": 159750, "translation": "빛나는 별은 말한다, 나뭇잎 너머에서." },
+    { "startMs": 159750, "endMs": 168340, "translation": "너는 그저 바라본다, 미래를 그리면서." },
+    { "startMs": 168340, "endMs": 185500, "translation": "우리는 나아간다, 아무것도 모른 채 저편을 향해." },
+    { "startMs": 185500, "endMs": 194160, "translation": "네가 바란다면, 그것은 강하게 응답해 줄 것이다." },
+    { "startMs": 194160, "endMs": 198270, "translation": "지금은 모든 것을 두려워하지 마라." },
+    { "startMs": 198270, "endMs": 207310, "translation": "아픔을 아는 단 한 사람이어라." },
+    { "startMs": 207310, "endMs": 215380, "translation": "희미하게 웃어라, 저 별처럼." },
+    { "startMs": 215380, "endMs": 263210, "translation": "아픔을 아는 단 한 사람이어라." }
+  ]
+}

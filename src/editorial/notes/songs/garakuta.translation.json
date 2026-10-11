@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 16477862, "durationMs": 237607 },
+  "segments": [
+    { "startMs": 1060, "endMs": 13770, "translation": "있잖아, 우리는 아무리 해도 잘 되지 않아서 정신을 차려 보니 텅 비어 버렸어" },
+    { "startMs": 13770, "endMs": 40380, "translation": "잃어도, 부숴도, 빼앗겨도 사라지지 않는 건 어디에도 없었어" },
+    { "startMs": 40380, "endMs": 53640, "translation": "잠들지 못하는 밤에도 멈추지 않는 스누즈, 층계참에서 말없이 서 있는 둘" },
+    { "startMs": 53640, "endMs": 64510, "translation": "아무것도 아니라고 중얼거리며 깨무는 아픔과, 허공에 떠올랐다 사라지는 콧노래" },
+    { "startMs": 64510, "endMs": 75560, "translation": "서른 명이 있으면 한 명은 있다는 소수자, 언제나 네가 그 한 명이야" },
+    { "startMs": 75560, "endMs": 79050, "translation": "나까지 해서 둘" },
+    { "startMs": 79050, "endMs": 91320, "translation": "예를 들어 네가 계속 망가져 있어도, 다시는 돌아오지 못해도, 상관없으니까 내 곁에서 살아 줘" },
+    { "startMs": 91320, "endMs": 97530, "translation": "어딘가에서 잃어버린 걸 찾으러 가자, 어디에도 없다 해도" },
+    { "startMs": 97530, "endMs": 116320, "translation": "어디에도 없었네 하고 웃는 둘은 고물" },
+    { "startMs": 116320, "endMs": 123470, "translation": "있잖아, 이제 됐니, 이제 됐어, 그래도 조금만 더" },
+    { "startMs": 123470, "endMs": 129290, "translation": "긴 밤을 걸어가자" },
+    { "startMs": 129290, "endMs": 137300, "translation": "아픈 거 아픈 거 날아가라, 날아가라, 날아가라" },
+    { "startMs": 137300, "endMs": 155000, "translation": "불을 끄고, 용서하지 못했던 모든 걸, 줄곧 너를 부정해 왔던 그 모든 걸" },
+    { "startMs": 155000, "endMs": 167160, "translation": "예를 들어 네가 나를 잊었어도, 끝내 떠올리지 못해도, 처음 만나듯 다시 만나자, 그리고 사랑을 하자" },
+    { "startMs": 167160, "endMs": 170940, "translation": "너는 나를 비춘 달빛이야" },
+    { "startMs": 170940, "endMs": 173610, "translation": "웃기지 마" },
+    { "startMs": 173610, "endMs": 191570, "translation": "돌아서 가자, 길을 잃어도 괜찮으니까" },
+    { "startMs": 191570, "endMs": 197510, "translation": "입술을 깨물어 번진 피가 흘러가" },
+    { "startMs": 197510, "endMs": 203720, "translation": "싫어, 전부 싫어" },
+    { "startMs": 203720, "endMs": 215710, "translation": "예를 들어 네가 계속 망가져 있어도, 다시는 돌아오지 못해도, 상관없으니까 내 곁에서 살아 줘" },
+    { "startMs": 215710, "endMs": 222280, "translation": "어딘가에서 잃어버린 걸 찾으러 가 볼까, 어디에도 없다 해도" },
+    { "startMs": 222280, "endMs": 228130, "translation": "어디에도 없었네 하고 또 웃어 줘" },
+    { "startMs": 228130, "endMs": 237607, "translation": "잘 되지 않는 채로 노래하는 둘은 고물" }
+  ]
+}

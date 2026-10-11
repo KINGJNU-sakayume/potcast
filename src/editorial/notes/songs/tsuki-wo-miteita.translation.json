@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 15582797,
+    "durationMs": 253280
+  },
+  "segments": [
+    {
+      "startMs": 980,
+      "endMs": 6490,
+      "translation": "달빛에 버드나무가 흔들려"
+    },
+    {
+      "startMs": 6490,
+      "endMs": 12170,
+      "translation": "나는 길가의 돌멩이"
+    },
+    {
+      "startMs": 12170,
+      "endMs": 23030,
+      "translation": "너의 모습을 떠올려, 양을 세듯이"
+    },
+    {
+      "startMs": 23030,
+      "endMs": 34010,
+      "translation": "헤어져 가는 데 의미가 있다면, 적어도 슬퍼하지 말아 줘"
+    },
+    {
+      "startMs": 34010,
+      "endMs": 45700,
+      "translation": "침묵에서 멀어진 하늘로 한 줄기 사랑을 담아"
+    },
+    {
+      "startMs": 45700,
+      "endMs": 58650,
+      "translation": "어떤 밤에도, 계속 잃어 가면서도 함께 살아왔잖아, 반짝이듯이"
+    },
+    {
+      "startMs": 58650,
+      "endMs": 64280,
+      "translation": "무언가를 찾아 달을 보고 있었어"
+    },
+    {
+      "startMs": 64280,
+      "endMs": 75420,
+      "translation": "폭풍에 겁먹은 내 앞에 나타난 게 너라서 다행이야"
+    },
+    {
+      "startMs": 75420,
+      "endMs": 81930,
+      "translation": "마치 아무 일도 없었다는 듯이"
+    },
+    {
+      "startMs": 81930,
+      "endMs": 103180,
+      "translation": "이 불은 꺼지지 않아, 분명"
+    },
+    {
+      "startMs": 103180,
+      "endMs": 114000,
+      "translation": "그 창을 바람이 두드리면 살짝 열어 둬"
+    },
+    {
+      "startMs": 114000,
+      "endMs": 125830,
+      "translation": "단 하나, 그래, 단 하나 말로 다 할 수 없는 목소리로 외쳐"
+    },
+    {
+      "startMs": 125830,
+      "endMs": 138590,
+      "translation": "다시 태어난다 해도, 기억나지 않는다 해도 찾아낼 거야, 너의 모습을"
+    },
+    {
+      "startMs": 138590,
+      "endMs": 144330,
+      "translation": "전부 태워서 달을 보고 있었어"
+    },
+    {
+      "startMs": 144330,
+      "endMs": 155560,
+      "translation": "누군가 그걸 가엾게 여긴다 해도 네가 있다면 행복했던 거야"
+    },
+    {
+      "startMs": 155560,
+      "endMs": 161950,
+      "translation": "전혀 옳지 않았다 해도"
+    },
+    {
+      "startMs": 161950,
+      "endMs": 166130,
+      "translation": "꺼지지 않아"
+    },
+    {
+      "startMs": 166130,
+      "endMs": 177100,
+      "translation": "이름을 불러 줘, 한 번만 더, 다정하게 감싸 주는 그 보드라운 목소리로"
+    },
+    {
+      "startMs": 177100,
+      "endMs": 187870,
+      "translation": "달에 의지해 붙잡은 나뭇가지가 너였어"
+    },
+    {
+      "startMs": 187870,
+      "endMs": 193710,
+      "translation": "너였어"
+    },
+    {
+      "startMs": 193710,
+      "endMs": 199280,
+      "translation": "무언가를 찾아 달을 보고 있었어"
+    },
+    {
+      "startMs": 199280,
+      "endMs": 210510,
+      "translation": "폭풍에 겁먹은 내 앞에 나타난 게 너라서 다행이야"
+    },
+    {
+      "startMs": 210510,
+      "endMs": 217030,
+      "translation": "마치 아무 일도 없었다는 듯이"
+    },
+    {
+      "startMs": 217030,
+      "endMs": 253280,
+      "translation": "이 불은 꺼지지 않아, 분명"
+    }
+  ]
+}

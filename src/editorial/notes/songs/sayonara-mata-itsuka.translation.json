@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 16398590, "durationMs": 201287 },
+  "segments": [
+    { "startMs": 6970, "endMs": 15260, "translation": "봄이 어디서 돌아오는지도 모른 채 어느새 어른이 되었어" },
+    { "startMs": 15260, "endMs": 22610, "translation": "올려다본 하늘에는 제비가 날고 있었어, 시큰둥한 얼굴로" },
+    { "startMs": 22610, "endMs": 30830, "translation": "만약 나에게 날개가 있다면, 그렇게 바랄 때마다 슬픔에 잠겼어" },
+    { "startMs": 30830, "endMs": 35300, "translation": "안녕, 백 년 뒤에 다시 만나자" },
+    { "startMs": 35300, "endMs": 39070, "translation": "걱정하지 마" },
+    { "startMs": 39070, "endMs": 43050, "translation": "어느 틈엔가 꽃이 떨어졌어" },
+    { "startMs": 43050, "endMs": 47020, "translation": "누군가가 나한테 거짓말을 했어" },
+    { "startMs": 47020, "endMs": 56850, "translation": "장대비가 쏟아져도 아랑곳없이 날아가는 그 힘이 갖고 싶었어" },
+    { "startMs": 56850, "endMs": 72570, "translation": "누군가와 사랑에 빠지고, 또 부서지고, 이윽고 뿔뿔이 흩어져 입안에 문득 피가 배면 하늘에 침을 뱉어" },
+    { "startMs": 72570, "endMs": 80520, "translation": "반짝여, 날개를 펴고 제멋대로 날아, 어디까지든 가!" },
+    { "startMs": 80520, "endMs": 86560, "translation": "백 년 뒤에도 기억하려나, 모르겠지만" },
+    { "startMs": 86560, "endMs": 99280, "translation": "안녕, 언젠가 또 봐!" },
+    { "startMs": 99280, "endMs": 104490, "translation": "비 오네, 비 내리는 거리로 걸어 들어가" },
+    { "startMs": 104490, "endMs": 107870, "translation": "여기저기서 소매가 스쳐" },
+    { "startMs": 107870, "endMs": 115830, "translation": "올려다본 하늘에는 아무것도 없었어, 아, 없었어" },
+    { "startMs": 115830, "endMs": 123810, "translation": "아는 체하는 얼굴로 건드리지 마, 등을 후려치는 빗나간 소리로" },
+    { "startMs": 123810, "endMs": 133610, "translation": "사람들이 입에 올리는 지옥, 그 끝에서야말로 나는 봄을 볼 거야" },
+    { "startMs": 133610, "endMs": 141660, "translation": "누군가를 사랑하고 싶은데 아프기만 하고, 어느새 비와 싸라기눈이 쏟아져" },
+    { "startMs": 141660, "endMs": 149250, "translation": "묶여 있던 밧줄을 움켜쥐고 단단히 물어뜯어 끊어" },
+    { "startMs": 149250, "endMs": 157450, "translation": "꿰뚫어, 겨냥을 정하고 필시 호랑이를 향해, 어디까지든 가!" },
+    { "startMs": 157450, "endMs": 163350, "translation": "백 년 뒤의 너를 만나고 싶어, 사라지지 마" },
+    { "startMs": 163350, "endMs": 166480, "translation": "안녕, 언젠가 또 봐!" },
+    { "startMs": 166480, "endMs": 182130, "translation": "지금 사랑에 빠지고, 또 부서지고, 뿔뿔이 흩어져 입안에 문득 피가 배면 하늘에 침을 뱉어" },
+    { "startMs": 182130, "endMs": 188930, "translation": "지금 날개를 펴고 제멋대로 날아, 어디까지든 가!" },
+    { "startMs": 188930, "endMs": 194790, "translation": "태어난 날부터 줄곧 나였어, 몰랐지?" },
+    { "startMs": 194790, "endMs": 201287, "translation": "안녕, 언젠가 또 봐!" }
+  ]
+}

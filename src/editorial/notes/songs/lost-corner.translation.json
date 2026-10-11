@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11732129,
+    "durationMs": 223000
+  },
+  "segments": [
+    { "startMs": 16460, "endMs": 20990, "translation": "찾으러 가자, 친구야. 바다가 보이는 커브 너머로" },
+    { "startMs": 20990, "endMs": 25090, "translation": "서두르지 말고 되도록 느리게, 바람이 잦아든 속도로" },
+    { "startMs": 25090, "endMs": 29080, "translation": "있잖아, 분명 사라지지 않아. 눈에 비치는 모든 건" },
+    { "startMs": 29080, "endMs": 41220, "translation": "반짝이는 사랑도 거짓말도 상처도 전부, 뭐, 그건 그것대로" },
+    { "startMs": 41220, "endMs": 49870, "translation": "올려다본 하늘엔 비행기구름, 빈 캔커피와 문득 풍겨 온 물망초, 지독한 숙취" },
+    { "startMs": 49870, "endMs": 58440, "translation": "빌면 빌수록 더럽게 시시한 현실이라도 나쁘지 않다고 생각한 오후" },
+    { "startMs": 58440, "endMs": 61960, "translation": "이어져 가, 더듬더듬 달려가" },
+    { "startMs": 61960, "endMs": 66710, "translation": "물웅덩이에 남아 춤추는 두 마리 스위미" },
+    { "startMs": 66710, "endMs": 70260, "translation": "윈스턴이 모자랐고, 불쑥 앞머리를 태웠던 여름" },
+    { "startMs": 70260, "endMs": 74090, "translation": "어디에 있든 찾아내 줄게" },
+    { "startMs": 74090, "endMs": 78350, "translation": "찾으러 가자, 친구야. 물이 빠진 정점 너머로" },
+    { "startMs": 78350, "endMs": 82340, "translation": "과거는 어차피 버릴 수 없다고, 돌이킬 수도 없다고" },
+    { "startMs": 82340, "endMs": 86500, "translation": "있잖아, 분명 사라지지 않아. 눈에 비치는 모든 건" },
+    { "startMs": 86500, "endMs": 99790, "translation": "꿈도 희망도 불행도 고뇌도 전부, 뭐, 그건 그것대로" },
+    { "startMs": 99790, "endMs": 108150, "translation": "찢어진 지도를 바라보다 움푹한 눈가에서 땀이 툭 떨어졌어" },
+    { "startMs": 108150, "endMs": 115190, "translation": "계속 산다는 건 잃는 일이었어" },
+    { "startMs": 115190, "endMs": 127690, "translation": "노퍽의 하늘 아래 별생각 없이 샀다가 잃어버린 기타, 지금은 누군가의 손에서 연주되고 있으려나" },
+    { "startMs": 127690, "endMs": 132720, "translation": "거기가 있을 곳이었지" },
+    { "startMs": 132720, "endMs": 140250, "translation": "싸구려에 촌스러운 오디오, 헐값이 붙은 카세트, 잊을 수 없던 밤도 이제는 액자 속 모던 아트" },
+    { "startMs": 140250, "endMs": 149030, "translation": "하지만 우리는 모네도, 밀레도, 실레도 아니야. 그냥 잡동사니" },
+    { "startMs": 149030, "endMs": 157350, "translation": "있잖아, 소중한 친구야. 쓸쓸한 소리 하지 마" },
+    { "startMs": 157350, "endMs": 168230, "translation": "있잖아, 언제까지나, 언제까지나, 언제까지나!" },
+    { "startMs": 168230, "endMs": 172840, "translation": "찾으러 가자, 친구야. 바다가 보이는 커브 너머로" },
+    { "startMs": 172840, "endMs": 176810, "translation": "서두르지 말고 되도록 느리게, 바람이 잦아든 속도로" },
+    { "startMs": 176810, "endMs": 180820, "translation": "있잖아, 분명 사라지지 않아. 눈에 비치는 모든 건" },
+    { "startMs": 180820, "endMs": 185330, "translation": "반짝이는 사랑도 거짓말도 상처도 전부" },
+    { "startMs": 185330, "endMs": 188340, "translation": "있잖아, 찾으러 가자, 친구야" },
+    { "startMs": 188340, "endMs": 193690, "translation": "물이 빠진 정점 저 멀리 너머로" },
+    { "startMs": 193690, "endMs": 197190, "translation": "있잖아, 버릴 수 없어. 지금까지의 전부" },
+    { "startMs": 197190, "endMs": 201970, "translation": "꿈도 희망도 불행도 고뇌도 전부, 뭐, 그건 그것대로" },
+    { "startMs": 201970, "endMs": 210160, "translation": "있잖아, 찾으러 가자, 친구야" },
+    { "startMs": 210160, "endMs": 217300, "translation": "있잖아, 버릴 수 없어. 전부" },
+    { "startMs": 217300, "endMs": 223000, "translation": "뭐, 그건 그것대로" }
+  ]
+}

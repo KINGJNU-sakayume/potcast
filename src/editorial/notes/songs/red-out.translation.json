@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11746031,
+    "durationMs": 151000
+  },
+  "segments": [
+    { "startMs": 7510, "endMs": 15170, "translation": "머리가 심하게 아프다. 물결치는 봄, 목이 메는 파상풍." },
+    { "startMs": 15170, "endMs": 22980, "translation": "빛나는 꿈을 꾼다. 그게 악몽이었음을 깨어나서야 안다." },
+    { "startMs": 22980, "endMs": 25890, "translation": "하우 레디, 이윽고 모든 것이 썩어 간다." },
+    { "startMs": 25890, "endMs": 30610, "translation": "새까맣게 타 버린 퍼스트 테이크, 뼈가 되어 웃기 시작하는 스네이크." },
+    { "startMs": 30610, "endMs": 33340, "translation": "하우 매니, 사람의 기도에 붙는 높은 값." },
+    { "startMs": 33340, "endMs": 37920, "translation": "짓밟혀 우는 소년, 천박한 낯짝으로 노래하는 프레지던트." },
+    { "startMs": 37920, "endMs": 43190, "translation": "지금 당장 사라져라 사라져라 사라져라 사라져라" },
+    { "startMs": 43190, "endMs": 46600, "translation": "사라져라 사라져라 사라져라 사라져라" },
+    { "startMs": 46600, "endMs": 50650, "translation": "선혈이 반짝이며 튀어 오르는 스타인웨이 앤 선즈" },
+    { "startMs": 50650, "endMs": 54250, "translation": "머릿속에서 멎지 않는 부서진 백비트" },
+    { "startMs": 54250, "endMs": 57450, "translation": "0.1초 만에 빛이 바래는 정경" },
+    { "startMs": 57450, "endMs": 68750, "translation": "왜 그러냐, 지옥도 아닌데. 그런 눈으로 보지 마라." },
+    { "startMs": 68750, "endMs": 76680, "translation": "스크린에 비치는 자신, 등에 꽂히는 겨우살이 가지" },
+    { "startMs": 76680, "endMs": 84430, "translation": "되풀이해서 꿈을 꾼다. 꿈에서 깨어도 거기는 꿈." },
+    { "startMs": 84430, "endMs": 87120, "translation": "하우 레디, 몸을 떠미는 리프레인" },
+    { "startMs": 87120, "endMs": 89040, "translation": "놓친 채로 남은 맥거핀" },
+    { "startMs": 89040, "endMs": 92180, "translation": "차게 식은 눈꼬리에 반짝이는 글리터" },
+    { "startMs": 92180, "endMs": 94830, "translation": "하우 매니, 일부러 연기를 피워 올리는 데마고기" },
+    { "startMs": 94830, "endMs": 99520, "translation": "분노에 치를 떠는 소년, 나날이 심해지는 사타구니 통증." },
+    { "startMs": 99520, "endMs": 104330, "translation": "지금 당장 사라져라 사라져라 사라져라 사라져라" },
+    { "startMs": 104330, "endMs": 111780, "translation": "사라져라 사라져라 사라져라 사라져라" },
+    { "startMs": 111780, "endMs": 116070, "translation": "선혈이 반짝이며 튀어 오르는 스타인웨이 앤 선즈" },
+    { "startMs": 116070, "endMs": 119560, "translation": "멈출 수 있을 성싶으냐, 어디까지든 가라. 시야는 레드 아웃." },
+    { "startMs": 119560, "endMs": 122800, "translation": "0.1초 만에 빛이 바래는 정경" },
+    { "startMs": 122800, "endMs": 127740, "translation": "왜 그러냐, 지옥도 아닌데. 그런 눈으로 보지 마라." },
+    { "startMs": 127740, "endMs": 130170, "translation": "통각을 열고 지금 전력으로 달려가라." },
+    { "startMs": 130170, "endMs": 134970, "translation": "만감을 품고, 팡파르까지 앞으로 딱 여덟 마디." },
+    { "startMs": 134970, "endMs": 137960, "translation": "명멸을 가르고 지금 심장을 도려내라." },
+    { "startMs": 137960, "endMs": 151000, "translation": "왜 그러냐, 악마도 아닌데. 그런 눈으로 보지 마라." }
+  ]
+}

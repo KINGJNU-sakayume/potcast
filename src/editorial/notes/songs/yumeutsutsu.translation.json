@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 15582801,
+    "durationMs": 305107
+  },
+  "segments": [
+    {
+      "startMs": 27720,
+      "endMs": 38280,
+      "translation": "꿈의 뒷이야기를 언제까지고 찾고 있었어, 온 동네 곁에서 떠도는 뒷골목에서"
+    },
+    {
+      "startMs": 38280,
+      "endMs": 48600,
+      "translation": "광고를 매단 채 날아오르는 종이비행기, 어디까지 날아가는 걸까"
+    },
+    {
+      "startMs": 48600,
+      "endMs": 59130,
+      "translation": "허무함만 계속 바라보는 건 누군가의 아픔을 알아채고 싶어서였어, 오로지"
+    },
+    {
+      "startMs": 59130,
+      "endMs": 64260,
+      "translation": "뭔가를 얻으면 뭔가가 눈앞을 지나쳐 가"
+    },
+    {
+      "startMs": 64260,
+      "endMs": 70030,
+      "translation": "안녕, 또 만날 수 있을까"
+    },
+    {
+      "startMs": 70030,
+      "endMs": 75250,
+      "translation": "등을 맞댄 여행은 아직 이어지고 있어"
+    },
+    {
+      "startMs": 75250,
+      "endMs": 80550,
+      "translation": "아무도 알 수 없는 상처가 아물지 못한 채 늘어 가"
+    },
+    {
+      "startMs": 80550,
+      "endMs": 85680,
+      "translation": "어차피 언젠가는 바람에 녹아 사라질 거야"
+    },
+    {
+      "startMs": 85680,
+      "endMs": 104070,
+      "translation": "그러니 오늘 밤만큼은 날개가 돋을 듯한 가벼운 몸이 너에게 계속 깃들기를"
+    },
+    {
+      "startMs": 104070,
+      "endMs": 108760,
+      "translation": "뾰로통한 얼굴의 뱀도 알아채지 못해"
+    },
+    {
+      "startMs": 108760,
+      "endMs": 113120,
+      "translation": "나날의 틈에서 잘 자"
+    },
+    {
+      "startMs": 113120,
+      "endMs": 124950,
+      "translation": "네가 편안한 꿈속에서 계속 잠들 수 있기를"
+    },
+    {
+      "startMs": 124950,
+      "endMs": 133990,
+      "translation": "그런 모습으로는 있을 수 없어, 어린애 같은 채로 놀다 지쳐서야"
+    },
+    {
+      "startMs": 133990,
+      "endMs": 145050,
+      "translation": "내일 또 봐"
+    },
+    {
+      "startMs": 145050,
+      "endMs": 150490,
+      "translation": "얼빠진 행성에 눌러앉은 양 떼"
+    },
+    {
+      "startMs": 150490,
+      "endMs": 155520,
+      "translation": "바람과 꽃과 새에게 열려 있는 말쑥한 우주선"
+    },
+    {
+      "startMs": 155520,
+      "endMs": 160780,
+      "translation": "뭔가를 찾고 뭔가를 내버리는 애드벌룬"
+    },
+    {
+      "startMs": 160780,
+      "endMs": 166530,
+      "translation": "나는 어디에 있는 걸까"
+    },
+    {
+      "startMs": 166530,
+      "endMs": 171880,
+      "translation": "눈부신 빛에 끊임없이 이끌리고 있어"
+    },
+    {
+      "startMs": 171880,
+      "endMs": 177250,
+      "translation": "무리에서 흘러떨어진 양은 아직 꿈을 꿔"
+    },
+    {
+      "startMs": 177250,
+      "endMs": 182030,
+      "translation": "어차피 나도 바람이 되어 사라질 거야"
+    },
+    {
+      "startMs": 182030,
+      "endMs": 200550,
+      "translation": "그러니 오늘 밤만큼은 목소리가 나올 듯한 기쁨이 너에게 계속 깃들기를"
+    },
+    {
+      "startMs": 200550,
+      "endMs": 205160,
+      "translation": "혁명가의 야유도 닿지 않아"
+    },
+    {
+      "startMs": 205160,
+      "endMs": 209660,
+      "translation": "밤의 가장자리에서 춤추자"
+    },
+    {
+      "startMs": 209660,
+      "endMs": 221560,
+      "translation": "네가 원한다면 그 노래는 누군가의 꿈으로 이어질 거야"
+    },
+    {
+      "startMs": 221560,
+      "endMs": 230590,
+      "translation": "그런 사람은 알 수 없어, 이야기 뒤에 숨은 채로는"
+    },
+    {
+      "startMs": 230590,
+      "endMs": 236530,
+      "translation": "내일 또 봐"
+    },
+    {
+      "startMs": 236530,
+      "endMs": 241750,
+      "translation": "꿈과 생시 사이에서 살아가, 하나씩 서로 사랑하며"
+    },
+    {
+      "startMs": 241750,
+      "endMs": 246840,
+      "translation": "망설이지 않고 건너갈게, 네 곁으로"
+    },
+    {
+      "startMs": 246840,
+      "endMs": 252280,
+      "translation": "답답하고 싫어져, 그 모습은 멀어져 가"
+    },
+    {
+      "startMs": 252280,
+      "endMs": 257430,
+      "translation": "지치면 말해, 이야기를 하자"
+    },
+    {
+      "startMs": 257430,
+      "endMs": 262520,
+      "translation": "꿈과 생시 사이에서 살아가, 하나씩 서로 사랑하며"
+    },
+    {
+      "startMs": 262520,
+      "endMs": 267740,
+      "translation": "망설이지 않고 건너갈게, 네 곁으로"
+    },
+    {
+      "startMs": 267740,
+      "endMs": 272900,
+      "translation": "답답하고 싫어져, 그 모습은 멀어져 가"
+    },
+    {
+      "startMs": 272900,
+      "endMs": 305107,
+      "translation": "지치면 말해, 이야기를 하자"
+    }
+  ]
+}
