@@ -128,6 +128,23 @@ describe('the preview archive', () => {
     expect(episode.warnings).toEqual([]);
   });
 
+  it('resolves the whole Flower Boy episode against the preview release and its real track durations', async () => {
+    const album = await createPreviewCatalogueSource().getAlbum('2nkto6YNI4rUYTLqEwWJ3o');
+    const script = getEpisodeScript('flower-boy');
+    expect(script).not.toBeNull();
+    const tracks = albumEpisodeTracks(album);
+    expect(tracks).toHaveLength(14);
+    const episode = resolveEpisode(script!, tracks, songNotes, episodeRelease(album));
+    expect(episode.warnings).toEqual([]);
+    // Preview uses real durations: replay bounds must also be valid on the actual edition.
+    for (const cue of episode.cues) {
+      if (cue.type !== 'music') continue;
+      const length = cue.tracks.reduce((sum, track) => sum + track.durationMs, 0);
+      expect(cue.fromMs ?? cue.fallbackFromMs).toBeLessThan(length);
+      if (cue.untilMs !== null) expect(cue.untilMs).toBeLessThanOrEqual(length);
+    }
+  });
+
   it('finds no episode for an album without one', () => {
     expect(getEpisodeScript('stray-sheep')).toBeNull();
     expect(getEpisodeScript(null)).toBeNull();

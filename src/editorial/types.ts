@@ -81,7 +81,7 @@ export interface AlbumNote extends EditorialBody {
  * the song has one, its curated translation (brief, `## 번역에 대하여`, and the
  * paired `<key>.translation.json`). The loader accepts a note with either part
  * missing so the app never breaks; the quality floor (quality.ts) requires the
- * listening note, and a translation unless `lyricsLanguage` says none is needed.
+ * listening note, and a curated translation or an explicit provider choice for foreign lyrics.
  */
 export interface SongNote extends Omit<EditorialBody, 'short'> {
   key: string;
@@ -91,14 +91,16 @@ export interface SongNote extends Omit<EditorialBody, 'short'> {
   titles: string[];
   /** The listening cue on Now Playing; a translation-only note has none. */
   short?: string;
-  /** Set on a song with no translation: its lyrics are Korean, or it has none. */
+  /** Language on a song without a curated translation. */
   lyricsLanguage?: SongLyricsLanguage;
+  /** Explicitly use the configured runtime translation provider for foreign lyrics. */
+  translationMode?: 'provider';
   translation?: SongTranslation;
 }
 
-/** Why a song note has no curated translation: Korean lyrics, or an instrumental. */
-export type SongLyricsLanguage = 'ko' | 'instrumental';
+/** Foreign languages require a curated translation or translationMode: provider. */
+export type SongLyricsLanguage = 'ko' | 'instrumental' | 'en';
 
-export const SONG_LYRICS_LANGUAGES: readonly SongLyricsLanguage[] = ['ko', 'instrumental'];
+export const SONG_LYRICS_LANGUAGES: readonly SongLyricsLanguage[] = ['ko', 'instrumental', 'en'];
 
 export type NoteKind = 'ARTIST' | 'ALBUM' | 'SONG';

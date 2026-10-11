@@ -66,6 +66,16 @@ describe('song note ↔ curated translation', () => {
     expect(() => loadSongNotes(md(translated), json())).toThrow(/has a "translation" block/);
   });
 
+  it('loads an explicit provider translation choice and rejects ambiguous or conflicting choices', () => {
+    const foreign = note({ block: false, section: false }).replace('titles: [Test Song]', 'titles: [Test Song]\nlyricsLanguage: en\ntranslationMode: provider');
+    expect(loadSongNotes(md(foreign))[0]).toMatchObject({ lyricsLanguage: 'en', translationMode: 'provider' });
+    expect(loadSongNotes(md(foreign))[0]?.translation).toBeUndefined();
+    expect(() => loadSongNotes(md(foreign.replace('provider', 'automatic')))).toThrow(/must be provider/);
+    expect(() => loadSongNotes(md(foreign.replace('lyricsLanguage: en', 'lyricsLanguage: ko')))).toThrow(/requires foreign/);
+    const conflicting = note().replace('titles: [Test Song]', 'titles: [Test Song]\ntranslationMode: provider');
+    expect(() => loadSongNotes(md(conflicting), json())).toThrow(/requires foreign/);
+  });
+
   it('still requires a listening cue on a note without a translation', () => {
     expect(() => loadSongNotes(md(note({ block: false, section: false, short: false })))).toThrow(/short/);
   });
