@@ -64,7 +64,6 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 
 | 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
-| rack-of-his | 36 | 'Orville'을 "둘 다 잘하진 못하지만"으로 고쳤는데 전사본마다 단어가 다름. Spotify 표기가 Orville이면 되돌려야 함 | 둘 다 잘하진 못하지만, 뭐 괜찮아 | Spotify 공식 가사 |
 | rack-of-his | 8, 23, 29 | "there's a kick"의 뜻 (재미로 읽음) | 재미가 한 번 지나가면 넌 포기해 버리지 | 인터뷰, 주석 |
 | i-love-kanye | 1 | "the 'Go"가 시카고 줄임말인지, "from the get-go"의 처음부터인지 | 시카고에서 막 나온 카녜 | 주석 |
 | wolves | 49 | "that's the tea, no sip"의 'no sip' | 진짜 얘기만 해, 그게 진실이야, 차 한 모금도 없이 | 주석, Spotify 공식 가사 |
@@ -122,6 +121,7 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 | pothole | 50 | 'four for four' | 『Bastard』 포함 이전 네 앨범의 연속 성공 | Genius 주석 |
 | i-aint-got-time | 59–61 | Yoda / Skywalker / solar / Sprite / cola | 스타워즈 말장난 (요다는 초록 지폐, 솔라는 한 솔로) | Genius 주석 |
 | bring-it-on-down | 22 | "their lives"인지 "your life"인지 | "their lives"로 확정 | Spotify 공식 가사 (사용자 확인) |
+| rack-of-his | 36 | 고유명사(Orville)인지 'either well'인지 | 'either well'로 확정. 번역 유지 | Spotify 공식 가사 (사용자 확인) |
 | droppin-seeds | 노트 본문 | 곡 전체의 화자 | 릴 웨인. 노트 본문의 "끝의 타일러" 서술을 고침 | XXL 기사 |
 
 ## LRCLIB 가사와 Genius 가사가 다를 때

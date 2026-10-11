@@ -6,6 +6,7 @@ short: >
   차갑게 울리는 비브라폰과 메아리 진 드럼 사이로 넓은 빈 공간이 남는다. '저 남자 거치대 좀 봐'라는 농담이 지나간 뒤, 끝에서 '그러는 동안 난 너를 너무 사랑해'가 겹쳐 되풀이되는 구간까지 들어 볼 것.
 written: 2026-10-09
 sources:
+  - "Spotify 공식 가사 (사용자 확인)"
   - https://www.popmatters.com/fiona-apple-fetch-bolt-cutters-2645740491.html
   - https://variety.com/2020/music/reviews/fiona-apple-fetch-the-bolt-cutters-album-review-1234583020/
   - https://slate.com/culture/2020/04/fiona-apple-fetch-the-bolt-cutters-album-of-the-pandemic.html
@@ -32,11 +33,9 @@ translation:
     - source: wail on
       target: 신나게 치다 / 다루다
       note: 기타를 격렬하게 연주한다는 뜻과 누군가를 거칠게 대한다는 뜻이 겹친다.
-    - source: Orville
+    - source: either well
       target: 둘 다 잘하진 못하지만
-      note: >
-        LRCLIB 표기는 고유명사처럼 적혀 있으나 이름으로 설명하는 출처가 없다. 드럼과 글쓰기를 시도했지만 둘 다 잘하지 못한다는 문맥이고,
-        가사 사이트의 다른 표기와 해설도 이 해석을 뒷받침해 이쪽으로 옮겼다. 공식 가사로 재확인이 필요하다.
+      note: "LRCLIB 전사본 일부는 이 자리를 고유명사처럼 적었지만, Spotify 공식 가사(사용자 확인)는 'either well'이다. 드럼과 글쓰기를 시도했지만 둘 다 잘하지 못한다는 문맥과 맞는다."
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -51,4 +50,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 옛 연인에게 직접 너를 너무 사랑해서 시간을 내줬다고 말한다. 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 'Check out that rack of his'만은 상대를 3인칭으로 부르며 다른 사람에게 놀리듯 말하는 대목이라 '저 남자'로 옮겨 말투의 변화를 살렸다. 'rack'은 기타 거치대이면서 여성의 가슴을 가리키는 비속어라, 남자들의 품평을 뒤집는 농담이 전해지도록 주석을 남겼다. LRCLIB에 고유명사처럼 적힌 'Orville' 줄은 이름을 설명하는 출처가 없고 앞 줄의 드럼·글쓰기 문맥과 가사 사이트의 다른 표기에 비추어 '둘 다 잘하진 못하지만'으로 옮겼으나, 공식 가사로 확인하지 못한 불확실한 줄이다.
+화자는 옛 연인에게 직접 너를 너무 사랑해서 시간을 내줬다고 말한다. 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 'Check out that rack of his'만은 상대를 3인칭으로 부르며 다른 사람에게 놀리듯 말하는 대목이라 '저 남자'로 옮겨 말투의 변화를 살렸다. 'rack'은 기타 거치대이면서 여성의 가슴을 가리키는 비속어라, 남자들의 품평을 뒤집는 농담이 전해지도록 주석을 남겼다. LRCLIB에 고유명사처럼 적힌 줄은 Spotify 공식 가사 확인 결과 'either well'이어서, 앞 줄의 드럼·글쓰기 문맥대로 '둘 다 잘하진 못하지만'으로 옮겼다.

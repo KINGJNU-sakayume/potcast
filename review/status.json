@@ -260,6 +260,11 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "36번 줄만 사용자 확인 (either well)"
       }
     },
     "songs/i-love-kanye": {
