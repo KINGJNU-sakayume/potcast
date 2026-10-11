@@ -82,6 +82,33 @@ function tracks(key: string, list: Array<[string, number, LyricSet?]>, realIds: 
 
 const ALBUMS: AlbumDef[] = [
   {
+    id: '2nkto6YNI4rUYTLqEwWJ3o',
+    name: 'Flower Boy',
+    artistIds: [TYLER],
+    albumType: 'album',
+    releaseDate: '2017-07-21',
+    precision: 'day',
+    totalTracks: 14,
+    label: 'Columbia',
+    // Track IDs and durations verified against the Spotify album embed.
+    tracks: [
+      { id: '33i3xxHB4YSYGYbtJrwwO8', name: "Foreword (feat. Rex Orange County)", durationMs: 194080, lyrics: 'en' },
+      { id: '6KuXb26rHuRy3ZDse1VRmx', name: "Where This Flower Blooms (feat. Frank Ocean)", durationMs: 194933, lyrics: 'en' },
+      { id: '4KgTrzmfiWNcVneh2Dd1Ou', name: "Sometimes...", durationMs: 36160, lyrics: 'en' },
+      { id: '7KA4W4McWYRpgf0fWsJZWB', name: "See You Again (feat. Kali Uchis)", durationMs: 180386, lyrics: 'en' },
+      { id: '21yRtB6B8EMounImAfHRCP', name: "Who Dat Boy (feat. A$AP Rocky)", durationMs: 205093, lyrics: 'en' },
+      { id: '5SxlUF7J8tyFIEF22EomeP', name: "Pothole (feat. Jaden Smith)", durationMs: 237000, lyrics: 'en' },
+      { id: '6ACiYjq5Q7e6BlhZEHz7cd', name: "Garden Shed (feat. Estelle)", durationMs: 223946, lyrics: 'en' },
+      { id: '5WNYg3usc6H8N3MBEp4zVk', name: "Boredom (feat. Rex Orange County & Anna of the North)", durationMs: 320720, lyrics: 'en' },
+      { id: '430qNtapCS3Ue1yoSql1oV', name: "I Ain't Got Time!", durationMs: 206266, lyrics: 'en' },
+      { id: '4bEcoz1OcfMgUbp2ft8ieQ', name: "911 / Mr. Lonely (feat. Frank Ocean & Steve Lacy)", durationMs: 255653, lyrics: 'en' },
+      { id: '39u2PsqrAZpZ0KPx6CjasV', name: "Droppin' Seeds (feat. Lil' Wayne)", durationMs: 60000, lyrics: 'en' },
+      { id: '4XDpeWqPADoWRKcUY3dC84', name: "November", durationMs: 225346, lyrics: 'en' },
+      { id: '0qtK3XwbuG153dmwB8iepL', name: "Glitter", durationMs: 224893, lyrics: 'en' },
+      { id: '3R1Vu4Ws7UitwDxDHTol0P', name: "Enjoy Right Now, Today", durationMs: 235400, lyrics: 'instrumental' },
+    ],
+  },
+  {
     id: '052EiTRYh35MuDVJN9Emdh',
     name: 'STRAY SHEEP',
     artistIds: [KENSHI],

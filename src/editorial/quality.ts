@@ -142,9 +142,10 @@ export function auditSong(note: SongNote): NoteAudit {
   const kind = korean ? 'a Korean-language song note' : 'a song note';
   if (length < bodyFloor) problems.push(`listening note is ${length} characters; ${kind} needs ${bodyFloor}+`);
   if (paragraphs < paragraphFloor) problems.push(`listening note has ${paragraphs} paragraphs; ${kind} needs ${paragraphFloor}+`);
-  if (!note.translation && !note.lyricsLanguage) {
+  const needsTranslation = !note.lyricsLanguage || note.lyricsLanguage === 'en';
+  if (!note.translation && needsTranslation && note.translationMode !== 'provider') {
     problems.push(
-      'needs a curated translation (translate-lyrics) for a song in a foreign language, or "lyricsLanguage: ko | instrumental" ' +
+      'needs a curated translation (translate-lyrics) or explicit translationMode: provider for foreign lyrics, or "lyricsLanguage: ko | instrumental" ' +
         '(ko: the lyrics are mainly Korean, even with some English)',
     );
   }
