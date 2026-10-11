@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13460,
+    "durationMs": 377000
+  },
+  "segments": [
+    {
+      "startMs": 39050,
+      "endMs": 41660,
+      "translation": "역겨운 걸 너무 많이 봤어, 엄마"
+    },
+    {
+      "startMs": 41660,
+      "endMs": 43710,
+      "translation": "나를 안아 줘"
+    },
+    {
+      "startMs": 43710,
+      "endMs": 66860,
+      "translation": "내가 어떻게 널 지킬 수 있겠어?"
+    },
+    {
+      "startMs": 66860,
+      "endMs": 71670,
+      "translation": "그때는 거기 있었는데, 이제는 여기 있어"
+    },
+    {
+      "startMs": 71670,
+      "endMs": 76460,
+      "translation": "이 모든 혼란, 내겐 아무것도 같지 않아"
+    },
+    {
+      "startMs": 76460,
+      "endMs": 81350,
+      "translation": "그때는 거기 있었는데, 이제는 여기 있어"
+    },
+    {
+      "startMs": 81350,
+      "endMs": 86160,
+      "translation": "이 모든 혼란, 내겐 아무것도 같지 않아"
+    },
+    {
+      "startMs": 86160,
+      "endMs": 90160,
+      "translation": "내 기분이 어떤지 너한테 말할 수 없어"
+    },
+    {
+      "startMs": 90160,
+      "endMs": 95820,
+      "translation": "이 기분이 나한텐 너무나 새로우니까"
+    },
+    {
+      "startMs": 95820,
+      "endMs": 99790,
+      "translation": "내 기분이 어떤지 너한테 말할 수 없어"
+    },
+    {
+      "startMs": 99790,
+      "endMs": 124700,
+      "translation": "이 기분이 나한텐 너무나 새로우니까"
+    },
+    {
+      "startMs": 124700,
+      "endMs": 128920,
+      "translation": "내가 들었던 건 지금 들리는 게 아니야"
+    },
+    {
+      "startMs": 128920,
+      "endMs": 134320,
+      "translation": "징후는 보이는데 그리 뚜렷하지 않아"
+    },
+    {
+      "startMs": 134320,
+      "endMs": 138500,
+      "translation": "내가 들었던 건 지금 들리는 게 아니야"
+    },
+    {
+      "startMs": 138500,
+      "endMs": 143530,
+      "translation": "징후는 보이는데 그리 뚜렷하지 않아"
+    },
+    {
+      "startMs": 143530,
+      "endMs": 147760,
+      "translation": "그래서 내 기분이 어떤지 너한테 말할 수 없어"
+    },
+    {
+      "startMs": 147760,
+      "endMs": 153400,
+      "translation": "이 기분이 나한텐 너무나 새로우니까"
+    },
+    {
+      "startMs": 153400,
+      "endMs": 157320,
+      "translation": "내 기분이 어떤지 너한테 말할 수 없어"
+    },
+    {
+      "startMs": 157320,
+      "endMs": 167800,
+      "translation": "이 기분이 나한텐 너무나 새로우니까"
+    },
+    {
+      "startMs": 167800,
+      "endMs": 177280,
+      "translation": "이건 혼란이야, 내가 널 헷갈리게 하고 있니?"
+    },
+    {
+      "startMs": 177280,
+      "endMs": 186860,
+      "translation": "이건 혼란이야, 내가 널 웃기고 있니?"
+    },
+    {
+      "startMs": 186860,
+      "endMs": 196450,
+      "translation": "이건 이상해, 우린 널 속이고 싶지 않아"
+    },
+    {
+      "startMs": 196450,
+      "endMs": 306770,
+      "translation": "이건 이상해, 우린 널 속이고 싶지 않아"
+    },
+    {
+      "startMs": 306770,
+      "endMs": 310080,
+      "translation": "어서, 어서, 어서"
+    },
+    {
+      "startMs": 310080,
+      "endMs": 313870,
+      "translation": "어서, 어서, 어서, 어서"
+    },
+    {
+      "startMs": 313870,
+      "endMs": 318650,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 318650,
+      "endMs": 323460,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 323460,
+      "endMs": 333000,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 333000,
+      "endMs": 337780,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 337780,
+      "endMs": 342550,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 342550,
+      "endMs": 347260,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 347260,
+      "endMs": 377000,
+      "translation": "그래, 그래, 그래"
+    }
+  ]
+}

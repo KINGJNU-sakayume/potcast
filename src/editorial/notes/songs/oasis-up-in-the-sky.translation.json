@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16140,
+    "durationMs": 269000
+  },
+  "segments": [
+    {
+      "startMs": 23930,
+      "endMs": 27020,
+      "translation": "이봐, 하늘 위에 있는 너"
+    },
+    {
+      "startMs": 27020,
+      "endMs": 28610,
+      "translation": "나는 법을 배우는 중이구나"
+    },
+    {
+      "startMs": 28610,
+      "endMs": 33450,
+      "translation": "말해 봐, 떨어지기 전까지 얼마나 높이 올라갈 수 있을 것 같아?"
+    },
+    {
+      "startMs": 33450,
+      "endMs": 37450,
+      "translation": "떨어지기 시작하기 전에 말이야"
+    },
+    {
+      "startMs": 37450,
+      "endMs": 40410,
+      "translation": "이봐, 나무 위에 있는 너"
+    },
+    {
+      "startMs": 40410,
+      "endMs": 42130,
+      "translation": "나처럼 되고 싶다고?"
+    },
+    {
+      "startMs": 42130,
+      "endMs": 44140,
+      "translation": "그건 안 돼"
+    },
+    {
+      "startMs": 44140,
+      "endMs": 53930,
+      "translation": "여기 사람들은 네가 부르는 소리를 듣지 못하니까"
+    },
+    {
+      "startMs": 53930,
+      "endMs": 57380,
+      "translation": "기분이 어때"
+    },
+    {
+      "startMs": 57380,
+      "endMs": 64580,
+      "translation": "네가 내 안에 들어와 있으면?"
+    },
+    {
+      "startMs": 64580,
+      "endMs": 67610,
+      "translation": "이봐, 왕관을 쓴 너"
+    },
+    {
+      "startMs": 67610,
+      "endMs": 69490,
+      "translation": "아무 소리도 내지 않는구나"
+    },
+    {
+      "startMs": 69490,
+      "endMs": 71490,
+      "translation": "기운이 없다고 들었어"
+    },
+    {
+      "startMs": 71490,
+      "endMs": 74380,
+      "translation": "그것참 안됐네"
+    },
+    {
+      "startMs": 74380,
+      "endMs": 78260,
+      "translation": "내 세상에 온 걸 환영해"
+    },
+    {
+      "startMs": 78260,
+      "endMs": 81250,
+      "translation": "이봐, 빛을 훔치는 너"
+    },
+    {
+      "startMs": 81250,
+      "endMs": 85170,
+      "translation": "네 삶에서 빛이 사라졌다고 들었어"
+    },
+    {
+      "startMs": 85170,
+      "endMs": 88020,
+      "translation": "그것참 안됐네"
+    },
+    {
+      "startMs": 88020,
+      "endMs": 95090,
+      "translation": "내 세상에 온 걸 환영해"
+    },
+    {
+      "startMs": 95090,
+      "endMs": 98420,
+      "translation": "기분이 어때"
+    },
+    {
+      "startMs": 98420,
+      "endMs": 106970,
+      "translation": "네가 내 안에 들어와 있으면?"
+    },
+    {
+      "startMs": 106970,
+      "endMs": 113330,
+      "translation": "넌 한 번도 본 적 없는 것들 앞에서 도움이 필요할 거야"
+    },
+    {
+      "startMs": 113330,
+      "endMs": 120210,
+      "translation": "숨을 들이마시기 전에는 절대 내쉬지 않는다는 얘기일 뿐이야"
+    },
+    {
+      "startMs": 120210,
+      "endMs": 125650,
+      "translation": "기분이 어때"
+    },
+    {
+      "startMs": 125650,
+      "endMs": 140010,
+      "translation": "네가 안에 있으면?"
+    },
+    {
+      "startMs": 140010,
+      "endMs": 142890,
+      "translation": "난 네가 느껴져"
+    },
+    {
+      "startMs": 142890,
+      "endMs": 153490,
+      "translation": "넌 내가 느껴져?"
+    },
+    {
+      "startMs": 153490,
+      "endMs": 156490,
+      "translation": "이봐, 하늘 위에 있는 너"
+    },
+    {
+      "startMs": 156490,
+      "endMs": 158530,
+      "translation": "나는 법을 배우는 중이구나"
+    },
+    {
+      "startMs": 158530,
+      "endMs": 163490,
+      "translation": "말해 봐, 얼마나 높이 올라갈 수 있을 것 같아?"
+    },
+    {
+      "startMs": 163490,
+      "endMs": 167290,
+      "translation": "떨어지기 시작하기 전에 말이야"
+    },
+    {
+      "startMs": 167290,
+      "endMs": 170370,
+      "translation": "이봐, 나무 위에 있는 너"
+    },
+    {
+      "startMs": 170370,
+      "endMs": 172210,
+      "translation": "나처럼 되고 싶다고?"
+    },
+    {
+      "startMs": 172210,
+      "endMs": 174170,
+      "translation": "그건 안 돼"
+    },
+    {
+      "startMs": 174170,
+      "endMs": 183850,
+      "translation": "여기 사람들은 네가 부르는 소리를 듣지 못하니까"
+    },
+    {
+      "startMs": 183850,
+      "endMs": 187370,
+      "translation": "기분이 어때"
+    },
+    {
+      "startMs": 187370,
+      "endMs": 195180,
+      "translation": "네가 내 안에 들어와 있으면?"
+    },
+    {
+      "startMs": 195180,
+      "endMs": 202230,
+      "translation": "넌 한 번도 본 적 없는 것들 앞에서 도움이 필요할 거야"
+    },
+    {
+      "startMs": 202230,
+      "endMs": 211060,
+      "translation": "숨을 들이마시기 전에는 절대 내쉬지 않는다는 얘기일 뿐이야"
+    },
+    {
+      "startMs": 211060,
+      "endMs": 214740,
+      "translation": "기분이 어때"
+    },
+    {
+      "startMs": 214740,
+      "endMs": 269000,
+      "translation": "네가 안에 있으면?"
+    }
+  ]
+}

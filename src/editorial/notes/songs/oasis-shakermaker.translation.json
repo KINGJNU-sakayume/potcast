@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 14594,
+    "durationMs": 308000
+  },
+  "segments": [
+    {
+      "startMs": 29390,
+      "endMs": 39420,
+      "translation": "다른 사람이 되고 싶어, 내가 어디 있었는지도 모르는 채로"
+    },
+    {
+      "startMs": 39420,
+      "endMs": 49820,
+      "translation": "찰흙으로 집을 하나 짓고 싶어"
+    },
+    {
+      "startMs": 49820,
+      "endMs": 60070,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 60070,
+      "endMs": 70180,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 70180,
+      "endMs": 80030,
+      "translation": "난 내 친구 미스터 소프트랑 차를 몰고 다녔어"
+    },
+    {
+      "startMs": 80030,
+      "endMs": 90140,
+      "translation": "미스터 클린이랑 미스터 벤은 우리 집 다락에 살고 있고"
+    },
+    {
+      "startMs": 90140,
+      "endMs": 100510,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 100510,
+      "endMs": 140470,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 140470,
+      "endMs": 145060,
+      "translation": "미안한데 난 정말 모르겠어"
+    },
+    {
+      "startMs": 145060,
+      "endMs": 150140,
+      "translation": "내가 그럴 줄 알았다고 말했던 건 알아"
+    },
+    {
+      "startMs": 150140,
+      "endMs": 153910,
+      "translation": "네가 행복하고 기분이 좋을 때"
+    },
+    {
+      "startMs": 153910,
+      "endMs": 159190,
+      "translation": "그때 지금이 딱 맞는 때라는 걸 알게 될 거야"
+    },
+    {
+      "startMs": 159190,
+      "endMs": 167120,
+      "translation": "그때 지금이 딱 맞는 때라는 걸 알게 될 거야"
+    },
+    {
+      "startMs": 167120,
+      "endMs": 172040,
+      "translation": "나랑 같이 흔들 때라는 걸"
+    },
+    {
+      "startMs": 172040,
+      "endMs": 176950,
+      "translation": "나랑 같이 흔들어"
+    },
+    {
+      "startMs": 176950,
+      "endMs": 181990,
+      "translation": "나랑 같이 흔들어"
+    },
+    {
+      "startMs": 181990,
+      "endMs": 198040,
+      "translation": "나랑 같이 흔들어"
+    },
+    {
+      "startMs": 198040,
+      "endMs": 202680,
+      "translation": "미스터 시프터가 나한테 노래들을 팔았어"
+    },
+    {
+      "startMs": 202680,
+      "endMs": 207670,
+      "translation": "내가 겨우 열여섯 살이었을 때"
+    },
+    {
+      "startMs": 207670,
+      "endMs": 212480,
+      "translation": "이제 그는 신호등 앞에서 멈춰 서지"
+    },
+    {
+      "startMs": 212480,
+      "endMs": 217960,
+      "translation": "초록불일 때만"
+    },
+    {
+      "startMs": 217960,
+      "endMs": 227830,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 227830,
+      "endMs": 237870,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 237870,
+      "endMs": 247790,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 247790,
+      "endMs": 259350,
+      "translation": "아, 나랑 같이 흔들어"
+    },
+    {
+      "startMs": 259350,
+      "endMs": 264230,
+      "translation": "나랑 같이 흔들어"
+    },
+    {
+      "startMs": 264230,
+      "endMs": 269270,
+      "translation": "나랑 같이 흔들어"
+    },
+    {
+      "startMs": 269270,
+      "endMs": 273920,
+      "translation": "나랑 같이 흔들어"
+    },
+    {
+      "startMs": 273920,
+      "endMs": 278830,
+      "translation": "그들이랑 같이 흔들어"
+    },
+    {
+      "startMs": 278830,
+      "endMs": 283750,
+      "translation": "나랑 같이 흔들어"
+    },
+    {
+      "startMs": 283750,
+      "endMs": 288560,
+      "translation": "그들이랑 같이 흔들어"
+    },
+    {
+      "startMs": 288560,
+      "endMs": 308000,
+      "translation": "나랑 같이 흔들어"
+    }
+  ]
+}
