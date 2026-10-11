@@ -1,6 +1,7 @@
 ---
 artist: nmixx
 titles: [Crush On You]
+lyricsLanguage: ko
 written: 2026-10-03
 short: >
   절에서 후렴으로 넘어가도 드럼과 기타의 탄력이 크게 끊기지 않는 지점을 듣는다. 같은 질감 안에서 목소리가 가까워지며 앨범 중반의 숨을 돌린다.
