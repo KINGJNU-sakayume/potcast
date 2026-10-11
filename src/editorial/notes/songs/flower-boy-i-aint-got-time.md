@@ -8,6 +8,7 @@ sources:
   - https://www.sputnikmusic.com/review/74370/Tyler-the-Creator-Flower-Boy/
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://djbooth.net/features/2017-07-11-tyler-the-creator-flower-boy-album-review/
+  - https://en.wikipedia.org/wiki/House_Negro
 short: >
   저음이 밀어붙이는 동안 비트의 멈춤과 재출발을 따라가면 랩이 매번 새 자세를 잡는다. 마지막의 전화는 그 소란을 한 사람에게 말을 거는 상황으로 돌려놓는다.
 translation:
@@ -31,7 +32,10 @@ translation:
       note: "시간이 흘러가는 소리. 반복되는 소리 그대로 옮겼다."
     - source: "house nigga"
       target: "집안 노예 같은 놈"
-      note: "노예제에서 온 모욕어. 맥락의 뜻을 살려 풀어 옮겼다."
+      note: "노예제의 집안 노예와 들일 노예 구분에서 온 모욕어로, 백인 사회에 순응하거나 편한 자리에 안주하는 흑인을 깎아내리는 말이다. 이어지는 입술·코 이야기와 맞춰 '주인집 안에서 편히 산' 노예로 풀어 옮겼다."
+    - source: "sporting"
+      target: "입고 다닐 거야"
+      note: "바로 앞 Converse·Vans 줄에 맞춰 '착용하다'로 읽었다. 뒤의 'All smiles'와 이어지는 말로 읽을 여지도 남는다."
   written: 2026-10-11
 ---
 
@@ -45,4 +49,4 @@ translation:
 
 ## 번역에 대하여
 
-"Who the fuck you talking to"처럼 눈앞의 상대에게 대놓고 쏘아붙이는 줄이 후렴으로 반복되어, 거칠되 바로 앞에서 말하는 느낌의 **해체**를 곡 전체에 썼다. Pitchfork 리뷰와 노트가 설명하듯 이 곡은 'Boredom'의 느긋한 반복을 끊고, 곧 이어지는 '911 / Mr. Lonely'가 보여 줄 가면을 먼저 세우는 외향적인 목소리다. 선언문처럼 해라체로 하는 안도 생각했지만 상대를 직접 겨냥하는 말이 대부분이라 버렸고, 비속어는 원문의 거침을 유지하되 수위를 더 높이지 않았다. 첫머리 라디오 멘트와 마지막 전화 대사도 같은 화자의 연출이라 같은 어체로 두었다.
+"Who the fuck you talking to"처럼 눈앞의 상대에게 대놓고 쏘아붙이는 줄이 후렴으로 반복되어, 거칠되 바로 앞에서 말하는 느낌의 **해체**를 곡 전체에 썼다. Pitchfork 리뷰와 노트가 설명하듯 이 곡은 'Boredom'의 느긋한 반복을 끊고, 곧 이어지는 '911 / Mr. Lonely'가 보여 줄 가면을 먼저 세우는 외향적인 목소리다. 선언문처럼 해라체로 하는 안도 생각했지만 상대를 직접 겨냥하는 말이 대부분이라 버렸고, 비속어는 원문의 거침을 유지하되 수위를 더 높이지 않았고, 'Skywalker, riding 'round solar' 줄은 스타워즈와 우주 이미지로 읽었으나 해설을 찾지 못해 불확실하다. 첫머리 라디오 멘트와 마지막 전화 대사도 같은 화자의 연출이라 같은 어체로 두었다.
