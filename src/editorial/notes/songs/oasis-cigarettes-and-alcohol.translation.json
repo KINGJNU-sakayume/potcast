@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13446,
+    "durationMs": 290000
+  },
+  "segments": [
+    {
+      "startMs": 33110,
+      "endMs": 50070,
+      "translation": "내 착각일까, 아니면 드디어 살아갈 만한 걸 찾은 걸까?"
+    },
+    {
+      "startMs": 50070,
+      "endMs": 54520,
+      "translation": "뭔가 벌어지길 찾고 있었는데"
+    },
+    {
+      "startMs": 54520,
+      "endMs": 68290,
+      "translation": "찾은 건 담배와 술뿐이었어"
+    },
+    {
+      "startMs": 68290,
+      "endMs": 76290,
+      "translation": "평생 기다리면서 햇볕 아래서 하루하루를 보낼 수도 있겠지"
+    },
+    {
+      "startMs": 76290,
+      "endMs": 79580,
+      "translation": "차라리 코카인 한 줄이나 하는 게 낫지"
+    },
+    {
+      "startMs": 79580,
+      "endMs": 82590,
+      "translation": "막상 닥치면"
+    },
+    {
+      "startMs": 82590,
+      "endMs": 86780,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 86780,
+      "endMs": 90950,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 90950,
+      "endMs": 95070,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 95070,
+      "endMs": 129570,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 129570,
+      "endMs": 134050,
+      "translation": "그 골치 아픈 일을 감수할 가치가 있을까"
+    },
+    {
+      "startMs": 134050,
+      "endMs": 146350,
+      "translation": "일할 만한 게 하나도 없는데 일자리를 구하는 거 말이야?"
+    },
+    {
+      "startMs": 146350,
+      "endMs": 150720,
+      "translation": "말도 안 되는 상황이야"
+    },
+    {
+      "startMs": 150720,
+      "endMs": 164290,
+      "translation": "하지만 내게 필요한 건 담배와 술뿐이야"
+    },
+    {
+      "startMs": 164290,
+      "endMs": 172500,
+      "translation": "평생 기다리면서 햇볕 아래서 하루하루를 보낼 수도 있겠지"
+    },
+    {
+      "startMs": 172500,
+      "endMs": 175580,
+      "translation": "차라리 코카인 한 줄이나 하는 게 낫지"
+    },
+    {
+      "startMs": 175580,
+      "endMs": 178560,
+      "translation": "막상 닥치면"
+    },
+    {
+      "startMs": 178560,
+      "endMs": 182760,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 182760,
+      "endMs": 186850,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 186850,
+      "endMs": 191040,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 191040,
+      "endMs": 213600,
+      "translation": "네가 해내야 해"
+    },
+    {
+      "startMs": 213600,
+      "endMs": 217800,
+      "translation": "해내야 해, 해내야 해, 해내야 해"
+    },
+    {
+      "startMs": 217800,
+      "endMs": 221980,
+      "translation": "그런 척이라도 해야 해, 척이라도, 척이라도"
+    },
+    {
+      "startMs": 221980,
+      "endMs": 226060,
+      "translation": "해내야 해, 해내야 해, 해내야 해"
+    },
+    {
+      "startMs": 226060,
+      "endMs": 290000,
+      "translation": "그런 척이라도 해야 해, 척이라도, 척이라도"
+    }
+  ]
+}

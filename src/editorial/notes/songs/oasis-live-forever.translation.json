@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 14100,
+    "durationMs": 277000
+  },
+  "segments": [
+    {
+      "startMs": 590,
+      "endMs": 12190,
+      "translation": "오, 그래"
+    },
+    {
+      "startMs": 12190,
+      "endMs": 22990,
+      "translation": "어쩌면 네 정원이 어떻게 자라는지는 정말 알고 싶지 않아. 난 그냥 날고 싶을 뿐이니까"
+    },
+    {
+      "startMs": 22990,
+      "endMs": 34390,
+      "translation": "요즘, 아침 빗속에서 뼛속까지 젖어 드는 아픔을 느껴 본 적 있어?"
+    },
+    {
+      "startMs": 34390,
+      "endMs": 36950,
+      "translation": "어쩌면 난 그냥 날고 싶은 건지도 몰라"
+    },
+    {
+      "startMs": 36950,
+      "endMs": 39750,
+      "translation": "살고 싶어, 죽고 싶지 않아"
+    },
+    {
+      "startMs": 39750,
+      "endMs": 42350,
+      "translation": "어쩌면 난 그냥 숨 쉬고 싶은 건지도 몰라"
+    },
+    {
+      "startMs": 42350,
+      "endMs": 44910,
+      "translation": "어쩌면 난 그냥 믿지 못하는 건지도 몰라"
+    },
+    {
+      "startMs": 44910,
+      "endMs": 47720,
+      "translation": "어쩌면 넌 나랑 같을지도 몰라"
+    },
+    {
+      "startMs": 47720,
+      "endMs": 50310,
+      "translation": "우린 그들이 절대 못 보는 걸 봐"
+    },
+    {
+      "startMs": 50310,
+      "endMs": 57600,
+      "translation": "너와 나는 영원히 살 거야"
+    },
+    {
+      "startMs": 57600,
+      "endMs": 65350,
+      "translation": "내가 말했잖아, 어쩌면 네 정원이 어떻게 자라는지는 정말 알고 싶지 않다고"
+    },
+    {
+      "startMs": 65350,
+      "endMs": 68150,
+      "translation": "난 그냥 날고 싶을 뿐이니까"
+    },
+    {
+      "startMs": 68150,
+      "endMs": 79670,
+      "translation": "요즘, 아침 빗속에서 뼛속까지 젖어 드는 아픔을 느껴 본 적 있어?"
+    },
+    {
+      "startMs": 79670,
+      "endMs": 84910,
+      "translation": "어쩌면 난 내가 되고 싶은 모든 것이 끝내 되지 못할지도 몰라"
+    },
+    {
+      "startMs": 84910,
+      "endMs": 87670,
+      "translation": "지금은 울 때가 아니야"
+    },
+    {
+      "startMs": 87670,
+      "endMs": 90310,
+      "translation": "지금은 이유를 알아낼 때야"
+    },
+    {
+      "startMs": 90310,
+      "endMs": 92840,
+      "translation": "내 생각엔 넌 나랑 같아"
+    },
+    {
+      "startMs": 92840,
+      "endMs": 95510,
+      "translation": "우린 그들이 절대 못 보는 걸 봐"
+    },
+    {
+      "startMs": 95510,
+      "endMs": 147890,
+      "translation": "너와 나는 영원히 살 거야"
+    },
+    {
+      "startMs": 147890,
+      "endMs": 155420,
+      "translation": "어쩌면 네 정원이 어떻게 자라는지는 정말 알고 싶지 않아"
+    },
+    {
+      "startMs": 155420,
+      "endMs": 158410,
+      "translation": "난 그냥 날고 싶을 뿐이니까"
+    },
+    {
+      "startMs": 158410,
+      "endMs": 169690,
+      "translation": "요즘, 아침 빗속에서 뼛속까지 젖어 드는 아픔을 느껴 본 적 있어?"
+    },
+    {
+      "startMs": 169690,
+      "endMs": 172330,
+      "translation": "어쩌면 난 그냥 날고 싶은 건지도 몰라"
+    },
+    {
+      "startMs": 172330,
+      "endMs": 175100,
+      "translation": "살고 싶어, 죽고 싶지 않아"
+    },
+    {
+      "startMs": 175100,
+      "endMs": 177900,
+      "translation": "어쩌면 난 그냥 숨 쉬고 싶은 건지도 몰라"
+    },
+    {
+      "startMs": 177900,
+      "endMs": 180500,
+      "translation": "어쩌면 난 그냥 믿지 못하는 건지도 몰라"
+    },
+    {
+      "startMs": 180500,
+      "endMs": 182860,
+      "translation": "어쩌면 넌 나랑 같을지도 몰라"
+    },
+    {
+      "startMs": 182860,
+      "endMs": 185490,
+      "translation": "우린 그들이 절대 못 보는 걸 봐"
+    },
+    {
+      "startMs": 185490,
+      "endMs": 191900,
+      "translation": "너와 나는 영원히 살 거야"
+    },
+    {
+      "startMs": 191900,
+      "endMs": 197100,
+      "translation": "영원히 살 거야"
+    },
+    {
+      "startMs": 197100,
+      "endMs": 202130,
+      "translation": "영원히 살 거야"
+    },
+    {
+      "startMs": 202130,
+      "endMs": 207610,
+      "translation": "우리는 영원히 살 거야"
+    },
+    {
+      "startMs": 207610,
+      "endMs": 212730,
+      "translation": "영원히 살 거야"
+    },
+    {
+      "startMs": 212730,
+      "endMs": 217980,
+      "translation": "영원히 살 거야"
+    },
+    {
+      "startMs": 217980,
+      "endMs": 277000,
+      "translation": "영원히 살 거야"
+    }
+  ]
+}

@@ -2,16 +2,32 @@
 artist: oasis
 trackIds: [5DA7BwoqgCo93ctkaYeNTt]
 titles: ["Bring It On Down"]
-lyricsLanguage: en
-translationMode: provider
 written: 2026-10-11
 sources:
+  - "Spotify 공식 가사 (사용자 확인)"
   - https://www.slantmagazine.com/music/oasis-definitely-maybe-retrospective-album-review/
   - https://www.sputnikmusic.com/review/784/Oasis-Definitely-Maybe/
   - https://uproxx.com/indie/oasis-definitely-maybe-songs-ranked/
   - https://www.oasis-recordinginfo.co.uk/more-from-anjali-dutt-on-the-making-of-definitely-maybe-2014.html
 short: >
   도입의 몰아치는 탐과 날카로운 기타를 따라가다가, 노래가 끝난 뒤에도 길게 남는 솔로를 짚어 보라. 말의 공격성이 연주의 압력으로 넘어간다.
+translation:
+  sourceLanguage: en
+  targetLanguage: ko
+  register: haeche
+  speaker: 환영받지 못하는 상대를 몰아붙이는 화자(리암의 목소리)
+  addressee: 아웃사이더이자 불청객으로 불리는 "you"
+  relationship: 가까운 사이는 아니지만 조롱과 동료 의식이 섞인 대립 관계
+  situation: 파티에서 달갑지 않은 손님에게 오늘 밤 네 인생을 털어 버리겠다고 말하는 장면
+  glossary:
+    - source: outcast / underclass
+      target: 아웃사이더 / 밑바닥 계층
+      note: 배제된 위치를 가리키는 말. 사회 비판의 연설처럼 굳지 않도록 구어로 옮겼다.
+    - source: head in a fish tank
+      target: 어항 속에 든 머리
+      note: 숨이 막히고 세상과 막힌 상태를 가리키는 비유라 그대로 살렸다.
+  written: 2026-10-11
+  updated: 2026-10-11
 ---
 
 'Bring It On Down'의 도입은 탐을 중심으로 몰아치는 드럼과 날카로운 기타가 함께 길을 뚫는다. 절과 후렴으로 넘어가도 추진력이 쉽게 풀리지 않아, 리암의 목소리는 이미 달리고 있는 밴드 안에서 말을 밀어 넣는 듯하다. 느긋하게 펼쳐지는 합창보다 숨을 재촉하는 펑크의 공격성이 앞선다. 그러나 후반에는 노래의 짧고 팽팽한 윤곽이 긴 기타 솔로로 늘어난다. 앞부분이 상대에게 쏟아내는 말이라면, 끝의 기타는 말이 멎어도 끝나지 않는 압력이다. 이 확장은 흥분을 이어 가면서 동시에 그 흥분의 피로도 남긴다.
@@ -21,3 +37,7 @@ short: >
 화자는 환영받지 못하는 상대를 향해 말한다. 배제된 계층이라는 위치와 파티에서 달갑지 않은 손님이라는 모습이 겹치며, 남들이 붙인 낙인이 개인의 몸에 내려앉는다. 이를 매끈한 사회 비판의 연설로 정리하기는 어렵다. 상대를 몰아붙이는 어조에는 조롱과 동료 의식이 함께 들어갈 여지가 있고, 리암의 공격적인 전달은 둘을 쉽게 구분해 주지 않는다. 그래서 이 곡의 분노는 이미 세상을 이긴 사람의 승리 선언보다, 인정받지 못한 사람이 남의 시선을 되돌려주는 행동에 가깝다.
 
 일곱 번째 곡은 'Supersonic'의 자기 확신을 더 거칠게 밀어붙인다. 이어지는 'Cigarettes & Alcohol'이 현재를 버티는 쾌락과 다른 삶의 욕망을 붙여 놓기 전에, 여기서는 자기 자리가 없다는 감각 자체가 연료가 된다. 『Definitely Maybe』의 탈출은 늘 밝은 전망에서 출발하지 않는다. 긴 솔로가 차지하는 시간은 말로 정리되지 않는 울분에도 자리를 내주며, 밴드가 큰 소리를 통해 먼저 존재를 주장한다는 앨범의 논지를 가장 공격적인 형태로 드러낸다.
+
+## 번역에 대하여
+
+가사의 거의 모든 줄이 "you"를 직접 지목해 단정하는 말이어서, 독백체인 해라체보다 상대 얼굴을 보고 쏘아붙이는 **해체**가 맞다고 봤다. 감상 본문이 이 곡을 환영받지 못하는 상대를 향한 말로, 조롱과 동료 의식이 함께 있는 어조로 읽기 때문에 존댓말로 거리를 두거나 서술형으로 정리하지 않았다. 처음에는 후렴의 "끌어내려"를 상대를 무너뜨리라는 명령이 아니라 자기 자신에게 하는 다짐으로 읽을 여지도 있었지만, 이어지는 "네 머리는 어항 속"이 상대의 상태를 말하므로 상대에게 하는 말로 두었다. 마지막 줄의 "their lives"는 앞의 "your life"와 달라진 대로 '그들의'로 옮겨, 한 사람에서 사람들 전체로 넓어지는 변화를 남겼다. 'their lives'는 가사 전사본이 모두 같게 적고 있고 Spotify 공식 가사도 같아서 그대로 따랐다. 호칭은 처음부터 끝까지 '너'로 고정했다.

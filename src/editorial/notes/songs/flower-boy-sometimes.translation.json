@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 23883971,
+    "durationMs": 36206
+  },
+  "segments": [
+    {
+      "startMs": 12660,
+      "endMs": 17620,
+      "translation": "가끔, 나는 내 방에 앉아 있다."
+    },
+    {
+      "startMs": 17620,
+      "endMs": 19650,
+      "translation": "골프 라디오입니다, 지금 셰인 파워스와 생방송 중이에요."
+    },
+    {
+      "startMs": 19650,
+      "endMs": 21030,
+      "translation": "신청곡을 받고 있어요."
+    },
+    {
+      "startMs": 21030,
+      "endMs": 29140,
+      "translation": "어디 보자, 성함이 어떻게 되시죠? 여보세요?"
+    },
+    {
+      "startMs": 29140,
+      "endMs": 32610,
+      "translation": "아, 알겠어요, 그렇게 잘나신 비밀 요원이 되고 싶으시다면야."
+    },
+    {
+      "startMs": 32610,
+      "endMs": 34200,
+      "translation": "어떤 곡을 듣고 싶으세요?"
+    },
+    {
+      "startMs": 34200,
+      "endMs": 36206,
+      "translation": "나에 관한 곡."
+    }
+  ]
+}

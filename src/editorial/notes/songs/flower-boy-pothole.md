@@ -2,15 +2,55 @@
 artist: tyler
 trackIds: [5SxlUF7J8tyFIEF22EomeP]
 titles: ["Pothole", "Pothole (feat. Jaden Smith)"]
-lyricsLanguage: en
-translationMode: provider
 written: 2026-10-11
 sources:
   - https://djbooth.net/features/2017-07-11-tyler-the-creator-flower-boy-album-review/
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://www.surrealresolution.com/index.php/2017/07/29/review-tyler-the-creator-flower-boy/
+  - https://podscripts.co/podcasts/dissect/s4e6-pothole-by-tyler-the-creator
+  - https://en.wikipedia.org/wiki/Tenderoni
+  - "Genius 주석 (사용자 제공 레퍼런스) — Pothole"
 short: >
   앞 곡의 공격적인 에너지 뒤에서 한층 차분해진 랩과 제이든 스미스의 후렴을 구별하라. 반복되는 도로의 위험은 비트의 속도보다 관계에 대한 의심을 붙든다.
+translation:
+  sourceLanguage: en
+  targetLanguage: ko
+  register: haeche
+  speaker: 믿었던 관계와 길 위의 위험을 되짚는 타일러, 후렴의 제이든 스미스
+  addressee: 막다른 골목에서 마주친 옛 지인("my nigga")과 자신을 의심하거나 따르는 사람들
+  relationship: 어머니의 경고를 떠올리며 거리를 두게 된 지인과 팬, 그리고 조언을 건네는 어머니
+  situation: 과속으로 차를 몰며 어머니의 말이 맞았음을 인정하고, 믿을 만한 사람을 가려내는 운전 장면
+  pronouns:
+    - source: my nigga
+      target: 친구
+      note: "가까운 상대를 부르는 호칭이라 '친구'로 옮겼다."
+  glossary:
+    - source: pothole
+      target: 포트홀
+      note: "믿었던 관계가 일으키는 장애물을 가리키는 핵심어라 한국어에서도 같은 뜻으로 쓰이는 '포트홀'로 통일했다."
+    - source: shade
+      target: 험담(shade)
+      note: "험담을 던진다는 뜻과 그늘, 비를 닦는 와이퍼가 겹치는 말장난이라 괄호로 원어를 남겼다. 다이섹트 방송은 이 줄을 곁의 사람들이 쏟아낼 비난에 대비하는 말로 읽는다."
+    - source: dealerships
+      target: 자동차 대리점
+      note: "다이섹트 방송이 마약 딜러가 아니라 자동차 대리점이라고 설명하고, Clancy를 타일러의 매니저로 소개한다. '딜러'만 쓰면 마약상으로 읽힐 수 있어 대리점으로 옮겼다."
+    - source: you off it
+      target: 완전히 맛이 갔다
+      note: "'off it'은 정신이 나가 있다는 구어로 읽었다. 방송은 이 대목을 약물에 빠진 친구들과 이어 읽지만 직접 풀어 주지 않았다. 그래서 약물을 단정하지 않는 '맛이 갔다'로 두었다."
+    - source: draw my piggies
+      target: 돼지(경찰)들을 끌어들인다
+      note: "방송이 Piggy를 타일러가 경찰을 부르는 말이라고 설명하고, 이어지는 베이컨 이야기와 맞물린다. 비싼 차를 타면 안전하다는 감각을 말하는 대목이라 draw를 그린다보다 끌어들인다로 읽었다."
+    - source: tenderonies
+      target: 어린 예쁜 애들
+      note: "tenderoni는 젊고 매력적인 여자를 가리키는 속어(초그린 슬랭 사전은 '매력적인 젊은 여자')이므로 음차 대신 풀어 옮겼다."
+    - source: trunk
+      target: 트렁크
+      note: "자동차 트렁크와 나무 몸통을 겹치는 앨범 전체의 이미지와 이어지므로 그대로 두었다."
+    - source: "four for four"
+      target: "4타수 4안타"
+      note: "Genius 주석은 타일러가 지금까지 낸 네 장의 앨범(무료로 풀린 『Bastard』 포함)을 모두 성공으로 보고, 다섯 번째인 『Flower Boy』도 그 기록을 이어 갈 것이라고 자신하는 줄로 읽는다. 야구의 '4타수 4안타'로 옮겨 타율 같은 연속 성공의 느낌을 살렸다."
+  written: 2026-10-11
+  updated: 2026-10-11
 ---
 
 'Pothole'은 'Who Dat Boy'의 격한 과시를 이어서 크게 외치기보다, 한층 차분한 제작 안에 타일러의 이야기를 놓는다. 절에서는 어머니의 조언과 주변 사람에 관한 판단이 이어지고, 제이든 스미스(Jaden Smith)의 후렴은 위험을 경고하는 말을 반복한다. 자세한 서술과 짧은 경고는 서로 다른 역할을 갖는다. 마지막의 편곡이 풀리는 부분까지 따라가면 차를 빨리 몰고 있다는 장면과 생각을 정리하는 속도가 꼭 같지는 않다.
@@ -20,3 +60,7 @@ short: >
 제목의 도로 구멍은 믿었던 관계가 진행을 방해하는 상황을 표현한다. 화자는 어머니의 조언을 떠올리고 누가 자신에게 도움이 되는지 다시 고른다. 혼자가 낫다는 선언에는 타인에게 끌려가지 않으려는 의지가 있지만, 그것을 외로움의 완전한 해결로 읽으면 앨범의 질문을 너무 빨리 닫게 된다. 상처를 줄 사람을 피하는 일과 함께할 사람을 찾는 일은 다른 과제다. 이 곡은 전자에 대한 결심을 세우면서 후자의 빈자리를 남긴다.
 
 앞 곡 마지막의 자동차가 여기에서는 위험한 도로를 달린다. 성공의 표지였던 차가 문제를 피하는 수단이자 판단을 요구하는 장소로 바뀌는 것이다. 곧 이어질 'Garden Shed'는 주변 관계의 경계에서 자신이 숨겨 온 감정으로 시선을 옮긴다. 그 사이에 놓인 'Pothole'은 누구를 믿을지에 관한 검토를 맡는다. 앨범을 하나의 이동으로 들을 때 중요한 것은 목적지의 이름보다, 같은 이동 수단이 곡마다 다른 고민을 담는다는 점이다.
+
+## 번역에 대하여
+
+이 곡은 운전하면서 지인에게 말을 걸듯 지난 관계를 되짚는 이야기라 **해체**로 정했다. 가사 안에서 "my nigga"를 부르는 구절과 "Just let me know"처럼 상대에게 직접 말하는 대목이 있고, 반복되는 후렴은 곁의 누군가에게 도로 위험을 알려 주는 경고라 격식 있는 어투가 어울리지 않는다. 감상 노트가 짚듯 이 곡은 'Who Dat Boy'의 과시를 이어받되 어머니의 조언과 누구를 믿을지에 대한 검토로 한층 차분해지므로, 거친 어조를 유지하면서도 설명하는 문장은 '-했어', '-해' 정도로 풀었다. 어머니의 말을 전하는 부분은 인용된 말이지만 간접 화법으로 소화해 어체를 따로 바꾸지 않았고, 후렴을 부르는 제이든 스미스도 같은 경고의 목소리로 보아 같은 어체를 썼다. 'dealerships'는 자동차 대리점으로, 'tenderonies'는 젊은 여자를 가리키는 속어로 확인해 옮겼고, 'draw my piggies'는 돼지를 경찰로 읽는 방송의 해설을 따랐다. 'you off it'은 약물과 이어지는지 확실하지 않아 '맛이 갔다'로 가볍게 옮겼으며, 'four for four'는 Genius 주석에 따라 『Bastard』를 포함한 이전 네 앨범의 연속 성공으로 읽었다.

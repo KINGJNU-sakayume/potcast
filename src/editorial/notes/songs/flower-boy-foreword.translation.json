@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 27038119,
+    "durationMs": 194080
+  },
+  "segments": [
+    {
+      "startMs": 250,
+      "endMs": 7320,
+      "translation": "씨발, 젠장! 으, 으 (젠장)"
+    },
+    {
+      "startMs": 7320,
+      "endMs": 9630,
+      "translation": "질문이 하나 있다."
+    },
+    {
+      "startMs": 9630,
+      "endMs": 12650,
+      "translation": "굴러갈 힘이 바닥나기 전까지 차를 몇 대나 살 수 있을까?"
+    },
+    {
+      "startMs": 12650,
+      "endMs": 14920,
+      "translation": "길이 바닥나기 전까지 굴러갈 힘을 얼마나 가질 수 있을까?"
+    },
+    {
+      "startMs": 14920,
+      "endMs": 17460,
+      "translation": "땅이 바닥나기 전까지 길을 얼마나 깔 수 있을까?"
+    },
+    {
+      "startMs": 17460,
+      "endMs": 20000,
+      "translation": "바다에 닿기 전까지 땅이 얼마나 더 있을 수 있을까?"
+    },
+    {
+      "startMs": 20000,
+      "endMs": 22290,
+      "translation": "놈들은 흐름에 몸을 맡기고 계획대로 움직인다."
+    },
+    {
+      "startMs": 22290,
+      "endMs": 24850,
+      "translation": "나는 해변이나 모래밭 같은 건 좋아한 적이 없다."
+    },
+    {
+      "startMs": 24850,
+      "endMs": 28880,
+      "translation": "나는 숲에서 꽃이랑 무지개, 꽃다발을 주머니에서 흘리며 지냈다."
+    },
+    {
+      "startMs": 28880,
+      "endMs": 32690,
+      "translation": "그런데 너희는 내가 열을 식히려고 수영이라도 했는지 알고 싶어 한다."
+    },
+    {
+      "startMs": 32690,
+      "endMs": 35450,
+      "translation": "팬이 바닥나기 전까지 나는 얼마나 더 쿨해질 수 있을까?"
+    },
+    {
+      "startMs": 35450,
+      "endMs": 37640,
+      "translation": "팬이 몇 명이나 있어야 그들이 에어컨을 켜 버릴까?"
+    },
+    {
+      "startMs": 37640,
+      "endMs": 41640,
+      "translation": "그 에어컨이 터지면 난 TNT다, 사라진다."
+    },
+    {
+      "startMs": 41640,
+      "endMs": 43940,
+      "translation": "사라지고, 끝장난다."
+    },
+    {
+      "startMs": 43940,
+      "endMs": 46640,
+      "translation": "친구들을 못 본 지도 한참 됐다."
+    },
+    {
+      "startMs": 46640,
+      "endMs": 52380,
+      "translation": "영원한 건 없겠지, 그래, 영원한 건 없다."
+    },
+    {
+      "startMs": 52380,
+      "endMs": 56840,
+      "translation": "아무것도 끝까지 붙어 있지 못한다, 오."
+    },
+    {
+      "startMs": 56840,
+      "endMs": 61210,
+      "translation": "의심 속에 앉아 있는 건 지겹다, 제발 이걸 스스로 풀게 해 줘, 풀게."
+    },
+    {
+      "startMs": 61210,
+      "endMs": 64070,
+      "translation": "가끔의 오럴을 바라고 헛바람만 넣어 둔 여자들에게 감사를 전한다."
+    },
+    {
+      "startMs": 64070,
+      "endMs": 67720,
+      "translation": "언제나 내 침대를 따뜻하게 데워 주고, 내 정신을 붙들어 두려고 안간힘을 써 준 사람들이다."
+    },
+    {
+      "startMs": 67720,
+      "endMs": 71020,
+      "translation": "내가 공중에 떠 있다고 믿을 만큼 계속 들뜨게 해 주기도 했다."
+    },
+    {
+      "startMs": 71020,
+      "endMs": 73640,
+      "translation": "랩을 몇 곡이나 써야 체인 하나를 손에 넣을까?"
+    },
+    {
+      "startMs": 73640,
+      "endMs": 76270,
+      "translation": "체인을 몇 개나 걸어야 노예라고 불리게 될까?"
+    },
+    {
+      "startMs": 76270,
+      "endMs": 78970,
+      "translation": "노예가 몇 명이나 더 있어야 냇 터너가 일어설까?"
+    },
+    {
+      "startMs": 78970,
+      "endMs": 81100,
+      "translation": "폭동이 몇 번이나 더 일어나야 흑인의 목숨이 중요해질까?"
+    },
+    {
+      "startMs": 81100,
+      "endMs": 82480,
+      "translation": "그리고 놈들은 탕탕 갈겨 대고 피를 튀긴다."
+    },
+    {
+      "startMs": 82480,
+      "endMs": 83920,
+      "translation": "퓽, 퓽, 저 새끼를 쏴."
+    },
+    {
+      "startMs": 83920,
+      "endMs": 86220,
+      "translation": "인생은 농구 경기다, 저 새끼를 슛해야 한다."
+    },
+    {
+      "startMs": 86220,
+      "endMs": 88580,
+      "translation": "저 경찰이 방아쇠를 당길 거라면 당기는 게 낫다."
+    },
+    {
+      "startMs": 88580,
+      "endMs": 91080,
+      "translation": "내가 차를 세우게 될 때는 대개 침착하게 굴기 때문이다."
+    },
+    {
+      "startMs": 91080,
+      "endMs": 93300,
+      "translation": "내가 모는 차가 대개 현금 완납이라는 걸 아니까."
+    },
+    {
+      "startMs": 93300,
+      "endMs": 96100,
+      "translation": "내 자존심과 소유물은 내가 그런 희생자 중 하나가 되도록 두지 않을 것이다."
+    },
+    {
+      "startMs": 96100,
+      "endMs": 98960,
+      "translation": "나에겐 저택이 있고, 저택에는 방이 있으니까."
+    },
+    {
+      "startMs": 98960,
+      "endMs": 100130,
+      "translation": "그 방에는 창이 있고"
+    },
+    {
+      "startMs": 100130,
+      "endMs": 101560,
+      "translation": "그 창에는 전망이 있고"
+    },
+    {
+      "startMs": 101560,
+      "endMs": 102720,
+      "translation": "그 전망은 시선을 받고"
+    },
+    {
+      "startMs": 102720,
+      "endMs": 103850,
+      "translation": "내 뒷마당도 마찬가지다."
+    },
+    {
+      "startMs": 103850,
+      "endMs": 106550,
+      "translation": "바닥까지 걸어가 보면 아마 수영장이 보일 거다."
+    },
+    {
+      "startMs": 106550,
+      "endMs": 108880,
+      "translation": "빠지지 마라, 발가락 열 개는 위로 띄워 둬."
+    },
+    {
+      "startMs": 108880,
+      "endMs": 111670,
+      "translation": "발가락이 가라앉으면 망했다는 뜻이니까."
+    },
+    {
+      "startMs": 111670,
+      "endMs": 113460,
+      "translation": "내가 헤엄치는 곳이 바로 그런 곳이다."
+    },
+    {
+      "startMs": 113460,
+      "endMs": 123670,
+      "translation": "내가 물에 빠져 돌아오지 못하면 누가 알아줄까? (그러면 나도 알게 될지도)"
+    },
+    {
+      "startMs": 123670,
+      "endMs": 134060,
+      "translation": "내가 추락해서 돌아오지 못하면 누가 알아줄까? (그러면 나도 알게 될지도)"
+    },
+    {
+      "startMs": 134060,
+      "endMs": 143820,
+      "translation": "내가 쓰러져서 돌아오지 못하면 누가 알아줄까? (그러면 나도 알게 될지도)"
+    },
+    {
+      "startMs": 143820,
+      "endMs": 157610,
+      "translation": "내가 돌아오지 않으면, 그때는 알게 될지도 모른다는 생각이 든다."
+    },
+    {
+      "startMs": 157610,
+      "endMs": 159760,
+      "translation": "돌아오지 마라."
+    },
+    {
+      "startMs": 159760,
+      "endMs": 167540,
+      "translation": "돌아오지 마라."
+    },
+    {
+      "startMs": 167540,
+      "endMs": 194080,
+      "translation": "그래, 돌아오지 마라, 돌아오지 마라, 안 돼, 안 돼, 오, 오."
+    }
+  ]
+}

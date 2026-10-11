@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 14194,
+    "durationMs": 192000
+  },
+  "segments": [
+    {
+      "startMs": 24880,
+      "endMs": 29250,
+      "translation": "미안하다고 말할 필요 없어"
+    },
+    {
+      "startMs": 29250,
+      "endMs": 35810,
+      "translation": "잘 있어, 난 집에 갈 거야"
+    },
+    {
+      "startMs": 35810,
+      "endMs": 40330,
+      "translation": "이제 상관 안 해, 그러니 걱정할 것 없어"
+    },
+    {
+      "startMs": 40330,
+      "endMs": 46910,
+      "translation": "잘 있어, 난 집에 갈 거야"
+    },
+    {
+      "startMs": 46910,
+      "endMs": 57390,
+      "translation": "네가 틀린 걸 알면서도 맞다고 우기는 게 정말 싫어"
+    },
+    {
+      "startMs": 57390,
+      "endMs": 62090,
+      "translation": "네가 읽는 책도 네 친구들도 다 싫어"
+    },
+    {
+      "startMs": 62090,
+      "endMs": 69090,
+      "translation": "네 음악은 쓰레기야, 밤새 잠을 못 자게 해"
+    },
+    {
+      "startMs": 69090,
+      "endMs": 73020,
+      "translation": "미안하다고 말할 필요 없어"
+    },
+    {
+      "startMs": 73020,
+      "endMs": 79330,
+      "translation": "잘 있어, 난 집에 갈 거야"
+    },
+    {
+      "startMs": 79330,
+      "endMs": 84180,
+      "translation": "이제 상관 안 해, 그러니 걱정할 것 없어"
+    },
+    {
+      "startMs": 84180,
+      "endMs": 90250,
+      "translation": "잘 있어, 난 집에 갈 거야"
+    },
+    {
+      "startMs": 90250,
+      "endMs": 94440,
+      "translation": "네가 그렇게 빈정대는 게 정말 싫어"
+    },
+    {
+      "startMs": 94440,
+      "endMs": 101100,
+      "translation": "게다가 넌 그리 똑똑하지도 않아"
+    },
+    {
+      "startMs": 101100,
+      "endMs": 105490,
+      "translation": "네가 한 일은 다 대단하다고 생각하지"
+    },
+    {
+      "startMs": 105490,
+      "endMs": 133720,
+      "translation": "네 음악은 쓰레기야, 밤새 잠을 못 자게 해"
+    },
+    {
+      "startMs": 133720,
+      "endMs": 144550,
+      "translation": "한두 주쯤 혼자 있으면 좋겠지"
+    },
+    {
+      "startMs": 144550,
+      "endMs": 163510,
+      "translation": "하지만 난 알아, 결국 다시 여기서 너랑 있게 되리란 걸"
+    },
+    {
+      "startMs": 163510,
+      "endMs": 168220,
+      "translation": "미안하다고 말할 필요 없어"
+    },
+    {
+      "startMs": 168220,
+      "endMs": 175090,
+      "translation": "잘 있어, 난 집에 갈 거야"
+    },
+    {
+      "startMs": 175090,
+      "endMs": 179370,
+      "translation": "이제 상관 안 해, 그러니 걱정할 것 없어"
+    },
+    {
+      "startMs": 179370,
+      "endMs": 186650,
+      "translation": "잘 있어, 난 집에 갈 거야"
+    },
+    {
+      "startMs": 186650,
+      "endMs": 188510,
+      "translation": "네가 틀린 걸 알면서도 맞다고 우기는 게 정말 싫어"
+    },
+    {
+      "startMs": 188510,
+      "endMs": 189250,
+      "translation": "네가 읽는 책도 네 친구들도 다 싫어"
+    },
+    {
+      "startMs": 189250,
+      "endMs": 192000,
+      "translation": "네 음악은 쓰레기야, 밤새 잠을 못 자게 해"
+    }
+  ]
+}
