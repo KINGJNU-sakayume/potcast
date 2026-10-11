@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 15828,
+    "durationMs": 392000
+  },
+  "segments": [
+    {
+      "startMs": 22450,
+      "endMs": 27610,
+      "translation": "미끄러지듯 떠나자, 가진 걸 다 쏟아부어"
+    },
+    {
+      "startMs": 27610,
+      "endMs": 32730,
+      "translation": "나의 오늘은 꼭대기에서 곤두박질쳤어"
+    },
+    {
+      "startMs": 32730,
+      "endMs": 38490,
+      "translation": "네 꿈을 꿔, 네가 하는 말들도"
+    },
+    {
+      "startMs": 38490,
+      "endMs": 43090,
+      "translation": "지금 넌 어디 있을까"
+    },
+    {
+      "startMs": 43090,
+      "endMs": 48090,
+      "translation": "날 꼭 붙들어 줘, 세상이 다 잠들었어"
+    },
+    {
+      "startMs": 48090,
+      "endMs": 53090,
+      "translation": "지금 네가 필요해, 넌 날 휘청이게 했어"
+    },
+    {
+      "startMs": 53090,
+      "endMs": 58970,
+      "translation": "네 꿈을 꿔, 우리 함께 늙어 가는 얘기도 해"
+    },
+    {
+      "startMs": 58970,
+      "endMs": 63540,
+      "translation": "하지만 넌 \"제발 그러지 마!\"라고 했지"
+    },
+    {
+      "startMs": 63540,
+      "endMs": 68570,
+      "translation": "이리 미끄러져 와, 우리 함께 날아오르자"
+    },
+    {
+      "startMs": 68570,
+      "endMs": 70820,
+      "translation": "기도도 해 봤어"
+    },
+    {
+      "startMs": 70820,
+      "endMs": 74850,
+      "translation": "하지만 네가 내게 무슨 말을 하는지 모르겠어"
+    },
+    {
+      "startMs": 74850,
+      "endMs": 77420,
+      "translation": "이제 넌 내 사람이니까"
+    },
+    {
+      "startMs": 77420,
+      "endMs": 80020,
+      "translation": "우리 길을 찾을 거야"
+    },
+    {
+      "startMs": 80020,
+      "endMs": 85330,
+      "translation": "태양을 쫓아가는"
+    },
+    {
+      "startMs": 85330,
+      "endMs": 91450,
+      "translation": "너와 함께 빛나는 사람이 나이게 해 줘"
+    },
+    {
+      "startMs": 91450,
+      "endMs": 95450,
+      "translation": "아침이 되면 우리는 뭘 해야 할지 몰라"
+    },
+    {
+      "startMs": 95450,
+      "endMs": 98010,
+      "translation": "우린 닮은 한 쌍이야"
+    },
+    {
+      "startMs": 98010,
+      "endMs": 100530,
+      "translation": "길을 찾을 거야"
+    },
+    {
+      "startMs": 100530,
+      "endMs": 106050,
+      "translation": "우리가 해 온 대로 하면 돼"
+    },
+    {
+      "startMs": 106050,
+      "endMs": 110320,
+      "translation": "너와 함께 빛나는 사람이 나이게 해 줘"
+    },
+    {
+      "startMs": 110320,
+      "endMs": 115960,
+      "translation": "그러면 우리는 미끄러지듯 떠날 수 있어"
+    },
+    {
+      "startMs": 115960,
+      "endMs": 121120,
+      "translation": "미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 121120,
+      "endMs": 127210,
+      "translation": "미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 127210,
+      "endMs": 166080,
+      "translation": "멀리"
+    },
+    {
+      "startMs": 166080,
+      "endMs": 171250,
+      "translation": "미끄러지듯 떠나자, 가진 걸 다 쏟아부어"
+    },
+    {
+      "startMs": 171250,
+      "endMs": 176320,
+      "translation": "나의 오늘은 꼭대기에서 곤두박질쳤어"
+    },
+    {
+      "startMs": 176320,
+      "endMs": 182000,
+      "translation": "네 꿈을 꿔, 네가 하는 말들도"
+    },
+    {
+      "startMs": 182000,
+      "endMs": 186600,
+      "translation": "지금 넌 어디 있을까"
+    },
+    {
+      "startMs": 186600,
+      "endMs": 191930,
+      "translation": "이리 미끄러져 와, 우리 함께 날아오르자"
+    },
+    {
+      "startMs": 191930,
+      "endMs": 193880,
+      "translation": "기도도 해 봤어"
+    },
+    {
+      "startMs": 193880,
+      "endMs": 197880,
+      "translation": "그리고 네가 내게 무슨 말을 하는지 이제 알아"
+    },
+    {
+      "startMs": 197880,
+      "endMs": 200760,
+      "translation": "이제 넌 내 사람이니까"
+    },
+    {
+      "startMs": 200760,
+      "endMs": 203080,
+      "translation": "우리 길을 찾을 거야"
+    },
+    {
+      "startMs": 203080,
+      "endMs": 208280,
+      "translation": "태양을 쫓아가는"
+    },
+    {
+      "startMs": 208280,
+      "endMs": 214480,
+      "translation": "너와 함께 빛나는 사람이 나이게 해 줘"
+    },
+    {
+      "startMs": 214480,
+      "endMs": 218240,
+      "translation": "아침이 되면 우리는 뭘 해야 할지 몰라"
+    },
+    {
+      "startMs": 218240,
+      "endMs": 221240,
+      "translation": "우린 닮은 한 쌍이야"
+    },
+    {
+      "startMs": 221240,
+      "endMs": 223610,
+      "translation": "길을 찾을 거야"
+    },
+    {
+      "startMs": 223610,
+      "endMs": 228640,
+      "translation": "우리가 해 온 대로 하면 돼"
+    },
+    {
+      "startMs": 228640,
+      "endMs": 232960,
+      "translation": "아, 너와 함께 빛나는 사람이 나이게 해 줘"
+    },
+    {
+      "startMs": 232960,
+      "endMs": 238890,
+      "translation": "그러면 우리는 미끄러지듯 떠날 수 있어"
+    },
+    {
+      "startMs": 238890,
+      "endMs": 244040,
+      "translation": "미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 244040,
+      "endMs": 249000,
+      "translation": "미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 249000,
+      "endMs": 254200,
+      "translation": "미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 254200,
+      "endMs": 259320,
+      "translation": "미끄러지듯 떠나자 (이제 해 보고 싶어, 이제 널 내 사람으로 만들고 싶어)"
+    },
+    {
+      "startMs": 259320,
+      "endMs": 264310,
+      "translation": "미끄러지듯 떠나자 (이제 해 보고 싶어, 이제 널 내 사람으로 만들고 싶어)"
+    },
+    {
+      "startMs": 264310,
+      "endMs": 269400,
+      "translation": "미끄러지듯 떠나자 (이제 해 보고 싶어, 이제 널 내 사람으로 만들고 싶어)"
+    },
+    {
+      "startMs": 269400,
+      "endMs": 275880,
+      "translation": "미끄러지듯 떠나자 (이제 해 보고 싶어, 이제 널 내 사람으로 만들고 싶어)"
+    },
+    {
+      "startMs": 275880,
+      "endMs": 285730,
+      "translation": "오오오, 우우우우!"
+    },
+    {
+      "startMs": 285730,
+      "endMs": 295960,
+      "translation": "오오오, 우우우우!"
+    },
+    {
+      "startMs": 295960,
+      "endMs": 298160,
+      "translation": "(몰라, 상관없어"
+    },
+    {
+      "startMs": 298160,
+      "endMs": 300880,
+      "translation": "내가 아는 건 네가 날 그곳으로 데려갈 수 있다는 것뿐이야)"
+    },
+    {
+      "startMs": 300880,
+      "endMs": 303040,
+      "translation": "(몰라, 상관없어"
+    },
+    {
+      "startMs": 303040,
+      "endMs": 305920,
+      "translation": "내가 아는 건 네가 날 그곳으로 데려갈 수 있다는 것뿐이야) 미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 305920,
+      "endMs": 308160,
+      "translation": "(몰라, 상관없어"
+    },
+    {
+      "startMs": 308160,
+      "endMs": 310810,
+      "translation": "내가 아는 건 네가 날 그곳으로 데려갈 수 있다는 것뿐이야) 미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 310810,
+      "endMs": 312910,
+      "translation": "(몰라, 상관없어"
+    },
+    {
+      "startMs": 312910,
+      "endMs": 315790,
+      "translation": "내가 아는 건 네가 날 그곳으로 데려갈 수 있다는 것뿐이야) 미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 315790,
+      "endMs": 317960,
+      "translation": "(몰라, 상관없어"
+    },
+    {
+      "startMs": 317960,
+      "endMs": 320460,
+      "translation": "내가 아는 건 네가 날 그곳으로 데려갈 수 있다는 것뿐이야) 미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 320460,
+      "endMs": 325220,
+      "translation": "(날 데려가 줘, 데려가 줘, 데려가 줘) 미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 325220,
+      "endMs": 330420,
+      "translation": "(날 데려가 줘, 데려가 줘, 내가 아는 건 네가 날 그곳으로 데려갈 수 있다는 것뿐이야) 미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 330420,
+      "endMs": 335020,
+      "translation": "(날 데려가 줘, 데려가 줘, 데려가 줘) 미끄러지듯 떠나자"
+    },
+    {
+      "startMs": 335020,
+      "endMs": 392000,
+      "translation": "(날 데려가 줘) 미끄러지듯 떠나자 (날 데려가 줘) 미끄러지듯 떠나자 (날 데려가 줘) 미끄러지듯 떠나자"
+    }
+  ]
+}

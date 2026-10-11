@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 13385, "durationMs": 258000 },
+  "segments": [
+    { "startMs": 41550, "endMs": 46890, "translation": "네 머릿속에서 울리던 그 소리는 뭐였어?" },
+    { "startMs": 46890, "endMs": 53730, "translation": "오늘 하루는 그냥 흐릿했지, 네 머리는 유령 열차 같아" },
+    { "startMs": 53730, "endMs": 59550, "translation": "네 머릿속에서 울리던 그 소리는 뭐였어?" },
+    { "startMs": 59550, "endMs": 66580, "translation": "넌 지금 혼자야, 누구 탓을 할 거야?" },
+    { "startMs": 66580, "endMs": 72850, "translation": "넌 아웃사이더고, 밑바닥 계층이야" },
+    { "startMs": 72850, "endMs": 79330, "translation": "그래도 넌 신경 안 써, 빠르게 살고 있으니까" },
+    { "startMs": 79330, "endMs": 82730, "translation": "넌 끝까지 눌러앉는 불청객이야" },
+    { "startMs": 82730, "endMs": 86480, "translation": "악마가 보낸 골칫거리가 네게 있다는 거 알아" },
+    { "startMs": 86480, "endMs": 89050, "translation": "넌 사람들이 네 얘기를 한다고 생각하지만 그게 누구 얘긴지는 몰라" },
+    { "startMs": 89050, "endMs": 117450, "translation": "오늘 밤 난 네 인생을 내 신발 밑창에서 긁어내 버릴 거야" },
+    { "startMs": 117450, "endMs": 122470, "translation": "끌어내려, 날 위해 끌어내려" },
+    { "startMs": 122470, "endMs": 125020, "translation": "네 머리는 어항 속에 들어 있어" },
+    { "startMs": 125020, "endMs": 128410, "translation": "네 몸과 마음은 숨을 쉴 수 없어" },
+    { "startMs": 128410, "endMs": 134710, "translation": "끌어내려, 날 위해 끌어내려" },
+    { "startMs": 134710, "endMs": 137840, "translation": "네 머리는 어항 속에 들어 있어" },
+    { "startMs": 137840, "endMs": 140960, "translation": "네 몸과 마음은 숨을 쉴 수 없어" },
+    { "startMs": 140960, "endMs": 148030, "translation": "넌 아웃사이더고, 밑바닥 계층이야" },
+    { "startMs": 148030, "endMs": 154320, "translation": "그래도 넌 신경 안 써, 빠르게 살고 있으니까" },
+    { "startMs": 154320, "endMs": 157530, "translation": "넌 끝까지 눌러앉는 불청객이야" },
+    { "startMs": 157530, "endMs": 160610, "translation": "악마가 보낸 골칫거리가 네게 있다는 거 알아" },
+    { "startMs": 160610, "endMs": 164170, "translation": "넌 사람들이 네 얘기를 한다고 생각하지만 그게 누구 얘긴지는 몰라" },
+    { "startMs": 164170, "endMs": 258000, "translation": "오늘 밤 난 그들의 인생을 내 신발 밑창에서 긁어내 버릴 거야" }
+  ]
+}
