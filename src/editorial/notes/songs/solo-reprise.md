@@ -15,7 +15,7 @@ translation:
   targetLanguage: ko
   register: haeche
   speaker: 안드레 3000(André 3000). 프랭크 오션이 아니라 게스트 래퍼가 처음부터 끝까지 혼자 말한다.
-  addressee: 특정한 한 사람이 아니라 청자 전반과 동종 업계의 래퍼들. 앞 곡 'Solo'의 고독을 이어받아 세태를 향해 말을 던진다.
+  addressee: 특정한 한 사람이 아니라 청자 전반과 동종 업계의 래퍼들. 앞 곡 'Solo'의 고독을 이어받아 세태를 향해 말을 던진다. 중간에 앤(Ann)이라 부르는 여성에게 잠깐 말을 건다.
   relationship: 오션과 안드레 3000은 『channel ORANGE』의 'Pink Matter' 이후 이어진 동료다. 곡 안에서 화자와 청자 사이에 개인적 관계는 드러나지 않는다.
   situation: 안드레가 2014년께 다른 비트 위에 녹음한 벌스가 2016년 『Blonde』에서 피아노 편곡으로 바뀌어 실렸다. 술, 경찰 폭력, 물질주의, 대필 같은 주제를 짧은 시간에 쏟아 내는 일종의 인터루드다.
   pronouns:

@@ -25,6 +25,9 @@ translation:
     - source: white Ferrari
       target: 화이트 페라리
       note: 차종과 색을 그대로 옮겼다. 은유의 해석(약물, 순수한 관계 등)은 번역에서 하나로 정하지 않았다.
+    - source: text to speech / Texas speed
+      target: 음성 변환 / 텍사스 속도
+      note: 발음이 닮은 말장난이다. 뜻을 앞 구절에 맞춰 옮기고 소리 유희는 살리지 못했다.
   written: 2026-10-11
 ---
 

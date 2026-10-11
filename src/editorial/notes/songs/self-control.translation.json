@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 421912,
+    "durationMs": 250000
+  },
+  "segments": [
+    {
+      "startMs": 1180,
+      "endMs": 6470,
+      "translation": "어젯밤 네 여름 이야기를 수영장 옆에서 나눴지"
+    },
+    {
+      "startMs": 6470,
+      "endMs": 7850,
+      "translation": "네 여름 이야기를, 어젯밤"
+    },
+    {
+      "startMs": 7850,
+      "endMs": 9200,
+      "translation": "너한테 작업 한번 못 걸었잖아"
+    },
+    {
+      "startMs": 9200,
+      "endMs": 12240,
+      "translation": "어젯밤 내가 널 떨리게 할 수 있었을까"
+    },
+    {
+      "startMs": 12240,
+      "endMs": 15280,
+      "translation": "마지막 밤에는 내가 널 떨리게 할 수 있었을까"
+    },
+    {
+      "startMs": 15280,
+      "endMs": 19960,
+      "translation": "우리 해볼 수 있을까? 시간 있어?"
+    },
+    {
+      "startMs": 19960,
+      "endMs": 28160,
+      "translation": "오늘 밤 네 야한 꿈속 남자친구가 되어 줄게"
+    },
+    {
+      "startMs": 28160,
+      "endMs": 38240,
+      "translation": "코로 줄을 들이마시는 사이, 어린 순진한 애는 흰 옷을 입고 있지"
+    },
+    {
+      "startMs": 38240,
+      "endMs": 43950,
+      "translation": "머리는 잘랐지만, 넌 한때 금발로 물든 삶을 살았잖아"
+    },
+    {
+      "startMs": 43950,
+      "endMs": 50250,
+      "translation": "내가 거기 있었으면 좋았을 텐데, 우리가 같은 가르침을 듣고 자랐더라면"
+    },
+    {
+      "startMs": 50250,
+      "endMs": 57500,
+      "translation": "그래서 우리 때가 맞았더라면"
+    },
+    {
+      "startMs": 57500,
+      "endMs": 63160,
+      "translation": "내 자리 하나만 남겨 줘, 나한테"
+    },
+    {
+      "startMs": 63160,
+      "endMs": 68080,
+      "translation": "너희 둘 사이에서 잘게, 별일 아니잖아"
+    },
+    {
+      "startMs": 68080,
+      "endMs": 71620,
+      "translation": "별일 아니야, 아무것도 아니야"
+    },
+    {
+      "startMs": 71620,
+      "endMs": 80390,
+      "translation": "내 자리 하나만 남겨 줘, 나한테"
+    },
+    {
+      "startMs": 80390,
+      "endMs": 86350,
+      "translation": "가끔은 그리워서, 어떤 소리에 눈물이 나지"
+    },
+    {
+      "startMs": 86350,
+      "endMs": 91610,
+      "translation": "어떤 밤엔 눈물이 맺힌 채로 춤을 추지"
+    },
+    {
+      "startMs": 91610,
+      "endMs": 101930,
+      "translation": "내가 찾아온 건 네 눈에 내가 UFO처럼 보여서야"
+    },
+    {
+      "startMs": 101930,
+      "endMs": 113510,
+      "translation": "그런 일은 거의 없잖아, 내가 널 자제하게 만들었으니까"
+    },
+    {
+      "startMs": 113510,
+      "endMs": 127070,
+      "translation": "그리고 넌 내가 자제력을 잃게 했지, 내 자제력을"
+    },
+    {
+      "startMs": 127070,
+      "endMs": 134100,
+      "translation": "내 자리 하나만 남겨 줘, 나한테"
+    },
+    {
+      "startMs": 134100,
+      "endMs": 139290,
+      "translation": "너희 둘 사이에서 잘게, 별일 아니잖아"
+    },
+    {
+      "startMs": 139290,
+      "endMs": 142090,
+      "translation": "내 자리 하나만 남겨 줘"
+    },
+    {
+      "startMs": 142090,
+      "endMs": 148020,
+      "translation": "별일 아니야, 아무것도 아니야"
+    },
+    {
+      "startMs": 148020,
+      "endMs": 175940,
+      "translation": "별일 아니야, 아무것도 아니야"
+    },
+    {
+      "startMs": 175940,
+      "endMs": 180190,
+      "translation": "나는, 나는, 나는 알아, 너 가야 한다는 거"
+    },
+    {
+      "startMs": 180190,
+      "endMs": 183060,
+      "translation": "여름 한 자락 받아 가"
+    },
+    {
+      "startMs": 183060,
+      "endMs": 187340,
+      "translation": "그만 놓아, 딱 오늘 밤만"
+    },
+    {
+      "startMs": 187340,
+      "endMs": 191900,
+      "translation": "나는, 나는, 나는 알아, 누가 오고 있다는 거"
+    },
+    {
+      "startMs": 191900,
+      "endMs": 199100,
+      "translation": "말로 꼬시고 있네, 너 그럴 만하다는 거 알아"
+    },
+    {
+      "startMs": 199100,
+      "endMs": 204230,
+      "translation": "나는, 나는, 나는 알아, 너 가야 한다는 거"
+    },
+    {
+      "startMs": 204230,
+      "endMs": 207590,
+      "translation": "여름 한 자락 받아 가"
+    },
+    {
+      "startMs": 207590,
+      "endMs": 211050,
+      "translation": "그만 놓아, 딱 오늘 밤만"
+    },
+    {
+      "startMs": 211050,
+      "endMs": 217030,
+      "translation": "나는, 나는, 나는 알아, 누가 오고 있다는 거"
+    },
+    {
+      "startMs": 217030,
+      "endMs": 224210,
+      "translation": "말로 꼬시고 있네, 너 그럴 만하다는 거 알아"
+    },
+    {
+      "startMs": 224210,
+      "endMs": 228220,
+      "translation": "나는, 나는, 나는 알아, 너 가야 한다는 거"
+    },
+    {
+      "startMs": 228220,
+      "endMs": 231800,
+      "translation": "여름 한 자락 받아 가"
+    },
+    {
+      "startMs": 231800,
+      "endMs": 235380,
+      "translation": "그만 놓아, 딱 오늘 밤만"
+    },
+    {
+      "startMs": 235380,
+      "endMs": 240150,
+      "translation": "나는, 나는, 나는 알아, 누가 오고 있다는 거"
+    },
+    {
+      "startMs": 240150,
+      "endMs": 250000,
+      "translation": "말로 꼬시고 있네, 너 그럴 만하다는 거 알아"
+    }
+  ]
+}
