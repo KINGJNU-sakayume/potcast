@@ -12,6 +12,9 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/5fpZ5u4RfqdeVMmECpumYW
   - https://lrclib.net/api/get/1054730
+  - https://www.azlyrics.com/lyrics/kanyewest/everythingiam.html
+  - https://www.lyricsmode.com/lyrics/k/kanye_west/everything_i_am.html
+  - https://en.wikipedia.org/wiki/Chicago_(2002_film)
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -31,7 +34,20 @@ translation:
     - source: "Here we go again"
       target: "또 시작이군"
       note: "퍼블릭 에너미 'Bring the Noise'에서 가져와 스크래치한 구절."
+    - source: "Al B."
+      target: "알 비"
+      note: "LRCLIB는 Albi로 적지만 AZLyrics와 LyricsMode가 모두 Al B.로 적는다. R&B 가수 Al B. Sure!를 가리키는 것으로 읽히나(출처 없는 추정) 이름 표기만 고쳤다."
+    - source: "tithe"
+      target: "십일조"
+      note: "LRCLIB는 time으로 적지만 두 가사 사이트가 모두 tithe로 적고, 뒤따르는 낼 여유가 없다는 말과도 맞는다."
+    - source: "pink slip"
+      target: "분홍색 통지서"
+      note: "두 가사 사이트가 모두 pink slip으로 적는다. 해고 통지를 뜻하는 말이고 문에 붙었다면 퇴거 통지로도 읽히지만 풀이한 출처가 없어 통지서로만 옮겼다."
+    - source: "Queen Latifah / Chicago"
+      target: "퀸 라티파가 영화 『시카고』에서 큰 역을 맡았듯"
+      note: "퀸 라티파는 2002년 영화 『Chicago』에서 마마 모튼을 맡았다(Wikipedia). 도시 이름과 영화 제목을 겹친 말장난이다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 '젠장, 또 시작이군'으로 시작한다. 로즈 피아노의 부드러운 화음과 프린스 필립 미첼의 'If We Can't Be Lovers'에서 가져온 소울풀한 허밍이 느린 비트 위에 깔리고, DJ 프리미어가 퍼블릭 에너미 'Bring the Noise'의 '또 시작이군'을 스크래치로 잘게 잘라 후렴을 만든다. 드럼은 가볍고, 피아노와 목소리, 스크래치 외에는 거의 아무것도 없다. 웨스트의 세 벌스는 같은 후렴을 사이에 두고 차분하게 이어지고, 마지막 후렴이 끝난 뒤에도 피아노와 허밍이 잠시 이어지다 곡이 닫힌다.
@@ -45,3 +61,5 @@ translation:
 ## 번역에 대하여
 
 비판자들과 듣는 사람에게 담담하게 고백하는 곡이라 **해체**로 옮겼다. 후렴의 *everything I'm not*으로 시작하는 문장은 '아닌 것'과 '인 것'이 맞서는 대구가 핵심이라 '내가 아닌 모든 것이 지금의 나를 만들었어'로 대칭을 살렸다. DJ 프리미어가 스크래치한 *here we go again*은 퍼블릭 에너미에서 온 짧은 구호라 '또 시작이군'으로 짧게 옮겼다. 상 이름을 비튼 말장난 가운데 비하어가 들어간 것은 직역하지 않고 조롱의 뜻만 남겼다.
+
+2026-10-11 재검토에서 LRCLIB 표기와 두 가사 사이트가 갈리는 세 곳을 사이트 쪽으로 고쳤다. 교회가 원하는 것은 시간이 아니라 십일조이고, 문에 붙은 것도 낼 수 없는 형편을 알리는 분홍색 통지서다. 퀸 라티파 줄은 영화 『시카고』를 겹친 말장난이라는 점이 보이게 풀어 옮겼다.

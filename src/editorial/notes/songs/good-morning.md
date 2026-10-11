@@ -12,6 +12,7 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/5MTwfuYDZqRIEwOAamaT2I
   - https://lrclib.net/api/get/571255
+  - https://www.azlyrics.com/lyrics/jayz/therulersback.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +35,11 @@ translation:
     - source: "valedictorian"
       target: "졸업생 대표"
       note: "졸업식에서 고별사를 하는 수석 졸업생."
+    - source: "get on down"
+      target: "어서 놀아 봐"
+      note: "제이 지 'The Ruler's Back' 원곡에서 허슬러들에게 리듬 속으로 들어오라고 권하는 구절이라 '일어나'가 아니라 흥겹게 놀라는 권유로 옮겼다(원곡 가사 확인). 2026-10-11에 고쳤다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 메아리치듯 반복되는 카우벨과 쿵쿵 울리는 베이스, 아르페지오로 흔들리는 단순한 신시사이저로 시작한다. 웨스트의 짧은 탄식 뒤 후렴이 들어오면 공간이 갑자기 넓어진다. 엘턴 존의 'Someone Saved My Life Tonight'에서 가져온 가사 없는 '우우' 합창과 앰비언트한 신시사이저가 '굿모닝'을 감싸며 하늘로 떠오르는 듯한 소리를 낸다. 세 개의 벌스는 같은 후렴을 사이에 두고 이어지고, 마지막 후렴이 바뀌어 '허슬러들, 아직 살아 있다면 일어나'라는 제이 지의 목소리가 반복된다. 끝 25초 남짓은 '일어나'만 남아 천천히 사라진다.
@@ -48,3 +53,5 @@ translation:
 ## 번역에 대하여
 
 졸업식 날 아침 자신과 동료들에게 건네는 독백이라 **해체**로 옮겼다. 첫 줄의 *Mr. West*는 『Late Registration』의 'Wake Up Mr. West'와 같은 호칭이라 같은 번역 '웨스트 군'을 써서 두 앨범을 이었다. *buy any jeans necessary*처럼 유명한 연설을 비튼 말장난은 원래 표현이 보이도록 풀어 옮기고 용어집에 설명을 남겼다. 마지막 제이 지의 반복 구절은 다른 사람의 목소리지만 같은 청중에게 하는 말이라 같은 반말로 옮겼다.
+
+2026-10-11 재검토에서 끝부분 제이 지의 반복 구절을 '일어나'에서 '어서 놀아 봐'로 고쳤다. 샘플 원곡 『The Blueprint』의 첫 곡에서 같은 구절이 리듬에 맞춰 모이라는 권유로 쓰이기 때문이다. 첫 벌스의 학점 이야기 줄은 원문에 없는 'D'가 하나 더 붙어 있어 덜어냈다.

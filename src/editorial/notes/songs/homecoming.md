@@ -12,6 +12,7 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/2BcbpKOj2vvG7GHXv6vKqN
   - https://lrclib.net/api/get/572300
+  - https://www.urbandictionary.com/define.php?term=blow%20trees
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +35,11 @@ translation:
     - source: "Chi city"
       target: "시카고 시티"
       note: "시카고를 부르는 구호."
+    - source: "blow trees"
+      target: "나무를 흔들고 대마도 피우는"
+      note: "바람이 나무를 흔드는 일과 'trees'(대마)를 피우는 일을 겹친 말장난이다. Urban Dictionary의 정의들이 대마를 피운다는 뜻으로 일치하고 이 가사를 예문으로 든다. Wikipedia 'Homecoming' 항목도 윈디가 이 말을 한다고 짚는다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 '시카고 시티'를 부르는 구호와 함께 크리스 마틴의 피아노로 시작한다. 가스펠처럼 힘차게 내려치는 피아노 음형과 묵직하지만 튀어 오르는 드럼이 곡을 끌고, 마틴은 내가 집으로 돌아가는데 가끔 내 생각 하느냐고 후렴을 부른다. 곡 내내 정체를 알 수 없는 관중의 환호가 배경에 깔려 있어, 경기장 무대에서 고향으로 돌아오는 장면처럼 들린다. 두 벌스 사이에 후렴이 돌아오고, 마지막에는 미시간 호수의 불꽃놀이를 기억하느냐는 노래가 두 번 반복된 뒤, 2분 46초쯤부터 30초 넘게 다시 시작할 수 있을지도 모른다는 마지막 줄과 반주가 이어지며 곡이 닫힌다.
@@ -48,3 +53,5 @@ translation:
 ## 번역에 대하여
 
 시카고를 연인처럼 의인화한 곡이라 **해체**로 옮겼다. 벌스에서는 시카고를 '그녀'로 이야기하다가 크리스 마틴의 후렴에서 '너'로 직접 부르기 때문에, 그 전환을 살려 호칭을 나눴다. *Windy*는 시카고의 별명에서 온 이름이라 번역하지 않고 '윈디'로 두고 용어집에 이유를 적었다. 시카고의 지명과 미시간 호수 같은 장소는 그대로 옮겨 고향의 구체성을 남겼고, 비하어는 직역하지 않았다.
+
+2026-10-11 재검토에서 윈디의 자기소개를 단순히 나무 사이로 부는 바람이 아니라, 나무를 흔드는 바람과 대마를 피우는 일을 겹친 말장난으로 고쳐 옮겼다. 이름이 윈디인 이유와 같은 줄이기 때문이다. 같은 벌스의 *tow 'em off*는 AZLyrics가 다르게 적어 뜻이 갈리지만 번역은 바꾸지 않았다.

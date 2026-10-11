@@ -12,6 +12,8 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/1gudTcOiMosmCC6EKEzomI
   - https://lrclib.net/api/get/581737
+  - https://www.complex.com/style/a/karizza-sanchez/kanye-west-pastelle-first-clothing-line-untold-story
+  - https://en.wikipedia.org/wiki/Take_6
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +36,14 @@ translation:
     - source: "Louis Vuitton Don"
       target: "루이 비통 돈"
       note: "웨스트가 스스로 붙인 별명."
+    - source: "Pastellé"
+      target: "파스텔레"
+      note: "웨스트가 만들던 첫 의류 브랜드의 이름이다. Complex가 이 줄을 인용해 브랜드를 소개한다. 이전에는 색 이름 '파스텔'로 옮겼다."
+    - source: "take six"
+      target: "테이크 식스"
+      note: "고스펠 아카펠라 육중창 그룹의 이름이다(Wikipedia 'Take 6'). 바로 뒤 'take this'와 소리를 맞춘 말장난으로 읽히지만 풀이한 출처는 찾지 못해 번역은 이름 그대로 두었다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 다프트 펑크 'Harder, Better, Faster, Stronger'의 보코더 목소리로 시작한다. 일하고, 만들고, 해내라는 로봇 같은 주문이 끝나자마자 웨스트가 날 죽이지 못하는 건 날 더 강하게 만들 뿐이라는 후렴을 내뱉고, 깊고 텅 빈 울림의 드럼이 곡을 끌고 간다. 후렴 사이사이 원곡의 단어들이 잘게 잘려 '지금 당장 네가 필요해'와 맞물리고, 두 벌스는 클럽의 밤과 자기 과시를 오간다. 2분 42초쯤 '내가 얼마나 오래 너한테 빠져 있었는지'를 말하는 브리지가 들어오고, 마지막 후렴 뒤 4분 15초 무렵부터는 '끝나지 않아'와 다프트 펑크의 구절이 1분 가까이 반복되는 확장 아웃트로가 곡을 닫는다.
@@ -48,3 +57,5 @@ translation:
 ## 번역에 대하여
 
 클럽의 여성과 비판자들에게 동시에 말하는 곡이라 **해체**로 옮겼다. 다프트 펑크 샘플의 *harder, better, faster, stronger*는 네 개의 비교급이 이어지는 리듬이 핵심이라 '더 세게, 더 좋게, 더 빠르게, 더 강하게'로 짧게 맞췄고, 후렴의 니체 경구는 한국어에 알려진 형태에 가깝게 옮겼다. 둘째 벌스의 성적인 말장난 가운데 비하적인 표현은 직역하지 않고 뜻만 남겼다.
+
+2026-10-11 재검토에서 *Pastellé*가 색이 아니라 웨스트의 첫 의류 브랜드라는 점을 Complex의 소개 기사로 확인해 이름으로 옮겼다. *Christian in Christian Dior*의 말장난은 풀이한 출처를 찾지 못해 직역을 유지했다.
