@@ -2,7 +2,7 @@
 name: song-writer
 description: 곡 하나의 Listening Note와 번역 브리프를 쓸 때 사용 (곡 하나당 호출)
 model: sonnet
-effort: high
+effort: medium
 skills: write-note
 tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 ---
