@@ -10,6 +10,7 @@ sources:
   - https://www.spectrum-pulse.ca/blog//2017/07/album-review-stoney-by-post-malone.html
   - https://riffmagazine.com/reviews/post-malone-stoney/
   - https://en.wikipedia.org/wiki/Stoney_(album)
+  - https://www.nssmag.com/en/fashion/9164/tutto-quello-che-dovete-sapere-su-vlone
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -30,7 +31,17 @@ translation:
     - source: Good job, First
       target: 잘했어, 퍼스트
       note: 프로듀서 FKi 1st의 태그.
+    - source: Vlone
+      target: 브이론
+      note: 에이셉 몹 계열 스트리트웨어 브랜드. 브랜드 이름이라 소리 나는 대로 옮겼다.
+    - source: Thrown the check like a Nike, I just do it
+      target: 나이키처럼 수표를 던지고 그냥 해 버려
+      note: 나이키의 슬로건 'Just do it'을 끌어온 말장난.
+    - source: counting on my own
+      target: 나 혼자 힘만 믿고 가
+      note: 'count on'은 의지한다는 뜻이라 돈을 센다는 직역을 버렸다.
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 '잘했어, 퍼스트'라는 짧은 태그로 시작한다. 'White Iverson'을 만든 프로듀서 FKi 1st의 표시다. 차갑게 깔리는 신시사이저와 느린 트랩 박자 위에서 포스트 말론은 내 손목은 이렇게 차갑고 다이아는 꽁꽁 얼어 있다는 후렴을 먼저 부른다. 그 뒤에서 가수 리버 티버의 목소리가 배경을 채워 곡에 분위기를 더한다. 첫 절은 바다에 빠져 가는 듯한 이미지로 시작해, 네가 떠났을 때 너무 아팠다는 고백으로 이어진다. 중간의 '맙소사, 맙소사' 하는 부분에서 목소리는 높아지고 다급해진다. 마지막에는 '난 도망치지 않아'라는 짧은 줄과 긴 허밍으로 곡이 사라진다.
@@ -43,4 +54,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 떠난 연인에게 직접 다 너를 위한 거라고, 네가 필요했다고 말한다. 끝났지만 끊지 못한 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 'ice'는 다이아몬드를 가리키는 은어라 '다이아'로 옮기고, 차갑다는 말이 보석의 빛과 마음의 냉기를 함께 담도록 '차갑고 꽁꽁 얼어 있다'로 살렸다. 'Oh my God'은 기도가 아니라 탄식이라 '맙소사'로 옮겼다. 일부 줄은 가사 데이터의 받아쓰기가 불확실해 뜻이 통하는 범위에서 옮겼다.
+화자는 떠난 연인에게 직접 다 너를 위한 거라고, 네가 필요했다고 말한다. 끝났지만 끊지 못한 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 'ice'는 다이아몬드를 가리키는 은어라 '다이아'로 옮기고, 차갑다는 말이 보석의 빛과 마음의 냉기를 함께 담도록 '차갑고 꽁꽁 얼어 있다'로 살렸다. 'Oh my God'은 기도가 아니라 탄식이라 '맙소사'로 옮겼다. 일부 줄은 가사 데이터의 받아쓰기가 불확실해 뜻이 통하는 범위에서 옮겼다. 특히 'ice cube'가 든 줄과 'aim three'가 든 줄은 받아쓰기와 뜻을 확정하지 못했다.

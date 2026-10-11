@@ -58,6 +58,44 @@
 | rock-n-roll-star | 7, 21 | 'feed my head'의 뜻 (White Rabbit에서 왔다는 설은 입증 못 함) | 직역 | 노엘 인터뷰 |
 | live-forever | — | "how your garden grows" (남의 일에 관심 없다는 뜻으로 읽는 해석) | 직역 | 노엘 설명 |
 
+### Fiona Apple / Kanye West / Post Malone (재검토 라운드 1)
+
+Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분 근거를 못 얻었다. 아래는 Genius 주석이나 Spotify 공식 가사 확인이 필요하다.
+
+| 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
+| --- | --- | --- | --- | --- |
+| rack-of-his | 36 | 'Orville'을 "둘 다 잘하진 못하지만"으로 고쳤는데 전사본마다 단어가 다름. Spotify 표기가 Orville이면 되돌려야 함 | 둘 다 잘하진 못하지만, 뭐 괜찮아 | Spotify 공식 가사 |
+| rack-of-his | 8, 23, 29 | "there's a kick"의 뜻 (재미로 읽음) | 재미가 한 번 지나가면 넌 포기해 버리지 | 인터뷰, 주석 |
+| i-love-kanye | 1 | "the 'Go"가 시카고 줄임말인지, "from the get-go"의 처음부터인지 | 시카고에서 막 나온 카녜 | 주석 |
+| wolves | 49 | "that's the tea, no sip"의 'no sip' | 진짜 얘기만 해, 그게 진실이야, 차 한 모금도 없이 | 주석, Spotify 공식 가사 |
+| wolves | 39 | "warm flesh, on Caesar" 표기 | 난 카이사르 위의 따뜻한 살이었어 | Spotify 공식 가사 |
+| wolves | 30 | "Don't fire fight"의 어순 (fight fire의 도치인지) | 불을 끄려 하지 마 | Spotify 공식 가사 |
+| wolves | 54–59 | "corny"가 뒤 명사를 꾸미는지, 'unswallow'의 뜻 | 시시한 여자들/남자들이 있겠지 | 주석 |
+| candy-paint | 8 | "no jumper … ball"이 농구(점프슛) 말장난인지 | 점프슛은 없어도 난 펑펑 써 | 주석 |
+| candy-paint | 22 | "Slide boy"의 속어 뜻 | 미끄러지듯 내려와, 젠장, 난 뜨거워 | 주석, 공식 가사 |
+| candy-paint | 50 | "rolling twenty ash" | 스무 개 굴리며 재를 털고 길을 나서 | 주석 |
+| cold | 38, 41 | "ice cube"가 든 줄의 받아쓰기, "don't gather hearts too" | 내 보석은 얼음처럼 차갑지 / 마음을 모으지 마 | Spotify 공식 가사 |
+| cold | 43–44 | "aim three" 받아쓰기 (고유명사일 가능성) | 난 혼자 올라왔을 뿐이야 / 그건 내 잘못이었어 | Spotify 공식 가사 |
+| die-for-me | 39 | "From your passport"의 뜻 | 네 여권을 보니 거짓말하는 것 같아 | Spotify 공식 가사 |
+| die-for-me | 41 | "you flying"이 취했다는 뜻인지 비행기를 탔다는 뜻인지 | 넌 약해져서 날아갔지 | 주석 |
+| die-for-me | 36 | "bad girl"을 "끝내주는 여자"로 읽음 (웹 근거 없음) | 끝내주는 여자 | 주석 |
+| die-for-me | 37–45 | 퓨처 절 전반의 받아쓰기 | 현재 번역 유지 | Spotify 공식 가사 |
+| goodbyes | 28–29 | 'cut'이 성관계 속어를 겸하는지 (content-farm 한 곳만 그렇게 해석) | 칼 없이 널 잘라 내려 해 | 신뢰할 만한 주석 |
+| goodbyes | 30 | "my argue possessive, it got you precise" | 내 집착하는 말다툼이 널 정확히 꿰뚫었지 | Spotify 공식 가사 |
+| goodbyes | 32–34 | "blue diamond, no shark", "Barbie life doll", "on the charger" | 차고를 가득 채워, 파란 다이아몬드, 상어는 없어 / 넌 바비 인형 같은 삶, 니키 미나즈처럼 / 네 차는 충전 중이야 | 주석 |
+| i-cannot-be-a-sadder-song | 12 | 'top me off'가 술을 채운다는 뜻인지 속어인지 | 넌 날 채워 주지는 않을 거야 | 주석 |
+| i-cannot-be-a-sadder-song | 37 | "federal skeleton on my wrist" | 손목의 스켈레톤 시계는 지금이 전성기래 | 주석 |
+| losers | 3 | 작곡자 이름 나열(Chuck, Ernest, Chandler)로 읽음. 근거는 holler.country 한 곳 | 척이니 언이니 챈들러니 하는 이름의 사람들 몇 명 | 공식 가사, 크레딧 인터뷰 |
+| take-what-you-want | 40–45 | 트래비스 스콧 절 끝 여섯 줄: 속어가 겹치고 받아쓰기도 의심스러움 | 그 아가씨가 돌아와 / 보자마자 필요해 … | Spotify 공식 가사, 주석 |
+| take-what-you-want | 30–32 | "ran through it"의 주어와 대상 | 다들 한 번씩 거쳐 갔어 | 주석 |
+| texas-tea | 12 | "skeleton"을 시계로 본 해석 (동사 "watch"일 가능성) | 뼈대가 다 보이는 스켈레톤 시계, 자기야 | 주석 |
+| texas-tea | 18–20 | "toggling", "yodeling", "guillotine"의 뜻과 받아쓰기 | 다들 왔다 갔다 하는 데 꽤 익숙해 / … / 단두대 위에 목걸이 스무 개 | Spotify 공식 가사, 주석 |
+| too-young | 15 | "your life never going back" | 침착하려고 하지만 네 삶은 절대 되돌아가지 않아 | 주석 |
+| too-young | 26 | "poppin' that woe"가 약물 은어인지 | 약을 하고 | 슬랭 사전, 주석 |
+| too-young | 30 | "got that bitch off"의 뜻 (오르가즘인지 쫓아냈다는 뜻인지) | 그 여자를 보내고 | 주석 |
+| too-young | 12 | 'papadeauxs'를 Pappadeaux 체인으로 본 연결은 해석 | 파파도에서 밥을 먹어 | 공식 가사 |
+| yours-truly-austin-post | 10, 25, 29 | "put that sauce on that bitch"의 대상, "bought out my brain", "kerosene"의 뜻과 받아쓰기 | 그 여자한테 금방 멋을 입혀 주고 / 머리가 텅 빌 만큼 다 써 버렸어 / 등유를 잔뜩 구해 오자 | 주석, Spotify 공식 가사 |
+
 ### tripleS 『ASSEMBLE』 / NMIXX 『Blue Valentine』
 
 | 곡 | 줄 | 쟁점 | 현재 처리 | 필요한 근거 |
