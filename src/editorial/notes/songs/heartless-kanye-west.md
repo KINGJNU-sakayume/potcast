@@ -12,6 +12,7 @@ sources:
   - https://en.wikipedia.org/wiki/Heartless_(Kanye_West_song)
   - https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5
   - https://lrclib.net/api/get/571903
+  - https://en.wiktionary.org/wiki/get_back
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -37,7 +38,11 @@ translation:
     - source: "Dr. Evil"
       target: "닥터 이블"
       note: "영화 '오스틴 파워' 시리즈의 악당."
+    - source: "get me back"
+      target: "날 되찾아서"
+      note: "'get someone back'은 앙갚음한다는 관용구로도 읽힌다(Wiktionary 한 곳, 등급 C). 뒤의 'show me'와 이어지면 복수 쪽이지만 재결합 쪽도 배제하지 못해 번역은 그대로 둔다."
   written: 2026-10-08
+  updated: 2026-10-11
 ---
 
 곡은 전주 없이 후렴으로 바로 시작한다. 밤이면 사람들이 수군대는 소리가 들린다는 첫 줄과 함께 808의 둔탁한 박자와 짧게 끊어 치는 피아노가 들어오고, 오르간이 깔린 후렴은 '가장 차가운 이야기'를 들려준 뒤 '어떻게 그렇게 매정할 수 있어?'를 두 번 묻는다. 23초쯤 시작하는 벌스에서 오토튠을 거친 웨스트의 목소리는 노래와 랩 사이를 오가며, 앨범에서 거의 유일하게 랩에 가까운 리듬으로 말을 쏟아 낸다. 벌스 아래에는 제프 바스커의 건반이 배경처럼 깔린다. 둘째 벌스의 '닥터 이블'과 새벽 3시의 통화를 지나 2분 13초쯤 '말하고 말하고 또 말하고'로 시작하는 브리지에서 말의 속도가 잦아들고, 화자는 오늘 밤 떠나겠다고 말한다. 3분 반의 짧은 곡은 같은 물음을 마지막으로 닫힌다.
