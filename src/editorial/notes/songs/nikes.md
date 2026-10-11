@@ -32,7 +32,7 @@ translation:
       note: 제목과 후렴의 소비재 이미지. 브랜드명이므로 번역하지 않고 한글 표기로 옮겼다.
     - source: yam
       target: 그 라인 출신
-      note: A$AP Yams의 이름을 겹친 말장난으로 읽히지만 한국어로 살릴 수 없어 뜻만 옮겼다.
+      note: A$AP Yams의 이름을 겹친 말장난으로 읽히지만 한국어로 살릴 수 없어 '그 라인 출신'으로 옮겼다.
     - source: mean something to you
       target: 너한테 뭔가 의미가 될게
       note: 반복되는 약속이라 세 번 모두 같게 옮겼다.
