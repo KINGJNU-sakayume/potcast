@@ -186,6 +186,5 @@ export const PENDING_REVIEW: ReadonlySet<string> = new Set([
   'albums/strobo',
   'songs/adore-u',
   'songs/before-the-rise',
-  'songs/chowall',
   'songs/crush-on-you',
 ]);

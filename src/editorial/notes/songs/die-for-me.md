@@ -10,6 +10,7 @@ sources:
   - https://www.rollingstone.com/music/music-album-reviews/post-malone-hollywoods-bleeding-882364/
   - https://www.nme.com/reviews/post-malone-hollywoods-bleeding-review-2545499
   - https://www.rollingstone.com/music/music-features/post-malone-friends-hollywood-bleeding-880952/
+  - https://en.wikipedia.org/wiki/Die_for_Me_(Post_Malone_song)
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,7 +34,17 @@ translation:
     - source: past 11
       target: 밤 11시가 넘으면
       note: 밤이 깊어지면 드러나는 다른 얼굴을 가리킨다.
+    - source: break-up note
+      target: 이별 편지
+      note: 홀지의 히트곡 'Without Me'를 가리키는 줄이다(위키백과).
+    - source: on the low / getting high
+      target: 조용히 지냈는데 / 같이 취해 가고 있었지
+      note: 'low'와 'high'를 맞세운 말장난. 한국어로 대구를 살리기 어려워 뜻만 옮겼다.
+    - source: bad girl
+      target: 끝내주는 여자
+      note: 힙합에서 매력적이고 센 여자를 가리키는 말로 읽었다.
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 '오 그래' 하는 짧은 소리 뒤에 '날 위해 죽겠다고 했잖아, 그런데 거짓말했지'라는 도입부로 바로 들어간다. 포스트 말론은 총알도 대신 맞겠다던 연인이 거짓말해 왔다는 나쁜 예감이 들었다고, 밤 11시가 넘으면 그녀의 다른 얼굴이 보인다고 노래한다. 후렴의 '죽겠다고, 거짓말했지'는 세 번씩 겹쳐 반복된다. 첫 절에서 그는 그녀가 들어오는 소리에 금고에서 총을 꺼냈던 밤을 떠올린다. 둘째 절은 퓨처가 클럽에서 아침 9시에 나왔던 밤 이야기로 이어가고, 마지막 절에서 홀지가 들어와 판을 뒤집는다. 끝은 후렴의 반복이다.
@@ -46,4 +57,4 @@ translation:
 
 ## 번역에 대하여
 
-세 화자 모두 자신을 속인 연인에게 직접 원망을 쏟아 낸다. 헤어진 연인 사이의 거친 말이라 **해체**로 옮겼다. 후렴의 'you'd die for me'와 'you lied to me'는 세 번씩 겹쳐 반복되는 말이라 '죽겠다고'와 '거짓말했지'로 고정해 리듬을 살렸다. 'take a bullet'은 목숨을 건다는 관용 표현이라 '총알도 대신 맞겠다'로 옮겼다. 퓨처의 절은 받아쓰기가 불확실한 줄이 있어 뜻이 통하는 범위에서 옮겼다.
+세 화자 모두 자신을 속인 연인에게 직접 원망을 쏟아 낸다. 헤어진 연인 사이의 거친 말이라 **해체**로 옮겼다. 후렴의 'you'd die for me'와 'you lied to me'는 세 번씩 겹쳐 반복되는 말이라 '죽겠다고'와 '거짓말했지'로 고정해 리듬을 살렸다. 'take a bullet'은 목숨을 건다는 관용 표현이라 '총알도 대신 맞겠다'로 옮겼다. 퓨처의 절은 받아쓰기가 불확실한 줄이 있어 뜻이 통하는 범위에서 옮겼다. 'you flying'과 'From your passport' 줄은 뜻을 확정하지 못했다.

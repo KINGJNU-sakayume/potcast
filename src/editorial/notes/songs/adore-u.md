@@ -1,6 +1,7 @@
 ---
 artist: nmixx
 titles: [ADORE U]
+lyricsLanguage: ko
 written: 2026-10-03
 short: >
   밴드 사운드가 하이퍼팝과 힙합으로 갑자기 꺾이는 구간을 따라가 보자. 놓지 못하는 마음이 장르가 바뀔 때마다 다른 얼굴을 한다.

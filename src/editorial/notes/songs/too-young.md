@@ -10,6 +10,8 @@ sources:
   - https://texanmosaic.com/2017/02/23/post-malone-impresses-with-song-variety-in-stoney/
   - https://en.wikipedia.org/wiki/Too_Young_(Post_Malone_song)
   - https://en.wikipedia.org/wiki/Stoney_(album)
+  - https://pappadeaux.com/our-story/
+  - https://www.complex.com/style/fairfax-avenue-mecca-of-streetwear
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,7 +35,17 @@ translation:
     - source: grindin'
       target: 갈아 넣다
       note: 성공을 위해 쉬지 않고 일한다는 뜻.
+    - source: guap
+      target: 돈
+      note: 돈을 뜻하는 힙합 속어.
+    - source: Fairfax
+      target: 페어팩스
+      note: 로스앤젤레스의 페어팩스 애비뉴 일대. 슈프림 등 스트리트웨어 가게가 모인 쇼핑 거리로 알려져 있다. 가사의 쇼핑이 이 거리를 가리킨다고 보았다.
+    - source: papadeauxs
+      target: 파파도
+      note: 텍사스에서 시작된 케이준풍 해산물 체인 파파도(Pappadeaux Seafood Kitchen)로 보았다. 포스트 말론이 텍사스 출신이라는 점에 근거한 해석이다.
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 '너무 어릴 때 죽고 싶진 않아'라는 후렴으로 곧장 시작한다. 어두운 트랩 비트 위에서 포스트 말론은 '너무 어릴 때'를 메아리처럼 되풀이하고, 돈뭉치를 센다는 줄 끝에 '할렐루야, 루야, 루야'를 붙인다. 너무 오래 갈아 넣었다는 줄이 후렴을 닫는다. 첫 절은 빠른 랩으로 쇼핑과 돈, 짐승이 된 듯한 기분을 늘어놓는다. 둘째 절에서는 빠른 차와 포르쉐, 여자 이야기가 이어지다가 마지막 두 줄에서 갑자기 목소리가 가라앉는다. 그 뒤 후렴이 두 번 반복되며 곡이 끝난다.
@@ -46,4 +58,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 자신의 성공과 두려움을 듣는 사람들에게 거리낌 없이 털어놓는다. 자랑과 고백이 섞인 랩이라 **해체**로 옮겼다. 후렴의 'die too young'은 곡의 중심이라 '너무 어릴 때 죽고 싶진 않아'로 고정하고, 메아리처럼 반복되는 'too young'도 하나하나 살렸다. 'bands'는 천 달러 묶음을 가리키는 은어라 '돈뭉치'로 옮겼다. 가사 데이터의 받아쓰기가 불확실한 몇 줄과 끝이 흐려지는 줄은 뜻이 통하는 범위에서 옮기거나 말줄임표로 남겼다.
+화자는 자신의 성공과 두려움을 듣는 사람들에게 거리낌 없이 털어놓는다. 자랑과 고백이 섞인 랩이라 **해체**로 옮겼다. 후렴의 'die too young'은 곡의 중심이라 '너무 어릴 때 죽고 싶진 않아'로 고정하고, 메아리처럼 반복되는 'too young'도 하나하나 살렸다. 'bands'는 천 달러 묶음을 가리키는 은어라 '돈뭉치'로 옮겼다. 가사 데이터의 받아쓰기가 불확실한 몇 줄과 끝이 흐려지는 줄은 뜻이 통하는 범위에서 옮기거나 말줄임표로 남겼다. 'got that bitch off'와 'poppin' that woe', 첫 절 끝의 'your life never going back' 줄은 웹에서 줄 단위 해설을 찾지 못해 미확정이며, 가장 근거가 강한 해석을 유지했다.
