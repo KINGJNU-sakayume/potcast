@@ -36,8 +36,8 @@ translation:
       target: 토니 댄자
       note: 시트콤 'Who's the Boss?'의 배우. 제목의 'boss'와 겹쳐 '보스'라는 말장난이 된다.
     - source: gave me top
-      target: 입으로 해 줄 땐
-      note: 'top'은 구강 성교를 가리키는 속어. 직설을 피해 완곡하게 옮겼다.
+      target: 날 빨아 줄 땐
+      note: 'top'은 구강 성교를 가리키는 속어. 원문 수위대로 '빨아 줄 땐'으로 옮겼다.
     - source: "candy paint"
       target: "캔디 페인트"
       note: "'candy paint'는 포스트의 맞춤 포드 익스플로러를 가리킨다(Songfacts). 'no jumper'는 Gucci Mane의 'Bricks'를 끌어온 말이고, 팟캐스트 No Jumper에 대한 인사이면서 포스트가 농구를 좋아하지만 잘하지는 못한다는 농담으로 읽혔다(Genius 주석)."
