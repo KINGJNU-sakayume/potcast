@@ -10,6 +10,7 @@ sources:
   - https://djbooth.net/features/2017-07-11-tyler-the-creator-flower-boy-album-review/
   - https://en.wikipedia.org/wiki/House_Negro
   - "Genius 주석 (사용자 제공 레퍼런스) — I Ain't Got Time!"
+  - "Genius 주석 (사용자 제공) — I Ain't Got Time!"
 short: >
   저음이 밀어붙이는 동안 비트의 멈춤과 재출발을 따라가면 랩이 매번 새 자세를 잡는다. 마지막의 전화는 그 소란을 한 사람에게 말을 거는 상황으로 돌려놓는다.
 translation:
@@ -39,7 +40,10 @@ translation:
       note: "바로 앞 Converse·Vans 줄에 맞춰 '착용하다'로 읽었다. 뒤의 'All smiles'와 이어지는 말로 읽을 여지도 남는다."
     - source: "Yoda / Skywalker / solar / Sprite / cola"
       target: "요다 / 스카이워커 / 솔라 / 스프라이트 / 콜라"
-      note: "스타워즈 말장난이 이어지는 네 줄이다. 두툼한 주머니의 초록 지폐를 요다의 피부색에 빗댄 것으로 읽고(Genius 주석), 'Skywalker'는 타일러가 아끼는 차를 가리키는 말일 가능성이 있다. 'solar'는 한 솔로(Han Solo)를 연상시키는 말이다. 'Anakin skin Sprite, my tint cola'는 아나킨의 하얀 피부는 스프라이트에, 타일러의 검은 피부는 콜라색에 빗댄 것이다. 소리 말장난은 한국어에 옮길 수 없어 뜻을 풀어 옮겼다."
+      note: "스타워즈 말장난이 이어지는 줄이다. 요다의 피부색인 초록으로 지폐를 빗대고, 'Skywalker'는 스타워즈에서 따온 이름으로 읽었다(사용자 제공 해설은 하늘을 걷는 자처럼 태양 둘레를 누비는 스케일 큰 자랑으로 풀었다). 'solar'는 한 솔로를 연상시키고, 아나킨의 하얀 피부는 스프라이트, 타일러의 검은 피부는 콜라색에 빗댄 것이다."
+    - source: "getting neck / busting / 9"
+      target: "입으로 받으면서 / 터질 때까지 / 9밀리"
+      note: "'getting neck'은 구강 성교, 'busting'은 사정을 뜻하고 '9'는 9밀리 권총이다. 'broad shoulders'는 broad(여자)를 어깨와 겹친 말놀이다(Genius 주석)."
   written: 2026-10-11
   updated: 2026-10-11
 ---
@@ -54,4 +58,4 @@ translation:
 
 ## 번역에 대하여
 
-"Who the fuck you talking to"처럼 눈앞의 상대에게 대놓고 쏘아붙이는 줄이 후렴으로 반복되어, 거칠되 바로 앞에서 말하는 느낌의 **해체**를 곡 전체에 썼다. Pitchfork 리뷰와 노트가 설명하듯 이 곡은 'Boredom'의 느긋한 반복을 끊고, 곧 이어지는 '911 / Mr. Lonely'가 보여 줄 가면을 먼저 세우는 외향적인 목소리다. 선언문처럼 해라체로 하는 안도 생각했지만 상대를 직접 겨냥하는 말이 대부분이라 버렸고, 비속어는 원문의 거침을 유지하되 수위를 더 높이지 않았고, 'Skywalker, riding 'round solar'를 포함한 네 줄은 Genius 주석에 따라 스타워즈 말장난(요다는 초록 지폐, 솔라는 한 솔로, 아나킨은 하얀 피부)으로 읽었고, 'Skywalker'가 타일러의 차라는 해석만 추정에 가깝다. 첫머리 라디오 멘트와 마지막 전화 대사도 같은 화자의 연출이라 같은 어체로 두었다.
+"Who the fuck you talking to"처럼 눈앞의 상대에게 대놓고 쏘아붙이는 줄이 후렴으로 반복되어, 거칠되 바로 앞에서 말하는 느낌의 **해체**를 곡 전체에 썼다. Pitchfork 리뷰와 노트가 설명하듯 이 곡은 'Boredom'의 느긋한 반복을 끊고, 곧 이어지는 '911 / Mr. Lonely'가 보여 줄 가면을 먼저 세우는 외향적인 목소리다. 선언문처럼 해라체로 하는 안도 생각했지만 상대를 직접 겨냥하는 말이 대부분이라 버렸고, 비속어는 원문의 거침을 유지하되 수위를 더 높이지 않았고, 'Skywalker, riding 'round solar'를 포함한 네 줄은 Genius 주석에 따라 스타워즈 말장난(요다는 초록 지폐, 솔라는 한 솔로, 아나킨은 하얀 피부)으로 읽었고, 'Skywalker'는 스타워즈에서 따온 이름으로 읽었고, 'getting neck'은 구강 성교, 'busting'은 사정, '9'는 9밀리 권총이라는 주석을 따랐다. 첫머리 라디오 멘트와 마지막 전화 대사도 같은 화자의 연출이라 같은 어체로 두었다.

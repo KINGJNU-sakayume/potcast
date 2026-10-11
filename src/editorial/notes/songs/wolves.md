@@ -11,6 +11,7 @@ sources:
   - https://coogradio.com/2016/02/track-by-track-album-review-the-life-of-pablo-by-kanye-west/
   - https://open.spotify.com/track/432hUIl3ISDeytYW5XBQ5h
   - https://lrclib.net/api/get/1055329
+  - "Genius 주석 (사용자 제공) — Wolves"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -27,9 +28,6 @@ translation:
       target: "너"
       note: "가까운 상대를 찾고 부르는 호칭이다."
   glossary:
-    - source: "Caesar"
-      target: "카이사르"
-      note: "선택한 LRCLIB의 불명확한 표기를 따른다. 첨부의 다른 단어로 교정하거나 특정 사건으로 설명하지 않는다."
     - source: "Joseph"
       target: "요셉"
       note: "성서 인물을 통해 배우자와 가족을 감싸려는 화자의 비유다."
@@ -39,6 +37,12 @@ translation:
     - source: "Saint"
       target: "세인트"
       note: "아들의 이름으로 성인의 일반 명칭과 구별한다."
+    - source: "Caesar"
+      target: "난 양념도 안 된 따뜻한 살코기였어"
+      note: "Spotify 공식 가사(사용자 확인)는 'warm flesh, unseasoned'로, 앞서 'Caesar'로 읽은 것을 바로잡았다. 양념이 안 된 날것의 살이라는 뜻으로 읽었다."
+    - source: "that's the tea, no sip"
+      target: "'T'(진실)야, 홀짝이며 구경만 하진 않아"
+      note: "'tea'는 직전의 'real shit'을 T(truth)로 바꿔 말하는 말장난이고, 'no sip'은 차를 홀짝이는 케르밋 밈(남 일 구경)의 무심한 태도와 반대로 가겠다는 뜻으로 읽었다(Genius 주석)."
   written: 2026-10-04
 ---
 
@@ -52,4 +56,4 @@ translation:
 
 ## 번역에 대하여
 
-서로를 찾고 필요로 한다는 가까운 호칭을 기준으로 **해체**를 유지했다. Sia와 Vic Mensa가 복원된 판본의 제작 맥락을 따라 여러 나를 웨스트 한 사람으로 합치지 않았으며, 요셉과 마리아는 화자가 가족을 설명하는 비유로 남겼다. 선택한 LRCLIB에는 따뜻한 살 뒤에 카이사르가 이어지는 불명확한 표기가 있어 첨부의 다른 표현으로 교체하지 않고 불확실성을 남겼다. 늑대를 특정 언론사나 인물로 확정하는 해석도 피하고, 팔로우 취소와 되돌려 삼키기의 성적 언어는 그 불편함을 보존했다.
+서로를 찾고 필요로 한다는 가까운 호칭을 기준으로 **해체**를 유지했다. Sia와 Vic Mensa가 복원된 판본의 제작 맥락을 따라 여러 나를 웨스트 한 사람으로 합치지 않았으며, 요셉과 마리아는 화자가 가족을 설명하는 비유로 남겼다.늑대를 특정 언론사나 인물로 확정하는 해석도 피하고, 팔로우 취소와 되돌려 삼키기의 성적 언어는 그 불편함을 보존했다. 'warm flesh' 뒤는 Spotify 공식 가사(사용자 확인)에 따라 'unseasoned'로 옮겼고, 'that's the tea, no sip'은 진실을 뜻하는 'T'와 케르밋 밈을 겹친 말장난으로 읽었다. 'Don't fire fight'는 표기만 확인했고 뜻은 확정하지 못했다.

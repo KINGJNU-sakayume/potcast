@@ -12,6 +12,7 @@ sources:
   - https://slate.com/culture/2020/04/fiona-apple-fetch-the-bolt-cutters-album-of-the-pandemic.html
   - https://en.wikipedia.org/wiki/Fetch_the_Bolt_Cutters
   - https://readdork.com/lyrics/fiona-apple-rack-of-his
+  - "Genius 주석 (사용자 제공) — Rack of His"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -36,6 +37,9 @@ translation:
     - source: either well
       target: 둘 다 잘하진 못하지만
       note: "LRCLIB 전사본 일부는 이 자리를 고유명사처럼 적었지만, Spotify 공식 가사(사용자 확인)는 'either well'이다. 드럼과 글쓰기를 시도했지만 둘 다 잘하지 못한다는 문맥과 맞는다."
+    - source: "kick"
+      target: "재미"
+      note: "'kick'은 재미로 읽었다. Genius 주석은 이 대목을, 그 남자가 '할 일이 없을 때를 싫어해서' 늘 핑계가 있어야 화자 곁에 있는 사람이라고 읽는다. 화자가 심심해서 그와 있는 게 아니라는 앞의 내용과 이어진다."
   written: 2026-10-09
   updated: 2026-10-11
 ---

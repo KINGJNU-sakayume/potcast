@@ -19,43 +19,21 @@
 | 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
 | where-this-flower-blooms | 후렴 | rock / roll / bloom / grow / glow가 이어지는 소리 말장난 | 흔들고, 구르고 / 피어나고, 자란다 / 빛난다 | 한국어에서 소리를 맞출 수 없음. 낱말 선택만 재검토 |
-| where-this-flower-blooms | 14–15, 38–39 | 'Simp'를 연인으로 읽는 해석 | OJ 햇살 / 심프-선(OJ 심슨) | 한 사람의 Genius 주석에만 의존. 추가 출처 필요 |
 | who-dat-boy | 52 | 'push weight'가 마약 유통인지 어머니가 말한 몸무게와 겹친 말장난인지 | 큰 물량을 굴려서 | Genius 주석 |
-| who-dat-boy | 26–27 | 'neck chill' / 'push wheel' | 목에 얼음이 / 차를 이렇게 몰아서 | 다이섹트 방송 한 곳에만 의존 |
 | pothole | 15 | 'you off it'이 약물과 이어지는지 | 네가 완전히 맛이 갔다 | Genius 주석 |
-| foreword | 47–49 | 마지막 "don't come back"의 청자. 렉스 오렌지 카운티의 구간으로 읽는 주석은 있으나 청자는 확정 안 됨 | 돌아오지 마라 | Genius 주석, 인터뷰 |
-| see-you-again | 11, 35–37 | '20/20 vision', 'look both ways' 등 숙어 | 직역에 가깝게 | 숙어 설명 |
 | garden-shed | 39 | Spotify 공식 가사는 "base 10"(bass 아님)으로 확정. 십진법을 뜻하는 말이 이 자리에서 무엇을 가리키는지는 해설을 못 찾음 | 베이스 10(base 10)의 열렬한 팬이었고 | Genius 주석, 인터뷰 |
 | garden-shed | 40 | 'Polka dot' | 직역 | Genius 주석 |
-| boredom | 30 | "I'm not solved" 말장난 여부 | 난 아직 안 풀렸고 | Genius 주석 |
 | boredom | 41 | 'fall this morning' | 무너져 내려 | Genius 주석 |
 | boredom | 79 | 끝 대사 'Ride's over…' | 이제 타는 건 끝났어 | 자동차인지 놀이기구인지 |
 | i-aint-got-time | 59(번역 60) | 'keep sporting'이 착용인지 뒤 줄과 이어지는 말인지 | 이대로 입고 다닐 거야 | Genius 주석 |
-| i-aint-got-time | 66 | 'Skywalker'가 타일러의 차인지 (주석도 "probably") | 스카이워커 같은 차로 솔라(한 솔로) 둘레를 쏘다니는 중이야 | 인터뷰 |
-| i-aint-got-time | 69 | 총기 은어 줄의 중의성 | 터질 때까지 | Genius 주석 |
-| 911-mr-lonely | 75 | 'not Chicago'가 팀(Bulls, Cubs)을 가리키는지 | 직역 | Genius 주석 |
-| 911-mr-lonely | 81 | Saari / sorry 말장난 | 사리(Saari)야 | Genius 주석 (Arto Saari는 핀란드 스케이트보더) |
-| 911-mr-lonely | 95 | 정관수술 비유가 무엇을 가리키는지 | 정관수술 받은 것처럼 말이야 | Genius 주석 |
-| droppin-seeds | 6–8 | 'C's like classes', pansy, banshee의 부가 의미 | 수강 취소하듯 C(씨)를 떨구고 … | Genius 주석 |
-| droppin-seeds | 11 | "droppin' English" | 난 영어를 떨궈 | Genius 주석 |
-| november | 22 | 'track seven'은 'Garden Shed'로 확인. 문장이 가정문인지 | 서넛만 남으면 어떡해 | Genius 주석 |
-| november | 32 | 'billy'가 무엇인지 | 그 빌리를 붙들어 | Genius 주석 |
-| glitter | 13 | 'uno peso' | 한 푼짜리 인생 | Genius 주석. 현재 번역은 근거 없는 의역으로 보임 |
-| glitter | 14 | 'keep that buck' | 솔직하게 가 | Genius 주석 |
-| glitter | 20 | 트랙 번호(4·5·7·8)인지 총기 구경인지 | 번호로 읽는 안과 총기로 읽는 안이 모두 가능 | Genius 주석 |
-| glitter | 33 | 'L' / 'DJ' 말놀이 | L(패배)이 아니니까, DJ일 수도 있겠네 | Genius 주석 |
-| glitter | 37 | 'skiptrace'가 10번 트랙과 겹치는 말놀이인지 | 잠적자 추적(스킵트레이스) | Genius 주석 |
 | (주근깨 주석) | — | 사용자가 준 주석 중 "타일러가 주근깨를 매력적으로 본다"는 줄이 어느 곡인지 모름 | — | 곡과 줄 확인 후 반영 |
 
 ### Oasis 『Definitely Maybe』
 
 | 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
-| digsys-dinner | 3, 14, 21 | 'tea'를 저녁 식사로 읽었는데 세 시 반 픽업과 시간이 어긋남 | 밥 먹으러 | 노엘 인터뷰, 영국 속어 사전 |
-| cigarettes-and-alcohol | 5, 16, 19 | 'the white line'을 코카인으로 읽은 근거가 평론 블로그 수준. 'when it comes on top'은 사전에서 못 찾음 | 코카인 한 줄이나 하는 | 노엘 인터뷰, Green's Dictionary |
 | shakermaker | 9 | "I'm sorry" 대목의 청자 | 사과하는 반말 | 노엘 인터뷰 |
 | supersonic | 32 | "done it"의 뜻 (성관계 암시로 읽되 목적어를 흐려 둠) | 의사랑 그걸 했어 | 노엘 설명 (현재는 없음) |
-| rock-n-roll-star | 7, 21 | 'feed my head'의 뜻 (White Rabbit에서 왔다는 설은 입증 못 함) | 직역 | 노엘 인터뷰 |
 | live-forever | — | "how your garden grows" (남의 일에 관심 없다는 뜻으로 읽는 해석) | 직역 | 노엘 설명 |
 
 ### Fiona Apple / Kanye West / Post Malone (재검토 라운드 1)
@@ -64,16 +42,9 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 
 | 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
-| rack-of-his | 8, 23, 29 | "there's a kick"의 뜻 (재미로 읽음) | 재미가 한 번 지나가면 넌 포기해 버리지 | 인터뷰, 주석 |
-| i-love-kanye | 1 | "the 'Go"가 시카고 줄임말인지, "from the get-go"의 처음부터인지 | 시카고에서 막 나온 카녜 | 주석 |
-| wolves | 49 | "that's the tea, no sip"의 'no sip' | 진짜 얘기만 해, 그게 진실이야, 차 한 모금도 없이 | 주석, Spotify 공식 가사 |
-| wolves | 39 | "warm flesh, on Caesar" 표기 | 난 카이사르 위의 따뜻한 살이었어 | Spotify 공식 가사 |
 | wolves | 30 | "Don't fire fight"의 어순 (fight fire의 도치인지) | 불을 끄려 하지 마 | Spotify 공식 가사 |
-| wolves | 54–59 | "corny"가 뒤 명사를 꾸미는지, 'unswallow'의 뜻 | 시시한 여자들/남자들이 있겠지 | 주석 |
-| candy-paint | 8 | "no jumper … ball"이 농구(점프슛) 말장난인지 | 점프슛은 없어도 난 펑펑 써 | 주석 |
 | candy-paint | 22 | "Slide boy"의 속어 뜻 | 미끄러지듯 내려와, 젠장, 난 뜨거워 | 주석, 공식 가사 |
-| candy-paint | 50 | "rolling twenty ash" | 스무 개 굴리며 재를 털고 길을 나서 | 주석 |
-| cold | 38, 41 | "ice cube"가 든 줄의 받아쓰기, "don't gather hearts too" | 내 보석은 얼음처럼 차갑지 / 마음을 모으지 마 | Spotify 공식 가사 |
+| cold | 41 | "don't gather hearts too" (사용자도 모름) | 말을 참을 수가 없어, 마음을 모으지 마 | 주석 |
 | cold | 43–44 | "aim three" 받아쓰기 (고유명사일 가능성) | 난 혼자 올라왔을 뿐이야 / 그건 내 잘못이었어 | Spotify 공식 가사 |
 | die-for-me | 39 | "From your passport"의 뜻 | 네 여권을 보니 거짓말하는 것 같아 | Spotify 공식 가사 |
 | die-for-me | 41 | "you flying"이 취했다는 뜻인지 비행기를 탔다는 뜻인지 | 넌 약해져서 날아갔지 | 주석 |
@@ -82,18 +53,12 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 | goodbyes | 28–29 | 'cut'이 성관계 속어를 겸하는지 (content-farm 한 곳만 그렇게 해석) | 칼 없이 널 잘라 내려 해 | 신뢰할 만한 주석 |
 | goodbyes | 30 | "my argue possessive, it got you precise" | 내 집착하는 말다툼이 널 정확히 꿰뚫었지 | Spotify 공식 가사 |
 | goodbyes | 32–34 | "blue diamond, no shark", "Barbie life doll", "on the charger" | 차고를 가득 채워, 파란 다이아몬드, 상어는 없어 / 넌 바비 인형 같은 삶, 니키 미나즈처럼 / 네 차는 충전 중이야 | 주석 |
-| i-cannot-be-a-sadder-song | 12 | 'top me off'가 술을 채운다는 뜻인지 속어인지 | 넌 날 채워 주지는 않을 거야 | 주석 |
-| i-cannot-be-a-sadder-song | 37 | "federal skeleton on my wrist" | 손목의 스켈레톤 시계는 지금이 전성기래 | 주석 |
-| losers | 3 | 작곡자 이름 나열(Chuck, Ernest, Chandler)로 읽음. 근거는 holler.country 한 곳 | 척이니 언이니 챈들러니 하는 이름의 사람들 몇 명 | 공식 가사, 크레딧 인터뷰 |
-| take-what-you-want | 40–45 | 트래비스 스콧 절 끝 여섯 줄: 속어가 겹치고 받아쓰기도 의심스러움 | 그 아가씨가 돌아와 / 보자마자 필요해 … | Spotify 공식 가사, 주석 |
+| take-what-you-want | 40–45 | 표기는 Spotify 공식 가사로 확인됨. crack, pipe 같은 은어의 뜻은 미확정이라 거친 구어체로 옮김 | 그 애가 돌아와 / 보자마자 필요해 / 싹 다 도로 까 놓고 / 그 애한테 파이프를 물려 / 우리 패거리 전부 / 그 애는 삐뚤어졌어 | Spotify 공식 가사, 주석 |
 | take-what-you-want | 30–32 | "ran through it"의 주어와 대상 | 다들 한 번씩 거쳐 갔어 | 주석 |
-| texas-tea | 12 | "skeleton"을 시계로 본 해석 (동사 "watch"일 가능성) | 뼈대가 다 보이는 스켈레톤 시계, 자기야 | 주석 |
-| texas-tea | 18–20 | "toggling", "yodeling", "guillotine"의 뜻과 받아쓰기 | 다들 왔다 갔다 하는 데 꽤 익숙해 / … / 단두대 위에 목걸이 스무 개 | Spotify 공식 가사, 주석 |
-| too-young | 15 | "your life never going back" | 침착하려고 하지만 네 삶은 절대 되돌아가지 않아 | 주석 |
 | too-young | 26 | "poppin' that woe"가 약물 은어인지 | 약을 하고 | 슬랭 사전, 주석 |
 | too-young | 30 | "got that bitch off"의 뜻 (오르가즘인지 쫓아냈다는 뜻인지) | 그 여자를 보내고 | 주석 |
 | too-young | 12 | 'papadeauxs'를 Pappadeaux 체인으로 본 연결은 해석 | 파파도에서 밥을 먹어 | 공식 가사 |
-| yours-truly-austin-post | 10, 25, 29 | "put that sauce on that bitch"의 대상, "bought out my brain", "kerosene"의 뜻과 받아쓰기 | 그 여자한테 금방 멋을 입혀 주고 / 머리가 텅 빌 만큼 다 써 버렸어 / 등유를 잔뜩 구해 오자 | 주석, Spotify 공식 가사 |
+| yours-truly-austin-post | 25, 29 | "put that sauce on that bitch"의 대상, "bought out my brain", "kerosene"의 뜻과 받아쓰기 | 그 여자한테 금방 멋을 입혀 주고 / 머리가 텅 빌 만큼 다 써 버렸어 / 등유를 잔뜩 구해 오자 | 주석, Spotify 공식 가사 |
 
 ### tripleS 『ASSEMBLE』 / NMIXX 『Blue Valentine』
 
@@ -122,6 +87,35 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 | i-aint-got-time | 59–61 | Yoda / Skywalker / solar / Sprite / cola | 스타워즈 말장난 (요다는 초록 지폐, 솔라는 한 솔로) | Genius 주석 |
 | bring-it-on-down | 22 | "their lives"인지 "your life"인지 | "their lives"로 확정 | Spotify 공식 가사 (사용자 확인) |
 | rack-of-his | 36 | 고유명사(Orville)인지 'either well'인지 | 'either well'로 확정. 번역 유지 | Spotify 공식 가사 (사용자 확인) |
+| rack-of-his | 8, 23, 29 | 'kick' | 재미로 읽음. 그 남자가 할 일이 없을 때를 싫어해 핑계가 있어야 곁에 있다는 문맥과 일치 | Genius 주석 (사용자 확인) |
+| i-love-kanye | 1 | 'the 'Go' | 시카고('Go) 출신 그대로의 카녜. Go Getters도 겹침 | Genius 주석 (사용자 확인) |
+| wolves | 39 | 'warm flesh, unseasoned' | 양념도 안 된 따뜻한 살코기. 'Caesar'가 아니었음 | Spotify 공식 가사 (사용자 확인) |
+| wolves | 49 | 'that's the tea, no sip' | 'tea'=T(진실)와 케르밋 밈을 겹친 말장난 | Genius 주석 (사용자 확인) |
+| wolves | 54–59 | 'corny' / 'unswallow' | 킴이 억지로 예의를 지키는 여성들, 'New Slaves'의 swallower와 연결. 번역 유지 | Genius 주석 (사용자 확인) |
+| candy-paint | 8 | 'no jumper' | Gucci Mane 'Bricks'와 팟캐스트 No Jumper | Genius 주석 (사용자 확인) |
+| candy-paint | 50 | 'rolling twenty ash' | 대마를 말아 피우고 길을 나서는 뜻으로 읽음 | 사용자 제공 해설 |
+| cold | 38 | 'ice cube' 줄 표기 | 표기 확인, 보석 자랑 | Spotify 공식 가사, Genius 주석 |
+| goodbyes | 30 | 'my argues possessive' | Spotify 표기에 맞춰 번역 수정 | Spotify 공식 가사 (사용자 확인) |
+| i-cannot-be-a-sadder-song | 12 | 'top me off' | 술을 채움과 구강 성교 속어('top')의 중의일 수 있음(검수 안 된 주석) | Genius 주석 (사용자 확인) |
+| i-cannot-be-a-sadder-song | 37 | 'federal skeleton on my wrist' | 스켈레톤 시계, 대통령 롤렉스 암시 | Genius 주석 (사용자 확인) |
+| losers | 3 | 'Chuck's, Ern's, and Chandler's' | 대문자 표기, 이름 나열 | Spotify 공식 가사 (사용자 확인) |
+| texas-tea | 12 | 'skeleton' | Richard Mille RM 052 해골 스켈레톤 시계 | Genius 주석 (사용자 확인) |
+| texas-tea | 18–20 | 'ogling', 'yodeling', 'guillotine' | 'toggling'이 아니라 'ogling'. 번역 수정 | Spotify 공식 가사 (사용자 확인) |
+| too-young | 15 | 'your life never going back' | 가난으로 돌아가지 않으려 침착하게 지냄. 번역 수정 | Genius 주석 (사용자 확인) |
+| yours-truly-austin-post | 10 | 'put that sauce on' | 'sauce'=자기 방식·개성 (Hot Ones) | Genius 주석 (사용자 확인) |
+| where-this-flower-blooms | 14–15, 38–39 | 'Simp sun' | simp=이성에게 쩔쩔매는 사람 | 사용자 확인 |
+| who-dat-boy | 26–27 | 'neck chill' | 목에 건 보석 자랑 | Genius 주석 (사용자 확인) |
+| foreword | 47–49 | 끝 구간의 화자 | 렉스 오렌지 카운티의 사색. 번역 유지 | Genius 주석 (사용자 확인) |
+| see-you-again | 11 | '20/20 vision' | 정상 시력, 뒤 줄 큐피드와 이어짐 | Genius 주석 (사용자 확인) |
+| boredom | 30 | "I'm not solved" | 'gay'가 올 법한 자리에 'bored'를 넣어 라임을 비튼 장치 | Genius 주석 (사용자 확인) |
+| i-aint-got-time | 66, 69 | 스타워즈 줄, 'getting neck' 줄 | 스타워즈 말장난, 구강 성교·사정·9밀리 권총 | Genius 주석 (사용자 확인) |
+| 911-mr-lonely | 75, 81, 95 | 'not Chicago', 'Saari', 정관수술 | wind/win 동음, 스케이트보더 Arto Saari와 영상 'Sorry', 후회와 'come'의 중의 | Genius 주석 (사용자 확인) |
+| droppin-seeds | 6–8, 11 | C's / pansy / banshee / droppin' English | N.W.A 'Express Yourself' 인용, seeds와 C's 말장난 | Genius 주석 (사용자 확인) |
+| november | 22, 32 | 'track seven', 'billy' | 7번 트랙=Garden Shed, 3·4번 트랙과 3+4=7 말장난, 'hold that billy'=돈을 쥠. 번역 수정 | Genius 주석 (사용자 확인) |
+| glitter | 13, 14, 20, 33, 37 | 'uno peso', 'keep that buck', 4·5·7·8, L/DJ, skiptrace | 멕시코 통화, 돈을 지킴, 트랙 번호와 .45 권총 겹침, 블런트·패배/우울을 풀어 줄 DJ, Mild High Club 『Skiptracing』 10번 트랙. 번역 수정 | Genius 주석 (사용자 확인) |
+| digsys-dinner | 3 | 'tea' | 북부 영국에서 저녁 식사를 가리킴. 번역 유지 | Genius 주석 (사용자 확인) |
+| cigarettes-and-alcohol | 16, 19 | 'the white line', 'when it comes on top' | 코카인 줄. 번역 유지 | Genius 주석 (사용자 확인) |
+| rock-n-roll-star | 7 근처 | 'feed my head' | 머릿속을 지식으로 채움. 번역 수정 | Genius 주석 (사용자 확인) |
 | droppin-seeds | 노트 본문 | 곡 전체의 화자 | 릴 웨인. 노트 본문의 "끝의 타일러" 서술을 고침 | XXL 기사 |
 
 ## LRCLIB 가사와 Genius 가사가 다를 때

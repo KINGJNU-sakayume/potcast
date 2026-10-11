@@ -10,6 +10,7 @@ sources:
   - https://www.rollingstone.com/music/music-album-reviews/post-malone-hollywoods-bleeding-882364/
   - https://www.billboard.com/pro/post-malone-hollywoods-bleeding-five-burning-questions/
   - https://en.wikipedia.org/wiki/Take_What_You_Want
+  - "Genius 주석 (사용자 제공) — Take What You Want"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,6 +34,9 @@ translation:
     - source: forked in two
       target: 두 갈래로 갈라진
       note: 뱀의 혀처럼 거짓말하는 사람을 빗댄 표현.
+    - source: "Travis Scott verse ending"
+      target: "트래비스 스콧 절 끝 여섯 줄"
+      note: "트래비스 스콧 절 끝 여섯 줄은 Spotify 공식 가사(사용자 확인)로 표기를 확정했다. crack, pipe처럼 약물과 성적 은어를 겸할 수 있는 말이 겹쳐 뜻은 확정하지 못했고, 사용자 요청에 따라 거친 구어체로 옮겼다."
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -47,4 +51,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 자신을 이용한 연인에게 직접 말한다. 상처 입은 연인 사이의 말이라 **해체**로 옮겼다. 후렴 'take what you want'는 회차마다 '원하는 걸 가져가'로 고정했다. 'heart of stone'은 '돌 같은 심장'으로, 'forked in two'는 뱀의 혀를 빗댄 말이라 '두 갈래로 갈라진'으로 이미지를 살렸다. 트래비스 스콧의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 특히 절 끝의 여섯 줄(속어와 은어가 겹친 부분)은 웹에서 줄 단위 해설을 찾지 못해 미확정으로 남아 있다.
+화자는 자신을 이용한 연인에게 직접 말한다. 상처 입은 연인 사이의 말이라 **해체**로 옮겼다. 후렴 'take what you want'는 회차마다 '원하는 걸 가져가'로 고정했다. 'heart of stone'은 '돌 같은 심장'으로, 'forked in two'는 뱀의 혀를 빗댄 말이라 '두 갈래로 갈라진'으로 이미지를 살렸다. 트래비스 스콧의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 특히 절 끝의 여섯 줄은 Spotify 공식 가사로 표기를 확인했지만 속어와 은어(crack, pipe 등)가 겹쳐 뜻을 확정하지 못했고, 거친 구어체로 옮겼다.

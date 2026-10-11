@@ -12,6 +12,7 @@ sources:
   - https://thepinknews.com/2017/07/11/tyler-the-creator-seems-to-have-come-out-and-people-are-loving-it
   - https://www.urbandictionary.com/define.php?term=keep%20it%20a%20buck%20fifty
   - https://en.wikipedia.org/wiki/Milly_Rock
+  - "Genius 주석 (사용자 제공) — November"
 short: >
   불안을 늘어놓는 랩 뒤에 들어오는 여러 사람의 기억을 들어 보면, 11월은 달력의 한 달에서 각자가 돌아가고 싶은 시간으로 바뀐다. 끝의 전화가 다음 곡을 연다.
 translation:
@@ -33,15 +34,15 @@ translation:
     - source: "Take me back"
       target: "데려가 줘"
       note: "되돌아가고 싶은 간절한 부탁. 짧은 반말 부탁형으로 반복했다."
-    - source: "track seven"
-      target: "7번 트랙"
-      note: "『Flower Boy』 7번 트랙은 〈Garden Shed〉로, 숨겨 온 마음을 다루는 곡이라 이를 들은 오랜 지인과 팬이 떠날까 걱정하는 대목으로 읽힌다(Wikipedia 트랙 목록, PinkNews). 곡명을 번역문에 풀지 않고 번호로 두었다."
     - source: "keep it buck fifty"
       target: "150퍼센트 솔직해야 하는데"
       note: "keep it a buck(fifty)는 솔직하게, 있는 그대로 말한다는 속어로 fifty는 강조다(Urban Dictionary). 편해져 안주하면 솔직함을 잃을까 두려워하는 문맥과 맞는다."
+    - source: "track seven"
+      target: "7번 트랙"
+      note: "7번 트랙은 'Garden Shed'이다. 'three, fours'는 3·4번 트랙 'Sometimes', 'See You Again'처럼 가끔 보는 사이로 멀어지는 것이고, 3+4=7의 셈 말장난이기도 하다. 『Bastard』의 'Seven'에서도 팬이 사라지는 이야기를 했다(Genius 주석)."
     - source: "hilly willy tilly silly… Milly Rock"
       target: "힐리 윌리 틸리 실리… 밀리 록"
-      note: "-illy로 끝나는 말을 늘어놓는 운 놀음이라 뜻 풀이 대신 소리를 옮겼다. 밀리 록은 2 Milly가 만든 투스텝 춤이다(Wikipedia). \"billy\"가 무엇을 가리키는지는 확인하지 못했다."
+      note: "밀리 록은 2 Milly가 만든 춤이다. 'hold that billy'는 밀리 록을 추면서 손에 돈을 쥐고 있다는 뜻으로 읽었다. Playboi Carti의 'Magnolia'에서 춤추는 영상을 가리키는 것일 수도 있다(Genius 주석)."
   written: 2026-10-11
   updated: 2026-10-11
 ---
@@ -56,4 +57,4 @@ translation:
 
 ## 번역에 대하여
 
-"What if"로 이어지는 질문은 스스로에게 묻는 말이지만 후렴과 "Tell me, what's your November?"처럼 듣는 사람에게 묻는 대목이 섞여 있어, 같은 거리의 **해체**로 곡 전체를 맞췄다. 노트가 짚은 대로 'Foreword'의 질문이 끝에 가까운 자리에서 다시 나오고, 마지막 통화 시도가 'Glitter'로 이어지기 때문에 독백도 상대에게 건네는 말투를 잃지 않게 했다. 해라체로 옮기는 안은 후렴의 "데려가 줘"라는 부탁과 어긋나서 버렸다. 마지막 자동응답 안내만은 기계 음성이므로 정중한 존댓말로 옮겨 어체가 바뀌는 곳임을 분명히 했다. "billy"를 붙드는 대목은 운을 맞춘 말장난이라 뜻을 확정하지 못하고 소리 위주로 옮겼다.
+"What if"로 이어지는 질문은 스스로에게 묻는 말이지만 후렴과 "Tell me, what's your November?"처럼 듣는 사람에게 묻는 대목이 섞여 있어, 같은 거리의 **해체**로 곡 전체를 맞췄다. 노트가 짚은 대로 'Foreword'의 질문이 끝에 가까운 자리에서 다시 나오고, 마지막 통화 시도가 'Glitter'로 이어지기 때문에 독백도 상대에게 건네는 말투를 잃지 않게 했다. 해라체로 옮기는 안은 후렴의 "데려가 줘"라는 부탁과 어긋나서 버렸다. 마지막 자동응답 안내만은 기계 음성이므로 정중한 존댓말로 옮겨 어체가 바뀌는 곳임을 분명히 했다. 'billy'는 밀리 록을 추며 손에 쥔 돈이라는 뜻으로 읽었고(Genius 주석), 7번 트랙은 'Garden Shed'이며 'three, fours'는 3·4번 트랙과 3+4=7의 말장난이다.

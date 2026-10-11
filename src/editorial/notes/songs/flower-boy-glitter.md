@@ -11,6 +11,7 @@ sources:
   - https://en.wikipedia.org/wiki/Flower_Boy
   - https://en.wikipedia.org/wiki/Skip_tracing
   - https://www.urbandictionary.com/define.php?term=keep%20it%20a%20buck%20fifty
+  - "Genius 주석 (사용자 제공) — Glitter"
 short: >
   앞부분의 노래와 뒤에서 낮아진 목소리를 이어 들으면 사랑의 들뜸이 혼자 남은 고백으로 바뀐다. 끝의 통화 안내는 노래의 수신자가 누구였는지 다시 생각하게 한다.
 translation:
@@ -33,11 +34,17 @@ translation:
       target: "기분 어때?"
       note: "반복되는 추임새. 상대에게 묻는 말이자 화자 자신의 혼잣말로도 읽혀 짧은 의문형으로 반복했다."
     - source: "keep that buck"
-      target: "솔직하게 가"
-      note: "keep it a buck(fifty)는 있는 그대로 솔직하게 말한다는 속어다(Urban Dictionary). 남의 말에 신경 쓰지 않는다는 앞뒤 문맥과 맞아 \"돈을 챙긴다\"는 뜻으로 읽지 않았다. 변형된 형태라 확신은 중간이다."
+      target: "내 돈은 지켜"
+      note: "'Uno peso'는 멕시코 통화로, 타일러를 깎아내리던 사람들이 '한 푼만' 달라던 사람들이라는 농담이다. 그래서 돈을 지키고 남의 부정적인 말에 휘둘리지 않는다는 뜻으로 읽었다(Genius 주석)."
     - source: "track 10 skiptrace"
-      target: "10번 트랙에서 잠적자 추적(스킵트레이스)"
-      note: "〈Flower Boy〉 10번 트랙은 〈911 / Mr. Lonely〉이고(Wikipedia 트랙 목록), skip tracing은 연락이 끊긴 사람의 행방을 찾는 일이다(Wikipedia). 두 뜻을 이은 말놀이로 보이나 정확한 의도는 확인하지 못했다."
+      target: "『Skiptracing』의 10번 트랙"
+      note: "LA 밴드 Mild High Club의 2016년 앨범 『Skiptracing』의 10번 트랙 'Chapel Perilous'를 같이 듣자는 제안이다. 타일러가 트위터로 이 곡임을 확인했다(Genius 주석)."
+    - source: "four, five, seven, track eight"
+      target: "4, 5, 7, 8번 트랙"
+      note: "4·5·7·8번 트랙(『Flower Boy』의 'See You Again', 'Who Dat Boy', 'Garden Shed', 'Boredom')을 가리키는 동시에, 탄창 일곱 발과 약실 한 발인 .45 권총의 여덟 번째 총알(자신에게 쓸 수도 있는 것)을 겹쳐 읽는 해석이 있다(Genius 주석)."
+    - source: "L / DJ"
+      target: "L(패배) / DJ"
+      note: "'L'은 블런트(심장을 뛰게 하는 것)이면서 패배이기도 해서 사랑하는 상대를 L이라 부르지 않겠다는 말이다. 'DJ'는 '911 / Mr. Lonely'의 'DJ를 알면 911로 전화하라'는 대목처럼 우울에서 꺼내 줄 사람을 가리킨다(Genius 주석)."
   written: 2026-10-11
   updated: 2026-10-11
 ---
@@ -52,4 +59,4 @@ translation:
 
 ## 번역에 대하여
 
-첫머리의 "my baby"부터 "I love having you around"까지 상대에게 직접 건네는 고백이라 연인에게 말하는 **해체**가 가장 가까웠다. 노트가 말하듯 이 곡은 'November' 끝에서 준비한 연락이 노래가 된 자리이며, 후반의 "one sided" 같은 인정은 같은 화자가 거리를 두고 다시 말하는 것이라 어체를 바꾸지 않았다. 독백으로 읽어 해라체로 옮기는 안도 있었으나 후렴이 상대를 향하므로 버렸다. 마지막 통화 안내 멘트는 기계 음성이라 정중한 존댓말로 옮겼고 이 한 곳만 어체가 다르다. 다만 "four, five, seven, track eight"가 4·5·7·8번 트랙을 가리키는지 총기 구경을 겹친 말인지, "L"과 "DJ" 줄의 말놀이는 근거 자료를 찾지 못해 문맥상 가장 자연스러운 쪽으로 옮겼으니 불확실하다.
+첫머리의 "my baby"부터 "I love having you around"까지 상대에게 직접 건네는 고백이라 연인에게 말하는 **해체**가 가장 가까웠다. 노트가 말하듯 이 곡은 'November' 끝에서 준비한 연락이 노래가 된 자리이며, 후반의 "one sided" 같은 인정은 같은 화자가 거리를 두고 다시 말하는 것이라 어체를 바꾸지 않았다. 독백으로 읽어 해라체로 옮기는 안도 있었으나 후렴이 상대를 향하므로 버렸다. 마지막 통화 안내 멘트는 기계 음성이라 정중한 존댓말로 옮겼고 이 한 곳만 어체가 다르다. "four, five, seven, track eight"는 4·5·7·8번 트랙과 .45 권총 읽기가 겹치고, 'L'은 블런트와 패배, 'DJ'는 우울에서 꺼내 줄 사람으로 읽었으며 'Uno peso'는 남의 부정적인 말에 돈을 주지 않는다는 뜻으로 읽었다(Genius 주석).

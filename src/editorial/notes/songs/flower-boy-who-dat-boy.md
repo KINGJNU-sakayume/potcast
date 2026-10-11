@@ -9,6 +9,7 @@ sources:
   - https://miccheque.com/2017/07/23/flower-boy-review/
   - https://constantlypluggedin.wordpress.com/2017/06/30/tyler-the-creator-who-dat-boy/
   - "Genius 주석 (사용자 제공 레퍼런스) — Who Dat Boy"
+  - "Genius 주석 (사용자 제공) — Who Dat Boy"
 short: >
   불안한 도입부가 충분히 버틴 뒤 드럼과 랩이 터지는 대비를 듣고, 후반 타일러와 에이셉 라키가 말을 교환하는 속도에 주목하라.
 translation:
@@ -27,9 +28,6 @@ translation:
     - source: Who dat boy? Who him is?
       target: 저 녀석 누구야? 누구냐고?
       note: "일부러 문법을 비튼 구어체 반복구라 정형화된 문장 대신 되묻는 말투로 옮겼다."
-    - source: neck chill / push wheel
-      target: 목에 얼음이 차갑다 / 차를 몬다
-      note: "neck chill은 같은 곡의 frío(스페인어로 차갑다)와 이어지는 보석 이야기로, 다이섹트 방송은 목걸이 자랑으로 읽는다. 그래서 목에 얼음이 차갑다고 옮겼다. push wheel은 방송이 차를 가리키는 말로 읽어 차를 모는 일로 옮겼다."
     - source: push weight
       target: 큰 물량을 굴린다
       note: "push weight는 마약을 대량으로 유통한다는 속어로 흔히 쓰이지만, 이 곡에서는 과시의 한 갈래인지 어머니가 말한 몸무게와 겹치는 말장난인지 확정하지 못했다. 가장 일반적인 속어 뜻을 택했다."
@@ -48,6 +46,9 @@ translation:
     - source: "That cherry be the bomb like he ran in Boston"
       target: "그 체리는 폭탄이야, 보스턴을 뛴 놈처럼"
       note: "앞 앨범 『Cherry Bomb』을 가리키는 자랑이면서 2013년 보스턴 마라톤 폭탄 테러(3명 사망, 수백 명 부상)를 잇는 말장난이다. 바로 뒤의 '경찰이 에워쌀 때까지'는 용의자가 보스턴 근교 워터타운에서 대규모 수색 끝에 발견된 장면을 가리키며, Genius 주석은 이 줄이 『Goblin』의 'Yonkers'를 되돌아보는 대목이라는 점도 짚는다. '달린다(running)'를 뛰어오르지 못하고 잘못된 길로 가는 일로 쓰는 『Cherry Bomb』의 'Find Your Wings' 맥락과도 이어진다. 두 겹을 모두 살리려고 설명을 덧붙이지 않고 직역했다."
+    - source: "neck chill / push wheel"
+      target: "목에 얼음이 차갑다 / 차를 몬다"
+      note: "neck chill은 에이셉 라키가 목에 건 보석을 자랑하는 말이다(Genius 주석). 같은 곡의 frío(스페인어로 차갑다)와 이어진다. push wheel은 방송이 차를 가리키는 말로 읽어 차를 모는 일로 옮겼다."
   written: 2026-10-11
   updated: 2026-10-11
 ---
@@ -62,4 +63,4 @@ translation:
 
 ## 번역에 대하여
 
-이 곡은 반복되는 "Who dat boy?"로 의심하는 사람들에게 되묻고 도발하는 과시 랩이라, 청자를 향한 거친 말투가 살아 있는 **해체**로 정했다. 가사 안에서 자신을 "him"이라는 3인칭으로 부르다가 "I'm right here"에서 바로 1인칭으로 돌아오고, "Why you niggas feel like that?"처럼 상대를 직접 몰아세우기 때문에 문어적인 해라체보다 말하는 반말이 맞다. 감상 노트가 설명하듯 이 곡은 앞의 'See You Again'의 부드러운 갈망에서 갑자기 과시로 바뀌는 자리이며, 그 과시는 외로움을 가린 방어막처럼 읽을 수도 있어 어조를 순화하지 않고 날것 그대로 두었다. 후반부의 에이셉 라키 구간도 같은 도발 구도로 보아 어체를 바꾸지 않았고, 어머니의 말을 전하는 부분만 '하셔'로 높임을 일부 반영했다. 'Who him is?'는 의도적으로 문법을 비튼 말투로, 자신을 가리키는 3인칭이라 되묻는 반말로 옮겼다. 'bick'은 'big dick'(라이터 Bic과의 말장난일 수도 있음), 'Summertime '06'과 'before Vince'는 빈스 스테이플스의 앨범과 2006년 여름 회상으로 Genius 주석을 따랐다. 'push weight'만 큰 물량의 속어인지 몸무게 말장난인지 확정하지 못했다. '95 Leo'는 방송과 팬 블로그의 레오나르도 디카프리오 해석을 따랐다.
+이 곡은 반복되는 "Who dat boy?"로 의심하는 사람들에게 되묻고 도발하는 과시 랩이라, 청자를 향한 거친 말투가 살아 있는 **해체**로 정했다. 가사 안에서 자신을 "him"이라는 3인칭으로 부르다가 "I'm right here"에서 바로 1인칭으로 돌아오고, "Why you niggas feel like that?"처럼 상대를 직접 몰아세우기 때문에 문어적인 해라체보다 말하는 반말이 맞다. 감상 노트가 설명하듯 이 곡은 앞의 'See You Again'의 부드러운 갈망에서 갑자기 과시로 바뀌는 자리이며, 그 과시는 외로움을 가린 방어막처럼 읽을 수도 있어 어조를 순화하지 않고 날것 그대로 두었다. 후반부의 에이셉 라키 구간도 같은 도발 구도로 보아 어체를 바꾸지 않았고, 어머니의 말을 전하는 부분만 '하셔'로 높임을 일부 반영했다. 'Who him is?'는 의도적으로 문법을 비튼 말투로, 자신을 가리키는 3인칭이라 되묻는 반말로 옮겼다. 'bick'은 'big dick'(라이터 Bic과의 말장난일 수도 있음), 'Summertime '06'과 'before Vince'는 빈스 스테이플스의 앨범과 2006년 여름 회상으로 Genius 주석을 따랐다. 'neck chill'은 라키가 목에 건 보석 자랑으로 확인했고(Genius 주석), 'push weight'만 큰 물량의 속어인지 몸무게 말장난인지 확정하지 못했다. '95 Leo'는 방송과 팬 블로그의 레오나르도 디카프리오 해석을 따랐다.

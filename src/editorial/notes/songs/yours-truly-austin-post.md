@@ -10,6 +10,7 @@ sources:
   - https://riffmagazine.com/reviews/post-malone-stoney/
   - https://en.wikipedia.org/wiki/Stoney_(album)
   - https://www.sportskeeda.com/basketball/news-why-allen-iverson-nicknamed-bubba-chuck-looking-unusual-story-behind-sixers-legend-s-moniker
+  - "Genius 주석 (사용자 제공) — Yours Truly, Austin Post"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -51,4 +52,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 함께 노는 사람들과 그를 얕보던 '너희'에게 거리낌 없이 자랑하고, 마지막에는 듣는 사람에게 누구에게 전화하느냐고 묻는다. 모두 친구에게 하듯 편한 말투라 **해체**로 옮겼다. 'yours truly'는 편지의 서명 표현이지만 후렴에서는 자신을 가리키는 말이라 '이 몸'으로 옮겼다. 'the high of my life'는 약에 취한 상태와 인생의 절정을 함께 담아 '인생 최고의 황홀'로 옮겼다. 'Bubba Chuck'은 앨런 아이버슨의 별명이라 이름을 살렸다. 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 'put that sauce on that bitch'가 가리키는 대상(여자인지 벤틀리인지), 'bought out my brain', 'kerosene' 줄은 웹에서 해설을 찾지 못해 미확정이며, 가장 근거가 강한 해석을 유지했다.
+화자는 함께 노는 사람들과 그를 얕보던 '너희'에게 거리낌 없이 자랑하고, 마지막에는 듣는 사람에게 누구에게 전화하느냐고 묻는다. 모두 친구에게 하듯 편한 말투라 **해체**로 옮겼다. 'yours truly'는 편지의 서명 표현이지만 후렴에서는 자신을 가리키는 말이라 '이 몸'으로 옮겼다. 'the high of my life'는 약에 취한 상태와 인생의 절정을 함께 담아 '인생 최고의 황홀'로 옮겼다. 'Bubba Chuck'은 앨런 아이버슨의 별명이라 이름을 살렸다. 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 'sauce'는 포스트가 Hot Ones에서 '자기를 드러내는 방식과 남과 구별되는 개성'이라고 정의한 말버릇이라 자기 '소스'를 얹어 준다는 뜻으로 읽었다(Genius 주석). 'bought out my brain'과 'kerosene'은 해설을 찾지 못해 미확정이며 'kerosene'은 소문자 표기만 확인했다.

@@ -10,6 +10,7 @@ sources:
   - https://poplobster.substack.com/p/album-review-austin-post-malone
   - https://pepperdine-graphic.com/album-review-post-malone-switches-up-genres-with-austin/
   - https://pitchfork.com/reviews/albums/post-malone-f-1-trillion/
+  - "Genius 주석 (사용자 제공) — Texas Tea"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -30,9 +31,12 @@ translation:
     - source: Abilene
       target: 애빌린
       note: 텍사스의 도시.
-    - source: skeleton
-      target: 스켈레톤 시계
-      note: 내부 부품이 보이는 시계.
+    - source: "skeleton"
+      target: "스켈레톤 시계"
+      note: "'skeleton'은 해골 장식이 있는 Richard Mille RM 052 Tourbillon Skull 스켈레톤 시계로 읽었다(Genius 주석). 포스트가 'St. Tropez'와 GQ 'On the Rocks'에서 보여 준 시계다."
+    - source: "ogling"
+      target: "훔쳐보는"
+      note: "Spotify 공식 가사(사용자 확인)는 'toggling'이 아니라 'ogling'(훔쳐보기)이다."
   written: 2026-10-10
   updated: 2026-10-11
 ---
@@ -47,4 +51,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 듣는 사람들에게 텍사스식으로 자신을 뽐낸다. 허세 섞인 편한 말투라 **해체**로 옮겼다. 제목 'Texas tea'는 달콤한 아이스티이자 석유를 가리키는 속어라, 한쪽으로 좁히지 않고 '텍사스 티'로 소리를 살렸다. 'Abilene'은 텍사스의 도시라 이름을 두었다. 'skeleton'은 내부가 보이는 시계라 '스켈레톤 시계'로 풀었다. 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 둘째 절의 'skeleton'을 시계로 본 해석과 'toggling', 'yodeling', 'guillotine' 줄은 웹에서 줄 단위 해설을 찾지 못해 미확정이며, 가장 근거가 강한 해석을 유지했다.
+화자는 듣는 사람들에게 텍사스식으로 자신을 뽐낸다. 허세 섞인 편한 말투라 **해체**로 옮겼다. 제목 'Texas tea'는 달콤한 아이스티이자 석유를 가리키는 속어라, 한쪽으로 좁히지 않고 '텍사스 티'로 소리를 살렸다. 'Abilene'은 텍사스의 도시라 이름을 두었다. 'skeleton'은 내부가 보이는 시계라 '스켈레톤 시계'로 풀었다. 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 'skeleton'은 Genius 주석에 따라 Richard Mille 스켈레톤 시계로, 'toggling'은 Spotify 공식 가사 표기인 'ogling'(훔쳐보기)으로 바로잡았다. 'yodeling'과 'guillotine'은 표기를 확인했지만 비유의 뜻은 확정하지 못했다.
