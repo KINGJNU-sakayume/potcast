@@ -11,6 +11,8 @@ sources:
   - https://www.nme.com/reviews/post-malone-hollywoods-bleeding-review-2545499
   - https://www.rollingstone.com/music/music-features/post-malone-friends-hollywood-bleeding-880952/
   - https://en.wikipedia.org/wiki/Die_for_Me_(Post_Malone_song)
+  - https://en.wiktionary.org/wiki/bad_girl
+  - https://www.urbandictionary.com/define.php?term=bad%20girl
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -41,8 +43,16 @@ translation:
       target: 조용히 지냈는데 / 같이 취해 가고 있었지
       note: 'low'와 'high'를 맞세운 말장난. 한국어로 대구를 살리기 어려워 뜻만 옮겼다.
     - source: bad girl
-      target: 끝내주는 여자
-      note: 힙합에서 매력적이고 센 여자를 가리키는 말로 읽었다.
+      target: 나쁜 여자
+      note: >
+        'bad bitch'처럼 '끝내주는 여자'로 읽었던 것을 고쳤다. Wiktionary는 'bad girl'을 '반항적인 성향이 오히려 매력인 여자'로,
+        Urban Dictionary의 여러 정의는 멋대로 구는 여자·금지된 짓을 하는 여자로 풀어 서로 일치한다. 이 절에서 그녀는 영혼을 팔고 거짓말하는
+        사람으로 그려져 '매력'보다 '나쁨'이 앞선다고 보았다.
+    - source: From your passport / you flying
+      target: 네 여권을 보니 / 약해져서 날아갔지
+      note: >
+        여권은 여행 기록으로 거짓말이 드러난다는 뜻으로, 'flying'은 전 남친의 전화에 약해져 비행기를 타고 갔다는 뜻으로 읽었다. 풀이한 출처를
+        찾지 못한 문맥 추정이라 확정하지 않는다.
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -57,4 +67,4 @@ translation:
 
 ## 번역에 대하여
 
-세 화자 모두 자신을 속인 연인에게 직접 원망을 쏟아 낸다. 헤어진 연인 사이의 거친 말이라 **해체**로 옮겼다. 후렴의 'you'd die for me'와 'you lied to me'는 세 번씩 겹쳐 반복되는 말이라 '죽겠다고'와 '거짓말했지'로 고정해 리듬을 살렸다. 'take a bullet'은 목숨을 건다는 관용 표현이라 '총알도 대신 맞겠다'로 옮겼다. 퓨처의 절은 받아쓰기가 불확실한 줄이 있어 뜻이 통하는 범위에서 옮겼다. 'you flying'과 'From your passport' 줄은 뜻을 확정하지 못했다.
+세 화자 모두 자신을 속인 연인에게 직접 원망을 쏟아 낸다. 헤어진 연인 사이의 거친 말이라 **해체**로 옮겼다. 후렴의 'you'd die for me'와 'you lied to me'는 세 번씩 겹쳐 반복되는 말이라 '죽겠다고'와 '거짓말했지'로 고정해 리듬을 살렸다. 'take a bullet'은 목숨을 건다는 관용 표현이라 '총알도 대신 맞겠다'로 옮겼다. 퓨처의 절은 받아쓰기가 불확실한 줄이 있어 뜻이 통하는 범위에서 옮겼다. 'bad girl'은 사전과 Urban Dictionary가 '반항적인 여자' 쪽으로 일치해 '끝내주는 여자' 대신 '나쁜 여자'로 고쳤다. 'you flying'과 'From your passport' 줄은 여행 기록과 비행으로 읽었지만 풀이한 출처가 없어 확정하지 못했다.

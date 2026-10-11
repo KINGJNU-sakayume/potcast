@@ -10,6 +10,8 @@ sources:
   - https://www.nme.com/reviews/post-malone-hollywoods-bleeding-review-2545499
   - https://en.wikipedia.org/wiki/Goodbyes_(Post_Malone_song)
   - "Genius 주석 (사용자 제공) — Goodbyes"
+  - https://beats-rhymes-lists.com/lyrics/meaning-of-goodbyes-by-post-malone-feat-young-thug/
+  - https://www.urbandictionary.com/define.php?term=cuttin%27
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -35,6 +37,22 @@ translation:
     - source: 80 proof
       target: 40도짜리 술
       note: 미국의 알코올 도수 표기 80 프루프는 40도에 해당한다.
+    - source: cut you, no knife
+      target: 칼 없이 널 잘라 내려 해
+      note: >
+        'cut'이 성관계 속어를 겸하는 말장난으로 읽힌다(출처 1건: Urban Dictionary의 'cuttin'' 정의 여러 개가 '성관계'로 일치하나 'cut' 자체의 정의는
+        찾지 못했다). 뜻이 확정되지 않아 번역은 칼로 자른다는 표면 의미를 유지했다.
+    - source: blue diamond, no shark
+      target: 파란 다이아몬드, 상어는 없어
+      note: >
+        재력 과시로 읽힌다(출처 1건, 저품질 해설 사이트). 'no shark'의 뜻은 풀이한 출처가 없어 직역했다. Urban Dictionary에는 'blue diamond'를
+        비아그라로 보는 정의도 있으나 이 줄과 이어지는지는 알 수 없다.
+    - source: Barbie life doll, Nicki Minaj
+      target: 바비 인형 같은 삶, 니키 미나즈처럼
+      note: 겉만 완벽한 인형 같은 삶을 니키 미나즈에 빗댄 것으로 읽힌다(출처 1건, 위와 같은 해설 사이트). 확정하지 못했다.
+    - source: your car on the charger
+      target: 네 차는 충전 중이야
+      note: 전기차 충전으로 읽었으나 풀이한 출처를 찾지 못한 문맥 추정이다(자동차 모델 'Charger'일 가능성도 있다).
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -49,4 +67,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 헤어지려는 연인에게 직접 말한다. 서로를 망치는 연인 사이의 말이라 **해체**로 옮겼다. 'Kurt'는 가사에서 이름만 나와 '커트'로 두었다. '80 proof'는 미국식 도수 표기라 '40도짜리 술'로 옮겼다. 후렴의 'I'm no good at goodbyes'는 '난 작별 인사에 서툴러'로 고정했다. 영 서그의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 'my argue possessive'는 Spotify 공식 가사 표기('My argues possessive, it got you precise')에 맞춰 옮겼다. 'blue diamond, no shark', 'Barbie life doll' 줄은 웹에서 뜻을 확인하지 못해 직역에 가깝고 확신이 낮으며, 'cut you'가 속어(성관계)를 겸하는지도 확정하지 못했다.
+화자는 헤어지려는 연인에게 직접 말한다. 서로를 망치는 연인 사이의 말이라 **해체**로 옮겼다. 'Kurt'는 가사에서 이름만 나와 '커트'로 두었다. '80 proof'는 미국식 도수 표기라 '40도짜리 술'로 옮겼다. 후렴의 'I'm no good at goodbyes'는 '난 작별 인사에 서툴러'로 고정했다. 영 서그의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 'my argue possessive'는 Spotify 공식 가사 표기('My argues possessive, it got you precise')에 맞춰 옮겼다. 'blue diamond, no shark', 'Barbie life doll' 줄은 웹에서 뜻을 확인하지 못해 직역에 가깝고 확신이 낮으며, 'cut you'가 속어(성관계)를 겸하는지는 Urban Dictionary 정의 하나로만 짐작될 뿐 확정하지 못했고, 'blue diamond, no shark'는 재력 과시로 읽는 해설 한 곳이 있을 뿐이다.

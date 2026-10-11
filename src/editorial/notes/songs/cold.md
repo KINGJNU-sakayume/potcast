@@ -12,6 +12,8 @@ sources:
   - https://en.wikipedia.org/wiki/Stoney_(album)
   - https://www.nssmag.com/en/fashion/9164/tutto-quello-che-dovete-sapere-su-vlone
   - "Genius 주석 (사용자 제공) — Cold"
+  - https://www.azlyrics.com/lyrics/postmalone/cold.html
+  - https://www.lyricsmode.com/lyrics/p/post_malone/cold.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -44,6 +46,12 @@ translation:
     - source: "ice cube"
       target: "얼음 큐브"
       note: "'ice cube' 줄은 Spotify 공식 가사 표기를 확인했고(사용자 확인) 보석 자랑으로 읽었다. 포스트는 'Go Flex'에서도 목과 이에 건 금을 말하고, 인터뷰에서 자신의 스타일(땋은 머리와 금니)을 이야기한다(Genius 주석)."
+    - source: "don't gather hearts too"
+      target: "그럴 마음도 없고"
+      note: "Spotify·LRCLIB 표기는 뜻이 통하지 않는다. AZLyrics와 LyricsMode 두 곳은 같은 줄을 \"don't got the heart to\"로 적어, 앞 구절과 이어지는 관용 표현('차마 그럴 마음이 없다')으로 읽고 번역을 고쳤다. 받아쓰기 두 곳이 일치할 뿐 아티스트 확인은 없다."
+    - source: "aim three"
+      target: "(옮기지 않고 '내 잘못이었어'만 살림)"
+      note: "AZLyrics와 LyricsMode 모두 같은 표기이고 뜻을 푼 출처는 찾지 못했다. 고유명사인지 다른 말의 받아쓰기 오류인지 확정하지 못해 번역에서 뺐다."
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -58,4 +66,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 떠난 연인에게 직접 다 너를 위한 거라고, 네가 필요했다고 말한다. 끝났지만 끊지 못한 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 'ice'는 다이아몬드를 가리키는 은어라 '다이아'로 옮기고, 차갑다는 말이 보석의 빛과 마음의 냉기를 함께 담도록 '차갑고 꽁꽁 얼어 있다'로 살렸다. 'Oh my God'은 기도가 아니라 탄식이라 '맙소사'로 옮겼다. 일부 줄은 가사 데이터의 받아쓰기가 불확실해 뜻이 통하는 범위에서 옮겼다. 특히 'ice cube'가 든 줄은 Spotify 공식 가사로 표기를 확인해 보석 자랑으로 읽었고, 'aim three'와 'don't gather hearts too' 줄은 받아쓰기와 뜻을 확정하지 못했다.
+화자는 떠난 연인에게 직접 다 너를 위한 거라고, 네가 필요했다고 말한다. 끝났지만 끊지 못한 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 'ice'는 다이아몬드를 가리키는 은어라 '다이아'로 옮기고, 차갑다는 말이 보석의 빛과 마음의 냉기를 함께 담도록 '차갑고 꽁꽁 얼어 있다'로 살렸다. 'Oh my God'은 기도가 아니라 탄식이라 '맙소사'로 옮겼다. 일부 줄은 가사 데이터의 받아쓰기가 불확실해 뜻이 통하는 범위에서 옮겼다. 특히 'ice cube'가 든 줄은 Spotify 공식 가사로 표기를 확인해 보석 자랑으로 읽었고, 'don't gather hearts too' 줄은 AZLyrics와 LyricsMode가 'don't got the heart to'로 적어 그쪽 뜻('그럴 마음도 없고')으로 고쳤지만, 두 곳의 받아쓰기가 일치한다는 근거뿐이다. 'aim three' 줄은 표기와 뜻을 끝내 확정하지 못했다.

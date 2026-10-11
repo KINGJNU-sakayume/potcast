@@ -19,20 +19,22 @@
 | 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
 | where-this-flower-blooms | 후렴 | rock / roll / bloom / grow / glow가 이어지는 소리 말장난 | 흔들고, 구르고 / 피어나고, 자란다 / 빛난다 | 한국어에서 소리를 맞출 수 없음. 낱말 선택만 재검토 |
-| who-dat-boy | 52 | 'push weight'가 마약 유통인지 어머니가 말한 몸무게와 겹친 말장난인지 | 큰 물량을 굴려서 | Genius 주석 |
-| pothole | 15 | 'you off it'이 약물과 이어지는지 | 네가 완전히 맛이 갔다 | Genius 주석 |
-| garden-shed | 39 | Spotify 공식 가사는 "base 10"(bass 아님)으로 확정. 십진법을 뜻하는 말이 이 자리에서 무엇을 가리키는지는 해설을 못 찾음 | 베이스 10(base 10)의 열렬한 팬이었고 | Genius 주석, 인터뷰 |
-| garden-shed | 40 | 'Polka dot' | 직역 | Genius 주석 |
-| boredom | 41 | 'fall this morning' | 무너져 내려 | Genius 주석 |
 | boredom | 79 | 끝 대사 'Ride's over…' | 이제 타는 건 끝났어 | 자동차인지 놀이기구인지 |
-| i-aint-got-time | 59(번역 60) | 'keep sporting'이 착용인지 뒤 줄과 이어지는 말인지 | 이대로 입고 다닐 거야 | Genius 주석 |
-| (주근깨 주석) | — | 사용자가 준 주석 중 "타일러가 주근깨를 매력적으로 본다"는 줄이 어느 곡인지 모름 | — | 곡과 줄 확인 후 반영 |
 
 ### Oasis 『Definitely Maybe』
 
 | 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
 | shakermaker | 9 | "I'm sorry" 대목의 청자 | 사과하는 반말 | 노엘 인터뷰 |
+| wolves | 30 | 'Don't fire fight': 'fight fire'의 도치인지, 'firefight'(총격전, 격한 말다툼)인지. Harvard Crimson은 이카로스 날개 줄만 짚음 (등급 D) | 불을 끄려 하지 마 | 아티스트 인터뷰, 줄 단위 주석 |
+| too-young | 30 | 'got that bitch off'가 오르가즘에 이르게 했다는 뜻일 가능성 (Wiktionary 'get off', 다음 줄과 이어짐, 등급 C) | 그 여자를 보내고 ('보내다'의 중의로 유지) | 줄 단위 주석 |
+| too-young | 26 | 'woe'가 플로리다·뉴올리언스 속어로 친구·일행이라는 정의 2건 (등급 C). 약물 은어는 근거 없음 | 약을 하고 | 아티스트 발언 |
+| cold | 43–44 | 'aim three' 뜻 (등급 D) | 난 혼자 올라왔을 뿐이야 / 그건 내 잘못이었어 | 주석 |
+| die-for-me | 37–45 | 퓨처 절: AZLyrics 표기는 Spotify와 같고 풀이 없음 (등급 D). 39 'passport', 41 'flying'은 문맥 추정 | 현재 번역 유지 | 주석 |
+| goodbyes | 34 | 'on the charger' (등급 D). 28–29 'cut'은 성관계 중의 가능(Urban Dictionary 3건, 등급 C), 32–33은 저품질 해설 1곳(등급 C) | 직역 유지 | 주석 |
+| candy-paint | 22 | 'Slide boy' (등급 D) | 미끄러지듯 내려와, 젠장, 난 뜨거워 | 주석 |
+| boredom | 79 | 끝 대사: AZLyrics는 Shane Powers의 대사, Dissect는 라디오 소리로 받아 적음 (등급 D). 'Ride's over'가 맞는 표기인지부터 불확실 | 이제 타는 건 끝났어 | 음원 청취 |
+| before-the-rise | — | 위키/MusicBrainz상 김나경이 부른 곡 (연주곡 아님). 가사 유무·언어는 미확정, LRCLIB에 가사 없음. MusicBrainz 작품에 작사 Jaden Jeong, 언어 'mul' (사용자 편집, 근거 약함) | 변경 없음 | Spotify 가사 탭, 공식 크레디트 |
 | supersonic | 32 | "done it"의 뜻 (성관계 암시로 읽되 목적어를 흐려 둠) | 의사랑 그걸 했어 | 노엘 설명 (현재는 없음) |
 | live-forever | — | "how your garden grows" (남의 일에 관심 없다는 뜻으로 읽는 해석) | 직역 | 노엘 설명 |
 
@@ -42,13 +44,10 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 
 | 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
-| wolves | 30 | "Don't fire fight"의 어순 (fight fire의 도치인지) | 불을 끄려 하지 마 | Spotify 공식 가사 |
 | candy-paint | 22 | "Slide boy"의 속어 뜻 | 미끄러지듯 내려와, 젠장, 난 뜨거워 | 주석, 공식 가사 |
-| cold | 41 | "don't gather hearts too" (사용자도 모름) | 말을 참을 수가 없어, 마음을 모으지 마 | 주석 |
 | cold | 43–44 | "aim three" 받아쓰기 (고유명사일 가능성) | 난 혼자 올라왔을 뿐이야 / 그건 내 잘못이었어 | Spotify 공식 가사 |
 | die-for-me | 39 | "From your passport"의 뜻 | 네 여권을 보니 거짓말하는 것 같아 | Spotify 공식 가사 |
 | die-for-me | 41 | "you flying"이 취했다는 뜻인지 비행기를 탔다는 뜻인지 | 넌 약해져서 날아갔지 | 주석 |
-| die-for-me | 36 | "bad girl"을 "끝내주는 여자"로 읽음 (웹 근거 없음) | 끝내주는 여자 | 주석 |
 | die-for-me | 37–45 | 퓨처 절 전반의 받아쓰기 | 현재 번역 유지 | Spotify 공식 가사 |
 | goodbyes | 28–29 | 'cut'이 성관계 속어를 겸하는지 (content-farm 한 곳만 그렇게 해석) | 칼 없이 널 잘라 내려 해 | 신뢰할 만한 주석 |
 | goodbyes | 30 | "my argue possessive, it got you precise" | 내 집착하는 말다툼이 널 정확히 꿰뚫었지 | Spotify 공식 가사 |
@@ -64,7 +63,6 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 
 | 곡 | 줄 | 쟁점 | 현재 처리 | 필요한 근거 |
 | --- | --- | --- | --- | --- |
-| before-the-rise | — | LRCLIB에 가사가 없음. 연주곡인지, 보컬이 있는 곡인지 확정 못 함 (위키 표에는 작사자 칸이 비어 있고 0:53) | 노트 변경 없음 (`lyricsLanguage` 미지정) | Spotify 가사 탭 확인, 크레디트 |
 | chowall | 1–2, 13–14 | 'la-la' 허밍 줄에 '라라라'를 번역으로 적은 처리가 앱에서 어떻게 보이는지 | 소리만 적음 | 앱 화면 확인 |
 | chowall | 5–12 | "All hands on deck"의 관용구 뉘앙스 (전원 출동) | 모두 갑판으로 | 인터뷰, 컨셉 설명 |
 | crush-on-you | — | 한국어 곡으로 판단했으나 LRCLIB 레코드가 로마자 표기본이라 한글 줄 비율로 판별하지 못함 | `lyricsLanguage: ko` (노트 본문 900자 미달로 `PENDING_REVIEW` 유지) | Spotify 가사 탭에서 한글 비율 확인 |
@@ -73,6 +71,22 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 ### 다른 앨범 (아직 점검 안 함)
 
 `Blonde`, `IGOR`, `Lost Corner`, `MBDTF`의 기존 번역은 이번 점검 대상이 아니었다. 번역을 다시 읽다가 의심이 가는 줄이 나오면 위 형식으로 추가한다.
+
+
+### 가사 표기 불일치 기록 (LRCLIB / Spotify / 가사 사이트)
+
+앱에 뜨는 줄(LRCLIB)과 번역이 어긋나 보일 수 있는 곳이다. 음원을 직접 듣고 최종 확인해 주시면 번역을 확정하거나 되돌린다.
+
+| 곡 | 줄 | 표기 A | 표기 B | 현재 번역이 따르는 쪽 | 근거 |
+| --- | --- | --- | --- | --- | --- |
+| garden-shed | 39–40 | Spotify: 'base 10' | AZLyrics, Dissect: 'beige tan' / 'polka dot nose' | beige tan (밝은 살결, 주근깨 코) | 사용자가 준 주석 "타일러가 주근깨를 매력적으로 본다"와 40번 줄이 맞음. Spotify 표기와 다르므로 확인 필요 |
+| cold | 41 | LRCLIB: 'don't gather hearts too' | AZLyrics, LyricsMode: 'don't got the heart to' | 'got the heart to' (그럴 마음도 없고) | 두 사이트 일치 |
+| boredom | 41 | LRCLIB: 'fall this morning' | AZLyrics, Dissect: 'since before this morning' | since before | 두 곳 일치 |
+| who-dat-boy | 52 | LRCLIB: 'push weight' | AZLyrics: 'push wheel' | push wheel (차를 몬다) | 후렴 두 번 모두 wheel |
+| yours-truly-austin-post | 25 | Spotify: 'bought out' | AZLyrics, LyricsMode: 'balled out' | 번역 변경 없음(미확정) | 뜻 풀이 없음 |
+| yours-truly-austin-post | 29 | AZLyrics: 'a light like kerosene' | LyricsMode: 'a lot of kerosene' | 번역 변경 없음(미확정) | 표기가 갈림 |
+| goodbyes | 30 | Spotify: 'My argues possessive' | ogefash.reviews: 'My heart get possessive' | Spotify | 사용자 확인 |
+| rack-of-his | 36 | 일부 전사본: 'Orville' | Spotify: 'either well' | either well | 사용자 확인 (해결됨) |
 
 ## 해결됨
 
@@ -116,6 +130,14 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 | digsys-dinner | 3 | 'tea' | 북부 영국에서 저녁 식사를 가리킴. 번역 유지 | Genius 주석 (사용자 확인) |
 | cigarettes-and-alcohol | 16, 19 | 'the white line', 'when it comes on top' | 코카인 줄. 번역 유지 | Genius 주석 (사용자 확인) |
 | rock-n-roll-star | 7 근처 | 'feed my head' | 머릿속을 지식으로 채움. 번역 수정 | Genius 주석 (사용자 확인) |
+| garden-shed | 39–40 | 'base 10' / 'Polka dot' | 'beige tan'(밝은 살결)과 'polka dot nose'(주근깨 코). 위 표기 불일치 표 참고 | AZLyrics, Dissect, 사용자 주석 |
+| pothole | 15 | 'you off it' | 약에 빠져 정신이 나갔다는 뜻 (Xanax 문제가 있던 친구 이야기) | Dissect 방송 |
+| boredom | 41 | 'fall this morning' | 'since before this morning'. 번역 수정 | AZLyrics, Dissect |
+| i-aint-got-time | 59–60 | 'keep sporting' | 'All Smiles Over Here'는 The Garden의 노래 제목(2015 『Haha』) | Dissect, Wikipedia |
+| who-dat-boy | 52 | 'push weight' | 'push wheel'(차). 번역 수정 | AZLyrics, Dissect |
+| cold | 41 | 'don't gather hearts too' | 'don't got the heart to'. 번역 수정 | AZLyrics, LyricsMode |
+| die-for-me | 36 | 'bad girl' | 반항적인 성향이 매력인 여자. "나쁜 여자"로 되돌림 | Wiktionary, Urban Dictionary |
+| take-what-you-want | 43, 45 | 'pipe', 'went bad' | 크랙을 피우고 화자 친구들과 잠자리를 갖는다는 풀이. 번역 수정 | Songfacts |
 | droppin-seeds | 노트 본문 | 곡 전체의 화자 | 릴 웨인. 노트 본문의 "끝의 타일러" 서술을 고침 | XXL 기사 |
 
 ## LRCLIB 가사와 Genius 가사가 다를 때

@@ -13,6 +13,10 @@ sources:
   - https://pappadeaux.com/our-story/
   - https://www.complex.com/style/fairfax-avenue-mecca-of-streetwear
   - "Genius 주석 (사용자 제공) — Too Young"
+  - https://www.azlyrics.com/lyrics/postmalone/tooyoung.html
+  - https://en.wikipedia.org/wiki/Pappas_Restaurants
+  - https://www.urbandictionary.com/define.php?term=woe
+  - https://en.wiktionary.org/wiki/get_off
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -44,7 +48,17 @@ translation:
       note: 로스앤젤레스의 페어팩스 애비뉴 일대. 슈프림 등 스트리트웨어 가게가 모인 쇼핑 거리로 알려져 있다. 가사의 쇼핑이 이 거리를 가리킨다고 보았다.
     - source: papadeauxs
       target: 파파도
-      note: 텍사스에서 시작된 케이준풍 해산물 체인 파파도(Pappadeaux Seafood Kitchen)로 보았다. 포스트 말론이 텍사스 출신이라는 점에 근거한 해석이다.
+      note: 텍사스에서 시작된 케이준풍 해산물 체인 파파도(Pappadeaux Seafood Kitchen)로 보았다. 포스트 말론이 텍사스 출신이라는 점에 근거한 해석이다. 다른 받아쓰기(AZLyrics)가 이 이름을 체인의 철자(Pappadeaux)대로 적고 위키백과도 이 체인을 텍사스 휴스턴에서 시작된 곳으로 설명하지만, 가수가 이 식당을 가리킨다고 밝힌 출처는 찾지 못했다(C).
+    - source: poppin' that woe
+      target: 약을 하고
+      note: >
+        Urban Dictionary의 'woe' 정의(플로리다·뉴올리언스 속어로 친구·일행)는 이 줄의 'popping'과 어울리지 않고, 약물을 뜻한다는 출처는 찾지 못했다.
+        '약을 하고'는 'popping'(알약을 삼킨다)에 기댄 문맥 추정으로 유지했다. 'woe'를 친구·일행으로 읽을 가능성은 남는다(출처 1건).
+    - source: got that bitch off
+      target: 그 여자를 보내고
+      note: >
+        Wiktionary의 'get (someone) off'는 '오르가즘에 이르게 하다'이고, 바로 다음 줄이 사정을 말하는 줄이라 성적인 뜻으로도 읽힌다(사전 1건과 문맥).
+        '보내고'(쫓아내다)와 어느 쪽이 맞는지 확정하지 못해 번역은 바꾸지 않았다.
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -59,4 +73,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 자신의 성공과 두려움을 듣는 사람들에게 거리낌 없이 털어놓는다. 자랑과 고백이 섞인 랩이라 **해체**로 옮겼다. 후렴의 'die too young'은 곡의 중심이라 '너무 어릴 때 죽고 싶진 않아'로 고정하고, 메아리처럼 반복되는 'too young'도 하나하나 살렸다. 'bands'는 천 달러 묶음을 가리키는 은어라 '돈뭉치'로 옮겼다. 가사 데이터의 받아쓰기가 불확실한 몇 줄과 끝이 흐려지는 줄은 뜻이 통하는 범위에서 옮기거나 말줄임표로 남겼다. 첫 절 끝의 'your life never going back'은 Genius 주석에 따라 가난으로 돌아가지 않으려 침착하게 지낸다는 뜻으로 읽었다. 'got that bitch off'와 'poppin' that woe'는 해설을 찾지 못해 미확정이며, 가장 근거가 강한 해석을 유지했다.
+화자는 자신의 성공과 두려움을 듣는 사람들에게 거리낌 없이 털어놓는다. 자랑과 고백이 섞인 랩이라 **해체**로 옮겼다. 후렴의 'die too young'은 곡의 중심이라 '너무 어릴 때 죽고 싶진 않아'로 고정하고, 메아리처럼 반복되는 'too young'도 하나하나 살렸다. 'bands'는 천 달러 묶음을 가리키는 은어라 '돈뭉치'로 옮겼다. 가사 데이터의 받아쓰기가 불확실한 몇 줄과 끝이 흐려지는 줄은 뜻이 통하는 범위에서 옮기거나 말줄임표로 남겼다. 첫 절 끝의 'your life never going back'은 Genius 주석에 따라 가난으로 돌아가지 않으려 침착하게 지낸다는 뜻으로 읽었다. 'got that bitch off'와 'poppin' that woe'는 풀이한 출처를 찾지 못해 미확정이다. 앞의 줄은 사전 뜻과 다음 줄의 문맥상 성적인 뜻일 가능성이 있고, 뒤의 줄은 'woe'가 친구를 뜻하는 속어일 가능성이 있지만 어느 쪽도 번역을 바꿀 근거는 못 되어 기존 해석을 유지했다. 'papadeauxs'는 텍사스 체인 파파도로 읽는 것이 철자상 자연스럽지만 가수의 확인은 없다.

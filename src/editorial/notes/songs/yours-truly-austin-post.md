@@ -11,6 +11,9 @@ sources:
   - https://en.wikipedia.org/wiki/Stoney_(album)
   - https://www.sportskeeda.com/basketball/news-why-allen-iverson-nicknamed-bubba-chuck-looking-unusual-story-behind-sixers-legend-s-moniker
   - "Genius 주석 (사용자 제공) — Yours Truly, Austin Post"
+  - https://www.azlyrics.com/lyrics/postmalone/yourstrulyaustinpost.html
+  - https://www.lyricsmode.com/lyrics/p/post_malone/yours_truly_austin_post.html
+  - https://en.wiktionary.org/wiki/ball_out
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -38,6 +41,17 @@ translation:
     - source: Bubba Chuck
       target: 버바 척
       note: 농구 선수 앨런 아이버슨의 어린 시절 별명이라 그대로 두었다. 삼촌 버바와 척의 이름을 어머니가 합쳐 지어 준 이름이다.
+    - source: bought out my brain
+      target: 머리가 텅 빌 만큼 다 써 버렸어
+      note: >
+        Spotify·LRCLIB 표기와 달리 AZLyrics와 LyricsMode 두 곳은 같은 줄의 동사를 'balled out'으로 적는다. 'ball out'은 Wiktionary에서 돈을
+        펑펑 쓰다 / 아주 잘해 내다는 뜻이지만 이 줄에 그 뜻을 대입한 풀이는 찾지 못했다. 어느 표기가 맞는지, 뜻이 무엇인지 확정하지 못해
+        번역은 유지한다(C).
+    - source: kerosene
+      target: 등유
+      note: >
+        소문자 일반명사로 적혀 있어 사람·상표 이름이 아니라 연료로 읽었다. 같은 줄을 AZLyrics는 'a light like kerosene'(등유처럼 불을 붙이자)로,
+        LyricsMode는 Spotify와 같이 'a lot of kerosene'으로 적어 표기가 갈린다. 은유(판에 불을 붙이자)일 수 있으나 풀이한 출처는 없다(C).
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -52,4 +66,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 함께 노는 사람들과 그를 얕보던 '너희'에게 거리낌 없이 자랑하고, 마지막에는 듣는 사람에게 누구에게 전화하느냐고 묻는다. 모두 친구에게 하듯 편한 말투라 **해체**로 옮겼다. 'yours truly'는 편지의 서명 표현이지만 후렴에서는 자신을 가리키는 말이라 '이 몸'으로 옮겼다. 'the high of my life'는 약에 취한 상태와 인생의 절정을 함께 담아 '인생 최고의 황홀'로 옮겼다. 'Bubba Chuck'은 앨런 아이버슨의 별명이라 이름을 살렸다. 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 'sauce'는 포스트가 Hot Ones에서 '자기를 드러내는 방식과 남과 구별되는 개성'이라고 정의한 말버릇이라 자기 '소스'를 얹어 준다는 뜻으로 읽었다(Genius 주석). 'bought out my brain'과 'kerosene'은 해설을 찾지 못해 미확정이며 'kerosene'은 소문자 표기만 확인했다.
+화자는 함께 노는 사람들과 그를 얕보던 '너희'에게 거리낌 없이 자랑하고, 마지막에는 듣는 사람에게 누구에게 전화하느냐고 묻는다. 모두 친구에게 하듯 편한 말투라 **해체**로 옮겼다. 'yours truly'는 편지의 서명 표현이지만 후렴에서는 자신을 가리키는 말이라 '이 몸'으로 옮겼다. 'the high of my life'는 약에 취한 상태와 인생의 절정을 함께 담아 '인생 최고의 황홀'로 옮겼다. 'Bubba Chuck'은 앨런 아이버슨의 별명이라 이름을 살렸다. 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 'sauce'는 포스트가 Hot Ones에서 '자기를 드러내는 방식과 남과 구별되는 개성'이라고 정의한 말버릇이라 자기 '소스'를 얹어 준다는 뜻으로 읽었다(Genius 주석). 'bought out my brain'과 'kerosene'은 풀이한 출처를 찾지 못해 미확정이다. 다른 받아쓰기 두 곳은 앞의 줄을 'balled out my brain'으로 적고, 'kerosene'은 'a light like kerosene'으로 적은 곳이 있어 표기 자체가 갈리므로 번역은 Spotify 표기에 맞춘 채 유지했다. 'kerosene'은 소문자로 적혀 있어 일반명사(연료)로 읽는다.
