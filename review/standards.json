@@ -1,0 +1,39 @@
+{
+  "howTo": [
+    "기계가 검사하는 기준(길이, 문단 수, 출처, 번역 짝 등)은 npm run notes:audit / npm run check가 매번 확인하므로 여기에 적지 않는다.",
+    "여기에는 사람이나 에이전트가 읽고 판단해야 하는 기준만 둔다. 기준의 내용이 바뀌어 이미 확인한 항목도 다시 봐야 하면 해당 기준의 version을 올린다.",
+    "version을 올리면 status.json에서 이전 version으로 기록된 항목이 '재확인 필요'로 잡힌다. 내용이 바뀌지 않는 오타 수정에는 올리지 않는다.",
+    "항목을 확인하면 status.json의 해당 노트에 { \"version\": 현재 version, \"date\": \"YYYY-MM-DD\", \"note\": \"선택\" }을 적는다.",
+    "npm run review:status 로 기준별 현황을, npm run review:status -- --list T2 로 아직 안 한 항목을 본다."
+  ],
+  "criteria": [
+    {
+      "id": "T1",
+      "title": "번역 맥락 조사",
+      "version": 1,
+      "appliesTo": "translated-songs",
+      "how": "translate-lyrics §3: 화자·청자·관계·상황을 가사 밖 자료(인터뷰, 앨범 속 위치)로 조사해 어체를 정했고, `## 번역에 대하여`가 단서·배경·버린 해석을 담는다."
+    },
+    {
+      "id": "T2",
+      "title": "슬랭·말장난 검증",
+      "version": 1,
+      "appliesTo": "translated-songs",
+      "how": "속어, 말장난, 고유명사, 직역투 문장을 출처로 확인해 고쳤거나, 확정하지 못한 줄을 TRANSLATION_OPEN_QUESTIONS.md에 올렸다."
+    },
+    {
+      "id": "T3",
+      "title": "Spotify 공식 가사 대조",
+      "version": 1,
+      "appliesTo": "translated-songs",
+      "how": "LRCLIB 줄과 Spotify 공식 가사가 다른 곳을 사용자가 확인했고, 번역이 Spotify 표기를 따른다. (곡 전체가 아니라 표시된 줄 기준이면 note에 적는다.)"
+    },
+    {
+      "id": "N1",
+      "title": "곡 노트의 소리·해석 읽기",
+      "version": 1,
+      "appliesTo": "songs",
+      "how": "write-note §5의 자체 점검: 첫 문단이 구간과 소리를 짚는가, 크레디트만 있는 문단이 없는가, 앨범 노트·번역 브리프와 해석이 맞는가."
+    }
+  ]
+}

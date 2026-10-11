@@ -1,0 +1,338 @@
+{
+  "notes": {
+    "songs/oasis-rock-n-roll-star": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-shakermaker": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-live-forever": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-up-in-the-sky": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-columbia": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-supersonic": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-bring-it-on-down": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "22번 줄만 사용자 확인 (their lives)"
+      }
+    },
+    "songs/oasis-cigarettes-and-alcohol": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-digsys-dinner": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-slide-away": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/oasis-married-with-children": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-foreword": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-where-this-flower-blooms": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-sometimes": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-see-you-again": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-who-dat-boy": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-pothole": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-garden-shed": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "39–40번 줄만 사용자 확인 (base 10)"
+      }
+    },
+    "songs/flower-boy-boredom": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-i-aint-got-time": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-911-mr-lonely": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-droppin-seeds": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-november": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/flower-boy-glitter": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      },
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/chowall": {
+      "T1": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/rack-of-his": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/i-love-kanye": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/wolves": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/candy-paint": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/cold": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/die-for-me": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/goodbyes": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/i-cannot-be-a-sadder-song": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/losers": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/take-what-you-want": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/texas-tea": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/too-young": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    },
+    "songs/yours-truly-austin-post": {
+      "T2": {
+        "version": 1,
+        "date": "2026-10-11"
+      }
+    }
+  }
+}
