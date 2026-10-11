@@ -11,6 +11,7 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/1QJyCXveflhQzI3uYe0ZYg
   - https://lrclib.net/api/get/582826
+  - https://www.azlyrics.com/lyrics/kanyewest/theglory.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -30,7 +31,14 @@ translation:
     - source: "Gnarls meets Charles Barkley"
       target: "날스 바클리와 찰스 바클리의 만남"
       note: "팝 듀오와 농구 선수를 겹친 말장난. 대중성과 거리 감각을 함께 가졌다는 뜻."
+    - source: "Yayo dance"
+      target: "야요 댄스"
+      note: "Yayo는 코카인 속어로도 쓰인다(Urban Dictionary, 출처 1건). 이 춤이 무엇을 가리키는지는 미확정이라 소리대로 옮기고 이전의 '요요'를 바로잡았다."
+    - source: "two-door"
+      target: "투 도어 차"
+      note: "LRCLIB와 LyricsMode는 two-door로, AZLyrics는 Tudor로 적는다(표기 불일치). 다음 줄 '언덕 위의 집'과 이어지면 튜더 양식 저택일 수 있으나(출처 1건) 번역은 LRCLIB 표기대로 두었다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 로라 나이로 'Save the Country'에서 가져온 목소리로 시작한다. 영광으로 데려가 주겠다는 노래가 빠르고 높게 돌려져, 데뷔작 시절의 칩멍크 소울이 앨범에서 거의 처음으로 돌아온다. 사우스사이드와 웨스트사이드를 부르는 도입 뒤 두껍고 무거운 베이스와 마운틴 'Long Red'의 드럼이 들어오고, 웨스트는 '또 잘난 척 좀 해도 될까?'라며 첫 벌스를 연다. 그 위로 상승하는 현악과 건반, 남성 가스펠 합창이 겹쳐 곡 전체가 축하 행렬처럼 부풀어 오른다. 짧은 후렴을 사이에 두고 두 벌스가 이어지고, 2분 53초쯤 마지막 줄이 끝나면 40초 가까이 랩 없이 합창과 현악이 이어지며 곡을 끝낸다.
@@ -44,3 +52,5 @@ translation:
 ## 번역에 대하여
 
 고향 사람들과 경쟁자들 앞에서 자랑하는 곡이라 **해체**로 옮겼다. 첫 줄 *talk my shit again*은 『Late Registration』의 'We Major' 아웃트로와 같은 말이라 같은 번역 '또 잘난 척 좀 해도 될까?'를 써서 연결을 살렸다. 바클리 말장난처럼 이름을 겹친 농담은 이름을 살려 옮기고 용어집에 뜻을 적었다. 여성을 비하하는 표현과 경쟁자를 부르는 비하어는 직역하지 않았다.
+
+2026-10-11 재검토에서 *Yayo*의 한글 표기를 '요요'에서 '야요'로 바로잡았다. 43번째 줄의 차 또는 저택(두 가사 사이트가 표기를 달리 적는다)과 *Barkers*·*Parkers*의 정확한 대상은 확정하지 못해 번역을 바꾸지 않았다.

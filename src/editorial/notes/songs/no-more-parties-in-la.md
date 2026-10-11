@@ -11,6 +11,8 @@ sources:
   - https://coogradio.com/2016/02/track-by-track-album-review-the-life-of-pablo-by-kanye-west/
   - https://open.spotify.com/track/0zLClc0emc6qUeV1p5nc99
   - https://lrclib.net/api/get/772516
+  - https://en.wikipedia.org/wiki/Red_beans_and_rice
+  - https://www.urbandictionary.com/define.php?term=turbo%20thot
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -39,7 +41,14 @@ translation:
     - source: "Pablo"
       target: "파블로"
       note: "창작과 뉴스, 집의 문맥마다 다른 이미지를 열어 두며 하나로 확정하지 않는다."
+    - source: "red beans and rice"
+      target: "붉은콩과 밥"
+      note: "루이지애나 크리올 요리의 이름으로, 팥이 아니라 붉은콩 요리다."
+    - source: "turbo thots"
+      target: "터보 걸들"
+      note: "thot은 헤픈 여자를 가리키는 속어로 읽힌다(Urban Dictionary 정의 일치, 출처 1건). 번역은 수위를 낮춘 채로 두었다."
   written: 2026-10-04
+  updated: 2026-10-11
 ---
 
 여러 목소리의 샘플이 짧게 문을 연 뒤 파티를 그만하자는 후렴과 비트가 자리를 잡는다. 켄드릭 라마의 절은 밤의 인물과 욕망을 빠르게 연결하고 웨스트는 그 뒤에서 더 긴 자기 회고를 시작한다. 후렴이 계속 돌아와도 랩은 사건과 농담을 쉬지 않고 더한다. 끝에서 애정의 샘플과 파티 중단의 부탁이 다시 들리면, 긴 이야기가 과연 그 부탁을 실행했는지 묻게 된다.

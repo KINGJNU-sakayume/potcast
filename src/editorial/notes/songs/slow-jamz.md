@@ -6,6 +6,7 @@ short: >
   빨라진 루서 밴드로스의 목소리가 '그럴 거야?'를 되묻는 사이로, 제이미 폭스가 소울 가수 이름을 줄줄이 부른다. 느리게 해 달라던 곡이 '더 빨리'라는 주문과 함께 트위스타의 속사포로 뒤집히는 순간을 듣는다.
 written: 2026-10-05
 sources:
+  - https://en.wiktionary.org/wiki/homes
   - https://stereogum.com/2249901/kanye-west-the-college-dropout-turns-20/reviews/the-anniversary
   - https://www.stereogum.com/1661202/the-college-dropout-turns-10/reviews/the-anniversary/
   - https://www.rapreviews.com/2004/02/kanye-west-the-college-dropout/
@@ -34,7 +35,11 @@ translation:
     - source: "Earth in the Wind"
       target: "어스 인 더 윈드"
       note: "그룹 어스 윈드 앤드 파이어의 이름을 쪼갠 말장난. 가수 이름은 원어 표기를 살렸다."
+    - source: "like Shyne home"
+      target: "샤인이 집에 있을 때처럼"
+      note: "home을 친구를 부르는 속어 homes(Wiktionary)로 읽으면 샤인한테 그러듯이 부르는 말이 되나, 철자가 단수라 확정하지 못했다(출처 1건). 번역은 유지했다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 템포를 끌어올린 루서 밴드로스의 목소리로 문을 연다. 'A House Is Not a Home'에서 잘라 낸 '그럴 거야?'라는 질문이 높고 가는 음색으로 되풀이되고, 제이미 폭스가 그녀는 마빈 게이와 루서 밴드로스를, 애니타 베이커와 뉴 에디션을 원한다는 후렴을 부른다. 웨스트의 벌스는 느긋한 박자에 맞춰 짧게 끊어 말하고, 후렴 뒤에는 샘플과 코러스만 남은 긴 구간이 이어진다. 2분 37초쯤 한 여성의 목소리가 천천히 하라더니 이제 더 빨리 해 달라고 주문하고, 웨스트가 그렇게 빨리는 못 하지만 할 수 있는 사람을 안다며 트위스타를 부른다. 반주의 박자는 그대로인데 트위스타의 랩만 훨씬 빠른 속도로 달리며 R&B 가수 이름을 쉬지 않고 엮는다. 마지막 후렴 뒤에는 1분 가까운 아웃트로가 곡을 천천히 식힌다.

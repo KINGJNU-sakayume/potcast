@@ -10,6 +10,8 @@ sources:
   - https://www.rapreviews.com/2005/08/kanye-west-late-registration/
   - https://en.wikipedia.org/wiki/Late_Registration
   - https://open.spotify.com/track/16psbAyzJJ0YZyaJiOohtX
+  - https://www.azlyrics.com/lyrics/kanyewest/wemajor.html
+  - https://www.lyricsmode.com/lyrics/k/kanye_west/we_major.html
   - https://lrclib.net/api/get/1666093
 translation:
   sourceLanguage: en
@@ -33,7 +35,14 @@ translation:
     - source: "Illmatic"
       target: "『Illmatic』"
       note: "나스의 1994년 데뷔 앨범."
+    - source: "some h- on a Sunday afternoon"
+      target: "일요일 오후에 받는 오럴"
+      note: "LRCLIB은 'h-'로 가려 놓았지만 AZLyrics와 LyricsMode가 모두 'head'(구강성교 속어)로 적는다. 앞서는 '일요일 오후의 여자'로 옮겼다가 고쳤다."
+    - source: "Four-fours"
+      target: "커스텀 휠"
+      note: "1984년식 스포크 휠을 가리키는 휴스턴 속어('fo's'). 마이크 존스의 'Still Tippin'' 가사를 인용한 Urban Dictionary 항목 2건이 같은 뜻으로 적는다. 현재 번역(커스텀 휠)은 유지했다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 20초 넘는 연주로 시작한다. 디스코풍 베이스라인과 일렉트릭 피아노 글리산도, 금관이 쏟아지고, 크게 증폭된 코러스가 뒤에서 환호처럼 받친다. 리얼리 도의 후렴은 술 한 모금, 연기 한 모금에 들뜬 방 안의 장면을 늘어놓다가 '우린 메이저야'를 몇 번이고 외친다. 웨스트의 벌스가 그 들뜸을 동네의 현실로 끌어내리고, 다시 후렴을 지나 나스의 벌스가 이어진다. 3분 37초쯤 토니 윌리엄스가 오늘이 그 어느 때보다 기분 좋다고, 늦더라도 안 하는 것보다 낫다고, 이건 오리엔테이션이라고 노래하고 곡은 후렴을 한 번 더 돈다. 5분 20초 이후의 아웃트로에서는 웨스트가 녹음실을 돌며 연주자들을 소개하고, 사람들에게 따라 부르라고 권한다.
@@ -46,4 +55,4 @@ translation:
 
 ## 번역에 대하여
 
-친구들과 성공을 함께 축하하는 곡이라 **해체**로 옮겼다. 후렴의 *we major*는 대단하다는 속어이면서 음반 업계의 메이저와 겹치는 말이라 '메이저'로 음차했고, 토니 윌리엄스의 노래에 나오는 *orientation*은 앨범의 학교 은유와 이어지도록 '오리엔테이션'으로 두었다. 후렴과 벌스의 욕설과 비하어는 기세만 남기고 직역하지 않았다. 아웃트로에서 웨스트가 연주자들을 소개하는 말은 무대 위 소개처럼 들뜬 반말로 옮겼다.
+친구들과 성공을 함께 축하하는 곡이라 **해체**로 옮겼다. 후렴의 *we major*는 대단하다는 속어이면서 음반 업계의 메이저와 겹치는 말이라 '메이저'로 음차했고, 토니 윌리엄스의 노래에 나오는 *orientation*은 앨범의 학교 은유와 이어지도록 '오리엔테이션'으로 두었다. 후렴과 벌스의 욕설과 비하어는 기세만 남기고 직역하지 않았다. 아웃트로에서 웨스트가 연주자들을 소개하는 말은 무대 위 소개처럼 들뜬 반말로 옮겼다. 둘째 벌스 첫머리 *Sunday afternoon* 비유는 LRCLIB이 가려 둔 낱말을 AZLyrics와 LyricsMode가 모두 *head*로 적어, 여자가 아니라 구강성교를 가리키는 말로 고쳐 옮겼다.

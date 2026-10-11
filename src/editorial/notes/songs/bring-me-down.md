@@ -11,6 +11,8 @@ sources:
   - https://en.wikipedia.org/wiki/Late_Registration
   - https://open.spotify.com/track/1JwSazdPkEpDZug2adVBU8
   - https://lrclib.net/api/get/1571755
+  - https://www.azlyrics.com/lyrics/kanyewest/bringmedown.html
+  - https://www.lyricsmode.com/lyrics/k/kanye_west/bring_me_down.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,6 +36,7 @@ translation:
       target: "의지"
       note: "운전이 아니라 추진력, 의욕의 뜻이다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 14초 동안 연주가 먼저 공간을 연 뒤 브랜디의 노래로 시작한다. 언젠가 저들이 날 끌어내리려 할 줄 알았다는 후렴이 여러 겹의 화음으로 쌓이고, 바이올린과 첼로, 금관이 그 아래를 두껍게 받친다. 49초쯤 웨스트의 벌스가 들어오면 반주는 그대로인데 말투가 갑자기 거칠어진다. 벌스는 하나뿐이고, 1분 10초 가까이 쉬지 않고 이어진 뒤 브랜디의 짧은 브리지를 거쳐 후렴으로 돌아간다. 마지막 20초는 브랜디의 '아니, 아니'가 반복되며 사그라진다.
@@ -46,4 +49,4 @@ translation:
 
 ## 번역에 대하여
 
-후렴과 벌스 모두 끌어내리려는 사람들에게 맞서는 말이라 **해체**로 옮겼다. 후렴의 *bring me down*은 매번 '날 끌어내리다'로 같게 옮겨 반복의 무게를 살렸고, 벌스의 *drive*는 자동차가 아니라 추진력이라 '의지'로 옮겼다. 브랜디의 브리지는 LRCLIB 기록의 받아쓰기가 불분명해, 확인되는 단어를 중심으로 뜻을 좁혀 조심스럽게 옮겼다. 시기하는 사람들을 부르는 비하어는 직역하지 않았다.
+후렴과 벌스 모두 끌어내리려는 사람들에게 맞서는 말이라 **해체**로 옮겼다. 후렴의 *bring me down*은 매번 '날 끌어내리다'로 같게 옮겨 반복의 무게를 살렸고, 벌스의 *drive*는 자동차가 아니라 추진력이라 '의지'로 옮겼다. 브랜디의 브리지는 LRCLIB 기록의 받아쓰기가 불분명해, 확인되는 단어를 중심으로 뜻을 좁혀 조심스럽게 옮겼다. 시기하는 사람들을 부르는 비하어는 직역하지 않았다. 벌스 첫머리의 *last today*는 LRCLIB과 LyricsMode가 그렇게 적지만 AZLyrics는 *Mass*(미사)로 적어 서로 다른데, 다음 줄에 목사가 나와 어느 쪽이 맞는지 확정하지 못했고 번역은 다수 표기를 따랐다.

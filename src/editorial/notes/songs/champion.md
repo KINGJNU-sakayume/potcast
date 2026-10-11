@@ -12,6 +12,9 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/7gXQeFv66TUng1LyjjHDvb
   - https://lrclib.net/api/get/566850
+  - https://en.wikipedia.org/wiki/To_Zion
+  - https://en.wiktionary.org/wiki/layaway
+  - https://en.wiktionary.org/wiki/project
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -31,7 +34,17 @@ translation:
     - source: "back to the crib"
       target: "집으로 가져왔어"
       note: "트로피를 가지고 돌아왔다는 승리의 이미지."
+    - source: "Zion"
+      target: "자이언, 곧 아들"
+      note: "로린 힐의 'To Zion'은 아들 자이언 데이비드 마리를 위한 곡이고, 웨스트가 이 줄에서 그 곡을 가리켰다고 Wikipedia 'To Zion' 항목이 적는다. 이전에는 성서의 '시온'으로 옮겼다."
+    - source: "the projects"
+      target: "공영 임대 단지"
+      note: "저소득층이 사는 도시의 공영 주택 단지(Wiktionary 'project')."
+    - source: "layaway"
+      target: "물건을 맡아 두는 예약 구매"
+      note: "계약금을 받고 물건을 맡아 두었다가 나머지를 치르면 내주는 방식(Wiktionary). 물건을 먼저 받는 '할부'와 다르다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 '네가 챔피언이란 걸 알았니'라는 물음으로 바로 시작한다. 스틸리 댄 'Kid Charlemagne'에서 잘라 낸 목소리가 후렴의 물음을 만들고, 벌스에서는 같은 원곡의 '그들의 눈에'라는 짧은 조각만 끊임없이 반복된다. 기타와 트럼펫 대신 가볍게 흔들리는 신시사이저, 갑자기 소리가 빠졌다 들어오는 순간들, 808 손뼉이 곡을 끌고 간다. 두 벌스 뒤 2분쯤 분위기가 바뀌어, 코니 미첼이 자메이카 디제이의 토스팅처럼 이건 챔피언의 이야기라고, 출발선의 주자들처럼 일어서라고 외친다. 마지막 후렴으로 돌아온 곡은 3분이 안 되는 짧은 길이로 끝난다.
@@ -45,3 +58,5 @@ translation:
 ## 번역에 대하여
 
 듣는 사람을 응원하고 아버지를 회상하는 곡이라 **해체**로 옮겼다. 후렴의 *you*는 듣는 사람에서 화자 자신, 아버지로 넓어지므로 대상을 고정하지 않고 '너'로 두었고, 스틸리 댄 샘플의 *champion in their eyes*는 매번 같은 번역을 써 반복의 힘을 살렸다. 코니 미첼의 브리지는 경기장 아나운서 같은 외침이라 짧은 반말 명령문으로 옮겼다. 아버지의 말 *close your eyelids*는 가난을 농담으로 넘기는 말투라 직역했다.
+
+2026-10-11 재검토에서 로린 힐의 *Zion*을 성서의 시온이 아니라 그가 아들에게 바친 노래 'To Zion'의 이름으로 읽어 옮겼다. 곡의 결이 포기와 노력, 그리고 아이들을 말하는 대목이라 이 읽기가 앞뒤 줄과 맞는다. *the projects*와 *layaway*도 사전 뜻에 맞춰 '공영 임대 단지'와 '맡아 두는 예약 구매'로 바로잡았다.

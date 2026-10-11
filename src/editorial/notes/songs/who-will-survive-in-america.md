@@ -12,6 +12,7 @@ sources:
   - https://en.wikipedia.org/wiki/Lost_in_the_World
   - https://open.spotify.com/track/4e5IPJxSGVWPsaxQzdRseN
   - https://lrclib.net/api/get/585736
+  - https://en.wiktionary.org/wiki/dig
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +35,11 @@ translation:
     - source: "milk and honey"
       target: "젖과 꿀"
       note: "성경에서 약속의 땅을 가리키는 표현."
+    - source: "digging Paul Revere and Nat Turner as the good guys"
+      target: "폴 리비어와 냇 터너를 좋은 사람들로 파헤쳤다"
+      note: "dig에는 '파다'와 '좋게 받아들이다'(속어)의 두 뜻이 있어 '좋은 사람들로 여기게 됐다'로 읽힐 수도 있다(출처 1건: Wiktionary). 번역은 그대로 두었다."
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 앞 곡 'Lost in the World'의 부족풍 북과 구호가 끊기지 않고 이어지는 가운데, 길 스콧헤론의 낭독으로 시작한다. 그는 거꾸로 뒤집힌 채 사는 우리에게 새로 필요한 말은 혁명이라고, 미국은 이제 젖과 꿀 대신 피와 눈물이라고 말한다. 북과 구호가 리듬을 붙잡고 있는 동안 그의 목소리는 차분하지만 날카롭게 미국의 숨겨진 역사를 늘어놓고, 1분 12초쯤 웹스터 사전은 소울을 뭐라고 정의하느냐고 물은 뒤 좋은 집과 아내, 아이들을 먹일 음식만 있으면 된다는 소박한 소원을 말한다. 1분 25초쯤 누가 미국에서 살아남겠느냐는 물음이 네 번 되풀이되고, 앨범은 1분 38초의 이 짧은 곡으로 끝난다. 웨스트 자신의 목소리는 이 곡에서 한 번도 나오지 않는다.

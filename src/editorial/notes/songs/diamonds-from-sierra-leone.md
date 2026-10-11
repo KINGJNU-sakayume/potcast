@@ -11,6 +11,9 @@ sources:
   - https://en.wikipedia.org/wiki/Diamonds_from_Sierra_Leone
   - https://open.spotify.com/track/3V8VqH4EmTU8VFVu00Ir9T
   - https://lrclib.net/api/get/568484
+  - https://www.azlyrics.com/lyrics/kanyewest/diamondsfromsierraleone.html
+  - https://www.lyricsmode.com/lyrics/k/kanye_west/diamonds_from_sierra_leone.html
+  - https://en.wiktionary.org/wiki/change
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -30,7 +33,23 @@ translation:
     - source: "international asshole"
       target: "국제적인 밉상"
       note: "시상식에서 소란을 피운 자신을 스스로 놀리는 말이다."
+    - source: "my plastic / my plaques"
+      target: "내 음반 인증 패"
+      note: "LRCLIB은 'plastic'(신용카드로 읽힘)으로 적지만 AZLyrics와 LyricsMode는 둘 다 'plaques'로 적는다. 'Kane'으로 잘못 새긴 인증 패 이야기가 문맥에 맞아 후자를 따랐고, 이전의 '내 카드'는 고쳤다."
+    - source: "wouldn't change by the change"
+      target: "돈에도 ... 변하지 않을"
+      note: "change는 돈을 가리키는 낱말이라(Wiktionary의 '지폐와 바꾼 소액 화폐' 뜻 포함) '잔돈'이 아니라 '돈'으로 옮겼다. 한국어에서는 change의 동음 말장난을 살리지 못했다."
+    - source: "kill my Vibe"
+      target: "내 기분을 죽이다"
+      note: "LyricsMode가 'Vibe'를 대문자로 적어 잡지 『Vibe』와 겹친 말장난으로 읽힌다(출처 1건). 앞 구절의 '잡지 한 권'과 이어진다. 번역은 유지했다."
+    - source: "Indian dance to bring our reign back"
+      target: "우리 시대를 다시 불러올 인디언 춤"
+      note: "'rain dance'와 'reign'의 동음 말장난으로 읽힌다(출처 1건, 앞뒤 낱말 'dance', 'bring'에서 추정). 번역은 유지했다."
+    - source: "ya need to go down"
+      target: "넌 이제 가 봐"
+      note: "'go down'이 구강성교를 뜻하는 속어일 수 있다(앞 줄의 성관계 거절과 이어짐). 줄 단위 풀이를 찾지 못해 번역은 유지하고 TRANSLATION_OPEN_QUESTIONS에 올릴 후보로 남긴다(등급 D)."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 셜리 배시의 'Diamonds Are Forever'로 곧장 시작한다. 리믹스보다 도입이 짧아 첫 소절이 끝나자마자 다이아몬드를 하늘로 던지라는 후렴과 '영원히?'를 되묻는 구호가 나온다. 하프시코드와 금관, 현악, 미셸 공드리의 라이브 드럼이 받치는 반주는 리믹스와 같다. 차이는 벌스에 있다. 웨스트는 두 개의 긴 벌스를 혼자 맡고, 첫 벌스는 눈을 감고 상상해 보라는 화려한 장면에서 출발해 포드 에스코트도 못 사던 시절과 지붕 열린 포르셰를 대비한다. 둘째 벌스는 시상식 이야기로 시작해 로커펠라의 미래로 끝나고, 마지막 25초 남짓 '다이아몬드는 영원해'가 되풀이되며 곡이 닫힌다.
@@ -43,4 +62,4 @@ translation:
 
 ## 번역에 대하여
 
-업계와 대중을 향해 자기 가치를 주장하는 랩이라 **해체**로 옮겼다. 셜리 배시 샘플과 후렴은 리믹스와 같은 번역을 써서 두 판본을 비교할 때 벌스의 차이만 드러나도록 했다. *international asshole*처럼 스스로를 놀리는 말은 원문의 과장된 자조가 살도록 '국제적인 밉상'으로 옮겼고, 스트리퍼와 친구를 비하하는 농담은 원문의 수위를 넘지 않게 옮겼다.
+업계와 대중을 향해 자기 가치를 주장하는 랩이라 **해체**로 옮겼다. 셜리 배시 샘플과 후렴은 리믹스와 같은 번역을 써서 두 판본을 비교할 때 벌스의 차이만 드러나도록 했다. *international asshole*처럼 스스로를 놀리는 말은 원문의 과장된 자조가 살도록 '국제적인 밉상'으로 옮겼고, 스트리퍼와 친구를 비하하는 농담은 원문의 수위를 넘지 않게 옮겼다. 'Kane'이 잘못 새겨진 물건은 LRCLIB의 *plastic*보다 AZLyrics와 LyricsMode가 같이 적는 *plaques*가 문맥에 맞아 '인증 패'로 고쳤고, *Alicia Keys*가 달래려던 대상이 LRCLIB에는 복수(them), AZLyrics에는 단수(him)로 달리 적혀 있어 LRCLIB 쪽을 따랐다.

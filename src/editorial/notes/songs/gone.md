@@ -11,6 +11,8 @@ sources:
   - https://en.wikipedia.org/wiki/Gone_(Kanye_West_song)
   - https://open.spotify.com/track/6vQTNCP1Ifp8xiyQULwZ69
   - https://lrclib.net/api/get/3616023
+  - https://www.azlyrics.com/lyrics/kanyewest/gone.html
+  - https://www.urbandictionary.com/define.php?term=raw%20dog
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,7 +35,14 @@ translation:
     - source: "Gone With the Wind"
       target: "「바람과 함께 사라지다」"
       note: "컨시퀀스의 'gone' 말장난 가운데 하나."
+    - source: "raw dog"
+      target: "콘돔 없이 하다"
+      note: "콘돔 없는 성관계를 뜻하는 속어(Urban Dictionary 정의 3건이 일치). 앞서 '맨몸을 좋아해'로 옮겼다가 뜻이 흐려 고쳤다."
+    - source: "let it burn"
+      target: "꾹 참고 견뎌야 했지"
+      note: "성병 증상으로 읽히는 문맥이며, 어셔의 노래 'Burn'의 후렴 'let it burn'과 겹친 말장난일 가능성이 있다(Urban Dictionary 항목 1건, 등급 C). 번역은 유지했다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 오티스 레딩이 부른 'It's Too Late'의 한 소절로 시작한다. 네가 유일하다고 말했어야 했는데 너무 늦었다는 목소리 뒤로 두 화음을 오가는 피아노가 반복되고, 단순한 펑크 비트가 들어온다. 웨스트의 첫 벌스가 지나며 현악이 짧게 끊어 치는 스타카토로 들어와 그의 목소리가 오르내리는 데 맞춰 대꾸한다. 캠론의 벌스, 컨시퀀스의 벌스로 넘어가는 동안 편곡은 조금씩 불어나고, 3분 30초쯤 컨시퀀스의 마지막 줄이 끝나면 랩이 멈춘다. 40초 넘게 현악과 피아노, 허밍만 남는 연주 구간이 이어지다 4분 14초쯤 웨스트의 마지막 벌스가 시작되고, 그 벌스가 끝나는 순간 곡도 끝난다.
@@ -46,4 +55,4 @@ translation:
 
 ## 번역에 대하여
 
-경쟁 래퍼들과 듣는 사람에게 자랑하고 털어놓는 랩이라 **해체**로 옮겼다. 컨시퀀스의 벌스는 *gone*을 줄마다 다른 뜻으로 쓰는 말장난이 핵심이라, 한국어에서도 '가다', '떠나다', '사라지다'를 이어 쓰며 같은 말이 반복되는 느낌을 최대한 살렸다. 오티스 레딩 샘플의 대명사는 기록마다 달라 성별을 밝히지 않고 '떠났어'로만 옮겼다. 마지막 줄의 *Mr. West*는 비서가 손님에게 하는 말이라 존댓말로 구별했다.
+경쟁 래퍼들과 듣는 사람에게 자랑하고 털어놓는 랩이라 **해체**로 옮겼다. 컨시퀀스의 벌스는 *gone*을 줄마다 다른 뜻으로 쓰는 말장난이 핵심이라, 한국어에서도 '가다', '떠나다', '사라지다'를 이어 쓰며 같은 말이 반복되는 느낌을 최대한 살렸다. 오티스 레딩 샘플의 대명사는 기록마다 달라 성별을 밝히지 않고 '떠났어'로만 옮겼다. 마지막 줄의 *Mr. West*는 비서가 손님에게 하는 말이라 존댓말로 구별했다. 컨시퀀스의 *raw dog*는 콘돔 없는 성관계를 뜻하는 속어라 '콘돔 없이 하는 걸 좋아해'로 고쳐 옮겼다.

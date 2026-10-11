@@ -11,6 +11,7 @@ sources:
   - https://en.wikipedia.org/wiki/Guilt_Trip_(song)
   - https://open.spotify.com/track/5nPOM0nFRAJ3XI8xCxNAzO
   - https://lrclib.net/api/get/571551
+  - https://www.urbandictionary.com/define.php?term=blocka
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -39,7 +40,11 @@ translation:
     - source: "let me go"
       target: "날 보냈어"
       note: "커디의 아웃트로. 곡의 마지막 물음."
+    - source: "Blocka"
+      target: "탕"
+      note: "총소리를 흉내 낸 의성어로 읽힌다(Urban Dictionary 정의 다수 일치, 출처 1종). 번역은 그대로 두었다."
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 전자음 신시사이저로 시작하고, 5초쯤 오토튠을 건 웨스트가 이제 끝내야겠다고, 다들 알게 해야겠다고 노래한다. 31초쯤 팝칸의 댄스홀 구호가 샘플로 들어와 다들 떠들기만 한다고, 진흙보다 무르다고 되풀이하고, 44초쯤 웨스트가 랩과 노래 사이를 오가며 유일한 벌스를 시작한다. 1분 6초쯤 '탕, 탕' 하는 총소리 같은 말 뒤로 그는 샤카와 샤바, 빅 파파와 추바카, 치프 로카까지 같은 각운을 붙잡고 숨 가쁘게 이어 간다. 팝칸의 구호가 한 번 더 지나간 뒤, 2분 18초쯤 키드 커디가 첼로와 얽히며 날 그렇게 사랑했다면 왜 날 보냈냐고 거듭 묻는다. 3분 4초쯤 팝칸의 거친 목소리가 다시 몰아치며 4분 4초의 곡을 닫는다.

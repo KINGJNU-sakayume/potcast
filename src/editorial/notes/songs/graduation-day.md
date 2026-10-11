@@ -6,6 +6,7 @@ short: >
   학장의 욕설이 '이제 어쩔 거냐'는 질문으로 끝나는 순간, 노래가 속삭이듯 시작된다. 반쪽은 콩트, 반쪽은 노래인 82초가 앨범의 결심을 가장 작게 말한다.
 written: 2026-10-05
 sources:
+  - https://en.wiktionary.org/wiki/the_joke_is_on_someone
   - https://stereogum.com/2249901/kanye-west-the-college-dropout-turns-20/reviews/the-anniversary
   - https://www.billboard.com/articles/news/61742/hip-hop-violinist-preps-solo-debut
   - https://en.wikipedia.org/wiki/The_College_Dropout
@@ -30,7 +31,11 @@ translation:
     - source: "don't tell anybody"
       target: "아무한테도 말하지 마"
       note: "노래 파트의 모든 줄을 닫는 후렴구라 같은 번역을 반복했다."
+    - source: "the joke is on you"
+      target: "웃음거리가 되는 건 너야"
+      note: "비웃으려던 쪽이 도리어 웃음거리가 된다는 관용구다(Wiktionary). 이전의 웃긴 건 너야는 뜻이 어긋나 고쳤다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 트랙의 앞 36초는 학장의 고함이다. 'Intro'에서 공손하게 부탁하던 목소리가 욕설로 돌아와 졸업 입장권과 가운을 내놓으라고 소리치고, 무대를 걸어서도 미끄러져서도 건너지 못할 거라고 몰아붙인다. 'We Don't Care'의 후렴을 그대로 비틀어 손을 흔들며 캠퍼스에서 나가라고 퍼붓고, 이제 어쩔 거냐는 질문으로 끝난다. 그 질문 뒤에 분위기가 완전히 바뀐다. 피아노와 바이올린이 들어오고, 각 줄이 '아무한테도 말하지 마'로 끝나는 짧은 노래가 조용히 이어진다. 노래에는 후렴도 벌스도 따로 없이 여섯 줄이 같은 형식으로 반복되다 끝난다.
@@ -44,3 +49,5 @@ translation:
 ## 번역에 대하여
 
 두 화자 모두 **해체**로 옮겼다. 학장은 'Intro'의 부드러운 말투를 버리고 욕설을 퍼붓는데, 호칭을 '자네'에서 '너'로 바꿔 분노와 함께 거리가 무너지는 변화를 드러냈다. 노래 파트는 듣는 사람에게 비밀을 털어놓는 친밀한 고백이라 같은 반말을 유지하되, 문장마다 '아무한테도 말하지 마'를 같은 형태로 붙여 원곡의 반복 구조를 살렸다. 학장의 비하어는 그대로 옮기지 않고 모욕의 의도만 남겼다.
+
+2026-10-11 재검토에서 관용구 the joke is on you를 사전 뜻에 맞춰 고쳤다.

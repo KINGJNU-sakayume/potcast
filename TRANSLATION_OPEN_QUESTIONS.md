@@ -59,6 +59,85 @@ Genius 등 줄 단위 해설 사이트가 봇 접근 차단(403)이라 대부분
 | too-young | 12 | 'papadeauxs'를 Pappadeaux 체인으로 본 연결은 해석 | 파파도에서 밥을 먹어 | 공식 가사 |
 | yours-truly-austin-post | 25, 29 | "put that sauce on that bitch"의 대상, "bought out my brain", "kerosene"의 뜻과 받아쓰기 | 그 여자한테 금방 멋을 입혀 주고 / 머리가 텅 빌 만큼 다 써 버렸어 / 등유를 잔뜩 구해 오자 | 주석, Spotify 공식 가사 |
 
+### Kanye West 전 앨범 (재검토 라운드 2)
+
+등급은 C(단일 출처)와 D(문맥 추정)다. 이전 라운드와 마찬가지로 Genius 주석이나 음원 청취가 필요하다. 성적 은어를 순화한 줄은 노트의 "뜻만 남김" 방침이라 목록에서 뺐다.
+
+| 곡 | 줄 | 쟁점 | 현재 번역 | 필요한 근거 |
+| --- | --- | --- | --- | --- |
+| heartless-kanye-west | 14 | 'get me back'이 앙갚음 관용구인지 재결합인지 (Wiktionary 'get someone back'=복수, 등급 C) | 날 되찾아서 본때를 보여 주겠다고 (어색, 복수 쪽 유력) | 줄 단위 주석 |
+| amazing | 34–35 | 'no spoon'(은수저 읽기 D), 'summertime, no June' (각운용 줄, D) | 은수저 없이 / 여름인데 6월은 없어 | 주석 |
+| say-you-will | 8 | 'Then play you will'의 play (D) | 그럼 그렇게 해 줘 | 주석 |
+| robocop | 22, 24 | 'ain't take it to this degree' 주어·대상 (D), 'turn me on' 성적 뜻 가능(C) | 그녀는 이 정도까지 할 생각은 아니었대 / 끌어당겨 | 주석 |
+| paranoid | 14–15 | 'make it hood', 'make you come…go' 중의 (D) | 거칠게 / 직역 | 주석 |
+| pinocchio-story | 49, 52, 57–59 | 즉흥 가사라 엉킴. 49는 LRCLIB 'find' vs AZLyrics 'call' 불일치 | 그녀를 더는 찾을 수 없어 | 음원 청취 |
+| see-you-in-my-nightmares | 48 | 'clouds in my vision'이 연기인지 (D) | 구름이 내 시야를 가려 | 주석 |
+| bad-news | 16–18 | 'keep another' (D) | 직역 | 주석 |
+| we-dont-care | 50 | 'homo / straight' 성적 말장난 (D) | 뒤틀린 것처럼 바로 펴지질 않지 | 주석 |
+| slow-jamz | 17 | 'like Shyne home': 단수 'home' vs 'homes'(친구) (C) | 샤인이 집에 있을 때처럼 | 주석 |
+| get-em-high | 23, 44–45, 78, 81, 91, 93 | Pastor Troy 'cut', Francis/W-H-I-T(Frank White?), 'You's a bitch… thicker', 'Marsha', 'Chimped up', 'Bolder than Denver'(Boulder?) (D) | 직역 | 주석 |
+| through-the-wire | 1–2, 24, 26–27, 56 | 'Gee/Hop', 'two lifelines'(밀리어네어 라이프라인?), 자메이카 욕설 말장난, GEICO 줄 (D) | 직역 | 주석 |
+| spaceship | 84–85, 98 | 'broad service'(bottle service?), 'A&Rs and they faculties', 'chariot'('Swing Low' 인용?) (D) | 방송 출연도 외 | 주석 |
+| jesus-walks | 1 | 'Order, huh' (AZLyrics에 줄 없음, D) | 세워 총, 하 | 음원 청취 |
+| breathe-in-breathe-out | 4, 47 | 'pull ya D's out' (D), 47번 LRCLIB 'hunnies where my Altima was' vs AZLyrics 'drive me in the hundreds' 불일치 | 돈을 꺼내 | 음원 청취 |
+| school-spirit | 35 | 'young pootie tang tippy tow' (C/D) | 까치발 든 젊은 푸티 탱 | 주석 |
+| all-falls-down | 20 | 'look like Eve' (D) | 직역 | 주석 |
+| last-call | 49, 53 | 'sweeter than old Sadie', 'almost Raymond' (D). 용어집 'Hip Hop' 항목에 오타 의심(Kyambo, Bette Midler) | 직역 | 주석 |
+| the-new-workout-plan | 48–49 | 'four door … five, six, seven, eight' (D) | 직역 | 주석 |
+| heard-em-say | 4, 9, 10, 31 | 'hard way'→Tim Hardaway 말장난(해설 1곳, C. 승인 안 하면 되돌림), 'minister'(이슬람 인물?), 'throw him some hot cars', 'Aunt Pam'(이모/고모) (D) | 팀 하더웨이처럼 더 험한 길이지 외 | 주석 |
+| touch-the-sky | 19, 60, 62 | 'Jacob'(보석상?), 'Who's on First'와 셋째 벌스, 맥주병 비유 (D) | 직역 | 주석 |
+| gold-digger | 16–17, 46 | 'arm' 시계 추정, 'like Michael'(마이클 잭슨 성형?) (D) | 직역 | 주석 |
+| drive-slow | 6, 21, 38, 53, 71 | 'school full of stones'(Black P. Stones?), 'Baby'=버드맨?, 'fifth relaxed', 'Just a Lil' Bit'(50센트, C), 'sold O's'(온스?) (D) | 직역 | 주석 |
+| crack-music | 31, 42, 85 | 'Maddigan' 정치인, 'Moes and the Folks', 'trade hooks for Grammys'(hooks=후렴?) (D) | 직역 | 주석 |
+| diamonds-from-sierra-leone | 15, 35–36, 49, 54, 65, 69 | 'kill my Vibe'(C), 'them/him' 표기, 'ya need to go down'(성적 속어?), 'with really doe' 표기 갈림 (D) | 직역 | 음원 청취 |
+| diamonds-from-sierra-leone-remix | 48, 64–65, 80 | rain/reign back 표기, 'Kanyeez you got me', Young Gunz·Teairra Marí·Peedi(C), "I'm Young" (D) | 직역 | 음원 청취 |
+| we-major | 57, 69 | 'Nas'가 호칭인지 예시인지, 'before I had the game took' (D) | 나스, 팬들은 여전히 Illmatic을 원해 외 | 주석 |
+| gone | 6, 18, 23, 25, 53–54 | 'Numpsay', 'let it burn'(어셔 'Burn'?, C), 'Roc Pastelle', 'Doobie Long', 'Weezie/George/Regina' (D) | 직역 | 주석 |
+| bring-me-down | 9, 33, 34–39 | LRCLIB 'last today' vs AZLyrics 'to Mass today', 'crosswinds' 표기, 브랜디 구간 받아쓰기 (D) | LRCLIB 표기 | 음원 청취 |
+| my-way-home | 16 | LRCLIB 'stay in they corner like Mike Tyson' vs AZLyrics 'some wanna stay in their corner' | LRCLIB 표기 | 음원 청취 |
+| roses | 전체 | `lyrics:lines --check roses` 실패: 번역 구간 시작이 LRCLIB 줄 시작과 400ms~2.2초 어긋남 (첫 임포트부터 있던 문제, 이번 수정과 무관). 다른 LRCLIB 레코드로 재매칭 필요 | — | 레코드 선택 |
+| gorgeous | 10, 12, 38, 39, 77, 79 | '30 rocks…Alec Baldwin'(『30 Rock』 말장난, C), 'call of Autumn', "World's Game"(축구?), 'say hoe… pimpish', 'lived in lenses', 'one cuff'(바짓단?) (D) | 직역 | 주석 |
+| power | 30 | 'my ice brought the goalies in' 연결 (D) | 내 다이아는 하키 골키퍼까지 불러들였지 | 주석 |
+| monster | 31, 91 | 'Malibooyah', 'the funny face'(지폐 속 얼굴인지) (D) | 직역 | 주석 |
+| so-appalled | 19, 84, 87, 89 | 'O's like Cheerios'(온스/오르가슴), 'Tony…nostrils'(토니는 누구), 'Bobby Brown jaw', 'legends of the falls' (D) | 직역 | 주석 |
+| devil-in-a-new-dress | 37, 40 | 'ordered the jerk'(요리/사람 중의), 'Lyor Cohen' 표기 (D) | 직역 | 주석 |
+| runaway | 56, 60 | 'Ichabod Crane with…top off', 'Freddy loafers' (D) | 직역 | 주석 |
+| all-of-the-lights | 40 | 'I bumped my head' 관용구 여부 (D) | 머리를 부딪쳤지 | 주석 |
+| who-will-survive-in-america | 7 | 'digging Paul Revere and Nat Turner as the good guys': dig=파헤치다/좋게 받아들이다 (C) | 파헤쳤다…좋은 사람들로 | 주석 |
+| hell-of-a-life | 후렴, 65 | LRCLIB 'hell of a lie' vs AZLyrics 'hell of a life' (번역은 life 쪽) | 끝내주는 인생 | 음원 청취 |
+| ultralight-beam | 43–47 | 표기 충돌: AZLyrics는 'You/Your'를 대문자로 적어 신에게 하는 말로 읽힘. 현재 브리프는 친구에게 하는 말(해체). 청자 해석을 바꿀지 판단 필요 | 널/네 이름 (해체) | 음원 청취, 크레디트 |
+| ultralight-beam | 48–53 | 'Wesley and Spike'(Wesley Snipes, Spike Lee?), 'Pam/Gina'(『Martin』 인용?), 'Arthur…anteater', 'woo wap, the bam' (D) | 직역 | 주석 |
+| famous | 37–66 | 'Bam Bam'=총소리(Songfacts, C) | 밤 밤 | 주석 |
+| freestyle-4 | 17, 32, 40–41 | LRCLIB 'your side/side down' vs AZLyrics 'Versailles/slide down'(C). 현재 번역 "네 쪽에 갔던 놈들"은 뜻이 안 통함. 'wipe me down', 'if she ghetto' (D) | 직역 | 음원 청취 |
+| real-friends | 49, 62 | LRCLIB 'real end' vs AZLyrics 'reel end'(말장난?). 노트북 영상은 성관계 영상으로 읽음(ET, C) | 정말 끝까지 | 음원 청취 |
+| franks-track | 4 | LRCLIB 'I'll mix now fleshed out' vs AZLyrics 'I'm mixed now, fleshed out' (C) | 직역 | 음원 청취 |
+| no-more-parties-in-la | 18, 20, 38, 49, 109, 118 | 'grape van', 'Erykah Badu me', 'malpractice', 'union fee', 'bald fade, I might slam' (D), 'turbo thots'(C) | 직역 | 주석 |
+| pt-2 (father-stretch-my-hands-pt-2) | 31, 32, 34, 45 | 'Pockets swole, Danny', 'Selling bar, candy', 'choppa go Oscar for Grammy', 'Wake up Versace' (D) | 직역 | 주석 |
+| 30-hours | 30, 42, 44–46 | 'all the Popeye's is finished', 돛 비유 줄 (D) | 전부 먹고 없네 외 | 주석 |
+| highlights | 44 | 'Impregnate Bridget' (D) | 직역 | 주석 |
+| facts-charlie-heat-version | 12, 13, 21 | 'Herzog and Adidas'(Herzogenaurach?), 'Drizzy' 지칭 (D) | 직역 | 주석 |
+| feedback | 27–28, 45 | 'Follow our father / You borrow our motto' (D), 45번 어색한 어미 | 직역 | 주석 |
+| silver-surfer-intermission | 13 | 'loopy' (D) | 멋지게 | 주석 |
+| fml | 31, 35 | 인용부호 안의 'ho' 위치, 'Giuseppe store'(Zanotti?) (D) | 직역 | 주석 |
+| blood-on-the-leaves | 47 | `'nolia`=New Orleans Magnolia 단지(C-Murder 인용)인지 (C). "시절"은 덧붙임 | 매그놀리아 시절로 돌아가야겠어 | 주석 |
+| guilt-trip | 7, 9, 17, 19, 20 | 'dem a gwaan'(떠들어 대 vs 행동하다), 'Blocka' 총소리(C), 샤카 말장난 (D) | 직역 | 주석 |
+| new-slaves | 36, 61–63, 75–78 | 'pussy ain't free'의 일반화, 순화로 뜻이 달라진 줄, 헝가리어 Omega 인용 'Ő'의 주어(해인지 소녀인지) (D) | 세상에 공짜는 없다 외 | 주석, 영어 번역 |
+| i-am-a-god | 1–4, 7, 33 | 'Blazin', 카플턴 샘플 'bugah red'(받아쓰기 의심), 'Ibn diamond'=이발사 Ibn Jasper(C) | 직역 | 주석 |
+| im-in-it | 5, 40, 49, 71, 81 | 'Careless whispers', 'reptile', 'Michael Douglas out the car'(Falling Down?) (D), 순화된 성적 표현 | 직역 | 주석 |
+| bound-2 | 17, 40 | 지하실 나이트클럽 비유, 'their backstroke' (D) | 직역 | 주석 |
+| hold-my-liquor | 26–27, 40 | 'call 2Pac over', 'Late night organ donor' (D) | 직역 | 주석 |
+| black-skinhead | 19–20 | '300 Romans'(스파르타인 혼동?), 'Trojans'(콘돔 중의?) (C) | 300퍼센트 진짜야, 로마인들처럼 / 트로전은 어디 있지 | 주석 |
+| on-sight | 8, 29–31 | 'Indian hair', 퐁텐블로 호텔·David Grutman 줄 (D) | 직역 | 주석 |
+| cant-tell-me-nothing | 17 | LRCLIB 'go to Hell' vs AZLyrics 'Hillman'(코스비 가족·힐먼 대학이 더 자연스러움, C) | 코스비 가족도 아니고, 지옥에 간 것도 아니야 | 음원 청취 |
+| the-glory | 15, 22, 43 | 'Barkers/Parkers' 대상(D), 'Yayo'=코카인 속어?(C), LRCLIB 'two-door' vs AZLyrics 'Tudor'(C) | 직역 | 음원 청취 |
+| stronger | 21, 32 | 'Christian in Christian Dior' 말장난, 'take six'(Take 6 그룹, D) | 직역 | 주석 |
+| flashing-lights | 17, 42 | 'ol-wu-wopte' 의성어(D), roam/Rome without Caesar 동음(C: AZ roam, LyricsMode Rome) | 직역 | 주석 |
+| barry-bonds | 25, 45, 51 | 'model head'(성적 속어?), 'Reagans' 지폐 단정(근거 없음), 'col' like Keyshia's family' (C/D) | 직역 | 주석 |
+| champion | 19–20 | 'the rich ones' 대상 (D) | 부자로 나오는 영화 말고 | 주석 |
+| good-life | 40 | 'boozed like she bombed at Apollo'(booed 말장난?) (D) | 직역 | 주석 |
+| homecoming | 13 | LRCLIB 'tow' vs AZLyrics 'toe' (D) | 기를 꺾어 놨어 | 음원 청취 |
+| good-morning | 10 | 'Rosie Perez' (D) | 직역 | 주석 |
+
 ### tripleS 『ASSEMBLE』 / NMIXX 『Blue Valentine』
 
 | 곡 | 줄 | 쟁점 | 현재 처리 | 필요한 근거 |

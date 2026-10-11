@@ -12,6 +12,8 @@ sources:
   - https://en.wikipedia.org/wiki/Diamonds_from_Sierra_Leone
   - https://open.spotify.com/track/4ZLNj4Zlp6XZ3WAVpPQEnq
   - https://lrclib.net/api/get/10363714
+  - https://en.wikipedia.org/wiki/Roc-A-Fella_Records
+  - https://www.azlyrics.com/lyrics/kanyewest/diamondsfromsierraleoneremix.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +36,14 @@ translation:
     - source: "throw your diamonds"
       target: "다이아몬드를 하늘로 던져"
       note: "로커펠라의 다이아몬드 손 모양을 높이 들라는 뜻."
+    - source: "YG's, Teairra Mari, Peedi"
+      target: "YG들, 티에라 마리, 피디"
+      note: "프리웨이·폭시에 이어 이름이 나열되는 대목이라 2005년 로커펠라 소속 영 건즈(Young Gunz), 티에라 마리, 피디 크랙(Peedi Crakk)으로 읽힌다(위키피디아 소속 목록 1건, 등급 C). 번역은 유지했다."
+    - source: "one hit away his whole career"
+      target: "평생 히트곡 하나만 터지면 되는 처지"
+      note: "멤피스 블릭이 경력 내내 히트곡 하나만 터지면 되는 처지라는 뜻으로 읽어, 어색했던 '남겨 두고'를 고쳤다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 셜리 배시가 부른 007 주제가 'Diamonds Are Forever'의 목소리로 문을 연다. 다이아몬드는 영원하고 밤에 떠나지도 않는다는 노래가 20초 넘게 이어진 뒤, 웨스트가 다이아몬드를 하늘로 던지라는 후렴을 외치고 '영원히?'를 되묻는 짧은 구호가 따라붙는다. 하프시코드와 금관, 현악이 겹쳐 무게 있는 행진 같은 반주를 만든다. 웨스트의 벌스는 하나다. 시에라리온에서 손발을 잃는 사람들, 자기 목걸이가 분쟁 다이아몬드가 아니길 바라는 마음, 팔 없는 아이의 사진이 이어진다. 후렴 뒤 웨스트가 목걸이를 돌려줄 거냐는 질문과 '데임은 어디 있냐'는 질문을 꺼내면, 2분 25초쯤 제이 지가 '이제부턴 내가 맡을게'라며 넘겨받는다. 제이 지의 긴 벌스가 끝까지 곡을 이끈 뒤 '굿나잇'으로 닫힌다.
@@ -47,4 +56,4 @@ translation:
 
 ## 번역에 대하여
 
-듣는 사람에게 자기 소비의 모순을 털어놓는 랩이라 **해체**로 옮겼다. 셜리 배시의 샘플 부분도 같은 반말로 옮겨, 오래된 주제가와 웨스트의 목소리가 한 화자의 생각처럼 이어지게 했다. 제이 지의 *a business, man*으로 끝나는 구절은 쉼표 하나로 뜻이 바뀌는 말장난이라 '사업가'와 '사업'의 대구로 옮겼고, *conflict diamonds*처럼 국제 문제를 가리키는 용어는 한국어에서 통용되는 표현을 썼다.
+듣는 사람에게 자기 소비의 모순을 털어놓는 랩이라 **해체**로 옮겼다. 셜리 배시의 샘플 부분도 같은 반말로 옮겨, 오래된 주제가와 웨스트의 목소리가 한 화자의 생각처럼 이어지게 했다. 제이 지의 *a business, man*으로 끝나는 구절은 쉼표 하나로 뜻이 바뀌는 말장난이라 '사업가'와 '사업'의 대구로 옮겼고, *conflict diamonds*처럼 국제 문제를 가리키는 용어는 한국어에서 통용되는 표현을 썼다. 인디언 춤 줄은 LRCLIB과 AZLyrics가 *rain*으로 적는 반면 앨범판은 *reign*이라 적혀 있어 이 판본의 번역은 적힌 대로 '비'로 두었고, 로커펠라 후배 래퍼들의 이름이 나열되는 대목은 이름을 확정하지 못해 음차만 유지했다.

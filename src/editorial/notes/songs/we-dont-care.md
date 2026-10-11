@@ -10,6 +10,8 @@ sources:
   - https://www.stereogum.com/1661202/the-college-dropout-turns-10/reviews/the-anniversary/
   - https://en.wikipedia.org/wiki/The_College_Dropout
   - https://open.spotify.com/track/0IW0qaeyxL5Et4UG2MrJKB
+  - https://en.wiktionary.org/wiki/bulimic
+  - https://en.wiktionary.org/wiki/the_joke_is_on_someone
   - https://lrclib.net/api/get/585329
 translation:
   sourceLanguage: en
@@ -36,7 +38,14 @@ translation:
     - source: "slow class"
       target: "느린 반"
       note: "학습 부진 학생을 따로 모은 반. 학교가 붙인 낙인을 뜻한다."
+    - source: "Joke's on you"
+      target: "웃음거리가 된 건 너희지"
+      note: "비웃으려던 쪽이 오히려 웃음거리가 된다는 관용구다(Wiktionary). 이전의 '웃기지'는 뜻이 어긋나 고쳤다."
+    - source: "bulimic / get weight"
+      target: "폭식증 / 살(물량)을 붙이다"
+      note: "bulimic은 폭식증(bulimia nervosa)을 앓는다는 뜻이다(Wiktionary). 이전의 '거식증'은 오역이라 고쳤다. weight에는 마약 물량의 뜻이 겹친다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 웨스트의 짧은 말로 문을 연다. 아이들이 부를 딱 맞는 노래가 있다는 대답이 끝나자마자 따뜻하게 흔들리는 소울 루프와 함께 후렴이 시작되고, 첫 벌스가 끝난 뒤의 후렴부터 '아이들아, 불러'라는 신호가 떨어지면 크레디트에 'kids' 보컬로 적힌 아이들 목소리가 후렴에 섞여 들어온다. 벌스는 세 개다. 첫 벌스는 어린 시절 올려다보던 마약상, 둘째는 아홉 시부터 다섯 시까지 일하고도 부업을 해야 하는 사람들, 셋째는 방과 후 프로그램이 끊긴 아이들을 다룬다. 벌스마다 끝을 같은 문장으로 닫고 곧장 아이들 후렴으로 돌아가는 구조가 반복되며, 무거운 내용과 가벼운 합창의 간격이 매번 다시 벌어진다.
@@ -50,3 +59,5 @@ translation:
 ## 번역에 대하여
 
 같은 동네 사람들에게 말을 거는 랩이라 **해체**로 옮겼다. 화자는 '우리'를 주어로 동네 전체를 대변하므로, 개인의 다짐보다 동료에게 건네는 말투가 맞다. 둘째 벌스의 *work*는 일자리와 마약을 동시에 가리키는 말장난이라, 일을 구하지 못하자 '물건'을 떼러 갔다는 흐름이 드러나게 두 단어를 나눠 옮겼다. 비하어로 동료를 부르는 대목은 '내 사람들'로 옮겨 연대의 기능만 남겼다. 후렴의 아이들 파트는 따로 표시하지 않고 같은 번역을 반복했다.
+
+2026-10-11 재검토에서 'Joke's on you'와 'bulimic'을 사전 뜻에 맞게 고쳤다. 'homo'와 'straight'가 이어지는 대목은 소리·뜻 말장난으로 읽히나 해설 근거를 찾지 못해 번역을 바꾸지 않았다.

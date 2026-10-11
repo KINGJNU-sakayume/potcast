@@ -11,6 +11,8 @@ sources:
   - https://en.wikipedia.org/wiki/Heard_%27Em_Say
   - https://open.spotify.com/track/2PFNTHR4sA8m9rPPtYXhl7
   - https://lrclib.net/api/get/1596967
+  - https://www.sportskeeda.com/basketball/news-heat-got-extensions-kanye-west-mentions-jimmy-butler-s-fashion-game-new-track-vultures
+  - https://en.wikipedia.org/wiki/Tim_Hardaway
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,7 +35,11 @@ translation:
     - source: "minimum wage"
       target: "최저임금"
       note: "'Spaceship'에서 이어지는 노동의 주제다."
+    - source: "Tim ... harder way"
+      target: "팀 하더웨이 ... 더 험한 길"
+      note: "시카고 출신 NBA 선수 팀 하더웨이(Tim Hardaway)의 성과 'hard way'를 겹친 말장난이다. 스포츠 매체가 이 줄을 명시적으로 풀이하고 위키피디아가 출신지를 확인한다. 한국어에서는 소리를 겹칠 수 없어 이름을 넣어 옮겼다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 '미스터 웨스트'를 부르는 목소리와 함께 나탈리 콜의 'Someone That I Used to Love'에서 가져온 피아노로 시작한다. 피아노 음형이 계단을 내려가듯 굴러 내려오고, 지연 효과가 걸린 드럼과 짧게 튕기는 어쿠스틱 기타, 낮게 부는 베이스 신시사이저가 그 아래를 받친다. 웨스트는 목소리를 높이지 않고 하나의 벌스 안에서 최저임금, 정부와 에이즈, 동네의 마약상, 경찰차를 차례로 짚는다. 애덤 리바인의 후렴은 오늘은 내일을 약속해 주지 않는다고, 아프더라도 솔직하자고 부드럽게 노래한다. 둘째 벌스 뒤 마지막 후렴이 끝나면 2분 30초쯤부터 1분 가까이 가사 없는 아웃트로가 이어진다. 베림바우와 여러 종소리, 휘파람 같은 소리가 들어왔다가 휘어지는 베이스와 신시사이저만 남는다.
@@ -46,4 +52,4 @@ translation:
 
 ## 번역에 대하여
 
-듣는 사람에게 세상의 거짓을 담담하게 털어놓는 랩이고, 후렴은 리바인이 연인에게 솔직하자고 부탁하는 말이라 둘 다 **해체**로 옮겼다. 후렴의 *promised tomorrow today*가 들어간 구절은 문법을 비튼 표현이라 '오늘은 내일을 약속해 주지 않아'로 의미를 살리고 매번 같은 번역을 썼다. *I heard 'em say*의 '그들'은 특정하지 않은 세상의 말이라 주어를 굳이 밝히지 않았다. 사촌이 직장에서 듣는 인종 비하는 직역하지 않고 차별의 내용만 옮겼다.
+듣는 사람에게 세상의 거짓을 담담하게 털어놓는 랩이고, 후렴은 리바인이 연인에게 솔직하자고 부탁하는 말이라 둘 다 **해체**로 옮겼다. 후렴의 *promised tomorrow today*가 들어간 구절은 문법을 비튼 표현이라 '오늘은 내일을 약속해 주지 않아'로 의미를 살리고 매번 같은 번역을 썼다. *I heard 'em say*의 '그들'은 특정하지 않은 세상의 말이라 주어를 굳이 밝히지 않았다. 사촌이 직장에서 듣는 인종 비하는 직역하지 않고 차별의 내용만 옮겼다. 시카고 출신을 말하는 줄은 NBA 선수 팀 하더웨이의 이름과 *hard way*를 겹친 말장난이어서 이름을 살려 옮겼고, 계절 비유 줄은 어색한 반복을 풀어 고쳤다.

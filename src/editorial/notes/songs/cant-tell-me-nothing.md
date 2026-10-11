@@ -12,6 +12,9 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/6blB3TgR6VY9fo3wdfKo2h
   - https://lrclib.net/api/get/566610
+  - https://en.wiktionary.org/wiki/suicide_door
+  - https://www.azlyrics.com/lyrics/kanyewest/canttellmenothing.html
+  - https://en.wikipedia.org/wiki/A_Different_World
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +37,14 @@ translation:
     - source: "G.O.O.D."
       target: "굿 뮤직"
       note: "웨스트의 레이블 G.O.O.D. Music."
+    - source: "suicide doors"
+      target: "수어사이드 도어(뒤쪽 경첩 문)"
+      note: "뒤쪽에 경첩이 달려 앞쪽이 먼저 열리는 문이다(Wiktionary). 이전의 '날개처럼 열리는 문'은 위로 열리는 문과 혼동한 오역이었다."
+    - source: "Hillman"
+      target: "(번역 불변)"
+      note: "LRCLIB는 지옥으로 들리는 표기로 적지만 AZLyrics는 Hillman으로 적는다. 코스비 가족과 이어지는 가상 대학 힐먼으로 읽히지만(출처 1건) 확정하지 못해 번역은 LRCLIB 표기대로 두었다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 코니 미첼의 '라라라'로 시작한다. 돈 좀 제대로 벌 때까지 기다리라는 그녀의 후렴은 느릿하게 흔들리고, 그 아래로 느리게 끌리는 비트가 깔린다. 웨스트의 벌스에서는 줄이 끝날 때마다 '오, 오, 오' 하는 목소리가 메아리처럼 대꾸하고, 영 지지의 웃음과 '그래' 같은 추임새가 사이사이 끼어든다. 세 개의 벌스는 같은 후렴으로 돌아오고, 후렴에서 '뭐라고? 방금 뭐라고 했어?'라는 비웃음 뒤에 '아무도 내게 뭐라 못 해'가 세 번 반복된다. 마지막 후렴 뒤에는 영 지지가 진지하다고, 돈이 있다고 외치고, 'G.O.O.D.가 다 가졌어'라는 구호가 30초 가까이 이어지며 곡이 끝난다.
@@ -48,3 +58,5 @@ translation:
 ## 번역에 대하여
 
 충고하려는 사람들에게 맞서면서 자신을 고백하는 곡이라 **해체**로 옮겼다. 제목이자 후렴인 *can't tell me nothing*은 이중 부정을 쓰는 구어라 한국어에서도 '아무도 내게 뭐라 못 해'처럼 단호한 말투로 옮겼다. 첫 벌스의 *much is tested*로 끝나는 구절은 성경 구절을 비튼 말이라 성경 문체를 살렸다. 영 지지의 마지막 추임새에 나오는 비하어는 직역하지 않았다.
+
+2026-10-11 재검토에서 *suicide doors*를 사전 뜻대로 뒤쪽 경첩 문으로 바로잡았다. 첫 벌스의 코스비 가족 줄은 AZLyrics가 힐먼 대학으로 적어 해석이 갈릴 수 있으나 출처가 하나뿐이어서 번역은 바꾸지 않았다.

@@ -12,6 +12,10 @@ sources:
   - https://en.wikipedia.org/wiki/Graduation_(album)
   - https://open.spotify.com/track/34d1FpzE7sxdr5jbVrVoyh
   - https://lrclib.net/api/get/34632334
+  - https://www.azlyrics.com/lyrics/kanyewest/goodlife.html
+  - https://www.lyricsmode.com/lyrics/k/kanye_west/good_life.html
+  - https://en.wikipedia.org/wiki/Wynn_Las_Vegas
+  - https://en.wikipedia.org/wiki/Apollo_Theater
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +38,17 @@ translation:
     - source: "on this TV"
       target: "엄마, 나 TV에 나갈 거야"
       note: "데뷔작 'School Spirit'의 첫 벌스를 다시 가져온 줄이다."
+    - source: "card back / activated"
+      target: "카드를 되찾아 / 다시 쓸 수 있게 되면"
+      note: "LRCLIB는 car로 적지만 AZLyrics와 LyricsMode가 모두 card로 적는다. 앞줄에서 펑펑 썼다는 말과 이어져 정지된 카드를 되찾아 다시 쓴다는 뜻으로 옮겼다."
+    - source: "Tryst"
+      target: "트리스트 클럽"
+      note: "AZLyrics는 Tryst로, LRCLIB와 LyricsMode는 다르게 적는다(표기 불일치). Tryst는 윈 라스베이거스의 나이트클럽이고 바로 뒤에 '베이거스'가 나와 AZLyrics 표기를 따랐다."
+    - source: "Apollo"
+      target: "아폴로 극장"
+      note: "할렘의 아폴로 극장은 객석이 신인 공연을 평가하는 아마추어 나이트로 유명하다(Wikipedia). 취했다는 뜻의 boozed가 야유를 뜻하는 booed를 겸한 말장난이라는 해석은 풀이한 출처를 찾지 못해 번역에 넣지 않았다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 '언제나처럼 이 시간에'라는 짧은 말과 함께 티페인의 후렴으로 시작한다. 내 몫을 챙기고 빛나야 한다는 노래는 오토튠을 거쳐 기계처럼 매끄럽고, 웨스트를 포함한 여러 목소리가 겹겹이 맞물려 화음을 만든다. 그 위로 마이클 잭슨 'P.Y.T.'의 건반이 템포는 조금 느리게, 음높이는 비명처럼 높게 끌어올려져 반복된다. 후렴 끝마다 '엄마, 나 TV에 나갈 거야'라는 구절과 '에이'를 여섯 번 외치는 구호가 붙는다. 첫 두 벌스는 '좋은 삶에 온 걸 환영해'로 시작해 애틀랜타, LA, 마이애미, 휴스턴, 필라델피아 같은 도시 이름을 차례로 부르고, 셋째 벌스 뒤 손을 하늘로 들라는 외침과 함께 곡이 끝난다.
@@ -48,3 +62,5 @@ translation:
 ## 번역에 대하여
 
 파티의 청중에게 좋은 삶을 소개하는 곡이라 **해체**로 옮겼다. 후렴의 *the good life*는 반복의 효과를 위해 매번 '좋은 삶'으로 같게 옮겼다. 짠 표정과 양념 상표를 겹친 말장난처럼 상표가 들어간 농담은 상표를 살려 옮기고 용어집에 이유를 적었다. 셋째 벌스의 성적인 농담은 원문 수위를 넘지 않게 옮겼고, 비하어는 직역하지 않았다.
+
+2026-10-11 재검토에서 셋째 벌스의 *car back*은 AZLyrics와 LyricsMode가 함께 *card back*으로 적어 '카드를 되찾아'로 고쳤다. 앞뒤가 돈을 펑펑 쓰다 카드가 막혔다가 다시 풀린다는 흐름이고, 그 뒤에 베이거스가 나오기 때문이다. 이 줄의 클럽 이름은 사이트마다 표기가 갈려 AZLyrics의 *Tryst*를 따랐다.

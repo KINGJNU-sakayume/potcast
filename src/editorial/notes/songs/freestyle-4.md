@@ -11,6 +11,7 @@ sources:
   - https://coogradio.com/2016/02/track-by-track-album-review-the-life-of-pablo-by-kanye-west/
   - https://open.spotify.com/track/6wfzokDylbrJzrJcpnBkcy
   - https://lrclib.net/api/get/570520
+  - https://www.azlyrics.com/lyrics/kanyewest/freestyle4.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,7 +34,11 @@ translation:
     - source: "pie"
       target: "파이"
       note: "선택한 LRCLIB의 표기를 따른다. 이 구간의 비유 대상은 확정하지 않는다."
+    - source: "Versailles"
+      target: "베르사유"
+      note: "AZLyrics는 이 대목을 베르사유로 적는다(출처 1건). 번역은 선택한 LRCLIB 표기를 따랐다."
   written: 2026-10-04
+  updated: 2026-10-11
 ---
 
 낯선 현악 반복이 좁은 공간을 만들고 짧은 외침 뒤에 웨스트의 랩이 들어온다. 문장은 처음부터 조각나 있다. 눈을 감고 무언가를 본다는 말이 몸을 드러내고 지금 행동하겠다는 요구로 빠르게 옮겨 간다. 중간에는 같은 질문이 되풀이되며 식탁과 보그 파티의 상상이 커진다. 끝에서 데자이너의 목소리가 들어와도 넓은 후렴으로 풀리지 않는다. 짧은 트랙의 에너지가 해소되기보다 잘려 나가는 인상이다.

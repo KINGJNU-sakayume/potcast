@@ -53,7 +53,7 @@
     {
       "startMs": 42980,
       "endMs": 45720,
-      "translation": "D투성이야, 이 녀석아, D, 로지 페레스 D"
+      "translation": "D투성이야, 이 녀석아, D투성이라고, 로지 페레스"
     },
     {
       "startMs": 45720,
@@ -203,7 +203,7 @@
     {
       "startMs": 148070,
       "endMs": 151720,
-      "translation": "허슬러들, 아직 살아 있다면 일어나"
+      "translation": "허슬러들, 아직 살아 있다면 어서 놀아 봐"
     },
     {
       "startMs": 151720,
@@ -218,7 +218,7 @@
     {
       "startMs": 153930,
       "endMs": 157080,
-      "translation": "허슬러들, 아직 살아 있다면 일어나"
+      "translation": "허슬러들, 아직 살아 있다면 어서 놀아 봐"
     },
     {
       "startMs": 157080,
@@ -233,7 +233,7 @@
     {
       "startMs": 159590,
       "endMs": 162750,
-      "translation": "허슬러들, 아직 살아 있다면 일어나"
+      "translation": "허슬러들, 아직 살아 있다면 어서 놀아 봐"
     },
     {
       "startMs": 162750,
@@ -248,27 +248,27 @@
     {
       "startMs": 164970,
       "endMs": 169280,
-      "translation": "허슬러들, 아직 살아 있다면 일어나"
+      "translation": "허슬러들, 아직 살아 있다면 어서 놀아 봐"
     },
     {
       "startMs": 169280,
       "endMs": 174080,
-      "translation": "일어나"
+      "translation": "어서 놀아 봐"
     },
     {
       "startMs": 174080,
       "endMs": 180200,
-      "translation": "일, 일어나"
+      "translation": "어, 어서 놀아 봐"
     },
     {
       "startMs": 180200,
       "endMs": 186230,
-      "translation": "일어나"
+      "translation": "어서 놀아 봐"
     },
     {
       "startMs": 186230,
       "endMs": 195000,
-      "translation": "일, 일어나"
+      "translation": "어, 어서 놀아 봐"
     }
   ]
 }

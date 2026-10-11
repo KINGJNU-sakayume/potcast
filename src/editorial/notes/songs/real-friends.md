@@ -11,6 +11,7 @@ sources:
   - https://coogradio.com/2016/02/track-by-track-album-review-the-life-of-pablo-by-kanye-west/
   - https://open.spotify.com/track/66Q3fAmSX5eHamgbKa9alP
   - https://lrclib.net/api/get/578848
+  - https://www.etonline.com/news/179556_kanye_west_raps_about_having_sex_tapes_on_new_track_real_friends
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -36,7 +37,11 @@ translation:
     - source: "extended"
       target: "친척"
       note: "바로 앞의 직계 가족과 대비되는 범위다."
+    - source: "laptop"
+      target: "노트북"
+      note: "노트북에 성관계 영상이 있었다는 뜻으로 읽힌다(ET Online, 출처 1건). 번역의 영상은 이 해석을 따른다."
   written: 2026-10-04
+  updated: 2026-10-11
 ---
 
 낮고 차분한 반복이 곡의 바탕을 만들고 웨스트는 진짜 친구가 몇이나 되는지 묻는다. 큰 후렴으로 공간을 확장하기보다 같은 질문과 가까운 말투가 유지된다. 생일을 기억하지 못하고 늘 서두른다는 대목에서는 질문이 타인에게서 자신으로 돌아온다. Ty Dolla $ign의 목소리가 응답과 반복을 맡으며 관계의 다른 쪽을 들리게 한다. 후반의 노트북 일화는 큰 음향 변화 없이 나와, 충격적인 사건도 같은 일상의 피로 안에 놓인다.

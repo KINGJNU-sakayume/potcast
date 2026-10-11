@@ -12,6 +12,7 @@ sources:
   - https://en.wikipedia.org/wiki/Bound_2
   - https://open.spotify.com/track/3sNVsP50132BTNlImLx70i
   - https://lrclib.net/api/get/566076
+  - https://www.shmoop.com/quotes/jeromes-in-the-house-watch-your-mouth.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -37,7 +38,11 @@ translation:
     - source: "Jesus wept"
       target: "예수님도 우셨어"
       note: "성경에서 가장 짧은 구절(요한복음 11장 35절)."
+    - source: "Jerome's in the house, watch your mouth"
+      target: "제롬이 여기 있어, 말조심해"
+      note: "1990년대 시트콤 『Martin』에서 마틴 로런스가 연기한 제롬의 유행어를 가져왔다(Shmoop 해설). 앞의 'Jeromey Romey Rome'도 같은 인물을 부르는 이름으로 읽힌다."
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 빠르게 돌린 1971년 소울 샘플로 시작한다. 폰데로사 트윈스 플러스 원의 목소리가 '사-사-사랑에 빠질 수밖에'를 더듬거리듯 잘려 반복되고, 11초쯤 브렌다 리의 '으흠, 자기야'가 끼어든다. 20초쯤 후렴에서는 풍성하던 소리가 거의 다 빠지고 일그러진 베이스 한 음만 둔탁하게 울린다. 33초쯤 웨스트가 목요일에 클럽에서 뭐 하냐는 질문으로 첫 벌스를 열고, 늘 화나 있고 예쁜 여자를 울린다는 자신의 평판을 하나씩 늘어놓는다. 1분 24초쯤 찰리 윌슨이 사랑하는 데 지친 거 안다고 노래하고, 1분 55초쯤 둘째 벌스가 시작되어 2분 50초쯤 난 지쳤고 너도 지쳤다는 말과 예수님도 우셨다는 짧은 한마디로 맺는다. 윌슨이 다시 노래하고 3분 29초쯤 짧은 외침이 지나간 뒤, 샘플의 후렴이 돌아와 3분 49초의 곡과 앨범을 함께 닫는다.
