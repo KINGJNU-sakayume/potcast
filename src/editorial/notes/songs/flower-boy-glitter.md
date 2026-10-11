@@ -8,6 +8,9 @@ sources:
   - https://blackandgiftedblog.wordpress.com/2017/08/11/i-bloom-i-grow-a-flower-boy-track-by-track-review/
   - https://audioxide.com/reviews/tyler-the-creator-flower-boy
   - https://music.apple.com/us/album/flower-boy/1254572564
+  - https://en.wikipedia.org/wiki/Flower_Boy
+  - https://en.wikipedia.org/wiki/Skip_tracing
+  - https://www.urbandictionary.com/define.php?term=keep%20it%20a%20buck%20fifty
 short: >
   앞부분의 노래와 뒤에서 낮아진 목소리를 이어 들으면 사랑의 들뜸이 혼자 남은 고백으로 바뀐다. 끝의 통화 안내는 노래의 수신자가 누구였는지 다시 생각하게 한다.
 translation:
@@ -29,7 +32,14 @@ translation:
     - source: "How ya feel?"
       target: "기분 어때?"
       note: "반복되는 추임새. 상대에게 묻는 말이자 화자 자신의 혼잣말로도 읽혀 짧은 의문형으로 반복했다."
+    - source: "keep that buck"
+      target: "솔직하게 가"
+      note: "keep it a buck(fifty)는 있는 그대로 솔직하게 말한다는 속어다(Urban Dictionary). 남의 말에 신경 쓰지 않는다는 앞뒤 문맥과 맞아 \"돈을 챙긴다\"는 뜻으로 읽지 않았다. 변형된 형태라 확신은 중간이다."
+    - source: "track 10 skiptrace"
+      target: "10번 트랙에서 잠적자 추적(스킵트레이스)"
+      note: "〈Flower Boy〉 10번 트랙은 〈911 / Mr. Lonely〉이고(Wikipedia 트랙 목록), skip tracing은 연락이 끊긴 사람의 행방을 찾는 일이다(Wikipedia). 두 뜻을 이은 말놀이로 보이나 정확한 의도는 확인하지 못했다."
   written: 2026-10-11
+  updated: 2026-10-11
 ---
 
 'Glitter'는 밝은 제목과 달리 끝까지 같은 표정으로 빛나지 않는다. 첫 부분의 건반과 드럼 위에서는 타일러의 노래와 랩이 사랑에 빠진 감각을 내보낸다. 뒤로 넘어가며 반주의 결이 달라지고 목소리도 낮아지면, 처음의 들뜸은 조금 더 무겁게 가라앉는다. 후반을 앞부분의 덤으로 듣기보다 같은 말을 다른 거리에서 하는 장면으로 듣는 편이 좋다. 마지막의 통화 안내는 그동안 상대가 응답해 온 것이 아니라 화자 혼자 말을 남기고 있었다는 사실을 드러내며 음악의 공간을 뒤늦게 바꾼다.
@@ -42,4 +52,4 @@ translation:
 
 ## 번역에 대하여
 
-첫머리의 "my baby"부터 "I love having you around"까지 상대에게 직접 건네는 고백이라 연인에게 말하는 **해체**가 가장 가까웠다. 노트가 말하듯 이 곡은 'November' 끝에서 준비한 연락이 노래가 된 자리이며, 후반의 "one sided" 같은 인정은 같은 화자가 거리를 두고 다시 말하는 것이라 어체를 바꾸지 않았다. 독백으로 읽어 해라체로 옮기는 안도 있었으나 후렴이 상대를 향하므로 버렸다. 마지막 통화 안내 멘트는 기계 음성이라 정중한 존댓말로 옮겼고 이 한 곳만 어체가 다르다.
+첫머리의 "my baby"부터 "I love having you around"까지 상대에게 직접 건네는 고백이라 연인에게 말하는 **해체**가 가장 가까웠다. 노트가 말하듯 이 곡은 'November' 끝에서 준비한 연락이 노래가 된 자리이며, 후반의 "one sided" 같은 인정은 같은 화자가 거리를 두고 다시 말하는 것이라 어체를 바꾸지 않았다. 독백으로 읽어 해라체로 옮기는 안도 있었으나 후렴이 상대를 향하므로 버렸다. 마지막 통화 안내 멘트는 기계 음성이라 정중한 존댓말로 옮겼고 이 한 곳만 어체가 다르다. 다만 "four, five, seven, track eight"가 4·5·7·8번 트랙을 가리키는지 총기 구경을 겹친 말인지, "L"과 "DJ" 줄의 말놀이는 근거 자료를 찾지 못해 문맥상 가장 자연스러운 쪽으로 옮겼으니 불확실하다.

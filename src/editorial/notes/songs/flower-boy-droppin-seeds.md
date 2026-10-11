@@ -8,6 +8,7 @@ sources:
   - https://djbooth.net/features/2017-07-11-tyler-the-creator-flower-boy-album-review/
   - https://blackandgiftedblog.wordpress.com/2017/08/11/i-bloom-i-grow-a-flower-boy-track-by-track-review/
   - https://www.xxlmag.com/tyler-the-creator-lil-wayne-verse-dropping-seeds-price-is-right/
+  - https://listserv.linguistlist.org/pipermail/ads-l/2005-April/048597.html
 short: >
   짧은 반주 위에서 릴 웨인의 음절이 앞으로 나오는 순간을 따라 들으면, 앨범의 꽃 이미지가 개인의 비밀에서 래퍼들의 말놀이로 넓어진다.
 translation:
@@ -25,7 +26,17 @@ translation:
     - source: "Mula"
       target: "물라"
       note: "돈을 뜻하는 웨인의 구호. 소리 그대로 옮겼다."
+    - source: "C's like classes"
+      target: "수강 취소하듯 C(씨)를"
+      note: "classes를 떨군다(drop)는 학교 말놀이이고, 영어에서 C's는 seeds와 소리가 같다. 한국어에서도 알파벳 C가 \"씨\"로 읽혀 두 겹을 함께 살렸다."
+    - source: "Caddy"
+      target: "캐디(캐딜락)"
+      note: "driver와 함께 골프 용어이면서 Caddy는 Cadillac의 애칭으로도 읽혀, 괄호로 두 뜻을 같이 적었다. 캐딜락 쪽은 문맥에서 추정한 해석이다."
+    - source: "dropped science"
+      target: "과학을 떨군다(지식을 푼다)"
+      note: "drop science는 랩에서 지식·깨달음을 풀어놓는다는 관용구다(ADS-L 어원 논의). 뒤따르는 droppin' English와 학교 과목 말놀이가 이어지도록 직역과 관용 의미를 함께 적었다."
   written: 2026-10-11
+  updated: 2026-10-11
 ---
 
 'Droppin’ Seeds'는 짧다는 이유로 지나치기보다 목소리가 차지하는 비율을 듣는 곡이다. 작은 반주의 공간에 릴 웨인(Lil Wayne)이 들어오면 랩의 음절과 특유의 꺾이는 발음이 먼저 눈에 띈다. 웨인의 말은 길게 끌기보다 다음 말로 계속 넘어가고, 마지막까지 씨앗의 이미지를 놓지 않는다. 큰 비트 전환이나 반복되는 여러 절 없이 끝나므로 청취의 중심이 자연스럽게 한 번의 랩에 모인다. 곡이 끝나는 속도까지 이 배분의 일부다.
@@ -38,4 +49,4 @@ translation:
 
 ## 번역에 대하여
 
-한 번의 랩 전체가 듣는 사람에게 으스대는 말투이고 중간에 화자가 바뀌는 신호가 없어서, 가볍고 건들거리는 **해체**를 끝까지 썼다. XXL 기사에 따르면 타일러는 짧은 비트를 만들자마자 웨인을 불러 꽃과 정원 이야기를 부탁했고, 가사 안의 "Tyler"가 "named the song flower"라고 제3자처럼 불리는 대목도 웨인이 타일러를 가리켜 말하는 줄로 읽혔다. 그래서 곡 전체의 화자는 웨인으로 두었고, 존댓말이나 격식 있는 문체는 허세의 맛을 지운다고 판단해 버렸다. 성적 은유가 겹친 줄은 완곡하게 바꾸지 않고 뜻이 보이게 옮겼으며, 학교·골프·스포츠 용어의 말놀이는 소리 대신 뜻을 따랐다.
+한 번의 랩 전체가 듣는 사람에게 으스대는 말투이고 중간에 화자가 바뀌는 신호가 없어서, 가볍고 건들거리는 **해체**를 끝까지 썼다. XXL 기사에 따르면 타일러는 짧은 비트를 만들자마자 웨인을 불러 꽃과 정원 이야기를 부탁했고, 가사 안의 "Tyler"가 "named the song flower"라고 제3자처럼 불리는 대목도 웨인이 타일러를 가리켜 말하는 줄로 읽혔다. 그래서 곡 전체의 화자는 웨인으로 두었고, 존댓말이나 격식 있는 문체는 허세의 맛을 지운다고 판단해 버렸다. 성적 은유가 겹친 줄은 완곡하게 바꾸지 않고 뜻이 보이게 옮겼으며, 학교·골프 용어의 말놀이는 소리 대신 뜻을 따르되 C와 씨처럼 한국어에서도 통하는 곳은 살렸다. 다만 "droppin' English"의 정확한 의도, 팬지(pansy)가 꽃 말고 다른 뜻을 겹쳤는지, 밴시가 비명을 가리키는지는 확인할 자료를 찾지 못해 문맥으로 가장 자연스러운 쪽을 택했으니 불확실하다.
