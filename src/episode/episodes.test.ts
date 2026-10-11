@@ -118,6 +118,23 @@ describe('the episode scripts in the archive', () => {
 });
 
 describe('the preview archive', () => {
+  it('performs Definitely Maybe in standard-edition order with valid replay bounds', async () => {
+    const album = await createPreviewCatalogueSource().getAlbum('0fLVm67GzAJpbqX8GUL7G6');
+    const script = getEpisodeScript('definitely-maybe');
+    expect(script).not.toBeNull();
+    const tracks = albumEpisodeTracks(album);
+    expect(tracks.map((track) => track.key)).toEqual(albumNotes.find((note) => note.key === 'definitely-maybe')!.tracks);
+    expect(tracks).toHaveLength(11);
+    const episode = resolveEpisode(script!, tracks, songNotes, episodeRelease(album));
+    expect(episode.warnings).toEqual([]);
+    for (const cue of episode.cues) {
+      if (cue.type !== 'music') continue;
+      const length = cue.tracks.reduce((sum, track) => sum + track.durationMs, 0);
+      expect(cue.fromMs ?? cue.fallbackFromMs).toBeLessThan(length);
+      if (cue.untilMs !== null) expect(cue.untilMs).toBeLessThanOrEqual(length);
+    }
+  });
+
   it('can perform the IGOR episode on its sample album', async () => {
     const album = await createPreviewCatalogueSource().getAlbum('5zi7WsKlIiUXv09tbGLKsE');
     const script = getEpisodeScript('igor');
