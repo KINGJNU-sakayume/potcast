@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [73D5hBkiVZkopZrmBZTBWf]
 titles: [Facebook Story, 페이스북 스토리]
 written: 2026-10-11
 sources:

@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [2qtoRFCOEL1gRn5q9DJC7F]
 titles: [Solo (Reprise), 솔로 (리프라이즈)]
 written: 2026-10-11
 sources:

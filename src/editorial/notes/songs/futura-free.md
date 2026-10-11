@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [5k8LB57xOq8UUNVaKWSqrf]
 titles: [Futura Free, 퓨처라 프리]
 written: 2026-10-11
 sources:

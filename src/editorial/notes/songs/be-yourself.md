@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [1IdZvb2XK8NmsovQlV6CPn]
 titles: [Be Yourself, 비 유어셀프]
 written: 2026-10-11
 sources:

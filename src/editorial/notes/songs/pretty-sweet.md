@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [17yrCsl1Ai6CZLBmGj6d6p]
 titles: [Pretty Sweet, 프리티 스윗]
 written: 2026-10-11
 sources:

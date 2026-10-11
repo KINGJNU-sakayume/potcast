@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [34xTFwjPQ1dC6uJmleno7x]
 titles: [Godspeed, 갓스피드]
 short: >
   오르간 한 겹과 Ocean의 목소리만 남은 반주에서, 마지막 1분 Kim Burrell의 가스펠 보컬이 어느 틈에 올라오는지 들어 보자.

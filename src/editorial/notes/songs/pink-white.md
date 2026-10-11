@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [3xKsf9qdS1CyvXSMEid6g8]
 titles: [Pink + White, Pink and White, 핑크 + 화이트]
 written: 2026-10-11
 sources:

@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [1VZLEW5ZfcAbKZ94XQiSZF]
 titles: [Close to You, 클로즈 투 유]
 written: 2026-10-11
 sources:

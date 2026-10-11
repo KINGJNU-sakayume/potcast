@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [2JUqYobT8NvARdPmc4ES2x]
 titles: [Good Guy, 굿 가이]
 written: 2026-10-11
 sources:

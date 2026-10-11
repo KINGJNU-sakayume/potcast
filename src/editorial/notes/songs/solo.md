@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [35xSkNIXi504fcEwz9USRB]
 titles: [Solo, 솔로]
 written: 2026-10-11
 sources:

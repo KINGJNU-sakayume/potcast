@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [4xR3MAscflQ262kMeiKshQ]
 titles: [Skyline To, 스카이라인 투]
 written: 2026-10-11
 sources:

@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [7eqoqGkKwgOaWNNHx90uEZ]
 titles: [Nights, Night.s, 나이츠]
 written: 2026-10-11
 sources:

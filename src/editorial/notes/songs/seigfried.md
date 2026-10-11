@@ -1,5 +1,6 @@
 ---
 artist: frank-ocean
+trackIds: [1BViPjTT585XAhkUUrkts0]
 titles: [Seigfried, 지그프리드]
 short: >
   3분 무렵 자기 멜로디를 버리고 Elliott Smith의 선율을 부르는 지점, 그 뒤 노래가 말로 바뀌고 현악이 퍼지며 흐려지는 끝을 들어 보라.
