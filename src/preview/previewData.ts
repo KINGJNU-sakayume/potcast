@@ -46,6 +46,7 @@ interface AlbumDef {
   tracks?: TrackDef[];
 }
 
+const OASIS = '2DaxqgrOhkeH0fpeiQq2f4';
 const TYLER = '4V8LLVI7PbaPR0K2TGSxFF';
 const VAUNDY = '2IUl3m1H1EQ7QfNbNWvgru';
 const TRIPLES = '5Z71xE9prhpHrqL5thVMyK';
@@ -60,6 +61,7 @@ const AL_GREEN = '3dkbV4qihUeMsqN4vBGg93';
 const ENSEMBLE = '0ArcPreviewEnsemble';
 
 export const PREVIEW_ARTISTS: ArtistDetail[] = [
+  { id: OASIS, name: 'Oasis' },
   { id: KENSHI, name: 'Kenshi Yonezu' },
   { id: TRIPLES, name: 'tripleS' },
   { id: COLDPLAY, name: 'Coldplay' },
@@ -87,6 +89,31 @@ function tracks(key: string, list: Array<[string, number, LyricSet?]>, realIds: 
 }
 
 const ALBUMS: AlbumDef[] = [
+  {
+    id: '0fLVm67GzAJpbqX8GUL7G6',
+    name: 'Definitely Maybe (Remastered)',
+    artistIds: [OASIS],
+    albumType: 'album',
+    releaseDate: '1994-08-29',
+    precision: 'day',
+    totalTracks: 11,
+    label: 'Creation',
+    // Standard 11-song sequence; IDs and exact lengths verified against this album's Spotify embed.
+    tracks: [
+      { id: "5bKkB75XBjRsE6WgkjXwxK", name: "Rock 'n' Roll Star", durationMs: 322946, lyrics: 'en' },
+      { id: "4nhhpJ3Za9KgNmqhJWutYj", name: "Shakermaker", durationMs: 308280, lyrics: 'en' },
+      { id: "5mUxZTSwm1vT2YmKh1v1Ek", name: "Live Forever", durationMs: 276666, lyrics: 'en' },
+      { id: "6B33W818jEo9CKmPMZqSXJ", name: "Up In The Sky", durationMs: 268000, lyrics: 'en' },
+      { id: "0D8XAE0gD1jIavDsdpcO6G", name: "Columbia", durationMs: 377400, lyrics: 'en' },
+      { id: "78IaGqs7atMhpT0YGJLWrs", name: "Supersonic", durationMs: 283786, lyrics: 'en' },
+      { id: "5DA7BwoqgCo93ctkaYeNTt", name: "Bring It On Down", durationMs: 257813, lyrics: 'en' },
+      { id: "4VgR2Esit1thEijITQ7Pyp", name: "Cigarettes & Alcohol", durationMs: 289146, lyrics: 'en' },
+      { id: "2XyiVwXf6ywuiVqT7OH0Fa", name: "Digsy's Dinner", durationMs: 152266, lyrics: 'en' },
+      { id: "6mKbN5qaeM2tcG3LRdeNLQ", name: "Slide Away", durationMs: 392306, lyrics: 'en' },
+      { id: "1u22VgixAwwvFt0WFwkPwf", name: "Married With Children", durationMs: 195000, lyrics: 'en' },
+    ],
+  },
+
   {
     id: '2nkto6YNI4rUYTLqEwWJ3o',
     name: 'Flower Boy',
