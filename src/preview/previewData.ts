@@ -54,6 +54,9 @@ const COLDPLAY = '4gzpq5DPGxSnKTe4SA8HAU';
 const KANYE = '5K4W6rqBFWDnAN6FQUkS6x';
 const KING_CRIMSON = '7M1FPw29m5FbicYzS2xdpi';
 const TURTLES = '2VIoWte1HPDbZ2WqHd2La7';
+const RUN_DMC = '3CQIn7N5CuRDP8wEI7FiDA';
+const PONDEROSA_TWINS = '4U8RRuQqYoeXH2JuTr6QMM';
+const AL_GREEN = '3dkbV4qihUeMsqN4vBGg93';
 const ENSEMBLE = '0ArcPreviewEnsemble';
 
 export const PREVIEW_ARTISTS: ArtistDetail[] = [
@@ -65,6 +68,9 @@ export const PREVIEW_ARTISTS: ArtistDetail[] = [
   { id: KANYE, name: 'Kanye West' },
   { id: KING_CRIMSON, name: 'King Crimson' },
   { id: TURTLES, name: 'The Turtles' },
+  { id: RUN_DMC, name: 'Run–D.M.C.' },
+  { id: PONDEROSA_TWINS, name: 'The Ponderosa Twins Plus One' },
+  { id: AL_GREEN, name: 'Al Green' },
   { id: ENSEMBLE, name: 'ARC Preview Ensemble' },
 ].map((a) => ({ ...a, uri: `spotify:artist:${a.id}`, images: [], genres: [], followers: null }));
 
@@ -408,6 +414,34 @@ const ALBUMS: AlbumDef[] = [
     precision: 'year',
     totalTracks: null,
   },
+  // The records the IGOR episode steps out to, likewise.
+  {
+    id: '0PanG8trSzqFIX7pZmCVFG',
+    name: 'Raising Hell',
+    artistIds: [RUN_DMC],
+    albumType: 'album',
+    releaseDate: '1986-05-15',
+    precision: 'day',
+    totalTracks: null,
+  },
+  {
+    id: '1xdgLmTFMSyJyI5DJOOX7T',
+    name: '2+2+1 = (2023 Remastered Version)',
+    artistIds: [PONDEROSA_TWINS],
+    albumType: 'album',
+    releaseDate: '1971',
+    precision: 'year',
+    totalTracks: null,
+  },
+  {
+    id: '4oKs5WMY4xKsxFgdeY5bKw',
+    name: 'The Belle Album',
+    artistIds: [AL_GREEN],
+    albumType: 'album',
+    releaseDate: '1977',
+    precision: 'year',
+    totalTracks: null,
+  },
   {
     id: '0ArcTestPressing01',
     name: 'Test Pressing',
@@ -435,6 +469,9 @@ const LOOSE_TRACKS: Array<{ albumId: string; track: TrackDef }> = [
   { albumId: '6ArYgWdHk7mcG4knENgPN5', track: { id: '6QCPweR3aP6nj7P43WpiZs', name: 'Rising', durationMs: 160_000, lyrics: 'mixed' } },
   { albumId: '75ol9OP8bJaRqzGimpFHDm', track: { id: '2MfrET7Nc3StKQcGoZKqr9', name: '21st Century Schizoid Man', durationMs: 442_000, lyrics: 'en' } },
   { albumId: '155OAoTAYR4Uu0LpSMvy5W', track: { id: '7j1ABZOylWUPUIZTt5x6AL', name: 'You Showed Me', durationMs: 196_000, lyrics: 'en' } },
+  { albumId: '0PanG8trSzqFIX7pZmCVFG', track: { id: '0GqbUEtAVs0CKLEh1lsQ1S', name: 'Hit It Run', durationMs: 191_000, lyrics: 'en' } },
+  { albumId: '1xdgLmTFMSyJyI5DJOOX7T', track: { id: '7zye9v6B785eFWEFYs13C2', name: 'Bound - 2023 Remastered Version', durationMs: 191_000, lyrics: 'en' } },
+  { albumId: '4oKs5WMY4xKsxFgdeY5bKw', track: { id: '5X7DKwZ5e0JE3XoIakaT2Q', name: 'Dream', durationMs: 453_000, lyrics: 'en' } },
 ];
 
 const artistById = new Map(PREVIEW_ARTISTS.map((a) => [a.id, a]));
@@ -655,6 +692,9 @@ export const PREVIEW_PALETTES: Array<[albumId: string, palette: AlbumPalette]> =
   ['20r762YmB5HeofjMCiPMLv', palette('#b0302a', '#2a1a18', '#f0c9c4', '#f1dedb', '#1a1110')],
   ['75ol9OP8bJaRqzGimpFHDm', palette('#c0486a', '#2a2130', '#7fb4d6', '#efe1e4', '#1b141a')],
   ['155OAoTAYR4Uu0LpSMvy5W', palette('#c9a13a', '#2b2a22', '#3f6e63', '#f1ead3', '#17160f')],
+  ['0PanG8trSzqFIX7pZmCVFG', palette('#b3392f', '#1e1c1c', '#d8d2c4', '#eeeae2', '#121111')],
+  ['1xdgLmTFMSyJyI5DJOOX7T', palette('#a8693a', '#2a2219', '#e2c99a', '#f2e8d6', '#17120d')],
+  ['4oKs5WMY4xKsxFgdeY5bKw', palette('#5f7f9a', '#1f2328', '#d9c7a1', '#ecebe5', '#121518')],
   ['1FEdDqMaOL8oZYzI4n27GM', palette('#e76046', '#e1caa7', '#e9eff0', '#ece2d1', '#2a211d')],
   ['6ArYgWdHk7mcG4knENgPN5', palette('#4f6fb3', '#dfe4ef', '#e76046', '#e9edf5', '#1b2233')],
   ['052EiTRYh35MuDVJN9Emdh', palette('#3f6f8f', '#e5e1d6', '#c9a86a', '#ece9e1', '#16222b')],
