@@ -12,6 +12,10 @@ sources:
   - https://en.wikipedia.org/wiki/Drive_Slow
   - https://open.spotify.com/track/5AMekX6PigBBeBRHvB4MfZ
   - https://lrclib.net/api/get/1589991
+  - https://en.wikipedia.org/wiki/Slab_(car)
+  - https://www.urbandictionary.com/define.php?term=four%20fours
+  - https://en.wikipedia.org/wiki/Just_a_Lil_Bit
+  - https://www.azlyrics.com/lyrics/kanyewest/driveslow.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,7 +38,14 @@ translation:
     - source: "candy"
       target: "캔디 페인트"
       note: "사탕처럼 반짝이는 휴스턴 자동차 도색."
+    - source: "elbows / fo's"
+      target: "툭 튀어나온 휠 / 휠"
+      note: "'elbows'는 휴스턴 슬랩 차량의 옆으로 튀어나온 와이어 휠(위키피디아), 'fo's'는 1984년식 스포크 휠을 가리키는 속어다(마이크 존스의 'Still Tippin'' 가사를 인용한 Urban Dictionary 항목 2건). 번역에서는 둘 다 '휠'로 풀었다."
+    - source: "kiss it, 'Just a Lil' Bit'"
+      target: "'조금만'"
+      note: "50센트의 2005년 싱글 'Just a Lil Bit'의 제목을 따온 것으로 읽힌다(위키피디아 곡 항목의 발매 시기만 확인, 등급 C). 번역은 유지했다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 알토 색소폰의 짧은 선율로 시작한다. 행크 크로퍼드가 연주한 'Wildflower'의 한 소절이 반복되고, 그 위에서 천천히 몰라는 후렴이 낮게 깔린다. 첫 벌스는 웨스트가 어린 시절 올려다보던 친구 이야기다. 79번가와 메이 거리에 살던 친구, 아버지가 세상을 떠나며 남긴 돈으로 열여섯에 차를 몰고 다니던 모습, 시스템이 쾅쾅 울릴 때 자기 데모 테이프를 틀며 계약이라도 한 것 같던 기분이 이어진다. 둘째 벌스는 휴스턴 래퍼 폴 월이 사탕처럼 칠한 차와 반짝이는 이빨을 자랑하고, 셋째 벌스는 GLC가 집보다 TV가 많은 차를 자랑한다. 마지막 30초 남짓은 곡 전체의 속도가 떨어지며 후렴과 색소폰이 낮고 길게 늘어진다.
@@ -47,4 +58,4 @@ translation:
 
 ## 번역에 대하여
 
-형이 동생에게 충고하는 후렴과 래퍼들의 자랑이 섞인 곡이라 **해체**로 옮겼다. *homie*는 친구라는 뜻이지만 서둘러 크지 말라는 충고의 맥락이라 '동생'으로 옮겼다. *Screw*, *candy*처럼 휴스턴 자동차·음악 문화에서 온 말은 고유한 용어라 음차하고 용어집에 뜻을 남겼다. 여성을 낮춰 부르는 말은 직역하지 않고 '여자들'로 옮겼다.
+형이 동생에게 충고하는 후렴과 래퍼들의 자랑이 섞인 곡이라 **해체**로 옮겼다. *homie*는 친구라는 뜻이지만 서둘러 크지 말라는 충고의 맥락이라 '동생'으로 옮겼다. *Screw*, *candy*처럼 휴스턴 자동차·음악 문화에서 온 말은 고유한 용어라 음차하고 용어집에 뜻을 남겼다. 여성을 낮춰 부르는 말은 직역하지 않고 '여자들'로 옮겼다. 폴 월의 벌스에 나오는 *elbows*와 *fo's*는 휴스턴 슬랩 차량의 휠을 가리키는 속어라 '휠'로 풀어 옮겼다.
