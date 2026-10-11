@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 422501, "durationMs": 79000 },
+  "segments": [
+    { "startMs": 440, "endMs": 7070, "translation": "에이, 이제 난 솔로라서 개미 치마 밑까지 다 보여" },
+    { "startMs": 7070, "endMs": 9710, "translation": "솔로라서 '제로니모!' 하고 들이켜도 더는 취하지 않아, 그냥 한 번 더 가서 피워 볼 뿐" },
+    { "startMs": 9710, "endMs": 12050, "translation": "솔로라서 내 잔엔 붉은 술, 내 촐로, 내 친구" },
+    { "startMs": 12050, "endMs": 16330, "translation": "솔로라서 인정할 수 있어, 또 어떤 애가 경찰 총에 맞았다는 소식을 들어도 이젠 별일처럼 느껴지지 않는다는 걸" },
+    { "startMs": 16330, "endMs": 17690, "translation": "더는 아니야" },
+    { "startMs": 17690, "endMs": 22660, "translation": "솔로라서 높은 말 위에 올라탈 일도 없어, 폴로 입기는 너무 버거워서 입을 땐 말 로고를 오려 내지, 이제 로고 있던 자리엔 구멍이 났어" },
+    { "startMs": 22660, "endMs": 23310, "translation": "딱 어울리네" },
+    { "startMs": 23310, "endMs": 27070, "translation": "솔로라서 뭐가 유행인지 알 게 뭐야, 씀씀이도 줄여 보는 중이야" },
+    { "startMs": 27070, "endMs": 30210, "translation": "이기든 말든, 있는 척하는 대신, 비위 맞추려고 굽신거리지도 않아" },
+    { "startMs": 30210, "endMs": 33220, "translation": "이 여자들 절반이 성형을 했는데 남자한테 진짜를 원한다고 말해" },
+    { "startMs": 33220, "endMs": 34790, "translation": "말이야 그렇게 하지, 우린 다 진짜 사람이니까" },
+    { "startMs": 34790, "endMs": 36160, "translation": "이런 게 싫지만, 앤, 네 처지가 안쓰러워" },
+    { "startMs": 36160, "endMs": 37430, "translation": "치마를 입으면 어떤지 난 모르거든" },
+    { "startMs": 37430, "endMs": 40430, "translation": "내가 눈치 없이 굴었다면 용서해, 그래도 자기야, 이래 봤자 더 나빠질 뿐이야" },
+    { "startMs": 40430, "endMs": 42650, "translation": "솔로라서 내 후광은 한참 낮아, 휘어 버린 것 같아" },
+    { "startMs": 42650, "endMs": 45400, "translation": "솔로라서 페소 지폐 위로 여자들이 몸을 던져도 눈길 한번 안 줘" },
+    { "startMs": 45400, "endMs": 47910, "translation": "솔로라서 신참도 아닌데 애가 된 기분이야" },
+    { "startMs": 47910, "endMs": 52400, "translation": "다른 애들을 놀란 눈으로 바라보며, 벌 받는 신세로 여름이 끝나 가는 걸 지켜봐" },
+    { "startMs": 52400, "endMs": 56820, "translation": "20년을 했는데도 난 다들 자기 벌스는 자기가 쓰는 줄 알 만큼 순진했어" },
+    { "startMs": 56820, "endMs": 58470, "translation": "다르게 돌아오네, 그래, 그게 날 아프게 해" },
+    { "startMs": 58470, "endMs": 59910, "translation": "자격도 없는 것들 앞에서 콧노래를 부르고 휘파람을 불고 있어" },
+    { "startMs": 59910, "endMs": 79000, "translation": "비틀거리며 한 마디 한 마디를 살아 냈는데, 내가 너무 무리했던 걸까?" }
+  ]
+}
