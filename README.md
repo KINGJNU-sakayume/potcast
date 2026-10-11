@@ -325,7 +325,10 @@ heard whole once, that a track from outside the album is played by itself and fo
 talk-over fits in what is left of its track, that the lines are written to be spoken (short turns, no
 written "-다" endings), and that they are written to be recorded (no utterance cut in the middle of a clause, and a
 `say:` reading for every English word and numeral). To have Claude write one, ask for it (*"STRAY SHEEP 에피소드 써줘"*); the procedure is in
-[`.claude/skills/write-episode/SKILL.md`](.claude/skills/write-episode/SKILL.md).
+[`.claude/skills/write-episode/SKILL.md`](.claude/skills/write-episode/SKILL.md). To have it made from scratch — notes
+checked, the web researched into them, a script with 30–45 minutes of talk, recorded by the pull request — ask for a
+podcast (*"IGOR에 대한 팟캐스트 만들어줘"*); that procedure is in
+[`.claude/skills/make-podcast/SKILL.md`](.claude/skills/make-podcast/SKILL.md).
 
 ### Voices
 
