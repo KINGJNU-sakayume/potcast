@@ -7,6 +7,7 @@ sources:
   - https://podscripts.co/podcasts/dissect/s4e5-who-dat-boy-by-tyler-the-creator
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://miccheque.com/2017/07/23/flower-boy-review/
+  - https://constantlypluggedin.wordpress.com/2017/06/30/tyler-the-creator-who-dat-boy/
 short: >
   불안한 도입부가 충분히 버틴 뒤 드럼과 랩이 터지는 대비를 듣고, 후반 타일러와 에이셉 라키가 말을 교환하는 속도에 주목하라.
 translation:
@@ -26,8 +27,26 @@ translation:
       target: 저 녀석 누구야? 누구냐고?
       note: "일부러 문법을 비튼 구어체 반복구라 정형화된 문장 대신 되묻는 말투로 옮겼다."
     - source: neck chill / push wheel
-      target: 목이 차갑다 / 바퀴를 굴린다
-      note: "목걸이와 차를 암시하는 속어라 직역에 가깝게 두었다."
+      target: 목에 얼음이 차갑다 / 차를 몬다
+      note: "neck chill은 같은 곡의 frío(스페인어로 차갑다)와 이어지는 보석 이야기로, 다이섹트 방송은 목걸이 자랑으로 읽는다. 그래서 목에 얼음이 차갑다고 옮겼다. push wheel은 방송이 차를 가리키는 말로 읽어 차를 모는 일로 옮겼다."
+    - source: push weight
+      target: 큰 물량을 굴린다
+      note: "push weight는 마약을 대량으로 유통한다는 속어로 흔히 쓰이지만, 이 곡에서는 과시의 한 갈래인지 어머니가 말한 몸무게와 겹치는 말장난인지 확정하지 못했다. 가장 일반적인 속어 뜻을 택했다."
+    - source: bick
+      target: 물건(bick)
+      note: "정확한 뜻을 사전이나 해설에서 확인하지 못했다. 앞뒤가 성적 과시인 점과 철자가 dick에서 온 변형으로 보여 이 뜻으로 읽고 원어를 괄호로 남겼다."
+    - source: Number (N)ine
+      target: 넘버(N)인
+      note: "일본 패션 브랜드 Number (N)ine이다. 브랜드 이름이라 음차에 괄호 표기를 살리고 '일본 패션 브랜드'를 덧붙였다."
+    - source: before Vince
+      target: 빈스 이전
+      note: "Vince가 누구인지 확인하지 못했다. 타일러의 동료 빈스 스테이플스일 수 있으나 확증이 없어 이름만 옮겼다."
+    - source: "'95 Leo"
+      target: 95년 무렵의 레오(디카프리오)
+      note: "다이섹트 방송과 팬 블로그가 모두 1990년대 중반의 레오나르도 디카프리오로 읽는다. 자동차 연식이나 별자리로 오해하기 쉬워 풀어 옮겼다."
+    - source: That cherry be the bomb like he ran in Boston
+      target: 그 체리는 폭탄이야, 보스턴에서 뛴 놈처럼
+      note: "앞 앨범 『Cherry Bomb』을 가리키는 자랑이면서, 다이섹트 방송과 팬 블로그는 2013년 보스턴 마라톤 폭탄 테러를 잇는 말장난으로 읽는다. 뒤 줄들의 경찰 포위와 얼굴이 날아간 장면과 이어진다. 두 겹을 모두 살리려고 설명을 덧붙이지 않고 직역했다."
   written: 2026-10-11
 ---
 
@@ -41,4 +60,4 @@ translation:
 
 ## 번역에 대하여
 
-이 곡은 반복되는 "Who dat boy?"로 의심하는 사람들에게 되묻고 도발하는 과시 랩이라, 청자를 향한 거친 말투가 살아 있는 **해체**로 정했다. 가사 안에서 자신을 "him"이라는 3인칭으로 부르다가 "I'm right here"에서 바로 1인칭으로 돌아오고, "Why you niggas feel like that?"처럼 상대를 직접 몰아세우기 때문에 문어적인 해라체보다 말하는 반말이 맞다. 감상 노트가 설명하듯 이 곡은 앞의 'See You Again'의 부드러운 갈망에서 갑자기 과시로 바뀌는 자리이며, 그 과시는 외로움을 가린 방어막처럼 읽을 수도 있어 어조를 순화하지 않고 날것 그대로 두었다. 후반부의 에이셉 라키 구간도 같은 도발 구도로 보아 어체를 바꾸지 않았고, 어머니의 말을 전하는 부분만 '하셔'로 높임을 일부 반영했다.
+이 곡은 반복되는 "Who dat boy?"로 의심하는 사람들에게 되묻고 도발하는 과시 랩이라, 청자를 향한 거친 말투가 살아 있는 **해체**로 정했다. 가사 안에서 자신을 "him"이라는 3인칭으로 부르다가 "I'm right here"에서 바로 1인칭으로 돌아오고, "Why you niggas feel like that?"처럼 상대를 직접 몰아세우기 때문에 문어적인 해라체보다 말하는 반말이 맞다. 감상 노트가 설명하듯 이 곡은 앞의 'See You Again'의 부드러운 갈망에서 갑자기 과시로 바뀌는 자리이며, 그 과시는 외로움을 가린 방어막처럼 읽을 수도 있어 어조를 순화하지 않고 날것 그대로 두었다. 후반부의 에이셉 라키 구간도 같은 도발 구도로 보아 어체를 바꾸지 않았고, 어머니의 말을 전하는 부분만 '하셔'로 높임을 일부 반영했다. 'Who him is?'는 의도적으로 문법을 비튼 말투로, 자신을 가리키는 3인칭이라 되묻는 반말로 옮겼다. 'bick'과 'push weight', 'before Vince'는 끝내 뜻을 확정하지 못했으며, 각각 성적 과시, 큰 물량의 속어, 사람 이름으로 읽은 것이 가장 근거가 강한 추정이다. '95 Leo'는 방송과 팬 블로그의 레오나르도 디카프리오 해석을 따랐다.

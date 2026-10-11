@@ -8,6 +8,7 @@ sources:
   - https://www.classicrockreview.com/2014/05/1994-oasis-definitely-maybe/
   - https://theultimatemusiclibrary.net/2018/12/28/oasis-definitely-maybe/
   - https://oasisinet.com/lyrics/cigarettes-alcohol/
+  - https://gigdoggy.wordpress.com/2009/05/21/song-chronicles-cigarettes-and-alcohol-by-oasis/
 short: >
   인트로의 짧은 기타 리프가 절의 질문을 지나 후렴의 행동 촉구를 받치는 과정을 짚는다. 끝의 무거운 솔로는 같은 기세를 오래 붙들어 둔다.
 translation:
@@ -25,7 +26,7 @@ translation:
   glossary:
     - source: the white line
       target: 코카인
-      note: 약물을 가리키는 은어라 풀어서 옮겼다.
+      note: 코카인을 흡입용으로 늘어놓은 한 줄을 가리킨다는 해석이 가장 널리 받아들여져(문헌 근거는 평론 수준이다) 풀어서 '코카인 한 줄'로 옮겼다. 'when it comes on top'은 사정이 닥칠 때라는 뜻으로 읽어 '막상 닥치면'으로 두었다.
     - source: make it / fake it
       target: 해내다 / 그런 척하다
       note: 마지막 반복에서 두 동사가 번갈아 나오는 대비를 살려 '해내야 해'와 '그런 척이라도 해야 해'로 짝지었다.
@@ -42,4 +43,4 @@ translation:
 
 ## 번역에 대하여
 
-절과 후렴 모두 "you gotta" 꼴로 청자를 몰아세우는 입말이고 질문도 친구에게 던지듯 가벼워서 격식 있는 존댓말이나 독백체인 해라체보다 **해체**가 맞다고 판단했다. 감상 본문이 화자의 첫 태도를 확신보다 질문으로 읽고 마지막을 실현과 가장이 번갈아 나오는 변화로 보기 때문에, 구호처럼 단정하는 문장도 완전히 선언조로 굳히지 않고 말 걸기에 가까운 어미로 두었다. "you"는 특정한 연인으로 읽는 해석을 버리고 화자 자신과 청자를 함께 가리키는 말로 보아 '너'로만 옮겼다. 곡 안에서 어체나 호칭이 바뀌는 곳은 없으며 마지막의 "make it"과 "fake it"만 의도적으로 짝을 맞춰 대비를 남겼다.
+절과 후렴 모두 "you gotta" 꼴로 청자를 몰아세우는 입말이고 질문도 친구에게 던지듯 가벼워서 격식 있는 존댓말이나 독백체인 해라체보다 **해체**가 맞다고 판단했다. 감상 본문이 화자의 첫 태도를 확신보다 질문으로 읽고 마지막을 실현과 가장이 번갈아 나오는 변화로 보기 때문에, 구호처럼 단정하는 문장도 완전히 선언조로 굳히지 않고 말 걸기에 가까운 어미로 두었다. "you"는 특정한 연인으로 읽는 해석을 버리고 화자 자신과 청자를 함께 가리키는 말로 보아 '너'로만 옮겼다. 'the white line'을 코카인으로 읽는 것은 평론가들의 해석이고 노엘이 직접 설명한 적은 확인하지 못했다. 곡 안에서 어체나 호칭이 바뀌는 곳은 없으며 마지막의 "make it"과 "fake it"만 의도적으로 짝을 맞춰 대비를 남겼다.

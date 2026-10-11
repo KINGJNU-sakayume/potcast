@@ -9,6 +9,7 @@ sources:
   - https://www.loudersound.com/reviews/oasis-definitely-maybe-30th-anniversary-edition
   - https://www.sputnikmusic.com/review/784/Oasis-Definitely-Maybe/
   - https://pitchfork.com/reviews/albums/19258-oasis-definitely-maybe-reissue/
+  - https://en.wikipedia.org/wiki/Shakermaker
 short: >
   중간 기타 솔로의 물속처럼 휘도는 음색과 리암이 길게 늘이는 모음을 비교한다. 단단한 블루스 반주 위에서 목소리와 기타가 따로 흔들린다.
 translation:
@@ -26,7 +27,7 @@ translation:
   glossary:
     - source: Mister Soft / Mister Clean / Mister Ben / Mister Sifter
       target: 미스터 소프트 / 미스터 클린 / 미스터 벤 / 미스터 시프터
-      note: 상표와 별명이 뒤섞인 인물들이라 뜻을 풀지 않고 소리 나는 대로 옮겨 이상한 이름의 느낌을 남겼다.
+      note: 실제 대중문화에서 가져온 이름들이다. Mr Soft는 Cockney Rebel의 노래 「Mr. Soft」를 쓴 영국 트레보 박하사탕 광고에서, Mr Clean은 The Jam의 노래에서, Mr Benn은 영국 어린이 만화에서 왔다. Mister Sifter는 맨체스터 디즈버리의 레코드 가게 '시프터스'(Sifters)에서 왔고, 가사의 '노래를 팔았다'는 그 가게의 음반을 가리키는 것으로 읽힌다. 한국 독자에게 대응하는 말이 없어 풀어 쓰지 않고 소리 나는 대로 옮겼다(출처는 위키백과 Shakermaker 항목).
     - source: shake along
       target: 같이 흔들다
       note: 후렴의 핵심 동사로, 춤추듯 몸을 흔드는 뜻과 함께 같이 가자는 권유를 담아 매번 같은 말로 옮겼다.
@@ -43,4 +44,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 특정한 연인에게 설명하는 대신 느슨하게 말을 걸며 같이 흔들자고 부르기 때문에 격식 없는 **해체**로 정했다. 가사 안에서 'I'd like to be somebody else'로 시작하는 소망과 'shake along with me'라는 반복 권유가 어울려, 독백의 해라체보다 곁에 선 사람에게 던지는 말투가 맞다고 봤다. 감상 본문이 이 곡을 약물 체험의 기록이 아니라 현실의 조각을 이어 붙이는 상상으로 읽었으므로, 뜻이 분명치 않은 이름들도 해석해 풀어쓰지 않고 소리 나는 대로 옮겼다. 'you'를 헤어진 연인으로 읽어 사과하는 말투로 옮기는 방안은 앨범 속 위치와 가사의 흐름에 근거가 부족해 버렸고, 중간의 'I'm sorry' 대목도 같은 해체로 이어 붙였다.
+화자는 특정한 연인에게 설명하는 대신 느슨하게 말을 걸며 같이 흔들자고 부르기 때문에 격식 없는 **해체**로 정했다. 가사 안에서 'I'd like to be somebody else'로 시작하는 소망과 'shake along with me'라는 반복 권유가 어울려, 독백의 해라체보다 곁에 선 사람에게 던지는 말투가 맞다고 봤다. 감상 본문이 이 곡을 약물 체험의 기록이 아니라 현실의 조각을 이어 붙이는 상상으로 읽었으므로, 미스터 소프트·클린·벤·시프터 같은 이름들은 광고와 노래, 어린이 만화, 맨체스터의 음반 가게에서 온 실제 참조라는 점을 확인했지만 한국어에 대응하는 말이 없어 풀어쓰지 않고 소리 나는 대로 옮겼다. 'you'를 헤어진 연인으로 읽어 사과하는 말투로 옮기는 방안은 앨범 속 위치와 가사의 흐름에 근거가 부족해 버렸고, 중간의 'I'm sorry' 대목은 "I told you so"를 스스로 인용하는 말투를 살려 같은 해체로 이어 붙였다. 그 대목에서 화자가 누구에게 사과하는지는 가사만으로 분명하지 않아 확신이 낮다.

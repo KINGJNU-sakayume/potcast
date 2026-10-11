@@ -9,6 +9,7 @@ sources:
   - https://tonedeaf.thebrag.com/20-years-retrospective-oasis-definitely-maybe/2/
   - https://theultimatemusiclibrary.net/2018/12/28/oasis-definitely-maybe/
   - https://oasisinet.com/lyrics/married-with-children/
+  - https://en.wiktionary.org/wiki/shite
 short: >
   작별을 반복하는 낮은 기세의 목소리와 어쿠스틱 기타를 따라간다. 중간의 귀환 예고를 들은 뒤에는 마지막의 같은 작별이 얼마나 달라지는지 짚는다.
 translation:
@@ -26,7 +27,7 @@ translation:
   glossary:
     - source: shite
       target: 쓰레기
-      note: 속어 'shit'의 영국식 변형으로, 상대의 음악을 깎아내리는 거친 어조를 살려 '쓰레기'로 옮겼다.
+      note: 'shit'의 영국·아일랜드식 변형으로 '쓰레기, 형편없는 것'을 뜻하는 거친 말이다(Wiktionary·Dictionary.com 표제). 상대의 음악을 깎아내리는 어조를 살려 '쓰레기'로 옮겼다.
     - source: Goodbye I'm going home
       target: 잘 있어, 난 집에 갈 거야
       note: 반복구라 마지막까지 같은 번역을 쓰되, 중간의 돌아오리라는 인정 뒤에는 같은 말이 단호하게 들리지 않는 효과를 노렸다.
