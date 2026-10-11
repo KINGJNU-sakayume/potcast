@@ -1,21 +1,84 @@
 {
   "schemaVersion": 2,
-  "timing": { "lrclibId": 416012, "durationMs": 67000 },
+  "timing": {
+    "lrclibId": 416012,
+    "durationMs": 67000
+  },
   "segments": [
-    { "startMs": 530, "endMs": 5620, "translation": "좋은 사람이 다리를 놔 줬어." },
-    { "startMs": 5620, "endMs": 10410, "translation": "내가 뉴욕에 오면 너를 한번 찾아보라고 하더라." },
-    { "startMs": 10410, "endMs": 23510, "translation": "처음 너를 봤을 때, 문자 말투는 겉모습이랑 전혀 안 닮았더라." },
-    { "startMs": 23510, "endMs": 29030, "translation": "네가 나를 데려간 그 게이 바를 위해 건배." },
-    { "startMs": 29030, "endMs": 34170, "translation": "그때 알았어, 너는 나보다 말이 훨씬 많다는 걸." },
-    { "startMs": 34170, "endMs": 42920, "translation": "하이라이트는, 이게 그 이상은 아니라고 확신하게 된 순간이었어. 정말 너답지 않은 일이지." },
-    { "startMs": 42920, "endMs": 48020, "translation": "지금 네가 나를 필요로 하지 않는 거 알아." },
-    { "startMs": 48020, "endMs": 52780, "translation": "너한테는 그냥 늦은 밤의 외출일 뿐이니까." },
-    { "startMs": 52780, "endMs": 55300, "translation": "이 친구 말이야, 동네 여자들이 전부 너랑 엮이고 싶어 한대, 친구야." },
-    { "startMs": 55300, "endMs": 56730, "translation": "그가 나한테 말했어." },
-    { "startMs": 56730, "endMs": 60360, "translation": "나도 걔네 전부랑 어울렸었다고." },
-    { "startMs": 60360, "endMs": 62460, "translation": "그래, 이제 여자는 하나도 없어." },
-    { "startMs": 62460, "endMs": 64190, "translation": "근데 이젠 그런 여자들 따위 신경 안 써, 친구야." },
-    { "startMs": 64190, "endMs": 65620, "translation": "재스민 그 일이 내 마음을 완전히 박살 냈거든." },
-    { "startMs": 65620, "endMs": 70000, "translation": "이걸 어떻게 느껴야 할지조차 모르겠어." }
+    {
+      "startMs": 530,
+      "endMs": 5620,
+      "translation": "좋은 사람이 다리를 놔 줬어."
+    },
+    {
+      "startMs": 5620,
+      "endMs": 10410,
+      "translation": "내가 뉴욕에 오면 너를 한번 찾아보라고 하더라."
+    },
+    {
+      "startMs": 10410,
+      "endMs": 23510,
+      "translation": "처음 너를 봤을 때, 문자 말투는 겉모습이랑 전혀 안 닮았더라."
+    },
+    {
+      "startMs": 23510,
+      "endMs": 29030,
+      "translation": "네가 나를 데려간 그 게이 바를 위해 건배."
+    },
+    {
+      "startMs": 29030,
+      "endMs": 34170,
+      "translation": "그때 알았어, 너는 나보다 말이 훨씬 많다는 걸."
+    },
+    {
+      "startMs": 34170,
+      "endMs": 42920,
+      "translation": "하이라이트는, 이게 그 이상은 아니라고 확신하게 된 순간이었어. 정말 너답지 않은 일이지."
+    },
+    {
+      "startMs": 42920,
+      "endMs": 48020,
+      "translation": "지금 네가 나를 필요로 하지 않는 거 알아."
+    },
+    {
+      "startMs": 48020,
+      "endMs": 52780,
+      "translation": "너한테는 그냥 늦은 밤의 외출일 뿐이니까."
+    },
+    {
+      "startMs": 52780,
+      "endMs": 55300,
+      "translation": "이 놈 말이야, 동네 년들이 전부 너랑 박고 싶어 한대, 야."
+    },
+    {
+      "startMs": 55300,
+      "endMs": 56730,
+      "translation": "그가 나한테 말했어."
+    },
+    {
+      "startMs": 56730,
+      "endMs": 60360,
+      "translation": "나도 걔네 전부랑 어울렸었다고."
+    },
+    {
+      "startMs": 60360,
+      "endMs": 62460,
+      "translation": "그래, 이제 년들은 하나도 없어."
+    },
+    {
+      "startMs": 62460,
+      "endMs": 64190,
+      "translation": "근데 이젠 그딴 년들 신경 안 써, 야."
+    },
+    {
+      "startMs": 64190,
+      "endMs": 65620,
+      "translation": "재스민 그 좆같은 일이 내 마음을 씨발 박살 냈거든."
+    },
+    {
+      "startMs": 65620,
+      "endMs": 70000,
+      "translation": "이걸 어떻게 느껴야 할지조차 모르겠어."
+    }
   ]
 }

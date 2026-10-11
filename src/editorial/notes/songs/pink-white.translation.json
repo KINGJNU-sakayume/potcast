@@ -1,54 +1,249 @@
 {
   "schemaVersion": 2,
-  "timing": { "lrclibId": 420904, "durationMs": 185000 },
+  "timing": {
+    "lrclibId": 420904,
+    "durationMs": 185000
+  },
   "segments": [
-    { "startMs": 3890, "endMs": 9920, "translation": "응, 그래, 오" },
-    { "startMs": 9920, "endMs": 12370, "translation": "하루하루가 그렇게 흘러가" },
-    { "startMs": 12370, "endMs": 14520, "translation": "우리가 어쩔 수 없을 때마다" },
-    { "startMs": 14520, "endMs": 19040, "translation": "하늘이 분홍과 하양이어도, 땅이 검정과 노랑이어도" },
-    { "startMs": 19040, "endMs": 23430, "translation": "네가 내게 보여 준 그 방식 그대로야" },
-    { "startMs": 23430, "endMs": 28190, "translation": "고개를 끄덕이고, 눈은 감지 않고, 느린 걸음으로 반쯤 와 있어" },
-    { "startMs": 28190, "endMs": 32600, "translation": "네가 내게 보여 준 그 방식 그대로야" },
-    { "startMs": 32600, "endMs": 34770, "translation": "네가 날 수 있다면 남쪽이 느껴질 거야" },
-    { "startMs": 34770, "endMs": 36960, "translation": "북쪽은 곧 추워질 테니까" },
-    { "startMs": 36960, "endMs": 38930, "translation": "그게 현실이야, 우린 땅 위에 있어" },
-    { "startMs": 38930, "endMs": 41540, "translation": "그러니 난 네가 믿을 수 있는 사람이 될게" },
-    { "startMs": 41540, "endMs": 46120, "translation": "아직 살아 있을 때 널 식지 않게 지켜 줄게, 전부 폐허가 돼도 실망시키지 않을게" },
-    { "startMs": 46120, "endMs": 53570, "translation": "네가 내게 보여 준 바로 그 방식으로, 보여 준 대로" },
-    { "startMs": 53570, "endMs": 59580, "translation": "넌 내게 사랑을 보여 줬어" },
-    { "startMs": 59580, "endMs": 62500, "translation": "하늘에서 내린 영광" },
-    { "startMs": 62500, "endMs": 68340, "translation": "잘 들어 줘, 내 사랑" },
-    { "startMs": 68340, "endMs": 72900, "translation": "여기서부턴 다 내리막이야" },
-    { "startMs": 72900, "endMs": 75570, "translation": "허리케인이 지나간 자리" },
-    { "startMs": 75570, "endMs": 77760, "translation": "여름 그늘처럼 짙게 그을린 피부" },
-    { "startMs": 77760, "endMs": 79670, "translation": "홍수선 속으로 곤두박질치는 다이빙" },
-    { "startMs": 79670, "endMs": 82170, "translation": "우유 상자로 쌓은 높은 탑" },
-    { "startMs": 82170, "endMs": 86330, "translation": "네가 내게 보여 준 그 방식 그대로야" },
-    { "startMs": 86330, "endMs": 88800, "translation": "베란다에서 몸을 둥글게 말고 뛰어내리고" },
-    { "startMs": 88800, "endMs": 91030, "translation": "큰 애들은 지붕에서 해 보려 하고" },
-    { "startMs": 91030, "endMs": 95400, "translation": "네가 내게 보여 준 바로 그 방식 그대로야 (보여 줬지)" },
-    { "startMs": 95400, "endMs": 97820, "translation": "죽었다가 다시 살아날 수 있다면" },
-    { "startMs": 97820, "endMs": 100130, "translation": "수영장에서 숨 쉬러 물 위로 올라오듯" },
-    { "startMs": 100130, "endMs": 102340, "translation": "마른 땅 위에 무릎을 꿇고" },
-    { "startMs": 102340, "endMs": 104640, "translation": "널 낳아 준 땅에 입을 맞출 거야" },
-    { "startMs": 104640, "endMs": 106610, "translation": "살아남으라고 도구를 쥐여 준 땅에" },
-    { "startMs": 106610, "endMs": 109160, "translation": "해가 망가질 때도 빠져나오라고 말이야" },
-    { "startMs": 109160, "endMs": 116580, "translation": "그게 네가 내게 보여 준 방식이야, 보여 준 대로" },
-    { "startMs": 116580, "endMs": 122660, "translation": "넌 내게 사랑을 보여 줬어" },
-    { "startMs": 122660, "endMs": 125690, "translation": "하늘에서 내린 영광" },
-    { "startMs": 125690, "endMs": 131270, "translation": "잘 들어 줘, 내 사랑" },
-    { "startMs": 131270, "endMs": 136450, "translation": "여기서부턴 다 내리막이야" },
-    { "startMs": 136450, "endMs": 138880, "translation": "삶을 기억해" },
-    { "startMs": 138880, "endMs": 140940, "translation": "그때가 어땠는지 기억해" },
-    { "startMs": 140940, "endMs": 145420, "translation": "나무에 오르고, 마이클 잭슨, 다 여기서 끝나" },
-    { "startMs": 145420, "endMs": 149920, "translation": "매튜에게, 슈브에게 안부 전해 줘" },
-    { "startMs": 149920, "endMs": 152190, "translation": "대니에게도 안부 전해 줘" },
-    { "startMs": 152190, "endMs": 156670, "translation": "삶에게, 불멸에게 안부 전해 줘" },
-    { "startMs": 156670, "endMs": 157840, "translation": "나이키를 구겨 신고" },
-    { "startMs": 157840, "endMs": 161060, "translation": "멜포메네를 뛰쳐나와 니코틴을 찾아" },
-    { "startMs": 161060, "endMs": 163450, "translation": "할머니의 담배를 몰래 훔쳐 (천천히 해)" },
-    { "startMs": 163450, "endMs": 165640, "translation": "뭐 달콤한 것 좀 줘" },
-    { "startMs": 165640, "endMs": 170100, "translation": "젠장, 나 불멸이 마음에 들지도 몰라" },
-    { "startMs": 170100, "endMs": 185000, "translation": "이게 삶이야, 삶, 불멸" }
+    {
+      "startMs": 3890,
+      "endMs": 9920,
+      "translation": "응, 그래, 오"
+    },
+    {
+      "startMs": 9920,
+      "endMs": 12370,
+      "translation": "하루하루가 그렇게 흘러가"
+    },
+    {
+      "startMs": 12370,
+      "endMs": 14520,
+      "translation": "우리가 어쩔 수 없을 때마다"
+    },
+    {
+      "startMs": 14520,
+      "endMs": 19040,
+      "translation": "하늘이 분홍과 하양이어도, 땅이 검정과 노랑이어도"
+    },
+    {
+      "startMs": 19040,
+      "endMs": 23430,
+      "translation": "네가 내게 보여 준 그 방식 그대로야"
+    },
+    {
+      "startMs": 23430,
+      "endMs": 28190,
+      "translation": "고개를 끄덕이고, 눈은 감지 않고, 느린 걸음으로 반쯤 와 있어"
+    },
+    {
+      "startMs": 28190,
+      "endMs": 32600,
+      "translation": "네가 내게 보여 준 그 방식 그대로야"
+    },
+    {
+      "startMs": 32600,
+      "endMs": 34770,
+      "translation": "네가 날 수 있다면 남쪽이 느껴질 거야"
+    },
+    {
+      "startMs": 34770,
+      "endMs": 36960,
+      "translation": "북쪽은 곧 추워질 테니까"
+    },
+    {
+      "startMs": 36960,
+      "endMs": 38930,
+      "translation": "그게 현실이야, 우린 땅 위에 있어"
+    },
+    {
+      "startMs": 38930,
+      "endMs": 41540,
+      "translation": "그러니 난 네가 믿을 수 있는 사람이 될게"
+    },
+    {
+      "startMs": 41540,
+      "endMs": 46120,
+      "translation": "아직 살아 있을 때 널 식지 않게 지켜 줄게, 전부 폐허가 돼도 실망시키지 않을게"
+    },
+    {
+      "startMs": 46120,
+      "endMs": 53570,
+      "translation": "네가 내게 보여 준 바로 그 방식으로, 보여 준 대로"
+    },
+    {
+      "startMs": 53570,
+      "endMs": 59580,
+      "translation": "넌 내게 사랑을 보여 줬어"
+    },
+    {
+      "startMs": 59580,
+      "endMs": 62500,
+      "translation": "하늘에서 내린 영광"
+    },
+    {
+      "startMs": 62500,
+      "endMs": 68340,
+      "translation": "잘 들어 줘, 내 사랑"
+    },
+    {
+      "startMs": 68340,
+      "endMs": 72900,
+      "translation": "여기서부턴 다 내리막이야"
+    },
+    {
+      "startMs": 72900,
+      "endMs": 75570,
+      "translation": "허리케인이 지나간 자리"
+    },
+    {
+      "startMs": 75570,
+      "endMs": 77760,
+      "translation": "여름 그늘처럼 짙게 그을린 피부"
+    },
+    {
+      "startMs": 77760,
+      "endMs": 79670,
+      "translation": "홍수선 속으로 곤두박질치는 다이빙"
+    },
+    {
+      "startMs": 79670,
+      "endMs": 82170,
+      "translation": "우유 상자로 쌓은 높은 탑"
+    },
+    {
+      "startMs": 82170,
+      "endMs": 86330,
+      "translation": "네가 내게 보여 준 그 방식 그대로야"
+    },
+    {
+      "startMs": 86330,
+      "endMs": 88800,
+      "translation": "베란다에서 몸을 둥글게 말고 뛰어내리고"
+    },
+    {
+      "startMs": 88800,
+      "endMs": 91030,
+      "translation": "큰 애들은 지붕에서 해 보려 하고"
+    },
+    {
+      "startMs": 91030,
+      "endMs": 95400,
+      "translation": "네가 내게 보여 준 바로 그 방식 그대로야 (보여 줬지)"
+    },
+    {
+      "startMs": 95400,
+      "endMs": 97820,
+      "translation": "죽었다가 다시 살아날 수 있다면"
+    },
+    {
+      "startMs": 97820,
+      "endMs": 100130,
+      "translation": "수영장에서 숨 쉬러 물 위로 올라오듯"
+    },
+    {
+      "startMs": 100130,
+      "endMs": 102340,
+      "translation": "마른 땅 위에 무릎을 꿇고"
+    },
+    {
+      "startMs": 102340,
+      "endMs": 104640,
+      "translation": "널 낳아 준 땅에 입을 맞출 거야"
+    },
+    {
+      "startMs": 104640,
+      "endMs": 106610,
+      "translation": "살아남으라고 도구를 쥐여 준 땅에"
+    },
+    {
+      "startMs": 106610,
+      "endMs": 109160,
+      "translation": "해가 망가질 때도 빠져나오라고 말이야"
+    },
+    {
+      "startMs": 109160,
+      "endMs": 116580,
+      "translation": "그게 네가 내게 보여 준 방식이야, 보여 준 대로"
+    },
+    {
+      "startMs": 116580,
+      "endMs": 122660,
+      "translation": "넌 내게 사랑을 보여 줬어"
+    },
+    {
+      "startMs": 122660,
+      "endMs": 125690,
+      "translation": "하늘에서 내린 영광"
+    },
+    {
+      "startMs": 125690,
+      "endMs": 131270,
+      "translation": "잘 들어 줘, 내 사랑"
+    },
+    {
+      "startMs": 131270,
+      "endMs": 136450,
+      "translation": "여기서부턴 다 내리막이야"
+    },
+    {
+      "startMs": 136450,
+      "endMs": 138880,
+      "translation": "삶을 기억해"
+    },
+    {
+      "startMs": 138880,
+      "endMs": 140940,
+      "translation": "그때가 어땠는지 기억해"
+    },
+    {
+      "startMs": 140940,
+      "endMs": 145420,
+      "translation": "나무에 오르고, 마이클 잭슨, 다 여기서 끝나"
+    },
+    {
+      "startMs": 145420,
+      "endMs": 149920,
+      "translation": "매튜에게, 슈브에게 안부 전해 줘"
+    },
+    {
+      "startMs": 149920,
+      "endMs": 152190,
+      "translation": "대니에게도 안부 전해 줘"
+    },
+    {
+      "startMs": 152190,
+      "endMs": 156670,
+      "translation": "삶에게, 불멸에게 안부 전해 줘"
+    },
+    {
+      "startMs": 156670,
+      "endMs": 157840,
+      "translation": "나이키를 구겨 신고"
+    },
+    {
+      "startMs": 157840,
+      "endMs": 161060,
+      "translation": "멜포메네를 뛰쳐나와 니코틴을 찾아"
+    },
+    {
+      "startMs": 161060,
+      "endMs": 163450,
+      "translation": "할머니의 담배를 몰래 훔쳐 (천천히 해)"
+    },
+    {
+      "startMs": 163450,
+      "endMs": 165640,
+      "translation": "뭐 달콤한 것 좀 줘"
+    },
+    {
+      "startMs": 165640,
+      "endMs": 170100,
+      "translation": "썅, 나 불멸이 마음에 들지도 몰라"
+    },
+    {
+      "startMs": 170100,
+      "endMs": 185000,
+      "translation": "이게 삶이야, 삶, 불멸"
+    }
   ]
 }

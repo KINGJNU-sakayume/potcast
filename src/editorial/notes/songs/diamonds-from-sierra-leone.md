@@ -31,7 +31,7 @@ translation:
       target: "다이아몬드는 영원해"
       note: "셜리 배시 샘플의 구절. 리믹스와 같은 번역을 썼다."
     - source: "international asshole"
-      target: "국제적인 밉상"
+      target: "국제적인 개새끼"
       note: "시상식에서 소란을 피운 자신을 스스로 놀리는 말이다."
     - source: "my plastic / my plaques"
       target: "내 음반 인증 패"
@@ -62,4 +62,4 @@ translation:
 
 ## 번역에 대하여
 
-업계와 대중을 향해 자기 가치를 주장하는 랩이라 **해체**로 옮겼다. 셜리 배시 샘플과 후렴은 리믹스와 같은 번역을 써서 두 판본을 비교할 때 벌스의 차이만 드러나도록 했다. *international asshole*처럼 스스로를 놀리는 말은 원문의 과장된 자조가 살도록 '국제적인 밉상'으로 옮겼고, 스트리퍼와 친구를 비하하는 농담은 원문의 수위를 넘지 않게 옮겼다. 'Kane'이 잘못 새겨진 물건은 LRCLIB의 *plastic*보다 AZLyrics와 LyricsMode가 같이 적는 *plaques*가 문맥에 맞아 '인증 패'로 고쳤고, *Alicia Keys*가 달래려던 대상이 LRCLIB에는 복수(them), AZLyrics에는 단수(him)로 달리 적혀 있어 LRCLIB 쪽을 따랐다.
+업계와 대중을 향해 자기 가치를 주장하는 랩이라 **해체**로 옮겼다. 셜리 배시 샘플과 후렴은 리믹스와 같은 번역을 써서 두 판본을 비교할 때 벌스의 차이만 드러나도록 했다. *international asshole*처럼 스스로를 놀리는 말은 원문의 과장된 자조가 살도록 '국제적인 개새끼'로 옮겼고, 욕설과 성적 표현은 원문 수위대로 옮겼다. 'Kane'이 잘못 새겨진 물건은 LRCLIB의 *plastic*보다 AZLyrics와 LyricsMode가 같이 적는 *plaques*가 문맥에 맞아 '인증 패'로 고쳤고, *Alicia Keys*가 달래려던 대상이 LRCLIB에는 복수(them), AZLyrics에는 단수(him)로 달리 적혀 있어 LRCLIB 쪽을 따랐다.
