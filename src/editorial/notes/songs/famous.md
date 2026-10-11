@@ -11,6 +11,7 @@ sources:
   - https://coogradio.com/2016/02/track-by-track-album-review-the-life-of-pablo-by-kanye-west/
   - https://open.spotify.com/track/19a3JfW8BQwqHWUMbcqSx8
   - https://lrclib.net/api/get/766186
+  - https://www.songfacts.com/facts/sister-nancy/bam-bam
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,7 +34,11 @@ translation:
     - source: "Bam Bam"
       target: "밤 밤"
       note: "뜻을 임의로 확정하지 않고 샘플의 리듬 음절로 옮긴다."
+    - source: "bam bam"
+      target: "총소리"
+      note: "샘플 원곡의 후렴 소리로, 총소리를 가리킨다는 풀이가 있다(Songfacts, 출처 1건). 번역은 소리 그대로 둔다."
   written: 2026-10-04
+  updated: 2026-10-11
 ---
 
 리애나의 첫 목소리는 자신을 사랑하기 어려울 수 있다는 조심스러운 문장으로 시작한다. 비트가 들어온 뒤 웨스트의 랩은 같은 공간을 유명세와 성적 과시의 무대로 바꾼다. 중반 이후에는 시스터 낸시의 반복과 청중에게 하는 외침이 길게 이어지고, 마지막에 니나 시몬의 목소리가 처음의 선율을 다시 가져온다. 앞뒤가 같은 정서로 둘러싸여 있어도 가운데의 랩은 그 정서를 쉽게 공유하지 않는다.

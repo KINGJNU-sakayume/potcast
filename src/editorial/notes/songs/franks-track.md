@@ -10,6 +10,7 @@ sources:
   - https://pitchfork.com/reviews/albums/21542-the-life-of-pablo/
   - https://open.spotify.com/track/20r94xA0bsYNLtYSiOE6r3
   - https://lrclib.net/api/get/570462
+  - https://www.azlyrics.com/lyrics/kanyewest/wolves.html
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -29,7 +30,11 @@ translation:
     - source: "fleshed out"
       target: "형태를 갖춰"
       note: "불명확한 혼합의 문장과 연결되므로 구체적인 사건 설명을 보태지 않는다."
+    - source: "mixed"
+      target: "섞인"
+      note: "AZLyrics는 이 대목을 화자가 섞인 상태라는 뜻으로 적는다(출처 1건). 번역은 선택한 LRCLIB 표기를 따랐다."
   written: 2026-10-04
+  updated: 2026-10-11
 ---
 
 짧은 반주 위에서 프랭크 오션의 목소리가 긴 선율의 조각들을 이어 간다. 완결된 절과 후렴을 만들기보다 타 버림과 무너짐, 빛과 서늘함의 이미지가 차례로 놓인다. 마지막에 삶의 소중함을 말하고 알게 되었다는 반복으로 끝나도 목소리는 거대한 결론을 만들지 않는다. 앞 곡의 긴 랩에서 벗어난 청자는 짧은 말과 잔향에 더 가까이 남는다.

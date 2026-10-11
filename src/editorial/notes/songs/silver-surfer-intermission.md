@@ -11,6 +11,8 @@ sources:
   - https://coogradio.com/2016/02/track-by-track-album-review-the-life-of-pablo-by-kanye-west/
   - https://open.spotify.com/track/1ZnA4VYOlYIShuGt60LmCs
   - https://lrclib.net/api/get/580474
+  - https://www.nme.com/blogs/nme-blogs/review-of-five-extra-tracks-on-life-of-pablo-11078
+  - https://en.wikipedia.org/wiki/Max_B
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -35,8 +37,12 @@ translation:
       note: "이 문맥에서는 계속 자기 방식과 파도의 감각을 유지하라는 응원이다."
     - source: "Silver Surfer"
       target: "실버 서퍼"
-      note: "마블 캐릭터의 이름을 통해 파도를 타는 이미지를 반복한다."
+      note: "마블 캐릭터의 이름이면서 맥스 비의 믹스테이프 Public Domain 2: Rise of the Silver Surfer의 제목에서 온 그의 별칭이다(NME, Wikipedia). 파도를 타는 이미지도 반복한다."
+    - source: "the wave"
+      target: "파도"
+      note: "맥스 비가 웨스트의 '파도' 사용을 문제 삼지 않는다고 밝히는 통화로 풀이된다(NME 트랙 해설)."
   written: 2026-10-04
+  updated: 2026-10-11
 ---
 
 긴 노래 뒤에 전화 통화의 목소리가 들어온다. 안부를 묻는 짧은 말이 되풀이되고, 중간에 멈추거나 같은 단어를 다시 찾는 호흡이 그대로 남는다. 맥스 비는 웨스트에게 파도를 타라고 말하고 큰 쓰나미를 만들자고 덧붙인다. 후반에는 실버 서퍼라는 이름과 인사가 다시 반복된다. 일정한 비트나 선율이 없어도 반복되는 호칭과 말의 길이가 짧은 트랙의 리듬을 만든다.
