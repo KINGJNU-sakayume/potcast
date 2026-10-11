@@ -11,9 +11,19 @@ sources:
   - https://www.nme.com/reviews/tyler-the-creator-igor-album-review-2490085
   - https://www.grammy.com/news/igor-tyler-creator-bet-revolutionary-concept-and-won/
   - https://www.grammy.com/news/tyler-creator-wins-best-rap-album-igor-2020-grammys/
+  - https://www.complex.com/music/a/eric-skelton/tyler-the-creator-igor-biggest-takeaways-first-listen
+  - https://hollywoodlife.com/2019/05/17/tyler-the-creator-igor-new-album-reaction/
+  - https://www.complex.com/music/2019/07/tyler-the-creator-zane-lowe-interview
+  - https://www.complex.com/music/a/cmplxjoshua-espinoza/tyler-the-creator-beats-1-igor-interview
+  - https://thefader.com/2019/07/18/tyler-the-creator-igor-odd-future-interview-apple-music
+  - https://www.thefader.com/2019/05/28/tyler-the-creator-igor-album-credits-features
+  - https://thefader.com/2019/05/27/tyler-the-creator-scores-first-no1-with-igor
+  - https://www.grammy.com/news/tyler-creator-gives-fiery-performance-new-magic-wand-2020-grammys/
+  - https://www.complex.com/music/a/tracewilliamcowen/tyler-the-creator-2020-grammys-performance-boyz-ii-men-charlie-wilson
+  - https://www.complex.com/music/2020/01/tyler-the-creator-on-igor-winning-rap-grammy
 short: >
   사랑에 빠지고, 매달리고, 놓아 주기까지를 열두 곡 한 줄로 이어 붙인 앨범. 랩 앨범이라기보다 한 인물의 연애 서사에 가깝고, 화려한 코드와 뭉개진 목소리가 맞부딪치는 자리에서 감정이 정리되지 않은 채 남는다.
-updated: 2026-10-04
+updated: 2026-10-11
 tracks:
   - igors-theme
   - earfquake
@@ -50,6 +60,22 @@ tracks:
 ## 가사와 주제
 
 『IGOR』의 화자는 자기가 상처받았다는 사실보다 자기가 어떤 방식으로 매달리는가를 드러낸다. 가사는 사랑의 숭고함을 말하는 대신 소유욕과 질투, 자기기만을 반복해서 보여 주고, 앨범 제목이 된 인물 '이고르'는 그 모든 나쁜 선택을 맡은 얼굴이다. 타일러는 자신의 감정을 직접 쓰는 대신 가면을 써서 더 정직해진다.
+
+## 만들기와 발매
+
+타일러는 2019년 7월 애플 뮤직의 제인 로우(Zane Lowe) 인터뷰에서 이 앨범으로 노린 소리가 1980년대 팝이었다고 말했다. 예전에는 좋아하지 않던 시대의 음악이 찾아 들을수록 가장 좋아하는 쪽이 되어 간다고도 했다. 같은 해 『The Fader』 인터뷰에서는 데뷔 때부터 지루할 만큼 예쁜 음악과 가장 거친 음악을 둘 다 만들고 싶었고, 그 둘을 섞으려 해 왔다고 말했다. 노래에서 고함을 멈춰야 한다는 걸 스물네 살이 되어서야 알았다는 말도 했다. 『IGOR』의 달콤한 코드와 갈라지는 목소리는 그 오랜 시도가 한 장에 모인 결과로 들린다.
+
+앨범 뒷면에는 모든 곡을 타일러 오콘마(Tyler Okonma, 타일러의 본명)가 쓰고 프로듀싱하고 편곡했다고 적혀 있다. 열두 곡, 39분이다. 발매 때 곡 목록에는 피처링이 적혀 있지 않았고, 참여자는 뒤에 크레디트로 알려졌다. 플레이보이 카티, 솔랑주, 산티골드, 칸예 웨스트, 퍼렐 윌리엄스, 릴 우지 버트, 슬로타이, 찰리 윌슨, 코미디언 제러드 카마이클 같은 목소리가 들어 있지만, 듣는 사람은 그 목소리를 이름이 아니라 소리로 먼저 만난다. 잭 화이트(Jack White)는 'ARE WE STILL FRIENDS?'에서 기타를 쳤는데, 타일러는 제인 로우 인터뷰에서 그가 자기 소리를 찾아 들을 수 없다며 크레디트를 사양했다고 말했다.
+
+발매 직전 타일러는 듣는 법을 따로 적어 올렸다. 랩 앨범을 기대하지 말고, 어떤 앨범도 기대하지 말고 그냥 뛰어들라고 했다. 첫 감상은 건너뛰지 말고 처음부터 끝까지, 휴대폰도 텔레비전도 대화도 없이, 소리를 크게 해서 들으라고 했다. 앨범이 처음부터 이어 듣도록 짜였다는 것을 만든 사람이 직접 밝혀 둔 셈이다. 홍보 기간도 짧았다. 앨범은 발표 열흘 만에 선공개 싱글 없이 나왔고, 타일러는 몇 달씩 바람을 잡는 방식을 싫어한다며 준비가 되면 그냥 내면 된다고 말했다.
+
+## 반응과 그래미
+
+『IGOR』는 빌보드 200 1위로 데뷔했다. 앨범 환산 16만 5천 장이었고 그중 7만 4천 장이 실물·다운로드 판매였다. 같은 날 나온 디제이 칼리드의 『Father of Asahd』가 13만 6천 장으로 2위였는데, 순위를 가른 것은 스트리밍이 아니라 판매량이었다. 『Flower Boy』가 2위로 데뷔한 지 2년 만의 첫 1위였고, 타일러는 제인 로우에게 스스로가 무척 자랑스럽다고 말했다.
+
+2020년 1월 그래미에서 타일러는 'EARFQUAKE'와 'NEW MAGIC WAND'를 이어 불렀다. 찰리 윌슨과 보이즈 투 멘이 함께 무대에 섰고, 타일러는 분홍 두 톤 슈트와 금발 가발 차림이었다. 같은 차림의 무용수 여럿이 함께 움직였고, 작은 마을처럼 꾸민 무대에 불이 붙은 뒤 타일러는 뒤로 쓰러지며 사라졌다. 그날 『IGOR』는 베스트 랩 앨범을 받았고, 타일러의 첫 그래미였다.
+
+수상 뒤 타일러는 마음이 반반이라고 말했다. 이런 세계에서 자기 작품이 인정받은 것은 고맙지만, 자기처럼 생긴 사람이 장르를 넘나드는 음악을 만들면 늘 랩이나 '어번' 부문에 넣는다고 했다. '어번'이라는 말은 흑인을 가리키는 멸칭을 점잖게 돌려 말한 것으로 들린다고 했고, 왜 팝 부문에 들어갈 수 없느냐고 물었다. 랩 부문 후보 지명이 절반쯤은 칭찬을 가장한 깎아내림처럼 느껴졌다고도 했다. 랩보다 노래가 앞에 선 이 앨범이 랩 부문 상을 받았다는 사실 자체가, 앨범이 장르의 칸에 얼마나 잘 맞지 않는지를 보여 준다.
 
 ## 디스코그래피 속에서
 
