@@ -79,6 +79,12 @@ describe('the note quality floor', () => {
     expect(auditSong(song({ lyricsLanguage: undefined })).problems.join('\n')).toMatch(/translate-lyrics/);
   });
 
+  it('requires an explicit provider choice for untranslated foreign notes and keeps the prose floor', () => {
+    expect(auditSong(song({ lyricsLanguage: 'en' })).problems.join('\n')).toMatch(/translationMode: provider/);
+    expect(auditSong(song({ lyricsLanguage: 'en', translationMode: 'provider' })).problems).toEqual([]);
+    expect(auditSong(song({ lyricsLanguage: 'en', translationMode: 'provider', full: '짧다.' })).problems.join('\n')).toMatch(/600\+/);
+  });
+
   it('fails Wikipedia-only sources', () => {
     const problems = auditSong(song({ sources: ['https://en.wikipedia.org/wiki/A', 'https://en.wikipedia.org/wiki/B'] })).problems;
     expect(problems.join('\n')).toMatch(/beyond Wikipedia/);

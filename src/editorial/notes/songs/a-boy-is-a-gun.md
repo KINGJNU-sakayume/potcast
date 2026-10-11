@@ -4,13 +4,25 @@ titles: [A BOY IS A GUN*, A BOY IS A GUN]
 written: 2026-10-03
 short: >
   달콤하게 흐르는 샘플 위에서 제목의 비유가 얼마나 위험한지 들어 보자. 솔랑주의 코러스가 곡의 온도를 어떻게 바꾸는지가 포인트다.
-updated: 2026-10-04
+updated: 2026-10-11
 sources:
   - https://en.wikipedia.org/wiki/Igor_(album)
   - https://www.thefader.com/2019/05/28/tyler-the-creator-igor-album-credits-features
   - https://en.wikipedia.org/wiki/A_Boy_Is_a_Gun
   - https://www.rollingstone.com/music/music-album-reviews/tyler-the-creator-igor-review-837811/
   - https://hypebeast.com/2019/9/samples-tyler-the-creators-igor-album-information
+  - https://www.stereogum.com/1665288/hear-hudson-mohawke-reveal-the-original-version-of-kanyes-bound-feat-tyler-the-creator/video/
+  - https://www.discogs.com/release/2326960-Ponderosa-Twins-One-Bound
+  - https://www.discogs.com/release/14210644-TylerCreator-Igor
+  - https://www.grammy.com/news/igor-tyler-creator-bet-revolutionary-concept-and-won/
+  - https://www.complex.com/music/a/cmplxjoshua-espinoza/tyler-the-creator-favorite-igor-moments
+  - https://www.nme.com/reviews/tyler-the-creator-igor-album-review-2490085
+  - https://www.thefader.com/2019/09/16/tyler-the-creator-a-boy-is-a-gun-video
+  - https://harvardfilmarchive.org/calendar/a-girl-is-a-gun-2006-05
+  - https://www.thefader.com/2019/05/13/tyler-the-creator-teaser-a-boy-is-a-gun
+  - https://www.wbgo.org/2019-09-16/tyler-the-creator-peels-back-his-layers-with-a-boy-is-a-gun-video
+  - https://www.jambase.com/show/tyler-the-creator-americanairlines-arena-20190929
+  - https://lrclib.net/api/get/29378104
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,6 +46,16 @@ Ponderosa Twins Plus One의 'Bound'는 이 곡에서 중요한 재료다. The FA
 화자는 상대를 총에 비유하며 가까이하고 싶은 마음과 자신을 해칠 것이라는 두려움을 함께 말한다. 어느 한쪽이 늘 가해자이고 다른 쪽은 순수한 피해자라는 결론을 내리지는 않는다. 상대에게 선택을 요구하고 밀어내는 화자의 태도에도 지배의 욕망이 남아 있다. 번역에서는 장난처럼 들리는 말과 실제 경고가 같은 문장 안에 있다는 긴장을 유지한다.
 
 앞의 'NEW MAGIC WAND'가 제삼자를 지우려 했다면, 이 곡에서는 위험이 사랑하는 사람 자신에게 옮겨 온다. 다음 'PUPPET'은 그 위험을 알아도 상대에게 움직이는 화자를 보여 준다. 달콤한 샘플이 관계의 안정성을 뜻하지 않는다는 점을 기억하면, 세 곡이 질투와 경계와 종속으로 이어지는 흐름이 더 선명해진다.
+
+## 만든 이야기
+
+곡 전체에 깔린 소울 보컬은 폰데로사 트윈스 플러스 원(Ponderosa Twins Plus One)의 1971년 곡 'Bound'에서 왔다. 『IGOR』 LP 크레디트의 작곡자 칸에는 타일러 옆에 원곡을 쓴 바비 매시(Bobby Massey)와 로버트 듀크스(Robert Dukes), 그리고 레스터 매켄지(Lester McKenzie)가 올라 있다. 같은 곡은 카니예 웨스트(Kanye West)가 2013년 『Yeezus』의 마지막 곡 'Bound 2'에 쓴 재료이기도 하다. 타일러는 그 곡의 출발점에도 있었다. 2014년 2월 허드슨 모호크(Hudson Mohawke)가 DJ 세트에서 'Bound 2'의 초기 판본을 틀자, 타일러는 트위터에 그 판본의 드럼과 브리지, 코드가 자기 것이라고 썼다. 다섯 해 뒤 그는 같은 샘플로 자기 곡을 만들었다.
+
+LP 크레디트에서 솔랑주(Solange)는 백킹 보컬로, 케빈 켄드릭(Kevin Kendrick)은 추가 건반으로 올라 있다. 타일러는 2019년 7월 트위터에 앨범에서 좋아하는 순간을 곡마다 꼽으며 이 곡에서는 솔랑주의 목소리를 골랐다. NME의 앨범 리뷰는 같은 해 나온 솔랑주의 『When I Get Home』에 타일러가 추가 보컬과 공동 프로듀싱으로 참여했다고 적는다.
+
+타일러는 2019년 5월 애플 뮤직 공연에서 이 곡이 1971년 프랑스 영화 『A Girl Is a Gun』에서 영감을 받았다고 말했다. 뤽 물레(Luc Moullet)의 서부극 『Une aventure de Billy le Kid』의 영어판 제목이다. 발매 나흘 전 공개된 티저에서 타일러는 하늘로 이어진 사다리를 오르다 뒤로 떨어진다. 9월 16일에는 그가 울프 헤일리(Wolf Haley)라는 이름으로 직접 연출한 뮤직비디오가 나왔다. 금발 가발을 쓴 이고르가 넓은 저택에서 무심한 상대 곁을 맴돌다 옷을 집어 던지고 잔디밭을 내달리며 무너지고, 끝내 상대는 운전기사가 모는 차를 타고 떠난다.
+
+같은 해 9월 29일 마이애미의 『IGOR』 투어 공연에서는 세 번째 곡이었다. 원곡 'Bound'는 사랑에 빠질 수밖에 없다고 노래한다. 그 목소리가 여기서는 상대를 총에 빗대는 화자 아래에서 계속 돌아와, 끌림을 피할 수 없다는 말과 위험하다는 경고가 한 곡 안에서 맞물린다.
 
 ## 번역에 대하여
 

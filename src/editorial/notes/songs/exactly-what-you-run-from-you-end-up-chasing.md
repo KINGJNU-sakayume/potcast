@@ -2,12 +2,15 @@
 artist: tyler
 titles: [EXACTLY WHAT YOU RUN FROM YOU END UP CHASING]
 written: 2026-10-03
-updated: 2026-10-04
+updated: 2026-10-11
 sources:
   - https://en.wikipedia.org/wiki/Igor_(album)
   - https://www.thefader.com/2019/05/28/tyler-the-creator-igor-album-credits-features
   - https://www.rollingstone.com/music/music-album-reviews/tyler-the-creator-igor-review-837811/
   - https://hypebeast.com/2019/9/samples-tyler-the-creators-igor-album-information
+  - https://www.nme.com/blogs/nme-blogs/hidden-symbols-tyler-creators-igor-2492005
+  - https://www.discogs.com/release/14210644
+  - https://www.thefader.com/2018/01/22/jerrod-carmichael-interview-tyler-the-creator-flower-boy-a-conversation
 short: >
   짧은 발화 뒤의 빈틈을 지나 ‘RUNNING OUT OF TIME’으로 이어 듣는다. 노래하던 목소리와 다른 말의 질감이 들뜬 고백을 잠시 멈추게 한다.
 translation:
@@ -33,6 +36,12 @@ The FADER의 앨범 크레디트 자료가 확인하는 Jerrod Carmichael의 참
 도망치던 대상을 결국 쫓는다는 말은 특정 상대를 명시하지 않는다. 청자는 사랑에서 벗어나려는 사람일 수도 있고, 자신에게 불편한 감정을 피하려는 사람일 수도 있다. 이고르에게 직접 판결을 내리는 조언으로 확정하기보다, 이후의 행동을 다시 살피게 하는 말로 읽었다. 가까운 해체를 쓰되 누가 누구에게 실제 대화를 나누는지까지 꾸며 넣지는 않는다.
 
 'I THINK'의 들뜸 뒤에 이 말을 두고 'RUNNING OUT OF TIME'으로 넘어가면, 확신을 얻기 전에 시간이 부족해지는 화자의 조급함이 다르게 들린다. 앞에서는 사랑을 인정하는 목소리가 커졌지만, 이 조언은 인정만으로 관계가 안정되지는 않는다는 틈을 만든다. 반복되는 것은 문장 자체보다 피하려 하면서 더 매달리는 태도다. 짧은 길이는 그 모순에 결론을 내리지 않은 채 다음 노래를 시작하게 한다.
+
+## 만든 이야기
+
+14초 동안 말하는 목소리는 코미디언 제로드 카마이클(Jerrod Carmichael)이다. 스트리밍판에서는 따로 떨어진 4번 트랙이지만, CD와 LP에서는 독립 트랙이 아니라 'BOYFRIEND'의 끝에 붙어 있다. LP 크레디트에서 카마이클은 이 자리를 시작으로 'NEW MAGIC WAND', 'PUPPET', 'WHAT'S GOOD', 'GONE, GONE / THANK YOU'에도 추가 보컬로 이름을 올린다. NME의 엘 헌트(El Hunt)는 앨범 곳곳의 카마이클의 짧은 말이 해설자의 방백처럼 타일러, 곧 이고르의 마음 상태를 정리해 준다고 썼고, 이 트랙이 그 첫 자리다.
+
+두 사람의 협업은 『IGOR』 이전에 시작됐다. 2018년 1월 22일 타일러는 『Flower Boy』의 제작을 한 시간 동안 이야기하는 영상 'FLOWER BOY: a conversation'을 공개했는데, 질문하는 사람이 카마이클이었고 연출은 타일러가 울프 헤일리(Wolf Haley)라는 이름으로 맡았다. 전작을 두고 묻던 사람이 이번에는 이야기 바깥에서 말을 거는 목소리가 됐다. 그래서 이 14초는 노래하는 이고르가 아닌 사람이 처음 끼어드는 자리로 들어야 하고, 뒤의 곡에서 같은 목소리가 들릴 때마다 이 짧은 말이 기준이 된다.
 
 ## 번역에 대하여
 

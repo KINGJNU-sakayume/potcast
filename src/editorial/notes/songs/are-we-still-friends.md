@@ -2,12 +2,20 @@
 artist: tyler
 titles: [ARE WE STILL FRIENDS?]
 written: 2026-10-03
-updated: 2026-10-04
+updated: 2026-10-11
 sources:
   - https://en.wikipedia.org/wiki/Igor_(album)
   - https://www.thefader.com/2019/05/28/tyler-the-creator-igor-album-credits-features
   - https://www.rollingstone.com/music/music-album-reviews/tyler-the-creator-igor-review-837811/
   - https://hypebeast.com/2019/9/samples-tyler-the-creators-igor-album-information
+  - https://www.spinmagazine.com/2019/05/tyler-the-creators-igor-credits-solange-kanye-west-lil-uzi-vert/
+  - https://www.discogs.com/release/14215683-TylerCreator-Igor
+  - https://en.wikipedia.org/wiki/The_Belle_Album
+  - https://www.discogs.com/release/1431289-Al-Green-The-Belle-Album
+  - https://buriedgrooves.substack.com/p/the-belle-album-by-al-green
+  - https://www.grammy.com/news/igor-tyler-creator-bet-revolutionary-concept-and-won/
+  - https://www.jambase.com/show/tyler-the-creator-americanairlines-arena-20190929
+  - https://unewsonline.com/2019/10/tyler-the-creator-causes-an-earfquake-at-slu/
 short: >
   소울 샘플 위에서 조용한 질문이 거친 외침으로 바뀌는 과정을 듣는다. 반복되는 문장은 같아도 마지막까지 목소리의 불안은 남는다.
 translation:
@@ -33,6 +41,14 @@ The FADER의 크레디트는 Al Green의 샘플을, Rolling Stone의 리뷰는 �
 화자는 헤어진 상대와 친구로 남을 수 있는지 묻는다. 이것은 상대가 이미 친구가 되기로 합의했다는 선언이 아니다. 작별을 끝내지 못하는 사람이 관계를 다른 이름으로라도 남기려는 질문이다. 가까운 해체를 유지한 번역은 그 낮은 문턱을 살리지만, 부탁을 확정된 답처럼 바꾸지는 않는다. 같은 질문의 반복은 새로운 정보보다 대답을 기다리는 시간을 늘린다.
 
 앞의 'I DON’T LOVE YOU ANYMORE'가 이별을 선언했다면 마지막 곡은 그 선언으로 끝나지 않은 감정을 보여 준다. 여기서 다시 'IGOR’S THEME'으로 돌아가 들으면, 거친 저음은 새 인물의 자신감보다 같은 관계를 반복할 위험으로도 들린다. 순환은 확정된 줄거리의 결말이라기보다 끝에 답이 없기 때문에 가능한 청취다. 앨범은 주인공의 회복을 대신 선언하지 않고 질문을 청자에게 남긴다.
+
+## 만든 이야기
+
+타일러가 2019년 5월 28일 공개한 크레디트(SPIN 보도)에서 이 곡은 타일러가 프로듀싱했고, 배경 보컬은 퍼렐 윌리엄스(Pharrell Williams), 재료는 알 그린(Al Green)이 쓰고 부른 'Dream'의 발췌다. 앨범 바이닐의 곡별 크레디트(Discogs)도 이 곡의 참여자로 퍼렐 한 사람만 적는다. 그래미닷컴(GRAMMY.com)의 라브 아로라(Rav Arora)는 퍼렐을 타일러의 우상이자 『IGOR』의 게스트로 소개한다. 앨범을 닫는 곡에 그 우상의 목소리를 앞에 세우지 않고 뒤에서 받치는 자리에 둔 셈이다.
+
+'Dream'은 1977년 12월 하이 레코드(Hi Records)에서 나온 『The Belle Album』의 마지막 곡으로, 7분 반 안팎의 긴 곡이다. 이 앨범은 알 그린이 오랫동안 함께한 프로듀서 윌리 미첼(Willie Mitchell)과 갈라선 뒤 처음 낸 앨범이고, 원반 크레디트(Discogs)에는 알 그린이 프로듀서이자 편곡자, 보컬과 기타로, 프레드 조던(Fred Jordan)과 루벤 페어팩스 주니어(Reuben Fairfax, Jr.)가 공동 프로듀서로 적혀 있다. 버리드 그루브스(Buried Grooves)의 패트릭 킨슬리(Patrick Kinsley)는 'Dream'을 느리고 꾸준한 리듬과 흐릿한 신시사이저 위에서 울부짖는 절정까지 쌓아 가는 곡으로 묘사한다. 소울 가수가 자기 손으로 꾸린 앨범의 마지막 곡을, 모든 곡을 직접 프로듀싱한 타일러가 자기 앨범의 마지막 곡 재료로 가져온 것이다.
+
+공연에서도 이 곡은 끝자리를 지켰다. 2019년 9월 29일 마이애미 공연의 세트리스트(JamBase)와 10월 4일 세인트루이스 차이페츠 아레나(Chaifetz Arena) 공연 리뷰(UNEWS)는 둘 다 타일러가 『Flower Boy』의 'See You Again'을 부른 뒤 이 곡으로 공연을 마쳤다고 적는다. 세인트루이스 공연에서 타일러는 배경 영상이 깔린 무대 위 단에 서서 이 곡을 불렀다. 앨범에서 답 없이 끝나는 질문이 공연에서도 마지막 곡으로 남아, 관객은 대답을 듣지 못한 채 공연장을 나서게 된다.
 
 ## 번역에 대하여
 

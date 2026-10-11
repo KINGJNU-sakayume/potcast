@@ -6,7 +6,7 @@ import { readConfig } from '../app/config';
 import { createAppServices } from '../app/services';
 import { MOBILE_QUERY } from '../app/useIsMobile';
 import { DEFAULT_PREFERENCES, preferencesStore } from '../preferences/preferences';
-import { getEpisodeScript } from './episodes';
+import { episodeScripts, getEpisodeScript } from './episodes';
 import { NARRATION_ENGINE, RECORDED_VOICES, type NarrationManifest } from './narration/clip';
 import { narrationLibrary } from './narration/library';
 import { episodeClips, sampleClips } from './narration/plan';
@@ -47,7 +47,7 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     expect(await screen.findByRole('heading', { level: 2, name: 'Episode' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 1, name: 'IGOR' })).toBeInTheDocument();
     expect(within(now()).getByText('『IGOR』 같이 듣기', { selector: '.ep-title' })).toBeInTheDocument();
-    expect(screen.getByText(/13 chapters · about \d+ min/)).toBeInTheDocument();
+    expect(screen.getByText(/13 chapters · about \d+ (hr|min)/)).toBeInTheDocument();
     // jsdom has no speech synthesis: the page says so instead of going quiet.
     expect(screen.getByText('Captions only')).toBeInTheDocument();
     expect(within(now()).getByText(/두 사람이 『IGOR』 열두 곡을 순서대로 같이 듣는다/)).toBeInTheDocument();
@@ -100,9 +100,9 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     renderApp(`#/episode/${IGOR}`);
     const script = await openScript(user);
 
-    await user.click(within(script).getByRole('button', { name: /그 인물의 이름이 이고르예요/ }));
+    await user.click(within(script).getByRole('button', { name: /가면을 쓰고 오히려 더 정직해져요/ }));
     expect(within(script).getByRole('button', { current: true })).toHaveTextContent('해설');
-    expect(within(script).getByRole('button', { current: true })).toHaveTextContent('그 인물의 이름이 이고르예요.');
+    expect(within(script).getByRole('button', { current: true })).toHaveTextContent('그래서 타일러는 가면을 쓰고 오히려 더 정직해져요.');
 
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
     expect(screen.getByRole('heading', { level: 1, name: 'EARFQUAKE' })).toBeInTheDocument();
@@ -347,8 +347,10 @@ describe('an episode whose music the listener plays themselves', () => {
 describe('the archive', () => {
   it('counts the episodes and leads to an album\'s episode from its card', async () => {
     renderApp('#/archive?artist=tyler');
-    expect(await screen.findByText(/· 3 episodes ·/)).toBeInTheDocument();
+    // The footer counts whatever scripts exist, so adding an episode never needs this line touched.
+    expect(await screen.findByText(new RegExp(`· ${episodeScripts.length} episodes ·`))).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Listen to IGOR with the hosts' })).toHaveAttribute('href', `#/episode/${IGOR}`);
+    expect(screen.getByRole('link', { name: 'Listen to Flower Boy with the hosts' })).toHaveAttribute('href', '#/episode/2nkto6YNI4rUYTLqEwWJ3o');
   });
 });
 

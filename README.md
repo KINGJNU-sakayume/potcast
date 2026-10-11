@@ -172,6 +172,23 @@ Spotify's Web API has no lyrics, so both come from replaceable providers and nei
   Each line's language is detected separately, so only lines not already in the target language are translated.
   **Translation On / Off** sits in the lyrics header and in Settings.
 
+### Provider translations on archive notes
+
+A foreign-language listening note may explicitly leave lyric translation to the configured runtime provider:
+`lyricsLanguage: en` together with `translationMode: provider`. This keeps the complete listening note without
+storing a full lyric translation in the repository. The quality audit still requires the usual prose, listening
+cue and sources; English language metadata alone does not waive the translation requirement. Translation availability
+then depends on the configured browser or HTTP provider, just as it does for songs without curated translations.
+
+`Flower Boy` has an album review, all fourteen standard-edition listening notes and a two-host episode. Its English
+songs use this provider choice; `Enjoy Right Now, Today` is instrumental. Open the album in Archive and select
+*Listen with the hosts*, or use `#/episode/2nkto6YNI4rUYTLqEwWJ3o`. The offline preview includes its full sequence.
+
+Oasis's `Definitely Maybe` has an artist note, an album review, all eleven standard-edition listening notes and a
+two-host episode at `#/episode/0fLVm67GzAJpbqX8GUL7G6`. The preview uses the eleven-track remastered release;
+bonus tracks are excluded. English lyrics use the runtime translation provider. Short replays use LRCLIB's vocal
+timestamps, with record IDs and duration checks documented in the script; those timings have not been checked by ear.
+
 ### Curated translations
 
 Machine translation works line by line, so it cannot know who is speaking to whom, and the Korean speech level drifts

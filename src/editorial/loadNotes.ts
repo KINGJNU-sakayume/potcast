@@ -154,6 +154,11 @@ export function loadSongNotes(files: NoteFiles, translationFiles: TranslationFil
       fields.fail(`"lyricsLanguage" must be one of ${SONG_LYRICS_LANGUAGES.join(', ')}, got "${lyricsLanguage}".`);
     }
     if (lyricsLanguage !== undefined && block) fields.fail('"lyricsLanguage" is for songs without a translation; this one has a "translation" block.');
+    const translationMode = fields.optionalString('translationMode');
+    if (translationMode !== undefined) {
+      if (translationMode !== 'provider') fields.fail('"translationMode" must be provider.');
+      if (block || lyricsLanguage !== 'en') fields.fail('"translationMode: provider" requires foreign lyricsLanguage and no curated translation block.');
+    }
     return {
       key,
       artist: fields.string('artist'),
@@ -161,6 +166,7 @@ export function loadSongNotes(files: NoteFiles, translationFiles: TranslationFil
       titles: fields.list('titles'),
       ...(short ? { short } : {}),
       ...(lyricsLanguage ? { lyricsLanguage: lyricsLanguage as SongLyricsLanguage } : {}),
+      ...(translationMode ? { translationMode: 'provider' as const } : {}),
       full: listening || undefined,
       ...dates(fields, file),
       sources: fields.optionalList('sources'),

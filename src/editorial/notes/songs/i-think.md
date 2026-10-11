@@ -4,13 +4,22 @@ titles: [I THINK]
 written: 2026-10-03
 short: >
   사랑에 빠졌다고 스스로를 설득하는 화자의 들뜸을 따라가 보자. 솔랑주의 목소리가 그 들뜸에 어떤 빛을 더하는지에도 귀를 두면 좋다.
-updated: 2026-10-04
+updated: 2026-10-11
 sources:
   - https://en.wikipedia.org/wiki/Igor_(album)
   - https://www.thefader.com/2019/05/28/tyler-the-creator-igor-album-credits-features
   - https://hypebeast.com/2019/9/samples-tyler-the-creators-igor-album-information
   - https://en.wikipedia.org/wiki/I_Think
   - https://www.rollingstone.com/music/music-album-reviews/tyler-the-creator-igor-review-837811/
+  - https://www.thefader.com/2019/05/23/tyler-the-creator-earfquake-justin-bieber-rihanna
+  - https://www.complex.com/music/a/eric-skelton/tyler-live-performance-igor-everything-we-learned
+  - https://www.thefader.com/2019/07/18/tyler-the-creator-jack-white-billie-eilish-beats-1
+  - https://www.spinmagazine.com/2019/05/tyler-the-creators-igor-credits-solange-kanye-west-lil-uzi-vert/
+  - https://thenativemag.com/shuffle-bibi-mascel-special-lady/
+  - https://reverbmachine.com/blog/tyler-the-creator-i-think-synth-breakdown/
+  - https://music.mxdwn.com/2019/10/24/news/tyler-the-creator-release-short-video-for-i-think-featuring-igor-at-a-dance-party/
+  - https://www.highsnobiety.com/p/tyler-the-creator-i-think-video/
+  - https://www.complex.com/music/a/fnr-tigg/8-songs-from-tyler-the-creators-igor-have-entered-the-hot-100
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -34,6 +43,16 @@ Nkono Teles의 'Get Down'과 Bibi Mascel의 'Special Lady'에서 가져온 재�
 화자는 이미 마음이 기울었지만 고백의 방법과 상대의 답을 확신하지 못한다. 제목의 생각한다는 유보가 후렴의 들뜸을 조금씩 늦춘다. 사랑을 깨달은 순간을 확고한 선언으로 쓰지 않기 때문에, 상대에게 다가가고 싶은 마음과 스스로를 설득하는 마음이 겹친다. 번역 역시 이 망설임을 남겨 자신감 넘치는 고백으로 바꾸지 않는다.
 
 앞의 'EARFQUAKE'가 관계를 잃을까 두려워했다면 이 곡은 그 두려움의 시작을 더 밝은 표면으로 들려준다. 뒤의 짧은 인터루드는 곧바로 그 들뜸에 거리감을 만든다. 후반의 'A BOY IS A GUN*'과 'I DON’T LOVE YOU ANYMORE'에서 같은 참여 목소리가 돌아올 때, 이 곡의 화성적 밝음이 이후의 경계와 체념을 비교할 기준이 된다.
+
+## 만든 이야기
+
+타일러는 2019년 5월 22일 애플 뮤직으로 생중계된 『IGOR』 첫 라이브 공연에서 이 곡을 소개하며 나이지리아 음악 이야기부터 꺼냈다. 아버지가 나이지리아계이고 나이지리아 음악이 좋다고 말한 그는, 그 분위기 속에서 하루를 살아 보고 싶어 솔랑주(Solange), 프랭크 오션(Frank Ocean)과 함께 이탈리아 코모 호수(Lake Como)로 날아갔다고 했다. 그곳의 댄스 클럽에 가 보고 싶었지만 결국 가지 않았다고도 덧붙였다. 7월 Beats 1의 제인 로우(Zane Lowe) 인터뷰에서는 그곳에 빌라를 빌려 음악 작업을 했고 프랭크와 솔랑주가 각각 배를 타고 찾아왔다고 말했다.
+
+발매 뒤 타일러가 공개한 크레디트(Spin 게재)는 이 곡에 은코노 텔레스(Nkono Teles)의 'Get Down'과 비비 마셀(Bibi Mascel)의 'Special Lady'의 요소가 들어 있다고 적는다. 같은 크레디트에 보컬은 솔랑주, 배경 보컬은 라이언 비티(Ryan Beatty) 외 세 명, 키보드는 케빈 켄드릭스(Kevin Kendricks)로 올라 있다. 나이지리아 매체 The Native는 'Special Lady'를 1982년에 나온 디스코 곡으로 소개하며 타일러가 그 선율과 중심 문구를 가져왔다고 썼다. Reverb Machine은 드럼이 'Get Down'에서 네 박을 잘라 약 115bpm에서 약 121bpm으로 빠르게 돌린 것이라고 분석했고, 브리지를 재즈풍 화음 위의 긴 키보드 솔로로 정리했다.
+
+뮤직비디오는 2019년 10월 24일 나왔다. 타일러가 울프 헤일리(Wolf Haley)라는 이름으로 감독한 짧은 영상에서 이고르는 사람들이 주사위 게임을 하는 화장실에서 나와 붐비는 댄스 플로어를 헤매고, 마지막에 파티 손님들이 사진을 찍는 장면에는 켄들 제너(Kendall Jenner)가 나온다. 발매 직후 이 곡은 빌보드 핫 100에 51위로 들어와 『IGOR』 수록곡 가운데 'EARFQUAKE' 다음으로 높았다(Complex).
+
+이 곡의 들뜬 리듬은 나이지리아 파티 음악의 조각을 이탈리아 호숫가에서 다시 짠 것이다. 클럽에 가 보고 싶었지만 가지 않았다는 타일러의 말처럼, 'I THINK'는 춤추는 곳에 있는 곡이라기보다 춤을 상상하며 혼자 들뜨는 곡이다. 빨라진 드럼 루프가 끝까지 같은 속도로 몰아가는 동안 브리지의 키보드 솔로만 잠시 그 박에서 벗어나는데, 앞에서 쓴 들뜸과 망설임의 어긋남이 이 대비에서 가장 잘 들린다.
 
 ## 번역에 대하여
 

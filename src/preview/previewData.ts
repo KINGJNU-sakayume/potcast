@@ -46,6 +46,7 @@ interface AlbumDef {
   tracks?: TrackDef[];
 }
 
+const OASIS = '2DaxqgrOhkeH0fpeiQq2f4';
 const TYLER = '4V8LLVI7PbaPR0K2TGSxFF';
 const VAUNDY = '2IUl3m1H1EQ7QfNbNWvgru';
 const TRIPLES = '5Z71xE9prhpHrqL5thVMyK';
@@ -54,9 +55,13 @@ const COLDPLAY = '4gzpq5DPGxSnKTe4SA8HAU';
 const KANYE = '5K4W6rqBFWDnAN6FQUkS6x';
 const KING_CRIMSON = '7M1FPw29m5FbicYzS2xdpi';
 const TURTLES = '2VIoWte1HPDbZ2WqHd2La7';
+const RUN_DMC = '3CQIn7N5CuRDP8wEI7FiDA';
+const PONDEROSA_TWINS = '4U8RRuQqYoeXH2JuTr6QMM';
+const AL_GREEN = '3dkbV4qihUeMsqN4vBGg93';
 const ENSEMBLE = '0ArcPreviewEnsemble';
 
 export const PREVIEW_ARTISTS: ArtistDetail[] = [
+  { id: OASIS, name: 'Oasis' },
   { id: KENSHI, name: 'Kenshi Yonezu' },
   { id: TRIPLES, name: 'tripleS' },
   { id: COLDPLAY, name: 'Coldplay' },
@@ -65,6 +70,9 @@ export const PREVIEW_ARTISTS: ArtistDetail[] = [
   { id: KANYE, name: 'Kanye West' },
   { id: KING_CRIMSON, name: 'King Crimson' },
   { id: TURTLES, name: 'The Turtles' },
+  { id: RUN_DMC, name: 'Run–D.M.C.' },
+  { id: PONDEROSA_TWINS, name: 'The Ponderosa Twins Plus One' },
+  { id: AL_GREEN, name: 'Al Green' },
   { id: ENSEMBLE, name: 'ARC Preview Ensemble' },
 ].map((a) => ({ ...a, uri: `spotify:artist:${a.id}`, images: [], genres: [], followers: null }));
 
@@ -81,6 +89,58 @@ function tracks(key: string, list: Array<[string, number, LyricSet?]>, realIds: 
 }
 
 const ALBUMS: AlbumDef[] = [
+  {
+    id: '0fLVm67GzAJpbqX8GUL7G6',
+    name: 'Definitely Maybe (Remastered)',
+    artistIds: [OASIS],
+    albumType: 'album',
+    releaseDate: '1994-08-29',
+    precision: 'day',
+    totalTracks: 11,
+    label: 'Creation',
+    // Standard 11-song sequence; IDs and exact lengths verified against this album's Spotify embed.
+    tracks: [
+      { id: "5bKkB75XBjRsE6WgkjXwxK", name: "Rock 'n' Roll Star", durationMs: 322946, lyrics: 'en' },
+      { id: "4nhhpJ3Za9KgNmqhJWutYj", name: "Shakermaker", durationMs: 308280, lyrics: 'en' },
+      { id: "5mUxZTSwm1vT2YmKh1v1Ek", name: "Live Forever", durationMs: 276666, lyrics: 'en' },
+      { id: "6B33W818jEo9CKmPMZqSXJ", name: "Up In The Sky", durationMs: 268000, lyrics: 'en' },
+      { id: "0D8XAE0gD1jIavDsdpcO6G", name: "Columbia", durationMs: 377400, lyrics: 'en' },
+      { id: "78IaGqs7atMhpT0YGJLWrs", name: "Supersonic", durationMs: 283786, lyrics: 'en' },
+      { id: "5DA7BwoqgCo93ctkaYeNTt", name: "Bring It On Down", durationMs: 257813, lyrics: 'en' },
+      { id: "4VgR2Esit1thEijITQ7Pyp", name: "Cigarettes & Alcohol", durationMs: 289146, lyrics: 'en' },
+      { id: "2XyiVwXf6ywuiVqT7OH0Fa", name: "Digsy's Dinner", durationMs: 152266, lyrics: 'en' },
+      { id: "6mKbN5qaeM2tcG3LRdeNLQ", name: "Slide Away", durationMs: 392306, lyrics: 'en' },
+      { id: "1u22VgixAwwvFt0WFwkPwf", name: "Married With Children", durationMs: 195000, lyrics: 'en' },
+    ],
+  },
+
+  {
+    id: '2nkto6YNI4rUYTLqEwWJ3o',
+    name: 'Flower Boy',
+    artistIds: [TYLER],
+    albumType: 'album',
+    releaseDate: '2017-07-21',
+    precision: 'day',
+    totalTracks: 14,
+    label: 'Columbia',
+    // Track IDs and durations verified against the Spotify album embed.
+    tracks: [
+      { id: '33i3xxHB4YSYGYbtJrwwO8', name: "Foreword (feat. Rex Orange County)", durationMs: 194080, lyrics: 'en' },
+      { id: '6KuXb26rHuRy3ZDse1VRmx', name: "Where This Flower Blooms (feat. Frank Ocean)", durationMs: 194933, lyrics: 'en' },
+      { id: '4KgTrzmfiWNcVneh2Dd1Ou', name: "Sometimes...", durationMs: 36160, lyrics: 'en' },
+      { id: '7KA4W4McWYRpgf0fWsJZWB', name: "See You Again (feat. Kali Uchis)", durationMs: 180386, lyrics: 'en' },
+      { id: '21yRtB6B8EMounImAfHRCP', name: "Who Dat Boy (feat. A$AP Rocky)", durationMs: 205093, lyrics: 'en' },
+      { id: '5SxlUF7J8tyFIEF22EomeP', name: "Pothole (feat. Jaden Smith)", durationMs: 237000, lyrics: 'en' },
+      { id: '6ACiYjq5Q7e6BlhZEHz7cd', name: "Garden Shed (feat. Estelle)", durationMs: 223946, lyrics: 'en' },
+      { id: '5WNYg3usc6H8N3MBEp4zVk', name: "Boredom (feat. Rex Orange County & Anna of the North)", durationMs: 320720, lyrics: 'en' },
+      { id: '430qNtapCS3Ue1yoSql1oV', name: "I Ain't Got Time!", durationMs: 206266, lyrics: 'en' },
+      { id: '4bEcoz1OcfMgUbp2ft8ieQ', name: "911 / Mr. Lonely (feat. Frank Ocean & Steve Lacy)", durationMs: 255653, lyrics: 'en' },
+      { id: '39u2PsqrAZpZ0KPx6CjasV', name: "Droppin' Seeds (feat. Lil' Wayne)", durationMs: 60000, lyrics: 'en' },
+      { id: '4XDpeWqPADoWRKcUY3dC84', name: "November", durationMs: 225346, lyrics: 'en' },
+      { id: '0qtK3XwbuG153dmwB8iepL', name: "Glitter", durationMs: 224893, lyrics: 'en' },
+      { id: '3R1Vu4Ws7UitwDxDHTol0P', name: "Enjoy Right Now, Today", durationMs: 235400, lyrics: 'instrumental' },
+    ],
+  },
   {
     id: '052EiTRYh35MuDVJN9Emdh',
     name: 'STRAY SHEEP',
@@ -381,6 +441,34 @@ const ALBUMS: AlbumDef[] = [
     precision: 'year',
     totalTracks: null,
   },
+  // The records the IGOR episode steps out to, likewise.
+  {
+    id: '0PanG8trSzqFIX7pZmCVFG',
+    name: 'Raising Hell',
+    artistIds: [RUN_DMC],
+    albumType: 'album',
+    releaseDate: '1986-05-15',
+    precision: 'day',
+    totalTracks: null,
+  },
+  {
+    id: '1xdgLmTFMSyJyI5DJOOX7T',
+    name: '2+2+1 = (2023 Remastered Version)',
+    artistIds: [PONDEROSA_TWINS],
+    albumType: 'album',
+    releaseDate: '1971',
+    precision: 'year',
+    totalTracks: null,
+  },
+  {
+    id: '4oKs5WMY4xKsxFgdeY5bKw',
+    name: 'The Belle Album',
+    artistIds: [AL_GREEN],
+    albumType: 'album',
+    releaseDate: '1977',
+    precision: 'year',
+    totalTracks: null,
+  },
   {
     id: '0ArcTestPressing01',
     name: 'Test Pressing',
@@ -408,6 +496,9 @@ const LOOSE_TRACKS: Array<{ albumId: string; track: TrackDef }> = [
   { albumId: '6ArYgWdHk7mcG4knENgPN5', track: { id: '6QCPweR3aP6nj7P43WpiZs', name: 'Rising', durationMs: 160_000, lyrics: 'mixed' } },
   { albumId: '75ol9OP8bJaRqzGimpFHDm', track: { id: '2MfrET7Nc3StKQcGoZKqr9', name: '21st Century Schizoid Man', durationMs: 442_000, lyrics: 'en' } },
   { albumId: '155OAoTAYR4Uu0LpSMvy5W', track: { id: '7j1ABZOylWUPUIZTt5x6AL', name: 'You Showed Me', durationMs: 196_000, lyrics: 'en' } },
+  { albumId: '0PanG8trSzqFIX7pZmCVFG', track: { id: '0GqbUEtAVs0CKLEh1lsQ1S', name: 'Hit It Run', durationMs: 191_000, lyrics: 'en' } },
+  { albumId: '1xdgLmTFMSyJyI5DJOOX7T', track: { id: '7zye9v6B785eFWEFYs13C2', name: 'Bound - 2023 Remastered Version', durationMs: 191_000, lyrics: 'en' } },
+  { albumId: '4oKs5WMY4xKsxFgdeY5bKw', track: { id: '5X7DKwZ5e0JE3XoIakaT2Q', name: 'Dream', durationMs: 453_000, lyrics: 'en' } },
 ];
 
 const artistById = new Map(PREVIEW_ARTISTS.map((a) => [a.id, a]));
@@ -628,6 +719,9 @@ export const PREVIEW_PALETTES: Array<[albumId: string, palette: AlbumPalette]> =
   ['20r762YmB5HeofjMCiPMLv', palette('#b0302a', '#2a1a18', '#f0c9c4', '#f1dedb', '#1a1110')],
   ['75ol9OP8bJaRqzGimpFHDm', palette('#c0486a', '#2a2130', '#7fb4d6', '#efe1e4', '#1b141a')],
   ['155OAoTAYR4Uu0LpSMvy5W', palette('#c9a13a', '#2b2a22', '#3f6e63', '#f1ead3', '#17160f')],
+  ['0PanG8trSzqFIX7pZmCVFG', palette('#b3392f', '#1e1c1c', '#d8d2c4', '#eeeae2', '#121111')],
+  ['1xdgLmTFMSyJyI5DJOOX7T', palette('#a8693a', '#2a2219', '#e2c99a', '#f2e8d6', '#17120d')],
+  ['4oKs5WMY4xKsxFgdeY5bKw', palette('#5f7f9a', '#1f2328', '#d9c7a1', '#ecebe5', '#121518')],
   ['1FEdDqMaOL8oZYzI4n27GM', palette('#e76046', '#e1caa7', '#e9eff0', '#ece2d1', '#2a211d')],
   ['6ArYgWdHk7mcG4knENgPN5', palette('#4f6fb3', '#dfe4ef', '#e76046', '#e9edf5', '#1b2233')],
   ['052EiTRYh35MuDVJN9Emdh', palette('#3f6f8f', '#e5e1d6', '#c9a86a', '#ece9e1', '#16222b')],

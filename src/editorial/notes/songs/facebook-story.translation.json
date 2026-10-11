@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 415247, "durationMs": 69000 },
+  "segments": [
+    { "startMs": 550, "endMs": 3710, "translation": "방금 얘기하던 건데, 나 전에 사귄 애가 있었거든." },
+    { "startMs": 3710, "endMs": 8080, "translation": "그 애랑 3년을 같이 지냈어." },
+    { "startMs": 8080, "endMs": 12320, "translation": "바람을 피우거나 그런 것도 아니었고." },
+    { "startMs": 12320, "endMs": 19690, "translation": "그러다 페이스북이 나왔는데, 걔가 페이스북에서 자기 친구 요청을 수락해 달라는 거야." },
+    { "startMs": 19690, "endMs": 25330, "translation": "난 싫었어. 걔 바로 앞에 있는데 뭐 하러 그러겠어." },
+    { "startMs": 25330, "endMs": 28020, "translation": "그런데 걔가 \"페이스북에서 나 수락해 줘\" 하는 거야." },
+    { "startMs": 28020, "endMs": 30770, "translation": "그건 가상이잖아, 아무 의미도 없다고." },
+    { "startMs": 30770, "endMs": 35590, "translation": "그래서 말했지. \"나 네 앞에 있잖아, 페이스북에서 수락할 필요 없어.\"" },
+    { "startMs": 35590, "endMs": 37800, "translation": "걔가 미쳐 날뛰기 시작했어." },
+    { "startMs": 37800, "endMs": 44620, "translation": "내가 수락을 안 했다고, 걔는 내가 바람을 피운다고 생각한 거야." },
+    { "startMs": 44620, "endMs": 47720, "translation": "걔가 \"우리 끝이야\" 하더라." },
+    { "startMs": 47720, "endMs": 49200, "translation": "\"너를 못 믿겠어.\"" },
+    { "startMs": 49200, "endMs": 53690, "translation": "난 말했지. \"야, 너 제정신이 아니야.\" 왜냐면 말이야," },
+    { "startMs": 53690, "endMs": 58860, "translation": "난 네 앞에 있잖아, 매일, 여기 네 집에." },
+    { "startMs": 58860, "endMs": 65410, "translation": "그건 질투야. 아무것도 아닌 일에 순수한 질투." },
+    { "startMs": 65410, "endMs": 69000, "translation": "알잖아, 가상의 일일 뿐이라고." }
+  ]
+}
