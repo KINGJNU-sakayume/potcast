@@ -2,8 +2,6 @@
 artist: tyler
 trackIds: [7KA4W4McWYRpgf0fWsJZWB]
 titles: ["See You Again", "See You Again (feat. Kali Uchis)"]
-lyricsLanguage: en
-translationMode: provider
 written: 2026-10-11
 sources:
   - https://podscripts.co/podcasts/dissect/s4e4-see-you-again-by-tyler-the-creator
@@ -11,6 +9,29 @@ sources:
   - https://miccheque.com/2017/07/23/flower-boy-review/
 short: >
   타일러의 부드러운 노래와 칼리 우치스의 후렴을 먼저 구별하고, 랩과 리듬이 들어왔을 때 같은 갈망의 속도가 어떻게 달라지는지 들어 보라.
+translation:
+  sourceLanguage: en
+  targetLanguage: ko
+  register: haeche
+  speaker: 꿈과 공상 속에서 상대를 그리워하는 타일러
+  addressee: 꿈속에만 존재하는 상대("you")
+  relationship: 현실에서는 만난 적 없는, 상상 속에서만 이어진 짝사랑의 관계
+  situation: 잠들기 전 양을 세며 꿈속의 상대를 만나고, 깨어나 다시 볼 수 있을지 불안해하는 장면
+  pronouns:
+    - source: you
+      target: 너
+      note: "상대의 성별을 알 수 없고 감상 노트도 실제 인물로 확정하지 않으므로 성별 없는 '너'로 통일했다."
+  glossary:
+    - source: dream state
+      target: 꿈의 세계
+      note: "상대가 사는 장소로서의 꿈을 가리킨다."
+    - source: Sugar honey iced tea
+      target: 세상에 맙소사
+      note: "욕설을 돌려 말한 감탄사의 완곡한 느낌을 살렸다."
+    - source: bumblebee
+      target: 꿀벌
+      note: "꽃과 곤충의 이미지를 이어 가는 장치라 그대로 살렸다."
+  written: 2026-10-11
 ---
 
 'See You Again'의 첫인상은 타일러의 낮고 거친 랩 목소리보다 한층 부드러운 노래에 달려 있다. 피아노와 길게 펼쳐지는 음색이 그 목소리를 감싸며, 칼리 우치스(Kali Uchis)의 후렴은 요청을 더욱 선명한 선율로 만든다. 이후 리듬이 탄력을 얻고 타일러가 랩으로 이동하면 꿈속에 머물던 마음이 서두르는 행동처럼 들린다. 마지막의 금관을 닮은 신시사이저가 커지다 끊기는 지점까지 따라가면, 아름다운 장면이 오래 유지될 것이라는 보장은 처음부터 없었음을 느끼게 된다.
@@ -20,3 +41,7 @@ short: >
 화자가 만나는 사랑의 대상은 현실에서 안정적으로 함께하는 연인이 아니라 꿈과 상상 속에 존재하는 상대다. 그래서 만남의 기쁨과 다시 볼 수 없을지 모른다는 걱정이 분리되지 않는다. 꽃과 곤충의 이미지는 상대에게 향하는 인력을 자연의 관계로 표현하지만, 그 가까움은 아직 실제 생활의 관계가 아니다. 이 곡의 달콤함은 이루어진 사랑을 축하해서가 아니라, 이루어지기를 바라는 마음을 소리로 먼저 실현해서 생긴다.
 
 직전 'Sometimes...'의 신청곡 장면 덕분에 이 노래는 누군가를 위한 음악이라는 방향을 얻는다. 반대로 바로 뒤의 'Who Dat Boy'는 위협적인 소리와 과시하는 랩으로 그 방향을 뒤집는다. 이 대비 속에서 'See You Again'은 자동차와 재산 대신 사랑 자체에 집중하는 잠깐의 공간이 된다. 앨범의 밝은 표면 아래 있는 결핍이 가장 매력적인 선율로 들리는 자리이며, 그 매력은 결핍을 해결했다는 증거가 아니다.
+
+## 번역에 대하여
+
+이 곡은 꿈속의 상대에게 직접 말을 거는 사랑 노래라 가까운 사이에 쓰는 **해체**로 정했다. 가사의 "You live in my dream state"나 "Can I get a kiss?"처럼 상대를 두고 부탁하는 말이 반복되어, 거리를 두는 존댓말보다 혼잣말에 가까운 부드러운 반말이 맞다. 감상 노트가 짚듯 이 상대는 현실에서 곁에 있는 연인이 아니라 꿈과 상상 속에 존재하는 인물이며 칼리 우치스의 후렴이 실제 응답이라고 확정할 수 없으므로, 호칭은 성별이 없는 '너'로 통일하고 후렴도 같은 어체로 이었다. 앞 곡 'Sometimes...'에서 신청곡을 청하는 장면을 지나 이 노래가 시작된다는 배열을 따라 화자의 요청으로 읽었고, "Okay"를 반복하는 도입은 격식을 갖춘 대답이 아니라 흥얼거림이라 '좋아'로 옮겼다.

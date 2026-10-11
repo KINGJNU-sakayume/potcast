@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2009354,
+    "durationMs": 237000
+  },
+  "segments": [
+    {
+      "startMs": 20,
+      "endMs": 1260,
+      "translation": "젠장."
+    },
+    {
+      "startMs": 1260,
+      "endMs": 3780,
+      "translation": "엄마가 그랬어, 어떤 놈들은 내 오른팔이 못 된다고."
+    },
+    {
+      "startMs": 3780,
+      "endMs": 6390,
+      "translation": "믿을 건 내 마음이랑 그 나이 든 백인 영감뿐이라고."
+    },
+    {
+      "startMs": 6390,
+      "endMs": 9070,
+      "translation": "이름은 클랜시, 난 그가 마음에 들어, 인정해 줘야지."
+    },
+    {
+      "startMs": 9070,
+      "endMs": 11700,
+      "translation": "딜러들이 나한테 차를 팔게 해 준 건 절반이 그 덕이거든."
+    },
+    {
+      "startMs": 11700,
+      "endMs": 14330,
+      "translation": "그래서 지금 난 과속하면서 그 사실에서 달아나려 해,"
+    },
+    {
+      "startMs": 14330,
+      "endMs": 17010,
+      "translation": "엄마가 맞았다는 사실에서. 그래서 좌회전을 세 번 돌아 되돌아가려는 거야."
+    },
+    {
+      "startMs": 17010,
+      "endMs": 19310,
+      "translation": "길마다 단서가 널려 있는데, 그걸 왜 못 봤을까?"
+    },
+    {
+      "startMs": 19310,
+      "endMs": 22380,
+      "translation": "(왜 못 봤지?) 됐어, 막다른 골목에서 낯익은 걸 봤어."
+    },
+    {
+      "startMs": 22380,
+      "endMs": 24900,
+      "translation": "차를 세우고 내려, 뭐해? 도와주고 싶어."
+    },
+    {
+      "startMs": 24900,
+      "endMs": 27650,
+      "translation": "그래도 네가 어떤 놈들에게 바라는 걸, 정작 그놈들은 자기를 위해 바라지 않아."
+    },
+    {
+      "startMs": 27650,
+      "endMs": 29950,
+      "translation": "이제 남을까? 떠날까? 그게 내 딜레마야."
+    },
+    {
+      "startMs": 29950,
+      "endMs": 32650,
+      "translation": "차가 점점 몰려, 지금 안 떠나면 갇히겠지 (끼익)"
+    },
+    {
+      "startMs": 32650,
+      "endMs": 35850,
+      "translation": "그래서 속도를 내서 떠나, 우린 말도 거의 안 하고 어색해 보여."
+    },
+    {
+      "startMs": 35850,
+      "endMs": 38380,
+      "translation": "그리고 네가 거기서 빠졌다는 말을 어디선가 들었어."
+    },
+    {
+      "startMs": 38380,
+      "endMs": 40720,
+      "translation": "난 추진력이 너무 세서 길을 벗어나고 싶지 않아,"
+    },
+    {
+      "startMs": 40720,
+      "endMs": 43120,
+      "translation": "부딪혀서 정신이 팔리고 싶지 않으니까."
+    },
+    {
+      "startMs": 43120,
+      "endMs": 45730,
+      "translation": "그래도 일기예보관 말은 들어, 비가 올지 모르니까."
+    },
+    {
+      "startMs": 45730,
+      "endMs": 48580,
+      "translation": "너희가 비꼬는 말(shade)을 하도 퍼부어서 와이퍼를 준비해 뒀어."
+    },
+    {
+      "startMs": 48580,
+      "endMs": 50830,
+      "translation": "트렁크에 재킷이 있는데, 그게 앞쪽에 있어."
+    },
+    {
+      "startMs": 50830,
+      "endMs": 53700,
+      "translation": "네가 시동이 필요하면 우리 둘이 쓸 힘도 있어."
+    },
+    {
+      "startMs": 53700,
+      "endMs": 55020,
+      "translation": "필요하면 말해, 친구."
+    },
+    {
+      "startMs": 55020,
+      "endMs": 56630,
+      "translation": "걔들에겐 기어를 바꿔야 했어."
+    },
+    {
+      "startMs": 56630,
+      "endMs": 60280,
+      "translation": "백미러 속에서 걔들에게 꼬리를 흔들며 미끄러졌지 (끼이이익!)"
+    },
+    {
+      "startMs": 60280,
+      "endMs": 61970,
+      "translation": "걔들에겐 기어를 바꿔야 했어."
+    },
+    {
+      "startMs": 61970,
+      "endMs": 64450,
+      "translation": "알잖아, 급회전, 좌회전, 핸들을 돌려 버렸지."
+    },
+    {
+      "startMs": 64450,
+      "endMs": 66890,
+      "translation": "야, 그건 포트홀이야, 포트홀 조심해."
+    },
+    {
+      "startMs": 66890,
+      "endMs": 69540,
+      "translation": "포트홀 조심해, 포트홀 조심해."
+    },
+    {
+      "startMs": 69540,
+      "endMs": 72280,
+      "translation": "포트홀을 살펴, 포트홀 조심해."
+    },
+    {
+      "startMs": 72280,
+      "endMs": 75560,
+      "translation": "포트홀 조심해, 포트홀 조심해."
+    },
+    {
+      "startMs": 75560,
+      "endMs": 77360,
+      "translation": "풀숲엔 뱀이 있지만 난 걸어."
+    },
+    {
+      "startMs": 77360,
+      "endMs": 80330,
+      "translation": "새 부츠를 신었는데, 뒤쪽에 GOLF라고 적혀 있어."
+    },
+    {
+      "startMs": 80330,
+      "endMs": 82850,
+      "translation": "그래서 놈들이 물어도 대비돼 있어, 입만 살았으니까."
+    },
+    {
+      "startMs": 82850,
+      "endMs": 85840,
+      "translation": "풀숲에 콘돔을 두고 왔으니까 꺼져."
+    },
+    {
+      "startMs": 85840,
+      "endMs": 88200,
+      "translation": "클래런스가 아무도 없는 저택에 있는 걸 지켜봐."
+    },
+    {
+      "startMs": 88200,
+      "endMs": 91360,
+      "translation": "젊고 성공한 놈이 창문 틴팅도 안 한 맥라렌을 몰아."
+    },
+    {
+      "startMs": 91360,
+      "endMs": 93770,
+      "translation": "그 안에 있을 땐 작은 돼지들을 그려, 기분이 끝내주니까."
+    },
+    {
+      "startMs": 93770,
+      "endMs": 95910,
+      "translation": "아이러니하게도 난 베이컨을 끊었어."
+    },
+    {
+      "startMs": 95910,
+      "endMs": 99280,
+      "translation": "오해하지 마, 난 아직 굶주렸어, 오, 그는 외로워."
+    },
+    {
+      "startMs": 99280,
+      "endMs": 102150,
+      "translation": "내 친구들은 다 자기 여자나 텐더로니 얘기만 해."
+    },
+    {
+      "startMs": 102150,
+      "endMs": 104810,
+      "translation": "내가 보여 줄 수 있는 건 차 몇 대와 이런저런 것들이 전부야,"
+    },
+    {
+      "startMs": 104810,
+      "endMs": 107530,
+      "translation": "지난 몇 달 사이에 만든 것들, 그는 잘나가, 제발."
+    },
+    {
+      "startMs": 107530,
+      "endMs": 110010,
+      "translation": "다들 양인데, 나는 외로운 늑대야."
+    },
+    {
+      "startMs": 110010,
+      "endMs": 112870,
+      "translation": "다들 양털을 원하니까 아무도 소리 한 번 안 낼 거야."
+    },
+    {
+      "startMs": 112870,
+      "endMs": 115190,
+      "translation": "다들 양이니까, 여기 모두가 괜찮은 건 아니야."
+    },
+    {
+      "startMs": 115190,
+      "endMs": 118190,
+      "translation": "걔들의 양털이랑 엮이느니 혼자 수영장에 빠지는 게 낫겠어."
+    },
+    {
+      "startMs": 118190,
+      "endMs": 120790,
+      "translation": "있잖아, T맨 팬들은 시소 같아."
+    },
+    {
+      "startMs": 120790,
+      "endMs": 123420,
+      "translation": "바람이 불면 가 버려, 어느 쪽으로? 누가 알겠어."
+    },
+    {
+      "startMs": 123420,
+      "endMs": 125930,
+      "translation": "하루는 \"절대 안 돼\", 다음 날은 \"좋아\"."
+    },
+    {
+      "startMs": 125930,
+      "endMs": 128790,
+      "translation": "그래도 너희 엿 먹어, T는 4전 4승이란 걸 알아."
+    },
+    {
+      "startMs": 128790,
+      "endMs": 131450,
+      "translation": "난 그 정원이랑 그 배트모빌만 있으면 돼."
+    },
+    {
+      "startMs": 131450,
+      "endMs": 134040,
+      "translation": "건강, 성공, 가치 있는 지상의 시간."
+    },
+    {
+      "startMs": 134040,
+      "endMs": 136500,
+      "translation": "나를 사랑해 줄 사람을 찾아서 도마뱀 두어 마리를 키우고 싶어."
+    },
+    {
+      "startMs": 136500,
+      "endMs": 139200,
+      "translation": "하지만 내 차는 당분간 괜찮아, 그건 몇 마일 앞의 일이니까."
+    },
+    {
+      "startMs": 139200,
+      "endMs": 140220,
+      "translation": "자, 계속 가, 친구."
+    },
+    {
+      "startMs": 140220,
+      "endMs": 142080,
+      "translation": "걔들에겐 기어를 바꿔야 했어."
+    },
+    {
+      "startMs": 142080,
+      "endMs": 145550,
+      "translation": "백미러 속에서 걔들에게 꼬리를 흔들며 미끄러졌지 (끼이이익!)"
+    },
+    {
+      "startMs": 145550,
+      "endMs": 147120,
+      "translation": "걔들에겐 기어를 바꿔야 했어."
+    },
+    {
+      "startMs": 147120,
+      "endMs": 149620,
+      "translation": "알잖아, 급회전, 좌회전, 핸들을 돌려 버렸지."
+    },
+    {
+      "startMs": 149620,
+      "endMs": 152320,
+      "translation": "야, 그건 포트홀이야, 포트홀 조심해."
+    },
+    {
+      "startMs": 152320,
+      "endMs": 154990,
+      "translation": "포트홀 조심해, 포트홀 조심해."
+    },
+    {
+      "startMs": 154990,
+      "endMs": 157380,
+      "translation": "포트홀을 살펴, 포트홀 조심해."
+    },
+    {
+      "startMs": 157380,
+      "endMs": 212050,
+      "translation": "포트홀 조심해, 포트홀 조심해."
+    },
+    {
+      "startMs": 212050,
+      "endMs": 214940,
+      "translation": "젠장, 좋아, 다음 곡."
+    },
+    {
+      "startMs": 214940,
+      "endMs": 218710,
+      "translation": "두-두-두-두-두-두."
+    },
+    {
+      "startMs": 218710,
+      "endMs": 224650,
+      "translation": "포트홀을 조심해야 해."
+    },
+    {
+      "startMs": 224650,
+      "endMs": 235100,
+      "translation": "오, 포트홀을 조심하라고 했잖아."
+    },
+    {
+      "startMs": 235100,
+      "endMs": 237000,
+      "translation": "하하."
+    }
+  ]
+}

@@ -2,8 +2,6 @@
 artist: tyler
 trackIds: [33i3xxHB4YSYGYbtJrwwO8]
 titles: ["Foreword", "Foreword (feat. Rex Orange County)"]
-lyricsLanguage: en
-translationMode: provider
 written: 2026-10-11
 sources:
   - https://podscripts.co/podcasts/dissect/s4e2-foreword-by-tyler-the-creator
@@ -11,6 +9,22 @@ sources:
   - https://www.surrealresolution.com/index.php/2017/07/29/review-tyler-the-creator-flower-boy/
 short: >
   반복되는 박자 위에 기타가 얹히다가 부풀어 오르는 신시사이저로 질감이 바뀌는 순간을 들어 보라. 렉스 오렌지 카운티의 노래는 랩이 남긴 질문을 끝까지 붙든다.
+translation:
+  sourceLanguage: en
+  targetLanguage: ko
+  register: haerache
+  speaker: 성공과 고립 사이에서 스스로에게 묻는 타일러(화자)
+  addressee: 혼잣말이 중심이고, 군데군데 세상의 시선("y'all")과 지나간 연인들을 향한다
+  relationship: 성공한 래퍼와 그를 지켜보는 청중·과거의 상대들, 그리고 자기 자신
+  situation: 차, 돈, 집을 쌓아 가면서도 끝이 어디인지, 사라지면 누가 알아줄지 묻는 서문
+  glossary:
+    - source: drive
+      target: 굴러갈 힘
+      note: "차(car) - 동력 - 길 - 땅 - 바다로 이어지는 연쇄 질문의 고리라서 '의욕'이 아니라 '굴러갈 힘'으로 두어 연쇄를 유지했다."
+    - source: fans
+      target: 팬
+      note: "선풍기와 팬덤을 겹친 말장난이라 둘 다 읽히는 한국어 '팬'을 그대로 썼다."
+  written: 2026-10-11
 ---
 
 'Foreword'는 결론을 내리는 목소리보다 계속 질문하는 목소리로 시작한다. 일정하게 되돌아오는 박자가 말의 속도를 붙잡고, 오스틴 파인스타인(Austin Feinstein)의 기타가 그 위에 자리를 만든다. 랩 사이에 렉스 오렌지 카운티(Rex Orange County)의 노래가 들어오면 질문의 주체는 그대로인데 말하는 방식이 바뀐다. 후반의 부풀어 오르는 신시사이저는 앞의 기타와 다른 폭을 열어, 같은 고민이 더 큰 공간으로 번지는 인상을 준다.
@@ -20,3 +34,7 @@ short: >
 화자는 돈과 자동차를 얼마나 더 얻어야 만족할지, 주변 사람이 사라진 뒤 자신에게 무엇이 남을지를 묻는다. 재산의 목록은 성공의 증거이면서 그 성공으로 해결되지 않는 질문의 목록이 된다. 마지막의 부재와 죽음에 관한 상상도 임상적 상태를 확정하는 근거로 읽을 필요가 없다. 오히려 지금의 삶을 끝에서 돌아보며 자신이 누구에게 어떤 의미인지 확인하려는 사고 실험에 가깝다.
 
 제목이 가리키는 서문답게 이 곡은 『Flower Boy』의 사건을 빠르게 진행하지 않는다. 앞으로 반복될 자동차, 자연, 고독이라는 단어를 먼저 놓고, 그것들이 한 사람 안에서 아직 정리되지 않았음을 들려준다. 다음 곡 'Where This Flower Blooms'가 성장의 풍경을 펼치기 전에 이 서문을 두어, 이후의 밝은 색채를 이미 해결된 행복으로 오해하지 않게 한다. 꽃이 피는 이야기는 만족의 선언이 아니라 질문에서 시작한다.
+
+## 번역에 대하여
+
+이 곡은 대화가 아니라 질문을 던지는 독백이라 **해라체**로 정했다. 가사 안에서 "How many ~ until ~" 구조의 질문이 차, 길, 땅, 바다로 이어지는 연쇄로 반복되고, 군데군데 "y'all"을 향한 말이 나오지만 이야기의 중심은 끝까지 화자 자신이다. 감상 노트가 짚듯 이 곡은 『Flower Boy』의 서문이라 결론을 내리는 어조보다 스스로를 다그치고 되묻는 문어적 어조가 맞고, 해체로 옮기면 특정 상대에게 말을 거는 곡으로 읽힌다. 렉스 오렌지 카운티가 부르는 마지막 구절도 같은 화자의 되뇜으로 보아 어체를 바꾸지 않았고, 호칭은 "너희"를 세상의 시선을 가리키는 한 곳에서만 썼다. 마지막 구절의 "don't come back"은 청자가 분명하지 않아 자신에게 하는 다짐이나 경고로 읽어 명령형 해라체로 두었다.

@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 37498839,
+    "durationMs": 180000
+  },
+  "segments": [
+    {
+      "startMs": 240,
+      "endMs": 1560,
+      "translation": "좋아, 좋아, 좋아, 좋아"
+    },
+    {
+      "startMs": 1560,
+      "endMs": 3060,
+      "translation": "좋아, 좋아, 오"
+    },
+    {
+      "startMs": 3060,
+      "endMs": 6090,
+      "translation": "너는 내 꿈의 세계에 살아."
+    },
+    {
+      "startMs": 6090,
+      "endMs": 9120,
+      "translation": "내 환상을 거기로 옮겨 놓고"
+    },
+    {
+      "startMs": 9120,
+      "endMs": 12290,
+      "translation": "나는 현실에 남아 있어."
+    },
+    {
+      "startMs": 12290,
+      "endMs": 15180,
+      "translation": "너는 내 꿈의 세계에 살아."
+    },
+    {
+      "startMs": 15180,
+      "endMs": 17970,
+      "translation": "내가 양을 세는 때면 언제든,"
+    },
+    {
+      "startMs": 17970,
+      "endMs": 21040,
+      "translation": "그때만이 우리가 화해하는 시간이야, 화해하는."
+    },
+    {
+      "startMs": 21040,
+      "endMs": 24030,
+      "translation": "너는 내 눈꺼풀 뒤에 있어, 내 눈꺼풀 뒤에."
+    },
+    {
+      "startMs": 24030,
+      "endMs": 27450,
+      "translation": "이제 나는 깨고 싶지 않아."
+    },
+    {
+      "startMs": 27450,
+      "endMs": 30280,
+      "translation": "시력 20/20, 20/20."
+    },
+    {
+      "startMs": 30280,
+      "endMs": 32950,
+      "translation": "큐피드가 날 맞혔어, 정확하게 날 맞혔어."
+    },
+    {
+      "startMs": 32950,
+      "endMs": 35900,
+      "translation": "네가 내 머릿속을 가로지를 때 좌우는 살피는지 궁금해 (그래),"
+    },
+    {
+      "startMs": 35900,
+      "endMs": 39480,
+      "translation": "말했잖아, 말했잖아."
+    },
+    {
+      "startMs": 39480,
+      "endMs": 42330,
+      "translation": "쫓아다니는 건 지겨워, 지겨워, 지겨워, 지겨워."
+    },
+    {
+      "startMs": 42330,
+      "endMs": 45860,
+      "translation": "내 백일몽 속을 늘 뛰어다니는 건 너야, 난"
+    },
+    {
+      "startMs": 45860,
+      "endMs": 51110,
+      "translation": "눈을 감아야만 네 얼굴이 보여."
+    },
+    {
+      "startMs": 51110,
+      "endMs": 53580,
+      "translation": "키스해도 돼?"
+    },
+    {
+      "startMs": 53580,
+      "endMs": 56690,
+      "translation": "그걸 영원히 이어 줄 수 있어?"
+    },
+    {
+      "startMs": 56690,
+      "endMs": 59510,
+      "translation": "나 곧 전쟁에 나간다고 했잖아."
+    },
+    {
+      "startMs": 59510,
+      "endMs": 63480,
+      "translation": "너를 다시 볼 수 있을지 모르겠어."
+    },
+    {
+      "startMs": 63480,
+      "endMs": 65800,
+      "translation": "키스해도 돼? (해도 돼?)"
+    },
+    {
+      "startMs": 65800,
+      "endMs": 68950,
+      "translation": "그걸 영원히 이어 줄 수 있어? (해 줄 수 있어?)"
+    },
+    {
+      "startMs": 68950,
+      "endMs": 72250,
+      "translation": "나 곧 전쟁에 나간다고 했잖아 (곧)"
+    },
+    {
+      "startMs": 72250,
+      "endMs": 74650,
+      "translation": "너를 다시 볼 수 있을지 모르겠어."
+    },
+    {
+      "startMs": 74650,
+      "endMs": 75770,
+      "translation": "(어, 분위기 바꿔 보자)"
+    },
+    {
+      "startMs": 75770,
+      "endMs": 79470,
+      "translation": "좋아, 좋아, 좋아, 오케이 도키, 홀딱 빠진 이 마음이"
+    },
+    {
+      "startMs": 79470,
+      "endMs": 82540,
+      "translation": "다른 모습으로 바뀌어 가고 있어, 그걸 뭐라고 부르더라? (사랑)"
+    },
+    {
+      "startMs": 82540,
+      "endMs": 84380,
+      "translation": "오 그래, 오 그래, 오 그래, 난 널 만난 적도 없어."
+    },
+    {
+      "startMs": 84380,
+      "endMs": 86270,
+      "translation": "계속 찾아 헤맸고, 여기 갇혀서 기다렸어, 내가"
+    },
+    {
+      "startMs": 86270,
+      "endMs": 88580,
+      "translation": "알코올 중독자처럼 쫓아다니는 걸 그만두기를."
+    },
+    {
+      "startMs": 88580,
+      "endMs": 91240,
+      "translation": "넌 날 이해 못 해, 대체 무슨 말이야?"
+    },
+    {
+      "startMs": 91240,
+      "endMs": 94540,
+      "translation": "그 장밋빛으로 물든 뺨 때문이고, 흙빛 눈동자 때문이야."
+    },
+    {
+      "startMs": 94540,
+      "endMs": 97390,
+      "translation": "세상에 맙소사, 꿀벌이 등장했어."
+    },
+    {
+      "startMs": 97390,
+      "endMs": 103470,
+      "translation": "그래, 네 파이 한 조각을 얻을 수 있다면 내 빵집이라도 내줄게. 윽! 시력 20/20, 20/20."
+    },
+    {
+      "startMs": 103470,
+      "endMs": 106320,
+      "translation": "큐피드가 날 맞혔어, 정확하게 날 맞혔어."
+    },
+    {
+      "startMs": 106320,
+      "endMs": 109070,
+      "translation": "네가 내 머릿속을 가로지를 때 좌우는 살피는지 궁금해,"
+    },
+    {
+      "startMs": 109070,
+      "endMs": 112800,
+      "translation": "말했잖아, 말했잖아."
+    },
+    {
+      "startMs": 112800,
+      "endMs": 115870,
+      "translation": "쫓아다니는 건 지겨워, 지겨워, 지겨워, 지겨워."
+    },
+    {
+      "startMs": 115870,
+      "endMs": 119230,
+      "translation": "내 백일몽 속을 늘 뛰어다니는 건 너야, 난"
+    },
+    {
+      "startMs": 119230,
+      "endMs": 124060,
+      "translation": "눈을 감아야만 네 얼굴이 보여."
+    },
+    {
+      "startMs": 124060,
+      "endMs": 124470,
+      "translation": "(그래서)"
+    },
+    {
+      "startMs": 124470,
+      "endMs": 126910,
+      "translation": "키스해도 돼? (키스해도 돼?)"
+    },
+    {
+      "startMs": 126910,
+      "endMs": 130090,
+      "translation": "그걸 영원히 이어 줄 수 있어? (오, 영원히)"
+    },
+    {
+      "startMs": 130090,
+      "endMs": 133440,
+      "translation": "나 곧 전쟁에 나간다고 했잖아 (전쟁에)"
+    },
+    {
+      "startMs": 133440,
+      "endMs": 136720,
+      "translation": "너를 다시 볼 수 있을지 모르겠어 (다시 볼 수)"
+    },
+    {
+      "startMs": 136720,
+      "endMs": 139080,
+      "translation": "키스해도 돼? (해도 돼?)"
+    },
+    {
+      "startMs": 139080,
+      "endMs": 142220,
+      "translation": "그걸 영원히 이어 줄 수 있어? (해 줄 수 있어?)"
+    },
+    {
+      "startMs": 142220,
+      "endMs": 145340,
+      "translation": "나 곧 전쟁에 나간다고 했잖아 (곧)"
+    },
+    {
+      "startMs": 145340,
+      "endMs": 149750,
+      "translation": "너를 다시 볼 수 있을지 모르겠어."
+    },
+    {
+      "startMs": 149750,
+      "endMs": 152730,
+      "translation": "좋아, 좋아, 좋아, 좋아, 좋아, 좋아, 좋아, 오 (라라, 라라라라, 라라)"
+    },
+    {
+      "startMs": 152730,
+      "endMs": 155800,
+      "translation": "좋아, 좋아, 좋아, 좋아, 좋아, 좋아, 좋아, 오 (라라, 라라라라, 라라)"
+    },
+    {
+      "startMs": 155800,
+      "endMs": 158990,
+      "translation": "좋아, 좋아, 좋아, 좋아, 좋아, 좋아, 좋아, 오 (라라, 라라라라, 라라)"
+    },
+    {
+      "startMs": 158990,
+      "endMs": 161100,
+      "translation": "좋아, 좋아, 좋아, 좋아, 좋아, 오 (라라, 라라라라, 라라)"
+    },
+    {
+      "startMs": 161100,
+      "endMs": 180000,
+      "translation": "한 번 더?"
+    }
+  ]
+}
