@@ -12,6 +12,7 @@ sources:
   - https://en.wikipedia.org/wiki/Send_It_Up
   - https://open.spotify.com/track/3RKblQNJs8HPvWBgXmq6nn
   - https://lrclib.net/api/get/580119
+  - https://en.wiktionary.org/wiki/move
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -37,7 +38,11 @@ translation:
     - source: "Yeezus just rose again"
       target: "이저스가 방금 다시 부활했어"
       note: "예수의 부활을 웨스트의 별명 '이저스'로 비튼 말."
+    - source: "cocaine to move"
+      target: "팔아야 할 코카인"
+      note: "move는 물건이나 마약을 판다는 뜻의 속어(Wiktionary 'move', 상업 용례). 학교를 그만둔 이유가 코카인 판매라는 문맥과도 맞는다."
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 지난날에 매달려 사냐고, 그건 네 손해라는 짧은 목소리로 시작하고, 15초쯤 시카고 래퍼 킹 루이가 들어와 로큰롤 스타처럼 날 엘비스라 부른다는 첫 줄을 뱉는다. 사이렌처럼 울부짖는 신시사이저와 쿵쿵대는 드럼 위에서 그는 성공과 질투, 개학 첫날 그만둔 학교 이야기를 거침없이 늘어놓고, 46초쯤 이 판을 띄워 올릴 수 있다는 후렴이 터진다. 1분 22초쯤 웨스트가 'In Da Club' 이후로 클럽에서 이만한 건 없었다며 들어오고, 2분 1초쯤 이저스가 방금 다시 부활했다는 줄로 벌스를 맺는다. 다시 후렴이 지나간 뒤 2분 34초쯤 기억은 사람처럼 살지 않는다는 비니 맨의 노래가 흘러나오며 2분 58초의 곡을 닫는다.

@@ -13,6 +13,7 @@ sources:
   - https://en.wikipedia.org/wiki/Blood_on_the_Leaves
   - https://open.spotify.com/track/42GcjriRK6srwHkfbkBqVl
   - https://lrclib.net/api/get/565808
+  - https://www.urbandictionary.com/define.php?term=nolia
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -41,7 +42,11 @@ translation:
     - source: "unholy matrimony"
       target: "거룩하지 않은 결혼"
       note: "결혼식의 '거룩한 혼인(holy matrimony)'을 뒤집은 말."
+    - source: "'nolia"
+      target: "매그놀리아"
+      note: "뉴올리언스의 매그놀리아 공영주택단지('놀리아)를 가리키는 속칭으로 읽힌다(Urban Dictionary 정의 다수 일치, 출처 1종). 이 대목의 후렴은 C-Murder의 곡을 끌어온 것이다(Wikipedia). 번역은 그대로 두었다."
   written: 2026-10-09
+  updated: 2026-10-11
 ---
 
 곡은 굴러가는 피아노 화음 위로 높게 올린 니나 시몬의 목소리가 이상한 열매가 포플러나무에 매달려 있다고 노래하며 시작한다. 13초쯤 오토튠을 건 웨스트가 이제 머릿속을 비워야 한다며 들어오고, 기다리라고 했잖아, 네가 기다릴 줄 알았어라는 말을 길게 끈다. 1분쯤 TNGHT의 'R U Ready'에서 가져온 육중한 호른이 터지며 곡의 바닥이 꺼지고, 짐승이 으르렁대는 소리가 이따금 끼어든다. 1분 13초쯤 그는 처음 몰리를 했던 첫 파티로 돌아가고, 1분 30초쯤 스포트라이트가 널 찢어 놓기 전, 나뭇잎에 피가 묻기 전을 노래한다. 2분 37초쯤 C-머더의 'Down for My N's' 후렴을 끌어온 뒤, 3분 10초쯤 노래를 멈추고 마지막 벌스를 랩으로 쏟아 낸다. 4분 8초쯤 남부의 바람에 흔들리는 검은 몸들을 노래하는 시몬의 목소리가 돌아오고, 숨 쉬라는 말이 되풀이되는 긴 아웃트로가 6분의 곡을 닫는다.
