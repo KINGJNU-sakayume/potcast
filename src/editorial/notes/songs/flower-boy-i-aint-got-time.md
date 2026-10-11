@@ -9,6 +9,8 @@ sources:
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://djbooth.net/features/2017-07-11-tyler-the-creator-flower-boy-album-review/
   - https://en.wikipedia.org/wiki/House_Negro
+  - https://podscripts.co/podcasts/dissect/s4e9-i-aint-got-time-by-tyler-the-creator
+  - https://en.wikipedia.org/wiki/Haha_(The_Garden_album)
   - "Genius 주석 (사용자 제공 레퍼런스) — I Ain't Got Time!"
   - "Genius 주석 (사용자 제공) — I Ain't Got Time!"
 short: >
@@ -35,9 +37,9 @@ translation:
     - source: "house nigga"
       target: "집안 노예 같은 놈"
       note: "노예제의 집안 노예와 들일 노예 구분에서 온 모욕어로, 백인 사회에 순응하거나 편한 자리에 안주하는 흑인을 깎아내리는 말이다. 이어지는 입술·코 이야기와 맞춰 '주인집 안에서 편히 산' 노예로 풀어 옮겼다."
-    - source: "sporting"
-      target: "입고 다닐 거야"
-      note: "바로 앞 Converse·Vans 줄에 맞춰 '착용하다'로 읽었다. 뒤의 'All smiles'와 이어지는 말로 읽을 여지도 남는다."
+    - source: "sporting / All smiles over here"
+      target: "걸치고 다닐 거야 / 올 스마일스 오버 히어(All Smiles Over Here)"
+      note: "다이섹트 방송은 이 대목을 'keep sporting' 뒤의 구절이 더 가든(The Garden)의 노래 제목 'All Smiles Over Here'를 가리킨다고 풀이한다. 제목이 이 곡에서 곧바로 'shout out to The Garden'으로 이어지고, 해당 노래는 더 가든의 2015년 앨범 『Haha』의 첫 싱글이다(출처 B). 그래서 'sporting'은 입고 다닌다는 앞 줄 이야기가 아니라 이 이름을 달고 다닌다는 뜻으로 읽었다(방송은 sporting의 뜻 자체는 풀지 않아 '걸친다'는 읽기는 사전적 의미에 기댄 것이다). 제목은 원어를 살려 옮겼다."
     - source: "Yoda / Skywalker / solar / Sprite / cola"
       target: "요다 / 스카이워커 / 솔라 / 스프라이트 / 콜라"
       note: "스타워즈 말장난이 이어지는 줄이다. 요다의 피부색인 초록으로 지폐를 빗대고, 'Skywalker'는 스타워즈에서 따온 이름으로 읽었다(사용자 제공 해설은 하늘을 걷는 자처럼 태양 둘레를 누비는 스케일 큰 자랑으로 풀었다). 'solar'는 한 솔로를 연상시키고, 아나킨의 하얀 피부는 스프라이트, 타일러의 검은 피부는 콜라색에 빗댄 것이다."
@@ -58,4 +60,4 @@ translation:
 
 ## 번역에 대하여
 
-"Who the fuck you talking to"처럼 눈앞의 상대에게 대놓고 쏘아붙이는 줄이 후렴으로 반복되어, 거칠되 바로 앞에서 말하는 느낌의 **해체**를 곡 전체에 썼다. Pitchfork 리뷰와 노트가 설명하듯 이 곡은 'Boredom'의 느긋한 반복을 끊고, 곧 이어지는 '911 / Mr. Lonely'가 보여 줄 가면을 먼저 세우는 외향적인 목소리다. 선언문처럼 해라체로 하는 안도 생각했지만 상대를 직접 겨냥하는 말이 대부분이라 버렸고, 비속어는 원문의 거침을 유지하되 수위를 더 높이지 않았고, 'Skywalker, riding 'round solar'를 포함한 네 줄은 Genius 주석에 따라 스타워즈 말장난(요다는 초록 지폐, 솔라는 한 솔로, 아나킨은 하얀 피부)으로 읽었고, 'Skywalker'는 스타워즈에서 따온 이름으로 읽었고, 'getting neck'은 구강 성교, 'busting'은 사정, '9'는 9밀리 권총이라는 주석을 따랐다. 첫머리 라디오 멘트와 마지막 전화 대사도 같은 화자의 연출이라 같은 어체로 두었다.
+"Who the fuck you talking to"처럼 눈앞의 상대에게 대놓고 쏘아붙이는 줄이 후렴으로 반복되어, 거칠되 바로 앞에서 말하는 느낌의 **해체**를 곡 전체에 썼다. Pitchfork 리뷰와 노트가 설명하듯 이 곡은 'Boredom'의 느긋한 반복을 끊고, 곧 이어지는 '911 / Mr. Lonely'가 보여 줄 가면을 먼저 세우는 외향적인 목소리다. 선언문처럼 해라체로 하는 안도 생각했지만 상대를 직접 겨냥하는 말이 대부분이라 버렸고, 비속어는 원문의 거침을 유지하되 수위를 더 높이지 않았고, 'Skywalker, riding 'round solar'를 포함한 네 줄은 Genius 주석에 따라 스타워즈 말장난(요다는 초록 지폐, 솔라는 한 솔로, 아나킨은 하얀 피부)으로 읽었고, 'Skywalker'는 스타워즈에서 따온 이름으로 읽었고, 'getting neck'은 구강 성교, 'busting'은 사정, '9'는 9밀리 권총이라는 주석을 따랐다. 'keep sporting'은 다이섹트 방송이 뒤의 'All Smiles Over Here'를 더 가든의 노래 제목으로 읽는 것을 따라, 앞 줄의 옷 이야기와 끊고 그 이름을 걸치고 다닌다는 뜻으로 옮겼다. 첫머리 라디오 멘트와 마지막 전화 대사도 같은 화자의 연출이라 같은 어체로 두었다.

@@ -11,6 +11,8 @@ sources:
   - https://www.billboard.com/pro/post-malone-hollywoods-bleeding-five-burning-questions/
   - https://en.wikipedia.org/wiki/Take_What_You_Want
   - "Genius 주석 (사용자 제공) — Take What You Want"
+  - https://www.songfacts.com/facts/post-malone/take-what-you-want
+  - https://www.urbandictionary.com/define.php?term=ran%20through
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -36,7 +38,12 @@ translation:
       note: 뱀의 혀처럼 거짓말하는 사람을 빗댄 표현.
     - source: "Travis Scott verse ending"
       target: "트래비스 스콧 절 끝 여섯 줄"
-      note: "트래비스 스콧 절 끝 여섯 줄은 Spotify 공식 가사(사용자 확인)로 표기를 확정했다. crack, pipe처럼 약물과 성적 은어를 겸할 수 있는 말이 겹쳐 뜻은 확정하지 못했고, 사용자 요청에 따라 거친 구어체로 옮겼다."
+      note: "트래비스 스콧 절 끝 여섯 줄은 Spotify 공식 가사(사용자 확인)로 표기를 확정했다. Songfacts는 이 대목을 '그녀는 크랙을 피우고 화자의 친구들과 잠자리를 갖는다'는 뜻으로 풀이해(인용된 줄은 pipe, gang, went bad), 'pipe'를 크랙 파이프로, 'went bad'를 타락했다는 뜻으로 고쳐 옮겼다. 'Crack it all back'은 풀이한 출처를 찾지 못해 거친 구어체의 문맥 추정으로 남겼다."
+    - source: ran through it
+      target: 거쳐 갔어
+      note: >
+        Urban Dictionary의 'ran through' 정의 여러 개가 '상대가 많은 사람'으로 일치하나 이 줄의 주어('they')와 대상('it')을 풀이한 출처는 찾지 못했다
+        (출처 1건). 번역은 바꾸지 않았다.
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -51,4 +58,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 자신을 이용한 연인에게 직접 말한다. 상처 입은 연인 사이의 말이라 **해체**로 옮겼다. 후렴 'take what you want'는 회차마다 '원하는 걸 가져가'로 고정했다. 'heart of stone'은 '돌 같은 심장'으로, 'forked in two'는 뱀의 혀를 빗댄 말이라 '두 갈래로 갈라진'으로 이미지를 살렸다. 트래비스 스콧의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 특히 절 끝의 여섯 줄은 Spotify 공식 가사로 표기를 확인했지만 속어와 은어(crack, pipe 등)가 겹쳐 뜻을 확정하지 못했고, 거친 구어체로 옮겼다.
+화자는 자신을 이용한 연인에게 직접 말한다. 상처 입은 연인 사이의 말이라 **해체**로 옮겼다. 후렴 'take what you want'는 회차마다 '원하는 걸 가져가'로 고정했다. 'heart of stone'은 '돌 같은 심장'으로, 'forked in two'는 뱀의 혀를 빗댄 말이라 '두 갈래로 갈라진'으로 이미지를 살렸다. 트래비스 스콧의 절은 받아쓰기가 불확실한 줄이 많아 뜻이 통하는 범위에서 옮겼다. 특히 절 끝의 여섯 줄은 Spotify 공식 가사로 표기를 확인했고, Songfacts가 이 대목을 크랙을 피우고 친구들과 잠자리를 갖는 여자로 풀이해 'pipe'와 'went bad'를 그에 맞게 옮겼다. 다만 'Crack it all back' 같은 줄은 풀이한 출처가 없어 거친 구어체의 추정으로 남아 있고, 'ran through it'의 주어와 대상도 확정하지 못했다.

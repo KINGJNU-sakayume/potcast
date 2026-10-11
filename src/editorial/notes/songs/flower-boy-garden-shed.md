@@ -7,6 +7,8 @@ sources:
   - https://www.surrealresolution.com/index.php/2017/07/29/review-tyler-the-creator-flower-boy/
   - https://www.thefader.com/2017/07/21/tyler-flower-boy-credits
   - https://www.thefader.com/2017/08/04/tyler-the-creator-flower-boy-review
+  - https://podscripts.co/podcasts/dissect/s4e7-garden-shed-by-tyler-the-creator
+  - https://www.azlyrics.com/lyrics/tylerthecreator/gardenshed.html
 short: >
   기타와 에스텔의 목소리가 마련하는 긴 기다림을 지나 타일러의 랩이 등장하는 순간을 들어 보라. 설명을 늦춘 구조 자체가 감추어 온 감정의 시간을 만든다.
 translation:
@@ -28,9 +30,9 @@ translation:
     - source: "garçons"
       target: "소년들"
       note: "프랑스어 낱말. 뜻을 풀어 옮기고 말놀이의 소리는 포기했다."
-    - source: "base 10"
-      target: "베이스 10(base 10)"
-      note: "Spotify 공식 가사가 'bass'가 아니라 'base 10'으로 적고 있어(사용자 확인) 저음 이야기로 풀지 않고 글자 그대로 옮겼다. 십진법을 가리키는 말이지만 이 자리에서 무엇을 뜻하는지는 해설을 찾지 못해 열린 질문으로 남긴다."
+    - source: "base 10 / Polka dot"
+      target: "베이지빛 살결(beige tan) / 주근깨 콧잔등(polka dot nose)"
+      note: "화면에 뜨는 'base 10'은 Spotify 표기대로 두되, 소리는 'beige tan'과 같다. 다이섹트 방송과 가사 사이트(AZLyrics)가 모두 그렇게 듣고, 방송은 이 줄을 타일러가 끌리는 외모, 곧 밝은 살결을 묘사한 대목으로 풀이한다. 뒤의 'polka dot'은 방송이 주근깨 난 코로 풀고, 타일러가 예전에 주근깨 있는 얼굴이 취향이라고 쓴 트윗과도 맞는다고 짚는다(출처 B). 가사 사이트는 'polka dot knows'가 아니라 'polka dot nose'로 적는다. 십진법으로 읽는 해석은 근거를 찾지 못했다."
   written: 2026-10-11
   updated: 2026-10-11
 ---
@@ -45,4 +47,4 @@ translation:
 
 ## 번역에 대하여
 
-후렴이 'baby'를 직접 부르며 숨지 말라고 달래고, 랩은 숨어 지내던 때를 친구에게 털어놓듯 말하기 때문에 가까운 사람에게 건네는 말투인 **해체**를 곡 전체에 유지했다. 노트가 짚은 대로 이 곡은 'Pothole'에서 'Boredom'으로 넘어가는 자리에서 말하기 어려웠던 마음을 꺼내는 대목이고, FADER 크레디트에 따라 후렴은 에스텔의 목소리로 읽었다. 독백이니 해라체로 쓰는 안도 검토했지만, 랩에서도 듣는 사람을 향한 구어체가 이어져 어체를 나누지 않았다. 후렴의 'baby'는 연인이라고 단정하지 않으려고 '자기야'로 옮겼고, 숫자와 브랜드가 섞인 말놀이 줄은 뜻이 닿는 선에서 직역에 가깝게 두었고, 'base 10'은 Spotify 공식 가사 표기대로 옮겼고 'Polka dot'과 함께 뜻은 확정하지 못했다.
+후렴이 'baby'를 직접 부르며 숨지 말라고 달래고, 랩은 숨어 지내던 때를 친구에게 털어놓듯 말하기 때문에 가까운 사람에게 건네는 말투인 **해체**를 곡 전체에 유지했다. 노트가 짚은 대로 이 곡은 'Pothole'에서 'Boredom'으로 넘어가는 자리에서 말하기 어려웠던 마음을 꺼내는 대목이고, FADER 크레디트에 따라 후렴은 에스텔의 목소리로 읽었다. 독백이니 해라체로 쓰는 안도 검토했지만, 랩에서도 듣는 사람을 향한 구어체가 이어져 어체를 나누지 않았다. 후렴의 'baby'는 연인이라고 단정하지 않으려고 '자기야'로 옮겼고, 숫자와 브랜드가 섞인 말놀이 줄은 뜻이 닿는 선에서 직역에 가깝게 두었고, 'base 10'과 'Polka dot'은 다이섹트 방송과 가사 사이트가 'beige tan', 'polka dot nose'로 듣고 밝은 살결과 주근깨 난 코를 좋아한다는 고백으로 풀이하므로 그 뜻으로 옮겼다. 화면의 'base 10' 표기와 소리만 닮은 해석이라는 점은 열어 둔다.
