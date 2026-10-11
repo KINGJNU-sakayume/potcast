@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 411712, "durationMs": 87000 },
+  "segments": [
+    { "startMs": 180, "endMs": 6260, "translation": "대학에 간 많은 학생들이 약물에, 마리화나에, 술에 빠져 버렸어." },
+    { "startMs": 6260, "endMs": 10060, "translation": "잘 들어, 다른 사람이 되려고 하지 마." },
+    { "startMs": 10060, "endMs": 13260, "translation": "다른 사람이 되려고 하지 마." },
+    { "startMs": 13260, "endMs": 17420, "translation": "너 자신으로 있어. 그걸로 충분하다는 걸 알고." },
+    { "startMs": 17420, "endMs": 21150, "translation": "다른 사람이 되려고 하지 마." },
+    { "startMs": 21150, "endMs": 23030, "translation": "다른 사람처럼 되려고 하지 마." },
+    { "startMs": 23030, "endMs": 26720, "translation": "다른 사람처럼 행동하지 마. 너 자신으로 있어." },
+    { "startMs": 26720, "endMs": 28540, "translation": "너 자신을 믿고 당당해져." },
+    { "startMs": 28540, "endMs": 35100, "translation": "네 결정과 네 신념을 믿고 의지해." },
+    { "startMs": 35100, "endMs": 40420, "translation": "내가 가르쳐 준 걸 알잖아. 술을 마시지 말고, 약물을 하지 말라는 거." },
+    { "startMs": 40420, "endMs": 46190, "translation": "코카인이든 마리화나든 손대지 마. 그런 건 중독성이 아주 강하니까." },
+    { "startMs": 46190, "endMs": 55270, "translation": "사람들이 마리화나에 찌들면" },
+    { "startMs": 55270, "endMs": 61150, "translation": "무기력하고, 게으르고, 멍청해지고, 무관심해져." },
+    { "startMs": 61150, "endMs": 65000, "translation": "마리화나가 너한테 하는 일은 그게 전부야, 알겠지?" },
+    { "startMs": 65000, "endMs": 66430, "translation": "엄마야." },
+    { "startMs": 66430, "endMs": 73460, "translation": "의사의 관리 아래 쓰는 거라면 얘기가 달라. 그땐 규제가 되니까." },
+    { "startMs": 73460, "endMs": 79190, "translation": "마리화나를 피우지 말고, 술도 마시지 마." },
+    { "startMs": 79190, "endMs": 85080, "translation": "취한 사람의 차에는 타지 마." },
+    { "startMs": 85080, "endMs": 87000, "translation": "엄마야, 전화해. 끊을게." }
+  ]
+}

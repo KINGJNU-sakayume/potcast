@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 413659, "durationMs": 86000 },
+  "segments": [
+    { "startMs": 6540, "endMs": 12720, "translation": "솔직히 말할게, 크게 무너지진 않았어" },
+    { "startMs": 12720, "endMs": 19880, "translation": "그래도 이 시간을 지나는 동안 네가 내 손을 잡아 줄 수 있었잖아, 자기야" },
+    { "startMs": 19880, "endMs": 31710, "translation": "따뜻한 제트 아래로 생각이 흘러가게 내버려 둬" },
+    { "startMs": 31710, "endMs": 34830, "translation": "남은 것들 사이로 손을 쓸어 넘겨" },
+    { "startMs": 34830, "endMs": 37720, "translation": "우리 점점 나이 들어 가고 있어, 자기야" },
+    { "startMs": 37720, "endMs": 40630, "translation": "그리 오래 남지도 않았어, 자기야" },
+    { "startMs": 40630, "endMs": 43610, "translation": "내가 왜 설교를 하고 있지?" },
+    { "startMs": 43610, "endMs": 47940, "translation": "이 합창단에게, 이 무신론자에게" },
+    { "startMs": 47940, "endMs": 59880, "translation": "나와 똑같은 이런 버전들도 전부 네 거야" },
+    { "startMs": 59880, "endMs": 63300, "translation": "한참 지나면" },
+    { "startMs": 63300, "endMs": 72080, "translation": "그것들이 날 네 가까이에 붙들어 둬" },
+    { "startMs": 72080, "endMs": 86000, "translation": "(나처럼 그것들도 네 가까이 있기를 바라)" }
+  ]
+}

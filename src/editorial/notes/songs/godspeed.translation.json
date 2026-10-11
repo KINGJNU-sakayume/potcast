@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 415980, "durationMs": 178000 },
+  "segments": [
+    { "startMs": 34150, "endMs": 42640, "translation": "난 언제나 널 사랑할 거야, 지금까지 그랬던 것처럼" },
+    { "startMs": 42640, "endMs": 51170, "translation": "널 위한 기도를 놓아 줄게, 다정한 말 한마디만 남기고" },
+    { "startMs": 51170, "endMs": 68730, "translation": "너를 위한 식탁이 차려져 있어" },
+    { "startMs": 68730, "endMs": 74320, "translation": "잘 가, 영광이 함께하길 바라" },
+    { "startMs": 74320, "endMs": 85740, "translation": "네가 옮기지 못할 산들도 있을 거야" },
+    { "startMs": 85740, "endMs": 94770, "translation": "그래도 난 언제나 네 곁에 있을 거야, 지금까지 그랬던 것처럼" },
+    { "startMs": 94770, "endMs": 103090, "translation": "너에 대한 내 몫을 내려놓을게, 세상은 자유로우니까" },
+    { "startMs": 103090, "endMs": 112480, "translation": "넌 가끔 네가 온 곳을 내려다보겠지" },
+    { "startMs": 112480, "endMs": 124320, "translation": "하지만 부를 수 있는 집이 여기 있을 거야, 언제나" },
+    { "startMs": 124320, "endMs": 132790, "translation": "이 사랑은 우리를 지켜 줄 거야, 눈이 멀고 귀가 닫히고 마음이 어두워져도" },
+    { "startMs": 132790, "endMs": 140800, "translation": "이 사랑은 우리를 지켜 줄 거야, 눈이 멀고 귀가 닫히고 마음이 어두워져도" },
+    { "startMs": 140800, "endMs": 150560, "translation": "이 사랑은 우리를 지켜 줄 거야, 눈이 멀고 귀가 닫히고 마음이 어두워져도, 우리가 죽는 그날까지" },
+    { "startMs": 159730, "endMs": 168860, "translation": "난 언제나 널 사랑할 거야, 우리가 죽는 그날까지" }
+  ]
+}
