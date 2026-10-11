@@ -11,6 +11,7 @@ sources:
   - https://coogradio.com/2016/02/track-by-track-album-review-the-life-of-pablo-by-kanye-west/
   - https://open.spotify.com/track/5CGS4UovzA7ftCJkLVXQju
   - https://lrclib.net/api/get/572733
+  - "Genius 주석 (사용자 제공) — I Love Kanye"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -27,12 +28,12 @@ translation:
       target: "너"
       note: "마지막에 직접 부르는 청중으로 열어 둔다."
   glossary:
-    - source: "the ’Go"
-      target: "시카고"
-      note: "출신 도시의 줄임말이다."
     - source: "pink polo"
       target: "분홍 폴로"
       note: "초기 웨스트의 옷차림과 팬이 따라 하던 이미지를 가리킨다."
+    - source: "the ’Go"
+      target: "시카고('Go) 출신"
+      note: "'the 'Go'는 시카고의 줄임말이다. Genius 주석에 따르면 'straight from the go'가 카녜의 시카고 뿌리를 가리키고, 'Put On'에서도 같은 줄임말을 썼으며, 그의 첫 그룹 Go Getters(GLC, Timmy G, Arrowstar)도 겹쳐 읽는다."
   written: 2026-10-04
   updated: 2026-10-11
 ---

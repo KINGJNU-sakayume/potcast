@@ -12,6 +12,7 @@ sources:
   - https://en.wikipedia.org/wiki/Stoney_(album)
   - https://pappadeaux.com/our-story/
   - https://www.complex.com/style/fairfax-avenue-mecca-of-streetwear
+  - "Genius 주석 (사용자 제공) — Too Young"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -58,4 +59,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 자신의 성공과 두려움을 듣는 사람들에게 거리낌 없이 털어놓는다. 자랑과 고백이 섞인 랩이라 **해체**로 옮겼다. 후렴의 'die too young'은 곡의 중심이라 '너무 어릴 때 죽고 싶진 않아'로 고정하고, 메아리처럼 반복되는 'too young'도 하나하나 살렸다. 'bands'는 천 달러 묶음을 가리키는 은어라 '돈뭉치'로 옮겼다. 가사 데이터의 받아쓰기가 불확실한 몇 줄과 끝이 흐려지는 줄은 뜻이 통하는 범위에서 옮기거나 말줄임표로 남겼다. 'got that bitch off'와 'poppin' that woe', 첫 절 끝의 'your life never going back' 줄은 웹에서 줄 단위 해설을 찾지 못해 미확정이며, 가장 근거가 강한 해석을 유지했다.
+화자는 자신의 성공과 두려움을 듣는 사람들에게 거리낌 없이 털어놓는다. 자랑과 고백이 섞인 랩이라 **해체**로 옮겼다. 후렴의 'die too young'은 곡의 중심이라 '너무 어릴 때 죽고 싶진 않아'로 고정하고, 메아리처럼 반복되는 'too young'도 하나하나 살렸다. 'bands'는 천 달러 묶음을 가리키는 은어라 '돈뭉치'로 옮겼다. 가사 데이터의 받아쓰기가 불확실한 몇 줄과 끝이 흐려지는 줄은 뜻이 통하는 범위에서 옮기거나 말줄임표로 남겼다. 첫 절 끝의 'your life never going back'은 Genius 주석에 따라 가난으로 돌아가지 않으려 침착하게 지낸다는 뜻으로 읽었다. 'got that bitch off'와 'poppin' that woe'는 해설을 찾지 못해 미확정이며, 가장 근거가 강한 해석을 유지했다.

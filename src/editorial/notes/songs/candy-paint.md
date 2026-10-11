@@ -11,6 +11,7 @@ sources:
   - https://en.wikipedia.org/wiki/Candy_Paint_(Post_Malone_song)
   - https://en.wikipedia.org/wiki/Beerbongs_%26_Bentleys
   - https://www.songfacts.com/facts/post-malone/candy-paint
+  - "Genius 주석 (사용자 제공) — Candy Paint"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -25,9 +26,6 @@ translation:
     - source: you
       target: 너
   glossary:
-    - source: candy paint
-      target: 캔디 페인트
-      note: 사탕처럼 반짝이는 자동차 도장 기법. 이름을 살렸다. 송팩츠는 그의 맞춤 포드 익스플로러(파란 캔디 페인트에 흰 지붕, 람보르기니식 문)를 가리킨다고 전한다.
     - source: young stoney
       target: 젊은 스토니
       note: 데뷔 앨범 『Stoney』와 그의 옛 별명을 가리킨다.
@@ -40,6 +38,9 @@ translation:
     - source: gave me top
       target: 입으로 해 줄 땐
       note: 'top'은 구강 성교를 가리키는 속어. 직설을 피해 완곡하게 옮겼다.
+    - source: "candy paint"
+      target: "캔디 페인트"
+      note: "'candy paint'는 포스트의 맞춤 포드 익스플로러를 가리킨다(Songfacts). 'no jumper'는 Gucci Mane의 'Bricks'를 끌어온 말이고, 팟캐스트 No Jumper에 대한 인사이면서 포스트가 농구를 좋아하지만 잘하지는 못한다는 농담으로 읽혔다(Genius 주석)."
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -54,4 +55,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 그의 것을 노리는 사람들과 듣는 사람들에게 거리낌 없이 과시한다. 자랑과 경고가 섞인 랩이라 **해체**로 옮겼다. 'candy paint'는 자동차 도장 기법의 이름이라 그대로 살렸고, 'young stoney'는 데뷔 앨범과 옛 별명을 가리켜 '젊은 스토니'로 옮겼다. 'Michael Scott'은 제지 회사 지점장이라 종이가 돈을 뜻하는 말장난이 살도록 이름을 두었다. 가사 데이터의 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 'Slide boy comin' down'과 '스무 개 굴리며 재를 털고' 줄은 속어 뜻을 확정하지 못해 직역에 가깝게 두었다.
+화자는 그의 것을 노리는 사람들과 듣는 사람들에게 거리낌 없이 과시한다. 자랑과 경고가 섞인 랩이라 **해체**로 옮겼다. 'candy paint'는 자동차 도장 기법의 이름이라 그대로 살렸고, 'young stoney'는 데뷔 앨범과 옛 별명을 가리켜 '젊은 스토니'로 옮겼다. 'Michael Scott'은 제지 회사 지점장이라 종이가 돈을 뜻하는 말장난이 살도록 이름을 두었다. 가사 데이터의 받아쓰기가 불확실한 몇 줄은 뜻이 통하는 범위에서 옮겼다. 'no jumper'는 Gucci Mane의 'Bricks'를 끌어온 말이라 농구 슛과 팟캐스트 No Jumper를 겹쳐 읽었고, '스무 개 굴리며 재를 털고'는 대마를 말아 피운 뒤 길을 나선다는 뜻으로 읽었다(사용자 제공 주석). 'Slide boy comin' down'은 속어 뜻을 확정하지 못해 직역에 가깝게 두었다.

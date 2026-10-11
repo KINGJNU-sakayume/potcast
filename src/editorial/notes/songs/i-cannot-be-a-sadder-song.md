@@ -10,6 +10,7 @@ sources:
   - https://riffmagazine.com/album-reviews/post-malone-twelve-carat-toothache/
   - https://www.grammy.com/news/post-malone-new-album-twelve-carat-toothache-review-takeaways-2022/
   - https://en.wikipedia.org/wiki/Twelve_Carat_Toothache
+  - "Genius 주석 (사용자 제공) — I Cannot Be (A Sadder Song)"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -32,6 +33,9 @@ translation:
     - source: goalie
       target: 골키퍼
       note: 내 마음을 지켜 주겠다던 약속을 빗댄 말.
+    - source: "federal skeleton / prime-time"
+      target: "스켈레톤 시계 / 전성기"
+      note: "'federal skeleton'은 스켈레톤 시계(투명한 문자판으로 내부 기계가 보이는 시계)이고, 'federal'은 대통령(Presidential) 롤렉스를 가리키는 말로 읽었다. 'prime-time'은 큰일이 벌어지는 시간대라는 뜻이다(Genius 주석)."
   written: 2026-10-09
   updated: 2026-10-11
 ---
@@ -46,4 +50,4 @@ translation:
 
 ## 번역에 대하여
 
-화자는 자신을 붙잡고 있는 연인에게 직접 묻는다. 답답함을 털어놓는 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 중심 구절은 원곡이 말을 끊어 반복하는 리듬이라 '난 될 수 없어, 네가 원하는 / 네가 원하는, 네가 원하는 내가'처럼 나눠 옮겼다. 'goalie'는 마음을 지켜 주겠다던 약속을 빗댄 말이라 '골키퍼'로 이미지를 살렸다. 거너의 절은 받아쓰기가 불확실한 줄이 있어 뜻이 통하는 범위에서 옮겼다. 'federal skeleton on my wrist'(스켈레톤 시계로 읽음)와 'top me off' 줄은 웹에서 뜻을 확인하지 못해 확신이 낮다.
+화자는 자신을 붙잡고 있는 연인에게 직접 묻는다. 답답함을 털어놓는 연인 사이의 말이라 **해체**로 옮겼다. 후렴의 중심 구절은 원곡이 말을 끊어 반복하는 리듬이라 '난 될 수 없어, 네가 원하는 / 네가 원하는, 네가 원하는 내가'처럼 나눠 옮겼다. 'goalie'는 마음을 지켜 주겠다던 약속을 빗댄 말이라 '골키퍼'로 이미지를 살렸다. 거너의 절은 받아쓰기가 불확실한 줄이 있어 뜻이 통하는 범위에서 옮겼다. 'federal skeleton on my wrist'는 Genius 주석에 따라 스켈레톤 시계이면서 대통령 롤렉스를 가리키는 말로 읽었고, 'top me off'는 술을 채워 달라는 말과 구강 성교 속어('top')가 겹쳤을 가능성이 있다는 주석(검수되지 않음)이 있어 확신이 낮다.

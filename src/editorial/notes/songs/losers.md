@@ -11,6 +11,7 @@ sources:
   - https://www.whiskeyriff.com/2024/08/19/ranked-every-song-on-post-malones-new-f-1-trillion-album/
   - https://en.wikipedia.org/wiki/Losers_(song)
   - https://holler.country/news/general/losers-by-post-malone-and-jelly-roll-lyrics-and-meaning/
+  - "Genius 주석 (사용자 제공) — Losers"
 translation:
   sourceLanguage: en
   targetLanguage: ko
@@ -33,16 +34,15 @@ translation:
     - source: last callers
       target: 마지막 주문을 하는 사람들
       note: 술집이 문 닫기 전 마지막 주문을 하는 사람들.
-    - source: Chucks, Erns, Chandlers
-      target: 척이니 언이니 챈들러니 하는 이름의 사람들
-      note: >
-        공동 작곡자 찰리 핸섬(척), 어니스트, 챈들러 월터스를 가리키는 이름 나열로 보이며 평범한 사람들을 부르는 목록의 일부다. 받아쓰기의 'urns'는 'Erns'로 읽었다. 이 해석은 holler.country의 가사 해설 한 곳에 근거한다.
     - source: rock / stoned
       target: 바위 / 취해
       note: 'rock'은 지구, 'stoned'는 돌(바위)과 약·술에 취함을 겹친 말장난이라 '지구라는 바위 위에서 … 취해 가는'으로 두 뜻을 함께 살렸다.
     - source: steel guitar
       target: 스틸 기타
       note: 컨트리의 상징적인 악기.
+    - source: "Chucks, Erns, Chandlers"
+      target: "척, 언, 챈들러"
+      note: "Spotify 공식 가사(사용자 확인)는 'Couple Chuck's, Ern's, and Chandler's'로 대문자로 시작해, 공동 작곡자 이름을 나열한 것으로 읽는다(holler.country와 Wikipedia 크레디트)."
   written: 2026-10-10
   updated: 2026-10-11
 ---
@@ -57,4 +57,4 @@ translation:
 
 ## 번역에 대하여
 
-두 화자는 세상에서 밀려난 사람들에게 같은 편으로서 말한다. 술집에서 건배하듯 편한 말투라 **해체**로 옮겼다. 제목 'losers'는 '패배자들'로 옮기고, 'outcasts'와 'sinners'는 '버림받은 사람들'과 '죄인들'로 옮겨 나열의 리듬을 살렸다. 'last callers'는 술집이 문 닫기 전 마지막 주문을 하는 사람들이라 뜻을 풀어 옮겼다. 첫 절의 세 번째 줄은 공동 작곡자들의 이름을 나열한 것으로 보고 이름 그대로 옮겼으며, 이 해석은 한 곳의 해설에만 근거하므로 완전히 확정된 것은 아니다.
+두 화자는 세상에서 밀려난 사람들에게 같은 편으로서 말한다. 술집에서 건배하듯 편한 말투라 **해체**로 옮겼다. 제목 'losers'는 '패배자들'로 옮기고, 'outcasts'와 'sinners'는 '버림받은 사람들'과 '죄인들'로 옮겨 나열의 리듬을 살렸다. 'last callers'는 술집이 문 닫기 전 마지막 주문을 하는 사람들이라 뜻을 풀어 옮겼다. 첫 절의 세 번째 줄은 공동 작곡자들의 이름을 나열한 것으로 보고 이름 그대로 옮겼으며, 이 해석은 한 곳의 해설에만 근거하므로 완전히 확정된 것은 아니다. 'Chuck's, Ern's, Chandler's'는 Spotify 공식 가사 표기(사용자 확인)가 대문자로 시작해 사람 이름의 나열로 읽었다.

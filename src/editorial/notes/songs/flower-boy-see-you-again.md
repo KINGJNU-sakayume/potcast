@@ -7,6 +7,7 @@ sources:
   - https://podscripts.co/podcasts/dissect/s4e4-see-you-again-by-tyler-the-creator
   - https://www.thefader.com/2017/08/04/tyler-the-creator-flower-boy-review
   - https://miccheque.com/2017/07/23/flower-boy-review/
+  - "Genius 주석 (사용자 제공) — See You Again"
 short: >
   타일러의 부드러운 노래와 칼리 우치스의 후렴을 먼저 구별하고, 랩과 리듬이 들어왔을 때 같은 갈망의 속도가 어떻게 달라지는지 들어 보라.
 translation:
@@ -28,16 +29,17 @@ translation:
     - source: Sugar honey iced tea
       target: 세상에 맙소사
       note: "욕설을 돌려 말한 감탄사의 완곡한 느낌을 살렸다."
-    - source: 20/20 vision
-      target: 20/20, 아주 또렷하게 보여
-      note: "20/20은 정상 시력을 가리키는 표기이고 눈을 감아야 상대가 보인다는 역설과 이어진다. 한국어에서 숫자만 두면 뜻이 흐려져 '아주 또렷하게 보여'를 덧붙였다."
     - source: dirt-colored eyes
       target: 흙 색깔의 갈색 눈동자
       note: "'흙빛'만 쓰면 한국어에서는 창백한 얼굴빛으로 읽혀 눈동자의 갈색을 명시했다."
     - source: bumblebee
       target: 꿀벌
       note: "꽃과 곤충의 이미지를 이어 가는 장치라 그대로 살렸다."
+    - source: "20/20 vision"
+      target: "20/20, 아주 또렷하게 보여"
+      note: "20/20 vision은 20피트 거리에서 정상 시력이라는 뜻이다. 뒤 줄에서 큐피드가 정확히 겨냥해 맞혔다는 말로 이어진다. 프랭크 오션도 'Slide'에서 비슷한 표현을 썼다(Genius 주석)."
   written: 2026-10-11
+  updated: 2026-10-11
 ---
 
 'See You Again'의 첫인상은 타일러의 낮고 거친 랩 목소리보다 한층 부드러운 노래에 달려 있다. 피아노와 길게 펼쳐지는 음색이 그 목소리를 감싸며, 칼리 우치스(Kali Uchis)의 후렴은 요청을 더욱 선명한 선율로 만든다. 이후 리듬이 탄력을 얻고 타일러가 랩으로 이동하면 꿈속에 머물던 마음이 서두르는 행동처럼 들린다. 마지막의 금관을 닮은 신시사이저가 커지다 끊기는 지점까지 따라가면, 아름다운 장면이 오래 유지될 것이라는 보장은 처음부터 없었음을 느끼게 된다.

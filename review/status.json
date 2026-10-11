@@ -8,6 +8,11 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "Genius 주석 확인"
       }
     },
     "songs/oasis-shakermaker": {
@@ -133,6 +138,11 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "Simp 해석 사용자 확인"
       }
     },
     "songs/flower-boy-sometimes": {
@@ -277,6 +287,11 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "39, 49번 줄 사용자 확인"
       }
     },
     "songs/candy-paint": {
@@ -289,6 +304,11 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "38번 줄 표기 확인"
       }
     },
     "songs/die-for-me": {
@@ -301,6 +321,11 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "30번 줄 표기 확인"
       }
     },
     "songs/i-cannot-be-a-sadder-song": {
@@ -313,18 +338,33 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "3번 줄 표기 확인"
       }
     },
     "songs/take-what-you-want": {
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "40–45번 줄 표기 확인"
       }
     },
     "songs/texas-tea": {
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "18–20번 줄 표기 확인"
       }
     },
     "songs/too-young": {
@@ -337,6 +377,11 @@
       "T2": {
         "version": 1,
         "date": "2026-10-11"
+      },
+      "T3": {
+        "version": 1,
+        "date": "2026-10-11",
+        "note": "29번 줄 소문자 표기만 확인"
       }
     }
   }
