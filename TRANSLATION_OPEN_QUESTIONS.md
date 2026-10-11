@@ -25,7 +25,7 @@
 | pothole | 15 | 'you off it'이 약물과 이어지는지 | 네가 완전히 맛이 갔다 | Genius 주석 |
 | foreword | 47–49 | 마지막 "don't come back"의 청자. 렉스 오렌지 카운티의 구간으로 읽는 주석은 있으나 청자는 확정 안 됨 | 돌아오지 마라 | Genius 주석, 인터뷰 |
 | see-you-again | 11, 35–37 | '20/20 vision', 'look both ways' 등 숙어 | 직역에 가깝게 | 숙어 설명 |
-| garden-shed | 39 | 'base 10'이 base인지 bass인지 (받아쓰기가 갈림) | 베이스를 열 끝까지 올리는 걸 좋아했고 | LRCLIB와 Genius 가사 대조 |
+| garden-shed | 39 | Spotify 공식 가사는 "base 10"(bass 아님)으로 확정. 십진법을 뜻하는 말이 이 자리에서 무엇을 가리키는지는 해설을 못 찾음 | 베이스 10(base 10)의 열렬한 팬이었고 | Genius 주석, 인터뷰 |
 | garden-shed | 40 | 'Polka dot' | 직역 | Genius 주석 |
 | boredom | 30 | "I'm not solved" 말장난 여부 | 난 아직 안 풀렸고 | Genius 주석 |
 | boredom | 41 | 'fall this morning' | 무너져 내려 | Genius 주석 |
@@ -53,7 +53,6 @@
 | --- | --- | --- | --- | --- |
 | digsys-dinner | 3, 14, 21 | 'tea'를 저녁 식사로 읽었는데 세 시 반 픽업과 시간이 어긋남 | 밥 먹으러 | 노엘 인터뷰, 영국 속어 사전 |
 | cigarettes-and-alcohol | 5, 16, 19 | 'the white line'을 코카인으로 읽은 근거가 평론 블로그 수준. 'when it comes on top'은 사전에서 못 찾음 | 코카인 한 줄이나 하는 | 노엘 인터뷰, Green's Dictionary |
-| bring-it-on-down | 22 | "their lives"인지 "your life"인지 (LRCLIB 후보 20여 개는 모두 their) | 그들의 인생 | 음원 청취, 공식 가사 시트 |
 | shakermaker | 9 | "I'm sorry" 대목의 청자 | 사과하는 반말 | 노엘 인터뷰 |
 | supersonic | 32 | "done it"의 뜻 (성관계 암시로 읽되 목적어를 흐려 둠) | 의사랑 그걸 했어 | 노엘 설명 (현재는 없음) |
 | rock-n-roll-star | 7, 21 | 'feed my head'의 뜻 (White Rabbit에서 왔다는 설은 입증 못 함) | 직역 | 노엘 인터뷰 |
@@ -74,9 +73,12 @@
 | foreword | 33 | "will not let me be one"의 "one" | 경찰에게 희생되는 흑인 | Genius 주석 |
 | pothole | 50 | 'four for four' | 『Bastard』 포함 이전 네 앨범의 연속 성공 | Genius 주석 |
 | i-aint-got-time | 59–61 | Yoda / Skywalker / solar / Sprite / cola | 스타워즈 말장난 (요다는 초록 지폐, 솔라는 한 솔로) | Genius 주석 |
+| bring-it-on-down | 22 | "their lives"인지 "your life"인지 | "their lives"로 확정 | Spotify 공식 가사 (사용자 확인) |
 | droppin-seeds | 노트 본문 | 곡 전체의 화자 | 릴 웨인. 노트 본문의 "끝의 타일러" 서술을 고침 | XXL 기사 |
 
 ## LRCLIB 가사와 Genius 가사가 다를 때
+
+**Spotify 공식 가사**가 가장 우선하는 기준이다. 사용자가 Spotify 앱에서 직접 확인한 표기를 쓰고, 문서에는 "Spotify 공식 가사"로 출처를 적는다.
 
 앱이 보여 주는 가사는 LRCLIB 레코드(`timing.lrclibId`)이고, 번역은 그 줄의 시간에 붙는다. Genius 가사는 해석의 근거 자료일 뿐 저장소에 옮기지 않는다. 둘 다 사람이 받아쓴 것이라 어느 쪽이 맞는지는 음원이 판단한다.
 
