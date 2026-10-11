@@ -6,6 +6,7 @@ short: >
   같은 후렴과 '일어나, 난 내려가' 구호 사이로 세 목소리가 차례로 지나간다. 차트를 말하는 제이 지와 할아버지의 연좌 농성을 말하는 웨스트의 거리가 이 곡의 핵심이다.
 written: 2026-10-05
 sources:
+  - https://en.wikipedia.org/wiki/Romeo_Must_Die
   - https://www.rapreviews.com/2004/02/kanye-west-the-college-dropout/
   - https://stereogum.com/2249901/kanye-west-the-college-dropout-turns-20/reviews/the-anniversary
   - https://en.wikipedia.org/wiki/Never_Let_Me_Down_(Kanye_West_song)
@@ -36,7 +37,11 @@ translation:
     - source: "Cinque"
       target: "싱케"
       note: "아미스타드호 노예 반란을 이끈 인물."
+    - source: "Romeo must die"
+      target: "로미오도 죽어야 하나"
+      note: "알리야가 출연한 영화 제목 Romeo Must Die와 겹치는 표현으로 읽힌다(Wikipedia 영화 항목, 줄 풀이는 확인하지 못한 출처 없음). 번역은 유지했다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 웃음과 함께 음악을 키우라는 말로 시작하고, 곧 블랙잭의 'Maybe It's the Power of Love'에서 가져온 후렴이 들린다. 진실함에 대해 찾은 단 하나, 너는 나를 실망시키지 않는다는 선율이다. 후렴 뒤에는 '일어나, 난 내려가'라는 구호가 합창처럼 여섯 번 반복되며 벌스로 넘어가는 문턱을 만든다. 첫 벌스는 제이 지, 둘째는 웨스트, 셋째는 J. 아이비의 낭송이고, 마지막에 제이 지가 다시 돌아온다. 같은 후렴과 구호가 매번 사이를 끊기 때문에, 5분 24초 동안 서로 다른 세 목소리가 같은 주제를 돌려 가며 말하는 구조가 또렷하게 들린다.

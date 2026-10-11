@@ -6,6 +6,7 @@ short: >
   철사로 턱을 고정한 채 녹음한 목소리라, 자음이 뭉개지고 입이 덜 벌어진 발음이 그대로 남아 있다. 그 위에서 높게 돌린 차카 칸의 목소리가 '불길을 뚫고'를 노래한다.
 written: 2026-10-05
 sources:
+  - https://www.shmoop.com/study-guides/through-the-wire/lyrics.html
   - https://stereogum.com/2249901/kanye-west-the-college-dropout-turns-20/reviews/the-anniversary
   - https://www.theringer.com/2024/02/09/music/kanye-west-college-dropout-20th-anniversary-vultures-album
   - https://www.rapreviews.com/archive/2004_02F_college.html
@@ -34,7 +35,11 @@ translation:
     - source: "Mr. Glass"
       target: "미스터 글래스"
       note: "영화 「언브레이커블」의 쉽게 부서지는 악역. 자신은 부서지지 않는 쪽이라는 농담이다."
+    - source: "Mase"
+      target: "메이스"
+      note: "1998년 싸움으로 턱을 다친 래퍼 메이스를 가리킨다고 풀이한 해설이 있다(Shmoop). 턱 부상 경험을 겹친 표현으로 읽혀 번역은 이름 그대로 두었다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 아무도 자신의 랩을 막을 수 없다는 웨스트의 말로 시작한다. 지금 마음에 담긴 게 너무 많다고, 삶과 죽음의 문제라고 말하는 목소리는 철사로 묶인 턱 때문에 입이 덜 벌어지고 자음이 뭉개져 있다. 박자가 시작되면 템포와 음높이를 끌어올린 차카 칸의 'Through the Fire'가 후렴을 맡고, 웨스트는 그 높은 목소리 아래에서 서두르듯 말을 밀어붙인다. 첫 벌스가 끝나면 비트를 멈추지 않은 채 말로 근황을 설명한다. 의사가 6주 동안 입을 묶어 두어야 한다고 했고, 거울을 보니 턱 반쪽이 입 안쪽으로 밀려 들어가 있었다는 이야기다. 둘째 벌스가 끝난 뒤에는 턱에 금속판을 넣으면 공항 검색대를 못 지나갈 거라는 농담이 이어지고, 차카 칸의 후렴이 곡을 끝까지 끌고 간다.

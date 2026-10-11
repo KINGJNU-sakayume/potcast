@@ -6,6 +6,8 @@ short: >
   흑인 대학 사교 클럽 이름을 하나씩 부르며 '스텝'을 외치는 후렴과, 욕설이 지워진 자리에서 말이 끊기는 순간을 듣는다. 끝부분에서 어리사 프랭클린의 목소리가 '어둠 속에서'를 남긴다.
 written: 2026-10-05
 sources:
+  - https://www.azlyrics.com/lyrics/kanyewest/schoolspirit.html
+  - https://en.wiktionary.org/wiki/soror
   - https://stereogum.com/2249901/kanye-west-the-college-dropout-turns-20/reviews/the-anniversary
   - https://www.theringer.com/2024/02/09/music/kanye-west-college-dropout-20th-anniversary-vultures-album
   - https://www.rapreviews.com/2004/02/kanye-west-the-college-dropout/
@@ -34,7 +36,14 @@ translation:
     - source: "Jones like Norah"
       target: "노라 존스처럼 끌려"
       note: "'jones'(갈망)와 가수 노라 존스를 겹친 말장난이다."
+    - source: "soror"
+      target: "소로리티 자매"
+      note: "soror는 같은 소로리티(여학생 사교 클럽)의 회원을 가리키는 말이다(Wiktionary). 이전의 클럽 자매는 나이트클럽으로 읽힐 수 있어 고쳤다."
+    - source: "tippy tow"
+      target: "(푸티 탱의 말버릇으로 읽힌다)"
+      note: "영화 푸티 탱 속 인물 이름과 이어진 따옴표 구절로 적은 가사 사이트가 있다(AZLyrics, 출처 1건). 번역은 유지했다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 곡은 '학교 정신'을 외치는 웨스트의 목소리와 어리사 프랭클린의 샘플로 시작한다. 후렴은 알파, 오메가, 카파, 시그마 같은 흑인 대학 사교 클럽의 이름을 차례로 부르고 각 이름 뒤에 '스텝'을 붙여, 발을 구르고 박수를 치는 스테핑 공연의 박자를 흉내 낸다. 같은 후렴이 두 벌스의 앞뒤로 돌아오며 행진처럼 쌓인다. 그런데 앨범판에서는 욕설이 나올 자리마다 단어가 지워져 있어, 박자 중간에 말이 툭 끊긴다. 2분 15초쯤부터는 '우'가 나올 것 같다는 너스레가 몇 번 이어지고, 마지막에는 어리사 프랭클린의 '어둠 속에서'가 반복되며 곡이 닫힌다.
@@ -48,3 +57,5 @@ translation:
 ## 번역에 대하여
 
 대학생들과 자신을 의심한 사람들에게 자랑하듯 말하는 랩이라 **해체**로 옮겼다. 후렴의 사교 클럽 이름은 흑인 대학 문화의 고유명사라 번역하지 않고 음차했고, *step*도 공연 형식의 이름이라 '스텝'으로 두어 구령처럼 읽히게 했다. 앨범판에서 잘려 나간 욕설은 LRCLIB 기록처럼 일부만 남은 상태라 한국어에서도 욕설을 채워 넣지 않았다. 'Through the Wire'와 이어지는 사고 대목은 같은 사건임이 드러나도록 구체적으로 옮겼다.
+
+2026-10-11 재검토에서 soror를 사전 뜻에 맞춰 소로리티 자매로 고쳤다.

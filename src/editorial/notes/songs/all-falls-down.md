@@ -6,6 +6,7 @@ short: >
   첫 벌스의 '그녀'가 둘째 벌스 첫 줄에서 '나'로 바뀌는 지점을 듣는다. 같은 문장 틀이 관찰을 고백으로 뒤집고, 후렴은 그 사이를 같은 선율로 받친다.
 written: 2026-10-05
 sources:
+  - https://www.clashmusic.com/?p=243890
   - https://djbooth.net/features/2016-04-27-all-falls-down-hook-story/
   - https://stereogum.com/2249901/kanye-west-the-college-dropout-turns-20/reviews/the-anniversary
   - https://www.rapreviews.com/2004/02/kanye-west-the-college-dropout/
@@ -37,7 +38,11 @@ translation:
     - source: "Ver-say-see"
       target: "베르-세이-시"
       note: "명품 이름을 제대로 발음하지 못하는 농담이라 어색한 발음을 살렸다."
+    - source: "coupe"
+      target: "쿠페"
+      note: "차 종류이면서 coop(우리, 감옥)을 겹쳐 읽는 해석이 있다(출처 1건, Clash). 번역은 차 이름으로 두었다."
   written: 2026-10-05
+  updated: 2026-10-11
 ---
 
 어쿠스틱 기타와 느긋한 드럼 위에서 실리나 존슨의 후렴이 먼저 들리고, 웨스트는 그 뒤에서 시카고의 사우스사이드와 웨스트사이드를 부르며 파티를 연다. 첫 벌스는 맹세하듯 시작해 한 여성을 관찰한다. 돈이 되지 않는 전공, 3년째 2학년, 미용 일을 하며 새 운동화를 사는 삶이 짧은 문장으로 이어지고, 일부 단어는 길게 끌어 운을 억지로 맞추는 발음으로 웃음을 만든다. 후렴을 지나 둘째 벌스가 시작되면 같은 맹세가 이번에는 '나'로 시작한다. 시계와 명품, 마트에 갈 때도 챙기는 새 옷까지, 관찰하던 시선이 그대로 자기에게 돌아온다. 셋째 벌스는 경찰과 감옥, 소비와 인종 문제로 시야를 넓혔다가 보석 가게에서 쓴 돈을 털어놓으며 다시 자신에게 돌아오고, 마지막 후렴 뒤에는 실리나 존슨에게 고맙다는 짧은 말과 다음 곡으로 넘어가는 대사가 붙는다.
