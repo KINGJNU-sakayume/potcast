@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 16423374,
+    "durationMs": 170647
+  },
+  "segments": [
+    { "startMs": 27060, "endMs": 31350, "translation": "있잖아, 지금 얼마나 왔어? 「5000마일쯤 지났어」" },
+    { "startMs": 31350, "endMs": 36240, "translation": "재떨이가 된 스무디, 의자에 흘러넘친 체더치즈" },
+    { "startMs": 36240, "endMs": 40510, "translation": "있잖아, 어디로 가고 싶어? 「조금만 더 달리고 싶어」" },
+    { "startMs": 40510, "endMs": 45560, "translation": "뒷좌석엔 억지로 낸 기운, 정신 차리려고 씹는 페퍼민트" },
+    { "startMs": 45560, "endMs": 54470, "translation": "생각해 보면 그때는 제정신이 아니어서, 웃을 수 있는 쪽을 골랐어. 목적지를 한참 지나쳐 버렸어 (멈추지 마, 봐, 멈추지 마)" },
+    { "startMs": 54470, "endMs": 61080, "translation": "뜻밖의 만남 끝에서 트라우마 같은 꿈을, 그저 보고 싶어서 달리고 있었어" },
+    { "startMs": 61080, "endMs": 65810, "translation": "「가, 앞으로, 가」 어디로? (멈추지 마, 멈춰)" },
+    { "startMs": 65810, "endMs": 69050, "translation": "자, 안녕, 그려 왔던 미래" },
+    { "startMs": 69050, "endMs": 70220, "translation": "이 앞은 아무도 몰라" },
+    { "startMs": 70220, "endMs": 72210, "translation": "멈춰서 봐, 웃을 일이 아니야" },
+    { "startMs": 72210, "endMs": 74860, "translation": "지독한 미아야, 당장 JAF를 불러" },
+    { "startMs": 74860, "endMs": 77360, "translation": "자, 울려 대 크라이 베이비" },
+    { "startMs": 77360, "endMs": 79250, "translation": "사랑, 되도록 잘 부탁해" },
+    { "startMs": 79250, "endMs": 92770, "translation": "「막을 테면 막아 봐, 일단 올라탄 이상 무사히 돌아갈 거라고 생각하지 마」" },
+    { "startMs": 92770, "endMs": 97020, "translation": "있잖아, 지금 얼마나 왔어? 「50000마일쯤 지났어」" },
+    { "startMs": 97020, "endMs": 101890, "translation": "새카맣게 타 버린 스무디, 두통에 듣지 않는 록소닌" },
+    { "startMs": 101890, "endMs": 106130, "translation": "있잖아, 뭘 하고 싶어? 「굳이 비유하자면 바다가 보고 싶어」" },
+    { "startMs": 106130, "endMs": 111020, "translation": "나란히 앉은 크리피, 곁을 스쳐 가는 디즈니씨" },
+    { "startMs": 111020, "endMs": 113470, "translation": "허풍 떨고 잘난 척하며 「에브리 베리 해피」" },
+    { "startMs": 113470, "endMs": 115590, "translation": "지나가던 조숙한 여고생" },
+    { "startMs": 115590, "endMs": 117700, "translation": "꽤 힘들어, 디퍼렌셜이 잘 안 들어" },
+    { "startMs": 117700, "endMs": 120110, "translation": "불꽃놀이가 하고 싶어, 편의점에 가고 싶어" },
+    { "startMs": 120110, "endMs": 122320, "translation": "「가」 멈춰 「가라니까, 서둘러」" },
+    { "startMs": 122320, "endMs": 124720, "translation": "「노래해, 웃어, 괴로워해, 마이 달링」" },
+    { "startMs": 124720, "endMs": 131410, "translation": "이윽고 희미하게 바다 내음이 나" },
+    { "startMs": 131410, "endMs": 134690, "translation": "자, 안녕, 그려 왔던 미래" },
+    { "startMs": 134690, "endMs": 135960, "translation": "이 앞은 아무도 몰라" },
+    { "startMs": 135960, "endMs": 137860, "translation": "멈춰서 봐, 웃을 일이 아니야" },
+    { "startMs": 137860, "endMs": 140540, "translation": "지독한 미아야, 당장 JAF를 불러" },
+    { "startMs": 140540, "endMs": 142920, "translation": "자, 울려 대 크라이 베이비" },
+    { "startMs": 142920, "endMs": 144970, "translation": "사랑, 되도록 잘 부탁해" },
+    { "startMs": 144970, "endMs": 170647, "translation": "「막을 테면 막아 봐, 일단 올라탄 이상 무사히 돌아갈 거라고 생각하지 마」" }
+  ]
+}

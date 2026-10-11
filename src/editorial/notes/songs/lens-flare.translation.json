@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 11731980,
+    "durationMs": 175000
+  },
+  "segments": [
+    {
+      "startMs": 15510,
+      "endMs": 25220,
+      "translation": "있는 그대로는 살 수가 없어서 말이야, 맨살까지 꾸며 입은 슈퍼스타"
+    },
+    {
+      "startMs": 25220,
+      "endMs": 35520,
+      "translation": "뭐든 다 짜증 나니까 서로 상처 내듯이 노래를 불렀던 거야"
+    },
+    {
+      "startMs": 35520,
+      "endMs": 40370,
+      "translation": "컷 원 너는 누구야 너는 누구야 누구"
+    },
+    {
+      "startMs": 40370,
+      "endMs": 45180,
+      "translation": "컷 투 나를 봐 나를 봐 봐"
+    },
+    {
+      "startMs": 45180,
+      "endMs": 54970,
+      "translation": "얇은 얼음 위에서 춤을 춰, 눈부시게 화려한 LED 속에서"
+    },
+    {
+      "startMs": 54970,
+      "endMs": 66940,
+      "translation": "그게 너라고 다들 말하니까 뭐든 다 짜증 나는 거야"
+    },
+    {
+      "startMs": 66940,
+      "endMs": 70910,
+      "translation": "꿈같네, 그런 눈으로 보지 마 짜증 나"
+    },
+    {
+      "startMs": 70910,
+      "endMs": 76710,
+      "translation": "더 사랑받고 싶어, 여기서 사라져 버리고 싶어"
+    },
+    {
+      "startMs": 76710,
+      "endMs": 97100,
+      "translation": "네가 멋대로 고른 무대, 환호가 울리고 숨을 들이쉬어"
+    },
+    {
+      "startMs": 97100,
+      "endMs": 106960,
+      "translation": "맨발로 뛰어다니던 어린 시절엔 다정할 수 있었던 슈퍼스타"
+    },
+    {
+      "startMs": 106960,
+      "endMs": 111960,
+      "translation": "그런데 이게 뭐야, 눈부셔서 꼴사납네"
+    },
+    {
+      "startMs": 111960,
+      "endMs": 117050,
+      "translation": "다시 한번 되물어 봐"
+    },
+    {
+      "startMs": 117050,
+      "endMs": 122190,
+      "translation": "컷 원 너는 누구야 너는 누구야 누구"
+    },
+    {
+      "startMs": 122190,
+      "endMs": 126420,
+      "translation": "컷 투 나를 봐 나를 봐 봐"
+    },
+    {
+      "startMs": 126420,
+      "endMs": 131330,
+      "translation": "봐 봐 봐 봐 봐"
+    },
+    {
+      "startMs": 131330,
+      "endMs": 135330,
+      "translation": "꿈같아, 그래 이건 꿈에서 보고 싶어"
+    },
+    {
+      "startMs": 135330,
+      "endMs": 141180,
+      "translation": "계속 웃으면서 살고 싶어, 폭발하고 싶어, 사랑받고 싶어"
+    },
+    {
+      "startMs": 141180,
+      "endMs": 151810,
+      "translation": "네가 무엇보다 그저 필사적으로 거기 있던 걸 늘 보고 있었어"
+    },
+    {
+      "startMs": 151810,
+      "endMs": 156720,
+      "translation": "컷 원 너는 누구야 너는 누구야 누구"
+    },
+    {
+      "startMs": 156720,
+      "endMs": 161730,
+      "translation": "컷 투 나를 봐 나를 봐 봐"
+    },
+    {
+      "startMs": 161730,
+      "endMs": 166580,
+      "translation": "컷 원 너는 누구야 너는 누구야 누구"
+    },
+    {
+      "startMs": 166580,
+      "endMs": 175000,
+      "translation": "컷 투 나를"
+    }
+  ]
+}

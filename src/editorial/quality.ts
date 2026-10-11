@@ -175,14 +175,13 @@ export function auditNotes(artists: readonly ArtistNote[], albums: readonly Albu
  * floor test skips them, and fails once one of them passes, so the list only
  * shrinks: rewrite a note, then remove its line here.
  */
-// Album prose and standard tracklists are complete; these six albums still lack song-note files.
+// Album prose and standard tracklists are complete; these five albums still lack song-note files.
 // Four song notes have listening prose but still lack curated translations or verified language metadata
 // (adore-u, crush-on-you, before-the-rise, chowall: their lyrics language could not be checked against LRCLIB).
 export const PENDING_REVIEW: ReadonlySet<string> = new Set([
   'albums/parachutes',
   'albums/a-rush-of-blood',
   'albums/viva-la-vida',
-  'albums/lost-corner',
   'albums/assemble24',
   'albums/strobo',
   'songs/adore-u',

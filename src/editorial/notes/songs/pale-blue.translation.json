@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 15100925,
+    "durationMs": 297213
+  },
+  "segments": [
+    {
+      "startMs": 350,
+      "endMs": 23840,
+      "translation": "계속, 계속, 계속 사랑하고 있었어"
+    },
+    {
+      "startMs": 23840,
+      "endMs": 33370,
+      "translation": "이걸로 안녕. 너는 무엇보다 소중했어"
+    },
+    {
+      "startMs": 33370,
+      "endMs": 38470,
+      "translation": "바라던 대로의 끝은 아니었어"
+    },
+    {
+      "startMs": 38470,
+      "endMs": 45640,
+      "translation": "너는 어때?"
+    },
+    {
+      "startMs": 45640,
+      "endMs": 51070,
+      "translation": "친구로조차 돌아갈 수 없으니까"
+    },
+    {
+      "startMs": 51070,
+      "endMs": 55070,
+      "translation": "나, 하늘을 보고 있었어"
+    },
+    {
+      "startMs": 55070,
+      "endMs": 65730,
+      "translation": "마지막만이라도 다시 봄 같은, 예쁜 작별을 하자"
+    },
+    {
+      "startMs": 65730,
+      "endMs": 76380,
+      "translation": "그건 물도 주지 않아 말라 버린 에델바이스, 검게 변해 가는 귀걸이"
+    },
+    {
+      "startMs": 76380,
+      "endMs": 81760,
+      "translation": "이렇게 시시한 영화는 이제 끝이야"
+    },
+    {
+      "startMs": 81760,
+      "endMs": 88220,
+      "translation": "그런데 엔딩 크레디트가 오르는 도중에 슬퍼졌어"
+    },
+    {
+      "startMs": 88220,
+      "endMs": 95670,
+      "translation": "있잖아, 이 마음은 뭐야"
+    },
+    {
+      "startMs": 95670,
+      "endMs": 101120,
+      "translation": "네가 내다본 미래에 나도 있고 싶어"
+    },
+    {
+      "startMs": 101120,
+      "endMs": 106960,
+      "translation": "코끝이 닿을 만큼 너를 바라보고 싶어"
+    },
+    {
+      "startMs": 106960,
+      "endMs": 112100,
+      "translation": "찢어질 듯한 아픔을 외치고 싶은데"
+    },
+    {
+      "startMs": 112100,
+      "endMs": 117430,
+      "translation": "나, 너와 사랑에 빠졌어. 꽃다발과 함께"
+    },
+    {
+      "startMs": 117430,
+      "endMs": 141660,
+      "translation": "계속, 계속, 계속 사랑하고 있었어"
+    },
+    {
+      "startMs": 141660,
+      "endMs": 143820,
+      "translation": "맑게 갠 날 아침"
+    },
+    {
+      "startMs": 143820,
+      "endMs": 150690,
+      "translation": "너는 어디까지나 소중했어"
+    },
+    {
+      "startMs": 150690,
+      "endMs": 161220,
+      "translation": "말하지 못하던 말을 주고받았어, 우스울 만큼 평온하게"
+    },
+    {
+      "startMs": 161220,
+      "endMs": 171920,
+      "translation": "그건 심하게 치수가 어긋난 오트쿠튀르, 해져 가는 단춧구멍"
+    },
+    {
+      "startMs": 171920,
+      "endMs": 177330,
+      "translation": "이렇게 어긋난 무대는 이제 닫고 싶어"
+    },
+    {
+      "startMs": 177330,
+      "endMs": 183740,
+      "translation": "그런데 에필로그의 대사를 말할 수 없게 됐어"
+    },
+    {
+      "startMs": 183740,
+      "endMs": 191330,
+      "translation": "있잖아, 너를 바라보고 있었어"
+    },
+    {
+      "startMs": 191330,
+      "endMs": 202190,
+      "translation": "몇 번을 다시 태어나도 의미가 없을 만큼, 어딘가에 이끌리듯 너와 만나고 싶어"
+    },
+    {
+      "startMs": 202190,
+      "endMs": 207790,
+      "translation": "이제 와서 하고 싶은 말 같은 건 하나도 없는데"
+    },
+    {
+      "startMs": 207790,
+      "endMs": 213060,
+      "translation": "나, 너와 사랑에 빠졌어. 괴로움과 함께"
+    },
+    {
+      "startMs": 213060,
+      "endMs": 223330,
+      "translation": "계속, 계속, 계속"
+    },
+    {
+      "startMs": 223330,
+      "endMs": 239720,
+      "translation": "네 팔, 그 품 안에서 서로 강하게 끌어당기는 인력으로 흔한 존재가 되고 싶어. 옅고 푸른 멜로디"
+    },
+    {
+      "startMs": 239720,
+      "endMs": 244970,
+      "translation": "가지 마, 여기 있어, 곁에"
+    },
+    {
+      "startMs": 244970,
+      "endMs": 257310,
+      "translation": "아무 말도 하지 않은 채로, 잊지 못할 만큼 안아 줘"
+    },
+    {
+      "startMs": 257310,
+      "endMs": 266410,
+      "translation": "계속, 계속, 계속, 계속, 계속"
+    },
+    {
+      "startMs": 266410,
+      "endMs": 297213,
+      "translation": "사랑하고 있어"
+    }
+  ]
+}

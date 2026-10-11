@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "timing": { "lrclibId": 11929499, "durationMs": 208000 },
+  "segments": [
+    { "startMs": 11270, "endMs": 21880, "translation": "예를 들어 우리 둘이 반짝이는 영화처럼 다시 만난다면 뭘 하고 싶어" },
+    { "startMs": 21880, "endMs": 31780, "translation": "수수께끼 하나 없는 오늘은 어제의 연속이야, 하루하루는 그저 멍하니 이어져" },
+    { "startMs": 31780, "endMs": 42220, "translation": "희미한 발소리, 시트가 놓인 자리, 그것만으로 전부 알아 버려" },
+    { "startMs": 42220, "endMs": 52880, "translation": "뻔히 보이는 거짓말도 숨긴 진심도 그 전부가 사랑스러웠어" },
+    { "startMs": 52880, "endMs": 55580, "translation": "레이디, 웃지 말고 들어 줘" },
+    { "startMs": 55580, "endMs": 58150, "translation": "허니, 서로 계속 바라보고 싶어서" },
+    { "startMs": 58150, "endMs": 63570, "translation": "너랑 둘이서 왔다 갔다 하고 싶을 뿐이야" },
+    { "startMs": 63570, "endMs": 68460, "translation": "베이비, 아이처럼 사랑하고 싶어" },
+    { "startMs": 68460, "endMs": 85040, "translation": "마구 써 내려가는 우리의 스토리라인" },
+    { "startMs": 85040, "endMs": 94560, "translation": "예를 들어 둘 중 한 사람에게 끔찍한 불행이 닥쳐서 다시는 만나지 못하게 된다면" },
+    { "startMs": 94560, "endMs": 104570, "translation": "그렇게 생각한 순간 울음이 터질 만큼, 하루하루는 더욱 또렷하게 이어져" },
+    { "startMs": 104570, "endMs": 114980, "translation": "늘 짓는 어두운 얼굴, 시시한 헛소리도 못 본 척 넘기듯 너는 또 다정하겠지" },
+    { "startMs": 114980, "endMs": 125840, "translation": "뻔히 보이는 거짓말도 숨긴 진심도 네 눈에서 전해져 왔어" },
+    { "startMs": 125840, "endMs": 136320, "translation": "잡아당기고 물어뜯고 상처받은 척도 해 보고, 내일 아침으로 미루고 들떠서는" },
+    { "startMs": 136320, "endMs": 142070, "translation": "마음껏 상처받고 싶어, 언제까지나 곁에 있고 싶어" },
+    { "startMs": 142070, "endMs": 151970, "translation": "지금 당장 자취를 감추자" },
+    { "startMs": 151970, "endMs": 154450, "translation": "레이디, 아무 말도 하지 마" },
+    { "startMs": 154450, "endMs": 157020, "translation": "허니, 내 손을 잡아 줘" },
+    { "startMs": 157020, "endMs": 162480, "translation": "너 말고는 생각할 수 없을 뿐이야" },
+    { "startMs": 162480, "endMs": 167220, "translation": "베이비, 그때처럼 사랑하고 싶어" },
+    { "startMs": 167220, "endMs": 172990, "translation": "마구 써 내려가, 계속 춤추면서" },
+    { "startMs": 172990, "endMs": 175530, "translation": "레이디, 웃지 말고 들어 줘" },
+    { "startMs": 175530, "endMs": 178120, "translation": "허니, 서로 계속 바라보고 싶어서" },
+    { "startMs": 178120, "endMs": 183570, "translation": "너랑 둘이서 왔다 갔다 하고 싶을 뿐이야" },
+    { "startMs": 183570, "endMs": 188400, "translation": "베이비, 아이처럼 사랑하고 싶어" },
+    { "startMs": 188400, "endMs": 208000, "translation": "마구 써 내려가는 우리의 스토리라인" }
+  ]
+}
