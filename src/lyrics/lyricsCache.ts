@@ -1,6 +1,7 @@
 import type { TrackIdentity } from '../domain/types';
 import { BoundedCache } from '../lib/boundedCache';
 import type { LyricsProvider, LyricsRequestOptions, TimedLyrics } from './types';
+import { storageKey } from '../lib/storageNamespace';
 
 const FOUND_TTL_MS = 30 * 24 * 60 * 60_000;
 const MISSING_TTL_MS = 3 * 24 * 60 * 60_000;
@@ -14,7 +15,7 @@ const MISSING_TTL_MS = 3 * 24 * 60 * 60_000;
  */
 export function withLyricsCache(
   provider: LyricsProvider,
-  cache: BoundedCache<TimedLyrics | null> = new BoundedCache({ prefix: 'arc.lyrics.v2:', maxEntries: 150 }),
+  cache: BoundedCache<TimedLyrics | null> = new BoundedCache({ prefix: storageKey('lyrics.v2:'), maxEntries: 150 }),
 ): LyricsProvider {
   return {
     id: provider.id,

@@ -1,5 +1,6 @@
 import { readJson, writeJson } from '../lib/storage';
 import type { Episode } from './types';
+import { storageKey } from '../lib/storageNamespace';
 
 /**
  * Where the listener left an episode, kept in this browser so that the next
@@ -17,7 +18,7 @@ interface Stored extends Bookmark {
   savedAt: number;
 }
 
-const KEY = 'arc.episode.bookmarks.v1';
+const KEY = storageKey('episode.bookmarks.v1');
 /** Bookmarks are few; the oldest are dropped beyond this many. */
 const KEPT = 30;
 

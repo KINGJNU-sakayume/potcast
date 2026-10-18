@@ -16,6 +16,7 @@ import { createTranslationProvider } from '../translation/createTranslationProvi
 import { MockTranslationProvider } from '../translation/providers/MockTranslationProvider';
 import type { TranslationProvider } from '../translation/TranslationProvider';
 import type { AppServices } from './services';
+import { storageKey } from '../lib/storageNamespace';
 
 /** Everything a signed-in (or preview) session needs; one instance per mode. */
 export interface Session {
@@ -99,7 +100,7 @@ export function retainEngine(engine: PlaybackEngine): () => void {
 
 /* ── Preview flag ──────────────────────────────────────────────────────── */
 
-const PREVIEW_KEY = 'arc.preview.v1';
+const PREVIEW_KEY = storageKey('preview.v1');
 
 export function isPreviewRequested(): boolean {
   try {

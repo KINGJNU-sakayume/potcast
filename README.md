@@ -75,7 +75,7 @@ under the top bar offers **Reconnect Spotify** for the missing features.
 ### Session
 
 Authorization Code with PKCE (S256 challenge, `state` check, single-use code). Tokens live in `localStorage`
-(`arc.spotify.session.v1`) so a reload keeps you signed in; they refresh 60 s before expiry and once after any `401`,
+(`potcast.spotify.session.v1`; every key this app stores starts with `potcast.`, see `src/lib/storageNamespace.ts`) so a reload keeps you signed in; they refresh 60 s before expiry and once after any `401`,
 never concurrently (also across tabs). A revoked refresh token shows **Reconnect Spotify**. **Settings → Disconnect**
 clears the stored session. Coming from the first v7 build, connect once more: its stored token is discarded and the
 library features ask for the new scopes.

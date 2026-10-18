@@ -1,5 +1,6 @@
 import { useSyncExternalStore } from 'react';
 import { readJson, writeJson } from '../lib/storage';
+import { storageKey } from '../lib/storageNamespace';
 
 export interface Preferences {
   translationEnabled: boolean;
@@ -15,7 +16,7 @@ export interface Preferences {
   episodeVoices: Array<string | null>;
 }
 
-const KEY = 'arc.preferences.v1';
+const KEY = storageKey('preferences.v1');
 export const DEFAULT_PREFERENCES: Preferences = {
   translationEnabled: true,
   episodeMusic: 'auto',
