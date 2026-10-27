@@ -23,6 +23,7 @@ function renderApp(hash: string) {
 const MBDTF = '20r762YmB5HeofjMCiPMLv';
 
 const now = () => screen.getByRole('region', { name: 'Now in the episode' });
+const rail = () => screen.getByRole('list', { name: 'The album’s tracks' });
 /** The slab in front of the cover with the line a host is saying. */
 const hosts = () => within(now()).getByRole('group', { name: 'The hosts' });
 /** The intro's own button: the transport's play button says the same. */
@@ -80,7 +81,9 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     expect(screen.getByRole('heading', { level: 2, name: 'The hosts' })).toBeInTheDocument();
     expect(within(now()).getByText('Up next')).toBeInTheDocument();
     expect(within(now()).getByText('From the start to 0:25')).toBeInTheDocument();
-    expect(screen.getByText('Episode · 1 / 13')).toBeInTheDocument();
+    // Before the first track: no track of the album is current yet, and the episode's clock is at its start.
+    expect(within(rail()).queryByRole('listitem', { current: true })).not.toBeInTheDocument();
+    expect(screen.getByRole('slider', { name: 'Episode position' })).toHaveAttribute('aria-valuetext', expect.stringMatching(/^0:0\d of 1:\d\d:\d\d$/));
 
     const script = await openScript(user);
     expect(within(script).getByRole('button', { current: true })).toHaveTextContent(FIRST_LINE);
@@ -106,7 +109,8 @@ describe('an album episode on the desktop (preview archive, captions for a voice
 
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
     expect(screen.getByRole('heading', { level: 1, name: 'EARFQUAKE' })).toBeInTheDocument();
-    expect(screen.getByText('Episode · 3 / 13')).toBeInTheDocument();
+    // The album's second track is the one playing: it is named on the rail.
+    expect(within(rail()).getByRole('listitem', { current: true })).toHaveTextContent(/^2EARFQUAKE/);
     // While the music plays, nothing stands in front of the cover.
     expect(within(now()).queryByRole('group', { name: 'The hosts' })).not.toBeInTheDocument();
     // The preview's simulated player goes to the replayed lines of the track.
@@ -215,13 +219,13 @@ describe('the music in an episode', () => {
     expect(container.querySelector('.lyrics-panel .current-trans')).not.toBeInTheDocument();
   });
 
-  it('marks on the seek bar the stretch of the track that is being played', async () => {
+  it('marks on the album\'s rail the stretch of the track that is being played', async () => {
     const user = userEvent.setup();
     const { container } = renderApp(`#/episode/${IGOR}`);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
     const stretch = await waitFor(() => {
-      const mark = container.querySelector<HTMLElement>('.ep-bar-stretch');
+      const mark = container.querySelector<HTMLElement>('.ep-line-stretch');
       expect(mark).toBeInTheDocument();
       return mark!;
     });
@@ -233,7 +237,7 @@ describe('the music in an episode', () => {
 
     // A whole track has no stretch to mark.
     await user.click(within(script).getByRole('button', { name: /부드러운 코드와 불안정한 보컬이 동시에 움직인다/ }));
-    await waitFor(() => expect(container.querySelector('.ep-bar-stretch')).not.toBeInTheDocument());
+    await waitFor(() => expect(container.querySelector('.ep-line-stretch')).not.toBeInTheDocument());
   });
 });
 
@@ -324,7 +328,7 @@ describe('an episode whose music the listener plays themselves', () => {
     await user.click(within(script).getByRole('button', { name: /부드러운 코드와 불안정한 보컬이 동시에 움직인다/ }));
     await user.click(screen.getByRole('button', { name: 'Close the script' }));
     expect(within(now()).getByText(/^The whole track · \d:\d\d$/)).toBeInTheDocument();
-    expect(within(now()).queryByRole('list')).not.toBeInTheDocument();
+    expect(within(now()).queryByRole('list', { name: 'The lines of this stretch, translated' })).not.toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Voices and pace' }));
     await user.click(within(screen.getByRole('complementary', { name: 'Settings' })).getByRole('button', { name: 'Played for me' }));

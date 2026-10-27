@@ -82,21 +82,36 @@
 .ep-pair li:not([aria-current]) .ep-pair-text > span[lang] { color: var(--dim); }
 .ep-pair-range { padding-top: 22px; font-size: 12.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 
-/* The line for the episode, where Now Playing has the Listening note's */
-.ep-stage .ep-line { position: relative; border-top-color: transparent; }
-.ep-chapters { position: absolute; left: 0; right: 0; top: -1px; display: flex; gap: 3px; height: 3px; }
-.ep-chapters span { flex: 1; background: var(--line); }
-.ep-chapters [data-at='past'] { background: color-mix(in srgb, var(--ink) 42%, transparent); }
-.ep-chapters [data-at='now'] { background: var(--ink); }
-.ep-line p { margin: 0; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.ep-line .note-more { margin-top: 0; white-space: nowrap; }
+/* Where the episode is: the album's track numbers over the episode's clock, in text, dots and rules */
+.ep-position { display: grid; gap: 14px; }
+.ep-rail { display: flex; align-items: center; gap: 16px; min-height: 28px; }
+.ep-rail-edge { flex: none; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); white-space: nowrap; }
+.ep-rail-edge[data-on] { color: var(--ink); }
+.ep-rail-tracks { flex: 1; display: flex; align-items: center; min-width: 0; margin: 0; padding: 0; list-style: none; }
+.ep-rail-track { position: relative; flex: 1 1 0; display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 0; height: 28px; font-size: 13px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.ep-rail-track[data-heard] { color: var(--ink-2); }
+.ep-rail-track[data-named] { flex: 0 0 auto; padding: 0 10px; color: var(--ink); }
+.ep-rail-track[data-open] { flex: 8 1 0; justify-content: flex-start; color: var(--ink); }
+.ep-rail-title { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px; letter-spacing: .06em; color: var(--ink); }
+.ep-rail-time { flex: none; font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.ep-rail-between { position: absolute; right: -3.5px; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: var(--ink); }
+.ep-rail-outside { display: flex; align-items: center; gap: 12px; min-height: 28px; }
+.ep-rail-outside .ep-rail-title { flex: none; max-width: 30%; }
 
-/* The seek bar: the track, where it is, and the stretch the episode plays */
-.ep-progress > span { min-height: 1.4em; }
-.ep-bar { position: relative; height: 4px; background: color-mix(in srgb, var(--ink) 13%, transparent); }
-.ep-bar-fill { height: 100%; background: var(--main); }
-/* The stretch the episode plays: a band on the bar, bracketed, so "to 0:25" can be seen at a glance. */
-.ep-bar-stretch { position: absolute; top: -5px; bottom: -5px; box-sizing: border-box; min-width: 5px; border-left: 2px solid var(--ink); border-right: 2px solid var(--ink); background: linear-gradient(transparent 5px, color-mix(in srgb, var(--ink) 30%, transparent) 5px, color-mix(in srgb, var(--ink) 30%, transparent) calc(100% - 5px), transparent calc(100% - 5px)); }
+/* A line: a hairline, the stretch played heavier, a dot where it is */
+.ep-line-track, .ep-clock-line { position: relative; flex: 1; min-width: 0; height: 28px; }
+.ep-line-base { position: absolute; left: 0; right: 0; top: 14px; height: 1px; background: color-mix(in srgb, var(--ink) 30%, transparent); }
+.ep-line-track.under .ep-line-base { height: 0; background: none; border-top: 1px dashed var(--ink); }
+.ep-line-past { position: absolute; left: 0; top: 14px; height: 1px; background: var(--ink); }
+.ep-line-stretch { position: absolute; top: 13px; height: 3px; background: color-mix(in srgb, var(--ink) 30%, transparent); }
+.ep-line-stretch > span { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink); }
+.ep-line-dot { position: absolute; top: 11px; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: var(--ink); }
+.ep-clock { display: flex; align-items: center; gap: 16px; }
+.ep-clock-time { flex: none; min-width: 52px; font-size: 12px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.ep-clock-time.total { color: var(--dim); text-align: right; }
+.ep-clock-line { cursor: pointer; touch-action: none; }
+.ep-clock-line::before { content: ''; position: absolute; inset: 4px 0; }
+.ep-clock .note-more { margin-top: 0; white-space: nowrap; }
 .ep-extras { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 2px 18px; }
 .ep-notice .note-more { margin: 0 0 0 14px; white-space: nowrap; }
 
@@ -147,7 +162,7 @@
 .desktop .ep-pair-text > span[lang] { font-size: calc(13.5px * var(--t)); }
 .desktop .ep-pair-role { font-size: calc(11px * var(--t)); }
 .desktop .ep-return { font-size: calc(13px * var(--t)); }
-.desktop .ep-pair-range, .desktop .ep-progress { font-size: calc(12px * var(--t)); }
+.desktop .ep-pair-range, .desktop .ep-rail-time, .desktop .ep-clock-time { font-size: calc(12px * var(--t)); }
 .desktop .ep-extras { gap: 2px 18px; }
 .desktop .ep-script-panel { grid-area: lyrics; min-width: 0; min-height: 0; overflow: auto; padding: 14px 8px 28px 0; scrollbar-width: thin; scrollbar-color: var(--line) transparent; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); }
 .desktop .ep-chapter { font-size: calc(17px * var(--t)); }
@@ -179,7 +194,6 @@
 .m-shell .ep-stage .np-object { grid-area: object; min-width: 0; }
 .m-shell .ep-stage .listening-head { grid-area: head; }
 .m-shell .ep-stage .lyrics-panel, .m-shell .ep-script-panel { grid-area: lyrics; min-width: 0; }
-.m-shell .ep-line { grid-area: note; }
 .m-shell .ep-stage .np-art { margin: 0; }
 .m-shell .ep-stage .np-cover { width: min(82%, 340px); aspect-ratio: 1; }
 .m-shell .ep-stage .np-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 30px 60px -24px var(--s-shadow); }
@@ -217,10 +231,18 @@
 .m-shell .ep-pair { margin-top: 20px; }
 .m-shell .ep-pair-text b { font-size: 16px; }
 .m-shell .ep-actions .plain-action { min-height: 44px; }
-.m-shell .ep-line { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; min-height: 46px; }
-.m-shell .ep-line .note-line-kicker { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--main-text); white-space: nowrap; }
-.m-shell .ep-line p { font-size: 13.5px; color: var(--muted); }
-.m-shell .ep-line .note-more { min-height: 44px; }
+.m-shell .ep-position { gap: 8px; }
+.m-shell .ep-rail { gap: 8px; }
+.m-shell .ep-rail-edge { font-size: 0; width: 5px; height: 5px; border-radius: 50%; background: color-mix(in srgb, var(--ink) 30%, transparent); }
+.m-shell .ep-rail-edge[data-on] { background: var(--ink); }
+.m-shell .ep-rail-track { font-size: 12px; gap: 6px; }
+.m-shell .ep-rail-track[data-named] { padding: 0 6px; max-width: 45%; }
+.m-shell .ep-rail-track[data-open] { flex-grow: 10; }
+/* The phone names the playing track in large type just above: its slot keeps the number, the line and the time. */
+.m-shell .ep-rail-track[data-open] .ep-rail-title { display: none; }
+.m-shell .ep-rail-track:not([data-open]) { flex-shrink: 0; min-width: 22px; }
+.m-shell .ep-clock { gap: 10px; }
+.m-shell .ep-clock .note-more { min-height: 44px; }
 .m-shell .ep-stage .player-controls { display: grid; gap: 8px; padding-top: 12px; border-top: 1px solid var(--line); }
 .m-shell .ep-stage .transport-row { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .m-shell .ep-stage .m-transport { grid-area: auto; }

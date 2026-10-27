@@ -23,10 +23,11 @@ import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
 import { coverage } from '../episode/narration/plan';
 import { useNarrationManifest } from '../episode/narration/useNarration';
-import { albumEpisodeTracks, episodeMusicMs, episodeRelease, episodeTalkMs, outsideFound, resolveEpisode, unplayable } from '../episode/resolve';
+import { albumEpisodeTracks, episodeRelease, outsideFound, resolveEpisode, unplayable } from '../episode/resolve';
 import { sameTrack, type EpisodeState } from '../episode/runner';
 import { captionText, splitUtterances } from '../episode/speechText';
 import { sungLinesBetween } from '../episode/sungLine';
+import { cueAt, episodeTimeline, speechAt, type EpisodeTimeline } from '../episode/timeline';
 import { EpisodeError, type Cue, type Episode, type EpisodeTrack, type MusicCue, type SpokenLine } from '../episode/types';
 import { formatDuration, formatRuntime, joinArtistNames } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
@@ -571,37 +572,252 @@ function ScriptList({
   );
 }
 
-/* ── The seek bar: where the track is, and the stretch the episode plays ─ */
+/* ── Where the episode is: the album's tracks, and the episode's clock ── */
 
-function StageProgress({ subject, state, live }: { subject: Subject; state: EpisodeState; live: boolean }) {
-  const position = usePlaybackPosition();
+/** A moment the episode plays a track of the album, by its number on the record. */
+interface AlbumMark {
+  no: number;
+  start: number;
+  cueIndex: number;
+}
+
+/** The album's tracks in record order, and when the episode plays each of them. */
+function albumMarks(episode: Episode, timeline: EpisodeTimeline, album: AlbumDetail): AlbumMark[] {
+  const numbers = new Map(album.tracks.map((track, index) => [track.id, index + 1]));
+  const marks: AlbumMark[] = [];
+  episode.cues.forEach((cue, cueIndex) => {
+    const { start, dur } = timeline.cues[cueIndex]!;
+    const tracks = cue.type === 'music' ? cue.tracks : cue.type === 'over' ? [cue.track] : [];
+    // In a cue of several tracks, each after the one before it: the first plays what the others leave of the cue.
+    const rest = cue.type === 'music' ? cue.tracks.slice(1, -1).reduce((sum, track) => sum + track.durationMs, 0) + (cue.untilMs ?? cue.tracks[cue.tracks.length - 1]!.durationMs) : 0;
+    let at = start;
+    tracks.forEach((track, index) => {
+      const no = track.outside ? undefined : numbers.get(track.id);
+      if (no) marks.push({ no, start: at, cueIndex });
+      at += index === 0 ? Math.max(0, dur - (tracks.length > 1 ? rest : 0)) : track.durationMs;
+    });
+  });
+  return marks;
+}
+
+/** The stretch of a track the episode is playing, and where in it the music is. */
+interface Sounding {
+  track: EpisodeTrack;
+  fromMs: number;
+  untilMs: number;
+  atMs: number;
+  /** The hosts are talking over it. */
+  under: boolean;
+}
+
+function soundingOf(subject: Subject, state: EpisodeState, cue: Cue | undefined, position: number, live: boolean): Sounding | null {
   const { track, stretch } = subject;
-  if (!track) {
-    return (
-      <div className="progress-wrap ep-progress" aria-hidden="true">
-        <span />
-        <div className="ep-bar" />
-        <span />
-      </div>
-    );
-  }
+  if (!track || subject.ahead || !cue || cue.type === 'talk') return null;
   const duration = Math.max(1, track.durationMs);
   // The stretch belongs to this track when it is the only one, or the first or last of several.
   const index = stretch ? Math.min(state.trackIndex, stretch.tracks.length - 1) : 0;
   const isLast = !stretch || index === stretch.tracks.length - 1;
-  const from = stretch && index === 0 ? (stretch.fromMs ?? stretch.fallbackFromMs) : 0;
-  const until = stretch && isLast && stretch.untilMs !== null ? stretch.untilMs : duration;
-  const at = live ? Math.min(duration, Math.max(0, position)) : from;
-  const part = stretch !== null && (from > 0 || until < duration);
-  const percent = (ms: number) => `${((Math.min(duration, Math.max(0, ms)) / duration) * 100).toFixed(2)}%`;
+  const fromMs = stretch && index === 0 ? (stretch.fromMs ?? stretch.fallbackFromMs) : 0;
+  const untilMs = stretch && isLast && stretch.untilMs !== null ? stretch.untilMs : duration;
+  const atMs = live ? Math.min(duration, Math.max(0, position)) : fromMs;
+  return { track, fromMs, untilMs, atMs, under: cue.type === 'over' };
+}
+
+/** How far into a music cue the music is, from where the player stands in its track. */
+function intoMusic(cue: MusicCue, dur: number, trackIndex: number, position: number): number {
+  const last = cue.tracks.length - 1;
+  const index = Math.min(trackIndex, last);
+  const until = cue.untilMs ?? cue.tracks[last]!.durationMs;
+  if (index === last) return dur - (until - position);
+  const middle = (to: number) => cue.tracks.slice(1, to).reduce((sum, track) => sum + track.durationMs, 0);
+  const first = dur - middle(last) - until;
+  if (index === 0) return position - (cue.tracks[0]!.durationMs - first);
+  return first + middle(index) + position;
+}
+
+const pct = (ms: number, of: number) => `${((Math.min(of, Math.max(0, ms)) / Math.max(1, of)) * 100).toFixed(3)}%`;
+
+/** One track's stretch as a line: the stretch played heavier, the rest a hairline, a dot where the music is. */
+function TrackLine({ sounding }: { sounding: Sounding }) {
+  const { track, fromMs, untilMs, atMs, under } = sounding;
+  const duration = Math.max(1, track.durationMs);
+  const whole = fromMs <= 1500 && untilMs >= duration - 1500;
   return (
-    <div className="progress-wrap ep-progress" aria-hidden="true">
-      <span>{formatDuration(at)}</span>
-      <div className="ep-bar">
-        <div className="ep-bar-fill" style={{ width: percent(at) }} />
-        {part && <div className="ep-bar-stretch" style={{ left: percent(from), width: percent(until - from) }} />}
+    <span className={under ? 'ep-line-track under' : 'ep-line-track'} aria-hidden="true">
+      <span className="ep-line-base" />
+      {whole || under ? (
+        <span className="ep-line-past" style={{ width: pct(atMs, duration) }} />
+      ) : (
+        <span className="ep-line-stretch" style={{ left: pct(fromMs, duration), width: pct(untilMs - fromMs, duration) }}>
+          <span style={{ width: pct(atMs - fromMs, untilMs - fromMs) }} />
+        </span>
+      )}
+      <span className="ep-line-dot" style={{ left: pct(atMs, duration) }} />
+    </span>
+  );
+}
+
+/**
+ * Where the episode is, in two lines of text, dots and rules. Above, the
+ * album's track numbers: the track the hosts are on is named, the one playing
+ * opens into a line of its own, and while they talk between two tracks a dot
+ * stands between the numbers. Below, the whole episode on one hairline, the
+ * time into it and its length, and the script.
+ */
+function EpisodePosition({
+  episode,
+  album,
+  timeline,
+  state,
+  active,
+  subject,
+  live,
+  bookmark,
+  scriptOpen,
+  onToggleScript,
+  onSeek,
+}: {
+  episode: Episode;
+  album: AlbumDetail;
+  timeline: EpisodeTimeline;
+  state: EpisodeState;
+  active: boolean;
+  subject: Subject;
+  live: boolean;
+  bookmark: { cueIndex: number; lineIndex: number } | null;
+  scriptOpen: boolean;
+  onToggleScript: () => void;
+  onSeek: (cueIndex: number) => void;
+}) {
+  const position = usePlaybackPosition();
+  const ended = active && state.status === 'ended';
+  const cue = active && !ended ? episode.cues[state.cueIndex] : undefined;
+  const talking = cue !== undefined && cue.type !== 'music';
+  const marks = useMemo(() => albumMarks(episode, timeline, album), [episode, timeline, album]);
+
+  // Between one utterance and the next the clock runs on by itself, up to where the next one starts.
+  const speechKey = active ? `${state.cueIndex}:${state.lineIndex}:${state.utteranceIndex}` : '';
+  const spokenSince = useRef({ key: '', at: 0 });
+  if (spokenSince.current.key !== speechKey) spokenSince.current = { key: speechKey, at: Date.now() };
+  const [, tick] = useState(0);
+  useEffect(() => {
+    if (!talking || state.status !== 'playing') return;
+    const id = window.setInterval(() => tick((n) => n + 1), 500);
+    return () => window.clearInterval(id);
+  }, [talking, state.status]);
+
+  let elapsed: number;
+  if (ended) elapsed = timeline.totalMs;
+  else if (!active) elapsed = bookmark ? speechAt(timeline, bookmark.cueIndex, bookmark.lineIndex, 0) : 0;
+  else if (cue?.type === 'music') {
+    const { start, dur } = timeline.cues[state.cueIndex]!;
+    elapsed = start + (live ? Math.min(dur, Math.max(0, intoMusic(cue, dur, state.trackIndex, position))) : 0);
+  } else {
+    const at = speechAt(timeline, state.cueIndex, state.lineIndex, state.utteranceIndex);
+    const line = timeline.speech[state.cueIndex]?.[state.lineIndex];
+    const { start, dur } = timeline.cues[state.cueIndex]!;
+    const next = start + (line?.[state.utteranceIndex + 1] ?? timeline.speech[state.cueIndex]?.[state.lineIndex + 1]?.[0] ?? dur);
+    elapsed = state.status === 'playing' ? Math.min(next, at + (Date.now() - spokenSince.current.at)) : at;
+  }
+
+  const sounding = active && !ended ? soundingOf(subject, state, cue, position, live) : null;
+  const playingNo = sounding && !sounding.track.outside ? (marks.find((mark) => mark.cueIndex === state.cueIndex && album.tracks[mark.no - 1]?.id === sounding.track.id)?.no ?? null) : null;
+  const before = marks.filter((mark) => mark.start < elapsed && mark.no !== playingNo);
+  const prevNo = active && !ended ? (before.length ? before[before.length - 1]!.no : null) : null;
+  const nextNo = active && !ended ? (marks.find((mark) => mark.start > elapsed)?.no ?? null) : null;
+  // The track the hosts are on: the one playing, else the next one their chapter plays.
+  let topic: number | null = playingNo;
+  if (topic === null && active && !ended && state.cueIndex < episode.cues.length) {
+    const chapterIndex = episode.chapters.findLastIndex((chapter) => chapter.cueIndex <= state.cueIndex);
+    const from = episode.chapters[chapterIndex]?.cueIndex ?? 0;
+    const to = episode.chapters[chapterIndex + 1]?.cueIndex ?? episode.cues.length;
+    const own = [...new Set(marks.filter((mark) => mark.cueIndex >= from && mark.cueIndex < to).map((mark) => mark.no))];
+    topic = own.find((no) => no > (prevNo ?? 0)) ?? own[own.length - 1] ?? null;
+  }
+  const between = active && cue?.type === 'talk' && prevNo !== null && nextNo !== null && prevNo !== nextNo ? prevNo : null;
+  const heard = (no: number) => ended || (no !== playingNo && marks.some((mark) => mark.no === no && mark.start < elapsed));
+  const total = timeline.totalMs;
+
+  const seekTo = (ms: number) => onSeek(cueAt(timeline, Math.min(total - 1, Math.max(0, ms))));
+
+  return (
+    <div className="ep-position">
+      <div className="ep-rail">
+        <span className="ep-rail-edge" data-on={active && talking && prevNo === null ? '' : undefined}>
+          여는 말
+        </span>
+        <ol className="ep-rail-tracks" aria-label="The album’s tracks">
+          {album.tracks.map((track, index) => {
+            const no = index + 1;
+            const open = no === playingNo && sounding !== null;
+            const named = !open && no === topic;
+            return (
+              <li
+                key={track.id}
+                className="ep-rail-track"
+                data-heard={heard(no) ? '' : undefined}
+                data-open={open ? '' : undefined}
+                data-named={named ? '' : undefined}
+                aria-current={open || named ? 'true' : undefined}
+              >
+                <span className="ep-rail-no">{no}</span>
+                {(open || named) && (
+                  <span className="ep-rail-title" lang={detectLineLanguage(track.name)}>
+                    {track.name}
+                  </span>
+                )}
+                {open && sounding && (
+                  <>
+                    <TrackLine sounding={sounding} />
+                    <span className="ep-rail-time">{formatDuration(sounding.atMs)}</span>
+                  </>
+                )}
+                {between === no && <span className="ep-rail-between" aria-label="The hosts are talking here" />}
+              </li>
+            );
+          })}
+        </ol>
+        <span className="ep-rail-edge end" data-on={active && talking && nextNo === null && prevNo !== null ? '' : undefined}>
+          닫는 말
+        </span>
       </div>
-      <span>{formatDuration(duration)}</span>
+      {sounding?.track.outside && (
+        <div className="ep-rail-outside">
+          <span className="ep-rail-title">{sounding.track.title}</span>
+          <TrackLine sounding={sounding} />
+          <span className="ep-rail-time">{formatDuration(sounding.atMs)}</span>
+        </div>
+      )}
+      <div className="ep-clock">
+        <span className="ep-clock-time">{formatDuration(elapsed)}</span>
+        <div
+          className="ep-clock-line"
+          role="slider"
+          tabIndex={0}
+          aria-label="Episode position"
+          aria-valuemin={0}
+          aria-valuemax={Math.round(total / 1000)}
+          aria-valuenow={Math.round(elapsed / 1000)}
+          aria-valuetext={`${formatDuration(elapsed)} of ${formatDuration(total)}`}
+          onPointerDown={(event) => {
+            const box = event.currentTarget.getBoundingClientRect();
+            seekTo(((event.clientX - box.left) / box.width) * total);
+          }}
+          onKeyDown={(event) => {
+            if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+            event.preventDefault();
+            seekTo(elapsed + (event.key === 'ArrowRight' ? 30_000 : -30_000));
+          }}
+        >
+          <span className="ep-line-base" />
+          <span className="ep-line-past" style={{ width: pct(elapsed, total) }} />
+          <span className="ep-line-dot" style={{ left: pct(elapsed, total) }} />
+        </div>
+        <span className="ep-clock-time total">{formatDuration(total)}</span>
+        <button type="button" className="note-more" aria-expanded={scriptOpen} onClick={onToggleScript}>
+          {scriptOpen ? 'Close the script' : 'Script'} <span aria-hidden="true">→</span>
+        </button>
+      </div>
     </div>
   );
 }
@@ -664,6 +880,8 @@ export function EpisodePage() {
   const sounding = Boolean(cue && cue.type !== 'talk' && !state.manual);
   const onAir = sounding && subject.track !== null && sameTrack(subject.track, playerTrack);
   const showLyrics = onAir && !subject.track!.outside && !scriptOpen;
+  // The episode on one clock: where each part starts, and how long the whole runs at this pace.
+  const timeline = useMemo(() => (episode ? episodeTimeline(episode, preferences.episodeRate, (key) => narration?.clips[key]) : null), [episode, preferences.episodeRate, narration]);
   const lyricsState = useTimedLyrics(showLyrics ? playerTrack : null);
 
   // Who plays the music is chosen in the settings. A change in the middle of a stretch of music takes that stretch up again in the new way.
@@ -727,7 +945,7 @@ export function EpisodePage() {
   const ended = active && state.status === 'ended';
   const chapter = active && !ended ? chapterOf(episode, state.cueIndex) : null;
   const recordedMs = (key: string) => narration?.clips[key];
-  const minutes = formatRuntime(episodeMusicMs(episode) + episodeTalkMs(episode, preferences.episodeRate, recordedMs));
+  const minutes = formatRuntime(timeline!.totalMs);
   // How many of the hosts' lines the site has recordings of; the rest fall to the browser's voice.
   const recorded = coverage(episode, (key) => recordedMs(key) !== undefined);
   const engineName = narration?.engine.name ?? 'Recorded';
@@ -779,12 +997,6 @@ export function EpisodePage() {
   const title = shown?.title ?? data.name;
   const upcoming = subject.stretch && cue?.type !== 'music' ? subject.stretch : null;
   const musicCue = cue?.type === 'music' ? cue : null;
-  const lineText = !active
-    ? episode.title
-    : ended
-      ? 'That was the whole episode.'
-      : [chapter?.title, musicCue ? listeningCue(musicCue, state.trackIndex) : undefined].filter(Boolean).join(' — ');
-
   let panel: 'script' | 'intro' | 'ended' | 'talk' | 'manual' | 'outside' | 'lyrics' | 'rest';
   if (scriptOpen) panel = 'script';
   else if (!active) panel = 'intro';
@@ -913,24 +1125,20 @@ export function EpisodePage() {
               </>
             )}
 
-            <div className="note-line ep-line">
-              {/* Where the whole episode is: one mark per chapter, in place of the line's top rule. */}
-              <div className="ep-chapters" aria-hidden="true">
-                {episode.chapters.map((item, index) => {
-                  const at = chapter ?? leftAt;
-                  const mark = ended ? 'past' : !at ? undefined : index + 1 < at.number ? 'past' : index + 1 === at.number ? 'now' : undefined;
-                  return <span key={item.cueIndex} data-at={mark} />;
-                })}
-              </div>
-              <span className="note-line-kicker">{chapter ? `Episode · ${chapter.number} / ${episode.chapters.length}` : 'Episode'}</span>
-              <p lang="ko">{lineText}</p>
-              <button type="button" className="note-more" aria-expanded={scriptOpen} onClick={() => setScriptOpen((open) => !open)}>
-                {scriptOpen ? 'Close the script' : 'Script'} <span aria-hidden="true">→</span>
-              </button>
-            </div>
-
             <div className="player-controls">
-              <StageProgress subject={subject} state={state} live={onAir || (track !== null && !subject.ahead && sameTrack(track, playerTrack))} />
+              <EpisodePosition
+                episode={episode}
+                album={data}
+                timeline={timeline!}
+                state={state}
+                active={active}
+                subject={subject}
+                live={onAir || (track !== null && !subject.ahead && sameTrack(track, playerTrack))}
+                bookmark={bookmark}
+                scriptOpen={scriptOpen}
+                onToggleScript={() => setScriptOpen((open) => !open)}
+                onSeek={(cueIndex) => jump(cueIndex, 0)}
+              />
               <div className="transport-row">
                 <div className={mobile ? 'm-transport compact' : 'transport'}>
                   <button type="button" className={mobile ? 'm-ctl ink' : 'ctl'} title="Back" aria-label="Previous part" disabled={!active} onClick={() => runner.previous()}>
