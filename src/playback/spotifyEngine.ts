@@ -22,6 +22,7 @@ import {
 } from './spotifyPlaybackSdk';
 import { BROWSER_DEVICE_NAME, browserDevice, mapRemotePlayback, mapSdkState } from './stateMapping';
 import type { PlayerSnapshot, PlayRequest, PlaybackIssue, QueueSnapshot, SdkErrorReason } from './types';
+import { storageKey } from '../lib/storageNamespace';
 
 export interface Timers {
   setTimeout(fn: () => void, ms: number): unknown;
@@ -99,16 +100,16 @@ const REANCHOR_MS = 3_000;
 const MAX_RECONNECT_ATTEMPTS = 5;
 /** How long a play request waits for this browser's player to finish connecting. */
 const SDK_READY_WAIT_MS = 10_000;
-const VOLUME_KEY = 'arc.player.volume.v1';
+const VOLUME_KEY = storageKey('player.volume.v1');
 /**
  * `false` once the listener (or a browser that could not play) has turned
  * playback in this browser off: the Spotify app plays, and this page is its
  * remote. Kept per browser, so a shared computer whose browser cannot play
  * protected audio stays that way without touching the listener's own machines.
  */
-const BROWSER_PLAYBACK_KEY = 'arc.player.browser-playback.v1';
+const BROWSER_PLAYBACK_KEY = storageKey('player.browser-playback.v1');
 /** The ID of the Spotify Connect device the listener last chose here: the one to play on when this browser does not. */
-const REMOTE_DEVICE_KEY = 'arc.player.remote-device.v1';
+const REMOTE_DEVICE_KEY = storageKey('player.remote-device.v1');
 
 type RemoteTarget = SpotifyDevice & { id: string };
 

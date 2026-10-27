@@ -6,6 +6,7 @@ import { lyricsMatchTiming, type CuratedMatch } from './curated';
 import { alignSegments } from './curated/align';
 import { detectLineLanguages, sameLanguage } from './languageDetect';
 import { TranslationUnavailableError, type TranslationProvider } from './TranslationProvider';
+import { storageKey } from '../lib/storageNamespace';
 
 /** How a curated translation sat on the loaded lyrics. */
 export interface CuratedCoverage {
@@ -30,7 +31,7 @@ export type LyricTranslationResult =
   | { status: 'unavailable'; message: string };
 
 const TTL_MS = 60 * 24 * 60 * 60_000;
-const defaultCache = new BoundedCache<string[]>({ prefix: 'arc.translation.v1:', maxEntries: 150 });
+const defaultCache = new BoundedCache<string[]>({ prefix: storageKey('translation.v1:'), maxEntries: 150 });
 
 /**
  * Translates only the lines that are not already in the target language,

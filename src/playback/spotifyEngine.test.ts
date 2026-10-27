@@ -559,7 +559,7 @@ describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that ca
       return new Response(null, { status: 204 });
     };
   }
-  const off = () => window.localStorage.setItem('arc.player.browser-playback.v1', 'false');
+  const off = () => window.localStorage.setItem('potcast.player.browser-playback.v1', 'false');
   const puts = (h: ReturnType<typeof harness>, path: string) => h.requests.filter((r) => r.method === 'PUT' && r.path === path);
 
   it('does not connect a browser player at all, and sends what is played to the app on the computer', async () => {
@@ -590,7 +590,7 @@ describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that ca
 
     // Chosen in the device menu: remembered for the next visit too.
     await h.engine.transferTo('desktop');
-    expect(window.localStorage.getItem('arc.player.remote-device.v1')).toBe('"desktop"');
+    expect(window.localStorage.getItem('potcast.player.remote-device.v1')).toBe('"desktop"');
     h.engine.stop();
 
     const next = harness({ route: routes([{ ...PHONE, is_active: true }, DESKTOP], remoteState()) });
@@ -638,7 +638,7 @@ describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that ca
     expect(h.device.disconnect).toHaveBeenCalled();
     expect(h.store.getState().sdk).toEqual({ kind: 'disabled' });
     expect(h.store.getState().snapshot.source).not.toBe('sdk');
-    expect(window.localStorage.getItem('arc.player.browser-playback.v1')).toBe('false');
+    expect(window.localStorage.getItem('potcast.player.browser-playback.v1')).toBe('false');
 
     // Nothing the old player reports afterwards counts.
     h.callbacks().onState(sdkState());
@@ -670,7 +670,7 @@ describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that ca
     expect(h.created).toHaveLength(1);
     expect(h.device.connect).toHaveBeenCalled();
     expect(puts(h, '/me/player')).toHaveLength(0);
-    expect(window.localStorage.getItem('arc.player.browser-playback.v1')).toBe('true');
+    expect(window.localStorage.getItem('potcast.player.browser-playback.v1')).toBe('true');
     h.engine.stop();
   });
 
@@ -700,7 +700,7 @@ describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that ca
     expect(h.device.disconnect).toHaveBeenCalled();
     expect(h.store.getState().sdk).toEqual({ kind: 'disabled' });
     expect(h.store.getState().issue).toMatchObject({ kind: 'moved-to-app', message: expect.stringMatching(/LAB-PC-07 plays it from now on/) });
-    expect(window.localStorage.getItem('arc.player.browser-playback.v1')).toBe('false');
+    expect(window.localStorage.getItem('potcast.player.browser-playback.v1')).toBe('false');
 
     // The next request goes straight to the app.
     await h.engine.play({ uris: ['spotify:track:trk1'] });
@@ -734,7 +734,7 @@ describe('SpotifyPlaybackEngine gain (fades and talk-over in an episode)', () =>
     expect(h.device.setVolume).toHaveBeenLastCalledWith(0.1);
     // The slider and the stored volume are still the listener's.
     expect(h.store.getState().snapshot.volume).toBe(0.5);
-    expect(JSON.parse(window.localStorage.getItem('arc.player.volume.v1')!)).toBe(0.5);
+    expect(JSON.parse(window.localStorage.getItem('potcast.player.volume.v1')!)).toBe(0.5);
     const commandAt = h.store.getState().lastCommandAt;
 
     // A volume change by the listener in the middle of a talk-over keeps the factor.

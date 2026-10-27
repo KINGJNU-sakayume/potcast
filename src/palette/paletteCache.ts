@@ -1,6 +1,7 @@
 import { BoundedCache } from '../lib/boundedCache';
 import { extractAlbumPalette } from './extractAlbumPalette';
 import type { AlbumPalette } from './types';
+import { storageKey } from '../lib/storageNamespace';
 
 const FOUND_TTL_MS = 90 * 24 * 60 * 60_000;
 const FAILED_TTL_MS = 24 * 60 * 60_000;
@@ -19,7 +20,7 @@ export class PaletteCache {
 
   constructor(
     private readonly persistent: BoundedCache<AlbumPalette | null> | null = new BoundedCache({
-      prefix: 'arc.palette.v1:',
+      prefix: storageKey('palette.v1:'),
       maxEntries: 300,
     }),
     private readonly extract: Extractor = (url) => extractAlbumPalette(url),

@@ -1,4 +1,5 @@
 import { readJson, removeKey, writeJson } from '../lib/storage';
+import { storageKey } from '../lib/storageNamespace';
 
 /**
  * Persistence for the Spotify session.
@@ -10,8 +11,8 @@ import { readJson, removeKey, writeJson } from '../lib/storage';
  *   clears everything.
  */
 
-export const SESSION_KEY = 'arc.spotify.session.v1';
-export const PENDING_KEY = 'arc.spotify.pkce.v1';
+export const SESSION_KEY = storageKey('spotify.session.v1');
+export const PENDING_KEY = storageKey('spotify.pkce.v1');
 
 /** Keys written by the first ARC v7 build (tokens without scopes); superseded by SESSION_KEY. */
 const LEGACY_KEYS = [

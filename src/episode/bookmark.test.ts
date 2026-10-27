@@ -44,9 +44,9 @@ describe('bookmarks', () => {
   });
 
   it('survive something unreadable in storage', () => {
-    window.localStorage.setItem('arc.episode.bookmarks.v1', '[1, 2');
+    window.localStorage.setItem('potcast.episode.bookmarks.v1', '[1, 2');
     expect(readBookmark(episode())).toBeNull();
-    window.localStorage.setItem('arc.episode.bookmarks.v1', JSON.stringify({ 'test-album@album-1': { cueIndex: 9, lineIndex: 0, cues: 3, savedAt: 1 } }));
+    window.localStorage.setItem('potcast.episode.bookmarks.v1', JSON.stringify({ 'test-album@album-1': { cueIndex: 9, lineIndex: 0, cues: 3, savedAt: 1 } }));
     expect(readBookmark(episode())).toBeNull();
     saveBookmark(episode(), { cueIndex: 0, lineIndex: 5 });
     // A line that no longer exists lands on the cue's last line.
