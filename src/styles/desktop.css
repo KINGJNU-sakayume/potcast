@@ -110,6 +110,8 @@
 .desktop .side-panel .note-drawer-title { margin-top: 0; font-size: calc(24px * var(--t)); line-height: 1.2; letter-spacing: -.02em; }
 .desktop .side-panel .note-drawer-copy, .desktop .side-panel .note-drawer-foot { max-width: 640px; }
 .desktop .settings-body { padding: 0; }
+.desktop .ep-settings-panel.settings-body { padding: 18px 22px 20px; }
+.desktop .ep-settings-panel > .label:first-child { margin-top: 0; }
 .desktop .settings-body p { font-size: calc(14px * var(--t)); color: var(--ink-2); }
 .desktop .settings-body .label { margin-top: 22px; }
 .desktop .settings-body .label:first-child { margin-top: 0; }
