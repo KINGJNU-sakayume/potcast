@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206910,
+    "durationMs": 315000
+  },
+  "segments": [
+    {
+      "startMs": 20760,
+      "endMs": 28860,
+      "translation": "무심코 기대어 버린, 허리가 부러진 그 우산은"
+    },
+    {
+      "startMs": 28860,
+      "endMs": 39820,
+      "translation": "행복을 실어 나르고 있었던 걸까"
+    },
+    {
+      "startMs": 39820,
+      "endMs": 48180,
+      "translation": "무심코 기대어 버린, 배꼽이 꺾인 이 나는"
+    },
+    {
+      "startMs": 48180,
+      "endMs": 56660,
+      "translation": "행복을 실어 나를 수 있었던 걸까"
+    },
+    {
+      "startMs": 56660,
+      "endMs": 66140,
+      "translation": "이 자궁 속 깊은 곳에는, 네 말로는 말이야,"
+    },
+    {
+      "startMs": 66140,
+      "endMs": 76450,
+      "translation": "거기엔 슬픔과 불안과 고통과, 리얼한 사랑이 있대"
+    },
+    {
+      "startMs": 76450,
+      "endMs": 86880,
+      "translation": "거짓이라면 분명, 내 말로는 말이야,"
+    },
+    {
+      "startMs": 86880,
+      "endMs": 116650,
+      "translation": "여기엔 희극도 미담도 방심도, 기성품 같은 사랑도 없었을 테니까"
+    },
+    {
+      "startMs": 116650,
+      "endMs": 121360,
+      "translation": "열정 같은 건 피와 함께 흘러내리고 있었어"
+    },
+    {
+      "startMs": 121360,
+      "endMs": 123320,
+      "translation": "딱 잘라 말할게"
+    },
+    {
+      "startMs": 123320,
+      "endMs": 129250,
+      "translation": "그 사람에겐 재능 같은 건 없어"
+    },
+    {
+      "startMs": 129250,
+      "endMs": 134730,
+      "translation": "아니, 누구한테도 있을 리 없지"
+    },
+    {
+      "startMs": 134730,
+      "endMs": 148500,
+      "translation": "도무지 모르겠어, 넘쳐 나기만 하는 자존심 같은, 바라기만 하는 나를"
+    },
+    {
+      "startMs": 148500,
+      "endMs": 153100,
+      "translation": "아니, 누구도 알 리 없지"
+    },
+    {
+      "startMs": 153100,
+      "endMs": 155120,
+      "translation": "그렇게 말하고서"
+    },
+    {
+      "startMs": 155120,
+      "endMs": 163630,
+      "translation": "속셈을 품고 매달린 내 정수리를 본 너는"
+    },
+    {
+      "startMs": 163630,
+      "endMs": 171780,
+      "translation": "지금이라면 하고 손을 끌어 쓰다듬었어"
+    },
+    {
+      "startMs": 171780,
+      "endMs": 181310,
+      "translation": "이 자궁 속 깊은 곳에는, 네 말로는 말이야,"
+    },
+    {
+      "startMs": 181310,
+      "endMs": 191790,
+      "translation": "거기엔 슬픔과 불안과 고통과, 리얼한 사랑이 있대"
+    },
+    {
+      "startMs": 191790,
+      "endMs": 200910,
+      "translation": "거짓이라면 분명, 내 말로는 말이야,"
+    },
+    {
+      "startMs": 200910,
+      "endMs": 231700,
+      "translation": "여기엔 희극도 미담도 방심도, 기성품 같은 사랑도 없었을 테니까"
+    },
+    {
+      "startMs": 231700,
+      "endMs": 243730,
+      "translation": "내 몸에서 새어 나오는 녹을, 그 산성의 말로 감싸"
+    },
+    {
+      "startMs": 243730,
+      "endMs": 248560,
+      "translation": "그건 사랑이라는 이름의 궁"
+    },
+    {
+      "startMs": 248560,
+      "endMs": 258280,
+      "translation": "그 자궁 속 깊은 곳에는, 네 말로는 말이야,"
+    },
+    {
+      "startMs": 258280,
+      "endMs": 268510,
+      "translation": "거기엔 슬픔과 불안과 고통과, 리얼한 사랑이 있대"
+    },
+    {
+      "startMs": 268510,
+      "endMs": 277810,
+      "translation": "거짓이라면 분명, 내 말로는 말이야,"
+    },
+    {
+      "startMs": 277810,
+      "endMs": 286330,
+      "translation": "여기엔 희극도 미담도 방심도, 기성품 같은 사랑도"
+    },
+    {
+      "startMs": 286330,
+      "endMs": 315000,
+      "translation": "없었을 거니까"
+    }
+  ]
+}

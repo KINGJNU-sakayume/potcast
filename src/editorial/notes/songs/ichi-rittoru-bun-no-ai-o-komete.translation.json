@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206893,
+    "durationMs": 190000
+  },
+  "segments": [
+    {
+      "startMs": 14300,
+      "endMs": 16180,
+      "translation": "야, 오늘 컨디션 어때?"
+    },
+    {
+      "startMs": 16180,
+      "endMs": 18380,
+      "translation": "그래, 대충 기분 1리터"
+    },
+    {
+      "startMs": 18380,
+      "endMs": 20860,
+      "translation": "그래, 단순하고 가벼운 정도의 외로움"
+    },
+    {
+      "startMs": 20860,
+      "endMs": 26340,
+      "translation": "곁들이는 건 장아찌뿐이야, 어? 뭐, 막혀 버리면 그만두자"
+    },
+    {
+      "startMs": 26340,
+      "endMs": 28160,
+      "translation": "쉬는 김에 또 1리터"
+    },
+    {
+      "startMs": 28160,
+      "endMs": 30590,
+      "translation": "이러니저러니 산책 정도의 외로움"
+    },
+    {
+      "startMs": 30590,
+      "endMs": 35800,
+      "translation": "한데 담아 낸 손바닥만 한 거룩함으로, 어? 희망을 노래하는 건 내가 아니야"
+    },
+    {
+      "startMs": 35800,
+      "endMs": 37670,
+      "translation": "그걸 노래하는 건 록스타"
+    },
+    {
+      "startMs": 37670,
+      "endMs": 40350,
+      "translation": "그런 시대의 흐름에 올라타 버려서"
+    },
+    {
+      "startMs": 40350,
+      "endMs": 42490,
+      "translation": "지칠 대로 지쳤어, 로 부스터"
+    },
+    {
+      "startMs": 42490,
+      "endMs": 44890,
+      "translation": "실수를 저지른 그를 향해"
+    },
+    {
+      "startMs": 44890,
+      "endMs": 47330,
+      "translation": "비난 세례, 터무니없는 스텝으로"
+    },
+    {
+      "startMs": 47330,
+      "endMs": 49600,
+      "translation": "가끔은 백스텝으로"
+    },
+    {
+      "startMs": 49600,
+      "endMs": 50670,
+      "translation": "춤추기 시작했어"
+    },
+    {
+      "startMs": 50670,
+      "endMs": 52400,
+      "translation": "1리터어치의 사랑을 담아서"
+    },
+    {
+      "startMs": 52400,
+      "endMs": 52980,
+      "translation": "있잖아"
+    },
+    {
+      "startMs": 52980,
+      "endMs": 57090,
+      "translation": "감정적이 될 것 같아"
+    },
+    {
+      "startMs": 57090,
+      "endMs": 61150,
+      "translation": "떠올라, 탈수 상태야"
+    },
+    {
+      "startMs": 61150,
+      "endMs": 62700,
+      "translation": "부족해"
+    },
+    {
+      "startMs": 62700,
+      "endMs": 66810,
+      "translation": "감정적이 될 것 같아"
+    },
+    {
+      "startMs": 66810,
+      "endMs": 70700,
+      "translation": "눌러 봐도, 탈수 상태야"
+    },
+    {
+      "startMs": 70700,
+      "endMs": 73010,
+      "translation": "말라 버렸어"
+    },
+    {
+      "startMs": 73010,
+      "endMs": 74930,
+      "translation": "야, 오늘 컨디션 어때?"
+    },
+    {
+      "startMs": 74930,
+      "endMs": 77310,
+      "translation": "그래, 대충 기분 1리터"
+    },
+    {
+      "startMs": 77310,
+      "endMs": 79740,
+      "translation": "아무래도 이 근방에선 그게 시세래, 쏘리"
+    },
+    {
+      "startMs": 79740,
+      "endMs": 82250,
+      "translation": "그야 그렇지, 다들 내키지 않는 거니까"
+    },
+    {
+      "startMs": 82250,
+      "endMs": 82700,
+      "translation": "어?"
+    },
+    {
+      "startMs": 82700,
+      "endMs": 84820,
+      "translation": "미래를 구한다느니 말하잖아"
+    },
+    {
+      "startMs": 84820,
+      "endMs": 86830,
+      "translation": "그 정도의 오만이"
+    },
+    {
+      "startMs": 86830,
+      "endMs": 89350,
+      "translation": "그런 나만의 흐름에 올라타서"
+    },
+    {
+      "startMs": 89350,
+      "endMs": 90230,
+      "translation": "거기에 또"
+    },
+    {
+      "startMs": 90230,
+      "endMs": 91970,
+      "translation": "1리터어치의 사랑을 담아서"
+    },
+    {
+      "startMs": 91970,
+      "endMs": 92710,
+      "translation": "있잖아"
+    },
+    {
+      "startMs": 92710,
+      "endMs": 96790,
+      "translation": "감정적이 될 것 같아"
+    },
+    {
+      "startMs": 96790,
+      "endMs": 100650,
+      "translation": "떠올라, 탈수 상태야"
+    },
+    {
+      "startMs": 100650,
+      "endMs": 102290,
+      "translation": "부족해"
+    },
+    {
+      "startMs": 102290,
+      "endMs": 106290,
+      "translation": "감정적이 될 것 같아"
+    },
+    {
+      "startMs": 106290,
+      "endMs": 110350,
+      "translation": "눌러 봐도, 탈수 상태야"
+    },
+    {
+      "startMs": 110350,
+      "endMs": 121340,
+      "translation": "말라 버렸어"
+    },
+    {
+      "startMs": 121340,
+      "endMs": 131950,
+      "translation": "그래, 아직 공허한 날들의 흐름을 느끼고 있어"
+    },
+    {
+      "startMs": 131950,
+      "endMs": 143040,
+      "translation": "그래, 그저 마르는 건 네 사랑이 채워져 있다는 거야"
+    },
+    {
+      "startMs": 143040,
+      "endMs": 147080,
+      "translation": "감정적이 될 것 같아"
+    },
+    {
+      "startMs": 147080,
+      "endMs": 151140,
+      "translation": "떠올라, 탈수 상태야"
+    },
+    {
+      "startMs": 151140,
+      "endMs": 152620,
+      "translation": "부족해"
+    },
+    {
+      "startMs": 152620,
+      "endMs": 156770,
+      "translation": "감정적이 될 것 같아"
+    },
+    {
+      "startMs": 156770,
+      "endMs": 160720,
+      "translation": "눌러 봐도, 탈수 상태야"
+    },
+    {
+      "startMs": 160720,
+      "endMs": 190000,
+      "translation": "말라 버렸어"
+    }
+  ]
+}

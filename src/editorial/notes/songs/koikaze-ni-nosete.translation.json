@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206913,
+    "durationMs": 256000
+  },
+  "segments": [
+    {
+      "startMs": 21050,
+      "endMs": 30290,
+      "translation": "변해 가는 풍경을 창 너머로 들여다봤어. 그리운 바람이 불러왔어"
+    },
+    {
+      "startMs": 30290,
+      "endMs": 44440,
+      "translation": "어딘가 보이지 않는 곳에서 서로가 서로에게 신호를 보내, 살며시 둘이 눈을 돌리고서 알아챘어"
+    },
+    {
+      "startMs": 44440,
+      "endMs": 52540,
+      "translation": "시시한 사랑으로 우리는 언제나 웃고 있어"
+    },
+    {
+      "startMs": 52540,
+      "endMs": 60540,
+      "translation": "떠오르는 날들이 우리를 슬프게 해"
+    },
+    {
+      "startMs": 60540,
+      "endMs": 68990,
+      "translation": "있잖아, 시시한 사랑으로 우리는 언제나 웃고 있었어"
+    },
+    {
+      "startMs": 68990,
+      "endMs": 76940,
+      "translation": "되풀이되는 날들이 우리를 뒤돌아보게 해"
+    },
+    {
+      "startMs": 76940,
+      "endMs": 102470,
+      "translation": "있잖아, 살며시 둘이 마법을 외워, 사랑 감기에 실어"
+    },
+    {
+      "startMs": 102470,
+      "endMs": 111620,
+      "translation": "뒤섞여 가는 풍경을 빗속 너머로 들여다봤어. 따뜻한 바람이 불러왔어"
+    },
+    {
+      "startMs": 111620,
+      "endMs": 125770,
+      "translation": "어딘가에서 사라지지 않는 서로가 서로에게 신호를 보내, 살며시 둘이 눈여겨보고서 알아챘어"
+    },
+    {
+      "startMs": 125770,
+      "endMs": 134190,
+      "translation": "시시한 사랑으로 우리는 언제나 웃고 있어"
+    },
+    {
+      "startMs": 134190,
+      "endMs": 141980,
+      "translation": "떠오르는 날들이 우리를 슬프게 해"
+    },
+    {
+      "startMs": 141980,
+      "endMs": 150220,
+      "translation": "있잖아, 시시한 사랑으로 우리는 언제나 웃고 있었어"
+    },
+    {
+      "startMs": 150220,
+      "endMs": 158020,
+      "translation": "되풀이되는 날들이 우리를 뒤돌아보게 해"
+    },
+    {
+      "startMs": 158020,
+      "endMs": 167780,
+      "translation": "있잖아, 살며시 둘이 마법을 외워"
+    },
+    {
+      "startMs": 167780,
+      "endMs": 177600,
+      "translation": "말이 깊게 하는 행성의 밤에, 지금 너를 찾아 대답했어"
+    },
+    {
+      "startMs": 177600,
+      "endMs": 183100,
+      "translation": "「마음이 시들 때까지 함께 웃고 있자」"
+    },
+    {
+      "startMs": 183100,
+      "endMs": 192860,
+      "translation": "드디어 둘이 눈을 마주치고 알아챘어"
+    },
+    {
+      "startMs": 192860,
+      "endMs": 201230,
+      "translation": "시시한 사랑으로 우리는 언제나 웃고 있어"
+    },
+    {
+      "startMs": 201230,
+      "endMs": 209160,
+      "translation": "떠오르는 날들이 우리를 슬프게 해"
+    },
+    {
+      "startMs": 209160,
+      "endMs": 217320,
+      "translation": "있잖아, 시시한 사랑으로 우리는 언제나 웃고 있었어"
+    },
+    {
+      "startMs": 217320,
+      "endMs": 225450,
+      "translation": "되풀이되는 날들이 우리를 뒤돌아보게 해"
+    },
+    {
+      "startMs": 225450,
+      "endMs": 256000,
+      "translation": "있잖아, 살며시 둘이 마법을 외워, 사랑 감기에 실어"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206917,
+    "durationMs": 177000
+  },
+  "segments": [
+    {
+      "startMs": 870,
+      "endMs": 10190,
+      "translation": "답답할수록 일은 단순해서, 말이 모자랐던 것 같아"
+    },
+    {
+      "startMs": 10190,
+      "endMs": 22020,
+      "translation": "흔들흔들 흔들리는 건 겁이 많아서야, 더없이 틀림없이"
+    },
+    {
+      "startMs": 22020,
+      "endMs": 27930,
+      "translation": "그건 불씨를 댕긴 것처럼"
+    },
+    {
+      "startMs": 27930,
+      "endMs": 32780,
+      "translation": "'진짜 부족해', 그야 맥 빠진 주문 같아"
+    },
+    {
+      "startMs": 32780,
+      "endMs": 37250,
+      "translation": "아직 부족해, 구멍 난 주문 같아"
+    },
+    {
+      "startMs": 37250,
+      "endMs": 42040,
+      "translation": "그 이지러진 미래의 끝을 메우는 상야등"
+    },
+    {
+      "startMs": 42040,
+      "endMs": 47800,
+      "translation": "'진짜 부족해' 가냘프게 밝혀, 미전구"
+    },
+    {
+      "startMs": 47800,
+      "endMs": 57320,
+      "translation": "이 미열의 까닭, 그건 단순해서 너무 생각한 것 같아"
+    },
+    {
+      "startMs": 57320,
+      "endMs": 64280,
+      "translation": "바스스 무너지는 거긴 저승이라서"
+    },
+    {
+      "startMs": 64280,
+      "endMs": 69060,
+      "translation": "더없이 헤맬 것도 없이"
+    },
+    {
+      "startMs": 69060,
+      "endMs": 75030,
+      "translation": "거긴 한 번 와 본 곳 같아"
+    },
+    {
+      "startMs": 75030,
+      "endMs": 79610,
+      "translation": "'진짜 부족해', 그야 맥 빠진 주문 같아"
+    },
+    {
+      "startMs": 79610,
+      "endMs": 84120,
+      "translation": "아직 부족해, 구멍 난 주문 같아"
+    },
+    {
+      "startMs": 84120,
+      "endMs": 89290,
+      "translation": "그 이지러진 미래의 끝을 메우는 상야등"
+    },
+    {
+      "startMs": 89290,
+      "endMs": 98270,
+      "translation": "'진짜 부족해' 가냘프게 밝혀, 미전구"
+    },
+    {
+      "startMs": 98270,
+      "endMs": 102850,
+      "translation": "미전구"
+    },
+    {
+      "startMs": 102850,
+      "endMs": 107640,
+      "translation": "미전구"
+    },
+    {
+      "startMs": 107640,
+      "endMs": 114310,
+      "translation": "미전구"
+    },
+    {
+      "startMs": 114310,
+      "endMs": 131480,
+      "translation": "기다리던 말은 나를 졸아들게 하고, 까닭도 없이 읊게 해"
+    },
+    {
+      "startMs": 131480,
+      "endMs": 136060,
+      "translation": "'진짜 부족해', 그야 맥 빠진 주문 같아"
+    },
+    {
+      "startMs": 136060,
+      "endMs": 140780,
+      "translation": "아직 부족해, 구멍 난 주문 같아"
+    },
+    {
+      "startMs": 140780,
+      "endMs": 145540,
+      "translation": "그 이지러진 미래의 끝을 메우는 상야등"
+    },
+    {
+      "startMs": 145540,
+      "endMs": 149680,
+      "translation": "뜻도 없이 희망을 읊어"
+    },
+    {
+      "startMs": 149680,
+      "endMs": 154920,
+      "translation": "'있잖아, 진짜 부족해' 아직 맥 빠진 주문 같아"
+    },
+    {
+      "startMs": 154920,
+      "endMs": 159660,
+      "translation": "아직 부족해, 구멍 난 주문 같아"
+    },
+    {
+      "startMs": 159660,
+      "endMs": 164460,
+      "translation": "그 이지러진 미래의 끝을 메우는 상야등"
+    },
+    {
+      "startMs": 164460,
+      "endMs": 177000,
+      "translation": "'진짜 부족해' 가냘프게 밝혀, 미전구"
+    }
+  ]
+}

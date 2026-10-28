@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206907,
+    "durationMs": 221000
+  },
+  "segments": [
+    {
+      "startMs": 13520,
+      "endMs": 18720,
+      "translation": "분명 우리는 무언가에 쫓기고 있어, 막연하긴 하지만"
+    },
+    {
+      "startMs": 18720,
+      "endMs": 25680,
+      "translation": "온종일 흐리멍덩함과 따끔거림이 흘러, 그 물결에 올라타 넷서핑"
+    },
+    {
+      "startMs": 25680,
+      "endMs": 29150,
+      "translation": "이건 이러쿵저러쿵 떠들더니 낡았네"
+    },
+    {
+      "startMs": 29150,
+      "endMs": 31650,
+      "translation": "그건 그대로 이러쿵저러쿵 떠들더니 새롭네"
+    },
+    {
+      "startMs": 31650,
+      "endMs": 34620,
+      "translation": "그런 쓸데없는 반복을 또 반복하면서"
+    },
+    {
+      "startMs": 34620,
+      "endMs": 37750,
+      "translation": "우리, 살아가는 동안에"
+    },
+    {
+      "startMs": 37750,
+      "endMs": 39400,
+      "translation": "미안"
+    },
+    {
+      "startMs": 39400,
+      "endMs": 43790,
+      "translation": "알아채 버렸어 음, 음"
+    },
+    {
+      "startMs": 43790,
+      "endMs": 45460,
+      "translation": "미안"
+    },
+    {
+      "startMs": 45460,
+      "endMs": 50080,
+      "translation": "알아채 버렸어 세상에 대해"
+    },
+    {
+      "startMs": 50080,
+      "endMs": 55290,
+      "translation": "스텝만, 스텝만 두고 와 버렸어"
+    },
+    {
+      "startMs": 55290,
+      "endMs": 62050,
+      "translation": "우리, 눈물에 맞춰 리듬을 타고 있을 거야"
+    },
+    {
+      "startMs": 62050,
+      "endMs": 67110,
+      "translation": "스텝만, 스텝만 두고 와 버렸어도"
+    },
+    {
+      "startMs": 67110,
+      "endMs": 73350,
+      "translation": "우리, 웃음의 수만큼 브레이크할 수 있을 거야"
+    },
+    {
+      "startMs": 73350,
+      "endMs": 79890,
+      "translation": "그러니까 미안, 알아채 버렸어도 음, 음"
+    },
+    {
+      "startMs": 79890,
+      "endMs": 85790,
+      "translation": "미안, 잊어 줘 음"
+    },
+    {
+      "startMs": 85790,
+      "endMs": 88630,
+      "translation": "오늘 어디선가 악당이 죽었대"
+    },
+    {
+      "startMs": 88630,
+      "endMs": 91950,
+      "translation": "그래도 많은 목숨이 구해졌대"
+    },
+    {
+      "startMs": 91950,
+      "endMs": 98050,
+      "translation": "정의와 윤리와 목숨을 저울에 달아 잰 성명으로"
+    },
+    {
+      "startMs": 98050,
+      "endMs": 101030,
+      "translation": "어려운 건 이제 모르겠지만"
+    },
+    {
+      "startMs": 101030,
+      "endMs": 105140,
+      "translation": "사실 우리가 악당이었을지도 몰라"
+    },
+    {
+      "startMs": 105140,
+      "endMs": 109750,
+      "translation": "그렇게 생각하면 그의 마음을 알게 될지도 몰라"
+    },
+    {
+      "startMs": 109750,
+      "endMs": 111450,
+      "translation": "미안"
+    },
+    {
+      "startMs": 111450,
+      "endMs": 115770,
+      "translation": "알아채 버렸어 음, 음"
+    },
+    {
+      "startMs": 115770,
+      "endMs": 117620,
+      "translation": "미안"
+    },
+    {
+      "startMs": 117620,
+      "endMs": 121820,
+      "translation": "알아채 버렸어 나 자신에 대해"
+    },
+    {
+      "startMs": 121820,
+      "endMs": 127250,
+      "translation": "스텝만, 스텝만 두고 와 버렸어"
+    },
+    {
+      "startMs": 127250,
+      "endMs": 134030,
+      "translation": "우리, 눈물에 맞춰 리듬을 타고 있을 거야"
+    },
+    {
+      "startMs": 134030,
+      "endMs": 139240,
+      "translation": "스텝만, 스텝만 두고 와 버렸어도"
+    },
+    {
+      "startMs": 139240,
+      "endMs": 142720,
+      "translation": "우리, 웃음의 수만큼"
+    },
+    {
+      "startMs": 142720,
+      "endMs": 158070,
+      "translation": "브레이크할 수 있을 거야, 그렇지?"
+    },
+    {
+      "startMs": 158070,
+      "endMs": 160930,
+      "translation": "찾아 헤매던 미래를 따라잡고"
+    },
+    {
+      "startMs": 160930,
+      "endMs": 163640,
+      "translation": "그때 처음으로 알았어"
+    },
+    {
+      "startMs": 163640,
+      "endMs": 166630,
+      "translation": "이게 좋은 일인지 나쁜 일인지"
+    },
+    {
+      "startMs": 166630,
+      "endMs": 169880,
+      "translation": "이게 '세상의 비밀'이라는 건가"
+    },
+    {
+      "startMs": 169880,
+      "endMs": 175090,
+      "translation": "스텝만, 스텝만 두고 와 버렸어"
+    },
+    {
+      "startMs": 175090,
+      "endMs": 182100,
+      "translation": "우리, 눈물에 맞춰 리듬을 타고 있을 거야"
+    },
+    {
+      "startMs": 182100,
+      "endMs": 187080,
+      "translation": "스텝만, 스텝만 두고 와 버렸어도"
+    },
+    {
+      "startMs": 187080,
+      "endMs": 190680,
+      "translation": "우리, 웃음의 수만큼"
+    },
+    {
+      "startMs": 190680,
+      "endMs": 193900,
+      "translation": "브레이크할 수 있을 거야, 그렇지?"
+    },
+    {
+      "startMs": 193900,
+      "endMs": 199830,
+      "translation": "스텝만, 스텝만 (워, 워, 예)"
+    },
+    {
+      "startMs": 199830,
+      "endMs": 205870,
+      "translation": "스텝만, 스텝만"
+    },
+    {
+      "startMs": 205870,
+      "endMs": 211770,
+      "translation": "스텝만, 스텝만"
+    },
+    {
+      "startMs": 211770,
+      "endMs": 221000,
+      "translation": "스텝만, 스텝만"
+    }
+  ]
+}

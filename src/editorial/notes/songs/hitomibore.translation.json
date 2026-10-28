@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206915,
+    "durationMs": 259000
+  },
+  "segments": [
+    {
+      "startMs": 20680,
+      "endMs": 29280,
+      "translation": "아무렇지 않게 시간은 그날까지 흘러서, 닿았어"
+    },
+    {
+      "startMs": 29280,
+      "endMs": 38380,
+      "translation": "무딘 발걸음은 달콤한 향기에 이끌려"
+    },
+    {
+      "startMs": 38380,
+      "endMs": 46650,
+      "translation": "찌르는 듯한 소리에 몸이 흔들려, 예감이 들었어"
+    },
+    {
+      "startMs": 46650,
+      "endMs": 54260,
+      "translation": "마치 만날 줄 알았다는 듯이"
+    },
+    {
+      "startMs": 54260,
+      "endMs": 60750,
+      "translation": "지금 포로가 되어 가, 그건 설레는 열정으로 미끄러져 들어와 눈을 빼앗아 가"
+    },
+    {
+      "startMs": 60750,
+      "endMs": 62730,
+      "translation": "봐, 아직 눈부셔"
+    },
+    {
+      "startMs": 62730,
+      "endMs": 67250,
+      "translation": "어라, 포로가 되어 가, 그 매혹의 열정에"
+    },
+    {
+      "startMs": 67250,
+      "endMs": 72020,
+      "translation": "미끄러져 들어온 작은 악마도, 봐, 춤추기 시작해, 벌써"
+    },
+    {
+      "startMs": 72020,
+      "endMs": 80980,
+      "translation": "그건 어지럽게 웃고, 눈을 가려도 다시 떠오르듯이"
+    },
+    {
+      "startMs": 80980,
+      "endMs": 84550,
+      "translation": "현기증이 날 만큼 강한 빛"
+    },
+    {
+      "startMs": 84550,
+      "endMs": 99130,
+      "translation": "말이 부족한, 그건 눈동자에 반한 거야"
+    },
+    {
+      "startMs": 99130,
+      "endMs": 107750,
+      "translation": "그날부터 시간은 무거워져서 멈추기 시작했어"
+    },
+    {
+      "startMs": 107750,
+      "endMs": 116150,
+      "translation": "헤매는 초침은 그날의 마법에 홀려"
+    },
+    {
+      "startMs": 116150,
+      "endMs": 118720,
+      "translation": "분명 마음이 버텨 내지 못하겠네"
+    },
+    {
+      "startMs": 118720,
+      "endMs": 125410,
+      "translation": "끓어 졸아든 마음이 터져 나와 버릴 것만 같아"
+    },
+    {
+      "startMs": 125410,
+      "endMs": 127540,
+      "translation": "잘못 본 게 아니네"
+    },
+    {
+      "startMs": 127540,
+      "endMs": 134120,
+      "translation": "헤매는 초침이 조급해져서, 되감기기 시작하기 전에"
+    },
+    {
+      "startMs": 134120,
+      "endMs": 142830,
+      "translation": "고개를 돌릴 때마다 몸이 흔들려, 예감이 들었어"
+    },
+    {
+      "startMs": 142830,
+      "endMs": 150110,
+      "translation": "그건 도망칠 줄 알았다는 듯이"
+    },
+    {
+      "startMs": 150110,
+      "endMs": 156640,
+      "translation": "또 포로가 되어 가, 그건 설레는 열정으로 미끄러져 들어와 눈을 빼앗아 가"
+    },
+    {
+      "startMs": 156640,
+      "endMs": 158830,
+      "translation": "봐, 아직 눈부셔"
+    },
+    {
+      "startMs": 158830,
+      "endMs": 163050,
+      "translation": "어라, 포로가 되어 가, 그 매혹의 열정에"
+    },
+    {
+      "startMs": 163050,
+      "endMs": 185040,
+      "translation": "미끄러져 들어온 작은 악마도, 봐, 춤추기 시작해, 벌써"
+    },
+    {
+      "startMs": 185040,
+      "endMs": 193190,
+      "translation": "그 눈동자가 내뿜는 감기에 몸이 저려"
+    },
+    {
+      "startMs": 193190,
+      "endMs": 203680,
+      "translation": "예감이 들었어, 돌아보면 시간이 흘러가, 떨어지듯이"
+    },
+    {
+      "startMs": 203680,
+      "endMs": 210270,
+      "translation": "지금 포로가 되어 가, 그건 설레는 열정으로 미끄러져 들어와 눈을 빼앗아 가"
+    },
+    {
+      "startMs": 210270,
+      "endMs": 212460,
+      "translation": "봐, 아직 눈부셔"
+    },
+    {
+      "startMs": 212460,
+      "endMs": 216610,
+      "translation": "어라, 포로가 되어 가, 그 매혹의 열정에"
+    },
+    {
+      "startMs": 216610,
+      "endMs": 221520,
+      "translation": "미끄러져 들어온 작은 악마도, 봐, 춤추기 시작해, 벌써"
+    },
+    {
+      "startMs": 221520,
+      "endMs": 230210,
+      "translation": "그건 어지럽게 웃고, 눈을 가려도 다시 떠오르듯이"
+    },
+    {
+      "startMs": 230210,
+      "endMs": 233950,
+      "translation": "현기증이 날 만큼 강한 빛"
+    },
+    {
+      "startMs": 233950,
+      "endMs": 259000,
+      "translation": "말이 부족한, 그건 눈동자에 반한 거야"
+    }
+  ]
+}

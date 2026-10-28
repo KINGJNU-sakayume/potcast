@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206923,
+    "durationMs": 249000
+  },
+  "segments": [
+    {
+      "startMs": 1120,
+      "endMs": 12390,
+      "translation": "문에서 새어 나온 모자람, 이 몸에 풍기는 냄새가"
+    },
+    {
+      "startMs": 12390,
+      "endMs": 22990,
+      "translation": "입맛 까다로운 군더더기를 불러들여"
+    },
+    {
+      "startMs": 22990,
+      "endMs": 33560,
+      "translation": "나와 너를 잘게 썬 것과, 잡내를 술로 흐려 놓은 것을"
+    },
+    {
+      "startMs": 33560,
+      "endMs": 41730,
+      "translation": "아픔을 나눠 가지며 간을 맞춘 타협과 기대를 쏟아붓고"
+    },
+    {
+      "startMs": 41730,
+      "endMs": 46970,
+      "translation": "휘두르는 그 가마솥 선샤인"
+    },
+    {
+      "startMs": 46970,
+      "endMs": 54180,
+      "translation": "넉넉히, 말로는 모자란 방식으로"
+    },
+    {
+      "startMs": 54180,
+      "endMs": 62890,
+      "translation": "거기 반짝이는 별처럼 흩뿌려서 애매한 채로 두자"
+    },
+    {
+      "startMs": 62890,
+      "endMs": 74990,
+      "translation": "이대로, 점을 세면 점이 늘어난다는 저주 같은 이야기처럼 하자"
+    },
+    {
+      "startMs": 74990,
+      "endMs": 77500,
+      "translation": "있잖아"
+    },
+    {
+      "startMs": 77500,
+      "endMs": 86340,
+      "translation": "왜 울고 있어"
+    },
+    {
+      "startMs": 86340,
+      "endMs": 91900,
+      "translation": "재능의 숟가락을 늘어놓고 이렇게 말해"
+    },
+    {
+      "startMs": 91900,
+      "endMs": 96960,
+      "translation": "오, 안 돼! 오, 안 돼! 오, 안 돼! 오, 오"
+    },
+    {
+      "startMs": 96960,
+      "endMs": 102480,
+      "translation": "누구 숟가락이냐며 단정하고 이렇게 말해"
+    },
+    {
+      "startMs": 102480,
+      "endMs": 106690,
+      "translation": "오, 안 돼! 오, 안 돼! 오, 안 돼!"
+    },
+    {
+      "startMs": 106690,
+      "endMs": 110950,
+      "translation": "오늘도 가마솥 선샤인"
+    },
+    {
+      "startMs": 110950,
+      "endMs": 118210,
+      "translation": "넉넉히, 말로는 모자란 방식으로"
+    },
+    {
+      "startMs": 118210,
+      "endMs": 127010,
+      "translation": "거기 반짝이는 별처럼 흩뿌려서 애매한 채로 두자"
+    },
+    {
+      "startMs": 127010,
+      "endMs": 138740,
+      "translation": "이대로, 점을 세면 점이 늘어난다는 저주 같은 이야기처럼 하자"
+    },
+    {
+      "startMs": 138740,
+      "endMs": 154760,
+      "translation": "있잖아"
+    },
+    {
+      "startMs": 154760,
+      "endMs": 161510,
+      "translation": "오, 안 돼! 오, 안 돼! 오, 안 돼! 오, 안 돼!"
+    },
+    {
+      "startMs": 161510,
+      "endMs": 172320,
+      "translation": "나와 너의 모자란 것과, 변치 않는 열로 그을려 온 것을"
+    },
+    {
+      "startMs": 172320,
+      "endMs": 180670,
+      "translation": "아픔을 나눠 가지며 간을 맞춘 못생긴 미래를 쏟아붓고"
+    },
+    {
+      "startMs": 180670,
+      "endMs": 185610,
+      "translation": "휘두르는 그 가마솥 선샤인"
+    },
+    {
+      "startMs": 185610,
+      "endMs": 192860,
+      "translation": "넉넉히, 말로는 모자란 방식으로"
+    },
+    {
+      "startMs": 192860,
+      "endMs": 201490,
+      "translation": "거기 반짝이는 별처럼 흩뿌려서 애매한 채로 두자"
+    },
+    {
+      "startMs": 201490,
+      "endMs": 213550,
+      "translation": "이대로, 점을 세면 점이 늘어난다는 저주 같은 이야기처럼 하자"
+    },
+    {
+      "startMs": 213550,
+      "endMs": 214340,
+      "translation": "있잖아"
+    },
+    {
+      "startMs": 214340,
+      "endMs": 222990,
+      "translation": "여기 반짝이는 별처럼 끌어안고 애매한 채로 두자"
+    },
+    {
+      "startMs": 222990,
+      "endMs": 234830,
+      "translation": "여기서부터, 점을 세면 점이 늘어난다는 저주 같은 이야기를 둘이서 하자"
+    },
+    {
+      "startMs": 234830,
+      "endMs": 237630,
+      "translation": "있잖아"
+    },
+    {
+      "startMs": 237630,
+      "endMs": 249000,
+      "translation": "왜 울고 있어"
+    }
+  ]
+}

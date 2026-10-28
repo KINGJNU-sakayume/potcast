@@ -86,7 +86,7 @@ describe('note lookup', () => {
   });
 
   it('omits filler for entities without a note', () => {
-    expect(getSongNote({ id: 'x', title: '踊り子', artistNames: ['Vaundy'] })).toBeNull();
+    expect(getSongNote({ id: 'x', title: '再会', artistNames: ['Vaundy'] })).toBeNull();
     expect(getArtistNote({ id: '0TnOYISbd1XYRBk9myaseg', name: 'Pitbull' })).toBeNull();
     expect(getAlbumNote({})).toBeNull();
   });

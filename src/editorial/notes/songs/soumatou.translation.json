@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206920,
+    "durationMs": 298000
+  },
+  "segments": [
+    {
+      "startMs": 24900,
+      "endMs": 36960,
+      "translation": "정신 차려 보니 어딘지 모를 곳에 와 있었어"
+    },
+    {
+      "startMs": 36960,
+      "endMs": 47870,
+      "translation": "끝없이 흘러가는 차창은 이제 보다 지쳤어"
+    },
+    {
+      "startMs": 47870,
+      "endMs": 60920,
+      "translation": "무엇을 하려 했는지도 잊고, 소중한 걸 못 보고 지나쳐 온 것도"
+    },
+    {
+      "startMs": 60920,
+      "endMs": 66570,
+      "translation": "생각할 일이 늘어 가서"
+    },
+    {
+      "startMs": 66570,
+      "endMs": 71460,
+      "translation": "소중한 걸 잊어버려도"
+    },
+    {
+      "startMs": 71460,
+      "endMs": 77340,
+      "translation": "네 탓이 아니야"
+    },
+    {
+      "startMs": 77340,
+      "endMs": 83560,
+      "translation": "내 탓도 아니야"
+    },
+    {
+      "startMs": 83560,
+      "endMs": 94760,
+      "translation": "흔했던 미래가 달라졌을 뿐이야"
+    },
+    {
+      "startMs": 94760,
+      "endMs": 105960,
+      "translation": "이제 잠꼬대가 멈추지 않게 되기 전에 그만두자"
+    },
+    {
+      "startMs": 105960,
+      "endMs": 122040,
+      "translation": "허탈하게 얼굴을 가린 사람의 모습에 마음이 쓰여"
+    },
+    {
+      "startMs": 122040,
+      "endMs": 128910,
+      "translation": "올려다본 이상은 나에게도 있었어"
+    },
+    {
+      "startMs": 128910,
+      "endMs": 142040,
+      "translation": "어디로 가려 했는지도 잊고, 소중한 무언가와 만나지 못한다 해도"
+    },
+    {
+      "startMs": 142040,
+      "endMs": 147590,
+      "translation": "엉망인 일이 늘어 가서"
+    },
+    {
+      "startMs": 147590,
+      "endMs": 152430,
+      "translation": "소중한 걸 잃어도"
+    },
+    {
+      "startMs": 152430,
+      "endMs": 158580,
+      "translation": "네 탓이 아니야"
+    },
+    {
+      "startMs": 158580,
+      "endMs": 164510,
+      "translation": "내 탓도 아니야"
+    },
+    {
+      "startMs": 164510,
+      "endMs": 175850,
+      "translation": "흔했던 미래가 달라져 갈 뿐이야"
+    },
+    {
+      "startMs": 175850,
+      "endMs": 209160,
+      "translation": "이제 잠꼬대가 멈추지 않게 되기 전에"
+    },
+    {
+      "startMs": 209160,
+      "endMs": 221050,
+      "translation": "날마다 기대고 또 멀어지며, 안녕을 바라며 두른 나의 모습은"
+    },
+    {
+      "startMs": 221050,
+      "endMs": 233520,
+      "translation": "서로 드러내고 또 아파하며, 사랑에 닳아 가는 내 마음은"
+    },
+    {
+      "startMs": 233520,
+      "endMs": 239540,
+      "translation": "네 탓이 아니야"
+    },
+    {
+      "startMs": 239540,
+      "endMs": 245500,
+      "translation": "내 탓도 아니야"
+    },
+    {
+      "startMs": 245500,
+      "endMs": 256610,
+      "translation": "흔했던 미래가 달라졌을 뿐이야"
+    },
+    {
+      "startMs": 256610,
+      "endMs": 266930,
+      "translation": "이제 전부 잊어버리기 전에 떠올리자"
+    },
+    {
+      "startMs": 266930,
+      "endMs": 278080,
+      "translation": "기대고 또 멀어지며, 안녕을 바라며 두른 나의 모습은"
+    },
+    {
+      "startMs": 278080,
+      "endMs": 282580,
+      "translation": "서로 드러내고 또 아파하며"
+    },
+    {
+      "startMs": 282580,
+      "endMs": 298000,
+      "translation": "사랑을 용서해 줘"
+    }
+  ]
+}

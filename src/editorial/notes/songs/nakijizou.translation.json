@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206914,
+    "durationMs": 152000
+  },
+  "segments": [
+    {
+      "startMs": 14750,
+      "endMs": 19590,
+      "translation": "우리는 소수의 이익을 위한 피라미드야"
+    },
+    {
+      "startMs": 19590,
+      "endMs": 21820,
+      "translation": "있잖아, 소감은? 아, 안 들어"
+    },
+    {
+      "startMs": 21820,
+      "endMs": 23740,
+      "translation": "마치 행복하기라도 한 듯한 그 웃는 얼굴"
+    },
+    {
+      "startMs": 23740,
+      "endMs": 25590,
+      "translation": "최선을 한 번 더"
+    },
+    {
+      "startMs": 25590,
+      "endMs": 27830,
+      "translation": "있잖아, 신, 이제 됐잖아 하고"
+    },
+    {
+      "startMs": 27830,
+      "endMs": 29700,
+      "translation": "있잖아, 한 번 더를 최선으로"
+    },
+    {
+      "startMs": 29700,
+      "endMs": 39070,
+      "translation": "있잖아, 고난과 노력의 세뇌였던가?"
+    },
+    {
+      "startMs": 39070,
+      "endMs": 42450,
+      "translation": "아, 참. 몇 번째 마지막 경고야?"
+    },
+    {
+      "startMs": 42450,
+      "endMs": 44580,
+      "translation": "그럼 이쯤에서 기도를 이어 둘까?"
+    },
+    {
+      "startMs": 44580,
+      "endMs": 50500,
+      "translation": "감동도 뭐도 없는 자포자기 속에서, 몇 번째 사랑 특가야?"
+    },
+    {
+      "startMs": 50500,
+      "endMs": 53100,
+      "translation": "그럼 이쯤에서 마음을 이어 둘까?"
+    },
+    {
+      "startMs": 53100,
+      "endMs": 57450,
+      "translation": "감각을 떨궈 버린 나는 우는 지장이야"
+    },
+    {
+      "startMs": 57450,
+      "endMs": 62190,
+      "translation": "아, 우리에게 흐르는 이 피는 참담한 나날을 물들이기 위한 걸까"
+    },
+    {
+      "startMs": 62190,
+      "endMs": 66510,
+      "translation": "끓어오르기 시작한 이 생명의 씨앗은 생각할수록 낭떠러지야"
+    },
+    {
+      "startMs": 66510,
+      "endMs": 68480,
+      "translation": "서로 받아들일 수 없겠지"
+    },
+    {
+      "startMs": 68480,
+      "endMs": 81560,
+      "translation": "이대로 여기는 모르는 부처보다 익숙한 지옥이라서"
+    },
+    {
+      "startMs": 81560,
+      "endMs": 84370,
+      "translation": "아, 참. 몇 번째 마지막 경고야?"
+    },
+    {
+      "startMs": 84370,
+      "endMs": 86810,
+      "translation": "그럼 이쯤에서 기도를 이어 둘까?"
+    },
+    {
+      "startMs": 86810,
+      "endMs": 92750,
+      "translation": "감동도 뭐도 없는 자포자기 속에서, 몇 번째 사랑 특가야?"
+    },
+    {
+      "startMs": 92750,
+      "endMs": 94550,
+      "translation": "그럼 이쯤에서 마음을 이어 둘까?"
+    },
+    {
+      "startMs": 94550,
+      "endMs": 107430,
+      "translation": "감각을 떨궈 버린 나는 우는 지장이야"
+    },
+    {
+      "startMs": 107430,
+      "endMs": 115190,
+      "translation": "나도 계속 웃는 꿈을 꾸고 싶어"
+    },
+    {
+      "startMs": 115190,
+      "endMs": 124810,
+      "translation": "하지만 계속, 빌 만한 꿈은 아니었던 것 같아서"
+    },
+    {
+      "startMs": 124810,
+      "endMs": 126330,
+      "translation": "몇 번째 마지막 경고야?"
+    },
+    {
+      "startMs": 126330,
+      "endMs": 128450,
+      "translation": "그럼 이쯤에서 기도를 이어 둘까?"
+    },
+    {
+      "startMs": 128450,
+      "endMs": 134480,
+      "translation": "감동도 뭐도 없는 자포자기 속에서, 몇 번째 사랑 특가야?"
+    },
+    {
+      "startMs": 134480,
+      "endMs": 136670,
+      "translation": "그럼 이쯤에서 마음을 이어 둘까?"
+    },
+    {
+      "startMs": 136670,
+      "endMs": 152000,
+      "translation": "감각을 떨궈 버린 나는 우는 지장이야"
+    }
+  ]
+}

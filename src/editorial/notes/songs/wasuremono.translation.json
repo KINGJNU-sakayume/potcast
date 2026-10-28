@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 4466753,
+    "durationMs": 199000
+  },
+  "segments": [
+    {
+      "startMs": 13450,
+      "endMs": 22710,
+      "translation": "우리는 분명 그 언저리에 있는 흔한 것으로는 부족했어"
+    },
+    {
+      "startMs": 22710,
+      "endMs": 30150,
+      "translation": "우리는 줄곧 가까이 있는 사랑을 살며시 서로 주워 주고 있었어"
+    },
+    {
+      "startMs": 30150,
+      "endMs": 37240,
+      "translation": "의연하게 아무것도 없는 앨범을 들여다봤어"
+    },
+    {
+      "startMs": 37240,
+      "endMs": 43040,
+      "translation": "웃는 척하고 돌아갈까"
+    },
+    {
+      "startMs": 43040,
+      "endMs": 48190,
+      "translation": "추억도 전부 여기에 두고, 아"
+    },
+    {
+      "startMs": 48190,
+      "endMs": 68540,
+      "translation": "여기서 울 수 있는 장면이 온 수만큼, 봐, 두고 온 게 있다니까"
+    },
+    {
+      "startMs": 68540,
+      "endMs": 75650,
+      "translation": "우리는 분명 눈물을 살며시 주울 여유는 없었어"
+    },
+    {
+      "startMs": 75650,
+      "endMs": 85030,
+      "translation": "그래서 우리는 줄곧 서로의 행복을 노려보고 있어"
+    },
+    {
+      "startMs": 85030,
+      "endMs": 94250,
+      "translation": "의연하게 얼어붙어, 아프기 시작한 마음이 내뱉었어"
+    },
+    {
+      "startMs": 94250,
+      "endMs": 101350,
+      "translation": "「때로는 서로 용서하는 게 애초에 죄야」"
+    },
+    {
+      "startMs": 101350,
+      "endMs": 107020,
+      "translation": "체념도 섰어, 돌아갈까"
+    },
+    {
+      "startMs": 107020,
+      "endMs": 112010,
+      "translation": "추억도 전부 여기에 두고, 아"
+    },
+    {
+      "startMs": 112010,
+      "endMs": 123240,
+      "translation": "여기서 울 수 있는 장면이 온 수만큼, 봐, 두고 온 게 있다니까"
+    },
+    {
+      "startMs": 123240,
+      "endMs": 132220,
+      "translation": "시간이 흘러도 「그것」은 끊어지지 않는 닻이 돼"
+    },
+    {
+      "startMs": 132220,
+      "endMs": 136920,
+      "translation": "잊어도 돼, 잊어도 돼"
+    },
+    {
+      "startMs": 136920,
+      "endMs": 149410,
+      "translation": "하지만 말이야, 그래, 힘들 때는 멈춰 서서 울어도 괜찮아"
+    },
+    {
+      "startMs": 149410,
+      "endMs": 152870,
+      "translation": "돌아갈까"
+    },
+    {
+      "startMs": 152870,
+      "endMs": 157820,
+      "translation": "추억아, 전부 이리 와, 아"
+    },
+    {
+      "startMs": 157820,
+      "endMs": 171930,
+      "translation": "여기서 울 수 있는 장면이 온 수만큼, 뭐, 주워도 마지막에 웃을 수 있다면"
+    },
+    {
+      "startMs": 171930,
+      "endMs": 199000,
+      "translation": "봐, 꽉 붙잡아, 두고 온 것"
+    }
+  ]
+}

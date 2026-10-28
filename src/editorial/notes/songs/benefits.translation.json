@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206901,
+    "durationMs": 246000
+  },
+  "segments": [
+    {
+      "startMs": 2550,
+      "endMs": 8770,
+      "translation": "사랑 같은 건 시시해"
+    },
+    {
+      "startMs": 8770,
+      "endMs": 10120,
+      "translation": "나도 그래"
+    },
+    {
+      "startMs": 10120,
+      "endMs": 15480,
+      "translation": "관객도 모르는 이야기"
+    },
+    {
+      "startMs": 15480,
+      "endMs": 19220,
+      "translation": "오늘 밤만으로는 끝낼 수 없어"
+    },
+    {
+      "startMs": 19220,
+      "endMs": 20540,
+      "translation": "너와 함께"
+    },
+    {
+      "startMs": 20540,
+      "endMs": 36140,
+      "translation": "내일 아침도 너랑 둘이"
+    },
+    {
+      "startMs": 36140,
+      "endMs": 41550,
+      "translation": "불안해지기만 해, 언제든"
+    },
+    {
+      "startMs": 41550,
+      "endMs": 46810,
+      "translation": "감각이 흔들리는 이야기"
+    },
+    {
+      "startMs": 46810,
+      "endMs": 51060,
+      "translation": "불쑥 가슴이 아파"
+    },
+    {
+      "startMs": 51060,
+      "endMs": 52440,
+      "translation": "아프다고"
+    },
+    {
+      "startMs": 52440,
+      "endMs": 61170,
+      "translation": "둘을 잇는 건 꿈이나 희망이 아니야"
+    },
+    {
+      "startMs": 61170,
+      "endMs": 66750,
+      "translation": "말할 수 없는, 아주 깊은 세계"
+    },
+    {
+      "startMs": 66750,
+      "endMs": 69270,
+      "translation": "더 밤을 새워"
+    },
+    {
+      "startMs": 69270,
+      "endMs": 73020,
+      "translation": "이루어지지 않을 거야"
+    },
+    {
+      "startMs": 73020,
+      "endMs": 74630,
+      "translation": "이봐"
+    },
+    {
+      "startMs": 74630,
+      "endMs": 80680,
+      "translation": "다 버려, 전부 끝내 버려"
+    },
+    {
+      "startMs": 80680,
+      "endMs": 84230,
+      "translation": "넌 말했지, \"나쁜 사랑이야\"라고"
+    },
+    {
+      "startMs": 84230,
+      "endMs": 85710,
+      "translation": "있어 줘"
+    },
+    {
+      "startMs": 85710,
+      "endMs": 91150,
+      "translation": "내가 떠나서 잊어버릴 때까지, 이게 끝날 때까지"
+    },
+    {
+      "startMs": 91150,
+      "endMs": 115870,
+      "translation": "지금 네가 이걸 싫어하는 거 알아"
+    },
+    {
+      "startMs": 115870,
+      "endMs": 120420,
+      "translation": "애정이 흘러넘쳐"
+    },
+    {
+      "startMs": 120420,
+      "endMs": 121870,
+      "translation": "좋지 않아"
+    },
+    {
+      "startMs": 121870,
+      "endMs": 127280,
+      "translation": "선택을 강요받는 이야기"
+    },
+    {
+      "startMs": 127280,
+      "endMs": 130950,
+      "translation": "이대로는 부족해"
+    },
+    {
+      "startMs": 130950,
+      "endMs": 132570,
+      "translation": "달콤한 시간"
+    },
+    {
+      "startMs": 132570,
+      "endMs": 142100,
+      "translation": "제멋대로인 둘은 꿈에도 나오는 거야"
+    },
+    {
+      "startMs": 142100,
+      "endMs": 146200,
+      "translation": "보고 싶지 않은, 아주 깊은 세계"
+    },
+    {
+      "startMs": 146200,
+      "endMs": 149360,
+      "translation": "더 바라"
+    },
+    {
+      "startMs": 149360,
+      "endMs": 153320,
+      "translation": "이루어지지 않을 거야"
+    },
+    {
+      "startMs": 153320,
+      "endMs": 154660,
+      "translation": "이봐"
+    },
+    {
+      "startMs": 154660,
+      "endMs": 159550,
+      "translation": "다 버려, 전부 끝내 버려"
+    },
+    {
+      "startMs": 159550,
+      "endMs": 164010,
+      "translation": "넌 말했지, \"나쁜 사랑이야\"라고"
+    },
+    {
+      "startMs": 164010,
+      "endMs": 165550,
+      "translation": "있어 줘"
+    },
+    {
+      "startMs": 165550,
+      "endMs": 170800,
+      "translation": "내가 떠나서 잊어버릴 때까지, 이게 끝날 때까지"
+    },
+    {
+      "startMs": 170800,
+      "endMs": 175150,
+      "translation": "네가 이걸 싫어하는 거 알아"
+    },
+    {
+      "startMs": 175150,
+      "endMs": 184430,
+      "translation": "남긴 반찬을 버리는 것쯤은 아무것도 아니지"
+    },
+    {
+      "startMs": 184430,
+      "endMs": 187390,
+      "translation": "아프지만"
+    },
+    {
+      "startMs": 187390,
+      "endMs": 191550,
+      "translation": "친구로 지낼 수 있어"
+    },
+    {
+      "startMs": 191550,
+      "endMs": 192290,
+      "translation": "이봐"
+    },
+    {
+      "startMs": 192290,
+      "endMs": 196700,
+      "translation": "다 버려, 전부 끝내 버려"
+    },
+    {
+      "startMs": 196700,
+      "endMs": 201260,
+      "translation": "넌 말했지, \"나쁜 사랑이야\"라고"
+    },
+    {
+      "startMs": 201260,
+      "endMs": 202820,
+      "translation": "있어 줘"
+    },
+    {
+      "startMs": 202820,
+      "endMs": 208420,
+      "translation": "내가 떠나서 잊어버릴 때까지, 이게 끝날 때까지"
+    },
+    {
+      "startMs": 208420,
+      "endMs": 246000,
+      "translation": "지금 네가 이걸 싫어하는 거 알아"
+    }
+  ]
+}
