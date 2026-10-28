@@ -6,6 +6,7 @@ import { usePageSurface } from '../app/surface';
 import { useIsMobile } from '../app/useIsMobile';
 import { useAlbum, useSavedState, useToggleSaved } from '../catalogue/queries';
 import { ArtistLinks } from '../components/ArtistLinks';
+import { AlbumBadges } from '../components/Badge';
 import { CoverImage } from '../components/CoverImage';
 import { DiscographyNav } from '../components/DiscographyNav';
 import { NotePreview } from '../components/NotePreview';
@@ -17,8 +18,8 @@ import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
 import {
   albumTypeLabel,
+  formatAlbumRelease,
   formatDuration,
-  formatReleaseDate,
   formatRuntime,
   formatTrackNumber,
   joinArtistNames,
@@ -82,21 +83,22 @@ function TrackSequence({ album }: { album: AlbumDetail }) {
             {current ? <PlayingMark playing={current.playing} /> : formatTrackNumber(track.trackNumber)}
           </span>
           <span className="track-text">
-            <b lang={detectLineLanguage(track.name)}>{track.name}</b>
+            <b lang={detectLineLanguage(track.name)}>
+              {track.name}
+              {noted && <AlbumBadges noted episode={false} />}
+            </b>
             {guests.length > 0 && <span className="track-guests">with {joinArtistNames(guests)}</span>}
           </span>
+          {/* Fixed columns: explicit, length — the time never moves. */}
           <span className="track-aside">
-            {noted && (
-              <span className="track-note" title="Song note">
-                Note
-              </span>
-            )}
-            {track.explicit && (
-              <span className="explicit" role="img" aria-label="Explicit" title="Explicit">
-                E
-              </span>
-            )}
-            <span>{formatDuration(track.durationMs)}</span>
+            <span className="track-aside-explicit">
+              {track.explicit && (
+                <span className="explicit" role="img" aria-label="Explicit" title="Explicit">
+                  E
+                </span>
+              )}
+            </span>
+            <span className="track-aside-time">{formatDuration(track.durationMs)}</span>
           </span>
         </button>
       </li>
@@ -209,10 +211,26 @@ export function AlbumPage() {
               <div className="artist">
                 <ArtistLinks artists={loaded.artists} />
               </div>
+              <div className="object-actions">
+                {episode && (
+                  <Link className="plain-action primary" to={`/episode/${loaded.id}`} title={episode.title}>
+                    {episodeRunning ? 'Back to the episode' : 'Listen with the hosts'}
+                  </Link>
+                )}
+                <button
+                  type="button"
+                  className={episode ? 'plain-action' : 'plain-action primary'}
+                  disabled={loaded.tracks.length === 0 && loaded.tracksComplete}
+                  onClick={() => play({ contextUri: loaded.uri }, { openNowPlaying: true })}
+                >
+                  Play album
+                </button>
+                <SaveAlbumButton uri={loaded.uri} />
+              </div>
               <div className="album-hero-meta">
                 <div>
                   <b>Release</b>
-                  <span>{formatReleaseDate(loaded.releaseDate, loaded.releaseDatePrecision) ?? '—'}</span>
+                  <span>{formatAlbumRelease(loaded.releaseDate, loaded.releaseDatePrecision, note) ?? '—'}</span>
                 </div>
                 <div>
                   <b>Format</b>
@@ -234,23 +252,6 @@ export function AlbumPage() {
                 titleLang={titleLang}
                 subtitle={[joinArtistNames(loaded.artists), year, trackCount ? pluralise(trackCount, 'track') : null].filter(Boolean).join(' · ')}
               />
-              <div className="object-actions">
-                <button
-                  type="button"
-                  className="plain-action primary"
-                  disabled={loaded.tracks.length === 0 && loaded.tracksComplete}
-                  onClick={() => play({ contextUri: loaded.uri }, { openNowPlaying: true })}
-                >
-                  Play album
-                </button>
-                {episode && (
-                  <Link className="plain-action" to={`/episode/${loaded.id}`} title={episode.title}>
-                    {episodeRunning ? 'Back to the episode' : 'Listen with the hosts'}
-                  </Link>
-                )}
-                <SaveAlbumButton uri={loaded.uri} />
-              </div>
-              {fineprint.length > 0 && <p className="fineprint">{fineprint.join(' · ')}</p>}
             </div>
           </section>
 
@@ -269,6 +270,11 @@ export function AlbumPage() {
               </div>
             )}
             <DiscographyNav album={loaded} />
+            {fineprint.length > 0 && (
+              <p className="fineprint">
+                <span className="fineprint-label">Label · ©</span> {fineprint.join(' · ')}
+              </p>
+            )}
           </section>
         </div>
       </div>

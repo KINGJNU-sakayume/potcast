@@ -64,9 +64,9 @@
 @media (min-width: 2400px) { .desktop { --panel-w: 680px; --gutter: 96px; } }
 @media (max-width: 1180px) { .desktop { --panel-w: 400px; } }
 
-.desktop .label, .desktop .artist-number, .desktop .note-kicker, .desktop .note-more, .desktop .text-toggle,
-.desktop .notice-action, .desktop .row-play, .desktop .plain-action, .desktop .track-note, .desktop .section-count,
+.desktop .label, .desktop .artist-number, .desktop .note-kicker, .desktop .track-note, .desktop .section-count,
 .desktop .sequence-head span, .desktop .listening-head span { font-size: calc(11px * var(--t)); }
+.desktop .note-more, .desktop .text-toggle, .desktop .row-play, .desktop .plain-action { font-size: calc(13px * var(--t)); }
 .desktop .note-preview p { font-size: calc(14px * var(--t)); }
 .desktop .note-drawer-copy { font-size: calc(16px * var(--t)); }
 .desktop .note-drawer-subtitle { font-size: calc(13px * var(--t)); }
@@ -83,6 +83,7 @@
 .desktop .rail-item[aria-current='page']::after { content: ''; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; background: var(--main); }
 .desktop .rail-foot { display: grid; gap: 2px; justify-items: stretch; margin-top: auto; padding-top: 12px; }
 .desktop .user { justify-self: center; margin-top: 8px; background: var(--ink); color: var(--bg); }
+.desktop .preview-mark { justify-self: center; margin-top: 6px; padding: 2px 5px; border: 1px solid currentColor; border-radius: 3px; font-size: 11px; font-weight: 600; color: var(--main); }
 .desktop .rail-now { display: grid; justify-items: center; gap: 7px; padding: 10px 0 14px; margin-bottom: 4px; border-bottom: 1px solid var(--line-soft); color: var(--dim); font-size: calc(10.5px * var(--t)); letter-spacing: .09em; text-transform: uppercase; }
 .desktop .rail-now:hover { color: var(--ink); }
 .desktop .rail-now-cover { position: relative; width: 50px; height: 50px; }
@@ -106,9 +107,11 @@
 .desktop .side-panel-head button { width: 36px; height: 36px; border: 0; background: transparent; font-size: 20px; line-height: 1; color: var(--muted); }
 .desktop .side-panel-head button:hover { color: var(--ink); }
 .desktop .side-panel-body { flex: 1; min-height: 0; overflow: auto; padding: 30px 34px 48px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
-.desktop .side-panel .note-drawer-title { font-size: clamp(34px, min(2.8vw, 5vh), 60px); }
+.desktop .side-panel .note-drawer-title { margin-top: 0; font-size: calc(24px * var(--t)); line-height: 1.2; letter-spacing: -.02em; }
 .desktop .side-panel .note-drawer-copy, .desktop .side-panel .note-drawer-foot { max-width: 640px; }
 .desktop .settings-body { padding: 0; }
+.desktop .ep-settings-panel.settings-body { padding: 18px 22px 20px; }
+.desktop .ep-settings-panel > .label:first-child { margin-top: 0; }
 .desktop .settings-body p { font-size: calc(14px * var(--t)); color: var(--ink-2); }
 .desktop .settings-body .label { margin-top: 22px; }
 .desktop .settings-body .label:first-child { margin-top: 0; }
@@ -198,7 +201,7 @@
 }
 .desktop .transport-extras .device-button { height: 40px; padding: 0 8px; }
 .desktop .transport-extras .device-name { max-width: 150px; white-space: nowrap; }
-.desktop .np .playback-state { margin: 0; justify-content: flex-start; text-align: left; font-size: calc(12.5px * var(--t)); }
+.desktop .np .playback-state { margin: 0; font-size: calc(13px * var(--t)); }
 @container (max-width: 560px) {
   .desktop .transport-extras .device-name { display: none; }
   .desktop .volume-slider { width: 64px; }
@@ -227,12 +230,15 @@
 }
 
 /* Focus Mode (player1): cover, lyrics and progress, full screen */
+.focus-exit { position: fixed; top: 20px; right: 24px; z-index: 30; min-height: 40px; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--ink); font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+.focus-exit[data-shown] { opacity: 1; pointer-events: auto; }
+.focus-exit:hover { background: var(--bg); }
 .desktop[data-focus] { grid-template-columns: minmax(0, 1fr); }
 .desktop[data-focus] .rail, .desktop[data-focus] .side-panel, .desktop[data-focus] .scope-notice { display: none; }
 .desktop[data-focus] .workspace { grid-template-columns: minmax(0, 1fr) 0; }
 .desktop[data-focus] .np { --share: .4; --art-max: 680px; --meta-reserve: 190px; padding: clamp(36px, 6vh, 96px) clamp(48px, 7vw, 150px); }
 .desktop[data-focus] .np-grid { grid-template-columns: minmax(0, calc(var(--share) * 100%)) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; grid-template-areas: "object lyrics" "object controls"; column-gap: clamp(56px, 7vw, 150px); }
-.desktop[data-focus] .listening-head, .desktop[data-focus] .note-line, .desktop[data-focus] .transport-row, .desktop[data-focus] .playback-state { display: none; }
+.desktop[data-focus] .listening-head, .desktop[data-focus] .note-line, .desktop[data-focus] .transport-row { display: none; }
 .desktop[data-focus] .np .player-controls { padding-top: clamp(18px, 3vh, 32px); }
 @media (min-height: 1200px) { .desktop[data-focus] .np { --art-max: 820px; --meta-reserve: 220px; } }
 @media (min-width: 2400px) {
@@ -242,7 +248,16 @@
 
 /* ── Album ─────────────────────────────────────────────────────────── */
 .desktop .album-shell { max-width: 1760px; grid-template-columns: minmax(0, 42fr) minmax(0, 58fr); gap: clamp(40px, 3.3vw, 96px); padding: 0 0 48px; }
-.desktop .album-hero-cover { width: min(100%, 52vh); }
+.desktop .album-hero-cover { width: min(100%, 52vh, calc(100vh - 480px)); min-width: 240px; }
+/* The left column fits one screen: cover, title, artist, actions, the four facts on one line, the note in three lines. */
+.desktop .album-object-copy { margin-top: 18px; }
+.desktop .album-object-copy .object-actions { margin-top: 16px; }
+.desktop .album-hero-meta { gap: 6px 22px; margin-top: 16px; padding-top: 10px; }
+.desktop .album-hero-meta div { display: flex; align-items: baseline; gap: 7px; }
+.desktop .album-hero-meta div span { margin-top: 0; }
+.desktop .album-object-copy .note-preview { margin-top: 16px; padding-top: 10px; }
+.desktop .album-object-copy .note-preview p { margin-top: 6px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.desktop .album-object-copy .note-more { margin-top: 6px; }
 .desktop .album-hero-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 42px 90px -34px var(--cover-shadow); }
 .desktop .album-object-copy h1 { font-size: clamp(42px, min(5.2vw, 7.2vh), 96px); }
 .desktop .album-object-copy .artist { font-size: calc(15px * var(--t)); }
@@ -263,6 +278,11 @@
 .desktop .discography { container: disco / inline-size; }
 .desktop .timeline { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 48px; align-items: start; }
 .desktop .timeline > .era-marker, .desktop .timeline > .empty-row { grid-column: 1 / -1; }
+/* Two releases or fewer: two larger columns, each era over its own release. */
+.desktop .timeline[data-few] { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto auto; grid-auto-flow: column; }
+.desktop .timeline[data-few] > .era-marker { grid-column: auto; }
+.desktop .timeline[data-few] .release-card { grid-template-columns: minmax(140px, 220px) minmax(0, 1fr); }
+.desktop .timeline[data-few] .release-cover { width: 100%; height: auto; aspect-ratio: 1; }
 .desktop .release-card h4 { font-size: clamp(19px, 2vh, 26px); }
 @container disco (min-width: 1100px) {
   .desktop .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }

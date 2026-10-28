@@ -8,6 +8,9 @@ const REMOTE_HINT =
  * spotifyEngine.ts). `protectedAudio` is the result of probeProtectedAudio():
  * false means the browser grants no DRM at all, true that DRM exists but
  * Spotify's licence or audio requests failed.
+ *
+ * The message is the one line the listener sees; the hints and what Spotify
+ * reported fold away under “Why doesn’t it play?”.
  */
 export function describeSkipLoop(
   protectedAudio: boolean,
@@ -16,8 +19,7 @@ export function describeSkipLoop(
   const detail = sdkMessage ? `Spotify reported: ${sdkMessage}` : undefined;
   if (!protectedAudio) {
     return {
-      message:
-        'Spotify skipped tracks without playing them: this browser can’t play protected (DRM) audio. Playback is paused.',
+      message: 'This browser can’t play Spotify’s protected (DRM) audio. Playback is paused.',
       hints: [
         'Allow protected content — Chrome or Edge: Settings → Privacy and security → Site settings → Protected content; Firefox: Settings → Play DRM-controlled content.',
         'Use an up-to-date Chrome, Edge or Firefox rather than an in-app browser (KakaoTalk, Instagram and the like).',
@@ -27,8 +29,7 @@ export function describeSkipLoop(
     };
   }
   return {
-    message:
-      'Spotify skipped tracks without playing them: this browser couldn’t get a playback licence for the audio (Widevine DRM). Playback is paused.',
+    message: 'This browser couldn’t get a playback licence (Widevine DRM). Playback is paused.',
     hints: [
       'Update the DRM module: open chrome://components (edge://components in Edge), choose “Check for update” under Widevine Content Decryption Module, then restart the browser.',
       'Turn off ad blockers and privacy extensions for this site — they can block Spotify’s licence and audio requests.',

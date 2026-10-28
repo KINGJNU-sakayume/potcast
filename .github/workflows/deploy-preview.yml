@@ -1,0 +1,109 @@
+name: Deploy a branch preview to GitHub Pages
+
+# Publishes main at https://kingjnu-sakayume.github.io/potcast/ as usual, and this branch beside it at
+# https://kingjnu-sakayume.github.io/potcast/preview/, so a change can be tried with a real Spotify sign-in
+# before it is merged. Pages holds one site per repository: the next push to main (deploy-pages.yml)
+# publishes main alone and the preview is gone until this workflow runs again.
+#
+# Needs, besides what deploy-pages.yml needs:
+# - https://kingjnu-sakayume.github.io/potcast/preview/ among the Spotify app's Redirect URIs;
+# - the branch allowed under Settings → Environments → github-pages → Deployment branches and tags.
+on:
+  push:
+    branches: ['claude/beautiful-maxwell-0edsu1']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      VITE_SPOTIFY_CLIENT_ID: ${{ vars.VITE_SPOTIFY_CLIENT_ID }}
+      VITE_LYRICS_PROVIDER: ${{ vars.VITE_LYRICS_PROVIDER }}
+      VITE_TRANSLATION_PROVIDER: ${{ vars.VITE_TRANSLATION_PROVIDER }}
+      VITE_TRANSLATION_ENDPOINT: ${{ vars.VITE_TRANSLATION_ENDPOINT }}
+      VITE_TRANSLATION_TARGET: ${{ vars.VITE_TRANSLATION_TARGET }}
+      VITE_ENABLE_PREVIEW: ${{ vars.VITE_ENABLE_PREVIEW }}
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # The site as it is: main, built exactly as deploy-pages.yml builds it.
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Install dependencies (main)
+        run: npm ci
+
+      - name: Record the hosts (main)
+        uses: ./.github/actions/narration
+        continue-on-error: true
+        with:
+          token: ${{ github.token }}
+
+      - name: Build main
+        run: npm run build
+        env:
+          VITE_SPOTIFY_REDIRECT_URI: ${{ vars.VITE_SPOTIFY_REDIRECT_URI }}
+
+      - name: Keep main's build
+        run: |
+          rm -rf "$RUNNER_TEMP/site"
+          mv dist "$RUNNER_TEMP/site"
+
+      # This branch, under /potcast/preview/, returning there from the Spotify sign-in.
+      - name: Checkout the branch
+        uses: actions/checkout@v4
+
+      - name: Install dependencies (branch)
+        run: npm ci
+
+      - name: Record the hosts (branch)
+        uses: ./.github/actions/narration
+        continue-on-error: true
+        with:
+          token: ${{ github.token }}
+
+      - name: Typecheck, lint, test, and build the branch
+        run: npm run check
+        env:
+          # The page's origin is lower case; the redirect URI must match the registered one exactly.
+          VITE_BASE: /potcast/preview/
+          VITE_SPOTIFY_REDIRECT_URI: https://kingjnu-sakayume.github.io/potcast/preview/
+          VITE_PREVIEW_LABEL: ${{ github.ref_name }}
+
+      - name: Put the branch beside main
+        run: |
+          mv dist "$RUNNER_TEMP/site/preview"
+          echo "Preview: https://kingjnu-sakayume.github.io/potcast/preview/" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}preview/
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

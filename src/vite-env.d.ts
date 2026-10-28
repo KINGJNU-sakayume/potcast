@@ -8,6 +8,8 @@ interface ImportMetaEnv {
   readonly VITE_TRANSLATION_ENDPOINT?: string;
   readonly VITE_TRANSLATION_TARGET?: string;
   readonly VITE_ENABLE_PREVIEW?: string;
+  /** Set on the branch preview build (deploy-preview.yml): the branch it was built from. */
+  readonly VITE_PREVIEW_LABEL?: string;
 }
 
 interface ImportMeta {

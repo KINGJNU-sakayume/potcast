@@ -186,17 +186,19 @@ function AlbumCard({ album, artistName }: { album: AlbumNote; artistName: string
           ) : (
             title
           )}
+          {albumId && episode && (
+            <Link className="mark-link" to={`/episode/${albumId}`} title={episode.title} aria-label={`Listen to ${title} with the hosts`}>
+              <sup className="mark" data-kind="episode">
+                ep
+              </sup>
+            </Link>
+          )}
         </b>
         <span className="archive-card-preview" lang="ko">
           {album.short}
         </span>
         <span className="archive-actions">
           <ReadMore kind="ALBUM" note={album} title={title} subtitle={[artistName, album.releaseYear].filter(Boolean).join(' · ')} />
-          {albumId && episode && (
-            <Link className="row-play" to={`/episode/${albumId}`} title={episode.title} aria-label={`Listen to ${title} with the hosts`}>
-              Episode
-            </Link>
-          )}
         </span>
       </div>
     </li>
@@ -213,10 +215,25 @@ function ArtistPortrait({ artist, name }: { artist: ArtistNote; name: string }) 
   );
 }
 
+const hasEpisode = (album: AlbumNote) => getEpisodeScript(album.key) !== null && album.albumIds.length > 0;
+
 function entryCount({ albums, songs }: ArtistEntry): string {
-  return [albums.length ? pluralise(albums.length, 'album note') : null, songs.length ? pluralise(songs.length, 'listening note') : null]
+  const episodes = albums.filter(hasEpisode).length;
+  return [
+    albums.length ? pluralise(albums.length, 'album note') : null,
+    songs.length ? pluralise(songs.length, 'listening note') : null,
+    episodes ? pluralise(episodes, 'episode') : null,
+  ]
     .filter(Boolean)
     .join(' · ');
+}
+
+/** An artist's entry narrowed to the albums that have an episode, and their songs; null when there are none. */
+function withEpisodesOnly(entry: ArtistEntry): ArtistEntry | null {
+  const albums = entry.albums.filter(hasEpisode);
+  if (albums.length === 0) return null;
+  const songGroups = entry.songGroups.filter((group) => group.album !== null && albums.includes(group.album));
+  return { ...entry, albums, songGroups, songs: songGroups.flatMap((group) => group.songs.map((item) => item.song)) };
 }
 
 /** The chosen artist: the artist note and portrait, album notes as cards, then the Listening notes under their albums. */
@@ -302,20 +319,26 @@ function ArtistSection({ entry }: { entry: ArtistEntry }) {
  */
 export function ArchivePage() {
   usePageTitle('Archive');
-  const { entries } = buildArchiveIndex();
+  const { entries: all } = buildArchiveIndex();
   const [params, setParams] = useSearchParams();
+  // "N episodes" in the header filters the archive down to what has an episode: it grows with the episodes, the page does not.
+  const episodesOnly = params.get('episodes') === '1';
+  const entries = episodesOnly ? all.map(withEpisodesOnly).filter((entry): entry is ArtistEntry => entry !== null) : all;
   const track = usePlayerSelector((s) => s.snapshot.track);
   const playingArtist = track?.artists.map((a) => a.id).filter(Boolean) ?? [];
   const chosen =
     entries.find((e) => e.artist.key === params.get('artist')) ??
     entries.find((e) => e.artist.artistIds.some((id) => playingArtist.includes(id))) ??
     entries[0];
-  const totals = [
-    pluralise(entries.length, 'artist'),
-    pluralise(albumNotes.length, 'album note'),
-    pluralise(songNotes.length, 'listening note'),
-    ...(episodeScripts.length > 0 ? [pluralise(episodeScripts.length, 'episode')] : []),
-  ];
+  const totals = [pluralise(all.length, 'artist'), pluralise(albumNotes.length, 'album note'), pluralise(songNotes.length, 'listening note')];
+  const setParam = (changes: Record<string, string | null>) => {
+    const next = new URLSearchParams(params);
+    for (const [key, value] of Object.entries(changes)) {
+      if (value === null) next.delete(key);
+      else next.set(key, value);
+    }
+    setParams(next, { replace: true });
+  };
 
   return (
     <div className="view active">
@@ -324,7 +347,24 @@ export function ArchivePage() {
           <header className="library-head">
             <div className="artist-number">Personal music archive</div>
             <h1>Archive</h1>
-            <p>{totals.join(' · ')} · works offline</p>
+            <p>
+              {totals.join(' · ')}
+              {episodeScripts.length > 0 && (
+                <>
+                  {' · '}
+                  <button
+                    type="button"
+                    className="archive-filter"
+                    aria-pressed={episodesOnly}
+                    title={episodesOnly ? 'Show every note again' : 'Show only what has an episode'}
+                    onClick={() => setParam({ episodes: episodesOnly ? null : '1' })}
+                  >
+                    {pluralise(episodeScripts.length, 'episode')}
+                  </button>
+                </>
+              )}{' '}
+              · works offline
+            </p>
           </header>
           <div className="archive-layout">
             <nav className="archive-index" aria-label="Artists with notes">
@@ -338,7 +378,7 @@ export function ArchivePage() {
                         type="button"
                         className="archive-index-item"
                         aria-current={current ? 'true' : undefined}
-                        onClick={() => setParams({ artist: entry.artist.key }, { replace: true })}
+                        onClick={() => setParam({ artist: entry.artist.key })}
                       >
                         <b lang={detectLineLanguage(name)}>{name}</b>
                         {entry.artist.origin && <span>{entry.artist.origin}</span>}

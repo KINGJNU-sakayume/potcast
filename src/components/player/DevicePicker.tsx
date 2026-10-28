@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useId, useRef, useState } from 'react';
 import { useSession } from '../../app/sessionContext';
+import { THIS_BROWSER, useDeviceStatus } from '../../playback/deviceStatus';
 import { useEngine, usePlayerSelector } from '../../playback/hooks';
 import { describeSpotifyError } from '../../spotify/errors';
 import { DeviceIcon } from '../icons';
@@ -13,7 +14,6 @@ export function DevicePicker() {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const panelId = useId();
-  const device = usePlayerSelector((s) => s.snapshot.device);
 
   useEffect(() => {
     if (!open) return;
@@ -40,7 +40,7 @@ export function DevicePicker() {
     return () => window.removeEventListener(OPEN_DEVICES_EVENT, onOpen);
   }, []);
 
-  const label = device ? (device.isThisBrowser ? 'This browser' : device.name) : 'No device';
+  const status = useDeviceStatus();
 
   return (
     <div className="device" ref={rootRef}>
@@ -49,11 +49,13 @@ export function DevicePicker() {
         className="text-toggle device-button"
         aria-expanded={open}
         aria-controls={panelId}
-        aria-label={`Playback device: ${device ? device.name : 'none'}. Choose device`}
+        aria-label={`Playback device: ${status.label}${status.detail ? ` (${status.detail})` : ''}. Choose device`}
+        data-tone={status.tone}
+        title={status.detail ?? undefined}
         onClick={() => setOpen((value) => !value)}
       >
         <DeviceIcon />
-        <span className="device-name">{label}</span>
+        <span className="device-name">{status.label}</span>
       </button>
 
       {open && (
@@ -99,7 +101,7 @@ export function DeviceChoices({ onChosen, browserNote = true }: { onChosen: () =
                   onChosen();
                 }}
               >
-                <b>{d.isThisBrowser ? 'This browser' : d.name}</b>
+                <b>{d.isThisBrowser ? THIS_BROWSER : d.name}</b>
                 <span>{d.isActive ? 'Playing' : d.isRestricted ? `${d.type} · not controllable` : d.type}</span>
               </button>
             </li>

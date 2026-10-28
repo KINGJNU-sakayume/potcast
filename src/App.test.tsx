@@ -90,7 +90,8 @@ describe('ARC Music (preview archive)', () => {
     renderApp('?preview', `#/artist/${id}`);
     expect(await screen.findByRole('heading', { level: 1, name })).toBeInTheDocument();
     expect(screen.getByText(text)).toBeInTheDocument();
-    expect(await screen.findAllByText(/· Editorial note/)).not.toHaveLength(0);
+    // The discography marks the noted albums with the note badge.
+    expect(await screen.findAllByText('note', { selector: '.mark' })).not.toHaveLength(0);
   });
 
   it('marks noted tracks in an album sequence and shows the album note', async () => {
@@ -98,8 +99,8 @@ describe('ARC Music (preview archive)', () => {
     expect(await screen.findByRole('heading', { level: 1, name: 'A Rush of Blood to the Head' })).toBeInTheDocument();
     expect(screen.getByText(/데뷔작의 조용함 위에/)).toBeInTheDocument();
     const scientist = screen.getByRole('button', { name: /The Scientist/ });
-    expect(within(scientist).getByText('Note')).toBeInTheDocument();
-    expect(within(screen.getByRole('button', { name: /Politik/ })).queryByText('Note')).not.toBeInTheDocument();
+    expect(within(scientist).getByText('note')).toBeInTheDocument();
+    expect(within(screen.getByRole('button', { name: /Politik/ })).queryByText('note')).not.toBeInTheDocument();
   });
 
   it('lays the library out on one screen: lists, then covers, then artists', async () => {

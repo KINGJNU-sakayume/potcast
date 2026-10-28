@@ -95,7 +95,7 @@ export function EpisodeSettings() {
             <div className="settings-fields">
               <div className="settings-field" role="group" aria-label="The recorded voices">
                 <span>Voices</span>
-                <span className="settings-choices">
+                <span className="settings-choices settings-voices">
                   {sampled.map((voice) => (
                     <button
                       key={voice}

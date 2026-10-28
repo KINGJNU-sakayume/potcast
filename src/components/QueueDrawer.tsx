@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useSession } from '../app/sessionContext';
 import type { TrackIdentity } from '../domain/types';
 import { joinArtistNames } from '../lib/format';
-import { useEngine, usePlayerSelector } from '../playback/hooks';
+import { useEngine, usePlaybackStalled, usePlayerSelector } from '../playback/hooks';
 import { describeSpotifyError } from '../spotify/errors';
 import { TrackIndexRow } from './IndexRow';
 import { SideDrawer } from './SideDrawer';
@@ -30,7 +30,7 @@ export function QueueContent({ open }: { open: boolean }) {
   const engine = useEngine();
   const { mode } = useSession();
   const track = usePlayerSelector((s) => s.snapshot.track);
-  const paused = usePlayerSelector((s) => s.snapshot.paused);
+  const stalled = usePlaybackStalled();
   const context = usePlayerSelector((s) => s.snapshot.context);
 
   const queue = useQuery({
@@ -54,7 +54,7 @@ export function QueueContent({ open }: { open: boolean }) {
       <div className="label queue-label">Now playing</div>
       {track ? (
         <ol className="index-list queue-list">
-          <TrackIndexRow track={track} position={0} current={{ playing: !paused }} />
+          <TrackIndexRow track={track} position={0} current={{ playing: !stalled }} />
         </ol>
       ) : (
         <p className="queue-note">Nothing is playing.</p>

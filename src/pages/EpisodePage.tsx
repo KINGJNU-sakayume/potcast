@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useId, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { usePageTitle } from '../app/pageTitle';
 import { useShell } from '../app/shellContext';
@@ -19,6 +19,7 @@ import { getAlbumNote } from '../editorial/lookup';
 import { songNotes } from '../editorial/songs';
 import { readBookmark } from '../episode/bookmark';
 import { useEpisodeRunner } from '../episode/episodeContext';
+import { EpisodeSettings } from '../episode/EpisodeSettings';
 import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
 import { coverage } from '../episode/narration/plan';
@@ -822,6 +823,62 @@ function EpisodePosition({
   );
 }
 
+/**
+ * “목소리와 속도”: on the desktop the episode's own settings open in a small
+ * popover beside the transport, instead of the whole Settings column from
+ * the Spotify account down. The phone keeps its settings sheet.
+ */
+function EpisodeSettingsButton() {
+  const shell = useShell();
+  const mobile = useIsMobile();
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const panelId = useId();
+
+  useEffect(() => {
+    if (!open) return;
+    const onPointer = (event: PointerEvent) => {
+      if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('pointerdown', onPointer);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onPointer);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  if (mobile) {
+    return (
+      <button type="button" className="text-toggle" title="Voices, pace, and who plays the music" onClick={shell.toggleSettings}>
+        Voices and pace
+      </button>
+    );
+  }
+  return (
+    <div className="ep-settings" ref={rootRef}>
+      <button
+        type="button"
+        className="text-toggle"
+        title="Voices, pace, and who plays the music"
+        aria-expanded={open}
+        aria-controls={panelId}
+        onClick={() => setOpen((value) => !value)}
+      >
+        Voices and pace
+      </button>
+      {open && (
+        <div id={panelId} className="ep-settings-panel settings-body" role="dialog" aria-label="Voices and pace">
+          <EpisodeSettings />
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* ── Page ──────────────────────────────────────────────────────────────── */
 
 const NOTICE_TEXT = {
@@ -843,12 +900,12 @@ export function EpisodePage() {
   const album = useAlbum(albumId);
   const runner = useEpisodeRunner();
   const state = useEpisodeState();
-  const shell = useShell();
   const mobile = useIsMobile();
   const [preferences, setPreferences] = usePreferences();
   const narration = useNarrationManifest();
   const engine = useEngine();
   const playerTrack = usePlayerSnapshot().track;
+  const playerIssue = usePlayerSelector((s) => s.issue !== null);
   const [scriptOpen, setScriptOpen] = useState(false);
   // Whether this browser is (or is trying to be) the player: when the music will not start, the app on the computer can be.
   const browserPlays = usePlayerSelector((s) => s.sdk.kind !== 'disabled') && engine.kind === 'spotify' && !mobile;
@@ -1125,7 +1182,7 @@ export function EpisodePage() {
               </>
             )}
 
-            <div className="player-controls">
+            <div className="player-controls" data-intro={!active && !bookmark ? '' : undefined}>
               <EpisodePosition
                 episode={episode}
                 album={data}
@@ -1164,9 +1221,7 @@ export function EpisodePage() {
                       End episode
                     </button>
                   )}
-                  <button type="button" className="text-toggle" title="Voices, pace, and who plays the music" onClick={shell.toggleSettings}>
-                    Voices and pace
-                  </button>
+                  <EpisodeSettingsButton />
                   {!mobile && !ownMusic && (
                     <>
                       <DevicePicker />
@@ -1175,25 +1230,28 @@ export function EpisodePage() {
                   )}
                 </div>
               </div>
-              {active && state.notice && (
-                <p className="playback-state alert ep-notice" role="alert">
-                  {NOTICE_TEXT[state.notice]}
-                  {state.notice === 'no-playback' && !ownMusic && browserPlays && (
-                    <button
-                      type="button"
-                      className="note-more"
-                      title="Stop playing in this browser: the Spotify app on this computer plays, and this page starts and stops it"
-                      onClick={playThroughApp}
-                    >
-                      Play through the Spotify app
-                    </button>
-                  )}
-                  {state.notice === 'no-playback' && !ownMusic && (
-                    <button type="button" className="note-more" onClick={playItMyself}>
-                      Play the music myself
-                    </button>
-                  )}
-                </p>
+              {/* One notice at a time, in the one place: the player's own problem says more than the episode's. */}
+              {active && state.notice && !playerIssue && (
+                <div className="playback-state alert ep-notice" role="alert">
+                  <div className="notice-line">
+                    <span className="notice-message">{NOTICE_TEXT[state.notice]}</span>
+                    {state.notice === 'no-playback' && !ownMusic && browserPlays && (
+                      <button
+                        type="button"
+                        className="notice-action"
+                        title="Stop playing in this browser: the Spotify app on this computer plays, and this page starts and stops it"
+                        onClick={playThroughApp}
+                      >
+                        Use the Spotify app
+                      </button>
+                    )}
+                    {state.notice === 'no-playback' && !ownMusic && (
+                      <button type="button" className="notice-action" onClick={playItMyself}>
+                        Play the music myself
+                      </button>
+                    )}
+                  </div>
+                </div>
               )}
               <PlaybackNotice />
             </div>

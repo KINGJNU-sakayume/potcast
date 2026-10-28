@@ -102,6 +102,7 @@ export function songNotePayload(note: SongNote, { title, subtitle, titleLang }: 
     written: note.written,
     updated: note.updated,
     sources: note.sources,
+    trackIds: note.trackIds,
   };
 }
 

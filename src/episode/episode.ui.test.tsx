@@ -170,11 +170,11 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     expect(await screen.findByRole('link', { name: 'Back to the episode' })).toHaveAttribute('href', `#/episode/${IGOR}`);
   });
 
-  it('has the episode settings in the settings column', async () => {
+  it('has the episode settings in a popover beside the transport', async () => {
     const user = userEvent.setup();
     renderApp(`#/episode/${IGOR}`);
     await user.click(await screen.findByRole('button', { name: 'Voices and pace' }));
-    const settings = screen.getByRole('complementary', { name: 'Settings' });
+    const settings = screen.getByRole('dialog', { name: 'Voices and pace' });
     expect(within(settings).getByText(/This browser has no Korean voice/)).toBeInTheDocument();
     await user.click(within(within(settings).getByRole('group', { name: 'Pace' })).getByRole('button', { name: '1.25×' }));
     expect(preferencesStore.get().episodeRate).toBe(1.25);
@@ -292,7 +292,7 @@ describe('a track from outside the album', () => {
 describe('an episode whose music the listener plays themselves', () => {
   const playItMyself = async (user: ReturnType<typeof userEvent.setup>) => {
     await user.click(await screen.findByRole('button', { name: 'Voices and pace' }));
-    const settings = screen.getByRole('complementary', { name: 'Settings' });
+    const settings = screen.getByRole('dialog', { name: 'Voices and pace' });
     await user.click(within(settings).getByRole('button', { name: 'I play it myself' }));
     expect(preferencesStore.get().episodeMusic).toBe('manual');
     // Talking over the music is not a choice any more: the music is not the episode's to turn down.
@@ -331,7 +331,7 @@ describe('an episode whose music the listener plays themselves', () => {
     expect(within(now()).queryByRole('list', { name: 'The lines of this stretch, translated' })).not.toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Voices and pace' }));
-    await user.click(within(screen.getByRole('complementary', { name: 'Settings' })).getByRole('button', { name: 'Played for me' }));
+    await user.click(within(screen.getByRole('dialog', { name: 'Voices and pace' })).getByRole('button', { name: 'Played for me' }));
     await waitFor(() => expect(screen.queryByRole('heading', { level: 2, name: 'Your turn' })).not.toBeInTheDocument());
     expect(now()).toHaveAttribute('data-status', 'playing');
   });
@@ -352,9 +352,22 @@ describe('the archive', () => {
   it('counts the episodes and leads to an album\'s episode from its card', async () => {
     renderApp('#/archive?artist=tyler');
     // The footer counts whatever scripts exist, so adding an episode never needs this line touched.
-    expect(await screen.findByText(new RegExp(`· ${episodeScripts.length} episodes ·`))).toBeInTheDocument();
+    expect(await screen.findByRole('button', { name: `${episodeScripts.length} episodes` })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Listen to IGOR with the hosts' })).toHaveAttribute('href', `#/episode/${IGOR}`);
     expect(screen.getByRole('link', { name: 'Listen to Flower Boy with the hosts' })).toHaveAttribute('href', '#/episode/2nkto6YNI4rUYTLqEwWJ3o');
+  });
+
+  it('narrows to what has an episode when the episode count is pressed', async () => {
+    const user = userEvent.setup();
+    renderApp('#/archive');
+    const filter = await screen.findByRole('button', { name: `${episodeScripts.length} episodes` });
+    const index = screen.getByRole('navigation', { name: 'Artists with notes' });
+    const before = within(index).getAllByRole('button').length;
+    await user.click(filter);
+    expect(filter).toHaveAttribute('aria-pressed', 'true');
+    const after = within(index).getAllByRole('button');
+    expect(after.length).toBeLessThan(before);
+    for (const item of after) expect(item).toHaveTextContent(/\d+ episodes?/);
   });
 });
 
@@ -395,7 +408,7 @@ describe('an episode on a site with recorded hosts', () => {
     const clip = vi.spyOn(narrationLibrary, 'clip').mockRejectedValue(new Error('no network in the tests'));
     renderApp(`#/episode/${IGOR}`);
     await user.click(await screen.findByRole('button', { name: 'Voices and pace' }));
-    const voices = within(screen.getByRole('complementary', { name: 'Settings' })).getByRole('group', { name: 'The recorded voices' });
+    const voices = within(screen.getByRole('dialog', { name: 'Voices and pace' })).getByRole('group', { name: 'The recorded voices' });
     expect(within(voices).getAllByRole('button')).toHaveLength(RECORDED_VOICES.length);
     await user.click(within(voices).getByRole('button', { name: /Hear voice M5, warm, storytelling/ }));
     expect(clip).toHaveBeenCalledWith(recorded('all').samples.M5);

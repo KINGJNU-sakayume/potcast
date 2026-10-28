@@ -4,25 +4,11 @@ import { useSessionControls } from '../app/sessionControls';
 import { useSession } from '../app/sessionContext';
 import { useIsMobile } from '../app/useIsMobile';
 import { EpisodeSettings } from '../episode/EpisodeSettings';
+import { useDeviceStatus } from '../playback/deviceStatus';
 import { useEngine, usePlayerSelector } from '../playback/hooks';
 import { usePreferences } from '../preferences/preferences';
 import { BottomSheet } from './BottomSheet';
 import { InstallHint } from './mobile/InstallHint';
-
-function sdkLabel(kind: string): string {
-  switch (kind) {
-    case 'ready':
-      return 'Browser device ready';
-    case 'loading':
-      return 'Starting browser device…';
-    case 'reconnecting':
-      return 'Reconnecting browser device…';
-    case 'error':
-      return 'Browser device unavailable';
-    default:
-      return 'This browser is a remote: a Spotify app plays the audio';
-  }
-}
 
 /** The phone's settings sheet. On the desktop the same body opens in the right-hand column. */
 export function SettingsPanel({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -42,8 +28,7 @@ export function SettingsBody() {
   const { mode, translation, lyrics } = useSession();
   const engine = useEngine();
   const sdk = usePlayerSelector((s) => s.sdk);
-  const device = usePlayerSelector((s) => s.snapshot.device);
-  const source = usePlayerSelector((s) => s.snapshot.source);
+  const deviceStatus = useDeviceStatus();
   const [preferences, setPreferences] = usePreferences();
   const { pathname } = useLocation();
   const mobile = useIsMobile();
@@ -57,9 +42,9 @@ export function SettingsBody() {
       ) : mobile ? (
         <p>Connected · this phone is the remote. The Spotify app, or another device signed in to your account, plays the audio.</p>
       ) : (
-        <p>
-          Connected · {sdk.kind === 'error' ? `${sdkLabel(sdk.kind)} — ${sdk.message}` : sdkLabel(sdk.kind)}
-          {device && (source === 'sdk' ? ' · playing in this browser' : ` · playing on ${device.name}`)}
+        <p className="settings-device" data-tone={deviceStatus.tone}>
+          Connected · playing on <b>{deviceStatus.label}</b>
+          {deviceStatus.detail && ` · ${deviceStatus.detail}`}
         </p>
       )}
       {missing.length > 0 && (

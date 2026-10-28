@@ -81,6 +81,7 @@ export function loadAlbumNotes(files: NoteFiles): AlbumNote[] {
     albumIds: fields.optionalList('albumIds') ?? [],
     titles: fields.list('titles'),
     releaseYear: fields.optionalNumber('releaseYear'),
+    releaseDate: fields.optionalString('releaseDate'),
     cover: imageUrl(fields, 'cover'),
     tracks: fields.optionalList('tracks'),
     ...body(fields, full, file),

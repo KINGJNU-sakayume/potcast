@@ -9,11 +9,12 @@ import {
   useRecentlyPlayed,
   useSavedAlbums,
 } from '../catalogue/queries';
+import { albumMarks } from '../components/Badge';
 import { CoverImage, Portrait } from '../components/CoverImage';
 import { CoverTile } from '../components/desktop/CoverTile';
 import { TrackIndexRow } from '../components/IndexRow';
 import { QuietRow } from '../components/StateView';
-import { getAlbumNote, getArtistNote, getSongNote } from '../editorial/lookup';
+import { getArtistNote, getSongNote } from '../editorial/lookup';
 import type { TrackIdentity } from '../domain/types';
 import { formatRelativeTime, joinArtistNames, pluralise, releaseYear } from '../lib/format';
 import { useEngine, usePlay } from '../playback/hooks';
@@ -203,7 +204,7 @@ function SavedAlbums() {
                 title={album.name}
                 to={`/album/${album.id}`}
                 meta={[joinArtistNames(album.artists), releaseYear(album.releaseDate)].filter(Boolean).join(' · ')}
-                noted={getAlbumNote({ id: album.id, name: album.name, artistNames: album.artists.map((a) => a.name), releaseDate: album.releaseDate }) !== null}
+                {...albumMarks({ id: album.id, name: album.name, artistNames: album.artists.map((a) => a.name), releaseDate: album.releaseDate })}
                 onPlay={() => play({ contextUri: album.uri }, { openNowPlaying: true })}
               />
             ))}

@@ -112,6 +112,10 @@
 .ep-clock-line { cursor: pointer; touch-action: none; }
 .ep-clock-line::before { content: ''; position: absolute; inset: 4px 0; }
 .ep-clock .note-more { margin-top: 0; white-space: nowrap; }
+.ep-settings { position: relative; }
+.ep-settings-panel { position: absolute; right: 0; bottom: calc(100% + 10px); z-index: 20; width: min(420px, 80vw); max-height: 60vh; overflow: auto; padding: 18px 20px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper, var(--bg)); color: var(--ink); box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .35); }
+/* Before the episode starts its own button plays it: the transport's play is not a second one. */
+.player-controls[data-intro] .transport { visibility: hidden; }
 .ep-extras { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 2px 18px; }
 .ep-notice .note-more { margin: 0 0 0 14px; white-space: nowrap; }
 
@@ -120,8 +124,8 @@
 .ep-chapter { display: flex; align-items: baseline; gap: 12px; margin: 30px 0 6px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 17px; font-weight: 500; line-height: 1.35; letter-spacing: -.015em; color: var(--ink); }
 .ep-chapter-no { min-width: 56px; font-size: 12px; font-weight: 400; letter-spacing: 0; color: var(--dim); font-variant-numeric: tabular-nums; }
 .ep-cue:first-child > .ep-chapter { margin-top: 12px; padding-top: 0; border-top: 0; }
-.ep-row { appearance: none; width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 8px 8px 8px 0; border: 0; background: transparent; color: var(--ink-2); text-align: left; transition: padding .2s var(--ease), background .2s ease; }
-.ep-row:hover, .ep-row[aria-current='true'] { padding-left: 8px; background: color-mix(in srgb, var(--main) 7%, transparent); }
+.ep-row { appearance: none; width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 8px; border: 0; background: transparent; color: var(--ink-2); text-align: left; transition: background .2s ease; }
+.ep-row:hover, .ep-row[aria-current='true'] { background: color-mix(in srgb, var(--main) 7%, transparent); }
 .ep-row[aria-current='true'] { color: var(--ink); }
 .ep-row-lead { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
 .ep-row[aria-current='true'] .ep-row-lead { color: var(--main-text); }
@@ -144,11 +148,18 @@
 /* Settings: the episode's voices, pace and talk-over */
 .settings-fields { display: grid; gap: 10px; margin: 0 0 18px; }
 .settings-field { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; gap: 12px; align-items: center; min-height: 34px; font-size: 12.5px; color: var(--ink-2); }
-.settings-field > span:first-child { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
+.settings-field > span:first-child { font-size: 13px; color: var(--muted); }
 .settings-field select { width: 100%; min-width: 0; height: 34px; padding: 0 8px; border: 1px solid var(--line); border-radius: 0; background: transparent; font: inherit; color: var(--ink); }
 .settings-field select:hover { border-color: var(--ink); }
 .settings-field .note-more { margin-top: 0; }
-.settings-choices { grid-column: 2 / -1; display: flex; flex-wrap: wrap; gap: 2px 18px; }
+.settings-choices { grid-column: 2 / -1; display: flex; flex-wrap: wrap; gap: 0; }
+/* A choice is a bordered segmented control; the chosen one is filled — the one selection mark in the app. */
+.settings-choices .text-toggle[aria-pressed] { min-height: 32px; padding: 0 12px; border: 1px solid var(--line); margin-left: -1px; color: var(--ink-2); }
+.settings-choices .text-toggle[aria-pressed]:first-child { margin-left: 0; }
+.settings-choices .text-toggle[aria-pressed='true'] { position: relative; background: var(--ink); border-color: var(--ink); color: var(--paper, var(--bg)); }
+/* The recorded voices are samples to hear, not a choice: a play mark, no selection state. */
+.settings-voices .text-toggle { min-height: 32px; padding: 0 10px; color: var(--ink-2); }
+.settings-voices .text-toggle::before { content: '▶'; font-size: 9px; margin-right: 2px; color: var(--muted); }
 .settings-slider { width: 100%; }
 .settings-value { font-variant-numeric: tabular-nums; color: var(--dim); }
 

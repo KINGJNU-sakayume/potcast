@@ -6,12 +6,14 @@ import {
   useCatalogueSearch,
   useCatalogueSearchPages,
 } from '../catalogue/queries';
-import type { Page, SearchResults, SearchType } from '../domain/types';
-import { getAlbumNote, getArtistNote, getSongNote } from '../editorial/lookup';
+import type { ImageRef, Page, SearchResults, SearchType } from '../domain/types';
+import { getArtistNote, getSongNote } from '../editorial/lookup';
 import { joinArtistNames, releaseYear } from '../lib/format';
 import { usePlay } from '../playback/hooks';
 import { describeSpotifyError } from '../spotify/errors';
 import { detectLineLanguage } from '../translation/languageDetect';
+import { albumMarks, AlbumBadges } from './Badge';
+import { CoverImage, Portrait } from './CoverImage';
 
 export type Filter = 'all' | SearchType;
 
@@ -57,14 +59,31 @@ export function countResults(results: SearchResults | undefined): number {
   );
 }
 
-function Result({ title, detail, noted, onSelect }: { title: string; detail: string; noted?: boolean; onSelect: () => void }) {
+interface ResultItem {
+  key: string;
+  title: string;
+  detail: string;
+  noted?: boolean;
+  episode?: boolean;
+  images: readonly ImageRef[];
+  round?: boolean;
+  paletteKey?: string;
+  onSelect: () => void;
+}
+
+/** A result: a small cover or photo, so same-named tracks, versions and playlists tell apart at a glance. */
+function Result({ item }: { item: ResultItem }) {
+  const { title, detail, noted = false, episode = false, images, round = false, paletteKey, onSelect } = item;
   return (
     <button type="button" data-result onClick={onSelect}>
-      <b lang={detectLineLanguage(title)}>{title}</b>
-      <span>
-        {noted && <em className="track-note">Note</em>}
-        {detail}
+      <span className={round ? 'result-thumb round' : 'result-thumb'} aria-hidden="true">
+        {round ? <Portrait images={images} name={title} size={32} /> : <CoverImage images={images} size={32} alt="" title={title} paletteKey={paletteKey} />}
       </span>
+      <b lang={detectLineLanguage(title)}>
+        {title}
+        <AlbumBadges noted={noted} episode={episode} />
+      </b>
+      <span>{detail}</span>
     </button>
   );
 }
@@ -152,76 +171,71 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
     }
   };
 
+  const tracks: ResultItem[] = cap(results?.tracks?.items ?? []).map((track, index) => ({
+    key: `t-${track.uri}-${index}`,
+    title: track.title,
+    detail: `Track · ${joinArtistNames(track.artists)}`,
+    noted: getSongNote({ id: track.spotifyTrackId, title: track.title, artistNames: track.artists.map((a) => a.name) }) !== null,
+    images: track.album.images,
+    paletteKey: track.album.id,
+    onSelect: () => {
+      onClose();
+      play(track.album.uri ? { contextUri: track.album.uri, offsetUri: track.uri } : { uris: [track.uri] }, { openNowPlaying: true });
+    },
+  }));
+  const artists: ResultItem[] = cap(results?.artists?.items ?? []).map((artist) => ({
+    key: `r-${artist.id}`,
+    title: artist.name,
+    detail: 'Artist',
+    noted: getArtistNote({ id: artist.id, name: artist.name }) !== null,
+    images: artist.images,
+    round: true,
+    onSelect: () => go(`/artist/${artist.id}`),
+  }));
+  const albums: ResultItem[] = cap(results?.albums?.items ?? []).map((album) => ({
+    key: `a-${album.id}`,
+    title: album.name,
+    detail: [album.albumType === 'album' ? 'Album' : album.albumType === 'single' ? 'Single' : 'Compilation', joinArtistNames(album.artists), releaseYear(album.releaseDate)]
+      .filter(Boolean)
+      .join(' · '),
+    ...albumMarks({ id: album.id, name: album.name, artistNames: album.artists.map((a) => a.name), releaseDate: album.releaseDate }),
+    images: album.images,
+    paletteKey: album.id,
+    onSelect: () => go(`/album/${album.id}`),
+  }));
+  const playlists: ResultItem[] = cap(results?.playlists?.items ?? []).map((playlist) => ({
+    key: `p-${playlist.id}`,
+    title: playlist.name,
+    detail: ['Playlist', playlist.ownerName].filter(Boolean).join(' · '),
+    images: playlist.images,
+    onSelect: () => {
+      onClose();
+      play({ contextUri: playlist.uri }, { openNowPlaying: true });
+    },
+  }));
+
+  // What this archive adds — a note or an episode — comes first, before Spotify's own ranking.
+  const inArchive = (item: ResultItem) => Boolean(item.noted || item.episode);
+  const archived = filter === 'all' ? [...artists, ...albums, ...tracks].filter(inArchive) : [];
+  const rest = (items: ResultItem[]) => (filter === 'all' ? items.filter((item) => !inArchive(item)) : items);
+
   const sections: ReactNode[] = [];
-  if (results?.tracks?.items.length) {
+  const group = (key: string, label: string, items: ResultItem[]) => {
+    if (items.length === 0) return;
     sections.push(
-      <div key="tracks" className="search-group" role="group" aria-label="Tracks">
-        {filter === 'all' && <div className="label">Tracks</div>}
-        {cap(results.tracks.items).map((track, index) => (
-          <Result
-            key={`t-${track.uri}-${index}`}
-            title={track.title}
-            detail={`Track · ${joinArtistNames(track.artists)}`}
-            noted={getSongNote({ id: track.spotifyTrackId, title: track.title, artistNames: track.artists.map((a) => a.name) }) !== null}
-            onSelect={() => {
-              onClose();
-              play(track.album.uri ? { contextUri: track.album.uri, offsetUri: track.uri } : { uris: [track.uri] }, { openNowPlaying: true });
-            }}
-          />
+      <div key={key} className="search-group" data-group={key} role="group" aria-label={label}>
+        {filter === 'all' && <div className="label">{label}</div>}
+        {items.map((item) => (
+          <Result key={item.key} item={item} />
         ))}
       </div>,
     );
-  }
-  if (results?.artists?.items.length) {
-    sections.push(
-      <div key="artists" className="search-group" role="group" aria-label="Artists">
-        {filter === 'all' && <div className="label">Artists</div>}
-        {cap(results.artists.items).map((artist) => (
-          <Result
-            key={`r-${artist.id}`}
-            title={artist.name}
-            detail="Artist"
-            noted={getArtistNote({ id: artist.id, name: artist.name }) !== null}
-            onSelect={() => go(`/artist/${artist.id}`)}
-          />
-        ))}
-      </div>,
-    );
-  }
-  if (results?.albums?.items.length) {
-    sections.push(
-      <div key="albums" className="search-group" role="group" aria-label="Albums">
-        {filter === 'all' && <div className="label">Albums</div>}
-        {cap(results.albums.items).map((album) => (
-          <Result
-            key={`a-${album.id}`}
-            title={album.name}
-            detail={[album.albumType === 'album' ? 'Album' : album.albumType === 'single' ? 'Single' : 'Compilation', joinArtistNames(album.artists), releaseYear(album.releaseDate)].filter(Boolean).join(' · ')}
-            noted={getAlbumNote({ id: album.id, name: album.name, artistNames: album.artists.map((a) => a.name), releaseDate: album.releaseDate }) !== null}
-            onSelect={() => go(`/album/${album.id}`)}
-          />
-        ))}
-      </div>,
-    );
-  }
-  if (results?.playlists?.items.length) {
-    sections.push(
-      <div key="playlists" className="search-group" role="group" aria-label="Playlists">
-        {filter === 'all' && <div className="label">Playlists</div>}
-        {cap(results.playlists.items).map((playlist) => (
-          <Result
-            key={`p-${playlist.id}`}
-            title={playlist.name}
-            detail={['Playlist', playlist.ownerName].filter(Boolean).join(' · ')}
-            onSelect={() => {
-              onClose();
-              play({ contextUri: playlist.uri }, { openNowPlaying: true });
-            }}
-          />
-        ))}
-      </div>,
-    );
-  }
+  };
+  group('archive', 'In your archive', archived);
+  group('tracks', 'Tracks', rest(tracks));
+  group('artists', 'Artists', rest(artists));
+  group('albums', 'Albums', rest(albums));
+  group('playlists', 'Playlists', rest(playlists));
 
   const typeLabel = FILTERS.find((f) => f.id === filter)?.label.toLowerCase() ?? 'results';
   const available = filter === 'all' || !results ? null : searchPageFor(results, filter)?.total ?? null;

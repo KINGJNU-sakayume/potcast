@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { detectLineLanguage } from '../../translation/languageDetect';
+import { AlbumBadges } from '../Badge';
 import { PlayIcon } from '../icons';
 
 /**
@@ -14,6 +15,7 @@ export function CoverTile({
   to,
   meta,
   noted = false,
+  episode = false,
   round = false,
   onPlay,
 }: {
@@ -23,6 +25,8 @@ export function CoverTile({
   to?: string;
   meta?: ReactNode;
   noted?: boolean;
+  /** An album with an episode. */
+  episode?: boolean;
   round?: boolean;
   onPlay?: () => void;
 }) {
@@ -43,18 +47,21 @@ export function CoverTile({
         )}
       </div>
       {to ? (
-        <Link className="cover-tile-title linkish" to={to} lang={detectLineLanguage(title)}>
-          {title}
-        </Link>
+        <span className="cover-tile-title">
+          <Link className="linkish" to={to} lang={detectLineLanguage(title)}>
+            {title}
+          </Link>
+          <AlbumBadges noted={noted} episode={episode} />
+        </span>
       ) : (
         <span className="cover-tile-title" lang={detectLineLanguage(title)}>
           {title}
+          <AlbumBadges noted={noted} episode={episode} />
         </span>
       )}
-      {(meta || noted) && (
+      {meta && (
         <div className="cover-tile-meta">
           <span>{meta}</span>
-          {noted && <span className="track-note">Note</span>}
         </div>
       )}
     </li>

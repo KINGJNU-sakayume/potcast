@@ -3,7 +3,7 @@ import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-do
 import { useProfile } from '../catalogue/queries';
 import { CoverImage } from '../components/CoverImage';
 import { SidePanel } from '../components/desktop/SidePanel';
-import { AlbumIcon, ArchiveIcon, ArtistIcon, LibraryIcon, MusicIcon, QueueIcon, SearchIcon, SettingsIcon } from '../components/icons';
+import { ArchiveIcon, LibraryIcon, MusicIcon, QueueIcon, SearchIcon, SettingsIcon } from '../components/icons';
 import { Logo } from '../components/Logo';
 import { NoteContent } from '../components/NoteContent';
 import { NoteProvider, useNote } from '../components/NoteContext';
@@ -74,12 +74,13 @@ function RailNow() {
   );
 }
 
+/** The branch this build was made from, on the preview published under /potcast/preview/. */
+const PREVIEW_LABEL = import.meta.env.VITE_PREVIEW_LABEL?.trim() || null;
+
 function Rail({ panel }: { panel: Panel | null }) {
-  const track = usePlayerSelector((s) => s.snapshot.track);
+  // Only the fixed places live here; the playing track's artist and album are links on the pages themselves.
   const shell = useShell();
   const profile = useProfile();
-  const artistId = track?.artists[0]?.id;
-  const albumId = track?.album.id;
   const name = profile.data?.displayName ?? null;
 
   return (
@@ -104,18 +105,6 @@ function Rail({ panel }: { panel: Panel | null }) {
           <SearchIcon />
           <span aria-hidden="true">Search</span>
         </button>
-        {artistId && (
-          <NavLink className="rail-item" to={`/artist/${artistId}`} aria-label="Current artist">
-            <ArtistIcon />
-            <span aria-hidden="true">Artist</span>
-          </NavLink>
-        )}
-        {albumId && (
-          <NavLink className="rail-item" to={`/album/${albumId}`} aria-label="Current album">
-            <AlbumIcon />
-            <span aria-hidden="true">Album</span>
-          </NavLink>
-        )}
       </nav>
       <div className="rail-foot">
         <RailNow />
@@ -130,8 +119,46 @@ function Rail({ panel }: { panel: Panel | null }) {
         <div className="user" role="img" title={name ?? 'Personal archive'} aria-label={name ? `Signed in as ${name}` : 'Personal archive'}>
           {initials(name)}
         </div>
+        {PREVIEW_LABEL && (
+          <span className="preview-mark" title={`Branch preview: ${PREVIEW_LABEL}`}>
+            Preview
+          </span>
+        )}
       </div>
     </aside>
+  );
+}
+
+/**
+ * Focus Mode's way out for the mouse: moving it shows “Close” in the top
+ * right corner for a few seconds. Esc and F still work from the keyboard.
+ */
+function FocusExit({ onExit }: { onExit: () => void }) {
+  const [shown, setShown] = useState(false);
+  useEffect(() => {
+    let timer = 0;
+    const onMove = () => {
+      setShown(true);
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => setShown(false), 3000);
+    };
+    document.addEventListener('pointermove', onMove);
+    return () => {
+      document.removeEventListener('pointermove', onMove);
+      window.clearTimeout(timer);
+    };
+  }, []);
+  return (
+    <button
+      type="button"
+      className="focus-exit"
+      data-shown={shown ? '' : undefined}
+      aria-keyshortcuts="Escape"
+      onFocus={() => setShown(true)}
+      onClick={onExit}
+    >
+      Close <span aria-hidden="true">×</span>
+    </button>
   );
 }
 
@@ -227,10 +254,11 @@ function DesktopFrame() {
     open === 'note' && note
       ? {
           key: `note:${note.id ?? note.title}:${note.context}`,
-          label: note.context.startsWith('Listening') ? 'Listening note' : 'Editorial note',
+          // The column's head names the note once ("Editorial note / Artist"); the note itself starts at its title.
+          label: note.context,
           labelledBy: 'side-panel-title',
           closeLabel: 'Close note',
-          content: <NoteContent note={note} titleId="side-panel-title" />,
+          content: <NoteContent note={note} titleId="side-panel-title" showContext={false} />,
         }
       : open === 'queue'
         ? { key: 'queue', label: 'Playback', labelledBy: 'queue-title', closeLabel: 'Close queue', content: <QueueContent open /> }
@@ -289,6 +317,7 @@ function DesktopFrame() {
                 </SidePanel>
               )}
             </div>
+            {focusMode && <FocusExit onExit={() => setFocusMode(false)} />}
             <SearchOverlay open={searchOpen} onClose={closeSearch} />
             <AccentTokens />
             <GlobalShortcuts />

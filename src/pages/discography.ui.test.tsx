@@ -75,11 +75,9 @@ describe('discography digging (preview archive)', () => {
 
     expect(await screen.findByRole('heading', { level: 1, name: 'Archive' })).toBeInTheDocument();
     // Counts and order follow the note files, so adding a note never breaks this test.
-    expect(
-      screen.getByText(
-        `${artistNotes.length} artists · ${albumNotes.length} album notes · ${songNotes.length} listening notes · ${pluralise(episodeScripts.length, 'episode')} · works offline`,
-      ),
-    ).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: pluralise(episodeScripts.length, 'episode') }).closest('p')).toHaveTextContent(
+      `${artistNotes.length} artists · ${albumNotes.length} album notes · ${songNotes.length} listening notes · ${pluralise(episodeScripts.length, 'episode')} · works offline`,
+    );
     const index = screen.getByRole('navigation', { name: 'Artists with notes' });
     const names = artistNotes.map((artist) => artist.names[0]!).sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
     expect(within(index).getAllByRole('button').map((button) => button.querySelector('b')!.textContent)).toEqual(names);

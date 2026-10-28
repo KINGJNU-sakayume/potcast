@@ -3,6 +3,7 @@ artist: kanye-west
 albumIds: [0Ds6i3h0F9RcYIKAD5Olum, 1Lt8ADtFWXost5wFYbr6oS]
 titles: [Late Registration]
 releaseYear: 2005
+releaseDate: 2005-08-30
 tracks:
   - wake-up-mr-west
   - heard-em-say
