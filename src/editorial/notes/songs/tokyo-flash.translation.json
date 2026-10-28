@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 10223881,
+    "durationMs": 259000
+  },
+  "segments": [
+    {
+      "startMs": 22390,
+      "endMs": 27270,
+      "translation": "맞장구가 늘었네"
+    },
+    {
+      "startMs": 27270,
+      "endMs": 29800,
+      "translation": "잘하고 있어, 잘하고 있어"
+    },
+    {
+      "startMs": 29800,
+      "endMs": 32030,
+      "translation": "아, 너도 잘하는걸"
+    },
+    {
+      "startMs": 32030,
+      "endMs": 37210,
+      "translation": "신호도 없이 공격해 왔잖아"
+    },
+    {
+      "startMs": 37210,
+      "endMs": 39510,
+      "translation": "나쁘지 않아, 나쁘지 않아"
+    },
+    {
+      "startMs": 39510,
+      "endMs": 41780,
+      "translation": "아, 벌써 된 거야?"
+    },
+    {
+      "startMs": 41780,
+      "endMs": 51650,
+      "translation": "머물러 줘, 아직 여기에. 너의 가짜 웃음을 보여 줘, 보여 줘"
+    },
+    {
+      "startMs": 51650,
+      "endMs": 56850,
+      "translation": "4기 암에라도 걸린 것 같아?"
+    },
+    {
+      "startMs": 56850,
+      "endMs": 62750,
+      "translation": "나이를 뛰어넘은 성애 아니야?"
+    },
+    {
+      "startMs": 62750,
+      "endMs": 72680,
+      "translation": "도쿄 플래시, 네가 눈을 뜨면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 72680,
+      "endMs": 82420,
+      "translation": "도쿄 플래시, 너와 손을 잡으면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 82420,
+      "endMs": 103130,
+      "translation": "도쿄 플래시"
+    },
+    {
+      "startMs": 103130,
+      "endMs": 108180,
+      "translation": "벼랑 끝에서 사랑했어"
+    },
+    {
+      "startMs": 108180,
+      "endMs": 110430,
+      "translation": "잘하고 있어, 잘하고 있어"
+    },
+    {
+      "startMs": 110430,
+      "endMs": 113000,
+      "translation": "아, 오늘도 깊네"
+    },
+    {
+      "startMs": 113000,
+      "endMs": 117820,
+      "translation": "토막 난, 단순한 이야기야"
+    },
+    {
+      "startMs": 117820,
+      "endMs": 120330,
+      "translation": "나쁘지 않아, 나쁘지 않아"
+    },
+    {
+      "startMs": 120330,
+      "endMs": 122680,
+      "translation": "아, 이제 됐어"
+    },
+    {
+      "startMs": 122680,
+      "endMs": 132350,
+      "translation": "머물러 줘, 아직 여기에. 너의 가짜 웃음을 보여 줘, 보여 줘"
+    },
+    {
+      "startMs": 132350,
+      "endMs": 137490,
+      "translation": "4기 암에라도 걸린 것 같아?"
+    },
+    {
+      "startMs": 137490,
+      "endMs": 143530,
+      "translation": "나이를 뛰어넘은 성애 아니야?"
+    },
+    {
+      "startMs": 143530,
+      "endMs": 153470,
+      "translation": "도쿄 플래시, 네가 눈을 뜨면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 153470,
+      "endMs": 163330,
+      "translation": "도쿄 플래시, 너와 손을 잡으면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 163330,
+      "endMs": 174350,
+      "translation": "도쿄 플래시"
+    },
+    {
+      "startMs": 174350,
+      "endMs": 183240,
+      "translation": "이제 그만둘까 하고 생각하지만, 그래도"
+    },
+    {
+      "startMs": 183240,
+      "endMs": 194800,
+      "translation": "네 웃음이랑 몸짓이 또 봐, 버릇이 돼 버렸어"
+    },
+    {
+      "startMs": 194800,
+      "endMs": 204870,
+      "translation": "도쿄 플래시, 네가 눈을 뜨면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 204870,
+      "endMs": 214680,
+      "translation": "도쿄 플래시, 너와 손을 잡으면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 214680,
+      "endMs": 224310,
+      "translation": "도쿄 플래시, 네가 눈을 뜨면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 224310,
+      "endMs": 234310,
+      "translation": "도쿄 플래시, 너와 손을 잡으면 어디로 갈까, 어디로 갈지 모르겠어"
+    },
+    {
+      "startMs": 234310,
+      "endMs": 259000,
+      "translation": "도쿄 플래시"
+    }
+  ]
+}

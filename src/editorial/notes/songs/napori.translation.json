@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1407932,
+    "durationMs": 204000
+  },
+  "segments": [
+    {
+      "startMs": 14990,
+      "endMs": 22320,
+      "translation": "변변한 음악도 없는 그런 날들을 또 둘이서"
+    },
+    {
+      "startMs": 22320,
+      "endMs": 29750,
+      "translation": "손끝에 러브송을 얹고 오늘 밤도 둘이서 걸어가자"
+    },
+    {
+      "startMs": 29750,
+      "endMs": 36200,
+      "translation": "둘이 되어 너를 기다리다가 떠올렸어"
+    },
+    {
+      "startMs": 36200,
+      "endMs": 44120,
+      "translation": "내가 어른이 되었을 때 떠올리는 건 너일지도 몰라, 그건"
+    },
+    {
+      "startMs": 44120,
+      "endMs": 46870,
+      "translation": "인연이 살며시, flight"
+    },
+    {
+      "startMs": 46870,
+      "endMs": 51630,
+      "translation": "우리 서로 손가락을 얽고서 이제"
+    },
+    {
+      "startMs": 51630,
+      "endMs": 54290,
+      "translation": "napori, 계속 있고 싶어"
+    },
+    {
+      "startMs": 54290,
+      "endMs": 59130,
+      "translation": "여기서 서로 바라보며 서로 안도해"
+    },
+    {
+      "startMs": 59130,
+      "endMs": 64500,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 64500,
+      "endMs": 66550,
+      "translation": "얽혀 가"
+    },
+    {
+      "startMs": 66550,
+      "endMs": 72810,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 72810,
+      "endMs": 76910,
+      "translation": "이런 밤엔 당연히 커피가 좋겠지"
+    },
+    {
+      "startMs": 76910,
+      "endMs": 80450,
+      "translation": "그런 내 옆에서 하이볼을 한 모금"
+    },
+    {
+      "startMs": 80450,
+      "endMs": 82500,
+      "translation": "아, 뭐라고 해야 할까"
+    },
+    {
+      "startMs": 82500,
+      "endMs": 88410,
+      "translation": "너를 보고 있으면 술이 안 들어가도 취기가 돌아"
+    },
+    {
+      "startMs": 88410,
+      "endMs": 92000,
+      "translation": "소리가 되어, 어른이 되어"
+    },
+    {
+      "startMs": 92000,
+      "endMs": 94850,
+      "translation": "떠올렸어"
+    },
+    {
+      "startMs": 94850,
+      "endMs": 97420,
+      "translation": "네가 어른이 되어서"
+    },
+    {
+      "startMs": 97420,
+      "endMs": 102210,
+      "translation": "떠올리는 건 나일지도 몰라"
+    },
+    {
+      "startMs": 102210,
+      "endMs": 103170,
+      "translation": "언젠가"
+    },
+    {
+      "startMs": 103170,
+      "endMs": 105690,
+      "translation": "인연이 살며시, flight"
+    },
+    {
+      "startMs": 105690,
+      "endMs": 110320,
+      "translation": "우리 서로 손가락을 얽고서 이제"
+    },
+    {
+      "startMs": 110320,
+      "endMs": 113050,
+      "translation": "napori, 계속 있고 싶어"
+    },
+    {
+      "startMs": 113050,
+      "endMs": 117960,
+      "translation": "여기서 서로 바라보며 서로 안도해"
+    },
+    {
+      "startMs": 117960,
+      "endMs": 123330,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 123330,
+      "endMs": 125660,
+      "translation": "얽혀 가"
+    },
+    {
+      "startMs": 125660,
+      "endMs": 148390,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 148390,
+      "endMs": 151840,
+      "translation": "너와 인연이 살며시, flight"
+    },
+    {
+      "startMs": 151840,
+      "endMs": 156330,
+      "translation": "우리 서로 손가락을 얽고서 이제"
+    },
+    {
+      "startMs": 156330,
+      "endMs": 159170,
+      "translation": "napori, 계속 있고 싶어"
+    },
+    {
+      "startMs": 159170,
+      "endMs": 164030,
+      "translation": "여기서 서로 바라보며 서로 안도해"
+    },
+    {
+      "startMs": 164030,
+      "endMs": 169500,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 169500,
+      "endMs": 171710,
+      "translation": "얽혀 가"
+    },
+    {
+      "startMs": 171710,
+      "endMs": 176940,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 176940,
+      "endMs": 179030,
+      "translation": "둘은 키스를 해"
+    },
+    {
+      "startMs": 179030,
+      "endMs": 184260,
+      "translation": "그래, 그래, 그래"
+    },
+    {
+      "startMs": 184260,
+      "endMs": 186550,
+      "translation": "얽혀 가"
+    },
+    {
+      "startMs": 186550,
+      "endMs": 204000,
+      "translation": "그래, 그래, 그래"
+    }
+  ]
+}

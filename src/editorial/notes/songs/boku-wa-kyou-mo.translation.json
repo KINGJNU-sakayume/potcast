@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 2734181,
+    "durationMs": 328000
+  },
+  "segments": [
+    {
+      "startMs": 14910,
+      "endMs": 22130,
+      "translation": "엄마가 말했었어"
+    },
+    {
+      "startMs": 22130,
+      "endMs": 35040,
+      "translation": "'넌 재능이 있으니까 예술가라도 돼 봐'라고"
+    },
+    {
+      "startMs": 35040,
+      "endMs": 48900,
+      "translation": "또 근거 없는 꿈 이야기를 해"
+    },
+    {
+      "startMs": 48900,
+      "endMs": 55970,
+      "translation": "아빠가 말했었어"
+    },
+    {
+      "startMs": 55970,
+      "endMs": 68420,
+      "translation": "'넌 불효자니까 혼자서 살아가'라고"
+    },
+    {
+      "startMs": 68420,
+      "endMs": 75670,
+      "translation": "또 영문도 모를 욕을 퍼부어"
+    },
+    {
+      "startMs": 75670,
+      "endMs": 82550,
+      "translation": "혼자가 아니라고 스스로 암시를 걸어 보지만 둘은 아니라는 소리로 들려"
+    },
+    {
+      "startMs": 82550,
+      "endMs": 86200,
+      "translation": "생각만 해서는 괴롭지, 그래도"
+    },
+    {
+      "startMs": 86200,
+      "endMs": 89350,
+      "translation": "그러는 것 말고는 방법이 없어서"
+    },
+    {
+      "startMs": 89350,
+      "endMs": 92740,
+      "translation": "유쾌한 나날이라고 암시를 걸고"
+    },
+    {
+      "startMs": 92740,
+      "endMs": 96230,
+      "translation": "불협화음이 들려왔어"
+    },
+    {
+      "startMs": 96230,
+      "endMs": 99540,
+      "translation": "억누르기만 해서는 괴롭지"
+    },
+    {
+      "startMs": 99540,
+      "endMs": 101690,
+      "translation": "그래서 이 마음을"
+    },
+    {
+      "startMs": 101690,
+      "endMs": 103310,
+      "translation": "연주하며 노래할게"
+    },
+    {
+      "startMs": 103310,
+      "endMs": 110040,
+      "translation": "만약 우리가 태어나서"
+    },
+    {
+      "startMs": 110040,
+      "endMs": 116900,
+      "translation": "만약 우리가 어른이 되더라도"
+    },
+    {
+      "startMs": 116900,
+      "endMs": 129340,
+      "translation": "만약 우리가 사라지더라도 거기에 내 노래가 있다면"
+    },
+    {
+      "startMs": 129340,
+      "endMs": 138250,
+      "translation": "그걸로 됐어"
+    },
+    {
+      "startMs": 138250,
+      "endMs": 144900,
+      "translation": "그녀가 말했었어"
+    },
+    {
+      "startMs": 144900,
+      "endMs": 151710,
+      "translation": "넌 멋있으니까"
+    },
+    {
+      "startMs": 151710,
+      "endMs": 157590,
+      "translation": "잘생기지 않아도 괜찮다고"
+    },
+    {
+      "startMs": 157590,
+      "endMs": 164890,
+      "translation": "또 맥 빠지는 말을 너는 해"
+    },
+    {
+      "startMs": 164890,
+      "endMs": 168220,
+      "translation": "나는 할 수 있는 애라고 암시를 걸고"
+    },
+    {
+      "startMs": 168220,
+      "endMs": 171660,
+      "translation": "마음이 꺾이는 소리가 들렸어"
+    },
+    {
+      "startMs": 171660,
+      "endMs": 175360,
+      "translation": "생각만 해서는 괴롭지, 그래도"
+    },
+    {
+      "startMs": 175360,
+      "endMs": 178490,
+      "translation": "그러는 것 말고는 방법이 없어서"
+    },
+    {
+      "startMs": 178490,
+      "endMs": 181880,
+      "translation": "내일은 맑을 거라고 암시를 걸고"
+    },
+    {
+      "startMs": 181880,
+      "endMs": 185280,
+      "translation": "다음 날은 우산을 들고 갔어"
+    },
+    {
+      "startMs": 185280,
+      "endMs": 188510,
+      "translation": "억누르기만 해서는 괴롭지"
+    },
+    {
+      "startMs": 188510,
+      "endMs": 190740,
+      "translation": "그래서 이 마음을"
+    },
+    {
+      "startMs": 190740,
+      "endMs": 192360,
+      "translation": "연주하며 노래할게"
+    },
+    {
+      "startMs": 192360,
+      "endMs": 199240,
+      "translation": "만약 우리가 태어나서"
+    },
+    {
+      "startMs": 199240,
+      "endMs": 206190,
+      "translation": "만약 우리가 어른이 되더라도"
+    },
+    {
+      "startMs": 206190,
+      "endMs": 218320,
+      "translation": "만약 우리가 사라지더라도 거기에 내 노래가 있다면"
+    },
+    {
+      "startMs": 218320,
+      "endMs": 220680,
+      "translation": "그걸로 됐어"
+    },
+    {
+      "startMs": 220680,
+      "endMs": 227460,
+      "translation": "피아노 소리가 들려"
+    },
+    {
+      "startMs": 227460,
+      "endMs": 233560,
+      "translation": "갈라진 목소리가 들려"
+    },
+    {
+      "startMs": 233560,
+      "endMs": 236730,
+      "translation": "시들어 가는 우리의 음악에"
+    },
+    {
+      "startMs": 236730,
+      "endMs": 240900,
+      "translation": "사탕을 주면서 조금만 더, 하고"
+    },
+    {
+      "startMs": 240900,
+      "endMs": 245780,
+      "translation": "그 마음을"
+    },
+    {
+      "startMs": 245780,
+      "endMs": 247250,
+      "translation": "연주하며 노래할게"
+    },
+    {
+      "startMs": 247250,
+      "endMs": 254040,
+      "translation": "만약 우리가 태어나서"
+    },
+    {
+      "startMs": 254040,
+      "endMs": 260960,
+      "translation": "만약 우리가 어른이 되더라도"
+    },
+    {
+      "startMs": 260960,
+      "endMs": 273240,
+      "translation": "만약 우리가 사라지더라도 거기에 내 노래가 있다면"
+    },
+    {
+      "startMs": 273240,
+      "endMs": 274860,
+      "translation": "그걸로 됐어"
+    },
+    {
+      "startMs": 274860,
+      "endMs": 281440,
+      "translation": "만약 우리에게 재능이 없고"
+    },
+    {
+      "startMs": 281440,
+      "endMs": 288420,
+      "translation": "만약 우리가 효도를 하고"
+    },
+    {
+      "startMs": 288420,
+      "endMs": 294130,
+      "translation": "만약 우리가 잘나갔다면"
+    },
+    {
+      "startMs": 294130,
+      "endMs": 300630,
+      "translation": "계속 그런 생각을 하면서"
+    },
+    {
+      "startMs": 300630,
+      "endMs": 328000,
+      "translation": "연주하며 노래할게"
+    }
+  ]
+}
