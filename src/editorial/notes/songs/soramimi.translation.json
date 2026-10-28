@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1407942,
+    "durationMs": 213000
+  },
+  "segments": [
+    {
+      "startMs": 16990,
+      "endMs": 18600,
+      "translation": "오늘도 유쾌하네"
+    },
+    {
+      "startMs": 18600,
+      "endMs": 20520,
+      "translation": "이루고 싶은 상상에 눈을 감아 버렸어"
+    },
+    {
+      "startMs": 20520,
+      "endMs": 22230,
+      "translation": "대충 그런 거지"
+    },
+    {
+      "startMs": 22230,
+      "endMs": 24480,
+      "translation": "부조리가 정해진 수순인 세계니까"
+    },
+    {
+      "startMs": 24480,
+      "endMs": 25850,
+      "translation": "그래서, 뭐, 괜찮으려나"
+    },
+    {
+      "startMs": 25850,
+      "endMs": 27940,
+      "translation": "이 정도가 딱 좋으려나 싶어서"
+    },
+    {
+      "startMs": 27940,
+      "endMs": 39190,
+      "translation": "나한테도 주변 사람한테도 들키지 않게 대충 하면서"
+    },
+    {
+      "startMs": 39190,
+      "endMs": 40720,
+      "translation": "오늘도 유쾌하네"
+    },
+    {
+      "startMs": 40720,
+      "endMs": 42750,
+      "translation": "받쳐 주고 싶다고 너한테 말한 날"
+    },
+    {
+      "startMs": 42750,
+      "endMs": 44320,
+      "translation": "대충 그런 거지"
+    },
+    {
+      "startMs": 44320,
+      "endMs": 46510,
+      "translation": "차이는 게 나다운걸"
+    },
+    {
+      "startMs": 46510,
+      "endMs": 48020,
+      "translation": "그래서, 뭐, 됐으니까"
+    },
+    {
+      "startMs": 48020,
+      "endMs": 50290,
+      "translation": "그 야한 몸을 빌려줘"
+    },
+    {
+      "startMs": 50290,
+      "endMs": 51870,
+      "translation": "아무도 모르는 한밤중"
+    },
+    {
+      "startMs": 51870,
+      "endMs": 53850,
+      "translation": "휴대폰 너머로 하는 태그 파이트"
+    },
+    {
+      "startMs": 53850,
+      "endMs": 57640,
+      "translation": "엉망이었어, 후회는 없지만"
+    },
+    {
+      "startMs": 57640,
+      "endMs": 61310,
+      "translation": "타고난 거야, 과민한 이 충동은"
+    },
+    {
+      "startMs": 61310,
+      "endMs": 65050,
+      "translation": "엉뚱한 대답이지, 난 신경 안 쓰지만"
+    },
+    {
+      "startMs": 65050,
+      "endMs": 68710,
+      "translation": "한 방 쳐 낸 이 비트를 울려 줘"
+    },
+    {
+      "startMs": 68710,
+      "endMs": 70080,
+      "translation": "자"
+    },
+    {
+      "startMs": 70080,
+      "endMs": 77560,
+      "translation": "거리"
+    },
+    {
+      "startMs": 77560,
+      "endMs": 84880,
+      "translation": "이 춤은?"
+    },
+    {
+      "startMs": 84880,
+      "endMs": 92240,
+      "translation": "거리"
+    },
+    {
+      "startMs": 92240,
+      "endMs": 94580,
+      "translation": "이 춤은?"
+    },
+    {
+      "startMs": 94580,
+      "endMs": 96020,
+      "translation": "오늘도 유쾌하네"
+    },
+    {
+      "startMs": 96020,
+      "endMs": 98250,
+      "translation": "그런데 모든 게 불쾌하네"
+    },
+    {
+      "startMs": 98250,
+      "endMs": 99760,
+      "translation": "대충 그런 거지"
+    },
+    {
+      "startMs": 99760,
+      "endMs": 101910,
+      "translation": "자기만족들이 춤추는 세계니까"
+    },
+    {
+      "startMs": 101910,
+      "endMs": 103450,
+      "translation": "그래서, 뭐, 괜찮으려나"
+    },
+    {
+      "startMs": 103450,
+      "endMs": 105450,
+      "translation": "이 정도가 딱 좋으려나 싶어서"
+    },
+    {
+      "startMs": 105450,
+      "endMs": 116730,
+      "translation": "나한테도 주변 사람한테도 들키지 않게 대충 하면서"
+    },
+    {
+      "startMs": 116730,
+      "endMs": 118280,
+      "translation": "오늘도 유쾌하네"
+    },
+    {
+      "startMs": 118280,
+      "endMs": 120440,
+      "translation": "꽂혀 있는 마른나무에 끼얹은 불"
+    },
+    {
+      "startMs": 120440,
+      "endMs": 121790,
+      "translation": "대충 이런 거지"
+    },
+    {
+      "startMs": 121790,
+      "endMs": 124120,
+      "translation": "세상은 용서해 주지 않아"
+    },
+    {
+      "startMs": 124120,
+      "endMs": 125540,
+      "translation": "아, 뭐, 됐으니까"
+    },
+    {
+      "startMs": 125540,
+      "endMs": 127880,
+      "translation": "그런 건 아무래도 좋으니까, 라고?"
+    },
+    {
+      "startMs": 127880,
+      "endMs": 131550,
+      "translation": "대화재 대화재 대화재 대화재 대화재"
+    },
+    {
+      "startMs": 131550,
+      "endMs": 135130,
+      "translation": "엉망이었어, 후회는 없지만"
+    },
+    {
+      "startMs": 135130,
+      "endMs": 138930,
+      "translation": "타고난 거야, 과민한 이 충동은"
+    },
+    {
+      "startMs": 138930,
+      "endMs": 142680,
+      "translation": "엉뚱한 대답이지, 난 신경 안 쓰지만"
+    },
+    {
+      "startMs": 142680,
+      "endMs": 146250,
+      "translation": "한 방 쳐 낸 이 비트를 울려 줘"
+    },
+    {
+      "startMs": 146250,
+      "endMs": 147550,
+      "translation": "자"
+    },
+    {
+      "startMs": 147550,
+      "endMs": 155070,
+      "translation": "거리"
+    },
+    {
+      "startMs": 155070,
+      "endMs": 162330,
+      "translation": "이 춤은?"
+    },
+    {
+      "startMs": 162330,
+      "endMs": 169510,
+      "translation": "거리"
+    },
+    {
+      "startMs": 169510,
+      "endMs": 182710,
+      "translation": "이 춤은?"
+    },
+    {
+      "startMs": 182710,
+      "endMs": 190040,
+      "translation": "거리"
+    },
+    {
+      "startMs": 190040,
+      "endMs": 197560,
+      "translation": "이 춤은?"
+    },
+    {
+      "startMs": 197560,
+      "endMs": 204820,
+      "translation": "거리"
+    },
+    {
+      "startMs": 204820,
+      "endMs": 213000,
+      "translation": "이 춤은?"
+    }
+  ]
+}

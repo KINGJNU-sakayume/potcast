@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1407912,
+    "durationMs": 226000
+  },
+  "segments": [
+    {
+      "startMs": 20980,
+      "endMs": 23340,
+      "translation": "그 태도가 불안해"
+    },
+    {
+      "startMs": 23340,
+      "endMs": 25900,
+      "translation": "'신경 안 써', 채도는 그대로야"
+    },
+    {
+      "startMs": 25900,
+      "endMs": 28410,
+      "translation": "은근히 처음이라 불안해"
+    },
+    {
+      "startMs": 28410,
+      "endMs": 31210,
+      "translation": "'신경 안 써', 감도는 그대로야"
+    },
+    {
+      "startMs": 31210,
+      "endMs": 32870,
+      "translation": "춤추는 키스는 고소하게"
+    },
+    {
+      "startMs": 32870,
+      "endMs": 33830,
+      "translation": "플라이 어웨이"
+    },
+    {
+      "startMs": 33830,
+      "endMs": 35490,
+      "translation": "이대로 시끄럽게"
+    },
+    {
+      "startMs": 35490,
+      "endMs": 36550,
+      "translation": "애니웨이"
+    },
+    {
+      "startMs": 36550,
+      "endMs": 42780,
+      "translation": "새벽의 작은 스윙도 분수에 넘치는 가짜겠지"
+    },
+    {
+      "startMs": 42780,
+      "endMs": 52780,
+      "translation": "하이 에이, 하이 에이"
+    },
+    {
+      "startMs": 52780,
+      "endMs": 55110,
+      "translation": "꼬투리 잡을 건 없지 않아?"
+    },
+    {
+      "startMs": 55110,
+      "endMs": 57690,
+      "translation": "만든 사람이 이기는 거 아니야?"
+    },
+    {
+      "startMs": 57690,
+      "endMs": 63110,
+      "translation": "깊은 잠에 든 너를 전생부터 찾아도 되지 않아?"
+    },
+    {
+      "startMs": 63110,
+      "endMs": 65540,
+      "translation": "만들고 싶은 마음은 이매지네이션"
+    },
+    {
+      "startMs": 65540,
+      "endMs": 68310,
+      "translation": "지키고 싶은 마음은 노 리액션"
+    },
+    {
+      "startMs": 68310,
+      "endMs": 70790,
+      "translation": "자문자답을 해도 불안한 대답"
+    },
+    {
+      "startMs": 70790,
+      "endMs": 73850,
+      "translation": "미래의 지도는 백지여도 좋아"
+    },
+    {
+      "startMs": 73850,
+      "endMs": 76780,
+      "translation": "사랑 같은 건 논픽션"
+    },
+    {
+      "startMs": 76780,
+      "endMs": 79310,
+      "translation": "멈출 수 없을 만큼이 좋아"
+    },
+    {
+      "startMs": 79310,
+      "endMs": 82040,
+      "translation": "사랑 같은 건 논픽션"
+    },
+    {
+      "startMs": 82040,
+      "endMs": 89740,
+      "translation": "찰랑찰랑한 사랑의 바다 같은 꿈속을 멜로하게 헤엄쳐 가자, 먼바다까지"
+    },
+    {
+      "startMs": 89740,
+      "endMs": 95400,
+      "translation": "그러면 점점 좋아하게 돼, 나 자신을"
+    },
+    {
+      "startMs": 95400,
+      "endMs": 105690,
+      "translation": "하이 에이, 에이 하이 에이, 두루 루 루 루 타 타"
+    },
+    {
+      "startMs": 105690,
+      "endMs": 116110,
+      "translation": "하이 에이 라 라 라 라 라, 하이 에이, 에이"
+    },
+    {
+      "startMs": 116110,
+      "endMs": 118430,
+      "translation": "부족하면 어때"
+    },
+    {
+      "startMs": 118430,
+      "endMs": 120940,
+      "translation": "오히려 부족한 정도가 좋지 않아?"
+    },
+    {
+      "startMs": 120940,
+      "endMs": 126210,
+      "translation": "달려 나가 멈추지 않는 너와 새벽 두 시에 여기서 별을 보자"
+    },
+    {
+      "startMs": 126210,
+      "endMs": 129020,
+      "translation": "만들고 싶은 마음은 이매지네이션"
+    },
+    {
+      "startMs": 129020,
+      "endMs": 131520,
+      "translation": "지키고 싶은 마음은 노 리액션"
+    },
+    {
+      "startMs": 131520,
+      "endMs": 134170,
+      "translation": "자문자답을 해도 불안한 대답"
+    },
+    {
+      "startMs": 134170,
+      "endMs": 137010,
+      "translation": "미래의 지도는 백지여도 좋아"
+    },
+    {
+      "startMs": 137010,
+      "endMs": 139930,
+      "translation": "사랑 같은 건 논픽션"
+    },
+    {
+      "startMs": 139930,
+      "endMs": 142520,
+      "translation": "멈출 수 없을 만큼이 좋아"
+    },
+    {
+      "startMs": 142520,
+      "endMs": 145150,
+      "translation": "사랑 같은 건 논픽션"
+    },
+    {
+      "startMs": 145150,
+      "endMs": 152570,
+      "translation": "찰랑찰랑한 사랑의 바다 같은 꿈속을 멜로하게 헤엄쳐 가자, 먼바다까지"
+    },
+    {
+      "startMs": 152570,
+      "endMs": 156440,
+      "translation": "그러면 점점 좋아하게 돼"
+    },
+    {
+      "startMs": 156440,
+      "endMs": 167380,
+      "translation": "나 자신을"
+    },
+    {
+      "startMs": 167380,
+      "endMs": 169530,
+      "translation": "응응, 여보세요? 뭐야?"
+    },
+    {
+      "startMs": 169530,
+      "endMs": 171100,
+      "translation": "어어, 저기 있잖아"
+    },
+    {
+      "startMs": 171100,
+      "endMs": 174040,
+      "translation": "사랑 같은 건 논픽션"
+    },
+    {
+      "startMs": 174040,
+      "endMs": 176260,
+      "translation": "멈출 수 없을 만큼이 좋아"
+    },
+    {
+      "startMs": 176260,
+      "endMs": 179100,
+      "translation": "사랑 같은 건 논픽션"
+    },
+    {
+      "startMs": 179100,
+      "endMs": 187230,
+      "translation": "찰랑찰랑한 사랑의 바다 같은 꿈속을 멜로하게 헤엄쳐 가자, 먼바다까지"
+    },
+    {
+      "startMs": 187230,
+      "endMs": 190700,
+      "translation": "그러면 점점 좋아하게 돼"
+    },
+    {
+      "startMs": 190700,
+      "endMs": 193230,
+      "translation": "나 자신을"
+    },
+    {
+      "startMs": 193230,
+      "endMs": 203340,
+      "translation": "하이 에이, 아 에이, 하이 에이, 두루 루 루 루 타 타"
+    },
+    {
+      "startMs": 203340,
+      "endMs": 226000,
+      "translation": "하이 에이 라 라 라 라 라, 하이 에이, 에이"
+    }
+  ]
+}

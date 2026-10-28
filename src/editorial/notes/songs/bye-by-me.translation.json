@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 1405452,
+    "durationMs": 242000
+  },
+  "segments": [
+    {
+      "startMs": 11670,
+      "endMs": 14650,
+      "translation": "월요일, 오늘은"
+    },
+    {
+      "startMs": 14650,
+      "endMs": 17700,
+      "translation": "어디 가?"
+    },
+    {
+      "startMs": 17700,
+      "endMs": 21370,
+      "translation": "뭐, 상관없지만"
+    },
+    {
+      "startMs": 21370,
+      "endMs": 24590,
+      "translation": "화요일, 오늘도"
+    },
+    {
+      "startMs": 24590,
+      "endMs": 27700,
+      "translation": "일 있었지?"
+    },
+    {
+      "startMs": 27700,
+      "endMs": 30050,
+      "translation": "뭐, 상관없지만"
+    },
+    {
+      "startMs": 30050,
+      "endMs": 41330,
+      "translation": "뭐, 상관없지만"
+    },
+    {
+      "startMs": 41330,
+      "endMs": 44590,
+      "translation": "수요일, 오늘은"
+    },
+    {
+      "startMs": 44590,
+      "endMs": 47530,
+      "translation": "뭘 보고 있어?"
+    },
+    {
+      "startMs": 47530,
+      "endMs": 50300,
+      "translation": "힘들지?"
+    },
+    {
+      "startMs": 50300,
+      "endMs": 63790,
+      "translation": "또 말이야, 멀리 지나가 버린 지난날들에 이름을 붙이고 있었던 거지?"
+    },
+    {
+      "startMs": 63790,
+      "endMs": 67960,
+      "translation": "어서 와, 그래도 이제 됐어"
+    },
+    {
+      "startMs": 67960,
+      "endMs": 73820,
+      "translation": "전하고 싶은 말은 딱히 없으니까"
+    },
+    {
+      "startMs": 73820,
+      "endMs": 77950,
+      "translation": "어서 와, 그래도 이제 괜찮아"
+    },
+    {
+      "startMs": 77950,
+      "endMs": 93990,
+      "translation": "기억하는 것도 이제 없어"
+    },
+    {
+      "startMs": 93990,
+      "endMs": 97090,
+      "translation": "목요일, 오늘은"
+    },
+    {
+      "startMs": 97090,
+      "endMs": 99810,
+      "translation": "어디 다녀왔어?"
+    },
+    {
+      "startMs": 99810,
+      "endMs": 103690,
+      "translation": "늦었잖아"
+    },
+    {
+      "startMs": 103690,
+      "endMs": 107130,
+      "translation": "금요일, 오늘은"
+    },
+    {
+      "startMs": 107130,
+      "endMs": 110030,
+      "translation": "떠올리고 있었어?"
+    },
+    {
+      "startMs": 110030,
+      "endMs": 112780,
+      "translation": "그 일을"
+    },
+    {
+      "startMs": 112780,
+      "endMs": 125800,
+      "translation": "근데 말이야, 멀리 지나간 지난날들과 작별하면 편하잖아"
+    },
+    {
+      "startMs": 125800,
+      "endMs": 130470,
+      "translation": "어서 와, 그래도 이제 됐어"
+    },
+    {
+      "startMs": 130470,
+      "endMs": 136190,
+      "translation": "전하고 싶은 말은 딱히 없으니까"
+    },
+    {
+      "startMs": 136190,
+      "endMs": 140390,
+      "translation": "어서 와, 그래도 이제 괜찮아"
+    },
+    {
+      "startMs": 140390,
+      "endMs": 156160,
+      "translation": "기억하는 것도 이제 없어, 아"
+    },
+    {
+      "startMs": 156160,
+      "endMs": 164770,
+      "translation": "쉬는 날 밤의 홧술도 그쯤 해 두고"
+    },
+    {
+      "startMs": 164770,
+      "endMs": 168610,
+      "translation": "이제 됐지?"
+    },
+    {
+      "startMs": 168610,
+      "endMs": 173690,
+      "translation": "분명 떠올리는 일을 사랑했던 거야"
+    },
+    {
+      "startMs": 173690,
+      "endMs": 178440,
+      "translation": "사랑하고 또 사랑해서 채워지고 있다면"
+    },
+    {
+      "startMs": 178440,
+      "endMs": 182650,
+      "translation": "잊어도 이제 괜찮아"
+    },
+    {
+      "startMs": 182650,
+      "endMs": 188560,
+      "translation": "전하고 싶은 건 이미 전했으니까"
+    },
+    {
+      "startMs": 188560,
+      "endMs": 192810,
+      "translation": "잊어도 이제 괜찮아"
+    },
+    {
+      "startMs": 192810,
+      "endMs": 198540,
+      "translation": "앞으로도 잔뜩 쌓여 갈 테니까"
+    },
+    {
+      "startMs": 198540,
+      "endMs": 204990,
+      "translation": "사랑해 마지않는 상처를 없애고 새로운 날들을"
+    },
+    {
+      "startMs": 204990,
+      "endMs": 207390,
+      "translation": "또 보자"
+    },
+    {
+      "startMs": 207390,
+      "endMs": 242000,
+      "translation": "내가 건네는 안녕"
+    }
+  ]
+}
