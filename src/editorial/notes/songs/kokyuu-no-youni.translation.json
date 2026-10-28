@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206909,
+    "durationMs": 345000
+  },
+  "segments": [
+    {
+      "startMs": 14930,
+      "endMs": 31180,
+      "translation": "떨어지는 비처럼 시간은 지나가 버려"
+    },
+    {
+      "startMs": 31180,
+      "endMs": 39030,
+      "translation": "그때부터 얼마나 지났을까"
+    },
+    {
+      "startMs": 39030,
+      "endMs": 47200,
+      "translation": "어제는 뭘 했더라"
+    },
+    {
+      "startMs": 47200,
+      "endMs": 55420,
+      "translation": "의미 없는 시간도 있었어, 그래도"
+    },
+    {
+      "startMs": 55420,
+      "endMs": 62930,
+      "translation": "그건 헛된 게 아니야"
+    },
+    {
+      "startMs": 62930,
+      "endMs": 81470,
+      "translation": "꿰매 붙인 마음의 틈 사이가 채워져 가"
+    },
+    {
+      "startMs": 81470,
+      "endMs": 97390,
+      "translation": "내 품 안에서 네가 아직 숨을 쉬고 있다면"
+    },
+    {
+      "startMs": 97390,
+      "endMs": 112370,
+      "translation": "나도 네 안에서 계속 숨을 내쉬어도 될까"
+    },
+    {
+      "startMs": 112370,
+      "endMs": 129460,
+      "translation": "어떡하지"
+    },
+    {
+      "startMs": 129460,
+      "endMs": 144930,
+      "translation": "둘 곳 없는 사진 액자는 보고 있으면 괴로우니까"
+    },
+    {
+      "startMs": 144930,
+      "endMs": 153250,
+      "translation": "다락방에 넣어 두자"
+    },
+    {
+      "startMs": 153250,
+      "endMs": 161340,
+      "translation": "추억 속에 넣어 두고 오자"
+    },
+    {
+      "startMs": 161340,
+      "endMs": 177360,
+      "translation": "내 품 안에서 네가 아직 숨을 쉬고 있다면"
+    },
+    {
+      "startMs": 177360,
+      "endMs": 192310,
+      "translation": "나도 네 안에서 계속 숨을 내쉬어도 될까"
+    },
+    {
+      "startMs": 192310,
+      "endMs": 210580,
+      "translation": "어떡하지"
+    },
+    {
+      "startMs": 210580,
+      "endMs": 218550,
+      "translation": "이게 사랑이었으면 좋겠다고 말하는 쪽이 너였으면 좋겠어"
+    },
+    {
+      "startMs": 218550,
+      "endMs": 226510,
+      "translation": "이게 꿈이었으면 좋겠다고 생각하는 쪽이 나였으면 좋겠어"
+    },
+    {
+      "startMs": 226510,
+      "endMs": 234530,
+      "translation": "이게 사랑이었으면 좋겠다고 말하는 쪽이 나였으면 좋겠어"
+    },
+    {
+      "startMs": 234530,
+      "endMs": 242210,
+      "translation": "이게 꿈이었으면 좋겠다고 생각하는 쪽이 너였으면 좋겠어"
+    },
+    {
+      "startMs": 242210,
+      "endMs": 259490,
+      "translation": "있잖아, 혹시 잠꼬대였다면 말해 줘, 또 쓸쓸해질 테니까"
+    },
+    {
+      "startMs": 259490,
+      "endMs": 266590,
+      "translation": "몇 번이고 네게 말할게"
+    },
+    {
+      "startMs": 266590,
+      "endMs": 274390,
+      "translation": "늘 그랬듯이, 숨 쉬듯이"
+    },
+    {
+      "startMs": 274390,
+      "endMs": 291430,
+      "translation": "아, 내 나날 속에서 네가 아직 숨을 쉬고 있다면"
+    },
+    {
+      "startMs": 291430,
+      "endMs": 306350,
+      "translation": "나는 네 옆에서 계속 숨을 내쉬어도 될까"
+    },
+    {
+      "startMs": 306350,
+      "endMs": 345000,
+      "translation": "어떨까"
+    }
+  ]
+}
