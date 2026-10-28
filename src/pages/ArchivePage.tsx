@@ -193,13 +193,59 @@ function AlbumCard({ album, artistName }: { album: AlbumNote; artistName: string
         <span className="archive-actions">
           <ReadMore kind="ALBUM" note={album} title={title} subtitle={[artistName, album.releaseYear].filter(Boolean).join(' · ')} />
           {albumId && episode && (
-            <Link className="row-play" to={`/episode/${albumId}`} title={episode.title} aria-label={`Listen to ${title} with the hosts`}>
-              Episode
+            <Link className="badge" data-kind="episode" to={`/episode/${albumId}`} title={episode.title} aria-label={`Listen to ${title} with the hosts`}>
+              에피소드
             </Link>
           )}
         </span>
       </div>
     </li>
+  );
+}
+
+/** One episode in the Archive's strip: the album's cover, the episode's title and its album. */
+function EpisodeCard({ album, title, artistName }: { album: AlbumNote; title: string; artistName: string }) {
+  const albumTitle = album.titles[0]!;
+  const albumId = album.albumIds[0];
+  const stored = storedImage(album.cover);
+  const fetched = useAlbum(stored ? undefined : albumId);
+  if (!albumId) return null;
+  return (
+    <li className="archive-episode">
+      <Link to={`/episode/${albumId}`} className="archive-episode-link">
+        <CoverImage images={stored ?? fetched.data?.images ?? []} size={96} alt={`${albumTitle} 커버`} title={albumTitle} subtitle={artistName} paletteKey={albumId} />
+        <span className="archive-episode-text">
+          <b lang="ko">{title}</b>
+          <span>
+            <span lang={detectLineLanguage(albumTitle)}>{albumTitle}</span> · {artistName}
+          </span>
+        </span>
+      </Link>
+    </li>
+  );
+}
+
+/** Every episode at a glance, above the artists: the way in to what this archive makes of an album. */
+function EpisodeStrip() {
+  const items = episodeScripts
+    .map((script) => {
+      const album = albumNotes.find((note) => note.key === script.album);
+      const artist = album ? artistNotes.find((note) => note.key === album.artist) : undefined;
+      return album ? { script, album, artistName: artist?.names[0] ?? album.artist } : null;
+    })
+    .filter((item): item is NonNullable<typeof item> => item !== null);
+  if (items.length === 0) return null;
+  return (
+    <section className="archive-episodes" aria-labelledby="archive-episodes-title">
+      <h2 id="archive-episodes-title">
+        Episodes <span className="section-count">{items.length}</span>
+      </h2>
+      <ul>
+        {items.map(({ script, album, artistName }) => (
+          <EpisodeCard key={script.key} album={album} title={script.title} artistName={artistName} />
+        ))}
+      </ul>
+    </section>
   );
 }
 
@@ -326,6 +372,7 @@ export function ArchivePage() {
             <h1>Archive</h1>
             <p>{totals.join(' · ')} · works offline</p>
           </header>
+          <EpisodeStrip />
           <div className="archive-layout">
             <nav className="archive-index" aria-label="Artists with notes">
               <ul>

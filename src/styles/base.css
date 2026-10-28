@@ -11,7 +11,8 @@
   --ink: #171917;
   --ink-2: #444844;
   --muted: #686b66;
-  --dim: #747771;
+  /* 4.5:1 or more on paper (#f1eee6), as body-size text needs (WCAG 1.4.3). */
+  --dim: #6b6e68;
   --line: rgba(23, 25, 23, .15);
   --line-soft: rgba(23, 25, 23, .075);
   /* Only a page painted in its image's colour (desktop.css) moves these two off paper. */
