@@ -2,6 +2,7 @@ import type { TrackIdentity } from '../../domain/types';
 import type { TimedLyricLine } from '../../lyrics/types';
 import { useLyricView } from '../../lyrics/useLyricView';
 import type { LyricsState } from '../../lyrics/useTimedLyrics';
+import { usePlaybackStalled } from '../../playback/hooks';
 import type { TranslationState } from '../../translation/useLyricTranslation';
 
 export const LANGUAGE_NAMES: Record<string, string> = { ko: 'Korean', ja: 'Japanese', en: 'English', zh: 'Chinese' };
@@ -73,6 +74,7 @@ export function LyricsBlock({ track, lyricsState }: { track: TrackIdentity; lyri
     segment,
     continued,
   } = useLyricView(track, lyricsState);
+  const stalled = usePlaybackStalled();
 
   return (
     <>
@@ -95,7 +97,7 @@ export function LyricsBlock({ track, lyricsState }: { track: TrackIdentity; lyri
         )}
       </div>
 
-      <section className="lyrics-panel" aria-labelledby="lyrics-label">
+      <section className="lyrics-panel" aria-labelledby="lyrics-label" data-stalled={stalled ? '' : undefined}>
         {lyricsState.status === 'loading' && <div className="current-lyric is-state">Finding synchronized lyrics…</div>}
         {lyricsState.status === 'idle' && <div className="current-lyric is-state">Lyrics</div>}
         {lyricsState.status === 'disabled' && (

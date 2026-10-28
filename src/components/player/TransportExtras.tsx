@@ -69,7 +69,8 @@ export function Volume() {
   const restoreTo = useRef(0.6);
   const volume = snapshot.volume ?? 0;
   const supported = Boolean(snapshot.track) && snapshot.volume !== null && snapshot.device?.supportsVolume !== false;
-  const muted = volume <= 0.001;
+  // An unknown volume (nothing playing yet) is not a muted one.
+  const muted = snapshot.volume !== null && volume <= 0.001;
 
   return (
     <div className="volume">

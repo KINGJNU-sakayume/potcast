@@ -111,6 +111,9 @@ a.discography-step.next:hover { padding-right: 8px; }
 .explicit { display: inline-grid; place-items: center; width: 15px; height: 15px; border: 1px solid var(--line); font-size: 8.5px; color: var(--muted); }
 .playing-mark { display: inline-flex; align-items: flex-end; gap: 2px; height: 11px; }
 .playing-mark span { width: 2px; height: 100%; background: var(--main); transform-origin: bottom; transform: scaleY(.45); }
+.playing-mark[data-stopped] { align-items: center; gap: 3px; }
+.playing-mark[data-stopped] span { width: 3px; transform: none; background: var(--muted); }
+.playing-mark[data-stopped] span:nth-child(3) { display: none; }
 .playing-mark[data-playing] span { animation: playing-bar .9s ease-in-out infinite alternate; }
 .playing-mark[data-playing] span:nth-child(2) { animation-delay: -.3s; }
 .playing-mark[data-playing] span:nth-child(3) { animation-delay: -.6s; }

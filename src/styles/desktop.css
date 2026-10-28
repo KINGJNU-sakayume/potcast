@@ -65,7 +65,7 @@
 @media (max-width: 1180px) { .desktop { --panel-w: 400px; } }
 
 .desktop .label, .desktop .artist-number, .desktop .note-kicker, .desktop .note-more, .desktop .text-toggle,
-.desktop .notice-action, .desktop .row-play, .desktop .plain-action, .desktop .track-note, .desktop .section-count,
+.desktop .row-play, .desktop .plain-action, .desktop .track-note, .desktop .section-count,
 .desktop .sequence-head span, .desktop .listening-head span { font-size: calc(11px * var(--t)); }
 .desktop .note-preview p { font-size: calc(14px * var(--t)); }
 .desktop .note-drawer-copy { font-size: calc(16px * var(--t)); }
@@ -199,7 +199,7 @@
 }
 .desktop .transport-extras .device-button { height: 40px; padding: 0 8px; }
 .desktop .transport-extras .device-name { max-width: 150px; white-space: nowrap; }
-.desktop .np .playback-state { margin: 0; justify-content: flex-start; text-align: left; font-size: calc(12.5px * var(--t)); }
+.desktop .np .playback-state { margin: 0; font-size: calc(13px * var(--t)); }
 @container (max-width: 560px) {
   .desktop .transport-extras .device-name { display: none; }
   .desktop .volume-slider { width: 64px; }
@@ -228,12 +228,15 @@
 }
 
 /* Focus Mode (player1): cover, lyrics and progress, full screen */
+.focus-exit { position: fixed; top: 20px; right: 24px; z-index: 30; min-height: 40px; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--ink); font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+.focus-exit[data-shown] { opacity: 1; pointer-events: auto; }
+.focus-exit:hover { background: var(--bg); }
 .desktop[data-focus] { grid-template-columns: minmax(0, 1fr); }
 .desktop[data-focus] .rail, .desktop[data-focus] .side-panel, .desktop[data-focus] .scope-notice { display: none; }
 .desktop[data-focus] .workspace { grid-template-columns: minmax(0, 1fr) 0; }
 .desktop[data-focus] .np { --share: .4; --art-max: 680px; --meta-reserve: 190px; padding: clamp(36px, 6vh, 96px) clamp(48px, 7vw, 150px); }
 .desktop[data-focus] .np-grid { grid-template-columns: minmax(0, calc(var(--share) * 100%)) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; grid-template-areas: "object lyrics" "object controls"; column-gap: clamp(56px, 7vw, 150px); }
-.desktop[data-focus] .listening-head, .desktop[data-focus] .note-line, .desktop[data-focus] .transport-row, .desktop[data-focus] .playback-state { display: none; }
+.desktop[data-focus] .listening-head, .desktop[data-focus] .note-line, .desktop[data-focus] .transport-row { display: none; }
 .desktop[data-focus] .np .player-controls { padding-top: clamp(18px, 3vh, 32px); }
 @media (min-height: 1200px) { .desktop[data-focus] .np { --art-max: 820px; --meta-reserve: 220px; } }
 @media (min-width: 2400px) {

@@ -467,7 +467,7 @@ describe('SpotifyPlaybackEngine', () => {
       expect(h.device.pause).toHaveBeenCalled();
       const issue = h.store.getState().issue;
       expect(issue?.kind).toBe('playback-failed');
-      expect(issue?.message).toMatch(/protected \(DRM\) audio/);
+      expect(issue?.message).toMatch(/보호된\(DRM\) 음원/);
       expect(issue?.hints?.length).toBeGreaterThan(0);
       expect(h.store.getState().snapshot.paused).toBe(true);
       h.engine.stop();
@@ -508,8 +508,8 @@ describe('SpotifyPlaybackEngine', () => {
       await settle(h);
       const issue = h.store.getState().issue;
       expect(issue?.kind).toBe('playback-failed');
-      expect(issue?.message).toMatch(/licence/);
-      expect(issue?.detail).toBe('Spotify reported: Failed to play track');
+      expect(issue?.message).toMatch(/라이선스/);
+      expect(issue?.detail).toBe('Spotify 응답: Failed to play track');
       // Trying again clears the notice until the player fails again.
       await h.engine.resume();
       expect(h.store.getState().issue).toBeNull();
@@ -607,10 +607,10 @@ describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that ca
     h.engine.start();
     await h.flush();
     await h.engine.play({ contextUri: 'spotify:album:alb1' });
-    expect(h.store.getState().issue).toMatchObject({ kind: 'no-active-device', message: expect.stringMatching(/Open Spotify on this computer/) });
+    expect(h.store.getState().issue).toMatchObject({ kind: 'no-active-device', message: expect.stringMatching(/Spotify를 연 뒤 다시 재생/) });
     expect(puts(h, '/me/player/play')).toHaveLength(0);
     await h.engine.resume();
-    expect(h.store.getState().issue?.message).toMatch(/No Spotify app is running to resume in/);
+    expect(h.store.getState().issue?.message).toMatch(/이어서 재생할 Spotify 앱이 없어요/);
     h.engine.stop();
   });
 
@@ -699,7 +699,7 @@ describe('SpotifyPlaybackEngine as a remote for a Spotify app (a browser that ca
     expect(plays.at(-1)?.body).toEqual({ context_uri: 'spotify:album:alb1', offset: { uri: 'spotify:track:trk1' } });
     expect(h.device.disconnect).toHaveBeenCalled();
     expect(h.store.getState().sdk).toEqual({ kind: 'disabled' });
-    expect(h.store.getState().issue).toMatchObject({ kind: 'moved-to-app', message: expect.stringMatching(/LAB-PC-07 plays it from now on/) });
+    expect(h.store.getState().issue).toMatchObject({ kind: 'moved-to-app', message: expect.stringMatching(/LAB-PC-07에서 재생합니다/) });
     expect(window.localStorage.getItem('potcast.player.browser-playback.v1')).toBe('false');
 
     // The next request goes straight to the app.

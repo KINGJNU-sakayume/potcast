@@ -292,7 +292,7 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
       },
       onAutoplayFailed: () => {
         if (!live()) return;
-        this.setIssue('autoplay-blocked', 'Your browser blocked audio from starting automatically. Press play to start.');
+        this.setIssue('autoplay-blocked', '브라우저가 자동 재생을 막았어요. 재생 버튼을 누르면 시작합니다.');
       },
     };
   }
@@ -346,7 +346,7 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
     if (reason === 'playback') {
       this.lastPlaybackError = message;
       if (this.store.getState().issue?.kind === 'playback-failed') return;
-      this.setIssue('command-failed', `Spotify could not play this item: ${message}`);
+      this.setIssue('command-failed', `Spotify가 이 항목을 재생하지 못했어요: ${message}`);
       if (countRecent(this.playbackErrorsAt, this.now()) >= SKIP_LOOP.errors) this.scheduleSkipCheck();
       return;
     }
@@ -419,8 +419,8 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
       await this.leaveBrowser(target, recent ?? 'resume');
       this.setIssue(
         'moved-to-app',
-        `This browser could not play Spotify’s protected (DRM) audio, so ${target.name} plays it from now on and this page is its remote.`,
-        { detail: sdkMessage ? `Spotify reported: ${sdkMessage}` : undefined },
+        `이 브라우저에선 재생할 수 없어 ${target.name}에서 재생합니다 — 이 페이지는 리모컨이에요.`,
+        { detail: sdkMessage ? `Spotify 응답: ${sdkMessage}` : undefined },
       );
       return;
     }
@@ -668,8 +668,8 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
         this.setIssue(
           'no-active-device',
           this.browserPlayback
-            ? 'No Spotify device is available. Open Spotify on a phone or computer, or enable browser playback.'
-            : 'No Spotify app is running to play this. Open Spotify on this computer or a phone, then press play again.',
+            ? '재생할 Spotify 기기가 없어요. 휴대폰이나 컴퓨터에서 Spotify를 열거나, 이 브라우저 재생을 켜세요.'
+            : '재생할 Spotify 앱이 없어요. 이 컴퓨터나 휴대폰에서 Spotify를 연 뒤 다시 재생하세요.',
         );
         return;
       }
@@ -712,10 +712,10 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
       // The app went idle (a long pause does that): waking it with a transfer carries on where it stopped.
       const target = await this.remoteTarget();
       if (target) return this.command(this.positionPatch(false), () => api.transferPlayback(this.client, target.id, true), true);
-      this.setIssue('no-active-device', 'No Spotify app is running to resume in. Open Spotify on this computer or a phone, then try again.');
+      this.setIssue('no-active-device', '이어서 재생할 Spotify 앱이 없어요. 이 컴퓨터나 휴대폰에서 Spotify를 연 뒤 다시 시도하세요.');
       return;
     }
-    this.setIssue('no-active-device', 'No Spotify device is active. Choose a device to resume playback.');
+    this.setIssue('no-active-device', '연결된 기기가 없어요. 재생할 기기를 고르세요.');
   }
 
   async next(): Promise<void> {
@@ -745,7 +745,7 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
       return this.command({ volume: value }, () => this.device!.setVolume(value * this.gain), false);
     }
     if (snapshot.device && !snapshot.device.supportsVolume) {
-      this.setIssue('restricted', `${snapshot.device.name} does not allow remote volume control.`);
+      this.setIssue('restricted', `${snapshot.device.name}은(는) 원격 음량 조절을 허용하지 않아요.`);
       return;
     }
     // The listener set the other device's volume: that is the level to return to.
@@ -794,7 +794,7 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
   async transferToBrowser(play = true): Promise<void> {
     const { sdk } = this.store.getState();
     if (sdk.kind !== 'ready') {
-      this.setIssue('no-active-device', this.browserPlayback ? 'Browser playback is not ready yet.' : 'Playback in this browser is turned off (Settings).');
+      this.setIssue('no-active-device', this.browserPlayback ? '이 브라우저의 재생 준비가 아직 안 됐어요.' : '이 브라우저 재생이 꺼져 있어요(설정).');
       return;
     }
     this.chosenDeviceId = null;
@@ -864,37 +864,37 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
 
   private reportError(error: unknown): void {
     if (error instanceof SpotifyAuthError) {
-      this.setIssue('unauthorized', 'Spotify authorization expired. Reconnect to continue.');
+      this.setIssue('unauthorized', 'Spotify 로그인이 만료됐어요. 다시 연결하세요.');
       return;
     }
     if (!isSpotifyApiError(error)) {
-      this.setIssue('command-failed', 'The playback command could not be completed.');
+      this.setIssue('command-failed', '재생 명령을 마치지 못했어요.');
       return;
     }
     switch (error.kind) {
       case 'no-active-device':
-        this.setIssue('no-active-device', 'No Spotify device is active. Choose a device or play in this browser.');
+        this.setIssue('no-active-device', '연결된 기기가 없어요. 기기를 고르거나 이 브라우저에서 재생하세요.');
         break;
       case 'premium-required':
-        this.setIssue('premium-required', 'Spotify Premium is required to control playback.');
+        this.setIssue('premium-required', '재생을 조작하려면 Spotify Premium이 필요해요.');
         break;
       case 'forbidden':
-        this.setIssue('restricted', error.message || 'Spotify did not allow this action right now.');
+        this.setIssue('restricted', error.message || 'Spotify가 지금은 이 동작을 허용하지 않아요.');
         break;
       case 'rate-limited':
         this.rateLimitedUntil = this.now() + (error.retryAfterMs ?? 10_000);
-        this.setIssue('rate-limited', 'Spotify is rate limiting requests. Playback state will refresh shortly.', {
+        this.setIssue('rate-limited', 'Spotify 요청이 잠시 제한됐어요. 곧 재생 상태를 다시 불러옵니다.', {
           retryAfterMs: error.retryAfterMs,
         });
         break;
       case 'unauthorized':
-        this.setIssue('unauthorized', 'Spotify authorization expired. Reconnect to continue.');
+        this.setIssue('unauthorized', 'Spotify 로그인이 만료됐어요. 다시 연결하세요.');
         break;
       case 'network':
-        this.setIssue('network', 'Spotify is unreachable. Retrying…');
+        this.setIssue('network', 'Spotify에 연결할 수 없어요. 다시 시도하는 중…');
         break;
       default:
-        this.setIssue('command-failed', error.message || 'The playback command could not be completed.');
+        this.setIssue('command-failed', error.message || '재생 명령을 마치지 못했어요.');
     }
   }
 

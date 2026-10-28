@@ -29,9 +29,12 @@ function stage(issue: Omit<PlaybackIssue, 'at'>) {
 describe('the playback notice', () => {
   it('offers the Spotify app when this browser cannot play protected audio', async () => {
     const user = userEvent.setup();
-    const { engine } = stage({ kind: 'playback-failed', message: 'This browser can’t play protected (DRM) audio.', hints: ['Allow protected content.'] });
-    expect(screen.getByRole('alert')).toHaveTextContent('protected (DRM) audio');
-    await user.click(screen.getByRole('button', { name: 'Use the Spotify app instead' }));
+    const { engine } = stage({ kind: 'playback-failed', message: '이 브라우저에선 재생할 수 없어요.', hints: ['보호된 콘텐츠를 허용하세요.'] });
+    expect(screen.getByRole('alert')).toHaveTextContent('이 브라우저에선 재생할 수 없어요');
+    // One way forward is offered; the rest folds away.
+    expect(screen.getAllByRole('button').map((button) => button.textContent)).toEqual(['Spotify 앱으로 듣기', '×', '이 브라우저에서 다시 시도']);
+    expect(screen.getByText('왜 안 되나요?').closest('details')).not.toHaveAttribute('open');
+    await user.click(screen.getByRole('button', { name: 'Spotify 앱으로 듣기' }));
     expect(engine.setBrowserPlayback).toHaveBeenCalledWith(false);
     // Then the music is resumed, which by now means: in the app.
     expect(engine.resume).toHaveBeenCalled();
@@ -39,12 +42,12 @@ describe('the playback notice', () => {
 
   it('says, without alarm, that playback moved to the app, and lets the listener change that back', async () => {
     const user = userEvent.setup();
-    const { engine, store } = stage({ kind: 'moved-to-app', message: 'LAB-PC-07 plays it from now on and this page is its remote.' });
+    const { engine, store } = stage({ kind: 'moved-to-app', message: 'LAB-PC-07에서 재생합니다.' });
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
-    expect(screen.getByRole('status')).toHaveTextContent('LAB-PC-07 plays it from now on');
-    await user.click(screen.getByRole('button', { name: 'Play in this browser again' }));
+    expect(screen.getByRole('status')).toHaveTextContent('LAB-PC-07에서 재생합니다');
+    await user.click(screen.getByRole('button', { name: '이 브라우저에서 다시 재생' }));
     expect(engine.setBrowserPlayback).toHaveBeenCalledWith(true);
-    await user.click(screen.getByRole('button', { name: 'Dismiss' }));
+    await user.click(screen.getByRole('button', { name: '안내 닫기' }));
     expect(store.getState().issue).toBeNull();
   });
 });

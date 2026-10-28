@@ -19,6 +19,17 @@ export function usePlayerSnapshot() {
   return usePlayerSelector((state) => state.snapshot);
 }
 
+/**
+ * True while the music is not actually sounding: paused, or stopped because
+ * playback failed or there is no device. Lyrics and playing marks go quiet
+ * then, so the page does not look like it is playing when it is not.
+ */
+export function usePlaybackStalled(): boolean {
+  return usePlayerSelector(
+    (s) => s.snapshot.paused || s.issue?.kind === 'playback-failed' || s.issue?.kind === 'no-active-device',
+  );
+}
+
 function useIsAdvancing(): boolean {
   return usePlayerSelector((s) => Boolean(s.snapshot.track) && !s.snapshot.paused && !s.snapshot.buffering);
 }

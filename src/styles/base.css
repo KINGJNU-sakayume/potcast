@@ -92,6 +92,8 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 .lyrics-panel { padding: 42px 0 30px; min-height: 290px; }
 .current-lyric { margin: 0; font-size: clamp(36px,4vw,64px); line-height: 1.08; letter-spacing: -.045em; font-weight: 500; max-width: var(--lyric-width); white-space: pre-line; overflow-wrap: anywhere; animation: lyric-in .36s var(--ease); }
 .current-lyric.is-state { color: var(--muted); font-size: clamp(30px,3.2vw,48px); animation: none; }
+/* Not sounding (paused, failed, no device): the lines stay where they are, without the current-line weight. */
+.lyrics-panel[data-stalled] :is(.current-lyric, .current-trans):not(.is-state) { opacity: .45; transition: opacity .3s ease; }
 .current-lyric.is-gap { color: var(--dim); font-size: clamp(22px,2vw,30px); letter-spacing: .3em; line-height: 1.6; }
 @keyframes lyric-in { from { opacity: .35; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .current-trans { margin: 16px 0 0; font-size: clamp(22px,2.15vw,41px); line-height: 1.35; letter-spacing: -.01em; color: var(--muted); max-width: var(--lyric-width); }
@@ -101,14 +103,23 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 .lyrics-panel .note-more { margin-top: 16px; }
 .progress-wrap { display: grid; grid-template-columns: 42px minmax(0,1fr) 42px; gap: 10px; align-items: center; font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
 .progress-wrap > span:last-child { text-align: right; }
-.playback-state { margin: 9px 0 0; min-height: 1.3em; font-size: 12px; line-height: 1.5; letter-spacing: .01em; color: var(--dim); text-align: right; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: baseline; gap: 4px 12px; }
+.playback-state { margin: 9px 0 0; min-height: 1.3em; font-size: 13px; line-height: 1.5; letter-spacing: .01em; color: var(--dim); text-align: left; }
 .playback-state b { color: var(--muted); font-weight: 500; }
 .playback-state.alert { color: var(--main-text); }
-.notice-action { border: 0; background: transparent; padding: 0; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink); }
-.notice-action:hover { text-decoration: underline; text-underline-offset: 3px; }
-.notice-hints { flex-basis: 100%; display: grid; gap: 4px; margin-top: 4px; text-align: left; color: var(--muted); letter-spacing: .02em; font-size: 11px; line-height: 1.55; }
+/* One line: what happened, the one thing to do, and a close. */
+.notice-line { display: flex; align-items: center; gap: 4px 14px; min-width: 0; }
+.notice-message { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.notice-action { flex: none; min-height: 28px; border: 1px solid currentColor; border-radius: 999px; background: transparent; padding: 0 12px; font-size: 13px; letter-spacing: .01em; color: var(--ink); white-space: nowrap; }
+.notice-action:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); }
+.notice-close { flex: none; width: 28px; height: 28px; margin-left: auto; border: 0; border-radius: 50%; background: transparent; padding: 0; font-size: 18px; line-height: 1; color: var(--muted); }
+.notice-close:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 8%, transparent); }
+.notice-why { margin-top: 4px; color: var(--muted); }
+.notice-why > summary { width: fit-content; cursor: pointer; font-size: 13px; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+.notice-why[open] > summary { color: var(--ink); }
+.notice-why .notice-action { margin-top: 8px; }
+.notice-hints { display: grid; gap: 4px; margin: 8px 0 0; text-align: left; color: var(--muted); letter-spacing: .01em; font-size: 13px; line-height: 1.55; }
 .notice-hints li::before { content: '— '; color: var(--dim); }
-.notice-detail { flex-basis: 100%; margin: 0; color: var(--dim); }
+.notice-detail { margin: 6px 0 0; color: var(--dim); font-size: 13px; }
 
 /* Slider: the v7 4px bar; the thumb appears on hover and focus. */
 .slider { position: relative; height: 22px; display: flex; align-items: center; cursor: pointer; touch-action: none; --value: 0; }
@@ -208,3 +219,4 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 .queue-label { margin: 22px 0 6px; }
 .queue-note { margin: 10px 0; font-size: 12.5px; line-height: 1.6; color: var(--muted); }
 .queue-list .index-row { grid-template-columns: 30px 40px minmax(0,1fr) auto; }
+.device-button[data-tone='failed'] .device-name { color: var(--main-text); }
