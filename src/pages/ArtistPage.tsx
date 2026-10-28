@@ -6,14 +6,16 @@ import { useSession } from '../app/sessionContext';
 import { usePageSurface } from '../app/surface';
 import { useIsMobile } from '../app/useIsMobile';
 import { useArtist, useDiscography } from '../catalogue/queries';
+import { albumMarks, AlbumBadges } from '../components/Badge';
 import { CoverImage, Portrait } from '../components/CoverImage';
 import { ObjectRow } from '../components/IndexRow';
-import { NotePreview } from '../components/NotePreview';
+import { useNote } from '../components/NoteContext';
+import { NotePreview, notePayload } from '../components/NotePreview';
 import { QuietRow, StateView } from '../components/StateView';
 import { sectionsByYear, sortChronologically, type ReleaseOrder } from '../discography/chronology';
 import { groupEditions, type EditionGroup } from '../discography/editions';
 import type { AlbumSummary, ReleaseGroup } from '../domain/types';
-import { getAlbumNote, getArtistNote } from '../editorial/lookup';
+import { getArtistNote } from '../editorial/lookup';
 import type { ArtistEra } from '../editorial/types';
 import { albumTypeLabel, formatReleaseDate, joinArtistNames, pluralise } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
@@ -22,13 +24,19 @@ import { usePlay } from '../playback/hooks';
 import { describeSpotifyError, isSpotifyApiError } from '../spotify/errors';
 import { detectLineLanguage } from '../translation/languageDetect';
 
-function noteFor(release: AlbumSummary) {
-  return getAlbumNote({
+function marksFor(release: AlbumSummary) {
+  return albumMarks({
     id: release.id,
     name: release.name,
     artistNames: release.artists.map((a) => a.name),
     releaseDate: release.releaseDate,
   });
+}
+
+/** The note and episode marks of a release, or of any of its editions. */
+function groupMarks(group: EditionGroup) {
+  const all = [group.primary, ...group.editions].map(marksFor);
+  return { noted: all.some((m) => m.noted), episode: all.some((m) => m.episode) };
 }
 
 /** Other editions of a release, folded under it until opened. */
@@ -66,7 +74,7 @@ function ReleaseRow({ group }: { group: EditionGroup }) {
   const play = usePlay();
   const [open, setOpen] = useState(false);
   const release = group.primary;
-  const noted = noteFor(release) ?? group.editions.map(noteFor).find(Boolean);
+  const marks = groupMarks(group);
   const editionsId = `editions-${release.id}`;
   return (
     <article className="release-card">
@@ -75,8 +83,7 @@ function ReleaseRow({ group }: { group: EditionGroup }) {
       </Link>
       <div>
         <div className="label">
-          {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)}
-          {noted && <span className="release-note"> · Editorial note</span>}
+          {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)} <AlbumBadges {...marks} />
         </div>
         <h4 lang={detectLineLanguage(release.name)}>
           <Link className="linkish" to={`/album/${release.id}`}>
@@ -89,14 +96,19 @@ function ReleaseRow({ group }: { group: EditionGroup }) {
           <EditionsToggle group={group} open={open} onToggle={() => setOpen(!open)} controls={editionsId} />
         </div>
         {open && <Editions group={group} id={editionsId} />}
-      </div>
-      <div className="release-actions">
-        <button type="button" onClick={() => play({ contextUri: release.uri }, { openNowPlaying: true })}>
-          Play
-        </button>
-        <Link className="release-open" to={`/album/${release.id}`}>
-          Open album
-        </Link>
+        <div className="release-actions">
+          <button type="button" onClick={() => play({ contextUri: release.uri }, { openNowPlaying: true })}>
+            Play
+          </button>
+          <Link className="release-open" to={`/album/${release.id}`}>
+            Open album
+          </Link>
+          {marks.episode && (
+            <Link className="release-open" to={`/episode/${release.id}`}>
+              Listen with the hosts
+            </Link>
+          )}
+        </div>
       </div>
     </article>
   );
@@ -107,7 +119,7 @@ function CompactReleaseRow({ group, kind }: { group: EditionGroup; kind: Release
   const play = usePlay();
   const [open, setOpen] = useState(false);
   const release = group.primary;
-  const noted = noteFor(release) ?? group.editions.map(noteFor).find(Boolean);
+  const marks = groupMarks(group);
   const editionsId = `editions-${release.id}`;
   return (
     <>
@@ -118,8 +130,7 @@ function CompactReleaseRow({ group, kind }: { group: EditionGroup; kind: Release
         paletteKey={release.id}
         kicker={
           <>
-            {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)}
-            {noted && <span className="release-note"> · Editorial note</span>}
+            {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)} <AlbumBadges {...marks} />
           </>
         }
         meta={
@@ -163,7 +174,7 @@ function eraYears(era: ArtistEra): string {
  * every page loaded, editions folded together, grouped by year — oldest
  * first by default, for listening through a career in order.
  */
-function Discography({ artistId, eras }: { artistId: string; eras?: readonly ArtistEra[] }) {
+function Discography({ artistId, eras, onEra }: { artistId: string; eras?: readonly ArtistEra[]; onEra?: (era: ArtistEra) => void }) {
   const [params, setParams] = useSearchParams();
   const group = RELEASE_GROUPS.find((g) => g.id === params.get('group')) ?? RELEASE_GROUPS[0]!;
   const order: ReleaseOrder = params.get('order') === 'desc' ? 'desc' : 'asc';
@@ -184,6 +195,8 @@ function Discography({ artistId, eras }: { artistId: string; eras?: readonly Art
   };
 
   let previousEra: ArtistEra | null = null;
+  // Two releases or fewer: side by side and larger, rather than one narrow column with the right half empty.
+  const few = group.id === 'album' && releaseCount > 0 && releaseCount <= 2;
   return (
     <section className="artist-grid discography" aria-labelledby="releases-title">
       <div className="discography-head">
@@ -211,19 +224,24 @@ function Discography({ artistId, eras }: { artistId: string; eras?: readonly Art
       ) : sections.length === 0 ? (
         <QuietRow>Spotify lists no {group.noun[1]} for this artist.</QuietRow>
       ) : (
-        <div className="timeline">
+        <div className="timeline" data-few={few ? '' : undefined}>
           {sections.map((section) => {
             const era = eraOf(eras, section.year);
             const showEra = era !== null && era !== previousEra;
             previousEra = era;
             return (
               <Fragment key={`${section.year ?? 'undated'}-${section.groups[0]!.primary.id}`}>
-                {showEra && (
-                  <div className="era-marker">
-                    <span className="era-years">{eraYears(era)}</span>
-                    <span lang="ko">{era.title}</span>
-                  </div>
-                )}
+                {/* The era as the artist note heads it — “title (years)” — and a way into that part of the note. */}
+                {showEra &&
+                  (onEra ? (
+                    <button type="button" className="era-marker" title="노트의 이 시기 읽기" onClick={() => onEra(era)}>
+                      <span lang="ko">{era.title}</span> <span className="era-years">({eraYears(era)})</span>
+                    </button>
+                  ) : (
+                    <div className="era-marker">
+                      <span lang="ko">{era.title}</span> <span className="era-years">({eraYears(era)})</span>
+                    </div>
+                  ))}
                 <div className="year-section">
                   <div className="year-label">{section.year ?? 'Undated'}</div>
                   {group.id === 'album' ? (
@@ -264,6 +282,7 @@ export function ArtistPage() {
   const play = usePlay();
   const { mode } = useSession();
   const mobile = useIsMobile();
+  const { openNote } = useNote();
   usePageTitle('Artist', artist.data?.name ?? null);
   // Desktop (v7.5): the page takes the colour of the artist's photograph; without one it stays on paper.
   const portraitUrl = artist.data ? pickImageUrl(artist.data.images, 64) : null;
@@ -344,7 +363,11 @@ export function ArtistPage() {
               </div>
             </div>
           </section>
-          <Discography artistId={data.id} eras={note?.eras} />
+          <Discography
+            artistId={data.id}
+            eras={note?.eras}
+            onEra={note?.full?.trim() ? (era) => openNote(notePayload('ARTIST', note, { title: data.name, subtitle: origin, titleLang: detectLineLanguage(data.name), anchor: era.title })) : undefined}
+          />
         </div>
       </div>
     </div>

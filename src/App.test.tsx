@@ -60,7 +60,7 @@ describe('ARC Music (preview archive)', () => {
     expect(screen.queryByText(/애도를 다루는 곡이지만/)).not.toBeInTheDocument();
     expect(screen.getByText('Listening note')).toBeInTheDocument();
     expect(screen.getByText(/절의 자기 판단이 후렴에서/)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Read full note →' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: '노트 전체 읽기 →' })).toBeInTheDocument();
     expect(screen.getByRole('slider', { name: 'Seek' })).toHaveAttribute('aria-valuemax', '302');
   });
 
@@ -70,7 +70,7 @@ describe('ARC Music (preview archive)', () => {
 
     expect(await screen.findByRole('heading', { level: 1, name: 'Kenshi Yonezu' })).toBeInTheDocument();
     expect(screen.getByText('Tokushima, Japan · singer-songwriter / producer / illustrator')).toBeInTheDocument();
-    const more = screen.getByRole('button', { name: 'Read full note →' });
+    const more = screen.getByRole('button', { name: '노트 전체 읽기 →' });
     await user.click(more);
     // Beside the page, not over it: no dialog.
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
@@ -90,7 +90,8 @@ describe('ARC Music (preview archive)', () => {
     renderApp('?preview', `#/artist/${id}`);
     expect(await screen.findByRole('heading', { level: 1, name })).toBeInTheDocument();
     expect(screen.getByText(text)).toBeInTheDocument();
-    expect(await screen.findAllByText(/· Editorial note/)).not.toHaveLength(0);
+    // The discography marks the noted albums with the note badge.
+    expect(await screen.findAllByText('노트', { selector: '.badge' })).not.toHaveLength(0);
   });
 
   it('marks noted tracks in an album sequence and shows the album note', async () => {
@@ -98,8 +99,8 @@ describe('ARC Music (preview archive)', () => {
     expect(await screen.findByRole('heading', { level: 1, name: 'A Rush of Blood to the Head' })).toBeInTheDocument();
     expect(screen.getByText(/데뷔작의 조용함 위에/)).toBeInTheDocument();
     const scientist = screen.getByRole('button', { name: /The Scientist/ });
-    expect(within(scientist).getByText('Note')).toBeInTheDocument();
-    expect(within(screen.getByRole('button', { name: /Politik/ })).queryByText('Note')).not.toBeInTheDocument();
+    expect(within(scientist).getByText('노트')).toBeInTheDocument();
+    expect(within(screen.getByRole('button', { name: /Politik/ })).queryByText('노트')).not.toBeInTheDocument();
   });
 
   it('lays the library out on one screen: lists, then covers, then artists', async () => {

@@ -4,6 +4,7 @@ import type { ImageRef, TrackIdentity } from '../domain/types';
 import { formatDuration, formatTrackNumber, joinArtistNames } from '../lib/format';
 import { detectLineLanguage } from '../translation/languageDetect';
 import { ArtistLinks } from './ArtistLinks';
+import { Badge } from './Badge';
 import { CoverImage } from './CoverImage';
 import { PlayingMark } from './PlayingMark';
 
@@ -64,11 +65,7 @@ export function TrackIndexRow({
         </span>
       </span>
       <span className="index-aside">
-        {noted && (
-          <span className="track-note" title="Song note">
-            Note
-          </span>
-        )}
+        {noted && <Badge kind="note" />}
         {aside}
         <span>{formatDuration(track.durationMs)}</span>
       </span>

@@ -17,6 +17,10 @@ export interface NotePayload {
   written?: string;
   updated?: string;
   sources?: string[];
+  /** A section heading of the copy to open the note at (its text, or the start of it). */
+  anchor?: string;
+  /** The song the note is about, so a moment it names (“3분 무렵”) can be played. */
+  trackIds?: string[];
 }
 
 interface NoteContextValue {

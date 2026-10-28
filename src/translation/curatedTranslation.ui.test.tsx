@@ -94,7 +94,7 @@ describe('curated lyric translation on Now Playing', () => {
     expect(screen.getByText('Listening note')).toBeInTheDocument();
     expect(screen.getByText('감상 큐 문장.')).toBeInTheDocument();
 
-    const more = screen.getByRole('button', { name: 'Read full note →' });
+    const more = screen.getByRole('button', { name: '노트 전체 읽기 →' });
     await user.click(more);
     // In the page, not over it: no dialog, the lyrics stay readable.
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
@@ -144,7 +144,7 @@ describe('curated lyric translation on Now Playing', () => {
     expect(await screen.findByText('큐레이션 번역 문장')).toBeInTheDocument();
     expect(screen.getByText('Listening note')).toBeInTheDocument();
     expect(screen.queryByText(/Translation note/)).not.toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: 'Read full note →' }));
+    await user.click(screen.getByRole('button', { name: '노트 전체 읽기 →' }));
     const note = screen.getByRole('complementary', { name: 'Lemon' });
     expect(within(note).getByText('Listening note / Song')).toBeInTheDocument();
     expect(within(note).getByRole('heading', { name: '번역에 대하여' })).toBeInTheDocument();

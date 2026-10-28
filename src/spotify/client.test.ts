@@ -28,6 +28,7 @@ describe('SpotifyClient', () => {
     // Development Mode search limit (February 2026 schema): max 10.
     expect(parsed.searchParams.get('limit')).toBe('10');
     expect((init.headers as Record<string, string>).Authorization).toBe('Bearer token-1');
+    expect((init.headers as Record<string, string>)['Accept-Language']).toBe('en');
   });
 
   it('refreshes once after a 401 and retries with the new token', async () => {

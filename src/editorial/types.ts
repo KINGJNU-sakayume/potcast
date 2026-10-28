@@ -67,6 +67,11 @@ export interface AlbumNote extends EditorialBody {
   /** Titles as Spotify may show them, including localised or romanised forms. */
   titles: string[];
   releaseYear?: number;
+  /**
+   * The release day (YYYY-MM-DD) as the note's research has it. Shown instead of
+   * Spotify's when Spotify gives only a year, filled in as 1 January.
+   */
+  releaseDate?: string;
   /** Cover image URL (https), shown on the Archive; without it the Archive asks Spotify when connected. */
   cover?: string;
   /**

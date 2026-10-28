@@ -254,10 +254,11 @@ function DesktopFrame() {
     open === 'note' && note
       ? {
           key: `note:${note.id ?? note.title}:${note.context}`,
-          label: note.context.startsWith('Listening') ? 'Listening note' : 'Editorial note',
+          // The column's head names the note once ("Editorial note / Artist"); the note itself starts at its title.
+          label: note.context,
           labelledBy: 'side-panel-title',
           closeLabel: 'Close note',
-          content: <NoteContent note={note} titleId="side-panel-title" />,
+          content: <NoteContent note={note} titleId="side-panel-title" showContext={false} />,
         }
       : open === 'queue'
         ? { key: 'queue', label: 'Playback', labelledBy: 'queue-title', closeLabel: 'Close queue', content: <QueueContent open /> }

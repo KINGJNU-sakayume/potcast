@@ -43,7 +43,8 @@ export function BackHistoryProvider({ children }: { children: ReactNode }) {
     const current = visits.current.at(-1);
     if (!current || current.key !== location.key) return;
     const bySection = SECTION_PAGES.some((path) => location.pathname.startsWith(path));
-    current.label = bySection ? section : (title ?? section);
+    // An episode is named as one, so its way back does not read as the album page it belongs to.
+    current.label = bySection ? section : section === 'Episode' && title ? `${title} 에피소드` : (title ?? section);
   }, [location.key, location.pathname, section, title]);
 
   return <BackContext.Provider value={previous}>{children}</BackContext.Provider>;

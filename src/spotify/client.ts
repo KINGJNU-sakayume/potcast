@@ -125,7 +125,9 @@ export class SpotifyClient {
     let rateLimitAttempts = 0;
 
     for (;;) {
-      const headers: Record<string, string> = { Authorization: `Bearer ${token}`, Accept: 'application/json' };
+      // Names as the artists write them, not as the browser's language would localise them
+      // (Spotify turns “Adam Levine” into “애덤 리바인” for ko-KR, but not every guest): one form everywhere.
+      const headers: Record<string, string> = { Authorization: `Bearer ${token}`, Accept: 'application/json', 'Accept-Language': 'en' };
       let body: string | undefined;
       if (options.body !== undefined) {
         headers['Content-Type'] = 'application/json';

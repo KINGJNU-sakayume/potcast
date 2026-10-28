@@ -161,6 +161,8 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 .note-kicker { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
 .note-kicker .index { font-variant-numeric: tabular-nums; color: var(--main-text); }
 .note-preview p { margin: 10px 0 0; font-size: 14px; line-height: 1.72; color: var(--muted); max-width: 54ch; }
+/* The full note is open beside the page: the summary steps back. */
+.note-preview[data-open] p { opacity: .45; }
 .note-more { margin-top: 10px; border: 0; background: transparent; padding: 0; font-size: 11px; letter-spacing: .09em; color: var(--ink); text-transform: uppercase; }
 .note-more:hover { text-decoration: underline; text-underline-offset: 4px; }
 
@@ -181,8 +183,17 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 /* Long-form notes (v7.2): sections read as quiet kickers, never as a second title. */
 .note-body p { margin: 0 0 1.15em; }
 .note-body > :last-child { margin-bottom: 0; }
-.note-body h3 { margin: 34px 0 12px; padding-top: 12px; border-top: 1px solid var(--line-soft); font-size: 12px; font-weight: 500; line-height: 1.5; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
-.note-body h4 { margin: 24px 0 6px; font-size: 13px; font-weight: 500; color: var(--ink); }
+.note-body h3 { margin: 36px 0 12px; padding-top: 14px; border-top: 1px solid var(--line-soft); font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.01em; color: var(--ink); scroll-margin-top: 16px; }
+.note-body h4 { margin: 24px 0 6px; font-size: 17px; font-weight: 600; color: var(--ink); scroll-margin-top: 16px; }
+/* A long note's sections, listed above it. */
+.note-contents { margin: 0 0 28px; padding: 12px 16px; border: 1px solid var(--line-soft); border-radius: 6px; }
+.note-contents ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+.note-contents li[data-level='3'] { padding-left: 14px; }
+.note-contents a { font-size: 14px; line-height: 1.5; color: var(--ink-2); text-decoration: none; }
+.note-contents a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+/* A moment of the song the note names, to play from there. */
+.note-time { display: inline; padding: 0 2px; border: 0; border-bottom: 1px solid currentColor; background: transparent; font: inherit; color: var(--main-text); cursor: pointer; }
+.note-time:hover { background: color-mix(in srgb, var(--main) 10%, transparent); }
 .note-body > h3:first-child, .note-body > h4:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
 .note-body blockquote { margin: 0 0 1.15em; padding-left: 14px; border-left: 1px solid var(--main); color: var(--muted); }
 .note-body blockquote p { margin: 0; }
@@ -220,3 +231,8 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 .queue-note { margin: 10px 0; font-size: 12.5px; line-height: 1.6; color: var(--muted); }
 .queue-list .index-row { grid-template-columns: 30px 40px minmax(0,1fr) auto; }
 .device-button[data-tone='failed'] .device-name { color: var(--main-text); }
+
+/* Note and episode badges: one bordered form on every page and theme. */
+.badges { display: inline-flex; gap: 4px; vertical-align: middle; }
+.badge { display: inline-flex; align-items: center; height: 20px; padding: 0 7px; border: 1px solid currentColor; border-radius: 3px; font-style: normal; font-size: 12px; font-weight: 600; letter-spacing: 0; line-height: 1; text-transform: none; color: var(--ink); white-space: nowrap; }
+.badge[data-kind='episode'] { background: var(--ink); border-color: var(--ink); color: var(--bg); }

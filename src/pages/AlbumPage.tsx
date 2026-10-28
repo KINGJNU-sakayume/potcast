@@ -6,6 +6,7 @@ import { usePageSurface } from '../app/surface';
 import { useIsMobile } from '../app/useIsMobile';
 import { useAlbum, useSavedState, useToggleSaved } from '../catalogue/queries';
 import { ArtistLinks } from '../components/ArtistLinks';
+import { Badge } from '../components/Badge';
 import { CoverImage } from '../components/CoverImage';
 import { DiscographyNav } from '../components/DiscographyNav';
 import { NotePreview } from '../components/NotePreview';
@@ -17,9 +18,9 @@ import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
 import {
   albumTypeLabel,
+  formatAlbumRelease,
   formatDuration,
-  formatReleaseDate,
-  formatRuntime,
+  formatMinutes,
   formatTrackNumber,
   joinArtistNames,
   pluralise,
@@ -85,18 +86,17 @@ function TrackSequence({ album }: { album: AlbumDetail }) {
             <b lang={detectLineLanguage(track.name)}>{track.name}</b>
             {guests.length > 0 && <span className="track-guests">with {joinArtistNames(guests)}</span>}
           </span>
+          {/* Fixed columns: note, explicit, length — a badge never moves the time. */}
           <span className="track-aside">
-            {noted && (
-              <span className="track-note" title="Song note">
-                Note
-              </span>
-            )}
-            {track.explicit && (
-              <span className="explicit" role="img" aria-label="Explicit" title="Explicit">
-                E
-              </span>
-            )}
-            <span>{formatDuration(track.durationMs)}</span>
+            <span className="track-aside-note">{noted && <Badge kind="note" />}</span>
+            <span className="track-aside-explicit">
+              {track.explicit && (
+                <span className="explicit" role="img" aria-label="Explicit" title="Explicit">
+                  E
+                </span>
+              )}
+            </span>
+            <span className="track-aside-time">{formatDuration(track.durationMs)}</span>
           </span>
         </button>
       </li>
@@ -209,10 +209,26 @@ export function AlbumPage() {
               <div className="artist">
                 <ArtistLinks artists={loaded.artists} />
               </div>
+              <div className="object-actions">
+                {episode && (
+                  <Link className="plain-action primary" to={`/episode/${loaded.id}`} title={episode.title}>
+                    {episodeRunning ? 'Back to the episode' : 'Listen with the hosts'}
+                  </Link>
+                )}
+                <button
+                  type="button"
+                  className={episode ? 'plain-action' : 'plain-action primary'}
+                  disabled={loaded.tracks.length === 0 && loaded.tracksComplete}
+                  onClick={() => play({ contextUri: loaded.uri }, { openNowPlaying: true })}
+                >
+                  Play album
+                </button>
+                <SaveAlbumButton uri={loaded.uri} />
+              </div>
               <div className="album-hero-meta">
                 <div>
                   <b>Release</b>
-                  <span>{formatReleaseDate(loaded.releaseDate, loaded.releaseDatePrecision) ?? '—'}</span>
+                  <span>{formatAlbumRelease(loaded.releaseDate, loaded.releaseDatePrecision, note) ?? '—'}</span>
                 </div>
                 <div>
                   <b>Format</b>
@@ -224,7 +240,7 @@ export function AlbumPage() {
                 </div>
                 <div>
                   <b>Duration</b>
-                  <span>{loaded.tracks.length > 0 ? formatRuntime(loaded.totalDurationMs) : '—'}</span>
+                  <span>{loaded.tracks.length > 0 ? formatMinutes(loaded.totalDurationMs) : '—'}</span>
                 </div>
               </div>
               <NotePreview
@@ -234,30 +250,18 @@ export function AlbumPage() {
                 titleLang={titleLang}
                 subtitle={[joinArtistNames(loaded.artists), year, trackCount ? pluralise(trackCount, 'track') : null].filter(Boolean).join(' · ')}
               />
-              <div className="object-actions">
-                <button
-                  type="button"
-                  className="plain-action primary"
-                  disabled={loaded.tracks.length === 0 && loaded.tracksComplete}
-                  onClick={() => play({ contextUri: loaded.uri }, { openNowPlaying: true })}
-                >
-                  Play album
-                </button>
-                {episode && (
-                  <Link className="plain-action" to={`/episode/${loaded.id}`} title={episode.title}>
-                    {episodeRunning ? 'Back to the episode' : 'Listen with the hosts'}
-                  </Link>
-                )}
-                <SaveAlbumButton uri={loaded.uri} />
-              </div>
-              {fineprint.length > 0 && <p className="fineprint">{fineprint.join(' · ')}</p>}
+              {fineprint.length > 0 && (
+                <p className="fineprint">
+                  <span className="fineprint-label">레이블·저작권</span> {fineprint.join(' · ')}
+                </p>
+              )}
             </div>
           </section>
 
           <section className="album-sequence" aria-labelledby="sequence-title">
             <div className="sequence-head">
               <h2 id="sequence-title">Track Sequence</h2>
-              <span>{loaded.tracks.length > 0 ? `${pluralise(loaded.tracks.length, 'track')} · ${formatRuntime(loaded.totalDurationMs)}` : ''}</span>
+              <span>{loaded.tracks.length > 0 ? `${pluralise(loaded.tracks.length, 'track')} · ${formatMinutes(loaded.totalDurationMs)}` : ''}</span>
             </div>
             {loaded.tracks.length > 0 ? (
               <TrackSequence album={loaded} />

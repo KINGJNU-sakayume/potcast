@@ -107,7 +107,7 @@
 .desktop .side-panel-head button { width: 36px; height: 36px; border: 0; background: transparent; font-size: 20px; line-height: 1; color: var(--muted); }
 .desktop .side-panel-head button:hover { color: var(--ink); }
 .desktop .side-panel-body { flex: 1; min-height: 0; overflow: auto; padding: 30px 34px 48px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
-.desktop .side-panel .note-drawer-title { font-size: clamp(34px, min(2.8vw, 5vh), 60px); }
+.desktop .side-panel .note-drawer-title { margin-top: 0; font-size: calc(24px * var(--t)); line-height: 1.2; letter-spacing: -.02em; }
 .desktop .side-panel .note-drawer-copy, .desktop .side-panel .note-drawer-foot { max-width: 640px; }
 .desktop .settings-body { padding: 0; }
 .desktop .settings-body p { font-size: calc(14px * var(--t)); color: var(--ink-2); }
@@ -267,6 +267,11 @@
 .desktop .discography { container: disco / inline-size; }
 .desktop .timeline { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 48px; align-items: start; }
 .desktop .timeline > .era-marker, .desktop .timeline > .empty-row { grid-column: 1 / -1; }
+/* Two releases or fewer: two larger columns, each era over its own release. */
+.desktop .timeline[data-few] { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto auto; grid-auto-flow: column; }
+.desktop .timeline[data-few] > .era-marker { grid-column: auto; }
+.desktop .timeline[data-few] .release-card { grid-template-columns: minmax(140px, 220px) minmax(0, 1fr); }
+.desktop .timeline[data-few] .release-cover { width: 100%; height: auto; aspect-ratio: 1; }
 .desktop .release-card h4 { font-size: clamp(19px, 2vh, 26px); }
 @container disco (min-width: 1100px) {
   .desktop .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }

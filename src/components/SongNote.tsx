@@ -102,6 +102,7 @@ export function songNotePayload(note: SongNote, { title, subtitle, titleLang }: 
     written: note.written,
     updated: note.updated,
     sources: note.sources,
+    trackIds: note.trackIds,
   };
 }
 
@@ -134,7 +135,7 @@ export function SongNotePreview({
           aria-expanded={onOpen ? Boolean(expanded) : undefined}
           onClick={() => (onOpen ? onOpen() : openNote(songNotePayload(note, context)))}
         >
-          {expanded ? 'Close note ×' : 'Read full note →'}
+          {expanded ? '노트 닫기 ×' : '노트 전체 읽기 →'}
         </button>
       )}
     </div>

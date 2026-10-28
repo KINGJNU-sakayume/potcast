@@ -13,12 +13,12 @@
 .artist-copy .origin { margin-top: 18px; font-size: 14px; color: var(--muted); }
 .artist-grid { padding: 34px 0 0; }
 .section-count { font-weight: 400; color: var(--dim); font-size: 11px; letter-spacing: .09em; }
-.release-card { display: grid; grid-template-columns: 180px minmax(0,1fr) auto; gap: 22px; align-items: center; padding: 16px 0; border-top: 1px solid var(--line); }
+.release-card { display: grid; grid-template-columns: 180px minmax(0,1fr); gap: 22px; align-items: center; padding: 16px 0; border-top: 1px solid var(--line); }
 .release-cover { display: block; width: 180px; height: 180px; }
 .release-card h4 { margin: 4px 0 0; font-size: 26px; font-weight: 500; letter-spacing: -.02em; overflow-wrap: anywhere; }
 .release-meta { margin-top: 10px; display: flex; gap: 18px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); }
 .release-note { color: var(--main-text); }
-.release-actions { display: flex; gap: 8px; align-items: center; }
+.release-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 14px; }
 .release-actions button, .release-open, .plain-action { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); background: transparent; padding: 9px 12px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
 .release-actions button:hover, .release-open:hover, .plain-action:hover:not(:disabled) { border-color: var(--ink); }
 .plain-action.primary { background: var(--ink); border-color: var(--ink); color: var(--paper); }
@@ -39,10 +39,12 @@
 .year-releases > .release-card:first-child { border-top: 0; }
 .year-releases.object-rows { border-top: 0; }
 .year-releases .object-row:last-of-type { border-bottom: 0; }
-.era-marker { display: flex; align-items: baseline; gap: 14px; padding: 26px 0 12px; border-top: 1px solid var(--ink); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+.era-marker { display: flex; align-items: baseline; gap: 8px; width: 100%; padding: 26px 0 12px; border: 0; border-top: 1px solid var(--ink); background: transparent; font-size: 15px; font-weight: 600; letter-spacing: 0; text-align: left; color: var(--ink); }
+button.era-marker { cursor: pointer; }
+button.era-marker:hover span[lang] { text-decoration: underline; text-underline-offset: 4px; }
 .timeline > .era-marker:first-child { padding-top: 6px; }
 .era-marker + .year-section { border-top-color: var(--line-soft); }
-.era-years { color: var(--main-text); font-variant-numeric: tabular-nums; }
+.era-years { font-weight: 400; color: var(--main-text); font-variant-numeric: tabular-nums; }
 .editions-toggle { padding: 0; }
 .object-row-meta .editions-toggle { margin-left: 12px; }
 .edition-list { display: grid; gap: 6px; margin: 10px 0 0; padding: 10px 0 0; border-top: 1px solid var(--line-soft); font-size: 14px; }
@@ -93,6 +95,7 @@ a.discography-step.next:hover { padding-right: 8px; }
 .album-object-copy { margin-top: 22px; }
 .album-object-copy h1 { margin: 8px 0 0; font-size: clamp(42px,5.2vw,78px); line-height: .93; letter-spacing: -.055em; font-weight: 500; overflow-wrap: anywhere; }
 .album-object-copy .artist { margin-top: 11px; font-size: 15px; }
+.fineprint-label { margin-right: 6px; color: var(--muted); }
 .fineprint { margin: 22px 0 0; font-size: 12px; line-height: 1.6; color: var(--dim); max-width: 60ch; }
 .album-sequence { min-width: 0; padding-top: 1px; }
 .track-table { border-bottom: 1px solid var(--line); }
@@ -105,7 +108,8 @@ a.discography-step.next:hover { padding-right: 8px; }
 .track-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .track-item b { font-size: 14.5px; font-weight: 500; overflow-wrap: anywhere; }
 .track-guests { font-size: 12.5px; color: var(--dim); }
-.track-aside { display: inline-flex; align-items: center; gap: 12px; font-size: 12.5px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.track-aside { display: inline-grid; grid-template-columns: 40px 16px 40px; align-items: center; justify-items: end; gap: 10px; font-size: 12.5px; color: var(--dim); font-variant-numeric: tabular-nums; }
+.track-aside > span:empty { display: block; }
 .track-note { font-style: normal; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--main-text); margin-right: 8px; }
 .track-aside .track-note { margin-right: 0; }
 .explicit { display: inline-grid; place-items: center; width: 15px; height: 15px; border: 1px solid var(--line); font-size: 8.5px; color: var(--muted); }

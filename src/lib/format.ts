@@ -33,6 +33,12 @@ export function formatRuntime(ms: number): string {
   return minutes === 0 ? `${hours} hr` : `${hours} hr ${minutes} min`;
 }
 
+/** A length in whole minutes, e.g. "60분", "74분": one unit everywhere a running time is given. */
+export function formatMinutes(ms: number): string {
+  if (!Number.isFinite(ms) || ms <= 0) return '0분';
+  return `${Math.max(1, Math.round(ms / 60000))}분`;
+}
+
 export function formatTrackNumber(n: number): string {
   return String(n).padStart(2, '0');
 }
@@ -56,6 +62,21 @@ export function formatReleaseDate(date: string | null, precision: ReleaseDatePre
   const parsed = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
   if (Number.isNaN(parsed.getTime())) return year;
   return precision === 'month' ? MONTH_FORMAT.format(parsed) : DAY_FORMAT.format(parsed);
+}
+
+/**
+ * An album's release date for the page: the note's own day when it has one;
+ * otherwise Spotify's, shown no more precisely than it is — a year Spotify
+ * filled in as 1 January is shown as the year alone.
+ */
+export function formatAlbumRelease(
+  date: string | null,
+  precision: ReleaseDatePrecision | null,
+  note?: { releaseDate?: string; releaseYear?: number } | null,
+): string | null {
+  if (note?.releaseDate && /^\d{4}-\d{2}-\d{2}$/.test(note.releaseDate)) return formatReleaseDate(note.releaseDate, 'day');
+  if (date && /^\d{4}-01-01$/.test(date)) return note?.releaseYear !== undefined ? String(note.releaseYear) : date.slice(0, 4);
+  return formatReleaseDate(date, precision);
 }
 
 const RELATIVE = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });

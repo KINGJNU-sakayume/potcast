@@ -7,8 +7,9 @@ import {
   useCatalogueSearchPages,
 } from '../catalogue/queries';
 import type { Page, SearchResults, SearchType } from '../domain/types';
-import { getAlbumNote, getArtistNote, getSongNote } from '../editorial/lookup';
+import { getArtistNote, getSongNote } from '../editorial/lookup';
 import { joinArtistNames, releaseYear } from '../lib/format';
+import { albumMarks, AlbumBadges } from './Badge';
 import { usePlay } from '../playback/hooks';
 import { describeSpotifyError } from '../spotify/errors';
 import { detectLineLanguage } from '../translation/languageDetect';
@@ -57,12 +58,24 @@ export function countResults(results: SearchResults | undefined): number {
   );
 }
 
-function Result({ title, detail, noted, onSelect }: { title: string; detail: string; noted?: boolean; onSelect: () => void }) {
+function Result({
+  title,
+  detail,
+  noted = false,
+  episode = false,
+  onSelect,
+}: {
+  title: string;
+  detail: string;
+  noted?: boolean;
+  episode?: boolean;
+  onSelect: () => void;
+}) {
   return (
     <button type="button" data-result onClick={onSelect}>
       <b lang={detectLineLanguage(title)}>{title}</b>
       <span>
-        {noted && <em className="track-note">Note</em>}
+        <AlbumBadges noted={noted} episode={episode} />
         {detail}
       </span>
     </button>
@@ -197,7 +210,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
             key={`a-${album.id}`}
             title={album.name}
             detail={[album.albumType === 'album' ? 'Album' : album.albumType === 'single' ? 'Single' : 'Compilation', joinArtistNames(album.artists), releaseYear(album.releaseDate)].filter(Boolean).join(' · ')}
-            noted={getAlbumNote({ id: album.id, name: album.name, artistNames: album.artists.map((a) => a.name), releaseDate: album.releaseDate }) !== null}
+            {...albumMarks({ id: album.id, name: album.name, artistNames: album.artists.map((a) => a.name), releaseDate: album.releaseDate })}
             onSelect={() => go(`/album/${album.id}`)}
           />
         ))}
