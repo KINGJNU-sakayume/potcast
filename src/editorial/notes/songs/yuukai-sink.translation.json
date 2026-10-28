@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206918,
+    "durationMs": 243000
+  },
+  "segments": [
+    {
+      "startMs": 26010,
+      "endMs": 37430,
+      "translation": "문득 무언가가 스쳐 지나간 듯했다, 어슬렁어슬렁 내가 밖을 내다보았을 때"
+    },
+    {
+      "startMs": 37430,
+      "endMs": 48250,
+      "translation": "남의 불행과 불안 앞에 멈춰 서서, 행복과 안도를 빨아들이며 산다"
+    },
+    {
+      "startMs": 48250,
+      "endMs": 51240,
+      "translation": "자, 자, 투명하다"
+    },
+    {
+      "startMs": 51240,
+      "endMs": 53750,
+      "translation": "자, 자, 선명하다"
+    },
+    {
+      "startMs": 53750,
+      "endMs": 58670,
+      "translation": "자, 자, 심해로 녹아 간다, sink"
+    },
+    {
+      "startMs": 58670,
+      "endMs": 69640,
+      "translation": "슬픔이 사라지는 이 꿈속에서 지금도, 아아, 찾아서 노래하고 있다"
+    },
+    {
+      "startMs": 69640,
+      "endMs": 80560,
+      "translation": "슬픔이 늘어나는 이 나날 속에서 지금도, 아아, 찾아서 노래하고 있다"
+    },
+    {
+      "startMs": 80560,
+      "endMs": 101740,
+      "translation": "라 타 타 라 타 타, 라 타 타 라 타 타"
+    },
+    {
+      "startMs": 101740,
+      "endMs": 111980,
+      "translation": "퓨슉, 딴 주스 캔처럼 마음의 김이 빠져 간다"
+    },
+    {
+      "startMs": 111980,
+      "endMs": 122740,
+      "translation": "남의 불행과 불안의 덕을 보며, 행복과 안도를 제공하고 있다"
+    },
+    {
+      "startMs": 122740,
+      "endMs": 125610,
+      "translation": "자, 자, 투명하다"
+    },
+    {
+      "startMs": 125610,
+      "endMs": 128110,
+      "translation": "자, 자, 선명하다"
+    },
+    {
+      "startMs": 128110,
+      "endMs": 133330,
+      "translation": "자, 자, 심해로 녹아 간다, sink"
+    },
+    {
+      "startMs": 133330,
+      "endMs": 144350,
+      "translation": "슬픔이 사라지는 이 꿈속에서 지금도, 아아, 찾아서 노래하고 있다"
+    },
+    {
+      "startMs": 144350,
+      "endMs": 175980,
+      "translation": "슬픔이 늘어나는 이 나날 속에서 지금도, 아아, 찾아서 노래하고 있다"
+    },
+    {
+      "startMs": 175980,
+      "endMs": 181610,
+      "translation": "흔들렸다, 흔들렸다, 흔들린 물속"
+    },
+    {
+      "startMs": 181610,
+      "endMs": 186700,
+      "translation": "불쾌한, 불쾌한 숨을 쉬고 있다"
+    },
+    {
+      "startMs": 186700,
+      "endMs": 191960,
+      "translation": "흔들렸다, 흔들렸다, 흔들린 물속"
+    },
+    {
+      "startMs": 191960,
+      "endMs": 197540,
+      "translation": "깊구나, 깊구나, 가라앉아 간다"
+    },
+    {
+      "startMs": 197540,
+      "endMs": 208110,
+      "translation": "슬픔이 사라지는 이 꿈속에서 지금도, 아아, 찾아서 노래하고 있다"
+    },
+    {
+      "startMs": 208110,
+      "endMs": 219130,
+      "translation": "슬픔이 늘어나는 이 나날 속에서 지금도, 아아, 찾아서 노래하고 있다"
+    },
+    {
+      "startMs": 219130,
+      "endMs": 243000,
+      "translation": "라 타 타 라 타 타, 라 타 타 라 타 타"
+    }
+  ]
+}

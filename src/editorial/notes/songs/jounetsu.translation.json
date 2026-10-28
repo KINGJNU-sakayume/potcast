@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206911,
+    "durationMs": 240000
+  },
+  "segments": [
+    {
+      "startMs": 29150,
+      "endMs": 36640,
+      "translation": "태양계를 막 벗어났을 즈음에"
+    },
+    {
+      "startMs": 36640,
+      "endMs": 41590,
+      "translation": "생각났어"
+    },
+    {
+      "startMs": 41590,
+      "endMs": 52510,
+      "translation": "몇억 년이고 루프를 벗어나지 못하는 여행을 하고 있었던 것 같아"
+    },
+    {
+      "startMs": 52510,
+      "endMs": 56590,
+      "translation": "두근거림을 알아채기 시작했어"
+    },
+    {
+      "startMs": 56590,
+      "endMs": 64250,
+      "translation": "그즈음엔 시야에 벌써 안개가 끼어 가고 있었어"
+    },
+    {
+      "startMs": 64250,
+      "endMs": 68730,
+      "translation": "오, 오 정신이 돌아왔어"
+    },
+    {
+      "startMs": 68730,
+      "endMs": 77420,
+      "translation": "그즈음엔 그 기체는 이미 멈춰 있어"
+    },
+    {
+      "startMs": 77420,
+      "endMs": 83540,
+      "translation": "“언제나 너를 바닥없이 만지고 싶어"
+    },
+    {
+      "startMs": 83540,
+      "endMs": 89580,
+      "translation": "평열도 오를 만한 나날을 줄 테니까"
+    },
+    {
+      "startMs": 89580,
+      "endMs": 103540,
+      "translation": "이젠 어떻게 해도 네 마음이 녹아내려 조급해질 만큼의 늘 끓는 열을 그 박동에 매일 줄 테니까”"
+    },
+    {
+      "startMs": 103540,
+      "endMs": 110940,
+      "translation": "해저권이 막 보이기 시작했을 즈음에"
+    },
+    {
+      "startMs": 110940,
+      "endMs": 115990,
+      "translation": "생각났어"
+    },
+    {
+      "startMs": 115990,
+      "endMs": 126950,
+      "translation": "몇 겹의 압력이 피부에 녹아들어서 혈압이 오르는 것 같아"
+    },
+    {
+      "startMs": 126950,
+      "endMs": 132040,
+      "translation": "아아 말이 녹아 흘러내려"
+    },
+    {
+      "startMs": 132040,
+      "endMs": 138510,
+      "translation": "혈압이 흐트러지고 또 손끝이 저려 오고"
+    },
+    {
+      "startMs": 138510,
+      "endMs": 143130,
+      "translation": "이 두근거림을 알아채기 시작했어"
+    },
+    {
+      "startMs": 143130,
+      "endMs": 150960,
+      "translation": "그즈음엔 시야에 벌써 안개가 끼어 가고 있었어"
+    },
+    {
+      "startMs": 150960,
+      "endMs": 155460,
+      "translation": "오, 오 정신이 돌아왔어"
+    },
+    {
+      "startMs": 155460,
+      "endMs": 163550,
+      "translation": "그즈음엔 그 액체는 이미 올라와 있어"
+    },
+    {
+      "startMs": 163550,
+      "endMs": 170300,
+      "translation": "“아아 언제나 너를 바닥없이 만지고 싶어"
+    },
+    {
+      "startMs": 170300,
+      "endMs": 176160,
+      "translation": "평열도 오를 만한 나날을 줄 테니까"
+    },
+    {
+      "startMs": 176160,
+      "endMs": 188760,
+      "translation": "이젠 어떻게 해도 네 마음이 녹아내려 조급해질 만큼의 늘 끓는 열을 그 박동에 매일 줄 테니까”"
+    },
+    {
+      "startMs": 188760,
+      "endMs": 194080,
+      "translation": "아아 말이 녹아 흘러내려"
+    },
+    {
+      "startMs": 194080,
+      "endMs": 201170,
+      "translation": "뇌압을 채우고 또 꿈속 같아, 오"
+    },
+    {
+      "startMs": 201170,
+      "endMs": 207330,
+      "translation": "“언제나 너를 바닥없이 만지고 싶어"
+    },
+    {
+      "startMs": 207330,
+      "endMs": 213320,
+      "translation": "평열도 오를 만한 나날을 줄 테니까"
+    },
+    {
+      "startMs": 213320,
+      "endMs": 240000,
+      "translation": "이젠 어떻게 해도 네 마음이 녹아내려 조급해질 만큼의 늘 끓는 열을 그 박동에 매일 줄 테니까”"
+    }
+  ]
+}
