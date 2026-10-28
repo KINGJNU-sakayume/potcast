@@ -43,9 +43,9 @@ describe('discography digging (preview archive)', () => {
     await user.click(screen.getByRole('button', { name: 'Singles & EPs' }));
     await waitFor(() => expect(yearLabels()).toEqual(['2018', '2022']));
     expect(window.location.hash).toContain('group=single');
-    await user.click(screen.getByRole('button', { name: 'Oldest first' }));
+    await user.click(screen.getByRole('button', { name: '오래된 순' }));
     expect(yearLabels()).toEqual(['2022', '2018']);
-    expect(screen.getByRole('button', { name: 'Newest first' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: '최신 순' })).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Appears on' }));
     expect(await screen.findByRole('link', { name: 'Test Pressing' })).toBeInTheDocument();

@@ -278,7 +278,7 @@ function LyricsMode({
               aria-pressed={view.preferences.translationEnabled}
               onClick={() => view.setPreferences({ translationEnabled: !view.preferences.translationEnabled })}
             >
-              Translation <b>{view.preferences.translationEnabled ? 'On' : 'Off'}</b>
+              번역 <b>{view.preferences.translationEnabled ? '켬' : '끔'}</b>
             </button>
           )}
           {wakeLockSupported && (

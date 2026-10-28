@@ -30,7 +30,7 @@ const parts = () => screen.getByRole('list', { name: '이 장의 구성' });
 const hosts = () => within(now()).getByRole('group', { name: 'The hosts' });
 /** The intro's own button: the transport's play button says the same. */
 const playEpisode = async (user: ReturnType<typeof userEvent.setup>) => {
-  await user.click(within(await screen.findByRole('region', { name: 'Episode' })).getByRole('button', { name: 'Play episode' }));
+  await user.click(within(await screen.findByRole('region', { name: 'Episode' })).getByRole('button', { name: '에피소드 재생' }));
 };
 const openScript = async (user: ReturnType<typeof userEvent.setup>) => {
   await user.click(await screen.findByRole('button', { name: '대본' }));
@@ -46,11 +46,11 @@ describe('an album episode on the desktop (preview archive, captions for a voice
   it('is offered on the album page of an album that has one', async () => {
     const user = userEvent.setup();
     renderApp(`#/album/${IGOR}`);
-    await user.click(await screen.findByRole('link', { name: 'Listen with the hosts' }));
+    await user.click(await screen.findByRole('link', { name: '진행자와 듣기' }));
     expect(await screen.findByRole('heading', { level: 2, name: 'Episode' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 1, name: 'IGOR' })).toBeInTheDocument();
     expect(within(now()).getByText('『IGOR』 같이 듣기', { selector: '.ep-title' })).toBeInTheDocument();
-    expect(screen.getByText(/13 chapters · about \d+ (hr|min)/)).toBeInTheDocument();
+    expect(screen.getByText(/13장 · 약 \d+분/)).toBeInTheDocument();
     // jsdom has no speech synthesis: the page says so instead of going quiet.
     expect(screen.getByText('Captions only')).toBeInTheDocument();
     expect(within(now()).getByText(/두 사람이 『IGOR』 열두 곡을 순서대로 같이 듣는다/)).toBeInTheDocument();
@@ -60,8 +60,8 @@ describe('an album episode on the desktop (preview archive, captions for a voice
 
   it('has no such link on an album without an episode', async () => {
     renderApp('#/album/052EiTRYh35MuDVJN9Emdh');
-    expect(await screen.findByRole('button', { name: 'Play album' })).toBeInTheDocument();
-    expect(screen.queryByRole('link', { name: 'Listen with the hosts' })).not.toBeInTheDocument();
+    expect(await screen.findByRole('button', { name: '앨범 재생' })).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: '진행자와 듣기' })).not.toBeInTheDocument();
   });
 
   it('says so at the episode address of an album without one', async () => {
@@ -96,9 +96,9 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     await user.click(screen.getByRole('button', { name: '대본 닫기' }));
     expect(screen.queryByRole('group', { name: 'Script' })).not.toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: 'Pause' }));
-    await user.click(screen.getByRole('button', { name: 'Continue' }));
-    expect(screen.getByRole('button', { name: 'Pause' })).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: '일시정지' }));
+    await user.click(screen.getByRole('button', { name: '이어 듣기' }));
+    expect(screen.getByRole('button', { name: '일시정지' })).toBeInTheDocument();
   });
 
   it('starts from any line of the script, and from a stretch of music', async () => {
@@ -140,7 +140,7 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     // The track's own lyrics, with their translation, in the lyrics' place.
     await waitFor(() => expect(container.querySelector('.lyrics-panel .current-lyric:not(.is-state)')).toBeInTheDocument());
     await waitFor(() => expect(container.querySelector('.lyrics-panel .current-trans')).toHaveAttribute('lang', 'ko'));
-    expect(screen.getByRole('button', { name: /^Translation/ })).toHaveTextContent('On');
+    expect(screen.getByRole('button', { name: /^번역/ })).toHaveTextContent('켬');
   });
 
   it('keeps running on other pages: the rail leads back, and Space and the transport pause the episode', async () => {
@@ -170,7 +170,7 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     await playEpisode(user);
     // The hosts are still talking: the album stands under the cover, linked as on the intro.
     await user.click(within(now()).getByRole('link', { name: 'Album' }));
-    expect(await screen.findByRole('link', { name: 'Back to the episode' })).toHaveAttribute('href', `#/episode/${IGOR}`);
+    expect(await screen.findByRole('link', { name: '에피소드로 돌아가기' })).toHaveAttribute('href', `#/episode/${IGOR}`);
   });
 
   it('has the episode settings in the settings column', async () => {
@@ -181,7 +181,7 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     expect(within(settings).getByText(/This browser has no Korean voice/)).toBeInTheDocument();
     await user.click(within(within(settings).getByRole('group', { name: 'Pace' })).getByRole('button', { name: '1.25×' }));
     expect(preferencesStore.get().episodeRate).toBe(1.25);
-    await user.click(within(settings).getByRole('button', { name: 'Music stops' }));
+    await user.click(within(settings).getByRole('button', { name: '음악 멈추기' }));
     expect(preferencesStore.get().episodeTalkOver).toBe('pause');
     expect(within(settings).queryByRole('slider', { name: 'Music level under talk' })).not.toBeInTheDocument();
   });
@@ -192,20 +192,20 @@ describe('an episode that was left part-way', () => {
     const user = userEvent.setup();
     renderApp(`#/episode/${IGOR}`);
     expect(await screen.findByRole('region', { name: 'Episode' })).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: 'From the top' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: '처음부터' })).not.toBeInTheDocument();
 
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /후렴 뒤에 떠나지 말라는 부탁이 세 번/ }));
     await user.click(screen.getByRole('button', { name: '에피소드 끝내기' }));
     expect(now()).toHaveAttribute('data-status', 'idle');
-    expect(screen.getByText('Left at 3 / 13 · EARFQUAKE')).toBeInTheDocument();
+    expect(screen.getByText('멈춘 곳 3 / 13 · EARFQUAKE')).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: '대본 닫기' }));
-    await user.click(within(screen.getByRole('region', { name: 'Episode' })).getByRole('button', { name: 'Continue' }));
+    await user.click(within(screen.getByRole('region', { name: 'Episode' })).getByRole('button', { name: '이어 듣기' }));
     expect(within(hosts()).getByText(/후렴 뒤에 떠나지 말라는 부탁이 세 번/)).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: '에피소드 끝내기' }));
 
-    await user.click(screen.getByRole('button', { name: 'From the top' }));
+    await user.click(screen.getByRole('button', { name: '처음부터' }));
     expect(within(hosts()).getByText(FIRST_LINE)).toBeInTheDocument();
   });
 });
@@ -253,7 +253,7 @@ describe('a track from outside the album', () => {
   it('takes the cover, the title and the lyrics\' place while the episode steps out to it', async () => {
     const user = userEvent.setup();
     renderApp(`#/episode/${MBDTF}`);
-    expect(await screen.findByText(/5 chapters · about \d+ min/)).toBeInTheDocument();
+    expect(await screen.findByText(/5장 · 약 \d+분/)).toBeInTheDocument();
     const script = await openScript(user);
     const row = within(script).getByRole('button', { name: /킹 크림슨의 원곡, 첫 절과 제목을 부르는 목소리/ });
     expect(row).toHaveTextContent('21st Century Schizoid Man — King Crimson · 1969');
@@ -301,7 +301,7 @@ describe('an episode whose music the listener plays themselves', () => {
   const playItMyself = async (user: ReturnType<typeof userEvent.setup>) => {
     await user.click(await screen.findByRole('button', { name: '목소리와 속도' }));
     const settings = screen.getByRole('dialog', { name: '목소리와 속도' });
-    await user.click(within(settings).getByRole('button', { name: 'I play it myself' }));
+    await user.click(within(settings).getByRole('button', { name: '내가 직접 틀기' }));
     expect(preferencesStore.get().episodeMusic).toBe('manual');
     // Talking over the music is not a choice any more: the music is not the episode's to turn down.
     expect(within(settings).queryByRole('group', { name: 'Music while a host talks over it' })).not.toBeInTheDocument();
@@ -339,7 +339,7 @@ describe('an episode whose music the listener plays themselves', () => {
     expect(within(now()).queryByRole('list', { name: 'The lines of this stretch, translated' })).not.toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: '목소리와 속도' }));
-    await user.click(within(screen.getByRole('dialog', { name: '목소리와 속도' })).getByRole('button', { name: 'Played for me' }));
+    await user.click(within(screen.getByRole('dialog', { name: '목소리와 속도' })).getByRole('button', { name: '자동으로 틀기' }));
     await waitFor(() => expect(screen.queryByRole('heading', { level: 2, name: 'Your turn' })).not.toBeInTheDocument());
     expect(now()).toHaveAttribute('data-status', 'playing');
   });

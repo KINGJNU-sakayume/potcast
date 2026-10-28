@@ -47,7 +47,7 @@ describe('ARC Music (preview archive)', () => {
     expect(screen.getByText('Listening note')).toBeInTheDocument();
     expect(screen.getByText(/애도를 다루는 곡이지만/)).toBeInTheDocument();
 
-    const toggle = screen.getByRole('button', { name: /Translation/ });
+    const toggle = screen.getByRole('button', { name: /^번역/ });
     expect(toggle).toHaveAttribute('aria-pressed', 'true');
     await user.click(toggle);
     await waitFor(() => expect(screen.queryByText(TEST_TRANSLATIONS_KO[line]!)).not.toBeInTheDocument());

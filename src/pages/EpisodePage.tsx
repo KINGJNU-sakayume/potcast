@@ -30,7 +30,7 @@ import { captionText, splitUtterances } from '../episode/speechText';
 import { sungLinesBetween } from '../episode/sungLine';
 import { cueAt, episodeTimeline, speechAt, type EpisodeTimeline } from '../episode/timeline';
 import { EpisodeError, type Cue, type Episode, type EpisodeTrack, type MusicCue, type SpokenLine } from '../episode/types';
-import { formatDuration, formatRuntime, joinArtistNames } from '../lib/format';
+import { formatDuration, formatMinutes, joinArtistNames } from '../lib/format';
 import { pickImageUrl } from '../lib/images';
 import { isSpotifyId } from '../lib/spotifyUri';
 import { useTimedLyrics } from '../lyrics/useTimedLyrics';
@@ -1024,7 +1024,7 @@ export function EpisodePage() {
   const ended = active && state.status === 'ended';
   const chapter = active && !ended ? chapterOf(episode, state.cueIndex) : null;
   const recordedMs = (key: string) => narration?.clips[key];
-  const minutes = formatRuntime(timeline!.totalMs);
+  const minutes = formatMinutes(timeline!.totalMs);
   // How many of the hosts' lines the site has recordings of; the rest fall to the browser's voice.
   const recorded = coverage(episode, (key) => recordedMs(key) !== undefined);
   const engineName = narration?.engine.name ?? 'Recorded';
@@ -1060,7 +1060,7 @@ export function EpisodePage() {
     if (active) runner.jump(cueIndex, lineIndex);
     else runner.start(episode, cueIndex, lineIndex);
   };
-  const mainLabel = !active ? (bookmark ? 'Continue' : 'Play episode') : playing ? 'Pause' : ended ? 'Play again' : 'Continue';
+  const mainLabel = !active ? (bookmark ? '이어 듣기' : '에피소드 재생') : playing ? '일시정지' : ended ? '다시 듣기' : '이어 듣기';
 
   const ownMusic = preferences.episodeMusic === 'manual';
   const playItMyself = () => {
@@ -1087,8 +1087,8 @@ export function EpisodePage() {
   else panel = 'rest';
 
   const overview = leftAt
-    ? `Left at ${leftAt.number} / ${episode.chapters.length} · ${leftAt.title}`
-    : `${episode.chapters.length} chapters · about ${minutes}`;
+    ? `멈춘 곳 ${leftAt.number} / ${episode.chapters.length} · ${leftAt.title}`
+    : `${episode.chapters.length}장 · 약 ${minutes}`;
 
   return (
     <div className="view active">
@@ -1142,17 +1142,17 @@ export function EpisodePage() {
                 <PanelHead title="Episode">
                   <span lang="ko">{overview}</span>
                 </PanelHead>
-                <IntroPanel episode={episode} facts={[`About ${minutes}`, voiceLabel]} hint={voiceHint} fineprint={fineprint}>
+                <IntroPanel episode={episode} facts={[`약 ${minutes}`, voiceLabel]} hint={voiceHint} fineprint={fineprint}>
                   <button type="button" className="plain-action primary" onClick={playOrPause}>
                     {mainLabel}
                   </button>
                   {bookmark && (
                     <button type="button" className="plain-action" onClick={() => runner.start(episode)}>
-                      From the top
+                      처음부터
                     </button>
                   )}
                   <button type="button" className="plain-action" onClick={() => setScriptOpen(true)}>
-                    Read the script
+                    대본 읽기
                   </button>
                 </IntroPanel>
               </>

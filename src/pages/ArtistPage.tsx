@@ -98,14 +98,14 @@ function ReleaseRow({ group }: { group: EditionGroup }) {
         {open && <Editions group={group} id={editionsId} />}
         <div className="release-actions">
           <button type="button" onClick={() => play({ contextUri: release.uri }, { openNowPlaying: true })}>
-            Play
+            재생
           </button>
           <Link className="release-open" to={`/album/${release.id}`}>
-            Open album
+            앨범 열기
           </Link>
           {marks.episode && (
             <Link className="release-open" to={`/episode/${release.id}`}>
-              Listen with the hosts
+              진행자와 듣기
             </Link>
           )}
         </div>
@@ -213,7 +213,7 @@ function Discography({ artistId, eras, onEra }: { artistId: string; eras?: reado
             ))}
           </div>
           <button type="button" className="text-toggle" onClick={() => update({ order: order === 'asc' ? 'desc' : 'asc' })}>
-            {order === 'asc' ? 'Oldest first' : 'Newest first'}
+            {order === 'asc' ? '오래된 순' : '최신 순'}
           </button>
         </div>
       </div>
@@ -353,11 +353,11 @@ export function ArtistPage() {
               <NotePreview kind="ARTIST" note={note} title={data.name} subtitle={origin} titleLang={detectLineLanguage(data.name)} />
               <div className="object-actions">
                 <button type="button" className="plain-action primary" onClick={() => play({ contextUri: data.uri }, { openNowPlaying: true })}>
-                  Play artist
+                  아티스트 재생
                 </button>
                 {mode === 'spotify' && (
                   <a className="plain-action" href={`https://open.spotify.com/artist/${data.id}`} target="_blank" rel="noopener noreferrer">
-                    Open in Spotify<span className="visually-hidden"> (opens in a new tab)</span>
+                    Spotify에서 열기<span className="visually-hidden"> (새 탭)</span>
                   </a>
                 )}
               </div>

@@ -129,10 +129,10 @@ describe('curated lyric translation on Now Playing', () => {
     renderNowPlaying();
 
     expect(await screen.findByText('큐레이션 번역 문장')).toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: /Translation (On|Off)/ }));
+    await user.click(screen.getByRole('button', { name: /번역 (켬|끔)/ }));
     await waitFor(() => expect(screen.queryByText('큐레이션 번역 문장')).not.toBeInTheDocument());
     // Preferences live for the session: switch it back on for the other tests.
-    await user.click(screen.getByRole('button', { name: /Translation (On|Off)/ }));
+    await user.click(screen.getByRole('button', { name: /번역 (켬|끔)/ }));
     expect(await screen.findByText('큐레이션 번역 문장')).toBeInTheDocument();
   });
 

@@ -64,9 +64,9 @@
 @media (min-width: 2400px) { .desktop { --panel-w: 680px; --gutter: 96px; } }
 @media (max-width: 1180px) { .desktop { --panel-w: 400px; } }
 
-.desktop .label, .desktop .artist-number, .desktop .note-kicker, .desktop .note-more, .desktop .text-toggle,
-.desktop .row-play, .desktop .plain-action, .desktop .track-note, .desktop .section-count,
+.desktop .label, .desktop .artist-number, .desktop .note-kicker, .desktop .track-note, .desktop .section-count,
 .desktop .sequence-head span, .desktop .listening-head span { font-size: calc(11px * var(--t)); }
+.desktop .note-more, .desktop .text-toggle, .desktop .row-play, .desktop .plain-action { font-size: calc(13px * var(--t)); }
 .desktop .note-preview p { font-size: calc(14px * var(--t)); }
 .desktop .note-drawer-copy { font-size: calc(16px * var(--t)); }
 .desktop .note-drawer-subtitle { font-size: calc(13px * var(--t)); }
@@ -150,7 +150,6 @@
 @media (min-width: 2400px) {
   .desktop .np { --share: .4; --art-max: 1000px; --meta-reserve: 250px; --lyric-width: 1500px; }
   .desktop .np-grid { grid-template-columns: var(--art) minmax(0, var(--read-max)); justify-content: center; }
-  .desktop .np.note-open { --share: .38; }
 }
 .desktop .np-object { grid-area: object; min-width: 0; min-height: 0; display: grid; place-items: center; }
 .desktop .np-art { width: var(--art); min-width: 0; margin: 0; }
@@ -205,23 +204,8 @@
   .desktop .volume-slider { width: 64px; }
 }
 
-/* Full note open on 16:9 and the half window: the lyrics run across, the album drops to the corner.
-   On 21:9 the note is a third column and nothing else moves. Focus Mode has its own layout. */
-@media (max-width: 2399.98px) {
-  .desktop:not([data-focus]) .np.note-open .np-grid { grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto; grid-template-areas: "head head" "lyrics lyrics" "object controls"; column-gap: 40px; }
-  .desktop:not([data-focus]) .np.note-open .note-line { display: none; }
-  .desktop:not([data-focus]) .np.note-open .np-object { place-items: end start; align-self: end; }
-  .desktop:not([data-focus]) .np.note-open .np-art { width: auto; max-width: 400px; display: grid; grid-template-columns: var(--corner-cover) minmax(0, 1fr); align-items: end; gap: 18px; }
-  .desktop:not([data-focus]) .np.note-open .np-cover { width: var(--corner-cover); }
-  .desktop:not([data-focus]) .np.note-open .np-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 18px 40px -18px var(--cover-shadow); }
-  .desktop:not([data-focus]) .np.note-open .np-caption { margin-top: 0; padding-bottom: 2px; }
-  .desktop:not([data-focus]) .np.note-open .np-caption h1 { font-size: clamp(26px, 3.3vh, 40px); line-height: 1; letter-spacing: -.045em; }
-  .desktop:not([data-focus]) .np.note-open .artist-line { margin-top: 8px; font-size: calc(14px * var(--t)); white-space: normal; }
-}
-@container npmain (max-width: 820px) {
-  .desktop:not([data-focus]) .np.note-open .np-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto auto; grid-template-areas: "head" "lyrics" "object" "controls"; }
-  .desktop:not([data-focus]) .np.note-open .np-object { margin-bottom: 18px; }
-}
+/* A note, the queue or settings open beside Now Playing all follow one rule: the column pushes the
+   stage aside and the stage keeps its composition, scaled to the room that is left. */
 @container npmain (max-width: 560px) {
   .desktop .note-line { grid-template-columns: minmax(0, 1fr) auto; }
   .desktop .note-line-kicker { grid-column: 1 / -1; }

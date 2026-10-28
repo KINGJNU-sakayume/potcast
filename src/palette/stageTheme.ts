@@ -83,7 +83,8 @@ export function mapPaletteToStageTheme(palette: AlbumPalette | null): StageTheme
   const ink = ensureContrast(inkSeed, bg, 10) ?? readableOn(bg, '#ffffff', '#000000');
   const ink2 = between(ink, bg, 0.22, 7);
   const muted = between(ink, bg, 0.34, 5.2);
-  const subtle = between(ink, bg, 0.42, 4.5);
+  // Text tokens keep headroom over 4.5:1: the stage's glow lightens (or darkens) parts of the surface they sit on.
+  const subtle = between(ink, bg, 0.42, 4.9);
   const faint = between(ink, bg, 0.62, 2.4);
 
   // Accent: the most characterful other colour of the cover, made legible on the surface.
@@ -91,7 +92,7 @@ export function mapPaletteToStageTheme(palette: AlbumPalette | null): StageTheme
     .map((c) => ({ c, rgb: parseHex(c) }))
     .find(({ rgb }) => rgb && rgbToHsl(rgb).s >= 0.2 && contrastRatio(rgb, bg) >= 1.6)?.c;
   const active = (accentSource && ensureContrast(accentSource, bg, 3)) ?? ink;
-  const activeText = (accentSource && ensureContrast(accentSource, bg, 4.5)) ?? ink;
+  const activeText = (accentSource && ensureContrast(accentSource, bg, 5)) ?? ink;
 
   // Soft light across the surface: a brighter tint of the cover colour, never grey.
   const glow = hex({

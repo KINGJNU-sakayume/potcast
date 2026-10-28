@@ -7,7 +7,7 @@ import { speechText } from './speechText';
 import { chooseVoices, koreanVoices, useVoices } from './voices';
 
 const PACES = [0.9, 1, 1.1, 1.25] as const;
-const HOST_LABELS = ['First host', 'Second host'];
+const HOST_LABELS = ['첫 진행자', '둘째 진행자'];
 const SAMPLE = ['안녕하세요. 이 목소리로 앨범을 같이 듣겠습니다.', '저는 이 목소리로 곡 이야기를 덧붙이겠습니다.'];
 
 /** The "Hear it" sample being said, kept reachable until it has ended. */
@@ -84,7 +84,7 @@ export function EpisodeSettings() {
 
   return (
     <>
-      <div className="label">Episodes</div>
+      <div className="label">에피소드</div>
       {narration && (
         <>
           <p>
@@ -94,8 +94,8 @@ export function EpisodeSettings() {
           {sampled.length > 0 && (
             <div className="settings-fields">
               <div className="settings-field" role="group" aria-label="The recorded voices">
-                <span>Voices</span>
-                <span className="settings-choices">
+                <span>목소리 견본</span>
+                <span className="settings-choices settings-voices">
                   {sampled.map((voice) => (
                     <button
                       key={voice}
@@ -132,7 +132,7 @@ export function EpisodeSettings() {
               <label key={label} className="settings-field">
                 <span>{label}</span>
                 <select value={preferences.episodeVoices[slot] ?? ''} onChange={(event) => setVoice(slot, event.target.value)}>
-                  <option value="">Automatic{chosen[slot]?.voice && !preferences.episodeVoices[slot] ? ` · ${shortName(chosen[slot].voice)}` : ''}</option>
+                  <option value="">자동{chosen[slot]?.voice && !preferences.episodeVoices[slot] ? ` · ${shortName(chosen[slot].voice)}` : ''}</option>
                   {korean.map((voice) => (
                     <option key={voice.voiceURI} value={voice.voiceURI}>
                       {shortName(voice)}
@@ -140,7 +140,7 @@ export function EpisodeSettings() {
                   ))}
                 </select>
                 <button type="button" className="note-more" onClick={() => hear(slot)}>
-                  Hear it
+                  들어보기
                 </button>
               </label>
             ))}
@@ -150,7 +150,7 @@ export function EpisodeSettings() {
 
       <div className="settings-fields">
         <div className="settings-field" role="group" aria-label="Pace">
-          <span>Pace</span>
+          <span>속도</span>
           <span className="settings-choices">
             {PACES.map((pace) => (
               <button
@@ -166,32 +166,32 @@ export function EpisodeSettings() {
           </span>
         </div>
         <div className="settings-field" role="group" aria-label="Who plays the music">
-          <span>Music</span>
+          <span>음악</span>
           <span className="settings-choices">
             <button type="button" className="text-toggle" aria-pressed={preferences.episodeMusic === 'auto'} onClick={() => setPreferences({ episodeMusic: 'auto' })}>
-              Played for me
+              자동으로 틀기
             </button>
             <button type="button" className="text-toggle" aria-pressed={preferences.episodeMusic === 'manual'} onClick={() => setPreferences({ episodeMusic: 'manual' })}>
-              I play it myself
+              내가 직접 틀기
             </button>
           </span>
         </div>
         {preferences.episodeMusic === 'auto' && (
           <>
             <div className="settings-field" role="group" aria-label="Music while a host talks over it">
-              <span>Under talk</span>
+              <span>대화 중 음악</span>
               <span className="settings-choices">
                 <button type="button" className="text-toggle" aria-pressed={preferences.episodeTalkOver === 'duck'} onClick={() => setPreferences({ episodeTalkOver: 'duck' })}>
-                  Music turned down
+                  음악 줄이기
                 </button>
                 <button type="button" className="text-toggle" aria-pressed={preferences.episodeTalkOver === 'pause'} onClick={() => setPreferences({ episodeTalkOver: 'pause' })}>
-                  Music stops
+                  음악 멈추기
                 </button>
               </span>
             </div>
             {preferences.episodeTalkOver === 'duck' && (
               <div className="settings-field">
-                <span>Level</span>
+                <span>음량</span>
                 <Slider
                   className="volume-slider settings-slider"
                   label="Music level under talk"

@@ -47,7 +47,7 @@ function SaveAlbumButton({ uri }: { uri: string }) {
       disabled={saved.isPending || saved.isError || toggle.isPending}
       onClick={() => toggle.mutate({ uri, saved: !isSaved })}
     >
-      {isSaved ? 'Saved to library' : 'Save album'}
+      {isSaved ? '보관함에 있음' : '보관함에 저장'}
     </button>
   );
 }
@@ -212,7 +212,7 @@ export function AlbumPage() {
               <div className="object-actions">
                 {episode && (
                   <Link className="plain-action primary" to={`/episode/${loaded.id}`} title={episode.title}>
-                    {episodeRunning ? 'Back to the episode' : 'Listen with the hosts'}
+                    {episodeRunning ? '에피소드로 돌아가기' : '진행자와 듣기'}
                   </Link>
                 )}
                 <button
@@ -221,7 +221,7 @@ export function AlbumPage() {
                   disabled={loaded.tracks.length === 0 && loaded.tracksComplete}
                   onClick={() => play({ contextUri: loaded.uri }, { openNowPlaying: true })}
                 >
-                  Play album
+                  앨범 재생
                 </button>
                 <SaveAlbumButton uri={loaded.uri} />
               </div>

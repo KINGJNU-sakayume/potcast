@@ -135,7 +135,8 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 
 /* Secondary controls beneath the transport */
 .transport-extras { display: flex; justify-content: space-between; align-items: center; gap: 10px 22px; flex-wrap: wrap; margin-top: 14px; }
-.text-toggle { display: inline-flex; align-items: center; gap: 6px; border: 0; background: transparent; padding: 4px 0; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); white-space: nowrap; }
+/* Controls read at 13px or more, in their own words (WCAG: legible labels, targets of 24px or more). */
+.text-toggle { display: inline-flex; align-items: center; gap: 6px; min-height: 28px; border: 0; background: transparent; padding: 4px 0; font-size: 13px; letter-spacing: .01em; color: var(--muted); white-space: nowrap; }
 .text-toggle .icon { width: 15px; height: 15px; }
 .text-toggle:hover:not(:disabled) { color: var(--ink); }
 .text-toggle[aria-pressed='true'] { color: var(--ink); }
@@ -164,7 +165,8 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 .note-preview p { margin: 10px 0 0; font-size: 14px; line-height: 1.72; color: var(--muted); max-width: 54ch; }
 /* The full note is open beside the page: the summary steps back. */
 .note-preview[data-open] p { opacity: .45; }
-.note-more { margin-top: 10px; border: 0; background: transparent; padding: 0; font-size: 11px; letter-spacing: .09em; color: var(--ink); text-transform: uppercase; }
+.note-more { margin-top: 10px; min-height: 24px; border: 0; background: transparent; padding: 0; font-size: 13px; letter-spacing: .01em; color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+.note-more:hover { text-decoration-color: currentColor; }
 .note-more:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 /* The shared right drawer: notes and the queue */
