@@ -121,7 +121,7 @@ function Rail({ panel }: { panel: Panel | null }) {
         </div>
         {PREVIEW_LABEL && (
           <span className="preview-mark" title={`Branch preview: ${PREVIEW_LABEL}`}>
-            미리보기
+            Preview
           </span>
         )}
       </div>
@@ -130,7 +130,7 @@ function Rail({ panel }: { panel: Panel | null }) {
 }
 
 /**
- * Focus Mode's way out for the mouse: moving it shows “닫기” in the top
+ * Focus Mode's way out for the mouse: moving it shows “Close” in the top
  * right corner for a few seconds. Esc and F still work from the keyboard.
  */
 function FocusExit({ onExit }: { onExit: () => void }) {
@@ -157,7 +157,7 @@ function FocusExit({ onExit }: { onExit: () => void }) {
       onFocus={() => setShown(true)}
       onClick={onExit}
     >
-      닫기 <span aria-hidden="true">×</span>
+      Close <span aria-hidden="true">×</span>
     </button>
   );
 }

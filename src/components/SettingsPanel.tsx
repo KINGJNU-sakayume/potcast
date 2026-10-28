@@ -43,7 +43,7 @@ export function SettingsBody() {
         <p>Connected · this phone is the remote. The Spotify app, or another device signed in to your account, plays the audio.</p>
       ) : (
         <p className="settings-device" data-tone={deviceStatus.tone}>
-          연결됨 · 재생 기기: <b>{deviceStatus.label}</b>
+          Connected · playing on <b>{deviceStatus.label}</b>
           {deviceStatus.detail && ` · ${deviceStatus.detail}`}
         </p>
       )}

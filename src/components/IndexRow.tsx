@@ -4,7 +4,7 @@ import type { ImageRef, TrackIdentity } from '../domain/types';
 import { formatDuration, formatTrackNumber, joinArtistNames } from '../lib/format';
 import { detectLineLanguage } from '../translation/languageDetect';
 import { ArtistLinks } from './ArtistLinks';
-import { Badge } from './Badge';
+import { AlbumBadges } from './Badge';
 import { CoverImage } from './CoverImage';
 import { PlayingMark } from './PlayingMark';
 
@@ -46,10 +46,12 @@ export function TrackIndexRow({
             onClick={onPlay}
           >
             {track.title}
+            {noted && <AlbumBadges noted episode={false} />}
           </button>
         ) : (
           <span className="index-title" lang={detectLineLanguage(track.title)}>
             {track.title}
+            {noted && <AlbumBadges noted episode={false} />}
           </span>
         )}
         <span className="index-meta">
@@ -65,7 +67,6 @@ export function TrackIndexRow({
         </span>
       </span>
       <span className="index-aside">
-        {noted && <Badge kind="note" />}
         {aside}
         <span>{formatDuration(track.durationMs)}</span>
       </span>
@@ -83,6 +84,7 @@ export function ObjectRow({
   paletteKey,
   onPlay,
   primary = true,
+  titleAfter,
 }: {
   images: readonly ImageRef[];
   title: string;
@@ -93,6 +95,8 @@ export function ObjectRow({
   paletteKey?: string;
   onPlay?: () => void;
   primary?: boolean;
+  /** Shown right after the title: the note and episode marks. */
+  titleAfter?: ReactNode;
 }) {
   return (
     <li className="object-row">
@@ -108,6 +112,7 @@ export function ObjectRow({
             {title}
           </span>
         )}
+        {titleAfter}
         {meta && <div className="object-row-meta">{meta}</div>}
       </div>
       {onPlay && (

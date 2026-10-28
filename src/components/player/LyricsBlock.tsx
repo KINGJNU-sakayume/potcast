@@ -91,7 +91,7 @@ export function LyricsBlock({ track, lyricsState }: { track: TrackIdentity; lyri
               aria-pressed={preferences.translationEnabled}
               onClick={() => setPreferences({ translationEnabled: !preferences.translationEnabled })}
             >
-              번역 <b>{preferences.translationEnabled ? '켬' : '끔'}</b>
+              Translation <b>{preferences.translationEnabled ? 'On' : 'Off'}</b>
             </button>
           </span>
         )}

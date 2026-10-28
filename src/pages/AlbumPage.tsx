@@ -6,7 +6,7 @@ import { usePageSurface } from '../app/surface';
 import { useIsMobile } from '../app/useIsMobile';
 import { useAlbum, useSavedState, useToggleSaved } from '../catalogue/queries';
 import { ArtistLinks } from '../components/ArtistLinks';
-import { Badge } from '../components/Badge';
+import { AlbumBadges } from '../components/Badge';
 import { CoverImage } from '../components/CoverImage';
 import { DiscographyNav } from '../components/DiscographyNav';
 import { NotePreview } from '../components/NotePreview';
@@ -20,7 +20,7 @@ import {
   albumTypeLabel,
   formatAlbumRelease,
   formatDuration,
-  formatMinutes,
+  formatRuntime,
   formatTrackNumber,
   joinArtistNames,
   pluralise,
@@ -47,7 +47,7 @@ function SaveAlbumButton({ uri }: { uri: string }) {
       disabled={saved.isPending || saved.isError || toggle.isPending}
       onClick={() => toggle.mutate({ uri, saved: !isSaved })}
     >
-      {isSaved ? '보관함에 있음' : '보관함에 저장'}
+      {isSaved ? 'Saved to library' : 'Save album'}
     </button>
   );
 }
@@ -83,12 +83,14 @@ function TrackSequence({ album }: { album: AlbumDetail }) {
             {current ? <PlayingMark playing={current.playing} /> : formatTrackNumber(track.trackNumber)}
           </span>
           <span className="track-text">
-            <b lang={detectLineLanguage(track.name)}>{track.name}</b>
+            <b lang={detectLineLanguage(track.name)}>
+              {track.name}
+              {noted && <AlbumBadges noted episode={false} />}
+            </b>
             {guests.length > 0 && <span className="track-guests">with {joinArtistNames(guests)}</span>}
           </span>
-          {/* Fixed columns: note, explicit, length — a badge never moves the time. */}
+          {/* Fixed columns: explicit, length — the time never moves. */}
           <span className="track-aside">
-            <span className="track-aside-note">{noted && <Badge kind="note" />}</span>
             <span className="track-aside-explicit">
               {track.explicit && (
                 <span className="explicit" role="img" aria-label="Explicit" title="Explicit">
@@ -212,7 +214,7 @@ export function AlbumPage() {
               <div className="object-actions">
                 {episode && (
                   <Link className="plain-action primary" to={`/episode/${loaded.id}`} title={episode.title}>
-                    {episodeRunning ? '에피소드로 돌아가기' : '진행자와 듣기'}
+                    {episodeRunning ? 'Back to the episode' : 'Listen with the hosts'}
                   </Link>
                 )}
                 <button
@@ -221,7 +223,7 @@ export function AlbumPage() {
                   disabled={loaded.tracks.length === 0 && loaded.tracksComplete}
                   onClick={() => play({ contextUri: loaded.uri }, { openNowPlaying: true })}
                 >
-                  앨범 재생
+                  Play album
                 </button>
                 <SaveAlbumButton uri={loaded.uri} />
               </div>
@@ -240,7 +242,7 @@ export function AlbumPage() {
                 </div>
                 <div>
                   <b>Duration</b>
-                  <span>{loaded.tracks.length > 0 ? formatMinutes(loaded.totalDurationMs) : '—'}</span>
+                  <span>{loaded.tracks.length > 0 ? formatRuntime(loaded.totalDurationMs) : '—'}</span>
                 </div>
               </div>
               <NotePreview
@@ -250,18 +252,13 @@ export function AlbumPage() {
                 titleLang={titleLang}
                 subtitle={[joinArtistNames(loaded.artists), year, trackCount ? pluralise(trackCount, 'track') : null].filter(Boolean).join(' · ')}
               />
-              {fineprint.length > 0 && (
-                <p className="fineprint">
-                  <span className="fineprint-label">레이블·저작권</span> {fineprint.join(' · ')}
-                </p>
-              )}
             </div>
           </section>
 
           <section className="album-sequence" aria-labelledby="sequence-title">
             <div className="sequence-head">
               <h2 id="sequence-title">Track Sequence</h2>
-              <span>{loaded.tracks.length > 0 ? `${pluralise(loaded.tracks.length, 'track')} · ${formatMinutes(loaded.totalDurationMs)}` : ''}</span>
+              <span>{loaded.tracks.length > 0 ? `${pluralise(loaded.tracks.length, 'track')} · ${formatRuntime(loaded.totalDurationMs)}` : ''}</span>
             </div>
             {loaded.tracks.length > 0 ? (
               <TrackSequence album={loaded} />
@@ -273,6 +270,11 @@ export function AlbumPage() {
               </div>
             )}
             <DiscographyNav album={loaded} />
+            {fineprint.length > 0 && (
+              <p className="fineprint">
+                <span className="fineprint-label">Label · ©</span> {fineprint.join(' · ')}
+              </p>
+            )}
           </section>
         </div>
       </div>

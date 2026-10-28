@@ -33,12 +33,6 @@ export function formatRuntime(ms: number): string {
   return minutes === 0 ? `${hours} hr` : `${hours} hr ${minutes} min`;
 }
 
-/** A length in whole minutes, e.g. "60분", "74분": one unit everywhere a running time is given. */
-export function formatMinutes(ms: number): string {
-  if (!Number.isFinite(ms) || ms <= 0) return '0분';
-  return `${Math.max(1, Math.round(ms / 60000))}분`;
-}
-
 export function formatTrackNumber(n: number): string {
   return String(n).padStart(2, '0');
 }

@@ -152,6 +152,7 @@
 @media (min-width: 2400px) {
   .desktop .np { --share: .4; --art-max: 1000px; --meta-reserve: 250px; --lyric-width: 1500px; }
   .desktop .np-grid { grid-template-columns: var(--art) minmax(0, var(--read-max)); justify-content: center; }
+  .desktop .np.note-open { --share: .38; }
 }
 .desktop .np-object { grid-area: object; min-width: 0; min-height: 0; display: grid; place-items: center; }
 .desktop .np-art { width: var(--art); min-width: 0; margin: 0; }
@@ -206,8 +207,23 @@
   .desktop .volume-slider { width: 64px; }
 }
 
-/* A note, the queue or settings open beside Now Playing all follow one rule: the column pushes the
-   stage aside and the stage keeps its composition, scaled to the room that is left. */
+/* Full note open on 16:9 and the half window: the lyrics run across, the album drops to the corner.
+   On 21:9 the note is a third column and nothing else moves. Focus Mode has its own layout. */
+@media (max-width: 2399.98px) {
+  .desktop:not([data-focus]) .np.note-open .np-grid { grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto; grid-template-areas: "head head" "lyrics lyrics" "object controls"; column-gap: 40px; }
+  .desktop:not([data-focus]) .np.note-open .note-line { display: none; }
+  .desktop:not([data-focus]) .np.note-open .np-object { place-items: end start; align-self: end; }
+  .desktop:not([data-focus]) .np.note-open .np-art { width: auto; max-width: 400px; display: grid; grid-template-columns: var(--corner-cover) minmax(0, 1fr); align-items: end; gap: 18px; }
+  .desktop:not([data-focus]) .np.note-open .np-cover { width: var(--corner-cover); }
+  .desktop:not([data-focus]) .np.note-open .np-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 18px 40px -18px var(--cover-shadow); }
+  .desktop:not([data-focus]) .np.note-open .np-caption { margin-top: 0; padding-bottom: 2px; }
+  .desktop:not([data-focus]) .np.note-open .np-caption h1 { font-size: clamp(26px, 3.3vh, 40px); line-height: 1; letter-spacing: -.045em; }
+  .desktop:not([data-focus]) .np.note-open .artist-line { margin-top: 8px; font-size: calc(14px * var(--t)); white-space: normal; }
+}
+@container npmain (max-width: 820px) {
+  .desktop:not([data-focus]) .np.note-open .np-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto auto; grid-template-areas: "head" "lyrics" "object" "controls"; }
+  .desktop:not([data-focus]) .np.note-open .np-object { margin-bottom: 18px; }
+}
 @container npmain (max-width: 560px) {
   .desktop .note-line { grid-template-columns: minmax(0, 1fr) auto; }
   .desktop .note-line-kicker { grid-column: 1 / -1; }
@@ -232,7 +248,16 @@
 
 /* ── Album ─────────────────────────────────────────────────────────── */
 .desktop .album-shell { max-width: 1760px; grid-template-columns: minmax(0, 42fr) minmax(0, 58fr); gap: clamp(40px, 3.3vw, 96px); padding: 0 0 48px; }
-.desktop .album-hero-cover { width: min(100%, 52vh); }
+.desktop .album-hero-cover { width: min(100%, 52vh, calc(100vh - 480px)); min-width: 240px; }
+/* The left column fits one screen: cover, title, artist, actions, the four facts on one line, the note in three lines. */
+.desktop .album-object-copy { margin-top: 18px; }
+.desktop .album-object-copy .object-actions { margin-top: 16px; }
+.desktop .album-hero-meta { gap: 6px 22px; margin-top: 16px; padding-top: 10px; }
+.desktop .album-hero-meta div { display: flex; align-items: baseline; gap: 7px; }
+.desktop .album-hero-meta div span { margin-top: 0; }
+.desktop .album-object-copy .note-preview { margin-top: 16px; padding-top: 10px; }
+.desktop .album-object-copy .note-preview p { margin-top: 6px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.desktop .album-object-copy .note-more { margin-top: 6px; }
 .desktop .album-hero-cover .cover { box-shadow: 0 0 0 1px var(--line-soft), 0 42px 90px -34px var(--cover-shadow); }
 .desktop .album-object-copy h1 { font-size: clamp(42px, min(5.2vw, 7.2vh), 96px); }
 .desktop .album-object-copy .artist { font-size: calc(15px * var(--t)); }

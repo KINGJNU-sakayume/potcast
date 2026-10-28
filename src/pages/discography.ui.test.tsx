@@ -43,9 +43,9 @@ describe('discography digging (preview archive)', () => {
     await user.click(screen.getByRole('button', { name: 'Singles & EPs' }));
     await waitFor(() => expect(yearLabels()).toEqual(['2018', '2022']));
     expect(window.location.hash).toContain('group=single');
-    await user.click(screen.getByRole('button', { name: '오래된 순' }));
+    await user.click(screen.getByRole('button', { name: 'Oldest first' }));
     expect(yearLabels()).toEqual(['2022', '2018']);
-    expect(screen.getByRole('button', { name: '최신 순' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Newest first' })).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Appears on' }));
     expect(await screen.findByRole('link', { name: 'Test Pressing' })).toBeInTheDocument();
@@ -75,11 +75,9 @@ describe('discography digging (preview archive)', () => {
 
     expect(await screen.findByRole('heading', { level: 1, name: 'Archive' })).toBeInTheDocument();
     // Counts and order follow the note files, so adding a note never breaks this test.
-    expect(
-      screen.getByText(
-        `${artistNotes.length} artists · ${albumNotes.length} album notes · ${songNotes.length} listening notes · ${pluralise(episodeScripts.length, 'episode')} · works offline`,
-      ),
-    ).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: pluralise(episodeScripts.length, 'episode') }).closest('p')).toHaveTextContent(
+      `${artistNotes.length} artists · ${albumNotes.length} album notes · ${songNotes.length} listening notes · ${pluralise(episodeScripts.length, 'episode')} · works offline`,
+    );
     const index = screen.getByRole('navigation', { name: 'Artists with notes' });
     const names = artistNotes.map((artist) => artist.names[0]!).sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
     expect(within(index).getAllByRole('button').map((button) => button.querySelector('b')!.textContent)).toEqual(names);

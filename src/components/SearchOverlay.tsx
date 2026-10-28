@@ -79,11 +79,11 @@ function Result({ item }: { item: ResultItem }) {
       <span className={round ? 'result-thumb round' : 'result-thumb'} aria-hidden="true">
         {round ? <Portrait images={images} name={title} size={32} /> : <CoverImage images={images} size={32} alt="" title={title} paletteKey={paletteKey} />}
       </span>
-      <b lang={detectLineLanguage(title)}>{title}</b>
-      <span>
+      <b lang={detectLineLanguage(title)}>
+        {title}
         <AlbumBadges noted={noted} episode={episode} />
-        {detail}
-      </span>
+      </b>
+      <span>{detail}</span>
     </button>
   );
 }
@@ -231,7 +231,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
       </div>,
     );
   };
-  group('archive', '아카이브에 있음', archived);
+  group('archive', 'In your archive', archived);
   group('tracks', 'Tracks', rest(tracks));
   group('artists', 'Artists', rest(artists));
   group('albums', 'Albums', rest(albums));

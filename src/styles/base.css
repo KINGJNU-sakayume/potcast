@@ -235,7 +235,7 @@ kbd { padding: 0 4px; border: 1px solid var(--line); font-size: .9em; }
 .queue-list .index-row { grid-template-columns: 30px 40px minmax(0,1fr) auto; }
 .device-button[data-tone='failed'] .device-name { color: var(--main-text); }
 
-/* Note and episode badges: one bordered form on every page and theme. */
-.badges { display: inline-flex; gap: 4px; vertical-align: middle; }
-.badge { display: inline-flex; align-items: center; height: 20px; padding: 0 7px; border: 1px solid currentColor; border-radius: 3px; font-style: normal; font-size: 12px; font-weight: 600; letter-spacing: 0; line-height: 1; text-transform: none; color: var(--ink); white-space: nowrap; }
-.badge[data-kind='episode'] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+/* Note and episode marks: raised after the title like a footnote, one form and colour on every page. */
+.marks { display: inline-flex; gap: .35em; margin-left: .3em; white-space: nowrap; }
+.mark { font-size: .58em; line-height: 0; vertical-align: super; font-weight: 400; letter-spacing: .03em; text-transform: none; color: var(--main-text); }
+.mark[data-kind='episode'] { font-weight: 600; }

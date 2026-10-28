@@ -98,7 +98,7 @@ function moments(text: string, keyPrefix: string, onTime: OnTime | undefined): R
     if (ms === null) continue;
     if (start > last) out.push(text.slice(last, start));
     out.push(
-      <button key={`${keyPrefix}-t${index}`} type="button" className="note-time" title={`${formatDuration(ms)}부터 듣기`} onClick={() => onTime(ms)}>
+      <button key={`${keyPrefix}-t${index}`} type="button" className="note-time" title={`Play from ${formatDuration(ms)}`} onClick={() => onTime(ms)}>
         <span aria-hidden="true">▶ </span>
         {match[0]}
       </button>,
@@ -185,7 +185,7 @@ export function NoteBody({
   return (
     <div className={className ? `note-body ${className}` : 'note-body'}>
       {contents && headings.length >= 3 && (
-        <nav className="note-contents" aria-label="이 노트의 차례">
+        <nav className="note-contents" aria-label="Sections of this note">
           <ol>
             {headings.map((heading, i) => (
               <li key={`toc-${i}`} data-level={heading.level}>

@@ -63,7 +63,7 @@ export function NotePreview({
           aria-expanded={open}
           onClick={() => (open ? closeNote() : openNote(notePayload(kind, note, { title, subtitle, titleLang })))}
         >
-          {open ? '노트 닫기' : '노트 전체 읽기 →'}
+          {open ? 'Close note' : 'Read full note →'}
         </button>
       )}
     </div>

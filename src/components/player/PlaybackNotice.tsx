@@ -10,7 +10,7 @@ import { OPEN_DEVICES_EVENT } from './DevicePicker';
  *
  * One line, in one place under the play button, the same on Now Playing,
  * in Focus Mode and in the episode: what happened and the one thing to do
- * about it. How to fix it for good folds away under “왜 안 되나요?”.
+ * about it. How to fix it for good folds away under “Why doesn’t it play?”.
  */
 export function PlaybackNotice() {
   const engine = useEngine();
@@ -30,13 +30,13 @@ export function PlaybackNotice() {
       <div className="notice-line">
         <span className="notice-message">{issue.message}</span>
         <PrimaryAction issue={issue} onRetry={retry} onAppInstead={() => void engine.setBrowserPlayback(false).then(() => engine.resume())} onBrowserAgain={() => void engine.setBrowserPlayback(true)} />
-        <button type="button" className="notice-close" aria-label="안내 닫기" title="안내 닫기" onClick={() => store.dispatch({ type: 'issue/clear' })}>
+        <button type="button" className="notice-close" aria-label="Dismiss" title="Dismiss" onClick={() => store.dispatch({ type: 'issue/clear' })}>
           <span aria-hidden="true">×</span>
         </button>
       </div>
       {help && (
         <details className="notice-why">
-          <summary>왜 안 되나요?</summary>
+          <summary>Why doesn’t it play?</summary>
           {issue.hints && issue.hints.length > 0 && (
             <ul className="notice-hints">
               {issue.hints.map((hint) => (
@@ -47,7 +47,7 @@ export function PlaybackNotice() {
           {issue.detail && <p className="notice-detail">{issue.detail}</p>}
           {issue.kind === 'playback-failed' && (
             <button type="button" className="notice-action" onClick={retry}>
-              이 브라우저에서 다시 시도
+              Try again in this browser
             </button>
           )}
         </details>
@@ -71,7 +71,7 @@ function PrimaryAction({
     case 'autoplay-blocked':
       return (
         <button type="button" className="notice-action" onClick={onRetry}>
-          재생 시작
+          Start audio
         </button>
       );
     case 'playback-failed':
@@ -79,22 +79,22 @@ function PrimaryAction({
         <button
           type="button"
           className="notice-action"
-          title="이 브라우저 대신 이 컴퓨터의 Spotify 앱이 재생하고, 이 페이지는 리모컨이 됩니다"
+          title="Stop playing in this browser: the Spotify app on this computer plays, and this page is its remote"
           onClick={onAppInstead}
         >
-          Spotify 앱으로 듣기
+          Use the Spotify app
         </button>
       );
     case 'moved-to-app':
       return (
         <button type="button" className="notice-action" onClick={onBrowserAgain}>
-          이 브라우저에서 다시 재생
+          Play in this browser again
         </button>
       );
     case 'no-active-device':
       return (
         <button type="button" className="notice-action" onClick={() => window.dispatchEvent(new Event(OPEN_DEVICES_EVENT))}>
-          기기 고르기
+          Choose device
         </button>
       );
     default:

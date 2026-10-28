@@ -16,7 +16,7 @@ export interface DeviceStatus {
   tone: 'playing' | 'ready' | 'waiting' | 'none' | 'failed';
 }
 
-export const THIS_BROWSER = '이 브라우저';
+export const THIS_BROWSER = 'This browser';
 
 export function describeDevice(state: Pick<PlayerState, 'snapshot' | 'sdk' | 'issue'>): DeviceStatus {
   const { snapshot, sdk, issue } = state;
@@ -26,23 +26,23 @@ export function describeDevice(state: Pick<PlayerState, 'snapshot' | 'sdk' | 'is
     const here = device.isThisBrowser || snapshot.source === 'sdk';
     return {
       label: here ? THIS_BROWSER : device.name,
-      detail: here && failed ? '재생할 수 없음' : null,
+      detail: here && failed ? 'can’t play' : null,
       tone: here && failed ? 'failed' : 'playing',
     };
   }
   switch (sdk.kind) {
     case 'ready':
       return failed
-        ? { label: THIS_BROWSER, detail: '재생할 수 없음', tone: 'failed' }
-        : { label: THIS_BROWSER, detail: '재생 준비됨', tone: 'ready' };
+        ? { label: THIS_BROWSER, detail: 'can’t play', tone: 'failed' }
+        : { label: THIS_BROWSER, detail: 'ready', tone: 'ready' };
     case 'loading':
-      return { label: THIS_BROWSER, detail: '연결 중…', tone: 'waiting' };
+      return { label: THIS_BROWSER, detail: 'connecting…', tone: 'waiting' };
     case 'reconnecting':
-      return { label: THIS_BROWSER, detail: '다시 연결 중…', tone: 'waiting' };
+      return { label: THIS_BROWSER, detail: 'reconnecting…', tone: 'waiting' };
     case 'disabled':
-      return { label: 'Spotify 앱', detail: '이 페이지는 리모컨', tone: 'none' };
+      return { label: 'Spotify app', detail: 'this page is its remote', tone: 'none' };
     case 'error':
-      return { label: '연결된 기기 없음', detail: sdk.message, tone: 'none' };
+      return { label: 'No device', detail: sdk.message, tone: 'none' };
   }
 }
 

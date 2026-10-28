@@ -49,7 +49,7 @@ export function DevicePicker() {
         className="text-toggle device-button"
         aria-expanded={open}
         aria-controls={panelId}
-        aria-label={`재생 기기: ${status.label}${status.detail ? ` (${status.detail})` : ''}. 기기 고르기`}
+        aria-label={`Playback device: ${status.label}${status.detail ? ` (${status.detail})` : ''}. Choose device`}
         data-tone={status.tone}
         title={status.detail ?? undefined}
         onClick={() => setOpen((value) => !value)}

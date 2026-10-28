@@ -83,12 +83,13 @@ function ReleaseRow({ group }: { group: EditionGroup }) {
       </Link>
       <div>
         <div className="label">
-          {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)} <AlbumBadges {...marks} />
+          {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)}
         </div>
         <h4 lang={detectLineLanguage(release.name)}>
           <Link className="linkish" to={`/album/${release.id}`}>
             {release.name}
           </Link>
+          <AlbumBadges {...marks} />
         </h4>
         <div className="release-meta">
           {release.totalTracks !== null && <span>{pluralise(release.totalTracks, 'track')}</span>}
@@ -98,14 +99,14 @@ function ReleaseRow({ group }: { group: EditionGroup }) {
         {open && <Editions group={group} id={editionsId} />}
         <div className="release-actions">
           <button type="button" onClick={() => play({ contextUri: release.uri }, { openNowPlaying: true })}>
-            재생
+            Play
           </button>
           <Link className="release-open" to={`/album/${release.id}`}>
-            앨범 열기
+            Open album
           </Link>
           {marks.episode && (
             <Link className="release-open" to={`/episode/${release.id}`}>
-              진행자와 듣기
+              Listen with the hosts
             </Link>
           )}
         </div>
@@ -130,7 +131,7 @@ function CompactReleaseRow({ group, kind }: { group: EditionGroup; kind: Release
         paletteKey={release.id}
         kicker={
           <>
-            {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)} <AlbumBadges {...marks} />
+            {formatReleaseDate(release.releaseDate, release.releaseDatePrecision) ?? '—'} / {albumTypeLabel(release.albumType)}
           </>
         }
         meta={
@@ -141,6 +142,7 @@ function CompactReleaseRow({ group, kind }: { group: EditionGroup; kind: Release
             <EditionsToggle group={group} open={open} onToggle={() => setOpen(!open)} controls={editionsId} />
           </>
         }
+        titleAfter={<AlbumBadges {...marks} />}
         onPlay={() => play({ contextUri: release.uri }, { openNowPlaying: true })}
       />
       {open && (
@@ -213,7 +215,7 @@ function Discography({ artistId, eras, onEra }: { artistId: string; eras?: reado
             ))}
           </div>
           <button type="button" className="text-toggle" onClick={() => update({ order: order === 'asc' ? 'desc' : 'asc' })}>
-            {order === 'asc' ? '오래된 순' : '최신 순'}
+            {order === 'asc' ? 'Oldest first' : 'Newest first'}
           </button>
         </div>
       </div>
@@ -234,7 +236,7 @@ function Discography({ artistId, eras, onEra }: { artistId: string; eras?: reado
                 {/* The era as the artist note heads it — “title (years)” — and a way into that part of the note. */}
                 {showEra &&
                   (onEra ? (
-                    <button type="button" className="era-marker" title="노트의 이 시기 읽기" onClick={() => onEra(era)}>
+                    <button type="button" className="era-marker" title="Read this part of the note" onClick={() => onEra(era)}>
                       <span lang="ko">{era.title}</span> <span className="era-years">({eraYears(era)})</span>
                     </button>
                   ) : (
@@ -353,11 +355,11 @@ export function ArtistPage() {
               <NotePreview kind="ARTIST" note={note} title={data.name} subtitle={origin} titleLang={detectLineLanguage(data.name)} />
               <div className="object-actions">
                 <button type="button" className="plain-action primary" onClick={() => play({ contextUri: data.uri }, { openNowPlaying: true })}>
-                  아티스트 재생
+                  Play artist
                 </button>
                 {mode === 'spotify' && (
                   <a className="plain-action" href={`https://open.spotify.com/artist/${data.id}`} target="_blank" rel="noopener noreferrer">
-                    Spotify에서 열기<span className="visually-hidden"> (새 탭)</span>
+                    Open in Spotify<span className="visually-hidden"> (opens in a new tab)</span>
                   </a>
                 )}
               </div>

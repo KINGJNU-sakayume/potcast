@@ -47,18 +47,21 @@ export function CoverTile({
         )}
       </div>
       {to ? (
-        <Link className="cover-tile-title linkish" to={to} lang={detectLineLanguage(title)}>
-          {title}
-        </Link>
+        <span className="cover-tile-title">
+          <Link className="linkish" to={to} lang={detectLineLanguage(title)}>
+            {title}
+          </Link>
+          <AlbumBadges noted={noted} episode={episode} />
+        </span>
       ) : (
         <span className="cover-tile-title" lang={detectLineLanguage(title)}>
           {title}
+          <AlbumBadges noted={noted} episode={episode} />
         </span>
       )}
-      {(meta || noted || episode) && (
+      {meta && (
         <div className="cover-tile-meta">
           <span>{meta}</span>
-          <AlbumBadges noted={noted} episode={episode} />
         </div>
       )}
     </li>

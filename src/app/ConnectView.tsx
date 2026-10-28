@@ -53,7 +53,7 @@ export function ConnectView() {
   return (
     <MinimalShell>
       <div className="state-page connect-page">
-        <div className="label">{expired ? '로그인 만료' : '시작하기'}</div>
+        <div className="label">{expired ? 'Authorization expired' : 'Now playing'}</div>
         <h1>{!auth ? 'Spotify isn’t configured' : expired ? 'Reconnect Spotify' : 'Connect Spotify'}</h1>
         <p>
           {expired && authState.status === 'expired'
