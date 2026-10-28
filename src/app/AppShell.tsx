@@ -74,6 +74,9 @@ function RailNow() {
   );
 }
 
+/** The branch this build was made from, on the preview published under /potcast/preview/. */
+const PREVIEW_LABEL = import.meta.env.VITE_PREVIEW_LABEL?.trim() || null;
+
 function Rail({ panel }: { panel: Panel | null }) {
   const track = usePlayerSelector((s) => s.snapshot.track);
   const shell = useShell();
@@ -130,6 +133,11 @@ function Rail({ panel }: { panel: Panel | null }) {
         <div className="user" role="img" title={name ?? 'Personal archive'} aria-label={name ? `Signed in as ${name}` : 'Personal archive'}>
           {initials(name)}
         </div>
+        {PREVIEW_LABEL && (
+          <span className="preview-mark" title={`Branch preview: ${PREVIEW_LABEL}`}>
+            미리보기
+          </span>
+        )}
       </div>
     </aside>
   );

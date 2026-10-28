@@ -83,6 +83,7 @@
 .desktop .rail-item[aria-current='page']::after { content: ''; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; background: var(--main); }
 .desktop .rail-foot { display: grid; gap: 2px; justify-items: stretch; margin-top: auto; padding-top: 12px; }
 .desktop .user { justify-self: center; margin-top: 8px; background: var(--ink); color: var(--bg); }
+.desktop .preview-mark { justify-self: center; margin-top: 6px; padding: 2px 5px; border: 1px solid currentColor; border-radius: 3px; font-size: 11px; font-weight: 600; color: var(--main); }
 .desktop .rail-now { display: grid; justify-items: center; gap: 7px; padding: 10px 0 14px; margin-bottom: 4px; border-bottom: 1px solid var(--line-soft); color: var(--dim); font-size: calc(10.5px * var(--t)); letter-spacing: .09em; text-transform: uppercase; }
 .desktop .rail-now:hover { color: var(--ink); }
 .desktop .rail-now-cover { position: relative; width: 50px; height: 50px; }
