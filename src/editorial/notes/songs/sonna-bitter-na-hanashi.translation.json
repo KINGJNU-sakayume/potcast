@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206904,
+    "durationMs": 276000
+  },
+  "segments": [
+    {
+      "startMs": 12790,
+      "endMs": 23300,
+      "translation": "떠올리게 되는 한밤중, 쓰라린 기억도 우울도 우리는 떨어져 있어도 의외로 몰래 간직하고 있지"
+    },
+    {
+      "startMs": 23300,
+      "endMs": 25970,
+      "translation": "서로 굿나잇이라고 말했었지"
+    },
+    {
+      "startMs": 25970,
+      "endMs": 33970,
+      "translation": "그런 따분한 흐름 속에서도 우리, 여기까지 의외로 잘해 왔었지"
+    },
+    {
+      "startMs": 33970,
+      "endMs": 39350,
+      "translation": "이럴 거면 만나지 말걸 그랬어"
+    },
+    {
+      "startMs": 39350,
+      "endMs": 55670,
+      "translation": "그런 거라면, 러브코미디 같은 전개로 잘못해서 운명의 누군가를 만나 사랑에 빠져 버릴 듯한 달콤함이긴 한데"
+    },
+    {
+      "startMs": 55670,
+      "endMs": 60640,
+      "translation": "쌉싸름해, 그래 써"
+    },
+    {
+      "startMs": 60640,
+      "endMs": 77180,
+      "translation": "우리가 바라는 사랑이란 것의 출구는 사라질 수도, 보일 수도, 잊을 수도 없듯이"
+    },
+    {
+      "startMs": 77180,
+      "endMs": 82230,
+      "translation": "쌉싸름해, 그래 써"
+    },
+    {
+      "startMs": 82230,
+      "endMs": 98660,
+      "translation": "우리가 생각하는 사랑이란 것의 미래는 사라질 수도, 보일 수도, 잊을 수도 없듯이"
+    },
+    {
+      "startMs": 98660,
+      "endMs": 110920,
+      "translation": "애틋한 거지"
+    },
+    {
+      "startMs": 110920,
+      "endMs": 115620,
+      "translation": "그건 물론 뜨겁고 새까만 거지, 멋지게 데어 버려"
+    },
+    {
+      "startMs": 115620,
+      "endMs": 120560,
+      "translation": "그래도 대화는 아직 계속할 거야"
+    },
+    {
+      "startMs": 120560,
+      "endMs": 125970,
+      "translation": "떠올리고 있는 그 좋았던 시간, 취해 있었지, 그 흐름은"
+    },
+    {
+      "startMs": 125970,
+      "endMs": 131160,
+      "translation": "우리 가까이 있을 때도 의외로 몰래 간직하고 있었지"
+    },
+    {
+      "startMs": 131160,
+      "endMs": 136510,
+      "translation": "이럴 거면 만나지 말걸 그랬어"
+    },
+    {
+      "startMs": 136510,
+      "endMs": 152670,
+      "translation": "그런 거라면, 러브코미디 같은 두 사람을 잘못해서 운명 같은 무언가가 이어 줘서 사랑하고 있었던 듯한 달콤함이긴 한데"
+    },
+    {
+      "startMs": 152670,
+      "endMs": 157720,
+      "translation": "쌉싸름해, 그래 써"
+    },
+    {
+      "startMs": 157720,
+      "endMs": 174230,
+      "translation": "우리가 바라는 사랑이란 것의 입구는 사라질 수도, 보일 수도, 잊을 수도 없을 만큼"
+    },
+    {
+      "startMs": 174230,
+      "endMs": 198190,
+      "translation": "너무 쓰니까"
+    },
+    {
+      "startMs": 198190,
+      "endMs": 208990,
+      "translation": "버릇이 돼 버렸어, 그 쓴맛은 단맛 같은 건 '됐어' 하고 두고 왔어"
+    },
+    {
+      "startMs": 208990,
+      "endMs": 215860,
+      "translation": "진한 자극을 맛본 그 미뢰가 말하는 거야"
+    },
+    {
+      "startMs": 215860,
+      "endMs": 222340,
+      "translation": "이건 그래, 쌉싸름해, 아아 써"
+    },
+    {
+      "startMs": 222340,
+      "endMs": 239170,
+      "translation": "우리가 바라는 사랑이란 것의 출구는 사라질 수도, 보일 수도, 잊을 수도 없듯이"
+    },
+    {
+      "startMs": 239170,
+      "endMs": 244180,
+      "translation": "쌉싸름해, 이제는 그냥 써"
+    },
+    {
+      "startMs": 244180,
+      "endMs": 260700,
+      "translation": "우리가 생각하는 사랑이란 것의 미래는 사라질 수도, 보일 수도, 잊을 수도 없기에"
+    },
+    {
+      "startMs": 260700,
+      "endMs": 276000,
+      "translation": "애틋한 거지"
+    }
+  ]
+}

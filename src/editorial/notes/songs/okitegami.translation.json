@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206916,
+    "durationMs": 241000
+  },
+  "segments": [
+    {
+      "startMs": 800,
+      "endMs": 7650,
+      "translation": "그건 몇 년 전 이야기야"
+    },
+    {
+      "startMs": 7650,
+      "endMs": 14090,
+      "translation": "꽤 오래된, 긴 이야기야"
+    },
+    {
+      "startMs": 14090,
+      "endMs": 28250,
+      "translation": "이야기해 볼게"
+    },
+    {
+      "startMs": 28250,
+      "endMs": 33940,
+      "translation": "이쯤에서 그만둘 생각이었어"
+    },
+    {
+      "startMs": 33940,
+      "endMs": 41940,
+      "translation": "만나러 갈 생각은 딱히 없었어"
+    },
+    {
+      "startMs": 41940,
+      "endMs": 47140,
+      "translation": "오늘은 날씨가 좋은가 봐"
+    },
+    {
+      "startMs": 47140,
+      "endMs": 50510,
+      "translation": "구름 한 점 없는 밤이야"
+    },
+    {
+      "startMs": 50510,
+      "endMs": 54970,
+      "translation": "별 보러 가자"
+    },
+    {
+      "startMs": 54970,
+      "endMs": 61620,
+      "translation": "너는 아무것도 모르는 얼굴로 웃어 줬지"
+    },
+    {
+      "startMs": 61620,
+      "endMs": 68120,
+      "translation": "그러니까 우리의 나날이 깨지고 무너져 가더라도"
+    },
+    {
+      "startMs": 68120,
+      "endMs": 69140,
+      "translation": "말해 버려"
+    },
+    {
+      "startMs": 69140,
+      "endMs": 82990,
+      "translation": "지금 전하고 싶은 건, 우리가 서로를 생각할 수 있게 해 줄 마법의 말"
+    },
+    {
+      "startMs": 82990,
+      "endMs": 96420,
+      "translation": "지금 전하고 싶은 건, 무뚝뚝한 애정마저 지워 줄 마법의 말"
+    },
+    {
+      "startMs": 96420,
+      "endMs": 107580,
+      "translation": "내일이야말로 너에게 전하러 가자"
+    },
+    {
+      "startMs": 107580,
+      "endMs": 120500,
+      "translation": "『미련이 여기서 사라지지 않은 채, 만약 내가 불사의 병에 걸린다면』"
+    },
+    {
+      "startMs": 120500,
+      "endMs": 126460,
+      "translation": "그런 건 느슨한 가위눌림처럼 휘감겨 오고"
+    },
+    {
+      "startMs": 126460,
+      "endMs": 133770,
+      "translation": "따뜻한 너 쪽으로 물때가 바뀌어 있었어"
+    },
+    {
+      "startMs": 133770,
+      "endMs": 140520,
+      "translation": "오늘도 아무것도 모르는 얼굴로 웃어 줘"
+    },
+    {
+      "startMs": 140520,
+      "endMs": 146960,
+      "translation": "설령 숨이 막히고, 몸부림치고, 떨고 있더라도"
+    },
+    {
+      "startMs": 146960,
+      "endMs": 148160,
+      "translation": "말해 버릴 거야"
+    },
+    {
+      "startMs": 148160,
+      "endMs": 161760,
+      "translation": "지금 전하고 싶은 건, 우리가 서로를 생각할 수 있게 해 줄 마법의 말"
+    },
+    {
+      "startMs": 161760,
+      "endMs": 175220,
+      "translation": "지금 전하고 싶은 건, 무뚝뚝한 애정마저 지워 줄 마법의 말"
+    },
+    {
+      "startMs": 175220,
+      "endMs": 178710,
+      "translation": "내일까지 다 읊어 낼게"
+    },
+    {
+      "startMs": 178710,
+      "endMs": 192380,
+      "translation": "다 적을 수 없어, 숨 쉰 횟수만큼 돋아난 마음은 넘치도록 자라 있었어"
+    },
+    {
+      "startMs": 192380,
+      "endMs": 198850,
+      "translation": "불사의 병이 정말 있다면"
+    },
+    {
+      "startMs": 198850,
+      "endMs": 200690,
+      "translation": "아, 이제 그만두자"
+    },
+    {
+      "startMs": 200690,
+      "endMs": 206180,
+      "translation": "입 밖에 내지 않은 채 『썩어 문드러질 때까지 갈라지지 않는 두 사람으로』"
+    },
+    {
+      "startMs": 206180,
+      "endMs": 220050,
+      "translation": "그 전하고 싶은 건, 우리가 서로를 생각할 수 있게 해 줄 마법의 말"
+    },
+    {
+      "startMs": 220050,
+      "endMs": 233470,
+      "translation": "이 전하고 싶은 건, 무뚝뚝한 애정마저 지워 줄 마법의 말"
+    },
+    {
+      "startMs": 233470,
+      "endMs": 241000,
+      "translation": "참 썩을 대로 썩은 두 사람 이야기야"
+    }
+  ]
+}

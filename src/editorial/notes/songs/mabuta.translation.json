@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 5206905,
+    "durationMs": 257000
+  },
+  "segments": [
+    {
+      "startMs": 19210,
+      "endMs": 27680,
+      "translation": "당신이 지금도 입가에 수줍음을 띤 채 눈물을 흘리니까"
+    },
+    {
+      "startMs": 27680,
+      "endMs": 34860,
+      "translation": "내뱉는 말에도 피가 배어 있어"
+    },
+    {
+      "startMs": 34860,
+      "endMs": 43190,
+      "translation": "분명 (분명) 나날의 응어리가 풍기는 냄새에"
+    },
+    {
+      "startMs": 43190,
+      "endMs": 51670,
+      "translation": "찡하게 (찡하게) 찌르듯이 (찌르듯이) 슬픔이 눈을 찌르고 있어"
+    },
+    {
+      "startMs": 51670,
+      "endMs": 66000,
+      "translation": "만약 그 손을 잡아도 슬픔이 가시지 않는다면, 잊어"
+    },
+    {
+      "startMs": 66000,
+      "endMs": 77380,
+      "translation": "눈꺼풀이 지칠 만큼 우리가 서로 눈을 감으면 조금씩 알게 될지도 몰라"
+    },
+    {
+      "startMs": 77380,
+      "endMs": 102810,
+      "translation": "서로 등을 돌릴 만큼 서로를 확인하며, 살아 있어"
+    },
+    {
+      "startMs": 102810,
+      "endMs": 111210,
+      "translation": "당신이 지금도 괴로운 듯 손톱을 깨무니까"
+    },
+    {
+      "startMs": 111210,
+      "endMs": 118410,
+      "translation": "내뱉는 말은 휘감겨 뿌리를 내렸어"
+    },
+    {
+      "startMs": 118410,
+      "endMs": 126780,
+      "translation": "그건 (그건) 바늘 끝에 손끝이 닿는 것 같아"
+    },
+    {
+      "startMs": 126780,
+      "endMs": 135110,
+      "translation": "찡하게 (찡하게) 찌르듯이 (찌르듯이) 쓸쓸함이 눈을 찌르고 있어"
+    },
+    {
+      "startMs": 135110,
+      "endMs": 149610,
+      "translation": "만약 젖어 있어서 서리가 앉기 시작한다면, 흘려보내"
+    },
+    {
+      "startMs": 149610,
+      "endMs": 160950,
+      "translation": "눈꺼풀이 지칠 만큼 우리가 서로 눈을 감으면 조금씩 알게 될지도 몰라"
+    },
+    {
+      "startMs": 160950,
+      "endMs": 185280,
+      "translation": "서로 등을 돌릴 만큼 서로를 확인하며, 살아 있어"
+    },
+    {
+      "startMs": 185280,
+      "endMs": 199830,
+      "translation": "만약 바싹 말라서 향이 나기 시작하고 아프다면, 떠올려"
+    },
+    {
+      "startMs": 199830,
+      "endMs": 211020,
+      "translation": "눈꺼풀이 지칠 때까지 우리가 서로 눈을 감으면 조금씩 알게 될지도 몰라"
+    },
+    {
+      "startMs": 211020,
+      "endMs": 218770,
+      "translation": "서로 등을 돌릴 만큼 서로를 확인하며, 살아 있어"
+    },
+    {
+      "startMs": 218770,
+      "endMs": 227630,
+      "translation": "우리가 서로 눈을 감으면 발돋움하지 않아도, 지치지 않고 지낼 수 있을지도 몰라"
+    },
+    {
+      "startMs": 227630,
+      "endMs": 257000,
+      "translation": "등으로 서로를 받쳐 주는 그 끝에서 서로를 바라보며 살아갈 수 있어"
+    }
+  ]
+}
