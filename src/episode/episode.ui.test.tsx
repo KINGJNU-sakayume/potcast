@@ -23,7 +23,9 @@ function renderApp(hash: string) {
 const MBDTF = '20r762YmB5HeofjMCiPMLv';
 
 const now = () => screen.getByRole('region', { name: 'Now in the episode' });
-const rail = () => screen.getByRole('list', { name: 'The album’s tracks' });
+const map = () => screen.getByRole('list', { name: '에피소드의 장' });
+/** The parts of the chapter the episode is in. */
+const parts = () => screen.getByRole('list', { name: '이 장의 구성' });
 /** The slab in front of the cover with the line a host is saying. */
 const hosts = () => within(now()).getByRole('group', { name: 'The hosts' });
 /** The intro's own button: the transport's play button says the same. */
@@ -31,7 +33,7 @@ const playEpisode = async (user: ReturnType<typeof userEvent.setup>) => {
   await user.click(within(await screen.findByRole('region', { name: 'Episode' })).getByRole('button', { name: 'Play episode' }));
 };
 const openScript = async (user: ReturnType<typeof userEvent.setup>) => {
-  await user.click(await screen.findByRole('button', { name: 'Script' }));
+  await user.click(await screen.findByRole('button', { name: '대본' }));
   return screen.getByRole('group', { name: 'Script' });
 };
 
@@ -81,16 +83,17 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     expect(screen.getByRole('heading', { level: 2, name: 'The hosts' })).toBeInTheDocument();
     expect(within(now()).getByText('Up next')).toBeInTheDocument();
     expect(within(now()).getByText('From the start to 0:25')).toBeInTheDocument();
-    // Before the first track: no track of the album is current yet, and the episode's clock is at its start.
-    expect(within(rail()).queryByRole('listitem', { current: true })).not.toBeInTheDocument();
-    expect(screen.getByRole('slider', { name: 'Episode position' })).toHaveAttribute('aria-valuetext', expect.stringMatching(/^0:0\d of 1:\d\d:\d\d$/));
+    // The map has every chapter, and the first is the current one; the chapter bar is at its start.
+    expect(within(map()).getAllByRole('button')).toHaveLength(13);
+    expect(within(map()).getAllByRole('button')[0]).toHaveAttribute('aria-current', 'step');
+    expect(screen.getByRole('slider', { name: '지금 장 안의 위치' })).toHaveAttribute('aria-valuetext', expect.stringMatching(/^0:0\d \/ \d+:\d\d$/));
 
     const script = await openScript(user);
     expect(within(script).getByRole('button', { current: true })).toHaveTextContent(FIRST_LINE);
     // The script takes the lyrics' place, and with it the host's line: the line being said is its current row.
     expect(screen.getByRole('heading', { level: 2, name: 'Script' })).toBeInTheDocument();
     expect(within(now()).queryByRole('group', { name: 'The hosts' })).not.toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
     expect(screen.queryByRole('group', { name: 'Script' })).not.toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'Pause' }));
@@ -109,12 +112,12 @@ describe('an album episode on the desktop (preview archive, captions for a voice
 
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
     expect(screen.getByRole('heading', { level: 1, name: 'EARFQUAKE' })).toBeInTheDocument();
-    // The album's second track is the one playing: it is named on the rail.
-    expect(within(rail()).getByRole('listitem', { current: true })).toHaveTextContent(/^2EARFQUAKE/);
+    // The music playing is the current part of its chapter, named with the stretch it plays.
+    await waitFor(() => expect(within(parts()).getByText(/^EARFQUAKE · 0:4\d–1:1\d$/).closest('li')).toHaveAttribute('data-current'));
     // While the music plays, nothing stands in front of the cover.
     expect(within(now()).queryByRole('group', { name: 'The hosts' })).not.toBeInTheDocument();
     // The preview's simulated player goes to the replayed lines of the track.
-    await waitFor(() => expect(within(now()).getByText(/^0:4[6-9]$/)).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText(/^0:4[6-9] \/ \d:\d\d$/)).toBeInTheDocument());
     expect(within(script).getByRole('button', { current: true })).toHaveTextContent('0:46–1:11');
 
     await user.click(screen.getByRole('button', { name: 'Next part' }));
@@ -130,7 +133,7 @@ describe('an album episode on the desktop (preview archive, captions for a voice
     const over = within(script).getByRole('button', { name: /여기서부터 목소리가 들어오는데/ });
     expect(over).toHaveTextContent('over the music');
     await user.click(over);
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
 
     expect(within(hosts()).getByText('over the music')).toBeInTheDocument();
     expect(hosts()).toHaveAttribute('data-over');
@@ -156,9 +159,9 @@ describe('an album episode on the desktop (preview archive, captions for a voice
 
     await user.click(within(rail).getByRole('link', { name: 'Episode: 『IGOR』 같이 듣기. Back to the episode' }));
     expect(await screen.findByRole('region', { name: 'Now in the episode' })).toHaveAttribute('data-status', 'playing');
-    await user.click(screen.getByRole('button', { name: 'End episode' }));
+    await user.click(screen.getByRole('button', { name: '에피소드 끝내기' }));
     expect(now()).toHaveAttribute('data-status', 'idle');
-    expect(screen.queryByRole('button', { name: 'End episode' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: '에피소드 끝내기' })).not.toBeInTheDocument();
   });
 
   it('offers the way back from the album page while it runs', async () => {
@@ -173,8 +176,8 @@ describe('an album episode on the desktop (preview archive, captions for a voice
   it('has the episode settings in the settings column', async () => {
     const user = userEvent.setup();
     renderApp(`#/episode/${IGOR}`);
-    await user.click(await screen.findByRole('button', { name: 'Voices and pace' }));
-    const settings = screen.getByRole('complementary', { name: 'Settings' });
+    await user.click(await screen.findByRole('button', { name: '목소리와 속도' }));
+    const settings = screen.getByRole('dialog', { name: '목소리와 속도' });
     expect(within(settings).getByText(/This browser has no Korean voice/)).toBeInTheDocument();
     await user.click(within(within(settings).getByRole('group', { name: 'Pace' })).getByRole('button', { name: '1.25×' }));
     expect(preferencesStore.get().episodeRate).toBe(1.25);
@@ -193,14 +196,14 @@ describe('an episode that was left part-way', () => {
 
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /후렴 뒤에 떠나지 말라는 부탁이 세 번/ }));
-    await user.click(screen.getByRole('button', { name: 'End episode' }));
+    await user.click(screen.getByRole('button', { name: '에피소드 끝내기' }));
     expect(now()).toHaveAttribute('data-status', 'idle');
     expect(screen.getByText('Left at 3 / 13 · EARFQUAKE')).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
     await user.click(within(screen.getByRole('region', { name: 'Episode' })).getByRole('button', { name: 'Continue' }));
     expect(within(hosts()).getByText(/후렴 뒤에 떠나지 말라는 부탁이 세 번/)).toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: 'End episode' }));
+    await user.click(screen.getByRole('button', { name: '에피소드 끝내기' }));
 
     await user.click(screen.getByRole('button', { name: 'From the top' }));
     expect(within(hosts()).getByText(FIRST_LINE)).toBeInTheDocument();
@@ -214,30 +217,35 @@ describe('the music in an episode', () => {
     const { container } = renderApp(`#/episode/${IGOR}`);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
     await waitFor(() => expect(container.querySelector('.lyrics-panel .current-lyric:not(.is-state)')).toBeInTheDocument());
     expect(container.querySelector('.lyrics-panel .current-trans')).not.toBeInTheDocument();
   });
 
-  it('marks on the album\'s rail the stretch of the track that is being played', async () => {
+  it('shows the chapter it is in, enlarged, with the stretch of the track that is being played', async () => {
     const user = userEvent.setup();
     const { container } = renderApp(`#/episode/${IGOR}`);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
-    const stretch = await waitFor(() => {
-      const mark = container.querySelector<HTMLElement>('.ep-line-stretch');
-      expect(mark).toBeInTheDocument();
-      return mark!;
-    });
-    // 0:46–1:11 of a 3:10 track.
-    expect(Number.parseFloat(stretch.style.left)).toBeGreaterThan(23);
-    expect(Number.parseFloat(stretch.style.left)).toBeLessThan(26);
-    expect(Number.parseFloat(stretch.style.width)).toBeGreaterThan(11);
-    expect(Number.parseFloat(stretch.style.width)).toBeLessThan(15);
+    // The chapter bar names the music by its stretch, and the time beside it is the track's.
+    await waitFor(() => expect(container.querySelector('.ep-zoom-time')).toHaveTextContent(/^0:4\d \/ 3:10$/));
+    const music = container.querySelector<HTMLElement>('.ep-zoom-part[data-kind="music"][data-current]')!;
+    expect(music).toBeInTheDocument();
+    expect(Number.parseFloat(music.style.width)).toBeGreaterThan(0);
 
-    // A whole track has no stretch to mark.
+    // A whole track is called a whole track.
     await user.click(within(script).getByRole('button', { name: /부드러운 코드와 불안정한 보컬이 동시에 움직인다/ }));
-    await waitFor(() => expect(container.querySelector('.ep-line-stretch')).not.toBeInTheDocument());
+    await waitFor(() => expect(within(parts()).getByText(/곡 전체 \d:\d\d$/)).toBeInTheDocument());
+  });
+
+  it('goes to a chapter from the episode map', async () => {
+    const user = userEvent.setup();
+    renderApp(`#/episode/${IGOR}`);
+    await playEpisode(user);
+    const chapters = within(map()).getAllByRole('button');
+    await user.click(chapters[2]!);
+    expect(within(map()).getAllByRole('button')[2]).toHaveAttribute('aria-current', 'step');
+    expect(screen.getByText(/^3 \/ 13 · /)).toBeInTheDocument();
   });
 });
 
@@ -251,7 +259,7 @@ describe('a track from outside the album', () => {
     expect(row).toHaveTextContent('21st Century Schizoid Man — King Crimson · 1969');
     expect(row).toHaveTextContent('0:47–1:05');
     await user.click(row);
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
 
     expect(screen.getByRole('heading', { level: 1, name: '21st Century Schizoid Man' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Outside the album' })).toBeInTheDocument();
@@ -265,7 +273,7 @@ describe('a track from outside the album', () => {
     expect(source).toHaveTextContent('0:47–1:05');
     expect(against).toHaveTextContent('POWER');
     expect(against).toHaveTextContent('0:21–0:37');
-    await waitFor(() => expect(within(now()).getByText(/^0:(4[6-9]|5\d)$/)).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText(/^0:(4[6-9]|5\d) \/ \d:\d\d$/)).toBeInTheDocument());
 
     // Back in the album: the album's cover and the track's own lyrics again.
     await user.click(screen.getByRole('button', { name: 'Next part' }));
@@ -279,7 +287,7 @@ describe('a track from outside the album', () => {
     renderApp(`#/episode/${MBDTF}`);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /그 목소리는 킹 크림슨의 것이에요/ }));
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
     expect(within(hosts()).getByText('그 목소리는 킹 크림슨의 것이에요.')).toBeInTheDocument();
     // Not on yet: the album keeps the cover and the title; the track is named under the hosts' line.
     expect(screen.queryByRole('heading', { level: 1, name: '21st Century Schizoid Man' })).not.toBeInTheDocument();
@@ -291,8 +299,8 @@ describe('a track from outside the album', () => {
 
 describe('an episode whose music the listener plays themselves', () => {
   const playItMyself = async (user: ReturnType<typeof userEvent.setup>) => {
-    await user.click(await screen.findByRole('button', { name: 'Voices and pace' }));
-    const settings = screen.getByRole('complementary', { name: 'Settings' });
+    await user.click(await screen.findByRole('button', { name: '목소리와 속도' }));
+    const settings = screen.getByRole('dialog', { name: '목소리와 속도' });
     await user.click(within(settings).getByRole('button', { name: 'I play it myself' }));
     expect(preferencesStore.get().episodeMusic).toBe('manual');
     // Talking over the music is not a choice any more: the music is not the episode's to turn down.
@@ -306,7 +314,7 @@ describe('an episode whose music the listener plays themselves', () => {
     await playItMyself(user);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /같은 부탁이 세 번, 화성은 그대로/ }));
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
 
     expect(screen.getByRole('heading', { level: 2, name: 'Your turn' })).toBeInTheDocument();
     expect(within(now()).getByText('EARFQUAKE', { selector: '.current-lyric' })).toBeInTheDocument();
@@ -326,12 +334,12 @@ describe('an episode whose music the listener plays themselves', () => {
     renderApp(`#/episode/${IGOR}`);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /부드러운 코드와 불안정한 보컬이 동시에 움직인다/ }));
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
     expect(within(now()).getByText(/^The whole track · \d:\d\d$/)).toBeInTheDocument();
     expect(within(now()).queryByRole('list', { name: 'The lines of this stretch, translated' })).not.toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: 'Voices and pace' }));
-    await user.click(within(screen.getByRole('complementary', { name: 'Settings' })).getByRole('button', { name: 'Played for me' }));
+    await user.click(screen.getByRole('button', { name: '목소리와 속도' }));
+    await user.click(within(screen.getByRole('dialog', { name: '목소리와 속도' })).getByRole('button', { name: 'Played for me' }));
     await waitFor(() => expect(screen.queryByRole('heading', { level: 2, name: 'Your turn' })).not.toBeInTheDocument());
     expect(now()).toHaveAttribute('data-status', 'playing');
   });
@@ -342,7 +350,7 @@ describe('an episode whose music the listener plays themselves', () => {
     renderApp(`#/episode/${MBDTF}`);
     const script = await openScript(user);
     await user.click(within(script).getByRole('button', { name: /터틀스의 원곡, 첫 소절/ }));
-    await user.click(screen.getByRole('button', { name: 'Close the script' }));
+    await user.click(screen.getByRole('button', { name: '대본 닫기' }));
     expect(within(now()).getByText('The Turtles · From 0:10 to 0:35')).toBeInTheDocument();
     expect(within(now()).getByRole('link', { name: 'Open in Spotify' })).toHaveAttribute('href', 'https://open.spotify.com/track/7j1ABZOylWUPUIZTt5x6AL');
   });
@@ -394,8 +402,8 @@ describe('an episode on a site with recorded hosts', () => {
     vi.spyOn(narrationLibrary, 'getManifest').mockReturnValue(recorded('all'));
     const clip = vi.spyOn(narrationLibrary, 'clip').mockRejectedValue(new Error('no network in the tests'));
     renderApp(`#/episode/${IGOR}`);
-    await user.click(await screen.findByRole('button', { name: 'Voices and pace' }));
-    const voices = within(screen.getByRole('complementary', { name: 'Settings' })).getByRole('group', { name: 'The recorded voices' });
+    await user.click(await screen.findByRole('button', { name: '목소리와 속도' }));
+    const voices = within(screen.getByRole('dialog', { name: '목소리와 속도' })).getByRole('group', { name: 'The recorded voices' });
     expect(within(voices).getAllByRole('button')).toHaveLength(RECORDED_VOICES.length);
     await user.click(within(voices).getByRole('button', { name: /Hear voice M5, warm, storytelling/ }));
     expect(clip).toHaveBeenCalledWith(recorded('all').samples.M5);

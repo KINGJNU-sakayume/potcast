@@ -83,35 +83,49 @@
 .ep-pair-range { padding-top: 22px; font-size: 12.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 /* Where the episode is: the album's track numbers over the episode's clock, in text, dots and rules */
-.ep-position { display: grid; gap: 14px; }
-.ep-rail { display: flex; align-items: center; gap: 16px; min-height: 28px; }
-.ep-rail-edge { flex: none; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); white-space: nowrap; }
-.ep-rail-edge[data-on] { color: var(--ink); }
-.ep-rail-tracks { flex: 1; display: flex; align-items: center; min-width: 0; margin: 0; padding: 0; list-style: none; }
-.ep-rail-track { position: relative; flex: 1 1 0; display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 0; height: 28px; font-size: 13px; color: var(--dim); font-variant-numeric: tabular-nums; }
-.ep-rail-track[data-heard] { color: var(--ink-2); }
-.ep-rail-track[data-named] { flex: 0 0 auto; padding: 0 10px; color: var(--ink); }
-.ep-rail-track[data-open] { flex: 8 1 0; justify-content: flex-start; color: var(--ink); }
-.ep-rail-title { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px; letter-spacing: .06em; color: var(--ink); }
-.ep-rail-time { flex: none; font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
-.ep-rail-between { position: absolute; right: -3.5px; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: var(--ink); }
-.ep-rail-outside { display: flex; align-items: center; gap: 12px; min-height: 28px; }
-.ep-rail-outside .ep-rail-title { flex: none; max-width: 30%; }
-
-/* A line: a hairline, the stretch played heavier, a dot where it is */
-.ep-line-track, .ep-clock-line { position: relative; flex: 1; min-width: 0; height: 28px; }
-.ep-line-base { position: absolute; left: 0; right: 0; top: 14px; height: 1px; background: color-mix(in srgb, var(--ink) 30%, transparent); }
-.ep-line-track.under .ep-line-base { height: 0; background: none; border-top: 1px dashed var(--ink); }
-.ep-line-past { position: absolute; left: 0; top: 14px; height: 1px; background: var(--ink); }
-.ep-line-stretch { position: absolute; top: 13px; height: 3px; background: color-mix(in srgb, var(--ink) 30%, transparent); }
-.ep-line-stretch > span { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink); }
-.ep-line-dot { position: absolute; top: 11px; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: var(--ink); }
-.ep-clock { display: flex; align-items: center; gap: 16px; }
-.ep-clock-time { flex: none; min-width: 52px; font-size: 12px; color: var(--ink); font-variant-numeric: tabular-nums; }
-.ep-clock-time.total { color: var(--dim); text-align: right; }
-.ep-clock-line { cursor: pointer; touch-action: none; }
-.ep-clock-line::before { content: ''; position: absolute; inset: 4px 0; }
-.ep-clock .note-more { margin-top: 0; white-space: nowrap; }
+.ep-position { display: grid; gap: 16px; }
+/* Both bars: a small label on the left, "elapsed / length" on the right. */
+.ep-bar-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; min-width: 0; }
+.ep-bar-label { flex: none; font-size: 13px; color: var(--muted); }
+.ep-bar-time { flex: none; font-size: 13px; color: var(--ink); font-variant-numeric: tabular-nums; }
+/* The episode map: one button per chapter, as wide as the chapter is long. */
+.ep-map { display: grid; gap: 6px; }
+.ep-map-chapters { display: flex; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.ep-map-chapter { flex: 1 1 0; min-width: 6px; display: flex; }
+.ep-map-chapter > button { position: relative; flex: 1; height: 24px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.ep-map-chapter > button::before { content: ''; position: absolute; left: 0; right: 0; top: 9px; height: 6px; background: color-mix(in srgb, var(--ink) 18%, transparent); transition: height .15s ease, top .15s ease; }
+.ep-map-chapter > button[data-heard]::before { background: color-mix(in srgb, var(--ink) 55%, transparent); }
+.ep-map-chapter > button[aria-current]::before { background: color-mix(in srgb, var(--main-text) 35%, transparent); }
+.ep-map-chapter > button:hover::before, .ep-map-chapter > button:focus-visible::before { top: 6px; height: 12px; }
+.ep-map-fill { position: absolute; left: 0; top: 9px; height: 6px; width: 0; background: var(--main-text); pointer-events: none; }
+.ep-map-chapter > button:hover .ep-map-fill, .ep-map-chapter > button:focus-visible .ep-map-fill { top: 6px; height: 12px; }
+.ep-map-ends { display: flex; justify-content: space-between; gap: 16px; font-size: 13px; color: var(--muted); }
+.ep-map-ends > span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+/* The chapter it is in, enlarged: the main bar. */
+.ep-zoom { display: grid; gap: 8px; }
+.ep-zoom-title { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
+.ep-zoom-title b { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 17px; font-weight: 600; color: var(--ink); }
+.ep-zoom-time { font-size: 15px; }
+.ep-zoom-line { position: relative; height: 28px; cursor: pointer; touch-action: none; }
+.ep-zoom-part { position: absolute; top: 10px; height: 8px; background: color-mix(in srgb, var(--ink) 16%, transparent); border-right: 2px solid var(--bg); box-sizing: border-box; }
+.ep-zoom-part[data-kind='music'] { background: color-mix(in srgb, var(--ink) 34%, transparent); }
+.ep-zoom-part[data-kind='over'] { background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--ink) 34%, transparent) 0 6px, transparent 6px 9px); }
+.ep-zoom-past { position: absolute; left: 0; top: 10px; height: 8px; background: color-mix(in srgb, var(--ink) 80%, transparent); mix-blend-mode: normal; pointer-events: none; }
+.ep-zoom-dot { position: absolute; top: 6px; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 3px var(--bg); pointer-events: none; }
+.ep-zoom-line:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+.ep-zoom-legend { display: flex; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.ep-zoom-legend > li { flex: 1 1 0; min-width: 0; }
+.ep-zoom-legend button { width: 100%; padding: 0; border: 0; background: transparent; font-size: 13px; line-height: 1.4; color: var(--muted); text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; }
+.ep-zoom-legend li[data-kind='music'] button { color: var(--ink-2); }
+.ep-zoom-legend li[data-current] button { color: var(--ink); font-weight: 600; }
+.ep-zoom-legend button:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+/* Transport-row actions: real buttons, at least 44px tall. */
+.ep-action { min-height: 44px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink); font-size: 14px; white-space: nowrap; }
+.ep-action:hover, .ep-action[aria-expanded='true'] { border-color: var(--ink); }
+.ep-settings { position: relative; }
+.ep-settings-panel { position: absolute; right: 0; bottom: calc(100% + 10px); z-index: 20; width: min(420px, 80vw); max-height: 60vh; overflow: auto; padding: 18px 20px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper, var(--bg)); color: var(--ink); box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .35); }
+/* Before the episode starts its own button plays it: the transport's play is not a second one. */
+.player-controls[data-intro] .transport { visibility: hidden; }
 .ep-extras { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 2px 18px; }
 .ep-notice .note-more { margin: 0 0 0 14px; white-space: nowrap; }
 
@@ -120,8 +134,8 @@
 .ep-chapter { display: flex; align-items: baseline; gap: 12px; margin: 30px 0 6px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 17px; font-weight: 500; line-height: 1.35; letter-spacing: -.015em; color: var(--ink); }
 .ep-chapter-no { min-width: 56px; font-size: 12px; font-weight: 400; letter-spacing: 0; color: var(--dim); font-variant-numeric: tabular-nums; }
 .ep-cue:first-child > .ep-chapter { margin-top: 12px; padding-top: 0; border-top: 0; }
-.ep-row { appearance: none; width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 8px 8px 8px 0; border: 0; background: transparent; color: var(--ink-2); text-align: left; transition: padding .2s var(--ease), background .2s ease; }
-.ep-row:hover, .ep-row[aria-current='true'] { padding-left: 8px; background: color-mix(in srgb, var(--main) 7%, transparent); }
+.ep-row { appearance: none; width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 8px; border: 0; background: transparent; color: var(--ink-2); text-align: left; transition: background .2s ease; }
+.ep-row:hover, .ep-row[aria-current='true'] { background: color-mix(in srgb, var(--main) 7%, transparent); }
 .ep-row[aria-current='true'] { color: var(--ink); }
 .ep-row-lead { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
 .ep-row[aria-current='true'] .ep-row-lead { color: var(--main-text); }
@@ -162,7 +176,7 @@
 .desktop .ep-pair-text > span[lang] { font-size: calc(13.5px * var(--t)); }
 .desktop .ep-pair-role { font-size: calc(11px * var(--t)); }
 .desktop .ep-return { font-size: calc(13px * var(--t)); }
-.desktop .ep-pair-range, .desktop .ep-rail-time, .desktop .ep-clock-time { font-size: calc(12px * var(--t)); }
+.desktop .ep-pair-range { font-size: calc(12px * var(--t)); }
 .desktop .ep-extras { gap: 2px 18px; }
 .desktop .ep-script-panel { grid-area: lyrics; min-width: 0; min-height: 0; overflow: auto; padding: 14px 8px 28px 0; scrollbar-width: thin; scrollbar-color: var(--line) transparent; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to bottom, transparent, #000 14px, #000 calc(100% - 28px), transparent); }
 .desktop .ep-chapter { font-size: calc(17px * var(--t)); }
@@ -231,23 +245,15 @@
 .m-shell .ep-pair { margin-top: 20px; }
 .m-shell .ep-pair-text b { font-size: 16px; }
 .m-shell .ep-actions .plain-action { min-height: 44px; }
-.m-shell .ep-position { gap: 8px; }
-.m-shell .ep-rail { gap: 8px; }
-.m-shell .ep-rail-edge { font-size: 0; width: 5px; height: 5px; border-radius: 50%; background: color-mix(in srgb, var(--ink) 30%, transparent); }
-.m-shell .ep-rail-edge[data-on] { background: var(--ink); }
-.m-shell .ep-rail-track { font-size: 12px; gap: 6px; }
-.m-shell .ep-rail-track[data-named] { padding: 0 6px; max-width: 45%; }
-.m-shell .ep-rail-track[data-open] { flex-grow: 10; }
+.m-shell .ep-position { gap: 10px; }
+.m-shell .ep-map-ends { display: none; }
+.m-shell .ep-zoom-title b { font-size: 15px; }
 /* The phone names the playing track in large type just above: its slot keeps the number, the line and the time. */
-.m-shell .ep-rail-track[data-open] .ep-rail-title { display: none; }
-.m-shell .ep-rail-track:not([data-open]) { flex-shrink: 0; min-width: 22px; }
-.m-shell .ep-clock { gap: 10px; }
-.m-shell .ep-clock .note-more { min-height: 44px; }
 .m-shell .ep-stage .player-controls { display: grid; gap: 8px; padding-top: 12px; border-top: 1px solid var(--line); }
 .m-shell .ep-stage .transport-row { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .m-shell .ep-stage .m-transport { grid-area: auto; }
 .m-shell .ep-extras { width: 100%; justify-content: center; gap: 2px 22px; }
-.m-shell .ep-extras .text-toggle { min-height: 40px; }
+.m-shell .ep-extras .ep-action { min-height: 44px; }
 .m-shell .ep-stage .playback-state { justify-content: flex-start; text-align: left; }
 .m-shell .ep-row { grid-template-columns: 44px minmax(0, 1fr) auto; gap: 10px; min-height: 44px; }
 .m-shell .ep-row-line .ep-row-aside { display: none; }

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useId, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { usePageTitle } from '../app/pageTitle';
 import { useShell } from '../app/shellContext';
@@ -19,6 +19,7 @@ import { getAlbumNote } from '../editorial/lookup';
 import { songNotes } from '../editorial/songs';
 import { readBookmark } from '../episode/bookmark';
 import { useEpisodeRunner } from '../episode/episodeContext';
+import { EpisodeSettings } from '../episode/EpisodeSettings';
 import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
 import { coverage } from '../episode/narration/plan';
@@ -53,6 +54,14 @@ function rangeLabel(cue: MusicCue): string {
   if (cue.untilMs === null) return `from ${formatDuration(from)}`;
   if (from <= 0) return `to ${formatDuration(cue.untilMs)}`;
   return `${formatDuration(from)}–${formatDuration(cue.untilMs)}`;
+}
+
+/** A stretch of music on the chapter bar: "곡 전체 5:14" when the track plays whole, else the stretch it plays. */
+function musicRange(cue: MusicCue): string {
+  const last = cue.tracks[cue.tracks.length - 1]!;
+  const from = cue.fromMs ?? cue.fallbackFromMs;
+  if (cue.tracks.length === 1 && from <= 0 && cue.untilMs === null) return `곡 전체 ${formatDuration(last.durationMs)}`;
+  return rangeLabel(cue);
 }
 
 /** What to listen for in a stretch of music: the script's own words, else the song note's cue. */
@@ -572,33 +581,7 @@ function ScriptList({
   );
 }
 
-/* ── Where the episode is: the album's tracks, and the episode's clock ── */
-
-/** A moment the episode plays a track of the album, by its number on the record. */
-interface AlbumMark {
-  no: number;
-  start: number;
-  cueIndex: number;
-}
-
-/** The album's tracks in record order, and when the episode plays each of them. */
-function albumMarks(episode: Episode, timeline: EpisodeTimeline, album: AlbumDetail): AlbumMark[] {
-  const numbers = new Map(album.tracks.map((track, index) => [track.id, index + 1]));
-  const marks: AlbumMark[] = [];
-  episode.cues.forEach((cue, cueIndex) => {
-    const { start, dur } = timeline.cues[cueIndex]!;
-    const tracks = cue.type === 'music' ? cue.tracks : cue.type === 'over' ? [cue.track] : [];
-    // In a cue of several tracks, each after the one before it: the first plays what the others leave of the cue.
-    const rest = cue.type === 'music' ? cue.tracks.slice(1, -1).reduce((sum, track) => sum + track.durationMs, 0) + (cue.untilMs ?? cue.tracks[cue.tracks.length - 1]!.durationMs) : 0;
-    let at = start;
-    tracks.forEach((track, index) => {
-      const no = track.outside ? undefined : numbers.get(track.id);
-      if (no) marks.push({ no, start: at, cueIndex });
-      at += index === 0 ? Math.max(0, dur - (tracks.length > 1 ? rest : 0)) : track.durationMs;
-    });
-  });
-  return marks;
-}
+/* ── Where the episode is: a map of its chapters, and the chapter it is in ── */
 
 /** The stretch of a track the episode is playing, and where in it the music is. */
 interface Sounding {
@@ -637,63 +620,89 @@ function intoMusic(cue: MusicCue, dur: number, trackIndex: number, position: num
 
 const pct = (ms: number, of: number) => `${((Math.min(of, Math.max(0, ms)) / Math.max(1, of)) * 100).toFixed(3)}%`;
 
-/** One track's stretch as a line: the stretch played heavier, the rest a hairline, a dot where the music is. */
-function TrackLine({ sounding }: { sounding: Sounding }) {
-  const { track, fromMs, untilMs, atMs, under } = sounding;
-  const duration = Math.max(1, track.durationMs);
-  const whole = fromMs <= 1500 && untilMs >= duration - 1500;
-  return (
-    <span className={under ? 'ep-line-track under' : 'ep-line-track'} aria-hidden="true">
-      <span className="ep-line-base" />
-      {whole || under ? (
-        <span className="ep-line-past" style={{ width: pct(atMs, duration) }} />
-      ) : (
-        <span className="ep-line-stretch" style={{ left: pct(fromMs, duration), width: pct(untilMs - fromMs, duration) }}>
-          <span style={{ width: pct(atMs - fromMs, untilMs - fromMs) }} />
-        </span>
-      )}
-      <span className="ep-line-dot" style={{ left: pct(atMs, duration) }} />
-    </span>
-  );
+/** A chapter of the script on the episode's clock. */
+export interface ChapterSpan {
+  number: number;
+  title: string;
+  cueIndex: number;
+  start: number;
+  end: number;
+}
+
+/** Every chapter of the script, the turning point included, from where it starts to where the next one does. */
+export function chapterSpans(episode: Episode, timeline: EpisodeTimeline): ChapterSpan[] {
+  const chapters = episode.chapters.length > 0 ? episode.chapters : [{ title: episode.title, cueIndex: 0 }];
+  return chapters.map((chapter, index) => {
+    const next = chapters[index + 1];
+    const start = index === 0 ? 0 : (timeline.cues[chapter.cueIndex]?.start ?? timeline.totalMs);
+    const end = next ? (timeline.cues[next.cueIndex]?.start ?? timeline.totalMs) : timeline.totalMs;
+    return { number: index + 1, title: chapter.title, cueIndex: chapter.cueIndex, start, end: Math.max(start, end) };
+  });
+}
+
+/** The parts of a chapter: the hosts' talk, the music, and talk over the music, each on the chapter's own clock. */
+interface ChapterPart {
+  kind: 'talk' | 'music' | 'over';
+  cueIndex: number;
+  start: number;
+  dur: number;
+  label: string;
+}
+
+function chapterParts(episode: Episode, timeline: EpisodeTimeline, span: ChapterSpan, nextCueIndex: number): ChapterPart[] {
+  const parts: ChapterPart[] = [];
+  let musicSeen = false;
+  for (let cueIndex = span.cueIndex; cueIndex < nextCueIndex; cueIndex += 1) {
+    const cue = episode.cues[cueIndex]!;
+    const { start, dur } = timeline.cues[cueIndex]!;
+    if (dur <= 0) continue;
+    if (cue.type === 'music') {
+      musicSeen = true;
+      const title = cue.tracks.map((track) => track.title).join(' → ');
+      parts.push({ kind: 'music', cueIndex, start, dur, label: `${title} · ${musicRange(cue)}` });
+    } else if (cue.type === 'over') {
+      musicSeen = true;
+      parts.push({ kind: 'over', cueIndex, start, dur, label: '곡 위 대화' });
+    } else {
+      parts.push({ kind: 'talk', cueIndex, start, dur, label: musicSeen ? '곡 뒤 대화' : '진행 대화' });
+    }
+  }
+  return parts;
 }
 
 /**
- * Where the episode is, in two lines of text, dots and rules. Above, the
- * album's track numbers: the track the hosts are on is named, the one playing
- * opens into a line of its own, and while they talk between two tracks a dot
- * stands between the numbers. Below, the whole episode on one hairline, the
- * time into it and its length, and the script.
+ * Where the episode is, in two bars. Above, a thin map of the whole episode:
+ * one button per chapter, each as wide as the chapter is long; pressing one
+ * goes there. Below, the chapter it is in, enlarged: the hosts' talk and the
+ * music each in their place, the time into what is sounding and its length,
+ * and a bar to press or drag — inside the music that is playing it moves the
+ * music, anywhere else it goes to that part of the chapter.
  */
 function EpisodePosition({
   episode,
-  album,
   timeline,
   state,
   active,
   subject,
   live,
   bookmark,
-  scriptOpen,
-  onToggleScript,
   onSeek,
 }: {
   episode: Episode;
-  album: AlbumDetail;
   timeline: EpisodeTimeline;
   state: EpisodeState;
   active: boolean;
   subject: Subject;
   live: boolean;
   bookmark: { cueIndex: number; lineIndex: number } | null;
-  scriptOpen: boolean;
-  onToggleScript: () => void;
   onSeek: (cueIndex: number) => void;
 }) {
+  const engine = useEngine();
   const position = usePlaybackPosition();
   const ended = active && state.status === 'ended';
   const cue = active && !ended ? episode.cues[state.cueIndex] : undefined;
   const talking = cue !== undefined && cue.type !== 'music';
-  const marks = useMemo(() => albumMarks(episode, timeline, album), [episode, timeline, album]);
+  const spans = useMemo(() => chapterSpans(episode, timeline), [episode, timeline]);
 
   // Between one utterance and the next the clock runs on by itself, up to where the next one starts.
   const speechKey = active ? `${state.cueIndex}:${state.lineIndex}:${state.utteranceIndex}` : '';
@@ -720,104 +729,174 @@ function EpisodePosition({
     elapsed = state.status === 'playing' ? Math.min(next, at + (Date.now() - spokenSince.current.at)) : at;
   }
 
-  const sounding = active && !ended ? soundingOf(subject, state, cue, position, live) : null;
-  const playingNo = sounding && !sounding.track.outside ? (marks.find((mark) => mark.cueIndex === state.cueIndex && album.tracks[mark.no - 1]?.id === sounding.track.id)?.no ?? null) : null;
-  const before = marks.filter((mark) => mark.start < elapsed && mark.no !== playingNo);
-  const prevNo = active && !ended ? (before.length ? before[before.length - 1]!.no : null) : null;
-  const nextNo = active && !ended ? (marks.find((mark) => mark.start > elapsed)?.no ?? null) : null;
-  // The track the hosts are on: the one playing, else the next one their chapter plays.
-  let topic: number | null = playingNo;
-  if (topic === null && active && !ended && state.cueIndex < episode.cues.length) {
-    const chapterIndex = episode.chapters.findLastIndex((chapter) => chapter.cueIndex <= state.cueIndex);
-    const from = episode.chapters[chapterIndex]?.cueIndex ?? 0;
-    const to = episode.chapters[chapterIndex + 1]?.cueIndex ?? episode.cues.length;
-    const own = [...new Set(marks.filter((mark) => mark.cueIndex >= from && mark.cueIndex < to).map((mark) => mark.no))];
-    topic = own.find((no) => no > (prevNo ?? 0)) ?? own[own.length - 1] ?? null;
-  }
-  const between = active && cue?.type === 'talk' && prevNo !== null && nextNo !== null && prevNo !== nextNo ? prevNo : null;
-  const heard = (no: number) => ended || (no !== playingNo && marks.some((mark) => mark.no === no && mark.start < elapsed));
   const total = timeline.totalMs;
+  const cueIndex = active && !ended ? state.cueIndex : bookmark?.cueIndex ?? (ended ? episode.cues.length - 1 : 0);
+  const spanIndex = Math.max(0, spans.findLastIndex((span) => span.cueIndex <= cueIndex));
+  const span = spans[spanIndex]!;
+  const nextCueIndex = spans[spanIndex + 1]?.cueIndex ?? episode.cues.length;
+  const parts = useMemo(() => chapterParts(episode, timeline, span, nextCueIndex), [episode, timeline, span, nextCueIndex]);
+  const length = Math.max(1, span.end - span.start);
+  const into = Math.min(length, Math.max(0, elapsed - span.start));
 
-  const seekTo = (ms: number) => onSeek(cueAt(timeline, Math.min(total - 1, Math.max(0, ms))));
+  const sounding = active && !ended ? soundingOf(subject, state, cue, position, live) : null;
+  // What the right-hand time measures: the track while one sounds, else the chapter.
+  const clock = sounding ? { at: sounding.atMs, of: sounding.track.durationMs } : { at: into, of: length };
+
+  /** Goes to a moment of the chapter: inside the music that is playing, by moving the music. */
+  const seekWithin = (ms: number) => {
+    const target = span.start + Math.min(length - 1, Math.max(0, ms));
+    const here = active && !ended && live && cue?.type === 'music' && cue.tracks.length === 1 ? timeline.cues[state.cueIndex]! : null;
+    if (here && cue?.type === 'music' && target >= here.start && target < here.start + here.dur) {
+      const until = cue.untilMs ?? cue.tracks[0]!.durationMs;
+      void engine.seek(Math.max(0, Math.round(until - (here.dur - (target - here.start)))));
+      return;
+    }
+    onSeek(cueAt(timeline, target));
+  };
 
   return (
     <div className="ep-position">
-      <div className="ep-rail">
-        <span className="ep-rail-edge" data-on={active && talking && prevNo === null ? '' : undefined}>
-          여는 말
-        </span>
-        <ol className="ep-rail-tracks" aria-label="The album’s tracks">
-          {album.tracks.map((track, index) => {
-            const no = index + 1;
-            const open = no === playingNo && sounding !== null;
-            const named = !open && no === topic;
+      <div className="ep-map">
+        <div className="ep-bar-head">
+          <span className="ep-bar-label">에피소드 지도</span>
+          <span className="ep-bar-time">
+            {formatDuration(elapsed)} / {formatDuration(total)}
+          </span>
+        </div>
+        <ol className="ep-map-chapters" aria-label="에피소드의 장">
+          {spans.map((item) => {
+            const heard = ended || item.end <= elapsed;
+            const current = !ended && item === span && (active || bookmark !== null);
             return (
-              <li
-                key={track.id}
-                className="ep-rail-track"
-                data-heard={heard(no) ? '' : undefined}
-                data-open={open ? '' : undefined}
-                data-named={named ? '' : undefined}
-                aria-current={open || named ? 'true' : undefined}
-              >
-                <span className="ep-rail-no">{no}</span>
-                {(open || named) && (
-                  <span className="ep-rail-title" lang={detectLineLanguage(track.name)}>
-                    {track.name}
-                  </span>
-                )}
-                {open && sounding && (
-                  <>
-                    <TrackLine sounding={sounding} />
-                    <span className="ep-rail-time">{formatDuration(sounding.atMs)}</span>
-                  </>
-                )}
-                {between === no && <span className="ep-rail-between" aria-label="The hosts are talking here" />}
+              <li key={`${item.number}-${item.cueIndex}`} className="ep-map-chapter" style={{ flexGrow: Math.max(1, item.end - item.start) }}>
+                <button
+                  type="button"
+                  data-heard={heard ? '' : undefined}
+                  aria-current={current ? 'step' : undefined}
+                  aria-label={`${item.number}장 ${item.title}, ${formatDuration(item.start)}부터`}
+                  title={`${item.number} · ${item.title} (${formatDuration(item.start)})`}
+                  onClick={() => onSeek(item.cueIndex)}
+                >
+                  <span className="ep-map-fill" style={current ? { width: pct(elapsed - item.start, item.end - item.start) } : undefined} />
+                </button>
               </li>
             );
           })}
         </ol>
-        <span className="ep-rail-edge end" data-on={active && talking && nextNo === null && prevNo !== null ? '' : undefined}>
-          닫는 말
-        </span>
-      </div>
-      {sounding?.track.outside && (
-        <div className="ep-rail-outside">
-          <span className="ep-rail-title">{sounding.track.title}</span>
-          <TrackLine sounding={sounding} />
-          <span className="ep-rail-time">{formatDuration(sounding.atMs)}</span>
+        <div className="ep-map-ends" aria-hidden="true">
+          <span>{spans[0]?.title}</span>
+          <span>{spans[spans.length - 1]?.title}</span>
         </div>
-      )}
-      <div className="ep-clock">
-        <span className="ep-clock-time">{formatDuration(elapsed)}</span>
+      </div>
+
+      <div className="ep-zoom">
+        <div className="ep-bar-head">
+          <span className="ep-zoom-title" lang="ko">
+            <span className="ep-bar-label">지금 장</span>
+            <b>
+              {span.number} / {spans.length} · {span.title}
+            </b>
+          </span>
+          <span className="ep-bar-time ep-zoom-time">
+            {formatDuration(clock.at)} / {formatDuration(clock.of)}
+          </span>
+        </div>
         <div
-          className="ep-clock-line"
+          className="ep-zoom-line"
           role="slider"
           tabIndex={0}
-          aria-label="Episode position"
+          aria-label="지금 장 안의 위치"
           aria-valuemin={0}
-          aria-valuemax={Math.round(total / 1000)}
-          aria-valuenow={Math.round(elapsed / 1000)}
-          aria-valuetext={`${formatDuration(elapsed)} of ${formatDuration(total)}`}
+          aria-valuemax={Math.round(length / 1000)}
+          aria-valuenow={Math.round(into / 1000)}
+          aria-valuetext={`${formatDuration(into)} / ${formatDuration(length)}`}
           onPointerDown={(event) => {
             const box = event.currentTarget.getBoundingClientRect();
-            seekTo(((event.clientX - box.left) / box.width) * total);
+            if (box.width > 0) seekWithin(((event.clientX - box.left) / box.width) * length);
           }}
           onKeyDown={(event) => {
             if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
             event.preventDefault();
-            seekTo(elapsed + (event.key === 'ArrowRight' ? 30_000 : -30_000));
+            const step = event.shiftKey ? 30_000 : 5_000;
+            seekWithin(into + (event.key === 'ArrowRight' ? step : -step));
           }}
         >
-          <span className="ep-line-base" />
-          <span className="ep-line-past" style={{ width: pct(elapsed, total) }} />
-          <span className="ep-line-dot" style={{ left: pct(elapsed, total) }} />
+          {parts.map((part) => (
+            <span
+              key={part.cueIndex}
+              className="ep-zoom-part"
+              data-kind={part.kind}
+              data-current={active && !ended && part.cueIndex === state.cueIndex ? '' : undefined}
+              style={{ left: pct(part.start - span.start, length), width: pct(part.dur, length) }}
+            />
+          ))}
+          <span className="ep-zoom-past" style={{ width: pct(into, length) }} />
+          <span className="ep-zoom-dot" style={{ left: pct(into, length) }} />
         </div>
-        <span className="ep-clock-time total">{formatDuration(total)}</span>
-        <button type="button" className="note-more" aria-expanded={scriptOpen} onClick={onToggleScript}>
-          {scriptOpen ? 'Close the script' : 'Script'} <span aria-hidden="true">→</span>
-        </button>
+        <ol className="ep-zoom-legend" aria-label="이 장의 구성">
+          {parts.map((part) => (
+            <li
+              key={part.cueIndex}
+              data-kind={part.kind}
+              data-current={active && !ended && part.cueIndex === state.cueIndex ? '' : undefined}
+              style={{ flexGrow: Math.max(1, part.dur) }}
+            >
+              <button type="button" title={part.label} onClick={() => onSeek(part.cueIndex)}>
+                {part.label}
+              </button>
+            </li>
+          ))}
+        </ol>
       </div>
+    </div>
+  );
+}
+
+/**
+ * “목소리와 속도”: on the desktop the episode's own settings open in a small
+ * popover beside the transport, instead of the whole Settings column from
+ * the Spotify account down. The phone keeps its settings sheet.
+ */
+function EpisodeSettingsButton() {
+  const shell = useShell();
+  const mobile = useIsMobile();
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const panelId = useId();
+
+  useEffect(() => {
+    if (!open) return;
+    const onPointer = (event: PointerEvent) => {
+      if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('pointerdown', onPointer);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onPointer);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  if (mobile) {
+    return (
+      <button type="button" className="ep-action" title="목소리, 속도, 음악을 누가 틀지" onClick={shell.toggleSettings}>
+        목소리와 속도
+      </button>
+    );
+  }
+  return (
+    <div className="ep-settings" ref={rootRef}>
+      <button type="button" className="ep-action" aria-expanded={open} aria-controls={panelId} onClick={() => setOpen((value) => !value)}>
+        목소리와 속도
+      </button>
+      {open && (
+        <div id={panelId} className="ep-settings-panel settings-body" role="dialog" aria-label="목소리와 속도">
+          <EpisodeSettings />
+        </div>
+      )}
     </div>
   );
 }
@@ -825,8 +904,8 @@ function EpisodePosition({
 /* ── Page ──────────────────────────────────────────────────────────────── */
 
 const NOTICE_TEXT = {
-  interrupted: 'Playback was changed outside the episode, so it stepped back. Continue picks it up where it stopped.',
-  'no-playback': 'The music did not start. Check the device, then continue — or play the music yourself, and the episode waits for you.',
+  interrupted: '에피소드 밖에서 재생이 바뀌어 한 칸 물러났어요. 이어 듣기를 누르면 멈춘 곳부터 이어집니다.',
+  'no-playback': '음악이 시작되지 않았어요. 기기를 확인하고 이어 듣거나, 음악을 직접 틀면 에피소드가 기다립니다.',
 } as const;
 
 /**
@@ -843,12 +922,12 @@ export function EpisodePage() {
   const album = useAlbum(albumId);
   const runner = useEpisodeRunner();
   const state = useEpisodeState();
-  const shell = useShell();
   const mobile = useIsMobile();
   const [preferences, setPreferences] = usePreferences();
   const narration = useNarrationManifest();
   const engine = useEngine();
   const playerTrack = usePlayerSnapshot().track;
+  const playerIssue = usePlayerSelector((s) => s.issue !== null);
   const [scriptOpen, setScriptOpen] = useState(false);
   // Whether this browser is (or is trying to be) the player: when the music will not start, the app on the computer can be.
   const browserPlays = usePlayerSelector((s) => s.sdk.kind !== 'disabled') && engine.kind === 'spotify' && !mobile;
@@ -1125,18 +1204,15 @@ export function EpisodePage() {
               </>
             )}
 
-            <div className="player-controls">
+            <div className="player-controls" data-intro={!active && !bookmark ? '' : undefined}>
               <EpisodePosition
                 episode={episode}
-                album={data}
                 timeline={timeline!}
                 state={state}
                 active={active}
                 subject={subject}
                 live={onAir || (track !== null && !subject.ahead && sameTrack(track, playerTrack))}
                 bookmark={bookmark}
-                scriptOpen={scriptOpen}
-                onToggleScript={() => setScriptOpen((open) => !open)}
                 onSeek={(cueIndex) => jump(cueIndex, 0)}
               />
               <div className="transport-row">
@@ -1159,14 +1235,15 @@ export function EpisodePage() {
                   </button>
                 </div>
                 <div className="transport-extras ep-extras">
+                  <button type="button" className="ep-action" aria-expanded={scriptOpen} onClick={() => setScriptOpen((open) => !open)}>
+                    {scriptOpen ? '대본 닫기' : '대본'}
+                  </button>
                   {active && (
-                    <button type="button" className="text-toggle" onClick={() => runner.stop()}>
-                      End episode
+                    <button type="button" className="ep-action" onClick={() => runner.stop()}>
+                      에피소드 끝내기
                     </button>
                   )}
-                  <button type="button" className="text-toggle" title="Voices, pace, and who plays the music" onClick={shell.toggleSettings}>
-                    Voices and pace
-                  </button>
+                  <EpisodeSettingsButton />
                   {!mobile && !ownMusic && (
                     <>
                       <DevicePicker />
@@ -1175,25 +1252,28 @@ export function EpisodePage() {
                   )}
                 </div>
               </div>
-              {active && state.notice && (
-                <p className="playback-state alert ep-notice" role="alert">
-                  {NOTICE_TEXT[state.notice]}
-                  {state.notice === 'no-playback' && !ownMusic && browserPlays && (
-                    <button
-                      type="button"
-                      className="note-more"
-                      title="Stop playing in this browser: the Spotify app on this computer plays, and this page starts and stops it"
-                      onClick={playThroughApp}
-                    >
-                      Play through the Spotify app
-                    </button>
-                  )}
-                  {state.notice === 'no-playback' && !ownMusic && (
-                    <button type="button" className="note-more" onClick={playItMyself}>
-                      Play the music myself
-                    </button>
-                  )}
-                </p>
+              {/* One notice at a time, in the one place: the player's own problem says more than the episode's. */}
+              {active && state.notice && !playerIssue && (
+                <div className="playback-state alert ep-notice" role="alert">
+                  <div className="notice-line">
+                    <span className="notice-message">{NOTICE_TEXT[state.notice]}</span>
+                    {state.notice === 'no-playback' && !ownMusic && browserPlays && (
+                      <button
+                        type="button"
+                        className="notice-action"
+                        title="이 브라우저 대신 이 컴퓨터의 Spotify 앱이 재생하고, 이 페이지가 시작과 멈춤을 맡습니다"
+                        onClick={playThroughApp}
+                      >
+                        Spotify 앱으로 듣기
+                      </button>
+                    )}
+                    {state.notice === 'no-playback' && !ownMusic && (
+                      <button type="button" className="notice-action" onClick={playItMyself}>
+                        음악은 내가 틀기
+                      </button>
+                    )}
+                  </div>
+                </div>
               )}
               <PlaybackNotice />
             </div>
