@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 31170315,
+    "durationMs": 284000
+  },
+  "segments": [
+    {
+      "startMs": 300,
+      "endMs": 14450,
+      "translation": "편집증이야, 편집증이야, 편집증이야 (에이)"
+    },
+    {
+      "startMs": 14450,
+      "endMs": 16990,
+      "translation": "모든 게 질서에서 벗어난 느낌이야."
+    },
+    {
+      "startMs": 16990,
+      "endMs": 21320,
+      "translation": "보고 또 둘러봐도 확신이 안 서."
+    },
+    {
+      "startMs": 21320,
+      "endMs": 27810,
+      "translation": "편집증 한 쌍이야, 아니 (이런—)"
+    },
+    {
+      "startMs": 27810,
+      "endMs": 30340,
+      "translation": "내 아우라로 느낄 수 있어 (우)"
+    },
+    {
+      "startMs": 30340,
+      "endMs": 33830,
+      "translation": "카메라와 녹음기 사이에서 살아, 아, 예 (우, 우)"
+    },
+    {
+      "startMs": 33830,
+      "endMs": 41500,
+      "translation": "평화를 원하는데 그럴 여유가 없어, 아니 (이런—)"
+    },
+    {
+      "startMs": 41500,
+      "endMs": 44290,
+      "translation": "내 집에 올 때는 예의를 지켜야 해 (편집증이야)"
+    },
+    {
+      "startMs": 44290,
+      "endMs": 47440,
+      "translation": "왜냐면 난 쑥덕공론이 싫거든."
+    },
+    {
+      "startMs": 47440,
+      "endMs": 52230,
+      "translation": "쑥덕이는 말은 입에서 입으로 옮겨 와."
+    },
+    {
+      "startMs": 52230,
+      "endMs": 54050,
+      "translation": "(워탕고지, 워탕고지)"
+    },
+    {
+      "startMs": 54050,
+      "endMs": 60730,
+      "translation": "우, 아 (빙글빙글, 하, 예)"
+    },
+    {
+      "startMs": 60730,
+      "endMs": 67500,
+      "translation": "우, 아 (빙글, 빙글)"
+    },
+    {
+      "startMs": 67500,
+      "endMs": 74080,
+      "translation": "우, 아 (누가 지켜보고 있어, 어깨 위에서 느껴져)"
+    },
+    {
+      "startMs": 74080,
+      "endMs": 80470,
+      "translation": "우, 아 (달리고, 달리고, 달리고, 빙빙 돌고) (이런—)"
+    },
+    {
+      "startMs": 80470,
+      "endMs": 82300,
+      "translation": "집 하나 사는 것도 몰래는 못 사."
+    },
+    {
+      "startMs": 82300,
+      "endMs": 83880,
+      "translation": "집에 쳐들어오는 강도 때문에 내 형제들이 죽어 가."
+    },
+    {
+      "startMs": 83880,
+      "endMs": 85520,
+      "translation": "지나가는 차를 전부 눈여겨봐."
+    },
+    {
+      "startMs": 85520,
+      "endMs": 86420,
+      "translation": "이웃들이 내가 죽기를 바라는 것 같아."
+    },
+    {
+      "startMs": 86420,
+      "endMs": 88190,
+      "translation": "침대 밑엔 대포(총)가 있어."
+    },
+    {
+      "startMs": 88190,
+      "endMs": 89860,
+      "translation": "문 잠갔는지 세 번씩 확인해."
+    },
+    {
+      "startMs": 89860,
+      "endMs": 91710,
+      "translation": "바닥에서 나는 삐걱 소리는 하나하나 다 알아."
+    },
+    {
+      "startMs": 91710,
+      "endMs": 93630,
+      "translation": "씨발, 난 편집증이야 (이런—)"
+    },
+    {
+      "startMs": 93630,
+      "endMs": 97690,
+      "translation": "동네를 한 바퀴 돌아, 눈은 백미러에 붙여 놓고."
+    },
+    {
+      "startMs": 97690,
+      "endMs": 100610,
+      "translation": "'퓨, 퓨' 소리를 듣고 후회하느니 차라리 되돌아갈래."
+    },
+    {
+      "startMs": 100610,
+      "endMs": 103900,
+      "translation": "어떤 년도 믿지 마, 네 사정이 좋으면 덫을 놓을 수 있어."
+    },
+    {
+      "startMs": 103900,
+      "endMs": 108100,
+      "translation": "그러니 콘돔 꼭 끼워, 걔네가 설치다가 널 옭아매기 전에, 이 년아."
+    },
+    {
+      "startMs": 108100,
+      "endMs": 111080,
+      "translation": "내 집에 올 때는 예의를 지켜야 해 (노이드)"
+    },
+    {
+      "startMs": 111080,
+      "endMs": 114570,
+      "translation": "왜냐면 난 쑥덕공론이 싫거든 (노이드)"
+    },
+    {
+      "startMs": 114570,
+      "endMs": 119110,
+      "translation": "쑥덕이는 말은 입에서 입으로 옮겨 와."
+    },
+    {
+      "startMs": 119110,
+      "endMs": 120470,
+      "translation": "(워탕고지, 워탕고지)"
+    },
+    {
+      "startMs": 120470,
+      "endMs": 126420,
+      "translation": "그림자, 오-오"
+    },
+    {
+      "startMs": 126420,
+      "endMs": 133380,
+      "translation": "그림자, 오-오 (예, 우)"
+    },
+    {
+      "startMs": 133380,
+      "endMs": 137930,
+      "translation": "그림자 (누가 지켜보고 있어) 오-오"
+    },
+    {
+      "startMs": 137930,
+      "endMs": 140500,
+      "translation": "(내 그림자 속에서 느껴져)"
+    },
+    {
+      "startMs": 140500,
+      "endMs": 143750,
+      "translation": "그림자 (누가 지켜보고 있어) 오-오"
+    },
+    {
+      "startMs": 143750,
+      "endMs": 145640,
+      "translation": "(지켜보고, 지켜보고)"
+    },
+    {
+      "startMs": 145640,
+      "endMs": 148260,
+      "translation": "(이런—)"
+    },
+    {
+      "startMs": 148260,
+      "endMs": 163340,
+      "translation": "누가 지켜보고 있어."
+    },
+    {
+      "startMs": 163340,
+      "endMs": 167120,
+      "translation": "느껴져, 느껴져."
+    },
+    {
+      "startMs": 167120,
+      "endMs": 174700,
+      "translation": "느껴져, 느껴져."
+    },
+    {
+      "startMs": 174700,
+      "endMs": 175870,
+      "translation": "여기 있는 사람들 믿지 마."
+    },
+    {
+      "startMs": 175870,
+      "endMs": 176570,
+      "translation": "제발, 뭘 하든."
+    },
+    {
+      "startMs": 176570,
+      "endMs": 178960,
+      "translation": "혼자 있어, 네 일은 네 안에만 둬."
+    },
+    {
+      "startMs": 178960,
+      "endMs": 180490,
+      "translation": "이 씨발 회계사 놈들도 믿지 마."
+    },
+    {
+      "startMs": 180490,
+      "endMs": 182330,
+      "translation": "걔네가 널 이용해서 한몫 챙기려 들 테니까, 알겠지?"
+    },
+    {
+      "startMs": 182330,
+      "endMs": 185120,
+      "translation": "제발, 난 누구 하나 씨발 작살내고 싶지 않으니까."
+    },
+    {
+      "startMs": 185120,
+      "endMs": 185740,
+      "translation": "하느님께 맹세해."
+    },
+    {
+      "startMs": 185740,
+      "endMs": 191250,
+      "translation": "좋아 보이지 않아? 우, 우 (오, 나나, 오, 나나, 에이)"
+    },
+    {
+      "startMs": 191250,
+      "endMs": 196210,
+      "translation": "기분 좋지 않아? (오, 나나, 오, 나나, 에이)"
+    },
+    {
+      "startMs": 196210,
+      "endMs": 197340,
+      "translation": "(오, 나나, 오, 나나, 에이)"
+    },
+    {
+      "startMs": 197340,
+      "endMs": 199870,
+      "translation": "기분 좋지 않아? (왼쪽 어깨, 오른쪽 어깨, 왼쪽 어깨, 봐, 우) (오, 나나, 오, 나나, 에이)"
+    },
+    {
+      "startMs": 199870,
+      "endMs": 203170,
+      "translation": "왼쪽 어깨, 오른쪽 어깨 (주변을 살펴), 왼쪽 어깨, 봐, 우 (오, 나나, 오, 나나, 에이)"
+    },
+    {
+      "startMs": 203170,
+      "endMs": 206490,
+      "translation": "내 창가에 누구야? 나나, 내 창가에 누구야? (오, 나나, 오, 나나, 에이)"
+    },
+    {
+      "startMs": 206490,
+      "endMs": 208950,
+      "translation": "내 창가에 누구야? (좋아, 좋아, 좋아—예) 내 창가에 누구야? (오, 나나, 오, 나나, 에이)"
+    },
+    {
+      "startMs": 208950,
+      "endMs": 211810,
+      "translation": "카메라 꺼내지 마, 제발, 조용히 먹고 싶어."
+    },
+    {
+      "startMs": 211810,
+      "endMs": 214690,
+      "translation": "너희 새끼들이랑도 년들이랑도 사진 안 찍을래."
+    },
+    {
+      "startMs": 214690,
+      "endMs": 217560,
+      "translation": "신경계는 열아홉 이전부터 이미 흔들렸어 (예)"
+    },
+    {
+      "startMs": 217560,
+      "endMs": 220650,
+      "translation": "LA는 사람을 그렇게 만들어, 넌 어디 출신이야, 야? 누구냐?"
+    },
+    {
+      "startMs": 220650,
+      "endMs": 222300,
+      "translation": "위성 (위성), 스크린샷 (노이드)"
+    },
+    {
+      "startMs": 222300,
+      "endMs": 223450,
+      "translation": "파파라치 (노이드), 비밀유지계약 (노이드)"
+    },
+    {
+      "startMs": 223450,
+      "endMs": 226140,
+      "translation": "사생활? 하, 웃기시네, NBA 가는 게 더 승산 있겠다."
+    },
+    {
+      "startMs": 226140,
+      "endMs": 229110,
+      "translation": "아무것도 존중 안 해, 우리 대화를 음성 녹음해."
+    },
+    {
+      "startMs": 229110,
+      "endMs": 231950,
+      "translation": "그녀든 그든 그들이든 누구든, 난 하나도 못 믿어, 전혀—"
+    },
+    {
+      "startMs": 231950,
+      "endMs": 235120,
+      "translation": "전혀 (노이드), 어떤 놈들은 내가 무너지길 빌어 (노이드)"
+    },
+    {
+      "startMs": 235120,
+      "endMs": 236560,
+      "translation": "통화에서 딸깍 소리가 들려 (노이드)"
+    },
+    {
+      "startMs": 236560,
+      "endMs": 238060,
+      "translation": "놈들은 러프 초안 하나 얻으려고 해킹해."
+    },
+    {
+      "startMs": 238060,
+      "endMs": 239540,
+      "translation": "년들은 두둑한 돈가방(buff bag)을 찾고 있어."
+    },
+    {
+      "startMs": 239540,
+      "endMs": 240830,
+      "translation": "고작 그 턱(jaw) 하나 때문에 그 위험을 질 순 없어, 아니."
+    },
+    {
+      "startMs": 240830,
+      "endMs": 242290,
+      "translation": "넌 따라 부르지만 날 몰라, 야."
+    },
+    {
+      "startMs": 242290,
+      "endMs": 243910,
+      "translation": "아니, 절대, 전혀 아니야, 너희 전부."
+    },
+    {
+      "startMs": 243910,
+      "endMs": 245690,
+      "translation": "놈들이 선을 넘었어, 정지 신호 따위 좆까라는 듯이 (노이드)"
+    },
+    {
+      "startMs": 245690,
+      "endMs": 249000,
+      "translation": "놈들은 내가 어디서 눈을 감는지 궁금해해, 난 눈을 크게 뜨고 있어."
+    },
+    {
+      "startMs": 249000,
+      "endMs": 250370,
+      "translation": "진짜로, 이거 완전히 망했어, 브로디."
+    },
+    {
+      "startMs": 250370,
+      "endMs": 252910,
+      "translation": "봐, 브로디 (노이드), 악수만 해도 쫄려, 브로디."
+    },
+    {
+      "startMs": 252910,
+      "endMs": 260110,
+      "translation": "놈들이 나에 대한 정보를 원해? (읽어 씨발—)"
+    },
+    {
+      "startMs": 260110,
+      "endMs": 261440,
+      "translation": "나에 대한 책이나 읽어, 으."
+    },
+    {
+      "startMs": 261440,
+      "endMs": 264460,
+      "translation": "날 내버려 둬, 날 내버려 둬 (자기야, 난 편집증이야)"
+    },
+    {
+      "startMs": 264460,
+      "endMs": 267390,
+      "translation": "왼쪽 어깨, 오른쪽 어깨, 왼쪽 어깨, 봐 (기분 좋지 않아?)"
+    },
+    {
+      "startMs": 267390,
+      "endMs": 270130,
+      "translation": "왼쪽 어깨, 오른쪽 어깨, 왼쪽 어깨, 봐 (으)"
+    },
+    {
+      "startMs": 270130,
+      "endMs": 272980,
+      "translation": "왼쪽 어깨, 오른쪽 어깨, 왼쪽 어깨, 봐."
+    },
+    {
+      "startMs": 272980,
+      "endMs": 273830,
+      "translation": "(씨발 뭘 원해? 기분 좋지 않아?)"
+    },
+    {
+      "startMs": 273830,
+      "endMs": 276370,
+      "translation": "날 내버려 둬, 뭘 원해?"
+    },
+    {
+      "startMs": 276370,
+      "endMs": 279230,
+      "translation": "날 내버려 둬, 뭘 원해?"
+    },
+    {
+      "startMs": 279230,
+      "endMs": 281060,
+      "translation": "날 내버려 둬 (내 창가에 누구야, 내 창가에?)"
+    },
+    {
+      "startMs": 281060,
+      "endMs": 283620,
+      "translation": "씨발, 젠장 (내 창가에 누구야?)"
+    },
+    {
+      "startMs": 283620,
+      "endMs": 284000,
+      "translation": "편집증이야."
+    }
+  ]
+}

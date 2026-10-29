@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13876408,
+    "durationMs": 270000
+  },
+  "segments": [
+    {
+      "startMs": 80,
+      "endMs": 17870,
+      "translation": "네가 집으로 가는 길을 찾기를 바라."
+    },
+    {
+      "startMs": 17870,
+      "endMs": 34440,
+      "translation": "네가 집으로 가는 길을 찾기를 바라."
+    },
+    {
+      "startMs": 34440,
+      "endMs": 51760,
+      "translation": "네가 집으로 가는 길을 찾기를 바라."
+    },
+    {
+      "startMs": 51760,
+      "endMs": 66450,
+      "translation": "네가 집으로 가는 길을 찾기를 바라."
+    },
+    {
+      "startMs": 66450,
+      "endMs": 69440,
+      "translation": "미끄러지고 있어, 미끄러지고 있어, 미끄러지고 있어, 미끄러지고 있어, 손이 필요해."
+    },
+    {
+      "startMs": 69440,
+      "endMs": 70600,
+      "translation": "이 남자 좀 꽉 안아 줄래?"
+    },
+    {
+      "startMs": 70600,
+      "endMs": 73360,
+      "translation": "내 머릿속이 천장 선풍기처럼 빙빙, 빙빙, 빙빙 돌아."
+    },
+    {
+      "startMs": 73360,
+      "endMs": 74710,
+      "translation": "술도 없고, 손에 알약도 없어."
+    },
+    {
+      "startMs": 74710,
+      "endMs": 76880,
+      "translation": "내 유일한 악덕은 단것이랑 내가 굴리는 바퀴들이야."
+    },
+    {
+      "startMs": 76880,
+      "endMs": 78630,
+      "translation": "진정하는 게 좋을걸,"
+    },
+    {
+      "startMs": 78630,
+      "endMs": 80080,
+      "translation": "그놈이 총알을 쏘기 전에,"
+    },
+    {
+      "startMs": 80080,
+      "endMs": 81510,
+      "translation": "네 유언장 안에서도 찾지 못하게 되기 전에."
+    },
+    {
+      "startMs": 81510,
+      "endMs": 83840,
+      "translation": "뜨거운 글루건을 손바닥에 쏘고, 우, 스파이더맨처럼."
+    },
+    {
+      "startMs": 83840,
+      "endMs": 85620,
+      "translation": "찍찍이, 야, 난 네가 아니야."
+    },
+    {
+      "startMs": 85620,
+      "endMs": 88110,
+      "translation": "미니미를 가질 뻔했어, 준비가 안 돼 있었어."
+    },
+    {
+      "startMs": 88110,
+      "endMs": 90360,
+      "translation": "그녀는 나랑 낳고 싶어 했고, 심각한 얘기였다고."
+    },
+    {
+      "startMs": 90360,
+      "endMs": 92160,
+      "translation": "그래서 우린 확실히 해야 했어, 색종이 터뜨릴 일은 없다고."
+    },
+    {
+      "startMs": 92160,
+      "endMs": 95050,
+      "translation": "저 차에 4백만 달러, 쉐보레가 아니거든."
+    },
+    {
+      "startMs": 95050,
+      "endMs": 96210,
+      "translation": "봐, 그게 내 관심사야."
+    },
+    {
+      "startMs": 96210,
+      "endMs": 98870,
+      "translation": "그러니 지금으로선 애를 키우는 건 내 소원 목록에 없어."
+    },
+    {
+      "startMs": 98870,
+      "endMs": 101220,
+      "translation": "년들의 안전망 노릇을 하는 것도 마찬가지고."
+    },
+    {
+      "startMs": 101220,
+      "endMs": 103490,
+      "translation": "난 너무 이기적이야, 모순이지."
+    },
+    {
+      "startMs": 103490,
+      "endMs": 106730,
+      "translation": "어쩌면 해야 할지도 몰라, 너무 늙어서 설거지한 그릇처럼 한물가기 전에."
+    },
+    {
+      "startMs": 106730,
+      "endMs": 108420,
+      "translation": "이가 쑤시기 전에는 절대 혀를 깨물지 않아."
+    },
+    {
+      "startMs": 108420,
+      "endMs": 111170,
+      "translation": "사과할 거였으면 씨발 뭐하러 쐈어? (퓽퓽)"
+    },
+    {
+      "startMs": 111170,
+      "endMs": 112590,
+      "translation": "내가 튀어나오면 다들 '오, 맙소사' 해."
+    },
+    {
+      "startMs": 112590,
+      "endMs": 114900,
+      "translation": "멧 갈라엔 안 가도 난 모두의 무드보드야."
+    },
+    {
+      "startMs": 114900,
+      "endMs": 117210,
+      "translation": "컬렉션을 통째로 만들었어, 파리에서 나온 컬렉션."
+    },
+    {
+      "startMs": 117210,
+      "endMs": 119520,
+      "translation": "근데 그 옷을 입으라고 보내 주지도 않았어."
+    },
+    {
+      "startMs": 119520,
+      "endMs": 121320,
+      "translation": "창피한데, 그런 일이 일어나서 기뻐."
+    },
+    {
+      "startMs": 121320,
+      "endMs": 122400,
+      "translation": "들은 얘기 따윈 좆까."
+    },
+    {
+      "startMs": 122400,
+      "endMs": 123690,
+      "translation": "난 굽실대는 쿤(coon)이 아니야, 비위 안 맞춰."
+    },
+    {
+      "startMs": 123690,
+      "endMs": 126560,
+      "translation": "거짓말 안 하는 놈들, 안티들한테도 늘 옥수수는 있어."
+    },
+    {
+      "startMs": 126560,
+      "endMs": 128660,
+      "translation": "넌 늘 남의 파도에 올라타, 선원이지."
+    },
+    {
+      "startMs": 128660,
+      "endMs": 131340,
+      "translation": "내 척 테일러를 신고는 절대 문워크 못 해, 브로디."
+    },
+    {
+      "startMs": 131340,
+      "endMs": 132420,
+      "translation": "너희 새끼들은 얼간이야."
+    },
+    {
+      "startMs": 132420,
+      "endMs": 134180,
+      "translation": "난 사코니를 신고 쳐들어오는 도시 출신이야."
+    },
+    {
+      "startMs": 134180,
+      "endMs": 136510,
+      "translation": "0이 서른한 개, 씨발 목마르다 (웩)."
+    },
+    {
+      "startMs": 136510,
+      "endMs": 138320,
+      "translation": "어떤 년이 날 굴려 먹으려고 100만 달러로 고소했어."
+    },
+    {
+      "startMs": 138320,
+      "endMs": 140640,
+      "translation": "100만에 합의했어, 그 100만으로는 상처도 안 나니까 (윽)."
+    },
+    {
+      "startMs": 140640,
+      "endMs": 141850,
+      "translation": "상처 안 났어 (윽)."
+    },
+    {
+      "startMs": 141850,
+      "endMs": 143010,
+      "translation": "아니, 씨발 하나도 안 아팠어 (윽)."
+    },
+    {
+      "startMs": 143010,
+      "endMs": 144750,
+      "translation": "빌어먹을 물 한 모금 마시고, 백플립을 했어."
+    },
+    {
+      "startMs": 144750,
+      "endMs": 146880,
+      "translation": "그리고 내가 클럽에 총을 난사하면, 그건 검은 년이야."
+    },
+    {
+      "startMs": 146880,
+      "endMs": 148830,
+      "translation": "플레이는 나 혼자 쥐고 있어, 짐은 하나도 안 쌌어."
+    },
+    {
+      "startMs": 148830,
+      "endMs": 150970,
+      "translation": "그래, 설탕 졸임 고구마랑 메기를 먹지."
+    },
+    {
+      "startMs": 150970,
+      "endMs": 152050,
+      "translation": "그래, 그만큼 부자야."
+    },
+    {
+      "startMs": 152050,
+      "endMs": 152990,
+      "translation": "들은 얘기 따윈 좆까."
+    },
+    {
+      "startMs": 152990,
+      "endMs": 154120,
+      "translation": "내가 바로 그 새끼고, 내가 바로 그 년이야."
+    },
+    {
+      "startMs": 154120,
+      "endMs": 172460,
+      "translation": "네가 집으로 가는 길을 찾기를 바라."
+    },
+    {
+      "startMs": 172460,
+      "endMs": 173970,
+      "translation": "진짜야."
+    },
+    {
+      "startMs": 173970,
+      "endMs": 176150,
+      "translation": "네가 자랑스러워."
+    },
+    {
+      "startMs": 176150,
+      "endMs": 178160,
+      "translation": "네가 자랑스러워, 얘."
+    },
+    {
+      "startMs": 178160,
+      "endMs": 180600,
+      "translation": "있잖아, 넌 정말 나를 놀라게 하는 걸 멈춘 적이 없어."
+    },
+    {
+      "startMs": 180600,
+      "endMs": 182670,
+      "translation": "있잖아, 넌 그냥—"
+    },
+    {
+      "startMs": 182670,
+      "endMs": 186230,
+      "translation": "내 기분을 표현할 말이 없어."
+    },
+    {
+      "startMs": 186230,
+      "endMs": 239700,
+      "translation": "네 길을 가, 그냥 계속, 계속 빛나."
+    },
+    {
+      "startMs": 239700,
+      "endMs": 259270,
+      "translation": "네가 집으로 가는 길을 찾기를 바라."
+    },
+    {
+      "startMs": 259270,
+      "endMs": 260250,
+      "translation": "그래."
+    },
+    {
+      "startMs": 260250,
+      "endMs": 264720,
+      "translation": "크로마코피아"
+    },
+    {
+      "startMs": 264720,
+      "endMs": 270000,
+      "translation": "크로마코피아"
+    }
+  ]
+}
