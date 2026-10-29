@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 18295675,
+    "durationMs": 154268
+  },
+  "segments": [
+    {
+      "startMs": 16970,
+      "endMs": 19300,
+      "translation": "(멈추지 마!) 그래, 우린 너 같은 등신이랑은 말도 안 섞어."
+    },
+    {
+      "startMs": 19300,
+      "endMs": 21640,
+      "translation": "백만장자가 돼도 넌 여전히 거지 같은 놈이야."
+    },
+    {
+      "startMs": 21640,
+      "endMs": 23450,
+      "translation": "난 꿈속에 있었어, 줄곧 —에 있었어."
+    },
+    {
+      "startMs": 23450,
+      "endMs": 24960,
+      "translation": "(멈추지 마! 멈추—멈추지 마!)"
+    },
+    {
+      "startMs": 24960,
+      "endMs": 27900,
+      "translation": "좋아, 봐, 내가 왜 이렇게 열심히 일하겠어? 내 영혼이 남는 게 있으니까."
+    },
+    {
+      "startMs": 27900,
+      "endMs": 30180,
+      "translation": "왜 정착을 못 하냐고? 선택지가 있는 게 좋으니까."
+    },
+    {
+      "startMs": 30180,
+      "endMs": 32110,
+      "translation": "왜 잡담을 싫어하냐고? 주제가 있는 게 좋으니까."
+    },
+    {
+      "startMs": 32110,
+      "endMs": 34290,
+      "translation": "집 보러 다니는 중이야, 난 돼지라서 사는 걸 좋아해."
+    },
+    {
+      "startMs": 34290,
+      "endMs": 36870,
+      "translation": "으윽, BBL은 싫어, A컵이 좋아, 으윽."
+    },
+    {
+      "startMs": 36870,
+      "endMs": 39150,
+      "translation": "긴 다리, 자고 일어나도 예쁜 애들, 으윽."
+    },
+    {
+      "startMs": 39150,
+      "endMs": 40700,
+      "translation": "놈들은 입만 놀리고, 야, 경주나 하자 그러지."
+    },
+    {
+      "startMs": 40700,
+      "endMs": 43200,
+      "translation": "여긴 전부 진짜야, 레이스 프런트 같은 건 없어, 알겠지?"
+    },
+    {
+      "startMs": 43200,
+      "endMs": 45540,
+      "translation": "12월의 방울 소리처럼, 난 썰매 타듯 다 씹어 먹어."
+    },
+    {
+      "startMs": 45540,
+      "endMs": 48910,
+      "translation": "그리고 난 여자를 좋아하지도 않아, 이 년아, 너무 높이 올라가 버렸거든."
+    },
+    {
+      "startMs": 48910,
+      "endMs": 51470,
+      "translation": "이 년아, 난 내 좆에 푹 빠져 있어, 네 보지는 필요 없어."
+    },
+    {
+      "startMs": 51470,
+      "endMs": 53590,
+      "translation": "으윽! 그 후회들은 좆까."
+    },
+    {
+      "startMs": 53590,
+      "endMs": 55980,
+      "translation": "불러서 가슴에 얹힌 걸 다 털어놔."
+    },
+    {
+      "startMs": 55980,
+      "endMs": 58200,
+      "translation": "내 형제들이 여기 있어, 우리가 웨이언스야."
+    },
+    {
+      "startMs": 58200,
+      "endMs": 60340,
+      "translation": "내 유일한 여자는 아니지만, 넌 제일 마음에 드는 애야."
+    },
+    {
+      "startMs": 60340,
+      "endMs": 62410,
+      "translation": "계속 높이 날고 있었어, 포장도로는 어디 있지?"
+    },
+    {
+      "startMs": 62410,
+      "endMs": 68420,
+      "translation": "날 위해 기도해 줘, 아멘 한번 해 줄래?"
+    },
+    {
+      "startMs": 68420,
+      "endMs": 70900,
+      "translation": "멈추지 마!"
+    },
+    {
+      "startMs": 70900,
+      "endMs": 72810,
+      "translation": "멈추지 마! (아멘 한번 해 줄래?)"
+    },
+    {
+      "startMs": 72810,
+      "endMs": 74930,
+      "translation": "멈추지 마!"
+    },
+    {
+      "startMs": 74930,
+      "endMs": 77310,
+      "translation": "멈추지 마!"
+    },
+    {
+      "startMs": 77310,
+      "endMs": 77830,
+      "translation": "(멈추지 마!)"
+    },
+    {
+      "startMs": 77830,
+      "endMs": 79560,
+      "translation": "이 판을 풍선처럼 바람 빼 버려 (멈추지 마!)"
+    },
+    {
+      "startMs": 79560,
+      "endMs": 81610,
+      "translation": "그 찌질한 새끼를 달로 보내 버려."
+    },
+    {
+      "startMs": 81610,
+      "endMs": 83430,
+      "translation": "난 꼭대기에 있어, 더 올라올 자리는 없어."
+    },
+    {
+      "startMs": 83430,
+      "endMs": 85820,
+      "translation": "(멈추지 마!)"
+    },
+    {
+      "startMs": 85820,
+      "endMs": 87560,
+      "translation": "좋아, 늪이 어디야?"
+    },
+    {
+      "startMs": 87560,
+      "endMs": 89520,
+      "translation": "이 방에서 제일 날아다니는 년이야, 조종석이 필요해."
+    },
+    {
+      "startMs": 89520,
+      "endMs": 91670,
+      "translation": "이 보지엔 PETA가 필요해, 다들 악어 가죽 무늬를 원하거든."
+    },
+    {
+      "startMs": 91670,
+      "endMs": 94000,
+      "translation": "DL 새끼들을 벽장 밖으로 다 끄집어낼 거야."
+    },
+    {
+      "startMs": 94000,
+      "endMs": 96200,
+      "translation": "들여보내고, 내보내."
+    },
+    {
+      "startMs": 96200,
+      "endMs": 98260,
+      "translation": "난 바이 년이지만, 지금은 그 보지가 필요해."
+    },
+    {
+      "startMs": 98260,
+      "endMs": 100480,
+      "translation": "그가 게이면 나도 게이야, 우린 명사니까."
+    },
+    {
+      "startMs": 100480,
+      "endMs": 102700,
+      "translation": "나랑 타일러가 네 년을 해치울 거야."
+    },
+    {
+      "startMs": 102700,
+      "endMs": 104560,
+      "translation": "위 위, 메르시!"
+    },
+    {
+      "startMs": 104560,
+      "endMs": 106550,
+      "translation": "내 도시에 오면 귀엽게 굴어."
+    },
+    {
+      "startMs": 106550,
+      "endMs": 108740,
+      "translation": "나는 키 5피트 2인치에 A컵 가슴이야."
+    },
+    {
+      "startMs": 108740,
+      "endMs": 110850,
+      "translation": "난 네가 필요 없어, 이미 내가 날 박고 있으니까."
+    },
+    {
+      "startMs": 110850,
+      "endMs": 113040,
+      "translation": "레인지는 필요 없어, 에어보트가 있는데."
+    },
+    {
+      "startMs": 113040,
+      "endMs": 115190,
+      "translation": "비행기도 필요 없어, 에어보트는 뜨니까."
+    },
+    {
+      "startMs": 115190,
+      "endMs": 117150,
+      "translation": "뉴욕에선 맨발로 돌아다녀."
+    },
+    {
+      "startMs": 117150,
+      "endMs": 120020,
+      "translation": "여권도 필요 없어, 난 늪 출신 년이니까, 오오, 오오!"
+    },
+    {
+      "startMs": 120020,
+      "endMs": 122180,
+      "translation": "멈추지 마! (멈추지 마!)"
+    },
+    {
+      "startMs": 122180,
+      "endMs": 124230,
+      "translation": "멈추지 마! (멈추지 마!)"
+    },
+    {
+      "startMs": 124230,
+      "endMs": 125730,
+      "translation": "멈추지 마! (멈추지 마!)"
+    },
+    {
+      "startMs": 125730,
+      "endMs": 128450,
+      "translation": "멈추지 마!"
+    },
+    {
+      "startMs": 128450,
+      "endMs": 129160,
+      "translation": "(멈추지 마!)"
+    },
+    {
+      "startMs": 129160,
+      "endMs": 130970,
+      "translation": "이 판을 질방귀처럼 바람 빼 버려."
+    },
+    {
+      "startMs": 130970,
+      "endMs": 132990,
+      "translation": "널 다시 길바닥으로 돌려보낼 거야."
+    },
+    {
+      "startMs": 132990,
+      "endMs": 135090,
+      "translation": "네 동네 전체에 le FLEUR*를 뿌려 줄게."
+    },
+    {
+      "startMs": 135090,
+      "endMs": 137020,
+      "translation": "그놈이 이 보지를 먹어 치울 거야, 달콤하니까!"
+    },
+    {
+      "startMs": 137020,
+      "endMs": 139120,
+      "translation": "오야아! 멈추지 마!"
+    },
+    {
+      "startMs": 139120,
+      "endMs": 141280,
+      "translation": "오야아! 멈추지 마!"
+    },
+    {
+      "startMs": 141280,
+      "endMs": 143390,
+      "translation": "오야아! 멈추지 마!"
+    },
+    {
+      "startMs": 143390,
+      "endMs": 145700,
+      "translation": "오야아, 오야아"
+    },
+    {
+      "startMs": 145700,
+      "endMs": 147600,
+      "translation": "오야아! 멈추지 마!"
+    },
+    {
+      "startMs": 147600,
+      "endMs": 149860,
+      "translation": "오야아! 멈추지 마!"
+    },
+    {
+      "startMs": 149860,
+      "endMs": 151930,
+      "translation": "오야아! 멈추지 마!"
+    },
+    {
+      "startMs": 151930,
+      "endMs": 154268,
+      "translation": "멈추지 마"
+    }
+  ]
+}
