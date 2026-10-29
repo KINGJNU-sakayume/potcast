@@ -8,12 +8,14 @@ eras:
   - 2019–2021 · 『IGOR』와 『Call Me If You Get Lost』
   - 2024– · 『Chromakopia』 이후
 written: 2026-10-03
+updated: 2026-10-29
 sources:
   - https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF
   - https://en.wikipedia.org/wiki/Tyler,_the_Creator
   - https://en.wikipedia.org/wiki/Tyler,_the_Creator_discography
   - https://www.albumoftheyear.org/artist/1471-tyler-the-creator/
   - https://www.grammy.com/news/tyler-creator-wins-best-rap-album-igor-2020-grammys/
+  - https://uproxx.com/music/tyler-the-creator-zane-lowe-interview/
 short: >
   앨범마다 인물과 색, 옷, 영상 문법을 새로 만들고 그 안에서 같은 감정을 다른 각도로 반복해 보는 음악가. 랩과 프로덕션을 분리하지 않고 한 세계로 설계하며, 디스코그래피는 공격성에서 구성력으로 무게가 옮겨 간 과정으로 읽힌다.
 ---
@@ -34,6 +36,6 @@ short: >
 
 ## 『Chromakopia』 이후 (2024–)
 
-2024년 『Chromakopia』는 나이 듦과 부모가 되는 일을 다룬 앨범으로, 이전의 2년 주기 발매 패턴에서 벗어난 작품이다. 2025년에는 『Don't Tap the Glass』가 이어졌다. 가면과 인물을 세우는 방식은 같지만, 이 시기에는 화자의 나이와 책임이라는 새로운 질문이 앨범의 소재가 된다.
+2024년 『Chromakopia』는 나이 듦과 부모가 되는 일을 다룬 앨범으로, 이전의 2년 주기 발매 패턴에서 벗어난 작품이다. 어머니 Bonita Smith의 목소리가 앨범의 앞뒤를 감싸고, 타일러는 이 앨범이 머리카락과의 관계, 아버지가 될 뻔한 일, 아버지와의 관계를 다뤘다고 2025년 인터뷰에서 돌아본다. 그 무게가 걷힌 뒤 다시 가벼워지고 싶었다는 말대로 2025년에는 『Don't Tap the Glass』가 이어졌다. 가면과 인물을 세우는 방식은 같지만, 이 시기에는 화자의 나이와 책임이라는 새로운 질문이 앨범의 소재가 된다.
 
 처음 듣는다면 『IGOR』를 권한다. 신스 중심의 프로덕션과 하나의 서사를 한 장에 모은 앨범이어서 타일러의 구성력이 가장 압축되어 있다. 그 뒤 앞으로는 『Flower Boy』, 뒤로는 『Call Me If You Get Lost』로 걸어가면 같은 집착과 감정이 인물을 바꿔 가며 반복되는 모습을 확인할 수 있다.
