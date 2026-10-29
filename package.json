@@ -12,6 +12,7 @@
     "test": "vitest",
     "test:run": "vitest run",
     "lyrics:lines": "NODE_USE_ENV_PROXY=1 vite-node scripts/lyrics-lines.ts --",
+    "lyrics:probe": "NODE_USE_ENV_PROXY=1 vite-node scripts/lyrics-probe.ts --",
     "notes:audit": "vite-node scripts/notes-audit.ts --",
     "review:status": "vite-node scripts/review-status.ts --",
     "notes:art": "NODE_USE_ENV_PROXY=1 vite-node scripts/notes-art.ts --",
