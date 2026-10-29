@@ -78,15 +78,18 @@ describe('LrclibLyricsProvider', () => {
     const lyrics = await new LrclibLyricsProvider(fetchMock).getTimedLyrics(krTrack);
     expect(lyrics?.timing?.lrclibId).toBe(3);
 
+    // Name search, then the full-text search, both without an upload in the expected language.
     const onlyRomanised = vi
       .fn()
       .mockResolvedValueOnce(json({ code: 404, name: 'TrackNotFound', message: 'x' }, 404))
-      .mockResolvedValueOnce(json([{ id: 2, duration: 187, syncedLyrics: '[00:01.00]romanised line one' }]));
+      .mockResolvedValueOnce(json([{ id: 2, duration: 187, syncedLyrics: '[00:01.00]romanised line one' }]))
+      .mockResolvedValueOnce(json([]));
     expect(await new LrclibLyricsProvider(onlyRomanised).getTimedLyrics(krTrack)).toBeNull();
 
     const exactRomanised = vi
       .fn()
       .mockResolvedValueOnce(json({ id: 5, duration: 187, syncedLyrics: '[00:01.00]romanised line one' }))
+      .mockResolvedValueOnce(json([]))
       .mockResolvedValueOnce(json([]));
     expect(await new LrclibLyricsProvider(exactRomanised).getTimedLyrics({ ...krTrack, isrc: undefined, title: '노래' })).toBeNull();
   });
@@ -94,6 +97,85 @@ describe('LrclibLyricsProvider', () => {
   it('keeps English lyrics for a track with no Korean or Japanese hint', async () => {
     const fetchMock = vi.fn().mockResolvedValueOnce(json({ id: 5, duration: 187, syncedLyrics: '[00:01.00]plain english line' }));
     expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(5);
+  });
+
+  describe('a track whose metadata gives no language hint (Latin-only title / artist)', () => {
+    // Made-up lines: romanised text has no common English words, the original is Hangul.
+    const ROMANISED = '[00:01.00]neon naege manheun geol jul su isseo\n[00:03.00]nae mami neoreul hyanghae georeoga\n[00:05.00]saranghae oneuldo naeil';
+    const HANGUL = '[00:01.00]네온 내게 많은 걸 줄 수 있어\n[00:03.00]내 마음이 너를 향해 걸어가\n[00:05.00]사랑해 오늘도 내일';
+    const BILINGUAL = "[00:01.00]I just can't stop thinking about you\n[00:02.00]너를 생각하는 걸 멈출 수 없어\n[00:03.00]and the way that you move with me\n[00:04.00]너와 함께 움직이는 그 모습";
+    const ENGLISH = "[00:01.00]I just can't stop thinking about you\n[00:03.00]and the way that you move with me\n[00:05.00]you know I love you baby";
+    const notFound = () => json({ code: 404, name: 'TrackNotFound', message: 'x' }, 404);
+
+    it('prefers an original-script upload over a romanised exact hit', async () => {
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(json({ id: 5, duration: 187, syncedLyrics: ROMANISED }))
+        .mockResolvedValueOnce(
+          json([
+            { id: 5, duration: 187, syncedLyrics: ROMANISED },
+            { id: 6, duration: 187, syncedLyrics: HANGUL },
+          ]),
+        );
+      const lyrics = await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track);
+      expect(lyrics?.timing?.lrclibId).toBe(6);
+      expect(lyrics?.language).toBe('ko');
+      expect(fetchMock).toHaveBeenCalledTimes(2);
+    });
+
+    it('keeps the romanised exact hit when no original-script upload exists, after also trying a full-text search', async () => {
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(json({ id: 5, duration: 187, syncedLyrics: ROMANISED }))
+        .mockResolvedValueOnce(json([]))
+        .mockResolvedValueOnce(json([{ id: 7, duration: 300, syncedLyrics: HANGUL }]));
+      const lyrics = await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track);
+      expect(lyrics?.timing?.lrclibId).toBe(5);
+      expect(fetchMock).toHaveBeenCalledTimes(3);
+      expect(new URL(fetchMock.mock.calls[2]![0] as string).searchParams.get('q')).toBe('Song Title Some Artist');
+    });
+
+    it('finds an original-script upload through the full-text search when the name search finds nothing', async () => {
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(notFound())
+        .mockResolvedValueOnce(json([]))
+        .mockResolvedValueOnce(json([{ id: 6, duration: 188, syncedLyrics: HANGUL }]));
+      expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(6);
+    });
+
+    it('does not search again for lyrics that read as English', async () => {
+      const fetchMock = vi.fn().mockResolvedValueOnce(json({ id: 5, duration: 187, syncedLyrics: ENGLISH }));
+      expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(5);
+      expect(fetchMock).toHaveBeenCalledTimes(1);
+    });
+
+    it('does not swap English lyrics for a bilingual upload that has more Korean script', async () => {
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(notFound())
+        .mockResolvedValueOnce(
+          json([
+            { id: 2, duration: 187, syncedLyrics: ENGLISH },
+            { id: 3, duration: 187, syncedLyrics: BILINGUAL },
+          ]),
+        );
+      expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(2);
+    });
+
+    it('ranks a mostly-original upload above a bilingual one when the language is known', async () => {
+      const krTrack: TrackIdentity = { ...track, title: 'Song', isrc: 'KRABC2400001' };
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(notFound())
+        .mockResolvedValueOnce(
+          json([
+            { id: 2, duration: 187, syncedLyrics: BILINGUAL },
+            { id: 3, duration: 187, syncedLyrics: HANGUL },
+          ]),
+        );
+      expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(krTrack))?.timing?.lrclibId).toBe(3);
+    });
   });
 
   it('loads the pinned LRCLIB record directly when its length matches the track', async () => {

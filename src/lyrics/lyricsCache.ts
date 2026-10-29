@@ -11,11 +11,12 @@ const MISSING_TTL_MS = 3 * 24 * 60 * 60_000;
  * "No lyrics" results are cached briefly so they are retried later; transient
  * errors are never cached. The whole result is stored, including `timing`
  * (LRCLIB record ID and duration) that curated translations check against;
- * v2 entries are the first to carry it.
+ * v2 entries are the first to carry it. v3 re-selects the upload (an original-script
+ * one over a romanised one), so results cached by v2 are not reused.
  */
 export function withLyricsCache(
   provider: LyricsProvider,
-  cache: BoundedCache<TimedLyrics | null> = new BoundedCache({ prefix: storageKey('lyrics.v2:'), maxEntries: 150 }),
+  cache: BoundedCache<TimedLyrics | null> = new BoundedCache({ prefix: storageKey('lyrics.v3:'), maxEntries: 150 }),
 ): LyricsProvider {
   return {
     id: provider.id,

@@ -78,6 +78,45 @@ export function sameLanguage(a: string | undefined, b: string | undefined): bool
   return a.split('-')[0]!.toLowerCase() === b.split('-')[0]!.toLowerCase();
 }
 
+/** Share of lines in Korean / Japanese script from which lyrics count as the original, not a romanised or bilingual upload (~0.5). */
+export const MIN_ORIGINAL_SCRIPT_SHARE = 0.7;
+
+/**
+ * Share of lines written in Korean or Japanese script. With `language` it counts that language only; without it, the
+ * larger of Korean and Japanese. A romanised upload scores 0, genuine lyrics near 1, a line-by-line bilingual upload ~0.5.
+ */
+export function originalScriptShare(lines: readonly string[], language?: string): number {
+  if (lines.length === 0) return 0;
+  const languages = detectLineLanguages(lines);
+  const share = (target: string): number => languages.filter((line) => sameLanguage(line, target)).length / lines.length;
+  return language ? share(language) : Math.max(share('ko'), share('ja'));
+}
+
+/** Words common in English lyrics and absent from romanised Korean / Japanese ("are", "no", "me", "to" are romaji too, so they are left out). */
+const ENGLISH_WORDS = new Set([
+  'the', 'you', 'and', 'your', 'that', 'with', 'this', 'but', 'for', 'just', 'dont', 'cant', 'know', 'like', 'love',
+  'baby', 'when', 'what', 'all', 'not', 'have', 'got', 'was', 'how', 'why', 'they', 'we',
+]);
+
+/** Share of the words that are common English words from which lyrics read as English. */
+const MIN_ENGLISH_WORD_SHARE = 0.2;
+
+/** Fewer words than this are too little text to tell romanised lyrics from English ones. */
+const MIN_WORDS_TO_JUDGE = 12;
+
+/**
+ * Lyrics that may be a romanised upload of a Korean / Japanese song (or another non-English Latin-script language):
+ * enough text to judge, mostly not in Hangul / kana, and not reading as English. Only a hint that a better upload is
+ * worth looking for, never a reason to drop these lyrics.
+ */
+export function mayBeRomanised(lines: readonly string[]): boolean {
+  const words = lines.join(' ').toLowerCase().match(/[a-z'’]+/g) ?? [];
+  if (words.length < MIN_WORDS_TO_JUDGE) return false;
+  if (originalScriptShare(lines) >= MIN_ORIGINAL_SCRIPT_SHARE) return false;
+  const english = words.filter((word) => ENGLISH_WORDS.has(word.replace(/['’]/g, ''))).length;
+  return english / words.length < MIN_ENGLISH_WORD_SHARE;
+}
+
 /** Share of lines in the expected language below which lyrics are taken for a romanised or translated upload. */
 const MIN_EXPECTED_LINE_SHARE = 0.1;
 

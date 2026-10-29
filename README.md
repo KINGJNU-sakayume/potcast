@@ -159,7 +159,10 @@ Spotify's Web API has no lyrics, so both come from replaceable providers and nei
 
 - **Lyrics** — [LRCLIB](https://lrclib.net) (`lrclib`): keyless and CORS-enabled; matches title, artist, album and
   duration (or loads the record a song's curated translation was timed on), falls back to a search, and caches results in `localStorage` (30 days; 3 days for "not found"). It sends
-  that track metadata to lrclib.net. `mock` gives original test lines; `none` turns lyrics off.
+  that track metadata to lrclib.net. For Korean / Japanese songs it prefers an upload in the original script over a romanised one:
+  the language comes from the metadata (Hangul / kana, ISRC country) and, when that says nothing (Latin-only title and artist), from
+  the uploads themselves — a Latin-only hit that does not read as English triggers a search for a same-length upload that is mostly
+  Hangul / kana, and the romanised one is kept only when there is none. `mock` gives original test lines; `none` turns lyrics off.
 - **Translation** — `browser` uses Chrome's on-device Translator API (no key; a missing model downloads after one
   click in the lyrics header). `http` posts to your own function, which keeps any DeepL / Papago / Google key
   server-side:
