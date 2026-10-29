@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 2,
+  "timing": {
+    "lrclibId": 13887313,
+    "durationMs": 207000
+  },
+  "segments": [
+    {
+      "startMs": 40,
+      "endMs": 3680,
+      "translation": "군인이랑 전쟁하고 싶지 않다는 거 알잖아."
+    },
+    {
+      "startMs": 3680,
+      "endMs": 7100,
+      "translation": "군인이랑 전쟁하고 싶지 않다는 거 알잖아. (너희 놈들 내가 죽은 줄 알았지, 너희 놈들 내가 죽은 줄 알았지)"
+    },
+    {
+      "startMs": 7100,
+      "endMs": 11080,
+      "translation": "군인이랑 전쟁하고 싶지 않다는 거 알잖아. (너희 놈들 내가 죽은 줄 알았지, 너희 놈들 내가 죽은 줄 알았지)"
+    },
+    {
+      "startMs": 11080,
+      "endMs": 13780,
+      "translation": "군인이랑 전쟁하고 싶지 않다는 거 알잖아. (너희 놈들 내가 죽은 줄 알았지, 너희 놈들 내가 죽은 줄 알았지. 인생엔 존나 일만 하는 것 말고도 더 있어, 형)"
+    },
+    {
+      "startMs": 13780,
+      "endMs": 15950,
+      "translation": "좋아, 이 새끼야, 난 동물원에 갇혀 있었어. (걔들은 내가 죽은 줄 알았지)"
+    },
+    {
+      "startMs": 15950,
+      "endMs": 17740,
+      "translation": "이 놈은 이빨의 금 간 틈만큼 팩을 쟁였지."
+    },
+    {
+      "startMs": 17740,
+      "endMs": 19590,
+      "translation": "쿠페 뒷자리만큼은 공간이 필요해."
+    },
+    {
+      "startMs": 19590,
+      "endMs": 22540,
+      "translation": "마법 지팡이를 휘둘러서 펑 사라지려는 거야, 그래서"
+    },
+    {
+      "startMs": 22540,
+      "endMs": 25510,
+      "translation": "총(blammer)이나 챙겨, 그 화려함 따위는 좆까라 그래."
+    },
+    {
+      "startMs": 25510,
+      "endMs": 29390,
+      "translation": "애틀랜타에 집 하나 갖고 싶어, 팸퍼스 기저귀에 나랑 내 여자를 품은 채로."
+    },
+    {
+      "startMs": 29390,
+      "endMs": 30950,
+      "translation": "그놈들은 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 30950,
+      "endMs": 32720,
+      "translation": "그놈들은 내가 죽은 줄 알았지. (날 못 보게 될 거야)"
+    },
+    {
+      "startMs": 32720,
+      "endMs": 34720,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (아니, 말도 안 돼)"
+    },
+    {
+      "startMs": 34720,
+      "endMs": 36550,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (유령이 될 거야)"
+    },
+    {
+      "startMs": 36550,
+      "endMs": 38580,
+      "translation": "그놈들은 내가 죽은 줄 알았지. (이딴 건 이제 질렸어)"
+    },
+    {
+      "startMs": 38580,
+      "endMs": 39740,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (이딴 건 이제 질렸어)"
+    },
+    {
+      "startMs": 39740,
+      "endMs": 44180,
+      "translation": "(걔들은 내가 죽은 줄 알았지, 죽었다고)"
+    },
+    {
+      "startMs": 44180,
+      "endMs": 45740,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 45740,
+      "endMs": 47540,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 47540,
+      "endMs": 49490,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 49490,
+      "endMs": 51290,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 51290,
+      "endMs": 53150,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 53150,
+      "endMs": 55040,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 55040,
+      "endMs": 57010,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 57010,
+      "endMs": 58630,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 58630,
+      "endMs": 60160,
+      "translation": "동네에선 사랑받지만 난 떠나야 해."
+    },
+    {
+      "startMs": 60160,
+      "endMs": 62050,
+      "translation": "저 멀리 언덕에서 태어나서 걔들 눈엔 안 보여."
+    },
+    {
+      "startMs": 62050,
+      "endMs": 63950,
+      "translation": "맹세컨대 2018년에 2천만 달러를 태웠어."
+    },
+    {
+      "startMs": 63950,
+      "endMs": 65600,
+      "translation": "버팔로 빌스 선수라도 되는 양 O-D로 가지 (걔들은 내가 죽은 줄 알았지)"
+    },
+    {
+      "startMs": 65600,
+      "endMs": 67460,
+      "translation": "놈들은 부자가 되면 이상하게 굴어."
+    },
+    {
+      "startMs": 67460,
+      "endMs": 69310,
+      "translation": "엉덩이에 피어싱을 하고 어떻게 파티장에 걸어 들어가?"
+    },
+    {
+      "startMs": 69310,
+      "endMs": 71190,
+      "translation": "씨발, 난 수표가 결제될 때까지 골프나 치겠다 (그래)"
+    },
+    {
+      "startMs": 71190,
+      "endMs": 73160,
+      "translation": "놈들은 서른다섯이 돼서도 여기서 이러고 있지 (걔들은 내가 죽은 줄 알았지)"
+    },
+    {
+      "startMs": 73160,
+      "endMs": 74890,
+      "translation": "야, 롤스든 로이스든, 짜 두려는 거야."
+    },
+    {
+      "startMs": 74890,
+      "endMs": 76670,
+      "translation": "난 진짜로 마약상이랑 밖에 나가 있었어."
+    },
+    {
+      "startMs": 76670,
+      "endMs": 78520,
+      "translation": "이제 난 진짜 수백만 달러가 있어, 야, 어림없지."
+    },
+    {
+      "startMs": 78520,
+      "endMs": 81120,
+      "translation": "네 브로맨스에 끼어 보이기 싫어, 음."
+    },
+    {
+      "startMs": 81120,
+      "endMs": 83270,
+      "translation": "빽빽이 들어찼어, 젠장, 그 꿈."
+    },
+    {
+      "startMs": 83270,
+      "endMs": 85160,
+      "translation": "씨발 이런 건 처음 봐,"
+    },
+    {
+      "startMs": 85160,
+      "endMs": 86840,
+      "translation": "고양이 게임(cat game)이라니, 놈이 얻을 수 있다고 생각한다면"
+    },
+    {
+      "startMs": 86840,
+      "endMs": 88560,
+      "translation": "탕, 탕, 탕, 탕."
+    },
+    {
+      "startMs": 88560,
+      "endMs": 90310,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (그래)"
+    },
+    {
+      "startMs": 90310,
+      "endMs": 92160,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (그래서)"
+    },
+    {
+      "startMs": 92160,
+      "endMs": 93680,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (오)"
+    },
+    {
+      "startMs": 93680,
+      "endMs": 95560,
+      "translation": "너희 놈들 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 95560,
+      "endMs": 97450,
+      "translation": "놈들은 내가 죽은 줄 알았지."
+    },
+    {
+      "startMs": 97450,
+      "endMs": 99630,
+      "translation": "내가 죽은 줄 알았지. (워, 워)"
+    },
+    {
+      "startMs": 99630,
+      "endMs": 101140,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (죽었다고)"
+    },
+    {
+      "startMs": 101140,
+      "endMs": 102900,
+      "translation": "너희 놈들 내가 죽은 줄 알았지. (걔들은 내가 죽은 줄 알았지)"
+    },
+    {
+      "startMs": 102900,
+      "endMs": 104680,
+      "translation": "난 발견되고 싶지 않아."
+    },
+    {
+      "startMs": 104680,
+      "endMs": 106540,
+      "translation": "난 어울리고 싶지 않아."
+    },
+    {
+      "startMs": 106540,
+      "endMs": 108490,
+      "translation": "난 발견되고 싶지 않아."
+    },
+    {
+      "startMs": 108490,
+      "endMs": 110130,
+      "translation": "난 어울리고 싶지 않아."
+    },
+    {
+      "startMs": 110130,
+      "endMs": 112180,
+      "translation": "난 발견되고 싶지 않아."
+    },
+    {
+      "startMs": 112180,
+      "endMs": 113710,
+      "translation": "난 어울리고 싶지 않아. (오, 타일러 알잖아, 그 말버릇)"
+    },
+    {
+      "startMs": 113710,
+      "endMs": 115760,
+      "translation": "난 발견되고 싶지 않아. (이 놈들 정말 지겨워)"
+    },
+    {
+      "startMs": 115760,
+      "endMs": 118150,
+      "translation": "난 어울리고 싶지 않아. (걔들은 널 몰라, 우, 아)"
+    },
+    {
+      "startMs": 118150,
+      "endMs": 120160,
+      "translation": "백인 애들이 이 바닥을 조롱하는데 너희는 나한테 화났다고?"
+    },
+    {
+      "startMs": 120160,
+      "endMs": 121220,
+      "translation": "너희 내 좆이나 빨아."
+    },
+    {
+      "startMs": 121220,
+      "endMs": 122950,
+      "translation": "옛날 트윗도 꺼내 오고, 옛날 티셔츠도 꺼내 오고,"
+    },
+    {
+      "startMs": 122950,
+      "endMs": 124930,
+      "translation": "그딴 건 다 그 지랄 위로 문워크로 넘어가 버려."
+    },
+    {
+      "startMs": 124930,
+      "endMs": 127020,
+      "translation": "T-T는 옷이 더러워지면 갈아입듯이 변했어."
+    },
+    {
+      "startMs": 127020,
+      "endMs": 128640,
+      "translation": "난 젊은 놈이었는데, 그러다 서른이 됐지."
+    },
+    {
+      "startMs": 128640,
+      "endMs": 130300,
+      "translation": "난 100만이었는데, 그러다 서른이 됐지."
+    },
+    {
+      "startMs": 130300,
+      "endMs": 132600,
+      "translation": "이 새끼야, 넌 코코 가우프가 아니야, 나한테 서브 못 넣어."
+    },
+    {
+      "startMs": 132600,
+      "endMs": 134010,
+      "translation": "전쟁 반대야? 흠, 그래, 그러시겠지."
+    },
+    {
+      "startMs": 134010,
+      "endMs": 135920,
+      "translation": "놈들은 입만 놀리는데, 난 빈틈없이 해."
+    },
+    {
+      "startMs": 135920,
+      "endMs": 137630,
+      "translation": "머리가 하얗게 셀 때까지 난장판을 칠 거야."
+    },
+    {
+      "startMs": 137630,
+      "endMs": 139490,
+      "translation": "난 추진력(drive)이 너무 넘쳐, 난 테라바이트야."
+    },
+    {
+      "startMs": 139490,
+      "endMs": 141780,
+      "translation": "내 머리통은 엄청 크고, 난 이 놈들 같지 않아."
+    },
+    {
+      "startMs": 141780,
+      "endMs": 143480,
+      "translation": "아니, 날 이 놈들이랑 묶지 마."
+    },
+    {
+      "startMs": 143480,
+      "endMs": 145350,
+      "translation": "난 이 놈들이랑 '하하, 킥킥' 안 해."
+    },
+    {
+      "startMs": 145350,
+      "endMs": 147100,
+      "translation": "로이터 스쿼드(Loiter Squad), 이봐, 난 이 놈들이랑 안 어울려."
+    },
+    {
+      "startMs": 147100,
+      "endMs": 149030,
+      "translation": "예전, 아주 예전부터 같은 애들이 나랑 함께야."
+    },
+    {
+      "startMs": 149030,
+      "endMs": 150940,
+      "translation": "내가 하겠다고 한 건 다 했어 (실화야)"
+    },
+    {
+      "startMs": 150940,
+      "endMs": 152560,
+      "translation": "내 허세를 떨어? 당연히 떨지."
+    },
+    {
+      "startMs": 152560,
+      "endMs": 154400,
+      "translation": "그게 마음에 안 들어? 또 해 주지."
+    },
+    {
+      "startMs": 154400,
+      "endMs": 156280,
+      "translation": "아침 다섯 시에도 난 이것저것 욕해."
+    },
+    {
+      "startMs": 156280,
+      "endMs": 158000,
+      "translation": "저녁 열 시에도 난 이것저것 욕해."
+    },
+    {
+      "startMs": 158000,
+      "endMs": 159890,
+      "translation": "십 년 뒤엔 생각이 바뀔지도 몰라."
+    },
+    {
+      "startMs": 159890,
+      "endMs": 161360,
+      "translation": "난 가짜 새끼야, 죽이진 마."
+    },
+    {
+      "startMs": 161360,
+      "endMs": 163140,
+      "translation": "난 위선자야, 진짜도 아니고, 진짜는 아니라고."
+    },
+    {
+      "startMs": 163140,
+      "endMs": 165090,
+      "translation": "난 엄청난 트롤이야, 하하, 난 바보 같아 (난 바보 같아)"
+    },
+    {
+      "startMs": 165090,
+      "endMs": 167390,
+      "translation": "네가 싫어하는 그 놈들보다 나은 게 뭔지 네가 씨발 뭘 알아?"
+    },
+    {
+      "startMs": 167390,
+      "endMs": 169030,
+      "translation": "넌 잘하는 게 하나도 없어, 날 이해 못 해."
+    },
+    {
+      "startMs": 169030,
+      "endMs": 171000,
+      "translation": "네 원트릭 염소(GOAT)나 가져가, 난 빌리야."
+    },
+    {
+      "startMs": 171000,
+      "endMs": 172860,
+      "translation": "파파한테 경의를, 걔는 진짜야."
+    },
+    {
+      "startMs": 172860,
+      "endMs": 174690,
+      "translation": "V를 시험하지 마, 걔는 진짜로 쏴."
+    },
+    {
+      "startMs": 174690,
+      "endMs": 176970,
+      "translation": "내가 전화해서 '그만하고 진정해'라고 해야 했어, 봐."
+    },
+    {
+      "startMs": 176970,
+      "endMs": 178290,
+      "translation": "난 비켜나 있으려고 해."
+    },
+    {
+      "startMs": 178290,
+      "endMs": 181040,
+      "translation": "난 호수 있는 농장이 좋아, 내 공간에 진실이 좀 있는 게 좋아."
+    },
+    {
+      "startMs": 181040,
+      "endMs": 182400,
+      "translation": "너희 놈들은 다정한 척 가짜야."
+    },
+    {
+      "startMs": 182400,
+      "endMs": 184710,
+      "translation": "'큰형이야'라니, 어떻게? 어제 만났으면서?"
+    },
+    {
+      "startMs": 184710,
+      "endMs": 186190,
+      "translation": "이건 〈혹성탈출〉 같아."
+    },
+    {
+      "startMs": 186190,
+      "endMs": 187510,
+      "translation": "왜 나는 이 증오로 가득 차 있지?"
+    },
+    {
+      "startMs": 187510,
+      "endMs": 188820,
+      "translation": "모든 면에서 자유를 얻었는데."
+    },
+    {
+      "startMs": 188820,
+      "endMs": 191800,
+      "translation": "너희는 내가 가진 걸 뺏고 싶어 하지만, 그만한 걸 갖추진 못했어."
+    },
+    {
+      "startMs": 191800,
+      "endMs": 193430,
+      "translation": "난 발견되고 싶지 않아, 이 잡년아 (그래, 그래)"
+    },
+    {
+      "startMs": 193430,
+      "endMs": 195550,
+      "translation": "난 어울리고 싶지 않아, 이 잡년아 (그래, 그래)"
+    },
+    {
+      "startMs": 195550,
+      "endMs": 197200,
+      "translation": "난 얼쩡거리는 거 싫어, 이 잡년아 (그래, 그래)"
+    },
+    {
+      "startMs": 197200,
+      "endMs": 199120,
+      "translation": "나는 네 집 문을 '똑똑' 두드리지 않을 거야."
+    },
+    {
+      "startMs": 199120,
+      "endMs": 201520,
+      "translation": "그냥 나야, 내가 그렇게 말했잖아."
+    },
+    {
+      "startMs": 201520,
+      "endMs": 203450,
+      "translation": "트래브, 이 놈들 질렸어."
+    },
+    {
+      "startMs": 203450,
+      "endMs": 204720,
+      "translation": "나는, 머리 위에 떠 있어."
+    },
+    {
+      "startMs": 204720,
+      "endMs": 207000,
+      "translation": "이 놈들은 내가 죽은 줄 알았지."
+    }
+  ]
+}
