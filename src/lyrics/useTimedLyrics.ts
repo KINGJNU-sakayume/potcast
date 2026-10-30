@@ -1,10 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
-import { useMemo } from 'react';
+import { useMemo, useRef } from 'react';
 import { useSession } from '../app/sessionContext';
 import type { TrackIdentity } from '../domain/types';
 import { pinnedLrclibId } from '../translation/curated';
 import { normaliseLines } from './lyricSync';
 import { LyricsProviderError, type TimedLyrics } from './types';
+
+/** Retries of a lookup that failed for a reason worth retrying (an LRCLIB outage), spaced 2, 4, 8 and 16 s apart. */
+const MAX_RETRIES = 4;
+const RETRY_BASE_MS = 2000;
 
 export type LyricsState =
   | { status: 'disabled' }
@@ -29,21 +33,28 @@ export function useTimedLyrics(track: TrackIdentity | null): LyricsState {
         : null,
     [track],
   );
+  // "Try again" must not be answered from the cache, which holds the very result being retried.
+  const refreshNext = useRef(false);
   const query = useQuery({
     queryKey: [mode, 'lyrics', provider?.id, track?.spotifyTrackId, lrclibId],
     enabled: Boolean(provider && track),
     staleTime: Number.POSITIVE_INFINITY,
     gcTime: 60 * 60_000,
-    retry: (count, error) => count < 2 && error instanceof LyricsProviderError && error.retryable,
-    retryDelay: (attempt) => 1500 * 2 ** attempt,
+    retry: (count, error) => count < MAX_RETRIES && error instanceof LyricsProviderError && error.retryable,
+    retryDelay: (attempt) => RETRY_BASE_MS * 2 ** attempt,
     queryFn: async ({ signal }) => {
-      const result = await provider!.getTimedLyrics(track!, { signal, ...(lrclibId ? { lrclibId } : {}) });
+      const refresh = refreshNext.current;
+      refreshNext.current = false;
+      const result = await provider!.getTimedLyrics(track!, { signal, ...(lrclibId ? { lrclibId } : {}), ...(refresh ? { refresh } : {}) });
       if (!result) return null;
       return { ...result, lines: normaliseLines(result.lines) };
     },
   });
 
-  const retry = () => void query.refetch();
+  const retry = () => {
+    refreshNext.current = true;
+    void query.refetch();
+  };
   if (!provider) return { status: 'disabled' };
   if (!track) return { status: 'idle' };
   if (query.isPending) return { status: 'loading' };

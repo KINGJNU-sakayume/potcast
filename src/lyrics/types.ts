@@ -38,6 +38,8 @@ export interface LyricsRequestOptions {
    * Other providers ignore it.
    */
   lrclibId?: number;
+  /** Look the lyrics up again instead of reusing a cached result (the listener pressed "try again"). */
+  refresh?: boolean;
 }
 
 /**

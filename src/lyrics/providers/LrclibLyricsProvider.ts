@@ -66,20 +66,37 @@ function mayBeRomanisedUpload(lyrics: TimedLyrics): boolean {
   return lyrics.instrumental !== true && mayBeRomanised(lyrics.lines.map((line) => line.text));
 }
 
+/** Share of the track the timed lines must reach for an upload to count as the whole song, not a stub of a few lines. */
+const MIN_COVERAGE = 0.4;
+
+/** Whether the last line starts far enough into the track for these lyrics to be the whole song. */
+function coversTrack(lyrics: TimedLyrics, trackDurationMs: number): boolean {
+  if (lyrics.instrumental === true || trackDurationMs <= 0) return true;
+  const lastStartMs = lyrics.lines.reduce((latest, line) => Math.max(latest, line.startMs), 0);
+  return lastStartMs >= trackDurationMs * MIN_COVERAGE;
+}
+
 /**
- * The upload to show among same-length candidates. Those not in the expected language are dropped. The rest are ranked by
- * how much of them is in Korean / Japanese script (an upload that is mostly original script beats a romanised or
- * bilingual one); without a language hint only uploads above MIN_ORIGINAL_SCRIPT_SHARE count, so English songs
- * keep LRCLIB's order. Equal ranks keep that order.
+ * The upload to show among same-length candidates. Those not in the expected language are dropped. The rest are ranked
+ * by whether they cover the track (a three-line stub of the hook loses to the whole song), then by how much of them is
+ * in Korean / Japanese script (an upload that is mostly original script beats a romanised or bilingual one; without a
+ * language hint only uploads above MIN_ORIGINAL_SCRIPT_SHARE count, so English songs keep LRCLIB's order), then by not
+ * looking romanised. Equal ranks keep LRCLIB's order.
  */
-function pickLyrics(candidates: TimedLyrics[], expected: string | undefined): TimedLyrics | null {
+function pickLyrics(candidates: TimedLyrics[], expected: string | undefined, trackDurationMs: number): TimedLyrics | null {
   const ranked = candidates
     .filter((lyrics) => inExpectedLanguage(lyrics, expected))
     .map((lyrics, index) => {
       const share = originalScriptShare(lyrics.lines.map((line) => line.text), expected);
-      return { lyrics, index, score: expected !== undefined || share >= MIN_ORIGINAL_SCRIPT_SHARE ? share : 0 };
+      return {
+        lyrics,
+        index,
+        whole: coversTrack(lyrics, trackDurationMs),
+        score: expected !== undefined || share >= MIN_ORIGINAL_SCRIPT_SHARE ? share : 0,
+        romanised: mayBeRomanisedUpload(lyrics),
+      };
     })
-    .sort((a, b) => b.score - a.score || a.index - b.index);
+    .sort((a, b) => Number(b.whole) - Number(a.whole) || b.score - a.score || Number(a.romanised) - Number(b.romanised) || a.index - b.index);
   return ranked[0]?.lyrics ?? null;
 }
 
@@ -109,11 +126,17 @@ export class LrclibLyricsProvider implements LyricsProvider {
 
     const cleaned = cleanTrackTitle(track.title);
     let fallback: TimedLyrics | null = expected === undefined ? exact : null;
-    for (const params of [{ track_name: cleaned, artist_name: artist }, { q: `${cleaned} ${artist}` }]) {
-      const found = pickLyrics(this.usableCandidates(await this.search(params, options), durationS), expected);
-      if (!found) continue;
-      if (expected !== undefined || !mayBeRomanisedUpload(found)) return found;
-      fallback ??= found;
+    try {
+      for (const params of [{ track_name: cleaned, artist_name: artist }, { q: `${cleaned} ${artist}` }]) {
+        const found = pickLyrics(this.usableCandidates(await this.search(params, options), durationS), expected, track.durationMs);
+        if (!found) continue;
+        if (expected !== undefined || !mayBeRomanisedUpload(found)) return found;
+        fallback ??= found;
+      }
+    } catch (error) {
+      // The lookup that already found lyrics is not lost because a later, optional search hit an outage.
+      if (fallback && !(error instanceof DOMException)) return fallback;
+      throw error;
     }
     return fallback;
   }

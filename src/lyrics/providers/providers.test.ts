@@ -163,6 +163,33 @@ describe('LrclibLyricsProvider', () => {
       expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(2);
     });
 
+    it('prefers an upload that covers the whole track over a stub of a few lines, whatever LRCLIB lists first', async () => {
+      const STUB = "[00:00.00]You'll always be my blue valentine\n[00:06.00]You'll always be my blue valentine";
+      const WHOLE = `[00:13.00]first verse line\n[01:20.00]second verse line\n[02:30.00]last chorus line\n[02:58.00]blue valentine`;
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(notFound())
+        .mockResolvedValueOnce(
+          json([
+            { id: 2, duration: 187, syncedLyrics: STUB },
+            { id: 3, duration: 187, syncedLyrics: WHOLE },
+          ]),
+        );
+      expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(3);
+    });
+
+    it('keeps the lyrics it already found when a later search fails with an outage', async () => {
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(json({ id: 5, duration: 187, syncedLyrics: ROMANISED }))
+        .mockResolvedValueOnce(json({ message: 'busy' }, 503));
+      expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(5);
+
+      // With nothing found yet, the outage is still reported so the lookup is retried.
+      const nothing = vi.fn().mockResolvedValueOnce(notFound()).mockResolvedValueOnce(json({ message: 'busy' }, 503));
+      await expect(new LrclibLyricsProvider(nothing).getTimedLyrics(track)).rejects.toBeInstanceOf(LyricsProviderError);
+    });
+
     it('ranks a mostly-original upload above a bilingual one when the language is known', async () => {
       const krTrack: TrackIdentity = { ...track, title: 'Song', isrc: 'KRABC2400001' };
       const fetchMock = vi
@@ -280,6 +307,19 @@ describe('withLyricsCache', () => {
     await cached.getTimedLyrics(track, { lrclibId: 77 });
     expect(inner.getTimedLyrics).toHaveBeenCalledTimes(2);
     expect(inner.getTimedLyrics.mock.calls[1]).toEqual([track, { lrclibId: 77 }]);
+  });
+
+  it('looks again, and replaces the cached result, when asked to refresh', async () => {
+    const stale: TimedLyrics = { lines: [{ startMs: 0, text: 'old stub' }] };
+    const fresh: TimedLyrics = { lines: [{ startMs: 0, text: 'whole song' }] };
+    const inner = { id: 'r', label: 'R', getTimedLyrics: vi.fn().mockResolvedValueOnce(stale).mockResolvedValueOnce(fresh) };
+    const cached = withLyricsCache(inner, new BoundedCache({ prefix: 'test.lyrics5:', maxEntries: 10 }));
+    await expect(cached.getTimedLyrics(track)).resolves.toEqual(stale);
+    await expect(cached.getTimedLyrics(track)).resolves.toEqual(stale);
+    await expect(cached.getTimedLyrics(track, { refresh: true })).resolves.toEqual(fresh);
+    // The refreshed result is what later lookups reuse.
+    await expect(cached.getTimedLyrics(track)).resolves.toEqual(fresh);
+    expect(inner.getTimedLyrics).toHaveBeenCalledTimes(2);
   });
 
   it('never caches transient failures', async () => {
