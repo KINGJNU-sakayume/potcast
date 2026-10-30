@@ -259,6 +259,21 @@ describe('SpotifyPlaybackEngine', () => {
     h.engine.stop();
   });
 
+  it('starts a track list (Liked Songs) at the chosen track, not at its first one', async () => {
+    const h = harness({ route: () => new Response(null, { status: 204 }) });
+    h.engine.start();
+    await h.flush();
+    h.callbacks().onReady('web-device');
+    const uris = ['spotify:track:a', 'spotify:track:b', 'spotify:track:c'];
+    await h.engine.play({ uris, offsetUri: 'spotify:track:b' });
+    await h.engine.play({ uris, offsetUri: 'spotify:track:missing' });
+    const plays = h.requests.filter((r) => r.method === 'PUT' && r.path === '/me/player/play');
+    expect(plays[0]?.body).toEqual({ uris, offset: { uri: 'spotify:track:b' } });
+    // A start track that is not in the list is not sent: Spotify would reject the request.
+    expect(plays[1]?.body).toEqual({ uris });
+    h.engine.stop();
+  });
+
   it('activates the browser player inside the click, before the play request goes out', async () => {
     const h = harness({ route: () => new Response(null, { status: 204 }) });
     h.engine.start();

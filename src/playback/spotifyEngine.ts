@@ -681,7 +681,9 @@ export class SpotifyPlaybackEngine implements PlaybackEngine {
   /** The Web API request that starts `request` on a device (the active one when `deviceId` is undefined). */
   private startOn(deviceId: string | undefined, request: PlayRequest): Promise<void> {
     const contextType = parseSpotifyUri(request.contextUri)?.type;
-    const offsetAllowed = contextType === 'album' || contextType === 'playlist';
+    // A track list (Liked Songs has no context URI) can start at one of its own tracks.
+    const inTrackList = !request.contextUri && !!request.offsetUri && !!request.uris?.includes(request.offsetUri);
+    const offsetAllowed = contextType === 'album' || contextType === 'playlist' || inTrackList;
     return api.startPlayback(this.client, {
       deviceId,
       contextUri: request.contextUri,
