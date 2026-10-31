@@ -18,8 +18,8 @@
  * Korean speech levels used in lyrics.
  * - hapsyoche: 하십시오체 (formal polite: -습니다)
  * - haeyoche:  해요체 (polite: -아요/-어요)
- * - haeche:    해체 (intimate 반말: -아/-어, -지)
- * - haerache:  해라체 (plain 반말, monologue / written: -는다, -다)
+ * - haeche:    해체 (intimate 반말: -아/-어, -지; also monologue and narration)
+ * - haerache:  해라체 (plain 반말, deliberately written style: -는다, -다)
  */
 export type SpeechLevel = 'hapsyoche' | 'haeyoche' | 'haeche' | 'haerache';
 

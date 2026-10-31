@@ -23,7 +23,7 @@
     {
       "startMs": 33700,
       "endMs": 38260,
-      "translation": "이륙하고 착륙한다"
+      "translation": "이륙하고 착륙해"
     },
     {
       "startMs": 38260,
@@ -38,17 +38,17 @@
     {
       "startMs": 47840,
       "endMs": 52240,
-      "translation": "술병에 매달려 있다"
+      "translation": "술병에 매달려 있어"
     },
     {
       "startMs": 52240,
       "endMs": 59640,
-      "translation": "그리고 막상 오면, 너무나 실망스럽다"
+      "translation": "그리고 막상 오면, 너무나 실망스러워"
     },
     {
       "startMs": 59640,
       "endMs": 66590,
-      "translation": "맥이 풀린 채 서성인다"
+      "translation": "맥이 풀린 채 서성여"
     },
     {
       "startMs": 66590,
@@ -58,27 +58,27 @@
     {
       "startMs": 73730,
       "endMs": 90290,
-      "translation": "맥이 풀린 채 서성인다"
+      "translation": "맥이 풀린 채 서성여"
     },
     {
       "startMs": 90290,
       "endMs": 94680,
-      "translation": "껍데기는 박살 나고 즙이 흘러나온다"
+      "translation": "껍데기는 박살 나고 즙이 흘러나와"
     },
     {
       "startMs": 94680,
       "endMs": 99230,
-      "translation": "날개가 떨리고 다리가 풀린다"
+      "translation": "날개가 떨리고 다리가 풀려"
     },
     {
       "startMs": 99230,
       "endMs": 108580,
-      "translation": "감상에 빠지지 마라, 언제나 헛소리로 끝나니까"
+      "translation": "감상에 빠지지 마, 언제나 헛소리로 끝나니까"
     },
     {
       "startMs": 108580,
       "endMs": 115810,
-      "translation": "언젠가 나는 날개를 달 것이다"
+      "translation": "언젠가 난 날개를 달 거야"
     },
     {
       "startMs": 115810,
@@ -98,7 +98,7 @@
     {
       "startMs": 127680,
       "endMs": 134610,
-      "translation": "맥이 풀린 채 서성인다"
+      "translation": "맥이 풀린 채 서성여"
     },
     {
       "startMs": 134610,
@@ -108,7 +108,7 @@
     {
       "startMs": 141700,
       "endMs": 186450,
-      "translation": "맥이 풀린 채 서성인다"
+      "translation": "맥이 풀린 채 서성여"
     },
     {
       "startMs": 186450,
@@ -128,12 +128,12 @@
     {
       "startMs": 221350,
       "endMs": 228110,
-      "translation": "알다시피, 어디에 서 있는지는 알 수 있다"
+      "translation": "알다시피, 어디에 서 있는지는 알 수 있어"
     },
     {
       "startMs": 228110,
       "endMs": 232740,
-      "translation": "어디에 서 있는지는 알 수 있다"
+      "translation": "어디에 서 있는지는 알 수 있어"
     },
     {
       "startMs": 232740,
@@ -148,7 +148,7 @@
     {
       "startMs": 239420,
       "endMs": 246210,
-      "translation": "(언젠가…) 나는 날개를 달 것이다"
+      "translation": "(언젠가…) 난 날개를 달 거야"
     },
     {
       "startMs": 246210,
@@ -158,7 +158,7 @@
     {
       "startMs": 247440,
       "endMs": 251060,
-      "translation": "(어디에 서 있는지는 알 수 있다)"
+      "translation": "(어디에 서 있는지는 알 수 있어)"
     },
     {
       "startMs": 251060,
@@ -168,7 +168,7 @@
     {
       "startMs": 252140,
       "endMs": 255580,
-      "translation": "(어디에 서 있는지는 알 수 있다)"
+      "translation": "(어디에 서 있는지는 알 수 있어)"
     },
     {
       "startMs": 255580,
@@ -178,12 +178,12 @@
     {
       "startMs": 256700,
       "endMs": 258180,
-      "translation": "(어디에 서 있는지는 알 수 있다)"
+      "translation": "(어디에 서 있는지는 알 수 있어)"
     },
     {
       "startMs": 258180,
       "endMs": 265060,
-      "translation": "맥이 풀린 채 서성인다"
+      "translation": "맥이 풀린 채 서성여"
     },
     {
       "startMs": 265060,
@@ -193,7 +193,7 @@
     {
       "startMs": 272030,
       "endMs": 300000,
-      "translation": "맥이 풀린 채 서성인다"
+      "translation": "맥이 풀린 채 서성여"
     }
   ]
 }
