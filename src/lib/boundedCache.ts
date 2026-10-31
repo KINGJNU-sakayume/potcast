@@ -36,10 +36,15 @@ export class BoundedCache<T> {
   get(key: string): T | undefined {
     const envelope = readJson<Envelope<T>>(this.prefix + key);
     if (!envelope || typeof envelope.e !== 'number') return undefined;
-    if (envelope.e <= this.now()) {
-      removeKey(this.prefix + key);
-      return undefined;
-    }
+    // An expired entry is kept until it is replaced or evicted, for `getExpired`.
+    if (envelope.e <= this.now()) return undefined;
+    return envelope.v;
+  }
+
+  /** The value even when it has expired: something to show while its source is unavailable. */
+  getExpired(key: string): T | undefined {
+    const envelope = readJson<Envelope<T>>(this.prefix + key);
+    if (!envelope || typeof envelope.e !== 'number') return undefined;
     return envelope.v;
   }
 

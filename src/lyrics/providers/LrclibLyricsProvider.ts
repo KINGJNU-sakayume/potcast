@@ -24,6 +24,33 @@ import { LyricsProviderError, type LyricsProvider, type LyricsRequestOptions, ty
 export const LRCLIB_BASE_URL = 'https://lrclib.net/api';
 const CLIENT_ID = 'ARC Music (https://github.com/KINGJNU-sakayume/player2)';
 const DURATION_TOLERANCE_S = 3;
+/**
+ * When busy, LRCLIB turns requests away with 503 and `retry-after: 1`, often for one request and not the next. Such a
+ * request is tried again here within a second or two, instead of failing the whole lookup into the slow retries of
+ * useTimedLyrics (2 s and up, each starting over from the first request).
+ */
+const BUSY_RETRIES = 3;
+const BUSY_WAIT_MS = 800;
+const MAX_BUSY_WAIT_MS = 2000;
+
+/** Resolves after `ms`; rejects with the signal's AbortError as soon as it aborts. */
+function wait(ms: number, signal: AbortSignal | undefined): Promise<void> {
+  if (ms <= 0) return Promise.resolve();
+  return new Promise((resolve, reject) => {
+    const onAbort = () => {
+      clearTimeout(timer);
+      reject(new DOMException('The lyrics lookup was cancelled.', 'AbortError'));
+    };
+    const timer = setTimeout(() => {
+      signal?.removeEventListener('abort', onAbort);
+      resolve();
+    }, ms);
+    if (signal?.aborted) onAbort();
+    else signal?.addEventListener('abort', onAbort, { once: true });
+  });
+}
+
+const isOutage = (error: unknown): error is LyricsProviderError => error instanceof LyricsProviderError && error.retryable;
 
 export interface LrclibRecord {
   id: number;
@@ -107,11 +134,12 @@ export class LrclibLyricsProvider implements LyricsProvider {
   constructor(
     private readonly fetchImpl: typeof fetch = (input, init) => globalThis.fetch(input, init),
     private readonly baseUrl: string = LRCLIB_BASE_URL,
+    private readonly busyWaitMs: number = BUSY_WAIT_MS,
   ) {}
 
   async getTimedLyrics(track: TrackIdentity, options: LyricsRequestOptions = {}): Promise<TimedLyrics | null> {
     if (options.lrclibId) {
-      const pinned = await this.byId(options.lrclibId, track, options);
+      const pinned = await this.pinned(options.lrclibId, track, options);
       if (pinned) return pinned;
     }
     const artist = track.artists[0]?.name;
@@ -126,19 +154,71 @@ export class LrclibLyricsProvider implements LyricsProvider {
 
     const cleaned = cleanTrackTitle(track.title);
     let fallback: TimedLyrics | null = expected === undefined ? exact : null;
-    try {
-      for (const params of [{ track_name: cleaned, artist_name: artist }, { q: `${cleaned} ${artist}` }]) {
-        const found = pickLyrics(this.usableCandidates(await this.search(params, options), durationS), expected, track.durationMs);
-        if (!found) continue;
-        if (expected !== undefined || !mayBeRomanisedUpload(found)) return found;
-        fallback ??= found;
+    let outage: LyricsProviderError | null = null;
+    for (const params of [{ track_name: cleaned, artist_name: artist }, { q: `${cleaned} ${artist}` }]) {
+      let records: LrclibRecord[];
+      try {
+        records = await this.search(params, options);
+      } catch (error) {
+        // One search turned away by an outage does not stop the other from being tried.
+        if (!isOutage(error)) {
+          if (fallback && !(error instanceof DOMException)) return fallback;
+          throw error;
+        }
+        outage = error;
+        continue;
       }
-    } catch (error) {
-      // The lookup that already found lyrics is not lost because a later, optional search hit an outage.
-      if (fallback && !(error instanceof DOMException)) return fallback;
-      throw error;
+      const found = pickLyrics(this.usableCandidates(records, durationS), expected, track.durationMs);
+      if (!found) continue;
+      if (expected !== undefined || !mayBeRomanisedUpload(found)) return found;
+      fallback ??= found;
     }
+    // The lookup that already found lyrics is not lost because a later, optional search hit an outage;
+    // with nothing found, the outage is reported so the lookup is retried rather than cached as "no lyrics".
+    if (!fallback && outage) throw outage;
     return fallback;
+  }
+
+  /**
+   * The pinned record, or null when it is missing or does not fit the track (the usual search follows). `/get/{id}` is
+   * what a busy LRCLIB turns away first, so the same record is looked for among the other lookups at the same time and
+   * whichever finds it first wins. Throws the outage only when neither found it and `/get/{id}` could not answer.
+   */
+  private pinned(id: number, track: TrackIdentity, options: LyricsRequestOptions): Promise<TimedLyrics | null> {
+    return new Promise((resolve, reject) => {
+      let pending = 2;
+      let direct: { error: unknown } | null = null;
+      const settle = (found: TimedLyrics | null) => {
+        if (found) resolve(found);
+        else if ((pending -= 1) === 0) {
+          if (direct) reject(direct.error);
+          else resolve(null);
+        }
+      };
+      this.byId(id, track, options).then(settle, (error: unknown) => {
+        direct = { error };
+        settle(null);
+      });
+      this.pinnedElsewhere(id, track, options).then(settle, () => settle(null));
+    });
+  }
+
+  /** The pinned record, looked for among the signature match and the name search. */
+  private async pinnedElsewhere(id: number, track: TrackIdentity, options: LyricsRequestOptions): Promise<TimedLyrics | null> {
+    const artist = track.artists[0]?.name;
+    if (!artist || !track.title) return null;
+    const durationS = Math.round(track.durationMs / 1000);
+    const exact = await this.get({ track_name: track.title, artist_name: artist, album_name: track.album.name, durationS }, options).catch(() => null);
+    if (exact?.timing?.lrclibId === id) return exact;
+    const record = (await this.search({ track_name: cleanTrackTitle(track.title), artist_name: artist }, options)).find((candidate) => candidate.id === id);
+    return record ? this.pinnedRecord(record, track) : null;
+  }
+
+  /** The pinned record's lyrics, when it has synced lyrics and the playing track is the same length. */
+  private pinnedRecord(record: LrclibRecord, track: TrackIdentity): TimedLyrics | null {
+    const durationS = track.durationMs / 1000;
+    if (!record.syncedLyrics || typeof record.duration !== 'number' || Math.abs(record.duration - durationS) > DURATION_TOLERANCE_S) return null;
+    return recordToTimedLyrics(record, this.label);
   }
 
   /** Candidates with synced lyrics (or instrumental) whose length matches the track, synced ones first. */
@@ -159,10 +239,7 @@ export class LrclibLyricsProvider implements LyricsProvider {
   private async byId(id: number, track: TrackIdentity, options: LyricsRequestOptions): Promise<TimedLyrics | null> {
     const response = await this.request(`/get/${id}`, options);
     if (response.status === 404) return null;
-    const record = (await response.json()) as LrclibRecord;
-    const durationS = track.durationMs / 1000;
-    if (!record.syncedLyrics || typeof record.duration !== 'number' || Math.abs(record.duration - durationS) > DURATION_TOLERANCE_S) return null;
-    return recordToTimedLyrics(record, this.label);
+    return this.pinnedRecord((await response.json()) as LrclibRecord, track);
   }
 
   private async get(
@@ -190,6 +267,18 @@ export class LrclibLyricsProvider implements LyricsProvider {
   }
 
   private async request(path: string, options: LyricsRequestOptions): Promise<Response> {
+    for (let attempt = 0; ; attempt += 1) {
+      try {
+        return await this.requestOnce(path, options);
+      } catch (error) {
+        if (!isOutage(error) || attempt >= BUSY_RETRIES) throw error;
+        const asked = error.retryAfterS !== undefined && this.busyWaitMs > 0 ? error.retryAfterS * 1000 : this.busyWaitMs;
+        await wait(Math.min(MAX_BUSY_WAIT_MS, asked), options.signal);
+      }
+    }
+  }
+
+  private async requestOnce(path: string, options: LyricsRequestOptions): Promise<Response> {
     let response: Response;
     try {
       response = await this.fetchImpl(`${this.baseUrl}${path}`, {
@@ -205,6 +294,11 @@ export class LrclibLyricsProvider implements LyricsProvider {
       // Validation error for this track's metadata: treat as "no lyrics".
       return new Response(null, { status: 404 });
     }
-    throw new LyricsProviderError(`LRCLIB responded ${response.status}.`, response.status >= 500 || response.status === 429);
+    const retryAfterS = Number(response.headers.get('retry-after'));
+    throw new LyricsProviderError(
+      `LRCLIB responded ${response.status}.`,
+      response.status >= 500 || response.status === 429,
+      Number.isFinite(retryAfterS) && retryAfterS > 0 ? retryAfterS : undefined,
+    );
   }
 }

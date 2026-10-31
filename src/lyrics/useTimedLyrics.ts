@@ -35,21 +35,24 @@ export function useTimedLyrics(track: TrackIdentity | null): LyricsState {
   );
   // "Try again" must not be answered from the cache, which holds the very result being retried.
   const refreshNext = useRef(false);
-  const query = useQuery({
-    queryKey: [mode, 'lyrics', provider?.id, track?.spotifyTrackId, lrclibId],
-    enabled: Boolean(provider && track),
+  const lookup = (pin: number | null) => ({
+    queryKey: [mode, 'lyrics', provider?.id, track?.spotifyTrackId, pin],
     staleTime: Number.POSITIVE_INFINITY,
     gcTime: 60 * 60_000,
-    retry: (count, error) => count < MAX_RETRIES && error instanceof LyricsProviderError && error.retryable,
-    retryDelay: (attempt) => RETRY_BASE_MS * 2 ** attempt,
-    queryFn: async ({ signal }) => {
+    retry: (count: number, error: Error) => count < MAX_RETRIES && error instanceof LyricsProviderError && error.retryable,
+    retryDelay: (attempt: number) => RETRY_BASE_MS * 2 ** attempt,
+    queryFn: async ({ signal }: { signal: AbortSignal }) => {
       const refresh = refreshNext.current;
       refreshNext.current = false;
-      const result = await provider!.getTimedLyrics(track!, { signal, ...(lrclibId ? { lrclibId } : {}), ...(refresh ? { refresh } : {}) });
+      const result = await provider!.getTimedLyrics(track!, { signal, ...(pin ? { lrclibId: pin } : {}), ...(refresh ? { refresh } : {}) });
       if (!result) return null;
       return { ...result, lines: normaliseLines(result.lines) };
     },
   });
+  const query = useQuery({ ...lookup(lrclibId), enabled: Boolean(provider && track) });
+  // The record a curated translation was timed on is fetched by ID, which a busy LRCLIB is slowest to answer. Until
+  // it arrives (or if it cannot), the usual lookup's lyrics are shown; the translation joins them once it is there.
+  const interim = useQuery({ ...lookup(null), enabled: Boolean(provider && track && lrclibId) && (query.isPending || query.isError) });
 
   const retry = () => {
     refreshNext.current = true;
@@ -57,9 +60,10 @@ export function useTimedLyrics(track: TrackIdentity | null): LyricsState {
   };
   if (!provider) return { status: 'disabled' };
   if (!track) return { status: 'idle' };
-  if (query.isPending) return { status: 'loading' };
-  if (query.isError) return { status: 'unavailable', reason: 'error', retry };
-  const lyrics = query.data;
+  const shown = (query.isPending || query.isError) && lrclibId && interim.data?.lines.length ? interim : query;
+  if (shown.isPending) return { status: 'loading' };
+  if (shown.isError) return { status: 'unavailable', reason: 'error', retry };
+  const lyrics = shown.data;
   if (!lyrics) return { status: 'unavailable', reason: 'not-found', retry };
   if (lyrics.instrumental) return { status: 'instrumental', source: lyrics.source };
   if (lyrics.lines.length === 0) return { status: 'unavailable', reason: 'not-found', retry };

@@ -182,12 +182,28 @@ describe('LrclibLyricsProvider', () => {
       const fetchMock = vi
         .fn()
         .mockResolvedValueOnce(json({ id: 5, duration: 187, syncedLyrics: ROMANISED }))
-        .mockResolvedValueOnce(json({ message: 'busy' }, 503));
-      expect((await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track))?.timing?.lrclibId).toBe(5);
+        .mockImplementation(async () => json({ message: 'busy' }, 503));
+      expect((await new LrclibLyricsProvider(fetchMock, undefined, 0).getTimedLyrics(track))?.timing?.lrclibId).toBe(5);
 
       // With nothing found yet, the outage is still reported so the lookup is retried.
-      const nothing = vi.fn().mockResolvedValueOnce(notFound()).mockResolvedValueOnce(json({ message: 'busy' }, 503));
-      await expect(new LrclibLyricsProvider(nothing).getTimedLyrics(track)).rejects.toBeInstanceOf(LyricsProviderError);
+      const nothing = vi
+        .fn()
+        .mockResolvedValueOnce(notFound())
+        .mockImplementation(async () => json({ message: 'busy' }, 503));
+      await expect(new LrclibLyricsProvider(nothing, undefined, 0).getTimedLyrics(track)).rejects.toBeInstanceOf(LyricsProviderError);
+    });
+
+    it('tries the full-text search when the name search is turned away', async () => {
+      const fetchMock = vi
+        .fn()
+        .mockResolvedValueOnce(notFound())
+        .mockImplementationOnce(async () => json({ message: 'busy' }, 503))
+        .mockImplementationOnce(async () => json({ message: 'busy' }, 503))
+        .mockImplementationOnce(async () => json({ message: 'busy' }, 503))
+        .mockImplementationOnce(async () => json({ message: 'busy' }, 503))
+        .mockResolvedValueOnce(json([{ id: 9, duration: 187, syncedLyrics: '[00:01.00]found' }]));
+      expect((await new LrclibLyricsProvider(fetchMock, undefined, 0).getTimedLyrics(track))?.timing?.lrclibId).toBe(9);
+      expect(new URL(fetchMock.mock.calls[5]![0] as string).searchParams.get('q')).toBe('Song Title Some Artist');
     });
 
     it('ranks a mostly-original upload above a bilingual one when the language is known', async () => {
@@ -206,9 +222,10 @@ describe('LrclibLyricsProvider', () => {
   });
 
   it('loads the pinned LRCLIB record directly when its length matches the track', async () => {
-    const fetchMock = vi.fn().mockResolvedValueOnce(json({ id: 77, duration: 186, syncedLyrics: '[00:01.00]line one' }));
+    const fetchMock = vi.fn(async (input: RequestInfo | URL) =>
+      new URL(String(input)).pathname === '/api/get/77' ? json({ id: 77, duration: 186, syncedLyrics: '[00:01.00]line one' }) : json({ code: 404 }, 404),
+    );
     const lyrics = await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track, { lrclibId: 77 });
-    expect(fetchMock).toHaveBeenCalledTimes(1);
     expect(new URL(fetchMock.mock.calls[0]![0] as string).pathname).toBe('/api/get/77');
     expect(lyrics).toMatchObject({ lines: [{ text: 'line one' }], timing: { lrclibId: 77, durationMs: 186_000 } });
   });
@@ -218,12 +235,12 @@ describe('LrclibLyricsProvider', () => {
     ['no synced lyrics', json({ id: 77, duration: 187, plainLyrics: 'line one' })],
     ['a missing record', json({ code: 404 }, 404)],
   ])('falls back to the usual search when the pinned record has %s', async (_label, pinned) => {
-    const fetchMock = vi
-      .fn()
-      .mockResolvedValueOnce(pinned)
-      .mockResolvedValueOnce(json({ id: 1, duration: 187, syncedLyrics: '[00:01.00]line two' }));
+    const fetchMock = vi.fn(async (input: RequestInfo | URL) => {
+      const { pathname } = new URL(String(input));
+      if (pathname === '/api/get/77') return pinned.clone();
+      return pathname === '/api/get' ? json({ id: 1, duration: 187, syncedLyrics: '[00:01.00]line two' }) : json([]);
+    });
     const lyrics = await new LrclibLyricsProvider(fetchMock).getTimedLyrics(track, { lrclibId: 77 });
-    expect(new URL(fetchMock.mock.calls[1]![0] as string).pathname).toBe('/api/get');
     expect(lyrics?.lines[0]?.text).toBe('line two');
   });
 
@@ -232,9 +249,37 @@ describe('LrclibLyricsProvider', () => {
     await expect(new LrclibLyricsProvider(notFound).getTimedLyrics(track)).resolves.toBeNull();
 
     const outage = vi.fn(async () => json({ message: 'busy' }, 503));
-    const error = await new LrclibLyricsProvider(outage).getTimedLyrics(track).catch((e: unknown) => e);
+    const error = await new LrclibLyricsProvider(outage, undefined, 0).getTimedLyrics(track).catch((e: unknown) => e);
     expect(error).toBeInstanceOf(LyricsProviderError);
     expect((error as LyricsProviderError).retryable).toBe(true);
+  });
+
+  it('asks again right away when LRCLIB is briefly busy', async () => {
+    const fetchMock = vi
+      .fn()
+      .mockImplementationOnce(async () => json({ message: 'busy' }, 503))
+      .mockResolvedValueOnce(json({ id: 1, duration: 187, syncedLyrics: '[00:01.00]hello' }));
+    expect((await new LrclibLyricsProvider(fetchMock, undefined, 0).getTimedLyrics(track))?.lines[0]?.text).toBe('hello');
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it('finds the pinned record through the other lookups when /get/{id} is busy', async () => {
+    const busy = async (input: RequestInfo | URL) =>
+      new URL(String(input)).pathname === '/api/get/77'
+        ? json({ message: 'busy' }, 503)
+        : new URL(String(input)).pathname === '/api/get'
+          ? json({ id: 1, duration: 187, syncedLyrics: '[00:01.00]another upload' })
+          : json([
+              { id: 1, duration: 187, syncedLyrics: '[00:01.00]another upload' },
+              { id: 77, duration: 186, syncedLyrics: '[00:01.00]pinned' },
+            ]);
+    const lyrics = await new LrclibLyricsProvider(vi.fn(busy), undefined, 0).getTimedLyrics(track, { lrclibId: 77 });
+    expect(lyrics).toMatchObject({ lines: [{ text: 'pinned' }], timing: { lrclibId: 77 } });
+
+    // When neither has it, the outage is reported rather than showing lyrics the translation does not fit.
+    const elsewhere = async (input: RequestInfo | URL) =>
+      new URL(String(input)).pathname === '/api/get/77' ? json({ message: 'busy' }, 503) : json([]);
+    await expect(new LrclibLyricsProvider(vi.fn(elsewhere), undefined, 0).getTimedLyrics(track, { lrclibId: 77 })).rejects.toBeInstanceOf(LyricsProviderError);
   });
 
   it('recognises instrumental records and plain-only records', () => {
@@ -296,6 +341,21 @@ describe('withLyricsCache', () => {
     const reread = withLyricsCache(inner, new BoundedCache({ prefix: 'test.lyrics3:', maxEntries: 10 }));
     await expect(reread.getTimedLyrics(track)).resolves.toEqual(result);
     expect(inner.getTimedLyrics).toHaveBeenCalledTimes(1);
+  });
+
+  it('shows expired lyrics again while the provider has an outage', async () => {
+    let now = 0;
+    const result: TimedLyrics = { lines: [{ startMs: 0, text: 'line one' }] };
+    const inner = {
+      id: 'o',
+      label: 'O',
+      getTimedLyrics: vi.fn().mockResolvedValueOnce(result).mockRejectedValue(new LyricsProviderError('busy', true)),
+    };
+    const cached = withLyricsCache(inner, new BoundedCache({ prefix: 'test.lyrics5:', maxEntries: 10, now: () => now }));
+    await cached.getTimedLyrics(track);
+    now = 30 * 24 * 60 * 60_000;
+    await expect(cached.getTimedLyrics(track)).resolves.toEqual(result);
+    expect(inner.getTimedLyrics).toHaveBeenCalledTimes(2);
   });
 
   it('caches a lookup pinned to a record apart from the plain one', async () => {

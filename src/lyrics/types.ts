@@ -57,6 +57,8 @@ export class LyricsProviderError extends Error {
   constructor(
     message: string,
     readonly retryable: boolean,
+    /** How long the service asked to wait before trying again (its `retry-after`), in seconds. */
+    readonly retryAfterS?: number,
   ) {
     super(message);
     this.name = 'LyricsProviderError';

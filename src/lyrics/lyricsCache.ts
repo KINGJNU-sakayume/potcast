@@ -1,6 +1,6 @@
 import type { TrackIdentity } from '../domain/types';
 import { BoundedCache } from '../lib/boundedCache';
-import type { LyricsProvider, LyricsRequestOptions, TimedLyrics } from './types';
+import { LyricsProviderError, type LyricsProvider, type LyricsRequestOptions, type TimedLyrics } from './types';
 import { storageKey } from '../lib/storageNamespace';
 
 /** Uploads on LRCLIB are corrected and added over time, so a result is reused for days, not weeks. */
@@ -37,7 +37,15 @@ export function withLyricsCache(provider: LyricsProvider, cache: BoundedCache<Ti
         const cached = cache.get(key);
         if (cached !== undefined) return cached;
       }
-      const result = await provider.getTimedLyrics(track, options);
+      let result: TimedLyrics | null;
+      try {
+        result = await provider.getTimedLyrics(track, options);
+      } catch (error) {
+        // During an outage, lyrics found before are better than none: shown again, and looked up anew next time.
+        const expired = error instanceof LyricsProviderError && error.retryable ? cache.getExpired(key) : undefined;
+        if (expired) return expired;
+        throw error;
+      }
       cache.set(key, result, result ? FOUND_TTL_MS : MISSING_TTL_MS);
       return result;
     },
