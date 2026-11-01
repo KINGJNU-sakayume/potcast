@@ -35,9 +35,3 @@ export class DigDatabase extends Dexie {
     return liveQuery(() => this.read()).subscribe({ next, error });
   }
 }
-
-export interface DigRepository {
-  read(): Promise<DigData>;
-  write<T>(action: () => Promise<T>): Promise<T>;
-  rows<K extends DigTable>(name: K): Table<DigData[K][number], string>;
-}

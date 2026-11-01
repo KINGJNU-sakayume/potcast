@@ -3,12 +3,14 @@ import type { AlbumSummary } from '../domain/types';
 import { normaliseTitle } from '../editorial/lookup';
 import type { ArtistDigProject, DigData, DigRelease, DigTrack, ReleaseMembership, ReviewStatus } from './types';
 
+const studioCandidate = (membership: ReleaseMembership, release: DigRelease) => membership.studio ?? !/\b(live|concert|soundtrack|greatest hits|best of|compilation)\b|ライヴ|ライブ|베스트|라이브/i.test(release.name);
+
 export function inScope(project: ArtistDigProject, membership: ReleaseMembership, release: DigRelease): boolean {
   if (membership.override !== 'auto') return membership.override === 'include';
   if (!project.scope[membership.group]) return false;
   if (project.studioOnly && membership.group === 'album') {
     // Spotify has no studio flag. Explicit manual overrides always win over this conservative heuristic.
-    return membership.studio ?? !/\b(live|concert|soundtrack|greatest hits|best of|compilation)\b|ライヴ|ライブ|베스트|라이브/i.test(release.name);
+    return studioCandidate(membership, release);
   }
   return true;
 }
@@ -37,6 +39,43 @@ function verifiedEdition(a: DigRelease, b: DigRelease, tracks: Map<string, DigTr
   });
 }
 
+/** Spotify IDs are authoritative. Different IDs alias only inside a verified edition sequence. */
+function recordingIndex(data: DigData) {
+  const tracks = new Map(data.tracks.map((track) => [track.id, track]));
+  const releases = new Map(data.releases.map((r) => [r.id, r]));
+  const parents = new Map(data.tracks.map((track) => [track.id, track.id]));
+  const root = (id: string): string => {
+    let next = parents.get(id) ?? id;
+    while (next !== (parents.get(next) ?? next)) next = parents.get(next)!;
+    return next;
+  };
+  for (const group of groupEditions(data.releases)) {
+    const members = [group.primary, ...group.editions].map((r) => releases.get(r.id)!);
+    for (let i = 0; i < members.length; i++) for (let j = i + 1; j < members.length; j++) {
+      const a = members[i]!; const b = members[j]!;
+      if (!verifiedEdition(a, b, tracks)) continue;
+      for (let k = 0; k < Math.min(a.trackIds.length, b.trackIds.length); k++) parents.set(root(b.trackIds[k]!), root(a.trackIds[k]!));
+    }
+  }
+  const canonical = new Map(data.tracks.map((t) => [t.id, root(t.id)]));
+  const aliases = new Map<string, string[]>();
+  for (const [id, key] of canonical) aliases.set(key, [...(aliases.get(key) ?? []), id]);
+  const latest = new Map<string, DigData['states'][number]>();
+  for (const state of data.states) {
+    const key = canonical.get(state.id) ?? state.id;
+    const old = latest.get(key);
+    if (!old || old.updatedAt.localeCompare(state.updatedAt) < 0 || (old.updatedAt === state.updatedAt && old.id.localeCompare(state.id) < 0)) latest.set(key, state);
+  }
+  const assertions = new Map(data.tracks.map((t) => [t.id, latest.get(canonical.get(t.id)!)]));
+  const states = new Map([...assertions].map(([id, state]) => [id, state?.status ?? 'none']));
+  return { canonical, aliases, states, assertions };
+}
+
+/** The most recent explicit assertion wins across verified aliases, including an explicit reset to none. */
+export const reviewStatesFor = (data: DigData): Map<string, ReviewStatus> => recordingIndex(data).states;
+export const reviewAssertionsFor = (data: DigData) => recordingIndex(data).assertions;
+export const statusForTrack = (id: string, data: DigData): ReviewStatus => reviewStatesFor(data).get(id) ?? 'none';
+
 export interface DigProgress {
   total: number;
   reviewed: number;
@@ -56,7 +95,7 @@ export interface DigProgress {
 
 export function progressFor(project: ArtistDigProject, data: DigData): DigProgress {
   const tracks = new Map(data.tracks.map((track) => [track.id, track]));
-  const states = new Map(data.states.map((state) => [state.id, state.status]));
+  const recordings = recordingIndex(data);
   const memberships = data.memberships.filter((m) => m.artistId === project.id);
   const releaseMap = new Map(data.releases.map((r) => [r.id, r]));
   const candidates = memberships.flatMap((m) => {
@@ -65,13 +104,13 @@ export function progressFor(project: ArtistDigProject, data: DigData): DigProgre
   });
   const chosen: DigRelease[] = [];
   for (const group of groupEditions(candidates.map((r): AlbumSummary => ({ ...r })))) {
-    const primary = releaseMap.get(group.primary.id)!;
-    chosen.push(primary);
-    for (const edition of group.editions) {
+    const roots: DigRelease[] = [];
+    for (const edition of [group.primary, ...group.editions]) {
       const release = releaseMap.get(edition.id)!;
       // Manually included editions deliberately add bonus tracks; normal editions fold only after verification.
-      if (memberships.find((m) => m.albumId === release.id)?.override === 'include' || !verifiedEdition(primary, release, tracks)) chosen.push(release);
+      if (memberships.find((m) => m.albumId === release.id)?.override === 'include' || !roots.some((primary) => verifiedEdition(primary, release, tracks))) roots.push(release);
     }
+    chosen.push(...roots);
   }
   chosen.sort((a, b) => (a.releaseDate ?? '9999').localeCompare(b.releaseDate ?? '9999') || a.id.localeCompare(b.id));
   const aliases = new Map<string, string[]>();
@@ -85,31 +124,21 @@ export function progressFor(project: ArtistDigProject, data: DigData): DigProgre
       const track = tracks.get(id);
       if (!track) { unknown++; continue; }
       // Different IDs only share state when the full recording signature agrees.
-      const existing = targets.find((t) => { const other = tracks.get(t.id); return other && sameRecording(track, other); });
+      const key = recordings.canonical.get(id) ?? id;
+      const existing = targets.find((t) => recordings.canonical.get(t.id) === key);
       const canonical = existing?.id ?? id;
       if (!existing) targets.push({ id, albumId: release.id });
-      const ids = aliases.get(canonical) ?? [];
-      if (!ids.includes(id)) ids.push(id);
-      // A reviewed deluxe may satisfy its original edition even when that deluxe is folded away.
-      for (const candidate of candidates) {
-        if (candidate.id === release.id || !verifiedEdition(release, candidate, tracks)) continue;
-        for (const otherId of candidate.trackIds) {
-          const other = tracks.get(otherId);
-          if (other && sameRecording(track, other) && !ids.includes(otherId)) ids.push(otherId);
-        }
-      }
-      aliases.set(canonical, ids);
+      aliases.set(canonical, recordings.aliases.get(key) ?? [id]);
     }
   }
   const statusOf = (id: string): ReviewStatus => {
-    const values = (aliases.get(id) ?? [id]).map((x) => states.get(x) ?? 'none');
-    return values.includes('listened') ? 'listened' : values.includes('skipped') ? 'skipped' : 'none';
+    return recordings.states.get(id) ?? 'none';
   };
   const listened = targets.filter((t) => statusOf(t.id) === 'listened').length;
   const reviewed = targets.filter((t) => statusOf(t.id) !== 'none').length;
   const total = targets.length + unknown;
   const next = targets.find((t) => statusOf(t.id) === 'none');
-  const albums = chosen.filter((r) => r.albumType === 'album');
+  const albums = chosen.filter((r) => memberships.some((m) => m.albumId === r.id && m.group === 'album' && studioCandidate(m, r)));
   return {
     total, listened, reviewed, known,
     // An incomplete catalogue cannot report a misleading 100%.

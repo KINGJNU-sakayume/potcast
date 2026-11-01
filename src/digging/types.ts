@@ -52,6 +52,7 @@ export interface DigTrack {
   durationMs: number;
   discNumber: number;
   trackNumber: number;
+  explicit?: boolean;
 }
 
 /** Current assertion only. Changing it never creates or removes a listen event. */

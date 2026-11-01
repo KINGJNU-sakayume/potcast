@@ -27,7 +27,7 @@ export function createSpotifyCatalogueSource(client: SpotifyClient): CatalogueSo
 
     async getProfile(signal) {
       const user = await api.getCurrentUser(client, signal);
-      return { displayName: user.display_name?.trim() || null };
+      return { displayName: user.display_name?.trim() || null, accountId: user.id };
     },
 
     async getRecentlyPlayed(signal) {

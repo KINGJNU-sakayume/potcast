@@ -4,6 +4,7 @@ import type { AlbumDetail, ArtistSummary } from '../domain/types';
 import { applyImport, exportBackup, parseBackup, previewImport } from './backup';
 import { DigDatabase } from './db';
 import { historyByDay, progressFor } from './progress';
+import { offlineAlbum, offlineArtist, offlineDiscography } from './offline';
 import { DigService } from './service';
 import { emptyDigData } from './types';
 
@@ -97,6 +98,60 @@ describe('personal digging policy', () => {
     expect(await progress()).toMatchObject({ total: 4, reviewed: 2, reviewComplete: false });
     expect((await db.read()).completions).toEqual(milestones);
     expect(milestones[0]!.releaseIds).toEqual(['album-a']);
+  });
+
+  it('shares the latest explicit state across verified editions, including resets, but keeps unrelated recordings separate', async () => {
+    await seed();
+    await service.syncCatalogue(artist.id, [{ album: album('deluxe', 'Original (Deluxe)', ['new-one', 'new-two']), group: 'album' }], true);
+    await service.setStatuses(['new-one'], 'listened');
+    expect((await progress()).listened).toBe(1);
+    await service.setStatuses(['one'], 'skipped');
+    expect(await progress()).toMatchObject({ listened: 0, reviewed: 1 });
+    await service.setStatuses(['new-one'], 'none');
+    expect((await progress()).reviewed).toBe(0);
+    // Equal title, credits and duration on a different work are insufficient evidence of identity.
+    await service.syncCatalogue(artist.id, [{ album: album('unrelated', 'Another work', ['other-one', 'other-two']), group: 'album' }], true);
+    expect((await progress()).total).toBe(4);
+    await service.setStatuses(['other-one'], 'listened');
+    expect((await progress()).listened).toBe(1);
+  });
+
+  it('rejects undo after an alias was edited and orders assertions even when the clock has not advanced', async () => {
+    await seed();
+    await service.syncCatalogue(artist.id, [{ album: album('deluxe', 'Original (Deluxe)', ['new-one', 'new-two']), group: 'album' }], true);
+    const fixedClock = new DigService(db, () => at);
+    const change = await fixedClock.setStatuses(['one'], 'listened');
+    await fixedClock.setStatuses(['new-one'], 'skipped');
+    expect((await progress()).listened).toBe(0);
+    await expect(fixedClock.undo(change)).rejects.toThrow('changed');
+    const undo = await fixedClock.setStatuses(['one'], 'listened');
+    await fixedClock.undo(undo);
+    expect(await progress()).toMatchObject({ listened: 0, reviewed: 1 });
+  });
+
+  it('reconstructs offline album and artist views from stored snapshots without claiming playback availability', async () => {
+    await seed();
+    await service.setStatuses(['one'], 'listened');
+    const data = await db.read();
+    expect(offlineAlbum('album-a', data)).toMatchObject({ name: 'Original', tracksComplete: true, tracks: [{ id: 'one', isPlayable: false }, { id: 'two', isPlayable: false }] });
+    expect(offlineArtist(artist.id, data)).toMatchObject({ name: 'Artist', uri: artist.uri });
+    expect(offlineDiscography(artist.id, 'album', data)?.releases).toHaveLength(1);
+    expect(offlineAlbum('unknown', data)).toBeUndefined();
+  });
+
+  it('approves recent plays atomically, deduplicating by track and date even when a legacy event has another ID', async () => {
+    await seed();
+    const event = { id: 'legacy-event-id', trackId: 'one', albumId: 'album-a', artistId: artist.id, source: 'manual' as const, listenedAt: at };
+    await service.addListen(event);
+    expect(await service.approveRecent([{ ...event, id: 'spotify-event-id', source: 'spotify-sync' }])).toBe(0);
+    const next = { ...event, id: 'next-play', listenedAt: '2026-06-02T00:00:00Z' };
+    expect(await service.approveRecent([next, next])).toBe(1);
+    expect(await service.approveRecent([next])).toBe(0);
+    expect(await progress()).toMatchObject({ listened: 1 });
+    expect((await db.read()).events).toHaveLength(2);
+    await expect(service.approveRecent([{ ...event, id: 'okay', trackId: 'two', listenedAt: '2026-06-03T00:00:00Z' }, { ...event, id: 'broken', trackId: 'missing' }])).rejects.toThrow('unavailable');
+    expect((await db.read()).events).toHaveLength(2);
+    expect((await progress()).listened).toBe(1);
   });
 
   it('undoes only the batch state change and preserves events and other personal fields', async () => {

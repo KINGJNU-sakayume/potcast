@@ -1,6 +1,6 @@
 import type { AlbumDetail, AlbumSummary, ArtistSummary, ReleaseGroup } from '../domain/types';
-import type { DigRepository } from './db';
-import { progressFor } from './progress';
+import type { DigRepository } from './repository';
+import { progressFor, reviewAssertionsFor, reviewStatesFor } from './progress';
 import {
   DEFAULT_SCOPE, assertRating, membershipId, reviewId,
   type ArtistDigProject, type DigData, type DigRelease, type PersonalReview, type ReviewStatus,
@@ -55,7 +55,8 @@ export class DigService {
       const member = await this.repository.rows('memberships').get(id);
       if (!member) throw new Error('Release membership is unavailable.');
       await this.repository.rows('memberships').put({ ...member, override, studio });
-      await this.repository.rows('projects').update(member.artistId, { updatedAt: this.now() });
+      const project = await this.repository.rows('projects').get(member.artistId);
+      if (project) await this.repository.rows('projects').put({ ...project, updatedAt: this.now() });
       await this.captureCompletions();
     });
   }
@@ -73,7 +74,7 @@ export class DigService {
         ? existing?.tracksSyncedAt ?? null : snapshot.tracksComplete ? this.now() : null;
       await this.repository.rows('tracks').bulkPut(album.tracks.map((track) => ({
         id: track.id, name: track.name, uri: track.uri, artists: track.artists.map(({ id, name, uri }) => ({ id, name, uri })), durationMs: track.durationMs,
-        discNumber: track.discNumber, trackNumber: track.trackNumber,
+        discNumber: track.discNumber, trackNumber: track.trackNumber, explicit: track.explicit,
       })));
     }
     if (stableJson(existing) !== stableJson(snapshot)) await this.repository.rows('releases').put(snapshot);
@@ -105,13 +106,17 @@ export class DigService {
   async setStatuses(ids: string[], status: ReviewStatus): Promise<StatusUndo> {
     if (!['none', 'listened', 'skipped'].includes(status)) throw new Error('Invalid review state.');
     return this.repository.write(async () => {
-      const at = this.now();
+      const data = await this.repository.read();
+      // Monotonic assertion timestamps disambiguate rapid edits to different Spotify IDs of one recording.
+      const last = data.states.reduce((max, row) => Math.max(max, Date.parse(row.updatedAt)), 0);
+      const at = new Date(Math.max(Date.parse(this.now()), last + 1)).toISOString();
+      const effective = reviewStatesFor(data);
       const before: StatusUndo['before'] = [];
       for (const id of new Set(ids)) {
         if (!await this.repository.rows('tracks').get(id)) throw new Error('Track details are unavailable.');
-        const current = await this.repository.rows('states').get(id);
-        if ((current?.status ?? 'none') === status) continue;
-        before.push({ id, status: current?.status ?? 'none' });
+        const current = effective.get(id) ?? 'none';
+        if (current === status) continue;
+        before.push({ id, status: current });
         await this.repository.rows('states').put({ id, status, updatedAt: at });
       }
       if (before.length) {
@@ -119,7 +124,7 @@ export class DigService {
         const data = await this.repository.read();
         for (const project of data.projects) {
           if (data.memberships.some((m) => m.artistId === project.id && data.releases.some((r) => r.id === m.albumId && r.trackIds.some((id) => affected.has(id))))) {
-            await this.repository.rows('projects').update(project.id, { updatedAt: at });
+            await this.repository.rows('projects').put({ ...project, updatedAt: at });
           }
         }
         await this.captureCompletions();
@@ -130,13 +135,17 @@ export class DigService {
 
   async undo(change: StatusUndo): Promise<void> {
     await this.repository.write(async () => {
+      const data = await this.repository.read();
+      const latest = reviewAssertionsFor(data);
+      const last = data.states.reduce((max, row) => Math.max(max, Date.parse(row.updatedAt)), 0);
+      const at = new Date(Math.max(Date.parse(this.now()), last + 1)).toISOString();
       for (const row of change.before) {
         const current = await this.repository.rows('states').get(row.id);
-        if (current?.updatedAt !== change.after || current.status !== change.status) {
+        if (current?.updatedAt !== change.after || current.status !== change.status || latest.get(row.id)?.updatedAt !== change.after) {
           throw new Error('These tracks changed since the batch operation. Undo was cancelled.');
         }
       }
-      for (const row of change.before) await this.repository.rows('states').put({ ...row, updatedAt: this.now() });
+      for (const row of change.before) await this.repository.rows('states').put({ ...row, updatedAt: at });
       // Listen events and immutable completion milestones are intentionally untouched.
     });
   }
@@ -161,6 +170,22 @@ export class DigService {
     });
   }
 
+  async approveRecent(events: Array<Omit<DigData['events'][number], 'playbackVerified'>>): Promise<number> {
+    return this.repository.write(async () => {
+      const current = await this.repository.read();
+      const known = new Set(current.events.map((e) => `${e.trackId}@${e.listenedAt}`));
+      const accepted: string[] = [];
+      for (const event of events) {
+        const key = `${event.trackId}@${event.listenedAt}`;
+        if (known.has(key)) continue;
+        await this.addListen({ ...event, source: 'spotify-sync' });
+        accepted.push(event.trackId); known.add(key);
+      }
+      await this.setStatuses(accepted, 'listened');
+      return accepted.length;
+    });
+  }
+
   private async captureCompletions(): Promise<void> {
     const data = await this.repository.read();
     for (const project of data.projects) {
@@ -172,10 +197,12 @@ export class DigService {
           releaseIds: progress.releases.map((r) => r.id).sort(), trackIds: [...progress.trackIds].sort(),
           memberships: data.memberships.filter((m) => m.artistId === project.id).sort((a, b) => a.id.localeCompare(b.id)),
         };
-        // The complete scope itself is the key: no lossy hash and no replacement of old completion dates.
-        const id = stableJson(snapshot);
-        if (!await this.repository.rows('completions').get(id)) {
-          await this.repository.rows('completions').add({ ...snapshot, id, completedAt: this.now() });
+        const signature = (value: Pick<typeof snapshot, 'artistId' | 'kind' | 'scope' | 'studioOnly' | 'releaseIds' | 'trackIds'>) => stableJson({
+          artistId: value.artistId, kind: value.kind, scope: value.scope, studioOnly: value.studioOnly,
+          releaseIds: value.releaseIds, trackIds: value.trackIds,
+        });
+        if (!data.completions.some((c) => signature(c) === signature(snapshot))) {
+          await this.repository.rows('completions').add({ ...snapshot, id: crypto.randomUUID(), completedAt: this.now() });
         }
       }
     }

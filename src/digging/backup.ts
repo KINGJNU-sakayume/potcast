@@ -1,4 +1,4 @@
-import type { DigRepository } from './db';
+import type { DigRepository } from './repository';
 import { stableJson } from './service';
 import {
   TABLES, assertRating, emptyDigData, membershipId, reviewId,
@@ -114,7 +114,8 @@ function nativeData(value: unknown): DigData {
     tracks: array(root.tracks).map((value) => {
       const r = object(value);
       return { id: id(r.id), name: string(r.name), uri: string(r.uri), artists: artists(r.artists),
-        durationMs: integer(r.durationMs), discNumber: integer(r.discNumber, 1), trackNumber: integer(r.trackNumber, 1) };
+        durationMs: integer(r.durationMs), discNumber: integer(r.discNumber, 1), trackNumber: integer(r.trackNumber, 1),
+        ...(r.explicit === undefined ? {} : { explicit: bool(r.explicit) }) };
     }),
     states: array(root.states).map((value) => {
       const r = object(value);
