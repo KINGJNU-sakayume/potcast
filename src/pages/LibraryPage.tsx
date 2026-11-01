@@ -15,6 +15,7 @@ import { CoverTile } from '../components/desktop/CoverTile';
 import { TrackIndexRow } from '../components/IndexRow';
 import { QuietRow } from '../components/StateView';
 import { getArtistNote, getSongNote } from '../editorial/lookup';
+import { DigLibrary } from '../digging/DigLibrary';
 import type { TrackIdentity } from '../domain/types';
 import { formatRelativeTime, joinArtistNames, pluralise, releaseYear } from '../lib/format';
 import { useEngine, usePlay } from '../playback/hooks';
@@ -148,6 +149,7 @@ function FollowedArtists() {
   return (
     <section className="library-section" aria-labelledby="artists-title">
       <SectionHead id="artists-title" title="Artists" count={total ?? (items.length > 0 ? items.length : null)} />
+      <DigLibrary />
       {artists.isPending ? (
         <QuietRow role="status">Loading artists…</QuietRow>
       ) : artists.isError ? (

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import type { SessionMode } from '../catalogue/CatalogueSource';
 import { EpisodeProvider } from '../episode/EpisodeProvider';
+import { DigProvider } from '../digging/context';
 import { AlbumPage } from '../pages/AlbumPage';
 import { ArchivePage } from '../pages/ArchivePage';
 import { ArtistPage } from '../pages/ArtistPage';
@@ -32,6 +33,7 @@ import { SessionControlsContext, type SessionControls } from './sessionControls'
 function SessionScope({ session }: { session: Session }) {
   return (
     <SessionContext.Provider value={session}>
+      <DigProvider>
       <EpisodeProvider>
         <Routes>
           <Route element={<AppShell />}>
@@ -47,6 +49,7 @@ function SessionScope({ session }: { session: Session }) {
           </Route>
         </Routes>
       </EpisodeProvider>
+      </DigProvider>
     </SessionContext.Provider>
   );
 }
