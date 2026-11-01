@@ -15,6 +15,7 @@ import {
 import { CoverImage, Portrait } from '../../components/CoverImage';
 import { MobileTrackRow } from '../../components/mobile/MobileTrackRow';
 import { getAlbumNote } from '../../editorial/lookup';
+import { DigLibrary } from '../../digging/DigLibrary';
 import { formatRelativeTime, joinArtistNames, pluralise, releaseYear } from '../../lib/format';
 import { useEngine, usePlay } from '../../playback/hooks';
 import { useCurrentTrackMatcher } from '../../playback/useCurrentTrack';
@@ -150,6 +151,7 @@ function Artists() {
   return (
     <section aria-label="Artists">
       <SectionHead title="Artists" count={total ?? undefined} />
+      <DigLibrary />
       {artists.isPending ? (
         <MobileQuiet role="status">Loading artists…</MobileQuiet>
       ) : artists.isError ? (

@@ -14,6 +14,9 @@ import { NotePreview, notePayload } from '../components/NotePreview';
 import { QuietRow, StateView } from '../components/StateView';
 import { sectionsByYear, sortChronologically, type ReleaseOrder } from '../discography/chronology';
 import { groupEditions, type EditionGroup } from '../discography/editions';
+import { ArtistDigging } from '../digging/ArtistDigging';
+import { useDigging } from '../digging/context';
+import { catalogueOffline, offlineArtist, offlineDiscography } from '../digging/offline';
 import type { AlbumSummary, ReleaseGroup } from '../domain/types';
 import { getArtistNote } from '../editorial/lookup';
 import type { ArtistEra } from '../editorial/types';
@@ -181,7 +184,8 @@ function Discography({ artistId, eras, onEra }: { artistId: string; eras?: reado
   const group = RELEASE_GROUPS.find((g) => g.id === params.get('group')) ?? RELEASE_GROUPS[0]!;
   const order: ReleaseOrder = params.get('order') === 'desc' ? 'desc' : 'asc';
   const discography = useDiscography(artistId, group.id);
-  const data = discography.data;
+  const records = useDigging();
+  const data = discography.data ?? (catalogueOffline(discography.error) ? offlineDiscography(artistId, group.id, records.data) : undefined);
   const sections = useMemo(() => (data ? sectionsByYear(sortChronologically(groupEditions(data.releases), order)) : []), [data, order]);
   const releaseCount = sections.reduce((sum, section) => sum + section.groups.length, 0);
 
@@ -201,6 +205,7 @@ function Discography({ artistId, eras, onEra }: { artistId: string; eras?: reado
   const few = group.id === 'album' && releaseCount > 0 && releaseCount <= 2;
   return (
     <section className="artist-grid discography" aria-labelledby="releases-title">
+      <ArtistDigging artistId={artistId} />
       <div className="discography-head">
         <h3 id="releases-title">
           Discography
@@ -219,9 +224,9 @@ function Discography({ artistId, eras, onEra }: { artistId: string; eras?: reado
           </button>
         </div>
       </div>
-      {discography.isPending ? (
+      {discography.isPending && !data ? (
         <QuietRow role="status">Loading {group.noun[1]}…</QuietRow>
-      ) : discography.isError ? (
+      ) : discography.isError && !data ? (
         <QuietRow role="alert">{describeSpotifyError(discography.error).body}</QuietRow>
       ) : sections.length === 0 ? (
         <QuietRow>Spotify lists no {group.noun[1]} for this artist.</QuietRow>
@@ -285,9 +290,11 @@ export function ArtistPage() {
   const { mode } = useSession();
   const mobile = useIsMobile();
   const { openNote } = useNote();
-  usePageTitle('Artist', artist.data?.name ?? null);
+  const records = useDigging();
+  const data = artist.data ?? (catalogueOffline(artist.error) ? offlineArtist(artistId, records.data) : undefined);
+  usePageTitle('Artist', data?.name ?? null);
   // Desktop (v7.5): the page takes the colour of the artist's photograph; without one it stays on paper.
-  const portraitUrl = artist.data ? pickImageUrl(artist.data.images, 64) : null;
+  const portraitUrl = data ? pickImageUrl(data.images, 64) : null;
   usePageSurface(isSpotifyId(artistId) && portraitUrl ? { key: `artist:${artistId}`, imageUrl: portraitUrl } : null);
 
   if (!isSpotifyId(artistId)) {
@@ -298,7 +305,7 @@ export function ArtistPage() {
     );
   }
 
-  if (artist.isPending) {
+  if (artist.isPending && !data) {
     return (
       <StateView label="Artist profile" title="Loading artist…">
         <p>Reading the artist and their releases.</p>
@@ -306,7 +313,7 @@ export function ArtistPage() {
     );
   }
 
-  if (artist.isError) {
+  if (artist.isError && !data) {
     const notFound = isSpotifyApiError(artist.error) && artist.error.kind === 'not-found';
     const { title, body } = describeSpotifyError(artist.error);
     return (
@@ -332,12 +339,12 @@ export function ArtistPage() {
     );
   }
 
-  const data = artist.data;
-  const note = getArtistNote({ id: data.id, name: data.name });
+  const loaded = data!;
+  const note = getArtistNote({ id: loaded.id, name: loaded.name });
   // Deprecated Spotify fields are shown only while Spotify still returns them.
   const facts = [
-    data.genres.length > 0 ? data.genres.slice(0, 3).join(' / ') : null,
-    data.followers !== null ? `${new Intl.NumberFormat('en').format(data.followers)} followers` : null,
+    loaded.genres.length > 0 ? loaded.genres.slice(0, 3).join(' / ') : null,
+    loaded.followers !== null ? `${new Intl.NumberFormat('en').format(loaded.followers)} followers` : null,
   ].filter(Boolean);
   const origin = note?.origin ?? (facts.length > 0 ? facts.join(' · ') : 'Spotify artist');
 
@@ -347,18 +354,18 @@ export function ArtistPage() {
         <div className="artist-shell">
           {!mobile && <BackLink />}
           <section className="artist-hero">
-            <Portrait images={data.images} name={data.name} />
+            <Portrait images={loaded.images} name={loaded.name} />
             <div className="artist-copy">
               <div className="artist-number">Artist profile</div>
-              <h1 lang={detectLineLanguage(data.name)}>{data.name}</h1>
+              <h1 lang={detectLineLanguage(loaded.name)}>{loaded.name}</h1>
               <div className="origin">{origin}</div>
-              <NotePreview kind="ARTIST" note={note} title={data.name} subtitle={origin} titleLang={detectLineLanguage(data.name)} />
+              <NotePreview kind="ARTIST" note={note} title={loaded.name} subtitle={origin} titleLang={detectLineLanguage(loaded.name)} />
               <div className="object-actions">
-                <button type="button" className="plain-action primary" onClick={() => play({ contextUri: data.uri }, { openNowPlaying: true })}>
+                <button type="button" className="plain-action primary" onClick={() => play({ contextUri: loaded.uri }, { openNowPlaying: true })}>
                   Play artist
                 </button>
                 {mode === 'spotify' && (
-                  <a className="plain-action" href={`https://open.spotify.com/artist/${data.id}`} target="_blank" rel="noopener noreferrer">
+                  <a className="plain-action" href={`https://open.spotify.com/artist/${loaded.id}`} target="_blank" rel="noopener noreferrer">
                     Open in Spotify<span className="visually-hidden"> (opens in a new tab)</span>
                   </a>
                 )}
@@ -366,9 +373,9 @@ export function ArtistPage() {
             </div>
           </section>
           <Discography
-            artistId={data.id}
+            artistId={loaded.id}
             eras={note?.eras}
-            onEra={note?.full?.trim() ? (era) => openNote(notePayload('ARTIST', note, { title: data.name, subtitle: origin, titleLang: detectLineLanguage(data.name), anchor: era.title })) : undefined}
+            onEra={note?.full?.trim() ? (era) => openNote(notePayload('ARTIST', note, { title: loaded.name, subtitle: origin, titleLang: detectLineLanguage(loaded.name), anchor: era.title })) : undefined}
           />
         </div>
       </div>

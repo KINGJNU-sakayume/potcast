@@ -35,6 +35,8 @@ export interface SearchRequest {
 /** The signed-in listener, for the rail marker. */
 export interface ListenerProfile {
   displayName: string | null;
+  /** Stable Spotify subject, used only to isolate personal records. */
+  accountId?: string;
 }
 
 export interface TrackLookup {

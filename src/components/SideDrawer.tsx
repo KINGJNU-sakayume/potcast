@@ -2,7 +2,7 @@ import { useEffect, useRef, type ReactNode } from 'react';
 import { useIsMobile } from '../app/useIsMobile';
 import { BottomSheet } from './BottomSheet';
 
-const FOCUSABLE = 'button:not([disabled]), a[href], input:not([disabled]), [tabindex]:not([tabindex="-1"])';
+const FOCUSABLE = 'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 interface SideDrawerProps {
   open: boolean;

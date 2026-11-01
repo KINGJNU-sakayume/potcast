@@ -6,22 +6,22 @@ import { usePageSurface } from '../app/surface';
 import { useIsMobile } from '../app/useIsMobile';
 import { useAlbum, useSavedState, useToggleSaved } from '../catalogue/queries';
 import { ArtistLinks } from '../components/ArtistLinks';
-import { AlbumBadges } from '../components/Badge';
 import { CoverImage } from '../components/CoverImage';
 import { DiscographyNav } from '../components/DiscographyNav';
 import { NotePreview } from '../components/NotePreview';
-import { PlayingMark } from '../components/PlayingMark';
 import { StateView } from '../components/StateView';
-import type { AlbumDetail, AlbumTrack } from '../domain/types';
-import { getAlbumNote, getSongNote } from '../editorial/lookup';
+import { getAlbumNote } from '../editorial/lookup';
+import { AlbumListening } from '../digging/AlbumListening';
+import { TrackSequence } from '../digging/TrackSequence';
+import { useRememberAlbum } from '../digging/hooks';
+import { useDigging } from '../digging/context';
+import { catalogueOffline, offlineAlbum } from '../digging/offline';
 import { useEpisodeState } from '../episode/EpisodeProvider';
 import { getEpisodeScript } from '../episode/episodes';
 import {
   albumTypeLabel,
   formatAlbumRelease,
-  formatDuration,
   formatRuntime,
-  formatTrackNumber,
   joinArtistNames,
   pluralise,
   releaseYear,
@@ -31,7 +31,6 @@ import { isSpotifyId } from '../lib/spotifyUri';
 import { mapPaletteToTokens } from '../palette/mapPaletteToTokens';
 import { useAlbumPalette } from '../palette/usePalette';
 import { usePlay } from '../playback/hooks';
-import { useCurrentTrackMatcher } from '../playback/useCurrentTrack';
 import { describeSpotifyError, isSpotifyApiError } from '../spotify/errors';
 import { detectLineLanguage } from '../translation/languageDetect';
 
@@ -52,72 +51,6 @@ function SaveAlbumButton({ uri }: { uri: string }) {
   );
 }
 
-function guestsOf(track: AlbumTrack, album: AlbumDetail) {
-  const albumIds = new Set(album.artists.map((a) => a.id));
-  return track.artists.filter((a) => !albumIds.has(a.id));
-}
-
-function TrackSequence({ album }: { album: AlbumDetail }) {
-  const play = usePlay();
-  const isCurrent = useCurrentTrackMatcher();
-  const artistNames = album.artists.map((a) => a.name);
-
-  const discs = new Map<number, AlbumTrack[]>();
-  for (const track of album.tracks) discs.set(track.discNumber, [...(discs.get(track.discNumber) ?? []), track]);
-
-  const row = (track: AlbumTrack) => {
-    const current = isCurrent({ id: track.id, uri: track.uri, name: track.name, albumId: album.id });
-    const guests = guestsOf(track, album);
-    const noted = getSongNote({ id: track.id, title: track.name, artistNames: [...artistNames, ...track.artists.map((a) => a.name)] });
-    return (
-      <li key={track.id}>
-        <button
-          type="button"
-          className={current ? 'track-item active' : 'track-item'}
-          aria-current={current ? 'true' : undefined}
-          disabled={!track.isPlayable}
-          title={track.isPlayable ? undefined : 'Not available in your market'}
-          onClick={() => play({ contextUri: album.uri, offsetUri: track.uri }, { openNowPlaying: true })}
-        >
-          <span className="num" aria-hidden="true">
-            {current ? <PlayingMark playing={current.playing} /> : formatTrackNumber(track.trackNumber)}
-          </span>
-          <span className="track-text">
-            <b lang={detectLineLanguage(track.name)}>
-              {track.name}
-              {noted && <AlbumBadges noted episode={false} />}
-            </b>
-            {guests.length > 0 && <span className="track-guests">with {joinArtistNames(guests)}</span>}
-          </span>
-          {/* Fixed columns: explicit, length — the time never moves. */}
-          <span className="track-aside">
-            <span className="track-aside-explicit">
-              {track.explicit && (
-                <span className="explicit" role="img" aria-label="Explicit" title="Explicit">
-                  E
-                </span>
-              )}
-            </span>
-            <span className="track-aside-time">{formatDuration(track.durationMs)}</span>
-          </span>
-        </button>
-      </li>
-    );
-  };
-
-  if (discs.size <= 1) return <ol className="track-table">{album.tracks.map(row)}</ol>;
-  return (
-    <div className="track-table">
-      {[...discs].map(([disc, tracks]) => (
-        <section key={disc} aria-label={`Disc ${disc}`}>
-          <h3 className="disc-label">Disc {disc}</h3>
-          <ol>{tracks.map(row)}</ol>
-        </section>
-      ))}
-    </div>
-  );
-}
-
 /**
  * The v7 Album composition: the object column (cover, title, artist, release
  * metadata, Editorial Note) left; the complete Track Sequence right.
@@ -126,7 +59,9 @@ export function AlbumPage() {
   const { albumId } = useParams();
   const album = useAlbum(albumId);
   const play = usePlay();
-  const data = album.data;
+  const records = useDigging();
+  const data = album.data ?? (catalogueOffline(album.error) ? offlineAlbum(albumId, records.data) : undefined);
+  const recordingError = useRememberAlbum(album.data);
   const palette = useAlbumPalette(albumId, data ? pickImageUrl(data.images, 64) : null);
   const accent = useMemo(() => mapPaletteToTokens(palette), [palette]);
   const mobile = useIsMobile();
@@ -143,7 +78,7 @@ export function AlbumPage() {
     );
   }
 
-  if (album.isPending) {
+  if (album.isPending && !data) {
     return (
       <StateView label="Album" title="Loading album…">
         <p>Reading the complete track sequence.</p>
@@ -151,7 +86,7 @@ export function AlbumPage() {
     );
   }
 
-  if (album.isError) {
+  if (album.isError && !data) {
     const { title, body } = describeSpotifyError(album.error);
     const notFound = isSpotifyApiError(album.error) && album.error.kind === 'not-found';
     return (
@@ -177,7 +112,7 @@ export function AlbumPage() {
     );
   }
 
-  const loaded = album.data;
+  const loaded = data!;
   const artistNames = loaded.artists.map((a) => a.name);
   const year = releaseYear(loaded.releaseDate);
   const trackCount = loaded.tracks.length || loaded.totalTracks;
@@ -252,10 +187,13 @@ export function AlbumPage() {
                 titleLang={titleLang}
                 subtitle={[joinArtistNames(loaded.artists), year, trackCount ? pluralise(trackCount, 'track') : null].filter(Boolean).join(' · ')}
               />
+              <AlbumListening album={loaded} />
+              {recordingError && <p className="dig-help" role="alert">{recordingError}</p>}
             </div>
           </section>
 
           <section className="album-sequence" aria-labelledby="sequence-title">
+            {!album.data && <p className="dig-help" role="status">오프라인 저장 목록 · 개인 기록을 편집할 수 있습니다.</p>}
             <div className="sequence-head">
               <h2 id="sequence-title">Track Sequence</h2>
               <span>{loaded.tracks.length > 0 ? `${pluralise(loaded.tracks.length, 'track')} · ${formatRuntime(loaded.totalDurationMs)}` : ''}</span>

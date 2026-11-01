@@ -6,6 +6,8 @@ dist
 *.log
 .DS_Store
 coverage
+test-results
+playwright-report
 
 # Recorded narration (npm run narration): the store, the site's copy, and the report of a run.
 .narration
