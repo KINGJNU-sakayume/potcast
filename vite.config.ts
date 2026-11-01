@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+import { configDefaults, defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 
 // GitHub Pages serves the app under /<repository>/; the workflow runs inside Actions.
@@ -14,6 +14,7 @@ export default defineConfig({
   server: { host: '127.0.0.1', port: 5173, strictPort: true },
   preview: { host: '127.0.0.1', port: 4173, strictPort: true },
   test: {
+    exclude: [...configDefaults.exclude, 'e2e/**'],
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
     restoreMocks: true,
