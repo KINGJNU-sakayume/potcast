@@ -121,7 +121,7 @@ export function LifeHubSection() {
   const canConnect = connectAvailable(window.location);
   return <section className="dig-editor" aria-labelledby={heading}>
     <h3 id={heading}>Life Hub 앨범 제안</h3>
-    <p className="dig-help">Claude가 대화나 Spotify 청취 기록 파일에서 찾아, 직접 확인한 앨범만 여기에 와요. 곡별로 확인하고 승인해야 기록돼요.</p>
+    <p className="dig-help">Claude가 대화나 Spotify 청취 기록 파일에서 찾아 직접 확인한 앨범, 그리고 Life Hub가 한 시간마다 Spotify에서 모은 앨범 재생(앨범에서 직접 튼 것만)이 여기에 와요. 곡별로 확인하고 승인해야 기록돼요.</p>
     {!connected ? <>
       <button type="button" className="plain-action" disabled={!canConnect} onClick={() => {
         void beginConnect(browserDeps()).then((url) => window.location.assign(url)).catch((e: unknown) => setError(e instanceof Error ? e.message : '연결을 시작하지 못했어요.'));
@@ -136,7 +136,7 @@ export function LifeHubSection() {
       <ul className="dig-lifehub-list">{proposals.map((p) => <li key={p.key}>
         <div>
           <strong>{p.album}</strong> · {p.artist}
-          <span className="dig-help"> {p.origin === 'spotify_history' ? 'Spotify 기록' : '대화'}{p.listenedOn ? ` · ${p.listenedOn}` : ''}{p.wholeAlbum ? ' · 앨범 전체' : ` · ${p.tracks.length}곡`}</span>
+          <span className="dig-help"> {p.origin === 'spotify_sync' ? 'Spotify 자동 수집' : p.origin === 'spotify_history' ? 'Spotify 기록' : '대화'}{p.listenedOn ? ` · ${p.listenedOn}` : ''}{p.wholeAlbum ? ' · 앨범 전체' : ` · ${p.tracks.length}곡`}</span>
         </div>
         {open === p.key
           ? <ProposalReview proposal={p} onDone={(text) => { setOpen(null); setMessage(text); setProposals((old) => old.filter((x) => x.key !== p.key)); void runSync(); }} />
