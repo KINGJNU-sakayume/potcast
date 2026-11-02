@@ -41,7 +41,8 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(request)
         .then((response) => {
-          if (response.ok && !url.search) {
+          // Only the app page itself is kept (not the Life Hub callback page under lifehub/).
+          if (response.ok && !url.search && url.pathname === SCOPE.pathname) {
             const copy = response.clone();
             void caches.open(CACHE).then((cache) => cache.put(SCOPE.href, copy));
           }

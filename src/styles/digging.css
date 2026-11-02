@@ -76,3 +76,12 @@ p.dig-help { margin: 8px 0; }
 @media (max-width: 350px) {
   .m-shell .dig-record-row .track-text b { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 }
+
+/* Life Hub album proposals (record tools drawer) */
+.dig-lifehub-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0; }
+.dig-lifehub-list, .dig-lifehub-choices { list-style: none; margin: 0; padding: 0; }
+.dig-lifehub-list > li { padding: 10px 0; border-top: 1px solid var(--line-soft); }
+.dig-lifehub-tracks { margin: 8px 0; padding-left: 20px; font-size: 13px; }
+.dig-lifehub-tracks li { display: flex; justify-content: space-between; gap: 8px; align-items: center; min-height: 36px; }
+.dig-lifehub-tracks li span { min-width: 0; overflow-wrap: anywhere; }
+.dig-lifehub-choices button { text-align: left; }
