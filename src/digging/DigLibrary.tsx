@@ -5,6 +5,7 @@ import { percent } from './ArtistDigging';
 import { useDigging } from './context';
 import { progressFor } from './progress';
 import { RecordTools } from './RecordTools';
+import { LifeHubCallbackNotice } from '../lifehub/LifeHubSection';
 
 /** Lives within the existing Artists section on both layouts. */
 export function DigLibrary() {
@@ -15,6 +16,7 @@ export function DigLibrary() {
   const sorted = [...data.projects].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
   const projects = showAll ? sorted : sorted.filter((p) => !progressFor(p, data).reviewComplete).slice(0, 6);
   return <div className="dig-library">
+    <LifeHubCallbackNotice />
     {projects.length > 0 && <>
       <div className="label">MY DIGGING</div>
       <ul>{projects.map((project) => {

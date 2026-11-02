@@ -40,6 +40,17 @@ Verified edition aliases share the latest explicit review assertion, including r
 
 Full discovery of enabled release groups and complete target sequences are required for a 100% completion result. An incomplete catalogue cannot display 100%. An artist's reviewed/listened milestones independently preserve the completion date, exact release and track IDs, scope, studio setting and membership overrides. New releases update current progress without replacing past milestones.
 
+## Life Hub album proposals
+
+Claude can propose albums through Life Hub (`propose_album_listening`), either from conversation ("I listened to the whole album") or from a Spotify Extended Streaming History file the owner hands it. Background plays are not proposals: only albums the owner played intentionally, and only after the owner confirmed them to Claude album by album. Nothing reaches the records until the owner approves the album again here.
+
+- **Connect** in the record tools drawer (only on the deployed app, not the preview). potcast is a public OAuth client (`public/lifehub-client.json`) with PKCE and receives a `potcast:inbox` token for `/potcast` only. Life Hub returns to `public/lifehub/`, which hands the result to the library in this tab's `sessionStorage`; the app root stays reserved for the Spotify callback.
+- **Review**: the album is resolved by Spotify album ID, then by a proposed track ID, then by an exact (normalised) name + artist search. Anything less is offered as a choice; tracks that match nothing are listed, never guessed. Every track can be set to listened, skipped or not recorded before approval.
+- **Approve** writes through `DigService`: the album snapshot, one listen event per listened track (ID `lifehub:<proposal key>:<track id>`; source `spotify-sync` for history files, `manual` for conversation), listened states, and skipped states only for tracks that had no state (a skip never replaces "listened").
+- **Receipts and rejections** are sent back on sync and retried until answered; receipts can be rebuilt from the listen events themselves. Rejecting changes no records.
+
+The listened rule Claude applies to history files: `reason_end` = `trackdone`, or not skipped with at least two minutes played; everything else is "skipped" and only proposed when it helps the owner decide.
+
 ## Verification
 
 - `npm run check`: typecheck, zero-warning lint, all existing/new Vitest tests and production build.
