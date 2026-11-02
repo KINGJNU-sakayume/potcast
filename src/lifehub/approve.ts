@@ -107,7 +107,7 @@ export async function applyApproval(service: DigService, p: AlbumProposal, album
   for (const row of listened) {
     await service.addListen({
       id: eventIdFor(p.key, row.track.id), trackId: row.track.id, albumId: album.id, artistId,
-      listenedAt: row.playedAt ?? fallbackPlayedAt(p), source: p.origin === 'spotify_history' ? 'spotify-sync' : 'manual',
+      listenedAt: row.playedAt ?? fallbackPlayedAt(p), source: p.origin === 'conversation' ? 'manual' : 'spotify-sync',
     });
   }
   if (listened.length) await service.setStatuses(listened.map((r) => r.track.id), 'listened');

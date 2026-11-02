@@ -81,6 +81,20 @@ describe('parseProposal mirrors the hub contract', () => {
   });
 });
 
+describe('Life Hub Spotify collection', () => {
+  const sync = { artist: 'Synthetic Artist', album: 'Imaginary Album', origin: 'spotify_sync', spotify_album_id: ALBUM_ID, listened_on: '2026-10-30',
+    tracks: [{ title: 'First Song', spotify_track_id: T1, status: 'listened', played_at: '2026-10-30T12:00:00Z' }] };
+  const KEY_SYNC = `spotify:spsync-${ALBUM_ID}-1793000000000`;
+
+  it('accepts spotify_sync only from the spotify source, with album and track IDs', () => {
+    expect(parseProposal(candidate(sync, KEY_SYNC))).toMatchObject({ key: KEY_SYNC, origin: 'spotify_sync', spotifyAlbumId: ALBUM_ID });
+    expect(parseProposal(candidate(sync))).toBeNull(); // claude: source
+    expect(parseProposal(candidate({ artist: 'x', album: 'y', origin: 'conversation', whole_album: true }, KEY_SYNC))).toBeNull();
+    expect(parseProposal(candidate({ ...sync, spotify_album_id: undefined }, KEY_SYNC))).toBeNull();
+    expect(parseProposal(candidate({ ...sync, tracks: [{ title: 'First Song', status: 'listened' }] }, KEY_SYNC))).toBeNull();
+  });
+});
+
 describe('connection', () => {
   it('only connects from the deployed app, never the preview', () => {
     expect(connectAvailable({ origin: 'https://kingjnu-sakayume.github.io', pathname: '/potcast/' })).toBe(true);

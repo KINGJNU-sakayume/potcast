@@ -65,7 +65,7 @@ export interface AlbumProposal {
   artist: string;
   album: string;
   spotifyAlbumId?: string;
-  origin: 'conversation' | 'spotify_history';
+  origin: 'conversation' | 'spotify_history' | 'spotify_sync';
   listenedOn?: string;
   wholeAlbum: boolean;
   tracks: ProposedTrack[];
@@ -77,7 +77,8 @@ const only = (v: Record<string, unknown>, keys: string[]) => Object.keys(v).ever
 const text = (v: unknown, max: number): v is string => typeof v === 'string' && v.trim().length > 0 && v.length <= max;
 const optText = (v: unknown, max: number) => v === undefined || text(v, max);
 const SPOTIFY_ID = /^[A-Za-z0-9]{22}$/;
-const KEY = /^(claude|chatgpt|manual):[A-Za-z0-9_.:-]{8,128}$/;
+/** `spotify:` keys come from Life Hub's hourly Spotify collection (album-context plays only). */
+const KEY = /^(claude|chatgpt|codex|manual|spotify):[A-Za-z0-9_.:-]{8,128}$/;
 const ISO = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?(?:Z|[+-]\d{2}:\d{2})$/;
 export const validDate = (v: string) => {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return false;
@@ -109,7 +110,7 @@ export function parseProposal(item: unknown): AlbumProposal | null {
   if (!only(p, ['artist', 'album', 'spotify_album_id', 'origin', 'listened_on', 'whole_album', 'tracks', 'note']) ||
     !text(p.artist, 200) || !text(p.album, 200) || !optText(p.note, 500) ||
     (p.spotify_album_id !== undefined && (typeof p.spotify_album_id !== 'string' || !SPOTIFY_ID.test(p.spotify_album_id))) ||
-    (p.origin !== 'conversation' && p.origin !== 'spotify_history') ||
+    (p.origin !== 'conversation' && p.origin !== 'spotify_history' && p.origin !== 'spotify_sync') ||
     (p.listened_on !== undefined && (typeof p.listened_on !== 'string' || !validDate(p.listened_on))) ||
     (p.whole_album !== undefined && p.whole_album !== true)) return null;
   const rawTracks = p.tracks;
@@ -123,6 +124,9 @@ export function parseProposal(item: unknown): AlbumProposal | null {
     tracks = parsed as ProposedTrack[];
   }
   if (p.origin === 'spotify_history' && !hasTracks) return null;
+  // The hourly collection always names the album and every track by ID, and only it uses the spotify source.
+  if (p.origin === 'spotify_sync' && (!hasTracks || typeof p.spotify_album_id !== 'string' || tracks.some((t) => !t.spotify_track_id || !t.played_at))) return null;
+  if ((c.source === 'spotify') !== (p.origin === 'spotify_sync')) return null;
   return {
     key: item.key, source: c.source, createdAt: c.created_at, artist: p.artist, album: p.album,
     ...(typeof p.spotify_album_id === 'string' ? { spotifyAlbumId: p.spotify_album_id } : {}),

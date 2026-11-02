@@ -49,6 +49,8 @@ Claude can propose albums through Life Hub (`propose_album_listening`), either f
 - **Approve** writes through `DigService`: the album snapshot, one listen event per listened track (ID `lifehub:<proposal key>:<track id>`; source `spotify-sync` for history files, `manual` for conversation), listened states, and skipped states only for tracks that had no state (a skip never replaces "listened").
 - **Receipts and rejections** are sent back on sync and retried until answered; receipts can be rebuilt from the listen events themselves. Rejecting changes no records.
 
+**Hourly Spotify collection** (optional, set up in Life Hub at `/spotify`): Life Hub reads the recently-played list every hour and proposes albums played **from the album itself** (playlists, radio and autoplay never count), once a session has ended, with at least three distinct tracks. These arrive as `Spotify 자동 수집` (origin `spotify_sync`, key prefix `spotify:`) and are reviewed exactly like the others; their listen events use source `spotify-sync`.
+
 The listened rule Claude applies to history files: `reason_end` = `trackdone`, or not skipped with at least two minutes played; everything else is "skipped" and only proposed when it helps the owner decide.
 
 ## Verification
