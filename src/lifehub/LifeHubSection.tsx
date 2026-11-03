@@ -3,10 +3,10 @@ import { useSession } from '../app/sessionContext';
 import { useDigAction, useDigging } from '../digging/context';
 import type { AlbumDetail, AlbumSummary } from '../domain/types';
 import type { ReviewStatus } from '../digging/types';
-import { applyApproval, fallbackPlayedAt, planTracks, resolveAlbum, type PlannedTrack } from './approve';
+import { applyApproval, applyApproved, fallbackPlayedAt, planTracks, resolveAlbum, type PlannedTrack } from './approve';
 import {
-  beginConnect, browserDeps, completeStoredCallback, connectAvailable, disconnect, isConnected, LifeHubError,
-  rejectLocally, rememberReceipt, sync, type AlbumProposal,
+  autoApplyEnabled, beginConnect, browserDeps, completeStoredCallback, connectAvailable, disconnect, isConnected, LifeHubError,
+  rejectLocally, rememberReceipt, setAutoApply, sync, type AlbumProposal,
 } from './remote';
 
 const STATUS_LABEL: Record<ReviewStatus, string> = { listened: '들음', skipped: '넘김', none: '기록 안 함' };
@@ -15,9 +15,19 @@ const STATUS_LABEL: Record<ReviewStatus, string> = { listened: '들음', skipped
 let callbackOnce: Promise<boolean> | null = null;
 const finishCallback = () => (callbackOnce ??= completeStoredCallback(browserDeps()));
 
-/** Shown in the library: finishes a Life Hub sign-in that the callback page handed over. */
+/** One background round per page load: albums approved in a Claude card are recorded when potcast opens. */
+let openedOnce = false;
+
+/**
+ * Shown in the library: finishes a Life Hub sign-in that the callback page handed over, then (once per page
+ * load) records what the owner already approved in a Claude card and sends those receipts.
+ */
 export function LifeHubCallbackNotice() {
+  const { data, ready, service } = useDigging();
+  const { catalogue } = useSession();
   const [message, setMessage] = useState<string | null>(null);
+  const dataRef = useRef(data);
+  useEffect(() => { dataRef.current = data; }, [data]);
   useEffect(() => {
     let active = true;
     finishCallback()
@@ -25,6 +35,22 @@ export function LifeHubCallbackNotice() {
       .catch((e: unknown) => { if (active) setMessage(e instanceof Error ? e.message : 'Life Hub에 연결하지 못했어요.'); });
     return () => { active = false; };
   }, []);
+  useEffect(() => {
+    const deps = browserDeps();
+    if (!ready || !service || openedOnce || !isConnected(deps)) return;
+    openedOnce = true;
+    void (async () => {
+      try {
+        const first = await sync(dataRef.current, deps);
+        const recorded = await applyApproved(first.proposals, service, catalogue, autoApplyEnabled(deps), deps);
+        if (!recorded.length) return;
+        await sync(await service.repository.read(), deps);
+        setMessage(`Claude에서 승인한 앨범을 기록했어요: ${recorded.join(', ')}`);
+      } catch {
+        /* the drawer's sync shows connection problems */
+      }
+    })();
+  }, [ready, service, catalogue]);
   return message ? <p className="dig-help" role="status">{message}</p> : null;
 }
 
@@ -91,7 +117,9 @@ function ProposalReview({ proposal, onDone }: { proposal: AlbumProposal; onDone:
 
 /** Inside the record tools drawer: connect, review and decide Claude's album proposals. */
 export function LifeHubSection() {
-  const { data, ready } = useDigging();
+  const { data, ready, service } = useDigging();
+  const { catalogue } = useSession();
+  const [autoApply, setAutoApplyState] = useState(() => autoApplyEnabled(browserDeps()));
   const heading = useId();
   const [connected, setConnected] = useState(() => isConnected(browserDeps()));
   const [proposals, setProposals] = useState<AlbumProposal[]>([]);
@@ -106,7 +134,14 @@ export function LifeHubSection() {
     if (!isConnected(browserDeps())) return;
     setSyncing(true); setError(null);
     try {
-      const result = await sync(dataRef.current, browserDeps());
+      const deps = browserDeps();
+      let result = await sync(dataRef.current, deps);
+      // Approved in a Claude card with nothing left to decide: record now, then send the receipts.
+      const recorded = service ? await applyApproved(result.proposals, service, catalogue, autoApplyEnabled(deps), deps) : [];
+      if (recorded.length && service) {
+        result = await sync(await service.repository.read(), deps);
+        setMessage(`Claude에서 승인한 앨범을 기록했어요: ${recorded.join(', ')}`);
+      }
       // Keep the objects already on screen, so a review in progress is not reset by a refresh.
       setProposals((old) => result.proposals.map((p) => old.find((o) => o.key === p.key) ?? p));
       if (result.conflicts) setError(`${result.conflicts}개 제안은 Life Hub와 상태가 달라요. potcast 기록은 그대로 유지돼요.`);
@@ -114,7 +149,7 @@ export function LifeHubSection() {
       if (e instanceof LifeHubError && e.kind === 'not_connected') { setConnected(false); setProposals([]); }
       setError(e instanceof Error ? e.message : '동기화하지 못했어요.');
     } finally { setSyncing(false); }
-  }, []);
+  }, [service, catalogue]);
 
   useEffect(() => { if (ready) void runSync(); }, [ready, runSync]);
 
@@ -132,11 +167,19 @@ export function LifeHubSection() {
         <button type="button" className="plain-action" disabled={syncing} onClick={() => void runSync()}>{syncing ? '동기화 중…' : '지금 동기화'}</button>
         <button type="button" className="text-toggle" onClick={() => { disconnect(browserDeps()); setConnected(false); setProposals([]); setMessage('Life Hub 연결을 해제했어요.'); }}>연결 해제</button>
       </div>
+      <label className="dig-check">
+        <input type="checkbox" checked={autoApply} onChange={(e) => {
+          setAutoApply(browserDeps(), e.target.checked); setAutoApplyState(e.target.checked);
+          if (e.target.checked) void runSync();
+        }} />
+        <span>Claude에서 승인된 항목 자동 반영 <span className="dig-help">(앨범과 곡이 정확히 맞을 때만)</span></span>
+      </label>
       {proposals.length === 0 && !syncing && <p className="dig-help">검토할 제안이 없어요.</p>}
       <ul className="dig-lifehub-list">{proposals.map((p) => <li key={p.key}>
         <div>
           <strong>{p.album}</strong> · {p.artist}
           <span className="dig-help"> {p.origin === 'spotify_sync' ? 'Spotify 자동 수집' : p.origin === 'spotify_history' ? 'Spotify 기록' : '대화'}{p.listenedOn ? ` · ${p.listenedOn}` : ''}{p.wholeAlbum ? ' · 앨범 전체' : ` · ${p.tracks.length}곡`}</span>
+          {p.status === 'approved' && <span className="dig-help"> · Claude 카드에서 승인함{p.needsAppReview ? ' · 여기서 확인해 주세요' : ''}</span>}
         </div>
         {open === p.key
           ? <ProposalReview proposal={p} onDone={(text) => { setOpen(null); setMessage(text); setProposals((old) => old.filter((x) => x.key !== p.key)); void runSync(); }} />

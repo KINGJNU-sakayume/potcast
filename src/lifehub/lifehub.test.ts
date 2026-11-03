@@ -4,10 +4,10 @@ import type { AlbumDetail, AlbumSummary, ArtistSummary, TrackIdentity } from '..
 import { DigDatabase } from '../digging/db';
 import { statusForTrack } from '../digging/progress';
 import { DigService } from '../digging/service';
-import { applyApproval, planTracks, resolveAlbum } from './approve';
+import { applyApproval, applyApproved, autoReady, planTracks, resolveAlbum } from './approve';
 import {
   beginConnect, CALLBACK_KEY, CALLBACK_URL, CLIENT_ID, completeStoredCallback, connectAvailable, disconnect, eventIdFor,
-  isConnected, LIFEHUB_ORIGIN, parseProposal, receipts, rejectLocally, rememberReceipt, RESOURCE, sync, type AlbumProposal, type Deps,
+  isConnected, LIFEHUB_ORIGIN, parseProposal, autoApplyEnabled, setAutoApply, receipts, rejectLocally, rememberReceipt, RESOURCE, sync, type AlbumProposal, type Deps,
 } from './remote';
 
 /* ---------- synthetic fixtures only ---------- */
@@ -154,7 +154,7 @@ describe('sync', () => {
     ] }));
     const result = await sync({ events: [] }, deps);
     expect(result.proposals.map((p) => p.key)).toEqual([KEY]);
-    expect(deps.calls[0]!.url).toBe(LIFEHUB_ORIGIN + '/potcast/v1/candidates?status=pending&limit=100');
+    expect(deps.calls[0]!.url).toBe(LIFEHUB_ORIGIN + '/potcast/v1/candidates?status=open&limit=100');
     expect((deps.calls[0]!.init!.headers as Record<string, string>).Authorization).toBe('Bearer access-synthetic');
   });
 
@@ -273,5 +273,60 @@ describe('applyApproval writes through DigService', () => {
     // Approving the same proposal again changes nothing.
     await applyApproval(service, p, album, plan.rows);
     expect((await db.read()).events).toHaveLength(1);
+  });
+});
+
+/* ---------- Life Hub cards stage 7: approved in a Claude card ---------- */
+
+describe('Claude card approvals', () => {
+  const approved = (payload: Record<string, unknown>, extra: Record<string, unknown> = {}) =>
+    parseProposal({ ...candidate(payload), status: 'approved', needs_app_review: false, final_candidate: null, ...extra })!;
+  const tracks = [{ spotify_track_id: T1, status: 'listened' }, { spotify_track_id: T2, status: 'skipped' }];
+
+  it('reads the hub state and prefers the owner\'s card edit', () => {
+    const edited = approved({ artist: 'x', album: 'y', origin: 'conversation', spotify_album_id: ALBUM_ID, tracks }, {
+      final_candidate: candidate({ artist: 'x', album: 'y', origin: 'conversation', spotify_album_id: ALBUM_ID, tracks: [{ spotify_track_id: T1, status: 'skipped' }] }).candidate });
+    expect(edited).toMatchObject({ status: 'approved', needsAppReview: false, tracks: [{ spotify_track_id: T1, status: 'skipped' }] });
+    expect(parseProposal({ ...candidate({ artist: 'x', album: 'y', origin: 'conversation', whole_album: true }), status: 'rejected' })).toBeNull();
+    expect(proposal({ artist: 'x', album: 'y', origin: 'conversation', whole_album: true })).toMatchObject({ status: 'pending', needsAppReview: false });
+  });
+
+  it('autoReady: approved, no last check, auto-apply on, exact album, every track matched', async () => {
+    const c = catalogue();
+    const p = approved({ artist: 'x', album: 'y', origin: 'conversation', spotify_album_id: ALBUM_ID, tracks });
+    const r = await resolveAlbum(p, c);
+    const plan = planTracks(p, r.album!);
+    expect(autoReady(p, r, plan, true)).toBe(true);
+    expect(autoReady(p, r, plan, false)).toBe(false);
+    expect(autoReady({ ...p, status: 'pending' }, r, plan, true)).toBe(false);
+    expect(autoReady({ ...p, needsAppReview: true }, r, plan, true)).toBe(false);
+    expect(autoReady(p, { album: null, choices: [] }, null, true)).toBe(false);
+    const odd = approved({ artist: 'x', album: 'y', origin: 'conversation', spotify_album_id: ALBUM_ID, tracks: [...tracks, { title: 'Not On This Album', status: 'listened' }] });
+    expect(autoReady(odd, r, planTracks(odd, r.album!), true)).toBe(false);
+  });
+
+  it('auto-apply is on by default and per device', () => {
+    const deps = makeDeps(() => json({}));
+    expect(autoApplyEnabled(deps)).toBe(true);
+    setAutoApply(deps, false);
+    expect(autoApplyEnabled(deps)).toBe(false);
+  });
+
+  it('applyApproved records only what is ready, once, and remembers the receipt', async () => {
+    const db = new DigDatabase(`lifehub-${crypto.randomUUID()}`);
+    try {
+      const service = new DigService(db, () => '2026-11-02T00:00:00.000Z');
+      const storage = memory();
+      const ready = approved({ artist: 'x', album: 'y', origin: 'spotify_history', spotify_album_id: ALBUM_ID, tracks });
+      const waiting = { ...ready, key: 'claude:mcp-' + 'w'.repeat(40), needsAppReview: true };
+      const pending = { ...ready, key: 'claude:mcp-' + 'p'.repeat(40), status: 'pending' as const };
+      expect(await applyApproved([ready, waiting, pending], service, catalogue(), false, { storage })).toEqual([]);
+      expect(await applyApproved([ready, waiting, pending], service, catalogue(), true, { storage })).toEqual(['Imaginary Album']);
+      const data = await db.read();
+      expect(data.events.map((e) => e.id)).toEqual([eventIdFor(KEY, T1)]);
+      expect(receipts(data, { storage })).toEqual([{ key: KEY, albumId: ALBUM_ID }]);
+      await applyApproved([ready], service, catalogue(), true, { storage });
+      expect((await db.read()).events).toHaveLength(1);
+    } finally { await db.delete(); }
   });
 });

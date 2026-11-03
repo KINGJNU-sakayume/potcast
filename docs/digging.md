@@ -51,6 +51,8 @@ Claude can propose albums through Life Hub (`propose_album_listening`), either f
 
 **Hourly Spotify collection** (optional, set up in Life Hub at `/spotify`): Life Hub reads the recently-played list every hour and proposes albums played **from the album itself** (playlists, radio and autoplay never count), once a session has ended, with at least three distinct tracks. These arrive as `Spotify 자동 수집` (origin `spotify_sync`, key prefix `spotify:`) and are reviewed exactly like the others; their listen events use source `spotify-sync`.
 
+**Claude conversation cards** (Life Hub cards stage 7): in Claude the owner can ask to review listened albums; Life Hub shows each pending album as a card with every track's 들음/건너뜀, editable, and an approve button. Sync now asks for open proposals (pending + approved in a card) and uses the owner's card edit. When the library opens, an approved album is recorded through the same `applyApproval` without asking only if no last check was asked, the setting 「Claude에서 승인된 항목 자동 반영」 (record tools drawer, default on) is on, the album resolves exactly, and every proposed track matched (`autoReady` in `src/lifehub/approve.ts`). Anything else waits in the drawer marked 「Claude 카드에서 승인함」.
+
 The listened rule Claude applies to history files: `reason_end` = `trackdone`, or not skipped with at least two minutes played; everything else is "skipped" and only proposed when it helps the owner decide.
 
 ## Verification
