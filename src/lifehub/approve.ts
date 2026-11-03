@@ -14,7 +14,7 @@ import type { AlbumDetail, AlbumSummary, AlbumTrack } from '../domain/types';
 import { statusForTrack } from '../digging/progress';
 import type { DigService } from '../digging/service';
 import type { ReviewStatus } from '../digging/types';
-import { eventIdFor, type AlbumProposal } from './remote';
+import { eventIdFor, rememberReceipt, type AlbumProposal, type Deps } from './remote';
 
 export const normalize = (s: string) =>
   s.normalize('NFKC').toLowerCase()
@@ -119,4 +119,36 @@ export async function applyApproval(service: DigService, p: AlbumProposal, album
     skipped: skippable.length,
     keptListened: rows.filter((r) => r.status === 'skipped').length - skippable.length,
   };
+}
+
+/**
+ * May this proposal be recorded without asking? Only when the owner approved it in a Claude card, no last
+ * check was asked, auto-apply is on, the album was found exactly, and every proposed track matched.
+ */
+export function autoReady(p: AlbumProposal, resolution: Resolution, plan: Plan | null, autoApply: boolean): boolean {
+  if (!autoApply || p.status !== 'approved' || p.needsAppReview || !resolution.album || !plan) return false;
+  return plan.unmatched.length === 0 && plan.rows.some((r) => r.status !== 'none');
+}
+
+/**
+ * Records every approved proposal that needs nothing more from the owner (see autoReady), with the same
+ * applyApproval as a manual review, and remembers the receipt. Returns the albums recorded.
+ */
+export async function applyApproved(proposals: AlbumProposal[], service: DigService, catalogue: Source, autoApply: boolean, deps: Pick<Deps, 'storage'>): Promise<string[]> {
+  const done: string[] = [];
+  if (!autoApply) return done;
+  for (const p of proposals) {
+    if (p.status !== 'approved' || p.needsAppReview) continue;
+    try {
+      const resolution = await resolveAlbum(p, catalogue);
+      const plan = resolution.album ? planTracks(p, resolution.album) : null;
+      if (!resolution.album || !plan || !autoReady(p, resolution, plan, autoApply)) continue;
+      await applyApproval(service, p, resolution.album, plan.rows);
+      rememberReceipt(p.key, resolution.album.id, deps);
+      done.push(resolution.album.name);
+    } catch {
+      /* Spotify unreachable or the album changed: it stays in the list for the owner */
+    }
+  }
+  return done;
 }

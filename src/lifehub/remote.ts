@@ -70,6 +70,10 @@ export interface AlbumProposal {
   wholeAlbum: boolean;
   tracks: ProposedTrack[];
   note?: string;
+  /** 'approved' = the owner approved it in a Claude card (not recorded yet). */
+  status: 'pending' | 'approved';
+  /** Life Hub asks potcast for a last check. */
+  needsAppReview: boolean;
 }
 
 const obj = (v: unknown): v is Record<string, unknown> => !!v && typeof v === 'object' && !Array.isArray(v);
@@ -100,10 +104,12 @@ function parseTrack(t: unknown): ProposedTrack | null {
   };
 }
 
-/** Validates one item from the hub; null for anything that does not match the contract. */
+/** Validates one item from the hub; null for anything that does not match the contract. The owner's card edit wins. */
 export function parseProposal(item: unknown): AlbumProposal | null {
-  if (!obj(item) || typeof item.key !== 'string' || !KEY.test(item.key) || !obj(item.candidate)) return null;
-  const c = item.candidate;
+  if (!obj(item) || typeof item.key !== 'string' || !KEY.test(item.key)) return null;
+  if (item.status !== undefined && item.status !== 'pending' && item.status !== 'approved') return null;
+  const c = item.final_candidate ?? item.candidate;
+  if (!obj(c)) return null;
   if (c.schema_version !== 1 || c.candidate_type !== 'album_listening' || typeof c.source !== 'string' ||
     `${c.source}:${String(c.idempotency_key)}` !== item.key || typeof c.created_at !== 'string' || !obj(c.payload)) return null;
   const p = c.payload;
@@ -132,6 +138,8 @@ export function parseProposal(item: unknown): AlbumProposal | null {
     ...(typeof p.spotify_album_id === 'string' ? { spotifyAlbumId: p.spotify_album_id } : {}),
     origin: p.origin, ...(typeof p.listened_on === 'string' ? { listenedOn: p.listened_on } : {}),
     wholeAlbum: p.whole_album === true, tracks, ...(typeof p.note === 'string' ? { note: p.note } : {}),
+    status: item.status === 'approved' ? 'approved' : 'pending',
+    needsAppReview: item.needs_app_review === true,
   };
 }
 
@@ -142,6 +150,7 @@ const PENDING_AUTH_KEY = 'potcast.lifehub.pending-auth.v1';
 const OUTCOMES_KEY = 'potcast.lifehub.outcomes.v1';
 const REJECTIONS_KEY = 'potcast.lifehub.rejections.v1';
 const RECEIPTS_KEY = 'potcast.lifehub.receipts.v1';
+const AUTO_APPLY_KEY = 'potcast.lifehub.auto-apply.v1';
 const AUTH_MAX_AGE_MS = 10 * 60 * 1000;
 interface Tokens { access_token: string; access_expires_at: number; refresh_token: string }
 interface PendingAuth { state: string; verifier: string; created_at: number }
@@ -282,6 +291,13 @@ export function rejectLocally(key: string, deps: Pick<Deps, 'storage'>): void {
   const list = readJson<string[]>(deps.storage, REJECTIONS_KEY) ?? [];
   if (!list.includes(key)) deps.storage.setItem(REJECTIONS_KEY, JSON.stringify([...list, key]));
 }
+/** 「Claude에서 승인된 항목 자동 반영」: on unless turned off on this device. */
+export const autoApplyEnabled = (deps: Pick<Deps, 'storage'>) => deps.storage.getItem(AUTO_APPLY_KEY) !== 'off';
+export function setAutoApply(deps: Pick<Deps, 'storage'>, on: boolean): void {
+  if (on) deps.storage.removeItem(AUTO_APPLY_KEY);
+  else deps.storage.setItem(AUTO_APPLY_KEY, 'off');
+}
+
 export function rememberReceipt(key: string, albumId: string, deps: Pick<Deps, 'storage'>): void {
   const map = readJson<Record<string, string>>(deps.storage, RECEIPTS_KEY) ?? {};
   map[key] = albumId;
@@ -325,7 +341,7 @@ export async function sync(data: Pick<DigData, 'events'>, deps: Deps): Promise<S
     if (done[key]) continue;
     if (record(key, await api(deps, 'POST', '/rejections', { key }), 'rejected')) result.rejectionsSent++;
   }
-  const response = await api(deps, 'GET', '/candidates?status=pending&limit=100');
+  const response = await api(deps, 'GET', '/candidates?status=open&limit=100');
   if (!response.ok) throw new LifeHubError('server', `Life Hub 제안을 가져오지 못했어요 (${response.status})`);
   const body = (await response.json().catch(() => null)) as { candidates?: unknown } | null;
   if (!body || !Array.isArray(body.candidates)) throw new LifeHubError('server', 'Life Hub 응답 형식이 올바르지 않아요.');
