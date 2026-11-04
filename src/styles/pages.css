@@ -234,3 +234,12 @@ button.index-title:hover { text-decoration: underline; text-underline-offset: 4p
 .archive-filter { padding: 0 2px; border: 0; border-bottom: 1px dotted currentColor; background: transparent; font: inherit; color: var(--main-text); cursor: pointer; }
 .archive-filter[aria-pressed='true'] { border-bottom-style: solid; font-weight: 600; }
 .mark-link { text-decoration: none; }
+
+/* Life Hub in settings: status dot, attention box, and the dot on the settings entry point. */
+.lifehub-status { display: flex; align-items: center; gap: 8px; }
+.lifehub-dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-2); }
+.lifehub-dot[data-tone='alert'] { background: var(--main-text); }
+.lifehub-alert { margin: 10px 0; padding: 10px 12px; border: 1px solid var(--main-text); background: color-mix(in srgb, var(--main-text) 8%, transparent); }
+.lifehub-alert p { margin: 0 0 8px; }
+.attention-dot, .m-avatar .attention-dot { position: absolute; top: 6px; right: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--main-text); pointer-events: none; }
+.m-avatar { position: relative; }

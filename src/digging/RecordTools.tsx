@@ -7,7 +7,6 @@ import { applyImport, exportBackup, parseBackup, previewImport, type ImportPlan 
 import { useDigAction, useDigging } from './context';
 import { historyByDay, inScope } from './progress';
 import { TABLES } from './types';
-import { LifeHubSection } from '../lifehub/LifeHubSection';
 
 function BackupTools() {
   const { db, accountId } = useDigging();
@@ -135,7 +134,6 @@ export function RecordTools() {
       <BackupTools key={accountId} />
       <div className="dig-editor"><button type="button" className="text-toggle" aria-expanded={recentOpen} onClick={() => setRecentOpen((v) => !v)}>Spotify 최근 재생 확인</button></div>
       {recentOpen && <RecentApproval />}
-      <LifeHubSection key={`lifehub-${accountId ?? ''}`} />
       <section className="dig-editor dig-history" aria-label="날짜별 청취 기록"><h3>날짜별 청취 기록</h3>
         {!days.size && <p className="dig-help">기록된 청취 이벤트가 없습니다. 상태 변경만으로 이벤트를 생성하지 않습니다.</p>}
         {[...days].map(([day, events]) => <details key={day}><summary>{day} · {events.length}회</summary><ul>{events.map((e) => <li key={e.id}>

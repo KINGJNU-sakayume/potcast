@@ -12,6 +12,7 @@ import { QueueContent } from '../components/QueueDrawer';
 import { SearchOverlay } from '../components/SearchOverlay';
 import { SettingsBody } from '../components/SettingsPanel';
 import { useEpisodeState } from '../episode/EpisodeProvider';
+import { useLifeHub } from '../lifehub/LifeHubContext';
 import { usePlayerSelector, useProgressProperty } from '../playback/hooks';
 import { AccentTokens } from './AccentTokens';
 import { BackHistoryProvider } from './backHistory';
@@ -80,6 +81,7 @@ const PREVIEW_LABEL = import.meta.env.VITE_PREVIEW_LABEL?.trim() || null;
 function Rail({ panel }: { panel: Panel | null }) {
   // Only the fixed places live here; the playing track's artist and album are links on the pages themselves.
   const shell = useShell();
+  const attention = useLifeHub().phase === 'attention';
   const profile = useProfile();
   const name = profile.data?.displayName ?? null;
 
@@ -112,8 +114,9 @@ function Rail({ panel }: { panel: Panel | null }) {
           <QueueIcon />
           <span aria-hidden="true">Queue</span>
         </button>
-        <button type="button" className="rail-item" aria-label="Settings" aria-expanded={panel === 'settings'} onClick={shell.toggleSettings}>
+        <button type="button" className="rail-item" aria-label={attention ? 'Settings (확인 필요)' : 'Settings'} aria-expanded={panel === 'settings'} onClick={shell.toggleSettings}>
           <SettingsIcon />
+          {attention && <span className="attention-dot" aria-hidden="true" />}
           <span aria-hidden="true">Settings</span>
         </button>
         <div className="user" role="img" title={name ?? 'Personal archive'} aria-label={name ? `Signed in as ${name}` : 'Personal archive'}>
@@ -242,6 +245,7 @@ function DesktopFrame() {
       openSearch: () => setSearchOpen(true),
       openQueue: () => togglePanel('queue'),
       toggleSettings: () => togglePanel('settings'),
+      openSettings: () => setPanel('settings'),
       toggleFocus,
       focusMode,
     }),

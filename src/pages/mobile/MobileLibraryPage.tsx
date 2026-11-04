@@ -15,6 +15,7 @@ import {
 import { CoverImage, Portrait } from '../../components/CoverImage';
 import { MobileTrackRow } from '../../components/mobile/MobileTrackRow';
 import { getAlbumNote } from '../../editorial/lookup';
+import { useLifeHub } from '../../lifehub/LifeHubContext';
 import { DigLibrary } from '../../digging/DigLibrary';
 import { formatRelativeTime, joinArtistNames, pluralise, releaseYear } from '../../lib/format';
 import { useEngine, usePlay } from '../../playback/hooks';
@@ -319,6 +320,7 @@ function Recent() {
 export function MobileLibraryPage() {
   const { mode } = useSession();
   const shell = useShell();
+  const attention = useLifeHub().phase === 'attention';
   const [params, setParams] = useSearchParams();
   const section = (SECTIONS.find((s) => s.id === params.get('section'))?.id ?? 'liked') as Section;
   const profile = useProfile();
@@ -332,8 +334,9 @@ export function MobileLibraryPage() {
           <div className="label">{mode === 'preview' ? 'Preview archive' : 'Your Spotify library'}</div>
           <h1>Library</h1>
         </div>
-        <button type="button" className="m-avatar" aria-label="Settings" aria-haspopup="dialog" onClick={shell.toggleSettings}>
+        <button type="button" className="m-avatar" aria-label={attention ? 'Settings (확인 필요)' : 'Settings'} aria-haspopup="dialog" onClick={shell.toggleSettings}>
           <span aria-hidden="true">{initials(name)}</span>
+          {attention && <span className="attention-dot" aria-hidden="true" />}
         </button>
       </header>
       <MobileChips

@@ -3,7 +3,9 @@ import { useAppServices, useAuthState } from '../app/appContext';
 import { useSessionControls } from '../app/sessionControls';
 import { useSession } from '../app/sessionContext';
 import { useIsMobile } from '../app/useIsMobile';
+import { useDigging } from '../digging/context';
 import { EpisodeSettings } from '../episode/EpisodeSettings';
+import { LifeHubSection } from '../lifehub/LifeHubSection';
 import { useDeviceStatus } from '../playback/deviceStatus';
 import { useEngine, usePlayerSelector } from '../playback/hooks';
 import { usePreferences } from '../preferences/preferences';
@@ -20,7 +22,7 @@ export function SettingsPanel({ open, onClose }: { open: boolean; onClose: () =>
   );
 }
 
-/** Account, device, translation, episodes and (phone) install or (desktop) the keyboard. */
+/** Account, device, translation, episodes, Life Hub and (phone) install or (desktop) the keyboard. */
 export function SettingsBody() {
   const { config, auth } = useAppServices();
   const authState = useAuthState();
@@ -32,6 +34,7 @@ export function SettingsBody() {
   const [preferences, setPreferences] = usePreferences();
   const { pathname } = useLocation();
   const mobile = useIsMobile();
+  const { accountId } = useDigging();
   const missing = authState.status === 'signed-in' ? authState.missingScopes : [];
 
   return (
@@ -109,6 +112,7 @@ export function SettingsBody() {
         </div>
       )}
       <EpisodeSettings />
+      <LifeHubSection key={`lifehub-${accountId ?? ''}`} />
       {mobile ? (
         <InstallHint />
       ) : (
