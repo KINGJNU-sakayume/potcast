@@ -108,6 +108,7 @@ export function MobileShell() {
       openSearch: () => navigate(TAB_ROOT.search),
       openQueue: () => setQueueOpen(true),
       toggleSettings: () => setSettingsOpen((value) => !value),
+      openSettings: () => setSettingsOpen(true),
     }),
     [navigate],
   );

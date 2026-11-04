@@ -79,6 +79,7 @@ p.dig-help { margin: 8px 0; }
 
 /* Life Hub album proposals (record tools drawer) */
 .dig-lifehub-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0; }
+.dig-lifehub-band { margin: 8px 0 12px; font-size: 13px; }
 .dig-lifehub-list, .dig-lifehub-choices { list-style: none; margin: 0; padding: 0; }
 .dig-lifehub-list > li { padding: 10px 0; border-top: 1px solid var(--line-soft); }
 .dig-lifehub-tracks { margin: 8px 0; padding-left: 20px; font-size: 13px; }

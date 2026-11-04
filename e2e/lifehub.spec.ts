@@ -40,11 +40,15 @@ test('opening the library records an album the owner approved in a Claude card a
   expect(asked[0]).toBe('open');
   expect(posts).toEqual([{ key: approved, entity_type: 'album_listening', entity_id: ALBUM }]);
 
-  // The one that asks for a last check waits in the drawer, marked as approved in the card.
-  await page.getByRole('button', { name: '기록 백업·청취 이력', exact: true }).click();
-  const panel = page.getByRole('dialog', { name: '개인 음악 기록', exact: true });
-  await expect(panel.getByText(/Claude 카드에서 승인함 · 여기서 확인해 주세요/)).toBeVisible();
-  await expect(panel.getByLabel(/Claude에서 승인된 항목 자동 반영/)).toBeChecked();
+  // The one that asks for a last check waits behind the library's one-line band, marked as approved in the card.
+  await page.getByRole('button', { name: '검토', exact: true }).first().click();
+  const band = page.getByRole('region', { name: 'Claude 제안', exact: true });
+  await expect(band.getByText('Claude가 제안한 감상 기록 1건')).toBeVisible();
+  await expect(band.getByText(/Claude 카드에서 승인함 · 여기서 확인해 주세요/)).toBeVisible();
+  // Connection, sync and the auto-apply setting live in settings' Life Hub section.
+  await page.getByRole('button', { name: 'Settings', exact: true }).click();
+  await expect(page.getByText('연결됨', { exact: true })).toBeVisible();
+  await expect(page.getByLabel(/Claude에서 승인한 기록은 바로 반영/)).toBeChecked();
   expect(posts).toHaveLength(1);
   expect(errors).toEqual([]);
 });
