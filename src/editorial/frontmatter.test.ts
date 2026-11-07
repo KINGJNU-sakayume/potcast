@@ -167,3 +167,16 @@ describe('artwork and discography fields', () => {
     );
   });
 });
+
+describe('appleCover', () => {
+  const note = (value: string) => ({ './notes/albums/a.md': `---\nartist: a\ntitles: [T]\nappleCover: ${value}\nshort: s\n---\n` });
+  it('accepts Apple Music artwork hosts the board allows', () => {
+    const url = 'https://is1-ssl.mzstatic.com/image/thumb/Music/x/1400x1400bb.jpg';
+    expect(loadAlbumNotes(note(url))[0]?.appleCover).toBe(url);
+    expect(loadAlbumNotes({ './notes/albums/b.md': '---\nartist: a\ntitles: [T]\nshort: s\n---\n' })[0]?.appleCover).toBeUndefined();
+  });
+  it('rejects other hosts', () => {
+    expect(() => loadAlbumNotes(note('https://example.com/a.jpg'))).toThrow(/a\.md.*appleCover/);
+    expect(() => loadAlbumNotes(note('https://is6-ssl.mzstatic.com/a.jpg'))).toThrow(/appleCover/);
+  });
+});

@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { useSession } from '../app/sessionContext';
+import { useBoardUpload } from '../board/useBoardUpload';
 import { useDigging } from '../digging/context';
 import { applyApproved } from './approve';
 import {
@@ -24,6 +25,8 @@ export interface LifeHubState {
   /** Records made from Claude card approvals and decisions taken on proposals. */
   message: string | null;
   autoApply: boolean;
+  /** Life Board tiles: uploaded from this device only while switched on here (off by default). */
+  board: { enabled: boolean; needsReconnect: boolean; setEnabled: (on: boolean) => void };
   runSync: () => Promise<void>;
   connect: () => void;
   disconnect: () => void;
@@ -35,6 +38,7 @@ export interface LifeHubState {
 const noop = () => undefined;
 const fallback: LifeHubState = {
   connected: false, phase: 'idle', attention: null, proposals: [], conflictNote: null, message: null, autoApply: true,
+  board: { enabled: false, needsReconnect: false, setEnabled: noop },
   runSync: async () => undefined, connect: noop, disconnect: noop, markConnected: noop, removeProposal: noop, setAutoApply: noop,
 };
 const LifeHubContext = createContext<LifeHubState>(fallback);
@@ -66,6 +70,14 @@ export function LifeHubProvider({ children }: { children: ReactNode }) {
     setConnected(isConnected(browserDeps())); setPhase('idle'); setAttention(null);
     setProposals([]); setConflictNote(null); setMessage(null);
   }
+
+  const board = useBoardUpload(connected, useCallback((text: string) => {
+    setConnected(false); setProposals([]);
+    setAttention({ cause: 'reconnect', message: text }); setPhase('attention');
+  }, []));
+  const boardState = useMemo(() => ({ enabled: board.enabled, needsReconnect: board.needsReconnect, setEnabled: board.setEnabled }), [board.enabled, board.needsReconnect, board.setEnabled]);
+
+  const clearBoardReconnect = board.clearReconnect;
 
   const runSync = useCallback(() => {
     if (!isConnected(browserDeps())) return Promise.resolve();
@@ -118,7 +130,8 @@ export function LifeHubProvider({ children }: { children: ReactNode }) {
   }, []);
   const markConnected = useCallback(() => {
     setConnected(isConnected(browserDeps())); setAttention(null); setPhase('idle');
-  }, []);
+    clearBoardReconnect();
+  }, [clearBoardReconnect]);
   const removeProposal = useCallback((key: string, text: string) => {
     setProposals((old) => old.filter((x) => x.key !== key));
     setMessage(text);
@@ -130,8 +143,8 @@ export function LifeHubProvider({ children }: { children: ReactNode }) {
   }, [runSync]);
 
   const value = useMemo<LifeHubState>(() => ({
-    connected, phase, attention, proposals, conflictNote, message, autoApply,
+    connected, phase, attention, proposals, conflictNote, message, autoApply, board: boardState,
     runSync, connect, disconnect, markConnected, removeProposal, setAutoApply,
-  }), [connected, phase, attention, proposals, conflictNote, message, autoApply, runSync, connect, disconnect, markConnected, removeProposal, setAutoApply]);
+  }), [connected, phase, attention, proposals, conflictNote, message, autoApply, boardState, runSync, connect, disconnect, markConnected, removeProposal, setAutoApply]);
   return <LifeHubContext.Provider value={value}>{children}</LifeHubContext.Provider>;
 }

@@ -188,5 +188,13 @@ export function LifeHubSection() {
       <span>Claude에서 승인한 기록은 바로 반영 <span className="dig-help">(앨범과 곡이 정확히 맞을 때만)</span></span>
     </label>
     {hub.conflictNote && <p className="fineprint">{hub.conflictNote}</p>}
+    <label className="dig-check">
+      <input type="checkbox" checked={hub.board.enabled} onChange={(e) => hub.board.setEnabled(e.target.checked)} />
+      <span>이 기기에서 보드에 올리기 <span className="dig-help">(Life Board에 최근 들은 앨범 등을 보냅니다. 기록은 기기 안에만 있어, 한 기기에서만 켜 두세요)</span></span>
+    </label>
+    {hub.board.enabled && hub.board.needsReconnect && <>
+      <p className="fineprint" role="status">보드에 올리려면 Life Hub에 다시 연결해 주세요. 지금 연결과 수신함은 그대로 쓸 수 있어요.</p>
+      <div className="settings-actions"><button type="button" className="plain-action" disabled={!canConnect} onClick={hub.connect}>다시 연결</button></div>
+    </>}
   </>;
 }

@@ -2,7 +2,7 @@
  * potcast ↔ Life Hub connection.
  *
  * - Connect: OAuth 2.1 authorization code + PKCE (S256); potcast is a public client identified by
- *   public/lifehub-client.json and receives only a `potcast:inbox` token. Life Hub returns to
+ *   public/lifehub-client.json and receives `potcast:inbox` and `potcast:board` tokens. Life Hub returns to
  *   /lifehub/ (public/lifehub/index.html), because the app root is the Spotify sign-in callback.
  * - Proposals (`album_listening`) are fetched live and validated again here; nothing is recorded until
  *   the owner approves an album in the record tools.
@@ -16,7 +16,8 @@ export const APP_URL = 'https://kingjnu-sakayume.github.io/potcast/';
 export const CALLBACK_URL = APP_URL + 'lifehub/';
 export const CLIENT_ID = APP_URL + 'lifehub-client.json';
 export const RESOURCE = LIFEHUB_ORIGIN + '/potcast';
-export const SCOPE = 'potcast:inbox';
+/** `potcast:board` uploads the Life Board tiles; connections made before it was requested must reconnect once. */
+export const SCOPE = 'potcast:inbox potcast:board';
 const API = LIFEHUB_ORIGIN + '/potcast/v1';
 /** Written by public/lifehub/index.html. */
 export const CALLBACK_KEY = 'potcast.lifehub.callback.v1';
@@ -244,6 +245,15 @@ async function accessToken(deps: Deps, force = false): Promise<string> {
   if (!tokens?.refresh_token) throw new LifeHubError('not_connected', 'Life Hub에 연결되어 있지 않아요.');
   if (!force && tokens.access_expires_at - 60_000 > deps.now()) return tokens.access_token;
   return (await tokenRequest(deps, { grant_type: 'refresh_token', refresh_token: tokens.refresh_token })).access_token;
+}
+
+/**
+ * For the board upload (src/board/upload.ts), which has its own request function: it must check `insufficient_scope`
+ * before the 401/403 rule in `api()` below, which signs the connection out.
+ */
+export const tokenForBoard = accessToken;
+export function dropTokens(deps: Pick<Deps, 'storage'>): void {
+  deps.storage.removeItem(TOKENS_KEY);
 }
 
 async function api(deps: Deps, method: 'GET' | 'POST', path: string, body?: unknown): Promise<Response> {

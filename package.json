@@ -17,6 +17,8 @@
     "notes:audit": "vite-node scripts/notes-audit.ts --",
     "review:status": "vite-node scripts/review-status.ts --",
     "notes:art": "NODE_USE_ENV_PROXY=1 vite-node scripts/notes-art.ts --",
+    "notes:apple": "NODE_USE_ENV_PROXY=1 vite-node scripts/notes-apple.ts --",
+    "board:sample": "vite-node scripts/board-sample.ts",
     "notes:migrate": "NODE_USE_ENV_PROXY=1 vite-node scripts/notes-migrate.ts --",
     "episode:lines": "vite-node scripts/episode-lines.ts --",
     "narration": "NODE_USE_ENV_PROXY=1 vite-node scripts/narration/render.ts --",

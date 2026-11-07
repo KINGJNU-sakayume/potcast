@@ -40,6 +40,13 @@ function imageUrl(fields: FieldReader, key: string): string | undefined {
   return url;
 }
 
+const APPLE_COVER = /^https:\/\/is[1-5]-ssl\.mzstatic\.com\/\S+$/;
+function appleCoverUrl(fields: FieldReader, key: string): string | undefined {
+  const url = fields.optionalString(key);
+  if (url !== undefined && !APPLE_COVER.test(url)) fields.fail(`"${key}" must be an https://is1-ssl.mzstatic.com … is5-ssl.mzstatic.com image URL, got "${url}".`);
+  return url;
+}
+
 const ERA_LINE = /^(\d{4})(?:\s*([–—-])\s*(\d{4})?)?\s*[·:|]\s*(.+)$/;
 
 /** `2012–2015 · title`, `2020– · title` (ongoing) or `2009 · title` (one year). */
@@ -83,6 +90,7 @@ export function loadAlbumNotes(files: NoteFiles): AlbumNote[] {
     releaseYear: fields.optionalNumber('releaseYear'),
     releaseDate: fields.optionalString('releaseDate'),
     cover: imageUrl(fields, 'cover'),
+    appleCover: appleCoverUrl(fields, 'appleCover'),
     tracks: fields.optionalList('tracks'),
     ...body(fields, full, file),
   })).sort((a, b) => a.artist.localeCompare(b.artist) || (a.releaseYear ?? 0) - (b.releaseYear ?? 0) || a.key.localeCompare(b.key));
