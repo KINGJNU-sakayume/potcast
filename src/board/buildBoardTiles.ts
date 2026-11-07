@@ -124,6 +124,8 @@ export function buildBoardTiles(input: BoardInput, now: Date): BoardManifest {
   const lastHeard = new Map<string, string>();
   for (const e of events) if (!lastHeard.has(e.artistId)) lastHeard.set(e.artistId, e.listenedAt);
 
+  const digging = diggingRows(data, lastHeard);
+
   // now: the album with the latest listen record.
   const latest = events.find((e) => releases.has(e.albumId));
   if (latest) {
@@ -133,7 +135,7 @@ export function buildBoardTiles(input: BoardInput, now: Date): BoardManifest {
     const listened = release.trackIds.filter((id) => states.get(id) === 'listened').length;
     const count = events.filter((e) => e.albumId === release.id).length;
     const artist = artistOf(release, projects.get(latest.artistId));
-    const panel = diggingRows(data, lastHeard).slice(0, HERO_ROWS);
+    const panel = digging.slice(0, HERO_ROWS);
     tiles.push(compact({
       id: 'now', name: 'potcast · 지금 듣는 앨범', tone: 'hero' as const, sizes: ['1x1', '2x1', '2x2', '4x1', '4x2'] as BoardSize[], size: '4x2' as BoardSize,
       default: true, href: BOARD_HREF, accent: accents[release.id],
@@ -169,7 +171,7 @@ export function buildBoardTiles(input: BoardInput, now: Date): BoardManifest {
   }
 
   // digging: artists being dug, unfinished first.
-  const rows = diggingRows(data, lastHeard).slice(0, LIST_ROWS);
+  const rows = digging.slice(0, LIST_ROWS);
   if (rows.length) {
     tiles.push({
       id: 'digging', name: 'potcast · 디깅 큐', tone: 'type', form: 'list', sizes: ['2x1', '2x2'], size: '2x2', default: false, href: BOARD_HREF,

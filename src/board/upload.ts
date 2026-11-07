@@ -149,6 +149,8 @@ export async function boardRound(r: RoundInput): Promise<RoundResult> {
   const { deps } = r;
   try {
     const now = deps.now();
+    // The cheap conditions first: building the tiles walks every dig project, so it is not done for a device that is off.
+    if (!boardEnabled(deps.storage) || !r.connected || r.preview || !r.hasRecords || boardNeedsReconnect(deps.storage)) return { kind: 'skipped' };
     const manifest = r.build(new Date(now));
     const nextSha = await manifestSha(manifest, deps.sha256);
     const situation: Situation = {

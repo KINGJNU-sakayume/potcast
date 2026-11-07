@@ -13,7 +13,8 @@
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { parseFrontmatter } from '../src/editorial/frontmatter';
-import { namesMatch, normaliseTitle } from '../src/editorial/lookup';
+import { namesMatch } from '../src/editorial/lookup';
+import { artworkAt, baseTitle as base } from './art/apple';
 import { imageSize } from './art/imageSize';
 import { insertField } from './art/insertField';
 
@@ -63,8 +64,23 @@ async function search(term: string, country: string): Promise<Hit[]> {
     : []);
 }
 
-/** Title match ignoring edition suffixes such as "(Deluxe)" or "(Remastered)". */
-const base = (title: string) => normaliseTitle(title).replace(/\s*[([][^)\]]*(deluxe|edition|remaster|version|expanded|anniversary)[^)\]]*[)\]]/g, '').trim();
+
+/** Search often skips an album (Blonde, IGOR…) that the artist's own catalogue lists, so fall back to that. */
+async function lookupAlbums(artist: string, country: string): Promise<Hit[]> {
+  const found = await throttled(`https://itunes.apple.com/search?${new URLSearchParams({ term: artist, entity: 'musicArtist', country, limit: '3' })}`);
+  const artists = found.ok ? ((await found.json()) as { results?: Array<{ artistId?: number }> }).results ?? [] : [];
+  const id = artists[0]?.artistId;
+  if (!id) return [];
+  const response = await throttled(`https://itunes.apple.com/lookup?${new URLSearchParams({ id: String(id), entity: 'album', country, limit: '200' })}`);
+  if (!response.ok) return [];
+  const body = (await response.json()) as { results?: Array<Record<string, unknown>> };
+  return (body.results ?? []).flatMap((r) => typeof r.artistName === 'string' && typeof r.collectionName === 'string' && typeof r.artworkUrl100 === 'string'
+    ? [{ artistName: r.artistName, collectionName: r.collectionName, year: typeof r.releaseDate === 'string' ? Number(r.releaseDate.slice(0, 4)) : null, artworkUrl100: r.artworkUrl100 }]
+    : []);
+}
+
+const rank = (album: Album, hits: Hit[]) =>
+  [...hits].sort((a, b) => Number(album.year !== undefined && b.year === album.year) - Number(album.year !== undefined && a.year === album.year) || (a.year ?? 9999) - (b.year ?? 9999))[0] ?? null;
 
 async function find(album: Album): Promise<Hit | null> {
   const names = album.artistNames.length ? album.artistNames : [album.artistKey];
@@ -81,6 +97,11 @@ async function find(album: Album): Promise<Hit | null> {
         if (pick) return pick;
       }
     }
+  }
+  for (const country of ['us', 'kr']) {
+    const wanted = new Set(album.titles.map(base));
+    const pick = rank(album, (await lookupAlbums(names[0]!, country)).filter((h) => namesMatch(names, [h.artistName]) && wanted.has(base(h.collectionName))));
+    if (pick) return pick;
   }
   return null;
 }
@@ -105,8 +126,8 @@ async function main() {
     let hit: Hit | null = null;
     try { hit = await find(album); } catch (error) { missing.push(`${album.key} (${error instanceof Error ? error.message : String(error)})`); continue; }
     if (!hit) { missing.push(album.key); continue; }
-    const url = hit.artworkUrl100.replace('100x100bb', '1400x1400bb');
-    if (!ALLOWED.test(url) || url === hit.artworkUrl100) { missing.push(`${album.key} (unexpected artwork URL ${hit.artworkUrl100})`); continue; }
+    const url = artworkAt(hit.artworkUrl100, 1400) ?? '';
+    if (!ALLOWED.test(url)) { missing.push(`${album.key} (unexpected artwork URL ${hit.artworkUrl100})`); continue; }
     found.push({ album, hit, url, size: await measure(url) });
   }
   console.log('key | note artist · title · year | Apple artist · album · year | pixels | url');
