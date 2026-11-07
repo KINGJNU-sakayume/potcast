@@ -107,7 +107,7 @@ describe('connection', () => {
     const url = new URL(await beginConnect(deps));
     expect(url.origin + url.pathname).toBe(LIFEHUB_ORIGIN + '/authorize');
     expect(Object.fromEntries(url.searchParams)).toMatchObject({
-      response_type: 'code', client_id: CLIENT_ID, redirect_uri: CALLBACK_URL, scope: 'potcast:inbox', resource: RESOURCE, code_challenge_method: 'S256',
+      response_type: 'code', client_id: CLIENT_ID, redirect_uri: CALLBACK_URL, scope: 'potcast:inbox potcast:board', resource: RESOURCE, code_challenge_method: 'S256',
     });
     const state = url.searchParams.get('state')!;
 

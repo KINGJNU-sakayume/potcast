@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "app": "potcast",
+  "generated_at": "2026-11-07T03:00:00Z",
+  "tiles": [
+    {
+      "id": "now",
+      "name": "potcast · 지금 듣는 앨범",
+      "tone": "hero",
+      "sizes": [
+        "1x1",
+        "2x1",
+        "2x2",
+        "4x1",
+        "4x2"
+      ],
+      "size": "4x2",
+      "default": true,
+      "href": "https://kingjnu-sakayume.github.io/potcast/",
+      "data": {
+        "label": "potcast · 지금 듣는 앨범",
+        "title": "Second Imaginary",
+        "sub": "Synthetic Artist\n11/5 마지막 기록 · 기록 3번",
+        "progress": {
+          "value": 3,
+          "max": 4,
+          "text": "3 / 4곡 들음"
+        },
+        "cover": {
+          "src": "https://i.scdn.co/image/ab67616d00001e02bbbbbbbbbbbbbbbbbbbbbbbb",
+          "alt": "",
+          "mono": "S"
+        },
+        "list": [
+          {
+            "title": "Synthetic Artist",
+            "value": "0 / 2장 완료",
+            "sub": "6 / 9곡 들음 · 기록 8번 · 마지막 11/5",
+            "progress": {
+              "value": 6,
+              "max": 9,
+              "text": "6 / 9곡"
+            }
+          },
+          {
+            "title": "Another Voice",
+            "value": "0 / 2장 완료",
+            "sub": "2 / 6곡 들음 · 기록 2번 · 마지막 10/20",
+            "progress": {
+              "value": 2,
+              "max": 6,
+              "text": "2 / 6곡"
+            }
+          },
+          {
+            "title": "Third Room",
+            "value": "1 / 1장 완료",
+            "sub": "3 / 3곡 들음 · 기록 3번 · 마지막 10/12",
+            "progress": {
+              "value": 3,
+              "max": 3,
+              "text": "3 / 3곡"
+            },
+            "muted": true
+          }
+        ],
+        "listLabel": "디깅 중"
+      }
+    },
+    {
+      "id": "recent",
+      "name": "potcast · 최근 들은 앨범",
+      "tone": "strip",
+      "sizes": [
+        "2x1",
+        "4x1"
+      ],
+      "size": "4x1",
+      "default": true,
+      "href": "https://kingjnu-sakayume.github.io/potcast/",
+      "data": {
+        "label": "potcast · 최근 들은 앨범",
+        "square": true,
+        "items": [
+          {
+            "title": "Second Imaginary",
+            "cover": {
+              "src": "https://i.scdn.co/image/ab67616d00001e02bbbbbbbbbbbbbbbbbbbbbbbb",
+              "alt": "",
+              "mono": "S"
+            }
+          },
+          {
+            "title": "Imaginary Album",
+            "cover": {
+              "src": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/00/00/00/sample-a/source/300x300bb.jpg",
+              "alt": "",
+              "mono": "I"
+            }
+          },
+          {
+            "title": "Made Up Hours",
+            "cover": {
+              "src": "https://i.scdn.co/image/ab67616d00001e02cccccccccccccccccccccccc",
+              "alt": "",
+              "mono": "M"
+            }
+          },
+          {
+            "title": "Finished Business",
+            "cover": {
+              "mono": "F"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "digging",
+      "name": "potcast · 디깅 큐",
+      "tone": "type",
+      "form": "list",
+      "sizes": [
+        "2x1",
+        "2x2"
+      ],
+      "size": "2x2",
+      "default": false,
+      "href": "https://kingjnu-sakayume.github.io/potcast/",
+      "data": {
+        "label": "potcast · 디깅 큐",
+        "rows": [
+          {
+            "title": "Synthetic Artist",
+            "value": "0 / 2장 완료",
+            "sub": "6 / 9곡 들음 · 기록 8번 · 마지막 11/5",
+            "progress": {
+              "value": 6,
+              "max": 9,
+              "text": "6 / 9곡"
+            }
+          },
+          {
+            "title": "Another Voice",
+            "value": "0 / 2장 완료",
+            "sub": "2 / 6곡 들음 · 기록 2번 · 마지막 10/20",
+            "progress": {
+              "value": 2,
+              "max": 6,
+              "text": "2 / 6곡"
+            }
+          },
+          {
+            "title": "Third Room",
+            "value": "1 / 1장 완료",
+            "sub": "3 / 3곡 들음 · 기록 3번 · 마지막 10/12",
+            "progress": {
+              "value": 3,
+              "max": 3,
+              "text": "3 / 3곡"
+            },
+            "muted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "track",
+      "name": "potcast · 지금 꽂힌 곡",
+      "tone": "type",
+      "form": "line",
+      "sizes": [
+        "2x1",
+        "4x1"
+      ],
+      "size": "2x1",
+      "default": false,
+      "href": "https://kingjnu-sakayume.github.io/potcast/",
+      "data": {
+        "label": "potcast · 지금 꽂힌 곡",
+        "title": "First Song",
+        "sub": "Synthetic Artist · 3번 기록 · 마지막 11/4",
+        "pill": "최근 30일"
+      }
+    },
+    {
+      "id": "finished",
+      "name": "potcast · 최근 끝낸 디깅",
+      "tone": "type",
+      "form": "line",
+      "sizes": [
+        "2x1",
+        "4x1"
+      ],
+      "size": "2x1",
+      "default": false,
+      "href": "https://kingjnu-sakayume.github.io/potcast/",
+      "data": {
+        "label": "potcast · 최근 끝낸 디깅",
+        "title": "Third Room",
+        "sub": "10/12에 끝냄 · 1장 · 3곡",
+        "pill": "다 들음"
+      }
+    }
+  ]
+}

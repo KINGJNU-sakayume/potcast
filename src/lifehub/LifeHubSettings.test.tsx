@@ -100,4 +100,39 @@ describe('Life Hub in settings', { timeout: 40_000 }, () => {
     expect(screen.queryByRole('region', { name: 'Claude 제안' })).not.toBeInTheDocument();
   });
 
+
+  it('「이 기기에서 보드에 올리기」 is off by default, stored per device, and never uploads in preview', async () => {
+    const user = userEvent.setup();
+    connect();
+    const calls = fakeHub((url) => url.includes('/candidates') ? json(200, { candidates: [] }) : json(200, {}));
+    renderApp('#/library');
+    const rail = await screen.findByRole('complementary', { name: 'Primary navigation' });
+    await user.click(within(rail).getByRole('button', { name: 'Settings' }));
+    const settings = screen.getByRole('complementary', { name: 'Settings' });
+    const box = await within(settings).findByRole('checkbox', { name: /이 기기에서 보드에 올리기/ });
+    expect(box).not.toBeChecked();
+    expect(within(settings).queryByText(/다시 연결해 주세요/)).not.toBeInTheDocument();
+    await user.click(box);
+    expect(box).toBeChecked();
+    expect(localStorage.getItem('potcast.board.enabled.v1')).toBe('on');
+    await user.click(box);
+    expect(localStorage.getItem('potcast.board.enabled.v1')).toBe('off');
+    expect(calls.some((url) => url.endsWith('/board'))).toBe(false);
+  });
+
+  it('shows the reconnect line only when this device uploads and the board scope is missing; the connection stays', async () => {
+    const user = userEvent.setup();
+    connect();
+    localStorage.setItem('potcast.board.enabled.v1', 'on');
+    localStorage.setItem('potcast.board.scope.v1', 'missing');
+    fakeHub((url) => url.includes('/candidates') ? json(200, { candidates: [] }) : json(200, {}));
+    renderApp('#/library');
+    const rail = await screen.findByRole('complementary', { name: 'Primary navigation' });
+    await user.click(within(rail).getByRole('button', { name: 'Settings' }));
+    const settings = screen.getByRole('complementary', { name: 'Settings' });
+    expect(await within(settings).findByText(/보드에 올리려면 Life Hub에 다시 연결/)).toBeInTheDocument();
+    expect(within(settings).getByRole('button', { name: '다시 연결' })).toBeInTheDocument();
+    expect(JSON.parse(localStorage.getItem('potcast.lifehub.tokens.v1') ?? 'null')).toMatchObject({ refresh_token: 'rt' });
+    expect(within(settings).getByRole('button', { name: '연결 해제' })).toBeInTheDocument();
+  });
 });

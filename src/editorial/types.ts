@@ -75,6 +75,11 @@ export interface AlbumNote extends EditorialBody {
   /** Cover image URL (https), shown on the Archive; without it the Archive asks Spotify when connected. */
   cover?: string;
   /**
+   * Apple Music artwork (https://is[1-5]-ssl.mzstatic.com, 1400px), filled by `npm run notes:apple`. Only the Life Board
+   * tile uses it (a hero needs 1200px+, Spotify's `cover` is 640px); the app itself never calls Apple.
+   */
+  appleCover?: string;
+  /**
    * Song note keys of the standard edition's tracklist, in order. An album
    * note is complete only when every track has its own song note (quality.ts).
    */

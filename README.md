@@ -435,6 +435,65 @@ start in the first mode, the notice offers the second. This second mode is the g
   browser playing the real clips. Real Spotify playback was not available where it was written, and nobody had
   listened to the voices there: whether a reading or a voice sounds right is for a listener to say.
 
+## Board tiles
+
+potcast sends a small list of tiles (manifest v1) to the [Life Board](https://github.com/KINGJNU-sakayume/board) through Life Hub.
+Only the tile list goes up (titles, cover addresses, counts); the records themselves never leave the device, and the board
+draws the tiles in its own style. The list is made by one pure function,
+[`buildBoardTiles(input, now)`](src/board/buildBoardTiles.ts); an example output with invented values is
+[`board/sample.json`](board/sample.json) (`npm run board:sample` rewrites it, and a test fails if it drifts).
+
+potcast has no "now playing" state of its own, so the tiles come from what the app really counts: listen records
+(`ListenEvent`), the tracks marked *listened*, the artist digs and their completions. Dates are written as `11/5`
+(Korea time), never as "yesterday".
+
+| id | Tile | Shape | Sizes (first) | Shown at first | Data |
+|---|---|---|---|---|---|
+| `now` | potcast · 지금 듣는 앨범 | hero | 1x1 2x1 2x2 4x1 **4x2** | yes | the album with the latest listen record; progress = tracks marked listened / album tracks; right panel (4 wide) = artists being dug |
+| `recent` | potcast · 최근 들은 앨범 | strip, square | 2x1 **4x1** | yes | up to 12 most recently listened albums |
+| `digging` | potcast · 디깅 큐 | list | 2x1 **2x2** | no (add with +) | artists being dug, unfinished first: listened/total tracks, albums finished, records |
+| `track` | potcast · 지금 꽂힌 곡 | line | **2x1** 4x1 | no | the track recorded most often in the last 30 days (at least 2 records; manual records count, so this is a record count, not verified plays) |
+| `finished` | potcast · 최근 끝낸 디깅 | line | **2x1** 4x1 | no | the latest dig finished as *listened*, with its date |
+
+The ids never change (the board stores a person's layout by id). With no records there are no tiles, and nothing is
+uploaded. A tile whose data is missing is left out (`track` without a repeated track, `finished` without a finished dig).
+
+**Covers.** Only addresses are sent, from hosts the board allows. The hero uses the Apple Music cover in the album
+note's `appleCover` (1400px; the Spotify `cover` is only 640px), then the note's Spotify `cover`, then the album's own
+Spotify image, then a single letter (`{mono}`). Strips use the 300px version. `appleCover` is filled once by a script,
+never by the app at run time:
+
+```bash
+npm run notes:apple                              # lists the Apple match for every note without one (writes nothing)
+npm run notes:apple -- --write --only a,b        # writes only the notes you checked in that table
+```
+
+It uses the keyless iTunes Search API and prints the artist, album and year of each Apple match plus the real pixel
+size of the 1400px file; a match is accepted only when artist and title agree. Notes it cannot match keep the Spotify
+cover. The accent colour is the one the app already took from the cover (the Now Playing palette), sent when known.
+
+**When it uploads.** `PUT /potcast/v1/board` with the Life Hub token, scope `potcast:board`
+([`src/board/upload.ts`](src/board/upload.ts)):
+
+- when something that affects the tiles changes, right away if the last upload was 10 or more minutes ago, otherwise
+  once when the 10 minutes are up (never more than once every 10 minutes); a change still waiting when the app closes is
+  marked in `localStorage` and goes out when the app next opens;
+- unchanged content (sha256 of the list without `generated_at`) is not sent, except once when the app opens and the last
+  success is more than a day old, because the board marks a list stale 14 days after Life Hub received it;
+- `200` is success (`unchanged` and `ignored` too); `400` and `413` are bugs here and only go to the developer console,
+  the same content is not sent again; network errors and `5xx` are tried again later;
+- never when not connected to Life Hub, in preview mode, or when the app has no records at all.
+
+**Which device.** The records live in one browser and Life Hub keeps only the newest list per app, so two devices would
+overwrite each other. **Settings → Life Hub → 이 기기에서 보드에 올리기** is **off by default** on every device; turn it on
+on the one device whose records the board should show. It is stored per device in `localStorage`
+(`potcast.board.enabled.v1`), with the last success, the pending mark and the reconnect notice (none of it personal data).
+
+**Reconnecting.** Connections made before this feature lack the `potcast:board` scope, so the first upload answers
+`403 insufficient_scope`. potcast then keeps the Life Hub token (the inbox and sync keep working) and the setting shows
+"보드에 올리려면 Life Hub에 다시 연결"; connect once more. Any other `403`, or a `401` that survives a token refresh,
+signs the connection out as before. The board upload has its own request function so this never disconnects the inbox.
+
 ## Preview mode
 
 **Preview without Spotify** (`/?preview`) runs every surface on a sample archive with a simulated clock and no audio:
